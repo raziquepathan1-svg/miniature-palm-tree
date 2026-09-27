@@ -59,17 +59,24 @@ def pick_style(config: dict, history: list[dict]) -> dict | None:
     return styles[published % len(styles)]
 
 
-def next_publish_time(time_str: str, tz_name: str, now: dt.datetime | None = None) -> dt.datetime:
-    """Next occurrence of HH:MM in the given time zone (at least 1 hour from now), as UTC."""
+def next_publish_time(time_str: str, tz_name: str, now: dt.datetime | None = None,
+                      after: dt.datetime | None = None) -> dt.datetime:
+    """Next occurrence of HH:MM in the given time zone (at least 1 hour from now, and later than any
+    video already scheduled), as UTC."""
     from zoneinfo import ZoneInfo
 
     tz = ZoneInfo(tz_name)
     now = (now or dt.datetime.now(dt.timezone.utc)).astimezone(tz)
     hour, minute = (int(x) for x in time_str.split(":"))
     target = now.replace(hour=hour, minute=minute, second=0, microsecond=0)
-    if target < now + dt.timedelta(hours=1):
+    while target < now + dt.timedelta(hours=1) or (after and target <= after.astimezone(tz)):
         target += dt.timedelta(days=1)
     return target.astimezone(dt.timezone.utc)
+
+
+def last_scheduled(history: list[dict]) -> dt.datetime | None:
+    times = [dt.datetime.fromisoformat(h["publish_at"].replace("Z", "+00:00")) for h in history if h.get("publish_at")]
+    return max(times) if times else None
 
 
 def write_summary(lines: list[str]) -> None:
@@ -182,7 +189,8 @@ def make_one_video(config: dict, history: list[dict], topic: str | None, dry_run
     publish_at = None
     if yt.get("auto_publish_time"):
         # Upload as private + scheduled: YouTube makes it public by itself at this time.
-        publish_at = next_publish_time(yt["auto_publish_time"], yt.get("auto_publish_timezone", "America/New_York"))
+        publish_at = next_publish_time(yt["auto_publish_time"], yt.get("auto_publish_timezone", "America/New_York"),
+                                       after=last_scheduled(history))
         yt["privacy"] = "private"
         yt["publish_at"] = publish_at.strftime("%Y-%m-%dT%H:%M:%SZ")
     elif yt.get("review_before_publish", True):
@@ -193,6 +201,8 @@ def make_one_video(config: dict, history: list[dict], topic: str | None, dry_run
         config["channel"].get("language_code", "en-US"),
     )
     entry["youtube_id"] = video_id
+    if yt.get("publish_at"):
+        entry["publish_at"] = yt["publish_at"]
     history.append(entry)
     save_history(history)
     if social_dir:
