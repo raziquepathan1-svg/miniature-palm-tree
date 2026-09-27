@@ -57,6 +57,19 @@ def pick_style(config: dict, history: list[dict]) -> dict | None:
     return styles[published % len(styles)]
 
 
+def next_publish_time(time_str: str, tz_name: str, now: dt.datetime | None = None) -> dt.datetime:
+    """Next occurrence of HH:MM in the given time zone (at least 1 hour from now), as UTC."""
+    from zoneinfo import ZoneInfo
+
+    tz = ZoneInfo(tz_name)
+    now = (now or dt.datetime.now(dt.timezone.utc)).astimezone(tz)
+    hour, minute = (int(x) for x in time_str.split(":"))
+    target = now.replace(hour=hour, minute=minute, second=0, microsecond=0)
+    if target < now + dt.timedelta(hours=1):
+        target += dt.timedelta(days=1)
+    return target.astimezone(dt.timezone.utc)
+
+
 def write_summary(lines: list[str]) -> None:
     """Show a short report on the GitHub Actions run page (no-op when run locally)."""
     path = os.environ.get("GITHUB_STEP_SUMMARY")
@@ -158,9 +171,15 @@ def make_one_video(config: dict, history: list[dict], topic: str | None, dry_run
     from . import uploader
 
     yt = dict(config["youtube"])
-    if yt.get("review_before_publish", True):
+    publish_at = None
+    if yt.get("auto_publish_time"):
+        # Upload as private + scheduled: YouTube makes it public by itself at this time.
+        publish_at = next_publish_time(yt["auto_publish_time"], yt.get("auto_publish_timezone", "America/New_York"))
         yt["privacy"] = "private"
-    print(f"6/6 Uploading to YouTube ({yt.get('privacy')})...")
+        yt["publish_at"] = publish_at.strftime("%Y-%m-%dT%H:%M:%SZ")
+    elif yt.get("review_before_publish", True):
+        yt["privacy"] = "private"
+    print(f"6/6 Uploading to YouTube ({'scheduled ' + yt['publish_at'] if publish_at else yt.get('privacy')})...")
     video_id = uploader.upload_video(
         final, thumb, title, description, plan.tags, yt,
         config["channel"].get("language_code", "en-US"),
@@ -176,7 +195,10 @@ def make_one_video(config: dict, history: list[dict], topic: str | None, dry_run
     ]
     if fact_issues:
         summary.append("- Fact-check corrections: " + "; ".join(fact_issues))
-    if yt.get("privacy") == "private":
+    if publish_at:
+        summary.append(f"- **Scheduled** to go public automatically at {yt['publish_at']} (UTC). "
+                       "Watch it before then; to stop it, set Visibility to Private or delete it.")
+    elif yt.get("privacy") == "private":
         summary.append("- **Waiting for your review**: open the link, watch it, then set Visibility to Public.")
     print("\n".join(summary))
     write_summary(summary)

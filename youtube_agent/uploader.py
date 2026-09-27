@@ -86,6 +86,9 @@ def upload_video(video_path: Path, thumbnail_path: Path | None, title: str, desc
             "containsSyntheticMedia": bool(yt.get("contains_synthetic_media", True)),
         },
     }
+    if yt.get("publish_at"):  # scheduled publish: must be uploaded as private
+        body["status"]["privacyStatus"] = "private"
+        body["status"]["publishAt"] = yt["publish_at"]
     media = MediaFileUpload(str(video_path), mimetype="video/mp4", chunksize=8 * 1024 * 1024, resumable=True)
     request = youtube.videos().insert(part="snippet,status", body=body, media_body=media)
 

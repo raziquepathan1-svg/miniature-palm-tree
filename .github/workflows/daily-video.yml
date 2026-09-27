@@ -2,10 +2,10 @@ name: Daily YouTube video
 
 on:
   schedule:
-    # Once a day (1 video/day). Cron times are UTC: 15:17 UTC is ~11 AM Eastern
-    # during daylight saving time (10 AM in winter). The video is ready ~20-40 min
-    # later as a PRIVATE upload for you to review and publish.
-    - cron: "17 15 * * *"
+    # Once a day (1 video/day) at 03:17 UTC = ~6:17 AM Saudi time. The video is ready
+    # ~20-40 min later, scheduled to go public at 12:00 New York time (7 PM Saudi),
+    # which leaves the whole day to review it in the YouTube Studio app.
+    - cron: "17 3 * * *"
   workflow_dispatch:
     inputs:
       topic:
