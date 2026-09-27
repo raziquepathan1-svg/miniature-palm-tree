@@ -21,6 +21,9 @@ Any time before then:
 
 To make an extra video on demand from your phone: in the **GitHub app**, open the repo → **Actions → Daily YouTube video → Run workflow** (you can type a topic).
 
+### Instagram and Facebook Reels
+Every day a ~45-second vertical Short on the same topic is also made and, after the YouTube video goes public, posted as a Reel to Instagram and Facebook. Setup: see [SOCIAL_SETUP.md](SOCIAL_SETUP.md).
+
 ### Video styles (they rotate, one per day)
 **Explainer → Myth vs Fact → Quick Short (vertical) → Warning Signs → Top Questions**. Edit them under `video.styles` in `config.yaml`.
 
