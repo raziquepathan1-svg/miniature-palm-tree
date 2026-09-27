@@ -12,6 +12,7 @@ Usage (from the repo root):
 import argparse
 import datetime as dt
 import json
+import os
 import re
 from pathlib import Path
 
@@ -46,12 +47,33 @@ def next_queued_topic(config: dict, history: list[dict]) -> str | None:
     return None
 
 
+def pick_style(config: dict, history: list[dict]) -> dict | None:
+    """Rotate through the configured video styles so the channel doesn't feel repetitive."""
+    styles = config["video"].get("styles") or []
+    if not styles:
+        return None
+    published = sum(1 for h in history if h.get("youtube_id"))
+    return styles[published % len(styles)]
+
+
+def write_summary(lines: list[str]) -> None:
+    """Show a short report on the GitHub Actions run page (no-op when run locally)."""
+    path = os.environ.get("GITHUB_STEP_SUMMARY")
+    if path:
+        with open(path, "a") as f:
+            f.write("\n".join(lines) + "\n\n")
+
+
 def make_one_video(config: dict, history: list[dict], topic: str | None, dry_run: bool, script_only: bool) -> None:
     from . import planner
 
     topic = topic or next_queued_topic(config, history)
+    style = pick_style(config, history)
+    video_cfg = {**config["video"], **{k: v for k, v in (style or {}).items() if k in ("format", "target_minutes")}}
     print("1/6 Choosing topic and writing script with Claude...")
-    plan = planner.plan_video(config["channel"], config["video"], [h["topic"] for h in history], topic)
+    if style:
+        print(f"    Style: {style['name']} ({video_cfg.get('format')})")
+    plan = planner.plan_video(config["channel"], video_cfg, [h["topic"] for h in history], topic, style)
     print(f"    Topic: {plan.topic}\n    Title: {plan.title}")
 
     stamp = dt.datetime.now().strftime("%Y%m%d-%H%M")
@@ -60,6 +82,7 @@ def make_one_video(config: dict, history: list[dict], topic: str | None, dry_run
     (workdir / "draft_script.txt").write_text("\n\n".join(plan.scenes))
 
     sources: list[str] = []
+    fact_issues: list[str] = []
     if config["video"].get("fact_check", True):
         from . import fact_check
 
@@ -78,6 +101,7 @@ def make_one_video(config: dict, history: list[dict], topic: str | None, dry_run
             return
         plan.scenes = review.corrected_scenes
         sources = review.sources
+        fact_issues = review.issues
 
     (workdir / "plan.json").write_text(plan.model_dump_json(indent=2))
     (workdir / "script.txt").write_text("\n\n".join(plan.scenes))
@@ -88,13 +112,13 @@ def make_one_video(config: dict, history: list[dict], topic: str | None, dry_run
     from . import editor, heygen
 
     print("3/6 Rendering your avatar video on HeyGen (this can take 5-30 min)...")
-    raw = heygen.render_video(plan.scenes, plan.title, config["avatar"], config["video"], workdir / "avatar.mp4")
+    raw = heygen.render_video(plan.scenes, plan.title, config["avatar"], video_cfg, workdir / "avatar.mp4")
 
     print("4/6 Editing (intro/outro/music)...")
-    final = editor.edit_video(raw, config["editing"], config["video"], HERE, workdir / "final.mp4")
+    final = editor.edit_video(raw, config["editing"], video_cfg, HERE, workdir / "final.mp4")
 
     print("5/6 Making thumbnail...")
-    shorts = config["video"].get("format") == "shorts"
+    shorts = video_cfg.get("format") == "shorts"
     thumb = editor.make_thumbnail(final, plan.thumbnail_text, workdir / "thumbnail.jpg", shorts=shorts)
 
     description = plan.description
@@ -108,20 +132,36 @@ def make_one_video(config: dict, history: list[dict], topic: str | None, dry_run
         description += "\n\n#shorts"
 
     entry = {"date": dt.datetime.now().isoformat(timespec="seconds"), "topic": plan.topic,
-             "requested_topic": topic, "title": title}
+             "requested_topic": topic, "title": title, "style": (style or {}).get("name")}
     if dry_run:
         print(f"6/6 Dry run - not uploading. Files in {workdir}")
         return
 
     from . import uploader
 
-    print("6/6 Uploading to YouTube...")
-    entry["youtube_id"] = uploader.upload_video(
-        final, thumb, title, description, plan.tags, config["youtube"],
+    yt = dict(config["youtube"])
+    if yt.get("review_before_publish", True):
+        yt["privacy"] = "private"
+    print(f"6/6 Uploading to YouTube ({yt.get('privacy')})...")
+    video_id = uploader.upload_video(
+        final, thumb, title, description, plan.tags, yt,
         config["channel"].get("language_code", "en-US"),
     )
+    entry["youtube_id"] = video_id
     history.append(entry)
     save_history(history)
+
+    summary = [
+        f"## {title}",
+        f"- Style: {(style or {}).get('name', 'default')} | Privacy: **{yt.get('privacy')}**",
+        f"- Review and publish: https://studio.youtube.com/video/{video_id}/edit",
+    ]
+    if fact_issues:
+        summary.append("- Fact-check corrections: " + "; ".join(fact_issues))
+    if yt.get("privacy") == "private":
+        summary.append("- **Waiting for your review**: open the link, watch it, then set Visibility to Public.")
+    print("\n".join(summary))
+    write_summary(summary)
 
 
 def main() -> None:

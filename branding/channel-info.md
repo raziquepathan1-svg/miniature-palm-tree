@@ -15,7 +15,7 @@ Welcome to Health Support Studio! Every day we break down the health questions p
 • Prevention and healthy habits that fit real life
 • How to get the most out of doctor visits and hospital stays in the US
 
-New videos every day at 12 PM and 6 PM ET. Subscribe and turn on notifications so you never miss a health tip!
+New health videos every day. Subscribe and turn on notifications so you never miss a health tip!
 
 Disclaimer: This channel is for general education only and is not medical advice. Always talk to your own doctor, nurse or pharmacist about your health. In an emergency, call 911.
 

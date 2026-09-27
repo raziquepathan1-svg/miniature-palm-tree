@@ -22,7 +22,8 @@ class VideoPlan(BaseModel):
     )
 
 
-def plan_video(channel: dict, video: dict, past_topics: list[str], requested_topic: str | None = None) -> VideoPlan:
+def plan_video(channel: dict, video: dict, past_topics: list[str], requested_topic: str | None = None,
+               style: dict | None = None) -> VideoPlan:
     target_words = int(video["target_minutes"] * WORDS_PER_MINUTE)
     shorts = video.get("format") == "shorts"
     if shorts:
@@ -48,6 +49,7 @@ Presenter tone: {channel['tone']}
 Format: {"YouTube Short (vertical, under 60 seconds)" if shorts else "standard YouTube video"}
 
 {topic_instruction}
+{f"Video style for this episode: {style['name']}. {style['instructions']}" if style else ""}
 
 Write a script of about {target_words} spoken words. Requirements:
 - Factually accurate. If something is uncertain or debated, say so. No invented statistics.

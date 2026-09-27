@@ -48,10 +48,25 @@ channel:
 video:
   target_minutes: 4            # spoken length of each video
   format: "landscape"          # "landscape" (16:9 normal video) or "shorts" (9:16 vertical)
-  videos_per_run: 1            # the GitHub schedule runs twice a day -> 2 videos/day
+  videos_per_run: 1            # the GitHub schedule runs once a day -> 1 video/day
   captions: true               # burn subtitles into the video (HeyGen captions)
   fact_check: true             # verify every health claim with web research before recording
   background_color: "#0F172A"
+  # The agent rotates through these styles, one per video, so the channel stays varied.
+  # Each style can override "format" (landscape/shorts) and "target_minutes".
+  styles:
+    - name: "Explainer"
+      instructions: "A clear, structured explanation of the topic: what it is, why it matters, what to do."
+    - name: "Myth vs Fact"
+      instructions: "Bust 3-5 common myths about the topic. For each: state the myth, then the fact and why."
+    - name: "Quick Short"
+      format: "shorts"
+      target_minutes: 0.8
+      instructions: "One single, surprising, useful fact or tip about the topic in under 60 seconds. Hook in the first 2 seconds."
+    - name: "Warning Signs"
+      instructions: "The key symptoms or warning signs to watch for, which ones mean call 911 now vs see a doctor soon."
+    - name: "Top Questions"
+      instructions: "Answer the 4-6 questions people most often ask about the topic, in a friendly Q&A style."
 
 # ---- Your avatar (from HeyGen) ----
 # Run `python -m youtube_agent.main --list-avatars` to see your IDs.
@@ -73,7 +88,10 @@ editing:
 youtube:
   # Your channel (Health Support Studio). Uploads stop if you're logged in to a different channel.
   channel_id: "UCyAuaUoxw-U9PDfO0GVV3jw"
-  privacy: "public"            # "public", "unlisted" or "private"
+  # Videos upload as PRIVATE so you can watch them first, then set them to Public in YouTube Studio
+  # (the YouTube Studio phone app works). Set to false only if you want fully automatic publishing.
+  review_before_publish: true
+  privacy: "public"            # used only when review_before_publish is false
   category_id: "27"            # 27 = Education
   made_for_kids: false
   # YouTube requires disclosure of realistic AI-generated people/voices. Leave this true.
