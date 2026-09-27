@@ -34,6 +34,6 @@ Before it runs a shell command or writes a file, the agent asks you `Allow? [y/N
 
 ---
 
-## YouTube Avatar Agent
+## YouTube Video Agent
 
-`youtube_agent/` runs a fully automatic educational YouTube channel with your own AI avatar. It picks topics, writes scripts, renders your avatar (HeyGen), edits the video, and uploads 1-2 videos a day. See [youtube_agent/README.md](youtube_agent/README.md) for setup.
+`youtube_agent/` runs the Health Support Studio YouTube channel. It picks health topics, writes and fact-checks scripts, narrates them with a free AI voice over branded graphics and stock footage, and uploads 1 video a day as private for review. See [youtube_agent/README.md](youtube_agent/README.md) for setup.

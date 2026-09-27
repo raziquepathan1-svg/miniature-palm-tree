@@ -7,6 +7,7 @@ Usage (from the repo root):
     python -m youtube_agent.main --topic "How do vaccines work?"
     python -m youtube_agent.main --list-avatars    # show your HeyGen avatar/voice IDs
     python -m youtube_agent.main --setup-youtube   # one-time YouTube login
+    python -m youtube_agent.main --voice-sample    # hear the free AI voices
 """
 
 import argparse
@@ -79,7 +80,7 @@ def make_one_video(config: dict, history: list[dict], topic: str | None, dry_run
     stamp = dt.datetime.now().strftime("%Y%m%d-%H%M")
     workdir = OUTPUT_DIR / f"{stamp}-{slugify(plan.title)}"
     workdir.mkdir(parents=True, exist_ok=True)
-    (workdir / "draft_script.txt").write_text("\n\n".join(plan.scenes))
+    (workdir / "draft_script.txt").write_text("\n\n".join(plan.narration()))
 
     sources: list[str] = []
     fact_issues: list[str] = []
@@ -99,27 +100,44 @@ def make_one_video(config: dict, history: list[dict], topic: str | None, dry_run
                                 "status": "rejected_by_fact_check"})
                 save_history(history)
             return
-        plan.scenes = review.corrected_scenes
+        plan.scenes = review.apply_to(plan.scenes)
         sources = review.sources
         fact_issues = review.issues
 
     (workdir / "plan.json").write_text(plan.model_dump_json(indent=2))
-    (workdir / "script.txt").write_text("\n\n".join(plan.scenes))
+    (workdir / "script.txt").write_text("\n\n".join(plan.narration()))
     if script_only:
         print(f"    Script saved to {workdir}")
         return
 
-    from . import editor, heygen
+    from . import editor
 
-    print("3/6 Rendering your avatar video on HeyGen (this can take 5-30 min)...")
-    raw = heygen.render_video(plan.scenes, plan.title, config["avatar"], video_cfg, workdir / "avatar.mp4")
+    shorts = video_cfg.get("format") == "shorts"
+    channel_name = config["channel"].get("name", "")
+    if video_cfg.get("mode") == "avatar":
+        from . import heygen
+
+        print("3/6 Rendering your avatar video on HeyGen (this can take 5-30 min)...")
+        raw = heygen.render_video(plan.narration(), plan.title, config["avatar"], video_cfg, workdir / "avatar.mp4")
+    else:
+        from . import visuals
+
+        print("3/6 Narrating with the free AI voice and building graphics...")
+        raw = visuals.build_video(plan, video_cfg, config.get("voice", {}), channel_name, workdir)
 
     print("4/6 Editing (intro/outro/music)...")
     final = editor.edit_video(raw, config["editing"], video_cfg, HERE, workdir / "final.mp4")
 
     print("5/6 Making thumbnail...")
-    shorts = video_cfg.get("format") == "shorts"
-    thumb = editor.make_thumbnail(final, plan.thumbnail_text, workdir / "thumbnail.jpg", shorts=shorts)
+    if video_cfg.get("mode") == "avatar":
+        thumb = editor.make_thumbnail(final, plan.thumbnail_text, workdir / "thumbnail.jpg", shorts=shorts)
+    else:
+        first_clip = workdir / "scenes" / "01_bg.mp4"
+        frame = None
+        if first_clip.exists():
+            frame = workdir / "thumb_frame.png"
+            editor._run(["-y", "-ss", "1", "-i", str(first_clip), "-frames:v", "1", str(frame)])
+        thumb = visuals.make_thumbnail(plan.thumbnail_text, channel_name, workdir / "thumbnail.jpg", frame)
 
     description = plan.description
     if sources:
@@ -172,6 +190,7 @@ def main() -> None:
     parser.add_argument("--script-only", action="store_true", help="Only write the script")
     parser.add_argument("--list-avatars", action="store_true", help="List HeyGen avatar and voice IDs")
     parser.add_argument("--setup-youtube", action="store_true", help="One-time YouTube login")
+    parser.add_argument("--voice-sample", action="store_true", help="Make short samples of the free AI voices")
     args = parser.parse_args()
 
     if args.list_avatars:
@@ -181,6 +200,17 @@ def main() -> None:
     if args.setup_youtube:
         from . import uploader
         uploader.setup_youtube_login()
+        return
+
+    if args.voice_sample:
+        from . import voice
+        out = OUTPUT_DIR / "voice_samples"
+        out.mkdir(parents=True, exist_ok=True)
+        text = ("Welcome to Health Support Studio. Today, let's talk about what your blood pressure "
+                "numbers really mean, and when you should call your doctor.")
+        for v in ("af_heart", "af_bella", "af_nicole", "af_sarah", "am_michael", "am_fenrir", "am_puck"):
+            voice.narrate_scene(text, {"voice": v}, out / f"{v}.wav")
+            print(f"  {out / (v + '.wav')}")
         return
 
     config = load_config()

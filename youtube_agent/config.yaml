@@ -1,5 +1,6 @@
 # ---- Your channel ----
 channel:
+  name: "Health Support Studio"   # shown on the graphics and thumbnails
   # What your channel teaches. The agent picks every topic from inside this niche.
   niche: >-
     Everyday health and medical topics made simple: understanding common conditions, symptoms and
@@ -46,10 +47,14 @@ channel:
 
 # ---- Video ----
 video:
+  # "voice_slides" = FREE: AI voice + branded graphics + stock video clips (no avatar needed)
+  # "avatar"       = HeyGen talking avatar (paid HeyGen plan with API access)
+  mode: "voice_slides"
+  stock_footage: true          # background video clips from Pexels (free; needs PEXELS_API_KEY)
   target_minutes: 4            # spoken length of each video
   format: "landscape"          # "landscape" (16:9 normal video) or "shorts" (9:16 vertical)
   videos_per_run: 1            # the GitHub schedule runs once a day -> 1 video/day
-  captions: true               # burn subtitles into the video (HeyGen captions)
+  captions: true               # burn subtitles into the video
   fact_check: true             # verify every health claim with web research before recording
   background_color: "#0F172A"
   # The agent rotates through these styles, one per video, so the channel stays varied.
@@ -68,7 +73,14 @@ video:
     - name: "Top Questions"
       instructions: "Answer the 4-6 questions people most often ask about the topic, in a friendly Q&A style."
 
-# ---- Your avatar (from HeyGen) ----
+# ---- Free AI voice (Kokoro, used in voice_slides mode) ----
+# American English voices: af_heart, af_bella, af_nicole, af_sarah (female);
+# am_michael, am_fenrir, am_puck (male). Try them with: python -m youtube_agent.main --voice-sample
+voice:
+  voice: "af_heart"
+  speed: 1.0
+
+# ---- Your avatar (HeyGen, only used when video.mode is "avatar") ----
 # Run `python -m youtube_agent.main --list-avatars` to see your IDs.
 # Can also be set with the HEYGEN_AVATAR_ID / HEYGEN_VOICE_ID environment variables.
 avatar:
@@ -102,7 +114,7 @@ youtube:
     Always talk to your doctor, nurse or pharmacist about your own health. If you think you are
     having a medical emergency, call 911 right away.
 
-    This video is presented by an AI avatar. The script is AI-assisted
+    This video uses an AI-generated voice. The script is AI-assisted
     and fact-checked against trusted health sources.
 
     Health Support Studio | Business inquiries: healthsupportstudio@gmail.com

@@ -34,6 +34,14 @@ jobs:
         with:
           python-version: "3.11"
 
+      - name: Cache voice model and fonts
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cache/kokoro
+            ~/.cache/yt-agent-fonts
+          key: voice-model-kokoro-v1.0
+
       - name: Install dependencies
         run: |
           sudo apt-get update -q && sudo apt-get install -y -q ffmpeg fonts-dejavu-core
@@ -42,6 +50,7 @@ jobs:
       - name: Make and upload video
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
           HEYGEN_API_KEY: ${{ secrets.HEYGEN_API_KEY }}
           HEYGEN_AVATAR_ID: ${{ secrets.HEYGEN_AVATAR_ID }}
           HEYGEN_VOICE_ID: ${{ secrets.HEYGEN_VOICE_ID }}

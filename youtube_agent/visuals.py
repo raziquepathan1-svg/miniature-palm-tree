@@ -1,0 +1,428 @@
+"""Builds a narrated explainer video: branded slides + optional stock footage + burned-in captions.
+
+No avatar needed. Each scene = background (Pexels stock clip, or an animated brand gradient)
++ a graphic overlay drawn from the scene's layout/heading/points + the narration + captions.
+"""
+
+import os
+import re
+import subprocess
+from pathlib import Path
+
+import requests
+from PIL import Image, ImageDraw, ImageFont
+
+from .editor import ffmpeg_bin
+
+FPS = 30
+FONT_DIR = Path(os.environ.get("FONT_DIR", Path.home() / ".cache" / "yt-agent-fonts"))
+
+# Brand colors (match the channel banner and logo)
+NAVY = (11, 37, 69)
+TEAL = (20, 184, 166)
+MINT = (207, 245, 239)
+CORAL = (255, 107, 107)
+YELLOW = (255, 212, 0)
+WHITE = (255, 255, 255)
+RED = (229, 57, 53)
+
+
+# ---------------------------------------------------------------- fonts
+def ensure_fonts() -> None:
+    """Download Poppins (Open Font License) from Google Fonts once; fall back to DejaVu if offline."""
+    FONT_DIR.mkdir(parents=True, exist_ok=True)
+    for weight in (500, 700, 800):
+        dest = FONT_DIR / f"Poppins-{weight}.ttf"
+        if dest.exists():
+            continue
+        try:
+            css = requests.get(
+                f"https://fonts.googleapis.com/css2?family=Poppins:wght@{weight}",
+                headers={"User-Agent": "Mozilla/4.0"}, timeout=30,
+            ).text
+            url = re.search(r"url\((https://[^)]+\.ttf)\)", css).group(1)
+            dest.write_bytes(requests.get(url, timeout=60).content)
+        except Exception as e:  # offline: Pillow/libass fall back to system fonts
+            print(f"  (Could not download Poppins font: {e})")
+            return
+
+
+def font(size: int, weight: int = 700) -> ImageFont.FreeTypeFont:
+    for path in (
+        FONT_DIR / f"Poppins-{weight}.ttf",
+        Path("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"),
+        Path("/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf"),
+    ):
+        if path.exists():
+            return ImageFont.truetype(str(path), size)
+    return ImageFont.load_default(size=size)
+
+
+def caption_font_name() -> str:
+    return "Poppins" if (FONT_DIR / "Poppins-700.ttf").exists() else "DejaVu Sans"
+
+
+# ---------------------------------------------------------------- drawing helpers
+def _wrap(draw: ImageDraw.ImageDraw, text: str, fnt, max_w: int) -> list[str]:
+    lines, line = [], ""
+    for word in text.split():
+        trial = f"{line} {word}".strip()
+        if draw.textlength(trial, font=fnt) <= max_w or not line:
+            line = trial
+        else:
+            lines.append(line)
+            line = word
+    if line:
+        lines.append(line)
+    return lines
+
+
+def _text_block(draw, xy, text, fnt, fill, max_w, line_gap=1.15, anchor_center=False) -> int:
+    """Draw wrapped text; returns the y below the block."""
+    x, y = xy
+    size = fnt.size
+    for line in _wrap(draw, text, fnt, max_w):
+        if anchor_center:
+            w = draw.textlength(line, font=fnt)
+            draw.text((x + (max_w - w) / 2, y), line, font=fnt, fill=fill)
+        else:
+            draw.text((x, y), line, font=fnt, fill=fill)
+        y += int(size * line_gap)
+    return y
+
+
+def _cross_icon(draw, cx, cy, s, fill=WHITE, pulse=CORAL):
+    arm = s * 0.3
+    r = s * 0.09
+    draw.rounded_rectangle((cx - arm / 2, cy - s / 2, cx + arm / 2, cy + s / 2), r, fill=fill)
+    draw.rounded_rectangle((cx - s / 2, cy - arm / 2, cx + s / 2, cy + arm / 2), r, fill=fill)
+    k = s / 200
+    pts = [(8, 100), (78, 100), (90, 62), (104, 140), (118, 82), (128, 100), (192, 100)]
+    draw.line([(cx - s / 2 + px * k, cy - s / 2 + py * k) for px, py in pts], fill=pulse,
+              width=max(3, int(12 * k)), joint="curve")
+
+
+def _check_icon(draw, x, y, s, color=WHITE):
+    w = max(3, int(s * 0.16))
+    draw.line([(x, y + s * 0.55), (x + s * 0.38, y + s * 0.9), (x + s, y + s * 0.15)], fill=color, width=w, joint="curve")
+
+
+def _x_icon(draw, x, y, s, color=WHITE):
+    w = max(3, int(s * 0.16))
+    draw.line([(x + s * 0.1, y + s * 0.1), (x + s * 0.9, y + s * 0.9)], fill=color, width=w)
+    draw.line([(x + s * 0.9, y + s * 0.1), (x + s * 0.1, y + s * 0.9)], fill=color, width=w)
+
+
+def _lines_h(draw, text, fnt, max_w, gap=1.15) -> int:
+    return len(_wrap(draw, text, fnt, max_w)) * int(fnt.size * gap)
+
+
+def _panel(size, box, color=NAVY, alpha=215, radius=36):
+    layer = Image.new("RGBA", size, (0, 0, 0, 0))
+    ImageDraw.Draw(layer).rounded_rectangle(box, radius, fill=(*color, alpha))
+    return layer
+
+
+# ---------------------------------------------------------------- slide overlay
+def render_overlay(scene, size: tuple[int, int], channel_name: str, out_png: Path) -> Path:
+    """Draw the scene's graphic on a transparent canvas (captions go in the bottom ~22%)."""
+    W, H = size
+    portrait = H > W
+    u = W / 1920 if not portrait else W / 1080  # scale unit
+    img = Image.new("RGBA", size, (0, 0, 0, 0))
+    d = ImageDraw.Draw(img)
+
+    # Brand tag (top-left)
+    tag_h = int(64 * u)
+    _cross_icon(d, int(60 * u), int(60 * u), tag_h)
+    d.text((int(105 * u), int(38 * u)), channel_name.upper(), font=font(int(34 * u), 700), fill=WHITE)
+
+    margin = int(110 * u)
+    content_top = int((300 if portrait else 170) * u)
+    content_bottom = int(H * (0.72 if portrait else 0.76))
+    max_w = W - 2 * margin
+    layout = scene.layout
+    heading, points = scene.heading, [p for p in scene.points if p.strip()]
+
+    def card(top, bottom, color=NAVY, alpha=215):
+        img.alpha_composite(_panel(size, (margin - int(40 * u), top, W - margin + int(40 * u), bottom), color, alpha))
+
+    if layout == "title":
+        f = font(int((110 if not portrait else 104) * u), 800)
+        lines = _wrap(d, heading, f, max_w)
+        block_h = len(lines) * int(f.size * 1.12) + (int(110 * u) if points else int(40 * u))
+        y = (content_top + content_bottom - block_h) // 2
+        card(y - int(60 * u), y + block_h + int(50 * u), alpha=170)
+        y = _text_block(d, (margin, y), heading, f, WHITE, max_w, 1.12, anchor_center=True)
+        d.rounded_rectangle((W / 2 - 90 * u, y + 22 * u, W / 2 + 90 * u, y + 34 * u), 6, fill=CORAL)
+        if points:
+            _text_block(d, (margin, y + int(55 * u)), points[0], font(int(46 * u), 500), MINT, max_w, anchor_center=True)
+
+    elif layout == "big_number":
+        f = font(int(230 * u), 800)
+        pf = font(int(54 * u), 700)
+        block_h = _lines_h(d, heading, f, max_w, 1.1) + sum(_lines_h(d, p, pf, max_w) + int(10 * u) for p in points[:3])
+        y = max(content_top, (content_top + content_bottom - block_h) // 2)
+        card(y - int(50 * u), y + block_h + int(50 * u), alpha=185)
+        y = _text_block(d, (margin, y - int(30 * u)), heading, f, YELLOW, max_w, 1.1, anchor_center=True) + int(25 * u)
+        for p in points[:3]:
+            y = _text_block(d, (margin, y + int(10 * u)), p, pf, WHITE, max_w, anchor_center=True)
+
+    elif layout == "myth_fact":
+        myth = points[0] if points else heading
+        fact = points[1] if len(points) > 1 else ""
+        if portrait:
+            boxes = [(margin - 40 * u, content_top, W - margin + 40 * u, (content_top + content_bottom) / 2 - 20 * u),
+                     (margin - 40 * u, (content_top + content_bottom) / 2 + 20 * u, W - margin + 40 * u, content_bottom)]
+        else:
+            mid = W / 2
+            boxes = [(margin - 40 * u, content_top, mid - 25 * u, content_bottom),
+                     (mid + 25 * u, content_top, W - margin + 40 * u, content_bottom)]
+        for (x0, y0, x1, y1), label, color, text in ((boxes[0], "MYTH", CORAL, myth), (boxes[1], "FACT", TEAL, fact)):
+            img.alpha_composite(_panel(size, (int(x0), int(y0), int(x1), int(y1)), NAVY, 220))
+            d.rounded_rectangle((x0, y0, x1, y0 + 95 * u), int(36 * u), fill=color)
+            d.rectangle((x0, y0 + 60 * u, x1, y0 + 95 * u), fill=color)
+            (_x_icon if label == "MYTH" else _check_icon)(d, x0 + 45 * u, y0 + 25 * u, 46 * u)
+            d.text((x0 + 115 * u, y0 + 14 * u), label, font=font(int(56 * u), 800), fill=WHITE)
+            _text_block(d, (int(x0 + 45 * u), int(y0 + 135 * u)), text, font(int(52 * u), 700), WHITE,
+                        int(x1 - x0 - 90 * u))
+
+    else:  # bullets / warning / outro
+        accent = RED if layout == "warning" else TEAL
+        hf = font(int(76 * u), 800)
+        pf = font(int(52 * u), 700)
+        head_w = max_w - (int(110 * u) if layout == "warning" else 0)
+        block_h = (_lines_h(d, heading, hf, head_w) + int(20 * u)
+                   + sum(_lines_h(d, p, pf, max_w - int(70 * u)) + int(16 * u) for p in points[:4])
+                   + (int(110 * u) if layout == "warning" else 0) + (int((230 if portrait else 150) * u) if layout == "outro" else 0))
+        y = max(content_top, (content_top + content_bottom - block_h) // 2)
+        bottom = min(content_bottom, y + block_h + int(20 * u))
+        card(y - int(40 * u), bottom, alpha=210)
+        d.rounded_rectangle((margin - 40 * u, y - 40 * u, margin - 22 * u, bottom), 8, fill=accent)
+        if layout == "warning":
+            tri = [(margin, y + 70 * u), (margin + 40 * u, y), (margin + 80 * u, y + 70 * u)]
+            d.polygon(tri, fill=RED)
+            d.text((margin + 33 * u, y + 12 * u), "!", font=font(int(50 * u), 800), fill=WHITE)
+            y = _text_block(d, (margin + int(110 * u), y - int(8 * u)), heading, hf, WHITE, max_w - int(110 * u))
+        else:
+            y = _text_block(d, (margin, y - int(8 * u)), heading, hf, WHITE, max_w)
+        y += int(20 * u)
+        for p in points[:4]:
+            cx, cy = margin + int(24 * u), y + int(33 * u)
+            d.ellipse((cx - 20 * u, cy - 20 * u, cx + 20 * u, cy + 20 * u), fill=accent)
+            y = _text_block(d, (margin + int(70 * u), y), p, pf, WHITE, max_w - int(70 * u)) + int(16 * u)
+        if layout == "warning":
+            d.text((margin, bottom - int(80 * u)), "In an emergency, call 911.",
+                   font=font(int(44 * u), 800), fill=YELLOW)
+        if layout == "outro":
+            pill_w, pill_h = int(420 * u), int(90 * u)
+            px, py = margin, bottom - pill_h - int(30 * u)
+            d.rounded_rectangle((px, py, px + pill_w, py + pill_h), pill_h // 2, fill=RED)
+            sf = font(int(44 * u), 800)
+            d.text((px + (pill_w - d.textlength("SUBSCRIBE", font=sf)) / 2, py + 18 * u), "SUBSCRIBE", font=sf, fill=WHITE)
+            note = "Educational only. Not medical advice."
+            if portrait:  # not enough width beside the button: put the note above it
+                d.text((px, py - int(65 * u)), note, font=font(int(34 * u), 500), fill=MINT)
+            else:
+                d.text((px + pill_w + int(30 * u), py + 24 * u), note, font=font(int(34 * u), 500), fill=MINT)
+
+    img.save(out_png)
+    return out_png
+
+
+def render_background(size: tuple[int, int], out_png: Path) -> Path:
+    """Brand gradient with a faint cross pattern (used when no stock footage is available)."""
+    import numpy as np
+
+    W, H = size
+    c0, c1 = np.array((11, 37, 69), float), np.array((14, 124, 123), float)
+    t = np.clip(np.add.outer(np.arange(H) / H * 0.6, np.arange(W) / W * 0.6), 0, 1)[..., None]
+    img = Image.fromarray((c0 + (c1 - c0) * t).astype(np.uint8), "RGB")
+    d = ImageDraw.Draw(img, "RGBA")
+    step = max(60, W // 32)
+    for y in range(step // 2, H, step):
+        for x in range(step // 2, W, step):
+            d.rectangle((x - 6, y - 2, x + 6, y + 2), fill=(255, 255, 255, 14))
+            d.rectangle((x - 2, y - 6, x + 2, y + 6), fill=(255, 255, 255, 14))
+    img.save(out_png)
+    return out_png
+
+
+# ---------------------------------------------------------------- stock footage (Pexels, free)
+def fetch_footage(query: str, size: tuple[int, int], dest: Path, used: set) -> Path | None:
+    key = os.environ.get("PEXELS_API_KEY")
+    if not key or not query:
+        return None
+    W, H = size
+    orientation = "portrait" if H > W else "landscape"
+    try:
+        r = requests.get(
+            "https://api.pexels.com/videos/search",
+            params={"query": query, "orientation": orientation, "size": "medium", "per_page": 10},
+            headers={"Authorization": key}, timeout=30,
+        )
+        r.raise_for_status()
+        for video in r.json().get("videos", []):
+            if video["id"] in used:
+                continue
+            files = [f for f in video.get("video_files", [])
+                     if f.get("file_type") == "video/mp4" and f.get("width") and f.get("height")
+                     and min(f["width"], f["height"]) >= 720]
+            if not files:
+                continue
+            best = min(files, key=lambda f: abs(f["width"] - W))
+            with requests.get(best["link"], stream=True, timeout=120) as dl:
+                dl.raise_for_status()
+                with open(dest, "wb") as fh:
+                    for chunk in dl.iter_content(1 << 20):
+                        fh.write(chunk)
+            used.add(video["id"])
+            return dest
+    except Exception as e:
+        print(f"  (No stock footage for '{query}': {e})")
+    return None
+
+
+# ---------------------------------------------------------------- captions
+def _ass_time(t: float) -> str:
+    cs = int(round(t * 100))
+    h, cs = divmod(cs, 360000)
+    m, cs = divmod(cs, 6000)
+    s, cs = divmod(cs, 100)
+    return f"{h}:{m:02d}:{s:02d}.{cs:02d}"
+
+
+def write_ass(captions: list[tuple[float, float, str]], size: tuple[int, int], out: Path) -> Path:
+    W, H = size
+    portrait = H > W
+    fs = int(W * (0.075 if portrait else 0.036))
+    margin_v = int(H * (0.12 if portrait else 0.07))
+    header = f"""[Script Info]
+ScriptType: v4.00+
+PlayResX: {W}
+PlayResY: {H}
+WrapStyle: 0
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,{caption_font_name()},{fs},&H00FFFFFF,&H00FFFFFF,&H00000000,&H96000000,-1,0,0,0,100,100,0,0,1,{max(3, fs // 12)},2,2,60,60,{margin_v},1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+"""
+    lines = [
+        f"Dialogue: 0,{_ass_time(a)},{_ass_time(b)},Cap,,0,0,0,,{text.replace(chr(10), ' ')}"
+        for a, b, text in captions
+    ]
+    out.write_text(header + "\n".join(lines) + "\n")
+    return out
+
+
+# ---------------------------------------------------------------- assembly
+def _run(args: list[str]) -> None:
+    proc = subprocess.run([ffmpeg_bin(), "-hide_banner", "-loglevel", "error", *args], capture_output=True, text=True)
+    if proc.returncode != 0:
+        raise RuntimeError(f"ffmpeg failed:\n{proc.stderr[-3000:]}")
+
+
+def _escape_filter_path(p: Path) -> str:
+    return str(p).replace("\\", "/").replace(":", r"\:").replace("'", r"\'")
+
+
+def render_scene(bg: Path, is_video: bool, overlay: Path, wav: Path, ass: Path | None,
+                 duration: float, size: tuple[int, int], out: Path) -> Path:
+    W, H = size
+    frames = int(duration * FPS) + 1
+    if is_video:
+        bg_in = ["-stream_loop", "-1", "-i", str(bg)]
+        bg_f = (f"[0:v]scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},fps={FPS},"
+                f"eq=brightness=-0.10:saturation=0.85,setsar=1[bg]")
+    else:  # slow zoom on the still gradient
+        bg_in = ["-loop", "1", "-i", str(bg)]
+        bg_f = (f"[0:v]scale={W * 2}:{H * 2},zoompan=z='min(zoom+0.0004,1.08)':d={frames}"
+                f":x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':s={W}x{H}:fps={FPS},setsar=1[bg]")
+    fade_out = max(0.0, duration - 0.3)
+    chain = [
+        bg_f,
+        "[1:v]format=rgba,fade=t=in:st=0.15:d=0.5:alpha=1[ov]",
+        f"[bg][ov]overlay=0:0,fade=t=in:st=0:d=0.3,fade=t=out:st={fade_out:.2f}:d=0.3",
+    ]
+    if ass:
+        fonts = f":fontsdir='{_escape_filter_path(FONT_DIR)}'" if FONT_DIR.exists() else ""
+        chain[-1] += f",subtitles='{_escape_filter_path(ass)}'{fonts}"
+    chain[-1] += ",format=yuv420p[v]"
+    _run([
+        "-y", *bg_in, "-loop", "1", "-i", str(overlay), "-i", str(wav),
+        "-filter_complex", ";".join(chain),
+        "-map", "[v]", "-map", "2:a", "-t", f"{duration:.3f}",
+        "-c:v", "libx264", "-preset", "veryfast", "-crf", "21", "-r", str(FPS),
+        "-c:a", "aac", "-b:a", "160k", "-ar", "48000", "-ac", "2",
+        str(out),
+    ])
+    return out
+
+
+def concat(parts: list[Path], out: Path) -> Path:
+    listfile = out.with_suffix(".txt")
+    listfile.write_text("".join(f"file '{p.resolve()}'\n" for p in parts))
+    _run(["-y", "-f", "concat", "-safe", "0", "-i", str(listfile), "-c", "copy", "-movflags", "+faststart", str(out)])
+    return out
+
+
+def build_video(plan, video_cfg: dict, voice_cfg: dict, channel_name: str, workdir: Path) -> Path:
+    """Narrate every scene, render its graphic, and join everything into one captioned video."""
+    from . import voice
+
+    ensure_fonts()
+    size = (1080, 1920) if video_cfg.get("format") == "shorts" else (1920, 1080)
+    scenes_dir = workdir / "scenes"
+    scenes_dir.mkdir(parents=True, exist_ok=True)
+    gradient = render_background(size, scenes_dir / "gradient.png")
+    use_footage = video_cfg.get("stock_footage", True)
+    used: set = set()
+
+    parts = []
+    for i, scene in enumerate(plan.scenes, 1):
+        print(f"    Scene {i}/{len(plan.scenes)}: {scene.layout} - {scene.heading}")
+        wav = scenes_dir / f"{i:02d}.wav"
+        duration, captions = voice.narrate_scene(scene.narration, voice_cfg, wav)
+        overlay = render_overlay(scene, size, channel_name, scenes_dir / f"{i:02d}_overlay.png")
+        ass = write_ass(captions, size, scenes_dir / f"{i:02d}.ass") if video_cfg.get("captions", True) else None
+        clip = fetch_footage(scene.footage_query, size, scenes_dir / f"{i:02d}_bg.mp4", used) if use_footage else None
+        parts.append(render_scene(clip or gradient, clip is not None, overlay, wav, ass, duration, size,
+                                  scenes_dir / f"{i:02d}.mp4"))
+    return concat(parts, workdir / "narrated.mp4")
+
+
+# ---------------------------------------------------------------- thumbnail
+def make_thumbnail(text: str, channel_name: str, out: Path, background: Path | None = None) -> Path:
+    """Bold branded thumbnail (1280x720). Uses a video frame as background if given."""
+    W, H = 1280, 720
+    if background and background.exists():
+        img = Image.open(background).convert("RGB")
+        scale = max(W / img.width, H / img.height)
+        img = img.resize((int(img.width * scale) + 1, int(img.height * scale) + 1))
+        img = img.crop(((img.width - W) // 2, (img.height - H) // 2, (img.width - W) // 2 + W, (img.height - H) // 2 + H))
+    else:
+        tmp = out.with_suffix(".bg.png")
+        img = Image.open(render_background((W, H), tmp)).convert("RGB")
+        tmp.unlink(missing_ok=True)
+    img = img.convert("RGBA")
+    shade = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    sd = ImageDraw.Draw(shade)
+    for x in range(W):
+        sd.line([(x, 0), (x, H)], fill=(11, 37, 69, int(235 * max(0.0, 1 - x / (W * 0.85)))))
+    img.alpha_composite(shade)
+    d = ImageDraw.Draw(img)
+    _cross_icon(d, 1110, 150, 190)
+    f = font(104, 800)
+    lines = _wrap(d, text.upper(), f, 820)[:4]
+    y = (H - len(lines) * 112) // 2
+    for line in lines:
+        d.text((60, y), line, font=f, fill=YELLOW, stroke_width=6, stroke_fill=(0, 0, 0))
+        y += 112
+    d.rounded_rectangle((60, H - 95, 60 + d.textlength(channel_name.upper(), font=font(30, 700)) + 40, H - 45),
+                        25, fill=(*TEAL, 255))
+    d.text((80, H - 90), channel_name.upper(), font=font(30, 700), fill=WHITE)
+    img.convert("RGB").save(out, "JPEG", quality=90)
+    return out

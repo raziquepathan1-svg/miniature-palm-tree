@@ -19,7 +19,7 @@ New health videos every day. Subscribe and turn on notifications so you never mi
 
 Disclaimer: This channel is for general education only and is not medical advice. Always talk to your own doctor, nurse or pharmacist about your health. In an emergency, call 911.
 
-Videos are presented by an AI avatar, and every script is fact-checked against trusted health sources such as the CDC and NIH.
+Videos use an AI-generated voice, and every script is fact-checked against trusted health sources such as the CDC and NIH.
 
 📧 Business inquiries: healthsupportstudio@gmail.com
 

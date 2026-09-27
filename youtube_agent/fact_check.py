@@ -16,11 +16,26 @@ TRUSTED_SOURCES = (
 )
 
 
+class CorrectedScene(BaseModel):
+    narration: str
+    heading: str
+    points: list[str]
+
+
 class Review(BaseModel):
     approved: bool
     issues: list[str]
-    corrected_scenes: list[str]
+    corrected_scenes: list[CorrectedScene]
     sources: list[str]
+
+    def apply_to(self, scenes: list) -> list:
+        """Copy corrected text onto the original scene objects (keeping layout and footage)."""
+        if len(self.corrected_scenes) != len(scenes):
+            raise RuntimeError("Fact-check changed the number of scenes; video skipped to be safe.")
+        return [
+            s.model_copy(update={"narration": c.narration, "heading": c.heading, "points": c.points})
+            for s, c in zip(scenes, self.corrected_scenes)
+        ]
 
 
 SUBMIT_TOOL = {
@@ -42,8 +57,18 @@ SUBMIT_TOOL = {
             },
             "corrected_scenes": {
                 "type": "array",
-                "items": {"type": "string"},
-                "description": "The full script scenes after corrections, same structure as the input.",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "narration": {"type": "string"},
+                        "heading": {"type": "string"},
+                        "points": {"type": "array", "items": {"type": "string"}},
+                    },
+                    "required": ["narration", "heading", "points"],
+                    "additionalProperties": False,
+                },
+                "description": "Every scene after corrections, in the same order and the SAME NUMBER of scenes "
+                "as the input. Unchanged scenes are copied as-is.",
             },
             "sources": {
                 "type": "array",
@@ -57,8 +82,12 @@ SUBMIT_TOOL = {
 }
 
 
-def fact_check(topic: str, scenes: list[str]) -> Review:
-    script = "\n\n".join(f"[Scene {i + 1}]\n{s}" for i, s in enumerate(scenes))
+def fact_check(topic: str, scenes: list) -> Review:
+    script = "\n\n".join(
+        f"[Scene {i + 1}]\nNarration: {s.narration}\nOn-screen heading: {s.heading}\n"
+        f"On-screen points: {' | '.join(s.points) or '(none)'}"
+        for i, s in enumerate(scenes)
+    )
     prompt = f"""You are a meticulous medical fact-checker for a health-education YouTube channel
 for a US audience.
 
@@ -67,8 +96,8 @@ Topic: {topic}
 Script:
 {script}
 
-Check EVERY factual health claim (numbers, symptoms, doses, risks, recommendations, guidelines)
-using web search. Prefer current US guidance from: {TRUSTED_SOURCES}.
+Check EVERY factual health claim (numbers, symptoms, doses, risks, recommendations, guidelines),
+in both the narration and the on-screen text, using web search. Prefer current US guidance from: {TRUSTED_SOURCES}.
 
 Fix anything that is wrong, outdated, overstated, or missing an important safety caveat. Also make sure:
 - No individual diagnosis, no specific medication doses for self-treatment, no advice to start, stop or
