@@ -114,7 +114,8 @@ When done, call submit_review."""
     tools = [{"type": "web_search_20260209", "name": "web_search", "max_uses": 15}, SUBMIT_TOOL]
 
     for _ in range(MAX_ROUNDS):
-        response = client.beta.messages.create(
+        # Streaming is required for long responses (web research + a full corrected script).
+        with client.beta.messages.stream(
             model=MODEL,
             max_tokens=32000,
             thinking={"type": "adaptive"},
@@ -122,11 +123,14 @@ When done, call submit_review."""
             fallbacks="default",
             tools=tools,
             messages=messages,
-        )
+        ) as stream:
+            response = stream.get_final_message()
         messages.append({"role": "assistant", "content": response.content})
 
         if response.stop_reason == "refusal":
             raise RuntimeError("Fact-check was declined by the model; video skipped.")
+        if response.stop_reason == "max_tokens":
+            raise RuntimeError("Fact-check response was cut off (max_tokens); video skipped to be safe.")
         if response.stop_reason == "pause_turn":
             continue  # long web-search turn; resend to let it finish
 
