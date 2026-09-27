@@ -2,7 +2,7 @@
 
 Fully automatic educational YouTube channel presented by **your own AI avatar**.
 
-This channel is set up as **Health Notes**, everyday health and medical education for a **US audience in American English**.
+This channel is set up as **Health Support Studio**, everyday health and medical education for a **US audience in American English**.
 
 Every run it:
 1. **Picks a topic.** It takes the next one from the `topic_queue` in `config.yaml` (20 starter topics are included), then invents new ones in your niche without repeating itself.

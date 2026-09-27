@@ -5,7 +5,7 @@ channel:
     Everyday health and medical topics made simple: understanding common conditions, symptoms and
     when to see a doctor, medications and safety, prevention and healthy habits, first aid,
     making sense of tests and hospital visits, and navigating the US healthcare system.
-  presenter: "the host of Health Notes, a friendly, trustworthy health educator (do not call the host a nurse or doctor)"
+  presenter: "the host of Health Support Studio, a friendly, trustworthy health educator (do not call the host a nurse or doctor)"
   audience: "Adults in the United States, including patients, caregivers and parents, age 18+"
   country: "United States"     # target market: American spelling, examples, units and references
   language: "English"
@@ -84,3 +84,5 @@ youtube:
 
     This video is presented by an AI avatar. The script is AI-assisted
     and fact-checked against trusted health sources.
+
+    Health Support Studio | Business inquiries: healthsupportstudio@gmail.com
