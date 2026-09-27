@@ -60,7 +60,7 @@ SUBMIT_TOOL = {
 def fact_check(topic: str, scenes: list[str]) -> Review:
     script = "\n\n".join(f"[Scene {i + 1}]\n{s}" for i, s in enumerate(scenes))
     prompt = f"""You are a meticulous medical fact-checker for a health-education YouTube channel
-presented by a registered nurse, for a US audience.
+for a US audience.
 
 Topic: {topic}
 

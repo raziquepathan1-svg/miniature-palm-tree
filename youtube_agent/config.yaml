@@ -2,15 +2,15 @@
 channel:
   # What your channel teaches. The agent picks every topic from inside this niche.
   niche: >-
-    Everyday health explained by a nurse: understanding common conditions, symptoms and
+    Everyday health and medical topics made simple: understanding common conditions, symptoms and
     when to see a doctor, medications and safety, prevention and healthy habits, first aid,
     making sense of tests and hospital visits, and navigating the US healthcare system.
-  presenter: "a registered nurse (the channel owner), speaking as a friendly, trustworthy nurse educator"
+  presenter: "the host of Health Notes, a friendly, trustworthy health educator (do not call the host a nurse or doctor)"
   audience: "Adults in the United States, including patients, caregivers and parents, age 18+"
   country: "United States"     # target market: American spelling, examples, units and references
   language: "English"
   language_code: "en-US"       # tells YouTube the video's language
-  tone: "Warm, calm, reassuring nurse; plain language, no jargon without explaining it"
+  tone: "Warm, calm, reassuring health educator; plain language, no jargon without explaining it"
   # Extra rules for every script (health content has to be careful).
   content_rules: |-
     - Educational only: never diagnose, never give personal medical advice, never tell viewers to
@@ -18,8 +18,8 @@ channel:
     - Follow current US guidance (CDC, NIH, FDA, USPSTF, major medical associations). No unproven
       treatments, no "miracle cures", no fear-mongering.
     - Always include red-flag symptoms that need urgent care when relevant ("call 911 if...").
-    - Never invent personal stories, patient cases or quotes. The presenter may say "as a nurse" when
-      explaining general practice, but must not claim specific experiences.
+    - Never invent personal stories, patient cases or quotes. Do not mention the presenter's profession
+      or claim personal experiences.
     - End the video with a short spoken reminder that the video is for education, not medical advice.
   # Topics covered first, in order. After these, the agent picks new topics itself.
   topic_queue:
@@ -36,7 +36,7 @@ channel:
     - "Over-the-counter pain relievers: acetaminophen vs ibuprofen safety"
     - "How to prevent a fall at home for older adults"
     - "Sleep: how much you really need and how to improve it"
-    - "What a nurse wishes you knew before going to the hospital"
+    - "What to know before going to the hospital"
     - "Hand-only CPR: how to save a life in 2 minutes"
     - "Sepsis: the emergency most people have never heard of"
     - "Cholesterol explained: LDL, HDL and triglycerides"
@@ -82,5 +82,5 @@ youtube:
     Always talk to your doctor, nurse or pharmacist about your own health. If you think you are
     having a medical emergency, call 911 right away.
 
-    This video is presented by an AI avatar of a registered nurse. The script is AI-assisted
+    This video is presented by an AI avatar. The script is AI-assisted
     and fact-checked against trusted health sources.

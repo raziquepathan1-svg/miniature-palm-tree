@@ -1,20 +1,20 @@
 # Channel branding
 
 ## Channel name ideas
-1. **Nurse Notes** (recommended; used in the logo and banner)
-2. Ask the Nurse Daily
-3. The Nurse Explains
-4. Nurse Next Door Health
-5. Scrubs & Science
-6. Health Made Simple with Nurse [Your Name]
+1. **Health Notes** (recommended; used in the banner)
+2. Health Notes Daily
+3. Medical Made Simple
+4. Health Explained Daily
+5. The Health Desk
+6. Everyday Medical Explained
 
-Handle: `@NurseNotesHealth` (or `@NurseNotes` if it's available)
+Handle: `@HealthNotesDaily` (or `@HealthNotes` if it's available)
 
 ## Channel description (paste into YouTube Studio → Customization → Basic info)
 
-Everyday health, explained by a registered nurse.
+Everyday health and medical topics, made simple.
 
-Welcome to Nurse Notes! Every day I break down the health questions people actually ask, in plain, simple English:
+Welcome to Health Notes! Every day we break down the health questions people actually ask, in plain, simple English:
 • What your blood pressure, cholesterol and blood test numbers really mean
 • Warning signs you should never ignore, and when to call 911
 • Medication safety, and how to use over-the-counter medicines correctly
@@ -25,10 +25,10 @@ New videos every day at 12 PM and 6 PM ET. Subscribe and turn on notifications s
 
 Disclaimer: This channel is for general education only and is not medical advice. Always talk to your own doctor, nurse or pharmacist about your health. In an emergency, call 911.
 
-Videos are presented by an AI avatar of a registered nurse, and every script is fact-checked against trusted health sources such as the CDC and NIH.
+Videos are presented by an AI avatar, and every script is fact-checked against trusted health sources such as the CDC and NIH.
 
 ## Channel keywords (Studio → Settings → Channel)
-nurse, health education, nursing, medical explained, health tips, blood pressure, diabetes, first aid, CPR, heart health, medication safety, nurse explains, healthcare USA, wellness, patient education
+health, health education, medical explained, health tips, blood pressure, diabetes, first aid, CPR, heart health, medication safety, medical topics, healthcare USA, wellness, patient education, health notes
 
 ## Upload the images
 - **Logo**: `logo.png` (800×800). Studio → Customization → Branding → Picture.
