@@ -6,7 +6,15 @@ import os
 import anthropic
 from pydantic import BaseModel, ValidationError
 
-MODEL = os.environ.get("AGENT_MODEL", "claude-opus-5")
+# Sonnet 5 keeps quality high at a fraction of Opus's cost (budget choice).
+MODEL = os.environ.get("AGENT_MODEL", "claude-sonnet-5")
+
+
+def _fallback_kwargs() -> dict:
+    """Server-side refusal fallbacks are documented for the Opus/Fable tiers only."""
+    if MODEL.startswith(("claude-opus", "claude-fable")):
+        return {"betas": ["server-side-fallback-2026-07-01"], "fallbacks": "default"}
+    return {}
 MAX_ROUNDS = 12
 
 TRUSTED_SOURCES = (
@@ -97,7 +105,8 @@ Script:
 {script}
 
 Check EVERY factual health claim (numbers, symptoms, doses, risks, recommendations, guidelines),
-in both the narration and the on-screen text, using web search. Prefer current US guidance from: {TRUSTED_SOURCES}.
+in both the narration and the on-screen text. Use web search (up to 6 searches) to verify the key
+numbers and recommendations against official sources; search for the most important claims first. Prefer current US guidance from: {TRUSTED_SOURCES}.
 
 Fix anything that is wrong, outdated, overstated, or missing an important safety caveat. Also make sure:
 - No individual diagnosis, no specific medication doses for self-treatment, no advice to start, stop or
@@ -111,7 +120,7 @@ When done, call submit_review."""
 
     client = anthropic.Anthropic()
     messages = [{"role": "user", "content": prompt}]
-    tools = [{"type": "web_search_20260209", "name": "web_search", "max_uses": 15}, SUBMIT_TOOL]
+    tools = [{"type": "web_search_20260209", "name": "web_search", "max_uses": 6}, SUBMIT_TOOL]
 
     for _ in range(MAX_ROUNDS):
         # Streaming is required for long responses (web research + a full corrected script).
@@ -119,8 +128,8 @@ When done, call submit_review."""
             model=MODEL,
             max_tokens=32000,
             thinking={"type": "adaptive"},
-            betas=["server-side-fallback-2026-07-01"],
-            fallbacks="default",
+            output_config={"effort": "medium"},  # thorough enough to verify claims, cheaper than high
+            **_fallback_kwargs(),
             tools=tools,
             messages=messages,
         ) as stream:

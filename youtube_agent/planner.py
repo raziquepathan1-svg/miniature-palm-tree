@@ -6,7 +6,15 @@ from typing import Literal
 import anthropic
 from pydantic import BaseModel, Field
 
-MODEL = os.environ.get("AGENT_MODEL", "claude-opus-5")
+# Sonnet 5 keeps quality high at a fraction of Opus's cost (budget choice).
+MODEL = os.environ.get("AGENT_MODEL", "claude-sonnet-5")
+
+
+def _fallback_kwargs() -> dict:
+    """Server-side refusal fallbacks are documented for the Opus/Fable tiers only."""
+    if MODEL.startswith(("claude-opus", "claude-fable")):
+        return {"betas": ["server-side-fallback-2026-07-01"], "fallbacks": "default"}
+    return {}
 WORDS_PER_MINUTE = 150
 
 
@@ -94,8 +102,7 @@ Write a script of about {target_words} spoken words. Requirements:
         model=MODEL,
         max_tokens=16000,
         thinking={"type": "adaptive"},
-        betas=["server-side-fallback-2026-07-01"],
-        fallbacks="default",
+        **_fallback_kwargs(),
         messages=[{"role": "user", "content": prompt}],
         output_format=VideoPlan,
     )
