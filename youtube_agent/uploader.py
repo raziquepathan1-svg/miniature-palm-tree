@@ -45,9 +45,24 @@ def _credentials() -> Credentials:
     return creds
 
 
+def _check_channel(youtube, expected_id: str | None) -> None:
+    """Refuse to upload if the saved login belongs to a different channel."""
+    if not expected_id:
+        return
+    items = youtube.channels().list(part="id,snippet", mine=True).execute().get("items", [])
+    ids = [c["id"] for c in items]
+    if expected_id not in ids:
+        names = ", ".join(f"{c['snippet']['title']} ({c['id']})" for c in items) or "no channel"
+        raise RuntimeError(
+            f"Logged in to {names}, but config.yaml expects channel {expected_id}. "
+            "Run --setup-youtube again and sign in as healthsupportstudio@gmail.com."
+        )
+
+
 def upload_video(video_path: Path, thumbnail_path: Path | None, title: str, description: str,
                  tags: list[str], yt: dict, language_code: str = "en-US") -> str:
     youtube = build("youtube", "v3", credentials=_credentials(), cache_discovery=False)
+    _check_channel(youtube, yt.get("channel_id"))
     body = {
         "snippet": {
             "title": title[:100],

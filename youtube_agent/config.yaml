@@ -71,6 +71,8 @@ editing:
 
 # ---- YouTube ----
 youtube:
+  # Your channel (Health Support Studio). Uploads stop if you're logged in to a different channel.
+  channel_id: "UCyAuaUoxw-U9PDfO0GVV3jw"
   privacy: "public"            # "public", "unlisted" or "private"
   category_id: "27"            # 27 = Education
   made_for_kids: false
