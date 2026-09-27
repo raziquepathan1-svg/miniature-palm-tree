@@ -12,14 +12,14 @@ Every day it:
 5. **Builds the video**: branded slides (title, key points, big numbers, myth vs fact, warning signs, subscribe) over free Pexels stock footage, with captions. Then it adds your intro, outro and music if you have them, and makes a thumbnail.
 6. **Uploads it as Private** to your channel, with a medical disclaimer and AI disclosure, for you to review.
 
-### Your daily routine (about 10 minutes, works on your phone)
-1. Open the **YouTube Studio** app → **Content**, and find the new private video.
-2. Watch it. If you like, add a tip of your own in the description or a pinned comment.
-3. Set **Visibility** to **Public** (or **Schedule** it for about 12 PM ET).
+### Your daily routine (optional, about 5 minutes, works on your phone)
+Every day at about **6 AM Saudi time** the agent makes the video and uploads it **scheduled**. YouTube then makes it **public automatically at 12 PM New York time** (7 PM Saudi, or 8 PM in winter). You don't have to be online.
+
+Any time before then:
+1. Open the **YouTube Studio** app → **Content** and find the scheduled video.
+2. Watch it. If it's fine, do nothing, because it publishes by itself. If something's wrong, set **Visibility → Private** or delete it.
 
 To make an extra video on demand from your phone: in the **GitHub app**, open the repo → **Actions → Daily YouTube video → Run workflow** (you can type a topic).
-
-This human review keeps a health channel safe, and it's what YouTube looks for when deciding on monetization.
 
 ### Video styles (they rotate, one per day)
 **Explainer → Myth vs Fact → Quick Short (vertical) → Warning Signs → Top Questions**. Edit them under `video.styles` in `config.yaml`.
