@@ -2,12 +2,15 @@
 
 Fully automatic educational YouTube channel presented by **your own AI avatar**.
 
+This channel is set up as **health education from a registered nurse**, for a **US audience in American English**.
+
 Every run it:
-1. **Picks a topic** in your niche that it hasn't covered yet (Claude), or takes the next one from your `topic_queue`
-2. **Writes the script**, title, description, tags and thumbnail text (Claude)
-3. **Records the video with your avatar and voice** (HeyGen), with subtitles
-4. **Edits it**: adds your intro, outro and background music (ffmpeg)
-5. **Makes a thumbnail** and **uploads it to your channel** (YouTube Data API)
+1. **Picks a topic.** It takes the next one from the `topic_queue` in `config.yaml` (20 starter topics are included), then invents new ones in your niche without repeating itself.
+2. **Writes the script**, title, description, tags and thumbnail text (Claude), following strict health-content rules: no diagnosis, no personal medical advice, current US guidance, red-flag symptoms, and no invented patient stories.
+3. **Fact-checks every health claim** (Claude + web search) against CDC, NIH, FDA, WHO, Mayo Clinic and other trusted sources. It fixes errors, adds the sources to the description, and **skips the video entirely** if it can't be made safe.
+4. **Records the video with your avatar and voice** (HeyGen), with subtitles.
+5. **Edits it**: adds your intro, outro and background music (ffmpeg), then makes a thumbnail.
+6. **Uploads it to your channel** with a medical disclaimer and an AI-avatar disclosure in the description.
 
 GitHub Actions runs it twice a day, so you get 2 videos/day without leaving your computer on.
 
@@ -62,6 +65,8 @@ python -m youtube_agent.main --script-only   # free-ish: writes a script only, c
 python -m youtube_agent.main --dry-run       # makes the full video, doesn't upload
 python -m youtube_agent.main                 # makes and uploads for real
 ```
+**Strongly recommended for a health channel:** read each script (`output/.../script.txt` and `fact_check.json`) for the first week or two. You're the nurse, and your professional judgment is the final check. Set `privacy: "private"` in the meantime, and publish from YouTube Studio once you're happy.
+
 **Tip:** for the first few days, set `privacy: "private"` and review each video in YouTube Studio before making it public.
 
 ### 7. Turn on daily automation
@@ -85,6 +90,8 @@ Scheduled workflows only run from the repo's **default branch**, so merge this b
 - **GitHub Actions**: free for public repos. Private repos get 2,000 free minutes a month (each run is about 10-40 min).
 
 ## Staying within YouTube's rules
+- Health content: YouTube removes medical misinformation that contradicts health authorities (CDC/WHO) and can strike the channel. The fact-check step and content rules are there to prevent that. Don't turn them off.
+- YouTube's "health source" label for licensed professionals: once the channel is established, you can apply to have your videos labelled as coming from a licensed nurse (search "YouTube health features for licensed professionals" to find it; eligibility requirements apply).
 - AI disclosure: the agent marks every upload as **altered/synthetic content** (`contains_synthetic_media: true`), which YouTube requires for realistic AI people and voices. Keep it on.
 - Monetization: YouTube demonetizes *mass-produced, repetitive* content. Make each video genuinely useful. Review scripts now and then, and add your own ideas to `topic_queue`. Quality beats quantity: 1 good video a day is better than 2 weak ones.
 - Only use music you have rights to, such as the YouTube Audio Library.

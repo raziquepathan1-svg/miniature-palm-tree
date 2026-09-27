@@ -1,16 +1,48 @@
 # ---- Your channel ----
 channel:
   # What your channel teaches. The agent picks every topic from inside this niche.
-  niche: "Science and technology explained simply - how everyday things work"
-  audience: "Curious students and adults in the United States, age 14+"
+  niche: >-
+    Everyday health explained by a nurse: understanding common conditions, symptoms and
+    when to see a doctor, medications and safety, prevention and healthy habits, first aid,
+    making sense of tests and hospital visits, and navigating the US healthcare system.
+  presenter: "a registered nurse (the channel owner), speaking as a friendly, trustworthy nurse educator"
+  audience: "Adults in the United States, including patients, caregivers and parents, age 18+"
   country: "United States"     # target market: American spelling, examples, units and references
   language: "English"
   language_code: "en-US"       # tells YouTube the video's language
-  tone: "Friendly, clear, energetic teacher"
-  # Optional: topics you want covered first. The agent uses these before inventing new ones.
-  topic_queue: []
-  #  - "Why is the sky blue?"
-  #  - "How does GPS know where you are?"
+  tone: "Warm, calm, reassuring nurse; plain language, no jargon without explaining it"
+  # Extra rules for every script (health content has to be careful).
+  content_rules: |-
+    - Educational only: never diagnose, never give personal medical advice, never tell viewers to
+      start, stop or change a medication. Encourage talking to their doctor, nurse or pharmacist.
+    - Follow current US guidance (CDC, NIH, FDA, USPSTF, major medical associations). No unproven
+      treatments, no "miracle cures", no fear-mongering.
+    - Always include red-flag symptoms that need urgent care when relevant ("call 911 if...").
+    - Never invent personal stories, patient cases or quotes. The presenter may say "as a nurse" when
+      explaining general practice, but must not claim specific experiences.
+    - End the video with a short spoken reminder that the video is for education, not medical advice.
+  # Topics covered first, in order. After these, the agent picks new topics itself.
+  topic_queue:
+    - "High blood pressure: what the numbers mean and how to lower it"
+    - "Heart attack warning signs, and how they can differ in women"
+    - "Stroke signs: BE FAST and why every minute matters"
+    - "Type 2 diabetes vs prediabetes: what your A1C means"
+    - "How to read your blood test results (CBC and metabolic panel)"
+    - "Antibiotics: why they don't work on colds and flu"
+    - "Dehydration: signs to watch for in kids and older adults"
+    - "Fever in children: when to worry and when to call the doctor"
+    - "Urgent care vs the ER: which one do you need?"
+    - "How to get the most out of a 15-minute doctor's appointment"
+    - "Over-the-counter pain relievers: acetaminophen vs ibuprofen safety"
+    - "How to prevent a fall at home for older adults"
+    - "Sleep: how much you really need and how to improve it"
+    - "What a nurse wishes you knew before going to the hospital"
+    - "Hand-only CPR: how to save a life in 2 minutes"
+    - "Sepsis: the emergency most people have never heard of"
+    - "Cholesterol explained: LDL, HDL and triglycerides"
+    - "Why you should keep an up-to-date medication list"
+    - "Seasonal flu and vaccines: myths vs facts"
+    - "Caring for a loved one after hospital discharge"
 
 # ---- Video ----
 video:
@@ -18,6 +50,7 @@ video:
   format: "landscape"          # "landscape" (16:9 normal video) or "shorts" (9:16 vertical)
   videos_per_run: 1            # the GitHub schedule runs twice a day -> 2 videos/day
   captions: true               # burn subtitles into the video (HeyGen captions)
+  fact_check: true             # verify every health claim with web research before recording
   background_color: "#0F172A"
 
 # ---- Your avatar (from HeyGen) ----
@@ -43,3 +76,11 @@ youtube:
   made_for_kids: false
   # YouTube requires disclosure of realistic AI-generated people/voices. Leave this true.
   contains_synthetic_media: true
+  # Added to the end of every video description.
+  description_footer: |-
+    DISCLAIMER: This video is for general educational purposes only and is not medical advice.
+    Always talk to your doctor, nurse or pharmacist about your own health. If you think you are
+    having a medical emergency, call 911 right away.
+
+    This video is presented by an AI avatar of a registered nurse. The script is AI-assisted
+    and fact-checked against trusted health sources.

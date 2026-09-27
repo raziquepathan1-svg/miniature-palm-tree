@@ -43,6 +43,7 @@ Channel niche: {channel['niche']}
 Audience: {channel['audience']}
 Target country: {channel.get('country', 'United States')}
 Language of the script, title and description: {channel['language']}
+Presenter: {channel.get('presenter', 'the channel host')}
 Presenter tone: {channel['tone']}
 Format: {"YouTube Short (vertical, under 60 seconds)" if shorts else "standard YouTube video"}
 
@@ -56,6 +57,7 @@ Write a script of about {target_words} spoken words. Requirements:
   places, money and cultural references they know. For US viewers use American English and US customary
   units (miles, °F, pounds), giving metric in parentheses when it helps.
 - Pick topics and titles people in that country actually search for.
+{channel.get('content_rules', '')}
 - Written to be spoken aloud: short sentences, no markdown, no stage directions, no emojis,
   no bracketed notes - only the words the presenter says.
 """

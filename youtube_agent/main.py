@@ -39,7 +39,7 @@ def slugify(text: str) -> str:
 
 
 def next_queued_topic(config: dict, history: list[dict]) -> str | None:
-    done = {h["topic"].strip().lower() for h in history}
+    done = {(h.get(k) or "").strip().lower() for h in history for k in ("topic", "requested_topic")}
     for topic in config["channel"].get("topic_queue") or []:
         if topic.strip().lower() not in done:
             return topic
@@ -50,13 +50,35 @@ def make_one_video(config: dict, history: list[dict], topic: str | None, dry_run
     from . import planner
 
     topic = topic or next_queued_topic(config, history)
-    print("1/5 Choosing topic and writing script with Claude...")
+    print("1/6 Choosing topic and writing script with Claude...")
     plan = planner.plan_video(config["channel"], config["video"], [h["topic"] for h in history], topic)
     print(f"    Topic: {plan.topic}\n    Title: {plan.title}")
 
     stamp = dt.datetime.now().strftime("%Y%m%d-%H%M")
     workdir = OUTPUT_DIR / f"{stamp}-{slugify(plan.title)}"
     workdir.mkdir(parents=True, exist_ok=True)
+    (workdir / "draft_script.txt").write_text("\n\n".join(plan.scenes))
+
+    sources: list[str] = []
+    if config["video"].get("fact_check", True):
+        from . import fact_check
+
+        print("2/6 Fact-checking every health claim against trusted sources...")
+        review = fact_check.fact_check(plan.topic, plan.scenes)
+        (workdir / "fact_check.json").write_text(review.model_dump_json(indent=2))
+        for issue in review.issues:
+            print(f"    fixed: {issue}")
+        if not review.approved:
+            print(f"    NOT APPROVED - video skipped. Details in {workdir / 'fact_check.json'}")
+            if not script_only:  # remember it so the agent moves on to another topic
+                history.append({"date": dt.datetime.now().isoformat(timespec="seconds"),
+                                "topic": plan.topic, "requested_topic": topic, "title": plan.title,
+                                "status": "rejected_by_fact_check"})
+                save_history(history)
+            return
+        plan.scenes = review.corrected_scenes
+        sources = review.sources
+
     (workdir / "plan.json").write_text(plan.model_dump_json(indent=2))
     (workdir / "script.txt").write_text("\n\n".join(plan.scenes))
     if script_only:
@@ -65,29 +87,35 @@ def make_one_video(config: dict, history: list[dict], topic: str | None, dry_run
 
     from . import editor, heygen
 
-    print("2/5 Rendering your avatar video on HeyGen (this can take 5-30 min)...")
+    print("3/6 Rendering your avatar video on HeyGen (this can take 5-30 min)...")
     raw = heygen.render_video(plan.scenes, plan.title, config["avatar"], config["video"], workdir / "avatar.mp4")
 
-    print("3/5 Editing (intro/outro/music)...")
+    print("4/6 Editing (intro/outro/music)...")
     final = editor.edit_video(raw, config["editing"], config["video"], HERE, workdir / "final.mp4")
 
-    print("4/5 Making thumbnail...")
+    print("5/6 Making thumbnail...")
     shorts = config["video"].get("format") == "shorts"
     thumb = editor.make_thumbnail(final, plan.thumbnail_text, workdir / "thumbnail.jpg", shorts=shorts)
 
     description = plan.description
+    if sources:
+        description += "\n\nSources:\n" + "\n".join(f"- {u}" for u in sources)
+    footer = (config["youtube"].get("description_footer") or "").strip()
+    if footer:
+        description += "\n\n" + footer
     title = plan.title
     if shorts and "#shorts" not in (title + description).lower():
         description += "\n\n#shorts"
 
-    entry = {"date": dt.datetime.now().isoformat(timespec="seconds"), "topic": plan.topic, "title": title}
+    entry = {"date": dt.datetime.now().isoformat(timespec="seconds"), "topic": plan.topic,
+             "requested_topic": topic, "title": title}
     if dry_run:
-        print(f"5/5 Dry run - not uploading. Files in {workdir}")
+        print(f"6/6 Dry run - not uploading. Files in {workdir}")
         return
 
     from . import uploader
 
-    print("5/5 Uploading to YouTube...")
+    print("6/6 Uploading to YouTube...")
     entry["youtube_id"] = uploader.upload_video(
         final, thumb, title, description, plan.tags, config["youtube"],
         config["channel"].get("language_code", "en-US"),
