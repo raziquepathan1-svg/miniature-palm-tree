@@ -47,6 +47,17 @@ class VideoPlan(BaseModel):
         "is a strong hook (layout 'title'), last scene is a recap plus a call to like and subscribe (layout 'outro')."
     )
 
+    short_scenes: list[Scene] = Field(
+        description="A separate standalone vertical Short (for Instagram/Facebook Reels) on the same topic: 2-4 "
+        "scenes, about 90-120 spoken words in total (under 50 seconds). Scene 1 is a punchy hook (layout "
+        "'title'); the middle gives the single most useful takeaway; the last scene (layout 'outro') says the full "
+        "video is on the Health Support Studio YouTube channel. Empty list if this video is itself a Short."
+    )
+    short_caption: str = Field(
+        description="Instagram/Facebook caption for the Short: 1-2 friendly sentences, then 'Full video on our "
+        "YouTube channel: Health Support Studio', then 'Educational only, not medical advice.', then 5-8 hashtags."
+    )
+
     def narration(self) -> list[str]:
         return [s.narration for s in self.scenes]
 

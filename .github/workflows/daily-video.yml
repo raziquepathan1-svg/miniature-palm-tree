@@ -75,6 +75,15 @@ jobs:
           retention-days: 7
           if-no-files-found: ignore
 
+      - name: Save the Short for Instagram/Facebook
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: social-${{ github.run_id }}
+          path: youtube_agent/output/*/social/
+          retention-days: 7
+          if-no-files-found: ignore
+
       - name: Remember published topics
         if: always()
         run: |

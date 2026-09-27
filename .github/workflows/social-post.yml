@@ -1,0 +1,76 @@
+name: Post Short to Instagram and Facebook
+
+on:
+  schedule:
+    # 17:25 UTC = after the YouTube video goes public (12 PM New York) in both summer and winter
+    # (~8:25 PM Saudi time). Posts only if the YouTube video is public.
+    - cron: "25 17 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: read
+
+concurrency:
+  group: social-post
+  cancel-in-progress: false
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Find today's Short
+        id: find
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          RUN_ID=$(gh run list --repo "$GITHUB_REPOSITORY" --workflow daily-video.yml --status success \
+                   --limit 1 --json databaseId --jq '.[0].databaseId')
+          echo "run_id=$RUN_ID" >> "$GITHUB_OUTPUT"
+          if [ -z "$RUN_ID" ]; then echo "No successful video run yet."; echo "skip=true" >> "$GITHUB_OUTPUT"; exit 0; fi
+          if grep -qx "$RUN_ID" youtube_agent/social_posted.txt 2>/dev/null; then
+            echo "Short from run $RUN_ID was already posted."; echo "skip=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Download the Short
+        if: steps.find.outputs.skip != 'true'
+        uses: actions/download-artifact@v4
+        with:
+          name: social-${{ steps.find.outputs.run_id }}
+          path: social_dl
+          run-id: ${{ steps.find.outputs.run_id }}
+          github-token: ${{ github.token }}
+
+      - uses: actions/setup-python@v5
+        if: steps.find.outputs.skip != 'true'
+        with:
+          python-version: "3.11"
+
+      - name: Post to Instagram and Facebook
+        if: steps.find.outputs.skip != 'true'
+        env:
+          META_PAGE_ID: ${{ secrets.META_PAGE_ID }}
+          META_PAGE_TOKEN: ${{ secrets.META_PAGE_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
+          YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+          YOUTUBE_TOKEN_JSON: ${{ secrets.YOUTUBE_TOKEN_JSON }}
+        run: |
+          pip install -q requests google-api-python-client google-auth google-auth-oauthlib
+          DIR=$(dirname "$(find social_dl -name social.json | head -1)")
+          if [ "$DIR" = "." ] || [ -z "$DIR" ]; then echo "No social.json in the artifact - nothing to post."; exit 0; fi
+          python -m youtube_agent.social "$DIR"
+
+      - name: Remember it was posted
+        if: always() && steps.find.outputs.skip != 'true'
+        run: |
+          find social_dl -name posted.flag | grep -q . || { echo "Nothing was posted."; exit 0; }
+          echo "${{ steps.find.outputs.run_id }}" >> youtube_agent/social_posted.txt
+          git config user.name "youtube-agent"
+          git config user.email "youtube-agent@users.noreply.github.com"
+          git add youtube_agent/social_posted.txt
+          git commit -m "Record posted Short" && git pull --rebase && git push

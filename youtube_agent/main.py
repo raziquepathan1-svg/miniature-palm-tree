@@ -17,6 +17,8 @@ import os
 import re
 from pathlib import Path
 
+from types import SimpleNamespace
+
 import yaml
 
 HERE = Path(__file__).parent
@@ -101,7 +103,8 @@ def make_one_video(config: dict, history: list[dict], topic: str | None, dry_run
         from . import fact_check
 
         print("2/6 Fact-checking every health claim against trusted sources...")
-        review = fact_check.fact_check(plan.topic, plan.scenes)
+        # The companion Short is checked together with the main script.
+        review = fact_check.fact_check(plan.topic, plan.scenes + plan.short_scenes)
         (workdir / "fact_check.json").write_text(review.model_dump_json(indent=2))
         for issue in review.issues:
             print(f"    fixed: {issue}")
@@ -113,7 +116,8 @@ def make_one_video(config: dict, history: list[dict], topic: str | None, dry_run
                                 "status": "rejected_by_fact_check"})
                 save_history(history)
             return
-        plan.scenes = review.apply_to(plan.scenes)
+        checked = review.apply_to(plan.scenes + plan.short_scenes)
+        plan.scenes, plan.short_scenes = checked[:len(plan.scenes)], checked[len(plan.scenes):]
         sources = review.sources
         fact_issues = review.issues
 
@@ -152,6 +156,10 @@ def make_one_video(config: dict, history: list[dict], topic: str | None, dry_run
             editor._run(["-y", "-ss", "1", "-i", str(first_clip), "-frames:v", "1", str(frame)])
         thumb = visuals.make_thumbnail(plan.thumbnail_text, channel_name, workdir / "thumbnail.jpg", frame)
 
+    social_dir = None
+    if config.get("social", {}).get("enabled", True):
+        social_dir = make_social_short(plan, final, video_cfg, config, channel_name, workdir)
+
     description = plan.description
     if sources:
         description += "\n\nSources:\n" + "\n".join(f"- {u}" for u in sources)
@@ -187,6 +195,11 @@ def make_one_video(config: dict, history: list[dict], topic: str | None, dry_run
     entry["youtube_id"] = video_id
     history.append(entry)
     save_history(history)
+    if social_dir:
+        (social_dir / "social.json").write_text(json.dumps({
+            "youtube_id": video_id, "title": title, "caption": plan.short_caption,
+            "publish_at": yt.get("publish_at"),
+        }, indent=2))
 
     summary = [
         f"## {title}",
@@ -202,6 +215,28 @@ def make_one_video(config: dict, history: list[dict], topic: str | None, dry_run
         summary.append("- **Waiting for your review**: open the link, watch it, then set Visibility to Public.")
     print("\n".join(summary))
     write_summary(summary)
+
+
+def make_social_short(plan, final: Path, video_cfg: dict, config: dict, channel_name: str,
+                      workdir: Path) -> Path | None:
+    """Make the vertical Short for Instagram/Facebook Reels (reuses the video itself on Shorts days)."""
+    import shutil
+
+    social_dir = workdir / "social"
+    social_dir.mkdir(exist_ok=True)
+    if video_cfg.get("format") == "shorts":
+        shutil.copyfile(final, social_dir / "short.mp4")
+        return social_dir
+    if not plan.short_scenes:
+        return None
+    from . import visuals
+
+    print("    Making the vertical Short for Instagram/Facebook...")
+    short_cfg = {**video_cfg, "format": "shorts"}
+    raw = visuals.build_video(SimpleNamespace(scenes=plan.short_scenes), short_cfg, config.get("voice", {}),
+                              channel_name, workdir / "short_build")
+    shutil.copyfile(raw, social_dir / "short.mp4")
+    return social_dir
 
 
 def main() -> None:
