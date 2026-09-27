@@ -1,3 +1,6 @@
 __pycache__/
 .venv/
 .env
+youtube_agent/output/
+youtube_agent/client_secret.json
+youtube_agent/youtube_token.json

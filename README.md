@@ -31,3 +31,9 @@ Before it runs a shell command or writes a file, the agent asks you `Allow? [y/N
 
 - `AGENT_MODEL`: the model to use (default `claude-opus-5`)
 - If the model declines a request, the agent automatically retries it on a fallback model.
+
+---
+
+## YouTube Avatar Agent
+
+`youtube_agent/` runs a fully automatic educational YouTube channel with your own AI avatar. It picks topics, writes scripts, renders your avatar (HeyGen), edits the video, and uploads 1-2 videos a day. See [youtube_agent/README.md](youtube_agent/README.md) for setup.

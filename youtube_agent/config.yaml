@@ -1,0 +1,43 @@
+# ---- Your channel ----
+channel:
+  # What your channel teaches. The agent picks every topic from inside this niche.
+  niche: "Science and technology explained simply - how everyday things work"
+  audience: "Curious students and adults, age 14+"
+  language: "English"          # e.g. "Hindi", "Urdu", "Hinglish (Hindi in Latin script)"
+  tone: "Friendly, clear, energetic teacher"
+  # Optional: topics you want covered first. The agent uses these before inventing new ones.
+  topic_queue: []
+  #  - "Why is the sky blue?"
+  #  - "How does GPS know where you are?"
+
+# ---- Video ----
+video:
+  target_minutes: 4            # spoken length of each video
+  format: "landscape"          # "landscape" (16:9 normal video) or "shorts" (9:16 vertical)
+  videos_per_run: 1            # the GitHub schedule runs twice a day -> 2 videos/day
+  captions: true               # burn subtitles into the video (HeyGen captions)
+  background_color: "#0F172A"
+
+# ---- Your avatar (from HeyGen) ----
+# Run `python -m youtube_agent.main --list-avatars` to see your IDs.
+# Can also be set with the HEYGEN_AVATAR_ID / HEYGEN_VOICE_ID environment variables.
+avatar:
+  avatar_type: "avatar"        # "avatar" (video/digital twin) or "talking_photo" (photo avatar)
+  avatar_id: ""
+  voice_id: ""
+  voice_speed: 1.0
+
+# ---- Editing (optional files in youtube_agent/assets/) ----
+editing:
+  intro_clip: "assets/intro.mp4"          # played before the avatar video if the file exists
+  outro_clip: "assets/outro.mp4"          # played after it if the file exists
+  background_music: "assets/music.mp3"    # mixed in quietly if the file exists
+  music_volume: 0.08
+
+# ---- YouTube ----
+youtube:
+  privacy: "public"            # "public", "unlisted" or "private"
+  category_id: "27"            # 27 = Education
+  made_for_kids: false
+  # YouTube requires disclosure of realistic AI-generated people/voices. Leave this true.
+  contains_synthetic_media: true
