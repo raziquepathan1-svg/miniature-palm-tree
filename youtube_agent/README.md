@@ -12,10 +12,12 @@ Every day it:
 5. **Builds the video**: branded slides (title, key points, big numbers, myth vs fact, warning signs, subscribe) over free Pexels stock footage, with captions. Then it adds your intro, outro and music if you have them, and makes a thumbnail.
 6. **Uploads it as Private** to your channel, with a medical disclaimer and AI disclosure, for you to review.
 
-### Your daily routine (about 10 minutes)
+### Your daily routine (about 10 minutes, works on your phone)
 1. Open the **YouTube Studio** app → **Content**, and find the new private video.
 2. Watch it. If you like, add a tip of your own in the description or a pinned comment.
 3. Set **Visibility** to **Public** (or **Schedule** it for about 12 PM ET).
+
+To make an extra video on demand from your phone: in the **GitHub app**, open the repo → **Actions → Daily YouTube video → Run workflow** (you can type a topic).
 
 This human review keeps a health channel safe, and it's what YouTube looks for when deciding on monetization.
 
@@ -32,21 +34,37 @@ Go to **console.anthropic.com**, add a small amount of credit ($5 lasts a long t
 ### 2. Pexels API key (free stock video)
 Sign up at **pexels.com/api** (free) and copy your API key. Without it, videos still work, using animated brand backgrounds instead of stock clips.
 
-### 3. Allow uploads to your YouTube channel
-1. Go to **console.cloud.google.com**, signed in as **healthsupportstudio@gmail.com**, and create a project.
-2. **APIs & Services → Library**: enable **YouTube Data API v3**.
-3. **OAuth consent screen**: choose **External**, then add healthsupportstudio@gmail.com as a test user.
-   - **Important:** then click **Publish app** so the status is **In production**. If you leave it in *Testing*, your login expires every 7 days and uploads stop.
-4. **Credentials → Create credentials → OAuth client ID → Desktop app**. Download the JSON file and save it as `youtube_agent/client_secret.json`.
+### 3. Allow uploads to your YouTube channel (browser only, nothing to install)
+Do all of this signed in as **healthsupportstudio@gmail.com**.
 
-### 4. Log in once (on your own computer)
-```bash
-pip install -r requirements.txt
-python -m youtube_agent.main --setup-youtube   # a browser opens: sign in as healthsupportstudio@gmail.com
-```
-Google will say "Google hasn't verified this app". That's normal for your own personal app: click **Advanced → Go to (app name)**.
+**A. Create a Google Cloud project**
+1. Go to **console.cloud.google.com**, then use the project picker (top left) → **New project** → name it `Health Support Studio` → **Create**, and select it.
+2. **APIs & Services → Library**: search for **YouTube Data API v3** and click **Enable**.
 
-### 5. Try it
+**B. Consent screen**
+1. **APIs & Services → OAuth consent screen** (it may be called **Google Auth Platform → Branding/Audience**). Choose **External**.
+2. App name: `Health Support Studio Uploader`. Support email and developer email: healthsupportstudio@gmail.com. Save.
+3. **Audience**: click **Publish app** so the status is **In production**. If you leave it in *Testing*, the login expires every 7 days.
+
+**C. Create the login keys**
+1. **Credentials → Create credentials → OAuth client ID**, with application type **Web application**.
+2. Under **Authorized redirect URIs** add exactly: `https://developers.google.com/oauthplayground`
+3. Click **Create**, then copy the **Client ID** and **Client secret**.
+
+**D. Get the permanent login (refresh token)**
+1. Open **developers.google.com/oauthplayground**.
+2. Click the ⚙️ gear (top right) → tick **Use your own OAuth credentials** → paste the Client ID and Client secret → close.
+3. On the left, in "Input your own scopes", paste:
+   `https://www.googleapis.com/auth/youtube.upload https://www.googleapis.com/auth/youtube`
+   then click **Authorize APIs**.
+4. Sign in as **healthsupportstudio@gmail.com**, choose the **Health Support Studio** channel if asked, and allow access. On the "Google hasn't verified this app" screen, click **Advanced → Go to …**.
+5. Click **Exchange authorization code for tokens**, then copy the **Refresh token**.
+
+**E. Add them to GitHub Secrets**: `YOUTUBE_CLIENT_ID`, `YOUTUBE_CLIENT_SECRET`, `YOUTUBE_REFRESH_TOKEN`.
+
+(Alternative for developers: put a Desktop-app `client_secret.json` in `youtube_agent/` and run `python -m youtube_agent.main --setup-youtube`.)
+
+### 4. Try it (optional, on a computer with Python)
 ```bash
 export ANTHROPIC_API_KEY=sk-ant-...
 export PEXELS_API_KEY=...
@@ -55,14 +73,16 @@ python -m youtube_agent.main --script-only    # writes a script only: check outp
 python -m youtube_agent.main --dry-run        # makes the full video without uploading: watch output/.../final.mp4
 ```
 
-### 6. Turn on the daily automation (GitHub)
+### 5. Turn on the daily automation (GitHub)
 In the GitHub repo go to **Settings → Secrets and variables → Actions → New repository secret** and add:
 
 | Secret | Value |
 |---|---|
 | `ANTHROPIC_API_KEY` | your Claude key |
 | `PEXELS_API_KEY` | your Pexels key |
-| `YOUTUBE_TOKEN_JSON` | the **entire contents** of `youtube_agent/youtube_token.json` (created in step 4) |
+| `YOUTUBE_CLIENT_ID` | from step 3C |
+| `YOUTUBE_CLIENT_SECRET` | from step 3C |
+| `YOUTUBE_REFRESH_TOKEN` | from step 3D |
 
 Scheduled runs only work from the repo's **default branch**, so merge this branch into it. It then runs every day at 15:17 UTC (about 11 AM Eastern, 7 PM UAE). To run it right away: **Actions → Daily YouTube video → Run workflow**. Each run's page shows the review link, and the video files are kept for 7 days.
 

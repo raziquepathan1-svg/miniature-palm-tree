@@ -33,7 +33,15 @@ def setup_youtube_login() -> None:
 
 def _credentials() -> Credentials:
     raw = os.environ.get("YOUTUBE_TOKEN_JSON")
-    if raw:
+    refresh = os.environ.get("YOUTUBE_REFRESH_TOKEN")
+    if refresh:  # browser-only setup (Google OAuth Playground): three separate secrets
+        info = {
+            "client_id": os.environ["YOUTUBE_CLIENT_ID"].strip(),
+            "client_secret": os.environ["YOUTUBE_CLIENT_SECRET"].strip(),
+            "refresh_token": refresh.strip(),
+            "token_uri": "https://oauth2.googleapis.com/token",
+        }
+    elif raw:
         info = json.loads(raw)
     elif TOKEN_FILE.exists():
         info = json.loads(TOKEN_FILE.read_text())
