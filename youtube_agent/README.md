@@ -49,6 +49,11 @@ Edit `youtube_agent/config.yaml`:
 - `format`: `landscape` for normal videos or `shorts` for vertical Shorts
 - `topic_queue`: optional topics you want covered first
 
+**US channel settings** (the config is already set to US English):
+- In **YouTube Studio → Settings → Channel → Basic info**, set **Country of residence** to **United States**.
+- For your voice, choose an **American English** voice in HeyGen (`--list-avatars` shows each voice's language), or clone your own.
+- Upload times are set for US viewers: around 12 PM and 6 PM Eastern.
+
 Optional: put `intro.mp4`, `outro.mp4` and `music.mp3` in `youtube_agent/assets/`.
 
 ### 6. Test it
@@ -69,7 +74,7 @@ In your GitHub repo go to **Settings → Secrets and variables → Actions → N
 | `YOUTUBE_TOKEN_JSON` | the **entire contents** of `youtube_agent/youtube_token.json` |
 | `HEYGEN_AVATAR_ID` / `HEYGEN_VOICE_ID` | optional, if you didn't put them in config.yaml |
 
-Scheduled workflows only run from the repo's **default branch**, so merge this branch into it. The workflow `.github/workflows/daily-video.yml` then runs at 03:17 and 13:17 UTC. To run it now: **Actions → Daily YouTube video → Run workflow**. Every run's video files are kept as a downloadable artifact for 7 days.
+Scheduled workflows only run from the repo's **default branch**, so merge this branch into it. The workflow `.github/workflows/daily-video.yml` then runs at 15:17 and 21:17 UTC (about 11 AM and 5 PM Eastern, so videos go live around noon and 6 PM). To run it now: **Actions → Daily YouTube video → Run workflow**. Every run's video files are kept as a downloadable artifact for 7 days.
 
 ---
 

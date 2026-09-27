@@ -88,7 +88,10 @@ def make_one_video(config: dict, history: list[dict], topic: str | None, dry_run
     from . import uploader
 
     print("5/5 Uploading to YouTube...")
-    entry["youtube_id"] = uploader.upload_video(final, thumb, title, description, plan.tags, config["youtube"])
+    entry["youtube_id"] = uploader.upload_video(
+        final, thumb, title, description, plan.tags, config["youtube"],
+        config["channel"].get("language_code", "en-US"),
+    )
     history.append(entry)
     save_history(history)
 

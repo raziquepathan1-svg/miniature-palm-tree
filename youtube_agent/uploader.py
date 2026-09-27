@@ -46,7 +46,7 @@ def _credentials() -> Credentials:
 
 
 def upload_video(video_path: Path, thumbnail_path: Path | None, title: str, description: str,
-                 tags: list[str], yt: dict) -> str:
+                 tags: list[str], yt: dict, language_code: str = "en-US") -> str:
     youtube = build("youtube", "v3", credentials=_credentials(), cache_discovery=False)
     body = {
         "snippet": {
@@ -54,6 +54,8 @@ def upload_video(video_path: Path, thumbnail_path: Path | None, title: str, desc
             "description": description[:5000],
             "tags": tags,
             "categoryId": yt.get("category_id", "27"),
+            "defaultLanguage": language_code,
+            "defaultAudioLanguage": language_code,
         },
         "status": {
             "privacyStatus": yt.get("privacy", "public"),

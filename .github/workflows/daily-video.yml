@@ -2,10 +2,12 @@ name: Daily YouTube video
 
 on:
   schedule:
-    # Twice a day (times are UTC) -> 2 videos/day with videos_per_run: 1.
-    # Delete one line for 1 video/day.
-    - cron: "17 3 * * *"
-    - cron: "17 13 * * *"
+    # Twice a day, timed for US viewers -> 2 videos/day with videos_per_run: 1.
+    # Cron times are UTC. Rendering takes ~20-40 min, so videos go live around
+    # 12 PM and 6 PM Eastern (9 AM / 3 PM Pacific) during daylight saving time,
+    # one hour earlier in winter. Delete one line for 1 video/day.
+    - cron: "17 15 * * *"
+    - cron: "17 21 * * *"
   workflow_dispatch:
     inputs:
       topic:

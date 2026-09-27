@@ -2,8 +2,10 @@
 channel:
   # What your channel teaches. The agent picks every topic from inside this niche.
   niche: "Science and technology explained simply - how everyday things work"
-  audience: "Curious students and adults, age 14+"
-  language: "English"          # e.g. "Hindi", "Urdu", "Hinglish (Hindi in Latin script)"
+  audience: "Curious students and adults in the United States, age 14+"
+  country: "United States"     # target market: American spelling, examples, units and references
+  language: "English"
+  language_code: "en-US"       # tells YouTube the video's language
   tone: "Friendly, clear, energetic teacher"
   # Optional: topics you want covered first. The agent uses these before inventing new ones.
   topic_queue: []

@@ -41,6 +41,7 @@ def plan_video(channel: dict, video: dict, past_topics: list[str], requested_top
 
 Channel niche: {channel['niche']}
 Audience: {channel['audience']}
+Target country: {channel.get('country', 'United States')}
 Language of the script, title and description: {channel['language']}
 Presenter tone: {channel['tone']}
 Format: {"YouTube Short (vertical, under 60 seconds)" if shorts else "standard YouTube video"}
@@ -51,6 +52,10 @@ Write a script of about {target_words} spoken words. Requirements:
 - Factually accurate. If something is uncertain or debated, say so. No invented statistics.
 - Hook the viewer in the first 10 seconds.
 - Explain with simple analogies and concrete examples; one idea at a time.
+- Written for viewers in {channel.get('country', 'United States')}: use local spelling, everyday examples,
+  places, money and cultural references they know. For US viewers use American English and US customary
+  units (miles, °F, pounds), giving metric in parentheses when it helps.
+- Pick topics and titles people in that country actually search for.
 - Written to be spoken aloud: short sentences, no markdown, no stage directions, no emojis,
   no bracketed notes - only the words the presenter says.
 """
