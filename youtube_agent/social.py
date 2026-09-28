@@ -113,15 +113,18 @@ def post(social_dir: Path) -> None:
         print(f"YouTube video {meta['youtube_id']} is not public (stopped during review?) - not posting the Short.")
         return
 
-    caption = meta["caption"]
+    link = f"https://youtu.be/{meta['youtube_id']}"
+    # Facebook makes caption links clickable; Instagram doesn't, so point people to the bio link too.
+    fb_caption = f"{meta['caption']}\n\n▶️ Watch the full video on YouTube: {link}"
+    ig_caption = f"{meta['caption']}\n\n▶️ Full video on YouTube (link in bio): {link}"
     results = []
     if ig_user_id:
         try:
-            results.append(f"Instagram Reel posted: {post_instagram_reel(video, caption, ig_user_id, token)}")
+            results.append(f"Instagram Reel posted: {post_instagram_reel(video, ig_caption, ig_user_id, token)}")
         except Exception as e:  # keep going so Facebook still gets posted
             results.append(f"Instagram FAILED: {e}")
     try:
-        results.append(f"Facebook Reel posted: {post_facebook_reel(video, caption, page_id, token)}")
+        results.append(f"Facebook Reel posted: {post_facebook_reel(video, fb_caption, page_id, token)}")
     except Exception as e:
         results.append(f"Facebook FAILED: {e}")
     print("\n".join(results))

@@ -54,8 +54,9 @@ class VideoPlan(BaseModel):
         "video is on the Health Support Studio YouTube channel. Empty list if this video is itself a Short."
     )
     short_caption: str = Field(
-        description="Instagram/Facebook caption for the Short: 1-2 friendly sentences, then 'Full video on our "
-        "YouTube channel: Health Support Studio', then 'Educational only, not medical advice.', then 5-8 hashtags."
+        description="Instagram/Facebook caption for the Short: 1-2 friendly sentences that make people want the "
+        "full video, then 'Educational only, not medical advice.', then 5-8 hashtags. Do not include any link "
+        "(the YouTube link is added automatically)."
     )
 
     def narration(self) -> list[str]:
