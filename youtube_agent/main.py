@@ -205,6 +205,34 @@ def make_one_video(config: dict, history: list[dict], topic: str | None, dry_run
         entry["publish_at"] = yt["publish_at"]
     history.append(entry)
     save_history(history)
+
+    playlists = [match_playlist(plan.playlist, config["channel"].get("playlists") or [])]
+    if shorts:
+        playlists.append("Health Shorts")
+    if yt.get("playlists", True):
+        uploader.add_to_playlists(video_id, playlists)
+
+    # Also upload the companion vertical Short to YouTube Shorts (not on days the video is itself a Short).
+    short_id = None
+    short_file = social_dir / "short.mp4" if social_dir else None
+    if yt.get("upload_short", True) and not shorts and short_file and short_file.exists():
+        short_yt = dict(yt)
+        if yt.get("publish_at"):
+            short_time = dt.datetime.fromisoformat(yt["publish_at"].replace("Z", "+00:00")) + dt.timedelta(
+                hours=float(yt.get("short_delay_hours", 6)))
+            short_yt["publish_at"] = short_time.strftime("%Y-%m-%dT%H:%M:%SZ")
+        short_title = plan.short_title if "#shorts" in plan.short_title.lower() else f"{plan.short_title} #Shorts"
+        short_desc = (f"{plan.short_caption}\n\n▶️ Watch the full video: https://youtu.be/{video_id}\n\n{footer}").strip()
+        print("    Uploading the Short to YouTube Shorts...")
+        try:
+            short_id = uploader.upload_video(short_file, None, short_title, short_desc, plan.tags + ["shorts"],
+                                             short_yt, config["channel"].get("language_code", "en-US"))
+            entry["short_youtube_id"] = short_id
+            save_history(history)
+            if yt.get("playlists", True):
+                uploader.add_to_playlists(short_id, ["Health Shorts"])
+        except Exception as e:  # the main video is already up; don't fail the whole run
+            print(f"  (Could not upload the YouTube Short: {e})")
     if social_dir:
         (social_dir / "social.json").write_text(json.dumps({
             "youtube_id": video_id, "title": title, "caption": plan.short_caption,
@@ -215,7 +243,10 @@ def make_one_video(config: dict, history: list[dict], topic: str | None, dry_run
         f"## {title}",
         f"- Style: {(style or {}).get('name', 'default')} | Privacy: **{yt.get('privacy')}**",
         f"- Review and publish: https://studio.youtube.com/video/{video_id}/edit",
+        f"- Playlist: {', '.join(playlists)}",
     ]
+    if short_id:
+        summary.append(f"- YouTube Short: https://studio.youtube.com/video/{short_id}/edit")
     if fact_issues:
         summary.append("- Fact-check corrections: " + "; ".join(fact_issues))
     if publish_at:
@@ -225,6 +256,16 @@ def make_one_video(config: dict, history: list[dict], topic: str | None, dry_run
         summary.append("- **Waiting for your review**: open the link, watch it, then set Visibility to Public.")
     print("\n".join(summary))
     write_summary(summary)
+
+
+def match_playlist(name: str, allowed: list[str]) -> str:
+    """Map Claude's playlist choice onto the configured list so no stray playlists get created."""
+    lowered = {p.lower(): p for p in allowed}
+    if name.strip().lower() in lowered:
+        return lowered[name.strip().lower()]
+    words = set(name.lower().replace("&", " ").split())
+    best = max(allowed, key=lambda p: len(words & set(p.lower().replace("&", " ").split())), default=None)
+    return best if best and words & set(best.lower().replace("&", " ").split()) else "Health Tips"
 
 
 def make_social_short(plan, final: Path, video_cfg: dict, config: dict, channel_name: str,

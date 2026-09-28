@@ -22,6 +22,17 @@ channel:
     - Never invent personal stories, patient cases or quotes. Do not mention the presenter's profession
       or claim personal experiences.
     - End the video with a short spoken reminder that the video is for education, not medical advice.
+  # Every video is added to one of these YouTube playlists (created automatically).
+  playlists:
+    - "Heart & Blood Pressure"
+    - "Diabetes & Metabolism"
+    - "Emergencies & First Aid"
+    - "Medications & Safety"
+    - "Tests & Doctor Visits"
+    - "Healthy Habits & Prevention"
+    - "Infections & Vaccines"
+    - "Kids & Family Health"
+    - "Older Adults & Caregiving"
   # Topics covered first, in order. After these, the agent picks new topics itself.
   topic_queue:
     - "High blood pressure: what the numbers mean and how to lower it"
@@ -110,6 +121,9 @@ youtube:
   # Used only if auto_publish_time is removed: true = upload as Private and publish yourself.
   review_before_publish: true
   privacy: "public"            # used only when both options above are off
+  playlists: true              # add each video to its topic playlist (+ "Health Shorts" for Shorts)
+  upload_short: true           # also upload the daily vertical Short to YouTube Shorts
+  short_delay_hours: 6         # the Short goes public 6 hours after the main video (6 PM New York)
   category_id: "27"            # 27 = Education
   made_for_kids: false
   # YouTube requires disclosure of realistic AI-generated people/voices. Leave this true.

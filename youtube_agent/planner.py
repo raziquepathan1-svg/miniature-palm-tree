@@ -53,6 +53,12 @@ class VideoPlan(BaseModel):
         "'title'); the middle gives the single most useful takeaway; the last scene (layout 'outro') says the full "
         "video is on the Health Support Studio YouTube channel. Empty list if this video is itself a Short."
     )
+    short_title: str = Field(
+        description="YouTube Shorts title for the Short, under 60 characters, curiosity-driven, ending with #Shorts"
+    )
+    playlist: str = Field(
+        description="The ONE topic playlist this video belongs in, copied exactly from the list given in the prompt"
+    )
     short_caption: str = Field(
         description="Instagram/Facebook caption for the Short: 1-2 friendly sentences that make people want the "
         "full video, then 'Educational only, not medical advice.', then 5-8 hashtags. Do not include any link "
@@ -102,6 +108,7 @@ Write a script of about {target_words} spoken words. Requirements:
   units (miles, °F, pounds), giving metric in parentheses when it helps.
 - Pick topics and titles people in that country actually search for.
 {channel.get('content_rules', '')}
+- For "playlist", choose exactly one of: {", ".join(channel.get("playlists") or ["Health Tips"])}
 - Written to be spoken aloud: short sentences, no markdown, no stage directions, no emojis,
   no bracketed notes - only the words the presenter says.
 - In the narration, write out anything a text-to-speech voice might misread: "milligrams" not "mg",

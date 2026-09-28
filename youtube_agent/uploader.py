@@ -107,3 +107,35 @@ def upload_video(video_path: Path, thumbnail_path: Path | None, title: str, desc
             # Custom thumbnails need a phone-verified channel; the video is still published.
             print(f"  Could not set thumbnail (verify your channel at youtube.com/verify): {e.reason}")
     return video_id
+
+
+def add_to_playlists(video_id: str, playlist_titles: list[str]) -> None:
+    """Add a video to playlists by title, creating any public playlist that doesn't exist yet."""
+    try:
+        youtube = build("youtube", "v3", credentials=_credentials(), cache_discovery=False)
+        existing = {}
+        request = youtube.playlists().list(part="snippet", mine=True, maxResults=50)
+        while request is not None:
+            response = request.execute()
+            for item in response.get("items", []):
+                existing[item["snippet"]["title"].strip().lower()] = item["id"]
+            request = youtube.playlists().list_next(request, response)
+        for title in dict.fromkeys(t.strip() for t in playlist_titles if t and t.strip()):
+            playlist_id = existing.get(title.lower())
+            if not playlist_id:
+                created = youtube.playlists().insert(
+                    part="snippet,status",
+                    body={"snippet": {"title": title, "description": f"Health Support Studio: {title}. "
+                                      "Educational only, not medical advice."},
+                          "status": {"privacyStatus": "public"}},
+                ).execute()
+                playlist_id = existing[title.lower()] = created["id"]
+                print(f"  Created playlist: {title}")
+            youtube.playlistItems().insert(
+                part="snippet",
+                body={"snippet": {"playlistId": playlist_id,
+                                  "resourceId": {"kind": "youtube#video", "videoId": video_id}}},
+            ).execute()
+            print(f"  Added to playlist: {title}")
+    except Exception as e:  # playlists are nice-to-have; never fail the upload for them
+        print(f"  (Could not update playlists: {e})")
