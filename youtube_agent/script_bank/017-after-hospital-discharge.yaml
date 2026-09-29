@@ -1,0 +1,120 @@
+queue_topic: "Caring for a loved one after hospital discharge"
+style: "Explainer"
+sources:
+  - "AHRQ, Taking Care of Myself: A Guide for When I Leave the Hospital: https://www.ahrq.gov/patients-consumers/diagnosis-treatment/hospitals-clinics/goinghome/index.html"
+  - "Medicare.gov, Your Discharge Planning Checklist: https://www.medicare.gov/publications/11376-discharge-planning-checklist.pdf"
+  - "National Institute on Aging, Caregiving: https://www.nia.nih.gov/health/caregiving"
+plan:
+  topic: "Caring for a loved one after hospital discharge"
+  title: "Bringing a Loved One Home From the Hospital? Watch This"
+  description: |-
+    The days after a hospital stay are a risky time, and family caregivers carry a lot of the load. Here is a simple plan to help your loved one recover safely at home, and avoid going back to the hospital.
+
+    In this video:
+    • What to understand before leaving the hospital
+    • Getting medicines right
+    • The follow-up appointment and warning signs
+    • Making the home safe, and taking care of yourself
+
+    #Caregiving #HospitalDischarge #FamilyCaregiver #HealthyAging #HealthEducation
+  tags: ["hospital discharge", "caring for elderly parent", "family caregiver", "caregiver tips", "after hospital care", "discharge instructions", "hospital readmission", "medication safety", "home care", "health education"]
+  thumbnail_text: "HOME FROM HOSPITAL"
+  thumbnail_highlight: "HOME"
+  thumbnail_photo_query: "caregiver helping elderly parent home"
+  playlist: "Older Adults & Caregiving"
+  scenes:
+    - layout: "title"
+      heading: "Home From the Hospital"
+      points: ["A caregiver's plan"]
+      footage_query: "caregiver helping senior home"
+      narration: >-
+        Your loved one is finally coming home from the hospital. It is a relief, but it can also be scary. The first days and
+        weeks at home are a risky time, and many patients end up going back to the hospital. Here is a simple plan to help your
+        loved one recover safely.
+    - layout: "bullets"
+      heading: "Before You Leave"
+      points: ["Get written discharge instructions", "Ask about the diagnosis", "Ask: what should we watch for?", "Repeat the plan back"]
+      footage_query: "doctor talking family hospital"
+      narration: >-
+        Before leaving the hospital, make sure you get written discharge instructions, and that you understand them. Ask what
+        the main diagnosis was, what activity is allowed, and what to watch for. A great trick is to repeat the plan back in
+        your own words. If anything is unclear, ask again. There are no silly questions.
+    - layout: "bullets"
+      heading: "Get Medicines Right"
+      points: ["Which are new?", "Which were stopped or changed?", "Update the medication list", "Fill prescriptions right away"]
+      footage_query: "pill organizer table"
+      narration: >-
+        Medicine mix ups are one of the biggest risks after a hospital stay. Ask which medicines are new, which ones changed,
+        and which ones should be stopped. Update the medication list, and throw out old instructions. Fill new prescriptions
+        right away, and a weekly pill organizer can help. Your pharmacist can review everything with you.
+    - layout: "big_number"
+      heading: "Follow-Up"
+      points: ["book it before you leave", "usually within 1 to 2 weeks"]
+      footage_query: "calendar appointment writing"
+      narration: >-
+        Book the follow up appointment before you leave the hospital, if you can. It is often recommended within one to two
+        weeks. Bring the discharge papers and medication list with you. This visit helps catch problems early, before they turn
+        into another hospital stay.
+    - layout: "warning"
+      heading: "Know the Warning Signs"
+      points: ["Ask which signs to watch", "Know who to call, day and night", "Call 911 for emergencies"]
+      footage_query: "person calling phone concerned"
+      narration: >-
+        Every condition has its own warning signs, like fever, increasing pain, shortness of breath, swelling or confusion. Ask
+        the care team which ones matter for your loved one, and who to call, day or night. Keep that number on the fridge. For
+        chest pain, severe trouble breathing, or signs of a stroke, call 911.
+    - layout: "bullets"
+      heading: "The First Week Home"
+      points: ["Check in every day", "Help them eat and drink", "Encourage safe movement", "Write down questions"]
+      footage_query: "daughter helping elderly mother kitchen"
+      narration: >-
+        During the first week, check in every day, even by phone. Notice whether your loved one is eating, drinking and
+        sleeping, and whether they seem more confused or weaker than before. Encourage gentle movement, as the care team
+        allowed, because staying in bed too long weakens muscles. Keep a notebook for questions to bring to the follow up visit.
+    - layout: "bullets"
+      heading: "Make Home Safe"
+      points: ["Clear walkways", "Bathroom grab bars", "Get needed equipment", "Ask about home health services"]
+      footage_query: "home living room tidy"
+      narration: >-
+        Get the home ready. Clear walkways, add night lights, and put commonly used items within easy reach. Ask whether your
+        loved one needs equipment, like a walker, shower chair, or raised toilet seat. And ask whether home health services,
+        like visiting therapists, are available and covered.
+    - layout: "bullets"
+      heading: "Care for Yourself Too"
+      points: ["Accept help", "Share tasks with family", "Rest and eat well", "Caregiver support groups"]
+      footage_query: "woman resting tea window"
+      narration: >-
+        Finally, take care of yourself. Caregiving is hard work, physically and emotionally. Accept help when it is offered,
+        and share tasks among family members. Try to rest and eat well. Caregiver support groups, online or in person, can help
+        you feel less alone.
+    - layout: "outro"
+      heading: "The Caregiver Plan"
+      points: ["Understand the instructions", "Get medicines right", "Book the follow-up"]
+      footage_query: "family hugging home"
+      narration: >-
+        Understand the instructions, get the medicines right, and book the follow up. You have got this. This video is for
+        education only, not medical advice. Like and subscribe to Health Support Studio for a new health video every day.
+  short_title: "Before leaving the hospital, ask this #Shorts"
+  short_caption: >-
+    Bringing a loved one home from the hospital? Ask these three questions before you leave. Educational only, not medical
+    advice. #Caregiving #HospitalDischarge #FamilyCaregiver #HealthTips #HealthEducation
+  short_scenes:
+    - layout: "title"
+      heading: "Leaving the Hospital?"
+      points: ["Ask these 3 questions"]
+      footage_query: "caregiver helping senior home"
+      narration: >-
+        Bringing a loved one home from the hospital? Ask these three questions before you leave.
+    - layout: "bullets"
+      heading: "Ask Before You Leave"
+      points: ["Which medicines changed?", "What warning signs to watch?", "When is the follow-up?"]
+      footage_query: "doctor talking family hospital"
+      narration: >-
+        One: which medicines are new, changed or stopped? Two: which warning signs should we watch for, and who do we call? And
+        three: when is the follow up appointment? Getting these answers can help prevent another hospital stay.
+    - layout: "outro"
+      heading: "Full Caregiver Plan"
+      points: ["On YouTube"]
+      footage_query: "family hugging home"
+      narration: >-
+        Get the full caregiver plan in our video, on the Health Support Studio YouTube channel.

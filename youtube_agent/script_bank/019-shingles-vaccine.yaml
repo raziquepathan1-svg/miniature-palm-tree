@@ -1,0 +1,49 @@
+queue_topic: "Shingles and the shingles vaccine"
+style: "Quick Short"
+sources:
+  - "CDC, Shingles Vaccination: https://www.cdc.gov/shingles/vaccines/index.html"
+  - "CDC, About Shingles: https://www.cdc.gov/shingles/about/index.html"
+plan:
+  topic: "Shingles and the shingles vaccine"
+  title: "Had Chickenpox? You Could Get Shingles"
+  description: |-
+    About 1 in 3 people in the US will get shingles in their lifetime. If you've had chickenpox, the virus is still in your body. Here is who the CDC recommends get the shingles vaccine.
+
+    #Shingles #ShinglesVaccine #Vaccines #HealthyAging #Shorts
+  tags: ["shingles", "shingles vaccine", "shingrix", "chickenpox", "shingles symptoms", "vaccines for adults", "healthy aging", "health shorts"]
+  thumbnail_text: "HAD CHICKENPOX?"
+  thumbnail_highlight: "CHICKENPOX?"
+  thumbnail_photo_query: "adult vaccine arm pharmacy"
+  playlist: "Infections & Vaccines"
+  scenes:
+    - layout: "title"
+      heading: "Had Chickenpox as a Kid?"
+      points: ["Then read this"]
+      footage_query: "pharmacy vaccine arm"
+      narration: >-
+        Had chickenpox as a kid? The virus never fully leaves your body, and it can wake up years later as shingles.
+    - layout: "big_number"
+      heading: "1 in 3"
+      points: ["people in the US", "will get shingles"]
+      footage_query: "senior woman thinking"
+      narration: >-
+        About one in three people in the US will get shingles. It causes a painful, blistering rash, and for some people the
+        nerve pain lasts for months, even after the rash heals.
+    - layout: "bullets"
+      heading: "CDC Recommends"
+      points: ["Adults 50 and older", "Adults 19+ with weak immune systems", "2 doses"]
+      footage_query: "doctor talking senior patient"
+      narration: >-
+        The CDC recommends two doses of the shingles vaccine for adults fifty and older, and for adults nineteen and older with
+        weakened immune systems. Even if you already had shingles, ask about it.
+    - layout: "outro"
+      heading: "Ask Your Pharmacist"
+      points: ["Subscribe for more"]
+      footage_query: "pharmacist talking customer"
+      narration: >-
+        Ask your doctor or pharmacist. Subscribe to Health Support Studio for more.
+  short_title: "Had chickenpox? Watch this #Shorts"
+  short_caption: >-
+    If you had chickenpox, the virus is still in your body and can come back as shingles. Here is who should get the vaccine.
+    Educational only, not medical advice. #Shingles #Vaccines #HealthyAging #HealthTips #HealthEducation
+  short_scenes: []

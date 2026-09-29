@@ -1,0 +1,113 @@
+queue_topic: "What to know before going to the hospital"
+style: "Top Questions"
+sources:
+  - "AHRQ, Taking Care of Myself: A Guide for When I Leave the Hospital: https://www.ahrq.gov/patients-consumers/diagnosis-treatment/hospitals-clinics/goinghome/index.html"
+  - "Medicare.gov, Inpatient or Outpatient Hospital Status: https://www.medicare.gov/coverage/inpatient-hospital-care"
+  - "MedlinePlus, Patient Rights: https://medlineplus.gov/patientrights.html"
+plan:
+  topic: "What to know before going to the hospital"
+  title: "Going to the Hospital? 6 Questions to Ask First"
+  description: |-
+    Whether it is a planned surgery or an unexpected stay, a little preparation makes a hospital visit safer and less stressful. We answer the top questions about what to bring, what to ask, and how to speak up.
+
+    In this video:
+    • What to pack, and what to leave at home
+    • Why your medication list matters
+    • "Inpatient" vs "observation" status, and why it can affect your bill
+    • How to speak up and plan for going home
+
+    #Hospital #PatientSafety #PatientTips #Caregiving #HealthEducation
+  tags: ["going to the hospital", "hospital stay tips", "what to bring to the hospital", "observation status", "inpatient vs observation", "patient safety", "patient advocate", "hospital discharge", "caregiver tips", "us healthcare", "health education"]
+  thumbnail_text: "BEFORE THE HOSPITAL"
+  thumbnail_highlight: "HOSPITAL"
+  thumbnail_photo_query: "hospital bed room window"
+  playlist: "Tests & Doctor Visits"
+  scenes:
+    - layout: "title"
+      heading: "Before the Hospital"
+      points: ["Questions to ask first"]
+      footage_query: "hospital hallway walking"
+      narration: >-
+        A hospital stay can feel overwhelming, whether it is a planned surgery or a sudden trip to the ER. But a little
+        preparation can make it safer and less stressful, for you and your family. Today we answer the top questions people
+        have before going to the hospital.
+    - layout: "bullets"
+      heading: "What Should I Bring?"
+      points: ["ID and insurance card", "Medication list and allergies", "Contacts and advance directive", "Phone charger, glasses, hearing aids"]
+      footage_query: "packing bag bedroom"
+      narration: >-
+        Question one: what should I bring? Your photo ID and insurance card. A list of all your medicines, doses, and allergies.
+        Phone numbers of family members and your doctors. A copy of your advance directive, if you have one. Plus comfortable
+        clothes, a phone charger, and your glasses, hearing aids or dentures, labeled with your name.
+    - layout: "bullets"
+      heading: "What Should I Leave?"
+      points: ["Jewelry and valuables", "Large amounts of cash", "Your own medicines, unless asked"]
+      footage_query: "jewelry box table"
+      narration: >-
+        Question two: what should I leave at home? Jewelry, valuables and large amounts of cash. Also ask before bringing your
+        own medicine bottles. Hospitals usually give you your medicines themselves, to avoid double doses and dangerous mix
+        ups, but they may want to see the bottles.
+    - layout: "big_number"
+      heading: "Inpatient?"
+      points: ["or observation?", "ask, it can affect your bill"]
+      footage_query: "hospital reception desk"
+      narration: >-
+        Question three: am I admitted, or under observation? This surprises many people. You can stay overnight in a hospital
+        bed and still be an outpatient, under what is called observation status. For people with Medicare, this can change what
+        you pay, and whether Medicare covers a nursing home stay afterward. So ask: am I an inpatient, or under observation?
+    - layout: "bullets"
+      heading: "How Do I Speak Up?"
+      points: ["Ask what each medicine is for", "Ask staff to wash their hands", "Confirm your name and birthday", "Ask for a patient advocate"]
+      footage_query: "patient talking doctor hospital"
+      narration: >-
+        Question four: how do I stay safe? Speak up. Ask what each new medicine is for. It is okay to ask staff if they have
+        washed their hands. Expect them to check your name and date of birth before tests and medicines. And if you have
+        concerns that are not being answered, ask for the hospital's patient advocate.
+    - layout: "bullets"
+      heading: "Who Should Be With Me?"
+      points: ["Pick one main family contact", "Share your wishes", "A second set of ears helps"]
+      footage_query: "family visiting hospital"
+      narration: >-
+        Question five: who should be involved? Choose one family member or friend as the main contact, and tell the care team.
+        Make sure they know your wishes for care. When doctors come by, having someone else there to listen and take notes
+        can make a big difference, because it is hard to remember everything when you are sick.
+    - layout: "bullets"
+      heading: "When to Plan Going Home?"
+      points: ["Start on day one", "Ask what you'll need at home", "Get a follow-up appointment", "Know warning signs"]
+      footage_query: "person leaving hospital wheelchair"
+      narration: >-
+        Question six: when should I start planning to go home? From the very first day. Ask what help or equipment you may
+        need at home, who will give you rides, and when your follow up appointment will be. Before you leave, make sure you
+        understand your medicines and the warning signs that mean you should call the doctor.
+    - layout: "outro"
+      heading: "Be Prepared"
+      points: ["Bring your medication list", "Ask: inpatient or observation?", "Plan for home early"]
+      footage_query: "family home together"
+      narration: >-
+        Be prepared, ask questions, and speak up. It is your right as a patient. This video is for education only, not medical
+        or financial advice. Like and subscribe to Health Support Studio for a new health video every day.
+  short_title: "Staying overnight? Ask this at the hospital #Shorts"
+  short_caption: >-
+    You can sleep in a hospital bed and still not be "admitted." Here is the question that can affect your bill.
+    Educational only, not medical or financial advice. #Hospital #Medicare #PatientTips #USHealthcare #HealthEducation
+  short_scenes:
+    - layout: "title"
+      heading: "Ask This at the Hospital"
+      points: ["It can affect your bill"]
+      footage_query: "hospital reception desk"
+      narration: >-
+        Staying overnight in the hospital? There is one question you should ask.
+    - layout: "big_number"
+      heading: "Inpatient?"
+      points: ["or observation?"]
+      footage_query: "hospital bed room window"
+      narration: >-
+        You can stay in a hospital bed overnight and still be an outpatient, under observation status. For people with
+        Medicare, this can change what you pay, and whether a nursing home stay afterward is covered. So ask: am I an
+        inpatient, or under observation?
+    - layout: "outro"
+      heading: "5 More Questions on YouTube"
+      points: ["Health Support Studio"]
+      footage_query: "family home together"
+      narration: >-
+        Get five more questions to ask in our full video, on the Health Support Studio YouTube channel.

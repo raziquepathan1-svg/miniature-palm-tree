@@ -1,0 +1,121 @@
+queue_topic: "Vitamin D: myths vs facts"
+style: "Myth vs Fact"
+sources:
+  - "NIH Office of Dietary Supplements, Vitamin D Fact Sheet for Consumers: https://ods.od.nih.gov/factsheets/VitaminD-Consumer/"
+  - "US Preventive Services Task Force, Falls Prevention in Community-Dwelling Older Adults: https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/falls-prevention-community-dwelling-older-adults-interventions"
+  - "MedlinePlus, Vitamin D: https://medlineplus.gov/vitamind.html"
+plan:
+  topic: "Vitamin D: myths vs facts"
+  title: "Vitamin D Myths: Are You Taking It for Nothing?"
+  description: |-
+    Vitamin D is one of the most popular supplements in America, but a lot of what people believe about it isn't true. We bust five common vitamin D myths, using guidance from the NIH and the US Preventive Services Task Force.
+
+    In this video:
+    • Why more vitamin D isn't always better
+    • Can you make vitamin D through a window?
+    • Does everyone need a supplement or a blood test?
+    • Where to get vitamin D from food
+
+    #VitaminD #Supplements #Nutrition #MythVsFact #HealthEducation
+  tags: ["vitamin d", "vitamin d myths", "vitamin d supplements", "vitamin d deficiency", "vitamin d foods", "too much vitamin d", "vitamin d test", "supplements", "bone health", "myth vs fact", "health education"]
+  thumbnail_text: "VITAMIN D MYTHS"
+  thumbnail_highlight: "MYTHS"
+  thumbnail_photo_query: "vitamin d supplement capsules sunlight"
+  playlist: "Healthy Habits & Prevention"
+  scenes:
+    - layout: "title"
+      heading: "Vitamin D: Myth vs Fact"
+      points: ["5 myths, busted"]
+      footage_query: "sunlight window morning"
+      narration: >-
+        Vitamin D is one of the most popular supplements in America. People take it for their bones, their mood, their
+        immune system, and more. But a lot of what we hear about vitamin D is not quite true. Today we are busting five common
+        myths.
+    - layout: "bullets"
+      heading: "Why Vitamin D Matters"
+      points: ["Helps absorb calcium", "Keeps bones strong", "Muscles and nerves use it", "Skin makes it from sunlight"]
+      footage_query: "person walking sunshine"
+      narration: >-
+        First, why does it matter? Vitamin D helps your body absorb calcium, which keeps bones strong. Your muscles, nerves
+        and immune system also use it. Your skin makes vitamin D when it is exposed to sunlight, and you can also get it from
+        some foods and supplements.
+    - layout: "myth_fact"
+      heading: "Myth 1"
+      points: ["More vitamin D is always better", "Too much can be harmful"]
+      footage_query: "supplement bottles shelf"
+      narration: >-
+        Myth number one: more is always better. Fact: taking very high doses of vitamin D supplements for a long time can cause
+        too much calcium in the blood. That can lead to nausea, weakness, confusion, kidney stones, and heart rhythm problems.
+        You cannot get too much from the sun, but you can from supplements. Do not take high doses unless your doctor advises it.
+    - layout: "myth_fact"
+      heading: "Myth 2"
+      points: ["Sun through a window counts", "Glass blocks the rays you need"]
+      footage_query: "person sitting by window"
+      narration: >-
+        Myth number two: sitting by a sunny window gives you vitamin D. Fact: your skin needs a type of sunlight called UVB to
+        make vitamin D, and window glass blocks it. The same UVB rays can also cause sunburn and skin cancer, so it is not a
+        reason to skip sun protection.
+    - layout: "myth_fact"
+      heading: "Myth 3"
+      points: ["Everyone needs a vitamin D test", "Not recommended for most healthy adults"]
+      footage_query: "blood test lab tube"
+      narration: >-
+        Myth number three: everyone should get their vitamin D level tested. Fact: expert groups do not recommend routine
+        testing for healthy adults with no symptoms or risk factors. Your doctor may test you if you have a condition that
+        affects absorption, bone disease, or other risk factors.
+    - layout: "myth_fact"
+      heading: "Myth 4"
+      points: ["Vitamin D prevents falls", "Evidence says it doesn't for most"]
+      footage_query: "senior couple walking park"
+      narration: >-
+        Myth number four: vitamin D supplements prevent falls in older adults. Fact: the US Preventive Services Task Force
+        recommends against taking vitamin D to prevent falls in older adults who live independently, because studies show it
+        does not help. Exercise for strength and balance works better. People with low levels may still need it, so ask your
+        doctor.
+    - layout: "myth_fact"
+      heading: "Myth 5"
+      points: ["You can only get it from the sun", "Some foods provide it too"]
+      footage_query: "salmon dinner plate"
+      narration: >-
+        Myth number five: you can only get vitamin D from the sun. Fact: some foods have it too. Fatty fish like salmon, trout
+        and sardines are good sources. Many milks, plant milks, cereals and orange juices are fortified with vitamin D. Egg
+        yolks and some mushrooms have smaller amounts.
+    - layout: "big_number"
+      heading: "600 IU"
+      points: ["daily amount for most adults", "800 IU after age 70 (NIH)"]
+      footage_query: "healthy breakfast table"
+      narration: >-
+        How much do you need? According to the NIH, most adults need six hundred international units a day, and eight hundred
+        after age seventy. People who may need more include older adults, people with darker skin, people who get little sun,
+        and people with certain health conditions. Ask your doctor before starting a supplement.
+    - layout: "outro"
+      heading: "The Takeaway"
+      points: ["More isn't better", "Food and sun both count", "Ask before high doses"]
+      footage_query: "family outdoor walk"
+      narration: >-
+        The takeaway: vitamin D is important, but more is not better. This video is for education only, not medical advice. Like
+        and subscribe to Health Support Studio for a new health video every day.
+  short_title: "Can you get vitamin D through a window? #Shorts"
+  short_caption: >-
+    Sitting by a sunny window all day? Here is why that doesn't give you vitamin D. Educational only, not medical advice.
+    #VitaminD #Supplements #Nutrition #HealthTips #HealthEducation
+  short_scenes:
+    - layout: "title"
+      heading: "Vitamin D Through Glass?"
+      points: ["Myth vs fact"]
+      footage_query: "person sitting by window"
+      narration: >-
+        Sitting in the sun by a window all day? You might think you are getting vitamin D.
+    - layout: "myth_fact"
+      heading: "Myth vs Fact"
+      points: ["Sun through a window counts", "Glass blocks the rays you need"]
+      footage_query: "sunlight window morning"
+      narration: >-
+        Your skin needs UVB rays to make vitamin D, and window glass blocks them. You can also get vitamin D from fatty fish and
+        fortified milk. And more is not always better, because too much from supplements can be harmful.
+    - layout: "outro"
+      heading: "4 More Vitamin D Myths"
+      points: ["Full video on YouTube"]
+      footage_query: "family outdoor walk"
+      narration: >-
+        We bust four more myths in our full video, on the Health Support Studio YouTube channel.

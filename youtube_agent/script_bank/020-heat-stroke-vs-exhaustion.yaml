@@ -1,0 +1,121 @@
+queue_topic: "Heat stroke vs heat exhaustion: how to tell the difference"
+style: "Warning Signs"
+sources:
+  - "CDC, Heat-related Illnesses: https://www.cdc.gov/niosh/heat-stress/about/illnesses.html"
+  - "CDC, Heat-Related Illnesses (what to look for, what to do): https://www.cdc.gov/disasters/extremeheat/pdf/Heat_Related_Illness.pdf"
+  - "MedlinePlus, Heat Illness: https://medlineplus.gov/heatillness.html"
+plan:
+  topic: "Heat stroke vs heat exhaustion: how to tell the difference"
+  title: "Heat Stroke or Heat Exhaustion? Know the Difference"
+  description: |-
+    Heat exhaustion and heat stroke can look alike at first, but one is a life-threatening emergency. Learn the warning signs of each and exactly what to do, based on CDC guidance.
+
+    In this video:
+    • Who is most at risk in the heat
+    • Signs of heat exhaustion, and what to do
+    • Signs of heat stroke, and why you call 911
+    • Simple ways to stay safe in hot weather
+
+    #HeatStroke #HeatExhaustion #FirstAid #SummerSafety #HealthEducation
+  tags: ["heat stroke", "heat exhaustion", "heat stroke vs heat exhaustion", "heat stroke symptoms", "heat illness", "first aid", "hot weather safety", "dehydration", "heat wave", "health education"]
+  thumbnail_text: "HEAT STROKE OR EXHAUSTION?"
+  thumbnail_highlight: "STROKE"
+  thumbnail_photo_query: "man sweating hot sun"
+  playlist: "Emergencies & First Aid"
+  scenes:
+    - layout: "title"
+      heading: "Heat Stroke or Exhaustion?"
+      points: ["Know the difference"]
+      footage_query: "hot sun city street"
+      narration: >-
+        It is a hot day, and someone near you starts to feel sick. Is it heat exhaustion, or heat stroke? They can look alike
+        at first, but heat stroke is a life threatening emergency. Here is how to tell the difference, and exactly what to do,
+        based on CDC guidance.
+    - layout: "bullets"
+      heading: "Who's Most at Risk"
+      points: ["Adults 65 and older", "Babies and young children", "Outdoor workers and athletes", "People with chronic illness"]
+      footage_query: "construction worker hot sun"
+      narration: >-
+        Anyone can get sick from heat, but some people are at higher risk. That includes older adults, babies and young
+        children, people who work or exercise outdoors, people with heart disease or other chronic conditions, and people who
+        take certain medicines. Never leave a child, an adult, or a pet in a parked car, even for a few minutes.
+    - layout: "bullets"
+      heading: "Heat Exhaustion Signs"
+      points: ["Heavy sweating", "Cold, pale, clammy skin", "Fast, weak pulse", "Nausea, cramps, dizziness"]
+      footage_query: "tired runner sweating"
+      narration: >-
+        First, heat exhaustion. This is your body struggling with the heat. Signs include heavy sweating, cold, pale and clammy
+        skin, a fast but weak pulse, nausea or vomiting, muscle cramps, tiredness or weakness, dizziness, headache, and fainting.
+    - layout: "bullets"
+      heading: "For Heat Exhaustion"
+      points: ["Move to a cool place", "Loosen clothing", "Cool, wet cloths", "Sip water"]
+      footage_query: "person resting shade water"
+      narration: >-
+        What should you do? Move the person to a cooler place, like the shade or air conditioning. Loosen their clothes, and
+        put cool, wet cloths on their body, or have them take a cool bath. Have them sip water. Get medical help right away if
+        they are throwing up, their symptoms get worse, or they last longer than an hour.
+    - layout: "warning"
+      heading: "Heat Stroke Signs"
+      points: ["Temperature 103°F or higher", "Hot, red, dry or damp skin", "Fast, strong pulse", "Confusion or passing out"]
+      footage_query: "ambulance emergency lights"
+      narration: >-
+        Now, heat stroke. This is when the body can no longer cool itself. Signs include a body temperature of one hundred
+        three degrees Fahrenheit or higher, hot, red, dry or damp skin, a fast, strong pulse, headache, dizziness, nausea,
+        confusion, and passing out. Heat stroke can cause death or permanent damage if not treated quickly.
+    - layout: "warning"
+      heading: "For Heat Stroke"
+      points: ["Call 911 right away", "Move to a cooler place", "Cool with wet cloths or bath", "Don't give anything to drink"]
+      footage_query: "person calling phone emergency"
+      narration: >-
+        If you think it is heat stroke, call 911 right away. Then move the person to a cooler place and help lower their
+        temperature with cool cloths or a cool bath. Do not give the person anything to drink. Stay with them until help
+        arrives.
+    - layout: "bullets"
+      heading: "The Key Difference"
+      points: ["Exhaustion: sweaty, cool, clammy", "Stroke: hot skin, high temperature", "Stroke: confusion is a red flag"]
+      footage_query: "thermometer hot weather"
+      narration: >-
+        So what is the quickest way to tell them apart? With heat exhaustion, the skin is usually sweaty, cool and clammy, and
+        the person is still thinking clearly. With heat stroke, the skin is hot, the temperature is very high, and the person
+        may become confused, act strangely, or pass out. Any confusion in the heat is a red flag. If you are not sure, treat
+        it as heat stroke and call 911.
+    - layout: "bullets"
+      heading: "Stay Safe in the Heat"
+      points: ["Drink water often", "Light, loose clothing", "Avoid the hottest hours", "Check on older neighbors"]
+      footage_query: "woman drinking water outdoors"
+      narration: >-
+        To stay safe, drink water often, even before you feel thirsty. Wear light, loose clothing. Plan outdoor activity for
+        cooler morning or evening hours, and take breaks in the shade. And check on older relatives and neighbors during heat
+        waves, especially those living alone without air conditioning.
+    - layout: "outro"
+      heading: "Remember"
+      points: ["Exhaustion: cool down and sip", "Stroke: call 911", "When in doubt, call"]
+      footage_query: "family park summer shade"
+      narration: >-
+        Remember: heat exhaustion, cool down and sip water. Heat stroke, call 911. This video is for education only, not
+        medical advice. Like and subscribe to Health Support Studio for a new health video every day.
+  short_title: "Heat stroke vs heat exhaustion #Shorts"
+  short_caption: >-
+    Heat exhaustion and heat stroke can look alike, but one is a 911 emergency. Here is how to tell. Educational only, not
+    medical advice. #HeatStroke #FirstAid #HeatWave #SummerSafety #HealthTips #HealthEducation
+  short_scenes:
+    - layout: "title"
+      heading: "Heat Stroke or Exhaustion?"
+      points: ["One is a 911 emergency"]
+      footage_query: "hot sun city street"
+      narration: >-
+        Someone is sick in the heat. Is it heat exhaustion or heat stroke? Here is the difference.
+    - layout: "bullets"
+      heading: "Tell the Difference"
+      points: ["Exhaustion: heavy sweat, clammy skin", "Stroke: 103°F+, hot red skin", "Stroke: confusion, passing out"]
+      footage_query: "man sweating hot sun"
+      narration: >-
+        Heat exhaustion: heavy sweating and cold, clammy skin. Move to a cool place and sip water. Heat stroke: a temperature of
+        one hundred three or higher, hot red skin, confusion or passing out. Call 911, cool them down, and do not give them
+        anything to drink.
+    - layout: "outro"
+      heading: "Full Video on YouTube"
+      points: ["Health Support Studio"]
+      footage_query: "family park summer shade"
+      narration: >-
+        Watch our full guide on the Health Support Studio YouTube channel.
