@@ -13,6 +13,9 @@ from .main import SCRIPT_BANK, load_config
 from .planner import VideoPlan
 
 # Things the text-to-speech voice may read wrongly; narration must spell them out.
+# Sites that block automated requests (they answer 404 even for real pages); checked by hand instead.
+NO_ROBOT_CHECK = ("fda.gov",)
+
 TTS_BAD = re.compile(r"\bmg\b|\be\.g\.|\bi\.e\.|%|°|/|&|\bvs\b|\bDr\b")
 
 
@@ -87,6 +90,8 @@ def broken_links(path) -> list[str]:
         url = re.search(r"https?://\S+", source)
         if not url:
             errs.append(f"source has no link: {source}")
+            continue
+        if any(domain in url.group() for domain in NO_ROBOT_CHECK):
             continue
         try:
             r = requests.get(url.group(), timeout=30, allow_redirects=True,

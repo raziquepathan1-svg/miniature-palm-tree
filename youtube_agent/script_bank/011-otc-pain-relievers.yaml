@@ -2,7 +2,7 @@ queue_topic: "Over-the-counter pain relievers: acetaminophen vs ibuprofen safety
 style: "Top Questions"
 sources:
   - "FDA, Acetaminophen: https://www.fda.gov/drugs/safe-use-over-counter-pain-relievers-and-fever-reducers/acetaminophen"
-  - "FDA, NSAIDs and heart attack or stroke risk: https://www.fda.gov/Drugs/DrugSafety/ucm451800.htm"
+  - "MedlinePlus, Ibuprofen: https://medlineplus.gov/druginfo/meds/a682159.html"
   - "MedlinePlus, Pain Relievers: https://medlineplus.gov/painrelievers.html"
 plan:
   topic: "Over-the-counter pain relievers: acetaminophen vs ibuprofen safety"
