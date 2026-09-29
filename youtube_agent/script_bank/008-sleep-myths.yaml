@@ -1,0 +1,121 @@
+queue_topic: "Sleep: how much you really need and how to improve it"
+style: "Myth vs Fact"
+sources:
+  - "CDC, About Sleep: https://www.cdc.gov/sleep/about/index.html"
+  - "NIH National Heart, Lung, and Blood Institute, Sleep Deprivation and Deficiency: https://www.nhlbi.nih.gov/health/sleep-deprivation"
+  - "MedlinePlus, Healthy Sleep: https://medlineplus.gov/healthysleep.html"
+plan:
+  topic: "Sleep: how much you really need and how to improve it"
+  title: "5 Sleep Myths That Are Wrecking Your Rest"
+  description: |-
+    Can you really catch up on sleep over the weekend? Does a nightcap help you sleep? We bust five common sleep myths and share simple habits that actually help, based on CDC and NIH guidance.
+
+    In this video:
+    • How much sleep adults really need
+    • Why weekend catch-up sleep isn't a fix
+    • What alcohol does to your sleep
+    • When snoring is a warning sign
+    • Simple habits for better sleep
+
+    #Sleep #SleepTips #Insomnia #SleepApnea #HealthEducation
+  tags: ["sleep myths", "how much sleep do i need", "sleep tips", "better sleep", "insomnia", "sleep apnea", "snoring", "alcohol and sleep", "catch up on sleep", "healthy habits", "health education"]
+  thumbnail_text: "SLEEP MYTHS"
+  thumbnail_highlight: "MYTHS"
+  thumbnail_photo_query: "tired woman bed alarm clock"
+  playlist: "Healthy Habits & Prevention"
+  scenes:
+    - layout: "title"
+      heading: "Sleep: Myth vs Fact"
+      points: ["5 myths wrecking your rest"]
+      footage_query: "woman sleeping bed morning"
+      narration: >-
+        About one in three American adults does not get enough sleep. And some of the things we believe about sleep are making
+        it worse. Today we are busting five common sleep myths, and sharing simple habits that actually help. Let's start with
+        the big one.
+    - layout: "myth_fact"
+      heading: "Myth 1"
+      points: ["Five hours is enough for me", "Most adults need 7 hours or more"]
+      footage_query: "tired man coffee morning"
+      narration: >-
+        Myth number one: I do fine on five hours. Fact: the CDC says most adults need at least seven hours of sleep a night.
+        Very few people truly do well on much less. Over time, too little sleep is linked to high blood pressure, diabetes,
+        heart disease, depression, and drowsy driving crashes.
+    - layout: "myth_fact"
+      heading: "Myth 2"
+      points: ["I can catch up on weekends", "A steady schedule works better"]
+      footage_query: "person sleeping weekend"
+      narration: >-
+        Myth number two: I can catch up on sleep over the weekend. Fact: sleeping in may help a little, but it does not fully
+        undo a week of short nights. And big shifts in your schedule can make it harder to fall asleep on Sunday night. Going
+        to bed and waking up at about the same time every day works better.
+    - layout: "myth_fact"
+      heading: "Myth 3"
+      points: ["A drink helps me sleep", "Alcohol disrupts sleep later"]
+      footage_query: "glass of wine evening"
+      narration: >-
+        Myth number three: a nightcap helps me sleep. Fact: alcohol may make you drowsy at first, but it disrupts your sleep
+        later in the night. You may wake up more often and feel less rested in the morning. Alcohol can also make snoring and
+        sleep apnea worse.
+    - layout: "myth_fact"
+      heading: "Myth 4"
+      points: ["Snoring is harmless", "Loud snoring can signal sleep apnea"]
+      footage_query: "couple bed night"
+      narration: >-
+        Myth number four: snoring is just annoying, not a health problem. Fact: loud snoring, especially with pauses in
+        breathing, gasping or choking at night, and feeling very sleepy during the day, can be a sign of sleep apnea. Untreated
+        sleep apnea is linked to high blood pressure, heart disease and stroke. It is treatable, so talk to your doctor.
+    - layout: "myth_fact"
+      heading: "Myth 5"
+      points: ["Older adults need less sleep", "Needs stay about the same"]
+      footage_query: "senior woman reading bed"
+      narration: >-
+        Myth number five: you need less sleep as you get older. Fact: older adults still need about seven to eight hours. Sleep
+        often gets lighter with age, and people may wake more at night. But frequent trouble sleeping is not something you just
+        have to accept, and it is worth mentioning to your doctor.
+    - layout: "bullets"
+      heading: "Habits That Help"
+      points: ["Same bedtime and wake time", "Dark, quiet, cool bedroom", "No screens before bed", "Limit late caffeine and big meals"]
+      footage_query: "cozy bedroom night lamp"
+      narration: >-
+        So what actually helps? Keep a regular schedule, even on weekends. Make your bedroom dark, quiet and cool. Put screens
+        away before bed. Avoid caffeine in the afternoon and evening, and big meals right before bed. Get some daylight and
+        physical activity during the day. And if you cannot sleep, get up and do something calm until you feel sleepy.
+    - layout: "warning"
+      heading: "Talk to Your Doctor If"
+      points: ["Trouble sleeping most nights", "Loud snoring or gasping", "Falling asleep while driving", "Very sleepy during the day"]
+      footage_query: "doctor talking patient office"
+      narration: >-
+        Talk to your doctor if you have trouble sleeping most nights for weeks, if someone notices you snore loudly or stop
+        breathing in your sleep, or if you feel so sleepy during the day that you nod off at work or behind the wheel. If you
+        are drowsy, do not drive.
+    - layout: "outro"
+      heading: "Sleep Is Health"
+      points: ["Aim for 7+ hours", "Keep a steady schedule", "Take snoring seriously"]
+      footage_query: "sunrise bedroom window"
+      narration: >-
+        Sleep is not a luxury. It is part of your health. This video is for education only, not medical advice. Like and
+        subscribe to Health Support Studio for a new health video every day.
+  short_title: "Does a nightcap help you sleep? #Shorts"
+  short_caption: >-
+    Think a drink before bed helps you sleep? Here is what it really does to your night. Educational only, not medical
+    advice. #Sleep #SleepTips #BetterSleep #HealthyHabits #HealthTips #HealthEducation
+  short_scenes:
+    - layout: "title"
+      heading: "Does a Nightcap Help?"
+      points: ["The truth about alcohol and sleep"]
+      footage_query: "glass of wine evening"
+      narration: >-
+        Think a drink before bed helps you sleep? Here is what it really does.
+    - layout: "myth_fact"
+      heading: "Myth vs Fact"
+      points: ["A drink helps me sleep", "Alcohol disrupts sleep later"]
+      footage_query: "man awake bed night"
+      narration: >-
+        Alcohol may make you drowsy at first, but it disrupts your sleep later in the night. You wake up more and feel less
+        rested. It can also make snoring and sleep apnea worse. A steady bedtime and a dark, cool room help much more.
+    - layout: "outro"
+      heading: "4 More Sleep Myths"
+      points: ["Full video on YouTube"]
+      footage_query: "sunrise bedroom window"
+      narration: >-
+        We bust four more sleep myths in our full video, on the Health Support Studio YouTube channel.

@@ -1,0 +1,121 @@
+queue_topic: "Sepsis: the emergency most people have never heard of"
+style: "Warning Signs"
+sources:
+  - "CDC, About Sepsis: https://www.cdc.gov/sepsis/about/index.html"
+  - "CDC, Sepsis Burden: https://www.cdc.gov/sepsis/communication-resources/burden.html"
+  - "NIH NIGMS, Sepsis: https://www.nigms.nih.gov/education/fact-sheets/Pages/sepsis.aspx"
+plan:
+  topic: "Sepsis: the emergency most people have never heard of"
+  title: "Sepsis: The Deadly Emergency Most People Don't Know"
+  description: |-
+    Sepsis is the body's extreme response to an infection, and it kills at least 350,000 adults in the US every year. Most people have never heard of it. Learn the warning signs, who is at risk, and the one question that can save a life.
+
+    In this video:
+    • What sepsis is, in plain language
+    • Who is at higher risk
+    • The warning signs, according to the CDC
+    • Why you should ask: "Could this be sepsis?"
+
+    #Sepsis #WarningSigns #Infection #MedicalEmergency #HealthEducation
+  tags: ["sepsis", "sepsis symptoms", "sepsis warning signs", "what is sepsis", "septic shock", "infection", "medical emergency", "could this be sepsis", "blood infection", "health education"]
+  thumbnail_text: "COULD IT BE SEPSIS?"
+  thumbnail_highlight: "SEPSIS?"
+  thumbnail_photo_query: "hospital patient bed monitor"
+  playlist: "Emergencies & First Aid"
+  scenes:
+    - layout: "title"
+      heading: "Sepsis Warning Signs"
+      points: ["The emergency few people know"]
+      footage_query: "hospital corridor"
+      narration: >-
+        It often starts with an ordinary infection, like a urinary tract infection, pneumonia, or an infected cut. Then,
+        suddenly, the person gets much sicker. This is sepsis, a life threatening emergency that many people have never heard
+        of. Knowing the warning signs can save a life.
+    - layout: "bullets"
+      heading: "What Is Sepsis?"
+      points: ["Body's extreme response to infection", "Can damage organs", "Can lead to death", "Needs emergency care"]
+      footage_query: "doctor hospital monitor"
+      narration: >-
+        Sepsis is the body's extreme response to an infection. Instead of just fighting the germs, the body's response starts
+        to damage its own tissues and organs. Without fast treatment, it can lead to organ failure and death. Almost any
+        infection can trigger it, including the flu, COVID nineteen, pneumonia, and skin or urinary infections.
+    - layout: "big_number"
+      heading: "350,000"
+      points: ["US adults with sepsis die", "each year, says CDC"]
+      footage_query: "hospital room empty bed"
+      narration: >-
+        This is not rare. According to the CDC, at least one point seven million adults in America develop sepsis each year,
+        and at least three hundred fifty thousand of them die during their hospital stay or are moved to hospice. One in three
+        people who die in a hospital had sepsis during that stay.
+    - layout: "bullets"
+      heading: "Higher Risk"
+      points: ["Adults 65 and older", "Babies under 1", "Chronic conditions like diabetes", "Weak immune system"]
+      footage_query: "senior woman hospital"
+      narration: >-
+        Anyone can get sepsis, but some people are at higher risk. That includes adults sixty five and older, babies under one
+        year old, people with chronic conditions like diabetes, lung disease, kidney disease or cancer, people with weakened
+        immune systems, and people who recently had a severe illness or hospital stay.
+    - layout: "warning"
+      heading: "Warning Signs"
+      points: ["Fast heart rate or weak pulse", "Confusion or disorientation", "Fever, shivering, or very cold", "Short of breath, clammy skin"]
+      footage_query: "person shivering blanket"
+      narration: >-
+        Here are the warning signs the CDC lists. A high heart rate or weak pulse. Confusion or disorientation. Extreme pain or
+        discomfort. Fever, shivering, or feeling very cold. Shortness of breath. And clammy or sweaty skin. A person with sepsis
+        may say they feel like they are going to die.
+    - layout: "warning"
+      heading: "Act Fast"
+      points: ["Infection plus these signs?", "Call 911 or go to the ER", "Ask: could this be sepsis?"]
+      footage_query: "ambulance emergency lights"
+      narration: >-
+        If someone has an infection, or had one recently, and shows any of these signs, get medical care immediately. Call 911
+        or go to the ER. Sepsis is a medical emergency, and every hour matters. When you get there, say the words: I am worried
+        this could be sepsis. That simple question helps the care team act faster.
+    - layout: "bullets"
+      heading: "After Sepsis"
+      points: ["Recovery can take time", "Tiredness, weakness, poor sleep", "Memory or mood changes", "Follow-up care matters"]
+      footage_query: "person resting home recovery"
+      narration: >-
+        Many people survive sepsis, especially when it is treated early. But recovery can take weeks or months. Survivors may
+        feel very tired or weak, sleep poorly, or notice changes in memory or mood. Keep your follow up appointments, and tell
+        your doctor about any new problems after you go home.
+    - layout: "bullets"
+      heading: "Lower Your Risk"
+      points: ["Clean and care for cuts", "Wash your hands", "Stay up to date on vaccines", "Manage chronic conditions"]
+      footage_query: "washing hands sink"
+      narration: >-
+        You can lower your risk by preventing infections. Wash your hands often. Clean cuts and scrapes and keep them covered
+        until they heal. Stay up to date on recommended vaccines, like the flu shot. Manage chronic conditions like diabetes.
+        And if an infection is not getting better, or is getting worse, call your doctor.
+    - layout: "outro"
+      heading: "Remember One Question"
+      points: ["Infection plus feeling very sick?", "Could this be sepsis?"]
+      footage_query: "family together home"
+      narration: >-
+        Remember: an infection plus sudden, severe illness means ask, could this be sepsis? Share this video, it could save
+        someone you love. This video is for education only, not medical advice. Subscribe to Health Support Studio for a new
+        health video every day.
+  short_title: "Sepsis: the words that could save a life #Shorts"
+  short_caption: >-
+    Sepsis kills hundreds of thousands of Americans every year, and most people have never heard of it. Know the signs, and
+    the question to ask. Educational only, not medical advice. #Sepsis #WarningSigns #HealthTips #MedicalEmergency #HealthEducation
+  short_scenes:
+    - layout: "title"
+      heading: "Could This Be Sepsis?"
+      points: ["Know the signs"]
+      footage_query: "hospital corridor"
+      narration: >-
+        A simple infection can turn into a life threatening emergency called sepsis. Know the signs.
+    - layout: "warning"
+      heading: "Warning Signs"
+      points: ["Fast heart rate", "Confusion", "Fever or feeling very cold", "Short of breath, clammy skin"]
+      footage_query: "person shivering blanket"
+      narration: >-
+        Watch for a fast heart rate, confusion, fever or feeling very cold, shortness of breath, clammy skin, or extreme pain.
+        If someone with an infection shows these signs, call 911 or go to the ER, and ask: could this be sepsis?
+    - layout: "outro"
+      heading: "Full Video on YouTube"
+      points: ["Health Support Studio"]
+      footage_query: "family together home"
+      narration: >-
+        Learn who is most at risk in our full video, on the Health Support Studio YouTube channel.

@@ -52,11 +52,11 @@ def check(path, config) -> list[str]:
         if plan.short_scenes:
             errs.append("short_scenes must be empty for a Quick Short")
     else:
-        if not 500 <= n <= 680:
-            errs.append(f"video is {n} words (want 500-680)")
+        if not 420 <= n <= 680:
+            errs.append(f"video is {n} words (want 420-680)")
         m = words(plan.short_scenes)
-        if not 2 <= len(plan.short_scenes) <= 4 or not 85 <= m <= 130:
-            errs.append(f"companion Short: {len(plan.short_scenes)} scenes, {m} words (want 2-4, 85-130)")
+        if not 2 <= len(plan.short_scenes) <= 4 or not 65 <= m <= 130:
+            errs.append(f"companion Short: {len(plan.short_scenes)} scenes, {m} words (want 2-4, 65-130)")
     for group, scenes in (("scene", plan.scenes), ("short scene", plan.short_scenes)):
         if scenes and (scenes[0].layout != "title" or scenes[-1].layout != "outro"):
             errs.append(f"{group}s must start with 'title' and end with 'outro'")

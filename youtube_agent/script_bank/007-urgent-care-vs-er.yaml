@@ -1,0 +1,116 @@
+queue_topic: "Urgent care vs the ER: which one do you need?"
+style: "Explainer"
+sources:
+  - "American College of Emergency Physicians, When to Go to the ER: https://www.emergencyphysicians.org/"
+  - "HealthyChildren.org (AAP), Urgent Care, ER or Pediatrician? https://www.healthychildren.org/English/family-life/health-management/Pages/urgent-care-ER-or-pediatrician-a-parent-guide.aspx"
+  - "MedlinePlus, Emergency Medical Services: https://medlineplus.gov/emergencymedicalservices.html"
+plan:
+  topic: "Urgent care vs the ER: which one do you need?"
+  title: "Urgent Care or ER? How to Choose in 30 Seconds"
+  description: |-
+    Choosing the right place for care can save you hours of waiting and a lot of money, and in a real emergency it can save your life. Here is a simple way to decide between your doctor, telehealth, urgent care and the emergency room.
+
+    In this video:
+    • What urgent care is good for
+    • The symptoms that always mean ER or 911
+    • Why you shouldn't drive yourself with chest pain
+    • Tips to save time and money
+
+    #UrgentCare #EmergencyRoom #HealthcareTips #USHealthcare #HealthEducation
+  tags: ["urgent care vs er", "urgent care or emergency room", "when to go to the er", "emergency room", "urgent care", "telehealth", "when to call 911", "healthcare costs", "us healthcare system", "health education"]
+  thumbnail_text: "URGENT CARE OR ER?"
+  thumbnail_highlight: "ER?"
+  thumbnail_photo_query: "emergency room entrance sign"
+  playlist: "Emergencies & First Aid"
+  scenes:
+    - layout: "title"
+      heading: "Urgent Care or the ER?"
+      points: ["How to choose, fast"]
+      footage_query: "hospital emergency entrance"
+      narration: >-
+        You twist your ankle, or your child spikes a fever on a Saturday night. Your doctor's office is closed. Do you go to
+        urgent care, or the emergency room? Picking the right place can save you hours and hundreds of dollars. And in a true
+        emergency, it can save a life. Here is how to choose.
+    - layout: "bullets"
+      heading: "Your Options"
+      points: ["Your doctor's office", "Telehealth visit", "Urgent care clinic", "Emergency room or 911"]
+      footage_query: "person video call doctor laptop"
+      narration: >-
+        Think of it as a ladder. For problems that can wait a day, call your regular doctor's office, many have an after hours
+        line that can advise you. Telehealth video visits work well for simple issues like a rash or a mild cold. Urgent care is
+        for problems that need attention today but are not life threatening. And the emergency room is for serious or life
+        threatening problems.
+    - layout: "bullets"
+      heading: "Urgent Care Is Good For"
+      points: ["Sprains and minor broken bones", "Small cuts that need stitches", "Ear pain, sore throat, pee pain", "Mild flu or cold symptoms"]
+      footage_query: "doctor examining ankle"
+      narration: >-
+        Urgent care is a good fit for sprains and simple broken bones in fingers or toes, small cuts that may need stitches,
+        ear pain, sore throats, pain when peeing, mild asthma flare ups, and cold or flu symptoms. Many urgent care clinics have
+        X-rays and can do quick tests, like for strep or the flu.
+    - layout: "warning"
+      heading: "Always ER or 911"
+      points: ["Chest pain or pressure", "Stroke signs: face, arm, speech", "Severe trouble breathing", "Heavy bleeding or major injury"]
+      footage_query: "ambulance driving city"
+      narration: >-
+        Some symptoms always mean the ER, or calling 911. Chest pain or pressure. Signs of a stroke, like a drooping face, arm
+        weakness or trouble speaking. Severe trouble breathing. Heavy bleeding that will not stop. A serious head injury,
+        especially with passing out or confusion. A seizure, severe burns, or a sudden, severe headache. And thoughts of
+        suicide: call or text 988, or 911.
+    - layout: "big_number"
+      heading: "Call 911"
+      points: ["don't drive yourself", "with chest pain or stroke signs"]
+      footage_query: "paramedics ambulance"
+      narration: >-
+        Here is an important tip. If you think someone is having a heart attack or a stroke, call 911 instead of driving
+        yourself or having a friend drive. Paramedics can start treatment on the way and alert the hospital, so the team is
+        ready the moment you arrive. Every minute counts.
+    - layout: "bullets"
+      heading: "Why It Matters"
+      points: ["ER treats the sickest first", "ER visits usually cost much more", "Urgent care waits are often shorter", "Check what your insurance covers"]
+      footage_query: "waiting room hospital"
+      narration: >-
+        Why does choosing matter? The ER treats the sickest people first, so a minor problem can mean a very long wait. ER
+        visits also usually cost a lot more than urgent care for the same minor problem. But never let cost stop you from going
+        to the ER in a real emergency. Emergency rooms must evaluate you whether or not you can pay.
+    - layout: "bullets"
+      heading: "Plan Ahead Today"
+      points: ["Find your nearest urgent care", "Check if it's in network", "Save your doctor's after-hours number", "Know your nearest ER"]
+      footage_query: "person using phone map"
+      narration: >-
+        Take five minutes today, before you need it. Find the urgent care clinic nearest your home, and check whether it is in
+        your insurance network. Save your doctor's after hours phone number in your phone. And know where your nearest
+        emergency room is.
+    - layout: "outro"
+      heading: "Quick Rule"
+      points: ["Can it wait? Doctor or telehealth", "Needs care today? Urgent care", "Life-threatening? ER or 911"]
+      footage_query: "family home evening"
+      narration: >-
+        Here is the quick rule. Can it wait? Call your doctor or use telehealth. Needs care today but not life threatening?
+        Urgent care. Could it be life threatening? The ER, or call 911. When in doubt, go to the ER. This video is for education
+        only, not medical advice. Like and subscribe to Health Support Studio.
+  short_title: "Urgent care or ER? The 3-second rule #Shorts"
+  short_caption: >-
+    Urgent care or the ER? Here is a simple rule that can save you time, money, and maybe a life. Educational only, not
+    medical advice. #UrgentCare #EmergencyRoom #HealthcareTips #HealthTips #HealthEducation
+  short_scenes:
+    - layout: "title"
+      heading: "Urgent Care or ER?"
+      points: ["A simple rule"]
+      footage_query: "hospital emergency entrance"
+      narration: >-
+        Urgent care or the emergency room? Here is a simple rule.
+    - layout: "bullets"
+      heading: "The Quick Rule"
+      points: ["Can wait? Call your doctor", "Needs care today? Urgent care", "Life-threatening? ER or 911"]
+      footage_query: "doctor examining ankle"
+      narration: >-
+        If it can wait, call your doctor or use telehealth. If it needs care today but is not life threatening, like a sprain
+        or ear pain, try urgent care. Chest pain, stroke signs, severe trouble breathing or heavy bleeding? Call 911. When in
+        doubt, go to the ER.
+    - layout: "outro"
+      heading: "Full Guide on YouTube"
+      points: ["Health Support Studio"]
+      footage_query: "family home evening"
+      narration: >-
+        Watch the full guide on the Health Support Studio YouTube channel.

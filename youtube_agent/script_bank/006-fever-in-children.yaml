@@ -1,0 +1,116 @@
+queue_topic: "Fever in children: when to worry and when to call the doctor"
+style: "Top Questions"
+sources:
+  - "HealthyChildren.org (AAP), Fever: When to Call the Pediatrician: https://www.healthychildren.org/English/health-issues/conditions/fever/Pages/When-to-Call-the-Pediatrician.aspx"
+  - "HealthyChildren.org (AAP), Fever and Your Baby: https://www.healthychildren.org/English/health-issues/conditions/fever/Pages/Fever-and-Your-Baby.aspx"
+  - "MedlinePlus, Fever: https://medlineplus.gov/fever.html"
+plan:
+  topic: "Fever in children: when to worry and when to call the doctor"
+  title: "Child Has a Fever? When to Worry and When to Call"
+  description: |-
+    Your child feels hot and the thermometer says 102. Is that dangerous? We answer the top questions parents ask about fever, based on guidance from the American Academy of Pediatrics.
+
+    In this video:
+    • What counts as a fever
+    • Why babies under 3 months need a doctor right away
+    • Why how your child acts matters more than the number
+    • Red flags that need emergency care
+
+    #FeverInKids #Parenting #KidsHealth #Pediatrics #HealthEducation
+  tags: ["fever in children", "child fever when to worry", "baby fever", "fever in babies", "when to call the doctor", "fever 104", "febrile seizure", "kids health", "parenting tips", "pediatric fever", "health education"]
+  thumbnail_text: "WHEN TO WORRY"
+  thumbnail_highlight: "WORRY"
+  thumbnail_photo_query: "mother checking child temperature"
+  playlist: "Kids & Family Health"
+  scenes:
+    - layout: "title"
+      heading: "Your Child Has a Fever"
+      points: ["When to worry, when to call"]
+      footage_query: "mother child thermometer"
+      narration: >-
+        It is the middle of the night, your child feels hot, and the thermometer shows a number that makes your heart race. Is
+        this dangerous? Should you go to the ER? Today we answer the questions parents ask most about fever, based on guidance
+        from the American Academy of Pediatrics.
+    - layout: "big_number"
+      heading: "100.4°F"
+      points: ["(38°C) or higher", "is a fever"]
+      footage_query: "digital thermometer"
+      narration: >-
+        Question one: what counts as a fever? In general, a temperature of one hundred point four degrees Fahrenheit, or
+        thirty eight degrees Celsius, or higher. For babies and toddlers, a rectal temperature is the most accurate. For older
+        kids, an oral, ear or forehead thermometer can work well.
+    - layout: "warning"
+      heading: "Baby Under 3 Months?"
+      points: ["Any fever of 100.4°F or more", "Call the doctor right away", "Even if baby seems fine"]
+      footage_query: "newborn baby sleeping"
+      narration: >-
+        Question two: is fever more serious in babies? Yes. If your baby is younger than three months and has a temperature of
+        one hundred point four or higher, call your doctor right away, even if your baby seems fine. Very young babies can get
+        serious infections that get worse quickly, so they need to be checked.
+    - layout: "myth_fact"
+      heading: "Common Belief"
+      points: ["A high fever damages the brain", "Watch how your child acts"]
+      footage_query: "child playing living room"
+      narration: >-
+        Question three: can a high fever damage my child's brain? Common fevers from infections do not cause brain damage.
+        Fever is actually one way the body fights germs. How your child acts matters more than the exact number. A child with a
+        fever of one hundred two who is still playing and drinking is often less worrying than a child with a lower fever who
+        is very hard to wake.
+    - layout: "bullets"
+      heading: "Should I Give Medicine?"
+      points: ["Not required for every fever", "Helps comfort", "Dose by weight, follow the label", "Never give aspirin to kids"]
+      footage_query: "parent comforting sick child"
+      narration: >-
+        Question four: should I always give fever medicine? Not always. The goal is comfort, not a perfect number. If your child
+        is uncomfortable, ask your pediatrician or pharmacist about the right medicine and dose, which is usually based on
+        weight. Never give aspirin to children or teens, because it is linked to a rare but serious illness called Reye's
+        syndrome.
+    - layout: "bullets"
+      heading: "When to Call the Doctor"
+      points: ["Fever over 3 days, age 2 and up", "Younger kids: call sooner", "Fever keeps rising above 104°F", "Ear pain, sore throat, pee pain"]
+      footage_query: "mother phone call child"
+      narration: >-
+        Question five: when should I call the doctor? For children two and older, call if a fever lasts more than three days.
+        For younger children, call sooner. Also call if the fever keeps going above one hundred four degrees, or if your child
+        has ear pain, a sore throat, pain when peeing, or signs of dehydration, like fewer wet diapers.
+    - layout: "warning"
+      heading: "Call 911 or Go to ER"
+      points: ["Trouble breathing", "Hard to wake or very confused", "Stiff neck or seizure", "Rash that doesn't fade when pressed"]
+      footage_query: "ambulance emergency lights"
+      narration: >-
+        Question six: when is it an emergency? Call 911 or go to the ER if your child has trouble breathing, is very hard to
+        wake, confused or limp, has a stiff neck, a seizure, bluish lips, or a rash of small purple or red spots that do not
+        fade when you press on them. Trust your instincts. If your child seems very sick to you, get help.
+    - layout: "outro"
+      heading: "Remember"
+      points: ["Under 3 months: call right away", "Watch behavior, not just the number", "Trust your instincts"]
+      footage_query: "happy family home"
+      narration: >-
+        Remember: any fever in a baby under three months means a call to the doctor. For older kids, watch how they act, not
+        only the number. This video is for education only, not medical advice. Like and subscribe to Health Support Studio for
+        a new health video every day.
+  short_title: "Baby has a fever? Know this number #Shorts"
+  short_caption: >-
+    Every parent should know this: fever in a baby under 3 months is different. Here is when to call the doctor right away.
+    Educational only, not medical advice. #FeverInKids #BabyHealth #ParentingTips #KidsHealth #HealthTips
+  short_scenes:
+    - layout: "title"
+      heading: "Baby Has a Fever?"
+      points: ["Know this number"]
+      footage_query: "newborn baby sleeping"
+      narration: >-
+        Every parent of a new baby should know this one number.
+    - layout: "big_number"
+      heading: "100.4°F"
+      points: ["under 3 months old?", "call the doctor right away"]
+      footage_query: "digital thermometer"
+      narration: >-
+        If your baby is younger than three months and has a temperature of one hundred point four degrees Fahrenheit or
+        higher, call your doctor right away, even if your baby seems fine. Young babies can get serious infections that get
+        worse quickly. For older kids, how they act matters more than the number.
+    - layout: "outro"
+      heading: "Full Fever Guide on YouTube"
+      points: ["Health Support Studio"]
+      footage_query: "happy family home"
+      narration: >-
+        Learn when a fever is an emergency in our full video, on the Health Support Studio YouTube channel.

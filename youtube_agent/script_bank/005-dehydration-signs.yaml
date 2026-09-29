@@ -1,0 +1,122 @@
+queue_topic: "Dehydration: signs to watch for in kids and older adults"
+style: "Warning Signs"
+sources:
+  - "MedlinePlus, Dehydration: https://medlineplus.gov/dehydration.html"
+  - "HealthyChildren.org (AAP), Dehydration: https://www.healthychildren.org/English/health-issues/injuries-emergencies/Pages/dehydration.aspx"
+  - "CDC, Heat and Older Adults: https://www.cdc.gov/heat-health/risk-factors/heat-and-older-adults-aged-65.html"
+plan:
+  topic: "Dehydration: signs to watch for in kids and older adults"
+  title: "Dehydration Warning Signs in Kids and Older Adults"
+  description: |-
+    Babies, young children and older adults can get dehydrated faster than you think, and the signs are easy to miss. Learn what to watch for, what helps, and when it becomes an emergency.
+
+    In this video:
+    • Early signs of dehydration
+    • Signs in babies and young children
+    • Why older adults are at higher risk, and the signs to watch
+    • When to call the doctor or 911
+
+    #Dehydration #KidsHealth #Caregiving #HealthTips #HealthEducation
+  tags: ["dehydration", "dehydration symptoms", "signs of dehydration in kids", "dehydration in babies", "dehydration in elderly", "oral rehydration solution", "vomiting and diarrhea", "caregiver tips", "kids health", "health education"]
+  thumbnail_text: "SIGNS YOU'RE MISSING"
+  thumbnail_highlight: "MISSING"
+  thumbnail_photo_query: "child drinking water glass"
+  playlist: "Kids & Family Health"
+  scenes:
+    - layout: "title"
+      heading: "Dehydration Warning Signs"
+      points: ["In kids and older adults"]
+      footage_query: "child drinking water"
+      narration: >-
+        Dehydration can sneak up fast, especially on babies, young children and older adults. A stomach bug, a fever or a hot
+        day can be enough. And the early signs are easy to miss. Today you will learn the warning signs to watch for, and which
+        ones mean you should get help right away.
+    - layout: "bullets"
+      heading: "Why It Happens"
+      points: ["Vomiting and diarrhea", "Fever and sweating", "Hot weather", "Not drinking enough"]
+      footage_query: "hot summer sun"
+      narration: >-
+        Dehydration means your body is losing more fluid than it is taking in. The most common causes are vomiting and
+        diarrhea, fever, heavy sweating in hot weather, and simply not drinking enough. Small children lose fluid quickly
+        because their bodies are small, and older adults often do not feel thirsty even when they need water.
+    - layout: "bullets"
+      heading: "Early Signs"
+      points: ["Thirst and dry mouth", "Dark yellow urine", "Peeing less than usual", "Tiredness or headache"]
+      footage_query: "person drinking water tired"
+      narration: >-
+        Let's start with the early signs, for anyone. You may feel thirsty, with a dry mouth or lips. Urine becomes darker
+        yellow, and you pee less often than usual. You may also feel tired, dizzy or get a headache. At this stage, sipping
+        fluids often helps.
+    - layout: "bullets"
+      heading: "Signs in Babies and Kids"
+      points: ["Fewer wet diapers", "No tears when crying", "Sunken eyes or soft spot", "Unusually sleepy or fussy"]
+      footage_query: "baby sleeping crib"
+      narration: >-
+        In babies and young children, watch for fewer wet diapers than usual, crying without tears, a dry mouth, and sunken
+        eyes. In babies, the soft spot on top of the head may look sunken. A child who is unusually sleepy, floppy or very
+        fussy may be getting dehydrated.
+    - layout: "bullets"
+      heading: "Signs in Older Adults"
+      points: ["Confusion or unusual behavior", "Dizziness when standing", "Constipation", "Dark urine, less often"]
+      footage_query: "senior man sitting home"
+      narration: >-
+        In older adults, dehydration can look different. Sometimes the first sign is new confusion, or acting unlike
+        themselves. They may feel dizzy when standing up, which raises the risk of falls. Some medicines, like water pills,
+        can add to the risk. If you care for an older loved one, gently remind them to drink throughout the day.
+    - layout: "warning"
+      heading: "Call 911 or Go to ER"
+      points: ["Very sleepy or hard to wake", "Confusion or fainting", "Fast breathing or heartbeat", "Little or no urine"]
+      footage_query: "ambulance emergency lights"
+      narration: >-
+        Now the red flags. Get emergency help right away if someone is very sleepy or hard to wake, confused, or faints. Also
+        if they have a very fast heartbeat or fast breathing, or have peed very little or not at all for many hours. For a
+        baby, that could mean no wet diaper for many hours. These can be signs of severe dehydration.
+    - layout: "bullets"
+      heading: "Call the Doctor Soon If"
+      points: ["Baby under 6 months with vomiting", "Can't keep fluids down", "Diarrhea for more than a day or two", "Blood in vomit or stool"]
+      footage_query: "mother phone call worried"
+      narration: >-
+        Call your doctor soon if a young baby is vomiting or has diarrhea, if someone cannot keep any fluids down, if diarrhea
+        lasts more than a day or two, or if you see blood in vomit or stool. Doctors can guide you by phone and tell you if you
+        need to be seen.
+    - layout: "bullets"
+      heading: "What Helps"
+      points: ["Small, frequent sips", "Oral rehydration solution", "Keep breastfeeding or formula", "Ask your pharmacist"]
+      footage_query: "pouring water glass kitchen"
+      narration: >-
+        What helps? Small, frequent sips are easier to keep down than big gulps. An oral rehydration solution from the
+        pharmacy replaces both water and salts, and is often better than plain water or sugary drinks when someone has vomiting
+        or diarrhea. Keep breastfeeding or giving formula to babies. Ask your pharmacist which product is right.
+    - layout: "outro"
+      heading: "Remember"
+      points: ["Watch the wet diapers and urine", "Confusion can be a sign", "When in doubt, call"]
+      footage_query: "family kitchen together"
+      narration: >-
+        Remember: watch the wet diapers and the urine color, and do not ignore new confusion in an older adult. When in doubt,
+        call your doctor. This video is for education only, not medical advice. Like and subscribe to Health Support Studio for
+        a new health video every day.
+  short_title: "3 dehydration signs parents miss #Shorts"
+  short_caption: >-
+    Babies and older adults can get dehydrated fast, and the signs are easy to miss. Here is what to watch for. Educational
+    only, not medical advice. #Dehydration #KidsHealth #ParentingTips #Caregiving #HealthTips #HealthEducation
+  short_scenes:
+    - layout: "title"
+      heading: "Is Your Child Dehydrated?"
+      points: ["Signs parents miss"]
+      footage_query: "child drinking water"
+      narration: >-
+        A stomach bug or a fever can dehydrate a child faster than you think. Here are signs to watch.
+    - layout: "bullets"
+      heading: "Watch For"
+      points: ["Fewer wet diapers", "No tears when crying", "Sunken eyes", "Very sleepy or floppy"]
+      footage_query: "baby sleeping crib"
+      narration: >-
+        Fewer wet diapers than usual. Crying without tears. A dry mouth and sunken eyes. And a child who is unusually sleepy or
+        floppy. That last one, or a child who is hard to wake, means get emergency help right away.
+    - layout: "outro"
+      heading: "Signs in Older Adults Too"
+      points: ["Full video on YouTube"]
+      footage_query: "senior man sitting home"
+      narration: >-
+        Older adults show different signs, like sudden confusion. Watch our full video on the Health Support Studio YouTube
+        channel.

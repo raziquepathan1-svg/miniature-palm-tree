@@ -1,0 +1,49 @@
+queue_topic: "Why you should keep an up-to-date medication list"
+style: "Quick Short"
+sources:
+  - "FDA, My Medicine Record: https://www.fda.gov/drugs/resources-you-drugs/my-medicine-record"
+  - "AHRQ, Your Medicine: Be Smart. Be Safe.: https://www.ahrq.gov/patients-consumers/diagnosis-treatment/treatments/safemeds/yourmeds.html"
+plan:
+  topic: "Why you should keep an up-to-date medication list"
+  title: "The 1 List That Could Save You in an Emergency"
+  description: |-
+    In an emergency, you may not be able to tell doctors what medicines you take. An up-to-date medication list can prevent dangerous mix-ups. Here is what to put on it.
+
+    #MedicationSafety #PatientSafety #HealthTips #Caregiving #Shorts
+  tags: ["medication list", "medication safety", "patient safety", "emergency preparedness", "caregiver tips", "drug interactions", "supplements", "health tips", "health shorts"]
+  thumbnail_text: "KEEP THIS LIST"
+  thumbnail_highlight: "LIST"
+  thumbnail_photo_query: "pill bottles table"
+  playlist: "Medications & Safety"
+  scenes:
+    - layout: "title"
+      heading: "Keep This List"
+      points: ["It could save your life"]
+      footage_query: "pill bottles kitchen table"
+      narration: >-
+        If you ended up in the ER tonight, could you name every medicine you take, and the dose? Most people cannot.
+    - layout: "bullets"
+      heading: "Write Down"
+      points: ["Every medicine and dose", "Vitamins and supplements", "Over-the-counter meds", "Allergies"]
+      footage_query: "person writing notebook"
+      narration: >-
+        So keep a list. Write down every prescription with its dose, how often you take it and why. Add over the counter
+        medicines, vitamins, herbs and supplements, because they can interact too. And list your allergies.
+    - layout: "bullets"
+      heading: "Keep It Handy"
+      points: ["Photo on your phone", "Copy in your wallet", "Bring it to every visit"]
+      footage_query: "person using smartphone"
+      narration: >-
+        Keep a photo on your phone and a copy in your wallet. Bring it to every appointment, and update it whenever something
+        changes.
+    - layout: "outro"
+      heading: "Do It Today"
+      points: ["For you and your loved ones"]
+      footage_query: "senior couple home"
+      narration: >-
+        Make one for yourself and for loved ones you care for. Subscribe to Health Support Studio for more.
+  short_title: "The list that could save your life #Shorts"
+  short_caption: >-
+    Could you name every medicine you take, and the dose, in an emergency? Make this list today. Educational only, not
+    medical advice. #MedicationSafety #PatientSafety #HealthTips #Caregiving #HealthEducation
+  short_scenes: []
