@@ -21,6 +21,13 @@ Any time before then:
 
 To make an extra video on demand from your phone: in the **GitHub app**, open the repo → **Actions → Daily YouTube video → Run workflow** (you can type a topic).
 
+### Free scripts: the script bank
+The agent first uses the **pre-written, fact-checked scripts** in `script_bank/` (one per day, in order). These cost nothing, because they're written in a Claude chat, not through the paid API. Each run's summary shows how many are left.
+
+**When they run out**, open Claude Code and say: *"write 30 more scripts for my YouTube channel's script bank"*. If the bank is empty, the agent falls back to the paid API (and stops when the credit is gone).
+
+After adding scripts, the **Check script bank** workflow checks their length, on-screen text and source links.
+
 ### Instagram and Facebook Reels
 Every day a ~45-second vertical Short on the same topic is also made and, after the YouTube video goes public, posted as a Reel to Instagram and Facebook. Setup: see [SOCIAL_SETUP.md](SOCIAL_SETUP.md).
 
