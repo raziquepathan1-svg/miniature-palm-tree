@@ -1,0 +1,122 @@
+queue_topic: "Seasonal flu and vaccines: myths vs facts"
+style: "Myth vs Fact"
+sources:
+  - "CDC, Key Facts About Seasonal Flu Vaccine: https://www.cdc.gov/flu/vaccines/keyfacts.html"
+  - "CDC, 2026-2027 Flu Season: https://www.cdc.gov/flu/season/2026-2027.html"
+  - "CDC, Preventing Seasonal Flu: https://www.cdc.gov/flu/prevention/index.html"
+plan:
+  topic: "Seasonal flu and vaccines: myths vs facts"
+  title: "5 Flu Shot Myths You Probably Still Believe"
+  description: |-
+    Flu season is here. Can the flu shot give you the flu? Do healthy people even need it? We bust five of the most common flu vaccine myths using current CDC guidance.
+
+    In this video:
+    • Why the flu shot can't give you the flu
+    • Why you need a new vaccine every season
+    • The "stomach flu" mix-up
+    • When to get vaccinated, and flu warning signs
+
+    #FluShot #FluSeason #Vaccines #MythVsFact #HealthEducation
+  tags: ["flu shot", "flu vaccine myths", "can the flu shot give you the flu", "flu season 2026", "flu vaccine side effects", "influenza", "stomach flu", "when to get flu shot", "vaccines", "myth vs fact", "health education"]
+  thumbnail_text: "FLU SHOT MYTHS"
+  thumbnail_highlight: "MYTHS"
+  thumbnail_photo_query: "flu shot arm vaccine"
+  playlist: "Infections & Vaccines"
+  scenes:
+    - layout: "title"
+      heading: "Flu Shot: Myth vs Fact"
+      points: ["5 myths, busted"]
+      footage_query: "pharmacy vaccine arm"
+      narration: >-
+        Every fall, the same flu shot myths come back. Maybe you have heard that the shot gives you the flu, or that healthy
+        people do not need it. Today we are busting five of the most common flu vaccine myths, using current guidance from the
+        CDC. Let's see how many you have heard.
+    - layout: "myth_fact"
+      heading: "Myth 1"
+      points: ["The flu shot can give you the flu", "Flu shots can't cause flu illness"]
+      footage_query: "vaccine injection arm"
+      narration: >-
+        Myth number one: the flu shot can give you the flu. Fact: flu shots are made with inactivated virus, or with just a
+        single protein from the virus, so they cannot cause flu illness. Some people get a sore arm, a mild headache or feel
+        tired for a day or two. That is your immune system responding, not the flu.
+    - layout: "myth_fact"
+      heading: "Myth 2"
+      points: ["Healthy people don't need it", "Everyone 6 months and up should get it"]
+      footage_query: "young woman jogging park"
+      narration: >-
+        Myth number two: I am young and healthy, so I do not need a flu shot. Fact: the flu can put healthy people in the
+        hospital too. The CDC recommends a flu vaccine every season for almost everyone six months and older. And getting
+        vaccinated also helps protect babies, older relatives and people with weak immune systems around you.
+    - layout: "myth_fact"
+      heading: "Myth 3"
+      points: ["Last year's shot still protects me", "You need a new one every season"]
+      footage_query: "calendar autumn leaves"
+      narration: >-
+        Myth number three: I got a flu shot last year, so I am covered. Fact: flu viruses keep changing, so the vaccine is
+        updated every year to match the viruses expected to spread. Protection from the vaccine also fades over time. That is
+        why you need a new flu vaccine every season.
+    - layout: "myth_fact"
+      heading: "Myth 4"
+      points: ["Stomach flu is the flu", "Flu is a respiratory illness"]
+      footage_query: "woman coughing sick home"
+      narration: >-
+        Myth number four: the stomach flu is the same thing as the flu. Fact: the flu, or influenza, is a respiratory illness.
+        It usually brings fever, cough, sore throat, body aches and extreme tiredness. Vomiting and diarrhea from a stomach bug
+        are usually caused by different viruses, like norovirus, and the flu shot does not protect against those.
+    - layout: "myth_fact"
+      heading: "Myth 5"
+      points: ["If I got sick, the shot failed", "It can still make illness milder"]
+      footage_query: "person resting tea blanket"
+      narration: >-
+        Myth number five: I got the shot and still got sick, so it does not work. Fact: no vaccine is perfect, and you can
+        also catch other viruses that the flu shot does not cover. But studies show vaccinated people who do get the flu are
+        less likely to become seriously ill or end up in the hospital.
+    - layout: "big_number"
+      heading: "2 Weeks"
+      points: ["for protection to build", "aim for September or October"]
+      footage_query: "pharmacy counter"
+      narration: >-
+        When should you get it? It takes about two weeks after vaccination for protection to build. The CDC says September and
+        October are generally good times for most people. But if you missed that, getting vaccinated later in the season still
+        helps. Pharmacies, clinics and doctor's offices all offer flu shots.
+    - layout: "warning"
+      heading: "Flu Emergency Signs"
+      points: ["Trouble breathing", "Chest pain or pressure", "Confusion or hard to wake", "Bluish lips or face"]
+      footage_query: "ambulance street night"
+      narration: >-
+        Know the flu emergency warning signs. Call 911 or get emergency care for trouble breathing, pain or pressure in the
+        chest, confusion or being hard to wake, bluish lips or face, a seizure, or symptoms that improve and then come back
+        worse. In children, also watch for fast breathing and not drinking enough fluids.
+    - layout: "outro"
+      heading: "Protect Your Season"
+      points: ["Get your yearly flu shot", "Wash hands, stay home when sick", "Ask about your best option"]
+      footage_query: "family together home"
+      narration: >-
+        So get your yearly flu shot, wash your hands, and stay home when you are sick. If you have questions about which
+        vaccine is right for you, ask your doctor or pharmacist. This video is for education only, not medical advice. Like and
+        subscribe to Health Support Studio for a new health video every day.
+  short_title: "Can the flu shot give you the flu? #Shorts"
+  short_caption: >-
+    Can the flu shot give you the flu? It is one of the biggest myths of flu season. Here is the truth. Educational only,
+    not medical advice. #FluShot #FluSeason #Vaccines #MythVsFact #HealthTips #HealthEducation
+  short_scenes:
+    - layout: "title"
+      heading: "Can a Flu Shot Cause Flu?"
+      points: ["The #1 flu shot myth"]
+      footage_query: "pharmacy vaccine arm"
+      narration: >-
+        Can the flu shot give you the flu? It is the number one flu shot myth, so let's clear it up.
+    - layout: "myth_fact"
+      heading: "Myth vs Fact"
+      points: ["The shot gives you the flu", "It can't cause flu illness"]
+      footage_query: "vaccine injection arm"
+      narration: >-
+        Flu shots use inactivated virus, or a single protein from it, so they cannot cause flu illness. A sore arm or feeling
+        tired for a day is your immune system at work. The CDC recommends a flu vaccine every season for almost everyone six
+        months and older.
+    - layout: "outro"
+      heading: "4 More Myths on YouTube"
+      points: ["Health Support Studio"]
+      footage_query: "family together home"
+      narration: >-
+        We bust four more flu shot myths in our full video, on the Health Support Studio YouTube channel.

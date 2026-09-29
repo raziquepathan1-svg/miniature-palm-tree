@@ -1,0 +1,123 @@
+queue_topic: "Antibiotics: why they don't work on colds and flu"
+style: "Explainer"
+sources:
+  - "CDC, Antibiotic Prescribing and Use: https://www.cdc.gov/antibiotic-use/"
+  - "CDC, Antimicrobial Resistance Facts and Stats: https://www.cdc.gov/antimicrobial-resistance/data-research/facts-stats/index.html"
+  - "HealthyChildren.org (AAP), Why Most Sore Throats, Coughs and Runny Noses Don't Need Antibiotics: https://www.healthychildren.org/English/safety-prevention/at-home/medication-safety/Pages/Antibiotics-for-a-Sore-Throat-Cough-or-Runny-Nose.aspx"
+plan:
+  topic: "Antibiotics: why they don't work on colds and flu"
+  title: "Why Antibiotics Won't Fix Your Cold or Flu"
+  description: |-
+    Feeling awful with a cold or the flu and wondering why your doctor won't prescribe antibiotics? Here is the simple reason: antibiotics kill bacteria, and colds and flu are caused by viruses.
+
+    In this video:
+    • Bacteria vs viruses, explained simply
+    • Which common illnesses do and don't need antibiotics
+    • The real risks of taking antibiotics you don't need
+    • What actually helps you feel better, and when to see a doctor
+
+    #Antibiotics #ColdAndFlu #AntibioticResistance #HealthEducation #FluSeason
+  tags: ["antibiotics", "antibiotics for cold", "antibiotics for flu", "do antibiotics work on viruses", "antibiotic resistance", "bacteria vs virus", "cold and flu", "sinus infection antibiotics", "strep throat", "flu season", "health education"]
+  thumbnail_text: "WON'T FIX YOUR COLD"
+  thumbnail_highlight: "COLD"
+  thumbnail_photo_query: "sick woman tissue blanket"
+  playlist: "Infections & Vaccines"
+  scenes:
+    - layout: "title"
+      heading: "Antibiotics and Your Cold"
+      points: ["Why they don't help"]
+      footage_query: "sick person blanket couch"
+      narration: >-
+        You have a stuffy nose, a sore throat, and a cough that will not quit. You just want something strong to knock it out,
+        so you ask for antibiotics. But your doctor says no. That is not because they do not care. It is because antibiotics
+        simply cannot fix a cold or the flu. Let me explain why, in plain language.
+    - layout: "bullets"
+      heading: "Bacteria vs Viruses"
+      points: ["Bacteria: living cells", "Viruses: need your cells to copy", "Antibiotics target bacteria only", "Colds and flu are viruses"]
+      footage_query: "microscope bacteria cells"
+      narration: >-
+        There are two very different kinds of germs. Bacteria are tiny living cells that can grow and multiply on their own.
+        Viruses are much smaller, and they can only copy themselves inside your own cells. Antibiotics work by attacking parts
+        of bacteria, like their cell walls. Viruses do not have those parts, so antibiotics pass right by them. And colds and the
+        flu are caused by viruses.
+    - layout: "myth_fact"
+      heading: "Common Belief"
+      points: ["Green mucus means you need antibiotics", "Color alone doesn't mean bacteria"]
+      footage_query: "woman blowing nose tissue"
+      narration: >-
+        Here is a belief many people hold: if your mucus turns yellow or green, it must be a bacterial infection. Not true. The
+        color comes from your immune system fighting the germs, and it happens with viral colds too. Color alone does not tell
+        you that you need antibiotics.
+    - layout: "bullets"
+      heading: "Usually No Antibiotics Needed"
+      points: ["Common cold and runny nose", "Flu", "Most sore throats", "Bronchitis and many sinus infections"]
+      footage_query: "person resting bed tea"
+      narration: >-
+        So which illnesses usually do not need antibiotics? The common cold, the flu, most sore throats, bronchitis in otherwise
+        healthy people, and many sinus infections. Some illnesses are caused by bacteria and do need them, like strep throat,
+        urinary tract infections, and some pneumonias. That is why your doctor may test you before deciding.
+    - layout: "big_number"
+      heading: "28%"
+      points: ["of antibiotic prescriptions", "are unnecessary, says CDC"]
+      footage_query: "pharmacy pills medicine"
+      narration: >-
+        According to the CDC, at least twenty eight percent of antibiotic prescriptions in doctor's offices and clinics are
+        not needed. That matters, because antibiotics are not harmless. They can cause side effects like diarrhea, rashes and
+        allergic reactions. They can also lead to a serious gut infection called C. diff.
+    - layout: "big_number"
+      heading: "2.8 Million"
+      points: ["antibiotic-resistant infections", "in the US each year"]
+      footage_query: "hospital hallway"
+      narration: >-
+        And every time antibiotics are used, some bacteria can learn to survive them. This is called antibiotic resistance.
+        The CDC estimates more than two point eight million resistant infections happen in the United States every year, and
+        more than thirty five thousand people die as a result. Using antibiotics only when needed keeps them working for everyone.
+    - layout: "bullets"
+      heading: "What Actually Helps"
+      points: ["Rest and fluids", "Honey for cough, age 1 and up", "Ask a pharmacist about symptom relief", "Flu antivirals: ask your doctor early"]
+      footage_query: "cup of tea honey"
+      narration: >-
+        So what does help? Rest, plenty of fluids, and time. A spoonful of honey can soothe a cough, but never give honey to a
+        baby under one year old. A pharmacist can help you choose safe over the counter symptom relief. And for the flu, there
+        are prescription antiviral medicines that work best when started early, so call your doctor soon if you are at high risk.
+    - layout: "warning"
+      heading: "See a Doctor If"
+      points: ["Trouble breathing", "Fever lasting more than a few days", "Symptoms getting worse after improving", "Chest pain or confusion"]
+      footage_query: "doctor listening stethoscope"
+      narration: >-
+        See a doctor if you have trouble breathing, a high fever or a fever that lasts more than a few days, symptoms that get
+        better and then suddenly get worse, or symptoms lasting longer than about ten days. Call 911 for severe trouble breathing,
+        chest pain, or confusion.
+    - layout: "outro"
+      heading: "The Bottom Line"
+      points: ["Antibiotics kill bacteria, not viruses", "Take them only when prescribed", "Never share or save leftovers"]
+      footage_query: "family healthy home"
+      narration: >-
+        The bottom line: antibiotics fight bacteria, not viruses. When you do need them, take them exactly as prescribed, and
+        never share them or save leftovers for next time. This video is for education, not medical advice, so talk with your
+        doctor or pharmacist about your own care. Like and subscribe to Health Support Studio for a new health video every day.
+  short_title: "Why antibiotics won't cure your cold #Shorts"
+  short_caption: >-
+    Asking for antibiotics for a cold? Here is why they won't help, and what actually does. Educational only, not medical
+    advice. #Antibiotics #ColdAndFlu #FluSeason #HealthTips #HealthEducation #AntibioticResistance
+  short_scenes:
+    - layout: "title"
+      heading: "Antibiotics Won't Fix a Cold"
+      points: ["Here's why"]
+      footage_query: "sick person blanket couch"
+      narration: >-
+        Got a cold and want antibiotics? Here is why they will not help you.
+    - layout: "bullets"
+      heading: "Wrong Kind of Germ"
+      points: ["Antibiotics kill bacteria", "Colds and flu are viruses", "Side effects are real", "Overuse breeds resistance"]
+      footage_query: "microscope bacteria cells"
+      narration: >-
+        Antibiotics kill bacteria. Colds and the flu are caused by viruses, so antibiotics cannot touch them. Taking them
+        anyway can cause side effects like diarrhea and allergic reactions, and it helps bacteria become resistant.
+        Rest, fluids and time are what help most. And if you do get an antibiotic, take it exactly as prescribed.
+    - layout: "outro"
+      heading: "Full Video on YouTube"
+      points: ["Health Support Studio"]
+      footage_query: "cup of tea honey"
+      narration: >-
+        Watch our full video on what really helps and when to see a doctor, on the Health Support Studio YouTube channel.

@@ -1,0 +1,118 @@
+queue_topic: "How to read your blood test results (CBC and metabolic panel)"
+style: "Top Questions"
+sources:
+  - "MedlinePlus, Complete Blood Count: https://medlineplus.gov/lab-tests/complete-blood-count-cbc/"
+  - "MedlinePlus, Comprehensive Metabolic Panel: https://medlineplus.gov/lab-tests/comprehensive-metabolic-panel-cmp/"
+  - "MedlinePlus, How to Understand Your Lab Results: https://medlineplus.gov/lab-tests/how-to-understand-your-lab-results/"
+plan:
+  topic: "How to read your blood test results (CBC and metabolic panel)"
+  title: "Your Blood Test Results Explained: CBC and Metabolic Panel"
+  description: |-
+    Got your blood test results in your patient portal and not sure what they mean? We answer the most common questions about the two tests doctors order most: the complete blood count (CBC) and the metabolic panel (BMP or CMP).
+
+    In this video:
+    • What a CBC measures: red cells, hemoglobin, white cells and platelets
+    • What a metabolic panel checks: blood sugar, electrolytes, kidneys and liver
+    • Why a result flagged "high" or "low" is not always a problem
+    • Questions to ask your doctor about your results
+
+    #BloodTest #LabResults #CBC #HealthEducation #PatientTips
+  tags: ["blood test results", "CBC blood test", "complete blood count", "metabolic panel", "CMP blood test", "BMP blood test", "lab results explained", "how to read blood test", "patient portal results", "hemoglobin", "white blood cell count", "health education"]
+  thumbnail_text: "WHAT DO THESE MEAN?"
+  thumbnail_highlight: "MEAN"
+  thumbnail_photo_query: "blood test tubes laboratory"
+  playlist: "Tests & Doctor Visits"
+  scenes:
+    - layout: "title"
+      heading: "Your Blood Test, Decoded"
+      points: ["CBC and metabolic panel questions"]
+      footage_query: "blood sample laboratory"
+      narration: >-
+        Your blood test results just showed up on your phone. There are dozens of numbers, a few red flags marked high or low,
+        and your appointment is not until next week. Sound familiar? Today we answer the questions people ask most about the
+        two blood tests doctors order more than almost any others: the complete blood count, and the metabolic panel.
+    - layout: "bullets"
+      heading: "What Does a CBC Measure?"
+      points: ["Red blood cells and hemoglobin", "Hematocrit", "White blood cells", "Platelets"]
+      footage_query: "microscope laboratory scientist"
+      narration: >-
+        Question one: what does a CBC, or complete blood count, actually measure? It counts the cells in your blood. Red blood
+        cells and hemoglobin carry oxygen, and low levels can mean anemia. Hematocrit is the share of your blood made up of red
+        cells. White blood cells fight infection, so they can rise when you are sick. And platelets help your blood clot.
+    - layout: "bullets"
+      heading: "What Is a Metabolic Panel?"
+      points: ["Blood sugar (glucose)", "Electrolytes like sodium, potassium", "Kidney tests: BUN, creatinine, eGFR", "CMP adds liver tests and protein"]
+      footage_query: "doctor reviewing results tablet"
+      narration: >-
+        Question two: what is a metabolic panel? The basic version, called a BMP, checks your blood sugar, your electrolytes
+        like sodium and potassium, and how well your kidneys are working, using tests called BUN, creatinine and eGFR. The
+        comprehensive version, called a CMP, adds liver tests and proteins like albumin. Together they give a quick picture of
+        how several organs are doing.
+    - layout: "big_number"
+      heading: "1 in 20"
+      points: ["healthy results can fall outside", "the normal range"]
+      footage_query: "person reading phone worried"
+      narration: >-
+        Question three: my result is flagged high or low. Should I panic? Usually, no. A normal range is based on the results
+        of most healthy people, and by design, about one in twenty healthy results falls a little outside it. A number that is
+        slightly off can be completely fine for you. What matters is how far off it is, whether it has changed over time, and
+        your overall health.
+    - layout: "bullets"
+      heading: "Why Ranges Differ"
+      points: ["Each lab sets its own range", "Check the range on your report", "Age and sex can matter", "Compare with your past results"]
+      footage_query: "laboratory technician samples"
+      narration: >-
+        Question four: why are the normal ranges on my report different from what I read online? Each lab uses its own
+        equipment and sets its own reference ranges, and some ranges depend on your age or sex. So always compare your number
+        with the range printed right next to it on your own report. It also helps to look at your past results to see the trend.
+    - layout: "bullets"
+      heading: "Do I Need to Fast?"
+      points: ["Sometimes, for blood sugar tests", "Follow your clinic's instructions", "Water is usually allowed", "Ask about your medicines"]
+      footage_query: "glass of water table"
+      narration: >-
+        Question five: do I need to fast before these tests? Sometimes. Fasting can matter for blood sugar and some cholesterol
+        tests, but not for every test. Follow the instructions your clinic gives you. Plain water is usually allowed, and it
+        helps the blood draw go smoothly. And ask whether you should take your usual medicines that morning.
+    - layout: "warning"
+      heading: "Call Right Away If"
+      points: ["The lab or doctor calls urgently", "Chest pain or trouble breathing", "Fainting or severe weakness", "Unusual bleeding or bruising"]
+      footage_query: "person calling phone concerned"
+      narration: >-
+        Question six: my results came out before my doctor called. What now? Results often appear in your portal before your
+        doctor has reviewed them. If a result is dangerous, the lab or office usually calls you quickly. But do not wait for your
+        appointment if you feel very unwell. If you have chest pain, trouble breathing, fainting, or unusual bleeding, call 911.
+    - layout: "outro"
+      heading: "Ask These Questions"
+      points: ["Is anything out of range for me?", "Has it changed since last time?", "Do I need a repeat test?"]
+      footage_query: "patient talking with doctor"
+      narration: >-
+        At your visit, ask your doctor three questions. Is anything out of range for me? Has it changed since last time? And do
+        I need a repeat test or any follow up? This video is for education only, not medical advice, so always talk with your
+        own doctor about your results. If this helped, give it a like and subscribe to Health Support Studio for a new
+        health video every day.
+  short_title: "That HIGH on your blood test? Read this first #Shorts"
+  short_caption: >-
+    Saw a result flagged high or low on your blood test? Here is why that is not always a problem, and what to ask your
+    doctor. Educational only, not medical advice. #BloodTest #LabResults #HealthTips #PatientTips #HealthEducation
+  short_scenes:
+    - layout: "title"
+      heading: "Flagged HIGH? Don't Panic"
+      points: ["What that flag really means"]
+      footage_query: "person reading phone worried"
+      narration: >-
+        Your blood test shows a result flagged high or low. Before you panic, here is something most people do not know.
+    - layout: "big_number"
+      heading: "1 in 20"
+      points: ["healthy results fall outside", "the normal range"]
+      footage_query: "laboratory blood samples"
+      narration: >-
+        Normal ranges are based on most healthy people, so about one in twenty healthy results lands a little outside the
+        range. Check the range printed on your own report, look at how far off the number is, and compare it with your
+        past results.
+    - layout: "outro"
+      heading: "Full Guide on YouTube"
+      points: ["Health Support Studio"]
+      footage_query: "patient talking with doctor"
+      narration: >-
+        Then ask your doctor what it means for you. Our full video explains the CBC and metabolic panel, on the Health
+        Support Studio YouTube channel.

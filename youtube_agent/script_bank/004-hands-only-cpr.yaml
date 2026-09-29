@@ -1,0 +1,50 @@
+queue_topic: "Hand-only CPR: how to save a life in 2 minutes"
+style: "Quick Short"
+sources:
+  - "American Heart Association, Hands-Only CPR: https://cpr.heart.org/en/cpr-courses-and-kits/hands-only-cpr"
+  - "American Red Cross, Hands-Only CPR: https://www.redcross.org/take-a-class/cpr/performing-cpr/hands-only-cpr"
+plan:
+  topic: "Hands-only CPR: how to save a life"
+  title: "Hands-Only CPR in 2 Steps: This Could Save a Life"
+  description: |-
+    If a teen or adult suddenly collapses and isn't breathing normally, hands-only CPR can double or even triple their chance of survival. Two steps: call 911, then push hard and fast in the center of the chest.
+
+    #CPR #HandsOnlyCPR #FirstAid #SaveALife #Shorts
+  tags: ["hands only cpr", "how to do cpr", "cpr steps", "cardiac arrest", "first aid", "save a life", "cpr for adults", "stayin alive cpr", "emergency", "health shorts"]
+  thumbnail_text: "SAVE A LIFE"
+  thumbnail_highlight: "LIFE"
+  thumbnail_photo_query: "cpr training chest compressions"
+  playlist: "Emergencies & First Aid"
+  scenes:
+    - layout: "title"
+      heading: "Hands-Only CPR"
+      points: ["Two steps that save lives"]
+      footage_query: "cpr training class"
+      narration: >-
+        Someone collapses in front of you and is not breathing normally. Here is exactly what to do, in two steps.
+    - layout: "bullets"
+      heading: "Two Steps"
+      points: ["1. Call 911", "2. Push hard and fast", "Center of the chest", "Don't stop until help arrives"]
+      footage_query: "cpr chest compressions mannequin"
+      narration: >-
+        Step one: call 911, or tell someone to call. Step two: push hard and fast in the center of the chest, with both hands,
+        one on top of the other. Push about two inches deep, and keep going until help arrives.
+    - layout: "big_number"
+      heading: "100-120"
+      points: ["pushes per minute", "the beat of Stayin' Alive"]
+      footage_query: "cpr training hands"
+      narration: >-
+        Aim for one hundred to one hundred twenty pushes a minute. That is the beat of the song Stayin Alive. Do not worry
+        about hurting them. Doing something is far better than doing nothing.
+    - layout: "outro"
+      heading: "Share This"
+      points: ["It could save a life"]
+      footage_query: "family together home"
+      narration: >-
+        This is for teens and adults who suddenly collapse. Take a CPR class to learn more. Share this, and subscribe to Health
+        Support Studio.
+  short_title: "Hands-only CPR in 2 steps #Shorts"
+  short_caption: >-
+    Would you know what to do if someone collapsed in front of you? Two steps: call 911, push hard and fast. Share this, it
+    could save a life. Educational only, not medical advice. #CPR #HandsOnlyCPR #FirstAid #SaveALife #HealthTips
+  short_scenes: []

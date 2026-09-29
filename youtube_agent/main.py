@@ -23,6 +23,7 @@ import yaml
 
 HERE = Path(__file__).parent
 HISTORY_FILE = HERE / "history.json"
+SCRIPT_BANK = HERE / "script_bank"  # pre-written, fact-checked scripts: used first, no API cost
 OUTPUT_DIR = HERE / "output"
 
 
@@ -48,6 +49,11 @@ def next_queued_topic(config: dict, history: list[dict]) -> str | None:
         if topic.strip().lower() not in done:
             return topic
     return None
+
+
+def unused_bank_scripts(history: list[dict]) -> list[Path]:
+    used = {h.get("script_file") for h in history}
+    return [f for f in sorted(SCRIPT_BANK.glob("*.yaml")) if f.name not in used]
 
 
 def pick_style(config: dict, history: list[dict]) -> dict | None:
@@ -90,13 +96,23 @@ def write_summary(lines: list[str]) -> None:
 def make_one_video(config: dict, history: list[dict], topic: str | None, dry_run: bool, script_only: bool) -> None:
     from . import planner
 
-    topic = topic or next_queued_topic(config, history)
-    style = pick_style(config, history)
+    # A script from the bank is used first (free); otherwise Claude writes one through the API.
+    bank = [] if topic else unused_bank_scripts(history)
+    bank_file = bank[0] if bank else None
+    bank_data = yaml.safe_load(bank_file.read_text()) if bank_file else {}
+    styles = {s["name"]: s for s in config["video"].get("styles") or []}
+    style = styles.get(bank_data.get("style")) or pick_style(config, history)
     video_cfg = {**config["video"], **{k: v for k, v in (style or {}).items() if k in ("format", "target_minutes")}}
-    print("1/6 Choosing topic and writing script with Claude...")
+    if bank_file:
+        print(f"1/6 Using pre-written, fact-checked script {bank_file.name} ({len(bank) - 1} left after this one)")
+        plan = planner.VideoPlan.model_validate(bank_data["plan"])
+        topic = bank_data.get("queue_topic") or plan.topic
+    else:
+        topic = topic or next_queued_topic(config, history)
+        print("1/6 Choosing topic and writing script with Claude...")
+        plan = planner.plan_video(config["channel"], video_cfg, [h["topic"] for h in history], topic, style)
     if style:
         print(f"    Style: {style['name']} ({video_cfg.get('format')})")
-    plan = planner.plan_video(config["channel"], video_cfg, [h["topic"] for h in history], topic, style)
     print(f"    Topic: {plan.topic}\n    Title: {plan.title}")
 
     stamp = dt.datetime.now().strftime("%Y%m%d-%H%M")
@@ -104,9 +120,9 @@ def make_one_video(config: dict, history: list[dict], topic: str | None, dry_run
     workdir.mkdir(parents=True, exist_ok=True)
     (workdir / "draft_script.txt").write_text("\n\n".join(plan.narration()))
 
-    sources: list[str] = []
+    sources: list[str] = bank_data.get("sources", [])
     fact_issues: list[str] = []
-    if config["video"].get("fact_check", True):
+    if not bank_file and config["video"].get("fact_check", True):
         from . import fact_check
 
         print("2/6 Fact-checking every health claim against trusted sources...")
@@ -181,6 +197,8 @@ def make_one_video(config: dict, history: list[dict], topic: str | None, dry_run
 
     entry = {"date": dt.datetime.now().isoformat(timespec="seconds"), "topic": plan.topic,
              "requested_topic": topic, "title": title, "style": (style or {}).get("name")}
+    if bank_file:
+        entry["script_file"] = bank_file.name
     if dry_run:
         print(f"6/6 Dry run - not uploading. Files in {workdir}")
         return
@@ -251,6 +269,10 @@ def make_one_video(config: dict, history: list[dict], topic: str | None, dry_run
         summary.append(f"- YouTube Short: https://studio.youtube.com/video/{short_id}/edit")
     if fact_issues:
         summary.append("- Fact-check corrections: " + "; ".join(fact_issues))
+    left = len(unused_bank_scripts(history))
+    summary.append(f"- Pre-written scripts left: **{left}**" + (
+        " - ask Claude to write more scripts soon (after they run out, videos use your paid API credit)"
+        if left <= 5 else ""))
     if publish_at:
         summary.append(f"- **Scheduled** to go public automatically at {yt['publish_at']} (UTC). "
                        "Watch it before then; to stop it, set Visibility to Private or delete it.")
