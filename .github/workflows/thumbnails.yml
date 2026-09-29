@@ -1,0 +1,41 @@
+name: Set thumbnails for existing videos
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  thumbnails:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Make and upload thumbnails
+        env:
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+          YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
+          YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+          YOUTUBE_TOKEN_JSON: ${{ secrets.YOUTUBE_TOKEN_JSON }}
+        run: |
+          sudo apt-get install -y -q fonts-dejavu-core >/dev/null
+          pip install -q requests pillow numpy google-api-python-client google-auth google-auth-oauthlib
+          python -m youtube_agent.set_thumbnails
+      - uses: actions/upload-artifact@v4
+        with:
+          name: thumbnails-${{ github.run_id }}
+          path: youtube_agent/output/thumbnails/*.jpg
+          retention-days: 14
+          if-no-files-found: ignore
+      - name: Remember finished jobs
+        run: |
+          git config user.name "youtube-agent"
+          git config user.email "youtube-agent@users.noreply.github.com"
+          git add youtube_agent/thumbnail_jobs.json
+          git diff --cached --quiet && exit 0
+          git commit -m "Record thumbnails set" && git pull --rebase && git push
