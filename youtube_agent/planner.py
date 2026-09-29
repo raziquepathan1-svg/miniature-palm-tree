@@ -133,6 +133,7 @@ Write a script of about {target_words} spoken words. Requirements:
         messages=[{"role": "user", "content": prompt}],
         output_format=VideoPlan,
     )
+    print(f"    script tokens: in {response.usage.input_tokens}, out {response.usage.output_tokens}")
     if response.stop_reason == "refusal":
         raise RuntimeError("Claude declined to write this script; try a different topic.")
     if response.stop_reason == "max_tokens" or response.parsed_output is None:

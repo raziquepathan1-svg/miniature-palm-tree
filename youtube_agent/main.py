@@ -111,7 +111,8 @@ def make_one_video(config: dict, history: list[dict], topic: str | None, dry_run
 
         print("2/6 Fact-checking every health claim against trusted sources...")
         # The companion Short is checked together with the main script.
-        review = fact_check.fact_check(plan.topic, plan.scenes + plan.short_scenes)
+        review = fact_check.fact_check(plan.topic, plan.scenes + plan.short_scenes,
+                                       config["video"].get("fact_check_searches", 6))
         (workdir / "fact_check.json").write_text(review.model_dump_json(indent=2))
         for issue in review.issues:
             print(f"    fixed: {issue}")

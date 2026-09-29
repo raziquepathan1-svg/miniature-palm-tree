@@ -90,12 +90,23 @@ SUBMIT_TOOL = {
 }
 
 
-def fact_check(topic: str, scenes: list) -> Review:
+def fact_check(topic: str, scenes: list, searches: int = 6) -> Review:
+    """searches=0 is budget mode: the review uses Claude's own medical knowledge, no web search
+    (web search results are resent on every step and were most of the cost of a video)."""
     script = "\n\n".join(
         f"[Scene {i + 1}]\nNarration: {s.narration}\nOn-screen heading: {s.heading}\n"
         f"On-screen points: {' | '.join(s.points) or '(none)'}"
         for i, s in enumerate(scenes)
     )
+    if searches:
+        research = (f"Use web search (up to {searches} searches) to verify the key numbers and recommendations "
+                    "against official sources; search for the most important claims first. Prefer current US "
+                    f"guidance from: {TRUSTED_SOURCES}.")
+    else:
+        research = (f"Verify each claim against what current US guidance says ({TRUSTED_SOURCES}). If you are "
+                    "not confident a specific number or claim is correct and current, make it more general or "
+                    "remove it rather than guess. For sources, list only the organizations' main websites "
+                    "(e.g. 'CDC: https://www.cdc.gov'), never guessed deep links.")
     prompt = f"""You are a meticulous medical fact-checker for a health-education YouTube channel
 for a US audience.
 
@@ -105,8 +116,7 @@ Script:
 {script}
 
 Check EVERY factual health claim (numbers, symptoms, doses, risks, recommendations, guidelines),
-in both the narration and the on-screen text. Use web search (up to 6 searches) to verify the key
-numbers and recommendations against official sources; search for the most important claims first. Prefer current US guidance from: {TRUSTED_SOURCES}.
+in both the narration and the on-screen text. {research}
 
 Fix anything that is wrong, outdated, overstated, or missing an important safety caveat. Also make sure:
 - No individual diagnosis, no specific medication doses for self-treatment, no advice to start, stop or
@@ -120,7 +130,9 @@ When done, call submit_review."""
 
     client = anthropic.Anthropic()
     messages = [{"role": "user", "content": prompt}]
-    tools = [{"type": "web_search_20260209", "name": "web_search", "max_uses": 6}, SUBMIT_TOOL]
+    tools = [SUBMIT_TOOL]
+    if searches:
+        tools.insert(0, {"type": "web_search_20260209", "name": "web_search", "max_uses": searches})
 
     for _ in range(MAX_ROUNDS):
         # Streaming is required for long responses (web research + a full corrected script).
@@ -134,6 +146,8 @@ When done, call submit_review."""
             messages=messages,
         ) as stream:
             response = stream.get_final_message()
+        u = response.usage
+        print(f"    fact-check tokens: in {u.input_tokens} (+cache {u.cache_read_input_tokens or 0}), out {u.output_tokens}")
         messages.append({"role": "assistant", "content": response.content})
 
         if response.stop_reason == "refusal":

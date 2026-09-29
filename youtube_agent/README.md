@@ -103,7 +103,7 @@ Scheduled runs only work from the repo's **default branch**, so merge this branc
 
 ## Costs (rough)
 - **Voice, graphics, stock footage, captions:** free
-- **Claude** (script + fact-check with Claude Sonnet 5): roughly **$0.20-0.35 per video**, about **$6-10 a month** for one video a day. With Claude Opus 5 it was about $1 per video. Set a monthly spend limit and keep auto-reload OFF in console.anthropic.com. When the credit runs out, that day's run just fails, with no extra charges.
+- **Claude** (script + fact-check with Claude Sonnet 5): about **$0.80 per video** with web-search fact-checking, or roughly **$0.25** in budget mode (`fact_check_searches: 0`, the current setting). Each run log shows the tokens used. Set a monthly spend limit and keep auto-reload OFF in console.anthropic.com. When the credit runs out, that day's run just fails, with no extra charges.
 - **YouTube API, GitHub Actions:** free. Private repos get 2,000 free minutes a month; each run takes about 10-20 minutes.
 
 ## Staying within YouTube's rules

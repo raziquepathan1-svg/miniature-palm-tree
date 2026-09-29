@@ -66,7 +66,10 @@ video:
   format: "landscape"          # "landscape" (16:9 normal video) or "shorts" (9:16 vertical)
   videos_per_run: 1            # the GitHub schedule runs once a day -> 1 video/day
   captions: true               # burn subtitles into the video
-  fact_check: true             # verify every health claim with web research before recording
+  fact_check: true             # a second Claude pass checks every health claim before recording
+  # Web searches during the fact-check. 0 = budget mode (about $0.25/video instead of ~$0.80):
+  # Claude checks the claims from its own medical knowledge. Raise to 2-6 when you have more credit.
+  fact_check_searches: 0
   background_color: "#0F172A"
   # The agent rotates through these styles, one per video, so the channel stays varied.
   # Each style can override "format" (landscape/shorts) and "target_minutes".
