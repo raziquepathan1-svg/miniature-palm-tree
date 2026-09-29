@@ -1,0 +1,118 @@
+queue_topic: "Over-the-counter pain relievers: acetaminophen vs ibuprofen safety"
+style: "Top Questions"
+sources:
+  - "FDA, Use Caution with Pain Relievers: https://www.fda.gov/consumers/consumer-updates/use-caution-pain-relievers"
+  - "FDA, Don't Double Up on Acetaminophen: https://www.fda.gov/consumers/consumer-updates/dont-double-acetaminophen"
+  - "MedlinePlus, Pain Relievers: https://medlineplus.gov/painrelievers.html"
+plan:
+  topic: "Over-the-counter pain relievers: acetaminophen vs ibuprofen safety"
+  title: "Tylenol or Advil? What to Know Before You Take Them"
+  description: |-
+    Acetaminophen (Tylenol) and ibuprofen (Advil, Motrin) are in almost every medicine cabinet, but they work differently and carry different risks. We answer the top questions about using over-the-counter pain relievers safely.
+
+    In this video:
+    • How acetaminophen and NSAIDs like ibuprofen differ
+    • The hidden acetaminophen in cold and flu products
+    • Who should be careful with NSAIDs
+    • Why aspirin isn't for kids
+
+    #PainRelief #MedicationSafety #Tylenol #Ibuprofen #HealthEducation
+  tags: ["acetaminophen vs ibuprofen", "tylenol vs advil", "otc pain relievers", "nsaids", "ibuprofen side effects", "acetaminophen liver", "medication safety", "naproxen", "pain relief", "pharmacist tips", "health education"]
+  thumbnail_text: "TYLENOL OR ADVIL?"
+  thumbnail_highlight: "ADVIL?"
+  thumbnail_photo_query: "pain relief pills hand"
+  playlist: "Medications & Safety"
+  scenes:
+    - layout: "title"
+      heading: "Tylenol or Advil?"
+      points: ["What to know before you take them"]
+      footage_query: "medicine cabinet pills"
+      narration: >-
+        Headache, back pain, fever. Most of us reach for a pain reliever without a second thought. They are sold everywhere,
+        so they must be totally safe, right? Not always. Today we answer the top questions about the two most common choices:
+        acetaminophen, known as Tylenol, and ibuprofen, known as Advil or Motrin.
+    - layout: "bullets"
+      heading: "How Are They Different?"
+      points: ["Acetaminophen: pain and fever", "NSAIDs: pain, fever, inflammation", "NSAIDs: ibuprofen, naproxen, aspirin", "Different risks for each"]
+      footage_query: "pharmacist shelf medicine"
+      narration: >-
+        Question one: how are they different? Acetaminophen relieves pain and lowers fever, but does not reduce swelling.
+        Ibuprofen belongs to a group called NSAIDs, which also includes naproxen, known as Aleve, and aspirin. NSAIDs relieve
+        pain and fever, and they also reduce inflammation, which can help with things like sprains. Each group has its own
+        risks.
+    - layout: "big_number"
+      heading: "Hundreds"
+      points: ["of medicines contain acetaminophen", "check every label"]
+      footage_query: "reading medicine label"
+      narration: >-
+        Question two: what is the biggest risk with acetaminophen? Taking too much, which can seriously damage the liver. The
+        catch is that acetaminophen is hidden in hundreds of products, including many cold, flu and sleep medicines. Taking
+        Tylenol plus a cold medicine can add up without you realizing it. Look for acetaminophen on the label, sometimes
+        written as APAP, and never take two products that both contain it.
+    - layout: "warning"
+      heading: "Careful With NSAIDs If"
+      points: ["Age 60 or older", "Stomach ulcers or bleeding", "Heart or kidney disease", "Taking blood thinners"]
+      footage_query: "senior man medicine bottle"
+      narration: >-
+        Question three: who should be careful with ibuprofen and other NSAIDs? They can cause stomach ulcers and bleeding, and
+        can harm the kidneys. The FDA also warns they can raise the risk of heart attack and stroke. Talk to your doctor or
+        pharmacist first if you are sixty or older, have had stomach ulcers, heart disease, high blood pressure or kidney
+        disease, or take blood thinners.
+    - layout: "bullets"
+      heading: "Pregnant or Drinking?"
+      points: ["Pregnant: ask before any pain reliever", "NSAIDs: avoid from 20 weeks unless advised", "Alcohol raises risks for both", "Ask your pharmacist"]
+      footage_query: "pregnant woman talking doctor"
+      narration: >-
+        Question four: what about pregnancy and alcohol? If you are pregnant, ask your doctor before taking any pain reliever.
+        The FDA advises avoiding NSAIDs from twenty weeks of pregnancy unless your doctor recommends them. And if you drink
+        three or more alcoholic drinks a day, both types carry extra risks, liver damage with acetaminophen, and stomach
+        bleeding with NSAIDs.
+    - layout: "warning"
+      heading: "No Aspirin for Kids"
+      points: ["Linked to Reye's syndrome", "Children and teens", "Ask about the right child dose"]
+      footage_query: "parent child kitchen"
+      narration: >-
+        Question five: can I give aspirin to my kids? No. Aspirin should not be given to children or teenagers, especially
+        when they have a viral illness like the flu or chickenpox, because it is linked to Reye's syndrome, a rare but serious
+        illness. For children, ask your pediatrician or pharmacist which medicine and dose is right, since it depends on weight.
+    - layout: "bullets"
+      heading: "Safe Use Rules"
+      points: ["Read the Drug Facts label", "Never take more than directed", "Don't combine same ingredients", "See a doctor if pain lasts"]
+      footage_query: "person reading medicine box"
+      narration: >-
+        Question six: what are the basic safety rules? Read the Drug Facts label every time. Never take more, or more often,
+        than it says. Do not combine products with the same active ingredient. And if you need a pain reliever for more than
+        a few days, or your pain keeps coming back, see your doctor to find the cause.
+    - layout: "outro"
+      heading: "Ask Your Pharmacist"
+      points: ["It's free", "They know your medicines", "They can check interactions"]
+      footage_query: "pharmacist talking customer"
+      narration: >-
+        Here is a tip most people forget: your pharmacist is a free expert. Ask them which pain reliever is safest with your
+        other medicines. This video is for education only, not medical advice. Like and subscribe to Health Support Studio for
+        a new health video every day.
+  short_title: "The hidden Tylenol in your cold medicine #Shorts"
+  short_caption: >-
+    Taking Tylenol and a cold medicine together? You might be doubling up without knowing it. Educational only, not medical
+    advice. #MedicationSafety #Tylenol #ColdAndFlu #PharmacistTips #HealthTips #HealthEducation
+  short_scenes:
+    - layout: "title"
+      heading: "Hidden Tylenol Alert"
+      points: ["Check your cold medicine"]
+      footage_query: "medicine cabinet pills"
+      narration: >-
+        Taking Tylenol for a headache and a cold medicine at night? You might be doubling up without knowing it.
+    - layout: "big_number"
+      heading: "Hundreds"
+      points: ["of medicines contain acetaminophen"]
+      footage_query: "reading medicine label"
+      narration: >-
+        Acetaminophen, the medicine in Tylenol, is in hundreds of products, including many cold, flu and sleep medicines. Too
+        much can seriously damage your liver. Check every label for acetaminophen, sometimes written as APAP, and never take
+        two products that both contain it.
+    - layout: "outro"
+      heading: "Full Video on YouTube"
+      points: ["Health Support Studio"]
+      footage_query: "pharmacist talking customer"
+      narration: >-
+        Learn about ibuprofen safety too, in our full video on the Health Support Studio YouTube channel.

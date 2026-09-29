@@ -1,0 +1,120 @@
+queue_topic: "Cholesterol explained: LDL, HDL and triglycerides"
+style: "Explainer"
+sources:
+  - "CDC, About Cholesterol: https://www.cdc.gov/cholesterol/about/index.html"
+  - "American Heart Association, About Cholesterol: https://www.heart.org/en/health-topics/cholesterol/about-cholesterol"
+  - "MedlinePlus, Cholesterol: https://medlineplus.gov/cholesterol.html"
+plan:
+  topic: "Cholesterol explained: LDL, HDL and triglycerides"
+  title: "Cholesterol Explained: LDL, HDL and Triglycerides"
+  description: |-
+    High cholesterol has no symptoms, but it quietly raises your risk of heart attack and stroke. Here is what LDL, HDL and triglycerides mean on your lab report, and what you can do about them.
+
+    In this video:
+    • What cholesterol is and why your body needs it
+    • "Bad" LDL vs "good" HDL, explained simply
+    • Triglycerides and what raises them
+    • How often to get checked, and lifestyle steps that help
+
+    #Cholesterol #HeartHealth #LDL #HealthyHeart #HealthEducation
+  tags: ["cholesterol explained", "ldl cholesterol", "hdl cholesterol", "triglycerides", "high cholesterol", "lipid panel", "heart health", "how to lower cholesterol", "bad cholesterol", "good cholesterol", "health education"]
+  thumbnail_text: "LDL? HDL? EXPLAINED"
+  thumbnail_highlight: "EXPLAINED"
+  thumbnail_photo_query: "healthy heart food oats"
+  playlist: "Heart & Blood Pressure"
+  scenes:
+    - layout: "title"
+      heading: "Cholesterol, Made Simple"
+      points: ["LDL, HDL and triglycerides"]
+      footage_query: "healthy breakfast oats berries"
+      narration: >-
+        You get your lab results back and see words like LDL, HDL and triglycerides, with numbers next to them. What do they
+        actually mean, and should you be worried? Today we explain cholesterol in plain language, and what you can do about it.
+    - layout: "bullets"
+      heading: "What Is Cholesterol?"
+      points: ["A waxy, fat-like substance", "Your body makes what it needs", "Also comes from food", "Travels in the blood"]
+      footage_query: "blood vessels animation"
+      narration: >-
+        Cholesterol is a waxy, fat like substance. Your body actually needs some of it to build cells and make hormones, and
+        your liver makes all you need. You also get it from foods that come from animals. Because it does not mix with blood,
+        it travels through your bloodstream in little packages called lipoproteins.
+    - layout: "bullets"
+      heading: "LDL: The Bad One"
+      points: ["Carries cholesterol to arteries", "Builds up as plaque", "Plaque narrows arteries", "Lower is better"]
+      footage_query: "doctor explaining heart model"
+      narration: >-
+        LDL is often called the bad cholesterol. When there is too much of it, it can build up in the walls of your arteries,
+        forming plaque. Over time, plaque narrows the arteries and can lead to a heart attack or stroke. For LDL, lower is
+        generally better.
+    - layout: "bullets"
+      heading: "HDL: The Good One"
+      points: ["Carries cholesterol to the liver", "Liver removes it", "Higher is generally better"]
+      footage_query: "person jogging morning"
+      narration: >-
+        HDL is called the good cholesterol, because it helps carry extra cholesterol back to your liver, which removes it from
+        your body. In general, a higher HDL is better. Regular physical activity can help raise it.
+    - layout: "bullets"
+      heading: "Triglycerides"
+      points: ["A type of fat in blood", "Stores extra calories", "Raised by sugar and alcohol", "High levels add risk"]
+      footage_query: "sugary drinks soda"
+      narration: >-
+        Triglycerides are a different type of fat in your blood. They store extra calories from food. High triglycerides,
+        often linked to eating a lot of sugar and refined carbs, drinking alcohol, excess weight and diabetes, can also raise
+        your risk of heart disease.
+    - layout: "big_number"
+      heading: "No Symptoms"
+      points: ["high cholesterol is silent", "only a blood test can tell"]
+      footage_query: "blood test tube"
+      narration: >-
+        Here is the tricky part. High cholesterol usually has no symptoms at all. The only way to know is a simple blood test
+        called a lipid panel. Many adults should be checked every four to six years starting at age twenty, and more often if
+        you have risk factors. Your doctor will tell you what your numbers mean, because healthy targets depend on your
+        overall risk.
+    - layout: "bullets"
+      heading: "Not Just Your Diet"
+      points: ["Family history and genes", "Age", "Diabetes and excess weight", "Smoking and inactivity"]
+      footage_query: "family portrait generations"
+      narration: >-
+        High cholesterol is not only about what you eat. Your genes play a big role, and some families have an inherited
+        condition that causes very high LDL, even in young, thin people. Age, diabetes, excess weight, smoking and not moving
+        enough also matter. That is why even people who eat well should get tested.
+    - layout: "bullets"
+      heading: "What Helps"
+      points: ["More fiber: oats, beans, fruit", "Less saturated and trans fat", "Move most days", "Don't smoke"]
+      footage_query: "vegetables cutting board kitchen"
+      narration: >-
+        What can you do? Eat more fiber from oats, beans, fruits and vegetables. Choose less saturated fat, found in fatty
+        meats, butter and full fat dairy, and avoid trans fats. Move your body most days of the week. Do not smoke. And keep a
+        healthy weight. For some people, lifestyle changes are enough. Others also need medicine, like a statin, and that is a
+        decision to make with your doctor.
+    - layout: "outro"
+      heading: "Know Your Numbers"
+      points: ["LDL: lower is better", "HDL: higher is better", "Ask when to get tested"]
+      footage_query: "couple walking park"
+      narration: >-
+        So remember: LDL, lower is better. HDL, higher is better. And ask your doctor when you should get tested. This video
+        is for education only, not medical advice. Like and subscribe to Health Support Studio for a new health video every day.
+  short_title: "Good vs bad cholesterol in 30 seconds #Shorts"
+  short_caption: >-
+    LDL or HDL: which one is the good cholesterol? Here is the simple way to remember. Educational only, not medical advice.
+    #Cholesterol #HeartHealth #LDL #HealthTips #HealthEducation
+  short_scenes:
+    - layout: "title"
+      heading: "LDL or HDL?"
+      points: ["Which one is good?"]
+      footage_query: "blood test tube"
+      narration: >-
+        LDL, HDL. Which cholesterol is the good one? Here is an easy way to remember.
+    - layout: "bullets"
+      heading: "Easy Memory Trick"
+      points: ["LDL: L for lousy, keep it low", "HDL: H for healthy, higher is better", "No symptoms, get tested"]
+      footage_query: "doctor explaining heart model"
+      narration: >-
+        LDL, think L for lousy. It builds up as plaque in your arteries, so lower is better. HDL, think H for healthy. It helps
+        clear cholesterol away, so higher is better. High cholesterol has no symptoms, so ask your doctor about a blood test.
+    - layout: "outro"
+      heading: "Full Video on YouTube"
+      points: ["Health Support Studio"]
+      footage_query: "couple walking park"
+      narration: >-
+        Learn about triglycerides and what helps, in our full video on the Health Support Studio YouTube channel.

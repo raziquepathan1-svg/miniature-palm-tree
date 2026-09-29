@@ -1,0 +1,49 @@
+queue_topic: "How to get the most out of a 15-minute doctor's appointment"
+style: "Quick Short"
+sources:
+  - "AHRQ, Questions to Ask Your Doctor: https://www.ahrq.gov/questions/index.html"
+  - "MedlinePlus, Talking With Your Doctor: https://medlineplus.gov/talkingwithyourdoctor.html"
+plan:
+  topic: "How to get the most out of a short doctor's appointment"
+  title: "3 Tricks to Get More From a Short Doctor Visit"
+  description: |-
+    Doctor visits go fast. Three simple tricks help you get your questions answered and leave knowing exactly what to do next.
+
+    #DoctorVisit #PatientTips #HealthTips #USHealthcare #Shorts
+  tags: ["doctor appointment tips", "doctor visit", "questions to ask your doctor", "patient tips", "patient advocacy", "us healthcare", "health tips", "health shorts"]
+  thumbnail_text: "DO THIS AT YOUR VISIT"
+  thumbnail_highlight: "VISIT"
+  thumbnail_photo_query: "patient talking doctor office"
+  playlist: "Tests & Doctor Visits"
+  scenes:
+    - layout: "title"
+      heading: "Short Doctor Visit?"
+      points: ["3 tricks to get more from it"]
+      footage_query: "doctor office waiting"
+      narration: >-
+        Doctor visits go by fast. Here are three tricks to get the most out of yours.
+    - layout: "bullets"
+      heading: "Before You Go"
+      points: ["Write your top 3 concerns", "Bring your medication list", "Most important one first"]
+      footage_query: "person writing notebook"
+      narration: >-
+        One: before you go, write down your top three concerns, and bring up the most important one first, not at the end.
+        Bring your medication list too.
+    - layout: "bullets"
+      heading: "During the Visit"
+      points: ["Be honest and specific", "Repeat back the plan", "Bring someone to take notes"]
+      footage_query: "patient talking doctor office"
+      narration: >-
+        Two: be honest and specific about your symptoms. Three: before you leave, repeat the plan back in your own words, and
+        ask what to do if you do not get better. If you can, bring someone to take notes.
+    - layout: "outro"
+      heading: "Your Visit, Your Health"
+      points: ["Subscribe for more tips"]
+      footage_query: "happy patient leaving clinic"
+      narration: >-
+        It is your health, so speak up. Subscribe to Health Support Studio for more tips.
+  short_title: "3 tricks for a short doctor visit #Shorts"
+  short_caption: >-
+    Doctor visits go fast. These three simple tricks help you leave with answers and a clear plan. Educational only, not
+    medical advice. #DoctorVisit #PatientTips #HealthTips #HealthEducation
+  short_scenes: []

@@ -1,0 +1,121 @@
+queue_topic: "How to prevent a fall at home for older adults"
+style: "Myth vs Fact"
+sources:
+  - "CDC, Facts About Older Adult Falls: https://www.cdc.gov/falls/data-research/facts-stats/index.html"
+  - "CDC, About Older Adult Fall Prevention: https://www.cdc.gov/falls/about/index.html"
+  - "National Institute on Aging, Falls and Falls Prevention: https://www.nia.nih.gov/health/falls-and-falls-prevention"
+plan:
+  topic: "How to prevent a fall at home for older adults"
+  title: "Falls Aren't Just Part of Aging: 5 Myths Busted"
+  description: |-
+    One in four older adults in the US falls every year, and falls are the leading cause of injury death for adults 65 and older. But many falls can be prevented. We bust five common myths and share simple ways to make a home safer.
+
+    In this video:
+    • Why falls are not a normal part of aging
+    • Why staying active lowers your risk
+    • How medicines and vision affect falls
+    • A quick home safety checklist
+
+    #FallPrevention #OlderAdults #Caregiving #HealthyAging #HealthEducation
+  tags: ["fall prevention", "falls in older adults", "fall prevention for seniors", "home safety for seniors", "healthy aging", "caregiver tips", "balance exercises", "tai chi", "elderly falls", "health education"]
+  thumbnail_text: "STOP THE FALL"
+  thumbnail_highlight: "FALL"
+  thumbnail_photo_query: "senior woman walking cane home"
+  playlist: "Older Adults & Caregiving"
+  scenes:
+    - layout: "title"
+      heading: "Falls: Myth vs Fact"
+      points: ["Protect yourself and loved ones"]
+      footage_query: "senior woman walking home"
+      narration: >-
+        A single fall can change an older adult's life, leading to a broken hip, a head injury, or a loss of independence. The
+        good news? Many falls can be prevented. Today we are busting five common myths about falls, and sharing simple steps to
+        make a home safer.
+    - layout: "big_number"
+      heading: "1 in 4"
+      points: ["adults 65+ fall every year", "CDC"]
+      footage_query: "senior couple living room"
+      narration: >-
+        First, how big is the problem? According to the CDC, more than fourteen million older adults, about one in four people
+        sixty five and older, report falling every year. Falls are the leading cause of injury and injury death in this age
+        group. And falling once doubles your chances of falling again.
+    - layout: "myth_fact"
+      heading: "Myth 1"
+      points: ["Falls are a normal part of aging", "Many falls can be prevented"]
+      footage_query: "senior man smiling garden"
+      narration: >-
+        Myth number one: falling is just a normal part of getting older. Fact: falls are common, but they are not normal, and
+        many can be prevented. Things like weak muscles, balance problems, some medicines, vision problems and hazards at home
+        all raise the risk, and most of them can be changed.
+    - layout: "myth_fact"
+      heading: "Myth 2"
+      points: ["Staying still keeps you safe", "Activity builds strength and balance"]
+      footage_query: "seniors tai chi park"
+      narration: >-
+        Myth number two: if I limit my activity, I will not fall. Fact: moving less makes muscles weaker and balance worse,
+        which actually raises the risk. Exercises that build leg strength and balance, like tai chi, can lower the chance of
+        falling. Ask your doctor about a program that is safe for you.
+    - layout: "myth_fact"
+      heading: "Myth 3"
+      points: ["My medicines don't matter", "Some medicines raise fall risk"]
+      footage_query: "pill organizer table"
+      narration: >-
+        Myth number three: my medicines have nothing to do with falling. Fact: some medicines can cause dizziness, sleepiness
+        or low blood pressure when standing up. These include some sleep aids, anxiety medicines, blood pressure medicines and
+        certain allergy medicines. Ask your doctor or pharmacist to review all your medicines once a year. Never stop a
+        medicine on your own.
+    - layout: "myth_fact"
+      heading: "Myth 4"
+      points: ["Falls mostly happen outside", "Many falls happen at home"]
+      footage_query: "home staircase"
+      narration: >-
+        Myth number four: falls mostly happen outside, on ice or uneven sidewalks. Fact: many falls happen at home, during
+        everyday activities, like getting out of bed at night, walking to the bathroom, or climbing stairs.
+    - layout: "myth_fact"
+      heading: "Myth 5"
+      points: ["Talking about it makes me look weak", "Telling your doctor protects you"]
+      footage_query: "senior patient talking doctor"
+      narration: >-
+        Myth number five: if I mention a fall, people will think I cannot live on my own. Fact: telling your doctor about a
+        fall, or feeling unsteady, is how you stay independent. They can check your balance, vision, feet, and medicines, and
+        find ways to lower your risk.
+    - layout: "bullets"
+      heading: "Home Safety Checklist"
+      points: ["Remove loose rugs and clutter", "Grab bars in the bathroom", "Night lights and bright stairs", "Yearly eye exam"]
+      footage_query: "bathroom grab bar"
+      narration: >-
+        Here is a quick home safety checklist. Remove throw rugs and clutter from walkways. Install grab bars in the bathroom,
+        and railings on both sides of stairs. Add night lights between the bedroom and bathroom. Wear sturdy, non slip shoes
+        at home. And get your eyes checked every year.
+    - layout: "outro"
+      heading: "Start Today"
+      points: ["Stay active", "Review your medicines", "Make home safer"]
+      footage_query: "senior couple walking park"
+      narration: >-
+        Share this with a parent or grandparent. If someone falls and hits their head, cannot get up, or seems confused, call
+        911. This video is for education only, not medical advice. Like and subscribe to Health Support Studio for a new health
+        video every day.
+  short_title: "1 in 4 older adults fall each year #Shorts"
+  short_caption: >-
+    Falls are the leading cause of injury for adults 65 and older, but many can be prevented. Share this with someone you
+    love. Educational only, not medical advice. #FallPrevention #HealthyAging #Caregiving #SeniorHealth #HealthTips
+  short_scenes:
+    - layout: "title"
+      heading: "Prevent a Fall at Home"
+      points: ["4 quick fixes"]
+      footage_query: "senior woman walking home"
+      narration: >-
+        One in four adults sixty five and older falls every year. Here are four quick fixes at home.
+    - layout: "bullets"
+      heading: "Quick Fixes"
+      points: ["Remove loose rugs", "Grab bars in bathroom", "Night lights", "Sturdy non-slip shoes"]
+      footage_query: "bathroom grab bar"
+      narration: >-
+        Remove loose rugs and clutter from walkways. Put grab bars in the bathroom. Add night lights between the bedroom and
+        bathroom. And wear sturdy, non slip shoes, even at home. Staying active with strength and balance exercise helps too.
+    - layout: "outro"
+      heading: "5 Fall Myths on YouTube"
+      points: ["Health Support Studio"]
+      footage_query: "senior couple walking park"
+      narration: >-
+        We bust five fall myths in our full video, on the Health Support Studio YouTube channel.

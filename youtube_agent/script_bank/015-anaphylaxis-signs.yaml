@@ -1,0 +1,122 @@
+queue_topic: "Severe allergic reactions (anaphylaxis): signs and what to do"
+style: "Warning Signs"
+sources:
+  - "MedlinePlus, Anaphylaxis: https://medlineplus.gov/ency/article/000844.htm"
+  - "American Academy of Allergy, Asthma and Immunology, Anaphylaxis: https://www.aaaai.org/conditions-treatments/allergies/anaphylaxis"
+  - "American College of Allergy, Asthma and Immunology, Anaphylaxis: https://acaai.org/allergies/symptoms/anaphylaxis/"
+plan:
+  topic: "Severe allergic reactions (anaphylaxis): signs and what to do"
+  title: "Anaphylaxis: Signs of a Severe Allergic Reaction"
+  description: |-
+    A severe allergic reaction, called anaphylaxis, can become life-threatening within minutes. Learn the warning signs, what to do right away, and why you should still go to the ER even if you feel better.
+
+    In this video:
+    • Common triggers: foods, insect stings, medicines, latex
+    • Mild reaction vs anaphylaxis
+    • Why epinephrine comes first
+    • Why symptoms can come back hours later
+
+    #Anaphylaxis #Allergies #FoodAllergy #FirstAid #HealthEducation
+  tags: ["anaphylaxis", "severe allergic reaction", "anaphylaxis symptoms", "food allergy", "epinephrine auto injector", "epipen", "bee sting allergy", "allergic reaction signs", "first aid", "health education"]
+  thumbnail_text: "ALLERGY EMERGENCY"
+  thumbnail_highlight: "EMERGENCY"
+  thumbnail_photo_query: "epinephrine auto injector hand"
+  playlist: "Emergencies & First Aid"
+  scenes:
+    - layout: "title"
+      heading: "Anaphylaxis Warning Signs"
+      points: ["A severe allergic reaction"]
+      footage_query: "peanuts bowl close up"
+      narration: >-
+        A bite of food, a bee sting, or a new medicine. Within minutes, someone's lips start swelling and they struggle to
+        breathe. This is anaphylaxis, a severe allergic reaction that can be life threatening. Knowing the signs, and what to
+        do first, can save a life.
+    - layout: "bullets"
+      heading: "Common Triggers"
+      points: ["Foods: peanuts, tree nuts, shellfish", "Insect stings", "Medicines", "Latex"]
+      footage_query: "bee flower close up"
+      narration: >-
+        Anaphylaxis happens when the immune system overreacts to something. Common triggers include foods like peanuts, tree
+        nuts, shellfish, fish, milk and eggs, insect stings from bees or wasps, some medicines, and latex. It can happen even if
+        a person had only mild reactions before.
+    - layout: "bullets"
+      heading: "Mild Allergic Reaction"
+      points: ["A few hives or itchy skin", "Runny nose, sneezing", "Only one body area"]
+      footage_query: "person scratching arm"
+      narration: >-
+        First, what does a mild allergic reaction look like? A few hives, itchy skin, sneezing, or a runny nose, usually
+        affecting only one part of the body. Watch the person closely, because a reaction can get worse, and follow any
+        allergy plan their doctor has given them.
+    - layout: "warning"
+      heading: "Signs of Anaphylaxis"
+      points: ["Swelling of lips, tongue, throat", "Trouble breathing or wheezing", "Tight throat, hoarse voice", "Dizziness or fainting"]
+      footage_query: "woman touching throat"
+      narration: >-
+        Now the danger signs. Swelling of the lips, tongue or throat. Trouble breathing, wheezing or a lot of coughing. A
+        tight throat, trouble swallowing or a hoarse voice. Hives spreading over the body. Vomiting or stomach cramps. Feeling
+        dizzy or faint, or a sense that something terrible is happening. Symptoms involving more than one part of the body
+        can mean anaphylaxis.
+    - layout: "warning"
+      heading: "Act Immediately"
+      points: ["Use epinephrine if prescribed", "Call 911", "Lie down, legs raised", "Sit up if hard to breathe"]
+      footage_query: "person calling phone emergency"
+      narration: >-
+        If you see these signs, act immediately. If the person has a prescribed epinephrine auto injector, use it right away,
+        following the instructions on it. Then call 911. Have the person lie down with their legs raised, or sit up if they
+        are having trouble breathing. Do not wait to see if it gets better.
+    - layout: "myth_fact"
+      heading: "Common Belief"
+      points: ["An antihistamine is enough", "Epinephrine is the first treatment"]
+      footage_query: "pharmacy medicine shelf"
+      narration: >-
+        Here is a dangerous belief: an allergy pill like Benadryl will stop anaphylaxis. Fact: antihistamines can help with
+        itching and hives, but they do not stop a severe reaction. Epinephrine is the first line treatment for anaphylaxis.
+        Waiting can be deadly.
+    - layout: "warning"
+      heading: "Go to the ER Anyway"
+      points: ["Even if they feel better", "Symptoms can come back", "Hours later"]
+      footage_query: "hospital emergency entrance"
+      narration: >-
+        Even if the person feels better after epinephrine, they still need to go to the emergency room. Symptoms can come
+        back hours later, even without being exposed again. Doctors will want to watch them for a while.
+    - layout: "bullets"
+      heading: "If You Have Allergies"
+      points: ["See an allergist", "Carry your epinephrine", "Wear medical ID", "Tell family and friends"]
+      footage_query: "woman purse medicine"
+      narration: >-
+        If you have had a serious reaction, see an allergist to find your triggers. If you are prescribed epinephrine, carry it
+        with you every day, check the expiration date, and teach family and friends how to use it. A medical ID bracelet can
+        also help others act fast.
+    - layout: "outro"
+      heading: "Remember"
+      points: ["Epinephrine first", "Then call 911", "Always go to the ER"]
+      footage_query: "family picnic park"
+      narration: >-
+        Remember: epinephrine first, then call 911, and always go to the ER. Share this with anyone who has a food allergy,
+        or who cares for a child with one. This video is for education only, not medical
+        advice. Like and subscribe to Health Support Studio for a new health video every day.
+  short_title: "Why Benadryl isn't enough for anaphylaxis #Shorts"
+  short_caption: >-
+    Think an allergy pill can stop a severe allergic reaction? It can't. Know the signs and what to do first. Educational
+    only, not medical advice. #Anaphylaxis #FoodAllergy #Allergies #FirstAid #HealthTips #HealthEducation
+  short_scenes:
+    - layout: "title"
+      heading: "Severe Allergic Reaction?"
+      points: ["What to do first"]
+      footage_query: "peanuts bowl close up"
+      narration: >-
+        Someone's lips are swelling and they are struggling to breathe after eating. Here is what to do.
+    - layout: "warning"
+      heading: "Act Fast"
+      points: ["Epinephrine if prescribed", "Call 911", "Go to the ER even if better"]
+      footage_query: "person calling phone emergency"
+      narration: >-
+        This could be anaphylaxis. If they have a prescribed epinephrine auto injector, use it right away. Then call 911. An
+        allergy pill like Benadryl does not stop a severe reaction. And even if they feel better, they still need the ER,
+        because symptoms can come back.
+    - layout: "outro"
+      heading: "Know the Signs"
+      points: ["Full video on YouTube"]
+      footage_query: "family picnic park"
+      narration: >-
+        Learn all the warning signs in our full video, on the Health Support Studio YouTube channel.
