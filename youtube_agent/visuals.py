@@ -395,34 +395,109 @@ def build_video(plan, video_cfg: dict, voice_cfg: dict, channel_name: str, workd
 
 
 # ---------------------------------------------------------------- thumbnail
-def make_thumbnail(text: str, channel_name: str, out: Path, background: Path | None = None) -> Path:
-    """Bold branded thumbnail (1280x720). Uses a video frame as background if given."""
+BADGES = {
+    "Explainer": ("EXPLAINED", TEAL),
+    "Myth vs Fact": ("MYTH vs FACT", CORAL),
+    "Warning Signs": ("WARNING SIGNS", RED),
+    "Top Questions": ("YOUR QUESTIONS", (124, 58, 237)),
+}
+
+
+def fetch_photo(query: str, dest: Path) -> Path | None:
+    """A landscape stock photo from Pexels (free) for the thumbnail background."""
+    key = os.environ.get("PEXELS_API_KEY")
+    if not key or not query:
+        return None
+    try:
+        r = requests.get("https://api.pexels.com/v1/search",
+                         params={"query": query, "orientation": "landscape", "per_page": 5},
+                         headers={"Authorization": key}, timeout=30)
+        r.raise_for_status()
+        photos = r.json().get("photos", [])
+        if not photos:
+            return None
+        url = photos[0]["src"].get("large2x") or photos[0]["src"]["original"]
+        dest.write_bytes(requests.get(url, timeout=60).content)
+        return dest
+    except Exception as e:
+        print(f"  (No thumbnail photo for '{query}': {e})")
+        return None
+
+
+def _cover(img: Image.Image, W: int, H: int) -> Image.Image:
+    scale = max(W / img.width, H / img.height)
+    img = img.resize((int(img.width * scale) + 1, int(img.height * scale) + 1), Image.LANCZOS)
+    left, top = (img.width - W) // 2, (img.height - H) // 2
+    return img.crop((left, top, left + W, top + H))
+
+
+def make_thumbnail(text: str, channel_name: str, out: Path, background: Path | None = None,
+                   style: str | None = None, highlight: str | None = None) -> Path:
+    """Eye-catching 1280x720 thumbnail: photo on the right, huge text on the left, style badge, brand."""
+    from PIL import ImageEnhance
+
     W, H = 1280, 720
     if background and background.exists():
-        img = Image.open(background).convert("RGB")
-        scale = max(W / img.width, H / img.height)
-        img = img.resize((int(img.width * scale) + 1, int(img.height * scale) + 1))
-        img = img.crop(((img.width - W) // 2, (img.height - H) // 2, (img.width - W) // 2 + W, (img.height - H) // 2 + H))
+        img = _cover(Image.open(background).convert("RGB"), W, H)
+        img = ImageEnhance.Contrast(ImageEnhance.Color(img).enhance(1.25)).enhance(1.1)
     else:
         tmp = out.with_suffix(".bg.png")
         img = Image.open(render_background((W, H), tmp)).convert("RGB")
         tmp.unlink(missing_ok=True)
     img = img.convert("RGBA")
+
+    # Dark brand gradient on the left so the text pops; the photo stays visible on the right
     shade = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     sd = ImageDraw.Draw(shade)
     for x in range(W):
-        sd.line([(x, 0), (x, H)], fill=(11, 37, 69, int(235 * max(0.0, 1 - x / (W * 0.85)))))
+        a = 245 if x < W * 0.38 else int(245 * max(0.0, 1 - (x - W * 0.38) / (W * 0.30)))
+        sd.line([(x, 0), (x, H)], fill=(*NAVY, a))
     img.alpha_composite(shade)
     d = ImageDraw.Draw(img)
-    _cross_icon(d, 1110, 150, 190)
-    f = font(104, 800)
-    lines = _wrap(d, text.upper(), f, 820)[:4]
-    y = (H - len(lines) * 112) // 2
-    for line in lines:
-        d.text((60, y), line, font=f, fill=YELLOW, stroke_width=6, stroke_fill=(0, 0, 0))
-        y += 112
-    d.rounded_rectangle((60, H - 95, 60 + d.textlength(channel_name.upper(), font=font(30, 700)) + 40, H - 45),
-                        25, fill=(*TEAL, 255))
-    d.text((80, H - 90), channel_name.upper(), font=font(30, 700), fill=WHITE)
-    img.convert("RGB").save(out, "JPEG", quality=90)
+
+    # Style badge (top-left)
+    label, color = BADGES.get(style or "", (None, None))
+    top = 48
+    if label:
+        bf = font(40, 800)
+        bw = d.textlength(label, font=bf) + 56
+        d.rounded_rectangle((48, top, 48 + bw, top + 70), 35, fill=color)
+        d.text((76, top + 10), label, font=bf, fill=WHITE)
+        top += 100
+
+    # Huge text, auto-sized to fit in 3 lines within the left ~62%
+    words = text.upper().split()
+    hl = (highlight or "").upper().strip(" ?!.,")
+    max_w, max_lines = int(W * 0.62), 3
+    size = 150
+    bottom_limit = H - 120  # keep clear of the brand badge
+    while size > 70:
+        f = font(size, 800)
+        lines = _wrap(d, " ".join(words), f, max_w)
+        fits_h = top + len(lines) * int(size * 1.08) + int(size * 0.25) <= bottom_limit
+        if len(lines) <= max_lines and fits_h and all(d.textlength(l, font=f) <= max_w for l in lines):
+            break
+        size -= 6
+    line_h = int(size * 1.08)
+    block_h = len(lines) * line_h
+    y = max(top, min((H - block_h) // 2 + 10, bottom_limit - block_h - int(size * 0.25)))
+    for line in lines[:max_lines]:
+        x = 48
+        for word in line.split():
+            fill = YELLOW if hl and word.strip(" ?!.,") == hl else WHITE
+            d.text((x, y), word, font=f, fill=fill, stroke_width=max(6, size // 16), stroke_fill=(0, 0, 0))
+            x += d.textlength(word + " ", font=f)
+        y += line_h
+    bar_y = y + int(size * 0.18)
+    d.rounded_rectangle((48, bar_y, 48 + 220, bar_y + 14), 7, fill=YELLOW)
+
+    # Brand (bottom-right)
+    nf = font(30, 800)
+    name = channel_name.upper()
+    nw = d.textlength(name, font=nf)
+    bx, by = W - nw - 150, H - 88
+    d.rounded_rectangle((bx - 20, by - 8, W - 36, by + 60), 34, fill=(*NAVY, 235))
+    _cross_icon(d, int(bx + 26), int(by + 26), 44)
+    d.text((bx + 64, by + 6), name, font=nf, fill=WHITE)
+    img.convert("RGB").save(out, "JPEG", quality=92)
     return out

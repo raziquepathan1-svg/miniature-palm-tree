@@ -41,7 +41,15 @@ class VideoPlan(BaseModel):
     title: str = Field(description="YouTube title, under 70 characters, curiosity-driven but not clickbait")
     description: str = Field(description="YouTube description: 2-3 sentence summary, key points as bullets, 3-5 hashtags")
     tags: list[str] = Field(description="8-15 YouTube search tags")
-    thumbnail_text: str = Field(description="2-5 punchy words for the thumbnail")
+    thumbnail_text: str = Field(
+        description="2-4 BIG punchy words for the thumbnail that create curiosity without clickbait or fear-mongering, "
+        "e.g. 'SILENT KILLER?', 'NOT JUST CHEST PAIN', 'KNOW YOUR NUMBERS'. Must not just repeat the title."
+    )
+    thumbnail_highlight: str = Field(description="The single most important word from thumbnail_text, shown in yellow")
+    thumbnail_photo_query: str = Field(
+        description="2-4 word stock-photo search for a clear, emotional, non-graphic photo with a person's face or a "
+        "recognisable medical object, e.g. 'woman holding chest', 'blood pressure cuff arm', 'worried senior man'"
+    )
     scenes: list[Scene] = Field(
         description="The video split into scenes, each with its narration and on-screen graphic. First scene "
         "is a strong hook (layout 'title'), last scene is a recap plus a call to like and subscribe (layout 'outro')."

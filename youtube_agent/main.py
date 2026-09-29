@@ -156,12 +156,13 @@ def make_one_video(config: dict, history: list[dict], topic: str | None, dry_run
     if video_cfg.get("mode") == "avatar":
         thumb = editor.make_thumbnail(final, plan.thumbnail_text, workdir / "thumbnail.jpg", shorts=shorts)
     else:
+        frame = visuals.fetch_photo(plan.thumbnail_photo_query, workdir / "thumb_photo.jpg")
         first_clip = workdir / "scenes" / "01_bg.mp4"
-        frame = None
-        if first_clip.exists():
+        if frame is None and first_clip.exists():
             frame = workdir / "thumb_frame.png"
             editor._run(["-y", "-ss", "1", "-i", str(first_clip), "-frames:v", "1", str(frame)])
-        thumb = visuals.make_thumbnail(plan.thumbnail_text, channel_name, workdir / "thumbnail.jpg", frame)
+        thumb = visuals.make_thumbnail(plan.thumbnail_text, channel_name, workdir / "thumbnail.jpg", frame,
+                                       style=(style or {}).get("name"), highlight=plan.thumbnail_highlight)
 
     social_dir = None
     if config.get("social", {}).get("enabled", True):
