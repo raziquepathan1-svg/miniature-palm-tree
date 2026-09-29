@@ -1,8 +1,26 @@
 [
-  {"youtube_id": "eBLOQcBeKy8", "text": "KNOW YOUR NUMBERS", "highlight": "NUMBERS", "style": "Explainer",
-   "photo_query": "blood pressure measurement"},
-  {"youtube_id": "Jhis4mR0Rsg", "text": "NOT JUST CHEST PAIN", "highlight": "CHEST", "style": "Myth vs Fact",
-   "photo_query": "woman chest pain"},
-  {"youtube_id": "SY8X5CDRW_U", "text": "IS YOUR A1C OKAY?", "highlight": "A1C", "style": "Warning Signs",
-   "photo_query": "blood sugar test finger"}
+  {
+    "youtube_id": "eBLOQcBeKy8",
+    "text": "KNOW YOUR NUMBERS",
+    "highlight": "NUMBERS",
+    "style": "Explainer",
+    "photo_query": "blood pressure measurement",
+    "done": true
+  },
+  {
+    "youtube_id": "Jhis4mR0Rsg",
+    "text": "NOT JUST CHEST PAIN",
+    "highlight": "CHEST",
+    "style": "Myth vs Fact",
+    "photo_query": "woman chest pain",
+    "done": true
+  },
+  {
+    "youtube_id": "SY8X5CDRW_U",
+    "text": "IS YOUR A1C OKAY?",
+    "highlight": "A1C",
+    "style": "Warning Signs",
+    "photo_query": "blood sugar test finger",
+    "done": true
+  }
 ]
