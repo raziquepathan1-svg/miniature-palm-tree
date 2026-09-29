@@ -1,0 +1,119 @@
+queue_topic: "Colon cancer screening at 45: myths vs facts"
+style: "Myth vs Fact"
+sources:
+  - "US Preventive Services Task Force, Colorectal Cancer Screening: https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/colorectal-cancer-screening"
+  - "CDC, Colorectal Cancer Screening: https://www.cdc.gov/colorectal-cancer/screening/index.html"
+  - "American Cancer Society, Colorectal Cancer Screening Tests: https://www.cancer.org/cancer/types/colon-rectal-cancer/detection-diagnosis-staging/screening-tests-used.html"
+plan:
+  topic: "Colon cancer screening at 45: myths vs facts"
+  title: "Colon Cancer Screening Starts at 45: 5 Myths Busted"
+  description: |-
+    Screening for colorectal cancer now starts at age 45 for people at average risk, and a colonoscopy isn't the only option. We bust five common myths that keep people from getting screened.
+
+    In this video:
+    • Why screening starts at 45
+    • Why you shouldn't wait for symptoms
+    • At-home stool tests vs colonoscopy
+    • Warning signs to never ignore
+
+    #ColonCancer #ColorectalCancer #CancerScreening #Prevention #HealthEducation
+  tags: ["colon cancer screening", "colorectal cancer", "colonoscopy", "screening at 45", "fit test", "stool test", "cologuard", "cancer prevention", "colon cancer symptoms", "myth vs fact", "health education"]
+  thumbnail_text: "SCREENING AT 45?"
+  thumbnail_highlight: "45?"
+  thumbnail_photo_query: "middle aged man doctor consultation"
+  playlist: "Tests & Doctor Visits"
+  scenes:
+    - layout: "title"
+      heading: "Colon Cancer Screening Myths"
+      points: ["It starts at 45"]
+      footage_query: "doctor consultation middle aged"
+      narration: >-
+        Colorectal cancer is one of the leading causes of cancer death in the United States. But it is also one of the most
+        preventable cancers, thanks to screening. So why do so many people put it off? Often, because of myths. Let's bust five
+        of them.
+    - layout: "myth_fact"
+      heading: "Myth 1"
+      points: ["Screening starts at 50", "Now it starts at 45"]
+      footage_query: "birthday cake candles adult"
+      narration: >-
+        Myth number one: screening starts at fifty. Fact: the US Preventive Services Task Force now recommends that adults at
+        average risk start screening at forty five, and continue through age seventy five. People with a family history or
+        other risk factors may need to start even earlier, so ask your doctor.
+    - layout: "myth_fact"
+      heading: "Myth 2"
+      points: ["No symptoms means no cancer", "Early cancer often has no symptoms"]
+      footage_query: "man smiling healthy outdoors"
+      narration: >-
+        Myth number two: I feel fine, so I do not need it. Fact: early colorectal cancer often causes no symptoms at all.
+        Screening is for people who feel healthy. It can find cancer early, when it is most treatable, and a colonoscopy can
+        even remove growths called polyps before they turn into cancer.
+    - layout: "myth_fact"
+      heading: "Myth 3"
+      points: ["Colonoscopy is the only option", "At-home stool tests are options too"]
+      footage_query: "test kit mailbox home"
+      narration: >-
+        Myth number three: a colonoscopy is the only option. Fact: there are several choices. Some are at home stool tests,
+        like a FIT test done every year, or a stool DNA test done every one to three years. Others include colonoscopy, usually
+        every ten years if normal, and CT colonography. The best test is the one you will actually do.
+    - layout: "myth_fact"
+      heading: "Myth 4"
+      points: ["A positive stool test is the end", "Follow up with a colonoscopy"]
+      footage_query: "patient talking doctor office"
+      narration: >-
+        Myth number four: if my stool test is positive, I have cancer, or if I ignore it, it will go away. Fact: a positive
+        stool test does not mean you have cancer, but it does mean you need a follow up colonoscopy to find out why. Skipping
+        that step makes the screening incomplete.
+    - layout: "myth_fact"
+      heading: "Myth 5"
+      points: ["Only older men get it", "Women and younger adults get it too"]
+      footage_query: "young adults group friends"
+      narration: >-
+        Myth number five: this is a disease of older men. Fact: colorectal cancer affects men and women, and rates have been
+        rising in adults younger than fifty. That is one reason the screening age was lowered to forty five.
+    - layout: "warning"
+      heading: "Don't Ignore These"
+      points: ["Blood in stool or rectal bleeding", "Change in bowel habits", "Belly pain that won't go away", "Unexplained weight loss"]
+      footage_query: "man stomach pain"
+      narration: >-
+        And at any age, do not ignore these symptoms: blood in your stool or bleeding from the rectum, a change in your bowel
+        habits that lasts, belly pain that will not go away, unexplained weight loss, or feeling tired from anemia. See your
+        doctor, even if you are younger than forty five.
+    - layout: "bullets"
+      heading: "Cost and Insurance"
+      points: ["Most plans cover screening", "Ask about follow-up costs", "Low-cost programs exist"]
+      footage_query: "person reading insurance papers"
+      narration: >-
+        Worried about cost? Most private insurance plans and Medicare cover colorectal cancer screening. Ask your plan how a
+        follow up colonoscopy after a positive stool test is covered. If you do not have insurance, ask your local health
+        department about low cost screening programs.
+    - layout: "outro"
+      heading: "45 or Older?"
+      points: ["Ask about screening", "Pick the test you'll do", "Share with a friend"]
+      footage_query: "couple walking park"
+      narration: >-
+        Forty five or older? Ask your doctor about screening this year. This video is for education only, not medical advice.
+        Like and subscribe to Health Support Studio for a new health video every day.
+  short_title: "Colon cancer screening starts at 45 now #Shorts"
+  short_caption: >-
+    Colon cancer screening now starts at 45, and a colonoscopy isn't your only option. Share this with someone who turns 45
+    this year. Educational only, not medical advice. #ColonCancer #CancerScreening #Prevention #HealthTips #HealthEducation
+  short_scenes:
+    - layout: "title"
+      heading: "Turning 45?"
+      points: ["This test could save your life"]
+      footage_query: "doctor consultation middle aged"
+      narration: >-
+        Turning forty five? There is a screening test you should ask about.
+    - layout: "bullets"
+      heading: "Colon Cancer Screening"
+      points: ["Starts at 45 for average risk", "At-home stool tests", "Or colonoscopy"]
+      footage_query: "test kit mailbox home"
+      narration: >-
+        Colorectal cancer screening now starts at forty five for adults at average risk. And it is not only colonoscopy. There
+        are at home stool tests too. Early colorectal cancer often has no symptoms, so screening is for people who feel fine.
+    - layout: "outro"
+      heading: "5 Myths on YouTube"
+      points: ["Health Support Studio"]
+      footage_query: "couple walking park"
+      narration: >-
+        We bust five screening myths in our full video, on the Health Support Studio YouTube channel.

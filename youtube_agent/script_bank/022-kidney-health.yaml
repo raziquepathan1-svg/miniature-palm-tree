@@ -1,0 +1,122 @@
+queue_topic: "Chronic kidney disease: the silent condition and the tests that find it"
+style: "Explainer"
+sources:
+  - "CDC, Chronic Kidney Disease Basics: https://www.cdc.gov/kidney-disease/about/index.html"
+  - "CDC, Chronic Kidney Disease in the United States: https://www.cdc.gov/kidney-disease/php/data-research/index.html"
+  - "NIDDK, Chronic Kidney Disease: https://www.niddk.nih.gov/health-information/kidney-disease/chronic-kidney-disease-ckd"
+plan:
+  topic: "Chronic kidney disease: the silent condition and the tests that find it"
+  title: "9 in 10 People With Kidney Disease Don't Know It"
+  description: |-
+    About 35.5 million US adults are estimated to have chronic kidney disease, and as many as 9 in 10 don't know it. Learn what your kidneys do, who is at risk, and the two simple tests that can catch kidney disease early.
+
+    In this video:
+    • What healthy kidneys do
+    • The biggest risk factors: diabetes and high blood pressure
+    • The eGFR blood test and urine albumin test
+    • Everyday steps to protect your kidneys
+
+    #KidneyHealth #CKD #Diabetes #HighBloodPressure #HealthEducation
+  tags: ["chronic kidney disease", "ckd", "kidney disease symptoms", "kidney health", "egfr", "urine albumin test", "creatinine", "diabetes and kidneys", "high blood pressure kidneys", "nsaids kidneys", "health education"]
+  thumbnail_text: "SILENT KIDNEY DISEASE"
+  thumbnail_highlight: "SILENT"
+  thumbnail_photo_query: "doctor kidney model patient"
+  playlist: "Diabetes & Metabolism"
+  scenes:
+    - layout: "title"
+      heading: "Your Kidneys Are Silent"
+      points: ["Until it's late"]
+      footage_query: "doctor explaining patient office"
+      narration: >-
+        You could have kidney disease right now and feel completely fine. That is not meant to scare you. It is the reason this
+        condition is so important to understand. Today we explain what your kidneys do, who is at risk, and two simple tests
+        that can catch problems early.
+    - layout: "big_number"
+      heading: "9 in 10"
+      points: ["adults with kidney disease", "don't know they have it"]
+      footage_query: "crowd people walking street"
+      narration: >-
+        According to the CDC, about thirty five and a half million adults in the United States are estimated to have chronic
+        kidney disease. That is more than one in seven adults. And as many as nine in ten of them do not know they have it.
+    - layout: "bullets"
+      heading: "What Kidneys Do"
+      points: ["Filter waste from blood", "Balance fluids and minerals", "Help control blood pressure", "Help make red blood cells"]
+      footage_query: "water filter flowing"
+      narration: >-
+        Your two kidneys, each about the size of a fist, filter waste and extra fluid from your blood, which leaves your body
+        as urine. They also keep minerals like sodium and potassium in balance, help control blood pressure, keep bones healthy,
+        and help your body make red blood cells.
+    - layout: "bullets"
+      heading: "Why It's Silent"
+      points: ["Kidneys adapt as they weaken", "Symptoms show up late", "Swelling, fatigue, itching", "Changes in urination"]
+      footage_query: "tired man sitting couch"
+      narration: >-
+        Why is kidney disease so silent? Kidneys can lose a lot of function before you notice anything. When symptoms do appear,
+        they can include swelling in the legs or ankles, tiredness, itchy skin, poor appetite, trouble sleeping, and changes in
+        how much you pee. By then, the disease is often advanced.
+    - layout: "bullets"
+      heading: "Biggest Risk Factors"
+      points: ["Diabetes", "High blood pressure", "Heart disease", "Family history of kidney failure"]
+      footage_query: "blood pressure cuff arm"
+      narration: >-
+        The two biggest causes of kidney disease are diabetes and high blood pressure. Other risk factors include heart disease,
+        obesity, a family history of kidney failure, and being older. Black, Hispanic and Native American adults also have higher
+        rates of kidney failure.
+    - layout: "bullets"
+      heading: "Two Simple Tests"
+      points: ["Blood test: eGFR", "Urine test: albumin (uACR)", "Ask if you're at risk"]
+      footage_query: "urine sample laboratory"
+      narration: >-
+        The good news is that two simple tests can find kidney disease early. A blood test measures creatinine to estimate your
+        eGFR, which shows how well your kidneys filter. And a urine test called the albumin to creatinine ratio checks for
+        protein leaking into your urine, an early sign of damage. If you have diabetes or high blood pressure, ask your doctor
+        about both.
+    - layout: "bullets"
+      heading: "If Tests Show CKD"
+      points: ["It can often be slowed", "Some medicines protect kidneys", "Regular checks of your numbers", "A kidney specialist may help"]
+      footage_query: "doctor reviewing results tablet"
+      narration: >-
+        What if your tests show kidney disease? Try not to panic. Many people with early kidney disease never need dialysis,
+        especially when it is found early. Your doctor may suggest medicines that help protect the kidneys, check your numbers
+        regularly, and may refer you to a kidney specialist, called a nephrologist.
+    - layout: "bullets"
+      heading: "Protect Your Kidneys"
+      points: ["Control blood sugar and pressure", "Take medicines as prescribed", "Limit NSAIDs like ibuprofen", "Don't smoke, stay active"]
+      footage_query: "person walking outdoors healthy"
+      narration: >-
+        To protect your kidneys, keep your blood sugar and blood pressure in your target range, and take your medicines as
+        prescribed. Be careful with frequent use of NSAID pain relievers like ibuprofen and naproxen, and ask your pharmacist
+        what is safe for you. Do not smoke, stay active, and eat less salt. Finding kidney disease early means you can slow it
+        down.
+    - layout: "outro"
+      heading: "Know Your Kidney Numbers"
+      points: ["Ask about eGFR", "Ask about urine albumin", "Especially with diabetes or high BP"]
+      footage_query: "patient talking doctor office"
+      narration: >-
+        At your next checkup, ask: what are my kidney numbers? This video is for education only, not medical advice. Like and
+        subscribe to Health Support Studio for a new health video every day.
+  short_title: "9 in 10 don't know they have this #Shorts"
+  short_caption: >-
+    Most people with kidney disease don't know they have it. These two simple tests can find it early. Educational only, not
+    medical advice. #KidneyHealth #CKD #Diabetes #HealthTips #HealthEducation
+  short_scenes:
+    - layout: "title"
+      heading: "9 in 10 Don't Know"
+      points: ["That they have kidney disease"]
+      footage_query: "crowd people walking street"
+      narration: >-
+        As many as nine in ten adults with kidney disease do not know they have it. Here is why.
+    - layout: "bullets"
+      heading: "Two Simple Tests"
+      points: ["Blood test: eGFR", "Urine test: albumin", "Diabetes or high BP? Ask"]
+      footage_query: "urine sample laboratory"
+      narration: >-
+        Kidney disease usually has no symptoms until it is advanced. Two simple tests can catch it early: a blood test called
+        eGFR, and a urine test for albumin. If you have diabetes or high blood pressure, the two biggest causes, ask your
+        doctor about both.
+    - layout: "outro"
+      heading: "Full Video on YouTube"
+      points: ["Health Support Studio"]
+      footage_query: "patient talking doctor office"
+      narration: >-
+        Learn how to protect your kidneys in our full video, on the Health Support Studio YouTube channel.

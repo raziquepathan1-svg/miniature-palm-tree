@@ -1,0 +1,114 @@
+queue_topic: "Urinary tract infections (UTIs): symptoms and when to see a doctor"
+style: "Top Questions"
+sources:
+  - "CDC, Urinary Tract Infection Basics: https://www.cdc.gov/uti/about/index.html"
+  - "MedlinePlus, Urinary Tract Infections: https://medlineplus.gov/urinarytractinfections.html"
+  - "NIDDK, Bladder Infection (UTI) in Adults: https://www.niddk.nih.gov/health-information/urologic-diseases/bladder-infection-uti-in-adults"
+plan:
+  topic: "Urinary tract infections (UTIs): symptoms and when to see a doctor"
+  title: "UTI Symptoms: When to See a Doctor (and Myths to Skip)"
+  description: |-
+    Burning when you pee? Needing to go all the time? Urinary tract infections are one of the most common infections in the US. We answer the top questions: symptoms, how older adults can look different, whether cranberry works, and when a UTI becomes serious.
+
+    In this video:
+    • Common UTI symptoms
+    • Signs the infection may have reached the kidneys
+    • Why older adults may just seem confused
+    • Prevention tips
+
+    #UTI #UrinaryTractInfection #WomensHealth #HealthTips #HealthEducation
+  tags: ["uti", "uti symptoms", "urinary tract infection", "bladder infection", "kidney infection", "uti in elderly", "cranberry for uti", "uti prevention", "burning when peeing", "womens health", "health education"]
+  thumbnail_text: "IS IT A UTI?"
+  thumbnail_highlight: "UTI?"
+  thumbnail_photo_query: "woman stomach pain couch"
+  playlist: "Infections & Vaccines"
+  scenes:
+    - layout: "title"
+      heading: "Is It a UTI?"
+      points: ["Your top questions answered"]
+      footage_query: "woman discomfort couch"
+      narration: >-
+        Burning when you pee, and feeling like you need to go every few minutes. Urinary tract infections, or UTIs, are among
+        the most common infections doctors see, especially in women. Today we answer the top questions about UTIs, including
+        when one can become serious.
+    - layout: "bullets"
+      heading: "What Are the Symptoms?"
+      points: ["Burning or pain when peeing", "Needing to go often and urgently", "Cloudy or bloody urine", "Pressure in lower belly"]
+      footage_query: "woman holding stomach"
+      narration: >-
+        Question one: what are the symptoms? The most common are pain or burning when you pee, needing to pee often or
+        urgently, even when little comes out, cloudy or strong smelling urine, blood in the urine, and pressure or pain in the
+        lower belly.
+    - layout: "bullets"
+      heading: "Why Are Women at Higher Risk?"
+      points: ["Shorter urethra", "Bacteria reach the bladder easier", "Sex and menopause raise risk"]
+      footage_query: "woman walking city"
+      narration: >-
+        Question two: why do women get more UTIs? Women have a shorter urethra, the tube that carries urine out of the body, so
+        bacteria can reach the bladder more easily. Sexual activity and the changes after menopause can also raise the risk.
+        Men can get UTIs too, and in men, a UTI should always be checked by a doctor.
+    - layout: "warning"
+      heading: "Kidney Infection Signs"
+      points: ["Fever or chills", "Pain in back or side", "Nausea or vomiting", "See a doctor the same day"]
+      footage_query: "man back pain"
+      narration: >-
+        Question three: when is a UTI serious? If the infection travels up to the kidneys, it can become dangerous. Watch for
+        fever or chills, pain in your back or side, below the ribs, and nausea or vomiting. If you have these, see a doctor the
+        same day. If you also feel confused, very weak, or have a fast heartbeat, go to the ER.
+    - layout: "bullets"
+      heading: "Older Adults Look Different"
+      points: ["New confusion", "Sudden falls", "Changes in behavior", "May not have burning"]
+      footage_query: "senior woman sitting home"
+      narration: >-
+        Question four: do UTIs look different in older adults? Sometimes, yes. An older adult may not complain of burning.
+        Instead, a family member may notice new confusion or agitation. But confusion has many possible causes, so do not
+        assume. Any sudden change in thinking or behavior in an older adult is a reason to call their doctor.
+    - layout: "myth_fact"
+      heading: "Does Cranberry Work?"
+      points: ["Cranberry juice cures a UTI", "It doesn't treat an infection"]
+      footage_query: "cranberry juice glass"
+      narration: >-
+        Question five: can cranberry juice cure a UTI? No. Cranberry does not treat an active infection. Some studies suggest
+        cranberry products might help lower the chance of repeat UTIs in some women, but the evidence is mixed. Bacterial UTIs
+        usually need antibiotics prescribed by a clinician, and it is important to take them exactly as directed.
+    - layout: "bullets"
+      heading: "Can I Prevent Them?"
+      points: ["Drink enough fluids", "Don't hold it in", "Pee after sex", "Wipe front to back"]
+      footage_query: "glass of water table"
+      narration: >-
+        Question six: how can I lower my risk? Drink enough fluids so you pee regularly. Do not hold it in for long periods.
+        Pee soon after sex. Wipe from front to back after using the toilet. And if you keep getting UTIs, talk to your doctor
+        about why, and what prevention options might be right for you.
+    - layout: "outro"
+      heading: "Don't Wait"
+      points: ["Symptoms? See a clinician", "Fever or back pain? Same day", "Men: always get checked"]
+      footage_query: "patient talking doctor office"
+      narration: >-
+        If you think you have a UTI, do not wait it out. See a clinician, especially if you have fever or back pain. This
+        video is for education only, not medical advice. Like and subscribe to Health Support Studio for a new health video
+        every day.
+  short_title: "Does cranberry juice cure a UTI? #Shorts"
+  short_caption: >-
+    Reaching for cranberry juice when you have a UTI? Here is what it can and can't do, and the signs that mean see a doctor
+    today. Educational only, not medical advice. #UTI #WomensHealth #HealthTips #MythVsFact #HealthEducation
+  short_scenes:
+    - layout: "title"
+      heading: "Cranberry for a UTI?"
+      points: ["Myth vs fact"]
+      footage_query: "cranberry juice glass"
+      narration: >-
+        Got a UTI and reaching for cranberry juice? Here is the truth.
+    - layout: "myth_fact"
+      heading: "Myth vs Fact"
+      points: ["Cranberry juice cures a UTI", "It doesn't treat an infection"]
+      footage_query: "woman discomfort couch"
+      narration: >-
+        Cranberry does not treat an active infection. A bacterial UTI usually needs antibiotics from a clinician. And if you
+        have fever, chills, back or side pain, or vomiting, the infection may have reached your kidneys, so see a doctor the
+        same day.
+    - layout: "outro"
+      heading: "Full Video on YouTube"
+      points: ["Health Support Studio"]
+      footage_query: "patient talking doctor office"
+      narration: >-
+        Learn how UTIs look different in older adults, in our full video on the Health Support Studio YouTube channel.

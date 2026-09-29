@@ -1,0 +1,121 @@
+queue_topic: "Thyroid problems: underactive vs overactive thyroid"
+style: "Top Questions"
+sources:
+  - "NIDDK, Hypothyroidism (Underactive Thyroid): https://www.niddk.nih.gov/health-information/endocrine-diseases/hypothyroidism"
+  - "NIDDK, Hyperthyroidism (Overactive Thyroid): https://www.niddk.nih.gov/health-information/endocrine-diseases/hyperthyroidism"
+  - "FDA, Biotin Interference with Laboratory Tests: https://www.fda.gov/medical-devices/safety-communications/update-fda-warns-biotin-may-interfere-lab-tests-fda-safety-communication"
+plan:
+  topic: "Thyroid problems: underactive vs overactive thyroid"
+  title: "Tired, Cold, Gaining Weight? Could It Be Your Thyroid?"
+  description: |-
+    Your thyroid is a small gland with a big job: it helps control your metabolism. When it makes too little or too much hormone, you can feel it all over your body. We answer the top questions about thyroid problems.
+
+    In this video:
+    • What the thyroid does
+    • Signs of an underactive vs overactive thyroid
+    • The TSH blood test, and the supplement that can mess up your results
+    • How thyroid problems are treated
+
+    #Thyroid #Hypothyroidism #Hyperthyroidism #WomensHealth #HealthEducation
+  tags: ["thyroid", "hypothyroidism", "hyperthyroidism", "thyroid symptoms", "underactive thyroid", "overactive thyroid", "tsh test", "hashimoto's", "graves disease", "biotin thyroid test", "health education"]
+  thumbnail_text: "IS IT YOUR THYROID?"
+  thumbnail_highlight: "THYROID?"
+  thumbnail_photo_query: "woman touching neck thyroid"
+  playlist: "Diabetes & Metabolism"
+  scenes:
+    - layout: "title"
+      heading: "Could It Be Your Thyroid?"
+      points: ["Your top questions answered"]
+      footage_query: "tired woman couch"
+      narration: >-
+        Always tired, always cold, and gaining weight without changing anything? Or the opposite: a racing heart, feeling
+        anxious, and losing weight? These can have many causes, and one of them is your thyroid. Today we answer the top
+        questions about thyroid problems.
+    - layout: "bullets"
+      heading: "What Does the Thyroid Do?"
+      points: ["Butterfly-shaped gland in the neck", "Makes thyroid hormone", "Controls metabolism", "Affects heart, weight, mood"]
+      footage_query: "woman touching neck mirror"
+      narration: >-
+        Question one: what does the thyroid do? It is a small, butterfly shaped gland at the front of your neck. It makes
+        hormones that control your metabolism, which affects how you use energy. That touches almost everything, including your
+        heart rate, weight, body temperature, mood, and digestion.
+    - layout: "bullets"
+      heading: "Underactive Thyroid Signs"
+      points: ["Tired and slow", "Feeling cold", "Weight gain, constipation", "Dry skin, low mood"]
+      footage_query: "woman cold blanket"
+      narration: >-
+        Question two: what are the signs of an underactive thyroid, called hypothyroidism? It happens when the thyroid makes too
+        little hormone. People may feel tired and slow, feel cold, gain weight, have constipation, dry skin, thinning hair, heavy
+        periods, or feel depressed. In the US, the most common cause is an autoimmune condition called Hashimoto's disease.
+    - layout: "bullets"
+      heading: "Overactive Thyroid Signs"
+      points: ["Fast or irregular heartbeat", "Weight loss", "Anxious, shaky, sweaty", "Trouble with heat"]
+      footage_query: "man anxious hand shaking"
+      narration: >-
+        Question three: what about an overactive thyroid, called hyperthyroidism? Here the thyroid makes too much hormone. Signs
+        include a fast or irregular heartbeat, weight loss, feeling nervous or irritable, shaky hands, sweating, trouble with heat,
+        more frequent bowel movements, and trouble sleeping. A common cause is Graves' disease.
+    - layout: "big_number"
+      heading: "TSH"
+      points: ["a simple blood test", "is usually the first step"]
+      footage_query: "blood test lab tube"
+      narration: >-
+        Question four: how is it diagnosed? Usually with a simple blood test called TSH, which stands for thyroid stimulating
+        hormone. Your doctor may also check other thyroid hormones. Women, and people over sixty, are more likely to have
+        thyroid problems.
+    - layout: "warning"
+      heading: "Taking Biotin?"
+      points: ["Can skew thyroid test results", "Tell your doctor before testing", "Common in hair and nail supplements"]
+      footage_query: "vitamin supplement bottles"
+      narration: >-
+        Question five: can supplements affect my results? Yes. The FDA warns that biotin, a supplement found in many hair, skin
+        and nail products, can interfere with some lab tests, including thyroid tests, and give false results. Tell your doctor
+        about every supplement you take before a blood test.
+    - layout: "bullets"
+      heading: "What About Neck Lumps?"
+      points: ["Swelling or a lump in the neck", "Most thyroid nodules aren't cancer", "Still get it checked"]
+      footage_query: "doctor examining neck patient"
+      narration: >-
+        Bonus question: what if I notice a lump in my neck? Sometimes the thyroid gets bigger, called a goiter, or develops
+        lumps called nodules. Most thyroid nodules are not cancer. But any new lump or swelling in your neck, or trouble
+        swallowing or breathing, should be checked by your doctor, who may order an ultrasound.
+    - layout: "bullets"
+      heading: "How Is It Treated?"
+      points: ["Underactive: daily hormone pill", "Overactive: medicines and other options", "Regular blood tests", "Don't stop meds on your own"]
+      footage_query: "pill in hand water glass"
+      narration: >-
+        Question six: how is it treated? An underactive thyroid is usually treated with a daily pill that replaces the missing
+        hormone. An overactive thyroid can be treated with medicines, radioactive iodine, or sometimes surgery. Either way, you
+        will need regular blood tests to get the dose right. Never stop or change thyroid medicine on your own.
+    - layout: "outro"
+      heading: "Talk to Your Doctor"
+      points: ["Symptoms that won't go away?", "Ask about a thyroid test"]
+      footage_query: "patient talking doctor office"
+      narration: >-
+        If you have symptoms like these that do not go away, ask your doctor whether a thyroid test makes sense. This video is for
+        education only, not medical advice. Like and subscribe to Health Support Studio for a new health video every day.
+  short_title: "This supplement can mess up your thyroid test #Shorts"
+  short_caption: >-
+    Taking a hair, skin and nail supplement? It could throw off your thyroid test results. Educational only, not medical
+    advice. #Thyroid #Biotin #Supplements #LabResults #HealthTips #HealthEducation
+  short_scenes:
+    - layout: "title"
+      heading: "Getting a Thyroid Test?"
+      points: ["Check your supplements first"]
+      footage_query: "vitamin supplement bottles"
+      narration: >-
+        Getting a thyroid blood test? Check your supplements first.
+    - layout: "warning"
+      heading: "Biotin Alert"
+      points: ["In many hair and nail supplements", "Can cause false results", "Tell your doctor"]
+      footage_query: "woman reading supplement label"
+      narration: >-
+        Biotin, found in many hair, skin and nail supplements, can interfere with some lab tests, including thyroid tests, and
+        give false results. The FDA has warned about this. Tell your doctor about every supplement you take before any blood
+        test.
+    - layout: "outro"
+      heading: "Thyroid Signs on YouTube"
+      points: ["Health Support Studio"]
+      footage_query: "patient talking doctor office"
+      narration: >-
+        Learn the signs of thyroid problems in our full video, on the Health Support Studio YouTube channel.

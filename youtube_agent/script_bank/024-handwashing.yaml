@@ -1,0 +1,49 @@
+queue_topic: "Handwashing: the 20-second habit that stops germs"
+style: "Quick Short"
+sources:
+  - "CDC, About Handwashing: https://www.cdc.gov/clean-hands/about/index.html"
+  - "CDC, When and How to Wash Your Hands: https://www.cdc.gov/clean-hands/about/hand-hygiene.html"
+plan:
+  topic: "Handwashing: the 20-second habit that stops germs"
+  title: "You're Probably Washing Your Hands Wrong"
+  description: |-
+    Handwashing is one of the best ways to avoid getting sick and spreading germs. Here are the CDC's 5 steps, and when hand sanitizer isn't enough.
+
+    #Handwashing #CleanHands #FluSeason #HealthTips #Shorts
+  tags: ["handwashing", "how to wash hands", "hand sanitizer", "20 seconds", "flu season", "germs", "prevent illness", "cdc", "health shorts"]
+  thumbnail_text: "WASHING WRONG?"
+  thumbnail_highlight: "WRONG?"
+  thumbnail_photo_query: "washing hands soap sink"
+  playlist: "Healthy Habits & Prevention"
+  scenes:
+    - layout: "title"
+      heading: "Washing Your Hands Wrong?"
+      points: ["The 20-second fix"]
+      footage_query: "washing hands soap sink"
+      narration: >-
+        Most people rinse their hands for a few seconds and call it clean. Here is how the CDC says to do it.
+    - layout: "bullets"
+      heading: "5 Steps"
+      points: ["Wet with clean water", "Lather, including backs and nails", "Scrub 20 seconds", "Rinse and dry"]
+      footage_query: "soap lather hands close up"
+      narration: >-
+        Wet your hands with clean running water. Lather with soap, including the backs of your hands, between your fingers and
+        under your nails. Scrub for at least twenty seconds. That is humming Happy Birthday twice. Then rinse and dry.
+    - layout: "bullets"
+      heading: "Hand Sanitizer?"
+      points: ["At least 60% alcohol", "Not for visibly dirty hands", "Soap is best when you can"]
+      footage_query: "hand sanitizer pump"
+      narration: >-
+        No soap? Use a hand sanitizer with at least sixty percent alcohol. But it does not work as well on visibly dirty or
+        greasy hands.
+    - layout: "outro"
+      heading: "Share This"
+      points: ["Especially in flu season"]
+      footage_query: "family kitchen together"
+      narration: >-
+        Share this during flu season, and subscribe to Health Support Studio.
+  short_title: "You're probably washing your hands wrong #Shorts"
+  short_caption: >-
+    A quick rinse isn't enough. Here is how the CDC says to wash your hands, and when sanitizer won't cut it. Educational
+    only, not medical advice. #Handwashing #FluSeason #CleanHands #HealthTips #HealthEducation
+  short_scenes: []

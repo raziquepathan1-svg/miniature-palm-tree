@@ -1,0 +1,121 @@
+queue_topic: "Headache red flags: when a headache is an emergency"
+style: "Warning Signs"
+sources:
+  - "MedlinePlus, Headache: https://medlineplus.gov/headache.html"
+  - "NIH NINDS, Headache: https://www.ninds.nih.gov/health-information/disorders/headache"
+  - "American Stroke Association, Stroke Symptoms: https://www.stroke.org/en/about-stroke/stroke-symptoms"
+plan:
+  topic: "Headache red flags: when a headache is an emergency"
+  title: "Headache Red Flags: When to Go to the ER"
+  description: |-
+    Most headaches are not dangerous. But a few types can signal a stroke, bleeding in the brain, or a serious infection. Learn the red flags that mean call 911, and when to see a doctor soon.
+
+    In this video:
+    • The common, harmless kinds of headache
+    • The "worst headache of my life" warning
+    • Headache with stroke signs, fever and stiff neck, or after a head injury
+    • When to see your doctor about headaches
+
+    #Headache #Migraine #WarningSigns #Stroke #HealthEducation
+  tags: ["headache red flags", "when to worry about a headache", "thunderclap headache", "worst headache of my life", "headache and stroke", "migraine", "headache after head injury", "headache emergency", "brain bleed symptoms", "health education"]
+  thumbnail_text: "NOT JUST A HEADACHE"
+  thumbnail_highlight: "HEADACHE"
+  thumbnail_photo_query: "woman headache holding head"
+  playlist: "Emergencies & First Aid"
+  scenes:
+    - layout: "title"
+      heading: "Headache Red Flags"
+      points: ["When it's an emergency"]
+      footage_query: "woman headache holding head"
+      narration: >-
+        Almost everyone gets headaches, and the vast majority are not dangerous. But once in a while, a headache is a warning
+        sign of something serious, like a stroke or bleeding in the brain. Today you will learn the red flags that mean get
+        help now.
+    - layout: "bullets"
+      heading: "Common Headaches"
+      points: ["Tension headaches", "Migraines", "Sinus pressure", "Too little sleep, water or caffeine"]
+      footage_query: "man rubbing temples desk"
+      narration: >-
+        First, the common ones. Tension headaches feel like a tight band around the head. Migraines often cause throbbing pain,
+        nausea, and sensitivity to light and sound. Headaches can also come from a cold, sinus pressure, lack of sleep, skipped
+        meals, dehydration, or missing your usual caffeine. These can be miserable, but are usually not dangerous.
+    - layout: "warning"
+      heading: "Worst Headache of Your Life"
+      points: ["Sudden and severe", "Peaks within a minute", "Call 911 right away"]
+      footage_query: "ambulance emergency lights"
+      narration: >-
+        Red flag number one: a sudden, severe headache that reaches its worst within about a minute. People often call it the
+        worst headache of their life, or say it felt like a thunderclap. This can be a sign of bleeding in the brain. Call 911
+        right away.
+    - layout: "warning"
+      heading: "Headache Plus Stroke Signs"
+      points: ["Face drooping", "Arm or leg weakness", "Trouble speaking", "Vision loss or confusion"]
+      footage_query: "senior man confused"
+      narration: >-
+        Red flag number two: a headache with signs of a stroke. That includes a drooping face, weakness or numbness in an arm or
+        leg, trouble speaking or understanding, sudden vision loss, confusion, or trouble walking. Call 911 and note the time
+        symptoms started.
+    - layout: "warning"
+      heading: "Fever and Stiff Neck"
+      points: ["Headache with fever", "Stiff neck", "Confusion or rash", "Could be meningitis"]
+      footage_query: "person sick bed fever"
+      narration: >-
+        Red flag number three: a headache with fever and a stiff neck, especially with confusion, vomiting, or a rash. This can
+        be a sign of meningitis, a serious infection around the brain and spinal cord. Get emergency care right away.
+    - layout: "warning"
+      heading: "After a Head Injury"
+      points: ["Headache getting worse", "Repeated vomiting", "Very sleepy or confused", "Seizure"]
+      footage_query: "bicycle helmet road"
+      narration: >-
+        Red flag number four: a headache after a blow to the head that keeps getting worse, especially with repeated vomiting,
+        unusual sleepiness, confusion, or a seizure. This is an emergency, especially for older adults and anyone who takes a
+        blood thinner.
+    - layout: "bullets"
+      heading: "For Everyday Headaches"
+      points: ["Drink water, eat regularly", "Rest in a dark, quiet room", "Keep a headache diary", "Ask about safe pain relief"]
+      footage_query: "woman resting dark room"
+      narration: >-
+        For everyday headaches, simple steps often help. Drink enough water, eat regular meals, and keep a steady sleep
+        schedule. Resting in a dark, quiet room can ease a migraine. A headache diary, noting when headaches happen and what
+        you ate or did, can help you and your doctor spot triggers. And ask your pharmacist which pain reliever is safe for
+        you.
+    - layout: "bullets"
+      heading: "See a Doctor Soon If"
+      points: ["New headaches after age 50", "Pattern suddenly changes", "Wakes you from sleep", "Using pain pills very often"]
+      footage_query: "patient talking doctor office"
+      narration: >-
+        See your doctor soon, not in the ER, if you start getting new headaches after age fifty, if your usual headache pattern
+        changes, if headaches wake you from sleep, or if you have headaches with pregnancy. Also, if you take pain relievers for
+        headaches very often, ask your doctor, because overusing them can actually cause more headaches.
+    - layout: "outro"
+      heading: "Remember"
+      points: ["Sudden and severe? Call 911", "Stroke signs? Call 911", "New pattern? See your doctor"]
+      footage_query: "sunrise calm city"
+      narration: >-
+        Remember: sudden, severe, or with stroke signs, call 911. This video is for education only, not medical advice. Like and
+        subscribe to Health Support Studio for a new health video every day.
+  short_title: "When a headache is an emergency #Shorts"
+  short_caption: >-
+    Most headaches aren't dangerous, but this one is. Know the red flag that means call 911. Educational only, not medical
+    advice. #Headache #Stroke #WarningSigns #HealthTips #HealthEducation
+  short_scenes:
+    - layout: "title"
+      heading: "Is Your Headache an Emergency?"
+      points: ["Know the red flags"]
+      footage_query: "woman headache holding head"
+      narration: >-
+        Most headaches are not dangerous. But some are a 911 emergency. Here is how to tell.
+    - layout: "warning"
+      heading: "Call 911 If"
+      points: ["Sudden, worst-ever headache", "Face drooping or arm weakness", "Fever with stiff neck", "Worsening after a head injury"]
+      footage_query: "ambulance emergency lights"
+      narration: >-
+        Call 911 for a sudden, severe headache that peaks within a minute, the worst of your life. Also for a headache with
+        stroke signs like a drooping face, arm weakness or trouble speaking, a headache with fever and a stiff neck, or one that
+        keeps getting worse after a head injury.
+    - layout: "outro"
+      heading: "Full Video on YouTube"
+      points: ["Health Support Studio"]
+      footage_query: "sunrise calm city"
+      narration: >-
+        Watch our full video on the Health Support Studio YouTube channel.
