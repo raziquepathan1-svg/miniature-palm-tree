@@ -3,7 +3,7 @@ style: "Top Questions"
 sources:
   - "NIDDK, Hypothyroidism (Underactive Thyroid): https://www.niddk.nih.gov/health-information/endocrine-diseases/hypothyroidism"
   - "NIDDK, Hyperthyroidism (Overactive Thyroid): https://www.niddk.nih.gov/health-information/endocrine-diseases/hyperthyroidism"
-  - "FDA, Biotin Interference with Laboratory Tests: https://www.fda.gov/medical-devices/safety-communications/update-fda-warns-biotin-may-interfere-lab-tests-fda-safety-communication"
+  - "FDA, Biotin Interference with Lab Tests: https://www.fda.gov/medical-devices/in-vitro-diagnostics/biotin-interference-troponin-lab-tests-assays-subject-biotin-interference"
 plan:
   topic: "Thyroid problems: underactive vs overactive thyroid"
   title: "Tired, Cold, Gaining Weight? Could It Be Your Thyroid?"

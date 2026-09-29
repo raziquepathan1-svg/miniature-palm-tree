@@ -159,7 +159,13 @@ def render_overlay(scene, size: tuple[int, int], channel_name: str, out_png: Pat
             _text_block(d, (margin, y + int(55 * u)), points[0], font(int(46 * u), 500), MINT, max_w, anchor_center=True)
 
     elif layout == "big_number":
-        f = font(int(230 * u), 800)
+        size_px = int(230 * u)
+        f = font(size_px, 800)
+        # Long words ("Hundreds") must fit the width, especially on vertical Shorts.
+        while size_px > int(90 * u) and (max(d.textlength(w, font=f) for w in heading.split() or [""]) > max_w
+                                          or len(_wrap(d, heading, f, max_w)) > 2):
+            size_px -= int(10 * u) or 1
+            f = font(size_px, 800)
         pf = font(int(54 * u), 700)
         block_h = _lines_h(d, heading, f, max_w, 1.1) + sum(_lines_h(d, p, pf, max_w) + int(10 * u) for p in points[:3])
         y = max(content_top, (content_top + content_bottom - block_h) // 2)

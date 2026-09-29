@@ -91,7 +91,7 @@ def broken_links(path) -> list[str]:
         try:
             r = requests.get(url.group(), timeout=30, allow_redirects=True,
                              headers={"User-Agent": "Mozilla/5.0 (link check)"})
-            if r.status_code >= 400 and r.status_code not in (401, 403, 429):  # some sites block robots
+            if r.status_code >= 400 and r.status_code not in (401, 403, 405, 429):  # some sites block robots
                 errs.append(f"link {r.status_code}: {url.group()}")
         except requests.RequestException as e:
             errs.append(f"link failed ({type(e).__name__}): {url.group()}")
