@@ -1,0 +1,120 @@
+queue_topic: "Food poisoning: myths vs facts"
+style: "Myth vs Fact"
+sources:
+  - "CDC, Four Steps to Food Safety: https://www.cdc.gov/food-safety/prevention/index.html"
+  - "CDC, Symptoms of Food Poisoning: https://www.cdc.gov/food-safety/signs-symptoms/index.html"
+  - "USDA FSIS, Washing Food: Does It Promote Food Safety? https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/washing-food-does-it-promote-food"
+plan:
+  topic: "Food poisoning: myths vs facts"
+  title: "5 Food Poisoning Myths That Could Make You Sick"
+  description: |-
+    About 48 million Americans get sick from food each year, according to the CDC. Many cases come from simple myths about leftovers, raw chicken and "smell tests." We bust five of them and explain when food poisoning needs a doctor.
+
+    In this video:
+    • Why the last thing you ate may not be the culprit
+    • Why you shouldn't wash raw chicken
+    • The 2-hour rule for leftovers
+    • Symptoms that mean see a doctor
+
+    #FoodSafety #FoodPoisoning #KitchenTips #MythVsFact #HealthEducation
+  tags: ["food poisoning", "food safety", "food poisoning symptoms", "washing raw chicken", "leftovers safety", "2 hour rule", "5 second rule", "kitchen safety", "stomach bug", "myth vs fact", "health education"]
+  thumbnail_text: "STOP WASHING CHICKEN"
+  thumbnail_highlight: "CHICKEN"
+  thumbnail_photo_query: "raw chicken kitchen sink"
+  playlist: "Healthy Habits & Prevention"
+  scenes:
+    - layout: "title"
+      heading: "Food Poisoning Myths"
+      points: ["5 myths that can make you sick"]
+      footage_query: "family kitchen cooking"
+      narration: >-
+        According to the CDC, about forty eight million people in the United States get sick from food every year. Many of
+        those illnesses start in home kitchens, with habits based on myths. Today we are busting five food poisoning myths that
+        could be making you sick.
+    - layout: "myth_fact"
+      heading: "Myth 1"
+      points: ["It was the last thing I ate", "Illness can start hours to days later"]
+      footage_query: "restaurant meal plate"
+      narration: >-
+        Myth number one: it must have been the last thing I ate. Fact: food poisoning symptoms can start anywhere from about
+        thirty minutes to several days, or even weeks, after eating contaminated food, depending on the germ. So the meal you
+        blame may not be the real culprit.
+    - layout: "myth_fact"
+      heading: "Myth 2"
+      points: ["Wash raw chicken first", "Washing spreads germs around"]
+      footage_query: "raw chicken cutting board"
+      narration: >-
+        Myth number two: you should rinse raw chicken before cooking. Fact: washing raw chicken or meat does not make it safer.
+        It can splash germs onto your sink, counters and other foods. Cooking to the right temperature is what kills the germs.
+        For chicken, that is one hundred sixty five degrees Fahrenheit, checked with a food thermometer.
+    - layout: "myth_fact"
+      heading: "Myth 3"
+      points: ["Let food cool before the fridge", "Refrigerate within 2 hours"]
+      footage_query: "leftovers containers refrigerator"
+      narration: >-
+        Myth number three: let hot food cool on the counter before putting it in the fridge. Fact: germs grow fast at room
+        temperature. Refrigerate leftovers within two hours of cooking, or within one hour if it is hotter than ninety degrees
+        outside. Divide big batches into smaller, shallow containers so they cool faster.
+    - layout: "myth_fact"
+      heading: "Myth 4"
+      points: ["If it smells fine, it's safe", "Harmful germs don't change smell"]
+      footage_query: "person smelling food container"
+      narration: >-
+        Myth number four: if it smells and looks fine, it is safe to eat. Fact: the germs that cause food poisoning usually do
+        not change how food looks, smells or tastes. Most leftovers should be eaten within three to four days. When in doubt,
+        throw it out.
+    - layout: "myth_fact"
+      heading: "Myth 5"
+      points: ["The 5-second rule works", "Germs transfer instantly"]
+      footage_query: "food dropped floor kitchen"
+      narration: >-
+        Myth number five: food dropped on the floor is fine if you grab it within five seconds. Fact: germs can transfer to
+        food almost instantly, especially to wet or sticky foods. Five seconds is not a safety rule.
+    - layout: "bullets"
+      heading: "4 Steps to Food Safety"
+      points: ["Clean hands and surfaces", "Separate raw meat", "Cook to safe temperatures", "Chill leftovers quickly"]
+      footage_query: "washing vegetables kitchen"
+      narration: >-
+        The CDC's four simple steps: clean, wash hands and surfaces often. Separate, keep raw meat away from ready to eat
+        foods. Cook, use a food thermometer. And chill, refrigerate leftovers promptly.
+    - layout: "warning"
+      heading: "See a Doctor If"
+      points: ["Bloody diarrhea", "Fever over 102°F", "Can't keep fluids down", "Diarrhea over 3 days"]
+      footage_query: "person calling phone concerned"
+      narration: >-
+        Most food poisoning gets better on its own. But see a doctor if you have bloody diarrhea, a fever over one hundred two
+        degrees, vomiting so often you cannot keep liquids down, signs of dehydration like very little urine or dizziness when
+        standing, or diarrhea lasting more than three days. Pregnant women, older adults, young children and people with weak
+        immune systems should call sooner.
+    - layout: "outro"
+      heading: "When in Doubt"
+      points: ["Throw it out"]
+      footage_query: "family dinner table"
+      narration: >-
+        Remember: when in doubt, throw it out. Share this with the person who does the cooking in your home. This video is
+        for education only, not medical advice. Like and subscribe to
+        Health Support Studio for a new health video every day.
+  short_title: "Stop washing raw chicken #Shorts"
+  short_caption: >-
+    Do you rinse raw chicken before cooking? Here is why food safety experts say stop. Educational only, not medical advice.
+    #FoodSafety #KitchenTips #CookingTips #HealthTips #HealthEducation
+  short_scenes:
+    - layout: "title"
+      heading: "Do You Wash Raw Chicken?"
+      points: ["Stop"]
+      footage_query: "raw chicken cutting board"
+      narration: >-
+        Do you rinse raw chicken before cooking it? Here is why you should stop.
+    - layout: "myth_fact"
+      heading: "Myth vs Fact"
+      points: ["Washing chicken makes it safer", "It splashes germs around"]
+      footage_query: "kitchen sink water splash"
+      narration: >-
+        Washing raw chicken does not remove the germs that matter. It splashes them onto your sink, counters and nearby food.
+        Cooking is what kills them. Cook chicken to one hundred sixty five degrees Fahrenheit, checked with a food thermometer.
+    - layout: "outro"
+      heading: "4 More Myths on YouTube"
+      points: ["Health Support Studio"]
+      footage_query: "family dinner table"
+      narration: >-
+        We bust four more food poisoning myths in our full video, on the Health Support Studio YouTube channel.

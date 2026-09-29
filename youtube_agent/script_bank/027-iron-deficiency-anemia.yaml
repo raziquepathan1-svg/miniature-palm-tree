@@ -1,0 +1,115 @@
+queue_topic: "Iron deficiency anemia: signs, causes and what helps"
+style: "Explainer"
+sources:
+  - "NIH NHLBI, Iron-Deficiency Anemia: https://www.nhlbi.nih.gov/health/anemia/iron-deficiency-anemia"
+  - "NIH Office of Dietary Supplements, Iron Fact Sheet for Consumers: https://ods.od.nih.gov/factsheets/Iron-Consumer/"
+  - "MedlinePlus, Iron Deficiency Anemia: https://medlineplus.gov/irondeficiencyanemia.html"
+plan:
+  topic: "Iron deficiency anemia: signs, causes and what helps"
+  title: "Always Tired? Signs of Low Iron You Shouldn't Ignore"
+  description: |-
+    Iron deficiency is one of the most common causes of anemia. It can leave you exhausted, short of breath, and even craving ice. Learn the signs, the causes, and why you shouldn't just start iron pills on your own.
+
+    In this video:
+    • What iron does in your body
+    • Signs of iron deficiency anemia
+    • Common causes, including blood loss
+    • Iron-rich foods and tips to absorb more
+
+    #Anemia #IronDeficiency #WomensHealth #Nutrition #HealthEducation
+  tags: ["iron deficiency anemia", "low iron symptoms", "anemia symptoms", "always tired", "craving ice", "iron rich foods", "iron supplements", "heavy periods", "ferritin", "hemoglobin", "health education"]
+  thumbnail_text: "ALWAYS TIRED?"
+  thumbnail_highlight: "TIRED?"
+  thumbnail_photo_query: "tired woman desk exhausted"
+  playlist: "Healthy Habits & Prevention"
+  scenes:
+    - layout: "title"
+      heading: "Always Tired?"
+      points: ["It might be low iron"]
+      footage_query: "tired woman desk"
+      narration: >-
+        Exhausted no matter how much you sleep? Out of breath climbing the stairs? Craving ice? These can all be signs of iron
+        deficiency anemia, one of the most common types of anemia. Today we explain what it is, what causes it, and what to do
+        about it.
+    - layout: "bullets"
+      heading: "Why You Need Iron"
+      points: ["Makes hemoglobin", "Hemoglobin carries oxygen", "Too little: less oxygen to body"]
+      footage_query: "red blood cells animation"
+      narration: >-
+        Your body uses iron to make hemoglobin, the protein in red blood cells that carries oxygen from your lungs to the rest
+        of your body. When you do not have enough iron, your body cannot make enough healthy red blood cells. That is called
+        iron deficiency anemia, and it means less oxygen reaches your organs and muscles.
+    - layout: "bullets"
+      heading: "Signs to Notice"
+      points: ["Tiredness and weakness", "Pale skin", "Shortness of breath, dizziness", "Cold hands, brittle nails"]
+      footage_query: "woman tired stairs"
+      narration: >-
+        Signs can include tiredness and weakness, pale skin, shortness of breath or a pounding heart with activity, dizziness,
+        headaches, cold hands and feet, and brittle nails. Some people crave ice or non food items, which is called pica. Mild
+        iron deficiency may cause no symptoms at all.
+    - layout: "bullets"
+      heading: "Common Causes"
+      points: ["Blood loss: heavy periods", "Bleeding in the gut", "Not enough iron in diet", "Pregnancy, poor absorption"]
+      footage_query: "woman stomach pain couch"
+      narration: >-
+        What causes it? The most common cause is blood loss. For many women, that means heavy periods. Slow bleeding in the
+        stomach or intestines is another cause, from ulcers, polyps, or sometimes cancer. Iron deficiency can also come from not
+        getting enough iron in food, pregnancy, or conditions like celiac disease that affect absorption.
+    - layout: "warning"
+      heading: "Important for Men and After Menopause"
+      points: ["Low iron needs a cause", "Could be hidden bleeding", "Don't just take pills"]
+      footage_query: "senior man talking doctor"
+      narration: >-
+        Here is something important. In men, and in women after menopause, iron deficiency is not normal. Doctors will want to
+        find out why, because it can be a sign of hidden bleeding in the gut. That is one reason not to simply start iron pills
+        on your own. Taking iron can hide the problem without fixing the cause.
+    - layout: "bullets"
+      heading: "How It's Diagnosed"
+      points: ["Complete blood count", "Ferritin: iron stores", "Other iron tests", "Tests to find the cause"]
+      footage_query: "blood test lab tube"
+      narration: >-
+        Diagnosis starts with blood tests. A complete blood count checks your hemoglobin and red blood cells. A ferritin test
+        shows how much iron your body has stored. Depending on the results, your doctor may order other tests to find the
+        cause.
+    - layout: "bullets"
+      heading: "Foods With Iron"
+      points: ["Lean red meat, poultry, fish", "Beans, lentils, tofu", "Spinach, fortified cereals", "Add vitamin C for absorption"]
+      footage_query: "lentils beans spinach food"
+      narration: >-
+        Food can help. Iron from meat, poultry and fish is absorbed most easily. Plant sources include beans, lentils, tofu,
+        spinach and iron fortified cereals. Eating these with vitamin C, like oranges, strawberries or bell peppers, helps you
+        absorb more. Tea and coffee with meals can reduce absorption. If your doctor recommends an iron supplement, take it
+        exactly as directed, and keep it away from children, because too much iron is very dangerous for kids.
+    - layout: "outro"
+      heading: "Get Checked"
+      points: ["Tired all the time?", "Ask about a blood test", "Find the cause"]
+      footage_query: "woman walking morning park"
+      narration: >-
+        Tired all the time? Ask your doctor about a blood test, and about finding the cause. Call 911 for chest pain, fainting,
+        or severe shortness of breath. This video is for education only, not medical advice. Like and subscribe to Health
+        Support Studio for a new health video every day.
+  short_title: "Craving ice? It could be low iron #Shorts"
+  short_caption: >-
+    Craving ice and always tired? It could be a sign of iron deficiency anemia. Here is what to do. Educational only, not
+    medical advice. #Anemia #IronDeficiency #WomensHealth #HealthTips #HealthEducation
+  short_scenes:
+    - layout: "title"
+      heading: "Craving Ice?"
+      points: ["It could be low iron"]
+      footage_query: "ice cubes glass"
+      narration: >-
+        Craving ice, all the time? It might be more than a habit.
+    - layout: "bullets"
+      heading: "Signs of Low Iron"
+      points: ["Craving ice", "Always tired", "Pale skin", "Short of breath"]
+      footage_query: "tired woman desk"
+      narration: >-
+        Craving ice can be a sign of iron deficiency anemia, along with tiredness, pale skin, and shortness of breath. Do not
+        just start iron pills on your own. Ask your doctor for a blood test, and to find the cause, because it can be hidden
+        bleeding.
+    - layout: "outro"
+      heading: "Full Video on YouTube"
+      points: ["Health Support Studio"]
+      footage_query: "woman walking morning park"
+      narration: >-
+        Learn the causes and iron rich foods in our full video, on the Health Support Studio YouTube channel.

@@ -1,6 +1,7 @@
 """Checks the pre-written scripts in script_bank/ before they are used.
 
-    python -m youtube_agent.check_scripts
+    python -m youtube_agent.check_scripts            # length, layout and on-screen text limits
+    python -m youtube_agent.check_scripts --links    # also check that every source link opens
 """
 
 import re
@@ -78,12 +79,31 @@ def check(path, config) -> list[str]:
     return errs
 
 
+def broken_links(path) -> list[str]:
+    import requests
+
+    errs = []
+    for source in yaml.safe_load(path.read_text()).get("sources", []):
+        url = re.search(r"https?://\S+", source)
+        if not url:
+            errs.append(f"source has no link: {source}")
+            continue
+        try:
+            r = requests.get(url.group(), timeout=30, allow_redirects=True,
+                             headers={"User-Agent": "Mozilla/5.0 (link check)"})
+            if r.status_code >= 400 and r.status_code not in (401, 403, 429):  # some sites block robots
+                errs.append(f"link {r.status_code}: {url.group()}")
+        except requests.RequestException as e:
+            errs.append(f"link failed ({type(e).__name__}): {url.group()}")
+    return errs
+
+
 def main() -> None:
     config = load_config()
     files = sorted(SCRIPT_BANK.glob("*.yaml"))
     bad = 0
     for f in files:
-        errs = check(f, config)
+        errs = check(f, config) + (broken_links(f) if "--links" in sys.argv else [])
         bad += bool(errs)
         print(f"{'OK  ' if not errs else 'FAIL'} {f.name}" + "".join(f"\n     - {e}" for e in errs))
     print(f"\n{len(files) - bad}/{len(files)} scripts OK")

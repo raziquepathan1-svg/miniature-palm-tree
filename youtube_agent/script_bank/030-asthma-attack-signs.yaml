@@ -1,0 +1,121 @@
+queue_topic: "Asthma attack warning signs and what to do"
+style: "Warning Signs"
+sources:
+  - "CDC, About Asthma: https://www.cdc.gov/asthma/about/index.html"
+  - "NIH NHLBI, Asthma: https://www.nhlbi.nih.gov/health/asthma"
+  - "MedlinePlus, Asthma: https://medlineplus.gov/asthma.html"
+plan:
+  topic: "Asthma attack warning signs and what to do"
+  title: "Asthma Attack Warning Signs: When to Call 911"
+  description: |-
+    Asthma attacks can go from mild to life-threatening. Learn the early warning signs, what an asthma action plan is, and the danger signs that mean call 911.
+
+    In this video:
+    • What happens in the airways during an asthma attack
+    • Early warning signs and common triggers
+    • Why you need an asthma action plan
+    • Emergency signs in adults and children
+
+    #Asthma #AsthmaAttack #WarningSigns #LungHealth #HealthEducation
+  tags: ["asthma attack", "asthma attack symptoms", "asthma warning signs", "asthma action plan", "rescue inhaler", "asthma in children", "asthma triggers", "wheezing", "shortness of breath", "lung health", "health education"]
+  thumbnail_text: "CAN'T BREATHE?"
+  thumbnail_highlight: "BREATHE?"
+  thumbnail_photo_query: "person using asthma inhaler"
+  playlist: "Emergencies & First Aid"
+  scenes:
+    - layout: "title"
+      heading: "Asthma Attack Warning Signs"
+      points: ["And when to call 911"]
+      footage_query: "person using inhaler"
+      narration: >-
+        Millions of Americans live with asthma, including many children. Most of the time it can be controlled. But an asthma
+        attack can go from mild to life threatening, sometimes quickly. Today you will learn the early signs, what to do, and
+        the danger signs that mean call 911.
+    - layout: "bullets"
+      heading: "What Happens"
+      points: ["Airways swell", "Muscles around them tighten", "Extra mucus forms", "Less air gets through"]
+      footage_query: "lungs breathing animation"
+      narration: >-
+        During an asthma attack, three things happen in the airways of the lungs. The lining swells, the muscles around the
+        airways tighten, and the airways make extra mucus. Together, these make the airways narrow, so it is harder to move air
+        in and out.
+    - layout: "bullets"
+      heading: "Common Triggers"
+      points: ["Colds and flu", "Smoke and air pollution", "Pollen, dust mites, pets", "Exercise and cold air"]
+      footage_query: "smoke air pollution city"
+      narration: >-
+        Common triggers include colds and the flu, tobacco smoke, air pollution and wildfire smoke, pollen, mold, dust mites,
+        pet dander, strong smells, cold air, and exercise. Knowing your triggers, and avoiding them when you can, helps prevent
+        attacks.
+    - layout: "bullets"
+      heading: "Early Warning Signs"
+      points: ["Coughing, especially at night", "Wheezing", "Chest tightness", "Shortness of breath"]
+      footage_query: "woman coughing home"
+      narration: >-
+        Early warning signs include coughing, especially at night or with exercise, wheezing, which is a whistling sound when
+        breathing, chest tightness, and shortness of breath. You may also feel tired or notice you cannot do your usual
+        activities. Treating these early signs quickly can stop an attack from getting worse.
+    - layout: "bullets"
+      heading: "Follow Your Action Plan"
+      points: ["Written plan from your doctor", "Use rescue inhaler as directed", "Know when to get help", "Share it with school, family"]
+      footage_query: "doctor explaining inhaler patient"
+      narration: >-
+        Everyone with asthma should have a written asthma action plan from their doctor. It tells you which medicines to take
+        every day, how to use your rescue inhaler when symptoms start, and exactly when to call the doctor or get emergency
+        help. Give a copy to your child's school, and to family members.
+    - layout: "warning"
+      heading: "Call 911 If"
+      points: ["Trouble talking or walking", "Lips or nails blue or gray", "Rescue inhaler isn't helping", "Skin sucking in at ribs or neck"]
+      footage_query: "ambulance emergency lights"
+      narration: >-
+        Now the danger signs. Call 911 if someone is struggling to breathe, cannot talk or walk because they are out of breath,
+        their lips or fingernails look blue or gray, their rescue inhaler is not helping, or the skin between their ribs or at
+        the neck is sucking in with each breath. In children, also watch for very fast breathing and flaring nostrils.
+    - layout: "warning"
+      heading: "While You Wait"
+      points: ["Sit upright, stay calm", "Use rescue inhaler per plan", "Move away from triggers"]
+      footage_query: "person sitting calm breathing"
+      narration: >-
+        While you wait for help, sit upright, and try to stay calm. Keep using the rescue inhaler as the action plan or
+        emergency dispatcher instructs. Move away from smoke or other triggers. Do not lie down, and do not wait to see if it
+        passes.
+    - layout: "bullets"
+      heading: "Signs Asthma Isn't Controlled"
+      points: ["Rescue inhaler more than 2 days a week", "Waking up at night", "Missing work or school", "Talk to your doctor"]
+      footage_query: "patient talking doctor office"
+      narration: >-
+        Finally, if you need your rescue inhaler more than two days a week, wake up at night with asthma, or miss work or
+        school because of it, your asthma may not be well controlled. Talk to your doctor. Better daily treatment can prevent
+        attacks.
+    - layout: "outro"
+      heading: "Remember"
+      points: ["Know your triggers", "Follow your action plan", "Blue lips or can't talk? Call 911"]
+      footage_query: "family park playing"
+      narration: >-
+        Remember: know your triggers, follow your action plan, and call 911 for the danger signs. This video is for education
+        only, not medical advice. Like and subscribe to Health Support Studio for a new health video every day.
+  short_title: "Asthma attack? These signs mean call 911 #Shorts"
+  short_caption: >-
+    An asthma attack can go from mild to life-threatening. Know the signs that mean call 911 right away. Educational only,
+    not medical advice. #Asthma #AsthmaAttack #WarningSigns #LungHealth #HealthTips #HealthEducation
+  short_scenes:
+    - layout: "title"
+      heading: "Asthma Attack?"
+      points: ["Know when to call 911"]
+      footage_query: "person using inhaler"
+      narration: >-
+        An asthma attack can go from mild to life threatening. Know these danger signs.
+    - layout: "warning"
+      heading: "Call 911 If"
+      points: ["Can't talk or walk", "Blue or gray lips or nails", "Inhaler isn't helping", "Skin sucking in at ribs"]
+      footage_query: "ambulance emergency lights"
+      narration: >-
+        Call 911 if the person cannot talk or walk because they are out of breath, their lips or nails look blue or gray, their
+        rescue inhaler is not helping, or the skin between their ribs sucks in with each breath. Sit them upright and keep them
+        calm while you wait.
+    - layout: "outro"
+      heading: "Full Video on YouTube"
+      points: ["Health Support Studio"]
+      footage_query: "family park playing"
+      narration: >-
+        Learn the early warning signs in our full video, on the Health Support Studio YouTube channel.

@@ -1,0 +1,49 @@
+queue_topic: "Sunscreen: how to use it the right way"
+style: "Quick Short"
+sources:
+  - "American Academy of Dermatology, How to Apply Sunscreen: https://www.aad.org/public/everyday-care/sun-protection/shade-clothing-sunscreen/how-to-apply-sunscreen"
+  - "CDC, Sun Safety Facts: https://www.cdc.gov/skin-cancer/sun-safety/index.html"
+plan:
+  topic: "Sunscreen: how to use it the right way"
+  title: "Most People Use Sunscreen Wrong: Do This Instead"
+  description: |-
+    Skin cancer is the most common cancer in the US, and sunscreen only protects you if you use it right. Here is what dermatologists recommend.
+
+    #Sunscreen #SkinCancer #SunSafety #SkinCare #Shorts
+  tags: ["sunscreen", "how to apply sunscreen", "spf 30", "skin cancer prevention", "sun safety", "broad spectrum", "reapply sunscreen", "skin care", "health shorts"]
+  thumbnail_text: "SUNSCREEN WRONG?"
+  thumbnail_highlight: "WRONG?"
+  thumbnail_photo_query: "applying sunscreen arm beach"
+  playlist: "Healthy Habits & Prevention"
+  scenes:
+    - layout: "title"
+      heading: "Using Sunscreen Wrong?"
+      points: ["Most people do"]
+      footage_query: "applying sunscreen beach"
+      narration: >-
+        Skin cancer is the most common cancer in the US. Sunscreen helps, but only if you use it right.
+    - layout: "bullets"
+      heading: "Pick the Right One"
+      points: ["SPF 30 or higher", "Broad spectrum", "Water resistant"]
+      footage_query: "sunscreen bottle close up"
+      narration: >-
+        Dermatologists recommend a broad spectrum sunscreen with SPF thirty or higher, and water resistant if you will swim or
+        sweat.
+    - layout: "bullets"
+      heading: "Use Enough"
+      points: ["About a shot glass for your body", "Reapply every 2 hours", "And after swimming or sweating", "Even on cloudy days"]
+      footage_query: "family beach sunny"
+      narration: >-
+        Most people use too little. Adults need about one ounce, enough to fill a shot glass, to cover the body. Reapply every
+        two hours, and after swimming or sweating. And wear it on cloudy days too, because UV rays get through clouds.
+    - layout: "outro"
+      heading: "Protect Your Skin"
+      points: ["Subscribe for more"]
+      footage_query: "person wearing hat sunglasses"
+      narration: >-
+        Add shade, a hat and sunglasses. Subscribe to Health Support Studio for more.
+  short_title: "You're probably using sunscreen wrong #Shorts"
+  short_caption: >-
+    Most people use too little sunscreen and forget to reapply. Here is how dermatologists say to do it. Educational only,
+    not medical advice. #Sunscreen #SunSafety #SkinCancer #SkinCare #HealthTips
+  short_scenes: []
