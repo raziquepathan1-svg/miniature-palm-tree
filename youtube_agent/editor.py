@@ -44,8 +44,10 @@ def _resolve(base: Path, rel: str | None) -> Path | None:
 
 def edit_video(main_video: Path, editing: dict, video: dict, base_dir: Path, out_path: Path) -> Path:
     """Add intro/outro clips and background music (each only if its file exists)."""
-    intro = _resolve(base_dir, editing.get("intro_clip"))
-    outro = _resolve(base_dir, editing.get("outro_clip"))
+    # Vertical Shorts use their own (vertical) intro/outro; a landscape clip would be letterboxed.
+    suffix = "_vertical" if video.get("format") == "shorts" else ""
+    intro = _resolve(base_dir, editing.get(f"intro_clip{suffix}"))
+    outro = _resolve(base_dir, editing.get(f"outro_clip{suffix}"))
     music = _resolve(base_dir, editing.get("background_music"))
 
     if not (intro or outro or music):

@@ -107,6 +107,8 @@ avatar:
 editing:
   intro_clip: "assets/intro.mp4"          # played before the avatar video if the file exists
   outro_clip: "assets/outro.mp4"          # played after it if the file exists
+  intro_clip_vertical: "assets/intro_vertical.mp4"   # same, for vertical Shorts (9:16)
+  outro_clip_vertical: "assets/outro_vertical.mp4"
   background_music: "assets/music.mp3"    # mixed in quietly if the file exists
   music_volume: 0.08
 
