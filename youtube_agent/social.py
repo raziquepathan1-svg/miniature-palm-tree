@@ -151,8 +151,10 @@ def post(social_dir: Path) -> None:
 
     link = f"https://youtu.be/{meta['youtube_id']}"
     # Facebook makes caption links clickable; Instagram doesn't, so point people to the bio link too.
-    fb_caption = f"{meta['caption']}\n\n▶️ Watch the full video on YouTube: {link}"
-    ig_caption = f"{meta['caption']}\n\n▶️ Full video on YouTube (link in bio): {link}"
+    # Meta asks creators to disclose realistic AI-generated audio; the narration is an AI voice.
+    ai_note = "🤖 Narrated with an AI voice."
+    fb_caption = f"{meta['caption']}\n\n▶️ Watch the full video on YouTube: {link}\n{ai_note}"
+    ig_caption = f"{meta['caption']}\n\n▶️ Full video on YouTube (link in bio): {link}\n{ai_note}"
     results = []
     if ig_user_id:
         try:
