@@ -69,24 +69,10 @@ def instagram_ready(video: Path) -> Path:
     return out
 
 
-def post_instagram_reel(video: Path, caption: str, ig_user_id: str, token: str) -> str:
-    video = instagram_ready(video)
-    size = video.stat().st_size
-    container = _check(requests.post(
-        f"{GRAPH}/{ig_user_id}/media",
-        params={"media_type": "REELS", "upload_type": "resumable", "caption": caption,
-                "share_to_feed": "true", "access_token": token},
-        timeout=60,
-    ))
-    with open(video, "rb") as f:
-        _check(requests.post(
-            container["uri"],
-            headers={"Authorization": f"OAuth {token}", "offset": "0", "file_size": str(size)},
-            data=f, timeout=600,
-        ))
+def _wait_and_publish_instagram(container_id: str, ig_user_id: str, token: str) -> str:
     for _ in range(POLL_LIMIT):
         status = _check(requests.get(
-            f"{GRAPH}/{container['id']}", params={"fields": "status_code,status", "access_token": token}, timeout=60,
+            f"{GRAPH}/{container_id}", params={"fields": "status_code,status", "access_token": token}, timeout=60,
         ))
         if status.get("status_code") == "FINISHED":
             break
@@ -97,9 +83,58 @@ def post_instagram_reel(video: Path, caption: str, ig_user_id: str, token: str) 
         raise TimeoutError("Instagram took too long to process the video.")
     published = _check(requests.post(
         f"{GRAPH}/{ig_user_id}/media_publish",
-        params={"creation_id": container["id"], "access_token": token}, timeout=60,
+        params={"creation_id": container_id, "access_token": token}, timeout=60,
     ))
     return published["id"]
+
+
+def post_instagram_reel_from_url(video_url: str, caption: str, ig_user_id: str, token: str) -> str:
+    """Instagram fetches the video itself from a public URL (here: the Facebook Reel's video file)."""
+    container = _check(requests.post(
+        f"{GRAPH}/{ig_user_id}/media",
+        data={"media_type": "REELS", "video_url": video_url, "caption": caption,
+              "share_to_feed": "true", "access_token": token},
+        timeout=60,
+    ))
+    return _wait_and_publish_instagram(container["id"], ig_user_id, token)
+
+
+def post_instagram_reel(video: Path, caption: str, ig_user_id: str, token: str) -> str:
+    """Direct (resumable) upload of the local file."""
+    video = instagram_ready(video)
+    size = video.stat().st_size
+    container = _check(requests.post(
+        f"{GRAPH}/{ig_user_id}/media",
+        data={"media_type": "REELS", "upload_type": "resumable", "caption": caption,
+              "share_to_feed": "true", "access_token": token},
+        timeout=60,
+    ))
+    with open(video, "rb") as f:
+        _check(requests.post(
+            container["uri"],
+            headers={"Authorization": f"OAuth {token}", "offset": "0", "file_size": str(size)},
+            data=f, timeout=600,
+        ))
+    return _wait_and_publish_instagram(container["id"], ig_user_id, token)
+
+
+def facebook_video_source(video_id: str, token: str) -> str:
+    """Public MP4 URL of a posted Facebook video, once Facebook has finished processing it."""
+    for _ in range(POLL_LIMIT):
+        info = _check(requests.get(f"{GRAPH}/{video_id}", params={"fields": "source,status",
+                                                                  "access_token": token}, timeout=60))
+        if info.get("source"):
+            return info["source"]
+        if (info.get("status") or {}).get("video_status") == "error":
+            raise RuntimeError(f"Facebook could not process the video: {info.get('status')}")
+        time.sleep(POLL_SECONDS)
+    raise TimeoutError("Facebook took too long to process the video.")
+
+
+def latest_facebook_reel(page_id: str, token: str) -> str | None:
+    reels = _check(requests.get(f"{GRAPH}/{page_id}/video_reels", params={"fields": "id", "limit": 1,
+                                                                         "access_token": token}, timeout=60))
+    return (reels.get("data") or [{}])[0].get("id")
 
 
 def post_facebook_reel(video: Path, caption: str, page_id: str, token: str) -> str:
@@ -184,16 +219,30 @@ def post(social_dir: Path) -> None:
     fb_caption = f"{meta['caption']}\n\n▶️ Watch the full video on YouTube: {link}\n{ai_note}"
     ig_caption = f"{meta['caption']}\n\n▶️ Full video on YouTube (link in bio): {link}\n{ai_note}"
     results = []
-    if ig_user_id:
+    fb_video_id = None
+    if os.environ.get("ONLY_INSTAGRAM", "").lower() == "true":  # retrying Instagram alone
+        fb_video_id = latest_facebook_reel(page_id, token)
+    else:
         try:
-            results.append(f"Instagram Reel posted: {post_instagram_reel(video, ig_caption, ig_user_id, token)}")
-        except Exception as e:  # keep going so Facebook still gets posted
-            results.append(f"Instagram FAILED: {e}")
-    if os.environ.get("ONLY_INSTAGRAM", "").lower() != "true":  # retrying Instagram alone
-        try:
-            results.append(f"Facebook Reel posted: {post_facebook_reel(video, fb_caption, page_id, token)}")
+            fb_video_id = post_facebook_reel(video, fb_caption, page_id, token)
+            results.append(f"Facebook Reel posted: {fb_video_id}")
         except Exception as e:
             results.append(f"Facebook FAILED: {e}")
+    if ig_user_id:
+        # Instagram's direct upload endpoint rejects our files ("ProcessingFailedError"), so let Instagram
+        # fetch the video from the Facebook Reel we just posted; fall back to the direct upload.
+        try:
+            if not fb_video_id:
+                raise RuntimeError("no Facebook Reel to take the video from")
+            ig_id = post_instagram_reel_from_url(facebook_video_source(fb_video_id, token), ig_caption,
+                                                 ig_user_id, token)
+            results.append(f"Instagram Reel posted: {ig_id}")
+        except Exception as e:
+            print(f"  (Instagram from Facebook video failed: {e}; trying direct upload)")
+            try:
+                results.append(f"Instagram Reel posted: {post_instagram_reel(video, ig_caption, ig_user_id, token)}")
+            except Exception as e2:
+                results.append(f"Instagram FAILED: {e2}")
     print("\n".join(results))
     summary = os.environ.get("GITHUB_STEP_SUMMARY")
     if summary:
