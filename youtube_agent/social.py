@@ -229,18 +229,18 @@ def post(social_dir: Path) -> None:
         except Exception as e:
             results.append(f"Facebook FAILED: {e}")
     if ig_user_id:
-        # Instagram's direct upload endpoint rejects our files ("ProcessingFailedError"), so let Instagram
-        # fetch the video from the Facebook Reel we just posted; fall back to the direct upload.
+        # Direct upload of the re-encoded file; if Instagram rejects it, let Instagram fetch the video
+        # from the Facebook Reel instead.
         try:
-            if not fb_video_id:
-                raise RuntimeError("no Facebook Reel to take the video from")
-            ig_id = post_instagram_reel_from_url(facebook_video_source(fb_video_id, token), ig_caption,
-                                                 ig_user_id, token)
-            results.append(f"Instagram Reel posted: {ig_id}")
+            results.append(f"Instagram Reel posted: {post_instagram_reel(video, ig_caption, ig_user_id, token)}")
         except Exception as e:
-            print(f"  (Instagram from Facebook video failed: {e}; trying direct upload)")
+            print(f"  (Instagram direct upload failed: {e}; trying the Facebook Reel's video)")
             try:
-                results.append(f"Instagram Reel posted: {post_instagram_reel(video, ig_caption, ig_user_id, token)}")
+                if not fb_video_id:
+                    raise RuntimeError("no Facebook Reel to take the video from")
+                ig_id = post_instagram_reel_from_url(facebook_video_source(fb_video_id, token), ig_caption,
+                                                     ig_user_id, token)
+                results.append(f"Instagram Reel posted: {ig_id}")
             except Exception as e2:
                 results.append(f"Instagram FAILED: {e2}")
     print("\n".join(results))
