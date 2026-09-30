@@ -15,6 +15,8 @@ Needs these environment variables (GitHub secrets):
 
 import json
 import os
+import shutil
+import subprocess
 import sys
 import time
 from pathlib import Path
@@ -48,7 +50,27 @@ def youtube_is_public(youtube_id: str) -> bool:
     return bool(items) and items[0]["status"]["privacyStatus"] == "public"
 
 
+def instagram_ready(video: Path) -> Path:
+    """Re-encode to Instagram's Reels spec (H.264 high, yuv420p, 30 fps, AAC 48 kHz, no edit lists,
+    moov atom first). The Short is stitched from separately encoded clips, which Instagram rejects
+    with 'ProcessingFailedError' even though Facebook accepts it."""
+    ffmpeg = shutil.which("ffmpeg")
+    if not ffmpeg:
+        print("  (ffmpeg not found - uploading the Short as it is)")
+        return video
+    out = video.with_name("short_instagram.mp4")
+    subprocess.run([
+        ffmpeg, "-y", "-loglevel", "error", "-i", str(video),
+        "-c:v", "libx264", "-profile:v", "high", "-pix_fmt", "yuv420p", "-r", "30", "-g", "60",
+        "-preset", "medium", "-crf", "20", "-maxrate", "8M", "-bufsize", "16M",
+        "-c:a", "aac", "-ar", "48000", "-ac", "2", "-b:a", "128k",
+        "-use_editlist", "0", "-movflags", "+faststart", str(out),
+    ], check=True)
+    return out
+
+
 def post_instagram_reel(video: Path, caption: str, ig_user_id: str, token: str) -> str:
+    video = instagram_ready(video)
     size = video.stat().st_size
     container = _check(requests.post(
         f"{GRAPH}/{ig_user_id}/media",
@@ -167,10 +189,11 @@ def post(social_dir: Path) -> None:
             results.append(f"Instagram Reel posted: {post_instagram_reel(video, ig_caption, ig_user_id, token)}")
         except Exception as e:  # keep going so Facebook still gets posted
             results.append(f"Instagram FAILED: {e}")
-    try:
-        results.append(f"Facebook Reel posted: {post_facebook_reel(video, fb_caption, page_id, token)}")
-    except Exception as e:
-        results.append(f"Facebook FAILED: {e}")
+    if os.environ.get("ONLY_INSTAGRAM", "").lower() != "true":  # retrying Instagram alone
+        try:
+            results.append(f"Facebook Reel posted: {post_facebook_reel(video, fb_caption, page_id, token)}")
+        except Exception as e:
+            results.append(f"Facebook FAILED: {e}")
     print("\n".join(results))
     summary = os.environ.get("GITHUB_STEP_SUMMARY")
     if summary:

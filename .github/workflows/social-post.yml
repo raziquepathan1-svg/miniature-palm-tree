@@ -11,6 +11,10 @@ on:
         description: "Only test the Facebook/Instagram connection (posts nothing)"
         type: boolean
         default: false
+      instagram_only:
+        description: "Re-post the latest Short to Instagram only (after an Instagram failure)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -48,7 +52,7 @@ jobs:
           now=$(date -u +%s)
           for RUN_ID in $(gh run list --repo "$GITHUB_REPOSITORY" --workflow daily-video.yml --status success \
                           --limit 6 --json databaseId --jq '.[].databaseId'); do
-            if grep -qx "$RUN_ID" youtube_agent/social_posted.txt 2>/dev/null; then
+            if [ "${{ inputs.instagram_only }}" != "true" ] && grep -qx "$RUN_ID" youtube_agent/social_posted.txt 2>/dev/null; then
               echo "Newest due Short (run $RUN_ID) was already posted."; break
             fi
             rm -rf social_dl && mkdir social_dl
@@ -77,18 +81,20 @@ jobs:
           META_PAGE_ID: ${{ secrets.META_PAGE_ID }}
           META_PAGE_TOKEN: ${{ secrets.META_PAGE_TOKEN }}
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          ONLY_INSTAGRAM: ${{ inputs.instagram_only }}
           YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
           YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
           YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
           YOUTUBE_TOKEN_JSON: ${{ secrets.YOUTUBE_TOKEN_JSON }}
         run: |
+          command -v ffmpeg >/dev/null || { sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg; }
           pip install -q requests google-api-python-client google-auth google-auth-oauthlib
           DIR=$(dirname "$(find social_dl -name social.json | head -1)")
           if [ "$DIR" = "." ] || [ -z "$DIR" ]; then echo "No social.json in the artifact - nothing to post."; exit 0; fi
           python -m youtube_agent.social "$DIR"
 
       - name: Remember it was posted
-        if: ${{ always() && !inputs.check_only && steps.find.outputs.skip != 'true' }}
+        if: ${{ always() && !inputs.check_only && !inputs.instagram_only && steps.find.outputs.skip != 'true' }}
         run: |
           find social_dl -name posted.flag | grep -q . || { echo "Nothing was posted."; exit 0; }
           echo "${{ steps.find.outputs.run_id }}" >> youtube_agent/social_posted.txt
