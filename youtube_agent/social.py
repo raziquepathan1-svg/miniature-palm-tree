@@ -5,6 +5,7 @@ it) during your review, the Short is NOT posted.
 
 Usage (from the repo root; the GitHub workflow does this for you):
     python -m youtube_agent.social path/to/social_folder
+    python -m youtube_agent.social --check     # test the connection without posting anything
 
 Needs these environment variables (GitHub secrets):
     META_PAGE_ID     Facebook Page ID
@@ -101,6 +102,41 @@ def post_facebook_reel(video: Path, caption: str, page_id: str, token: str) -> s
     return video_id
 
 
+def check_connection() -> None:
+    """Read-only test that the secrets work: names the Page and Instagram account, posts nothing."""
+    page_id, token = os.environ.get("META_PAGE_ID"), os.environ.get("META_PAGE_TOKEN")
+    ig_user_id = os.environ.get("IG_USER_ID")
+    missing = [n for n, v in (("META_PAGE_ID", page_id), ("META_PAGE_TOKEN", token), ("IG_USER_ID", ig_user_id)) if not v]
+    if missing:
+        sys.exit(f"Missing GitHub secrets: {', '.join(missing)}")
+    lines = []
+    try:
+        page = _check(requests.get(f"{GRAPH}/{page_id}", params={"fields": "name,instagram_business_account",
+                                                                   "access_token": token}, timeout=60))
+        lines.append(f"OK  Facebook Page: {page.get('name')}")
+        linked = (page.get("instagram_business_account") or {}).get("id")
+        if linked and linked != ig_user_id:
+            lines.append(f"FAIL IG_USER_ID does not match the Instagram account linked to this Page ({linked})")
+    except Exception as e:
+        lines.append(f"FAIL Facebook Page: {e}")
+    try:
+        ig = _check(requests.get(f"{GRAPH}/{ig_user_id}", params={"fields": "username", "access_token": token},
+                                 timeout=60))
+        lines.append(f"OK  Instagram: @{ig.get('username')}")
+        limit = _check(requests.get(f"{GRAPH}/{ig_user_id}/content_publishing_limit",
+                                    params={"access_token": token}, timeout=60))
+        lines.append(f"OK  Instagram publishing allowed ({limit.get('data', [{}])[0].get('quota_usage', 0)} posts used today)")
+    except Exception as e:
+        lines.append(f"FAIL Instagram: {e}")
+    print("\n".join(lines))
+    summary = os.environ.get("GITHUB_STEP_SUMMARY")
+    if summary:
+        with open(summary, "a") as f:
+            f.write("## Facebook / Instagram connection test\n" + "\n".join(f"- {l}" for l in lines) + "\n")
+    if any(l.startswith("FAIL") for l in lines):
+        sys.exit(1)
+
+
 def post(social_dir: Path) -> None:
     meta = json.loads((social_dir / "social.json").read_text())
     video = social_dir / "short.mp4"
@@ -139,6 +175,9 @@ def post(social_dir: Path) -> None:
 
 
 if __name__ == "__main__":
+    if sys.argv[1:] == ["--check"]:
+        check_connection()
+        sys.exit(0)
     if len(sys.argv) != 2:
         sys.exit("Usage: python -m youtube_agent.social path/to/social_folder")
     post(Path(sys.argv[1]))

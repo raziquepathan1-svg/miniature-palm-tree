@@ -6,6 +6,11 @@ on:
     # (~8:25 PM Saudi time). Posts only if the YouTube video is public.
     - cron: "25 17 * * *"
   workflow_dispatch:
+    inputs:
+      check_only:
+        description: "Only test the Facebook/Instagram connection (posts nothing)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -22,7 +27,18 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Test the connection only
+        if: inputs.check_only
+        env:
+          META_PAGE_ID: ${{ secrets.META_PAGE_ID }}
+          META_PAGE_TOKEN: ${{ secrets.META_PAGE_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+        run: |
+          pip install -q requests
+          python -m youtube_agent.social --check
+
       - name: Find today's Short
+        if: ${{ !inputs.check_only }}
         id: find
         env:
           GH_TOKEN: ${{ github.token }}
@@ -36,7 +52,7 @@ jobs:
           fi
 
       - name: Download the Short
-        if: steps.find.outputs.skip != 'true'
+        if: ${{ !inputs.check_only && steps.find.outputs.skip != 'true' }}
         uses: actions/download-artifact@v4
         with:
           name: social-${{ steps.find.outputs.run_id }}
@@ -45,12 +61,12 @@ jobs:
           github-token: ${{ github.token }}
 
       - uses: actions/setup-python@v5
-        if: steps.find.outputs.skip != 'true'
+        if: ${{ !inputs.check_only && steps.find.outputs.skip != 'true' }}
         with:
           python-version: "3.11"
 
       - name: Post to Instagram and Facebook
-        if: steps.find.outputs.skip != 'true'
+        if: ${{ !inputs.check_only && steps.find.outputs.skip != 'true' }}
         env:
           META_PAGE_ID: ${{ secrets.META_PAGE_ID }}
           META_PAGE_TOKEN: ${{ secrets.META_PAGE_TOKEN }}
@@ -66,7 +82,7 @@ jobs:
           python -m youtube_agent.social "$DIR"
 
       - name: Remember it was posted
-        if: always() && steps.find.outputs.skip != 'true'
+        if: ${{ always() && !inputs.check_only && steps.find.outputs.skip != 'true' }}
         run: |
           find social_dl -name posted.flag | grep -q . || { echo "Nothing was posted."; exit 0; }
           echo "${{ steps.find.outputs.run_id }}" >> youtube_agent/social_posted.txt
