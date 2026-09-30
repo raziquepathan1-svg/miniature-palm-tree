@@ -102,10 +102,16 @@ def post_facebook_reel(video: Path, caption: str, page_id: str, token: str) -> s
     return video_id
 
 
+def _env(name: str) -> str | None:
+    """Secrets pasted into GitHub often carry a trailing newline or spaces; HTTP headers reject them."""
+    value = (os.environ.get(name) or "").strip()
+    return value or None
+
+
 def check_connection() -> None:
     """Read-only test that the secrets work: names the Page and Instagram account, posts nothing."""
-    page_id, token = os.environ.get("META_PAGE_ID"), os.environ.get("META_PAGE_TOKEN")
-    ig_user_id = os.environ.get("IG_USER_ID")
+    page_id, token = _env("META_PAGE_ID"), _env("META_PAGE_TOKEN")
+    ig_user_id = _env("IG_USER_ID")
     missing = [n for n, v in (("META_PAGE_ID", page_id), ("META_PAGE_TOKEN", token), ("IG_USER_ID", ig_user_id)) if not v]
     if missing:
         sys.exit(f"Missing GitHub secrets: {', '.join(missing)}")
@@ -140,8 +146,8 @@ def check_connection() -> None:
 def post(social_dir: Path) -> None:
     meta = json.loads((social_dir / "social.json").read_text())
     video = social_dir / "short.mp4"
-    page_id, token = os.environ.get("META_PAGE_ID"), os.environ.get("META_PAGE_TOKEN")
-    ig_user_id = os.environ.get("IG_USER_ID")
+    page_id, token = _env("META_PAGE_ID"), _env("META_PAGE_TOKEN")
+    ig_user_id = _env("IG_USER_ID")
     if not (page_id and token):
         print("Facebook/Instagram not connected yet (META_PAGE_ID / META_PAGE_TOKEN missing) - skipping.")
         return
