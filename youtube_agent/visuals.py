@@ -294,9 +294,25 @@ def render_background(size: tuple[int, int], out_png: Path) -> Path:
 
 
 # ---------------------------------------------------------------- stock footage (Pexels, free)
+def _download(url: str, dest: Path) -> Path:
+    with requests.get(url, stream=True, timeout=120) as dl:
+        dl.raise_for_status()
+        with open(dest, "wb") as fh:
+            for chunk in dl.iter_content(1 << 20):
+                fh.write(chunk)
+    return dest
+
+
 def fetch_footage(query: str, size: tuple[int, int], dest: Path, used: set) -> Path | None:
+    """A free stock clip: Pexels first, then Pixabay (each only if its API key is set)."""
+    if not query:
+        return None
+    return _pexels_footage(query, size, dest, used) or _pixabay_footage(query, size, dest, used)
+
+
+def _pexels_footage(query: str, size: tuple[int, int], dest: Path, used: set) -> Path | None:
     key = os.environ.get("PEXELS_API_KEY")
-    if not key or not query:
+    if not key:
         return None
     W, H = size
     orientation = "portrait" if H > W else "landscape"
@@ -316,15 +332,39 @@ def fetch_footage(query: str, size: tuple[int, int], dest: Path, used: set) -> P
             if not files:
                 continue
             best = min(files, key=lambda f: abs(f["width"] - W))
-            with requests.get(best["link"], stream=True, timeout=120) as dl:
-                dl.raise_for_status()
-                with open(dest, "wb") as fh:
-                    for chunk in dl.iter_content(1 << 20):
-                        fh.write(chunk)
+            _download(best["link"], dest)
             used.add(video["id"])
             return dest
     except Exception as e:
-        print(f"  (No stock footage for '{query}': {e})")
+        print(f"  (No Pexels footage for '{query}': {e})")
+    return None
+
+
+def _pixabay_footage(query: str, size: tuple[int, int], dest: Path, used: set) -> Path | None:
+    key = os.environ.get("PIXABAY_API_KEY")
+    if not key:
+        return None
+    W, H = size
+    portrait = H > W
+    try:
+        r = requests.get("https://pixabay.com/api/videos/",
+                         params={"key": key.strip(), "q": query[:100], "per_page": 20, "safesearch": "true"},
+                         timeout=30)
+        r.raise_for_status()
+        for hit in r.json().get("hits", []):
+            if f"pixabay-{hit['id']}" in used:
+                continue
+            files = [f for f in (hit.get("videos") or {}).values()
+                     if f.get("url") and f.get("width") and f.get("height")
+                     and min(f["width"], f["height"]) >= 720 and (f["height"] > f["width"]) == portrait]
+            if not files:
+                continue
+            best = min(files, key=lambda f: abs(f["width"] - W))
+            _download(best["url"], dest)
+            used.add(f"pixabay-{hit['id']}")
+            return dest
+    except Exception as e:
+        print(f"  (No Pixabay footage for '{query}': {e})")
     return None
 
 

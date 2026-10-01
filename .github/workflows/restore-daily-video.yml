@@ -53,6 +53,7 @@ jobs:
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+          PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}  # optional second source of free clips
           # Same Google Cloud app as Health Support Studio; only the login (refresh token) is this channel's.
           YOUTUBE_CLIENT_ID: ${{ secrets.RRS_YOUTUBE_CLIENT_ID || secrets.YOUTUBE_CLIENT_ID }}
           YOUTUBE_CLIENT_SECRET: ${{ secrets.RRS_YOUTUBE_CLIENT_SECRET || secrets.YOUTUBE_CLIENT_SECRET }}

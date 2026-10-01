@@ -69,12 +69,18 @@ Then add 3 GitHub secrets (the names start with `RRS_`, so they never replace th
 Test it: **Actions → Restore Remake Studio - post Short to Instagram and Facebook → Run workflow**, tick
 **Only test the Facebook/Instagram connection**. Nothing is posted.
 
-## Step 3: Test a video
+## Step 3 (optional): Add Pixabay for more free clips
+Pexels is used first; when it has no good clip for a scene, the agent tries Pixabay.
+1. Log in at **pixabay.com**, then open **pixabay.com/api/docs/**.
+2. Scroll to **Parameters**: your key is shown in green after `key` (only when you are logged in).
+3. In GitHub add the secret `PIXABAY_API_KEY` with that key.
+
+## Step 4: Test a video
 **Actions → Restore Remake Studio - daily video → Run workflow**, tick **Make the video but don't upload**.
 After ~20-30 minutes, download the `rr-video-…` file from the run page and watch it.
 
 The free Pexels key (`PEXELS_API_KEY`) is shared with Health Support Studio, so the stock clips work
-right away.
+right away. Pixabay clips are added if you set `PIXABAY_API_KEY`.
 
 ---
 

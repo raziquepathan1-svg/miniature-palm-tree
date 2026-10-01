@@ -38,7 +38,7 @@ channel:
 # ---- Video ----
 video:
   mode: "voice_slides"
-  stock_footage: true          # free Pexels clips (needs PEXELS_API_KEY)
+  stock_footage: true          # free clips: Pexels first, then Pixabay (PEXELS_API_KEY / PIXABAY_API_KEY)
   target_minutes: 4
   format: "landscape"
   videos_per_run: 1
@@ -116,7 +116,7 @@ youtube:
     licensed pro for electrical, plumbing, gas or structural work. Homes built before 1978 may have lead
     paint: test before sanding or scraping.
 
-    This video uses an AI-generated voice. Footage is licensed stock video from Pexels and illustrates the
+    This video uses an AI-generated voice. Footage is free stock video from Pexels and Pixabay and illustrates the
     ideas; it does not show our own projects.
 
     Restore Remake Studio | Business inquiries: restoreremakestudio@gmail.com
