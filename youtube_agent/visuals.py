@@ -25,6 +25,27 @@ CORAL = (255, 107, 107)
 YELLOW = (255, 212, 0)
 WHITE = (255, 255, 255)
 RED = (229, 57, 53)
+BG_GRADIENT = ((11, 37, 69), (14, 124, 123))  # fallback background when there's no stock clip
+ICON = "cross"  # brand icon on slides and thumbnails: "cross" (health) or "house" (home makeovers)
+WARNING_NOTE = "In an emergency, call 911."
+OUTRO_NOTE = "Educational only. Not medical advice."
+
+
+def set_brand(brand: dict | None) -> None:
+    """Apply a channel's colors, icon and on-screen notes (config.yaml "brand"); no-op if not set."""
+    global NAVY, TEAL, MINT, CORAL, BG_GRADIENT, ICON, WARNING_NOTE, OUTRO_NOTE
+    if not brand:
+        return
+    rgb = lambda key, default: tuple(brand[key]) if brand.get(key) else default
+    NAVY, TEAL = rgb("panel", NAVY), rgb("accent", TEAL)
+    MINT, CORAL = rgb("light", MINT), rgb("highlight", CORAL)
+    if brand.get("background"):
+        BG_GRADIENT = tuple(tuple(c) for c in brand["background"])
+    ICON = brand.get("icon", ICON)
+    WARNING_NOTE = brand.get("warning_note", WARNING_NOTE)
+    OUTRO_NOTE = brand.get("outro_note", OUTRO_NOTE)
+    for style, (label, color) in (brand.get("badges") or {}).items():
+        BADGES[style] = (label, tuple(color))
 
 
 # ---------------------------------------------------------------- fonts
@@ -91,7 +112,24 @@ def _text_block(draw, xy, text, fnt, fill, max_w, line_gap=1.15, anchor_center=F
     return y
 
 
-def _cross_icon(draw, cx, cy, s, fill=WHITE, pulse=CORAL):
+def _brand_icon(draw, cx, cy, s):
+    (_house_icon if ICON == "house" else _cross_icon)(draw, cx, cy, s)
+
+
+def _house_icon(draw, cx, cy, s, fill=WHITE):
+    """Simple house with a leaf: the Restore Remake Studio mark."""
+    k = s / 100
+    x0, y0 = cx - s / 2, cy - s / 2
+    P = lambda pts: [(x0 + x * k, y0 + y * k) for x, y in pts]
+    draw.polygon(P([(50, 4), (98, 46), (86, 46), (86, 96), (14, 96), (14, 46), (2, 46)]), fill=fill)
+    draw.rectangle(P([(66, 10), (78, 30)]), fill=fill)
+    draw.rounded_rectangle(P([(41, 64), (59, 96)]), max(1, int(4 * k)), fill=CORAL)
+    draw.rectangle(P([(22, 52), (36, 64)]), fill=TEAL)
+    draw.rectangle(P([(64, 52), (78, 64)]), fill=TEAL)
+
+
+def _cross_icon(draw, cx, cy, s, fill=WHITE, pulse=None):
+    pulse = pulse or CORAL
     arm = s * 0.3
     r = s * 0.09
     draw.rounded_rectangle((cx - arm / 2, cy - s / 2, cx + arm / 2, cy + s / 2), r, fill=fill)
@@ -117,7 +155,8 @@ def _lines_h(draw, text, fnt, max_w, gap=1.15) -> int:
     return len(_wrap(draw, text, fnt, max_w)) * int(fnt.size * gap)
 
 
-def _panel(size, box, color=NAVY, alpha=215, radius=36):
+def _panel(size, box, color=None, alpha=215, radius=36):
+    color = color or NAVY
     layer = Image.new("RGBA", size, (0, 0, 0, 0))
     ImageDraw.Draw(layer).rounded_rectangle(box, radius, fill=(*color, alpha))
     return layer
@@ -134,7 +173,7 @@ def render_overlay(scene, size: tuple[int, int], channel_name: str, out_png: Pat
 
     # Brand tag (top-left)
     tag_h = int(64 * u)
-    _cross_icon(d, int(60 * u), int(60 * u), tag_h)
+    _brand_icon(d, int(60 * u), int(60 * u), tag_h)
     d.text((int(105 * u), int(38 * u)), channel_name.upper(), font=font(int(34 * u), 700), fill=WHITE)
 
     margin = int(110 * u)
@@ -218,7 +257,7 @@ def render_overlay(scene, size: tuple[int, int], channel_name: str, out_png: Pat
             d.ellipse((cx - 20 * u, cy - 20 * u, cx + 20 * u, cy + 20 * u), fill=accent)
             y = _text_block(d, (margin + int(70 * u), y), p, pf, WHITE, max_w - int(70 * u)) + int(16 * u)
         if layout == "warning":
-            d.text((margin, bottom - int(80 * u)), "In an emergency, call 911.",
+            d.text((margin, bottom - int(80 * u)), WARNING_NOTE,
                    font=font(int(44 * u), 800), fill=YELLOW)
         if layout == "outro":
             pill_w, pill_h = int(420 * u), int(90 * u)
@@ -226,7 +265,7 @@ def render_overlay(scene, size: tuple[int, int], channel_name: str, out_png: Pat
             d.rounded_rectangle((px, py, px + pill_w, py + pill_h), pill_h // 2, fill=RED)
             sf = font(int(44 * u), 800)
             d.text((px + (pill_w - d.textlength("SUBSCRIBE", font=sf)) / 2, py + 18 * u), "SUBSCRIBE", font=sf, fill=WHITE)
-            note = "Educational only. Not medical advice."
+            note = OUTRO_NOTE
             if portrait:  # not enough width beside the button: put the note above it
                 d.text((px, py - int(65 * u)), note, font=font(int(34 * u), 500), fill=MINT)
             else:
@@ -241,7 +280,7 @@ def render_background(size: tuple[int, int], out_png: Path) -> Path:
     import numpy as np
 
     W, H = size
-    c0, c1 = np.array((11, 37, 69), float), np.array((14, 124, 123), float)
+    c0, c1 = np.array(BG_GRADIENT[0], float), np.array(BG_GRADIENT[1], float)
     t = np.clip(np.add.outer(np.arange(H) / H * 0.6, np.arange(W) / W * 0.6), 0, 1)[..., None]
     img = Image.fromarray((c0 + (c1 - c0) * t).astype(np.uint8), "RGB")
     d = ImageDraw.Draw(img, "RGBA")
@@ -503,7 +542,7 @@ def make_thumbnail(text: str, channel_name: str, out: Path, background: Path | N
     nw = d.textlength(name, font=nf)
     bx, by = W - nw - 150, H - 88
     d.rounded_rectangle((bx - 20, by - 8, W - 36, by + 60), 34, fill=(*NAVY, 235))
-    _cross_icon(d, int(bx + 26), int(by + 26), 44)
+    _brand_icon(d, int(bx + 26), int(by + 26), 44)
     d.text((bx + 64, by + 6), name, font=nf, fill=WHITE)
     img.convert("RGB").save(out, "JPEG", quality=92)
     return out

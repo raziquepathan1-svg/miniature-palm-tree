@@ -9,22 +9,22 @@ FONTS = """
 DEFS = """
 <filter id="rust" x="0" y="0" width="100%" height="100%">
   <feTurbulence type="fractalNoise" baseFrequency="0.045" numOctaves="5" seed="7"/>
-  <feColorMatrix values="1.3 0 0 0 0.05  0.55 0 0 0 0.0  0.12 0 0 0 0.0  0 0 0 0 1"/>
+  <feColorMatrix values="0.85 0 0 0 0.12  0.72 0 0 0 0.1  0.55 0 0 0 0.07  0 0 0 0 1"/>
 </filter>
 <filter id="rustbig" x="0" y="0" width="100%" height="100%">
   <feTurbulence type="fractalNoise" baseFrequency="0.009" numOctaves="6" seed="11"/>
-  <feColorMatrix values="1.35 0 0 0 0.02  0.55 0 0 0 -0.02  0.12 0 0 0 0  0 0 0 0 1"/>
+  <feColorMatrix values="0.95 0 0 0 0.03  0.78 0 0 0 0.02  0.58 0 0 0 0.01  0 0 0 0 1"/>
 </filter>
 <filter id="rustdark" x="0" y="0" width="100%" height="100%">
   <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="5" seed="3"/>
-  <feColorMatrix values="0.95 0 0 0 -0.05  0.38 0 0 0 -0.03  0.1 0 0 0 0  0 0 0 0 1"/>
+  <feColorMatrix values="0.8 0 0 0 0.0  0.68 0 0 0 0.0  0.52 0 0 0 0  0 0 0 0 1"/>
 </filter>
 <linearGradient id="metal" x1="0" y1="0" x2="1" y2="0">
   <stop offset="0" stop-color="#94A3B8"/><stop offset="0.35" stop-color="#F8FAFC"/>
   <stop offset="0.55" stop-color="#CBD5E1"/><stop offset="1" stop-color="#64748B"/>
 </linearGradient>
 <radialGradient id="clean" cx="0.75" cy="0.75" r="0.9">
-  <stop offset="0" stop-color="#22D3EE"/><stop offset="0.45" stop-color="#0E7490"/><stop offset="1" stop-color="#082F49"/>
+  <stop offset="0" stop-color="#5EEAD4"/><stop offset="0.45" stop-color="#0D9488"/><stop offset="1" stop-color="#064E3B"/>
 </radialGradient>
 <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
   <stop offset="0" stop-color="#FDE68A"/><stop offset="0.5" stop-color="#F59E0B"/><stop offset="1" stop-color="#B45309"/>
@@ -43,36 +43,53 @@ def sparkle(x, y, s):
     return f'<g transform="translate({x},{y}) scale({s})" filter="url(#glow)">{SPARK}</g>'
 
 def emblem(p):
-    """400x400 emblem: a wrench half rusty, half restored, over a split circle. p = unique id prefix."""
-    wrench = """
-      <circle cx="200" cy="112" r="64"/>
-      <rect x="180" y="150" width="40" height="190" rx="20"/>
-      <circle cx="200" cy="330" r="34"/>"""
+    """400x400 emblem: a house, half old and dusty, half freshly remade, plus a garden leaf."""
+    house = """
+      <rect x="252" y="78" width="30" height="62" rx="4"/>
+      <path d="M200 62 L344 182 Q352 190 340 196 L318 196 L318 318 Q318 330 306 330 L94 330 Q82 330 82 318
+               L82 196 L60 196 Q48 190 56 182 Z"/>"""
     holes = """
-      <rect x="180" y="30" width="40" height="88" rx="6"/>
-      <circle cx="200" cy="330" r="13"/>"""
+      <rect x="114" y="212" width="58" height="50" rx="6"/>
+      <rect x="228" y="212" width="58" height="50" rx="6"/>
+      <path d="M176 330 L176 282 Q176 262 200 262 Q224 262 224 282 L224 330 Z"/>"""
     return f"""
 <defs>
   <clipPath id="{p}c"><circle cx="200" cy="200" r="186"/></clipPath>
   <clipPath id="{p}tl"><polygon points="0,0 400,0 0,400"/></clipPath>
   <clipPath id="{p}br"><polygon points="400,0 400,400 0,400"/></clipPath>
-  <mask id="{p}w" maskUnits="userSpaceOnUse" x="0" y="0" width="400" height="400">
-    <g fill="#fff" transform="rotate(-45 200 200)">{wrench}</g>
-    <g fill="#000" transform="rotate(-45 200 200)">{holes}</g>
+  <mask id="{p}h" maskUnits="userSpaceOnUse" x="0" y="0" width="400" height="400">
+    <g transform="translate(34,26) scale(0.83)"><g fill="#fff">{house}</g><g fill="#000">{holes}</g></g>
   </mask>
+  <linearGradient id="{p}wall" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#E2E8F0"/></linearGradient>
+  <linearGradient id="{p}leaf" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#86EFAC"/><stop offset="1" stop-color="#16A34A"/></linearGradient>
 </defs>
 <g filter="url(#shadow)">
 <circle cx="200" cy="200" r="198" fill="url(#gold)"/>
 <g clip-path="url(#{p}c)">
   <rect width="400" height="400" fill="url(#clean)"/>
   <g clip-path="url(#{p}tl)"><rect width="400" height="400" filter="url(#rustdark)"/>
-    <rect width="400" height="400" fill="#000" opacity="0.25"/></g>
-  <line x1="-10" y1="410" x2="410" y2="-10" stroke="#FDE68A" stroke-width="7" filter="url(#glow)"/>
-  <g mask="url(#{p}w)" filter="url(#shadow)">
-    <rect width="400" height="400" fill="url(#metal)" transform="rotate(-45 200 200)"/>
-    <g clip-path="url(#{p}tl)"><rect width="400" height="400" filter="url(#rust)"/></g>
+    <rect width="400" height="400" fill="#000" opacity="0.3"/></g>
+  <g clip-path="url(#{p}br)"><g transform="translate(34,26) scale(0.83)">
+    <rect x="114" y="212" width="58" height="50" rx="6" fill="#FDE68A"/>
+    <rect x="228" y="212" width="58" height="50" rx="6" fill="#FDE68A" filter="url(#glow)"/>
+    <path d="M176 330 L176 282 Q176 262 200 262 Q224 262 224 282 L224 330 Z" fill="#B45309"/>
+  </g></g>
+  <g clip-path="url(#{p}tl)"><g transform="translate(34,26) scale(0.83)">
+    <rect x="114" y="212" width="58" height="50" fill="#292524"/>
+    <path d="M176 330 L176 282 Q176 262 200 262 Q224 262 224 282 L224 330 Z" fill="#44403C"/>
+  </g></g>
+  <g mask="url(#{p}h)" filter="url(#shadow)">
+    <rect width="400" height="400" fill="url(#{p}wall)"/>
+    <g clip-path="url(#{p}tl)"><rect width="400" height="400" filter="url(#rust)"/><g transform="translate(34,26) scale(0.83)">
+      <path d="M95 120 L130 150 L118 175 L150 200" stroke="#3F3A36" stroke-width="4" fill="none"/>
+      <path d="M210 70 L196 100 L214 118" stroke="#3F3A36" stroke-width="4" fill="none"/></g></g>
   </g>
-  {sparkle(315, 175, 20)}{sparkle(215, 345, 13)}{sparkle(360, 265, 9)}
+  <path d="M282 330 C282 282 308 254 346 246 C346 292 322 324 282 330 Z" fill="url(#{p}leaf)"/>
+  <path d="M284 328 C300 300 318 278 340 254" stroke="#14532D" stroke-width="4" fill="none"/>
+  <rect x="0" y="330" width="400" height="70" fill="#15803D" opacity="0.0"/>
+  {sparkle(330, 120, 18)}{sparkle(355, 205, 10)}{sparkle(250, 368, 9)}
 </g>
 <circle cx="200" cy="200" r="186" fill="none" stroke="#1C1917" stroke-width="5"/>
 </g>"""
@@ -101,13 +118,13 @@ def split_bg(w, h, x_top, x_bot, p):
                      for fx, fy, s in [(.25, .3, 18), (.6, .22, 26), (.82, .62, 20), (.45, .78, 14), (.9, .3, 12), (.35, .55, 9)])
     return f"""
 <defs><radialGradient id="{p}clean" cx="0.85" cy="0.5" r="0.8">
-  <stop offset="0" stop-color="#22D3EE"/><stop offset="0.4" stop-color="#0E7490"/><stop offset="1" stop-color="#042F3E"/></radialGradient>
+  <stop offset="0" stop-color="#5EEAD4"/><stop offset="0.4" stop-color="#0D9488"/><stop offset="1" stop-color="#053B33"/></radialGradient>
   <radialGradient id="{p}vig" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#000" stop-opacity="0.6"/>
   <stop offset="0.6" stop-color="#000" stop-opacity="0.35"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient>
   <clipPath id="{p}L"><polygon points="0,0 {x_top},0 {x_bot},{h} 0,{h}"/></clipPath></defs>
 <rect width="{w}" height="{h}" fill="url(#{p}clean)"/>
 <g clip-path="url(#{p}L)"><rect width="{w}" height="{h}" filter="url(#rustbig)"/>
-  <rect width="{w}" height="{h}" fill="#1C0A00" opacity="0.45"/></g>
+  <rect width="{w}" height="{h}" fill="#0C0A09" opacity="0.4"/></g>
 <line x1="{x_top}" y1="-20" x2="{x_bot}" y2="{h+20}" stroke="#FDE68A" stroke-width="10" filter="url(#glow)"/>
 {sparks}
 <ellipse cx="{w/2}" cy="{h/2}" rx="{w*0.42}" ry="{h*0.32}" fill="url(#{p}vig)"/>"""
@@ -126,25 +143,25 @@ CSS = """
 # ---- YouTube banner (2560x1440, safe area 1546x423 in the middle) ----
 banner = f"""
 <div style="position:absolute;inset:0">{svg(2560, 1440, split_bg(2560, 1440, 1420, 1140, "b"))}</div>
-<div class="tag" style="left:150px;top:690px;font-size:56px;transform:rotate(-6deg);background:rgba(120,40,0,.55)">BEFORE</div>
-<div class="tag" style="right:150px;top:690px;font-size:56px;transform:rotate(6deg);background:rgba(8,90,110,.55)">AFTER</div>
+<div class="tag" style="left:150px;top:690px;font-size:56px;transform:rotate(-6deg);background:rgba(80,64,50,.7)">BEFORE</div>
+<div class="tag" style="right:150px;top:690px;font-size:56px;transform:rotate(6deg);background:rgba(6,95,70,.6)">AFTER</div>
 <div class="wrap" style="left:507px;top:509px;width:1546px;height:423px;gap:56px">
   {svg(390, 390, emblem("b"), vb="0 0 400 400")}
   <div><div class="title" style="font-size:168px">RESTORE REMAKE</div>
   <div class="studio" style="font-size:58px;margin:10px 0 22px 6px">STUDIO</div>
-  <div class="pill" style="font-size:34px;padding:12px 34px">🔧 NEW RESTORATION EVERY WEEK</div></div>
+  <div class="pill" style="font-size:34px;padding:12px 34px">HOME • GARDEN • FURNITURE MAKEOVERS</div></div>
 </div>"""
 open("banner.html", "w").write(page(2560, 1440, banner, CSS))
 
 # ---- Facebook cover (1640x624) ----
 fb = f"""
 <div style="position:absolute;inset:0">{svg(1640, 624, split_bg(1640, 624, 900, 760, "f"))}</div>
-<div class="tag" style="left:70px;top:70px;font-size:38px;transform:rotate(-6deg);background:rgba(120,40,0,.55)">BEFORE</div>
-<div class="tag" style="right:70px;top:70px;font-size:38px;transform:rotate(6deg);background:rgba(8,90,110,.55)">AFTER</div>
+<div class="tag" style="left:70px;top:70px;font-size:38px;transform:rotate(-6deg);background:rgba(80,64,50,.7)">BEFORE</div>
+<div class="tag" style="right:70px;top:70px;font-size:38px;transform:rotate(6deg);background:rgba(6,95,70,.6)">AFTER</div>
 <div class="wrap" style="inset:0;gap:44px">
   {svg(300, 300, emblem("f"), vb="0 0 400 400")}
   <div><div class="title" style="font-size:126px">RESTORE REMAKE</div>
   <div class="studio" style="font-size:44px;margin:8px 0 18px 4px">STUDIO</div>
-  <div class="pill" style="font-size:26px;padding:10px 28px">🔧 NEW RESTORATION EVERY WEEK</div></div>
+  <div class="pill" style="font-size:26px;padding:10px 28px">HOME • GARDEN • FURNITURE MAKEOVERS</div></div>
 </div>"""
 open("fb_cover.html", "w").write(page(1640, 624, fb, CSS))

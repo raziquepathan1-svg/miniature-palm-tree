@@ -1,0 +1,109 @@
+queue_topic: "Curb appeal ideas under 100 dollars"
+style: "Makeover Ideas"
+plan:
+  topic: "Curb appeal ideas under 100 dollars"
+  title: "8 Curb Appeal Ideas Under $100 That Make Your House Pop"
+  description: |-
+    First impressions matter. These 8 curb appeal upgrades each cost under $100 and make your house look cared-for, welcoming and more valuable from the street.
+
+    In this video:
+    • New house numbers and mailbox
+    • Front door and porch refresh
+    • Planters, mulch and edging
+    • Outdoor lighting
+    • A pressure-washed path
+
+    #CurbAppeal #HomeExterior #FrontYardIdeas #HomeMakeover #BudgetHome
+  tags: ["curb appeal ideas", "curb appeal on a budget", "front yard makeover", "cheap curb appeal", "home exterior ideas", "front porch ideas", "house numbers", "front door makeover", "landscaping ideas front yard", "home makeover", "sell house tips"]
+  thumbnail_text: "UNDER $100 GLOW-UP"
+  thumbnail_highlight: "$100"
+  thumbnail_photo_query: "house front porch flowers"
+  playlist: "Curb Appeal"
+  scenes:
+    - layout: "title"
+      heading: "Curb Appeal Under $100"
+      points: ["8 ideas, one weekend each"]
+      footage_query: "house front yard"
+      narration: >-
+        People judge a house in seconds from the street, and that includes you every time you pull into the driveway. Here are
+        eight curb appeal ideas that each cost under one hundred dollars and make your home look cared for, welcoming and more
+        valuable. Pick one or two for this weekend, and you will notice the difference every time you come home.
+    - layout: "bullets"
+      heading: "1 and 2. Numbers and Mailbox"
+      points: ["Big, modern house numbers", "New or painted mailbox", "About $20-$80"]
+      footage_query: "house numbers wall"
+      narration: >-
+        Ideas one and two: house numbers and the mailbox. Old, tiny or faded numbers look dated. Large modern numbers in black
+        or brass are easy to read and look sharp, and they cost about twenty to forty dollars. A fresh coat of paint or a new
+        mailbox finishes the look for a few dollars more. Mount the numbers where they are easy to see from the street at night.
+    - layout: "bullets"
+      heading: "3. Refresh the Front Door"
+      points: ["Paint it a bold color", "New kick plate or knocker", "One quart of paint: about $25-$40"]
+      footage_query: "colorful front door house"
+      narration: >-
+        Idea three: the front door. It is the focal point of your whole house. A quart of exterior paint in black, navy, red
+        or teal costs about twenty five to forty dollars and changes everything. If the door is in good shape, just clean it
+        and add a new kick plate or knocker. Polish or replace a tired door handle while you are at it.
+    - layout: "bullets"
+      heading: "4. Planters by the Door"
+      points: ["Two matching large pots", "Tall plant plus trailing plant", "About $60-$100"]
+      footage_query: "flower pots front porch"
+      narration: >-
+        Idea four: a pair of matching planters on either side of the door. Symmetry looks polished. Plant something tall in the
+        middle, like an ornamental grass, and something that trails over the edges, like sweet potato vine. Two pots with
+        soil and plants run about sixty to one hundred dollars.
+    - layout: "bullets"
+      heading: "5 and 6. Mulch and Edges"
+      points: ["Weed and edge the beds", "Fresh dark mulch", "Trim overgrown shrubs"]
+      footage_query: "garden mulch flower bed"
+      narration: >-
+        Ideas five and six: clean beds and fresh mulch. Pull the weeds, cut a crisp edge along the lawn with a flat spade, trim
+        any shrubs that cover windows, and spread fresh dark mulch. It is the landscaping version of a haircut, and it costs
+        about forty to eighty dollars for a typical front yard.
+    - layout: "bullets"
+      heading: "7. Solar Path Lights"
+      points: ["No wiring needed", "Line the walkway", "About $30-$60 for a set"]
+      footage_query: "garden path lights night"
+      narration: >-
+        Idea seven: solar path lights. They need no wiring, take minutes to install, and make your home look warm and inviting
+        at night. A set for the front walkway costs about thirty to sixty dollars. Choose warm white lights for the coziest
+        look.
+    - layout: "bullets"
+      heading: "8. Wash Everything"
+      points: ["Path, steps and siding", "Rent a pressure washer", "About $50-$60 a day"]
+      footage_query: "pressure washing driveway"
+      narration: >-
+        Idea eight: wash it all. A pressure washer rental costs about fifty to sixty dollars a day and strips years of grime off
+        walkways, steps and the driveway. Use a gentle setting and a wide nozzle on siding and wood, and never point it at
+        windows or people.
+    - layout: "outro"
+      heading: "Pick Two This Weekend"
+      points: ["Door and planters: fastest wins", "Subscribe for more makeovers"]
+      footage_query: "house exterior curb appeal"
+      narration: >-
+        If you only pick two, start with the front door and the planters. They give the fastest wow from the street. If this
+        helped, give it a like and subscribe to Restore Remake Studio for a new makeover idea every day.
+  short_title: "The cheapest curb appeal upgrade #Shorts"
+  short_caption: >-
+    Two matching planters by the front door. That's it. Symmetry makes any house look more polished. More curb appeal ideas
+    under 100 dollars on our YouTube channel. #CurbAppeal #FrontPorch #HomeExterior #HomeMakeover #FrontYardIdeas
+  short_scenes:
+    - layout: "title"
+      heading: "Instant Curb Appeal"
+      points: ["Under $100"]
+      footage_query: "house front porch"
+      narration: >-
+        Want your house to look more polished from the street this weekend, for under one hundred dollars? Try this.
+    - layout: "bullets"
+      heading: "Matching Planters"
+      points: ["One on each side of the door", "Tall plant in the middle", "Trailing plant on the edges"]
+      footage_query: "flower pots front porch"
+      narration: >-
+        Put two matching planters on either side of the front door. Something tall in the middle, something that trails over
+        the edges. Symmetry makes any entry look more expensive. Water them often in summer heat.
+    - layout: "outro"
+      heading: "7 More on YouTube"
+      points: ["Restore Remake Studio"]
+      footage_query: "house exterior curb appeal"
+      narration: >-
+        See all eight curb appeal ideas on the Restore Remake Studio YouTube channel.

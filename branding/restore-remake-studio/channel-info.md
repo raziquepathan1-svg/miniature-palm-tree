@@ -3,7 +3,8 @@
 - **Channel name:** Restore Remake Studio
 - **Handle:** `@restoreremakestudio`
 - **Email (Google account):** restoreremakestudio@gmail.com
-- **Colors:** rust brown (before) → teal `#0E7490` (after), gold `#F59E0B` title, cream `#FEF3C7`
+- **Niche:** home & room makeovers, garden & backyard makeovers, furniture flips & upcycling (US audience)
+- **Colors:** dusty taupe (before) → teal `#0D9488` (after), gold `#F59E0B` title, leaf green `#16A34A`
 - **Fonts:** Anton (title), Montserrat (text), both free (SIL Open Font License), in `fonts/`
 
 ## Images
@@ -17,28 +18,64 @@
 To change a design, edit `make.py`, run `python3 make.py`, then render each `.html` file as a screenshot at the size above.
 
 ## YouTube channel description
-(Studio → Customization → Basic info)
+(Studio → Customization → Basic info → Description)
 
-Old, rusty and broken things, brought back to life.
+```
+Turn tired spaces into places you love. 🏠🌿🪑
 
-Welcome to Restore Remake Studio! Here we take forgotten, damaged and thrift-store finds and restore or remake them by hand:
-• Rusty tool and knife restorations
-• Old furniture rescued and refinished
-• Vintage lamps, radios and gadgets repaired
-• Trash-to-treasure remakes and upcycling
+Welcome to Restore Remake Studio! Every day we share easy, budget-friendly makeover ideas to restore and remake your home, garden and furniture:
 
-No talking, just satisfying step-by-step work from before to the final reveal.
+🏠 Room & home makeovers: paint, lighting, small-space and rental-friendly ideas
+🌿 Garden & backyard makeovers: curb appeal, patios, planters and cheap landscaping
+🪑 Furniture flips & upcycling: give old and thrift-store furniture a new life
 
-New restoration every week. Subscribe and turn on notifications 🔔
+Simple steps, real costs and before-and-after inspiration you can actually do this weekend.
+
+🆕 New makeover video every day
+🔔 Subscribe and turn on notifications so you never miss an idea!
+
+💬 Which room or space should we makeover next? Tell us in the comments!
+
+Videos use an AI voice and licensed stock footage.
 
 📧 Business inquiries: restoreremakestudio@gmail.com
+```
 
 ## Channel keywords
-(Studio → Settings → Channel)
+(Studio → Settings → Channel → Keywords)
 
-restoration, restore, DIY, rust removal, tool restoration, furniture restoration, upcycling, remake, satisfying, before and after, repair, refurbish, vintage restoration, restore remake studio
+```
+home makeover, room makeover, DIY home decor, budget home makeover, garden makeover, backyard makeover, curb appeal, furniture flip, furniture makeover, upcycling, thrift flip, before and after, DIY, home improvement, restore remake studio
+```
 
-## Instagram and Facebook bio
-🔧 Old & broken → restored & remade
-Satisfying DIY restorations every week
-▶️ Full videos on YouTube
+## Instagram bio (max 150 characters)
+```
+🏠 Home • 🌿 Garden • 🪑 Furniture makeovers
+✨ Budget-friendly before & after ideas
+🆕 New idea every day
+▶️ Full videos on YouTube 👇
+```
+Put your YouTube channel link in the **Links** field.
+
+## Facebook Page
+**Category:** Home Improvement (add: Home Decor, Video Creator)
+
+**Bio / Intro** (max 101 characters):
+```
+🏠 Home, 🌿 garden & 🪑 furniture makeovers. Budget-friendly before & after ideas daily! ✨
+```
+
+**About / Details:**
+```
+Restore Remake Studio helps you turn tired spaces into places you love. 🏠🌿🪑
+
+Every day we share easy, budget-friendly makeover ideas for your rooms, garden, backyard and furniture: simple steps, real costs and before-and-after inspiration you can do this weekend.
+
+🎥 Full videos on our YouTube channel: Restore Remake Studio
+💬 Want a makeover idea for your space? Send us a message!
+
+📧 restoreremakestudio@gmail.com
+```
+
+## Instagram category
+Creator → **Video Creator** (or Home Decor / Home Improvement if listed)

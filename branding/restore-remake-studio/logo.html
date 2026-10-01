@@ -6,22 +6,22 @@ html,body{margin:0;width:800px;height:800px;overflow:hidden;background:#0C0A09}<
 <body><svg width="800" height="800" viewBox="0 0 800 800" style="" xmlns="http://www.w3.org/2000/svg"><defs>
 <filter id="rust" x="0" y="0" width="100%" height="100%">
   <feTurbulence type="fractalNoise" baseFrequency="0.045" numOctaves="5" seed="7"/>
-  <feColorMatrix values="1.3 0 0 0 0.05  0.55 0 0 0 0.0  0.12 0 0 0 0.0  0 0 0 0 1"/>
+  <feColorMatrix values="0.85 0 0 0 0.12  0.72 0 0 0 0.1  0.55 0 0 0 0.07  0 0 0 0 1"/>
 </filter>
 <filter id="rustbig" x="0" y="0" width="100%" height="100%">
   <feTurbulence type="fractalNoise" baseFrequency="0.009" numOctaves="6" seed="11"/>
-  <feColorMatrix values="1.35 0 0 0 0.02  0.55 0 0 0 -0.02  0.12 0 0 0 0  0 0 0 0 1"/>
+  <feColorMatrix values="0.95 0 0 0 0.03  0.78 0 0 0 0.02  0.58 0 0 0 0.01  0 0 0 0 1"/>
 </filter>
 <filter id="rustdark" x="0" y="0" width="100%" height="100%">
   <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="5" seed="3"/>
-  <feColorMatrix values="0.95 0 0 0 -0.05  0.38 0 0 0 -0.03  0.1 0 0 0 0  0 0 0 0 1"/>
+  <feColorMatrix values="0.8 0 0 0 0.0  0.68 0 0 0 0.0  0.52 0 0 0 0  0 0 0 0 1"/>
 </filter>
 <linearGradient id="metal" x1="0" y1="0" x2="1" y2="0">
   <stop offset="0" stop-color="#94A3B8"/><stop offset="0.35" stop-color="#F8FAFC"/>
   <stop offset="0.55" stop-color="#CBD5E1"/><stop offset="1" stop-color="#64748B"/>
 </linearGradient>
 <radialGradient id="clean" cx="0.75" cy="0.75" r="0.9">
-  <stop offset="0" stop-color="#22D3EE"/><stop offset="0.45" stop-color="#0E7490"/><stop offset="1" stop-color="#082F49"/>
+  <stop offset="0" stop-color="#5EEAD4"/><stop offset="0.45" stop-color="#0D9488"/><stop offset="1" stop-color="#064E3B"/>
 </radialGradient>
 <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
   <stop offset="0" stop-color="#FDE68A"/><stop offset="0.5" stop-color="#F59E0B"/><stop offset="1" stop-color="#B45309"/>
@@ -37,28 +37,45 @@ html,body{margin:0;width:800px;height:800px;overflow:hidden;background:#0C0A09}<
   <clipPath id="lc"><circle cx="200" cy="200" r="186"/></clipPath>
   <clipPath id="ltl"><polygon points="0,0 400,0 0,400"/></clipPath>
   <clipPath id="lbr"><polygon points="400,0 400,400 0,400"/></clipPath>
-  <mask id="lw" maskUnits="userSpaceOnUse" x="0" y="0" width="400" height="400">
-    <g fill="#fff" transform="rotate(-45 200 200)">
-      <circle cx="200" cy="112" r="64"/>
-      <rect x="180" y="150" width="40" height="190" rx="20"/>
-      <circle cx="200" cy="330" r="34"/></g>
-    <g fill="#000" transform="rotate(-45 200 200)">
-      <rect x="180" y="30" width="40" height="88" rx="6"/>
-      <circle cx="200" cy="330" r="13"/></g>
+  <mask id="lh" maskUnits="userSpaceOnUse" x="0" y="0" width="400" height="400">
+    <g transform="translate(34,26) scale(0.83)"><g fill="#fff">
+      <rect x="252" y="78" width="30" height="62" rx="4"/>
+      <path d="M200 62 L344 182 Q352 190 340 196 L318 196 L318 318 Q318 330 306 330 L94 330 Q82 330 82 318
+               L82 196 L60 196 Q48 190 56 182 Z"/></g><g fill="#000">
+      <rect x="114" y="212" width="58" height="50" rx="6"/>
+      <rect x="228" y="212" width="58" height="50" rx="6"/>
+      <path d="M176 330 L176 282 Q176 262 200 262 Q224 262 224 282 L224 330 Z"/></g></g>
   </mask>
+  <linearGradient id="lwall" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#E2E8F0"/></linearGradient>
+  <linearGradient id="lleaf" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#86EFAC"/><stop offset="1" stop-color="#16A34A"/></linearGradient>
 </defs>
 <g filter="url(#shadow)">
 <circle cx="200" cy="200" r="198" fill="url(#gold)"/>
 <g clip-path="url(#lc)">
   <rect width="400" height="400" fill="url(#clean)"/>
   <g clip-path="url(#ltl)"><rect width="400" height="400" filter="url(#rustdark)"/>
-    <rect width="400" height="400" fill="#000" opacity="0.25"/></g>
-  <line x1="-10" y1="410" x2="410" y2="-10" stroke="#FDE68A" stroke-width="7" filter="url(#glow)"/>
-  <g mask="url(#lw)" filter="url(#shadow)">
-    <rect width="400" height="400" fill="url(#metal)" transform="rotate(-45 200 200)"/>
-    <g clip-path="url(#ltl)"><rect width="400" height="400" filter="url(#rust)"/></g>
+    <rect width="400" height="400" fill="#000" opacity="0.3"/></g>
+  <g clip-path="url(#lbr)"><g transform="translate(34,26) scale(0.83)">
+    <rect x="114" y="212" width="58" height="50" rx="6" fill="#FDE68A"/>
+    <rect x="228" y="212" width="58" height="50" rx="6" fill="#FDE68A" filter="url(#glow)"/>
+    <path d="M176 330 L176 282 Q176 262 200 262 Q224 262 224 282 L224 330 Z" fill="#B45309"/>
+  </g></g>
+  <g clip-path="url(#ltl)"><g transform="translate(34,26) scale(0.83)">
+    <rect x="114" y="212" width="58" height="50" fill="#292524"/>
+    <path d="M176 330 L176 282 Q176 262 200 262 Q224 262 224 282 L224 330 Z" fill="#44403C"/>
+  </g></g>
+  <g mask="url(#lh)" filter="url(#shadow)">
+    <rect width="400" height="400" fill="url(#lwall)"/>
+    <g clip-path="url(#ltl)"><rect width="400" height="400" filter="url(#rust)"/><g transform="translate(34,26) scale(0.83)">
+      <path d="M95 120 L130 150 L118 175 L150 200" stroke="#3F3A36" stroke-width="4" fill="none"/>
+      <path d="M210 70 L196 100 L214 118" stroke="#3F3A36" stroke-width="4" fill="none"/></g></g>
   </g>
-  <g transform="translate(315,175) scale(20)" filter="url(#glow)"><path d="M0,-1 L0.22,-0.22 L1,0 L0.22,0.22 L0,1 L-0.22,0.22 L-1,0 L-0.22,-0.22Z" fill="#fff"/></g><g transform="translate(215,345) scale(13)" filter="url(#glow)"><path d="M0,-1 L0.22,-0.22 L1,0 L0.22,0.22 L0,1 L-0.22,0.22 L-1,0 L-0.22,-0.22Z" fill="#fff"/></g><g transform="translate(360,265) scale(9)" filter="url(#glow)"><path d="M0,-1 L0.22,-0.22 L1,0 L0.22,0.22 L0,1 L-0.22,0.22 L-1,0 L-0.22,-0.22Z" fill="#fff"/></g>
+  <path d="M282 330 C282 282 308 254 346 246 C346 292 322 324 282 330 Z" fill="url(#lleaf)"/>
+  <path d="M284 328 C300 300 318 278 340 254" stroke="#14532D" stroke-width="4" fill="none"/>
+  <rect x="0" y="330" width="400" height="70" fill="#15803D" opacity="0.0"/>
+  <g transform="translate(330,120) scale(18)" filter="url(#glow)"><path d="M0,-1 L0.22,-0.22 L1,0 L0.22,0.22 L0,1 L-0.22,0.22 L-1,0 L-0.22,-0.22Z" fill="#fff"/></g><g transform="translate(355,205) scale(10)" filter="url(#glow)"><path d="M0,-1 L0.22,-0.22 L1,0 L0.22,0.22 L0,1 L-0.22,0.22 L-1,0 L-0.22,-0.22Z" fill="#fff"/></g><g transform="translate(250,368) scale(9)" filter="url(#glow)"><path d="M0,-1 L0.22,-0.22 L1,0 L0.22,0.22 L0,1 L-0.22,0.22 L-1,0 L-0.22,-0.22Z" fill="#fff"/></g>
 </g>
 <circle cx="200" cy="200" r="186" fill="none" stroke="#1C1917" stroke-width="5"/>
 </g></g></svg></body></html>

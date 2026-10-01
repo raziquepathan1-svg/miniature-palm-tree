@@ -37,3 +37,6 @@ Before it runs a shell command or writes a file, the agent asks you `Allow? [y/N
 ## YouTube Video Agent
 
 `youtube_agent/` runs the Health Support Studio YouTube channel. It picks health topics, writes and fact-checks scripts, narrates them with a free AI voice over branded graphics and stock footage, and uploads 1 video a day as private for review. See [youtube_agent/README.md](youtube_agent/README.md) for setup.
+
+### Second channel: Restore Remake Studio
+The same agent also runs **Restore Remake Studio** (home, garden and furniture makeovers for a US audience), with its own settings, free script bank, logins and schedule in `youtube_agent/channels/restore_remake/`. Setup: [youtube_agent/channels/restore_remake/SETUP.md](youtube_agent/channels/restore_remake/SETUP.md).

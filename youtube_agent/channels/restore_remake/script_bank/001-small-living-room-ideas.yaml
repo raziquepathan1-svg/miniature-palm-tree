@@ -1,0 +1,110 @@
+queue_topic: "Small living room makeover ideas on a budget"
+style: "Makeover Ideas"
+plan:
+  topic: "Small living room makeover ideas on a budget"
+  title: "8 Cheap Ideas That Make a Small Living Room Look Bigger"
+  description: |-
+    Small living room feeling cramped? These 8 budget-friendly makeover ideas make a small space look bigger, brighter and more put-together, and most cost under $50.
+
+    In this video:
+    • Hang curtains high and wide
+    • Use mirrors to bounce light
+    • Pick the right size rug
+    • Furniture with legs and smart storage
+    • Layered lighting for a cozy, bigger feel
+
+    #SmallLivingRoom #LivingRoomMakeover #HomeDecor #BudgetDecor #DIYHome
+  tags: ["small living room ideas", "living room makeover", "small space decorating", "make a room look bigger", "budget home decor", "living room on a budget", "apartment living room", "home makeover", "decorating tips", "diy home decor", "cheap home upgrades"]
+  thumbnail_text: "TINY ROOM? TRY THIS"
+  thumbnail_highlight: "TINY"
+  thumbnail_photo_query: "cozy small living room"
+  playlist: "Room Makeovers"
+  scenes:
+    - layout: "title"
+      heading: "Make a Small Room Feel Bigger"
+      points: ["8 ideas, most under $50"]
+      footage_query: "cozy living room interior"
+      narration: >-
+        Your living room is small, but it does not have to feel small. Today you will get eight cheap makeover ideas that
+        make a tiny living room look bigger, brighter and more put together. Most of them cost less than fifty dollars, and
+        you can do several of them this weekend. Let's start with the one most people get wrong.
+    - layout: "bullets"
+      heading: "1. Curtains High and Wide"
+      points: ["Rod near the ceiling", "Extend 8-12 inches past the window", "Floor-length panels", "About $40-$80"]
+      footage_query: "curtains window living room"
+      narration: >-
+        Idea one: hang your curtains high and wide. Mount the rod close to the ceiling, and let it stretch eight to twelve
+        inches past each side of the window. Use panels that reach the floor. Your windows look taller and wider, and the
+        whole room feels bigger. A rod and two panels cost about forty to eighty dollars. Choose light, airy fabric in a color close to your walls, so the windows blend in instead of chopping the room up.
+    - layout: "bullets"
+      heading: "2. Mirrors Bounce Light"
+      points: ["Hang across from a window", "Go big: floor or wall mirror", "Thrift stores have great ones"]
+      footage_query: "mirror wall living room"
+      narration: >-
+        Idea two: add a big mirror. Hang it across from a window, or lean a tall floor mirror against the wall. It bounces
+        daylight around the room and makes the space look deeper. Thrift stores and Facebook Marketplace are full of large
+        mirrors for twenty to forty dollars.
+    - layout: "bullets"
+      heading: "3. A Bigger Rug"
+      points: ["Front legs of sofa on the rug", "Too-small rugs shrink a room", "8 by 10 fits most rooms"]
+      footage_query: "living room rug sofa"
+      narration: >-
+        Idea three: get a bigger rug than you think. A tiny rug floating in the middle actually makes a room look smaller.
+        Choose one large enough for the front legs of your sofa and chairs to sit on it. In many living rooms, an eight by
+        ten foot rug is the sweet spot.
+    - layout: "bullets"
+      heading: "4 and 5. Lighter Furniture"
+      points: ["Sofas and tables with legs", "Glass or acrylic coffee table", "Storage ottomans hide clutter"]
+      footage_query: "modern sofa living room"
+      narration: >-
+        Ideas four and five are about furniture. Pieces on legs let you see the floor underneath, which makes the room feel
+        open. A glass or clear acrylic coffee table almost disappears. And a storage ottoman gives you a footrest, extra
+        seating and a place to hide blankets and clutter, all in one.
+    - layout: "bullets"
+      heading: "6. Layered Lighting"
+      points: ["Ceiling light is not enough", "Add a floor lamp and table lamp", "Warm white bulbs, 2700K"]
+      footage_query: "warm lamp living room evening"
+      narration: >-
+        Idea six: layer your lighting. One ceiling light makes a room look flat. Add a floor lamp in a dark corner and a
+        table lamp beside the sofa. Light in the corners pushes the walls back visually. Use warm white bulbs, labeled
+        twenty seven hundred Kelvin, for a cozy look.
+    - layout: "big_number"
+      heading: "$25"
+      points: ["a gallon of light paint", "can change the whole room"]
+      footage_query: "painting wall roller white"
+      narration: >-
+        Idea seven: paint. A light, warm white or a soft greige reflects light and makes walls recede. A gallon of good
+        interior paint runs about twenty five to fifty dollars and covers around three hundred fifty square feet. Renters,
+        ask your landlord first, and keep the original color handy.
+    - layout: "outro"
+      heading: "8. Go Vertical, Then Subscribe"
+      points: ["Tall shelves draw eyes up", "Pick 2-3 ideas this weekend"]
+      footage_query: "bookshelf living room decor"
+      narration: >-
+        Idea eight: go vertical. Tall, narrow shelves draw the eye up and give you storage without eating floor space. Pick
+        two or three of these ideas and start this weekend. The curtains, the mirror and the lighting usually make the biggest difference for the least money. If this helped, give it a like and subscribe to Restore Remake
+        Studio for a new makeover idea every day.
+  short_title: "Tiny living room? Hang curtains like this #Shorts"
+  short_caption: >-
+    The cheapest trick to make a small living room look bigger: hang your curtains high and wide. Full list of 8 budget
+    ideas on our YouTube channel. #SmallLivingRoom #HomeDecor #BudgetDecor #LivingRoomMakeover #DecorTips
+  short_scenes:
+    - layout: "title"
+      heading: "Small Room? Do This"
+      points: ["The cheapest big-room trick"]
+      footage_query: "cozy small living room"
+      narration: >-
+        Want a small living room to look bigger for under fifty dollars? Look at your curtains.
+    - layout: "bullets"
+      heading: "High and Wide"
+      points: ["Rod near the ceiling", "8-12 inches past the window", "Floor-length panels"]
+      footage_query: "curtains window living room"
+      narration: >-
+        Mount the rod close to the ceiling, let it stretch eight to twelve inches past each side of the window, and use
+        panels that reach the floor. Your windows look bigger, and so does the room.
+    - layout: "outro"
+      heading: "7 More Ideas on YouTube"
+      points: ["Restore Remake Studio"]
+      footage_query: "living room interior bright"
+      narration: >-
+        That is just one of eight cheap ideas. Watch the full video on the Restore Remake Studio YouTube channel.

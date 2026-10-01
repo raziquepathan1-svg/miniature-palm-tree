@@ -25,7 +25,7 @@ class Scene(BaseModel):
     )
     layout: Literal["title", "bullets", "big_number", "warning", "myth_fact", "outro"] = Field(
         description="On-screen graphic: title = hook/topic card; bullets = 2-4 key points; big_number = one "
-        "key number or fact in huge type; warning = red-flag symptoms / call 911; myth_fact = points[0] is the "
+        "key number or fact in huge type; warning = red flags or safety warnings (health: when to call 911); myth_fact = points[0] is the "
         "myth, points[1] the fact; outro = recap + subscribe"
     )
     heading: str = Field(description="Short on-screen heading, max 6 words (for big_number: the number itself, e.g. '120/80')")
@@ -59,7 +59,7 @@ class VideoPlan(BaseModel):
         description="A separate standalone vertical Short (for Instagram/Facebook Reels) on the same topic: 2-4 "
         "scenes, about 90-120 spoken words in total (under 50 seconds). Scene 1 is a punchy hook (layout "
         "'title'); the middle gives the single most useful takeaway; the last scene (layout 'outro') says the full "
-        "video is on the Health Support Studio YouTube channel. Empty list if this video is itself a Short."
+        "video is on the channel's YouTube channel (say the channel name). Empty list if this video is itself a Short."
     )
     short_title: str = Field(
         description="YouTube Shorts title for the Short, under 60 characters, curiosity-driven, ending with #Shorts"
@@ -69,7 +69,8 @@ class VideoPlan(BaseModel):
     )
     short_caption: str = Field(
         description="Instagram/Facebook caption for the Short: 1-2 friendly sentences that make people want the "
-        "full video, then 'Educational only, not medical advice.', then 5-8 hashtags. Do not include any link "
+        "full video, then the channel's required disclaimer if it has one (health: 'Educational only, not medical "
+        "advice.'), then 5-8 hashtags. Do not include any link "
         "(the YouTube link is added automatically)."
     )
 
@@ -96,6 +97,7 @@ def plan_video(channel: dict, video: dict, past_topics: list[str], requested_top
     presented_by = "an AI avatar" if video.get("mode") == "avatar" else "an AI narrator voice over on-screen graphics and stock footage"
     prompt = f"""You are the head writer for an educational YouTube channel presented by {presented_by}.
 
+Channel name: {channel.get('name', '')}
 Channel niche: {channel['niche']}
 Audience: {channel['audience']}
 Target country: {channel.get('country', 'United States')}

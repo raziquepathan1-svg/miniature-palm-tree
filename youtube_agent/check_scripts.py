@@ -2,6 +2,7 @@
 
     python -m youtube_agent.check_scripts            # length, layout and on-screen text limits
     python -m youtube_agent.check_scripts --links    # also check that every source link opens
+    CHANNEL=restore_remake python -m youtube_agent.check_scripts   # another channel's script bank
 """
 
 import re
@@ -16,7 +17,7 @@ from .planner import VideoPlan
 # Sites that block automated requests (they answer 404 even for real pages); checked by hand instead.
 NO_ROBOT_CHECK = ("fda.gov",)
 
-TTS_BAD = re.compile(r"\bmg\b|\be\.g\.|\bi\.e\.|%|°|/|&|\bvs\b|\bDr\b")
+TTS_BAD = re.compile(r"\bmg\b|\be\.g\.|\bi\.e\.|%|°|/|&|\$|\bvs\b|\bDr\b")
 
 
 def words(scenes) -> int:
@@ -37,7 +38,7 @@ def check(path, config) -> list[str]:
     shorts = (style or {}).get("format") == "shorts"
     if plan.playlist not in config["channel"]["playlists"]:
         errs.append(f"playlist {plan.playlist!r} not in config")
-    if not data.get("sources"):
+    if config["video"].get("fact_check", True) and not data.get("sources"):  # health scripts cite sources
         errs.append("no sources")
     if len(plan.title) > 70:
         errs.append(f"title too long ({len(plan.title)})")

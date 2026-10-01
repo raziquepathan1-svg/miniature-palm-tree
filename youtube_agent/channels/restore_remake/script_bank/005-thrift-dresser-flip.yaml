@@ -1,0 +1,109 @@
+queue_topic: "How to flip a thrift store dresser step by step"
+style: "Step by Step"
+plan:
+  topic: "How to flip a thrift store dresser step by step"
+  title: "How to Flip a $30 Thrift Store Dresser, Step by Step"
+  description: |-
+    Turn a tired thrift store dresser into a piece that looks brand new. A beginner-friendly, step-by-step guide: tools, materials, rough costs and how long each step takes.
+
+    In this video:
+    • What to look for when buying a used dresser
+    • Cleaning, repairs and scuff sanding
+    • Primer, paint and a durable top coat
+    • New hardware: the cheapest big upgrade
+
+    #FurnitureFlip #ThriftFlip #DresserMakeover #Upcycling #DIYFurniture
+  tags: ["dresser makeover", "thrift store flip", "furniture flip", "how to paint a dresser", "dresser flip", "upcycled furniture", "furniture makeover", "diy dresser", "painted dresser", "thrift flip", "budget furniture"]
+  thumbnail_text: "$30 DRESSER GLOW-UP"
+  thumbnail_highlight: "$30"
+  thumbnail_photo_query: "painted dresser bedroom"
+  playlist: "Furniture Flips & Upcycling"
+  scenes:
+    - layout: "title"
+      heading: "Flip a Thrift Store Dresser"
+      points: ["Step by step, beginner friendly"]
+      footage_query: "old wooden dresser"
+      narration: >-
+        That scratched up dresser at the thrift store for thirty dollars could look like a three hundred dollar boutique piece
+        by next weekend. Today we will go step by step through a full dresser flip: what to buy, the tools you need, what it
+        costs, and how long each step takes. No experience needed.
+    - layout: "bullets"
+      heading: "Step 1: Buy the Right One"
+      points: ["Solid wood or sturdy plywood", "Drawers slide smoothly", "No water-swollen particle board", "Typical price: $20-$60"]
+      footage_query: "thrift store furniture shopping"
+      narration: >-
+        Step one is choosing the right dresser. Look for solid wood or sturdy plywood, and pull out every drawer to make sure it
+        slides. Skip pieces with swollen, crumbly particle board, because water damage is very hard to fix. Thrift stores,
+        yard sales and Facebook Marketplace often have good dressers for twenty to sixty dollars.
+    - layout: "bullets"
+      heading: "Step 2: Tools and Materials"
+      points: ["Degreaser, sandpaper, tack cloth", "Bonding primer and paint", "Brush plus small foam roller", "Supplies: about $60-$90"]
+      footage_query: "paint supplies brushes table"
+      narration: >-
+        Step two: gather your supplies. You need a degreaser, sandpaper around two hundred twenty grit, a tack cloth, a
+        bonding primer, a quart of furniture or cabinet paint, and a water based top coat. Grab a good brush and a small foam
+        roller. Expect about sixty to ninety dollars, and you will have leftovers for the next flip.
+    - layout: "bullets"
+      heading: "Step 3: Clean and Repair"
+      points: ["Remove drawers and hardware", "Degrease everything", "Wood filler for dings", "Time: about 2 hours"]
+      footage_query: "cleaning wooden furniture"
+      narration: >-
+        Step three: clean and repair. Take out the drawers and remove all the hardware. Scrub every surface with degreaser and
+        let it dry. Fill deep scratches and dings with wood filler, let it harden, then sand it smooth. Glue any loose joints
+        and clamp them overnight. This step takes about two hours, plus drying time.
+    - layout: "warning"
+      heading: "Before You Sand"
+      points: ["Old paint may contain lead", "Test pre-1978 painted pieces", "Wear a dust mask", "Sand outside or ventilate"]
+      footage_query: "sanding wood furniture"
+      narration: >-
+        Before you sand, a quick safety check. If the dresser already has old paint, it could be from before 1978 and contain
+        lead. Test it with a lead test kit, and if it is positive, do not sand it. For unpainted wood, scuff everything lightly,
+        wear a dust mask, work outside or with good airflow, and wipe off all the dust.
+    - layout: "bullets"
+      heading: "Step 4: Prime and Paint"
+      points: ["1 coat of bonding primer", "2-3 thin coats of paint", "Roll flat areas, brush edges", "Time: 1-2 days with drying"]
+      footage_query: "painting furniture white brush"
+      narration: >-
+        Step four: prime and paint. Apply one coat of bonding primer and let it dry. Then roll thin coats of paint on the flat
+        areas and use the brush for edges and details. Two or three thin coats look smooth and professional. Follow the recoat
+        time on the can, so this step usually takes one to two days.
+    - layout: "big_number"
+      heading: "$15-$40"
+      points: ["for new knobs and pulls", "the biggest upgrade per dollar"]
+      footage_query: "drawer handles hardware"
+      narration: >-
+        Step five: top coat and hardware. Brush on two thin coats of water based top coat on the top and drawer fronts, where
+        it gets the most wear. Then add new knobs and pulls. They cost about fifteen to forty dollars for a whole dresser, and
+        they are the biggest upgrade per dollar in the entire flip. Measure the hole spacing before you buy.
+    - layout: "outro"
+      heading: "Total: About $100"
+      points: ["Looks like a $300+ piece", "Subscribe for more flips"]
+      footage_query: "upcycled furniture painted"
+      narration: >-
+        All in, you are looking at roughly one hundred dollars for a piece that looks like it came from a boutique. Let the
+        paint cure for a couple of weeks before heavy use. If you enjoyed this, give it a like and subscribe to Restore Remake
+        Studio for a new makeover idea every day.
+  short_title: "Flip a $30 thrift dresser in 3 steps #Shorts"
+  short_caption: >-
+    That ugly thrift store dresser could be your favorite piece of furniture. Clean, prime, paint, new hardware. Full step by
+    step guide on our YouTube channel. #ThriftFlip #FurnitureFlip #DresserMakeover #Upcycling #DIYFurniture
+  short_scenes:
+    - layout: "title"
+      heading: "$30 Dresser Flip"
+      points: ["3 steps, about $100 total"]
+      footage_query: "old wooden dresser"
+      narration: >-
+        This is how you turn a thirty dollar thrift store dresser into a piece that looks like it cost three hundred.
+    - layout: "bullets"
+      heading: "3 Steps"
+      points: ["Degrease and scuff", "Bonding primer, thin coats", "New knobs and pulls"]
+      footage_query: "painting furniture white brush"
+      narration: >-
+        Degrease it and scuff it with fine sandpaper. Use a bonding primer, then two or three thin coats of paint. Finish
+        with new knobs and pulls, the biggest upgrade per dollar.
+    - layout: "outro"
+      heading: "Full Guide on YouTube"
+      points: ["Restore Remake Studio"]
+      footage_query: "upcycled furniture painted"
+      narration: >-
+        Get the full step by step guide on the Restore Remake Studio YouTube channel.

@@ -1,0 +1,46 @@
+queue_topic: "Make a small bedroom look bigger"
+style: "Quick Short"
+plan:
+  topic: "Make a small bedroom look bigger"
+  title: "3 Free Ways to Make a Small Bedroom Look Bigger"
+  description: |-
+    Small bedroom? These 3 free tricks make it look bigger in an afternoon: move the bed, clear the floor, and let in more light.
+
+    #SmallBedroom #BedroomMakeover #SmallSpaces #HomeDecor #Shorts
+  tags: ["small bedroom ideas", "make a room look bigger", "bedroom makeover", "small space hacks", "free decorating ideas", "bedroom layout", "small apartment", "decorating tips", "home decor", "makeover shorts"]
+  thumbnail_text: "FREE BIGGER ROOM"
+  thumbnail_highlight: "FREE"
+  thumbnail_photo_query: "small bright bedroom"
+  playlist: "Small Spaces & Rentals"
+  scenes:
+    - layout: "title"
+      heading: "Bigger Bedroom for $0"
+      points: ["3 free tricks"]
+      footage_query: "small bright bedroom"
+      narration: >-
+        Your bedroom feels tiny? Here are three free ways to make it look bigger this afternoon.
+    - layout: "bullets"
+      heading: "1. Move the Bed"
+      points: ["Headboard on the wall facing the door", "Clear path around it"]
+      footage_query: "bedroom bed pillows"
+      narration: >-
+        One: move the bed so the headboard is on the wall you see when you walk in, and leave a clear path around it. The room
+        instantly feels calmer and more open.
+    - layout: "bullets"
+      heading: "2 and 3. Floor and Light"
+      points: ["Clear the floor", "Open the curtains fully", "Move tall furniture off windows"]
+      footage_query: "bedroom window sunlight"
+      narration: >-
+        Two: clear everything off the floor, because visible floor space reads as more space. Three: open the curtains all the
+        way, and move tall furniture away from the window, so more light gets in.
+    - layout: "outro"
+      heading: "Follow for More"
+      points: ["Restore Remake Studio"]
+      footage_query: "cozy bedroom interior"
+      narration: >-
+        Follow Restore Remake Studio for a new makeover idea every day.
+  short_title: "Make a small bedroom look bigger, free #Shorts"
+  short_caption: >-
+    Small bedroom? Move the bed, clear the floor, let in the light. Three free tricks, one afternoon. #SmallBedroom
+    #BedroomMakeover #SmallSpaces #HomeDecor #DecorTips
+  short_scenes: []

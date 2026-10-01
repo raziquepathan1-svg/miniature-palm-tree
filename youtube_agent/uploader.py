@@ -63,7 +63,7 @@ def _check_channel(youtube, expected_id: str | None) -> None:
         names = ", ".join(f"{c['snippet']['title']} ({c['id']})" for c in items) or "no channel"
         raise RuntimeError(
             f"Logged in to {names}, but config.yaml expects channel {expected_id}. "
-            "Run --setup-youtube again and sign in as healthsupportstudio@gmail.com."
+            "Get a new YouTube login (refresh token) while signed in to the right channel's Google account."
         )
 
 
@@ -109,7 +109,7 @@ def upload_video(video_path: Path, thumbnail_path: Path | None, title: str, desc
     return video_id
 
 
-def add_to_playlists(video_id: str, playlist_titles: list[str]) -> None:
+def add_to_playlists(video_id: str, playlist_titles: list[str], about: str | None = None) -> None:
     """Add a video to playlists by title, creating any public playlist that doesn't exist yet."""
     try:
         youtube = build("youtube", "v3", credentials=_credentials(), cache_discovery=False)
@@ -125,8 +125,9 @@ def add_to_playlists(video_id: str, playlist_titles: list[str]) -> None:
             if not playlist_id:
                 created = youtube.playlists().insert(
                     part="snippet,status",
-                    body={"snippet": {"title": title, "description": f"Health Support Studio: {title}. "
-                                      "Educational only, not medical advice."},
+                    body={"snippet": {"title": title, "description": (
+                              about or "Health Support Studio: {title}. Educational only, not medical advice."
+                          ).format(title=title)},
                           "status": {"privacyStatus": "public"}},
                 ).execute()
                 playlist_id = existing[title.lower()] = created["id"]

@@ -1,0 +1,122 @@
+# Restore Remake Studio: home, garden and furniture makeovers for a US audience.
+# Used when the workflow runs with CHANNEL=restore_remake (see .github/workflows/restore-daily-video.yml).
+
+# ---- Your channel ----
+channel:
+  name: "Restore Remake Studio"
+  niche: >-
+    Budget-friendly DIY makeovers for American homes: room and home makeovers (paint, lighting, small spaces,
+    rentals, kitchens, bathrooms, entryways), garden and backyard makeovers (curb appeal, patios, planters,
+    lawns, cheap landscaping), and furniture flips and upcycling (thrift-store and curbside furniture,
+    painting, staining, hardware swaps).
+  presenter: "the friendly host of Restore Remake Studio, an enthusiastic DIY makeover guide (do not claim to be a contractor or to have done the projects personally)"
+  audience: "US homeowners and renters age 22-60 who want their home, yard and furniture to look better on a budget"
+  country: "United States"
+  language: "English"
+  language_code: "en-US"
+  tone: "Upbeat, encouraging, practical; like a friend who loves makeovers. Plain language, real numbers."
+  content_rules: |-
+    - Give practical, realistic ideas a beginner can do. Prices are typical US prices in dollars and must be
+      given as rough ranges ("about $30 to $50"), never as exact quotes.
+    - Safety first: mention gloves, masks, ventilation, ladders and power-tool safety where relevant. Old paint
+      in US homes built before 1978 may contain lead: never tell viewers to sand or scrape it without testing.
+      Never give electrical, gas, structural or plumbing instructions beyond simple swaps; tell viewers to hire a
+      licensed pro for those. Renters should check with their landlord before permanent changes.
+    - Never invent personal stories, clients, before-and-after results or quotes. Never claim the footage shows
+      a specific project; it is stock footage that illustrates the idea.
+    - No brand endorsements or affiliate claims.
+  playlists:
+    - "Room Makeovers"
+    - "Kitchen & Bath Makeovers"
+    - "Small Spaces & Rentals"
+    - "Garden & Backyard Makeovers"
+    - "Curb Appeal"
+    - "Furniture Flips & Upcycling"
+    - "Budget Makeover Ideas"
+  topic_queue: []
+
+# ---- Video ----
+video:
+  mode: "voice_slides"
+  stock_footage: true          # free Pexels clips (needs PEXELS_API_KEY)
+  target_minutes: 4
+  format: "landscape"
+  videos_per_run: 1
+  captions: true
+  fact_check: false            # the health fact-checker is for medical claims only
+  background_color: "#1C1917"
+  styles:
+    - name: "Makeover Ideas"
+      instructions: "6-8 specific, doable makeover ideas for the space, each with what to do and a rough cost."
+    - name: "Budget Makeover"
+      instructions: "A full makeover of one space on a set budget, item by item, with a running total."
+    - name: "Quick Short"
+      format: "shorts"
+      target_minutes: 0.8
+      instructions: "One single, surprising, useful makeover tip in under 60 seconds. Hook in the first 2 seconds."
+    - name: "Mistakes to Avoid"
+      instructions: "The 5-7 most common mistakes people make with this kind of makeover, and what to do instead."
+    - name: "Step by Step"
+      instructions: "A clear step-by-step guide to one makeover project: tools, materials, steps, rough cost, time."
+
+voice:
+  voice: "af_bella"            # upbeat American female voice (try: python -m youtube_agent.main --voice-sample)
+  speed: 1.0
+
+# ---- Brand (slides and thumbnails) ----
+brand:
+  icon: "house"
+  panel: [28, 25, 23]          # charcoal cards
+  accent: [13, 148, 136]       # teal
+  light: [204, 251, 241]       # mint text
+  highlight: [245, 158, 11]    # amber
+  background: [[41, 37, 36], [13, 110, 100]]
+  warning_note: "Safety first: when in doubt, hire a pro."
+  outro_note: "New makeover ideas every day."
+  badges:
+    "Makeover Ideas": ["MAKEOVER IDEAS", [13, 148, 136]]
+    "Budget Makeover": ["ON A BUDGET", [22, 163, 74]]
+    "Mistakes to Avoid": ["AVOID THIS", [229, 57, 53]]
+    "Step by Step": ["STEP BY STEP", [245, 158, 11]]
+
+# ---- Editing (optional files in this folder's assets/) ----
+editing:
+  intro_clip: "assets/intro.mp4"
+  outro_clip: "assets/outro.mp4"
+  intro_clip_vertical: "assets/intro_vertical.mp4"
+  outro_clip_vertical: "assets/outro_vertical.mp4"
+  background_music: "assets/music.mp3"
+  music_volume: 0.08
+
+social:
+  enabled: true
+
+# ---- YouTube ----
+youtube:
+  # Fill in your channel ID (YouTube Studio -> Settings -> Channel -> Advanced settings) so uploads stop if
+  # the wrong account is logged in. Leave empty to skip the check.
+  channel_id: ""
+  # Scheduled to go public at 1 PM New York time (8 PM Saudi, 9 PM in winter): one hour after Health
+  # Support Studio, so the two channels don't publish at the same moment.
+  auto_publish_time: "13:00"
+  auto_publish_timezone: "America/New_York"
+  review_before_publish: true
+  privacy: "public"
+  playlists: true
+  shorts_playlist: "Makeover Shorts"
+  default_playlist: "Budget Makeover Ideas"
+  playlist_description: "Restore Remake Studio: {title}. Budget-friendly home, garden and furniture makeover ideas."
+  upload_short: true
+  short_delay_hours: 6
+  category_id: "26"            # 26 = Howto & Style
+  made_for_kids: false
+  contains_synthetic_media: true
+  description_footer: |-
+    Costs are rough US estimates and vary by area and store. Follow product safety instructions, and hire a
+    licensed pro for electrical, plumbing, gas or structural work. Homes built before 1978 may have lead
+    paint: test before sanding or scraping.
+
+    This video uses an AI-generated voice. Footage is licensed stock video from Pexels and illustrates the
+    ideas; it does not show our own projects.
+
+    Restore Remake Studio | Business inquiries: restoreremakestudio@gmail.com

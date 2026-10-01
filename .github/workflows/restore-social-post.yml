@@ -1,0 +1,103 @@
+name: Restore Remake Studio - post Short to Instagram and Facebook
+
+on:
+  schedule:
+    # 18:25 UTC = after the YouTube video goes public (1 PM New York) in both summer and winter
+    # (~9:25 PM Saudi time). Posts only if the YouTube video is public.
+    - cron: "25 18 * * *"
+  workflow_dispatch:
+    inputs:
+      check_only:
+        description: "Only test the Facebook/Instagram connection (posts nothing)"
+        type: boolean
+        default: false
+      instagram_only:
+        description: "Re-post the latest Short to Instagram only (after an Instagram failure)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  actions: read
+
+concurrency:
+  group: restore-social-post
+  cancel-in-progress: false
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Test the connection only
+        if: inputs.check_only
+        env:
+          META_PAGE_ID: ${{ secrets.RRS_META_PAGE_ID }}
+          META_PAGE_TOKEN: ${{ secrets.RRS_META_PAGE_TOKEN }}
+          IG_USER_ID: ${{ secrets.RRS_IG_USER_ID }}
+        run: |
+          pip install -q requests
+          python -m youtube_agent.social --check
+
+      - name: Find the newest Short whose YouTube video is public
+        if: ${{ !inputs.check_only }}
+        id: find
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          # Videos are scheduled a day ahead, so the newest run's video is usually not public yet.
+          # Walk back through recent runs (newest first) and take the first one that is due.
+          now=$(date -u +%s)
+          for RUN_ID in $(gh run list --repo "$GITHUB_REPOSITORY" --workflow restore-daily-video.yml --status success \
+                          --limit 6 --json databaseId --jq '.[].databaseId'); do
+            if [ "${{ inputs.instagram_only }}" != "true" ] && grep -qx "$RUN_ID" youtube_agent/channels/restore_remake/social_posted.txt 2>/dev/null; then
+              echo "Newest due Short (run $RUN_ID) was already posted."; break
+            fi
+            rm -rf social_dl && mkdir social_dl
+            gh run download "$RUN_ID" --repo "$GITHUB_REPOSITORY" --name "rr-social-$RUN_ID" --dir social_dl 2>/dev/null || continue
+            f=$(find social_dl -name social.json | head -1)
+            [ -n "$f" ] || continue
+            at=$(python3 -c "import json,sys; print(json.load(open(sys.argv[1])).get('publish_at') or '')" "$f")
+            if [ -z "$at" ] || [ "$(date -u -d "$at" +%s)" -le "$now" ]; then
+              echo "Posting the Short from run $RUN_ID (YouTube video public since ${at:-upload})."
+              echo "run_id=$RUN_ID" >> "$GITHUB_OUTPUT"
+              exit 0
+            fi
+            echo "Run $RUN_ID: YouTube video goes public at $at - not yet."
+          done
+          echo "skip=true" >> "$GITHUB_OUTPUT"
+          echo "No Short is ready to post right now."
+
+      - uses: actions/setup-python@v5
+        if: ${{ !inputs.check_only && steps.find.outputs.skip != 'true' }}
+        with:
+          python-version: "3.11"
+
+      - name: Post to Instagram and Facebook
+        if: ${{ !inputs.check_only && steps.find.outputs.skip != 'true' }}
+        env:
+          META_PAGE_ID: ${{ secrets.RRS_META_PAGE_ID }}
+          META_PAGE_TOKEN: ${{ secrets.RRS_META_PAGE_TOKEN }}
+          IG_USER_ID: ${{ secrets.RRS_IG_USER_ID }}
+          ONLY_INSTAGRAM: ${{ inputs.instagram_only }}
+          YOUTUBE_CLIENT_ID: ${{ secrets.RRS_YOUTUBE_CLIENT_ID || secrets.YOUTUBE_CLIENT_ID }}
+          YOUTUBE_CLIENT_SECRET: ${{ secrets.RRS_YOUTUBE_CLIENT_SECRET || secrets.YOUTUBE_CLIENT_SECRET }}
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.RRS_YOUTUBE_REFRESH_TOKEN }}
+        run: |
+          command -v ffmpeg >/dev/null || { sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg; }
+          pip install -q requests google-api-python-client google-auth google-auth-oauthlib
+          DIR=$(dirname "$(find social_dl -name social.json | head -1)")
+          if [ "$DIR" = "." ] || [ -z "$DIR" ]; then echo "No social.json in the artifact - nothing to post."; exit 0; fi
+          python -m youtube_agent.social "$DIR"
+
+      - name: Remember it was posted
+        if: ${{ always() && !inputs.check_only && !inputs.instagram_only && steps.find.outputs.skip != 'true' }}
+        run: |
+          find social_dl -name posted.flag | grep -q . || { echo "Nothing was posted."; exit 0; }
+          echo "${{ steps.find.outputs.run_id }}" >> youtube_agent/channels/restore_remake/social_posted.txt
+          git config user.name "youtube-agent"
+          git config user.email "youtube-agent@users.noreply.github.com"
+          git add youtube_agent/channels/restore_remake/social_posted.txt
+          git commit -m "Record posted Restore Remake Studio Short" && git pull --rebase && git push

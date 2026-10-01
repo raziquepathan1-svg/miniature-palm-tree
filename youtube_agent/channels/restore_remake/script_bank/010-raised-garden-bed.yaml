@@ -1,0 +1,110 @@
+queue_topic: "How to build a simple raised garden bed"
+style: "Step by Step"
+plan:
+  topic: "How to build a simple raised garden bed"
+  title: "Build a Raised Garden Bed in One Afternoon (Step by Step)"
+  description: |-
+    A raised garden bed is one of the easiest backyard makeover projects. Here's how to build a simple 4 by 8 foot bed in one afternoon: lumber, tools, soil, rough costs and step-by-step instructions.
+
+    In this video:
+    • Picking the right spot
+    • What lumber to buy
+    • Building the frame
+    • How much soil you need
+
+    #RaisedGardenBed #DIYGarden #BackyardMakeover #VegetableGarden #GardeningForBeginners
+  tags: ["raised garden bed", "how to build a raised bed", "diy raised garden bed", "raised bed for beginners", "vegetable garden", "backyard makeover", "garden diy", "cedar raised bed", "raised bed soil", "garden ideas", "easy diy projects"]
+  thumbnail_text: "BUILD IT IN 1 DAY"
+  thumbnail_highlight: "1 DAY"
+  thumbnail_photo_query: "raised garden bed vegetables"
+  playlist: "Garden & Backyard Makeovers"
+  scenes:
+    - layout: "title"
+      heading: "Build a Raised Garden Bed"
+      points: ["One afternoon, beginner friendly"]
+      footage_query: "raised garden bed vegetables"
+      narration: >-
+        A raised garden bed turns a plain patch of lawn into a neat, productive garden, and you can build a simple one in a
+        single afternoon. Today we will build a four by eight foot bed step by step: the spot, the lumber, the tools, the soil,
+        and roughly what it all costs.
+    - layout: "bullets"
+      heading: "Step 1: Pick the Spot"
+      points: ["6-8 hours of sun for vegetables", "Flat and near a hose", "4 feet wide max to reach the middle"]
+      footage_query: "sunny backyard lawn"
+      narration: >-
+        Step one: pick the spot. Most vegetables need six to eight hours of direct sun. Choose a flat area close to a hose, so
+        watering is easy. Keep the bed no more than four feet wide, so you can reach the middle from either side without
+        stepping on the soil. Eight feet long is a great size for beginners.
+    - layout: "bullets"
+      heading: "Step 2: Buy the Lumber"
+      points: ["Cedar lasts longest", "Three 2x10 boards, 8 feet long", "Exterior screws, 3 inch", "About $60-$150"]
+      footage_query: "lumber wood boards"
+      narration: >-
+        Step two: buy the lumber. Cedar is a popular choice because it naturally resists rot. For a four by eight bed, buy three
+        boards, two inches by ten inches, each eight feet long. Ask the store to cut one board in half to make the two short
+        ends. Add a box of three inch exterior screws. Depending on the wood and your area, expect about sixty to one hundred
+        fifty dollars.
+    - layout: "bullets"
+      heading: "Step 3: Build the Frame"
+      points: ["Pre-drill to stop splitting", "3 screws per corner", "Optional corner posts inside"]
+      footage_query: "drilling wood screws"
+      narration: >-
+        Step three: build the frame. Lay the boards on their edges in a rectangle on flat ground. Pre-drill holes at each
+        corner so the wood does not split, then drive three screws through the long boards into the ends of the short boards.
+        For extra strength, add a short square post inside each corner and screw both boards into it.
+    - layout: "warning"
+      heading: "Tool Safety"
+      points: ["Safety glasses on", "Gloves for splinters", "Call 811 before digging deep"]
+      footage_query: "power drill wood work"
+      narration: >-
+        A quick safety note. Wear safety glasses while drilling and gloves when handling rough lumber. Most raised beds just sit
+        on the ground, but if you plan to dig deep or set posts, call eight one one first, a free service that marks buried
+        utility lines.
+    - layout: "bullets"
+      heading: "Step 4: Prep the Ground"
+      points: ["Set the frame and check level", "Cardboard layer smothers grass", "Remove tape and staples first"]
+      footage_query: "garden cardboard weeds"
+      narration: >-
+        Step four: prep the ground. Set the frame in place and check that it sits level, digging out high spots if needed.
+        Lay plain brown cardboard over the grass inside the frame, with any tape and staples removed. It smothers the grass and
+        weeds and breaks down over time, so roots can still grow down.
+    - layout: "big_number"
+      heading: "≈ 1 cubic yard"
+      points: ["of soil fills a 4x8 bed", "10 inches deep", "Garden soil plus compost"]
+      footage_query: "garden soil compost hands"
+      narration: >-
+        Step five: fill it. A four by eight bed ten inches deep holds about one cubic yard of soil, which is roughly twenty
+        seven cubic feet. Use a blend of quality garden soil or raised bed mix with plenty of compost. Buying in bulk from a
+        local landscape supplier is often cheaper than dozens of bags.
+    - layout: "outro"
+      heading: "Plant and Water"
+      points: ["Start with easy crops", "Subscribe for more makeovers"]
+      footage_query: "vegetable garden harvest"
+      narration: >-
+        Now plant easy crops like lettuce, herbs, tomatoes or peppers, and water deeply. Your backyard just got a whole new
+        look, and maybe dinner too. If you enjoyed this, give it a like and subscribe to Restore Remake Studio for a new
+        makeover idea every day.
+  short_title: "Build a raised garden bed in one afternoon #Shorts"
+  short_caption: >-
+    Three boards, a box of screws and one afternoon. Here's the simplest raised garden bed you can build. Full step by step
+    guide on our YouTube channel. #RaisedGardenBed #DIYGarden #VegetableGarden #BackyardMakeover #GardeningForBeginners
+  short_scenes:
+    - layout: "title"
+      heading: "Raised Bed in 1 Afternoon"
+      points: ["3 boards, 1 box of screws"]
+      footage_query: "raised garden bed vegetables"
+      narration: >-
+        You can build a raised garden bed in one afternoon with just three boards and a box of screws.
+    - layout: "bullets"
+      heading: "How It Works"
+      points: ["Three 2x10 boards, 8 feet", "Cut one in half for the ends", "Cardboard, then soil and compost"]
+      footage_query: "drilling wood screws"
+      narration: >-
+        Buy three eight foot boards and cut one in half for the ends. Screw the corners together, lay cardboard inside to
+        smother the grass, then fill it with soil and compost. Plant, water, done.
+    - layout: "outro"
+      heading: "Full Guide on YouTube"
+      points: ["Restore Remake Studio"]
+      footage_query: "vegetable garden harvest"
+      narration: >-
+        The full step by step guide is on the Restore Remake Studio YouTube channel.
