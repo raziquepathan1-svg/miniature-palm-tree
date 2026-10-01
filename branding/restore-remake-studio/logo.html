@@ -1,22 +1,64 @@
-<!doctype html><html><head><meta charset="utf-8"><style>html,body{margin:0;width:800px;height:800px;background:#1C1917}</style></head><body>
-<svg width="800" height="800" viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
-<defs><radialGradient id="g" cx="0.5" cy="0.45" r="0.7"><stop offset="0" stop-color="#3F2A1D"/><stop offset="1" stop-color="#1C1917"/></radialGradient></defs>
-<rect width="800" height="800" fill="url(#g)"/>
-<g transform="translate(150,150) scale(2.5)"><!-- restore arrows + crossed wrench & paintbrush, drawn in a 200x200 box -->
-<g fill="none" stroke="#F59E0B" stroke-width="11" stroke-linecap="round">
-  <path d="M 100 12 A 88 88 0 0 1 186 112"/>
-  <path d="M 100 188 A 88 88 0 0 1 14 88"/>
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:Anton;src:url(fonts/Anton-Regular.ttf)}
+@font-face{font-family:Mont;src:url(fonts/Montserrat.ttf);font-weight:100 900}
+
+html,body{margin:0;width:800px;height:800px;overflow:hidden;background:#0C0A09}</style></head>
+<body><svg width="800" height="800" viewBox="0 0 800 800" style="" xmlns="http://www.w3.org/2000/svg"><defs>
+<filter id="rust" x="0" y="0" width="100%" height="100%">
+  <feTurbulence type="fractalNoise" baseFrequency="0.045" numOctaves="5" seed="7"/>
+  <feColorMatrix values="1.3 0 0 0 0.05  0.55 0 0 0 0.0  0.12 0 0 0 0.0  0 0 0 0 1"/>
+</filter>
+<filter id="rustbig" x="0" y="0" width="100%" height="100%">
+  <feTurbulence type="fractalNoise" baseFrequency="0.009" numOctaves="6" seed="11"/>
+  <feColorMatrix values="1.35 0 0 0 0.02  0.55 0 0 0 -0.02  0.12 0 0 0 0  0 0 0 0 1"/>
+</filter>
+<filter id="rustdark" x="0" y="0" width="100%" height="100%">
+  <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="5" seed="3"/>
+  <feColorMatrix values="0.95 0 0 0 -0.05  0.38 0 0 0 -0.03  0.1 0 0 0 0  0 0 0 0 1"/>
+</filter>
+<linearGradient id="metal" x1="0" y1="0" x2="1" y2="0">
+  <stop offset="0" stop-color="#94A3B8"/><stop offset="0.35" stop-color="#F8FAFC"/>
+  <stop offset="0.55" stop-color="#CBD5E1"/><stop offset="1" stop-color="#64748B"/>
+</linearGradient>
+<radialGradient id="clean" cx="0.75" cy="0.75" r="0.9">
+  <stop offset="0" stop-color="#22D3EE"/><stop offset="0.45" stop-color="#0E7490"/><stop offset="1" stop-color="#082F49"/>
+</radialGradient>
+<linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="0" stop-color="#FDE68A"/><stop offset="0.5" stop-color="#F59E0B"/><stop offset="1" stop-color="#B45309"/>
+</linearGradient>
+<filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+  <feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+</filter>
+<filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+  <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#000" flood-opacity="0.6"/>
+</filter>
+</defs><rect width="800" height="800" fill="#0C0A09"/><circle cx="400" cy="400" r="400" fill="#1C1917"/><g transform="translate(8,8) scale(1.96)">
+<defs>
+  <clipPath id="lc"><circle cx="200" cy="200" r="186"/></clipPath>
+  <clipPath id="ltl"><polygon points="0,0 400,0 0,400"/></clipPath>
+  <clipPath id="lbr"><polygon points="400,0 400,400 0,400"/></clipPath>
+  <mask id="lw" maskUnits="userSpaceOnUse" x="0" y="0" width="400" height="400">
+    <g fill="#fff" transform="rotate(-45 200 200)">
+      <circle cx="200" cy="112" r="64"/>
+      <rect x="180" y="150" width="40" height="190" rx="20"/>
+      <circle cx="200" cy="330" r="34"/></g>
+    <g fill="#000" transform="rotate(-45 200 200)">
+      <rect x="180" y="30" width="40" height="88" rx="6"/>
+      <circle cx="200" cy="330" r="13"/></g>
+  </mask>
+</defs>
+<g filter="url(#shadow)">
+<circle cx="200" cy="200" r="198" fill="url(#gold)"/>
+<g clip-path="url(#lc)">
+  <rect width="400" height="400" fill="url(#clean)"/>
+  <g clip-path="url(#ltl)"><rect width="400" height="400" filter="url(#rustdark)"/>
+    <rect width="400" height="400" fill="#000" opacity="0.25"/></g>
+  <line x1="-10" y1="410" x2="410" y2="-10" stroke="#FDE68A" stroke-width="7" filter="url(#glow)"/>
+  <g mask="url(#lw)" filter="url(#shadow)">
+    <rect width="400" height="400" fill="url(#metal)" transform="rotate(-45 200 200)"/>
+    <g clip-path="url(#ltl)"><rect width="400" height="400" filter="url(#rust)"/></g>
+  </g>
+  <g transform="translate(315,175) scale(20)" filter="url(#glow)"><path d="M0,-1 L0.22,-0.22 L1,0 L0.22,0.22 L0,1 L-0.22,0.22 L-1,0 L-0.22,-0.22Z" fill="#fff"/></g><g transform="translate(215,345) scale(13)" filter="url(#glow)"><path d="M0,-1 L0.22,-0.22 L1,0 L0.22,0.22 L0,1 L-0.22,0.22 L-1,0 L-0.22,-0.22Z" fill="#fff"/></g><g transform="translate(360,265) scale(9)" filter="url(#glow)"><path d="M0,-1 L0.22,-0.22 L1,0 L0.22,0.22 L0,1 L-0.22,0.22 L-1,0 L-0.22,-0.22Z" fill="#fff"/></g>
 </g>
-<polygon points="186,132 170,104 202,104" fill="#F59E0B"/>
-<polygon points="14,68 -2,96 30,96" fill="#F59E0B"/>
-<g transform="rotate(45 100 100)">
-  <rect x="91" y="78" width="18" height="78" rx="9" fill="#FEF3C7"/>
-  <circle cx="100" cy="62" r="26" fill="#FEF3C7"/>
-  <rect x="91" y="34" width="18" height="30" fill="#1C1917"/>
-</g>
-<g transform="rotate(-45 100 100)">
-  <rect x="93" y="96" width="14" height="66" rx="7" fill="#C2410C"/>
-  <rect x="89" y="74" width="22" height="24" rx="3" fill="#D6D3D1"/>
-  <path d="M 89 76 L 89 52 Q 100 36 111 52 L 111 76 Z" fill="#F59E0B"/>
-</g></g>
-</svg></body></html>
+<circle cx="200" cy="200" r="186" fill="none" stroke="#1C1917" stroke-width="5"/>
+</g></g></svg></body></html>

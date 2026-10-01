@@ -3,7 +3,8 @@
 - **Channel name:** Restore Remake Studio
 - **Handle:** `@restoreremakestudio`
 - **Email (Google account):** restoreremakestudio@gmail.com
-- **Colors:** charcoal `#1C1917`, amber `#F59E0B`, rust `#C2410C`, cream `#FEF3C7`
+- **Colors:** rust brown (before) → teal `#0E7490` (after), gold `#F59E0B` title, cream `#FEF3C7`
+- **Fonts:** Anton (title), Montserrat (text), both free (SIL Open Font License), in `fonts/`
 
 ## Images
 | File | Size | Where to upload |
@@ -13,7 +14,7 @@
 | `watermark.png` | 300×300 | YouTube Studio → Customization → Branding → Video watermark |
 | `fb_cover.png` | 1640×624 | Facebook Page → Edit cover photo |
 
-To change a design, edit the `.html` file and re-render it as a screenshot at the size above.
+To change a design, edit `make.py`, run `python3 make.py`, then render each `.html` file as a screenshot at the size above.
 
 ## YouTube channel description
 (Studio → Customization → Basic info)
