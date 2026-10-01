@@ -33,6 +33,7 @@ channel:
     - "Curb Appeal"
     - "Furniture Flips & Upcycling"
     - "Budget Makeover Ideas"
+    - "Rooftop & Balcony Makeovers"
   topic_queue: []
 
 # ---- Video ----
@@ -112,11 +113,165 @@ youtube:
   made_for_kids: false
   contains_synthetic_media: true
   description_footer: |-
-    Costs are rough US estimates and vary by area and store. Follow product safety instructions, and hire a
-    licensed pro for electrical, plumbing, gas or structural work. Homes built before 1978 may have lead
-    paint: test before sanding or scraping.
-
-    This video uses an AI-generated voice. Footage is free stock video from Pexels and Pixabay and illustrates the
-    ideas; it does not show our own projects.
+    The makeover images are AI-generated design concepts (not a real renovation), made to inspire your own
+    projects.
 
     Restore Remake Studio | Business inquiries: restoreremakestudio@gmail.com
+
+# ---- Visual makeover videos (python -m youtube_agent.makeover) ----
+# Every day: one space + one style that haven't been used together yet. AI draws the "before" photo and
+# then edits that same picture step by step. No narration: labels, motion, swipe transitions and music.
+# {style} {look} {palette} are filled from the chosen style; {space} from the space's "short" name.
+makeover:
+  hold_seconds: 4.5          # seconds each step is shown in the landscape video
+  short_hold_seconds: 3.2    # same, in the vertical Short
+  spaces:
+    - name: "Empty living room"
+      short: "living room"
+      before_label: "empty room"
+      playlist: "Room Makeovers"
+      tags: ["living room makeover", "empty room makeover", "living room ideas"]
+      before: "a completely empty, slightly dated living room in an American house: bare off-white walls with scuffs, worn beige carpet, one large window, a ceiling light, nothing else in the room"
+      after_base: "a finished {style} living room ({look}), with large window"
+      stages:
+        - {label: "Fresh paint", edit: "Paint the walls in {palette} colors that suit a {style} style."}
+        - {label: "New floor", edit: "Replace the carpet with new flooring that suits a {style} style ({look})."}
+        - {label: "Sofa & rug", edit: "Add a sofa, a coffee table and a large rug in {style} style ({look})."}
+        - {label: "Lights & curtains", edit: "Add floor-length curtains, a floor lamp and wall art in {style} style."}
+        - {label: "Final touches", edit: "Add plants, cushions, a throw blanket and decor so it looks like a finished {style} living room in a design magazine."}
+    - name: "Empty bedroom"
+      short: "bedroom"
+      before_label: "empty bedroom"
+      playlist: "Room Makeovers"
+      tags: ["bedroom makeover", "small bedroom ideas", "bedroom decor"]
+      before: "a completely empty small bedroom in an American apartment: plain white walls, old laminate floor, one window with mini blinds, nothing in the room"
+      after_base: "a finished {style} bedroom ({look})"
+      stages:
+        - {label: "Accent wall", edit: "Paint one wall as an accent wall and the rest in {palette} colors for a {style} look."}
+        - {label: "Bed & nightstands", edit: "Add a bed with a headboard, bedding and two nightstands in {style} style ({look})."}
+        - {label: "Rug & lighting", edit: "Add a large rug under the bed, bedside lamps and curtains replacing the blinds, in {style} style."}
+        - {label: "Cozy finish", edit: "Add plants, framed art above the bed, throw pillows and cozy decor so it looks like a finished {style} bedroom."}
+    - name: "Bare backyard"
+      short: "backyard"
+      before_label: "bare yard"
+      playlist: "Garden & Backyard Makeovers"
+      tags: ["backyard makeover", "garden makeover", "backyard ideas", "landscaping ideas"]
+      before: "a bare, neglected suburban American backyard seen from the back door: patchy dead grass, dirt patches, a plain wooden fence, no plants, no furniture, daytime"
+      after_base: "a finished {style} backyard garden ({look}) with wooden fence"
+      stages:
+        - {label: "Lawn & paths", edit: "Replace the dead grass with a healthy green lawn and add a stone path."}
+        - {label: "Patio & pergola", edit: "Add a paved patio area with a pergola in {style} style ({look})."}
+        - {label: "Outdoor furniture", edit: "Add outdoor seating, a table and an outdoor rug in {style} style."}
+        - {label: "Garden beds", edit: "Add planted garden beds with flowers, shrubs and large planters along the fence."}
+        - {label: "Evening glow", edit: "Make it early evening with warm string lights over the patio and soft garden lights, everything else the same."}
+    - name: "Empty rooftop terrace"
+      short: "rooftop terrace"
+      before_label: "empty rooftop"
+      playlist: "Rooftop & Balcony Makeovers"
+      tags: ["rooftop terrace", "rooftop makeover", "terrace design", "rooftop garden"]
+      before: "an empty flat concrete rooftop terrace of a city building with a simple metal railing, stained grey concrete floor, city skyline in the background, daytime, nothing on the roof"
+      after_base: "a finished {style} rooftop terrace ({look}) with city skyline"
+      stages:
+        - {label: "Deck flooring", edit: "Cover the concrete with wooden deck tiles that suit a {style} style."}
+        - {label: "Shade pergola", edit: "Add a pergola or shade sail over part of the terrace in {style} style."}
+        - {label: "Lounge seating", edit: "Add a lounge sofa, chairs, a coffee table and an outdoor rug in {style} style ({look})."}
+        - {label: "Planters & greenery", edit: "Add tall planters with grasses, olive trees and flowers along the railing."}
+        - {label: "Sunset lights", edit: "Make it sunset with warm string lights and lanterns glowing, everything else the same."}
+    - name: "Tiny balcony"
+      short: "balcony"
+      before_label: "bare balcony"
+      playlist: "Rooftop & Balcony Makeovers"
+      tags: ["balcony makeover", "small balcony ideas", "apartment balcony"]
+      before: "a small empty apartment balcony with a plain concrete floor, a metal railing and a bare wall, a neighboring building in the background, daytime, nothing on the balcony"
+      after_base: "a finished small {style} apartment balcony ({look})"
+      stages:
+        - {label: "Outdoor rug & tiles", edit: "Add interlocking deck tiles and an outdoor rug in {palette} colors."}
+        - {label: "Bistro seating", edit: "Add a small bistro table with two chairs or a compact bench in {style} style."}
+        - {label: "Vertical garden", edit: "Add railing planters, hanging plants and a vertical plant wall."}
+        - {label: "Cozy lights", edit: "Add cushions, a lantern and warm string lights at dusk so it looks cozy, everything else the same."}
+    - name: "Dated kitchen"
+      short: "kitchen"
+      before_label: "old kitchen"
+      playlist: "Kitchen & Bath Makeovers"
+      tags: ["kitchen makeover", "kitchen remodel ideas", "kitchen design"]
+      before: "a dated 1990s American kitchen: honey oak cabinets, beige laminate countertops, yellowish tile backsplash, old white appliances, dim ceiling light, empty counters"
+      after_base: "a finished modern {style} kitchen ({look})"
+      stages:
+        - {label: "Painted cabinets", edit: "Paint the cabinets in a color that suits a {style} style and add new hardware."}
+        - {label: "Counters & backsplash", edit: "Replace the countertops and backsplash with new materials in {style} style ({look})."}
+        - {label: "New lighting", edit: "Add pendant lights over the counter and bright under-cabinet lighting."}
+        - {label: "Styled & finished", edit: "Add plants, a few cookbooks, a bowl of lemons and a runner rug so it looks like a finished {style} kitchen."}
+    - name: "Dated bathroom"
+      short: "bathroom"
+      before_label: "old bathroom"
+      playlist: "Kitchen & Bath Makeovers"
+      tags: ["bathroom makeover", "small bathroom ideas", "bathroom remodel"]
+      before: "a dated small American bathroom: pink 1980s tiles, an old vanity with a plain mirror, a bathtub with a plastic curtain rod, dim light"
+      after_base: "a finished {style} bathroom ({look})"
+      stages:
+        - {label: "Fresh tiles & paint", edit: "Replace the old tiles with new tiles and paint in {palette} colors for a {style} look."}
+        - {label: "New vanity & mirror", edit: "Replace the vanity and mirror with a new vanity and a stylish mirror in {style} style."}
+        - {label: "Lights & fixtures", edit: "Add new wall lights, a modern faucet and a glass shower screen."}
+        - {label: "Spa finish", edit: "Add towels, a plant, a bath mat and small decor so it looks like a finished {style} bathroom."}
+    - name: "Empty garage"
+      short: "garage"
+      before_label: "empty garage"
+      playlist: "Room Makeovers"
+      tags: ["garage makeover", "garage gym", "garage conversion"]
+      before: "an empty single-car garage with bare drywall, a stained concrete floor, a closed garage door and one fluorescent light"
+      after_base: "a finished {style} home gym in a garage ({look})"
+      stages:
+        - {label: "Epoxy floor & paint", edit: "Add a clean epoxy floor and paint the walls in {palette} colors."}
+        - {label: "Rubber mats & rack", edit: "Add rubber gym mats, a squat rack and a weight bench."}
+        - {label: "Mirrors & storage", edit: "Add a large wall mirror and neat wall storage for weights."}
+        - {label: "Lights & finish", edit: "Add bright LED lighting, a plant and a motivational art print so it looks like a finished home gym."}
+    - name: "Front yard"
+      short: "front yard"
+      before_label: "plain house"
+      playlist: "Curb Appeal"
+      tags: ["curb appeal", "front yard makeover", "front porch ideas", "home exterior"]
+      before: "the front of a plain one-story American house seen from the street: faded beige siding, a plain white front door, a patchy lawn, no plants, a concrete walkway, daytime"
+      after_base: "the front of a one-story American house with {style} curb appeal ({look})"
+      stages:
+        - {label: "Bold front door", edit: "Paint the front door a bold color that suits a {style} style and add new house numbers."}
+        - {label: "Lawn & garden beds", edit: "Make the lawn green and add mulched garden beds with shrubs and flowers along the house."}
+        - {label: "Porch styling", edit: "Add two matching planters, a new doormat and a stylish porch light by the door."}
+        - {label: "Evening glow", edit: "Make it early evening with warm porch lights and solar path lights along the walkway, everything else the same."}
+    - name: "Empty attic"
+      short: "attic"
+      before_label: "empty attic"
+      playlist: "Room Makeovers"
+      tags: ["attic makeover", "attic bedroom", "attic conversion"]
+      before: "an empty finished attic room with sloped ceilings, bare white drywall, an old wood floor, one small window, nothing in the room"
+      after_base: "a finished {style} attic lounge ({look}) with sloped ceilings"
+      stages:
+        - {label: "Paint & floor", edit: "Paint the walls in {palette} colors and refinish the floor for a {style} look."}
+        - {label: "Cozy seating", edit: "Add a sofa or daybed, a rug and a small coffee table in {style} style ({look})."}
+        - {label: "Shelves & lights", edit: "Add built-in shelves under the slope, warm lamps and a skylight glow."}
+        - {label: "Final touches", edit: "Add plants, books, cushions and throws so it looks like a finished cozy {style} attic retreat."}
+  styles:
+    - {name: "Japandi", look: "light oak wood, low furniture, linen, minimal and calm", palette: "warm white, beige and soft black"}
+    - {name: "Boho", look: "rattan, macrame, layered rugs, lots of plants, warm textures", palette: "terracotta, cream and mustard"}
+    - {name: "Modern Farmhouse", look: "shiplap, black metal, reclaimed wood, cozy neutrals", palette: "white, black and warm wood"}
+    - {name: "Coastal", look: "light woods, woven textures, airy and breezy", palette: "white, sand and soft ocean blue"}
+    - {name: "Mid-Century Modern", look: "tapered wooden legs, clean lines, retro shapes", palette: "walnut, mustard and teal"}
+    - {name: "Scandinavian", look: "pale wood, white walls, simple functional furniture, cozy textiles", palette: "white, light grey and pale wood"}
+    - {name: "Industrial", look: "exposed brick, black steel, leather and concrete", palette: "charcoal, rust brown and black"}
+    - {name: "Modern Luxury", look: "marble, brass accents, velvet, statement lighting", palette: "ivory, black and gold"}
+    - {name: "Mediterranean", look: "arches, terracotta, olive trees, lime-washed walls", palette: "warm white, terracotta and olive green"}
+  titles:
+    - "Empty {Space} Turned Into a {Style} Dream ✨"
+    - "{Before} → {Style} {Space} | Satisfying Makeover"
+    - "Watch This {Before} Become a {Style} {Space}"
+    - "{Style} {Space} Makeover, Step by Step"
+    - "From {Before} to {Style} Dream {Space} in 60 Seconds"
+  short_titles:
+    - "{Before} → {Style} {Space}"
+    - "Watch this {space} transform"
+    - "{Style} {space} makeover ✨"
+  hooks:
+    - "Watch this {before} turn into a {Style} {space}, one step at a time."
+    - "From {before} to dream {space}: a {Style} makeover in under a minute."
+    - "What would you change first in this {before}? Here's our {Style} makeover."
+  tags: ["home makeover", "before and after", "room transformation", "interior design", "makeover", "home decor ideas", "satisfying transformation"]
+  hashtags: ["#makeover", "#beforeandafter", "#homedecor", "#interiordesign"]

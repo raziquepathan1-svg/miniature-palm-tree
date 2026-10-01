@@ -1,12 +1,16 @@
 # Restore Remake Studio: one-time setup
 
-Restore Remake Studio runs on the same free agent as Health Support Studio, but it has its **own**
-script bank, history, logins and schedule. The two channels never share an account.
+Restore Remake Studio makes **visual makeover videos** with no narration: an empty or tired space (living
+room, bedroom, backyard, rooftop terrace, balcony, kitchen, bathroom, garage, front yard, attic) is
+transformed step by step into a style (Japandi, Boho, Coastal...), drawn by AI. 10 spaces × 9 styles =
+90 different makeovers before anything repeats. It has its **own** history, logins and schedule; the two
+channels never share an account.
 
 | What | Where |
 |---|---|
 | Settings (niche, styles, colors, upload time) | `config.yaml` (this folder) |
-| Free pre-written scripts | `script_bank/` (12 included, one per day) |
+| Spaces, styles, titles | `config.yaml` → `makeover:` |
+| Video maker | `youtube_agent/makeover.py` |
 | Logo, banner, bios | `branding/restore-remake-studio/` |
 | Daily video workflow | **Actions → Restore Remake Studio - daily video** |
 | Instagram/Facebook workflow | **Actions → Restore Remake Studio - post Short to Instagram and Facebook** |
@@ -14,7 +18,7 @@ script bank, history, logins and schedule. The two channels never share an accou
 ## Every day, automatically
 | Time (Saudi) | What happens |
 |---|---|
-| ~7 AM | A ~3-4 minute video + a vertical Short are made and the video is uploaded **scheduled** |
+| ~7 AM | AI draws the makeover; a ~30-40 s landscape video + a vertical Short are made and uploaded **scheduled** |
 | 8 PM (9 PM in winter) | The video goes public on YouTube (1 PM New York) |
 | 2 AM next day | The Short goes public on YouTube Shorts |
 | ~9:25 PM | The Short is posted as a Reel on Instagram and Facebook (only if the YouTube video is public) |
@@ -69,26 +73,35 @@ Then add 3 GitHub secrets (the names start with `RRS_`, so they never replace th
 Test it: **Actions → Restore Remake Studio - post Short to Instagram and Facebook → Run workflow**, tick
 **Only test the Facebook/Instagram connection**. Nothing is posted.
 
-## Step 3 (optional): Add Pixabay for more free clips
-Pexels is used first; when it has no good clip for a scene, the agent tries Pixabay.
-1. Log in at **pixabay.com**, then open **pixabay.com/api/docs/**.
-2. Scroll to **Parameters**: your key is shown in green after `key` (only when you are logged in).
-3. In GitHub add the secret `PIXABAY_API_KEY` with that key.
+## Step 3: Add a Gemini key for the AI images (5 min, free)
+Gemini keeps the **same room** between steps, so the makeovers look real. Without this key the agent uses
+the free Pollinations service instead, where the room can change a little between steps.
+1. Open **aistudio.google.com** and sign in with any Google account.
+2. Click **Get API key** → **Create API key** (pick or create a project if asked) and copy the key.
+3. In GitHub add the secret `GEMINI_API_KEY` with that key.
+
+Google's free daily limit for image models changes from time to time. If the free limit is used up or a
+call fails, that day's video is drawn with Pollinations instead, so a video is still made. To always use
+Gemini, turn on billing for that Google project; one makeover is 5-6 images, about $0.20-$0.30 per video.
 
 ## Step 4: Test a video
 **Actions → Restore Remake Studio - daily video → Run workflow**, tick **Make the video but don't upload**.
 After ~20-30 minutes, download the `rr-video-…` file from the run page and watch it.
 
-The free Pexels key (`PEXELS_API_KEY`) is shared with Health Support Studio, so the stock clips work
-right away. Pixabay clips are added if you set `PIXABAY_API_KEY`.
+The run summary says which image service was used (Gemini or Pollinations).
 
 ---
 
-## When the free scripts run out
-Each run's summary shows how many pre-written scripts are left. When it gets low, open Claude Code and say:
-*"write 30 more scripts for Restore Remake Studio's script bank"*. If the bank is empty, the agent writes
-scripts with the paid Claude API instead (a few cents per video).
+## Recommended: real background music
+Without music files the agent plays a soft generated background tune. Real music makes the videos much
+better: download 5-10 calm, upbeat tracks from **YouTube Studio → Audio Library** (filter: "No attribution
+required"), put the `.mp3` files in `assets/music/`, and each video picks one at random.
 
-## Optional: background music
-Put a royalty-free `music.mp3` (YouTube Studio → **Audio Library**, "no attribution required") in
-`assets/`, and every video gets quiet background music.
+## More spaces and styles
+After about 90 videos every space × style pair has been used and they start repeating. Ask Claude Code to
+*"add more spaces and styles to Restore Remake Studio's makeover list"* any time.
+
+## Honesty and YouTube rules
+The images are AI-generated design concepts. Every upload is marked as altered/synthetic content, and the
+description says the makeover is an AI concept, not a real renovation. Keep it that way: YouTube can
+remove or demonetize AI videos that pretend to be real.

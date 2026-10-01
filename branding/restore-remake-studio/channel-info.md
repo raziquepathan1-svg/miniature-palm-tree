@@ -21,22 +21,23 @@ To change a design, edit `make.py`, run `python3 make.py`, then render each `.ht
 (Studio → Customization → Basic info → Description)
 
 ```
-Turn tired spaces into places you love. 🏠🌿🪑
+Empty rooms, bare yards and tired spaces, transformed. ✨🏠🌿
 
-Welcome to Restore Remake Studio! Every day we share easy, budget-friendly makeover ideas to restore and remake your home, garden and furniture:
+Welcome to Restore Remake Studio! Every day we take an empty or outdated space and remake it step by step into a dream design, from the "before" to the satisfying final reveal:
 
-🏠 Room & home makeovers: paint, lighting, small-space and rental-friendly ideas
-🌿 Garden & backyard makeovers: curb appeal, patios, planters and cheap landscaping
-🪑 Furniture flips & upcycling: give old and thrift-store furniture a new life
+🏠 Living rooms, bedrooms, kitchens and bathrooms
+🌿 Backyards, gardens and front yards
+🌇 Rooftop terraces and balconies
+🎨 Japandi, Boho, Coastal, Modern Farmhouse, Mid-Century and more
 
-Simple steps, real costs and before-and-after inspiration you can actually do this weekend.
+Grab ideas for your own home and tell us which style you'd pick!
 
-🆕 New makeover video every day
-🔔 Subscribe and turn on notifications so you never miss an idea!
+🆕 New makeover every day
+🔔 Subscribe and turn on notifications so you never miss a reveal
 
-💬 Which room or space should we makeover next? Tell us in the comments!
+💬 Which space should we transform next? Tell us in the comments!
 
-Videos use an AI voice and licensed stock footage.
+The makeovers are AI-visualized design concepts made to inspire your own projects.
 
 📧 Business inquiries: restoreremakestudio@gmail.com
 ```
@@ -50,9 +51,9 @@ home makeover, room makeover, DIY home decor, budget home makeover, garden makeo
 
 ## Instagram bio (max 150 characters)
 ```
-🏠 Home • 🌿 Garden • 🪑 Furniture makeovers
-✨ Budget-friendly before & after ideas
-🆕 New idea every day
+🏠 Rooms • 🌿 Gardens • 🌇 Rooftops
+✨ Satisfying before & after makeovers
+🆕 New transformation every day
 ▶️ Full videos on YouTube 👇
 ```
 Put your YouTube channel link in the **Links** field.
@@ -62,14 +63,14 @@ Put your YouTube channel link in the **Links** field.
 
 **Bio / Intro** (max 101 characters):
 ```
-🏠 Home, 🌿 garden & 🪑 furniture makeovers. Budget-friendly before & after ideas daily! ✨
+🏠 Rooms, 🌿 gardens & 🌇 rooftops transformed. A new before & after makeover every day! ✨
 ```
 
 **About / Details:**
 ```
 Restore Remake Studio helps you turn tired spaces into places you love. 🏠🌿🪑
 
-Every day we share easy, budget-friendly makeover ideas for your rooms, garden, backyard and furniture: simple steps, real costs and before-and-after inspiration you can do this weekend.
+Every day we transform an empty or tired space, from living rooms and kitchens to backyards and rooftop terraces, step by step into a dream design. AI-visualized makeovers to inspire your own home.
 
 🎥 Full videos on our YouTube channel: Restore Remake Studio
 💬 Want a makeover idea for your space? Send us a message!
