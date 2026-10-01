@@ -45,5 +45,16 @@
     "youtube_id": "MSMDnPoLhsk",
     "publish_at": "2026-10-01T16:00:00Z",
     "short_youtube_id": "LY6LBNrAEyA"
+  },
+  {
+    "date": "2026-10-01T03:34:26",
+    "topic": "Antibiotics: why they don't work on colds and flu",
+    "requested_topic": "Antibiotics: why they don't work on colds and flu",
+    "title": "Why Antibiotics Won't Fix Your Cold or Flu",
+    "style": "Explainer",
+    "script_file": "002-antibiotics-colds-flu.yaml",
+    "youtube_id": "SBCDPO_wfwc",
+    "publish_at": "2026-10-02T16:00:00Z",
+    "short_youtube_id": "sd59JuYdHBQ"
   }
 ]
