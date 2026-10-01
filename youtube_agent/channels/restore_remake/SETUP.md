@@ -82,7 +82,9 @@ the free Pollinations service instead, where the room can change a little betwee
 
 Google's free daily limit for image models changes from time to time. If the free limit is used up or a
 call fails, that day's video is drawn with Pollinations instead, so a video is still made. To always use
-Gemini, turn on billing for that Google project; one makeover is 5-6 images, about $0.20-$0.30 per video.
+Gemini, turn on billing for that Google project; one makeover is 9-11 images (before, each step in progress,
+each step done), roughly $0.35-$0.45 per video. Set `show_work: false` in `config.yaml` to skip the
+in-progress pictures and halve that.
 
 ## Step 4: Test a video
 **Actions → Restore Remake Studio - daily video → Run workflow**, tick **Make the video but don't upload**.

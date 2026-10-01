@@ -40,6 +40,9 @@ SW, SH = 1080, 1920        # vertical Short
 GEMINI_MODEL = os.environ.get("GEMINI_IMAGE_MODEL", "gemini-2.5-flash-image")
 KEEP = ("Keep the exact same space, camera position, angle, perspective, walls, windows, doors and ceiling. "
         "Only change what is described. Photorealistic, natural light, high detail, no people, no text, no watermark.")
+KEEP_WORK = ("Keep the exact same space, camera position, angle, perspective, walls, windows, doors and ceiling. "
+             "Show it as a real job site mid-work. Any workers are seen from behind or the side with faces not "
+             "visible. Photorealistic, natural light, high detail, no text, no watermark.")
 
 
 # ---------------------------------------------------------------- choosing the makeover
@@ -63,8 +66,10 @@ def fill(text: str, space: dict, style: dict) -> str:
 
 
 def build_stages(space: dict, style: dict) -> list[dict]:
-    """[{label, prompt}] for each step after the before photo; prompts are cumulative edits."""
-    return [{"label": fill(s["label"], space, style), "edit": fill(s["edit"], space, style)} for s in space["stages"]]
+    """[{label, edit, work_label, work}] for each step after the before photo; edits are cumulative."""
+    return [{"label": fill(s["label"], space, style), "edit": fill(s["edit"], space, style),
+             "work_label": fill(s.get("work_label", ""), space, style), "work": fill(s.get("work", ""), space, style)}
+            for s in space["stages"]]
 
 
 def metadata(space: dict, style: dict, stages: list[dict], cfg: dict, rng: random.Random) -> dict:
@@ -78,7 +83,7 @@ def metadata(space: dict, style: dict, stages: list[dict], cfg: dict, rng: rando
 
     title = next((x for x in (t(x) for x in rng.sample(cfg["titles"], len(cfg["titles"]))) if len(x) <= 95),
                  f"{space['short'].title()} Makeover: {style['name']}")
-    steps = "\n".join(f"{i}. {s['label']}" for i, s in enumerate(stages, 1))
+    steps = "\n".join(f"{i}. {s.get('work_label') or s['label']} → {s['label']}" for i, s in enumerate(stages, 1))
     tags = list(dict.fromkeys([f"{space['short']} makeover", f"{style['name'].lower()} {space['short']}",
                                f"{style['name'].lower()} style", *space.get("tags", []), *cfg.get("tags", [])]))[:15]
     hashtags = " ".join(cfg.get("hashtags", [])[:4] + ["#" + style["name"].replace(" ", "").replace("-", "")])
@@ -130,38 +135,69 @@ def _pollinations(prompt: str, seed: int) -> Image.Image:
     raise RuntimeError(f"Pollinations failed: {last}")
 
 
-def make_images(space: dict, style: dict, stages: list[dict], seed: int, out: Path) -> tuple[list[Path], str]:
-    """Before photo + one image per stage. Returns (paths, source used)."""
+def make_images(space: dict, style: dict, stages: list[dict], seed: int, out: Path,
+                show_work: bool = True) -> tuple[list[dict], str]:
+    """Before photo, then for each stage an optional work-in-progress picture and the finished picture.
+
+    Returns ([{"path", "kind": before|work|done, "stage"}], source used). Each finished picture is edited from
+    the previous finished one, so the work-in-progress mess never carries over into the next step.
+    """
     before_prompt = f"Wide-angle real estate photo of {space['before']}. Photorealistic, natural daylight, " \
                     "no people, no text, no watermark."
+    plan = [("before", None)]
+    for i, st in enumerate(stages):
+        if show_work and st.get("work"):
+            plan.append(("work", i))
+        plan.append(("done", i))
     if os.environ.get("GEMINI_API_KEY", "").strip():
         try:
-            imgs = [_gemini(before_prompt, None)]
-            for st in stages:
-                print(f"    Gemini: {st['label']}")
-                imgs.append(_gemini(f"Edit this photo: {st['edit']} {KEEP}", imgs[-1]))
-            return _save(imgs, out), "Gemini"
+            imgs, done = [], None
+            for kind, i in plan:
+                if kind == "before":
+                    done = _gemini(before_prompt, None)
+                    imgs.append(done)
+                elif kind == "work":
+                    print(f"    Gemini: {stages[i]['work_label']} (in progress)")
+                    imgs.append(_gemini(f"Edit this photo to show this step being done, about half finished: "
+                                        f"{stages[i]['work']}. {KEEP_WORK}", done))
+                else:
+                    print(f"    Gemini: {stages[i]['label']}")
+                    done = _gemini(f"Edit this photo: {stages[i]['edit']} Remove any tools, boxes or packaging. {KEEP}",
+                                   done)
+                    imgs.append(done)
+            return _save(imgs, plan, out), "Gemini"
         except Exception as e:  # quota, outage...: redo the whole set with the free service
             print(f"  (Gemini failed, using Pollinations instead: {e})")
-    imgs = [_pollinations(before_prompt, seed)]
-    done = []
-    for st in stages:
-        print(f"    Pollinations: {st['label']}")
-        done.append(st["edit"])
-        imgs.append(_pollinations(f"Wide-angle real estate photo of {fill(space['after_base'], space, style)}, same layout and camera "
-                                  f"angle. Completed so far: {' '.join(done)} Photorealistic, natural daylight, "
-                                  "no people, no text, no watermark.", seed))
-    return _save(imgs, out), "Pollinations"
+    after = fill(space["after_base"], space, style)
+    imgs, finished = [], []
+    for kind, i in plan:
+        if kind == "before":
+            imgs.append(_pollinations(before_prompt, seed))
+            continue
+        st = stages[i]
+        so_far = " ".join(s["edit"] for s in stages[:i])
+        if kind == "work":
+            print(f"    Pollinations: {st['work_label']} (in progress)")
+            prompt = (f"Wide-angle photo of {after} under renovation, same layout and camera angle. Already done: "
+                      f"{so_far or 'nothing yet'} Now in progress: {st['work']}. Workers seen from behind, "
+                      "photorealistic, no text, no watermark.")
+        else:
+            print(f"    Pollinations: {st['label']}")
+            finished.append(st["edit"])
+            prompt = (f"Wide-angle real estate photo of {after}, same layout and camera angle. Completed so far: "
+                      f"{' '.join(finished)} Photorealistic, natural daylight, no people, no text, no watermark.")
+        imgs.append(_pollinations(prompt, seed))
+    return _save(imgs, plan, out), "Pollinations"
 
 
-def _save(imgs: list[Image.Image], out: Path) -> list[Path]:
+def _save(imgs: list[Image.Image], plan: list[tuple], out: Path) -> list[dict]:
     out.mkdir(parents=True, exist_ok=True)
-    paths = []
-    for i, img in enumerate(imgs):
-        p = out / f"{i:02d}.jpg"
+    frames = []
+    for n, (img, (kind, i)) in enumerate(zip(imgs, plan)):
+        p = out / f"{n:02d}_{kind}.jpg"
         visuals._cover(img, W, H).save(p, "JPEG", quality=94)
-        paths.append(p)
-    return paths
+        frames.append({"path": p, "kind": kind, "stage": i})
+    return frames
 
 
 # ---------------------------------------------------------------- overlays
@@ -297,29 +333,44 @@ def _music(dur: float, out: Path, rng: random.Random) -> Path:
     return out
 
 
-def build_video(images: list[Path], stages: list[dict], size: tuple[int, int], hold: float, out_dir: Path,
-                out: Path, rng: random.Random) -> Path:
-    """Stills with labels joined by swipe transitions, then the BEFORE -> AFTER reveal, with music."""
+def build_video(frames: list[dict], stages: list[dict], size: tuple[int, int], hold: float, work_hold: float,
+                out_dir: Path, out: Path, rng: random.Random) -> Path:
+    """Labelled stills (before, each step in progress, each step done) joined by transitions, then the
+    BEFORE -> AFTER reveal, with music. In-progress -> done is a wipe, like the job finishing on screen."""
     w, h = size
     tag = "v" if h > w else "h"
     td = 0.8
-    labels = [("BEFORE", (87, 83, 78), None)] + [
-        (s["label"].upper(), (13, 148, 136) if i < len(stages) else (245, 158, 11), f"STEP {i}/{len(stages)}")
-        for i, s in enumerate(stages, 1)]
-    clips = []
-    for i, (img, (text, color, step)) in enumerate(zip(images, labels)):
-        ov = _label(text, size, color, out_dir / f"l{i:02d}_{tag}.png", step)
-        motion = ("right" if i % 2 == 0 else "left") if h > w else ("in" if i % 2 == 0 else "out")
-        clips.append(_still_clip(img, ov, hold + td, size, motion, out_dir / f"c{i:02d}_{tag}.mp4"))
-    clips.append(_reveal_clip(images[0], images[-1], size, out_dir))
+    n = len(stages)
+    clips, durs, kinds = [], [], []
+    for k, fr in enumerate(frames):
+        if fr["kind"] == "before":
+            text, color, step, dur = "BEFORE", (87, 83, 78), None, hold
+        elif fr["kind"] == "work":
+            st = stages[fr["stage"]]
+            text, color, dur = st["work_label"].upper(), (234, 88, 12), work_hold
+            step = f"STEP {fr['stage'] + 1}/{n} · IN PROGRESS"
+        else:
+            last = fr["stage"] == n - 1
+            text = stages[fr["stage"]]["label"].upper()
+            color, step, dur = ((245, 158, 11) if last else (13, 148, 136)), f"STEP {fr['stage'] + 1}/{n} · DONE", hold
+        ov = _label(text, size, color, out_dir / f"l{k:02d}_{tag}.png", step)
+        motion = ("right" if k % 2 == 0 else "left") if h > w else ("in" if k % 2 == 0 else "out")
+        clips.append(_still_clip(fr["path"], ov, dur + td, size, motion, out_dir / f"c{k:02d}_{tag}.mp4"))
+        durs.append(dur + td)
+        kinds.append(fr["kind"])
+    clips.append(_reveal_clip(frames[0]["path"], frames[-1]["path"], size, out_dir))
+    durs.append(_duration(clips[-1]))
+    kinds.append("reveal")
 
     inputs, chain, offset, prev = [], [], 0.0, "0:v"
-    durs = [hold + td] * (len(clips) - 1) + [_duration(clips[-1])]
     for c in clips:
         inputs += ["-i", str(c)]
     for i in range(1, len(clips)):
         offset += durs[i - 1] - td
-        tr = rng.choice(TRANSITIONS)
+        if kinds[i - 1] == "work" and kinds[i] == "done":
+            tr = "wipeleft" if (w > h) else "wipeup"  # the rest of the job "finishes" across the screen
+        else:
+            tr = rng.choice(TRANSITIONS)
         chain.append(f"[{prev}][{i}:v]xfade=transition={tr}:duration={td}:offset={offset:.2f}[x{i}]")
         prev = f"x{i}"
     total = offset + durs[-1]
@@ -409,15 +460,17 @@ def make_one(config: dict, history: list[dict], dry_run: bool) -> None:
     visuals.ensure_fonts()
 
     print("2/5 Drawing the before photo and each makeover step with AI...")
-    images, source = make_images(space, style, stages, seed, workdir / "images")
+    frames, source = make_images(space, style, stages, seed, workdir / "images", cfg.get("show_work", True))
 
     print("3/5 Building the landscape video and the vertical Short...")
-    final = build_video(images, stages, (W, H), cfg.get("hold_seconds", 4.5), work, workdir / "final.mp4", rng)
+    final = build_video(frames, stages, (W, H), cfg.get("hold_seconds", 4.0), cfg.get("work_hold_seconds", 3.0),
+                        work, workdir / "final.mp4", rng)
     social_dir = workdir / "social"
     social_dir.mkdir(exist_ok=True)
-    short = build_video(images, stages, (SW, SH), cfg.get("short_hold_seconds", 3.2), work,
-                        social_dir / "short.mp4", rng)
-    thumb = make_thumbnail(images[0], images[-1], meta["thumb_from"], meta["thumb_to"], workdir / "thumbnail.jpg")
+    short = build_video(frames, stages, (SW, SH), cfg.get("short_hold_seconds", 2.6),
+                        cfg.get("short_work_hold_seconds", 2.0), work, social_dir / "short.mp4", rng)
+    thumb = make_thumbnail(frames[0]["path"], frames[-1]["path"], meta["thumb_from"], meta["thumb_to"],
+                           workdir / "thumbnail.jpg")
     (workdir / "meta.json").write_text(json.dumps({**meta, "space": space["name"], "style": style["name"],
                                                    "image_source": source, "seed": seed}, indent=2))
 
