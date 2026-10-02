@@ -165,6 +165,19 @@ def _env(name: str) -> str | None:
     return value or None
 
 
+def page_token(page_id: str, token: str) -> tuple[str, bool]:
+    """Return (Page token, was_user_token). A user token saved by mistake is swapped for the Page token
+    (Facebook Reels need a Page token; one derived from a long-lived user token never expires)."""
+    me = _check(requests.get(f"{GRAPH}/me", params={"fields": "id", "access_token": token}, timeout=60))
+    if me.get("id") == page_id:
+        return token, False
+    page = _check(requests.get(f"{GRAPH}/{page_id}", params={"fields": "access_token", "access_token": token},
+                               timeout=60))
+    if not page.get("access_token"):
+        raise RuntimeError("META_PAGE_TOKEN is a user token without access to this Page")
+    return page["access_token"], True
+
+
 def check_connection() -> None:
     """Read-only test that the secrets work: names the Page and Instagram account, posts nothing."""
     page_id, token = _env("META_PAGE_ID"), _env("META_PAGE_TOKEN")
@@ -173,6 +186,13 @@ def check_connection() -> None:
     if missing:
         sys.exit(f"Missing GitHub secrets: {', '.join(missing)}")
     lines = []
+    try:
+        token, was_user = page_token(page_id, token)
+        if was_user:
+            lines.append("WARN META_PAGE_TOKEN is a user token (expires in ~2 months) - it works, but saving the "
+                         "Page token from me/accounts makes it permanent")
+    except Exception as e:
+        lines.append(f"FAIL Token: {e}")
     try:
         page = _check(requests.get(f"{GRAPH}/{page_id}", params={"fields": "name,instagram_business_account",
                                                                    "access_token": token}, timeout=60))
@@ -211,6 +231,9 @@ def post(social_dir: Path) -> None:
     if not youtube_is_public(meta["youtube_id"]):
         print(f"YouTube video {meta['youtube_id']} is not public (stopped during review?) - not posting the Short.")
         return
+    token, was_user = page_token(page_id, token)
+    if was_user:
+        print("  (META_PAGE_TOKEN is a user token; using the Page token derived from it)")
 
     link = f"https://youtu.be/{meta['youtube_id']}"
     # Facebook makes caption links clickable; Instagram doesn't, so point people to the bio link too.
@@ -221,7 +244,10 @@ def post(social_dir: Path) -> None:
     results = []
     fb_video_id = None
     if os.environ.get("ONLY_INSTAGRAM", "").lower() == "true":  # retrying Instagram alone
-        fb_video_id = latest_facebook_reel(page_id, token)
+        try:
+            fb_video_id = latest_facebook_reel(page_id, token)
+        except Exception as e:  # only needed for the fallback; the direct upload doesn't use it
+            print(f"  (could not look up the latest Facebook Reel: {e})")
     else:
         try:
             fb_video_id = post_facebook_reel(video, fb_caption, page_id, token)
