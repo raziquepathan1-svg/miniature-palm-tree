@@ -56,5 +56,16 @@
     "youtube_id": "SBCDPO_wfwc",
     "publish_at": "2026-10-02T16:00:00Z",
     "short_youtube_id": "sd59JuYdHBQ"
+  },
+  {
+    "date": "2026-10-02T03:34:48",
+    "topic": "Seasonal flu and vaccines: myths vs facts",
+    "requested_topic": "Seasonal flu and vaccines: myths vs facts",
+    "title": "5 Flu Shot Myths You Probably Still Believe",
+    "style": "Myth vs Fact",
+    "script_file": "003-flu-vaccine-myths.yaml",
+    "youtube_id": "qtgvwLYchD8",
+    "publish_at": "2026-10-03T16:00:00Z",
+    "short_youtube_id": "zqbaxNdWzv0"
   }
 ]
