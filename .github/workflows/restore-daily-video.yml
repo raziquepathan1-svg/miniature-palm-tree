@@ -1,0 +1,97 @@
+name: Restore Remake Studio - daily video
+
+on:
+  schedule:
+    # Once a day at 04:07 UTC (~7 AM Saudi time), 50 minutes after the Health Support Studio run.
+    # The video is scheduled to go public at 13:00 New York time (8 PM Saudi, 9 PM in winter).
+    - cron: "7 4 * * *"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Make the video but don't upload"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: restore-daily-video
+  cancel-in-progress: false
+
+env:
+  CHANNEL: restore_remake
+
+jobs:
+  make-video:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Cache voice model and fonts
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cache/kokoro
+            ~/.cache/yt-agent-fonts
+          key: voice-model-kokoro-v1.0
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update -q && sudo apt-get install -y -q ffmpeg fonts-dejavu-core
+          pip install -r requirements.txt
+
+      - name: Make and upload the makeover video
+        env:
+          # AI images: Gemini if this secret is set, otherwise the free Pollinations service.
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          # Same Google Cloud app as Health Support Studio; only the login (refresh token) is this channel's.
+          YOUTUBE_CLIENT_ID: ${{ secrets.RRS_YOUTUBE_CLIENT_ID || secrets.YOUTUBE_CLIENT_ID }}
+          YOUTUBE_CLIENT_SECRET: ${{ secrets.RRS_YOUTUBE_CLIENT_SECRET || secrets.YOUTUBE_CLIENT_SECRET }}
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.RRS_YOUTUBE_REFRESH_TOKEN }}
+          DRY_RUN: ${{ inputs.dry_run }}
+        run: |
+          ARGS=()
+          if [ "$DRY_RUN" = "true" ]; then
+            ARGS+=(--dry-run)
+          elif [ -z "$YOUTUBE_REFRESH_TOKEN" ]; then
+            # Never fall back to another channel's login.
+            echo "## Restore Remake Studio is not connected to YouTube yet" >> "$GITHUB_STEP_SUMMARY"
+            echo "Add the RRS_YOUTUBE_REFRESH_TOKEN secret (see youtube_agent/channels/restore_remake/SETUP.md). Nothing was uploaded." >> "$GITHUB_STEP_SUMMARY"
+            echo "RRS_YOUTUBE_REFRESH_TOKEN is not set - skipping."
+            exit 0
+          fi
+          python -m youtube_agent.makeover "${ARGS[@]}"
+
+      - name: Save video files for review
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: rr-video-${{ github.run_id }}
+          path: youtube_agent/output/
+          retention-days: 7
+          if-no-files-found: ignore
+
+      - name: Save the Short for Instagram/Facebook
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: rr-social-${{ github.run_id }}
+          path: youtube_agent/output/*/social/
+          retention-days: 7
+          if-no-files-found: ignore
+
+      - name: Remember published topics
+        if: always()
+        run: |
+          git config user.name "youtube-agent"
+          git config user.email "youtube-agent@users.noreply.github.com"
+          git add youtube_agent/channels/restore_remake/history.json 2>/dev/null || exit 0
+          git diff --cached --quiet && exit 0
+          git commit -m "Record published Restore Remake Studio makeover"
+          git pull --rebase && git push

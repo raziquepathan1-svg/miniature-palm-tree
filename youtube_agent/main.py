@@ -8,6 +8,9 @@ Usage (from the repo root):
     python -m youtube_agent.main --list-avatars    # show your HeyGen avatar/voice IDs
     python -m youtube_agent.main --setup-youtube   # one-time YouTube login
     python -m youtube_agent.main --voice-sample    # hear the free AI voices
+
+Second channel: set CHANNEL=restore_remake to use youtube_agent/channels/restore_remake/ (its own
+config.yaml, history.json, script_bank/ and assets/) instead of the Health Support Studio files here.
 """
 
 import argparse
@@ -22,13 +25,16 @@ from types import SimpleNamespace
 import yaml
 
 HERE = Path(__file__).parent
-HISTORY_FILE = HERE / "history.json"
-SCRIPT_BANK = HERE / "script_bank"  # pre-written, fact-checked scripts: used first, no API cost
+# Each channel keeps its own config, history, script bank and assets. Health Support Studio lives in
+# youtube_agent/ itself; other channels live in youtube_agent/channels/<name>/ (CHANNEL=<name>).
+CHANNEL_DIR = HERE / "channels" / os.environ["CHANNEL"] if os.environ.get("CHANNEL") else HERE
+HISTORY_FILE = CHANNEL_DIR / "history.json"
+SCRIPT_BANK = CHANNEL_DIR / "script_bank"  # pre-written scripts: used first, no API cost
 OUTPUT_DIR = HERE / "output"
 
 
 def load_config() -> dict:
-    return yaml.safe_load((HERE / "config.yaml").read_text())
+    return yaml.safe_load((CHANNEL_DIR / "config.yaml").read_text())
 
 
 def load_history() -> list[dict]:
@@ -104,7 +110,7 @@ def make_one_video(config: dict, history: list[dict], topic: str | None, dry_run
     style = styles.get(bank_data.get("style")) or pick_style(config, history)
     video_cfg = {**config["video"], **{k: v for k, v in (style or {}).items() if k in ("format", "target_minutes")}}
     if bank_file:
-        print(f"1/6 Using pre-written, fact-checked script {bank_file.name} ({len(bank) - 1} left after this one)")
+        print(f"1/6 Using pre-written script {bank_file.name} ({len(bank) - 1} left after this one)")
         plan = planner.VideoPlan.model_validate(bank_data["plan"])
         topic = bank_data.get("queue_topic") or plan.topic
     else:
@@ -163,11 +169,12 @@ def make_one_video(config: dict, history: list[dict], topic: str | None, dry_run
     else:
         from . import visuals
 
+        visuals.set_brand(config.get("brand"))
         print("3/6 Narrating with the free AI voice and building graphics...")
         raw = visuals.build_video(plan, video_cfg, config.get("voice", {}), channel_name, workdir)
 
     print("4/6 Editing (intro/outro/music)...")
-    final = editor.edit_video(raw, config["editing"], video_cfg, HERE, workdir / "final.mp4")
+    final = editor.edit_video(raw, config["editing"], video_cfg, CHANNEL_DIR, workdir / "final.mp4")
 
     print("5/6 Making thumbnail...")
     if video_cfg.get("mode") == "avatar":
@@ -226,11 +233,14 @@ def make_one_video(config: dict, history: list[dict], topic: str | None, dry_run
     history.append(entry)
     save_history(history)
 
-    playlists = [match_playlist(plan.playlist, config["channel"].get("playlists") or [])]
+    shorts_playlist = yt.get("shorts_playlist", "Health Shorts")
+    playlist_about = yt.get("playlist_description")
+    playlists = [match_playlist(plan.playlist, config["channel"].get("playlists") or [],
+                                yt.get("default_playlist", "Health Tips"))]
     if shorts:
-        playlists.append("Health Shorts")
+        playlists.append(shorts_playlist)
     if yt.get("playlists", True):
-        uploader.add_to_playlists(video_id, playlists)
+        uploader.add_to_playlists(video_id, playlists, playlist_about)
 
     # Also upload the companion vertical Short to YouTube Shorts (not on days the video is itself a Short).
     short_id = None
@@ -250,7 +260,7 @@ def make_one_video(config: dict, history: list[dict], topic: str | None, dry_run
             entry["short_youtube_id"] = short_id
             save_history(history)
             if yt.get("playlists", True):
-                uploader.add_to_playlists(short_id, ["Health Shorts"])
+                uploader.add_to_playlists(short_id, [shorts_playlist], playlist_about)
         except Exception as e:  # the main video is already up; don't fail the whole run
             print(f"  (Could not upload the YouTube Short: {e})")
     if social_dir:
@@ -282,14 +292,14 @@ def make_one_video(config: dict, history: list[dict], topic: str | None, dry_run
     write_summary(summary)
 
 
-def match_playlist(name: str, allowed: list[str]) -> str:
+def match_playlist(name: str, allowed: list[str], default: str = "Health Tips") -> str:
     """Map Claude's playlist choice onto the configured list so no stray playlists get created."""
     lowered = {p.lower(): p for p in allowed}
     if name.strip().lower() in lowered:
         return lowered[name.strip().lower()]
     words = set(name.lower().replace("&", " ").split())
     best = max(allowed, key=lambda p: len(words & set(p.lower().replace("&", " ").split())), default=None)
-    return best if best and words & set(best.lower().replace("&", " ").split()) else "Health Tips"
+    return best if best and words & set(best.lower().replace("&", " ").split()) else default
 
 
 def make_social_short(plan, final: Path, video_cfg: dict, config: dict, channel_name: str,

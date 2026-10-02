@@ -1,0 +1,281 @@
+# Restore Remake Studio: home, garden and furniture makeovers for a US audience.
+# Used when the workflow runs with CHANNEL=restore_remake (see .github/workflows/restore-daily-video.yml).
+
+# ---- Your channel ----
+channel:
+  name: "Restore Remake Studio"
+  niche: >-
+    Budget-friendly DIY makeovers for American homes: room and home makeovers (paint, lighting, small spaces,
+    rentals, kitchens, bathrooms, entryways), garden and backyard makeovers (curb appeal, patios, planters,
+    lawns, cheap landscaping), and furniture flips and upcycling (thrift-store and curbside furniture,
+    painting, staining, hardware swaps).
+  presenter: "the friendly host of Restore Remake Studio, an enthusiastic DIY makeover guide (do not claim to be a contractor or to have done the projects personally)"
+  audience: "US homeowners and renters age 22-60 who want their home, yard and furniture to look better on a budget"
+  country: "United States"
+  language: "English"
+  language_code: "en-US"
+  tone: "Upbeat, encouraging, practical; like a friend who loves makeovers. Plain language, real numbers."
+  content_rules: |-
+    - Give practical, realistic ideas a beginner can do. Prices are typical US prices in dollars and must be
+      given as rough ranges ("about $30 to $50"), never as exact quotes.
+    - Safety first: mention gloves, masks, ventilation, ladders and power-tool safety where relevant. Old paint
+      in US homes built before 1978 may contain lead: never tell viewers to sand or scrape it without testing.
+      Never give electrical, gas, structural or plumbing instructions beyond simple swaps; tell viewers to hire a
+      licensed pro for those. Renters should check with their landlord before permanent changes.
+    - Never invent personal stories, clients, before-and-after results or quotes. Never claim the footage shows
+      a specific project; it is stock footage that illustrates the idea.
+    - No brand endorsements or affiliate claims.
+  playlists:
+    - "Room Makeovers"
+    - "Kitchen & Bath Makeovers"
+    - "Small Spaces & Rentals"
+    - "Garden & Backyard Makeovers"
+    - "Curb Appeal"
+    - "Furniture Flips & Upcycling"
+    - "Budget Makeover Ideas"
+    - "Rooftop & Balcony Makeovers"
+  topic_queue: []
+
+# ---- Video ----
+video:
+  mode: "voice_slides"
+  stock_footage: true          # free clips: Pexels first, then Pixabay (PEXELS_API_KEY / PIXABAY_API_KEY)
+  target_minutes: 4
+  format: "landscape"
+  videos_per_run: 1
+  captions: true
+  fact_check: false            # the health fact-checker is for medical claims only
+  background_color: "#1C1917"
+  styles:
+    - name: "Makeover Ideas"
+      instructions: "6-8 specific, doable makeover ideas for the space, each with what to do and a rough cost."
+    - name: "Budget Makeover"
+      instructions: "A full makeover of one space on a set budget, item by item, with a running total."
+    - name: "Quick Short"
+      format: "shorts"
+      target_minutes: 0.8
+      instructions: "One single, surprising, useful makeover tip in under 60 seconds. Hook in the first 2 seconds."
+    - name: "Mistakes to Avoid"
+      instructions: "The 5-7 most common mistakes people make with this kind of makeover, and what to do instead."
+    - name: "Step by Step"
+      instructions: "A clear step-by-step guide to one makeover project: tools, materials, steps, rough cost, time."
+
+voice:
+  voice: "af_bella"            # upbeat American female voice (try: python -m youtube_agent.main --voice-sample)
+  speed: 1.0
+
+# ---- Brand (slides and thumbnails) ----
+brand:
+  icon: "house"
+  panel: [28, 25, 23]          # charcoal cards
+  accent: [13, 148, 136]       # teal
+  light: [204, 251, 241]       # mint text
+  highlight: [245, 158, 11]    # amber
+  background: [[41, 37, 36], [13, 110, 100]]
+  warning_note: "Safety first: when in doubt, hire a pro."
+  outro_note: "New makeover ideas every day."
+  badges:
+    "Makeover Ideas": ["MAKEOVER IDEAS", [13, 148, 136]]
+    "Budget Makeover": ["ON A BUDGET", [22, 163, 74]]
+    "Mistakes to Avoid": ["AVOID THIS", [229, 57, 53]]
+    "Step by Step": ["STEP BY STEP", [245, 158, 11]]
+
+# ---- Editing (optional files in this folder's assets/) ----
+editing:
+  intro_clip: "assets/intro.mp4"
+  outro_clip: "assets/outro.mp4"
+  intro_clip_vertical: "assets/intro_vertical.mp4"
+  outro_clip_vertical: "assets/outro_vertical.mp4"
+  background_music: "assets/music.mp3"
+  music_volume: 0.08
+
+social:
+  enabled: true
+
+# ---- YouTube ----
+youtube:
+  # Fill in your channel ID (YouTube Studio -> Settings -> Channel -> Advanced settings) so uploads stop if
+  # the wrong account is logged in. Leave empty to skip the check.
+  channel_id: ""
+  # Scheduled to go public at 1 PM New York time (8 PM Saudi, 9 PM in winter): one hour after Health
+  # Support Studio, so the two channels don't publish at the same moment.
+  auto_publish_time: "13:00"
+  auto_publish_timezone: "America/New_York"
+  review_before_publish: true
+  privacy: "public"
+  playlists: true
+  shorts_playlist: "Makeover Shorts"
+  default_playlist: "Budget Makeover Ideas"
+  playlist_description: "Restore Remake Studio: {title}. Budget-friendly home, garden and furniture makeover ideas."
+  upload_short: true
+  short_delay_hours: 6
+  category_id: "26"            # 26 = Howto & Style
+  made_for_kids: false
+  contains_synthetic_media: true
+  description_footer: |-
+    The makeover images are AI-generated design concepts (not a real renovation), made to inspire your own
+    projects.
+
+    Restore Remake Studio | Business inquiries: restoreremakestudio@gmail.com
+
+# ---- Visual makeover videos (python -m youtube_agent.makeover) ----
+# Every day: one space + one style that haven't been used together yet. AI draws the "before" photo and
+# then edits that same picture step by step. No narration: labels, motion, swipe transitions and music.
+# {style} {look} {palette} are filled from the chosen style; {space} from the space's "short" name.
+makeover:
+  show_work: true            # show each step half done (workers, tools) before it's finished
+  hold_seconds: 4.0          # seconds each finished step is shown in the landscape video
+  work_hold_seconds: 3.0     # seconds each work-in-progress picture is shown
+  short_hold_seconds: 2.6    # same two, in the vertical Short
+  short_work_hold_seconds: 2.0
+  spaces:
+    # Each stage: label/edit = the finished step; work_label/work = the same step half done (shown first).
+    - name: "Empty living room"
+      short: "living room"
+      before_label: "empty room"
+      playlist: "Room Makeovers"
+      tags: ["living room makeover", "empty room makeover", "living room ideas"]
+      before: "a completely empty, slightly dated living room in an American house: bare off-white walls with scuffs, worn beige carpet, one large window, a ceiling light, nothing else in the room"
+      after_base: "a finished {style} living room ({look}), with large window"
+      stages:
+        - {label: "Fresh paint", work_label: "Painting the walls", edit: "Paint the walls in {palette} colors that suit a {style} style.", work: "a painter on a ladder rolling {palette} paint onto the walls, about half the wall area painted, blue painter's tape on the edges, drop cloths on the floor, paint trays and buckets"}
+        - {label: "New floor", work_label: "Laying the floor", edit: "Replace the carpet with new flooring that suits a {style} style ({look}).", work: "the old carpet pulled up and rolled in a corner, a worker kneeling and installing new floor planks, about half the floor done, stacks of flooring boxes and a rubber mallet"}
+        - {label: "Sofa & rug", work_label: "Furniture arrives", edit: "Add a sofa, a coffee table and a large rug in {style} style ({look}).", work: "two movers carrying a {style} sofa into the room, a rolled-up rug and furniture boxes on the new floor, some packaging and cardboard around"}
+        - {label: "Lights & curtains", work_label: "Hanging lights & curtains", edit: "Add floor-length curtains, a floor lamp and wall art in {style} style.", work: "a person on a step ladder hanging a curtain rod above the window, curtain panels folded on the sofa, a floor lamp still in its box, a framed picture leaning against the wall"}
+        - {label: "Final touches", work_label: "Styling the room", edit: "Add plants, cushions, a throw blanket and decor so it looks like a finished {style} living room in a design magazine.", work: "a stylist arranging cushions on the sofa, potted plants and decor items waiting on the floor and coffee table, a few shopping bags"}
+    - name: "Empty bedroom"
+      short: "bedroom"
+      before_label: "empty bedroom"
+      playlist: "Room Makeovers"
+      tags: ["bedroom makeover", "small bedroom ideas", "bedroom decor"]
+      before: "a completely empty small bedroom in an American apartment: plain white walls, old laminate floor, one window with mini blinds, nothing in the room"
+      after_base: "a finished {style} bedroom ({look})"
+      stages:
+        - {label: "Accent wall", work_label: "Painting the accent wall", edit: "Paint one wall as an accent wall and the rest in {palette} colors for a {style} look.", work: "a painter rolling the accent wall color, about half of the wall done, painter's tape, a ladder, drop cloths and paint cans on the floor"}
+        - {label: "Bed & nightstands", work_label: "Building the bed", edit: "Add a bed with a headboard, bedding and two nightstands in {style} style ({look}).", work: "a person assembling a bed frame with a drill, the headboard leaning against the wall, the mattress still wrapped in plastic, open furniture boxes and an instruction sheet"}
+        - {label: "Rug & lighting", work_label: "Rug & lamps going in", edit: "Add a large rug under the bed, bedside lamps and curtains replacing the blinds, in {style} style.", work: "a rug half unrolled under the bed, the old blinds taken down and leaning on the wall, new lamps and curtains still in packaging on the bed"}
+        - {label: "Cozy finish", work_label: "Styling the bedroom", edit: "Add plants, framed art above the bed, throw pillows and cozy decor so it looks like a finished {style} bedroom.", work: "a person hanging framed art above the bed, throw pillows and plants waiting on the floor, a few empty boxes"}
+    - name: "Bare backyard"
+      short: "backyard"
+      before_label: "bare yard"
+      playlist: "Garden & Backyard Makeovers"
+      tags: ["backyard makeover", "garden makeover", "backyard ideas", "landscaping ideas"]
+      before: "a bare, neglected suburban American backyard seen from the back door: patchy dead grass, dirt patches, a plain wooden fence, no plants, no furniture, daytime"
+      after_base: "a finished {style} backyard garden ({look}) with wooden fence"
+      stages:
+        - {label: "Lawn & paths", work_label: "Laying new sod", edit: "Replace the dead grass with a healthy green lawn and add a stone path.", work: "landscapers unrolling fresh sod, about half the yard covered in new green grass, rolls of sod stacked on a pallet, a wheelbarrow and stepping stones being placed"}
+        - {label: "Patio & pergola", work_label: "Building the patio", edit: "Add a paved patio area with a pergola in {style} style ({look}).", work: "workers laying patio pavers on a sand base, pergola posts standing but the roof beams not yet on, lumber and a toolbox nearby"}
+        - {label: "Outdoor furniture", work_label: "Furniture arrives", edit: "Add outdoor seating, a table and an outdoor rug in {style} style.", work: "a person carrying an outdoor chair onto the patio, other furniture still wrapped in plastic and cardboard boxes on the lawn"}
+        - {label: "Garden beds", work_label: "Planting the garden", edit: "Add planted garden beds with flowers, shrubs and large planters along the fence.", work: "a gardener kneeling and planting flowers in new garden beds along the fence, nursery pots of shrubs and flowers waiting in rows, bags of soil and mulch"}
+        - {label: "Evening glow", work_label: "Hanging string lights", edit: "Make it early evening with warm string lights over the patio and soft garden lights, everything else the same.", work: "a person on a ladder hanging string lights between the pergola and the fence at golden hour, a coil of lights on the ground"}
+    - name: "Empty rooftop terrace"
+      short: "rooftop terrace"
+      before_label: "empty rooftop"
+      playlist: "Rooftop & Balcony Makeovers"
+      tags: ["rooftop terrace", "rooftop makeover", "terrace design", "rooftop garden"]
+      before: "an empty flat concrete rooftop terrace of a city building with a simple metal railing, stained grey concrete floor, city skyline in the background, daytime, nothing on the roof"
+      after_base: "a finished {style} rooftop terrace ({look}) with city skyline"
+      stages:
+        - {label: "Deck flooring", work_label: "Laying deck tiles", edit: "Cover the concrete with wooden deck tiles that suit a {style} style.", work: "a worker kneeling and clicking wooden deck tiles into place, about half the roof covered, stacks of deck tiles nearby"}
+        - {label: "Shade pergola", work_label: "Building the pergola", edit: "Add a pergola or shade sail over part of the terrace in {style} style.", work: "two workers assembling a pergola frame on the deck, one on a ladder fixing a beam, lumber and tools on the deck"}
+        - {label: "Lounge seating", work_label: "Furniture arrives", edit: "Add a lounge sofa, chairs, a coffee table and an outdoor rug in {style} style ({look}).", work: "movers carrying a lounge sofa onto the terrace, an outdoor rug rolled up, furniture boxes and protective wrap around"}
+        - {label: "Planters & greenery", work_label: "Planting the greenery", edit: "Add tall planters with grasses, olive trees and flowers along the railing.", work: "a gardener lifting an olive tree into a tall planter along the railing, other plants waiting in nursery pots, bags of potting soil"}
+        - {label: "Sunset lights", work_label: "Hanging the lights", edit: "Make it sunset with warm string lights and lanterns glowing, everything else the same.", work: "a person on a ladder hanging string lights across the pergola in late afternoon, lanterns waiting on the coffee table"}
+    - name: "Tiny balcony"
+      short: "balcony"
+      before_label: "bare balcony"
+      playlist: "Rooftop & Balcony Makeovers"
+      tags: ["balcony makeover", "small balcony ideas", "apartment balcony"]
+      before: "a small empty apartment balcony with a plain concrete floor, a metal railing and a bare wall, a neighboring building in the background, daytime, nothing on the balcony"
+      after_base: "a finished small {style} apartment balcony ({look})"
+      stages:
+        - {label: "Outdoor rug & tiles", work_label: "Clicking in deck tiles", edit: "Add interlocking deck tiles and an outdoor rug in {palette} colors.", work: "hands clicking interlocking deck tiles into place, half the balcony floor done, a stack of tiles and a rolled outdoor rug"}
+        - {label: "Bistro seating", work_label: "Unboxing the seating", edit: "Add a small bistro table with two chairs or a compact bench in {style} style.", work: "a person unfolding a bistro chair, the small table still in its box, cardboard on the floor"}
+        - {label: "Vertical garden", work_label: "Planting the garden", edit: "Add railing planters, hanging plants and a vertical plant wall.", work: "a person hanging railing planters, a vertical plant wall frame half filled with plants, nursery pots and a watering can on the floor"}
+        - {label: "Cozy lights", work_label: "Adding the lights", edit: "Add cushions, a lantern and warm string lights at dusk so it looks cozy, everything else the same.", work: "a person stringing fairy lights along the railing at dusk, cushions and a lantern waiting on the chair"}
+    - name: "Dated kitchen"
+      short: "kitchen"
+      before_label: "old kitchen"
+      playlist: "Kitchen & Bath Makeovers"
+      tags: ["kitchen makeover", "kitchen remodel ideas", "kitchen design"]
+      before: "a dated 1990s American kitchen: honey oak cabinets, beige laminate countertops, yellowish tile backsplash, old white appliances, dim ceiling light, empty counters"
+      after_base: "a finished modern {style} kitchen ({look})"
+      stages:
+        - {label: "Painted cabinets", work_label: "Painting the cabinets", edit: "Paint the cabinets in a color that suits a {style} style and add new hardware.", work: "cabinet doors taken off and laid on sawhorses being spray painted, half the cabinet frames painted the new color, painter's tape and plastic sheeting over the counters"}
+        - {label: "Counters & backsplash", work_label: "Tiling the backsplash", edit: "Replace the countertops and backsplash with new materials in {style} style ({look}).", work: "new countertops installed and a tiler pressing new backsplash tiles onto the wall, about half the backsplash done, tile spacers, a bucket of adhesive and boxes of tiles"}
+        - {label: "New lighting", work_label: "Installing the lights", edit: "Add pendant lights over the counter and bright under-cabinet lighting.", work: "an electrician on a ladder installing a pendant light over the counter, other pendant lights still in boxes on the counter"}
+        - {label: "Styled & finished", work_label: "Styling the kitchen", edit: "Add plants, a few cookbooks, a bowl of lemons and a runner rug so it looks like a finished {style} kitchen.", work: "a person placing cookbooks and plants on the counter, a runner rug still rolled up, a few shopping bags"}
+    - name: "Dated bathroom"
+      short: "bathroom"
+      before_label: "old bathroom"
+      playlist: "Kitchen & Bath Makeovers"
+      tags: ["bathroom makeover", "small bathroom ideas", "bathroom remodel"]
+      before: "a dated small American bathroom: pink 1980s tiles, an old vanity with a plain mirror, a bathtub with a plastic curtain rod, dim light"
+      after_base: "a finished {style} bathroom ({look})"
+      stages:
+        - {label: "Fresh tiles & paint", work_label: "Retiling the walls", edit: "Replace the old tiles with new tiles and paint in {palette} colors for a {style} look.", work: "old pink tiles chipped off part of the wall, a tiler setting new tiles on the other part, about half done, buckets, trowels and tile boxes on a drop cloth"}
+        - {label: "New vanity & mirror", work_label: "Installing the vanity", edit: "Replace the vanity and mirror with a new vanity and a stylish mirror in {style} style.", work: "the old vanity removed and a plumber fitting the new vanity, the new mirror leaning against the wall still wrapped"}
+        - {label: "Lights & fixtures", work_label: "Fitting fixtures", edit: "Add new wall lights, a modern faucet and a glass shower screen.", work: "a worker installing a glass shower screen, new wall lights and a faucet in open boxes on the vanity"}
+        - {label: "Spa finish", work_label: "Styling the bathroom", edit: "Add towels, a plant, a bath mat and small decor so it looks like a finished {style} bathroom.", work: "a person folding towels onto a shelf, a plant and decor items waiting on the vanity"}
+    - name: "Empty garage"
+      short: "garage"
+      before_label: "empty garage"
+      playlist: "Room Makeovers"
+      tags: ["garage makeover", "garage gym", "garage conversion"]
+      before: "an empty single-car garage with bare drywall, a stained concrete floor, a closed garage door and one fluorescent light"
+      after_base: "a finished {style} home gym in a garage ({look})"
+      stages:
+        - {label: "Epoxy floor & paint", work_label: "Coating the floor", edit: "Add a clean epoxy floor and paint the walls in {palette} colors.", work: "a worker rolling epoxy coating across the floor with a long roller, about half the floor glossy and new, buckets of epoxy, walls half painted"}
+        - {label: "Rubber mats & rack", work_label: "Building the gym", edit: "Add rubber gym mats, a squat rack and a weight bench.", work: "a person laying rubber gym mats, a squat rack half assembled with bolts and a wrench, weight plates stacked on the floor"}
+        - {label: "Mirrors & storage", work_label: "Mounting the mirror", edit: "Add a large wall mirror and neat wall storage for weights.", work: "two people lifting a large mirror onto the wall, wall storage brackets being drilled in"}
+        - {label: "Lights & finish", work_label: "Final setup", edit: "Add bright LED lighting, a plant and a motivational art print so it looks like a finished home gym.", work: "a person on a ladder installing an LED light panel, an art print and a plant waiting on the bench"}
+    - name: "Front yard"
+      short: "front yard"
+      before_label: "plain house"
+      playlist: "Curb Appeal"
+      tags: ["curb appeal", "front yard makeover", "front porch ideas", "home exterior"]
+      before: "the front of a plain one-story American house seen from the street: faded beige siding, a plain white front door, a patchy lawn, no plants, a concrete walkway, daytime"
+      after_base: "the front of a one-story American house with {style} curb appeal ({look})"
+      stages:
+        - {label: "Bold front door", work_label: "Painting the door", edit: "Paint the front door a bold color that suits a {style} style and add new house numbers.", work: "a painter brushing a bold new color onto the front door, about half painted, painter's tape on the frame, a paint can on the step"}
+        - {label: "Lawn & garden beds", work_label: "Planting the beds", edit: "Make the lawn green and add mulched garden beds with shrubs and flowers along the house.", work: "a gardener digging new garden beds along the house, shrubs in nursery pots waiting, a wheelbarrow of mulch, part of the lawn already green"}
+        - {label: "Porch styling", work_label: "Styling the porch", edit: "Add two matching planters, a new doormat and a stylish porch light by the door.", work: "a person setting down one large planter by the door, the second planter and a new doormat waiting on the walkway, a porch light in its box"}
+        - {label: "Evening glow", work_label: "Installing path lights", edit: "Make it early evening with warm porch lights and solar path lights along the walkway, everything else the same.", work: "a person pushing solar path lights into the ground along the walkway at golden hour, a box of lights on the grass"}
+    - name: "Empty attic"
+      short: "attic"
+      before_label: "empty attic"
+      playlist: "Room Makeovers"
+      tags: ["attic makeover", "attic bedroom", "attic conversion"]
+      before: "an empty finished attic room with sloped ceilings, bare white drywall, an old wood floor, one small window, nothing in the room"
+      after_base: "a finished {style} attic lounge ({look}) with sloped ceilings"
+      stages:
+        - {label: "Paint & floor", work_label: "Painting & sanding", edit: "Paint the walls in {palette} colors and refinish the floor for a {style} look.", work: "a painter rolling the sloped wall, about half painted, part of the floor freshly sanded with a floor sander, dust sheets and paint cans"}
+        - {label: "Cozy seating", work_label: "Furniture arrives", edit: "Add a sofa or daybed, a rug and a small coffee table in {style} style ({look}).", work: "two movers carrying a daybed up into the attic, a rolled rug and boxes on the floor"}
+        - {label: "Shelves & lights", work_label: "Building the shelves", edit: "Add built-in shelves under the slope, warm lamps and a skylight glow.", work: "a carpenter fitting built-in shelves under the sloped ceiling with a drill, boards and a level on the floor, lamps in boxes"}
+        - {label: "Final touches", work_label: "Styling the attic", edit: "Add plants, books, cushions and throws so it looks like a finished cozy {style} attic retreat.", work: "a person placing books on the new shelves, cushions and plants waiting on the daybed"}
+  styles:
+    - {name: "Japandi", look: "light oak wood, low furniture, linen, minimal and calm", palette: "warm white, beige and soft black"}
+    - {name: "Boho", look: "rattan, macrame, layered rugs, lots of plants, warm textures", palette: "terracotta, cream and mustard"}
+    - {name: "Modern Farmhouse", look: "shiplap, black metal, reclaimed wood, cozy neutrals", palette: "white, black and warm wood"}
+    - {name: "Coastal", look: "light woods, woven textures, airy and breezy", palette: "white, sand and soft ocean blue"}
+    - {name: "Mid-Century Modern", look: "tapered wooden legs, clean lines, retro shapes", palette: "walnut, mustard and teal"}
+    - {name: "Scandinavian", look: "pale wood, white walls, simple functional furniture, cozy textiles", palette: "white, light grey and pale wood"}
+    - {name: "Industrial", look: "exposed brick, black steel, leather and concrete", palette: "charcoal, rust brown and black"}
+    - {name: "Modern Luxury", look: "marble, brass accents, velvet, statement lighting", palette: "ivory, black and gold"}
+    - {name: "Mediterranean", look: "arches, terracotta, olive trees, lime-washed walls", palette: "warm white, terracotta and olive green"}
+  titles:
+    - "Empty {Space} Turned Into a {Style} Dream ✨"
+    - "{Before} → {Style} {Space} | Satisfying Makeover"
+    - "Watch This {Before} Become a {Style} {Space}"
+    - "{Style} {Space} Makeover, Step by Step"
+    - "From {Before} to {Style} Dream {Space} in 60 Seconds"
+  short_titles:
+    - "{Before} → {Style} {Space}"
+    - "Watch this {space} transform"
+    - "{Style} {space} makeover ✨"
+  hooks:
+    - "Watch this {before} turn into a {Style} {space}, one step at a time."
+    - "From {before} to dream {space}: a {Style} makeover in under a minute."
+    - "What would you change first in this {before}? Here's our {Style} makeover."
+  tags: ["home makeover", "before and after", "room transformation", "interior design", "makeover", "home decor ideas", "satisfying transformation"]
+  hashtags: ["#makeover", "#beforeandafter", "#homedecor", "#interiordesign"]
