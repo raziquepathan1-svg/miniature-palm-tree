@@ -120,18 +120,23 @@ def _gemini(prompt: str, image: Image.Image | None) -> Image.Image:
 
 
 def _pollinations(prompt: str, seed: int) -> Image.Image:
-    url = ("https://image.pollinations.ai/prompt/" + urllib.parse.quote(prompt[:1500])
-           + f"?width=1344&height=768&seed={seed}&nologo=true&model=flux")
+    """Free image service. It rate-limits busy periods (HTTP 429/500), so wait patiently and switch model
+    before giving up (up to ~12 minutes per image)."""
+    base = "https://image.pollinations.ai/prompt/" + urllib.parse.quote(prompt[:1500])
     last = None
-    for attempt in range(4):
+    for attempt in range(8):
+        model = "flux" if attempt < 5 else "turbo"
         try:
-            r = requests.get(url, timeout=240)
+            r = requests.get(f"{base}?width=1344&height=768&seed={seed}&nologo=true&model={model}", timeout=240)
             if r.status_code == 200 and r.headers.get("content-type", "").startswith("image"):
+                time.sleep(3)  # stay well under the service's per-user rate limit
                 return Image.open(io.BytesIO(r.content)).convert("RGB")
             last = f"HTTP {r.status_code}: {r.text[:200]}"
         except requests.RequestException as e:
             last = str(e)
-        time.sleep(15 * (attempt + 1))
+        wait = min(30 * (attempt + 1), 150)
+        print(f"      (image service busy, retrying in {wait}s: {last[:120]})")
+        time.sleep(wait)
     raise RuntimeError(f"Pollinations failed: {last}")
 
 
