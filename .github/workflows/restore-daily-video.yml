@@ -1,10 +1,11 @@
 name: Restore Remake Studio - daily video
 
 on:
-  schedule:
-    # Once a day at 04:07 UTC (~7 AM Saudi time), 50 minutes after the Health Support Studio run.
-    # The video is scheduled to go public at 13:00 New York time (8 PM Saudi, 9 PM in winter).
-    - cron: "7 4 * * *"
+  # PAUSED until the new time-lapse style is ready. Remove the # marks to turn it back on.
+  # schedule:
+  #   # Once a day at 04:07 UTC (~7 AM Saudi time), 50 minutes after the Health Support Studio run.
+  #   # The video is scheduled to go public at 13:00 New York time (8 PM Saudi, 9 PM in winter).
+  #   - cron: "7 4 * * *"
   workflow_dispatch:
     inputs:
       dry_run:

@@ -1,10 +1,11 @@
 name: Restore Remake Studio - post Short to Instagram and Facebook
 
 on:
-  schedule:
-    # 18:25 UTC = after the YouTube video goes public (1 PM New York) in both summer and winter
-    # (~9:25 PM Saudi time). Posts only if the YouTube video is public.
-    - cron: "25 18 * * *"
+  # PAUSED until the new time-lapse style is ready. Remove the # marks to turn it back on.
+  # schedule:
+  #   # 18:25 UTC = after the YouTube video goes public (1 PM New York) in both summer and winter
+  #   # (~9:25 PM Saudi time). Posts only if the YouTube video is public.
+  #   - cron: "25 18 * * *"
   workflow_dispatch:
     inputs:
       check_only:
