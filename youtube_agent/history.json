@@ -67,5 +67,15 @@
     "youtube_id": "qtgvwLYchD8",
     "publish_at": "2026-10-03T16:00:00Z",
     "short_youtube_id": "zqbaxNdWzv0"
+  },
+  {
+    "date": "2026-10-03T03:37:39",
+    "topic": "Hands-only CPR: how to save a life",
+    "requested_topic": "Hand-only CPR: how to save a life in 2 minutes",
+    "title": "Hands-Only CPR in 2 Steps: This Could Save a Life",
+    "style": "Quick Short",
+    "script_file": "004-hands-only-cpr.yaml",
+    "youtube_id": "xx7SmrWj7Jg",
+    "publish_at": "2026-10-04T16:00:00Z"
   }
 ]
