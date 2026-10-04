@@ -84,13 +84,12 @@ def inbox_groups(gap_hours: float) -> list[list[Path]]:
 
 
 def ready(group: list[Path], want: int, wait_hours: float) -> bool:
-    """A makeover is made once all its clips are in, or when the last clip has waited long enough
-    (so a makeover with fewer clips still gets published)."""
-    if len(group) >= want:
+    """A makeover is made once all its clips are in, when it has its own folder (one folder = one finished
+    makeover, however many clips), or when the last clip has waited long enough."""
+    if len(group) >= want or group[0].parent != INBOX:
         return True
-    newest = max(p.stat().st_mtime for p in group)
-    git_time = _git_added_time(group[-1])
-    newest = max(newest, git_time or 0)
+    # when the clips were uploaded (a fresh checkout gives every file the current time, so git is used)
+    newest = max((_git_added_time(p) or p.stat().st_mtime) for p in group)
     return (dt.datetime.now().timestamp() - newest) > wait_hours * 3600
 
 
@@ -128,7 +127,7 @@ def normalize(src: Path, out: Path, size: tuple[int, int], speed: float = 1.0) -
     blurred copy of themselves; clips without sound get silence."""
     w, h = size
     dur, has_audio = probe(src)
-    pts = f",setpts=PTS/{speed}" if speed != 1.0 else ""
+    pts = f",setpts=PTS/{speed},fps={FPS}" if speed != 1.0 else ""
     if h > w:
         vf = (f"[0:v]scale={w}:{h}:force_original_aspect_ratio=increase,crop={w}:{h},fps={FPS}{pts},"
               "setsar=1,format=yuv420p[v]")
@@ -145,7 +144,7 @@ def normalize(src: Path, out: Path, size: tuple[int, int], speed: float = 1.0) -
         inputs = ["-i", str(src), "-f", "lavfi", "-t", f"{dur:.2f}", "-i", "anullsrc=r=48000:cl=stereo"]
     _run(["-y", *inputs, "-filter_complex", f"{vf};{af}", "-map", "[v]", "-map", "[a]", "-t", f"{dur / speed:.2f}",
           "-c:v", "libx264", "-preset", "veryfast", "-crf", "19", "-c:a", "aac", "-b:a", "192k", "-ar", "48000",
-          str(out)])
+          "-video_track_timescale", "15360", str(out)])  # same time base as the other parts, for joining
     return out
 
 
@@ -372,7 +371,12 @@ def make_short(group: list[Path], workdir: Path, cfg: dict, rng: random.Random,
     print(f"  Title: {meta['title']}")
 
     print(f"  Joining {len(group)} clips...")
-    norm = [normalize(p, work / f"n{i}_v.mp4", (SW, SH)) for i, p in enumerate(group)]
+    # very short makeovers (one 8-10 s clip) are slowed down a little so each step can be seen
+    total = sum(probe(p)[0] for p in group)
+    speed = max(0.75, min(1.0, total / cfg.get("min_clip_seconds", 13)))
+    if speed < 1.0:
+        print(f"  Short makeover ({total:.0f} s) - playing at {speed:.2f}x")
+    norm = [normalize(p, work / f"n{i}_v.mp4", (SW, SH), speed) for i, p in enumerate(group)]
     body = join(norm, work / "body_v.mp4")
     full = join([body, reveal(before, after, (SW, SH), work)], work / "full_v.mp4", fade=0.4)
     hook = title_overlay(meta.get("hook") or meta["title"], (SW, SH), work / "hook_v.png")
