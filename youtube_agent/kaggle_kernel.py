@@ -10,6 +10,7 @@ __JOBS__ and __SETTINGS__ are filled in by ai_video.py (base64 JSON).
 import base64
 import gc
 import json
+import os
 import subprocess
 import sys
 import time
@@ -20,6 +21,7 @@ JOBS = json.loads(base64.b64decode("__JOBS__"))
 SETTINGS = json.loads(base64.b64decode("__SETTINGS__"))
 OUT = Path("/kaggle/working")
 RESULT = {"jobs": {}, "started": time.time(), "settings": SETTINGS}
+os.environ.setdefault("PYTORCH_CUDA_ALLOC_CONF", "expandable_segments:True")
 
 
 def save_result() -> None:
@@ -72,10 +74,12 @@ del enc
 gc.collect()
 print("Prompts encoded", flush=True)
 
-# 2) The video model on the GPU.
-pipe = load(LTXPipeline, text_encoder=None, tokenizer=None, torch_dtype=dtype).to("cuda")
+# 2) The video model. Each part goes to the GPU only while it works: the float32 video model (~8 GB) and
+#    decoding 121 frames together don't fit in Kaggle's 15 GB GPU.
+pipe = load(LTXPipeline, text_encoder=None, tokenizer=None, torch_dtype=dtype)
 pipe.vae.enable_tiling()
 i2v = LTXImageToVideoPipeline(**pipe.components)
+i2v.enable_model_cpu_offload()  # the hooks sit on the shared models, so pipe is offloaded too
 
 
 def make_clip(job_id: str, k: int, image, seed: int):
@@ -101,6 +105,7 @@ for job in JOBS:
         for k in range(len(job["prompts"])):
             t = time.time()
             frames = make_clip(job["id"], k, image, job["seed"] + k)
+            torch.cuda.empty_cache()
             if float(np.asarray(frames[len(frames) // 2]).mean()) < 4:
                 raise RuntimeError(f"clip {k + 1} came out black")
             name = f"{k + 1}.mp4"
