@@ -86,6 +86,28 @@ Gemini, turn on billing for that Google project; one makeover is 9-11 images (be
 each step done), roughly $0.35-$0.45 per video. Set `show_work: false` in `config.yaml` to skip the
 in-progress pictures and halve that.
 
+## Step 3b: Free AI clips on Kaggle, no hand work (10 min, free)
+Kaggle gives every account about **30 hours of free GPU time a week**. The workflow
+**Restore Remake Studio - free AI clips (Kaggle)** uses it to make the AI clips of each makeover for you:
+an abandoned place (garage, backyard, rooftop, kitchen...) is cleaned up, rebuilt and revealed in a style
+(Japandi, Boho, Coastal...) as a satisfying time-lapse in 3 clips. The clips land in `rrs_inbox/` and
+become a Short (and, every 5 makeovers, a long compilation) exactly like clips you upload by hand. It keeps
+about 3 Shorts waiting at all times (`ai_video:` in `config.yaml`).
+1. Create a free account at **kaggle.com**.
+2. Kaggle → your picture → **Settings** → **Phone verification**: verify your phone. Without this Kaggle
+   doesn't allow the GPU or internet the clips need.
+3. Same Settings page → **API** → **Create New Token**. A `kaggle.json` file downloads; open it with any
+   text editor: `{"username":"…","key":"…"}`.
+4. In GitHub add two secrets: `KAGGLE_USERNAME` (the username) and `KAGGLE_KEY` (the key).
+   (If Kaggle shows you a single API token starting with `KGAT_` instead, add it as `KAGGLE_API_TOKEN`,
+   plus `KAGGLE_USERNAME`.)
+5. Test it: **Actions → Restore Remake Studio - free AI clips (Kaggle) → Run workflow**, tick **Wait for
+   the Kaggle run**. After ~30-60 minutes the clips are in `rrs_inbox/` and the Short is made right away.
+   You can also watch the run on kaggle.com → **Code** → `rrs-video-maker`.
+
+The clips are made with the open **LTX-Video** model, about 5 seconds each, a little less polished than
+Google Flow. You can still upload your own clips to `rrs_inbox/` at any time; both are used.
+
 ## Step 4: Test a video
 **Actions → Restore Remake Studio - daily video → Run workflow**, tick **Make the video but don't upload**.
 After ~20-30 minutes, download the `rr-video-…` file from the run page and watch it.

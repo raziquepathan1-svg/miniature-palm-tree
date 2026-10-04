@@ -1,0 +1,71 @@
+name: Restore Remake Studio - free AI clips (Kaggle)
+
+on:
+  schedule:
+    # Every 4 hours: collects the clips of a finished Kaggle run into rrs_inbox/ and starts a new run when
+    # fewer than ai_video.buffer_days Shorts are waiting. It never waits for Kaggle, so each run is ~2 min.
+    - cron: "37 */4 * * *"
+  workflow_dispatch:
+    inputs:
+      wait:
+        description: "Wait for the Kaggle run to finish and collect its clips (first test: ~30-60 min)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  actions: write   # to start the daily video workflow when new clips arrive
+
+concurrency:
+  group: restore-ai-video
+  cancel-in-progress: false
+
+env:
+  CHANNEL: restore_remake
+
+jobs:
+  kaggle:
+    runs-on: ubuntu-latest
+    timeout-minutes: ${{ inputs.wait && 300 || 30 }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -q pyyaml requests pillow numpy kaggle
+
+      - name: Make clips on Kaggle
+        id: make
+        env:
+          KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
+          KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
+          KAGGLE_API_TOKEN: ${{ secrets.KAGGLE_API_TOKEN }}
+          WAIT: ${{ inputs.wait }}
+        run: |
+          if [ -z "$KAGGLE_USERNAME" ] || { [ -z "$KAGGLE_KEY" ] && [ -z "$KAGGLE_API_TOKEN" ]; }; then
+            echo "## Kaggle is not connected yet" >> "$GITHUB_STEP_SUMMARY"
+            echo "Add the KAGGLE_USERNAME and KAGGLE_KEY secrets (see youtube_agent/channels/restore_remake/SETUP.md)." >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          [ -z "$KAGGLE_KEY" ] && unset KAGGLE_KEY
+          [ -z "$KAGGLE_API_TOKEN" ] && unset KAGGLE_API_TOKEN
+          if [ "$WAIT" = "true" ]; then python -m youtube_agent.ai_video --wait; else python -m youtube_agent.ai_video; fi
+
+      - name: Save the clips and the Kaggle run state
+        if: always()
+        run: |
+          git config user.name "youtube-agent"
+          git config user.email "youtube-agent@users.noreply.github.com"
+          git add -A youtube_agent/channels/restore_remake/ai_video.json rrs_inbox 2>/dev/null || true
+          git diff --cached --quiet && exit 0
+          git commit -m "Record Restore Remake Studio AI clips from Kaggle"
+          git pull --rebase && git push
+
+      - name: Make the Short now
+        if: steps.make.outputs.new_clips == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run restore-daily-video.yml --ref "${{ github.ref_name }}"
