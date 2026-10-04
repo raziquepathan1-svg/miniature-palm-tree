@@ -1,0 +1,81 @@
+name: Voice clone - test my voice
+
+# Makes a short MP3 in your cloned voice so you can listen before it is used in the videos.
+# Needs the VOICE_KEY secret (it unlocks voice/voice_sample.wav.enc).
+on:
+  workflow_dispatch:
+    inputs:
+      text:
+        description: "What the voice should say (leave empty for the standard test)"
+        required: false
+        default: ""
+
+permissions:
+  contents: read
+
+jobs:
+  test-voice:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Cache voice models
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cache/kokoro
+            ~/.cache/huggingface
+          key: voice-models-clone-v1
+
+      - name: Install
+        run: |
+          sudo apt-get update -q && sudo apt-get install -y -q ffmpeg
+          pip install -r requirements.txt
+          pip install torch==2.6.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cpu
+          pip install chatterbox-tts
+
+      - name: Unlock the voice sample
+        env:
+          VOICE_KEY: ${{ secrets.VOICE_KEY }}
+        run: |
+          if [ -z "$VOICE_KEY" ]; then echo "::error::Add the VOICE_KEY secret first."; exit 1; fi
+          openssl enc -d -aes-256-cbc -pbkdf2 -iter 200000 -in voice/voice_sample.wav.enc \
+            -out "$RUNNER_TEMP/voice_sample.wav" -pass env:VOICE_KEY
+          echo "VOICE_SAMPLE=$RUNNER_TEMP/voice_sample.wav" >> "$GITHUB_ENV"
+
+      - name: Speak
+        env:
+          TEXT: ${{ inputs.text }}
+        run: |
+          python - <<'EOF'
+          import os, time
+          from pathlib import Path
+          from youtube_agent import voice
+          text = os.environ.get("TEXT") or (
+              "Hello and welcome to Health Support Studio. Today we're talking about sleep, and three simple "
+              "habits that can help you feel better this week. "
+              "And now, watch this abandoned rooftop come back to life. The workers clean it, build a new deck, "
+              "and add plants and lights. Which place should we restore next?")
+          out = Path("voice_test"); out.mkdir(exist_ok=True)
+          t = time.time()
+          dur, _ = voice.narrate_scene(text, {"engine": "clone"}, out / "my_voice.wav")
+          took = time.time() - t
+          print(f"{dur:.1f} s of speech took {took:.0f} s ({took / dur:.1f}x real time)")
+          with open(os.environ["GITHUB_STEP_SUMMARY"], "a") as f:
+              f.write(f"## Voice test\n- {dur:.1f} s of speech made in {took:.0f} s ({took / dur:.1f}x real time)\n"
+                      "- Download **my-voice-test** below and listen.\n")
+          EOF
+          ffmpeg -y -loglevel error -i voice_test/my_voice.wav -b:a 160k voice_test/my_voice.mp3
+          rm voice_test/my_voice.wav "$VOICE_SAMPLE"
+
+      - name: Save the test for listening
+        uses: actions/upload-artifact@v4
+        with:
+          name: my-voice-test
+          path: voice_test/
+          retention-days: 3

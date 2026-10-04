@@ -1,6 +1,10 @@
-"""Free AI narration with Kokoro TTS (Apache-2.0, commercial use allowed, runs on CPU).
+"""Free AI narration: Kokoro TTS (Apache-2.0, runs on CPU) or a clone of your own voice (Chatterbox, MIT).
 
 Produces one WAV per scene plus caption timings, so subtitles line up with the voice.
+
+Your voice: set `voice: {engine: clone}` in config.yaml. The workflow decrypts voice/voice_sample.wav.enc with
+the VOICE_KEY secret into VOICE_SAMPLE; Chatterbox then speaks in that voice. If anything about the clone
+fails (no key, model download, out of memory), the Kokoro voice is used so the video still gets made.
 """
 
 import os
@@ -20,6 +24,8 @@ SCENE_TAIL = 0.50      # extra silence at the end of each scene
 CAPTION_MAX_WORDS = 7  # words per on-screen caption
 
 _kokoro = None
+_clone = None
+_clone_failed = False
 
 
 def _download(url: str, dest: Path) -> None:
@@ -52,8 +58,53 @@ def list_voices() -> list[str]:
     return sorted(_engine().get_voices())
 
 
-def synthesize(text: str, voice: str, speed: float) -> tuple[np.ndarray, int]:
+def _clone_engine(voice_cfg: dict):
+    """Chatterbox, conditioned once on your voice sample; None if it can't be used (Kokoro is used instead)."""
+    global _clone, _clone_failed
+    if _clone_failed:
+        return None
+    if _clone is not None:
+        return _clone
+    sample = os.environ.get("VOICE_SAMPLE", "")
+    if not sample or not Path(sample).exists():
+        print("  (Voice clone: no voice sample - is the VOICE_KEY secret set? Using the standard AI voice.)")
+        _clone_failed = True
+        return None
+    try:
+        import torch
+        from chatterbox.tts import ChatterboxTTS
+
+        torch.set_num_threads(os.cpu_count() or 4)
+        device = "cuda" if torch.cuda.is_available() else "cpu"
+        print(f"  Loading your cloned voice ({device})...")
+        model = ChatterboxTTS.from_pretrained(device=device)
+        model.prepare_conditionals(sample, exaggeration=float(voice_cfg.get("exaggeration", 0.5)))
+        _clone = model
+    except Exception as e:  # never lose a video over the voice
+        print(f"  (Voice clone unavailable, using the standard AI voice: {e})")
+        _clone_failed = True
+    return _clone
+
+
+def synthesize(text: str, voice: str, speed: float, voice_cfg: dict | None = None) -> tuple[np.ndarray, int]:
     """Return mono float32 audio for one sentence."""
+    voice_cfg = voice_cfg or {}
+    if voice_cfg.get("engine") == "clone":
+        model = _clone_engine(voice_cfg)
+        if model is not None:
+            import torch
+
+            try:
+                with torch.inference_mode():
+                    wav = model.generate(text, exaggeration=float(voice_cfg.get("exaggeration", 0.5)),
+                                         cfg_weight=float(voice_cfg.get("cfg_weight", 0.5)),
+                                         temperature=float(voice_cfg.get("temperature", 0.8)))
+                return wav.squeeze(0).cpu().numpy().astype(np.float32), model.sr  # 24 kHz, same as Kokoro
+            except Exception as e:
+                global _clone_failed
+                print(f"  (Voice clone failed on a sentence, using the standard AI voice from here: {e})")
+                _clone_failed = True
+        voice = voice_cfg.get("fallback_voice", "af_heart")
     return _engine().create(text, voice=voice, speed=speed, lang="en-us")
 
 
@@ -77,7 +128,7 @@ def narrate_scene(text: str, voice_cfg: dict, out_wav: Path) -> tuple[float, lis
     t = 0.0
     sample_rate = 24000
     for sentence in split_sentences(text):
-        audio, sample_rate = synthesize(sentence, voice, speed)
+        audio, sample_rate = synthesize(sentence, voice, speed, voice_cfg)
         dur = len(audio) / sample_rate
         # Spread the sentence's time over its caption chunks by length
         chunks = _caption_chunks(sentence)
