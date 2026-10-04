@@ -1,4 +1,19 @@
 {
   "pending": null,
-  "made": []
+  "made": [
+    {
+      "id": "20261004-1452-abandoned-garage-to-japandi-garage-1",
+      "name": "Abandoned garage to Japandi garage",
+      "space": "Empty garage",
+      "style": "Japandi",
+      "makeover_key": "Empty garage|Japandi"
+    },
+    {
+      "id": "20261004-1452-abandoned-bedroom-to-modern-luxury-bedroom-2",
+      "name": "Abandoned bedroom to Modern Luxury bedroom",
+      "space": "Empty bedroom",
+      "style": "Modern Luxury",
+      "makeover_key": "Empty bedroom|Modern Luxury"
+    }
+  ]
 }
