@@ -40,6 +40,11 @@ jobs:
         with:
           fetch-depth: 30   # to see when each clip was uploaded
 
+      - name: Use the newest files
+        # A run that waited in the queue would otherwise work on the files as they were when it was started,
+        # and re-make a makeover the previous run already published.
+        run: git fetch -q origin "${{ github.ref_name }}" && git reset -q --hard FETCH_HEAD
+
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
