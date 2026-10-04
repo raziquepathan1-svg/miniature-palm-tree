@@ -5,6 +5,8 @@ on:
     # 18:25 UTC = after the YouTube video goes public (1 PM New York) in both summer and winter
     # (~9:25 PM Saudi time). Posts only if the YouTube video is public.
     - cron: "25 18 * * *"
+    # Second daily Short goes public at 7 PM New York (23:00 UTC in summer, 00:00 in winter).
+    - cron: "25 0 * * *"
   workflow_dispatch:
     inputs:
       check_only:

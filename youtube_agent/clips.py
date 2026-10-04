@@ -254,6 +254,13 @@ def ai_note(size: tuple[int, int], out: Path) -> Path:
     return out
 
 
+def _with_overlay(video: Path, overlay: Path, out: Path) -> Path:
+    _run(["-y", "-i", str(video), "-i", str(overlay), "-filter_complex", "[0:v][1:v]overlay=0:0:format=auto,"
+          "format=yuv420p[v]", "-map", "[v]", "-map", "0:a", "-c:v", "libx264", "-preset", "veryfast", "-crf", "19",
+          "-c:a", "copy", "-video_track_timescale", "15360", str(out)])
+    return out
+
+
 def finish(body: Path, overlays: list[tuple[Path, float | None]], music_vol: float, out: Path,
            rng: random.Random, narration: Path | None = None, narration_start: float = 0.8) -> Path:
     """Overlays on the joined video (each until its end time, or the whole video), the clips' sound with
@@ -378,7 +385,19 @@ def make_short(group: list[Path], workdir: Path, cfg: dict, rng: random.Random,
         print(f"  Short makeover ({total:.0f} s) - playing at {speed:.2f}x")
     norm = [normalize(p, work / f"n{i}_v.mp4", (SW, SH), speed) for i, p in enumerate(group)]
     body = join(norm, work / "body_v.mp4")
-    full = join([body, reveal(before, after, (SW, SH), work)], work / "full_v.mp4", fade=0.4)
+    parts = [body]
+    min_len = cfg.get("min_short_seconds", 30)
+    if probe(body)[0] + 6.5 < min_len:  # too short for a good Short: show the whole makeover once more, faster
+        need = min_len - probe(body)[0] - 6.0
+        rate = min(1.5, max(0.8, (total - 1.0) / max(need, 1.0)))
+        print(f"  Adding a replay at {rate:.1f}x so the Short is long enough")
+        fast = [normalize(p, work / f"r{i}_v.mp4", (SW, SH), rate) for i, p in enumerate(group)]
+        replay = join(fast, work / "replay_v.mp4")
+        tag = makeover._label("ONE MORE TIME" if rate < 1.2 else f"REPLAY {rate:.1f}X", (SW, SH), (245, 158, 11),
+                              work / "replay_label.png")
+        parts.append(_with_overlay(replay, tag, work / "replay_tag_v.mp4"))
+    parts.append(reveal(before, after, (SW, SH), work))
+    full = join(parts, work / "full_v.mp4", fade=0.4)
     hook = title_overlay(meta.get("hook") or meta["title"], (SW, SH), work / "hook_v.png")
     note = ai_note((SW, SH), work / "ai_v.png")
     social = workdir / "social"
@@ -400,11 +419,17 @@ def _footer(config: dict) -> str:
 
 
 def _next_slot(yt: dict, history: list[dict], kind: str) -> dt.datetime:
+    """The next free publish time for this kind of video. Shorts can have several slots a day
+    (clip_publish_times); each new Short takes the earliest slot after the last one scheduled."""
     times = [dt.datetime.fromisoformat(h["publish_at"].replace("Z", "+00:00")) for h in history
              if h.get("publish_at") and h.get("kind") == kind]
-    key = "compilation_publish_time" if kind == "compilation" else "clip_publish_time"
-    return next_publish_time(yt.get(key) or yt.get("auto_publish_time", "13:00"),
-                             yt.get("auto_publish_timezone", "America/New_York"), after=max(times) if times else None)
+    last = max(times) if times else None
+    tz = yt.get("auto_publish_timezone", "America/New_York")
+    if kind == "compilation":
+        slots = [yt.get("compilation_publish_time") or "11:00"]
+    else:
+        slots = yt.get("clip_publish_times") or [yt.get("clip_publish_time") or yt.get("auto_publish_time", "13:00")]
+    return min(next_publish_time(t, tz, after=last) for t in slots)
 
 
 def process_inbox(config: dict, history: list[dict], dry_run: bool) -> int:

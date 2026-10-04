@@ -118,7 +118,7 @@ youtube:
   category_id: "26"            # 26 = Howto & Style
   made_for_kids: false
   contains_synthetic_media: true
-  clip_publish_time: "13:00"          # Shorts made from your clips: one per day
+  clip_publish_times: ["13:00", "19:00"]  # two Shorts a day (New York time = 8 PM and 2 AM Saudi in summer)
   compilation_publish_time: "11:00"   # long compilations
   clip_description_footer: |-
     This makeover is an AI-generated video (a concept, not a real renovation or real people).
@@ -138,7 +138,8 @@ clips:
   wait_hours: 6
   group_gap_hours: 3           # clips made further apart than this (Flow file times) are different makeovers
   music_volume: 0.18           # soft music under the clips' own work sounds
-  compilation_min_makeovers: 5 # a long video once this many new makeovers are ready
+  compilation_min_makeovers: 6 # a long video (about 3-4 min) once this many new makeovers are ready
+  min_short_seconds: 30        # shorter makeovers get a fast replay so each Short is at least this long
   compilation_playlist: "Makeover Compilations"
   compilation_titles:
     - "{n} Satisfying Makeovers: Abandoned to Amazing"
