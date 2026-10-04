@@ -256,21 +256,30 @@ def ai_note(size: tuple[int, int], out: Path) -> Path:
 
 
 def finish(body: Path, overlays: list[tuple[Path, float | None]], music_vol: float, out: Path,
-           rng: random.Random) -> Path:
+           rng: random.Random, narration: Path | None = None, narration_start: float = 0.8) -> Path:
     """Overlays on the joined video (each until its end time, or the whole video), the clips' sound with
-    soft music underneath, loudness evened out for phones."""
+    soft music underneath and the host's narration on top, loudness evened out for phones."""
     dur, _ = probe(body)
     music = makeover._music(dur, out.parent / f"music_{out.stem}.m4a", rng)
     inputs = ["-i", str(body), "-i", str(music)]
+    if narration:
+        inputs += ["-i", str(narration)]
     chain, prev = [], "0:v"
+    first = 3 if narration else 2
     for i, (ov, until) in enumerate(overlays):
         inputs += ["-i", str(ov)]
         en = f":enable='lte(t,{until:.2f})'" if until else ""
-        chain.append(f"[{prev}][{i + 2}:v]overlay=0:0:format=auto{en}[o{i}]")
+        chain.append(f"[{prev}][{i + first}:v]overlay=0:0:format=auto{en}[o{i}]")
         prev = f"o{i}"
     chain.append(f"[{prev}]format=yuv420p[v]")
-    chain.append(f"[1:a]volume={music_vol}[m];[0:a][m]amix=inputs=2:duration=first:normalize=0,"
-                 "loudnorm=I=-15:TP=-1.5:LRA=11[a]")
+    if narration:  # work sounds and music step back while the host talks
+        ms = int(narration_start * 1000)
+        chain.append(f"[1:a]volume={music_vol * 0.6:.3f}[m];[0:a]volume=0.45[c];"
+                     f"[2:a]aresample=48000,aformat=channel_layouts=stereo,adelay={ms}|{ms},volume=1.6[n];"
+                     "[c][m][n]amix=inputs=3:duration=first:normalize=0,loudnorm=I=-15:TP=-1.5:LRA=11[a]")
+    else:
+        chain.append(f"[1:a]volume={music_vol}[m];[0:a][m]amix=inputs=2:duration=first:normalize=0,"
+                     "loudnorm=I=-15:TP=-1.5:LRA=11[a]")
     _run(["-y", *inputs, "-filter_complex", ";".join(chain), "-map", "[v]", "-map", "[a]", "-c:v", "libx264",
           "-preset", "veryfast", "-crf", "20", "-c:a", "aac", "-b:a", "192k", "-ar", "48000",
           "-movflags", "+faststart", str(out)])
@@ -296,7 +305,10 @@ def describe(before: Path, after: Path, names: list[str], cfg: dict, rng: random
     return {"title": title, "short_title": title, "hook": f"Watch this abandoned {place} come back to life",
             "before": "ABANDONED", "after": "DREAM " + place.upper(),
             "caption": f"Watch this abandoned {place} come back to life 😍 Would you live here?",
-            "tags": [f"{place} makeover", f"{place} transformation", f"abandoned {place}"]}
+            "tags": [f"{place} makeover", f"{place} transformation", f"abandoned {place}"],
+            "narration": (f"This {place} was completely abandoned. Trash everywhere, dirt, and broken things. "
+                          "Watch as the crew cleans it up, rebuilds it piece by piece, and brings it back to life. "
+                          f"Now look at it. Would you spend your evenings here?")}
 
 
 def _gemini_describe(before: Path, after: Path, hint: str, cfg: dict) -> dict:
@@ -308,7 +320,10 @@ def _gemini_describe(before: Path, after: Path, hint: str, cfg: dict) -> dict:
         '"hook" (max 45 chars, shown on screen in the first seconds, no emoji), '
         '"before" (max 2 words, upper case, e.g. "ABANDONED ROOFTOP"), "after" (max 2 words, e.g. "DREAM TERRACE"), '
         '"caption" (1-2 sentences for Instagram/Facebook ending with a question, max 2 emoji, no hashtags), '
-        '"tags" (8 lowercase YouTube tags). Do not claim it is a real project or real people.')}]
+        '"tags" (8 lowercase YouTube tags), '
+        '"narration" (what the host says over the video: 3-4 short spoken sentences, 45-60 words in total, '
+        'friendly storytelling about the place being cleaned, rebuilt and revealed, ending with a question to '
+        'the viewer; plain words, no emoji, no numbers as digits). Do not claim it is a real project or real people.')}]
     for p in (before, after):
         img = Image.open(p).convert("RGB")
         img.thumbnail((768, 768))
@@ -331,7 +346,24 @@ def _gemini_describe(before: Path, after: Path, hint: str, cfg: dict) -> dict:
 
 
 # ---------------------------------------------------------------- one makeover
-def make_short(group: list[Path], workdir: Path, cfg: dict, rng: random.Random) -> dict:
+def narrate(text: str, voice_cfg: dict, out: Path, max_seconds: float) -> Path | None:
+    """The host's narration in the channel voice (your clone when set up); None if it can't be made or
+    is longer than the video."""
+    from . import voice
+
+    try:
+        dur, _ = voice.narrate_scene(text, voice_cfg, out)
+    except Exception as e:
+        print(f"  (No narration: {e})")
+        return None
+    if dur > max_seconds:
+        print(f"  (Narration is {dur:.0f} s, longer than the video - left out)")
+        return None
+    return out
+
+
+def make_short(group: list[Path], workdir: Path, cfg: dict, rng: random.Random,
+               voice_cfg: dict | None = None) -> dict:
     work = workdir / "build"
     work.mkdir(parents=True, exist_ok=True)
     before = frame(group[0], work / "before.jpg", last=False)
@@ -347,7 +379,12 @@ def make_short(group: list[Path], workdir: Path, cfg: dict, rng: random.Random) 
     note = ai_note((SW, SH), work / "ai_v.png")
     social = workdir / "social"
     social.mkdir(exist_ok=True)
-    short = finish(full, [(hook, 2.6), (note, None)], cfg.get("music_volume", 0.18), social / "short.mp4", rng)
+    speech = None
+    if voice_cfg and cfg.get("narration", True) and meta.get("narration"):
+        print("  Recording the narration...")
+        speech = narrate(meta["narration"], voice_cfg, work / "narration.wav", probe(full)[0] - 1.5)
+    short = finish(full, [(hook, 2.6), (note, None)], cfg.get("music_volume", 0.18), social / "short.mp4", rng,
+                   narration=speech)
     meta["clips"] = [p.name for p in group]
     meta["duration"] = round(probe(short)[0], 1)
     return {"short": short, "meta": meta, "before": before, "after": after}
@@ -385,7 +422,7 @@ def process_inbox(config: dict, history: list[dict], dry_run: bool) -> int:
         rng = random.Random(sum(p.stat().st_size for p in group))
         stamp = (_made_at(group[0]) or dt.datetime.now()).strftime("%Y%m%d-%H%M")
         workdir = OUTPUT_DIR / f"{stamp}-clips"
-        made = make_short(group, workdir, cfg, rng)
+        made = make_short(group, workdir, cfg, rng, config.get("voice"))
         meta = made["meta"]
         slug = f"{stamp}-{slugify(meta['title'])[:40]}"
         tags = list(dict.fromkeys(meta.get("tags", []) + cfg.get("tags", [])))[:15]

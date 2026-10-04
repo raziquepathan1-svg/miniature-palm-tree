@@ -91,8 +91,14 @@ video:
 # American English voices: af_heart, af_bella, af_nicole, af_sarah (female);
 # am_michael, am_fenrir, am_puck (male). Try them with: python -m youtube_agent.main --voice-sample
 voice:
-  voice: "af_heart"
-  speed: 1.0
+  # Your own cloned voice (voice/voice_sample.wav.enc, unlocked with the VOICE_KEY secret).
+  # If the clone can't run, fallback_voice is used so the video still gets made.
+  engine: "clone"
+  speed: 1.1                   # 1.0 = natural pace of the clone
+  cfg_weight: 0.3              # pace setting: lower = quicker, livelier
+  exaggeration: 0.5            # 0.3 calm ... 0.8 very expressive
+  fallback_voice: "am_michael"
+  voice: "am_michael"          # Kokoro voice when engine is not "clone"
 
 # ---- Your avatar (HeyGen, only used when video.mode is "avatar") ----
 # Run `python -m youtube_agent.main --list-avatars` to see your IDs.
