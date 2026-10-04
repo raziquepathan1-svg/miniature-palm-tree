@@ -1,10 +1,12 @@
 name: Restore Remake Studio - free AI clips (Kaggle)
 
 on:
-  schedule:
-    # Every 4 hours: collects the clips of a finished Kaggle run into rrs_inbox/ and starts a new run when
-    # fewer than ai_video.buffer_days Shorts are waiting. It never waits for Kaggle, so each run is ~2 min.
-    - cron: "37 */4 * * *"
+  # PAUSED: the first Kaggle clips (512x768, garage never transformed) weren't good enough to post.
+  # Remove the # marks to turn it back on once the clips look right.
+  # schedule:
+  #   # Every 4 hours: collects the clips of a finished Kaggle run into rrs_inbox/ and starts a new run when
+  #   # fewer than ai_video.buffer_days Shorts are waiting. It never waits for Kaggle, so each run is ~2 min.
+  #   - cron: "37 */4 * * *"
   workflow_dispatch:
     inputs:
       wait:
