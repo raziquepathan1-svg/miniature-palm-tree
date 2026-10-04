@@ -10,13 +10,13 @@ on:
         required: false
         default: ""
       speed:
-        description: "Speaking speed (1.0 = as generated, 1.15 = a bit faster)"
+        description: "Speaking speed (1.0 = as generated, 1.1 = a bit faster)"
         required: false
-        default: "1.15"
+        default: "1.1"
       pace:
-        description: "Pace setting 0.1-0.7 (lower = quicker, livelier pace)"
+        description: "Clone pace/accent setting 0-0.7 (lower = less of your own accent, quicker)"
         required: false
-        default: "0.3"
+        default: "0.0"
 
 permissions:
   contents: read
@@ -71,21 +71,24 @@ jobs:
               "habits that can help you feel better this week. "
               "And now, watch this abandoned rooftop come back to life. The workers clean it, build a new deck, "
               "and add plants and lights. Which place should we restore next?")
+          speed = float(os.environ.get("SPEED") or 1.1)
+          tests = {
+              "A_my_clone": {"engine": "clone", "speed": speed, "cfg_weight": float(os.environ.get("PACE") or 0.0)},
+              "B_american_in_my_voice": {"engine": "convert", "base_voice": "am_michael", "speed": speed},
+          }
           out = Path("voice_test"); out.mkdir(exist_ok=True)
-          t = time.time()
-          cfg = {"engine": "clone", "speed": float(os.environ.get("SPEED") or 1.15),
-                 "cfg_weight": float(os.environ.get("PACE") or 0.3)}
-          print("Settings:", cfg)
-          dur, _ = voice.narrate_scene(text, cfg, out / "my_voice.wav")
-          took = time.time() - t
-          print(f"{dur:.1f} s of speech took {took:.0f} s ({took / dur:.1f}x real time)")
+          lines = ["## Voice test - listen to both and pick A or B"]
+          for name, cfg in tests.items():
+              t = time.time()
+              dur, _ = voice.narrate_scene(text, cfg, out / f"{name}.wav")
+              took = time.time() - t
+              print(f"{name}: {cfg} -> {dur:.1f} s of speech in {took:.0f} s")
+              lines.append(f"- **{name}**: {dur:.1f} s of speech made in {took:.0f} s ({took / dur:.1f}x real time)")
           with open(os.environ["GITHUB_STEP_SUMMARY"], "a") as f:
-              f.write(f"## Voice test (speed {cfg['speed']}, pace {cfg['cfg_weight']})\n"
-                      f"- {dur:.1f} s of speech made in {took:.0f} s ({took / dur:.1f}x real time)\n"
-                      "- Download **my-voice-test** below and listen.\n")
+              f.write("\n".join(lines) + "\n")
           EOF
-          ffmpeg -y -loglevel error -i voice_test/my_voice.wav -b:a 160k voice_test/my_voice.mp3
-          rm voice_test/my_voice.wav "$VOICE_SAMPLE"
+          for f in voice_test/*.wav; do ffmpeg -y -loglevel error -i "$f" -b:a 160k "${f%.wav}.mp3" && rm "$f"; done
+          rm "$VOICE_SAMPLE"
 
       - name: Save the test for listening
         uses: actions/upload-artifact@v4
