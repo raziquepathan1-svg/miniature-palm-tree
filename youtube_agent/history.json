@@ -77,5 +77,16 @@
     "script_file": "004-hands-only-cpr.yaml",
     "youtube_id": "xx7SmrWj7Jg",
     "publish_at": "2026-10-04T16:00:00Z"
+  },
+  {
+    "date": "2026-10-04T05:23:59",
+    "topic": "Dehydration: signs to watch for in kids and older adults",
+    "requested_topic": "Dehydration: signs to watch for in kids and older adults",
+    "title": "Dehydration Warning Signs in Kids and Older Adults",
+    "style": "Warning Signs",
+    "script_file": "005-dehydration-signs.yaml",
+    "youtube_id": "selS9_QfgJE",
+    "publish_at": "2026-10-05T16:00:00Z",
+    "short_youtube_id": "15HONB9EDTY"
   }
 ]
