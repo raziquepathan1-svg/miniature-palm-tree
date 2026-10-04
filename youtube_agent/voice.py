@@ -171,7 +171,7 @@ def synthesize(text: str, voice: str, speed: float, voice_cfg: dict | None = Non
             try:
                 with torch.inference_mode():
                     wav = model.generate(text, exaggeration=float(voice_cfg.get("exaggeration", 0.5)),
-                                         cfg_weight=float(voice_cfg.get("cfg_weight", 0.3)),
+                                         cfg_weight=max(0.05, float(voice_cfg.get("cfg_weight", 0.3))),  # 0 crashes
                                          temperature=float(voice_cfg.get("temperature", 0.8)))
                 audio = _trim(wav.squeeze(0).cpu().numpy().astype(np.float32), model.sr)
                 return _tempo(audio, model.sr, speed), model.sr  # 24 kHz, same as Kokoro
