@@ -26,6 +26,8 @@ CAPTION_MAX_WORDS = 7  # words per on-screen caption
 _kokoro = None
 _clone = None
 _clone_failed = False
+_vc = None
+_vc_failed = False
 
 
 def _download(url: str, dest: Path) -> None:
@@ -86,6 +88,78 @@ def _clone_engine(voice_cfg: dict):
     return _clone
 
 
+def _convert_engine():
+    """Chatterbox voice conversion: turns any speech into your voice, keeping its accent and timing."""
+    global _vc, _vc_failed
+    if _vc_failed:
+        return None
+    if _vc is not None:
+        return _vc
+    sample = os.environ.get("VOICE_SAMPLE", "")
+    try:
+        if not sample or not Path(sample).exists():
+            raise RuntimeError("no voice sample - is the VOICE_KEY secret set?")
+        import torch
+        from chatterbox.vc import ChatterboxVC
+
+        torch.set_num_threads(os.cpu_count() or 4)
+        device = "cuda" if torch.cuda.is_available() else "cpu"
+        print(f"  Loading the voice converter ({device})...")
+        _vc = ChatterboxVC.from_pretrained(device=device)
+        _vc.set_target_voice(sample)
+    except Exception as e:
+        print(f"  (Voice conversion unavailable, keeping the standard AI voice: {e})")
+        _vc_failed = True
+    return _vc
+
+
+def convert_file(wav_path: Path) -> bool:
+    """Re-speak a finished WAV in your voice (same length, so caption timings stay right)."""
+    vc = _convert_engine()
+    if vc is None:
+        return False
+    try:
+        import torch
+
+        with torch.inference_mode():
+            wav = vc.generate(str(wav_path))
+        audio = wav.squeeze(0).cpu().numpy().astype(np.float32)
+        peak = float(np.abs(audio).max() or 1.0)
+        _write_wav(wav_path, audio * min(1.0, 0.95 / peak), vc.sr)
+        return True
+    except Exception as e:
+        print(f"  (Voice conversion failed for this scene, keeping the standard AI voice: {e})")
+        return False
+
+
+def _trim(audio: np.ndarray, sample_rate: int, keep: float = 0.04) -> np.ndarray:
+    """Cut the silence the clone leaves before and after each sentence (the pause is added separately)."""
+    loud = np.flatnonzero(np.abs(audio) > 0.02)
+    if not len(loud):
+        return audio
+    pad = int(keep * sample_rate)
+    return audio[max(0, loud[0] - pad):loud[-1] + pad]
+
+
+def _tempo(audio: np.ndarray, sample_rate: int, speed: float) -> np.ndarray:
+    """Faster or slower speech without changing the pitch (ffmpeg atempo)."""
+    if abs(speed - 1.0) < 0.01:
+        return audio
+    import subprocess
+    import tempfile
+
+    from .editor import ffmpeg_bin
+
+    with tempfile.TemporaryDirectory() as tmp:
+        src, dst = Path(tmp) / "in.wav", Path(tmp) / "out.wav"
+        _write_wav(src, audio, sample_rate)
+        subprocess.run([ffmpeg_bin(), "-y", "-loglevel", "error", "-i", str(src), "-af", f"atempo={speed:.3f}",
+                        str(dst)], check=True)
+        with wave.open(str(dst), "rb") as w:
+            pcm = np.frombuffer(w.readframes(w.getnframes()), dtype=np.int16)
+    return pcm.astype(np.float32) / 32767
+
+
 def synthesize(text: str, voice: str, speed: float, voice_cfg: dict | None = None) -> tuple[np.ndarray, int]:
     """Return mono float32 audio for one sentence."""
     voice_cfg = voice_cfg or {}
@@ -97,9 +171,10 @@ def synthesize(text: str, voice: str, speed: float, voice_cfg: dict | None = Non
             try:
                 with torch.inference_mode():
                     wav = model.generate(text, exaggeration=float(voice_cfg.get("exaggeration", 0.5)),
-                                         cfg_weight=float(voice_cfg.get("cfg_weight", 0.5)),
+                                         cfg_weight=float(voice_cfg.get("cfg_weight", 0.3)),
                                          temperature=float(voice_cfg.get("temperature", 0.8)))
-                return wav.squeeze(0).cpu().numpy().astype(np.float32), model.sr  # 24 kHz, same as Kokoro
+                audio = _trim(wav.squeeze(0).cpu().numpy().astype(np.float32), model.sr)
+                return _tempo(audio, model.sr, speed), model.sr  # 24 kHz, same as Kokoro
             except Exception as e:
                 global _clone_failed
                 print(f"  (Voice clone failed on a sentence, using the standard AI voice from here: {e})")
@@ -122,7 +197,10 @@ def narrate_scene(text: str, voice_cfg: dict, out_wav: Path) -> tuple[float, lis
     """Speak one scene. Returns (duration_seconds, [(start, end, caption_text), ...])."""
     voice = voice_cfg.get("voice", "af_heart")
     speed = float(voice_cfg.get("speed", 1.0))
+    if voice_cfg.get("engine") == "convert":  # American voice first, then turned into your voice
+        voice = voice_cfg.get("base_voice", "am_michael")
 
+    pause = float(voice_cfg.get("pause", 0.18 if voice_cfg.get("engine") == "clone" else SENTENCE_PAUSE))
     pieces: list[np.ndarray] = []
     captions: list[tuple[float, float, str]] = []
     t = 0.0
@@ -138,12 +216,14 @@ def narrate_scene(text: str, voice_cfg: dict, out_wav: Path) -> tuple[float, lis
             end = start + dur * len(c) / total_chars
             captions.append((start, end, c))
             start = end
-        pieces += [audio.astype(np.float32), np.zeros(int(SENTENCE_PAUSE * sample_rate), np.float32)]
-        t += dur + SENTENCE_PAUSE
+        pieces += [audio.astype(np.float32), np.zeros(int(pause * sample_rate), np.float32)]
+        t += dur + pause
     pieces.append(np.zeros(int(SCENE_TAIL * sample_rate), np.float32))
     audio = np.concatenate(pieces) if pieces else np.zeros(sample_rate, np.float32)
 
     _write_wav(out_wav, audio, sample_rate)
+    if voice_cfg.get("engine") == "convert":
+        convert_file(out_wav)
     return len(audio) / sample_rate, captions
 
 
