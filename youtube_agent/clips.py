@@ -1,0 +1,539 @@
+"""Makeover Shorts from AI video clips you make yourself (Google Flow, Dreamina, Qwen...).
+
+You upload the clips of one makeover (usually 3 clips of ~8 seconds: clean up, build, finish) into the
+`rrs_inbox/` folder of the repository. This joins them into a vertical Short with a title, the clips' own
+work sounds plus soft music, and a BEFORE -> AFTER reveal at the end, then schedules it on YouTube (with
+the "altered or synthetic content" label) and leaves it ready for the Instagram/Facebook workflow.
+The clips are then moved to `rrs_clips/<date>-<name>/`, where the weekly long compilation finds them.
+
+Clips belong to the same makeover when they are uploaded together. Files named by Google Flow end in a
+timestamp (..._20261004133358.mp4); clips made more than `group_gap_hours` apart are treated as different
+makeovers, and they are joined in the order they were made (otherwise in name order).
+
+Usage (from the repo root; the workflow sets CHANNEL=restore_remake):
+    CHANNEL=restore_remake python -m youtube_agent.clips              # process the inbox and upload
+    CHANNEL=restore_remake python -m youtube_agent.clips --dry-run    # make the videos, don't upload or move
+    CHANNEL=restore_remake python -m youtube_agent.clips --compile    # weekly long compilation
+"""
+
+import argparse
+import base64
+import datetime as dt
+import io
+import json
+import os
+import random
+import re
+import shutil
+import subprocess
+from pathlib import Path
+
+import requests
+from PIL import Image
+
+from . import makeover, visuals
+from .editor import ffmpeg_bin
+from .main import (OUTPUT_DIR, load_config, load_history, next_publish_time, save_history, slugify,
+                   write_summary)
+
+ROOT = Path(__file__).resolve().parent.parent
+INBOX = ROOT / "rrs_inbox"
+DONE = ROOT / "rrs_clips"
+VIDEO_EXT = {".mp4", ".mov", ".m4v", ".webm"}
+FPS = 30
+SW, SH = 1080, 1920        # Short
+W, H = 1920, 1080          # long compilation
+TEXT_MODEL = os.environ.get("GEMINI_TEXT_MODEL", "gemini-2.5-flash")
+
+
+# ---------------------------------------------------------------- inbox
+def _made_at(p: Path) -> dt.datetime | None:
+    m = re.search(r"(20\d{6})[_-]?(\d{6})", p.stem)
+    if not m:
+        return None
+    try:
+        return dt.datetime.strptime(m.group(1) + m.group(2), "%Y%m%d%H%M%S")
+    except ValueError:
+        return None
+
+
+def inbox_groups(gap_hours: float) -> list[list[Path]]:
+    """Clips in the inbox, split into makeovers. Sub-folders are one makeover each; loose files are split
+    wherever two clips were made more than gap_hours apart."""
+    if not INBOX.exists():
+        return []
+    groups = []
+    for d in sorted(p for p in INBOX.iterdir() if p.is_dir()):
+        clips = sorted((p for p in d.iterdir() if p.suffix.lower() in VIDEO_EXT),
+                       key=lambda p: (_made_at(p) or dt.datetime.min, p.name))
+        if clips:
+            groups.append(clips)
+    loose = sorted((p for p in INBOX.iterdir() if p.is_file() and p.suffix.lower() in VIDEO_EXT),
+                   key=lambda p: (_made_at(p) or dt.datetime.min, p.name))
+    current: list[Path] = []
+    for p in loose:
+        if current:
+            a, b = _made_at(current[-1]), _made_at(p)
+            if a and b and (b - a).total_seconds() > gap_hours * 3600:
+                groups.append(current)
+                current = []
+        current.append(p)
+    if current:
+        groups.append(current)
+    return groups
+
+
+def ready(group: list[Path], want: int, wait_hours: float) -> bool:
+    """A makeover is made once all its clips are in, or when the last clip has waited long enough
+    (so a makeover with fewer clips still gets published)."""
+    if len(group) >= want:
+        return True
+    newest = max(p.stat().st_mtime for p in group)
+    git_time = _git_added_time(group[-1])
+    newest = max(newest, git_time or 0)
+    return (dt.datetime.now().timestamp() - newest) > wait_hours * 3600
+
+
+def _git_added_time(p: Path) -> float | None:
+    r = subprocess.run(["git", "log", "-1", "--format=%ct", "--", str(p)], cwd=ROOT, capture_output=True, text=True)
+    try:
+        return float(r.stdout.strip())
+    except ValueError:
+        return None
+
+
+# ---------------------------------------------------------------- ffmpeg helpers
+def _run(args: list[str]) -> None:
+    r = subprocess.run([ffmpeg_bin(), "-hide_banner", "-loglevel", "error", *args], capture_output=True, text=True)
+    if r.returncode:
+        raise RuntimeError(f"ffmpeg failed: {r.stderr[-1500:]}")
+
+
+def probe(path: Path) -> tuple[float, bool]:
+    """(duration in seconds, has audio) read from ffmpeg's own output, so ffprobe isn't needed."""
+    r = subprocess.run([ffmpeg_bin(), "-hide_banner", "-i", str(path)], capture_output=True, text=True)
+    m = re.search(r"Duration: (\d+):(\d+):([\d.]+)", r.stderr)
+    dur = int(m.group(1)) * 3600 + int(m.group(2)) * 60 + float(m.group(3)) if m else 8.0
+    return dur, bool(re.search(r"Stream #.*Audio", r.stderr))
+
+
+def frame(path: Path, out: Path, last: bool) -> Path:
+    args = ["-y", "-sseof", "-0.15"] if last else ["-y", "-ss", "0.05"]
+    _run([*args, "-i", str(path), "-frames:v", "1", "-update", "1", "-q:v", "2", str(out)])
+    return out
+
+
+def normalize(src: Path, out: Path, size: tuple[int, int], speed: float = 1.0) -> Path:
+    """Same size, frame rate and audio format for every clip. Vertical clips in a landscape video sit on a
+    blurred copy of themselves; clips without sound get silence."""
+    w, h = size
+    dur, has_audio = probe(src)
+    pts = f",setpts=PTS/{speed}" if speed != 1.0 else ""
+    if h > w:
+        vf = (f"[0:v]scale={w}:{h}:force_original_aspect_ratio=increase,crop={w}:{h},fps={FPS}{pts},"
+              "setsar=1,format=yuv420p[v]")
+    else:
+        vf = (f"[0:v]split[a][b];[a]scale={w}:{h}:force_original_aspect_ratio=increase,crop={w}:{h},boxblur=30:3,"
+              f"eq=brightness=-0.08[bg];[b]scale=-2:{h}[fg];[bg][fg]overlay=(W-w)/2:0,fps={FPS}{pts},"
+              "setsar=1,format=yuv420p[v]")
+    if has_audio:
+        af = "[0:a]aresample=48000,aformat=channel_layouts=stereo" + (f",atempo={speed}" if speed != 1.0 else "")
+        af += "[a]"
+        inputs = ["-i", str(src)]
+    else:
+        af = "[1:a]anull[a]"
+        inputs = ["-i", str(src), "-f", "lavfi", "-t", f"{dur:.2f}", "-i", "anullsrc=r=48000:cl=stereo"]
+    _run(["-y", *inputs, "-filter_complex", f"{vf};{af}", "-map", "[v]", "-map", "[a]", "-t", f"{dur / speed:.2f}",
+          "-c:v", "libx264", "-preset", "veryfast", "-crf", "19", "-c:a", "aac", "-b:a", "192k", "-ar", "48000",
+          str(out)])
+    return out
+
+
+def join(clips: list[Path], out: Path, fade: float = 0.35) -> Path:
+    """Clips joined with a short cross-fade (picture and sound)."""
+    if len(clips) == 1:
+        shutil.copy(clips[0], out)
+        return out
+    durs = [probe(c)[0] for c in clips]
+    inputs, vchain, achain = [], [], []
+    for c in clips:
+        inputs += ["-i", str(c)]
+    offset, pv, pa = 0.0, "0:v", "0:a"
+    for i in range(1, len(clips)):
+        offset += durs[i - 1] - fade
+        vchain.append(f"[{pv}][{i}:v]xfade=transition=fade:duration={fade}:offset={offset:.3f}[v{i}]")
+        achain.append(f"[{pa}][{i}:a]acrossfade=d={fade}[a{i}]")
+        pv, pa = f"v{i}", f"a{i}"
+    _run(["-y", *inputs, "-filter_complex", ";".join(vchain + achain), "-map", f"[{pv}]", "-map", f"[{pa}]",
+          "-c:v", "libx264", "-preset", "veryfast", "-crf", "19", "-c:a", "aac", "-b:a", "192k", str(out)])
+    return out
+
+
+def still(img: Path, overlay: Path, dur: float, size: tuple[int, int], out: Path, zoom_in: bool = True) -> Path:
+    """A frame held for a moment with a slow zoom and a label; silent audio so it joins with the clips."""
+    w, h = size
+    n = int(dur * FPS)
+    z = "min(1+0.0012*on,1.1)" if zoom_in else "max(1.1-0.0012*on,1)"
+    if h > w:
+        base = f"[0:v]scale={w * 2}:{h * 2}:force_original_aspect_ratio=increase,crop={w * 2}:{h * 2}"
+    else:
+        base = (f"[0:v]split[p][q];[p]scale={w * 2}:{h * 2}:force_original_aspect_ratio=increase,crop={w * 2}:{h * 2},"
+                f"boxblur=40:3,eq=brightness=-0.08[bg];[q]scale=-2:{h * 2}[fg];[bg][fg]overlay=(W-w)/2:0")
+    vf = (f"{base},zoompan=z='{z}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d={n}:s={w}x{h}:fps={FPS},setsar=1[bg2];"
+          "[bg2][1:v]overlay=0:0:format=auto,format=yuv420p[v]")
+    _run(["-y", "-loop", "1", "-framerate", str(FPS), "-t", f"{dur}", "-i", str(img), "-i", str(overlay),
+          "-f", "lavfi", "-t", f"{dur}", "-i", "anullsrc=r=48000:cl=stereo", "-filter_complex", vf,
+          "-map", "[v]", "-map", "2:a", "-t", f"{dur}", "-c:v", "libx264", "-preset", "veryfast", "-crf", "19",
+          "-c:a", "aac", "-b:a", "192k", str(out)])
+    return out
+
+
+def reveal(before: Path, after: Path, size: tuple[int, int], work: Path, endcard: bool = True) -> Path:
+    """BEFORE held briefly, then a wipe to AFTER (with the follow end card on the Short)."""
+    w, h = size
+    tag = "v" if h > w else "h"
+    a = still(before, makeover._label("BEFORE", size, (87, 83, 78), work / f"rv_b_{tag}.png"), 1.8, size,
+              work / f"rv_a_{tag}.mp4", zoom_in=False)
+    ov = makeover._label("AFTER", size, (13, 148, 136), work / f"rv_l_{tag}.png")
+    if endcard:
+        question = ("Which place should", "we restore next?")
+        card = Image.open(makeover._endcard(size, work / f"rv_e_{tag}.png", question)).convert("RGBA")
+        lab = Image.open(ov).convert("RGBA")
+        lab.alpha_composite(card)
+        lab.save(ov)
+    b = still(after, ov, 4.2, size, work / f"rv_c_{tag}.mp4")
+    out = work / f"reveal_{tag}.mp4"
+    tr = "wipeup" if h > w else "wiperight"
+    _run(["-y", "-i", str(a), "-i", str(b), "-filter_complex",
+          f"[0:v][1:v]xfade=transition={tr}:duration=1.0:offset=0.9,format=yuv420p[v];"
+          "[0:a][1:a]acrossfade=d=1.0[a]", "-map", "[v]", "-map", "[a]", "-c:v", "libx264", "-preset", "veryfast",
+          "-crf", "19", "-c:a", "aac", str(out)])
+    return out
+
+
+def title_overlay(text: str, size: tuple[int, int], out: Path) -> Path:
+    """Hook text across the top for the first seconds, plus the channel tag and an 'AI-generated' note."""
+    w, h = size
+    u = w / 1080 if h > w else w / 1920
+    img = Image.open(makeover._label("BEFORE", size, (87, 83, 78), out.with_suffix(".base.png"))).convert("RGBA")
+    from PIL import ImageDraw
+    d = ImageDraw.Draw(img)
+    size_px = int(70 * u)
+    f = visuals.font(size_px, 800)
+    words, lines, line = text.split(), [], ""
+    for wd in words:
+        trial = f"{line} {wd}".strip()
+        if d.textlength(trial, font=f) > w * 0.86 and line:
+            lines.append(line)
+            line = wd
+        else:
+            line = trial
+    lines.append(line)
+    y = int((430 if h > w else 200) * u)
+    for ln in lines[:3]:
+        lw = d.textlength(ln, font=f)
+        d.text(((w - lw) / 2, y), ln, font=f, fill=(255, 255, 255), stroke_width=max(4, size_px // 12),
+               stroke_fill=(0, 0, 0))
+        y += int(size_px * 1.2)
+    img.save(out)
+    return out
+
+
+def ai_note(size: tuple[int, int], out: Path) -> Path:
+    from PIL import ImageDraw
+    w, h = size
+    u = w / 1080 if h > w else w / 1920
+    img = Image.new("RGBA", size, (0, 0, 0, 0))
+    d = ImageDraw.Draw(img)
+    f = visuals.font(int(26 * u), 700)
+    text = "AI-generated concept"
+    tw = d.textlength(text, font=f)
+    x, y = w - tw - int(40 * u), int((150 if h > w else 30) * u)
+    d.rounded_rectangle((x - 16 * u, y - 8 * u, x + tw + 16 * u, y + 40 * u), int(20 * u), fill=(0, 0, 0, 140))
+    d.text((x, y), text, font=f, fill=(255, 255, 255, 230))
+    img.save(out)
+    return out
+
+
+def finish(body: Path, overlays: list[tuple[Path, float | None]], music_vol: float, out: Path,
+           rng: random.Random) -> Path:
+    """Overlays on the joined video (each until its end time, or the whole video), the clips' sound with
+    soft music underneath, loudness evened out for phones."""
+    dur, _ = probe(body)
+    music = makeover._music(dur, out.parent / f"music_{out.stem}.m4a", rng)
+    inputs = ["-i", str(body), "-i", str(music)]
+    chain, prev = [], "0:v"
+    for i, (ov, until) in enumerate(overlays):
+        inputs += ["-i", str(ov)]
+        en = f":enable='lte(t,{until:.2f})'" if until else ""
+        chain.append(f"[{prev}][{i + 2}:v]overlay=0:0:format=auto{en}[o{i}]")
+        prev = f"o{i}"
+    chain.append(f"[{prev}]format=yuv420p[v]")
+    chain.append(f"[1:a]volume={music_vol}[m];[0:a][m]amix=inputs=2:duration=first:normalize=0,"
+                 "loudnorm=I=-15:TP=-1.5:LRA=11[a]")
+    _run(["-y", *inputs, "-filter_complex", ";".join(chain), "-map", "[v]", "-map", "[a]", "-c:v", "libx264",
+          "-preset", "veryfast", "-crf", "20", "-c:a", "aac", "-b:a", "192k", "-ar", "48000",
+          "-movflags", "+faststart", str(out)])
+    return out
+
+
+# ---------------------------------------------------------------- titles
+def describe(before: Path, after: Path, names: list[str], cfg: dict, rng: random.Random) -> dict:
+    """Title, captions and tags. Gemini (free key) looks at the first and last frame; without it, a
+    title is made from the clip file names."""
+    hint = " / ".join(re.sub(r"[_-]+", " ", re.sub(r"[_-]?20\d{12}.*$", "", re.sub(r"^[0-9a-f]{8}-", "", n))).strip()
+                      for n in names)
+    if os.environ.get("GEMINI_API_KEY", "").strip():
+        try:
+            return _gemini_describe(before, after, hint, cfg)
+        except Exception as e:
+            print(f"  (Gemini titles failed, using a simple title: {e})")
+    place = next((w for w in ("rooftop", "backyard", "garden", "terrace", "balcony", "garage", "kitchen",
+                              "bathroom", "bedroom", "living room", "house", "car", "bike", "porch", "yard",
+                              "attic", "basement", "pool", "room") if w in hint.lower()), "space")
+    title = rng.choice(cfg.get("clip_titles") or ["Abandoned {Place} Transformed ✨"]).replace(
+        "{Place}", place.title()).replace("{place}", place)
+    return {"title": title, "short_title": title, "hook": f"Watch this abandoned {place} come back to life",
+            "before": "ABANDONED", "after": "DREAM " + place.upper(),
+            "caption": f"Watch this abandoned {place} come back to life 😍 Would you live here?",
+            "tags": [f"{place} makeover", f"{place} transformation", f"abandoned {place}"]}
+
+
+def _gemini_describe(before: Path, after: Path, hint: str, cfg: dict) -> dict:
+    parts: list[dict] = [{"text": (
+        "These are the first and last frames of a short AI-generated time-lapse video where workers transform "
+        f"a neglected place. The clip files were named: {hint}. Write YouTube Shorts metadata for the channel "
+        "Restore Remake Studio (satisfying makeovers, US audience). Reply with JSON only, keys: "
+        '"title" (max 60 chars, catchy, 1 emoji, like "Abandoned Rooftop → Dream Terrace 🌇", no hashtags), '
+        '"hook" (max 45 chars, shown on screen in the first seconds, no emoji), '
+        '"before" (max 2 words, upper case, e.g. "ABANDONED ROOFTOP"), "after" (max 2 words, e.g. "DREAM TERRACE"), '
+        '"caption" (1-2 sentences for Instagram/Facebook ending with a question, max 2 emoji, no hashtags), '
+        '"tags" (8 lowercase YouTube tags). Do not claim it is a real project or real people.')}]
+    for p in (before, after):
+        img = Image.open(p).convert("RGB")
+        img.thumbnail((768, 768))
+        buf = io.BytesIO()
+        img.save(buf, "JPEG", quality=88)
+        parts.append({"inline_data": {"mime_type": "image/jpeg", "data": base64.b64encode(buf.getvalue()).decode()}})
+    r = requests.post(f"https://generativelanguage.googleapis.com/v1beta/models/{TEXT_MODEL}:generateContent",
+                      headers={"x-goog-api-key": os.environ["GEMINI_API_KEY"].strip()},
+                      json={"contents": [{"parts": parts}],
+                            "generationConfig": {"responseMimeType": "application/json", "temperature": 0.9}},
+                      timeout=90)
+    if r.status_code >= 400:
+        raise RuntimeError(f"{r.status_code}: {r.text[:200]}")
+    text = r.json()["candidates"][0]["content"]["parts"][0]["text"]
+    data = json.loads(text)
+    data["title"] = data["title"].strip()[:90]
+    data["short_title"] = data["title"]
+    data["tags"] = [t.lower() for t in data.get("tags", [])][:10]
+    return data
+
+
+# ---------------------------------------------------------------- one makeover
+def make_short(group: list[Path], workdir: Path, cfg: dict, rng: random.Random) -> dict:
+    work = workdir / "build"
+    work.mkdir(parents=True, exist_ok=True)
+    before = frame(group[0], work / "before.jpg", last=False)
+    after = frame(group[-1], work / "after.jpg", last=True)
+    meta = describe(before, after, [p.name for p in group], cfg, rng)
+    print(f"  Title: {meta['title']}")
+
+    print(f"  Joining {len(group)} clips...")
+    norm = [normalize(p, work / f"n{i}_v.mp4", (SW, SH)) for i, p in enumerate(group)]
+    body = join(norm, work / "body_v.mp4")
+    full = join([body, reveal(before, after, (SW, SH), work)], work / "full_v.mp4", fade=0.4)
+    hook = title_overlay(meta.get("hook") or meta["title"], (SW, SH), work / "hook_v.png")
+    note = ai_note((SW, SH), work / "ai_v.png")
+    social = workdir / "social"
+    social.mkdir(exist_ok=True)
+    short = finish(full, [(hook, 2.6), (note, None)], cfg.get("music_volume", 0.18), social / "short.mp4", rng)
+    meta["clips"] = [p.name for p in group]
+    meta["duration"] = round(probe(short)[0], 1)
+    return {"short": short, "meta": meta, "before": before, "after": after}
+
+
+def _footer(config: dict) -> str:
+    return (config["youtube"].get("clip_description_footer") or config["youtube"].get("description_footer")
+            or "").strip()
+
+
+def _next_slot(yt: dict, history: list[dict], kind: str) -> dt.datetime:
+    times = [dt.datetime.fromisoformat(h["publish_at"].replace("Z", "+00:00")) for h in history
+             if h.get("publish_at") and h.get("kind") == kind]
+    key = "compilation_publish_time" if kind == "compilation" else "clip_publish_time"
+    return next_publish_time(yt.get(key) or yt.get("auto_publish_time", "13:00"),
+                             yt.get("auto_publish_timezone", "America/New_York"), after=max(times) if times else None)
+
+
+def process_inbox(config: dict, history: list[dict], dry_run: bool) -> int:
+    cfg = config.get("clips") or {}
+    groups = inbox_groups(cfg.get("group_gap_hours", 3))
+    groups = [g for g in groups if ready(g, cfg.get("clips_per_makeover", 3), cfg.get("wait_hours", 6))]
+    groups = groups[:1]  # one per run: the Instagram/Facebook workflow posts one Short per run; the rest wait
+    if not groups:
+        print("No finished makeover in rrs_inbox/ yet - nothing to do.")
+        write_summary(["## No new clips", "Upload the clips of one makeover into `rrs_inbox/` to make a Short."])
+        return 0
+    visuals.set_brand(config.get("brand"))
+    visuals.ensure_fonts()
+    yt_base = dict(config["youtube"])
+    lang = config["channel"].get("language_code", "en-US")
+    summary = []
+    for n, group in enumerate(groups, 1):
+        print(f"\n=== Makeover {n} of {len(groups)}: {', '.join(p.name for p in group)} ===")
+        rng = random.Random(sum(p.stat().st_size for p in group))
+        stamp = (_made_at(group[0]) or dt.datetime.now()).strftime("%Y%m%d-%H%M")
+        workdir = OUTPUT_DIR / f"{stamp}-clips"
+        made = make_short(group, workdir, cfg, rng)
+        meta = made["meta"]
+        slug = f"{stamp}-{slugify(meta['title'])[:40]}"
+        tags = list(dict.fromkeys(meta.get("tags", []) + cfg.get("tags", [])))[:15]
+        hashtags = " ".join(cfg.get("hashtags", []))
+        caption = f"{meta['caption']} {hashtags}".strip()
+        entry = {"date": dt.datetime.now().isoformat(timespec="seconds"), "kind": "clip_short",
+                 "title": meta["title"], "topic": meta["title"], "style": "AI Clip Makeover", "folder": slug}
+        if dry_run:
+            print(f"  Dry run - not uploading. Short: {made['short']}")
+            summary.append(f"- (dry run) {meta['title']} - {meta['duration']} s")
+            continue
+
+        from . import uploader
+
+        yt = dict(yt_base)
+        publish_at = _next_slot(yt, history, "clip_short")
+        yt["privacy"] = "private"
+        yt["publish_at"] = publish_at.strftime("%Y-%m-%dT%H:%M:%SZ")
+        description = f"{meta['caption']}\n\n{hashtags}\n\n{_footer(config)}"
+        print(f"  Uploading the Short (goes public {yt['publish_at']} UTC)...")
+        video_id = uploader.upload_video(made["short"], None, meta["short_title"][:90] + " #Shorts", description,
+                                         tags + ["shorts"], yt, lang)
+        entry.update(youtube_id=video_id, publish_at=yt["publish_at"])
+        history.append(entry)
+        save_history(history)
+        if yt.get("playlists", True):
+            try:
+                uploader.add_to_playlists(video_id, [yt.get("shorts_playlist", "Makeover Shorts")],
+                                          yt.get("playlist_description"))
+            except Exception as e:
+                print(f"  (Could not add to playlist: {e})")
+        (workdir / "social" / "social.json").write_text(json.dumps({
+            "youtube_id": video_id, "title": meta["title"], "caption": caption,
+            "publish_at": yt["publish_at"]}, indent=2))
+
+        # keep the clips for the weekly compilation; the inbox is left empty
+        dest = DONE / slug
+        dest.mkdir(parents=True, exist_ok=True)
+        for p in group:
+            shutil.move(str(p), dest / p.name)
+        (dest / "meta.json").write_text(json.dumps({**meta, "youtube_id": video_id, "publish_at": yt["publish_at"],
+                                                    "compiled": False}, indent=2))
+        for d in INBOX.iterdir():
+            if d.is_dir() and not any(d.iterdir()):
+                d.rmdir()
+        summary += [f"### {meta['title']}", f"- Short ({meta['duration']} s): https://studio.youtube.com/video/{video_id}/edit",
+                    f"- Goes public {yt['publish_at']} (UTC). To stop it, set it to Private."]
+    print("\n".join(summary))
+    write_summary(["## Restore Remake Studio - new makeover Shorts", *summary])
+    return len(groups)
+
+
+# ---------------------------------------------------------------- long compilation
+def compile_long(config: dict, history: list[dict], dry_run: bool, force: bool = False) -> None:
+    """All makeovers not used in a compilation yet, one after another in a landscape video, each with a
+    title card and its before -> after reveal."""
+    cfg = config.get("clips") or {}
+    todo = []
+    for d in sorted(DONE.iterdir()) if DONE.exists() else []:
+        mf = d / "meta.json"
+        if mf.exists():
+            m = json.loads(mf.read_text())
+            if not m.get("compiled"):
+                todo.append((d, m))
+    need = cfg.get("compilation_min_makeovers", 5)
+    if len(todo) < need and not force:
+        print(f"Only {len(todo)} new makeovers (need {need}) - no compilation this time.")
+        write_summary(["## No compilation yet", f"{len(todo)} of {need} makeovers ready."])
+        return
+    if not todo:
+        print("No makeovers to compile.")
+        return
+    visuals.set_brand(config.get("brand"))
+    visuals.ensure_fonts()
+    rng = random.Random(len(todo))
+    workdir = OUTPUT_DIR / f"{dt.datetime.now():%Y%m%d-%H%M}-compilation"
+    work = workdir / "build"
+    work.mkdir(parents=True, exist_ok=True)
+    parts = []
+    for i, (d, m) in enumerate(todo, 1):
+        clips = sorted((p for p in d.iterdir() if p.suffix.lower() in VIDEO_EXT),
+                       key=lambda p: (_made_at(p) or dt.datetime.min, p.name))
+        print(f"  {i}/{len(todo)} {m['title']}")
+        before = frame(clips[0], work / f"b{i}.jpg", last=False)
+        after = frame(clips[-1], work / f"a{i}.jpg", last=True)
+        card = makeover._label(f"MAKEOVER {i}", (W, H), (245, 158, 11), work / f"card{i}.png",
+                               step=re.sub(r"[^\w\s→&'-]", "", m["title"]).strip().upper()[:40])
+        segs = [still(before, card, 2.2, (W, H), work / f"t{i}.mp4")]
+        segs += [normalize(p, work / f"n{i}_{k}.mp4", (W, H)) for k, p in enumerate(clips)]
+        segs.append(reveal(before, after, (W, H), work, endcard=False))
+        parts.append(join(segs, work / f"part{i}.mp4"))
+    body = join(parts, work / "body.mp4", fade=0.6)
+    note = ai_note((W, H), work / "ai_h.png")
+    final = finish(body, [(note, None)], cfg.get("music_volume", 0.18), workdir / "final.mp4", rng)
+    n = len(todo)
+    title = rng.choice(cfg.get("compilation_titles") or ["{n} Satisfying Makeovers: Abandoned to Amazing"]).replace(
+        "{n}", str(n))
+    thumb = makeover.make_thumbnail(work / "b1.jpg", work / f"a{n}.jpg", "ABANDONED", "AMAZING",
+                                    workdir / "thumbnail.jpg")
+    lines = "\n".join(f"{i}. {m['title']}" for i, (_, m) in enumerate(todo, 1))
+    description = (f"{n} abandoned places brought back to life, one after another. Which one is your favorite?\n\n"
+                   f"In this video:\n{lines}\n\n{' '.join(cfg.get('hashtags', []))}\n\n{_footer(config)}")
+    dur = probe(final)[0]
+    print(f"  Compilation: {title} ({dur / 60:.1f} min)")
+    if dry_run:
+        print(f"  Dry run - not uploading: {final}")
+        return
+
+    from . import uploader
+
+    yt = dict(config["youtube"])
+    publish_at = _next_slot(yt, history, "compilation")
+    yt["privacy"] = "private"
+    yt["publish_at"] = publish_at.strftime("%Y-%m-%dT%H:%M:%SZ")
+    tags = list(dict.fromkeys(["makeover compilation", "satisfying transformation", "abandoned restoration",
+                               *cfg.get("tags", [])]))[:15]
+    video_id = uploader.upload_video(final, thumb, title, description, tags, yt,
+                                     config["channel"].get("language_code", "en-US"))
+    history.append({"date": dt.datetime.now().isoformat(timespec="seconds"), "kind": "compilation", "title": title,
+                    "topic": title, "style": "AI Clip Compilation", "youtube_id": video_id,
+                    "publish_at": yt["publish_at"], "makeovers": [d.name for d, _ in todo]})
+    save_history(history)
+    if yt.get("playlists", True):
+        try:
+            uploader.add_to_playlists(video_id, [cfg.get("compilation_playlist", "Makeover Compilations")],
+                                      yt.get("playlist_description"))
+        except Exception as e:
+            print(f"  (Could not add to playlist: {e})")
+    for d, m in todo:
+        m["compiled"] = video_id
+        (d / "meta.json").write_text(json.dumps(m, indent=2))
+    write_summary([f"## {title}", f"- {n} makeovers, {dur / 60:.1f} min",
+                   f"- Review: https://studio.youtube.com/video/{video_id}/edit",
+                   f"- Goes public {yt['publish_at']} (UTC)."])
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description="Makeover Shorts and compilations from your AI clips")
+    parser.add_argument("--dry-run", action="store_true", help="Make the videos but don't upload or move clips")
+    parser.add_argument("--compile", action="store_true", help="Make the long compilation instead")
+    parser.add_argument("--force", action="store_true", help="Compile even with fewer makeovers than the minimum")
+    args = parser.parse_args()
+    config, history = load_config(), load_history()
+    if args.compile:
+        compile_long(config, history, args.dry_run, args.force)
+    else:
+        process_inbox(config, history, args.dry_run)
+
+
+if __name__ == "__main__":
+    main()

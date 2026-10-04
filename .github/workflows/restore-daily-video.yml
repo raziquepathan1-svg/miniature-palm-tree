@@ -1,13 +1,21 @@
 name: Restore Remake Studio - daily video
 
 on:
-  # PAUSED until the new time-lapse style is ready. Remove the # marks to turn it back on.
-  # schedule:
-  #   # Once a day at 04:07 UTC (~7 AM Saudi time), 50 minutes after the Health Support Studio run.
-  #   # The video is scheduled to go public at 13:00 New York time (8 PM Saudi, 9 PM in winter).
-  #   - cron: "7 4 * * *"
+  # Uploading clips into rrs_inbox/ starts a run right away.
+  push:
+    branches: [claude/kind-albattani-59hcns]
+    paths: ["rrs_inbox/**", "!rrs_inbox/*.md"]
+  schedule:
+    # Every 6 hours: picks up makeovers still waiting (one per run) and makes the long compilation once
+    # enough makeovers are ready.
+    - cron: "7 */6 * * *"
   workflow_dispatch:
     inputs:
+      mode:
+        description: "clips = Short from rrs_inbox; compile = long compilation now; images = old AI-image makeover"
+        type: choice
+        options: [clips, compile, images]
+        default: clips
       dry_run:
         description: "Make the video but don't upload"
         type: boolean
@@ -29,6 +37,8 @@ jobs:
     timeout-minutes: 120
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 30   # to see when each clip was uploaded
 
       - uses: actions/setup-python@v5
         with:
@@ -48,6 +58,7 @@ jobs:
           pip install -r requirements.txt
 
       - name: Make and upload the makeover video
+        id: make
         env:
           # AI images: Gemini if this secret is set, otherwise the free Pollinations service.
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
@@ -67,7 +78,16 @@ jobs:
             echo "RRS_YOUTUBE_REFRESH_TOKEN is not set - skipping."
             exit 0
           fi
-          python -m youtube_agent.makeover "${ARGS[@]}"
+          MODE="${{ inputs.mode || 'clips' }}"
+          if [ "$MODE" = "images" ]; then
+            python -m youtube_agent.makeover "${ARGS[@]}"
+          elif [ "$MODE" = "compile" ]; then
+            python -m youtube_agent.clips --compile --force "${ARGS[@]}"
+          else
+            python -m youtube_agent.clips "${ARGS[@]}"
+            # long compilation once enough makeovers are ready (scheduled runs only)
+            if [ "${{ github.event_name }}" = "schedule" ]; then python -m youtube_agent.clips --compile "${ARGS[@]}"; fi
+          fi
 
       - name: Save video files for review
         if: always()
@@ -88,11 +108,11 @@ jobs:
           if-no-files-found: ignore
 
       - name: Remember published topics
-        if: always()
+        if: ${{ always() && inputs.dry_run != true }}
         run: |
           git config user.name "youtube-agent"
           git config user.email "youtube-agent@users.noreply.github.com"
-          git add youtube_agent/channels/restore_remake/history.json 2>/dev/null || exit 0
+          git add -A youtube_agent/channels/restore_remake/history.json rrs_inbox rrs_clips 2>/dev/null || true
           git diff --cached --quiet && exit 0
           git commit -m "Record published Restore Remake Studio makeover"
           git pull --rebase && git push

@@ -239,15 +239,15 @@ def _label(text: str, size: tuple[int, int], color, out: Path, step: str | None 
     return out
 
 
-def _endcard(size: tuple[int, int], out: Path) -> Path:
+def _endcard(size: tuple[int, int], out: Path,
+             question: tuple[str, str] = ("Which style should", "we try next?")) -> Path:
     w, h = size
     portrait = h > w
     u = (w / 1080) if portrait else (w / 1920)
     img = Image.new("RGBA", size, (0, 0, 0, 0))
     d = ImageDraw.Draw(img)
     f = visuals.font(int(58 * u), 800)
-    lines = ["Which style should", "we try next? 👇"] if portrait else ["Which style should we try next?"]
-    lines = [l.replace(" 👇", "") for l in lines]
+    lines = list(question) if portrait else [" ".join(question)]
     y = h - int((640 if portrait else 330) * u)
     box_h = int(len(lines) * 78 * u + 150 * u)
     d.rounded_rectangle((int(60 * u), y - int(30 * u), w - int(60 * u), y + box_h), int(40 * u), fill=(28, 25, 23, 215))
