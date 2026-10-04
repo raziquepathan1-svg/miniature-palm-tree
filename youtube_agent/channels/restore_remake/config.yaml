@@ -146,6 +146,19 @@ clips:
          "makeover", "transformation", "satisfying video"]
   hashtags: ["#makeover", "#beforeandafter", "#satisfying", "#transformation"]
 
+# ---- Free AI clips made on Kaggle's free GPU (python -m youtube_agent.ai_video) ----
+# Instead of making clips by hand, the "free AI clips (Kaggle)" workflow plans a makeover from the spaces and
+# styles in `makeover:` below (an abandoned place, cleaned up -> rebuilt -> revealed), makes its 3 clips with
+# the open LTX-Video model on Kaggle and drops them into rrs_inbox/ - from there it's the same as clips you
+# upload. Needs the KAGGLE_USERNAME and KAGGLE_KEY secrets (see SETUP.md).
+ai_video:
+  makeovers_per_run: 2       # makeovers per Kaggle run (~15-30 min of free GPU time each)
+  buffer_days: 3             # keep this many Shorts waiting (scheduled + in the inbox + being made)
+  steps: 40                  # more = better quality, slower
+  # width: 512               # clip size (vertical, multiples of 32) and length (8k+1 frames at 24 fps)
+  # height: 768
+  # frames: 121
+
 # ---- Visual makeover videos from AI still images (python -m youtube_agent.makeover; not scheduled) ----
 # Every day: one space + one style that haven't been used together yet. AI draws the "before" photo and
 # then edits that same picture step by step. No narration: labels, motion, swipe transitions and music.

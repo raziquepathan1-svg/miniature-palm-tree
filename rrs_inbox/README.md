@@ -1,5 +1,8 @@
 # Restore Remake Studio inbox
 
+The **free AI clips (Kaggle)** workflow also puts its clips here by itself (one folder per makeover),
+so uploading by hand is optional.
+
 Upload the AI video clips of **one makeover** here (usually 3 clips: clean up → build → finish).
 
 1. Open this folder on GitHub (phone browser is fine).
