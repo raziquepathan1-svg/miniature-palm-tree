@@ -21,6 +21,8 @@ SETTINGS = json.loads(base64.b64decode("__SETTINGS__"))
 OUT = Path("/kaggle/working")
 WORK = Path("/kaggle/temp")
 REPO = WORK / "SadTalker"
+VENV = WORK / "venv"
+PY = VENV / "bin" / "python"
 RESULT = {"jobs": {}, "started": time.time()}
 
 CHECKPOINTS = {
@@ -45,7 +47,10 @@ def save_result() -> None:
 
 def sh(cmd: str, cwd: Path | None = None) -> None:
     print(f"+ {cmd}", flush=True)
-    subprocess.run(cmd, shell=True, check=True, cwd=cwd)
+    r = subprocess.run(cmd, shell=True, cwd=cwd, capture_output=True, text=True)
+    print(r.stdout[-2000:] + r.stderr[-2000:], flush=True)
+    if r.returncode:
+        raise RuntimeError(f"Failed ({r.returncode}): {cmd}\n{(r.stdout + r.stderr)[-2500:]}")
 
 
 def patch(path: Path, *subs: tuple[str, str], regex: bool = False) -> None:
@@ -56,27 +61,32 @@ def patch(path: Path, *subs: tuple[str, str], regex: bool = False) -> None:
 
 
 def setup() -> None:
-    """SadTalker and its weights, patched for today's numpy / librosa / torchvision."""
+    """SadTalker and its weights in its own Python 3.10 (Kaggle's Python is too new for its libraries)."""
     WORK.mkdir(parents=True, exist_ok=True)
     sh(f"git clone -q --depth 1 https://github.com/OpenTalker/SadTalker {REPO}")
-    sh(f"{sys.executable} -m pip install -q 'numpy<2' face_alignment==1.3.5 imageio imageio-ffmpeg librosa==0.10.1 "
-       "resampy pydub kornia==0.6.8 yacs safetensors facexlib==0.3.0 basicsr==1.4.2 gfpgan av")
+    sh(f"{sys.executable} -m pip install -q uv")
+    uv = f"{sys.executable} -m uv pip install -q --python {PY}"
+    sh(f"{sys.executable} -m uv venv -q --python 3.10 {VENV}")
+    sh(f"{uv} setuptools wheel")
+    sh(f"{uv} torch==2.1.2 torchvision==0.16.2 torchaudio==2.1.2 --index-url https://download.pytorch.org/whl/cu121")
+    sh(f"{uv} numpy==1.23.5 face_alignment==1.3.5 imageio==2.19.3 imageio-ffmpeg==0.4.7 librosa==0.9.2 "
+       "numba==0.58.1 resampy==0.3.1 pydub==0.25.1 scipy==1.10.1 kornia==0.6.8 tqdm yacs==0.1.8 pyyaml "
+       "joblib==1.1.0 scikit-image==0.19.3 facexlib==0.3.0 safetensors av")
+    sh(f"{uv} --no-build-isolation basicsr==1.4.2 gfpgan==1.3.8")
     for folder, urls in CHECKPOINTS.items():
         (REPO / folder).mkdir(parents=True, exist_ok=True)
         for url in urls:
             sh(f"wget -q -nc {url}", cwd=REPO / folder)
 
-    # basicsr imports a torchvision module that no longer exists
-    out = subprocess.run([sys.executable, "-c", "import importlib.util as u; print(u.find_spec('basicsr').origin)"],
+    # Safety patches for newer libraries (no-ops with the versions above)
+    out = subprocess.run([PY, "-c", "import importlib.util as u; print(u.find_spec('basicsr').origin)"],
                          capture_output=True, text=True, check=True).stdout.strip()
     patch(Path(out).parent / "data" / "degradations.py",
           ("torchvision.transforms.functional_tensor", "torchvision.transforms.functional"))
-    # numpy removed np.float / np.int; newer numpy refuses the ragged array in preprocess.py
     for py in (REPO / "src").rglob("*.py"):
         patch(py, (r"np\.float\b", "np.float64"), (r"np\.int\b", "int"), regex=True)
     patch(REPO / "src" / "face3d" / "util" / "preprocess.py",
           ("np.array([w0, h0, s, t[0], t[1]])", "np.array([w0, h0, s, float(t[0]), float(t[1])])"))
-    # librosa 0.10 takes keyword arguments only
     patch(REPO / "src" / "utils" / "audio.py",
           ("librosa.filters.mel(hp.sample_rate, hp.n_fft,", "librosa.filters.mel(sr=hp.sample_rate, n_fft=hp.n_fft,"))
 
@@ -89,7 +99,7 @@ def talk(job: dict, image: Path) -> Path:
     mp3.write_bytes(base64.b64decode(job["audio"]))
     sh(f"ffmpeg -y -loglevel error -i {mp3} -ar 16000 -ac 1 {wav}")
     extra = f" --enhancer {SETTINGS['enhancer']}" if SETTINGS.get("enhancer") else ""
-    sh(f"{sys.executable} inference.py --driven_audio {wav} --source_image {image} --result_dir {jd / 'res'} "
+    sh(f"{PY} inference.py --driven_audio {wav} --source_image {image} --result_dir {jd / 'res'} "
        f"--still --preprocess {SETTINGS['preprocess']} --size {SETTINGS['size']} "
        f"--expression_scale {SETTINGS['expression_scale']}{extra}", cwd=REPO)
     made = sorted((jd / "res").glob("*.mp4"), key=lambda p: p.stat().st_mtime)
