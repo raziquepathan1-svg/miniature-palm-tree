@@ -145,10 +145,19 @@ clips:
     - "{n} Satisfying Makeovers: Abandoned to Amazing"
     - "From Abandoned to Dream Space: {n} Incredible Transformations"
     - "{n} Abandoned Places Brought Back to Life"
-  clip_titles:
+  clip_titles:                 # a title not used recently is picked
     - "Abandoned {Place} Transformed ✨"
     - "This Abandoned {Place} Got a Second Life 😍"
     - "Abandoned {Place} → Dream Space"
+    - "Nobody Wanted This {Place}… Until Now 😳"
+    - "From Forgotten {Place} to Dream Space 🔨"
+    - "This {Place} Was a Disaster. Look Now! ✨"
+    - "Watch This {Place} Come Back to Life 😍"
+    - "Restoring an Abandoned {Place} 🛠️"
+    - "The Most Satisfying {Place} Makeover 🤩"
+    - "Can This {Place} Be Saved? 😱"
+    - "Abandoned {Place} Rebuilt in Minutes ⏱️"
+    - "You Won't Believe This {Place} Makeover 🔥"
   tags: ["satisfying makeover", "abandoned transformation", "before and after", "restoration", "time lapse",
          "makeover", "transformation", "satisfying video"]
   hashtags: ["#makeover", "#beforeandafter", "#satisfying", "#transformation"]

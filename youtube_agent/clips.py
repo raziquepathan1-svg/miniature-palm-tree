@@ -293,28 +293,117 @@ def finish(body: Path, overlays: list[tuple[Path, float | None]], music_vol: flo
 
 
 # ---------------------------------------------------------------- titles
+# ---------------------------------------------------------------- scripts: a new one for every Short
+PLACE_WORDS = ("rooftop", "backyard", "garden", "terrace", "balcony", "garage", "kitchen", "bathroom", "bedroom",
+               "living room", "house", "car", "bike", "porch", "yard", "attic", "basement", "pool", "room")
+WORK = {  # what the crew does, in order (three are picked per Short)
+    "rooftop": ["swept away years of trash", "pressure-washed the old concrete", "laid a warm wooden deck",
+                "built planter boxes along the edges", "hung string lights overhead", "brought in cozy furniture"],
+    "yard": ["pulled out every dead weed", "hauled away the broken junk", "laid a new stone path",
+             "rolled out fresh green grass", "planted new shrubs and flowers", "added soft garden lights"],
+    "garage": ["hauled out all the junk", "swept and scrubbed the floor", "painted the walls bright white",
+               "laid a tough rubber floor", "brought in the new equipment", "installed modern lighting"],
+    "room": ["cleared out the old furniture", "patched and painted the walls", "laid a brand new floor",
+             "hung new curtains and lights", "brought in new furniture", "added the finishing touches"],
+    "kitchen": ["tore out the old cabinets", "scrubbed every surface", "fitted new cabinets",
+                "installed new countertops", "added modern lighting", "styled it with fresh details"],
+    "bathroom": ["ripped out the old tiles", "cleaned up years of grime", "laid fresh new tiles",
+                 "installed a new vanity", "fitted a modern shower", "added warm lighting"],
+    "pool": ["drained the green water", "scooped out the mud and leaves", "repaired the cracked walls",
+             "laid new stone around the edge", "filled it with crystal clear water", "set up loungers and lights"],
+    "car": ["washed off years of dirt", "pulled out the rusted parts", "sanded down the body",
+            "sprayed on a shiny new paint job", "fitted new wheels", "polished every inch"],
+    "default": ["cleared out all the trash", "scrubbed away years of dirt", "repaired everything that was broken",
+                "rebuilt it piece by piece", "added fresh new details", "gave it the finishing touches"],
+}
+WORK_KEY = {"backyard": "yard", "garden": "yard", "yard": "yard", "porch": "yard", "terrace": "rooftop",
+            "balcony": "rooftop", "bedroom": "room", "living room": "room", "attic": "room", "basement": "room",
+            "house": "room", "bike": "car"}
+OPENERS = ["Nobody had touched this {place} in years.", "This {place} was a total disaster.",
+           "Look at this {place}. Trash, dirt, and broken everything.",
+           "Would you believe someone just gave up on this {place}?", "This might be the worst {place} we've seen.",
+           "Everyone walked right past this abandoned {place}.", "This {place} was forgotten for years.",
+           "Could you fix a {place} this bad?", "This {place} looked completely hopeless.",
+           "Abandoned, dirty, and falling apart. That was this {place}.",
+           "Most people would have given up on this {place}.", "Here's a {place} nobody wanted."]
+MIDDLES = ["The crew {a}, {b}, and {c}.", "First they {a}. Then they {b}, and {c}.",
+           "Step by step, they {a}, {b}, and finally {c}.", "They {a}. They {b}. And then they {c}.",
+           "Watch closely. They {a}, {b}, and {c}.", "Bit by bit, the crew {a}, {b}, and {c}."]
+REVEALS = ["And now? Just look at it.", "The final result is unbelievable.", "From forgotten to beautiful.",
+           "Same {place}. Completely new life.", "Can you believe it's the same {place}?",
+           "Now it's the kind of place you never want to leave.", "What a transformation.",
+           "And just like that, it's brand new.", "Honestly, this one turned out amazing."]
+CTAS = ["If you loved this, share it with a friend and subscribe for more. And let me know in the comments if "
+        "you want more videos like this.",
+        "Share this with someone who loves a good makeover, and subscribe so you don't miss the next one. Tell me "
+        "in the comments if you want more like this.",
+        "Don't forget to like, share, and subscribe. And comment below if you want to see more makeovers like this.",
+        "Subscribe for a new makeover every day, share it with your friends, and let me know in the comments what "
+        "we should restore next.",
+        "Hit subscribe, share this with a friend, and drop a comment if you want more videos like this.",
+        "Want more makeovers like this? Subscribe, share this video, and tell me in the comments."]
+CAPTION_CTA = "👉 Share with a friend, subscribe for a new makeover every day, and comment if you want more like this!"
+
+
+def _recent_scripts(limit: int = 8) -> list[str]:
+    """Narrations of the latest published makeovers, so a new Short doesn't repeat them."""
+    metas = sorted(DONE.glob("*/meta.json")) if DONE.exists() else []
+    out = []
+    for m in metas[-limit:]:
+        try:
+            out.append(json.loads(m.read_text()).get("narration", ""))
+        except (OSError, ValueError):
+            pass
+    return out
+
+
+def _pick(options: list[str], recent: str, rng: random.Random, **fill) -> str:
+    """A random option whose text wasn't used in the recent scripts (if possible)."""
+    texts = [o.format(**fill) for o in options]
+    fresh = [t for t in texts if t not in recent] or texts
+    return rng.choice(fresh)
+
+
+def write_script(place: str, rng: random.Random) -> str:
+    """Opener + what the crew did + reveal + share/subscribe/comment, with no line reused from recent Shorts."""
+    recent = " ".join(_recent_scripts())
+    work = WORK[WORK_KEY.get(place, place) if WORK_KEY.get(place, place) in WORK else "default"]
+    a, b, c = (work[i] for i in sorted(rng.sample(range(len(work)), 3)))
+    return " ".join([_pick(OPENERS, recent, rng, place=place), _pick(MIDDLES, recent, rng, a=a, b=b, c=c),
+                     _pick(REVEALS, recent, rng, place=place), _pick(CTAS, recent, rng)])
+
+
+def with_cta(text: str, rng: random.Random) -> str:
+    return text if "subscribe" in text.lower() else f"{text.rstrip()} {_pick(CTAS, ' '.join(_recent_scripts()), rng)}"
+
+
 def describe(before: Path, after: Path, names: list[str], cfg: dict, rng: random.Random) -> dict:
-    """Title, captions and tags. Gemini (free key) looks at the first and last frame; without it, a
-    title is made from the clip file names."""
+    """Title, captions, tags and the narration script. Gemini (free key) looks at the first and last frame;
+    without it, a fresh script is put together from many lines so no two Shorts sound the same."""
     hint = " / ".join(re.sub(r"[_-]+", " ", re.sub(r"[_-]?20\d{12}.*$", "", re.sub(r"^[0-9a-f]{8}-", "", n))).strip()
                       for n in names)
+    place = next((w for w in PLACE_WORDS if w in hint.lower()), "space")
     if os.environ.get("GEMINI_API_KEY", "").strip():
         try:
-            return _gemini_describe(before, after, hint, cfg)
+            data = _gemini_describe(before, after, hint, cfg)
+            data["narration"] = with_cta(data.get("narration") or write_script(place, rng), rng)
+            data["caption"] = f"{data.get('caption', '').strip()} {CAPTION_CTA}".strip()
+            return data
         except Exception as e:
-            print(f"  (Gemini titles failed, using a simple title: {e})")
-    place = next((w for w in ("rooftop", "backyard", "garden", "terrace", "balcony", "garage", "kitchen",
-                              "bathroom", "bedroom", "living room", "house", "car", "bike", "porch", "yard",
-                              "attic", "basement", "pool", "room") if w in hint.lower()), "space")
-    title = rng.choice(cfg.get("clip_titles") or ["Abandoned {Place} Transformed ✨"]).replace(
-        "{Place}", place.title()).replace("{place}", place)
-    return {"title": title, "short_title": title, "hook": f"Watch this abandoned {place} come back to life",
-            "before": "ABANDONED", "after": "DREAM " + place.upper(),
-            "caption": f"Watch this abandoned {place} come back to life 😍 Would you live here?",
+            print(f"  (Gemini titles failed, using a fresh template script: {e})")
+    recent_titles = " ".join(json.loads(m.read_text()).get("title", "") for m in DONE.glob("*/meta.json")) \
+        if DONE.exists() else ""
+    title = _pick([t.replace("{Place}", place.title()).replace("{place}", place)
+                   for t in (cfg.get("clip_titles") or ["Abandoned {Place} Transformed ✨"])], recent_titles, rng)
+    hook = rng.choice([f"Watch this abandoned {place} come back to life", f"Nobody wanted this {place}",
+                       f"This {place} was a disaster", f"Can this {place} be saved?", f"Wait for the {place} reveal"])
+    caption = rng.choice([f"This abandoned {place} got a second life 😍 Would you live here?",
+                          f"From forgotten to beautiful ✨ What would you add to this {place}?",
+                          f"Rate this {place} makeover from 1 to 10 👇", f"Same {place}, completely new life 🔨"])
+    return {"title": title, "short_title": title, "hook": hook,
+            "before": "ABANDONED", "after": "DREAM " + place.upper(), "caption": f"{caption} {CAPTION_CTA}",
             "tags": [f"{place} makeover", f"{place} transformation", f"abandoned {place}"],
-            "narration": (f"This {place} was completely abandoned. Trash everywhere, dirt, and broken things. "
-                          "Watch as the crew cleans it up, rebuilds it piece by piece, and brings it back to life. "
-                          f"Now look at it. Would you spend your evenings here?")}
+            "narration": write_script(place, rng)}
 
 
 def _gemini_describe(before: Path, after: Path, hint: str, cfg: dict) -> dict:
@@ -327,9 +416,11 @@ def _gemini_describe(before: Path, after: Path, hint: str, cfg: dict) -> dict:
         '"before" (max 2 words, upper case, e.g. "ABANDONED ROOFTOP"), "after" (max 2 words, e.g. "DREAM TERRACE"), '
         '"caption" (1-2 sentences for Instagram/Facebook ending with a question, max 2 emoji, no hashtags), '
         '"tags" (8 lowercase YouTube tags), '
-        '"narration" (what the host says over the video: 3-4 short spoken sentences, 45-60 words in total, '
-        'friendly storytelling about the place being cleaned, rebuilt and revealed, ending with a question to '
-        'the viewer; plain words, no emoji, no numbers as digits). Do not claim it is a real project or real people.')}]
+        '"narration" (what the host says over the video: 4-5 short spoken sentences, 55-70 words in total, '
+        'friendly storytelling about the place being cleaned, rebuilt and revealed, ending by asking viewers to '
+        'share the video, subscribe, and say in the comments if they want more videos like this; plain words, '
+        'no emoji, no numbers as digits). Do not claim it is a real project or real people. Every video needs '
+        'a fresh script: do not reuse the wording of these earlier narrations: ' + " | ".join(_recent_scripts(5)))}]
     for p in (before, after):
         img = Image.open(p).convert("RGB")
         img.thumbnail((768, 768))
