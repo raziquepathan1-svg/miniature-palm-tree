@@ -1,0 +1,157 @@
+"""The host on screen: turns narration audio into a video of the host photo talking, on Kaggle's free GPU.
+
+talking_kernel.py (SadTalker) runs on Kaggle; this file sends it the audio, waits, and downloads the clips.
+Anything that goes wrong returns fewer (or no) clips, so the video simply keeps its normal visuals there.
+
+Needs the KAGGLE_USERNAME and KAGGLE_KEY (or KAGGLE_API_TOKEN) secrets.
+
+Test (from the repo root):  python -m youtube_agent.talking voice.wav  ->  writes talking_test.mp4
+"""
+
+import base64
+import io
+import json
+import os
+import re
+import subprocess
+import sys
+import tempfile
+import time
+from pathlib import Path
+
+from PIL import Image
+
+from .editor import ffmpeg_bin
+
+HERE = Path(__file__).resolve().parent
+ROOT = HERE.parent
+KERNEL_TEMPLATE = HERE / "talking_kernel.py"
+
+DEFAULTS = {
+    "image": "branding/health-support-studio/avatar/nurse_final.jpg",  # from the repo root
+    "crop": [0.06, 0.02, 0.94, 0.54],   # waist-up part of the photo (left, top, right, bottom as fractions)
+    "image_width": 768,
+    "kernel_slug": "hss-talking-host",
+    "preprocess": "full",               # animate the face inside the whole picture
+    "size": 256,
+    "expression_scale": 1.0,
+    "enhancer": "gfpgan",               # sharper face
+    "max_wait_minutes": 90,
+}
+
+
+def settings(cfg: dict | None) -> dict:
+    return {**DEFAULTS, **(cfg or {})}
+
+
+def kaggle_ready() -> bool:
+    return bool(os.environ.get("KAGGLE_USERNAME") and (os.environ.get("KAGGLE_KEY") or os.environ.get("KAGGLE_API_TOKEN")))
+
+
+def _kaggle(*args: str, check: bool = True) -> str:
+    r = subprocess.run(["kaggle", *args], capture_output=True, text=True)
+    out = (r.stdout + r.stderr).strip()
+    if check and r.returncode:
+        raise RuntimeError(f"kaggle {' '.join(args[:2])} failed: {out[-1500:]}")
+    return out
+
+
+def _status(kid: str) -> str:
+    out = _kaggle("kernels", "status", kid, check=False)
+    m = re.search(r'has status "?(?:KernelWorkerStatus\.)?(\w+)', out, re.I)
+    word = (m.group(1) if m else "").lower()
+    return "cancelled" if word.startswith("cancel") else (word or "unknown")
+
+
+def host_image(s: dict) -> bytes:
+    """The waist-up host picture as JPEG bytes (even width and height)."""
+    img = Image.open(ROOT / s["image"]).convert("RGB")
+    l, t, r, b = s["crop"]
+    img = img.crop((int(img.width * l), int(img.height * t), int(img.width * r), int(img.height * b)))
+    w = s["image_width"]
+    h = int(img.height * w / img.width) // 2 * 2
+    buf = io.BytesIO()
+    img.resize((w, h), Image.LANCZOS).save(buf, "JPEG", quality=92)
+    return buf.getvalue()
+
+
+def _mp3(wav: Path) -> bytes:
+    with tempfile.TemporaryDirectory() as d:
+        out = Path(d) / "a.mp3"
+        subprocess.run([ffmpeg_bin(), "-y", "-loglevel", "error", "-i", str(wav), "-ac", "1", "-b:a", "64k", str(out)],
+                       check=True)
+        return out.read_bytes()
+
+
+def make_clips(audio: dict[str, Path], workdir: Path, cfg: dict | None = None) -> dict[str, Path]:
+    """{id: narration wav} -> {id: talking-host mp4} for every clip Kaggle made in time."""
+    s = settings(cfg)
+    if not audio:
+        return {}
+    if not kaggle_ready():
+        print("  (Host clips skipped: the Kaggle secrets are not set)")
+        return {}
+    user = os.environ["KAGGLE_USERNAME"].strip()
+    kid = f"{user}/{s['kernel_slug']}"
+    b64 = lambda data: base64.b64encode(data).decode()  # noqa: E731
+    jobs = [{"id": k, "audio": b64(_mp3(w))} for k, w in audio.items()]
+    keys = ("preprocess", "size", "expression_scale", "enhancer")
+    code = (KERNEL_TEMPLATE.read_text()
+            .replace("__JOBS__", b64(json.dumps(jobs).encode()))
+            .replace("__SETTINGS__", b64(json.dumps({k: s[k] for k in keys}).encode()))
+            .replace("__IMAGE__", b64(host_image(s))))
+    try:
+        with tempfile.TemporaryDirectory() as d:
+            (Path(d) / "talk.py").write_text(code)
+            (Path(d) / "kernel-metadata.json").write_text(json.dumps({
+                "id": kid, "title": s["kernel_slug"], "code_file": "talk.py", "language": "python",
+                "kernel_type": "script", "is_private": True, "enable_gpu": True, "enable_internet": True,
+                "dataset_sources": [], "competition_sources": [], "kernel_sources": [], "model_sources": []}))
+            print("  " + _kaggle("kernels", "push", "-p", d)[-300:])
+        started = time.time()
+        time.sleep(60)
+        status = "unknown"
+        while time.time() - started < s["max_wait_minutes"] * 60:
+            status = _status(kid)
+            if status in ("complete", "error", "cancelled"):
+                break
+            time.sleep(30)
+        print(f"  Kaggle host run: {status} after {(time.time() - started) / 60:.0f} min")
+
+        out_dir = workdir / "host"
+        out_dir.mkdir(parents=True, exist_ok=True)
+        print("  " + _kaggle("kernels", "output", kid, "-p", str(out_dir), check=False)[-500:])
+        result_file = next(out_dir.rglob("result.json"), None)
+        result = json.loads(result_file.read_text()) if result_file else {}
+        if result.get("error"):
+            print(f"  Kaggle host error:\n{result['error']}")
+        got = {}
+        for k in audio:
+            res = (result.get("jobs") or {}).get(k) or {}
+            if res.get("error"):
+                print(f"  Host clip {k} failed:\n{res['error']}")
+            clip = next(out_dir.rglob(f"{k}.mp4"), None)
+            if clip and clip.stat().st_size > 20_000:
+                got[k] = clip
+        print(f"  Host clips ready: {len(got)} of {len(audio)} (GPU: {result.get('gpu', '?')})")
+        return got
+    except Exception as e:
+        print(f"  (Host clips skipped: {e})")
+        return {}
+
+
+def pick_scenes(n: int, cfg: dict | None) -> list[int]:
+    """Which scenes (0-based) the host presents: the first, every `every`-th in between, and the last."""
+    every = int((cfg or {}).get("every", 3))
+    picks = {0, n - 1} | set(range(every, n - 1, every))
+    return sorted(i for i in picks if 0 <= i < n)
+
+
+if __name__ == "__main__":
+    wav = Path(sys.argv[1])
+    clips = make_clips({"test": wav}, Path("talking_out"))
+    if clips:
+        Path("talking_test.mp4").write_bytes(clips["test"].read_bytes())
+        print("Wrote talking_test.mp4")
+    else:
+        sys.exit("No talking clip was made")

@@ -71,6 +71,14 @@ video:
   # Claude checks the claims from its own medical knowledge. Raise to 2-6 when you have more credit.
   fact_check_searches: 0
   background_color: "#0F172A"
+  # You on screen: your photo talks (lips + head move with the narration), made free on Kaggle's GPU.
+  # It presents the first scene, every 3rd scene and the last; other scenes keep the normal visuals.
+  # If Kaggle fails or is slow, those scenes just use the normal visuals, so the video is never lost.
+  host:
+    enabled: false
+    image: "branding/health-support-studio/avatar/nurse_final.jpg"
+    every: 3
+    max_wait_minutes: 90
   # The agent rotates through these styles, one per video, so the channel stays varied.
   # Each style can override "format" (landscape/shorts) and "target_minutes".
   styles:

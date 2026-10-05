@@ -447,6 +447,37 @@ def render_scene(bg: Path, is_video: bool, overlay: Path, wav: Path, ass: Path |
     return out
 
 
+def render_host_scene(talk: Path, wav: Path, ass: Path | None, duration: float, size: tuple[int, int],
+                      out: Path) -> Path:
+    """The talking host, centred over a blurred copy of the same picture, with captions; audio is the narration."""
+    W, H = size
+    fade_out = max(0.0, duration - 0.3)
+    talk_in = f"[0:v]fps={FPS},tpad=stop_mode=clone:stop_duration=5"
+    fades = f"fade=t=in:st=0:d=0.3,fade=t=out:st={fade_out:.2f}:d=0.3"
+    if H > W:  # vertical: the host fills the screen (waist-up, sides cropped)
+        chain = [f"{talk_in},scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},setsar=1,{fades}"]
+    else:  # landscape: the host in the middle, a blurred copy of the picture fills the sides
+        chain = [
+            f"{talk_in},split[a][b]",
+            f"[a]scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},boxblur=28:2,eq=brightness=-0.06[bg]",
+            f"[b]scale={W}:{H}:force_original_aspect_ratio=decrease,setsar=1[fg]",
+            f"[bg][fg]overlay=(W-w)/2:(H-h)/2,setsar=1,{fades}",
+        ]
+    if ass:
+        fonts = f":fontsdir='{_escape_filter_path(FONT_DIR)}'" if FONT_DIR.exists() else ""
+        chain[-1] += f",subtitles='{_escape_filter_path(ass)}'{fonts}"
+    chain[-1] += ",format=yuv420p[v]"
+    _run([
+        "-y", "-i", str(talk), "-i", str(wav),
+        "-filter_complex", ";".join(chain),
+        "-map", "[v]", "-map", "1:a", "-t", f"{duration:.3f}",
+        "-c:v", "libx264", "-preset", "veryfast", "-crf", "21", "-r", str(FPS),
+        "-c:a", "aac", "-b:a", "160k", "-ar", "48000", "-ac", "2",
+        str(out),
+    ])
+    return out
+
+
 def concat(parts: list[Path], out: Path) -> Path:
     listfile = out.with_suffix(".txt")
     listfile.write_text("".join(f"file '{p.resolve()}'\n" for p in parts))
@@ -466,13 +497,31 @@ def build_video(plan, video_cfg: dict, voice_cfg: dict, channel_name: str, workd
     use_footage = video_cfg.get("stock_footage", True)
     used: set = set()
 
-    parts = []
+    narrated = []
     for i, scene in enumerate(plan.scenes, 1):
-        print(f"    Scene {i}/{len(plan.scenes)}: {scene.layout} - {scene.heading}")
+        print(f"    Narrating scene {i}/{len(plan.scenes)}: {scene.layout} - {scene.heading}")
         wav = scenes_dir / f"{i:02d}.wav"
-        duration, captions = voice.narrate_scene(scene.narration, voice_cfg, wav)
-        overlay = render_overlay(scene, size, channel_name, scenes_dir / f"{i:02d}_overlay.png")
+        narrated.append((wav, *voice.narrate_scene(scene.narration, voice_cfg, wav)))
+
+    # The host (talking photo, made on Kaggle) presents some scenes between the normal visuals
+    host_cfg = video_cfg.get("host") or {}
+    host = {}
+    if host_cfg.get("enabled"):
+        from . import talking
+
+        picks = talking.pick_scenes(len(plan.scenes), host_cfg)
+        print(f"    Making the host talk for scenes {[i + 1 for i in picks]} on Kaggle...")
+        host = talking.make_clips({f"s{i + 1:02d}": narrated[i][0] for i in picks}, workdir, host_cfg)
+
+    parts = []
+    for i, (scene, (wav, duration, captions)) in enumerate(zip(plan.scenes, narrated), 1):
+        print(f"    Scene {i}/{len(plan.scenes)}: {scene.layout} - {scene.heading}")
         ass = write_ass(captions, size, scenes_dir / f"{i:02d}.ass") if video_cfg.get("captions", True) else None
+        talk = host.get(f"s{i:02d}")
+        if talk:
+            parts.append(render_host_scene(talk, wav, ass, duration, size, scenes_dir / f"{i:02d}.mp4"))
+            continue
+        overlay = render_overlay(scene, size, channel_name, scenes_dir / f"{i:02d}_overlay.png")
         clip = fetch_footage(scene.footage_query, size, scenes_dir / f"{i:02d}_bg.mp4", used) if use_footage else None
         parts.append(render_scene(clip or gradient, clip is not None, overlay, wav, ass, duration, size,
                                   scenes_dir / f"{i:02d}.mp4"))

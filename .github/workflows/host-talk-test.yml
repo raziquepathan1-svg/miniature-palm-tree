@@ -1,0 +1,90 @@
+name: Talking host - test
+
+# Makes a short sample of the Health Support Studio host (your photo) saying a line in your cloned voice,
+# on Kaggle's free GPU, and saves it as branding/health-support-studio/avatar/talk_test.mp4 to check.
+on:
+  workflow_dispatch:
+    inputs:
+      text:
+        description: "What the host says"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: host-talk-test
+  cancel-in-progress: false
+
+jobs:
+  talk:
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Cache voice models and fonts
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cache/kokoro
+            ~/.cache/huggingface
+          key: voice-models-clone-v1
+
+      - name: Install
+        run: |
+          sudo apt-get update -q && sudo apt-get install -y -q ffmpeg fonts-dejavu-core
+          pip install -q -r requirements.txt kaggle
+          pip install -q torch==2.6.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cpu
+          pip install -q chatterbox-tts
+
+      - name: Unlock the voice sample
+        env:
+          VOICE_KEY: ${{ secrets.VOICE_KEY }}
+        run: |
+          openssl enc -d -aes-256-cbc -pbkdf2 -iter 200000 -in voice/voice_sample.wav.enc \
+            -out "$RUNNER_TEMP/voice_sample.wav" -pass env:VOICE_KEY
+          echo "VOICE_SAMPLE=$RUNNER_TEMP/voice_sample.wav" >> "$GITHUB_ENV"
+
+      - name: Narrate, make the host talk, and build the scene
+        env:
+          KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
+          KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
+          KAGGLE_API_TOKEN: ${{ secrets.KAGGLE_API_TOKEN }}
+          TEXT: ${{ inputs.text }}
+        run: |
+          [ -z "$KAGGLE_KEY" ] && unset KAGGLE_KEY
+          [ -z "$KAGGLE_API_TOKEN" ] && unset KAGGLE_API_TOKEN
+          python - <<'PY'
+          import os, yaml
+          from pathlib import Path
+          from youtube_agent import talking, visuals, voice
+          cfg = yaml.safe_load(open("youtube_agent/config.yaml"))
+          text = os.environ.get("TEXT") or (
+              "Hi, and welcome to Health Support Studio. Today we're talking about sleep, and three simple "
+              "habits that can help you feel better this week. Let's get started.")
+          work = Path("talk_work"); work.mkdir(exist_ok=True)
+          wav = work / "line.wav"
+          duration, captions = voice.narrate_scene(text, cfg["voice"], wav)
+          clips = talking.make_clips({"s01": wav}, work, cfg["video"].get("host"))
+          if not clips:
+              raise SystemExit("No talking clip came back from Kaggle - see the log above.")
+          visuals.ensure_fonts()
+          ass = visuals.write_ass(captions, (1920, 1080), work / "line.ass")
+          out = Path("branding/health-support-studio/avatar/talk_test.mp4")
+          visuals.render_host_scene(clips["s01"], wav, ass, duration, (1920, 1080), out)
+          print(f"Saved {out} ({out.stat().st_size // 1024} KB)")
+          PY
+          rm -f "$VOICE_SAMPLE"
+
+      - name: Save the sample
+        run: |
+          git config user.name "youtube-agent"
+          git config user.email "youtube-agent@users.noreply.github.com"
+          git add branding/health-support-studio/avatar/talk_test.mp4
+          git commit -m "Talking host: test sample" && git pull --rebase && git push
