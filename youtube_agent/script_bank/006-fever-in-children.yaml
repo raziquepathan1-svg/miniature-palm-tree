@@ -3,6 +3,7 @@ style: "Top Questions"
 sources:
   - "HealthyChildren.org (AAP), Fever: When to Call the Pediatrician: https://www.healthychildren.org/English/health-issues/conditions/fever/Pages/When-to-Call-the-Pediatrician.aspx"
   - "HealthyChildren.org (AAP), Fever and Your Baby: https://www.healthychildren.org/English/health-issues/conditions/fever/Pages/Fever-and-Your-Baby.aspx"
+  - "HealthyChildren.org (AAP), Febrile Seizures: https://www.healthychildren.org/English/health-issues/conditions/head-neck-nervous-system/Pages/Febrile-Seizures.aspx"
   - "MedlinePlus, Fever: https://medlineplus.gov/fever.html"
 plan:
   topic: "Fever in children: when to worry and when to call the doctor"
@@ -11,9 +12,11 @@ plan:
     Your child feels hot and the thermometer says 102. Is that dangerous? We answer the top questions parents ask about fever, based on guidance from the American Academy of Pediatrics.
 
     In this video:
-    • What counts as a fever
+    • What counts as a fever, and how to take your child's temperature
     • Why babies under 3 months need a doctor right away
     • Why how your child acts matters more than the number
+    • Fever medicine: what helps, what to avoid
+    • Febrile seizures: what they are and what to do
     • Red flags that need emergency care
 
     #FeverInKids #Parenting #KidsHealth #Pediatrics #HealthEducation
@@ -29,66 +32,221 @@ plan:
       footage_query: "mother child thermometer"
       narration: >-
         It is the middle of the night, your child feels hot, and the thermometer shows a number that makes your heart race. Is
-        this dangerous? Should you go to the ER? Today we answer the questions parents ask most about fever, based on guidance
-        from the American Academy of Pediatrics.
+        this dangerous? Should you go to the ER, or can it wait until morning? Today we answer the questions parents ask most
+        about fever in children, based on guidance from the American Academy of Pediatrics.
+    - layout: "bullets"
+      heading: "What We Will Cover"
+      points: ["What counts as a fever", "Babies under 3 months", "Medicine and comfort", "When it is an emergency"]
+      footage_query: "parent reading notes"
+      narration: >-
+        Here is what we will cover. What actually counts as a fever, and how to take your child's temperature the right way.
+        Why age matters so much, especially for young babies. What helps your child feel better, and what to avoid. What a
+        febrile seizure is. And most important, the warning signs that mean you should get help right away. Stay until the end,
+        because the last list could save a life.
     - layout: "big_number"
       heading: "100.4°F"
       points: ["(38°C) or higher", "is a fever"]
       footage_query: "digital thermometer"
       narration: >-
         Question one: what counts as a fever? In general, a temperature of one hundred point four degrees Fahrenheit, or
-        thirty eight degrees Celsius, or higher. For babies and toddlers, a rectal temperature is the most accurate. For older
-        kids, an oral, ear or forehead thermometer can work well.
+        thirty eight degrees Celsius, or higher. Normal body temperature is not one exact number. It goes up and down during the
+        day, and it is often a little higher in the late afternoon and evening, or after running around and playing.
+    - layout: "bullets"
+      heading: "Taking the Temperature"
+      points: ["Under 3 years: rectal is best", "Older kids: mouth thermometer", "Ear and forehead: quick checks", "Armpit: least accurate"]
+      footage_query: "parent using thermometer child"
+      narration: >-
+        Question two: how should I take my child's temperature? Use a digital thermometer, not an old glass one with mercury.
+        For babies and toddlers, a rectal temperature is the most accurate. Once children are old enough to hold a thermometer
+        under the tongue with their mouth closed, usually around age four, an oral reading works well. Ear and forehead
+        thermometers are quick, and an armpit reading is the least accurate, so double check it if it matters.
+    - layout: "bullets"
+      heading: "Why Fevers Happen"
+      points: ["The body fighting germs", "Most often a virus", "A sign, not the illness", "Usually gets better in days"]
+      footage_query: "child resting bed blanket"
+      narration: >-
+        Question three: why do children get fevers? A fever is not an illness by itself. It is a sign that the body is
+        fighting something, most often a common virus like a cold or the flu. Raising the body's temperature is one of the ways
+        the immune system works against germs. Most fevers from common infections go away on their own within a few days.
     - layout: "warning"
       heading: "Baby Under 3 Months?"
       points: ["Any fever of 100.4°F or more", "Call the doctor right away", "Even if baby seems fine"]
       footage_query: "newborn baby sleeping"
       narration: >-
-        Question two: is fever more serious in babies? Yes. If your baby is younger than three months and has a temperature of
+        Question four: is fever more serious in babies? Yes. If your baby is younger than three months and has a temperature of
         one hundred point four or higher, call your doctor right away, even if your baby seems fine. Very young babies can get
-        serious infections that get worse quickly, so they need to be checked.
+        serious infections that get worse quickly, and they often do not show many other signs, so they need to be checked.
+    - layout: "bullets"
+      heading: "Do Not Wait It Out"
+      points: ["Call day or night", "Do not give medicine first", "Doctor may want to see baby", "Have the reading ready"]
+      footage_query: "mother holding baby phone"
+      narration: >-
+        For a baby that young, do not wait until morning to see if the fever goes away. Call, day or night. Do not give fever
+        medicine before you talk to the doctor, unless they tell you to, because it can hide the fever that tells the doctor
+        how sick your baby might be. Have the exact temperature reading and how you took it ready when you call.
+    - layout: "bullets"
+      heading: "Older Babies and Toddlers"
+      points: ["3 to 6 months: call at 102°F", "Under 2: fever over 24 hours", "Age 2 and up: over 3 days", "Any age: if you are worried"]
+      footage_query: "toddler with mother couch"
+      narration: >-
+        Question five: what about older babies and toddlers? For babies three to six months old, call your doctor if the
+        temperature is one hundred two or higher, or if they have a lower fever but seem sick. For children younger than two,
+        call if a fever lasts more than twenty four hours. For children two and older, call if it lasts more than three days.
+        And at any age, call if you are worried.
     - layout: "myth_fact"
       heading: "Common Belief"
-      points: ["A high fever damages the brain", "Watch how your child acts"]
+      points: ["A high fever damages the brain", "Fever from infection does not"]
       footage_query: "child playing living room"
       narration: >-
-        Question three: can a high fever damage my child's brain? Common fevers from infections do not cause brain damage.
-        Fever is actually one way the body fights germs. How your child acts matters more than the exact number. A child with a
-        fever of one hundred two who is still playing and drinking is often less worrying than a child with a lower fever who
-        is very hard to wake.
+        Question six: can a high fever damage my child's brain? Fevers from common infections do not cause brain damage. Doctors
+        call the worry about fever fever phobia, and it is very common. The real danger is different: overheating from the
+        outside, like a child left in a hot car, is an emergency. But a fever from an infection is the body doing its job.
+    - layout: "bullets"
+      heading: "Behavior Matters More"
+      points: ["Still playing and drinking?", "Smiles and makes eye contact?", "Very sleepy or hard to wake?", "Better when fever comes down?"]
+      footage_query: "child drinking water glass"
+      narration: >-
+        So what should you look at? How your child acts matters more than the exact number. A child with a fever of one hundred
+        two who is still playing, drinking and making eye contact is often less worrying than a child with a lower fever who is
+        very sleepy, floppy or hard to wake. A good sign is when your child perks up once the fever comes down a little.
+    - layout: "big_number"
+      heading: "104°F"
+      points: ["fever that keeps going this high", "call your doctor"]
+      footage_query: "worried parent night"
+      narration: >-
+        Question seven: is there a number that should make me call? Yes. If your child's fever keeps rising to one hundred four
+        degrees Fahrenheit or higher, again and again, call your doctor, whatever their age. The number alone does not mean your
+        child is in danger, but it does mean a doctor should know about it and help you decide what to do next.
     - layout: "bullets"
       heading: "Should I Give Medicine?"
-      points: ["Not required for every fever", "Helps comfort", "Dose by weight, follow the label", "Never give aspirin to kids"]
+      points: ["Not required for every fever", "The goal is comfort", "Dose by weight, follow the label", "Never give aspirin to kids"]
       footage_query: "parent comforting sick child"
       narration: >-
-        Question four: should I always give fever medicine? Not always. The goal is comfort, not a perfect number. If your child
-        is uncomfortable, ask your pediatrician or pharmacist about the right medicine and dose, which is usually based on
-        weight. Never give aspirin to children or teens, because it is linked to a rare but serious illness called Reye's
-        syndrome.
+        Question eight: should I always give fever medicine? Not always. The goal is comfort, not a perfect number. If your child
+        is sleeping peacefully, you do not need to wake them up for medicine. If your child is uncomfortable, ask your
+        pediatrician or pharmacist about the right medicine and dose. Never give aspirin to children or teens, because it is
+        linked to a rare but serious illness called Reye's syndrome.
     - layout: "bullets"
-      heading: "When to Call the Doctor"
-      points: ["Fever over 3 days, age 2 and up", "Younger kids: call sooner", "Fever keeps rising above 104°F", "Ear pain, sore throat, pee pain"]
-      footage_query: "mother phone call child"
+      heading: "Using Fever Medicine Safely"
+      points: ["Acetaminophen and ibuprofen", "Ibuprofen: 6 months and older", "Use the dosing tool in the box", "Do not double up"]
+      footage_query: "medicine measuring syringe"
       narration: >-
-        Question five: when should I call the doctor? For children two and older, call if a fever lasts more than three days.
-        For younger children, call sooner. Also call if the fever keeps going above one hundred four degrees, or if your child
-        has ear pain, a sore throat, pain when peeing, or signs of dehydration, like fewer wet diapers.
+        The two common fever medicines for children are acetaminophen and ibuprofen. Ibuprofen is only for babies six months
+        and older, and babies under three months should not get any fever medicine unless a doctor says so. The right dose
+        depends on weight, so use the measuring tool that comes in the box, not a kitchen spoon. And check other cold medicines,
+        so you do not give the same ingredient twice.
+    - layout: "bullets"
+      heading: "Comfort Care at Home"
+      points: ["Plenty of fluids", "Light clothing, one blanket", "Comfortable room temperature", "Rest and quiet play"]
+      footage_query: "child sleeping light blanket"
+      narration: >-
+        Question nine: what else helps at home? Give plenty of fluids, like water, breast milk or formula for babies, and small
+        sips often if your child does not want to drink much. Dress your child in light clothing with one light blanket, not
+        lots of layers. Keep the room at a comfortable temperature, and let your child rest or play quietly.
+    - layout: "myth_fact"
+      heading: "Common Belief"
+      points: ["Ice baths and alcohol rubs help", "They can be harmful"]
+      footage_query: "bathroom bathtub towels"
+      narration: >-
+        Here is a common mistake. Some people try ice baths, cold water, or rubbing alcohol on the skin to bring a fever down.
+        Do not do this. Cold water can cause shivering, which can actually raise body temperature, and rubbing alcohol can be
+        absorbed through the skin or breathed in and can poison a child. Bundling a feverish child in heavy blankets is also
+        not a good idea.
+    - layout: "warning"
+      heading: "Watch for Dehydration"
+      points: ["Fewer wet diapers or less pee", "Dry mouth, no tears", "Sunken eyes", "Very sleepy or cranky"]
+      footage_query: "baby diaper changing table"
+      narration: >-
+        Question ten: how do I know if my child is getting dehydrated? Fever makes the body lose more water. Watch for fewer wet
+        diapers or peeing less than usual, a dry or sticky mouth, crying without tears, sunken eyes, or a sunken soft spot on a
+        baby's head. A child who is unusually sleepy or very cranky may also be low on fluids. Call your doctor if you see these
+        signs.
+    - layout: "title"
+      heading: "What Is a Febrile Seizure?"
+      points: ["Scary to watch", "Usually not dangerous"]
+      footage_query: "parent holding toddler worried"
+      narration: >-
+        Question eleven: what is a febrile seizure? Some young children, usually between six months and five years old, can
+        have a seizure when they have a fever. Their body may stiffen, shake or jerk, and their eyes may roll back. It is
+        terrifying to watch. The good news is that most febrile seizures stop within a few minutes and do not cause lasting
+        harm.
+    - layout: "bullets"
+      heading: "During a Febrile Seizure"
+      points: ["Lay child on side, on the floor", "Nothing in the mouth", "Time how long it lasts", "Stay with your child"]
+      footage_query: "living room carpet floor"
+      narration: >-
+        If it happens, stay calm and keep your child safe. Lay them on their side on the floor, away from anything hard or sharp.
+        Do not put anything in their mouth, and do not try to hold them still. Time how long the seizure lasts. Call 911 if it
+        lasts longer than five minutes, or if your child has trouble breathing or turns blue. After a first seizure, always
+        have your child checked by a doctor.
+    - layout: "myth_fact"
+      heading: "Common Belief"
+      points: ["Teething causes a high fever", "Teething does not cause real fever"]
+      footage_query: "baby teething toy"
+      narration: >-
+        Question twelve: can teething cause a fever? Teething may make a baby fussy and drooly, and their temperature may go up
+        a tiny bit. But teething does not cause a real fever of one hundred point four or higher. If your teething baby has a
+        fever, look for another cause, like an infection, and follow the same rules for age and symptoms.
+    - layout: "bullets"
+      heading: "Fever With Other Symptoms"
+      points: ["Ear pain or pulling at ears", "Sore throat", "Pain when peeing", "Cough that will not go away"]
+      footage_query: "child ear pain doctor"
+      narration: >-
+        Question thirteen: which symptoms with a fever need a doctor visit? Call if your child has ear pain or keeps pulling at
+        their ears, a sore throat, pain or burning when peeing, a cough that is getting worse, or vomiting and diarrhea that do
+        not stop. These can be signs of infections like an ear infection, strep throat or a urinary infection that may need
+        treatment.
+    - layout: "bullets"
+      heading: "Fever After Vaccines"
+      points: ["Mild fever can be normal", "Usually within a day or two", "Comfort care helps", "Call if high or lasting"]
+      footage_query: "baby vaccine doctor office"
+      narration: >-
+        Bonus question: is it normal to get a fever after vaccines? A mild fever in the day or two after shots is common, and it
+        usually means the body is building protection. Comfort care, fluids and rest help. Call your doctor if the fever is
+        high, lasts more than a couple of days, if your baby is younger than three months, or if your child seems very sick.
+    - layout: "bullets"
+      heading: "Protect the Rest of the Family"
+      points: ["Wash hands often", "Do not share cups", "Cover coughs and sneezes", "Clean shared toys and surfaces"]
+      footage_query: "family washing hands sink"
+      narration: >-
+        Most fevers come from germs that can spread, so protect the rest of the family too. Wash hands often with soap and
+        water, especially after wiping noses and changing diapers. Do not share cups or spoons. Teach kids to cough and sneeze
+        into their elbow. And clean shared toys, door handles and phones while someone at home is sick.
+    - layout: "bullets"
+      heading: "Back to School or Daycare"
+      points: ["Fever-free for 24 hours", "Without fever medicine", "Eating and drinking normally", "Check your school rules"]
+      footage_query: "child backpack school door"
+      narration: >-
+        Question fourteen: when can my child go back to school or daycare? Most schools and doctors say a child should be
+        fever free for at least twenty four hours, without any fever medicine, before going back. Your child should also be
+        eating, drinking and acting more like themselves. Check your school or daycare rules, because some are stricter.
     - layout: "warning"
       heading: "Call 911 or Go to ER"
       points: ["Trouble breathing", "Hard to wake or very confused", "Stiff neck or seizure", "Rash that doesn't fade when pressed"]
       footage_query: "ambulance emergency lights"
       narration: >-
-        Question six: when is it an emergency? Call 911 or go to the ER if your child has trouble breathing, is very hard to
-        wake, confused or limp, has a stiff neck, a seizure, bluish lips, or a rash of small purple or red spots that do not
-        fade when you press on them. Trust your instincts. If your child seems very sick to you, get help.
+        Question fifteen: when is it an emergency? Call 911 or go to the ER if your child has trouble breathing, is very hard to
+        wake, confused or limp, has a stiff neck, a seizure that lasts more than five minutes, bluish lips, or a rash of small
+        purple or red spots that do not fade when you press on them. Also go if your child cannot keep any fluids down and seems
+        very sick.
+    - layout: "bullets"
+      heading: "Trust Your Instincts"
+      points: ["You know your child best", "Something feels wrong? Call", "No question is too small", "Write down what you see"]
+      footage_query: "mother hugging child"
+      narration: >-
+        And here is the most important rule of all: trust your instincts. You know your child better than anyone. If your child
+        seems very sick to you, or something just feels wrong, call your doctor or get help, whatever the thermometer says.
+        Your doctor's office would much rather hear from you than have you wait. Write down the temperatures and symptoms you see,
+        so you can tell them clearly.
     - layout: "outro"
       heading: "Remember"
-      points: ["Under 3 months: call right away", "Watch behavior, not just the number", "Trust your instincts"]
+      points: ["Under 3 months: call right away", "Watch behavior, not just the number", "No aspirin for kids", "Trust your instincts"]
       footage_query: "happy family home"
       narration: >-
-        Remember: any fever in a baby under three months means a call to the doctor. For older kids, watch how they act, not
-        only the number. This video is for education only, not medical advice. Like and subscribe to Health Support Studio for
-        a new health video every day.
+        Let's recap. Any fever in a baby under three months means a call to the doctor. For older kids, watch how they act, not
+        only the number. Use the right medicine dose for their weight, and never aspirin. Know the emergency signs, and trust
+        your instincts. This video is for education only, not medical advice. If it helped you, share it with another parent,
+        subscribe to Health Support Studio, and let me know in the comments what topic you want next.
   short_title: "Baby has a fever? Know this number #Shorts"
   short_caption: >-
     Every parent should know this: fever in a baby under 3 months is different. Here is when to call the doctor right away.

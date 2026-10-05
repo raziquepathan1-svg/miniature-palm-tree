@@ -62,7 +62,7 @@ video:
   # "avatar"       = HeyGen talking avatar (paid HeyGen plan with API access)
   mode: "voice_slides"
   stock_footage: true          # background video clips from Pexels (free; needs PEXELS_API_KEY)
-  target_minutes: 4            # spoken length of each video
+  target_minutes: 11           # spoken length of each video (10-15 min)
   format: "landscape"          # "landscape" (16:9 normal video) or "shorts" (9:16 vertical)
   videos_per_run: 1            # the GitHub schedule runs once a day -> 1 video/day
   captions: true               # burn subtitles into the video
