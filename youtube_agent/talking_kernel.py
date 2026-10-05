@@ -67,7 +67,7 @@ def setup() -> None:
     sh(f"{sys.executable} -m pip install -q uv")
     uv = f"{sys.executable} -m uv pip install -q --python {PY}"
     sh(f"{sys.executable} -m uv venv -q --python 3.10 {VENV}")
-    sh(f"{uv} setuptools wheel")
+    sh(f"{uv} 'setuptools<70' wheel")  # librosa 0.9 needs pkg_resources
     sh(f"{uv} torch==2.1.2 torchvision==0.16.2 torchaudio==2.1.2 --index-url https://download.pytorch.org/whl/cu121")
     sh(f"{uv} numpy==1.23.5 face_alignment==1.3.5 imageio==2.19.3 imageio-ffmpeg==0.4.7 librosa==0.9.2 "
        "numba==0.58.1 resampy==0.3.1 pydub==0.25.1 scipy==1.10.1 kornia==0.6.8 tqdm yacs==0.1.8 pyyaml "
