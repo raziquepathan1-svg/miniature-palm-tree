@@ -10,6 +10,7 @@ __JOBS__, __IMAGE__ and __SETTINGS__ are filled in by talking.py (base64).
 import base64
 import json
 import re
+import shutil
 import subprocess
 import sys
 import time
@@ -106,7 +107,7 @@ def talk(job: dict, image: Path) -> Path:
     if not made:
         raise RuntimeError("SadTalker made no video")
     dest = OUT / f"{job['id']}.mp4"
-    made[-1].replace(dest)
+    shutil.move(str(made[-1]), dest)  # /kaggle/temp and /kaggle/working are different disks
     return dest
 
 
