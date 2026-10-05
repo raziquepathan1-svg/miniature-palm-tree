@@ -75,7 +75,7 @@ video:
   # It presents the first scene, every 4th scene and the last; other scenes keep the normal visuals.
   # If Kaggle fails or is slow, those scenes just use the normal visuals, so the video is never lost.
   host:
-    enabled: true
+    enabled: false   # off until the new natural-movement version is tested
     image: "branding/health-support-studio/avatar/nurse_final.jpg"
     every: 4
     max_wait_minutes: 150
