@@ -297,7 +297,7 @@ def finish(body: Path, overlays: list[tuple[Path, float | None]], music_vol: flo
 PLACE_WORDS = ("rooftop", "backyard", "garden", "terrace", "balcony", "garage", "kitchen", "bathroom", "bedroom",
                "living room", "house", "car", "bike", "porch", "yard", "attic", "basement", "pool", "room")
 WORK = {  # what the crew does, in order (three are picked per Short)
-    "rooftop": ["swept away years of trash", "pressure-washed the old concrete", "laid a warm wooden deck",
+    "rooftop": ["swept away years of trash", "pressure-washed the old concrete", "laid a beautiful new floor",
                 "built planter boxes along the edges", "hung string lights overhead", "brought in cozy furniture"],
     "yard": ["pulled out every dead weed", "hauled away the broken junk", "laid a new stone path",
              "rolled out fresh green grass", "planted new shrubs and flowers", "added soft garden lights"],
