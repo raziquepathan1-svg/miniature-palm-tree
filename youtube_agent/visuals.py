@@ -10,7 +10,7 @@ import subprocess
 from pathlib import Path
 
 import requests
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 from .editor import ffmpeg_bin
 
@@ -517,8 +517,11 @@ def _cover(img: Image.Image, W: int, H: int) -> Image.Image:
 
 
 def make_thumbnail(text: str, channel_name: str, out: Path, background: Path | None = None,
-                   style: str | None = None, highlight: str | None = None) -> Path:
-    """Eye-catching 1280x720 thumbnail: photo on the right, huge text on the left, style badge, brand."""
+                   style: str | None = None, highlight: str | None = None, host: Path | None = None) -> Path:
+    """Eye-catching 1280x720 thumbnail: photo on the right, huge text on the left, style badge, brand.
+
+    host: optional cut-out PNG of the presenter (transparent background), shown waist-up on the right.
+    """
     from PIL import ImageEnhance
 
     W, H = 1280, 720
@@ -553,7 +556,8 @@ def make_thumbnail(text: str, channel_name: str, out: Path, background: Path | N
     # Huge text, auto-sized to fit in 3 lines within the left ~62%
     words = text.upper().split()
     hl = (highlight or "").upper().strip(" ?!.,")
-    max_w, max_lines = int(W * 0.62), 3
+    host_img = Image.open(host).convert("RGBA") if host and Path(host).exists() else None
+    max_w, max_lines = int(W * (0.56 if host_img else 0.62)), 3
     size = 150
     bottom_limit = H - 120  # keep clear of the brand badge
     while size > 70:
@@ -575,6 +579,18 @@ def make_thumbnail(text: str, channel_name: str, out: Path, background: Path | N
         y += line_h
     bar_y = y + int(size * 0.18)
     d.rounded_rectangle((48, bar_y, 48 + 220, bar_y + 14), 7, fill=YELLOW)
+
+    if host_img:  # presenter from the waist up, standing in the bottom-right corner
+        waist = host_img.crop((0, 0, host_img.width, int(host_img.height * 0.56)))
+        scale = (H + 40) / waist.height
+        waist = waist.resize((int(waist.width * scale), H + 40), Image.LANCZOS)
+        glow = Image.new("RGBA", waist.size, (0, 0, 0, 0))
+        glow.putalpha(waist.getchannel("A").point(lambda a: int(a * 0.55)))
+        glow = glow.filter(ImageFilter.GaussianBlur(14))
+        hx = W - waist.width + 30
+        img.alpha_composite(glow, (hx + 10, 0))
+        img.alpha_composite(waist, (hx, 0))
+        d = ImageDraw.Draw(img)
 
     # Brand (bottom-right)
     nf = font(30, 800)

@@ -18,6 +18,7 @@ from .uploader import _credentials
 HERE = Path(__file__).parent
 JOBS = HERE / "thumbnail_jobs.json"
 OUT = HERE / "output" / "thumbnails"
+HOST = HERE.parent / "branding" / "health-support-studio" / "avatar" / "nurse_cutout.png"
 
 
 def main() -> None:
@@ -33,7 +34,8 @@ def main() -> None:
         vid = job["youtube_id"]
         photo = visuals.fetch_photo(job.get("photo_query", ""), OUT / f"{vid}_photo.jpg")
         thumb = visuals.make_thumbnail(job["text"], "Health Support Studio", OUT / f"{vid}.jpg", photo,
-                                       style=job.get("style"), highlight=job.get("highlight"))
+                                       style=job.get("style"), highlight=job.get("highlight"),
+                                       host=HOST if HOST.exists() else None)
         try:
             youtube.thumbnails().set(videoId=vid, media_body=MediaFileUpload(str(thumb))).execute()
             job["done"] = True

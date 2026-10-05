@@ -33,6 +33,12 @@ SCRIPT_BANK = CHANNEL_DIR / "script_bank"  # pre-written scripts: used first, no
 OUTPUT_DIR = HERE / "output"
 
 
+def _host_image(config: dict) -> Path | None:
+    """The presenter cut-out for thumbnails (config.yaml thumbnail.host_image), if set."""
+    rel = (config.get("thumbnail") or {}).get("host_image")
+    return (CHANNEL_DIR / rel).resolve() if rel else None
+
+
 def load_config() -> dict:
     return yaml.safe_load((CHANNEL_DIR / "config.yaml").read_text())
 
@@ -186,7 +192,8 @@ def make_one_video(config: dict, history: list[dict], topic: str | None, dry_run
             frame = workdir / "thumb_frame.png"
             editor._run(["-y", "-ss", "1", "-i", str(first_clip), "-frames:v", "1", str(frame)])
         thumb = visuals.make_thumbnail(plan.thumbnail_text, channel_name, workdir / "thumbnail.jpg", frame,
-                                       style=(style or {}).get("name"), highlight=plan.thumbnail_highlight)
+                                       style=(style or {}).get("name"), highlight=plan.thumbnail_highlight,
+                                       host=_host_image(config))
 
     social_dir = None
     if config.get("social", {}).get("enabled", True):
