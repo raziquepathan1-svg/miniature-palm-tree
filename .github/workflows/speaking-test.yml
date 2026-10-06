@@ -1,0 +1,93 @@
+name: Speaking clips - your voice test
+
+# Turns the voice in branding/health-support-studio/avatar/speaking/*.mp4 (Flow clips where the host speaks)
+# into your cloned voice, keeping the exact timing so the lips still match, and writes what is said.
+on:
+  workflow_dispatch:
+    inputs:
+      intro_end:
+        description: "Cut the intro at this second (0 = keep all)"
+        required: false
+        default: "6.8"
+      outro_end:
+        description: "Cut the outro at this second (0 = keep all)"
+        required: false
+        default: "0"
+
+permissions:
+  contents: write
+
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Cache voice models
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/huggingface
+          key: voice-models-clone-v1
+
+      - name: Install
+        run: |
+          sudo apt-get update -q && sudo apt-get install -y -q ffmpeg
+          pip install -q -r requirements.txt faster-whisper
+          pip install -q torch==2.6.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cpu
+          pip install -q chatterbox-tts
+
+      - name: Unlock the voice sample
+        env:
+          VOICE_KEY: ${{ secrets.VOICE_KEY }}
+        run: |
+          openssl enc -d -aes-256-cbc -pbkdf2 -iter 200000 -in voice/voice_sample.wav.enc \
+            -out "$RUNNER_TEMP/voice_sample.wav" -pass env:VOICE_KEY
+          echo "VOICE_SAMPLE=$RUNNER_TEMP/voice_sample.wav" >> "$GITHUB_ENV"
+
+      - name: Convert to your voice
+        env:
+          INTRO_END: ${{ inputs.intro_end }}
+          OUTRO_END: ${{ inputs.outro_end }}
+        run: |
+          python - <<'PY'
+          import os, subprocess
+          from pathlib import Path
+          from faster_whisper import WhisperModel
+          from youtube_agent import voice
+          d = Path("branding/health-support-studio/avatar/speaking")
+          whisper = WhisperModel("small.en", device="cpu", compute_type="int8")
+          notes = []
+          for name, end in (("intro", os.environ.get("INTRO_END")), ("outro", os.environ.get("OUTRO_END"))):
+              src = d / f"{name}.mp4"
+              if not src.exists():
+                  continue
+              cut = ["-t", end] if end and float(end) > 0 else []
+              wav = Path(f"/tmp/{name}.wav")
+              subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(src), *cut, "-vn", "-ac", "1",
+                              "-ar", "24000", str(wav)], check=True)
+              segs, _ = whisper.transcribe(str(wav))
+              said = " ".join(s.text.strip() for s in segs)
+              ok = voice.convert_file(wav)
+              out = d / f"{name}_myvoice.mp4"
+              subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(src), "-i", str(wav), *cut,
+                              "-map", "0:v", "-map", "1:a", "-c:v", "libx264", "-preset", "veryfast", "-crf", "20",
+                              "-c:a", "aac", "-b:a", "160k", "-shortest", str(out)], check=True)
+              notes.append(f"{name}: converted={ok} | said: {said}")
+          Path(d / "speaking_test.txt").write_text("\n".join(notes) + "\n")
+          print("\n".join(notes))
+          with open(os.environ["GITHUB_STEP_SUMMARY"], "a") as f:
+              f.write("\n".join(f"- {n}" for n in notes) + "\n")
+          PY
+          rm -f "$VOICE_SAMPLE"
+
+      - name: Save
+        run: |
+          git config user.name "youtube-agent"
+          git config user.email "youtube-agent@users.noreply.github.com"
+          git add branding/health-support-studio/avatar/speaking
+          git commit -m "Speaking clips in your voice (test)" && git pull --rebase && git push
