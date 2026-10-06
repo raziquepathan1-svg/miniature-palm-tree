@@ -99,5 +99,16 @@
     "youtube_id": "bayuaduGQqc",
     "publish_at": "2026-10-06T16:00:00Z",
     "short_youtube_id": "EH_41v8y_bk"
+  },
+  {
+    "date": "2026-10-06T03:54:39",
+    "topic": "Urgent care vs the ER: which one do you need?",
+    "requested_topic": "Urgent care vs the ER: which one do you need?",
+    "title": "Urgent Care or ER? How to Choose in 30 Seconds",
+    "style": "Explainer",
+    "script_file": "007-urgent-care-vs-er.yaml",
+    "youtube_id": "ap47sf9a5Qk",
+    "publish_at": "2026-10-07T16:00:00Z",
+    "short_youtube_id": "Oissyg_rRNc"
   }
 ]
