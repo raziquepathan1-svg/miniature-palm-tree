@@ -71,6 +71,11 @@ video:
   # Claude checks the claims from its own medical knowledge. Raise to 2-6 when you have more credit.
   fact_check_searches: 0
   background_color: "#0F172A"
+  # Your spoken intro and outro (Flow clips, voice changed to your cloned voice): the intro opens every long
+  # video, the outro closes every video and Short. start/end trim the clip (seconds).
+  host_clips:
+    intro: {file: "branding/health-support-studio/avatar/speaking/intro_myvoice.mp4", start: 0.6, end: 9.3}
+    outro: {file: "branding/health-support-studio/avatar/speaking/outro_v1_myvoice.mp4", start: 0, end: 8.0}
   # You on screen: your Flow "moves" clips (avatar/moves), lip-synced to the narration free on Kaggle.
   # It presents the first scene, every 5th scene and the last; other scenes keep the normal visuals.
   # If Kaggle fails or is slow, those scenes just use the normal visuals, so the video is never lost.

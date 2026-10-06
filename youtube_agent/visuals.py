@@ -483,6 +483,31 @@ def render_host_scene(talk: Path, wav: Path, ass: Path | None, duration: float, 
     return out
 
 
+def render_clip_scene(clip: Path, size: tuple[int, int], out: Path, start: float = 0, end: float | None = None) -> Path:
+    """A finished clip with its own sound (the host's spoken intro or outro), fitted like a host scene."""
+    W, H = size
+    span = ["-ss", f"{start}"] + (["-to", f"{end}"] if end else [])
+    if H > W:
+        chain = [f"[0:v]fps={FPS},scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},setsar=1"]
+    else:
+        chain = [
+            f"[0:v]fps={FPS},split[a][b]",
+            f"[a]scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},boxblur=28:2,eq=brightness=-0.06[bg]",
+            f"[b]scale={W}:{H}:force_original_aspect_ratio=decrease,setsar=1[fg]",
+            "[bg][fg]overlay=(W-w)/2:(H-h)/2,setsar=1",
+        ]
+    chain[-1] += ",fade=t=in:st=0:d=0.3,format=yuv420p[v]"
+    _run([
+        "-y", *span, "-i", str(clip),
+        "-filter_complex", ";".join(chain),
+        "-map", "[v]", "-map", "0:a",
+        "-c:v", "libx264", "-preset", "veryfast", "-crf", "21", "-r", str(FPS),
+        "-c:a", "aac", "-b:a", "160k", "-ar", "48000", "-ac", "2",
+        str(out),
+    ])
+    return out
+
+
 def concat(parts: list[Path], out: Path) -> Path:
     listfile = out.with_suffix(".txt")
     listfile.write_text("".join(f"file '{p.resolve()}'\n" for p in parts))
@@ -531,6 +556,17 @@ def build_video(plan, video_cfg: dict, voice_cfg: dict, channel_name: str, workd
         clip = fetch_footage(scene.footage_query, size, scenes_dir / f"{i:02d}_bg.mp4", used) if use_footage else None
         parts.append(render_scene(clip or gradient, clip is not None, overlay, wav, ass, duration, size,
                                   scenes_dir / f"{i:02d}.mp4"))
+    # The host's own spoken intro and outro (Flow clips in your voice), around the narrated scenes
+    for key in ("intro", "outro"):
+        clip_cfg = (video_cfg.get("host_clips") or {}).get(key)
+        if not clip_cfg or (key == "intro" and video_cfg.get("format") == "shorts"):
+            continue  # Shorts open with their hook, so they only get the outro
+        path = Path(__file__).resolve().parent.parent / clip_cfg["file"]
+        if not path.exists():
+            print(f"    (No {key} clip at {path})")
+            continue
+        part = render_clip_scene(path, size, scenes_dir / f"{key}.mp4", clip_cfg.get("start", 0), clip_cfg.get("end"))
+        parts = [part, *parts] if key == "intro" else [*parts, part]
     return concat(parts, workdir / "narrated.mp4")
 
 
