@@ -34,9 +34,9 @@ LIPSYNC_TEMPLATE = HERE / "lipsync_kernel.py"
 DEFAULTS = {
     "moves": "branding/health-support-studio/avatar/moves",           # from the repo root
     "lipsync": "latentsync",            # "latentsync" (sharp, natural lips) or "wav2lip" (faster, blurrier)
-    "lipsync_steps": 20,
+    "lipsync_steps": 30,
     "pads": "0 15 0 0",                 # Wav2Lip face box padding (top bottom left right): include the chin
-    "landscape_crop": 0.62,             # landscape videos show the top part of a moves clip (head to waist)
+    "landscape_crop": 1.0,              # landscape videos show this top part of a moves clip (1.0 = whole body)
     "image": "branding/health-support-studio/avatar/nurse_final.jpg",  # from the repo root
     "crop": [0.06, 0.02, 0.94, 0.54],   # waist-up part of the photo (left, top, right, bottom as fractions)
     "image_width": 768,
