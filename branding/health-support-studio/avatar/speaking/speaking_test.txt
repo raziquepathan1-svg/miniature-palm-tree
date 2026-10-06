@@ -1,0 +1,2 @@
+intro: converted=True | said: Hi everyone, welcome back to Health Support Studio. Today's topic is really important, so let's get started.
+outro: converted=True | said: If this video helped you, like it, share it, and subscribe to Health Support Studio. Tell me in the comments what topic you want next. Take care.
