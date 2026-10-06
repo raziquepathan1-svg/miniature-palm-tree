@@ -75,7 +75,7 @@ video:
   # It presents the first scene, every 5th scene and the last; other scenes keep the normal visuals.
   # If Kaggle fails or is slow, those scenes just use the normal visuals, so the video is never lost.
   host:
-    enabled: true
+    enabled: false   # lip-sync not good enough on a beard; see intro/outro plan
     image: "branding/health-support-studio/avatar/nurse_final.jpg"
     every: 5
     max_wait_minutes: 170
