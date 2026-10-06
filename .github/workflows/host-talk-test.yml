@@ -56,32 +56,25 @@ jobs:
           KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
           KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
           KAGGLE_API_TOKEN: ${{ secrets.KAGGLE_API_TOKEN }}
-          TEXT: ${{ inputs.text }}
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
         run: |
           [ -z "$KAGGLE_KEY" ] && unset KAGGLE_KEY
           [ -z "$KAGGLE_API_TOKEN" ] && unset KAGGLE_API_TOKEN
           python - <<'PY'
-          import os, yaml
+          import yaml
           from pathlib import Path
-          from youtube_agent import talking, visuals, voice
+          from types import SimpleNamespace
+          from youtube_agent import visuals
+          from youtube_agent.planner import Scene
           cfg = yaml.safe_load(open("youtube_agent/config.yaml"))
-          text = os.environ.get("TEXT") or (
-              "Hi, and welcome to Health Support Studio. Today we're talking about sleep, and three simple "
-              "habits that can help you feel better this week. First, go to bed and wake up at the same time "
-              "every day, even on weekends. Second, put your phone away at least thirty minutes before bed. "
-              "And third, keep your bedroom cool, dark and quiet. Let's get started.")
-          work = Path("talk_work"); work.mkdir(exist_ok=True)
-          wav = work / "line.wav"
-          duration, captions = voice.narrate_scene(text, cfg["voice"], wav)
-          clips = talking.make_clips({"s01": wav}, work, cfg["video"].get("host"))
-          if not clips:
-              raise SystemExit("No talking clip came back from Kaggle - see the log above.")
-          visuals.ensure_fonts()
-          ass = visuals.write_ass(captions, (1920, 1080), work / "line.ass")
-          out = Path("branding/health-support-studio/avatar/talk_test.mp4")
-          visuals.render_host_scene(clips["s01"], wav, ass, duration, (1920, 1080), out,
-                                    talking.landscape_crop(cfg["video"].get("host")))
-          print(f"Saved {out} ({out.stat().st_size // 1024} KB)")
+          plan = yaml.safe_load(open("youtube_agent/script_bank/008-sleep-myths.yaml"))["plan"]
+          scenes = [Scene(**s) for s in plan["scenes"][:5]]
+          video = {**cfg["video"], "host": {**cfg["video"]["host"], "enabled": True, "every_seconds": 35, "first_at": 0}}
+          out = visuals.build_video(SimpleNamespace(scenes=scenes), video, cfg["voice"], "Health Support Studio",
+                                    Path("talk_work"))
+          dest = Path("branding/health-support-studio/avatar/talk_test.mp4")
+          dest.write_bytes(out.read_bytes())
+          print(f"Saved {dest} ({dest.stat().st_size // 1024} KB)")
           PY
           rm -f "$VOICE_SAMPLE"
 

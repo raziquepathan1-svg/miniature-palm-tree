@@ -76,14 +76,15 @@ video:
   host_clips:
     intro: {file: "branding/health-support-studio/avatar/speaking/intro_myvoice.mp4", start: 0.6, end: 9.3}
     outro: {file: "branding/health-support-studio/avatar/speaking/outro_v1_myvoice.mp4", start: 0, end: 8.0}
-  # You on screen: your Flow "moves" clips (avatar/moves), lip-synced to the narration free on Kaggle.
-  # It presents the first scene, every 5th scene and the last; other scenes keep the normal visuals.
-  # If Kaggle fails or is slow, those scenes just use the normal visuals, so the video is never lost.
+  # You on screen in the middle of the video: about every minute you appear for 5-10 s and say the start of
+  # a scene (your Flow "moves" clips, lip-synced to the narration free on Kaggle), then the visuals continue.
+  # If Kaggle fails or is slow, those moments just keep the normal visuals, so the video is never lost.
   host:
-    enabled: false   # lip-sync not good enough on a beard; see intro/outro plan
-    image: "branding/health-support-studio/avatar/nurse_final.jpg"
-    every: 5
-    max_wait_minutes: 170
+    enabled: false   # on after you approve the test sample
+    every_seconds: 60
+    first_at: 30
+    snippet_seconds: [5, 10]
+    max_wait_minutes: 120
   # The agent rotates through these styles, one per video, so the channel stays varied.
   # Each style can override "format" (landscape/shorts) and "target_minutes".
   styles:

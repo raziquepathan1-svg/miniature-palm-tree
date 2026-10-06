@@ -448,17 +448,17 @@ def render_scene(bg: Path, is_video: bool, overlay: Path, wav: Path, ass: Path |
 
 
 def render_host_scene(talk: Path, wav: Path, ass: Path | None, duration: float, size: tuple[int, int],
-                      out: Path, landscape_crop: float = 1.0) -> Path:
+                      out: Path, landscape_crop: float = 1.0, fade_out: bool = True) -> Path:
     """The talking host, centred over a blurred copy of the same picture, with captions; audio is the narration.
 
     landscape_crop: in landscape videos, show only this top part of a tall host clip (head to waist).
     """
     W, H = size
-    fade_out = max(0.0, duration - 0.3)
+    fade_at = max(0.0, duration - 0.3)
     talk_in = f"[0:v]fps={FPS},tpad=stop_mode=clone:stop_duration=5"
     if W > H and landscape_crop < 1:
         talk_in += f",crop=iw:trunc(ih*{landscape_crop}/2)*2:0:0"
-    fades = f"fade=t=in:st=0:d=0.3,fade=t=out:st={fade_out:.2f}:d=0.3"
+    fades = f"fade=t=in:st=0:d=0.3" + (f",fade=t=out:st={fade_at:.2f}:d=0.3" if fade_out else "")
     if H > W:  # vertical: the host fills the screen (waist-up, sides cropped)
         chain = [f"{talk_in},scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},setsar=1,{fades}"]
     else:  # landscape: the host in the middle, a blurred copy of the picture fills the sides
@@ -508,6 +508,14 @@ def render_clip_scene(clip: Path, size: tuple[int, int], out: Path, start: float
     return out
 
 
+def trim_part(part: Path, start: float, out: Path) -> Path:
+    """The rest of a rendered scene from `start` seconds on (same format, so it joins seamlessly)."""
+    _run(["-y", "-ss", f"{start:.3f}", "-i", str(part),
+          "-c:v", "libx264", "-preset", "veryfast", "-crf", "21", "-r", str(FPS),
+          "-c:a", "aac", "-b:a", "160k", "-ar", "48000", "-ac", "2", str(out)])
+    return out
+
+
 def concat(parts: list[Path], out: Path) -> Path:
     listfile = out.with_suffix(".txt")
     listfile.write_text("".join(f"file '{p.resolve()}'\n" for p in parts))
@@ -533,29 +541,39 @@ def build_video(plan, video_cfg: dict, voice_cfg: dict, channel_name: str, workd
         wav = scenes_dir / f"{i:02d}.wav"
         narrated.append((wav, *voice.narrate_scene(scene.narration, voice_cfg, wav)))
 
-    # The host (talking photo, made on Kaggle) presents some scenes between the normal visuals
+    # About once a minute the host appears on screen and says the start of a scene (5-10 s, lip-synced on
+    # Kaggle); then the scene's normal visuals take over. Scenes without a host clip just use the visuals.
     host_cfg = video_cfg.get("host") or {}
-    host = {}
+    snips: dict[int, tuple[float, Path]] = {}
     if host_cfg.get("enabled"):
         from . import talking
 
-        picks = talking.pick_scenes(len(plan.scenes), host_cfg)
-        print(f"    Making the host talk for scenes {[i + 1 for i in picks]} on Kaggle...")
-        host = talking.make_clips({f"s{i + 1:02d}": narrated[i][0] for i in picks}, workdir, host_cfg)
+        cuts = talking.pick_snippets([(d, caps) for _, d, caps in narrated], host_cfg)
+        jobs = {}
+        for i, cut in cuts.items():
+            short_wav = scenes_dir / f"{i + 1:02d}_host.wav"
+            _run(["-y", "-i", str(narrated[i][0]), "-t", f"{cut:.3f}", str(short_wav)])
+            jobs[f"s{i + 1:02d}"] = short_wav
+        print(f"    The host says the start of scenes {[i + 1 for i in cuts]} (lip-synced on Kaggle)...")
+        clips = talking.make_clips(jobs, workdir, host_cfg)
+        snips = {i: (cut, clips[f"s{i + 1:02d}"]) for i, cut in cuts.items() if f"s{i + 1:02d}" in clips}
 
     parts = []
     for i, (scene, (wav, duration, captions)) in enumerate(zip(plan.scenes, narrated), 1):
         print(f"    Scene {i}/{len(plan.scenes)}: {scene.layout} - {scene.heading}")
         ass = write_ass(captions, size, scenes_dir / f"{i:02d}.ass") if video_cfg.get("captions", True) else None
-        talk = host.get(f"s{i:02d}")
-        if talk:
-            parts.append(render_host_scene(talk, wav, ass, duration, size, scenes_dir / f"{i:02d}.mp4",
-                                           talking.landscape_crop(host_cfg)))
-            continue
         overlay = render_overlay(scene, size, channel_name, scenes_dir / f"{i:02d}_overlay.png")
         clip = fetch_footage(scene.footage_query, size, scenes_dir / f"{i:02d}_bg.mp4", used) if use_footage else None
-        parts.append(render_scene(clip or gradient, clip is not None, overlay, wav, ass, duration, size,
-                                  scenes_dir / f"{i:02d}.mp4"))
+        part = render_scene(clip or gradient, clip is not None, overlay, wav, ass, duration, size,
+                            scenes_dir / f"{i:02d}.mp4")
+        if i - 1 in snips:
+            cut, talk = snips[i - 1]
+            parts.append(render_host_scene(talk, wav, ass, cut, size, scenes_dir / f"{i:02d}_host.mp4",
+                                           talking.landscape_crop(host_cfg), fade_out=False))
+            if duration - cut > 0.3:
+                parts.append(trim_part(part, cut, scenes_dir / f"{i:02d}_rest.mp4"))
+            continue
+        parts.append(part)
     # The host's own spoken intro and outro (Flow clips in your voice), around the narrated scenes
     for key in ("intro", "outro"):
         clip_cfg = (video_cfg.get("host_clips") or {}).get(key)

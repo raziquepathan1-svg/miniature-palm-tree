@@ -184,6 +184,23 @@ def landscape_crop(cfg: dict | None) -> float:
     return s["landscape_crop"] if moves_clips(s) else 1.0
 
 
+def pick_snippets(scenes: list[tuple[float, list]], cfg: dict | None) -> dict[int, float]:
+    """About every `every_seconds` of video, the host says the start of a scene on screen.
+    scenes: (duration, captions) per scene. Returns {scene index: seconds the host speaks}, ending the host
+    part where a caption ends (5-10 s) so it stops between phrases, not mid-word."""
+    cfg = cfg or {}
+    every = float(cfg.get("every_seconds", 60))
+    lo, hi = cfg.get("snippet_seconds", [5, 10])
+    picks, t, next_at = {}, 0.0, float(cfg.get("first_at", 30))
+    for i, (duration, captions) in enumerate(scenes):
+        if t >= next_at and duration >= lo:
+            ends = [end for _, end, _ in captions if lo <= end <= hi]
+            picks[i] = ends[-1] if ends else min(hi, duration)
+            next_at = t + every
+        t += duration
+    return picks
+
+
 def pick_scenes(n: int, cfg: dict | None) -> list[int]:
     """Which scenes (0-based) the host presents: the first, every `every`-th in between, and the last."""
     every = int((cfg or {}).get("every", 3))
