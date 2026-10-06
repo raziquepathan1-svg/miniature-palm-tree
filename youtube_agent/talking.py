@@ -33,6 +33,8 @@ LIPSYNC_TEMPLATE = HERE / "lipsync_kernel.py"
 
 DEFAULTS = {
     "moves": "branding/health-support-studio/avatar/moves",           # from the repo root
+    "lipsync": "latentsync",            # "latentsync" (sharp, natural lips) or "wav2lip" (faster, blurrier)
+    "lipsync_steps": 20,
     "pads": "0 15 0 0",                 # Wav2Lip face box padding (top bottom left right): include the chin
     "landscape_crop": 0.62,             # landscape videos show the top part of a moves clip (head to waist)
     "image": "branding/health-support-studio/avatar/nurse_final.jpg",  # from the repo root
@@ -125,7 +127,8 @@ def make_clips(audio: dict[str, Path], workdir: Path, cfg: dict | None = None) -
     jobs = [{"id": k, "audio": b64(_mp3(w)), "start": n} for n, (k, w) in enumerate(audio.items())]
     if moves:  # natural movement: the moves clips, lip-synced
         print(f"  Host: {len(moves)} moves clips, lip-synced on Kaggle")
-        settings_json = {"moves": moves, "raw_base": _raw_base(s), "pads": s["pads"]}
+        settings_json = {"moves": moves, "raw_base": _raw_base(s), "pads": s["pads"], "engine": s["lipsync"],
+                         "steps": s["lipsync_steps"]}
         code = (LIPSYNC_TEMPLATE.read_text()
                 .replace("__JOBS__", b64(json.dumps(jobs).encode()))
                 .replace("__SETTINGS__", b64(json.dumps(settings_json).encode())))
