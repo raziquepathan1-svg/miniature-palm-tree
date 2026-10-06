@@ -126,7 +126,7 @@ avatar:
 # ---- Editing (optional files in youtube_agent/assets/) ----
 # ---- Thumbnails ----
 thumbnail:
-  host_image: "../branding/health-support-studio/avatar/nurse_cutout.png"   # you in scrubs, shown on the right
+  host_image: "../branding/health-support-studio/avatar/poses"   # you in scrubs (a different pose each day), on the right
 
 editing:
   intro_clip: "assets/intro.mp4"          # played before the avatar video if the file exists

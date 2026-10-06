@@ -689,8 +689,18 @@ def make_thumbnail(text: str, channel_name: str, out: Path, background: Path | N
     # Huge text, auto-sized to fit in 3 lines within the left ~62%
     words = text.upper().split()
     hl = (highlight or "").upper().strip(" ?!.,")
-    host_img = Image.open(host).convert("RGBA") if host and Path(host).exists() else None
-    max_w, max_lines = int(W * (0.56 if host_img else 0.62)), 3
+    host_img, zoom = None, 0.56
+    if host and Path(host).is_dir():  # a folder of poses: a different one each day, and two framings
+        import datetime as dt
+
+        poses = sorted(Path(host).glob("*.png"))
+        if poses:
+            day = dt.date.today().toordinal()
+            host_img = Image.open(poses[day % len(poses)]).convert("RGBA")
+            zoom = 0.56 if (day // len(poses)) % 2 == 0 else 0.44  # waist-up, or closer (chest-up)
+    elif host and Path(host).exists():
+        host_img = Image.open(host).convert("RGBA")
+    max_w, max_lines = int(W * (0.53 if host_img else 0.62)), 3
     size = 150
     bottom_limit = H - 120  # keep clear of the brand badge
     while size > 70:
@@ -714,15 +724,22 @@ def make_thumbnail(text: str, channel_name: str, out: Path, background: Path | N
     d.rounded_rectangle((48, bar_y, 48 + 220, bar_y + 14), 7, fill=YELLOW)
 
     if host_img:  # presenter from the waist up, standing in the bottom-right corner
-        waist = host_img.crop((0, 0, host_img.width, int(host_img.height * 0.56)))
-        scale = (H + 40) / waist.height
-        waist = waist.resize((int(waist.width * scale), H + 40), Image.LANCZOS)
+        waist = host_img.crop((0, 0, host_img.width, int(host_img.height * zoom)))
+        # Keep the host big: trim the sides around the face (a wide wave or point is cut at the edge), then fit
+        # the right ~46% so arms never cover the text.
+        head = waist.getchannel("A").crop((0, 0, waist.width, int(waist.height * 0.25))).getbbox()
+        cx = (head[0] + head[2]) // 2 if head else waist.width // 2
+        keep = min(waist.width, int(waist.height * 0.82))
+        left = max(0, min(waist.width - keep, cx - keep // 2))
+        waist = waist.crop((left, 0, left + keep, waist.height))
+        scale = min((H + 40) / waist.height, W * 0.46 / waist.width)
+        waist = waist.resize((int(waist.width * scale), int(waist.height * scale)), Image.LANCZOS)
         glow = Image.new("RGBA", waist.size, (0, 0, 0, 0))
         glow.putalpha(waist.getchannel("A").point(lambda a: int(a * 0.55)))
         glow = glow.filter(ImageFilter.GaussianBlur(14))
-        hx = W - waist.width + 30
-        img.alpha_composite(glow, (hx + 10, 0))
-        img.alpha_composite(waist, (hx, 0))
+        hx, hy = W - waist.width + 30, max(0, H + 40 - waist.height)  # stands on the bottom edge
+        img.alpha_composite(glow, (hx + 10, hy))
+        img.alpha_composite(waist, (hx, hy))
         d = ImageDraw.Draw(img)
 
     # Brand (bottom-right)

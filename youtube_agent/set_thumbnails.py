@@ -18,7 +18,7 @@ from .uploader import _credentials
 HERE = Path(__file__).parent
 JOBS = HERE / "thumbnail_jobs.json"
 OUT = HERE / "output" / "thumbnails"
-HOST = HERE.parent / "branding" / "health-support-studio" / "avatar" / "nurse_cutout.png"
+HOST = HERE.parent / "branding" / "health-support-studio" / "avatar" / "poses"
 
 
 def main() -> None:
