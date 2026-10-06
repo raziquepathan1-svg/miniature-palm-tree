@@ -8,7 +8,7 @@ on:
       intro_end:
         description: "Cut the intro at this second (0 = keep all)"
         required: false
-        default: "6.8"
+        default: "0"
       outro_end:
         description: "Cut the outro at this second (0 = keep all)"
         required: false
@@ -62,7 +62,8 @@ jobs:
           d = Path("branding/health-support-studio/avatar/speaking")
           whisper = WhisperModel("small.en", device="cpu", compute_type="int8")
           notes = []
-          for name, end in (("intro", os.environ.get("INTRO_END")), ("outro", os.environ.get("OUTRO_END"))):
+          for name, end in (("intro", os.environ.get("INTRO_END")), ("outro", os.environ.get("OUTRO_END")),
+                            ("extra", "0")):
               src = d / f"{name}.mp4"
               if not src.exists():
                   continue
