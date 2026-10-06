@@ -71,11 +71,11 @@ video:
   # Claude checks the claims from its own medical knowledge. Raise to 2-6 when you have more credit.
   fact_check_searches: 0
   background_color: "#0F172A"
-  # You on screen: your photo talks (lips + head move with the narration), made free on Kaggle's GPU.
+  # You on screen: your Flow "moves" clips (avatar/moves), lip-synced to the narration free on Kaggle.
   # It presents the first scene, every 4th scene and the last; other scenes keep the normal visuals.
   # If Kaggle fails or is slow, those scenes just use the normal visuals, so the video is never lost.
   host:
-    enabled: false   # off until the new natural-movement version is tested
+    enabled: true
     image: "branding/health-support-studio/avatar/nurse_final.jpg"
     every: 4
     max_wait_minutes: 150
