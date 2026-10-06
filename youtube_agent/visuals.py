@@ -447,9 +447,23 @@ def render_scene(bg: Path, is_video: bool, overlay: Path, wav: Path, ass: Path |
     return out
 
 
+def render_side_panel(scene, size: tuple[int, int], channel_name: str, out_png: Path) -> Path:
+    """Landscape frame for the host: brand background, with the scene's card (heading and points, myth vs fact,
+    ...) drawn on the right side, leaving the left side free for the host."""
+    W, H = size
+    pw = int(W * 0.64)
+    card = Image.open(render_overlay(scene, (pw, H), channel_name, out_png.with_suffix(".card.png"))).convert("RGBA")
+    frame = Image.open(render_background(size, out_png.with_suffix(".bg.png"))).convert("RGBA")
+    frame.alpha_composite(card, (W - pw, 0))
+    frame.convert("RGB").save(out_png)
+    return out_png
+
+
 def render_host_scene(talk: Path, wav: Path, ass: Path | None, duration: float, size: tuple[int, int],
-                      out: Path, landscape_crop: float = 1.0, fade_out: bool = True) -> Path:
-    """The talking host, centred over a blurred copy of the same picture, with captions; audio is the narration.
+                      out: Path, landscape_crop: float = 1.0, fade_out: bool = True,
+                      side_panel: Path | None = None) -> Path:
+    """The talking host with captions; audio is the narration. Landscape: the host on the left with the scene's
+    card on the right (side_panel), or centred over a blurred copy of the same picture. Vertical: full screen.
 
     landscape_crop: in landscape videos, show only this top part of a tall host clip (head to waist).
     """
@@ -461,6 +475,13 @@ def render_host_scene(talk: Path, wav: Path, ass: Path | None, duration: float, 
     fades = f"fade=t=in:st=0:d=0.3" + (f",fade=t=out:st={fade_at:.2f}:d=0.3" if fade_out else "")
     if H > W:  # vertical: the host fills the screen (waist-up, sides cropped)
         chain = [f"{talk_in},scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},setsar=1,{fades}"]
+    elif side_panel and W > H:  # landscape: the host on the left, the scene's card on the right
+        fh = int(H * 0.92) // 2 * 2
+        chain = [
+            f"{talk_in},scale=-2:{fh},setsar=1[fg]",
+            f"[2:v]scale={W}:{H},fps={FPS},setsar=1[bg]",
+            f"[bg][fg]overlay={int(W * 0.035)}:(H-h)/2,setsar=1,{fades}",
+        ]
     else:  # landscape: the host in the middle, a blurred copy of the picture fills the sides
         chain = [
             f"{talk_in},split[a][b]",
@@ -472,8 +493,9 @@ def render_host_scene(talk: Path, wav: Path, ass: Path | None, duration: float, 
         fonts = f":fontsdir='{_escape_filter_path(FONT_DIR)}'" if FONT_DIR.exists() else ""
         chain[-1] += f",subtitles='{_escape_filter_path(ass)}'{fonts}"
     chain[-1] += ",format=yuv420p[v]"
+    panel_in = ["-loop", "1", "-i", str(side_panel)] if side_panel and W > H else []
     _run([
-        "-y", "-i", str(talk), "-i", str(wav),
+        "-y", "-i", str(talk), "-i", str(wav), *panel_in,
         "-filter_complex", ";".join(chain),
         "-map", "[v]", "-map", "1:a", "-t", f"{duration:.3f}",
         "-c:v", "libx264", "-preset", "veryfast", "-crf", "21", "-r", str(FPS),
@@ -568,8 +590,10 @@ def build_video(plan, video_cfg: dict, voice_cfg: dict, channel_name: str, workd
                             scenes_dir / f"{i:02d}.mp4")
         if i - 1 in snips:
             cut, talk = snips[i - 1]
+            panel = render_side_panel(scene, size, channel_name, scenes_dir / f"{i:02d}_side.png") \
+                if size[0] > size[1] else None
             parts.append(render_host_scene(talk, wav, ass, cut, size, scenes_dir / f"{i:02d}_host.mp4",
-                                           talking.landscape_crop(host_cfg), fade_out=False))
+                                           talking.landscape_crop(host_cfg), fade_out=False, side_panel=panel))
             if duration - cut > 0.3:
                 parts.append(trim_part(part, cut, scenes_dir / f"{i:02d}_rest.mp4"))
             continue
