@@ -1,6 +1,9 @@
-"""The host on screen: turns narration audio into a video of the host photo talking, on Kaggle's free GPU.
+"""The host on screen: turns narration audio into a video of the host talking, on Kaggle's free GPU.
 
-talking_kernel.py (SadTalker) runs on Kaggle; this file sends it the audio, waits, and downloads the clips.
+With "moves" clips (Google Flow videos of the host talking with head, body and hand movement, in the
+`moves` folder), lipsync_kernel.py joins them and lip-syncs the mouth to the narration (Wav2Lip). Without
+them, talking_kernel.py animates the host photo (SadTalker: face only). This file sends Kaggle the audio,
+waits, and downloads the clips.
 Anything that goes wrong returns fewer (or no) clips, so the video simply keeps its normal visuals there.
 
 Needs the KAGGLE_USERNAME and KAGGLE_KEY (or KAGGLE_API_TOKEN) secrets.
@@ -26,8 +29,12 @@ from .editor import ffmpeg_bin
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent
 KERNEL_TEMPLATE = HERE / "talking_kernel.py"
+LIPSYNC_TEMPLATE = HERE / "lipsync_kernel.py"
 
 DEFAULTS = {
+    "moves": "branding/health-support-studio/avatar/moves",           # from the repo root
+    "pads": "0 15 0 0",                 # Wav2Lip face box padding (top bottom left right): include the chin
+    "landscape_crop": 0.62,             # landscape videos show the top part of a moves clip (head to waist)
     "image": "branding/health-support-studio/avatar/nurse_final.jpg",  # from the repo root
     "crop": [0.06, 0.02, 0.94, 0.54],   # waist-up part of the photo (left, top, right, bottom as fractions)
     "image_width": 768,
@@ -75,6 +82,18 @@ def host_image(s: dict) -> bytes:
     return buf.getvalue()
 
 
+def moves_clips(s: dict) -> list[str]:
+    folder = ROOT / s["moves"]
+    return sorted(p.name for p in folder.glob("*.mp4")) if folder.exists() else []
+
+
+def _raw_base(s: dict) -> str:
+    """Where Kaggle downloads the moves clips (the public GitHub repo)."""
+    repo = os.environ.get("GITHUB_REPOSITORY", "raziquepathan1-svg/miniature-palm-tree")
+    branch = os.environ.get("GITHUB_REF_NAME", "claude/kind-albattani-59hcns")
+    return f"https://raw.githubusercontent.com/{repo}/{branch}/{s['moves']}"
+
+
 def _mp3(wav: Path) -> bytes:
     with tempfile.TemporaryDirectory() as d:
         out = Path(d) / "a.mp3"
@@ -94,12 +113,20 @@ def make_clips(audio: dict[str, Path], workdir: Path, cfg: dict | None = None) -
     user = os.environ["KAGGLE_USERNAME"].strip()
     kid = f"{user}/{s['kernel_slug']}"
     b64 = lambda data: base64.b64encode(data).decode()  # noqa: E731
-    jobs = [{"id": k, "audio": b64(_mp3(w))} for k, w in audio.items()]
-    keys = ("preprocess", "size", "expression_scale", "enhancer")
-    code = (KERNEL_TEMPLATE.read_text()
-            .replace("__JOBS__", b64(json.dumps(jobs).encode()))
-            .replace("__SETTINGS__", b64(json.dumps({k: s[k] for k in keys}).encode()))
-            .replace("__IMAGE__", b64(host_image(s))))
+    moves = moves_clips(s)
+    jobs = [{"id": k, "audio": b64(_mp3(w)), "start": n} for n, (k, w) in enumerate(audio.items())]
+    if moves:  # natural movement: the moves clips, lip-synced
+        print(f"  Host: {len(moves)} moves clips, lip-synced on Kaggle")
+        settings_json = {"moves": moves, "raw_base": _raw_base(s), "pads": s["pads"]}
+        code = (LIPSYNC_TEMPLATE.read_text()
+                .replace("__JOBS__", b64(json.dumps(jobs).encode()))
+                .replace("__SETTINGS__", b64(json.dumps(settings_json).encode())))
+    else:  # the photo, animated (face only)
+        keys = ("preprocess", "size", "expression_scale", "enhancer")
+        code = (KERNEL_TEMPLATE.read_text()
+                .replace("__JOBS__", b64(json.dumps(jobs).encode()))
+                .replace("__SETTINGS__", b64(json.dumps({k: s[k] for k in keys}).encode()))
+                .replace("__IMAGE__", b64(host_image(s))))
     try:
         with tempfile.TemporaryDirectory() as d:
             (Path(d) / "talk.py").write_text(code)
@@ -138,6 +165,12 @@ def make_clips(audio: dict[str, Path], workdir: Path, cfg: dict | None = None) -
     except Exception as e:
         print(f"  (Host clips skipped: {e})")
         return {}
+
+
+def landscape_crop(cfg: dict | None) -> float:
+    """How much of the host clip (from the top) landscape videos show: tall moves clips are cropped to the waist."""
+    s = settings(cfg)
+    return s["landscape_crop"] if moves_clips(s) else 1.0
 
 
 def pick_scenes(n: int, cfg: dict | None) -> list[int]:

@@ -448,11 +448,16 @@ def render_scene(bg: Path, is_video: bool, overlay: Path, wav: Path, ass: Path |
 
 
 def render_host_scene(talk: Path, wav: Path, ass: Path | None, duration: float, size: tuple[int, int],
-                      out: Path) -> Path:
-    """The talking host, centred over a blurred copy of the same picture, with captions; audio is the narration."""
+                      out: Path, landscape_crop: float = 1.0) -> Path:
+    """The talking host, centred over a blurred copy of the same picture, with captions; audio is the narration.
+
+    landscape_crop: in landscape videos, show only this top part of a tall host clip (head to waist).
+    """
     W, H = size
     fade_out = max(0.0, duration - 0.3)
     talk_in = f"[0:v]fps={FPS},tpad=stop_mode=clone:stop_duration=5"
+    if W > H and landscape_crop < 1:
+        talk_in += f",crop=iw:trunc(ih*{landscape_crop}/2)*2:0:0"
     fades = f"fade=t=in:st=0:d=0.3,fade=t=out:st={fade_out:.2f}:d=0.3"
     if H > W:  # vertical: the host fills the screen (waist-up, sides cropped)
         chain = [f"{talk_in},scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},setsar=1,{fades}"]
@@ -519,7 +524,8 @@ def build_video(plan, video_cfg: dict, voice_cfg: dict, channel_name: str, workd
         ass = write_ass(captions, size, scenes_dir / f"{i:02d}.ass") if video_cfg.get("captions", True) else None
         talk = host.get(f"s{i:02d}")
         if talk:
-            parts.append(render_host_scene(talk, wav, ass, duration, size, scenes_dir / f"{i:02d}.mp4"))
+            parts.append(render_host_scene(talk, wav, ass, duration, size, scenes_dir / f"{i:02d}.mp4",
+                                           talking.landscape_crop(host_cfg)))
             continue
         overlay = render_overlay(scene, size, channel_name, scenes_dir / f"{i:02d}_overlay.png")
         clip = fetch_footage(scene.footage_query, size, scenes_dir / f"{i:02d}_bg.mp4", used) if use_footage else None
