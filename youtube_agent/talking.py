@@ -82,9 +82,17 @@ def host_image(s: dict) -> bytes:
     return buf.getvalue()
 
 
+def _is_portrait(clip: Path) -> bool:
+    out = subprocess.run([ffmpeg_bin(), "-hide_banner", "-i", str(clip)], capture_output=True, text=True).stderr
+    m = re.search(r"Video:.*?(\d{3,5})x(\d{3,5})", out)
+    return bool(m) and int(m.group(2)) > int(m.group(1))
+
+
 def moves_clips(s: dict) -> list[str]:
+    """The portrait (9:16) moves clips; landscape ones are skipped (cropping them zooms in far too much)."""
     folder = ROOT / s["moves"]
-    return sorted(p.name for p in folder.glob("*.mp4")) if folder.exists() else []
+    clips = sorted(folder.glob("*.mp4")) if folder.exists() else []
+    return [c.name for c in clips if _is_portrait(c)]
 
 
 def _raw_base(s: dict) -> str:
