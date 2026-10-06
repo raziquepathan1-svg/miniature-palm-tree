@@ -6,16 +6,18 @@ sources:
   - "MedlinePlus, Healthy Sleep: https://medlineplus.gov/healthysleep.html"
 plan:
   topic: "Sleep: how much you really need and how to improve it"
-  title: "5 Sleep Myths That Are Wrecking Your Rest"
+  title: "10 Sleep Myths That Are Wrecking Your Rest"
   description: |-
-    Can you really catch up on sleep over the weekend? Does a nightcap help you sleep? We bust five common sleep myths and share simple habits that actually help, based on CDC and NIH guidance.
+    Can you really catch up on sleep over the weekend? Does a nightcap help you sleep? Is melatonin harmless? We bust ten common sleep myths and share simple habits that actually help, based on CDC and NIH guidance.
 
     In this video:
-    • How much sleep adults really need
+    • How much sleep you really need at every age
+    • What happens in your body while you sleep
     • Why weekend catch-up sleep isn't a fix
-    • What alcohol does to your sleep
+    • What alcohol, caffeine and screens do to your sleep
+    • Naps, exercise and melatonin: what's true
     • When snoring is a warning sign
-    • Simple habits for better sleep
+    • A simple wind-down routine and when to see a doctor
 
     #Sleep #SleepTips #Insomnia #SleepApnea #HealthEducation
   tags: ["sleep myths", "how much sleep do i need", "sleep tips", "better sleep", "insomnia", "sleep apnea", "snoring", "alcohol and sleep", "catch up on sleep", "healthy habits", "health education"]
@@ -26,75 +28,229 @@ plan:
   scenes:
     - layout: "title"
       heading: "Sleep: Myth vs Fact"
-      points: ["5 myths wrecking your rest"]
+      points: ["10 myths wrecking your rest"]
       footage_query: "woman sleeping bed morning"
       narration: >-
         About one in three American adults does not get enough sleep. And some of the things we believe about sleep are making
-        it worse. Today we are busting five common sleep myths, and sharing simple habits that actually help. Let's start with
-        the big one.
+        it worse. Today we are busting ten common sleep myths, and I will share simple habits that actually help you sleep
+        better, starting tonight. Stay until the end for an easy wind down routine you can try this evening.
+    - layout: "bullets"
+      heading: "What Happens While You Sleep"
+      points: ["The body repairs itself", "The brain stores memories", "Hormones and mood reset", "Immune system recharges"]
+      footage_query: "peaceful sleeping person night"
+      narration: >-
+        First, why does sleep matter so much? Sleep is not the body switching off. While you sleep, your body repairs itself,
+        your brain sorts and stores what you learned during the day, and hormones that control appetite, growth and stress are
+        reset. Sleep also supports your immune system, which helps you fight off infections.
+    - layout: "bullets"
+      heading: "Sleep Comes in Cycles"
+      points: ["Light sleep", "Deep sleep", "REM or dream sleep", "Several cycles each night"]
+      footage_query: "bedroom night moonlight"
+      narration: >-
+        Sleep happens in cycles. You move from light sleep into deep sleep, which helps your body feel restored, and then into
+        REM sleep, when most dreaming happens and the brain is very active. One cycle takes roughly an hour and a half, and you
+        go through several cycles each night. Cutting your night short means missing some of these important stages.
+    - layout: "bullets"
+      heading: "How Much Sleep You Need"
+      points: ["Teens: 8 to 10 hours", "Adults: 7 hours or more", "Age 65 and up: 7 to 8 hours", "Children need even more"]
+      footage_query: "family morning breakfast"
+      narration: >-
+        So how much do you need? According to the CDC, teenagers need eight to ten hours a night. Adults need at least seven
+        hours. Adults sixty five and older need about seven to eight hours. And younger children need even more, often nine to
+        twelve hours for school age kids. Now, let's bust the myths.
     - layout: "myth_fact"
       heading: "Myth 1"
       points: ["Five hours is enough for me", "Most adults need 7 hours or more"]
       footage_query: "tired man coffee morning"
       narration: >-
-        Myth number one: I do fine on five hours. Fact: the CDC says most adults need at least seven hours of sleep a night.
-        Very few people truly do well on much less. Over time, too little sleep is linked to high blood pressure, diabetes,
-        heart disease, depression, and drowsy driving crashes.
+        Myth number one: I do fine on five hours. Fact: most adults need at least seven hours of sleep a night, and very few
+        people truly do well on much less. Many people who sleep too little have simply gotten used to feeling tired. Over
+        time, too little sleep is linked to high blood pressure, diabetes, heart disease, depression, and drowsy driving
+        crashes.
     - layout: "myth_fact"
       heading: "Myth 2"
       points: ["I can catch up on weekends", "A steady schedule works better"]
       footage_query: "person sleeping weekend"
       narration: >-
         Myth number two: I can catch up on sleep over the weekend. Fact: sleeping in may help a little, but it does not fully
-        undo a week of short nights. And big shifts in your schedule can make it harder to fall asleep on Sunday night. Going
-        to bed and waking up at about the same time every day works better.
+        undo a week of short nights. And big shifts in your schedule work like jet lag, making it harder to fall asleep on
+        Sunday night. Going to bed and waking up at about the same time every day works much better.
     - layout: "myth_fact"
       heading: "Myth 3"
       points: ["A drink helps me sleep", "Alcohol disrupts sleep later"]
       footage_query: "glass of wine evening"
       narration: >-
         Myth number three: a nightcap helps me sleep. Fact: alcohol may make you drowsy at first, but it disrupts your sleep
-        later in the night. You may wake up more often and feel less rested in the morning. Alcohol can also make snoring and
-        sleep apnea worse.
+        later in the night. You may wake up more often, get less of the deep, restful sleep you need, and feel worse in the
+        morning. Alcohol can also make snoring and sleep apnea worse.
     - layout: "myth_fact"
       heading: "Myth 4"
       points: ["Snoring is harmless", "Loud snoring can signal sleep apnea"]
       footage_query: "couple bed night"
       narration: >-
         Myth number four: snoring is just annoying, not a health problem. Fact: loud snoring, especially with pauses in
-        breathing, gasping or choking at night, and feeling very sleepy during the day, can be a sign of sleep apnea. Untreated
-        sleep apnea is linked to high blood pressure, heart disease and stroke. It is treatable, so talk to your doctor.
+        breathing, gasping or choking at night, and feeling very sleepy during the day, can be a sign of sleep apnea. In sleep
+        apnea, the airway keeps closing during sleep, so breathing stops and starts again and again.
+    - layout: "warning"
+      heading: "Sleep Apnea Signs"
+      points: ["Loud snoring", "Pauses in breathing", "Gasping or choking at night", "Very sleepy during the day"]
+      footage_query: "man sleeping snoring"
+      narration: >-
+        Untreated sleep apnea is linked to high blood pressure, heart disease, stroke and car crashes from falling asleep at
+        the wheel. Other signs include waking up with a headache or a dry mouth, and trouble focusing. The good news: it is
+        common and treatable. If your partner says you snore loudly or stop breathing in your sleep, talk to your doctor.
     - layout: "myth_fact"
       heading: "Myth 5"
       points: ["Older adults need less sleep", "Needs stay about the same"]
       footage_query: "senior woman reading bed"
       narration: >-
         Myth number five: you need less sleep as you get older. Fact: older adults still need about seven to eight hours. Sleep
-        often gets lighter with age, and people may wake more at night. But frequent trouble sleeping is not something you just
-        have to accept, and it is worth mentioning to your doctor.
+        often gets lighter with age, and people may wake up more during the night. But frequent trouble sleeping is not
+        something you just have to accept as part of aging, and it is worth mentioning to your doctor.
+    - layout: "myth_fact"
+      heading: "Myth 6"
+      points: ["TV or my phone helps me fall asleep", "Screens keep your brain awake"]
+      footage_query: "person phone bed dark"
+      narration: >-
+        Myth number six: watching TV or scrolling on my phone helps me fall asleep. Fact: screens keep your brain alert. The
+        bright light from phones, tablets and TVs can delay the body's natural sleepy signal, and exciting videos, news or
+        messages keep your mind busy. Try to put screens away at least thirty minutes before bed, and keep your phone out of
+        reach.
+    - layout: "myth_fact"
+      heading: "Myth 7"
+      points: ["If I can't sleep, stay in bed", "Get up and do something calm"]
+      footage_query: "woman awake bed night"
+      narration: >-
+        Myth number seven: if you can't sleep, just stay in bed and keep trying. Fact: lying awake for a long time can teach
+        your brain that bed is a place for worrying. If you cannot fall asleep after about twenty minutes, get up, go to
+        another room, and do something calm in dim light, like reading a paper book. Go back to bed when you feel sleepy.
+    - layout: "myth_fact"
+      heading: "Myth 8"
+      points: ["Naps are always bad", "Short, early naps can help"]
+      footage_query: "man napping couch afternoon"
+      narration: >-
+        Myth number eight: naps are always bad for you. Fact: a short nap of about twenty to thirty minutes in the early
+        afternoon can boost alertness. But long naps, or naps late in the day, can make it harder to sleep at night. If you
+        have trouble sleeping at night, it may be better to skip naps for a while.
+    - layout: "myth_fact"
+      heading: "Myth 9"
+      points: ["Exercise at night ruins sleep", "Regular exercise helps sleep"]
+      footage_query: "woman walking evening park"
+      narration: >-
+        Myth number nine: exercising in the evening will ruin your sleep. Fact: regular physical activity, like a brisk walk,
+        helps most people fall asleep faster and sleep more deeply. Some people find that a very hard workout right before bed
+        keeps them wired, so if that is you, finish intense exercise a few hours before bedtime. But any regular movement is
+        better than none.
+    - layout: "myth_fact"
+      heading: "Myth 10"
+      points: ["Melatonin is harmless, more is better", "Ask your doctor first"]
+      footage_query: "supplement bottle pills table"
+      narration: >-
+        Myth number ten: melatonin is completely harmless, and more is better. Fact: melatonin is sold as a dietary supplement,
+        so it is not checked the same way as prescription medicines, and the amount in a product can vary. It can cause
+        headaches, dizziness or daytime sleepiness. Talk to your doctor or pharmacist before using it, especially for children,
+        during pregnancy, or if you take other medicines.
     - layout: "bullets"
-      heading: "Habits That Help"
-      points: ["Same bedtime and wake time", "Dark, quiet, cool bedroom", "No screens before bed", "Limit late caffeine and big meals"]
+      heading: "Watch Your Caffeine"
+      points: ["Coffee, tea, soda, energy drinks", "Effects can last for hours", "Stop by early afternoon", "Check hidden caffeine"]
+      footage_query: "cup of coffee table afternoon"
+      narration: >-
+        Now let's talk about habits that help. Start with caffeine. Coffee, tea, soda, energy drinks and even chocolate can
+        contain caffeine, and its effects can last many hours after your last sip. An afternoon coffee may still be keeping you
+        awake at bedtime. Try to have your last caffeine by early afternoon and see if your sleep improves.
+    - layout: "bullets"
+      heading: "Set Up Your Bedroom"
+      points: ["Dark: curtains or eye mask", "Quiet: earplugs or fan", "Cool and comfortable", "Bed for sleep only"]
       footage_query: "cozy bedroom night lamp"
       narration: >-
-        So what actually helps? Keep a regular schedule, even on weekends. Make your bedroom dark, quiet and cool. Put screens
-        away before bed. Avoid caffeine in the afternoon and evening, and big meals right before bed. Get some daylight and
-        physical activity during the day. And if you cannot sleep, get up and do something calm until you feel sleepy.
+        Next, your bedroom. Make it dark with curtains or an eye mask. Make it quiet, and try earplugs or a fan if there is
+        noise. Keep it cool and comfortable. And try to use your bed mainly for sleep, not for work or watching shows, so your
+        brain learns that bed means sleep.
+    - layout: "bullets"
+      heading: "During the Day"
+      points: ["Get morning daylight", "Move your body", "No big meals before bed", "Same wake time every day"]
+      footage_query: "person walking morning sunlight"
+      narration: >-
+        What you do during the day matters too. Get outside in daylight, especially in the morning, to help set your body
+        clock. Move your body every day. Avoid big, heavy meals and lots of fluids right before bed. And the most powerful
+        habit of all: wake up at the same time every morning, even on weekends.
+    - layout: "bullets"
+      heading: "Easy Wind Down Routine"
+      points: ["Dim the lights", "Put screens away", "Warm shower or reading", "Write tomorrow's to-do list"]
+      footage_query: "woman reading book bed lamp"
+      narration: >-
+        Here is the easy wind down routine I promised. About an hour before bed, dim the lights. Put your phone on the charger
+        outside the bedroom. Take a warm shower, read a book, or listen to calm music. If your mind races, write down tomorrow's
+        to do list or your worries on paper, so your brain can let go of them. Do this every night, and your body will learn
+        that it is time to sleep.
+    - layout: "bullets"
+      heading: "Sleep, Appetite and Mood"
+      points: ["Short sleep raises hunger", "Cravings for sugary foods", "More stress and irritability", "Linked to anxiety and depression"]
+      footage_query: "person eating snack late night"
+      narration: >-
+        Here is something many people do not know. When you are short on sleep, the hormones that control hunger get out of
+        balance, so you feel hungrier and crave sugary, salty foods. That is one reason poor sleep is linked to weight gain.
+        Too little sleep also makes it harder to handle stress, and it is closely linked to anxiety and depression.
+    - layout: "bullets"
+      heading: "Tips for Shift Workers"
+      points: ["Blackout curtains and eye mask", "Keep the same sleep block", "Short nap before a night shift", "Sunglasses on the drive home"]
+      footage_query: "worker night shift hospital"
+      narration: >-
+        If you work night shifts or rotating shifts, sleep is extra hard, because you are sleeping when your body clock wants
+        to be awake. Use blackout curtains and an eye mask. Try to keep the same sleep block on work days. A short nap before a
+        night shift can help you stay alert. And wearing sunglasses on the drive home in the morning can make it easier to fall
+        asleep afterwards.
+    - layout: "bullets"
+      heading: "Helping Kids and Teens Sleep"
+      points: ["Regular bedtime routine", "Screens out of the bedroom", "No caffeine or energy drinks", "Earlier bedtime on school nights"]
+      footage_query: "parent reading child bedtime"
+      narration: >-
+        Kids and teens need even more sleep than adults, and many are not getting enough. Keep a regular bedtime routine, like
+        a bath, brushing teeth and a story for younger kids. Keep phones, tablets and gaming out of the bedroom at night. Skip
+        caffeine and energy drinks. Good sleep helps children with mood, learning, growth and staying healthy.
+    - layout: "bullets"
+      heading: "Keep a Sleep Diary"
+      points: ["Bedtime and wake time", "How long to fall asleep", "Caffeine, alcohol, naps", "How you feel next day"]
+      footage_query: "person writing notebook morning"
+      narration: >-
+        If you are not sure what is hurting your sleep, keep a simple sleep diary for two weeks. Each morning, write down when
+        you went to bed, how long it took to fall asleep, how often you woke up, and what time you got up. Add any caffeine,
+        alcohol or naps, and how you felt that day. Patterns often jump out, and the diary is very helpful to show your doctor.
+    - layout: "bullets"
+      heading: "Long-Term Trouble Sleeping?"
+      points: ["Insomnia is common", "Talk therapy can help", "Called CBT for insomnia", "Ask your doctor about it"]
+      footage_query: "doctor talking patient office"
+      narration: >-
+        What if you have had trouble sleeping for a long time? Ongoing insomnia is very common, and there is good help for it.
+        Doctors often recommend a type of talk therapy called cognitive behavioral therapy for insomnia, which teaches you
+        practical ways to change the habits and thoughts that keep you awake. Ask your doctor about it before turning to
+        sleeping pills.
     - layout: "warning"
       heading: "Talk to Your Doctor If"
       points: ["Trouble sleeping most nights", "Loud snoring or gasping", "Falling asleep while driving", "Very sleepy during the day"]
       footage_query: "doctor talking patient office"
       narration: >-
-        Talk to your doctor if you have trouble sleeping most nights for weeks, if someone notices you snore loudly or stop
-        breathing in your sleep, or if you feel so sleepy during the day that you nod off at work or behind the wheel. If you
-        are drowsy, do not drive.
+        Talk to your doctor if you have trouble sleeping most nights for several weeks, if someone notices you snore loudly or
+        stop breathing in your sleep, if your legs feel restless and you cannot keep them still at night, or if you feel so
+        sleepy during the day that you nod off at work or behind the wheel. If you are drowsy, do not drive.
+    - layout: "big_number"
+      heading: "Drowsy Driving"
+      points: ["as dangerous as you think", "pull over and rest"]
+      footage_query: "car driving highway night"
+      narration: >-
+        That last one is serious. Drowsy driving causes many crashes every year, and you may not notice how tired you are
+        until it is too late. Warning signs include yawning a lot, drifting out of your lane, or missing your exit. If that
+        happens, pull over somewhere safe and rest, or let someone else drive. Turning up the radio or opening the window does
+        not fix it.
     - layout: "outro"
       heading: "Sleep Is Health"
-      points: ["Aim for 7+ hours", "Keep a steady schedule", "Take snoring seriously"]
+      points: ["Aim for 7+ hours", "Keep a steady schedule", "Screens away before bed", "Take snoring seriously"]
       footage_query: "sunrise bedroom window"
       narration: >-
-        Sleep is not a luxury. It is part of your health. This video is for education only, not medical advice. Like and
-        subscribe to Health Support Studio for a new health video every day.
+        Let's recap. Most adults need at least seven hours. Keep the same schedule every day, put screens away before bed, go
+        easy on caffeine and alcohol, and take loud snoring seriously. Sleep is not a luxury, it is part of your health. This
+        video is for education only, not medical advice. If it helped you, share it with someone who needs better sleep,
+        subscribe to Health Support Studio, and let me know in the comments which myth surprised you most.
   short_title: "Does a nightcap help you sleep? #Shorts"
   short_caption: >-
     Think a drink before bed helps you sleep? Here is what it really does to your night. Educational only, not medical
