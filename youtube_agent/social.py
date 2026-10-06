@@ -220,6 +220,68 @@ def check_connection() -> None:
         sys.exit(1)
 
 
+def _youtube_channel(youtube_id: str) -> str:
+    """The channel's address, like youtube.com/@name (from the video), or '' if YouTube can't tell."""
+    try:
+        from googleapiclient.discovery import build
+
+        from .uploader import _credentials
+
+        yt = build("youtube", "v3", credentials=_credentials(), cache_discovery=False)
+        channel_id = yt.videos().list(part="snippet", id=youtube_id).execute()["items"][0]["snippet"]["channelId"]
+        handle = yt.channels().list(part="snippet", id=channel_id).execute()["items"][0]["snippet"].get("customUrl")
+        return f"youtube.com/{handle}" if handle else f"youtube.com/channel/{channel_id}"
+    except Exception as e:
+        print(f"  (could not look up the YouTube channel: {e})")
+        return ""
+
+
+def _graph_field(obj_id: str, field: str, token: str) -> str:
+    try:
+        return requests.get(f"{GRAPH}/{obj_id}", params={"fields": field, "access_token": token},
+                            timeout=60).json().get(field) or ""
+    except Exception:
+        return ""
+
+
+def _split_hashtags(text: str) -> tuple[str, str]:
+    """('caption text', '#tags at the end') so the hashtags can go last, after the calls to action."""
+    words = text.split()
+    k = len(words)
+    while k and words[k - 1].startswith("#"):
+        k -= 1
+    return " ".join(words[:k]), " ".join(words[k:])
+
+
+def captions(meta: dict, page_id: str, ig_user_id: str | None, token: str) -> tuple[str, str]:
+    """Facebook and Instagram captions: the Short's text, then where to watch more and follow, then hashtags.
+    Facebook makes links clickable; Instagram doesn't, so it points to the link in the bio.
+    Meta asks creators to disclose realistic AI-generated audio; the narration is an AI voice."""
+    text, tags = _split_hashtags(meta["caption"])
+    video = f"https://youtu.be/{meta['youtube_id']}"
+    channel = _youtube_channel(meta["youtube_id"])
+    ig_name = _graph_field(ig_user_id, "username", token) if ig_user_id else ""
+    fb_name = _graph_field(page_id, "name", token)
+    ai_note = "🤖 Narrated with an AI voice."
+
+    fb = [text, "", f"▶️ Watch the full video on YouTube: {video}"]
+    if channel:
+        fb.append(f"📺 More videos every day on our YouTube channel: https://{channel} (subscribe!)")
+    if ig_name:
+        fb.append(f"📸 Follow us on Instagram for more videos: https://instagram.com/{ig_name}")
+    fb += ["👍 Like, comment and share, and follow our page for more videos like this!", ai_note]
+
+    ig = [text, "", f"▶️ Watch more videos on our YouTube channel{f' ({channel})' if channel else ''}: link in bio 🔗"]
+    if ig_name:
+        ig.append(f"👉 Follow @{ig_name} for more videos!")
+    ig.append("❤️ Like, comment and share" + (f", and follow us on Facebook too: {fb_name}" if fb_name else "") + "!")
+    ig.append(ai_note)
+    if tags:
+        fb += ["", tags]
+        ig += ["", tags]
+    return "\n".join(fb), "\n".join(ig)
+
+
 def post(social_dir: Path) -> None:
     meta = json.loads((social_dir / "social.json").read_text())
     video = social_dir / "short.mp4"
@@ -235,12 +297,7 @@ def post(social_dir: Path) -> None:
     if was_user:
         print("  (META_PAGE_TOKEN is a user token; using the Page token derived from it)")
 
-    link = f"https://youtu.be/{meta['youtube_id']}"
-    # Facebook makes caption links clickable; Instagram doesn't, so point people to the bio link too.
-    # Meta asks creators to disclose realistic AI-generated audio; the narration is an AI voice.
-    ai_note = "🤖 Narrated with an AI voice."
-    fb_caption = f"{meta['caption']}\n\n▶️ Watch the full video on YouTube: {link}\n{ai_note}"
-    ig_caption = f"{meta['caption']}\n\n▶️ Full video on YouTube (link in bio): {link}\n{ai_note}"
+    fb_caption, ig_caption = captions(meta, page_id, ig_user_id, token)
     results = []
     fb_video_id = None
     if os.environ.get("ONLY_INSTAGRAM", "").lower() == "true":  # retrying Instagram alone
