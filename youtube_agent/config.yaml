@@ -66,6 +66,7 @@ video:
   format: "landscape"          # "landscape" (16:9 normal video) or "shorts" (9:16 vertical)
   videos_per_run: 1            # the GitHub schedule runs once a day -> 1 video/day
   captions: true               # burn subtitles into the video
+  rotate_colors: true          # a different slide color theme for every video
   fact_check: true             # a second Claude pass checks every health claim before recording
   # Web searches during the fact-check. 0 = budget mode (about $0.25/video instead of ~$0.80):
   # Claude checks the claims from its own medical knowledge. Raise to 2-6 when you have more credit.

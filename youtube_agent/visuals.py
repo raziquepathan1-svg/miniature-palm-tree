@@ -275,6 +275,38 @@ def render_overlay(scene, size: tuple[int, int], channel_name: str, out_png: Pat
     return out_png
 
 
+# Color themes: each video gets its own (panel color, background gradient, accent colors), and the accent
+# changes from slide to slide, so the videos don't all look the same. Accents are never red: red means
+# "myth" and "warning" on the slides.
+THEMES = [
+    {"panel": (11, 37, 69), "bg": ((11, 37, 69), (14, 124, 123)), "accents": [(20, 184, 166), (56, 189, 248), (245, 158, 11)]},
+    {"panel": (46, 16, 101), "bg": ((46, 16, 101), (124, 58, 237)), "accents": [(167, 139, 250), (250, 204, 21), (45, 212, 191)]},
+    {"panel": (6, 58, 44), "bg": ((6, 58, 44), (21, 128, 61)), "accents": [(74, 222, 128), (250, 204, 21), (45, 212, 191)]},
+    {"panel": (69, 20, 40), "bg": ((88, 28, 59), (234, 88, 12)), "accents": [(251, 146, 60), (250, 204, 21), (45, 212, 191)]},
+    {"panel": (15, 23, 42), "bg": ((15, 23, 42), (30, 64, 175)), "accents": [(96, 165, 250), (52, 211, 153), (251, 191, 36)]},
+    {"panel": (80, 7, 36), "bg": ((80, 7, 36), (190, 24, 93)), "accents": [(244, 114, 182), (129, 140, 248), (253, 224, 71)]},
+    {"panel": (19, 78, 74), "bg": ((19, 78, 74), (13, 148, 136)), "accents": [(94, 234, 212), (254, 240, 138), (56, 189, 248)]},
+    {"panel": (30, 41, 59), "bg": ((30, 41, 59), (71, 85, 105)), "accents": [(249, 115, 22), (56, 189, 248), (163, 230, 53)]},
+]
+_theme = None
+
+
+def use_theme(index: int) -> None:
+    """Switch to color theme `index` (wraps around) for this video's slides."""
+    global NAVY, TEAL, MINT, BG_GRADIENT, _theme
+    _theme = THEMES[index % len(THEMES)]
+    NAVY, BG_GRADIENT = _theme["panel"], _theme["bg"]
+    _scene_accent(0)
+
+
+def _scene_accent(n: int) -> None:
+    """Each slide of a themed video gets the next accent color of the theme."""
+    global TEAL, MINT
+    if _theme:
+        TEAL = _theme["accents"][n % len(_theme["accents"])]
+        MINT = tuple(int(c + (255 - c) * 0.75) for c in TEAL)
+
+
 def render_background(size: tuple[int, int], out_png: Path) -> Path:
     """Brand gradient with a faint cross pattern (used when no stock footage is available)."""
     import numpy as np
@@ -592,6 +624,7 @@ def build_video(plan, video_cfg: dict, voice_cfg: dict, channel_name: str, workd
     for i, (scene, (wav, duration, captions)) in enumerate(zip(plan.scenes, narrated), 1):
         print(f"    Scene {i}/{len(plan.scenes)}: {scene.layout} - {scene.heading}")
         ass = write_ass(captions, size, scenes_dir / f"{i:02d}.ass") if video_cfg.get("captions", True) else None
+        _scene_accent(i - 1)
         overlay = render_overlay(scene, size, channel_name, scenes_dir / f"{i:02d}_overlay.png")
         clip = fetch_footage(scene.footage_query, size, scenes_dir / f"{i:02d}_bg.mp4", used) if use_footage else None
         part = render_scene(clip or gradient, clip is not None, overlay, wav, ass, duration, size,

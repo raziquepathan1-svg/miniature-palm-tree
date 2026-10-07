@@ -176,6 +176,8 @@ def make_one_video(config: dict, history: list[dict], topic: str | None, dry_run
         from . import visuals
 
         visuals.set_brand(config.get("brand"))
+        if video_cfg.get("rotate_colors"):  # a different color theme for every video
+            visuals.use_theme(dt.date.today().toordinal())
         print("3/6 Narrating with the free AI voice and building graphics...")
         raw = visuals.build_video(plan, video_cfg, config.get("voice", {}), channel_name, workdir)
 
