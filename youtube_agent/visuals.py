@@ -26,6 +26,10 @@ YELLOW = (255, 212, 0)
 WHITE = (255, 255, 255)
 RED = (229, 57, 53)
 BG_GRADIENT = ((11, 37, 69), (14, 124, 123))  # fallback background when there's no stock clip
+DARK = (11, 37, 69)    # thumbnails keep the dark brand navy
+INK = WHITE            # text on the slide cards (dark on light themes)
+NUMBER = YELLOW        # the big number
+NOTE = YELLOW          # the emergency note on warning cards
 ICON = "cross"  # brand icon on slides and thumbnails: "cross" (health) or "house" (home makeovers)
 WARNING_NOTE = "In an emergency, call 911."
 OUTRO_NOTE = "Educational only. Not medical advice."
@@ -173,8 +177,11 @@ def render_overlay(scene, size: tuple[int, int], channel_name: str, out_png: Pat
 
     # Brand tag (top-left)
     tag_h = int(64 * u)
+    name_f = font(int(34 * u), 700)
+    tag_w = int(105 * u + d.textlength(channel_name.upper(), font=name_f) + 28 * u)
+    img.alpha_composite(_panel(size, (int(22 * u), int(24 * u), tag_w, int(96 * u)), NAVY, 200, int(36 * u)))
     _brand_icon(d, int(60 * u), int(60 * u), tag_h)
-    d.text((int(105 * u), int(38 * u)), channel_name.upper(), font=font(int(34 * u), 700), fill=WHITE)
+    d.text((int(105 * u), int(38 * u)), channel_name.upper(), font=name_f, fill=INK)
 
     margin = int(110 * u)
     content_top = int((300 if portrait else 170) * u)
@@ -192,7 +199,7 @@ def render_overlay(scene, size: tuple[int, int], channel_name: str, out_png: Pat
         block_h = len(lines) * int(f.size * 1.12) + (int(110 * u) if points else int(40 * u))
         y = (content_top + content_bottom - block_h) // 2
         card(y - int(60 * u), y + block_h + int(50 * u), alpha=170)
-        y = _text_block(d, (margin, y), heading, f, WHITE, max_w, 1.12, anchor_center=True)
+        y = _text_block(d, (margin, y), heading, f, INK, max_w, 1.12, anchor_center=True)
         d.rounded_rectangle((W / 2 - 90 * u, y + 22 * u, W / 2 + 90 * u, y + 34 * u), 6, fill=CORAL)
         if points:
             _text_block(d, (margin, y + int(55 * u)), points[0], font(int(46 * u), 500), MINT, max_w, anchor_center=True)
@@ -209,9 +216,9 @@ def render_overlay(scene, size: tuple[int, int], channel_name: str, out_png: Pat
         block_h = _lines_h(d, heading, f, max_w, 1.1) + sum(_lines_h(d, p, pf, max_w) + int(10 * u) for p in points[:3])
         y = max(content_top, (content_top + content_bottom - block_h) // 2)
         card(y - int(50 * u), y + block_h + int(50 * u), alpha=185)
-        y = _text_block(d, (margin, y - int(30 * u)), heading, f, YELLOW, max_w, 1.1, anchor_center=True) + int(25 * u)
+        y = _text_block(d, (margin, y - int(30 * u)), heading, f, NUMBER, max_w, 1.1, anchor_center=True) + int(25 * u)
         for p in points[:3]:
-            y = _text_block(d, (margin, y + int(10 * u)), p, pf, WHITE, max_w, anchor_center=True)
+            y = _text_block(d, (margin, y + int(10 * u)), p, pf, INK, max_w, anchor_center=True)
 
     elif layout == "myth_fact":
         myth = points[0] if points else heading
@@ -229,7 +236,7 @@ def render_overlay(scene, size: tuple[int, int], channel_name: str, out_png: Pat
             d.rectangle((x0, y0 + 60 * u, x1, y0 + 95 * u), fill=color)
             (_x_icon if label == "MYTH" else _check_icon)(d, x0 + 45 * u, y0 + 25 * u, 46 * u)
             d.text((x0 + 115 * u, y0 + 14 * u), label, font=font(int(56 * u), 800), fill=WHITE)
-            _text_block(d, (int(x0 + 45 * u), int(y0 + 135 * u)), text, font(int(52 * u), 700), WHITE,
+            _text_block(d, (int(x0 + 45 * u), int(y0 + 135 * u)), text, font(int(52 * u), 700), INK,
                         int(x1 - x0 - 90 * u))
 
     else:  # bullets / warning / outro
@@ -248,17 +255,17 @@ def render_overlay(scene, size: tuple[int, int], channel_name: str, out_png: Pat
             tri = [(margin, y + 70 * u), (margin + 40 * u, y), (margin + 80 * u, y + 70 * u)]
             d.polygon(tri, fill=RED)
             d.text((margin + 33 * u, y + 12 * u), "!", font=font(int(50 * u), 800), fill=WHITE)
-            y = _text_block(d, (margin + int(110 * u), y - int(8 * u)), heading, hf, WHITE, max_w - int(110 * u))
+            y = _text_block(d, (margin + int(110 * u), y - int(8 * u)), heading, hf, INK, max_w - int(110 * u))
         else:
-            y = _text_block(d, (margin, y - int(8 * u)), heading, hf, WHITE, max_w)
+            y = _text_block(d, (margin, y - int(8 * u)), heading, hf, INK, max_w)
         y += int(20 * u)
         for p in points[:4]:
             cx, cy = margin + int(24 * u), y + int(33 * u)
             d.ellipse((cx - 20 * u, cy - 20 * u, cx + 20 * u, cy + 20 * u), fill=accent)
-            y = _text_block(d, (margin + int(70 * u), y), p, pf, WHITE, max_w - int(70 * u)) + int(16 * u)
+            y = _text_block(d, (margin + int(70 * u), y), p, pf, INK, max_w - int(70 * u)) + int(16 * u)
         if layout == "warning":
             d.text((margin, bottom - int(80 * u)), WARNING_NOTE,
-                   font=font(int(44 * u), 800), fill=YELLOW)
+                   font=font(int(44 * u), 800), fill=NOTE)
         if layout == "outro":
             pill_w, pill_h = int(420 * u), int(90 * u)
             px, py = margin, bottom - pill_h - int(30 * u)
@@ -278,33 +285,33 @@ def render_overlay(scene, size: tuple[int, int], channel_name: str, out_png: Pat
 # Color themes: each video gets its own (panel color, background gradient, accent colors), and the accent
 # changes from slide to slide, so the videos don't all look the same. Accents are never red: red means
 # "myth" and "warning" on the slides.
-THEMES = [
-    {"panel": (11, 37, 69), "bg": ((11, 37, 69), (14, 124, 123)), "accents": [(20, 184, 166), (56, 189, 248), (245, 158, 11)]},
-    {"panel": (46, 16, 101), "bg": ((46, 16, 101), (124, 58, 237)), "accents": [(167, 139, 250), (250, 204, 21), (45, 212, 191)]},
-    {"panel": (6, 58, 44), "bg": ((6, 58, 44), (21, 128, 61)), "accents": [(74, 222, 128), (250, 204, 21), (45, 212, 191)]},
-    {"panel": (69, 20, 40), "bg": ((88, 28, 59), (234, 88, 12)), "accents": [(251, 146, 60), (250, 204, 21), (45, 212, 191)]},
-    {"panel": (15, 23, 42), "bg": ((15, 23, 42), (30, 64, 175)), "accents": [(96, 165, 250), (52, 211, 153), (251, 191, 36)]},
-    {"panel": (80, 7, 36), "bg": ((80, 7, 36), (190, 24, 93)), "accents": [(244, 114, 182), (129, 140, 248), (253, 224, 71)]},
-    {"panel": (19, 78, 74), "bg": ((19, 78, 74), (13, 148, 136)), "accents": [(94, 234, 212), (254, 240, 138), (56, 189, 248)]},
-    {"panel": (30, 41, 59), "bg": ((30, 41, 59), (71, 85, 105)), "accents": [(249, 115, 22), (56, 189, 248), (163, 230, 53)]},
+THEMES = [  # light backgrounds and cards, dark text, bright accents
+    {"panel": (240, 253, 250), "bg": ((204, 251, 241), (167, 243, 208)), "accents": [(13, 148, 136), (37, 99, 235), (234, 88, 12)]},
+    {"panel": (240, 249, 255), "bg": ((224, 242, 254), (186, 230, 253)), "accents": [(37, 99, 235), (13, 148, 136), (124, 58, 237)]},
+    {"panel": (245, 243, 255), "bg": ((237, 233, 254), (221, 214, 254)), "accents": [(124, 58, 237), (219, 39, 119), (37, 99, 235)]},
+    {"panel": (255, 247, 237), "bg": ((255, 237, 213), (254, 215, 170)), "accents": [(234, 88, 12), (13, 148, 136), (124, 58, 237)]},
+    {"panel": (254, 252, 232), "bg": ((254, 249, 195), (253, 230, 138)), "accents": [(22, 163, 74), (234, 88, 12), (37, 99, 235)]},
+    {"panel": (255, 241, 242), "bg": ((255, 228, 230), (254, 205, 211)), "accents": [(219, 39, 119), (124, 58, 237), (13, 148, 136)]},
+    {"panel": (240, 253, 244), "bg": ((220, 252, 231), (187, 247, 208)), "accents": [(22, 163, 74), (37, 99, 235), (234, 88, 12)]},
+    {"panel": (248, 250, 252), "bg": ((241, 245, 249), (203, 213, 225)), "accents": [(37, 99, 235), (234, 88, 12), (13, 148, 136)]},
 ]
 _theme = None
 
 
 def use_theme(index: int) -> None:
-    """Switch to color theme `index` (wraps around) for this video's slides."""
-    global NAVY, TEAL, MINT, BG_GRADIENT, _theme
+    """Switch to light color theme `index` (wraps around) for this video's slides: dark text on light cards."""
+    global NAVY, TEAL, MINT, BG_GRADIENT, INK, NUMBER, NOTE, _theme
     _theme = THEMES[index % len(THEMES)]
     NAVY, BG_GRADIENT = _theme["panel"], _theme["bg"]
+    INK, NOTE = (23, 32, 51), RED
     _scene_accent(0)
 
 
 def _scene_accent(n: int) -> None:
     """Each slide of a themed video gets the next accent color of the theme."""
-    global TEAL, MINT
+    global TEAL, MINT, NUMBER
     if _theme:
-        TEAL = _theme["accents"][n % len(_theme["accents"])]
-        MINT = tuple(int(c + (255 - c) * 0.75) for c in TEAL)
+        TEAL = MINT = NUMBER = _theme["accents"][n % len(_theme["accents"])]
 
 
 def render_background(size: tuple[int, int], out_png: Path) -> Path:
@@ -718,7 +725,7 @@ def make_thumbnail(text: str, channel_name: str, out: Path, background: Path | N
     sd = ImageDraw.Draw(shade)
     for x in range(W):
         a = 245 if x < W * 0.38 else int(245 * max(0.0, 1 - (x - W * 0.38) / (W * 0.30)))
-        sd.line([(x, 0), (x, H)], fill=(*NAVY, a))
+        sd.line([(x, 0), (x, H)], fill=(*DARK, a))
     img.alpha_composite(shade)
     d = ImageDraw.Draw(img)
 
@@ -793,7 +800,7 @@ def make_thumbnail(text: str, channel_name: str, out: Path, background: Path | N
     name = channel_name.upper()
     nw = d.textlength(name, font=nf)
     bx, by = W - nw - 150, H - 88
-    d.rounded_rectangle((bx - 20, by - 8, W - 36, by + 60), 34, fill=(*NAVY, 235))
+    d.rounded_rectangle((bx - 20, by - 8, W - 36, by + 60), 34, fill=(*DARK, 235))
     _brand_icon(d, int(bx + 26), int(by + 26), 44)
     d.text((bx + 64, by + 6), name, font=nf, fill=WHITE)
     img.convert("RGB").save(out, "JPEG", quality=92)
