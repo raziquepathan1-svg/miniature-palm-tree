@@ -571,14 +571,22 @@ def build_video(plan, video_cfg: dict, voice_cfg: dict, channel_name: str, workd
         from . import talking
 
         cuts = talking.pick_snippets([(d, caps) for _, d, caps in narrated], host_cfg)
+        broll = talking.broll_clips(host_cfg)
+        if host_cfg.get("mode", "broll") == "broll":
+            # The host walking or working without talking, while the narration continues: no lip-sync needed.
+            if broll:
+                print(f"    The host appears (walking or working) in scenes {[i + 1 for i in cuts]}")
+            snips = {i: (cut, broll[k % len(broll)]) for k, (i, cut) in enumerate(cuts.items())} if broll else {}
+            cuts = {}
         jobs = {}
         for i, cut in cuts.items():
             short_wav = scenes_dir / f"{i + 1:02d}_host.wav"
             _run(["-y", "-i", str(narrated[i][0]), "-t", f"{cut:.3f}", str(short_wav)])
             jobs[f"s{i + 1:02d}"] = short_wav
-        print(f"    The host says the start of scenes {[i + 1 for i in cuts]} (lip-synced on Kaggle)...")
-        clips = talking.make_clips(jobs, workdir, host_cfg)
-        snips = {i: (cut, clips[f"s{i + 1:02d}"]) for i, cut in cuts.items() if f"s{i + 1:02d}" in clips}
+        if cuts:
+            print(f"    The host says the start of scenes {[i + 1 for i in cuts]} (lip-synced on Kaggle)...")
+            clips = talking.make_clips(jobs, workdir, host_cfg)
+            snips = {i: (cut, clips[f"s{i + 1:02d}"]) for i, cut in cuts.items() if f"s{i + 1:02d}" in clips}
 
     parts = []
     for i, (scene, (wav, duration, captions)) in enumerate(zip(plan.scenes, narrated), 1):
@@ -592,8 +600,9 @@ def build_video(plan, video_cfg: dict, voice_cfg: dict, channel_name: str, workd
             cut, talk = snips[i - 1]
             panel = render_side_panel(scene, size, channel_name, scenes_dir / f"{i:02d}_side.png") \
                 if size[0] > size[1] else None
+            crop = 1.0 if talk.parent.name == "broll" else talking.landscape_crop(host_cfg)
             parts.append(render_host_scene(talk, wav, ass, cut, size, scenes_dir / f"{i:02d}_host.mp4",
-                                           talking.landscape_crop(host_cfg), fade_out=False, side_panel=panel))
+                                           crop, fade_out=False, side_panel=panel))
             if duration - cut > 0.3:
                 parts.append(trim_part(part, cut, scenes_dir / f"{i:02d}_rest.mp4"))
             continue

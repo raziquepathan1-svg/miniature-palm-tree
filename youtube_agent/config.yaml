@@ -76,11 +76,14 @@ video:
   host_clips:
     intro: {file: "branding/health-support-studio/avatar/speaking/intro_myvoice.mp4", start: 0.6, end: 9.3}
     outro: {file: "branding/health-support-studio/avatar/speaking/outro_v1_myvoice.mp4", start: 0, end: 8.0}
-  # You on screen in the middle of the video: about every minute you appear for 5-10 s and say the start of
-  # a scene (your Flow "moves" clips, lip-synced to the narration free on Kaggle), then the visuals continue.
-  # If Kaggle fails or is slow, those moments just keep the normal visuals, so the video is never lost.
+  # You on screen in the middle of the video: about every minute you appear for 5-10 s next to the slide,
+  # while your voice keeps narrating. mode "broll": your Flow clips of walking / reading a chart / at the desk
+  # (no talking, so no lip-sync needed; folder avatar/broll). mode "lipsync": the talking "moves" clips,
+  # lip-synced on Kaggle (lips didn't match well enough). It switches on by itself once broll clips exist.
   host:
-    enabled: false   # on after you approve the test sample
+    enabled: true
+    mode: "broll"
+    broll: "branding/health-support-studio/avatar/broll"
     every_seconds: 60
     first_at: 30
     snippet_seconds: [5, 10]

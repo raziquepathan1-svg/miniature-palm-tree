@@ -184,6 +184,12 @@ def landscape_crop(cfg: dict | None) -> float:
     return s["landscape_crop"] if moves_clips(s) else 1.0
 
 
+def broll_clips(cfg: dict | None) -> list[Path]:
+    """The host's B-roll clips (walking, reading a chart, at the desk: no talking), in the `broll` folder."""
+    folder = ROOT / (cfg or {}).get("broll", "branding/health-support-studio/avatar/broll")
+    return sorted(folder.glob("*.mp4")) if folder.exists() else []
+
+
 def pick_snippets(scenes: list[tuple[float, list]], cfg: dict | None) -> dict[int, float]:
     """About every `every_seconds` of video, the host says the start of a scene on screen.
     scenes: (duration, captions) per scene. Returns {scene index: seconds the host speaks}, ending the host
