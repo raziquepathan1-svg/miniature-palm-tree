@@ -110,5 +110,16 @@
     "youtube_id": "ap47sf9a5Qk",
     "publish_at": "2026-10-07T16:00:00Z",
     "short_youtube_id": "Oissyg_rRNc"
+  },
+  {
+    "date": "2026-10-07T04:47:57",
+    "topic": "Sleep: how much you really need and how to improve it",
+    "requested_topic": "Sleep: how much you really need and how to improve it",
+    "title": "10 Sleep Myths That Are Wrecking Your Rest",
+    "style": "Myth vs Fact",
+    "script_file": "008-sleep-myths.yaml",
+    "youtube_id": "GbUiKFvmobc",
+    "publish_at": "2026-10-08T16:00:00Z",
+    "short_youtube_id": "7W6jSyuA2C4"
   }
 ]
