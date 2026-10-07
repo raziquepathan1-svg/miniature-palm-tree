@@ -63,9 +63,12 @@ def next_queued_topic(config: dict, history: list[dict]) -> str | None:
     return None
 
 
-def unused_bank_scripts(history: list[dict]) -> list[Path]:
+def unused_bank_scripts(history: list[dict], skip_styles: tuple = ("Quick Short",)) -> list[Path]:
+    """Pre-written scripts not used yet. Quick Short scripts are skipped: every long video already makes
+    two Shorts, so each day's main video is a long one."""
     used = {h.get("script_file") for h in history}
-    return [f for f in sorted(SCRIPT_BANK.glob("*.yaml")) if f.name not in used]
+    return [f for f in sorted(SCRIPT_BANK.glob("*.yaml")) if f.name not in used
+            and yaml.safe_load(f.read_text()).get("style") not in skip_styles]
 
 
 def pick_style(config: dict, history: list[dict]) -> dict | None:

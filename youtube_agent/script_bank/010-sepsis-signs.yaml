@@ -11,10 +11,12 @@ plan:
     Sepsis is the body's extreme response to an infection, and it kills at least 350,000 adults in the US every year. Most people have never heard of it. Learn the warning signs, who is at risk, and the one question that can save a life.
 
     In this video:
-    • What sepsis is, in plain language
+    • What sepsis is, in plain language, and common myths
+    • Which infections most often lead to sepsis
     • Who is at higher risk
-    • The warning signs, according to the CDC
-    • Why you should ask: "Could this be sepsis?"
+    • The warning signs in adults, older adults and babies
+    • What to do, and the one question to ask: "Could this be sepsis?"
+    • What happens in the hospital, recovery, and how to lower your risk
 
     #Sepsis #WarningSigns #Infection #MedicalEmergency #HealthEducation
   tags: ["sepsis", "sepsis symptoms", "sepsis warning signs", "what is sepsis", "septic shock", "infection", "medical emergency", "could this be sepsis", "blood infection", "health education"]
@@ -30,15 +32,32 @@ plan:
       narration: >-
         It often starts with an ordinary infection, like a urinary tract infection, pneumonia, or an infected cut. Then,
         suddenly, the person gets much sicker. This is sepsis, a life threatening emergency that many people have never heard
-        of. Knowing the warning signs can save a life.
+        of. Today you will learn exactly what it is, the warning signs, and the one question that can save a life.
+    - layout: "bullets"
+      heading: "What We Will Cover"
+      points: ["What sepsis really is", "Who is at higher risk", "The warning signs", "What to do, fast"]
+      footage_query: "person reading notes"
+      narration: >-
+        Here is what we will cover. What sepsis really is, in plain language, and some dangerous myths. Which infections most
+        often lead to it, and who is at higher risk. The warning signs in adults, older adults and babies. What to do and what
+        to say when you get help. And finally, recovery and how to lower your risk. Stay until the end, because these signs
+        are worth remembering.
     - layout: "bullets"
       heading: "What Is Sepsis?"
       points: ["Body's extreme response to infection", "Can damage organs", "Can lead to death", "Needs emergency care"]
       footage_query: "doctor hospital monitor"
       narration: >-
-        Sepsis is the body's extreme response to an infection. Instead of just fighting the germs, the body's response starts
-        to damage its own tissues and organs. Without fast treatment, it can lead to organ failure and death. Almost any
-        infection can trigger it, including the flu, COVID nineteen, pneumonia, and skin or urinary infections.
+        Sepsis is the body's extreme response to an infection. Normally, your immune system fights germs in one part of the
+        body. In sepsis, that response goes out of control and starts to damage the body's own tissues and organs. Without
+        fast treatment, it can lead to organ failure and death. That is why doctors call it a medical emergency.
+    - layout: "bullets"
+      heading: "Septic Shock"
+      points: ["The most severe form", "Blood pressure drops", "Organs don't get enough blood", "Needs intensive care"]
+      footage_query: "hospital intensive care monitor"
+      narration: >-
+        The most severe form is called septic shock. Here, blood pressure drops to a dangerously low level, so the organs do
+        not get enough blood and oxygen. The kidneys, lungs, heart and brain can all be affected. People with septic shock
+        usually need care in an intensive care unit, which is why catching sepsis early matters so much.
     - layout: "big_number"
       heading: "350,000"
       points: ["US adults with sepsis die", "each year, says CDC"]
@@ -47,6 +66,38 @@ plan:
         This is not rare. According to the CDC, at least one point seven million adults in America develop sepsis each year,
         and at least three hundred fifty thousand of them die during their hospital stay or are moved to hospice. One in three
         people who die in a hospital had sepsis during that stay.
+    - layout: "myth_fact"
+      heading: "Common Belief"
+      points: ["Sepsis only happens in hospitals", "Most cases start at home"]
+      footage_query: "family living room home"
+      narration: >-
+        Here is a dangerous myth: sepsis is something you only get in the hospital. In fact, the CDC reports that most cases
+        of sepsis start outside the hospital, at home or in the community. That is why ordinary families need to know the
+        signs, not just doctors. Very often, it is a family member who first notices that something is seriously wrong.
+    - layout: "myth_fact"
+      heading: "Common Belief"
+      points: ["Sepsis is a blood infection", "It's the body's reaction"]
+      footage_query: "microscope laboratory"
+      narration: >-
+        Another myth: sepsis is the same as a blood infection, sometimes called blood poisoning. In fact, sepsis is the body's
+        reaction to an infection, and that infection can be anywhere in the body, like the lungs or the bladder. The germs do
+        not have to be in the blood. Sepsis itself is not contagious, but the infections that cause it can spread.
+    - layout: "bullets"
+      heading: "Infections That Can Lead to It"
+      points: ["Lungs, like pneumonia", "Urinary tract and kidneys", "Skin, like cuts and wounds", "Gut and stomach area"]
+      footage_query: "person coughing tissue"
+      narration: >-
+        Almost any infection can trigger sepsis, including the flu, COVID nineteen and other viruses, but bacterial infections
+        are the most common cause. According to the CDC, the infections that most often lead to sepsis start in the lungs,
+        like pneumonia, in the urinary tract, on the skin, like an infected cut, or in the gut.
+    - layout: "myth_fact"
+      heading: "Common Belief"
+      points: ["Only serious infections cause sepsis", "Small ones can too"]
+      footage_query: "bandage finger cut"
+      narration: >-
+        Many people think only serious infections can cause sepsis. But it can start from something that seems small, like a
+        scrape that gets infected, a urinary infection, or a dental infection. The size of the first infection does not tell
+        you how dangerous it can become. What matters is how the person's body responds, and how quickly they get care.
     - layout: "bullets"
       heading: "Higher Risk"
       points: ["Adults 65 and older", "Babies under 1", "Chronic conditions like diabetes", "Weak immune system"]
@@ -54,47 +105,151 @@ plan:
       narration: >-
         Anyone can get sepsis, but some people are at higher risk. That includes adults sixty five and older, babies under one
         year old, people with chronic conditions like diabetes, lung disease, kidney disease or cancer, people with weakened
-        immune systems, and people who recently had a severe illness or hospital stay.
+        immune systems, and people who recently had a severe illness, surgery or hospital stay. Sepsis survivors are also at
+        higher risk of getting it again.
     - layout: "warning"
       heading: "Warning Signs"
       points: ["Fast heart rate or weak pulse", "Confusion or disorientation", "Fever, shivering, or very cold", "Short of breath, clammy skin"]
       footage_query: "person shivering blanket"
       narration: >-
-        Here are the warning signs the CDC lists. A high heart rate or weak pulse. Confusion or disorientation. Extreme pain or
-        discomfort. Fever, shivering, or feeling very cold. Shortness of breath. And clammy or sweaty skin. A person with sepsis
-        may say they feel like they are going to die.
+        Here are the warning signs the CDC lists. A high heart rate or weak pulse. Confusion or disorientation. Extreme pain
+        or discomfort. Fever, shivering, or feeling very cold. Shortness of breath. And clammy or sweaty skin. A person with
+        sepsis may say they feel like they are going to die. Take that seriously.
+    - layout: "bullets"
+      heading: "It Can Look Different"
+      points: ["Not everyone has a fever", "Some feel very cold instead", "Signs can come on fast", "Trust what you see"]
+      footage_query: "worried woman phone"
+      narration: >-
+        Sepsis does not always look the same. Not everyone with sepsis has a fever. Some people have a low temperature and
+        feel very cold instead. The signs can appear quickly, sometimes within hours, and the person may seem to go downhill
+        fast. If someone with an infection suddenly seems much sicker than you would expect, trust what you see.
+    - layout: "bullets"
+      heading: "Why People Miss It"
+      points: ["Looks like flu at first", "People wait to sleep it off", "Older adults may not complain", "Family notices first"]
+      footage_query: "tired man couch blanket"
+      narration: >-
+        Why do so many people miss sepsis? At first it can look like the flu or just a bad day. People feel exhausted and
+        think they will sleep it off, or they do not want to bother anyone. Older adults may not complain at all. That is why
+        family members and friends are so important. You are often the first person to notice that something is really wrong.
+    - layout: "warning"
+      heading: "In Older Adults"
+      points: ["New confusion", "Very sleepy or weak", "Falls or not acting normal", "May have no fever"]
+      footage_query: "senior man sitting chair"
+      narration: >-
+        In older adults, the signs can be harder to spot. Sometimes the first sign is new confusion, or acting very
+        differently than usual. They may become very sleepy, weak or unsteady, and may fall. And they may not have a fever at
+        all. If an older family member with an infection suddenly is not acting like themselves, get help right away.
+    - layout: "warning"
+      heading: "In Babies and Children"
+      points: ["Very sleepy or hard to wake", "Fast breathing", "Not feeding or drinking", "Blotchy or bluish skin"]
+      footage_query: "baby sleeping crib"
+      narration: >-
+        In babies and young children, watch for being very sleepy, floppy or hard to wake, breathing very fast, not feeding or
+        drinking, a very high or very low temperature, fewer wet diapers, and skin that looks pale, blotchy or bluish. A baby
+        younger than three months with any fever needs a doctor right away.
     - layout: "warning"
       heading: "Act Fast"
       points: ["Infection plus these signs?", "Call 911 or go to the ER", "Ask: could this be sepsis?"]
       footage_query: "ambulance emergency lights"
       narration: >-
         If someone has an infection, or had one recently, and shows any of these signs, get medical care immediately. Call 911
-        or go to the ER. Sepsis is a medical emergency, and every hour matters. When you get there, say the words: I am worried
-        this could be sepsis. That simple question helps the care team act faster.
+        or go to the ER. Sepsis is a medical emergency, and every hour matters. When you get there, say the words: I am
+        worried this could be sepsis. That simple question helps the care team act faster.
+    - layout: "bullets"
+      heading: "What to Tell the Care Team"
+      points: ["Recent infection or surgery", "When the symptoms started", "Medical conditions", "Medicines they take"]
+      footage_query: "patient talking to doctor hospital"
+      narration: >-
+        When you arrive, give the care team the key facts. Tell them about any recent infection, surgery, wound or hospital
+        stay. Explain when the symptoms started and how fast things changed. Share any medical conditions, like diabetes or
+        cancer, and the medicines the person takes. If you have a written medication list, bring it. Clear information helps
+        them decide quickly.
+    - layout: "bullets"
+      heading: "What Happens in the Hospital"
+      points: ["Tests to find the infection", "Antibiotics as soon as possible", "Fluids through an IV", "Support for organs if needed"]
+      footage_query: "hospital iv drip"
+      narration: >-
+        In the hospital, the team works quickly. They usually do blood tests and other tests to look for the infection and
+        check the organs. If sepsis is likely, they give antibiotics as soon as possible, along with fluids through an IV.
+        Some people need oxygen, medicine to support blood pressure, or treatment to remove the source of the infection.
+    - layout: "big_number"
+      heading: "Every Hour"
+      points: ["matters with sepsis", "get help early"]
+      footage_query: "clock hospital wall"
+      narration: >-
+        Here is why speed matters so much. With sepsis, the damage to the body can grow hour by hour. Getting treatment early
+        gives the best chance of survival and a better recovery. So do not wait to see if it gets better on its own. If you
+        are worried, it is always better to get checked and be told it is not sepsis.
+    - layout: "bullets"
+      heading: "Watching an Infection at Home"
+      points: ["Is it getting worse, not better?", "New fever or chills?", "Unusually tired or confused?", "Call your doctor early"]
+      footage_query: "person thermometer bed"
+      narration: >-
+        What if someone is being treated for an infection at home? Keep an eye on them. Call the doctor if the infection is
+        not getting better, is getting worse, or if new symptoms appear, like a new fever, chills, or unusual tiredness. And
+        if any warning signs of sepsis appear, do not wait for the next appointment. Get emergency care.
     - layout: "bullets"
       heading: "After Sepsis"
       points: ["Recovery can take time", "Tiredness, weakness, poor sleep", "Memory or mood changes", "Follow-up care matters"]
       footage_query: "person resting home recovery"
       narration: >-
         Many people survive sepsis, especially when it is treated early. But recovery can take weeks or months. Survivors may
-        feel very tired or weak, sleep poorly, or notice changes in memory or mood. Keep your follow up appointments, and tell
-        your doctor about any new problems after you go home.
+        feel very tired or weak, sleep poorly, have less appetite, or notice changes in memory, concentration or mood. These
+        problems are real and common. Keep your follow up appointments, and tell your doctor about any new problems after you
+        go home.
+    - layout: "bullets"
+      heading: "Support for Survivors"
+      points: ["Rest and build up slowly", "Eat well, stay hydrated", "Talk about how you feel", "Watch for new infections"]
+      footage_query: "person walking park slowly"
+      narration: >-
+        If you or someone you love survived sepsis, take recovery step by step. Rest, and build up activity slowly. Eat well
+        and drink enough fluids. Talk about how you feel, because anxiety, low mood and bad dreams can happen after a serious
+        illness, and help is available. And watch closely for new infections, since survivors have a higher risk of getting
+        sepsis again.
+    - layout: "bullets"
+      heading: "Check on Loved Ones"
+      points: ["Call or visit if they're sick", "Don't leave them alone if worse", "Look for confusion or weakness", "Help them get care"]
+      footage_query: "daughter visiting elderly mother"
+      narration: >-
+        If an older parent, a neighbor, or anyone who lives alone has an infection, check on them. Call or visit, and look for
+        the warning signs, especially new confusion or weakness. Someone with sepsis may be too sick to call for help
+        themselves. If they seem much worse, do not leave them alone. Help them get care, and call 911 if needed.
+    - layout: "warning"
+      heading: "Wound Care Basics"
+      points: ["Clean with soap and water", "Keep it covered", "Spreading redness or swelling?", "Call your doctor"]
+      footage_query: "applying bandage wound"
+      narration: >-
+        Good wound care helps prevent infections that can lead to sepsis. Wash cuts and scrapes with clean water and soap, and
+        keep them covered with a clean bandage until they heal. Call your doctor if you see signs of infection, like redness
+        that spreads, swelling, warmth, pus, red streaks, or pain that keeps getting worse, especially if you also have a
+        fever.
     - layout: "bullets"
       heading: "Lower Your Risk"
       points: ["Clean and care for cuts", "Wash your hands", "Stay up to date on vaccines", "Manage chronic conditions"]
       footage_query: "washing hands sink"
       narration: >-
         You can lower your risk by preventing infections. Wash your hands often. Clean cuts and scrapes and keep them covered
-        until they heal. Stay up to date on recommended vaccines, like the flu shot. Manage chronic conditions like diabetes.
-        And if an infection is not getting better, or is getting worse, call your doctor.
+        until they heal. Stay up to date on recommended vaccines, like the flu shot, and ask your doctor which others are
+        right for you. Manage chronic conditions like diabetes. And if an infection is not getting better, or is getting
+        worse, call your doctor.
+    - layout: "bullets"
+      heading: "Know the Signs, Share Them"
+      points: ["Learn the warning signs", "Tell your family", "Save this video", "Speak up early"]
+      footage_query: "family talking kitchen"
+      narration: >-
+        One of the best things you can do is simply know the signs and share them. Talk about sepsis with your family,
+        especially with older parents and anyone caring for a baby or someone with a chronic illness. Save this video so you
+        can find it again. And remember that speaking up early, and asking the right question, can change everything.
     - layout: "outro"
       heading: "Remember One Question"
-      points: ["Infection plus feeling very sick?", "Could this be sepsis?"]
+      points: ["Infection plus feeling very sick?", "Could this be sepsis?", "Call 911 or go to the ER"]
       footage_query: "family together home"
       narration: >-
-        Remember: an infection plus sudden, severe illness means ask, could this be sepsis? Share this video, it could save
-        someone you love. This video is for education only, not medical advice. Subscribe to Health Support Studio for a new
-        health video every day.
+        Let's recap. Sepsis is the body's extreme reaction to an infection, and most cases start at home. Watch for a fast
+        heart rate, confusion, fever or feeling very cold, shortness of breath, clammy skin and extreme pain. If you see these
+        with an infection, get emergency care and ask: could this be sepsis? This video is for education only, not medical
+        advice. Please share it, it could save someone you love, subscribe to Health Support Studio, and tell me in the
+        comments what topic you want next.
   short_title: "Sepsis: the words that could save a life #Shorts"
   short_caption: >-
     Sepsis kills hundreds of thousands of Americans every year, and most people have never heard of it. Know the signs, and

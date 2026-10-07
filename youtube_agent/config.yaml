@@ -85,15 +85,20 @@ video:
   # lip-synced on Kaggle (lips didn't match well enough). It switches on by itself once broll clips exist.
   host:
     enabled: true
-    mode: "mix"      # every other moment: walking toward the camera and talking (lip-synced); else voice-over
+    mode: "mix"      # the host talks (lip-synced) while walking, holding the tablet, reading the chart, at the desk
+    talk_every: 1    # 1 = talks every time; 2 = every other time (the others are voice-over)
     broll: "branding/health-support-studio/avatar/broll"
-    moves: "branding/health-support-studio/avatar/broll"    # front-facing clip the lips are synced on
-    moves_only: ["Man_walking_in_hospital_corridor_20261007132552.mp4"]
+    moves: "branding/health-support-studio/avatar/broll"    # the clips the lips are synced on (face visible)
+    moves_only:
+      - "Man_walking_in_hospital_corridor_20261007132552.mp4"   # walking toward the camera
+      - "Man_holding_tablet_in_hospital_20261007133319.mp4"
+      - "Man_reading_patient_chart_20261007132917.mp4"
+      - "Man_writing_notes_at_desk_20261007133446.mp4"
     landscape_crop: 1.0
     every_seconds: 60
     first_at: 30
     snippet_seconds: [5, 10]
-    max_wait_minutes: 120
+    max_wait_minutes: 150
   # The agent rotates through these styles, one per video, so the channel stays varied.
   # Each style can override "format" (landscape/shorts) and "target_minutes".
   styles:

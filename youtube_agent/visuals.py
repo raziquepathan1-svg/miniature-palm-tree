@@ -627,7 +627,11 @@ def build_video(plan, video_cfg: dict, voice_cfg: dict, channel_name: str, workd
         if mode in ("broll", "mix"):
             # The host walking or working without talking, while the narration continues: no lip-sync needed.
             # "mix": every other moment the host talks instead (lip-synced on Kaggle, front-facing clips).
-            talk_ids = set(list(cuts)[0::2]) if mode == "mix" and host_cfg.get("moves_only") else set()
+            if mode == "mix" and host_cfg.get("moves_only"):
+                every = int(host_cfg.get("talk_every", 2))  # 1 = the host talks every time
+                talk_ids = set(list(cuts)[0::every])
+            else:
+                talk_ids = set()
             quiet = [i for i in cuts if i not in talk_ids]
             if broll and quiet:
                 print(f"    The host appears (walking or working) in scenes {[i + 1 for i in quiet]}")
@@ -642,6 +646,9 @@ def build_video(plan, video_cfg: dict, voice_cfg: dict, channel_name: str, workd
             print(f"    The host says the start of scenes {[i + 1 for i in cuts]} (lip-synced on Kaggle)...")
             clips = talking.make_clips(jobs, workdir, host_cfg)
             snips.update({i: (cut, clips[f"s{i + 1:02d}"]) for i, cut in cuts.items() if f"s{i + 1:02d}" in clips})
+            missing = [i for i in cuts if i not in snips]
+            if missing and broll:  # lip-sync didn't come back for these: the host still appears, as voice-over
+                snips.update({i: (cuts[i], broll[k % len(broll)]) for k, i in enumerate(missing)})
 
     parts = []
     labels: list[str | None] = []  # chapter title for the first part of each scene (None: same chapter)
