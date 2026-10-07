@@ -204,6 +204,9 @@ def make_one_video(config: dict, history: list[dict], topic: str | None, dry_run
     description = plan.description
     if sources:
         description += "\n\nSources:\n" + "\n".join(f"- {u}" for u in sources)
+    chapters = workdir / "chapters.txt"
+    if not shorts and chapters.exists() and chapters.read_text().strip():
+        description += "\n\nChapters:\n" + chapters.read_text().strip()
     footer = (config["youtube"].get("description_footer") or "").strip()
     if footer:
         description += "\n\n" + footer
@@ -273,9 +276,13 @@ def make_one_video(config: dict, history: list[dict], topic: str | None, dry_run
         except Exception as e:  # the main video is already up; don't fail the whole run
             print(f"  (Could not upload the YouTube Short: {e})")
     if social_dir:
+        topic = plan.topic.split(":")[0].strip()
+        comment = (f"What's your biggest question about {topic.lower()}? Ask below 👇 I read every comment and "
+                   f"your questions may become our next video. If this helped you, please share it with "
+                   f"someone who needs it ❤️")
         (social_dir / "social.json").write_text(json.dumps({
             "youtube_id": video_id, "title": title, "caption": plan.short_caption,
-            "publish_at": yt.get("publish_at"),
+            "publish_at": yt.get("publish_at"), "comment": comment,
         }, indent=2))
 
     summary = [

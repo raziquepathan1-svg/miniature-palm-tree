@@ -167,8 +167,9 @@ def _panel(size, box, color=None, alpha=215, radius=36):
 
 
 # ---------------------------------------------------------------- slide overlay
-def render_overlay(scene, size: tuple[int, int], channel_name: str, out_png: Path) -> Path:
-    """Draw the scene's graphic on a transparent canvas (captions go in the bottom ~22%)."""
+def render_overlay(scene, size: tuple[int, int], channel_name: str, out_png: Path, subscribe: bool = False) -> Path:
+    """Draw the scene's graphic on a transparent canvas (captions go in the bottom ~22%).
+    subscribe: also a red "SUBSCRIBE" reminder in the top-right corner (one slide in the middle of the video)."""
     W, H = size
     portrait = H > W
     u = W / 1920 if not portrait else W / 1080  # scale unit
@@ -277,6 +278,17 @@ def render_overlay(scene, size: tuple[int, int], channel_name: str, out_png: Pat
                 d.text((px, py - int(65 * u)), note, font=font(int(34 * u), 500), fill=MINT)
             else:
                 d.text((px + pill_w + int(30 * u), py + 24 * u), note, font=font(int(34 * u), 500), fill=MINT)
+
+    if subscribe:
+        sf = font(int(40 * u), 800)
+        label = "SUBSCRIBE"
+        pw, ph = int(d.textlength(label, font=sf) + 120 * u), int(78 * u)
+        px, py = W - pw - int(40 * u), int(28 * u)
+        d.rounded_rectangle((px, py, px + pw, py + ph), ph // 2, fill=RED)
+        d.polygon([(px + 34 * u, py + 22 * u), (px + 34 * u, py + 56 * u), (px + 62 * u, py + 39 * u)], fill=WHITE)
+        d.text((px + 82 * u, py + 15 * u), label, font=sf, fill=WHITE)
+        d.text((px, py + ph + int(10 * u)), "if this is helping you", font=font(int(30 * u), 700), fill=WHITE,
+               stroke_width=max(2, int(3 * u)), stroke_fill=(0, 0, 0))
 
     img.save(out_png)
     return out_png
@@ -628,11 +640,16 @@ def build_video(plan, video_cfg: dict, voice_cfg: dict, channel_name: str, workd
             snips = {i: (cut, clips[f"s{i + 1:02d}"]) for i, cut in cuts.items() if f"s{i + 1:02d}" in clips}
 
     parts = []
+    labels: list[str | None] = []  # chapter title for the first part of each scene (None: same chapter)
+    subscribe_at = len(plan.scenes) // 2 if video_cfg.get("format") != "shorts" else -1
     for i, (scene, (wav, duration, captions)) in enumerate(zip(plan.scenes, narrated), 1):
         print(f"    Scene {i}/{len(plan.scenes)}: {scene.layout} - {scene.heading}")
+        labels += [None] * (len(parts) - len(labels))
+        labels.append(scene.heading)
         ass = write_ass(captions, size, scenes_dir / f"{i:02d}.ass") if video_cfg.get("captions", True) else None
         _scene_accent(i - 1)
-        overlay = render_overlay(scene, size, channel_name, scenes_dir / f"{i:02d}_overlay.png")
+        overlay = render_overlay(scene, size, channel_name, scenes_dir / f"{i:02d}_overlay.png",
+                                 subscribe=(i - 1 == subscribe_at))
         clip = fetch_footage(scene.footage_query, size, scenes_dir / f"{i:02d}_bg.mp4", used) if use_footage else None
         part = render_scene(clip or gradient, clip is not None, overlay, wav, ass, duration, size,
                             scenes_dir / f"{i:02d}.mp4")
@@ -661,8 +678,32 @@ def build_video(plan, video_cfg: dict, voice_cfg: dict, channel_name: str, workd
             print(f"    (No {key} clip at {path})")
             continue
         part = render_clip_scene(path, size, scenes_dir / f"{key}.mp4", clip_cfg.get("start", 0), clip_cfg.get("end"))
-        parts = [part, *parts] if key == "intro" else [*parts, part]
+        if key == "intro":  # the hook (first scene) comes first, then "welcome back": viewers stay longer
+            after = next((k for k in range(1, len(labels)) if labels[k]), len(parts)) if len(parts) > 1 else 0
+            parts.insert(after, part)
+            labels.insert(after, None)
+        else:
+            parts.append(part)
+            labels.append(None)
+    labels += [None] * (len(parts) - len(labels))
+    write_chapters(parts, labels, workdir / "chapters.txt")
     return concat(parts, workdir / "narrated.mp4")
+
+
+def write_chapters(parts: list[Path], labels: list[str | None], out: Path) -> Path:
+    """YouTube chapters (0:00 Title ...) from the scenes: helps search and lets viewers jump to a part."""
+    from .editor import _duration
+
+    chapters, t = [], 0.0
+    for part, label in zip(parts, labels):
+        if label and (not chapters or t - chapters[-1][0] >= 10):  # YouTube needs 10 s+ per chapter
+            chapters.append((t, label))
+        t += _duration(part)
+    if chapters:
+        chapters[0] = (0.0, chapters[0][1])
+    lines = [f"{int(c // 60)}:{int(c % 60):02d} {label}" for c, label in chapters]
+    out.write_text("\n".join(lines) + "\n" if len(lines) >= 3 else "")
+    return out
 
 
 # ---------------------------------------------------------------- thumbnail

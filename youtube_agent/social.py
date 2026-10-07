@@ -297,6 +297,19 @@ def post(social_dir: Path) -> None:
     if was_user:
         print("  (META_PAGE_TOKEN is a user token; using the Page token derived from it)")
 
+    if meta.get("comment"):  # a question from the channel starts the conversation (pin it in Studio)
+        try:
+            from googleapiclient.discovery import build
+
+            from .uploader import _credentials
+
+            yt = build("youtube", "v3", credentials=_credentials(), cache_discovery=False)
+            yt.commentThreads().insert(part="snippet", body={"snippet": {
+                "videoId": meta["youtube_id"], "topLevelComment": {"snippet": {"textOriginal": meta["comment"]}}}}
+            ).execute()
+            print("  Posted the question comment on YouTube")
+        except Exception as e:
+            print(f"  (Could not post the YouTube comment: {e})")
     fb_caption, ig_caption = captions(meta, page_id, ig_user_id, token)
     results = []
     fb_video_id = None

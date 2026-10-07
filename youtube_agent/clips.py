@@ -574,9 +574,16 @@ def process_inbox(config: dict, history: list[dict], dry_run: bool) -> int:
                                           yt.get("playlist_description"))
             except Exception as e:
                 print(f"  (Could not add to playlist: {e})")
+        comment = rng.choice([
+            "Which place should we restore next? 👇 Tell us in the comments and we might make it!",
+            "Before or after: which one would you rather live in? 😄 Tell us below 👇",
+            "Rate this makeover from 1 to 10! 👇 And subscribe for a new transformation every day.",
+            "What would you change in this makeover? 🤔 Share your idea below 👇",
+            "Would you live here? Yes or no? 👇 Subscribe for more makeovers like this!",
+        ])
         (workdir / "social" / "social.json").write_text(json.dumps({
             "youtube_id": video_id, "title": meta["title"], "caption": caption,
-            "publish_at": yt["publish_at"]}, indent=2))
+            "publish_at": yt["publish_at"], "comment": comment}, indent=2))
 
         # keep the clips for the weekly compilation; the inbox is left empty
         dest = DONE / slug
