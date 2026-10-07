@@ -85,8 +85,11 @@ video:
   # lip-synced on Kaggle (lips didn't match well enough). It switches on by itself once broll clips exist.
   host:
     enabled: true
-    mode: "broll"
+    mode: "mix"      # every other moment: walking toward the camera and talking (lip-synced); else voice-over
     broll: "branding/health-support-studio/avatar/broll"
+    moves: "branding/health-support-studio/avatar/broll"    # front-facing clip the lips are synced on
+    moves_only: ["Man_walking_in_hospital_corridor_20261007132552.mp4"]
+    landscape_crop: 1.0
     every_seconds: 60
     first_at: 30
     snippet_seconds: [5, 10]

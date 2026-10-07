@@ -155,7 +155,7 @@ def talk(job: dict, clips: list[Path]) -> Path:
     if ENGINE == "latentsync":
         sh(f"{PY} -m scripts.inference --unet_config_path configs/unet/stage2.yaml "
            f"--inference_ckpt_path checkpoints/latentsync_unet.pt --inference_steps {SETTINGS.get('steps', 20)} "
-           f"--guidance_scale 1.5 --enable_deepcache --video_path {base} --audio_path {wav} --video_out_path {out}",
+           f"--guidance_scale {SETTINGS.get('guidance', 1.5)} --enable_deepcache --video_path {base} --audio_path {wav} --video_out_path {out}",
            cwd=REPO)
     else:
         sh(f"{PY} inference.py --checkpoint_path checkpoints/wav2lip_gan.pth --face {base} --audio {wav} "

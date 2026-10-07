@@ -34,7 +34,8 @@ LIPSYNC_TEMPLATE = HERE / "lipsync_kernel.py"
 DEFAULTS = {
     "moves": "branding/health-support-studio/avatar/moves",           # from the repo root
     "lipsync": "latentsync",            # "latentsync" (sharp, natural lips) or "wav2lip" (faster, blurrier)
-    "lipsync_steps": 30,
+    "lipsync_steps": 40,
+    "lipsync_guidance": 2.0,            # higher = lips follow the words more closely
     "pads": "0 15 0 0",                 # Wav2Lip face box padding (top bottom left right): include the chin
     "landscape_crop": 1.0,              # landscape videos show this top part of a moves clip (1.0 = whole body)
     "image": "branding/health-support-studio/avatar/nurse_final.jpg",  # from the repo root
@@ -129,7 +130,7 @@ def make_clips(audio: dict[str, Path], workdir: Path, cfg: dict | None = None) -
     if moves:  # natural movement: the moves clips, lip-synced
         print(f"  Host: {len(moves)} moves clips, lip-synced on Kaggle")
         settings_json = {"moves": moves, "raw_base": _raw_base(s), "pads": s["pads"], "engine": s["lipsync"],
-                         "steps": s["lipsync_steps"]}
+                         "steps": s["lipsync_steps"], "guidance": s["lipsync_guidance"]}
         code = (LIPSYNC_TEMPLATE.read_text()
                 .replace("__JOBS__", b64(json.dumps(jobs).encode()))
                 .replace("__SETTINGS__", b64(json.dumps(settings_json).encode())))

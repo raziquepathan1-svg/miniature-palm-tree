@@ -520,7 +520,7 @@ def render_host_scene(talk: Path, wav: Path, ass: Path | None, duration: float, 
     """
     W, H = size
     fade_at = max(0.0, duration - 0.3)
-    talk_in = f"[0:v]fps={FPS},tpad=stop_mode=clone:stop_duration=5"
+    talk_in = f"[0:v]fps={FPS},tpad=stop_mode=clone:stop_duration=5,unsharp=5:5:0.6:5:5:0.0"
     if W > H and landscape_crop < 1:
         talk_in += f",crop=iw:trunc(ih*{landscape_crop}/2)*2:0:0"
     fades = f"fade=t=in:st=0:d=0.3" + (f",fade=t=out:st={fade_at:.2f}:d=0.3" if fade_out else "")
@@ -623,12 +623,16 @@ def build_video(plan, video_cfg: dict, voice_cfg: dict, channel_name: str, workd
 
         cuts = talking.pick_snippets([(d, caps) for _, d, caps in narrated], host_cfg)
         broll = talking.broll_clips(host_cfg)
-        if host_cfg.get("mode", "broll") == "broll":
+        mode = host_cfg.get("mode", "broll")
+        if mode in ("broll", "mix"):
             # The host walking or working without talking, while the narration continues: no lip-sync needed.
-            if broll:
-                print(f"    The host appears (walking or working) in scenes {[i + 1 for i in cuts]}")
-            snips = {i: (cut, broll[k % len(broll)]) for k, (i, cut) in enumerate(cuts.items())} if broll else {}
-            cuts = {}
+            # "mix": every other moment the host talks instead (lip-synced on Kaggle, front-facing clips).
+            talk_ids = set(list(cuts)[0::2]) if mode == "mix" and host_cfg.get("moves_only") else set()
+            quiet = [i for i in cuts if i not in talk_ids]
+            if broll and quiet:
+                print(f"    The host appears (walking or working) in scenes {[i + 1 for i in quiet]}")
+            snips = {i: (cuts[i], broll[k % len(broll)]) for k, i in enumerate(quiet)} if broll else {}
+            cuts = {i: cuts[i] for i in talk_ids}
         jobs = {}
         for i, cut in cuts.items():
             short_wav = scenes_dir / f"{i + 1:02d}_host.wav"
@@ -637,7 +641,7 @@ def build_video(plan, video_cfg: dict, voice_cfg: dict, channel_name: str, workd
         if cuts:
             print(f"    The host says the start of scenes {[i + 1 for i in cuts]} (lip-synced on Kaggle)...")
             clips = talking.make_clips(jobs, workdir, host_cfg)
-            snips = {i: (cut, clips[f"s{i + 1:02d}"]) for i, cut in cuts.items() if f"s{i + 1:02d}" in clips}
+            snips.update({i: (cut, clips[f"s{i + 1:02d}"]) for i, cut in cuts.items() if f"s{i + 1:02d}" in clips})
 
     parts = []
     labels: list[str | None] = []  # chapter title for the first part of each scene (None: same chapter)
