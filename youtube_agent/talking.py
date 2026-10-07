@@ -94,7 +94,8 @@ def moves_clips(s: dict) -> list[str]:
     """The portrait (9:16) moves clips; landscape ones are skipped (cropping them zooms in far too much)."""
     folder = ROOT / s["moves"]
     clips = sorted(folder.glob("*.mp4")) if folder.exists() else []
-    return [c.name for c in clips if _is_portrait(c)]
+    only = s.get("moves_only")  # optional: just these files
+    return [c.name for c in clips if _is_portrait(c) and (not only or c.name in only)]
 
 
 def _raw_base(s: dict) -> str:

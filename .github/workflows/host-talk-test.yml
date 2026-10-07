@@ -5,10 +5,10 @@ name: Talking host - test
 on:
   workflow_dispatch:
     inputs:
-      text:
-        description: "What the host says"
-        required: false
-        default: ""
+      walk:
+        description: "Instead: a 10-second lip-sync test on the walking clip"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -57,16 +57,34 @@ jobs:
           KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
           KAGGLE_API_TOKEN: ${{ secrets.KAGGLE_API_TOKEN }}
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+          WALK: ${{ inputs.walk }}
         run: |
           [ -z "$KAGGLE_KEY" ] && unset KAGGLE_KEY
           [ -z "$KAGGLE_API_TOKEN" ] && unset KAGGLE_API_TOKEN
           python - <<'PY'
-          import yaml
+          import os, yaml
           from pathlib import Path
           from types import SimpleNamespace
-          from youtube_agent import visuals
+          from youtube_agent import talking, visuals, voice
           from youtube_agent.planner import Scene
           cfg = yaml.safe_load(open("youtube_agent/config.yaml"))
+          if os.environ.get("WALK") == "true":
+              text = ("Most adults need at least seven hours of sleep every night. If you often feel tired, "
+                      "start by going to bed at the same time every day.")
+              work = Path("talk_work"); work.mkdir(exist_ok=True)
+              wav = work / "walk.wav"
+              duration, captions = voice.narrate_scene(text, cfg["voice"], wav)
+              host = {"moves": "branding/health-support-studio/avatar/broll", "landscape_crop": 1.0,
+                      "moves_only": ["Man_walking_in_hospital_corridor_20261007132552.mp4"]}
+              clips = talking.make_clips({"walk": wav}, work, host)
+              if not clips:
+                  raise SystemExit("No lip-synced clip came back from Kaggle")
+              visuals.ensure_fonts()
+              ass = visuals.write_ass(captions, (1080, 1920), work / "walk.ass")
+              dest = Path("branding/health-support-studio/avatar/talk_test.mp4")
+              visuals.render_host_scene(clips["walk"], wav, ass, duration, (1080, 1920), dest)
+              print(f"Saved {dest}")
+              raise SystemExit(0)
           plan = yaml.safe_load(open("youtube_agent/script_bank/008-sleep-myths.yaml"))["plan"]
           scenes = [Scene(**s) for s in plan["scenes"][:5]]
           video = {**cfg["video"], "host": {**cfg["video"]["host"], "enabled": True, "every_seconds": 35, "first_at": 0}}
