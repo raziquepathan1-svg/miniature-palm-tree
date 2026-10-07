@@ -275,6 +275,16 @@ def make_one_video(config: dict, history: list[dict], topic: str | None, dry_run
                 uploader.add_to_playlists(short_id, [shorts_playlist], playlist_about)
         except Exception as e:  # the main video is already up; don't fail the whole run
             print(f"  (Could not upload the YouTube Short: {e})")
+    # A second Short from the most interesting part of the long video: Shorts bring most new viewers.
+    short2_id = None
+    if yt.get("second_short", True) and not shorts and uploads_today() < int(yt.get("max_uploads_per_day", 5)):
+        try:
+            short2_id = upload_second_short(plan, video_id, video_cfg, config, channel_name, workdir, yt, footer)
+            if short2_id:
+                entry["short2_youtube_id"] = short2_id
+                save_history(history)
+        except Exception as e:  # the main video and first Short are already up
+            print(f"  (Could not make the second Short: {e})")
     if social_dir:
         topic = plan.topic.split(":")[0].strip()
         comment = (f"What's your biggest question about {topic.lower()}? Ask below 👇 I read every comment and "
@@ -293,6 +303,8 @@ def make_one_video(config: dict, history: list[dict], topic: str | None, dry_run
     ]
     if short_id:
         summary.append(f"- YouTube Short: https://studio.youtube.com/video/{short_id}/edit")
+    if short2_id:
+        summary.append(f"- Second YouTube Short: https://studio.youtube.com/video/{short2_id}/edit")
     if fact_issues:
         summary.append("- Fact-check corrections: " + "; ".join(fact_issues))
     left = len(unused_bank_scripts(history))
@@ -316,6 +328,78 @@ def match_playlist(name: str, allowed: list[str], default: str = "Health Tips") 
     words = set(name.lower().replace("&", " ").split())
     best = max(allowed, key=lambda p: len(words & set(p.lower().replace("&", " ").split())), default=None)
     return best if best and words & set(best.lower().replace("&", " ").split()) else default
+
+
+def uploads_today() -> int:
+    """YouTube uploads of both channels since the API quota last reset (midnight Pacific, ~07:00 UTC).
+    Both channels may share one Google project: about 6 uploads a day fit in its free quota."""
+    now = dt.datetime.utcnow()
+    start = now.replace(hour=7, minute=0, second=0, microsecond=0)
+    if now < start:
+        start -= dt.timedelta(days=1)
+    count = 0
+    for f in (HERE / "history.json", HERE / "channels" / "restore_remake" / "history.json"):
+        try:
+            for h in json.loads(f.read_text()):
+                if dt.datetime.fromisoformat(h.get("date", "1970-01-01")) >= start:
+                    count += sum(1 for k in ("youtube_id", "short_youtube_id", "short2_youtube_id") if h.get(k))
+        except Exception:
+            pass
+    return count
+
+
+def upload_second_short(plan, video_id: str, video_cfg: dict, config: dict, channel_name: str, workdir: Path,
+                        yt: dict, footer: str) -> str | None:
+    """A ~45 s vertical Short from one strong scene of the video (myth vs fact, warning signs, a key number),
+    with a hook first and the host's outro, scheduled a few hours after the first Short."""
+    from . import uploader, visuals
+    from .planner import Scene
+
+    used = {s.heading for s in plan.short_scenes}
+    middle = [s for s in plan.scenes[1:-1] if s.heading not in used]
+    order = {"myth_fact": 0, "warning": 1, "big_number": 2, "bullets": 3}
+    picks = sorted((s for s in middle if s.layout in order), key=lambda s: order[s.layout])
+    if not picks:
+        return None
+    best = [s for s in picks if s.layout == picks[0].layout]
+    scene = best[len(best) // 2]
+    topic = plan.topic.split(":")[0].strip()
+    if scene.layout == "myth_fact" and scene.points:
+        hook = "Myth or fact? Most people get this one wrong."
+        title = f"Myth or fact: {scene.points[0].rstrip('.?!')}?"
+    elif scene.layout == "warning":
+        hook = "Do you know these warning signs? Don't ignore them."
+        title = f"{scene.heading}: don't ignore these"
+    elif scene.layout == "big_number":
+        hook = f"Here's one number about {topic.lower()} everyone should know."
+        title = f"{topic}: know this number"
+    else:
+        hook = f"{scene.heading}. Here's what you need to know."
+        title = f"{scene.heading} in 40 seconds"
+    if len(title) > 50:
+        title = title[:47].rsplit(" ", 1)[0] + "..."
+    title += " #Shorts"
+    hook_scene = Scene(layout="title", heading="Myth or Fact?" if scene.layout == "myth_fact" else scene.heading[:40],
+                       points=[topic[:40]], footage_query=scene.footage_query, narration=hook)
+    body = scene.model_copy(update={"narration": scene.narration.rstrip() +
+                                    " Watch the full video on the Health Support Studio channel."})
+    print(f"    Making a second Short: {title}")
+    raw = visuals.build_video(SimpleNamespace(scenes=[hook_scene, body], short_scenes=[]),
+                              {**video_cfg, "format": "shorts"}, config.get("voice", {}), channel_name,
+                              workdir / "short2_build")
+    short_yt = dict(yt)
+    if yt.get("publish_at"):
+        t = dt.datetime.fromisoformat(yt["publish_at"].replace("Z", "+00:00")) + dt.timedelta(
+            hours=float(yt.get("second_short_delay_hours", 3)))
+        short_yt["publish_at"] = t.strftime("%Y-%m-%dT%H:%M:%SZ")
+    tags = " ".join(w for w in plan.short_caption.split() if w.startswith("#"))
+    desc = f"{hook}\n\n▶️ Watch the full video: https://youtu.be/{video_id}\n\n{tags}\n\n{footer}".strip()
+    print("    Uploading the second Short...")
+    short_id = uploader.upload_video(raw, None, title, desc, plan.tags + ["shorts"], short_yt,
+                                     config["channel"].get("language_code", "en-US"))
+    if yt.get("playlists", True):
+        uploader.add_to_playlists(short_id, [yt.get("shorts_playlist", "Health Shorts")], yt.get("playlist_description"))
+    return short_id
 
 
 def make_social_short(plan, final: Path, video_cfg: dict, config: dict, channel_name: str,
