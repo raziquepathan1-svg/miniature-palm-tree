@@ -74,7 +74,9 @@ video:
   # Your spoken intro and outro (Flow clips, voice changed to your cloned voice): the intro opens every long
   # video, the outro closes every video and Short. start/end trim the clip (seconds).
   host_clips:
-    intro: {file: "branding/health-support-studio/avatar/speaking/intro_myvoice.mp4", start: 0.6, end: 9.3}
+    intro:   # standing and sitting take turns, a different one each day
+      - {file: "branding/health-support-studio/avatar/speaking/intro_myvoice.mp4", start: 0.6, end: 9.3}
+      - {file: "branding/health-support-studio/avatar/speaking/sit_myvoice.mp4", start: 4.4, end: 8.9}
     outro: {file: "branding/health-support-studio/avatar/speaking/outro_v1_myvoice.mp4", start: 0, end: 8.0}
   # You on screen in the middle of the video: about every minute you appear for 5-10 s next to the slide,
   # while your voice keeps narrating. mode "broll": your Flow clips of walking / reading a chart / at the desk

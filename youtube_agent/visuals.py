@@ -612,6 +612,10 @@ def build_video(plan, video_cfg: dict, voice_cfg: dict, channel_name: str, workd
         clip_cfg = (video_cfg.get("host_clips") or {}).get(key)
         if not clip_cfg or (key == "intro" and video_cfg.get("format") == "shorts"):
             continue  # Shorts open with their hook, so they only get the outro
+        if isinstance(clip_cfg, list):  # several versions (standing, sitting...): a different one each day
+            import datetime as dt
+
+            clip_cfg = clip_cfg[dt.date.today().toordinal() % len(clip_cfg)]
         path = Path(__file__).resolve().parent.parent / clip_cfg["file"]
         if not path.exists():
             print(f"    (No {key} clip at {path})")
