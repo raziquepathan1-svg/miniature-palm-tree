@@ -11,10 +11,11 @@ plan:
     Your thyroid is a small gland with a big job: it helps control your metabolism. When it makes too little or too much hormone, you can feel it all over your body. We answer the top questions about thyroid problems.
 
     In this video:
-    • What the thyroid does
-    • Signs of an underactive vs overactive thyroid
+    • What the thyroid does, and how common problems are
+    • Signs of an underactive or overactive thyroid
+    • Goiters and nodules
     • The TSH blood test, and the supplement that can mess up your results
-    • How thyroid problems are treated
+    • How thyroid problems are treated, and 3 myths
 
     #Thyroid #Hypothyroidism #Hyperthyroidism #WomensHealth #HealthEducation
   tags: ["thyroid", "hypothyroidism", "hyperthyroidism", "thyroid symptoms", "underactive thyroid", "overactive thyroid", "tsh test", "hashimoto's", "graves disease", "biotin thyroid test", "health education"]
@@ -24,76 +25,242 @@ plan:
   playlist: "Diabetes & Metabolism"
   scenes:
     - layout: "title"
-      heading: "Could It Be Your Thyroid?"
-      points: ["Your top questions answered"]
-      footage_query: "tired woman couch"
+      heading: "Is It Your Thyroid?"
+      points: ["Top questions answered"]
+      footage_query: "woman touching neck thyroid"
       narration: >-
-        Always tired, always cold, and gaining weight without changing anything? Or the opposite: a racing heart, feeling
-        anxious, and losing weight? These can have many causes, and one of them is your thyroid. Today we answer the top
-        questions about thyroid problems.
+        Feeling tired all the time, cold when others are warm, or gaining weight without changing anything? Or the opposite: a
+        racing heart, feeling shaky, and losing weight without trying? Both can be signs of a thyroid problem. Today we answer
+        the top questions about thyroid disease: what the thyroid does, the warning signs, the tests, and how it is treated.
     - layout: "bullets"
       heading: "What Does the Thyroid Do?"
-      points: ["Butterfly-shaped gland in the neck", "Makes thyroid hormone", "Controls metabolism", "Affects heart, weight, mood"]
-      footage_query: "woman touching neck mirror"
+      points: ["Small gland in the neck", "Shaped like a butterfly", "Makes thyroid hormone", "Controls your metabolism"]
+      footage_query: "medical illustration neck"
       narration: >-
-        Question one: what does the thyroid do? It is a small, butterfly shaped gland at the front of your neck. It makes
-        hormones that control your metabolism, which affects how you use energy. That touches almost everything, including your
-        heart rate, weight, body temperature, mood, and digestion.
+        First question: what is the thyroid? It is a small, butterfly shaped gland at the front of your neck, just below the
+        Adam's apple. It makes thyroid hormone, which travels through your blood and helps control how your body uses energy.
+        That includes your heart rate, body temperature, weight, digestion, mood, and even your skin and hair.
     - layout: "bullets"
-      heading: "Underactive Thyroid Signs"
-      points: ["Tired and slow", "Feeling cold", "Weight gain, constipation", "Dry skin, low mood"]
-      footage_query: "woman cold blanket"
+      heading: "Who Controls the Thyroid?"
+      points: ["The pituitary gland", "Sends a signal called TSH", "More TSH: make more hormone", "Less TSH: make less"]
+      footage_query: "doctor explaining anatomy model"
       narration: >-
-        Question two: what are the signs of an underactive thyroid, called hypothyroidism? It happens when the thyroid makes too
-        little hormone. People may feel tired and slow, feel cold, gain weight, have constipation, dry skin, thinning hair, heavy
-        periods, or feel depressed. In the US, the most common cause is an autoimmune condition called Hashimoto's disease.
-    - layout: "bullets"
-      heading: "Overactive Thyroid Signs"
-      points: ["Fast or irregular heartbeat", "Weight loss", "Anxious, shaky, sweaty", "Trouble with heat"]
-      footage_query: "man anxious hand shaking"
-      narration: >-
-        Question three: what about an overactive thyroid, called hyperthyroidism? Here the thyroid makes too much hormone. Signs
-        include a fast or irregular heartbeat, weight loss, feeling nervous or irritable, shaky hands, sweating, trouble with heat,
-        more frequent bowel movements, and trouble sleeping. A common cause is Graves' disease.
+        The thyroid takes orders from the pituitary gland, a small gland at the base of the brain. The pituitary sends out a
+        hormone called TSH, which tells the thyroid how much hormone to make. When thyroid hormone is low, TSH goes up, to
+        push the thyroid harder. When thyroid hormone is high, TSH goes down. This helps doctors read your test results.
     - layout: "big_number"
-      heading: "TSH"
-      points: ["a simple blood test", "is usually the first step"]
-      footage_query: "blood test lab tube"
+      heading: "How Common Is It?"
+      points: ["20 million", "Americans have thyroid disease"]
+      footage_query: "group of women walking"
       narration: >-
-        Question four: how is it diagnosed? Usually with a simple blood test called TSH, which stands for thyroid stimulating
-        hormone. Your doctor may also check other thyroid hormones. Women, and people over sixty, are more likely to have
-        thyroid problems.
+        How common are thyroid problems? Estimates suggest around twenty million Americans have some form of thyroid disease,
+        and many do not know it. Women are several times more likely than men to have thyroid problems. The risk rises with
+        age, and around pregnancy and menopause. Having a family history of thyroid disease also raises your risk.
+    - layout: "bullets"
+      heading: "Underactive: Hypothyroidism"
+      points: ["Too little thyroid hormone", "Body slows down", "Most common thyroid problem", "Often Hashimoto's disease"]
+      footage_query: "woman tired on couch"
+      narration: >-
+        Next question: what is an underactive thyroid? Hypothyroidism means the thyroid does not make enough hormone, so many
+        body functions slow down. It is the most common thyroid problem. In the United States, the most common cause is
+        Hashimoto's disease, where the immune system attacks the thyroid. Other causes include thyroid surgery, radiation
+        treatment, and some medicines.
     - layout: "warning"
-      heading: "Taking Biotin?"
-      points: ["Can skew thyroid test results", "Tell your doctor before testing", "Common in hair and nail supplements"]
-      footage_query: "vitamin supplement bottles"
+      heading: "Signs of Underactive Thyroid"
+      points: ["Tired, slow, sleepy", "Feeling cold", "Weight gain, constipation", "Dry skin, thinning hair"]
+      footage_query: "woman wrapped blanket cold"
       narration: >-
-        Question five: can supplements affect my results? Yes. The FDA warns that biotin, a supplement found in many hair, skin
-        and nail products, can interfere with some lab tests, including thyroid tests, and give false results. Tell your doctor
-        about every supplement you take before a blood test.
+        Signs of an underactive thyroid often come on slowly, over months or years. They include feeling tired and slow,
+        feeling cold, weight gain, constipation, dry skin, thinning hair, a puffy face, a hoarse voice, muscle aches, heavy or
+        irregular periods, depression, and trouble remembering things. Many people blame these changes on aging or stress, so
+        it often goes unnoticed.
     - layout: "bullets"
-      heading: "What About Neck Lumps?"
-      points: ["Swelling or a lump in the neck", "Most thyroid nodules aren't cancer", "Still get it checked"]
-      footage_query: "doctor examining neck patient"
+      heading: "Overactive: Hyperthyroidism"
+      points: ["Too much thyroid hormone", "Body speeds up", "Often Graves' disease", "Also nodules or inflammation"]
+      footage_query: "woman anxious hands"
       narration: >-
-        Bonus question: what if I notice a lump in my neck? Sometimes the thyroid gets bigger, called a goiter, or develops
-        lumps called nodules. Most thyroid nodules are not cancer. But any new lump or swelling in your neck, or trouble
-        swallowing or breathing, should be checked by your doctor, who may order an ultrasound.
+        What about an overactive thyroid? Hyperthyroidism means the thyroid makes too much hormone, so the body speeds up. The
+        most common cause is Graves' disease, an immune problem that pushes the thyroid to make too much. Other causes include
+        lumps called nodules that make extra hormone, inflammation of the thyroid, and taking too much thyroid medicine.
+    - layout: "warning"
+      heading: "Signs of Overactive Thyroid"
+      points: ["Fast or irregular heartbeat", "Nervous, shaky, sweaty", "Weight loss, more hungry", "Trouble sleeping, heat intolerance"]
+      footage_query: "man holding chest heartbeat"
+      narration: >-
+        Signs of an overactive thyroid include a fast or pounding heartbeat, an irregular heartbeat, feeling nervous or
+        irritable, shaky hands, sweating, feeling too hot, losing weight even while eating more, frequent bowel movements,
+        trouble sleeping, muscle weakness, and lighter periods. In older adults, the signs may be milder, sometimes just
+        tiredness or a new irregular heartbeat.
     - layout: "bullets"
-      heading: "How Is It Treated?"
-      points: ["Underactive: daily hormone pill", "Overactive: medicines and other options", "Regular blood tests", "Don't stop meds on your own"]
-      footage_query: "pill in hand water glass"
+      heading: "Thyroid Eye Disease"
+      points: ["Bulging eyes", "Gritty, dry or red eyes", "Double vision", "Smoking makes it worse"]
+      footage_query: "eye close up"
       narration: >-
-        Question six: how is it treated? An underactive thyroid is usually treated with a daily pill that replaces the missing
-        hormone. An overactive thyroid can be treated with medicines, radioactive iodine, or sometimes surgery. Either way, you
-        will need regular blood tests to get the dose right. Never stop or change thyroid medicine on your own.
+        Some people with Graves' disease develop eye problems. The eyes may look like they are bulging, and feel gritty, dry,
+        red, or swollen. Some people have double vision or sensitivity to light. Smoking makes thyroid eye disease more likely
+        and more severe. If you notice these changes, tell your doctor. An eye specialist can help protect your vision.
+    - layout: "bullets"
+      heading: "What Is a Goiter?"
+      points: ["Swelling of the thyroid", "Visible lump in the neck", "Can happen in either problem", "Usually not cancer"]
+      footage_query: "woman touching neck thyroid"
+      narration: >-
+        What is a goiter? It is an enlarged thyroid, which may look like a swelling at the front of the neck. A goiter can
+        happen with an underactive thyroid, an overactive thyroid, or normal hormone levels. In the past, many goiters were
+        caused by lack of iodine, but iodized salt has made that rare in the US. A large goiter can make swallowing or
+        breathing harder.
+    - layout: "bullets"
+      heading: "Thyroid Nodules"
+      points: ["Lumps in the thyroid", "Very common with age", "Most are not cancer", "Ultrasound checks them"]
+      footage_query: "ultrasound scan neck"
+      narration: >-
+        Thyroid nodules are lumps inside the thyroid. They are very common, especially as people age, and are often found by
+        chance on scans. Most nodules are not cancer. Your doctor may order an ultrasound to look at them, and sometimes a
+        thin needle biopsy. Tell your doctor if you notice a lump, or have trouble swallowing or a hoarse voice that lasts.
+    - layout: "bullets"
+      heading: "How Is It Diagnosed?"
+      points: ["Symptoms and exam", "TSH blood test", "Free T4 test", "Antibody tests sometimes"]
+      footage_query: "blood test tube lab"
+      narration: >-
+        How is thyroid disease diagnosed? It starts with your symptoms and a physical exam. The main test is the TSH blood
+        test. A high TSH usually means an underactive thyroid. A low TSH usually means an overactive thyroid. Your doctor may
+        also check free T4, the main thyroid hormone, and sometimes antibodies, to look for Hashimoto's or Graves' disease.
+    - layout: "warning"
+      heading: "The Biotin Warning"
+      points: ["Biotin can skew results", "Found in hair and nail pills", "Tell your doctor", "Ask when to stop before tests"]
+      footage_query: "supplement capsules close up"
+      narration: >-
+        Here is something many people do not know. Biotin, a B vitamin often found in hair, skin and nail supplements, can
+        interfere with many lab tests, including thyroid tests. It can make results look falsely high or low, which could lead
+        to a wrong diagnosis. The FDA has warned about this. Tell your doctor if you take biotin, and ask when to stop before
+        your blood test.
+    - layout: "myth_fact"
+      heading: "Normal TSH Means I Am Fine"
+      points: ["One normal test settles it", "Some cases need retesting"]
+      footage_query: "doctor reading lab results"
+      narration: >-
+        Myth: if my TSH was normal once, I can never have a thyroid problem. Fact: thyroid disease can develop over time, and
+        TSH can be affected by illness, some medicines, and pregnancy. If your symptoms continue or change, ask whether you
+        need repeat testing. On the other hand, tiredness has many causes, so a normal test may mean looking elsewhere.
+    - layout: "bullets"
+      heading: "Treating an Underactive Thyroid"
+      points: ["Daily thyroid hormone pill", "Usually levothyroxine", "Dose adjusted by blood tests", "Often taken for life"]
+      footage_query: "pill bottle close up"
+      narration: >-
+        How is an underactive thyroid treated? With a daily pill that replaces the missing hormone, most often levothyroxine.
+        It is the same as the hormone your body makes. Your doctor will check your TSH every six to eight weeks at first and
+        adjust the dose. Once the dose is stable, most people get tested about once a year. Most people take it for life.
+    - layout: "bullets"
+      heading: "Taking Your Thyroid Pill Right"
+      points: ["Same time every day", "Empty stomach, with water", "Wait before breakfast", "Separate from calcium and iron"]
+      footage_query: "glass of water pill hand"
+      narration: >-
+        How you take thyroid medicine matters. Take it at the same time every day, usually first thing in the morning, on an
+        empty stomach, with a full glass of water. Wait thirty to sixty minutes before eating or drinking coffee. Calcium,
+        iron, antacids and some other medicines block absorption, so take them about four hours apart. Do not switch brands
+        without telling your doctor.
+    - layout: "warning"
+      heading: "Too Much Thyroid Medicine"
+      points: ["Racing heart", "Shaky, anxious", "Trouble sleeping", "Bone loss over time"]
+      footage_query: "man holding chest heartbeat"
+      narration: >-
+        Taking too much thyroid medicine can cause the same symptoms as an overactive thyroid: a racing heart, feeling shaky
+        or anxious, trouble sleeping, and weight loss. Over time, it can raise the risk of heart rhythm problems and bone
+        loss, especially in older adults. Never take extra pills to lose weight or gain energy. Take only what your doctor
+        prescribes.
+    - layout: "bullets"
+      heading: "Treating an Overactive Thyroid"
+      points: ["Antithyroid medicine", "Radioactive iodine", "Surgery", "Beta blockers for symptoms"]
+      footage_query: "doctor talking patient office"
+      narration: >-
+        An overactive thyroid has several treatment options. Antithyroid medicines, like methimazole, lower the amount of
+        hormone the thyroid makes. Radioactive iodine, taken as a pill, slowly shrinks the thyroid. Surgery removes part or
+        all of the gland. Beta blockers can ease a racing heart and shakiness while other treatments start working. After
+        iodine or surgery, many people need thyroid hormone pills.
+    - layout: "warning"
+      heading: "Thyroid Storm"
+      points: ["Very high fever", "Very fast heartbeat", "Confusion, agitation", "Call 911"]
+      footage_query: "paramedic helping patient"
+      narration: >-
+        A rare but life threatening problem is thyroid storm, a sudden, severe worsening of an overactive thyroid. It can be
+        triggered by infection, surgery, stopping medicine, or childbirth. Signs include a high fever, a very fast heartbeat,
+        vomiting or diarrhea, confusion, agitation, and passing out. This is an emergency. Call 911.
+    - layout: "bullets"
+      heading: "Thyroid and Pregnancy"
+      points: ["Get checked if you have thyroid disease", "Dose often needs to go up", "Test early in pregnancy", "Watch after delivery"]
+      footage_query: "pregnant woman talking doctor"
+      narration: >-
+        Thyroid hormone is important for a baby's brain development. If you take thyroid medicine and become pregnant, tell
+        your doctor right away, because the dose often needs to go up early in pregnancy. Some women develop thyroid
+        inflammation in the year after giving birth, called postpartum thyroiditis, which can cause both overactive and
+        underactive symptoms.
+    - layout: "bullets"
+      heading: "Babies Are Tested at Birth"
+      points: ["Newborn screening", "A heel prick blood test", "Finds thyroid problems early", "Treatment protects the brain"]
+      footage_query: "newborn baby hospital"
+      narration: >-
+        Did you know that every baby born in the United States is tested for thyroid problems? It is part of newborn
+        screening, a heel prick blood test done in the first days of life. Babies born with an underactive thyroid can have
+        problems with growth and brain development, but early treatment with thyroid hormone lets them grow and develop
+        normally.
+    - layout: "myth_fact"
+      heading: "Thyroid Explains All Weight Gain"
+      points: ["My thyroid is why I gained", "The effect is usually modest"]
+      footage_query: "bathroom scale feet"
+      narration: >-
+        Myth: thyroid problems explain most weight gain. Fact: an underactive thyroid can add some weight, often from fluid,
+        but usually not a large amount. Treatment may bring a few pounds off, but it does not replace healthy eating and
+        activity. Thyroid medicine should never be used as a weight loss drug, because too much can harm the heart and bones.
+    - layout: "myth_fact"
+      heading: "Iodine Pills Help the Thyroid"
+      points: ["Kelp and iodine pills boost it", "Too much iodine can harm"]
+      footage_query: "seaweed supplements bottle"
+      narration: >-
+        Myth: iodine or kelp supplements will boost your thyroid. Fact: most Americans get enough iodine from iodized salt,
+        dairy, seafood and bread. Taking extra iodine, including kelp and some thyroid support supplements, can actually
+        trigger or worsen thyroid problems in some people. Some of these supplements even contain hidden thyroid hormone. Talk
+        to your doctor before using them.
+    - layout: "bullets"
+      heading: "Who Should Get Checked"
+      points: ["Symptoms that do not go away", "Family history", "Other autoimmune diseases", "Pregnant or planning pregnancy"]
+      footage_query: "patient talking doctor"
+      narration: >-
+        Who should ask about a thyroid test? People with symptoms that do not go away. People with a family history of thyroid
+        disease. People with other autoimmune conditions, like type one diabetes or celiac disease. People who had radiation
+        to the neck, or who take medicines like lithium or amiodarone. And women who are pregnant or planning pregnancy with a
+        thyroid history.
+    - layout: "bullets"
+      heading: "Living Well With Thyroid Disease"
+      points: ["Take medicine every day", "Keep follow-up tests", "Report new symptoms", "Tell all your doctors"]
+      footage_query: "woman smiling outdoors"
+      narration: >-
+        Most people with thyroid disease live full, healthy lives. Take your medicine every day, as prescribed. Keep your
+        follow up blood tests, especially after dose changes. Report new symptoms, like a racing heart or feeling slow again.
+        Tell every doctor and pharmacist about your thyroid condition, since some medicines affect thyroid levels.
+    - layout: "bullets"
+      heading: "Questions for Your Doctor"
+      points: ["Could my symptoms be thyroid?", "What do my results mean?", "How should I take my medicine?", "When is my next test?"]
+      footage_query: "patient talking doctor"
+      narration: >-
+        At your next visit, ask a few questions. Could my symptoms be related to my thyroid? What were my TSH and T4 results,
+        and what do they mean? How and when should I take my medicine? Will any of my other medicines or supplements
+        interfere? And when should I have my next blood test?
+    - layout: "bullets"
+      heading: "Quick Recap"
+      points: ["Underactive: tired, cold, slow", "Overactive: fast heart, shaky, hot", "TSH test finds most problems", "Tell your doctor about biotin"]
+      footage_query: "notebook checklist pen"
+      narration: >-
+        Let us recap. An underactive thyroid can make you tired, cold, and slow. An overactive thyroid can make your heart
+        race, and make you shaky, hot, and lose weight. The TSH blood test finds most thyroid problems. Biotin can mess up the
+        results. And both conditions are very treatable with the right care, so you do not have to just live with the
+        symptoms.
     - layout: "outro"
-      heading: "Talk to Your Doctor"
-      points: ["Symptoms that won't go away?", "Ask about a thyroid test"]
-      footage_query: "patient talking doctor office"
+      heading: "Remember"
+      points: ["Listen to your body", "Ask about a TSH test", "Take thyroid pills the right way"]
+      footage_query: "family walking outdoors"
       narration: >-
-        If you have symptoms like these that do not go away, ask your doctor whether a thyroid test makes sense. This video is for
-        education only, not medical advice. Like and subscribe to Health Support Studio for a new health video every day.
+        Remember: if your body feels off for weeks, ask about a thyroid test, mention any biotin supplements, and take your
+        thyroid medicine the right way. Share this with someone who always feels tired or cold. This video is for education
+        only, not medical advice. Like and subscribe to Health Support Studio for a new health video every day.
   short_title: "This supplement can mess up your thyroid test #Shorts"
   short_caption: >-
     Taking a hair, skin and nail supplement? It could throw off your thyroid test results. Educational only, not medical
