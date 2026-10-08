@@ -1,0 +1,299 @@
+queue_topic: "Alzheimer's disease: 10 warning signs and normal aging"
+style: "Warning Signs"
+sources:
+  - "National Institute on Aging, Alzheimer's Disease Fact Sheet: https://www.nia.nih.gov/health/alzheimers-and-dementia/alzheimers-disease-fact-sheet"
+  - "National Institute on Aging, Memory Problems, Forgetfulness, and Aging: https://www.nia.nih.gov/health/memory-loss-and-forgetfulness/memory-problems-forgetfulness-and-aging"
+  - "CDC, About Alzheimer's: https://www.cdc.gov/alzheimers-dementia/about/alzheimers.html"
+plan:
+  topic: "Alzheimer's disease: 10 warning signs and normal aging"
+  title: "10 Warning Signs of Alzheimer's (Not Just Normal Aging)"
+  description: |-
+    Some forgetfulness is normal with age. Learn the 10 warning signs of Alzheimer's disease, how they differ from normal aging, treatable causes of memory loss, and why early diagnosis matters for treatment and planning.
+
+    In this video:
+    • Normal aging versus warning signs
+    • The 10 warning signs of Alzheimer's
+    • Treatable causes and sudden confusion
+    • Diagnosis, treatments and lowering your risk
+    • Safety, planning and support for caregivers
+
+    #Alzheimers #Dementia #MemoryLoss #Caregiving #HealthEducation
+  tags: ["alzheimers", "alzheimers warning signs", "dementia", "memory loss", "signs of dementia", "normal aging", "caregiver tips", "dementia risk", "early diagnosis", "healthy aging", "health education"]
+  thumbnail_text: "NORMAL AGING OR NOT?"
+  thumbnail_highlight: "NOT?"
+  thumbnail_photo_query: "elderly man confused sitting"
+  playlist: "Older Adults & Caregiving"
+  scenes:
+    - layout: "title"
+      heading: "Alzheimer's Warning Signs"
+      points: ["Not just normal aging"]
+      footage_query: "elderly man confused sitting"
+      narration: >-
+        Everyone forgets things sometimes, like where they put their keys or a name at a party. But when memory problems start
+        to affect daily life, it may be a sign of something more, like Alzheimer's disease. Today you will learn the early
+        warning signs, how they differ from normal aging, treatable conditions that can look similar, and why an early
+        diagnosis really matters.
+    - layout: "big_number"
+      heading: "A Growing Problem"
+      points: ["About 7 million", "Americans 65+ have Alzheimer's"]
+      footage_query: "older adults walking park"
+      narration: >-
+        About seven million Americans aged sixty five and older are living with Alzheimer's disease, and that number is
+        expected to grow as the population ages. It is the most common cause of dementia. Millions of family members and
+        friends provide unpaid care. Yet many people with early symptoms are never diagnosed, or are diagnosed late.
+    - layout: "bullets"
+      heading: "What Is Alzheimer's?"
+      points: ["A brain disease", "Protein build-up damages cells", "Gets worse over time", "Most common cause of dementia"]
+      footage_query: "medical illustration brain"
+      narration: >-
+        Alzheimer's is a brain disease that slowly damages memory, thinking, and eventually the ability to do simple tasks.
+        Abnormal proteins, called amyloid plaques and tau tangles, build up in the brain and damage nerve cells. Changes in
+        the brain begin years before symptoms appear. Dementia is the general term for this loss of thinking ability, and
+        Alzheimer's is its most common cause.
+    - layout: "bullets"
+      heading: "Normal Aging"
+      points: ["Forgetting a name, recalling later", "Misplacing things sometimes", "Slower to learn new things", "Daily life not affected"]
+      footage_query: "elderly woman reading"
+      narration: >-
+        First, what is normal with aging? Sometimes forgetting a name or appointment and remembering it later. Occasionally
+        misplacing glasses or keys. Taking a bit longer to learn new things or find the right word. Making an occasional bad
+        decision. These changes are common and usually do not get in the way of daily life or independence.
+    - layout: "warning"
+      heading: "Sign 1: Disruptive Memory Loss"
+      points: ["Forgetting recent events", "Asking the same questions", "Relying on notes for everything", "Forgetting important dates"]
+      footage_query: "elderly woman confused notes"
+      narration: >-
+        Now the warning signs. The most common early sign is memory loss that disrupts daily life, especially forgetting
+        recently learned information. Asking the same questions again and again. Forgetting important dates or events. Relying
+        more and more on notes, phone reminders, or family members for things they used to handle on their own.
+    - layout: "warning"
+      heading: "Sign 2: Trouble Planning"
+      points: ["Hard to follow a recipe", "Trouble with monthly bills", "Hard to concentrate", "Takes much longer"]
+      footage_query: "elderly man paying bills"
+      narration: >-
+        The second sign is trouble planning or solving problems. A person may have difficulty following a familiar recipe,
+        keeping track of monthly bills, or working with numbers. They may have trouble concentrating, and tasks may take much
+        longer than before. Missed or late bill payments are often one of the first things families notice.
+    - layout: "warning"
+      heading: "Sign 3: Familiar Tasks Get Hard"
+      points: ["Getting lost driving a known route", "Forgetting rules of a favorite game", "Trouble using appliances", "Trouble at work"]
+      footage_query: "elderly man driving car"
+      narration: >-
+        The third sign is trouble completing familiar tasks. Someone may get lost driving to a place they have been many
+        times, forget the rules of a favorite card game, struggle with the microwave or TV remote, or have trouble managing
+        tasks at work. These are things they used to do easily, without thinking.
+    - layout: "warning"
+      heading: "Sign 4: Confused About Time"
+      points: ["Losing track of dates", "Forgetting where they are", "Forgetting how they got there", "Confused by seasons"]
+      footage_query: "elderly woman looking window"
+      narration: >-
+        The fourth sign is confusion about time or place. People may lose track of dates, seasons, and the passing of time.
+        They may have trouble understanding something if it is not happening right now. Sometimes they forget where they are,
+        or how they got there. This is different from occasionally forgetting what day of the week it is.
+    - layout: "warning"
+      heading: "Sign 5: Vision and Space Problems"
+      points: ["Trouble judging distance", "Trouble reading", "Problems with balance", "Trouble with colors and contrast"]
+      footage_query: "elderly man reading glasses"
+      narration: >-
+        For some people, early signs include problems with vision and space. They may have trouble reading, judging distance,
+        or seeing color or contrast, which can make driving unsafe. They may misjudge steps or curbs, leading to falls. These
+        are not caused by eye disease, but by changes in how the brain processes what the eyes see.
+    - layout: "warning"
+      heading: "Sign 6: Problems With Words"
+      points: ["Trouble following a conversation", "Stopping mid-sentence", "Repeating themselves", "Calling things by wrong names"]
+      footage_query: "elderly couple talking"
+      narration: >-
+        Another sign is new trouble with words, in speaking or writing. People may have trouble following or joining a
+        conversation. They may stop in the middle of a sentence and not know how to continue, or repeat themselves. They may
+        struggle to find the right word, or call things by the wrong name, like calling a watch a hand clock.
+    - layout: "warning"
+      heading: "Sign 7: Misplacing Things"
+      points: ["Putting things in unusual places", "Cannot retrace steps", "May accuse others of stealing", "Happens more often"]
+      footage_query: "keys in refrigerator"
+      narration: >-
+        Another sign is misplacing things and losing the ability to retrace steps to find them. A person may put things in
+        unusual places, like car keys in the refrigerator. They may not be able to figure out where they left something, and
+        may accuse others of stealing. This tends to happen more often as time goes on.
+    - layout: "warning"
+      heading: "Sign 8: Poor Judgment"
+      points: ["Poor decisions with money", "Falling for scams", "Less attention to grooming", "Dressing wrongly for weather"]
+      footage_query: "elderly man phone scam"
+      narration: >-
+        People with early Alzheimer's may show changes in judgment or decision making. They may make poor choices with money,
+        give large amounts to telemarketers, or fall for scams. They may pay less attention to grooming or keeping clean, or
+        dress inappropriately for the weather, like wearing a heavy coat on a hot day.
+    - layout: "warning"
+      heading: "Sign 9: Withdrawal"
+      points: ["Pulling away from hobbies", "Avoiding social activities", "Trouble following a team or hobby", "Seeming less interested"]
+      footage_query: "elderly man alone couch"
+      narration: >-
+        Another sign is pulling away from work or social activities. A person may stop doing hobbies, social events, or sports
+        they used to love, often because they are having trouble keeping up. They may have trouble following their favorite
+        team, or completing a hobby project. Friends may notice they seem less interested in things.
+    - layout: "warning"
+      heading: "Sign 10: Mood Changes"
+      points: ["Confused or suspicious", "Depressed or fearful", "Anxious and easily upset", "Upset outside comfort zone"]
+      footage_query: "elderly woman anxious"
+      narration: >-
+        The last sign is changes in mood and personality. People may become confused, suspicious, depressed, fearful or
+        anxious. They may be easily upset at home, at work, with friends, or when they are out of their comfort zone. Families
+        often say: she is just not herself anymore. These changes are part of the disease, not a choice.
+    - layout: "bullets"
+      heading: "Not Always Alzheimer's"
+      points: ["Vitamin B12 deficiency", "Thyroid problems", "Medicine side effects", "Depression, sleep apnea"]
+      footage_query: "doctor reading lab results"
+      narration: >-
+        Here is some important news. Memory problems are not always Alzheimer's. Some causes are treatable, like low vitamin
+        B12, an underactive thyroid, side effects of medicines, depression, sleep apnea, hearing loss, heavy alcohol use, and
+        some infections. A buildup of fluid in the brain can cause memory loss, walking problems and bladder control problems,
+        and can be treated. This is why getting checked matters.
+    - layout: "warning"
+      heading: "Sudden Confusion Is Different"
+      points: ["Comes on in hours or days", "Often an infection or medicine", "Can be delirium", "Get medical help quickly"]
+      footage_query: "elderly woman confused sitting"
+      narration: >-
+        Alzheimer's develops slowly, over months and years. If an older person becomes confused suddenly, over hours or days,
+        it is more likely delirium, often caused by an infection, like a urinary tract infection or pneumonia, dehydration, or
+        a new medicine. Delirium is a medical emergency. Get medical help quickly. Sudden confusion with weakness or speech
+        trouble may be a stroke, so call 911.
+    - layout: "myth_fact"
+      heading: "Memory Loss Is Normal Aging"
+      points: ["Getting old means losing memory", "Dementia is not normal aging"]
+      footage_query: "elderly couple smiling"
+      narration: >-
+        Myth: serious memory loss is just a normal part of getting old. Fact: some mild forgetfulness is normal, but dementia
+        is not. Many people live into their nineties with sharp minds. If memory or thinking problems are getting in the way
+        of daily life, they deserve a medical checkup, not just a shrug.
+    - layout: "bullets"
+      heading: "Why Early Diagnosis Matters"
+      points: ["Rule out treatable causes", "Access to new treatments", "Plan for the future", "Get support early"]
+      footage_query: "family talking doctor office"
+      narration: >-
+        Why does an early diagnosis matter? First, it can find treatable causes. Second, some newer Alzheimer's treatments
+        work only in the early stage. Third, it gives people time to make legal, financial and health care decisions while
+        they can still take part. And it helps families get support, education, and plan for safety early.
+    - layout: "bullets"
+      heading: "How It Is Diagnosed"
+      points: ["Medical history and exam", "Memory and thinking tests", "Blood tests", "Brain scans, sometimes special tests"]
+      footage_query: "doctor talking patient office"
+      narration: >-
+        How is Alzheimer's diagnosed? A doctor will review medical history and medicines, talk with the person and family, and
+        do memory and thinking tests. Blood tests check for other causes. Brain scans can rule out strokes or tumors. Special
+        scans, spinal fluid tests, and newer blood tests can show Alzheimer's proteins. Medicare's annual wellness visit
+        includes a check for thinking problems.
+    - layout: "bullets"
+      heading: "Treatment Options"
+      points: ["Medicines for symptoms", "Newer drugs for early stage", "Treat other health problems", "Not yet a cure"]
+      footage_query: "pharmacist counter customer"
+      narration: >-
+        There is no cure yet, but treatments can help. Some medicines may help with memory and thinking symptoms for a time.
+        Newer medicines that remove amyloid from the brain can modestly slow decline in people with early Alzheimer's, but
+        they need regular infusions and monitoring for side effects like brain swelling. Treating sleep, mood, hearing and
+        other health problems helps too.
+    - layout: "bullets"
+      heading: "Lowering Your Risk"
+      points: ["Control blood pressure", "Stay physically active", "Treat hearing loss", "Stay socially connected"]
+      footage_query: "older adults exercising park"
+      narration: >-
+        Can you lower your risk of dementia? Research suggests several steps may help. Control blood pressure, especially in
+        midlife. Stay physically active. Manage diabetes and cholesterol. Do not smoke, and limit alcohol. Treat hearing loss,
+        often with hearing aids. Stay socially connected and keep learning new things. Protect your head from injury, and get
+        good sleep.
+    - layout: "myth_fact"
+      heading: "Puzzles Prevent Alzheimer's"
+      points: ["Brain games stop dementia", "Many healthy habits together help"]
+      footage_query: "elderly woman crossword"
+      narration: >-
+        Myth: doing crossword puzzles or brain games will prevent Alzheimer's. Fact: staying mentally active is good for the
+        brain, but no single puzzle or app has been proven to prevent dementia. What seems to help most is a combination of
+        healthy habits, like exercise, controlling blood pressure, staying social, and protecting your hearing and heart.
+    - layout: "bullets"
+      heading: "How to Bring It Up"
+      points: ["Pick a calm, private time", "Share specific examples", "Focus on caring", "Offer to go to the doctor"]
+      footage_query: "family sitting home"
+      narration: >-
+        If you are worried about a loved one, how do you bring it up? Choose a calm, private moment. Share specific things you
+        have noticed, with care, not blame. Focus on their health: these changes could be caused by something treatable. Offer
+        to go to the doctor with them. It may take more than one conversation.
+    - layout: "bullets"
+      heading: "Safety Concerns"
+      points: ["Driving", "Wandering and getting lost", "Cooking and stove safety", "Medicines and money"]
+      footage_query: "elderly man driving car"
+      narration: >-
+        As memory declines, safety becomes important. Watch for unsafe driving, like getting lost or minor accidents. Some
+        people wander and get lost, so consider an ID bracelet and a GPS device. Check stove and appliance safety. Help
+        organize medicines to prevent mistakes. And watch for scams and money problems, which often appear early.
+    - layout: "bullets"
+      heading: "Plan Ahead"
+      points: ["Health care power of attorney", "Financial power of attorney", "Advance directive", "Talk about wishes early"]
+      footage_query: "signing document pen"
+      narration: >-
+        Planning early lets the person with Alzheimer's share their wishes while they can. Name a health care power of
+        attorney, someone to make medical decisions. Name a financial power of attorney. Write an advance directive. Talk
+        about where they want to live, and what kind of care they want. An elder law attorney can help.
+    - layout: "bullets"
+      heading: "For Caregivers"
+      points: ["Learn about the disease", "Keep routines simple", "Ask for and accept help", "Take care of yourself"]
+      footage_query: "caregiver helping elderly parent"
+      narration: >-
+        Caring for someone with Alzheimer's is hard. Learn about the disease, so you know what to expect. Keep daily routines
+        simple and predictable. Use short, clear sentences, and be patient. Ask for and accept help from family, friends, and
+        community programs like adult day centers and respite care. And take care of your own health and sleep.
+    - layout: "bullets"
+      heading: "Where to Find Help"
+      points: ["Your doctor", "Area Agency on Aging", "Alzheimer's support helplines", "Support groups"]
+      footage_query: "woman talking phone desk"
+      narration: >-
+        You do not have to do this alone. Talk to your doctor about local resources. Your Area Agency on Aging can connect you
+        with services like meals, transportation and respite care. The National Institute on Aging has free information.
+        National Alzheimer's helplines offer support around the clock. Caregiver support groups, in person or online, help
+        many families.
+    - layout: "bullets"
+      heading: "Questions for the Doctor"
+      points: ["Could something else cause this?", "What tests are needed?", "What stage is it?", "What treatments fit?"]
+      footage_query: "patient talking doctor"
+      narration: >-
+        At the visit, bring a list of the changes you have noticed and all medicines. Ask: could something else be causing
+        these symptoms? What tests do we need? If it is Alzheimer's, what stage is it? Would newer treatments help? What
+        safety steps should we take now? And where can we find support?
+    - layout: "bullets"
+      heading: "Quick Recap"
+      points: ["Memory loss that disrupts life", "Know the 10 signs", "Some causes are treatable", "Early diagnosis helps"]
+      footage_query: "notebook checklist pen"
+      narration: >-
+        Let us recap. Some forgetfulness is normal with age, but memory loss that disrupts daily life is not. Know the ten
+        warning signs, from trouble with bills to getting lost and personality changes. Some causes of memory loss are
+        treatable. Sudden confusion is an emergency. And an early diagnosis helps with treatment, planning and support.
+    - layout: "outro"
+      heading: "Remember"
+      points: ["Notice the signs", "Get checked early", "Plan and get support"]
+      footage_query: "older couple walking park"
+      narration: >-
+        Remember: notice the warning signs, get checked early, and plan ahead with support. Share this with someone caring for
+        an aging parent. This video is for education only, not medical advice. Like and subscribe to Health Support Studio for
+        a new health video every day.
+  short_title: "Normal aging or Alzheimer's? Know the signs #Shorts"
+  short_caption: >-
+    Some forgetfulness is normal. These signs are not. Educational only, not medical advice. #Alzheimers #Dementia
+    #MemoryLoss #HealthEducation
+  short_scenes:
+    - layout: "title"
+      heading: "Normal Aging or Not?"
+      points: ["Alzheimer's warning signs"]
+      footage_query: "elderly man confused sitting"
+      narration: >-
+        Forgetting a name and remembering it later is normal. Here is what is not.
+    - layout: "warning"
+      heading: "Get Checked If"
+      points: ["Memory loss disrupts daily life", "Trouble paying bills", "Getting lost on known routes"]
+      footage_query: "elderly man paying bills"
+      narration: >-
+        Memory loss that disrupts daily life, asking the same questions again and again, trouble paying bills, or getting lost
+        on familiar routes can be warning signs of Alzheimer's. Some causes of memory loss are treatable, so get checked
+        early.
+    - layout: "outro"
+      heading: "Full Video"
+      points: ["On YouTube"]
+      footage_query: "older couple walking park"
+      narration: >-
+        Learn all ten warning signs in our full video, on the Health Support Studio YouTube channel.
