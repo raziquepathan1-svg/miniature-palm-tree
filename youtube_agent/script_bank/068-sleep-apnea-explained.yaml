@@ -1,0 +1,303 @@
+queue_topic: "Sleep apnea: signs, health risks and treatment"
+style: "Explainer"
+sources:
+  - "NIH NHLBI, Sleep Apnea: https://www.nhlbi.nih.gov/health/sleep-apnea"
+  - "MedlinePlus, Sleep Apnea: https://medlineplus.gov/sleepapnea.html"
+  - "CDC, About Sleep: https://www.cdc.gov/sleep/about/index.html"
+plan:
+  topic: "Sleep apnea: signs, health risks and treatment"
+  title: "Loud Snoring? Signs of Sleep Apnea You Shouldn't Ignore"
+  description: |-
+    Sleep apnea is common, and most people who have it don't know. Learn the night-time and daytime signs, who is at risk, how it affects your heart, how it's diagnosed, and treatments from CPAP to oral appliances and weight loss.
+
+    In this video:
+    • What sleep apnea is, and central sleep apnea
+    • Night-time and daytime warning signs
+    • Heart risks, other health effects and drowsy driving
+    • Home sleep tests and your results
+    • CPAP tips, oral appliances and other treatments
+
+    #SleepApnea #Snoring #SleepHealth #HeartHealth #HealthEducation
+  tags: ["sleep apnea", "sleep apnea symptoms", "snoring", "obstructive sleep apnea", "cpap", "home sleep test", "daytime sleepiness", "sleep apnea and heart", "sleep apnea treatment", "sleep health", "health education"]
+  thumbnail_text: "LOUD SNORING?"
+  thumbnail_highlight: "SNORING?"
+  thumbnail_photo_query: "man snoring bed"
+  playlist: "Healthy Habits & Prevention"
+  scenes:
+    - layout: "title"
+      heading: "Sleep Apnea Explained"
+      points: ["More than just snoring"]
+      footage_query: "man snoring bed"
+      narration: >-
+        Loud snoring, gasping for air at night, and waking up tired no matter how long you sleep. These can be signs of sleep
+        apnea, a common condition where breathing stops and starts again and again during sleep. Most people who have it do
+        not know. Left untreated, it can raise the risk of high blood pressure, heart problems, and car crashes. Today you
+        will learn the signs, the tests, and the treatments that help.
+    - layout: "big_number"
+      heading: "Very Common, Often Missed"
+      points: ["Millions", "US adults with sleep apnea"]
+      footage_query: "couple sleeping bed"
+      narration: >-
+        Sleep apnea affects tens of millions of adults in the United States, and experts estimate that most of them have never
+        been diagnosed. Many people think loud snoring is just annoying, or that feeling tired all the time is normal. But
+        treating sleep apnea can greatly improve energy, mood, and long term health.
+    - layout: "bullets"
+      heading: "What Is Sleep Apnea?"
+      points: ["Breathing stops during sleep", "Airway gets blocked", "Brain wakes you briefly", "Happens many times a night"]
+      footage_query: "medical illustration throat"
+      narration: >-
+        The most common type is obstructive sleep apnea. During sleep, the muscles in the throat relax, and the airway narrows
+        or closes, so breathing stops or becomes shallow for ten seconds or more. Oxygen levels drop, and the brain wakes you
+        briefly to start breathing again, usually without you remembering. This can happen dozens or even hundreds of times a
+        night.
+    - layout: "bullets"
+      heading: "Central Sleep Apnea"
+      points: ["Less common", "Brain does not signal breathing", "Linked to heart failure, stroke", "Some medicines too"]
+      footage_query: "medical illustration brain"
+      narration: >-
+        A less common type is central sleep apnea, where the brain does not send the right signals to the muscles that control
+        breathing. It is more common in people with heart failure, after a stroke, at high altitude, or in people taking
+        opioid pain medicines. Some people have both types. A sleep study can tell them apart.
+    - layout: "warning"
+      heading: "Night-Time Signs"
+      points: ["Loud, frequent snoring", "Pauses in breathing", "Gasping or choking", "Restless sleep"]
+      footage_query: "man snoring bed"
+      narration: >-
+        What are the warning signs at night? Loud, frequent snoring. Pauses in breathing that a bed partner notices. Waking up
+        gasping or choking. Restless sleep and tossing and turning. Getting up often to urinate at night. Many people only
+        learn about these signs from their partner, so ask them.
+    - layout: "warning"
+      heading: "Daytime Signs"
+      points: ["Very sleepy during the day", "Morning headaches", "Dry mouth on waking", "Trouble focusing, irritability"]
+      footage_query: "man yawning office"
+      narration: >-
+        Daytime signs include feeling very sleepy or tired even after a full night's sleep, falling asleep while reading,
+        watching TV, or even driving, morning headaches, waking with a dry mouth or sore throat, trouble concentrating or
+        remembering, irritability, and depression. Some people also have a lower sex drive.
+    - layout: "myth_fact"
+      heading: "Snoring Is Harmless"
+      points: ["Snoring is just a noise", "It can be a warning sign"]
+      footage_query: "couple sleeping bed"
+      narration: >-
+        Myth: snoring is harmless, just an annoying noise. Fact: not everyone who snores has sleep apnea, but loud, frequent
+        snoring, especially with pauses, gasping, or daytime sleepiness, can be a sign of a serious condition. And not
+        everyone with sleep apnea snores. If you have the warning signs, talk to your doctor.
+    - layout: "bullets"
+      heading: "Who Is at Risk?"
+      points: ["Extra weight", "Thick neck", "Men and older adults", "Family history"]
+      footage_query: "man doctor consultation"
+      narration: >-
+        Who is at risk? Anyone can have sleep apnea, including children and thin people. But risk is higher with extra weight,
+        a thick neck, which is more than about seventeen inches around in men or sixteen in women, being male, being older,
+        and having a family history. Women's risk rises after menopause.
+    - layout: "bullets"
+      heading: "Other Risk Factors"
+      points: ["Alcohol and sedatives", "Smoking", "Stuffy nose", "Large tonsils or small jaw"]
+      footage_query: "wine glasses table"
+      narration: >-
+        Other risk factors include drinking alcohol, especially before bed, and taking sedatives or sleeping pills, which
+        relax the throat muscles. Smoking. A stuffy nose from allergies or a deviated septum. Large tonsils, a large tongue,
+        or a small or set back jaw. High blood pressure, diabetes, and polycystic ovary syndrome are also linked to sleep
+        apnea.
+    - layout: "warning"
+      heading: "Why It Matters for Your Heart"
+      points: ["High blood pressure", "Atrial fibrillation", "Heart failure", "Stroke"]
+      footage_query: "blood pressure monitor arm"
+      narration: >-
+        Why does sleep apnea matter? Each time breathing stops, oxygen drops and stress hormones surge, putting strain on the
+        heart and blood vessels. Untreated sleep apnea is linked to high blood pressure, especially blood pressure that is
+        hard to control, atrial fibrillation, heart failure, heart attack, and stroke. Treating it can help protect your
+        heart.
+    - layout: "warning"
+      heading: "Other Health Risks"
+      points: ["Type 2 diabetes", "Depression", "Memory problems", "Weight gain"]
+      footage_query: "man stressed at desk"
+      narration: >-
+        Untreated sleep apnea is also linked to type two diabetes and insulin resistance, depression and anxiety, memory and
+        thinking problems, fatty liver disease, and weight gain, since poor sleep affects hunger hormones. It can also cause
+        problems with surgery and anesthesia, so always tell your surgeon if you have it or might have it.
+    - layout: "warning"
+      heading: "Drowsy Driving"
+      points: ["Falling asleep at the wheel", "Much higher crash risk", "Never drive drowsy", "Treatment lowers risk"]
+      footage_query: "man driving car tired"
+      narration: >-
+        People with untreated sleep apnea are much more likely to have car crashes, because they can fall asleep at the wheel
+        without warning. If you feel drowsy while driving, pull over in a safe place. Do not drive if you are very sleepy.
+        Treatment greatly reduces daytime sleepiness and crash risk. Commercial drivers may need testing by law.
+    - layout: "bullets"
+      heading: "How It Is Diagnosed"
+      points: ["Talk to your doctor", "Sleep questionnaire", "Home sleep test", "Overnight sleep study"]
+      footage_query: "sleep study lab"
+      narration: >-
+        How is sleep apnea diagnosed? Start by talking to your doctor about your symptoms. They may use a short questionnaire
+        about snoring, tiredness, and risk factors. Many people can do a home sleep test, wearing a small device overnight in
+        their own bed. Others need an overnight sleep study in a sleep lab, called polysomnography, which records breathing,
+        oxygen, heart rate, and brain waves.
+    - layout: "bullets"
+      heading: "Understanding Results"
+      points: ["Pauses counted per hour", "Under 5: normal", "5 to 30: mild to moderate", "30 or more: severe"]
+      footage_query: "doctor reading lab results"
+      narration: >-
+        Your results show how many times per hour your breathing stops or becomes shallow, called the apnea hypopnea index.
+        Fewer than five times an hour is normal. Five to fourteen is mild, fifteen to twenty nine is moderate, and thirty or
+        more is severe. Your doctor will also look at how low your oxygen drops, and your symptoms.
+    - layout: "bullets"
+      heading: "CPAP Treatment"
+      points: ["Most common treatment", "Gentle air pressure", "Keeps the airway open", "Works right away"]
+      footage_query: "cpap machine bed"
+      narration: >-
+        The most common and effective treatment is CPAP, which stands for continuous positive airway pressure. A small machine
+        gently blows air through a mask you wear while you sleep. The air pressure keeps your airway open, so you breathe
+        normally all night. Many people feel more rested within days or weeks of using it every night.
+    - layout: "myth_fact"
+      heading: "CPAP Is Unbearable"
+      points: ["CPAP is too uncomfortable", "Most people adjust"]
+      footage_query: "cpap mask close up"
+      narration: >-
+        Myth: CPAP is too uncomfortable, and nobody can sleep with it. Fact: it takes some getting used to, but most people
+        adjust within a few weeks. Today's machines are quiet and small, and there are many mask styles, including small nasal
+        pillows. Heated humidifiers prevent dryness. If it is not working for you, ask your care team to adjust it, instead of
+        giving up.
+    - layout: "bullets"
+      heading: "Tips for CPAP Success"
+      points: ["Find the right mask", "Wear it every night", "Use the humidifier", "Clean it regularly"]
+      footage_query: "cpap machine bed"
+      narration: >-
+        Tips for CPAP success. Try different mask styles until one fits comfortably without leaks. Wear it every night and for
+        naps, even if you only manage part of the night at first. Practice wearing it while awake, watching TV. Use the heated
+        humidifier for a dry nose or mouth. Clean the mask and tubing regularly. Your machine can track your use, which your
+        doctor can review.
+    - layout: "bullets"
+      heading: "Oral Appliances"
+      points: ["Custom mouthpiece", "Moves the jaw forward", "For mild to moderate cases", "Made by a dentist"]
+      footage_query: "dentist exam"
+      narration: >-
+        Another option is an oral appliance, a custom mouthpiece made by a dentist trained in sleep medicine. It gently moves
+        the lower jaw forward to keep the airway open. It can work well for mild to moderate sleep apnea, or for people who
+        cannot use CPAP. Over the counter mouthpieces are usually not a good substitute.
+    - layout: "bullets"
+      heading: "Weight Loss Helps"
+      points: ["Even 10 percent can help", "Can lower severity", "Some medicines approved", "Healthy habits matter"]
+      footage_query: "people walking park"
+      narration: >-
+        For people with extra weight, losing weight can lower the severity of sleep apnea, and sometimes resolve it. Losing
+        even about ten percent of body weight can make a difference. In 2024, the FDA approved a weight loss medicine for
+        moderate to severe sleep apnea in adults with obesity. Weight loss surgery can also help some people. Ask your doctor
+        about options.
+    - layout: "bullets"
+      heading: "Other Treatments"
+      points: ["Sleeping on your side", "Nasal allergy treatment", "Implanted nerve stimulator", "Surgery in some cases"]
+      footage_query: "woman sleeping side"
+      narration: >-
+        Other treatments can help some people. Some only have apnea when sleeping on their back, so side sleeping devices may
+        help. Treating nasal allergies or congestion can make breathing easier. An implanted device that stimulates the nerve
+        controlling the tongue is an option for some people who cannot use CPAP. Surgery on the nose, throat or jaw may help
+        in certain cases.
+    - layout: "bullets"
+      heading: "Habits That Help"
+      points: ["Avoid alcohol before bed", "Avoid sleeping pills", "Quit smoking", "Keep a regular sleep schedule"]
+      footage_query: "woman sleeping bed"
+      narration: >-
+        Some everyday habits help. Avoid alcohol for at least a few hours before bed. Avoid sleeping pills and sedatives
+        unless your doctor approves, since they relax the airway. Quit smoking. Keep a regular sleep schedule and get enough
+        sleep. Stay active. These habits can help, but they usually do not replace treatment for moderate or severe sleep
+        apnea.
+    - layout: "bullets"
+      heading: "Living Well With Treatment"
+      points: ["More energy", "Better mood and focus", "Easier blood pressure control", "Safer driving"]
+      footage_query: "man smiling morning"
+      narration: >-
+        The good news is that treatment can change lives. Many people who start using CPAP or another treatment say they feel
+        more awake and energetic within weeks. Mood, focus and memory often improve. Blood pressure can become easier to
+        control. And daytime sleepiness and the risk of drowsy driving go down. Bed partners often sleep better too.
+    - layout: "bullets"
+      heading: "Travel With CPAP"
+      points: ["Carry it on the plane", "It does not count as a bag", "Bring a power adapter", "Use distilled water"]
+      footage_query: "airplane window view"
+      narration: >-
+        Do not skip treatment when you travel. CPAP machines are medical devices and can usually be carried on airplanes
+        without counting as a carry on bag. Bring a power adapter or extension cord, and use distilled or bottled water in the
+        humidifier. Some travel size machines are available. Ask your equipment supplier for a travel letter if needed.
+    - layout: "myth_fact"
+      heading: "Only Overweight Men Get It"
+      points: ["Only heavy men have apnea", "Women and thin people too"]
+      footage_query: "woman yawning office"
+      narration: >-
+        Myth: only overweight, older men get sleep apnea. Fact: women and thin people can have sleep apnea too, and it is
+        often missed in women, who may have less snoring and more symptoms like tiredness, insomnia, headaches, and
+        depression. Women's risk rises after menopause and during pregnancy. Children can have it too.
+    - layout: "bullets"
+      heading: "Sleep Apnea in Children"
+      points: ["Snoring most nights", "Mouth breathing", "Behavior or attention problems", "Often large tonsils"]
+      footage_query: "child sleeping bed"
+      narration: >-
+        Children can have sleep apnea, often because of large tonsils and adenoids. Signs include snoring most nights, pauses
+        in breathing, mouth breathing, restless sleep, bedwetting, and daytime problems like hyperactivity, trouble paying
+        attention, or poor school performance, which can look like ADHD. Talk to your pediatrician. Removing tonsils and
+        adenoids often helps.
+    - layout: "bullets"
+      heading: "Pregnancy and Sleep Apnea"
+      points: ["Risk rises in pregnancy", "Linked to high blood pressure", "Tell your doctor about snoring", "Treatment is safe"]
+      footage_query: "pregnant woman sleeping"
+      narration: >-
+        Sleep apnea can develop or get worse during pregnancy, especially in the third trimester, and is linked to high blood
+        pressure, preeclampsia, and gestational diabetes. If you start snoring loudly or feel very tired during pregnancy,
+        tell your doctor. CPAP is safe during pregnancy.
+    - layout: "bullets"
+      heading: "Bed Partners Can Help"
+      points: ["Notice pauses and gasping", "Encourage a checkup", "Support CPAP use", "Better sleep for both"]
+      footage_query: "couple sleeping bed"
+      narration: >-
+        Bed partners often notice sleep apnea first. If you hear your partner snore loudly, stop breathing, or gasp, encourage
+        them to see a doctor. Support them as they get used to treatment. Many couples find that treating sleep apnea means
+        better sleep for both of them, and less tension in the relationship.
+    - layout: "bullets"
+      heading: "Questions for Your Doctor"
+      points: ["Could I have sleep apnea?", "Home test or sleep lab?", "Which treatment fits me?", "How do I check it is working?"]
+      footage_query: "patient talking doctor"
+      narration: >-
+        At your next visit, ask: could my snoring or tiredness be sleep apnea? Should I do a home sleep test or a lab study?
+        What treatment options fit me? What if CPAP is uncomfortable? Could my sleep apnea be affecting my blood pressure or
+        heart rhythm? And how will we know the treatment is working?
+    - layout: "bullets"
+      heading: "Quick Recap"
+      points: ["Snoring, pauses, gasping", "Tired all day", "Linked to heart problems", "CPAP and other treatments help"]
+      footage_query: "notebook checklist pen"
+      narration: >-
+        Let us recap. Sleep apnea causes breathing to stop and start during sleep. Signs include loud snoring, pauses,
+        gasping, and daytime sleepiness. Untreated, it is linked to high blood pressure, heart problems, stroke, diabetes, and
+        car crashes. A home or lab sleep test can diagnose it, and CPAP, oral appliances, weight loss and other treatments
+        work.
+    - layout: "outro"
+      heading: "Remember"
+      points: ["Loud snoring? Get checked", "Never drive drowsy", "Treatment helps your heart"]
+      footage_query: "couple sleeping bed"
+      narration: >-
+        Remember: loud snoring with pauses or daytime sleepiness deserves a checkup, never drive drowsy, and treating sleep
+        apnea protects your heart. Share this with someone who snores loudly. This video is for education only, not medical
+        advice. Like and subscribe to Health Support Studio for a new health video every day.
+  short_title: "Loud snoring? It could be sleep apnea #Shorts"
+  short_caption: >-
+    Snoring with pauses and daytime tiredness can be sleep apnea. Educational only, not medical advice. #SleepApnea
+    #Snoring #SleepHealth #HealthEducation
+  short_scenes:
+    - layout: "title"
+      heading: "Loud Snoring?"
+      points: ["It could be sleep apnea"]
+      footage_query: "man snoring bed"
+      narration: >-
+        Loud snoring, gasping at night, and feeling tired all day can be signs of sleep apnea.
+    - layout: "warning"
+      heading: "Why It Matters"
+      points: ["Breathing stops at night", "Linked to heart problems", "Most people are undiagnosed"]
+      footage_query: "blood pressure monitor arm"
+      narration: >-
+        In sleep apnea, breathing stops and starts many times a night. It is linked to high blood pressure, irregular
+        heartbeat, stroke and car crashes, and most people with it do not know. A home sleep test can find it, and treatments
+        like CPAP work.
+    - layout: "outro"
+      heading: "Full Video"
+      points: ["On YouTube"]
+      footage_query: "couple sleeping bed"
+      narration: >-
+        Learn more about sleep apnea in our full video, on the Health Support Studio YouTube channel.
