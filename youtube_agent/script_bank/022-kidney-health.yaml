@@ -11,9 +11,10 @@ plan:
     About 35.5 million US adults are estimated to have chronic kidney disease, and as many as 9 in 10 don't know it. Learn what your kidneys do, who is at risk, and the two simple tests that can catch kidney disease early.
 
     In this video:
-    • What healthy kidneys do
+    • What healthy kidneys do, and why CKD is silent
     • The biggest risk factors: diabetes and high blood pressure
     • The eGFR blood test and urine albumin test
+    • Medicines that protect, and painkillers to watch
     • Everyday steps to protect your kidneys
 
     #KidneyHealth #CKD #Diabetes #HighBloodPressure #HealthEducation
@@ -24,77 +25,238 @@ plan:
   playlist: "Diabetes & Metabolism"
   scenes:
     - layout: "title"
-      heading: "Your Kidneys Are Silent"
-      points: ["Until it's late"]
-      footage_query: "doctor explaining patient office"
+      heading: "The Silent Kidney Disease"
+      points: ["Most people do not know it"]
+      footage_query: "doctor kidney model patient"
       narration: >-
-        You could have kidney disease right now and feel completely fine. That is not meant to scare you. It is the reason this
-        condition is so important to understand. Today we explain what your kidneys do, who is at risk, and two simple tests
-        that can catch problems early.
+        Millions of Americans have kidney disease, and most of them have no idea. There is usually no pain and no warning
+        until the damage is advanced. But two simple, low cost tests can find it early, when you can still slow it down. Today
+        you will learn what your kidneys do, who is at risk, which tests to ask for, and how to protect your kidneys every
+        day.
     - layout: "big_number"
-      heading: "9 in 10"
-      points: ["adults with kidney disease", "don't know they have it"]
-      footage_query: "crowd people walking street"
+      heading: "A Hidden Problem"
+      points: ["35.5 million", "US adults may have kidney disease"]
+      footage_query: "crowd people city street"
       narration: >-
-        According to the CDC, about thirty five and a half million adults in the United States are estimated to have chronic
-        kidney disease. That is more than one in seven adults. And as many as nine in ten of them do not know they have it.
+        The CDC estimates that about thirty five and a half million adults in the United States have chronic kidney disease.
+        That is about one in seven adults. And as many as nine in ten of them do not know it. Even among people with badly
+        damaged kidneys, about one in three do not know. Kidney disease is a leading cause of death in America.
     - layout: "bullets"
-      heading: "What Kidneys Do"
-      points: ["Filter waste from blood", "Balance fluids and minerals", "Help control blood pressure", "Help make red blood cells"]
-      footage_query: "water filter flowing"
+      heading: "What Healthy Kidneys Do"
+      points: ["Filter waste from blood", "Balance water and salt", "Help control blood pressure", "Keep bones and blood healthy"]
+      footage_query: "doctor explaining anatomy model"
       narration: >-
-        Your two kidneys, each about the size of a fist, filter waste and extra fluid from your blood, which leaves your body
-        as urine. They also keep minerals like sodium and potassium in balance, help control blood pressure, keep bones healthy,
-        and help your body make red blood cells.
+        Your two kidneys are each about the size of a fist, sitting below your ribs on either side of your spine. Every day
+        they filter about two hundred quarts of blood, removing waste and extra water as urine. They balance salt and
+        minerals, help control blood pressure, make a hormone that helps you make red blood cells, and keep your bones
+        healthy.
     - layout: "bullets"
-      heading: "Why It's Silent"
-      points: ["Kidneys adapt as they weaken", "Symptoms show up late", "Swelling, fatigue, itching", "Changes in urination"]
-      footage_query: "tired man sitting couch"
+      heading: "What Is Chronic Kidney Disease?"
+      points: ["Kidneys slowly lose function", "Damage lasts 3 months or more", "Usually gets worse over time", "Can lead to kidney failure"]
+      footage_query: "medical illustration kidneys"
       narration: >-
-        Why is kidney disease so silent? Kidneys can lose a lot of function before you notice anything. When symptoms do appear,
-        they can include swelling in the legs or ankles, tiredness, itchy skin, poor appetite, trouble sleeping, and changes in
-        how much you pee. By then, the disease is often advanced.
+        Chronic kidney disease, or CKD, means the kidneys are damaged and cannot filter blood as well as they should, and this
+        has lasted at least three months. It usually gets worse slowly, over years. When kidneys fail, waste and fluid build
+        up in the body, and a person needs dialysis or a kidney transplant to live.
     - layout: "bullets"
-      heading: "Biggest Risk Factors"
-      points: ["Diabetes", "High blood pressure", "Heart disease", "Family history of kidney failure"]
-      footage_query: "blood pressure cuff arm"
+      heading: "Why It Is Called Silent"
+      points: ["No symptoms early on", "Kidneys adapt for years", "Signs appear late", "Only tests can find it"]
+      footage_query: "woman looking concerned"
       narration: >-
-        The two biggest causes of kidney disease are diabetes and high blood pressure. Other risk factors include heart disease,
-        obesity, a family history of kidney failure, and being older. Black, Hispanic and Native American adults also have higher
-        rates of kidney failure.
+        Why is kidney disease called silent? Because healthy parts of the kidneys work harder to make up for the damaged
+        parts. So you can lose a large amount of kidney function and still feel fine. Symptoms often appear only when kidney
+        disease is advanced. That is why testing, not waiting for symptoms, is the key to catching it early.
+    - layout: "warning"
+      heading: "Late Warning Signs"
+      points: ["Swollen feet and ankles", "Tired, weak, trouble focusing", "Itching, muscle cramps", "Peeing more or less"]
+      footage_query: "swollen feet ankles close up"
+      narration: >-
+        When symptoms do show up, they can include swelling in the feet, ankles or around the eyes, feeling tired and weak,
+        trouble concentrating, poor appetite, nausea, itchy skin, muscle cramps, trouble sleeping, and peeing more or less
+        than usual, or foamy urine. These signs have many causes, but if you notice them, ask your doctor to check your
+        kidneys.
     - layout: "bullets"
-      heading: "Two Simple Tests"
-      points: ["Blood test: eGFR", "Urine test: albumin (uACR)", "Ask if you're at risk"]
-      footage_query: "urine sample laboratory"
+      heading: "The Two Biggest Causes"
+      points: ["Diabetes", "High blood pressure", "Together cause most cases", "Both can be controlled"]
+      footage_query: "blood pressure monitor arm"
       narration: >-
-        The good news is that two simple tests can find kidney disease early. A blood test measures creatinine to estimate your
-        eGFR, which shows how well your kidneys filter. And a urine test called the albumin to creatinine ratio checks for
-        protein leaking into your urine, an early sign of damage. If you have diabetes or high blood pressure, ask your doctor
-        about both.
+        The two biggest causes of kidney disease are diabetes and high blood pressure. High blood sugar damages the tiny
+        filters in the kidneys over time. High blood pressure damages the blood vessels in the kidneys. Together, they cause
+        most cases of kidney failure in America. The good news is that both can be controlled, which protects the kidneys.
     - layout: "bullets"
-      heading: "If Tests Show CKD"
-      points: ["It can often be slowed", "Some medicines protect kidneys", "Regular checks of your numbers", "A kidney specialist may help"]
-      footage_query: "doctor reviewing results tablet"
+      heading: "Other Risk Factors"
+      points: ["Heart disease", "Family history of kidney failure", "Obesity", "Age over 60"]
+      footage_query: "family photo generations"
       narration: >-
-        What if your tests show kidney disease? Try not to panic. Many people with early kidney disease never need dialysis,
-        especially when it is found early. Your doctor may suggest medicines that help protect the kidneys, check your numbers
-        regularly, and may refer you to a kidney specialist, called a nephrologist.
+        Other things raise your risk too. Heart disease. A family history of kidney failure. Obesity. Being older than sixty.
+        Black, Hispanic, Native American and Asian American adults have higher rates of kidney failure, partly because of
+        higher rates of diabetes and high blood pressure, and unequal access to care. If you have any of these risk factors,
+        ask about testing.
     - layout: "bullets"
-      heading: "Protect Your Kidneys"
-      points: ["Control blood sugar and pressure", "Take medicines as prescribed", "Limit NSAIDs like ibuprofen", "Don't smoke, stay active"]
-      footage_query: "person walking outdoors healthy"
+      heading: "Less Common Causes"
+      points: ["Inherited kidney diseases", "Inflammation of the filters", "Repeated kidney infections", "Blockages, kidney stones"]
+      footage_query: "doctor reading lab results"
       narration: >-
-        To protect your kidneys, keep your blood sugar and blood pressure in your target range, and take your medicines as
-        prescribed. Be careful with frequent use of NSAID pain relievers like ibuprofen and naproxen, and ask your pharmacist
-        what is safe for you. Do not smoke, stay active, and eat less salt. Finding kidney disease early means you can slow it
-        down.
+        Less common causes include conditions passed down in families, like polycystic kidney disease, where cysts grow in the
+        kidneys. Some diseases cause inflammation of the kidney filters, including lupus. Repeated kidney infections, long
+        term blockages from kidney stones or an enlarged prostate, and some medicines used for a long time can also damage the
+        kidneys.
+    - layout: "bullets"
+      heading: "Test One: The Blood Test"
+      points: ["Checks creatinine", "Gives your eGFR", "Shows how well kidneys filter", "Under 60 for 3 months: CKD"]
+      footage_query: "blood test tube lab"
+      narration: >-
+        Now, the tests. The first is a simple blood test that measures creatinine, a waste product. From it, the lab
+        calculates your eGFR, which estimates how well your kidneys filter. A normal eGFR is usually above ninety, though it
+        naturally drops with age. An eGFR below sixty for three months or more is a sign of chronic kidney disease.
+    - layout: "bullets"
+      heading: "Test Two: The Urine Test"
+      points: ["Urine albumin test", "Looks for protein leaking", "30 or higher is a warning", "Can show damage early"]
+      footage_query: "urine sample cup lab"
+      narration: >-
+        The second test checks your urine for albumin, a protein. Healthy kidneys keep albumin in the blood. Damaged kidneys
+        let it leak into the urine. The test is called a urine albumin to creatinine ratio, or UACR. A result of thirty or
+        higher is a sign of kidney damage, even when your blood test still looks normal. It often catches problems earliest.
+    - layout: "warning"
+      heading: "Ask for Both Tests"
+      points: ["Many people get only one", "The urine test is often missed", "Yearly if you have diabetes", "Ask if you have risk factors"]
+      footage_query: "patient talking doctor"
+      narration: >-
+        Here is an important tip. Many people get the blood test as part of routine labs, but the urine test is often skipped.
+        You need both to get the full picture. People with diabetes should have both tests at least once a year. If you have
+        high blood pressure, heart disease, or a family history, ask your doctor whether you should be tested too.
+    - layout: "bullets"
+      heading: "The Stages of CKD"
+      points: ["Stage 1 and 2: mild", "Stage 3: moderate", "Stage 4: severe", "Stage 5: kidney failure"]
+      footage_query: "chart graph close up"
+      narration: >-
+        Kidney disease is grouped into five stages, mostly based on your eGFR. Stages one and two are mild, with signs of
+        damage but fairly normal filtering. Stage three is moderate. Stage four is severe. Stage five, with an eGFR below
+        fifteen, is kidney failure. The urine albumin level is also used to judge risk. Early stages are the best time to act.
+    - layout: "myth_fact"
+      heading: "Feeling Fine Means Healthy"
+      points: ["No symptoms means healthy kidneys", "Damage is often silent"]
+      footage_query: "man smiling outdoors"
+      narration: >-
+        Myth: if I feel fine, my kidneys must be fine. Fact: most people with early kidney disease feel completely normal.
+        Many find out only after a routine blood or urine test, or after damage is already severe. If you have diabetes or
+        high blood pressure, feeling fine is not enough. The tests are the only way to know.
+    - layout: "myth_fact"
+      heading: "Dialysis Is Inevitable"
+      points: ["Kidney disease always means dialysis", "Most people never need it"]
+      footage_query: "doctor talking patient office"
+      narration: >-
+        Myth: once you have kidney disease, you will end up on dialysis. Fact: most people with chronic kidney disease never
+        reach kidney failure, especially when it is found early. Controlling blood sugar and blood pressure, taking the right
+        medicines, and avoiding harmful drugs can slow or even stop it from getting worse for many years.
+    - layout: "bullets"
+      heading: "Medicines That Protect Kidneys"
+      points: ["Some blood pressure medicines", "Newer diabetes medicines", "Statins for heart risk", "Ask what fits you"]
+      footage_query: "pharmacist counter customer"
+      narration: >-
+        Today there are medicines that can protect your kidneys. Certain blood pressure medicines, called ACE inhibitors and
+        ARBs, lower protein leaking into the urine. A newer group of medicines, first made for diabetes, called SGLT2
+        inhibitors, can slow kidney disease in many people, with or without diabetes. Statins lower the risk of heart attack
+        and stroke. Ask your doctor which fit you.
+    - layout: "warning"
+      heading: "Painkillers to Be Careful With"
+      points: ["Ibuprofen and naproxen", "Avoid regular use", "Ask before taking", "Acetaminophen may be safer"]
+      footage_query: "pill bottles table"
+      narration: >-
+        Some common pain relievers can harm the kidneys, especially if you already have kidney disease. These are called
+        NSAIDs, and include ibuprofen and naproxen. Using them now and then is usually fine for healthy people, but regular
+        use can damage the kidneys. If you have kidney disease, ask your doctor before taking them. Acetaminophen is often a
+        safer choice, at the right dose.
+    - layout: "bullets"
+      heading: "Other Medicine Cautions"
+      points: ["Doses may need changing", "Watch some supplements", "Some scan dyes", "Tell every doctor"]
+      footage_query: "doctor reading prescription"
+      narration: >-
+        Because the kidneys clear many medicines, people with kidney disease may need lower doses of some drugs. Some herbal
+        supplements and high dose vitamins can also be harmful. Some contrast dyes used for scans need extra care. Tell every
+        doctor, dentist and pharmacist that you have kidney disease, and bring an updated medicine list to every visit.
+    - layout: "bullets"
+      heading: "Control Blood Pressure"
+      points: ["Know your target", "Check it at home", "Take medicines daily", "Cut back on salt"]
+      footage_query: "blood pressure monitor arm"
+      narration: >-
+        Keeping blood pressure in range is one of the best ways to protect your kidneys. Ask your doctor what your target is.
+        Check your blood pressure at home and write it down. Take your medicines every day, even when you feel fine. Cutting
+        back on salt helps a lot. Most salt comes from packaged, restaurant and fast foods, not the salt shaker.
+    - layout: "bullets"
+      heading: "Control Blood Sugar"
+      points: ["Know your A1C goal", "Take medicines as prescribed", "Eat balanced meals", "Keep active"]
+      footage_query: "blood glucose meter finger"
+      narration: >-
+        If you have diabetes, keeping your blood sugar in your target range protects the tiny filters in your kidneys. Know
+        your A1C goal and check it with your doctor. Take your medicines as prescribed. Eat balanced meals with vegetables,
+        whole grains and lean protein, and keep active. Even small improvements lower the chance of kidney damage over time.
+    - layout: "bullets"
+      heading: "Kidney-Friendly Eating"
+      points: ["Less salt", "More fruits and vegetables", "Less processed food", "Ask about protein and potassium"]
+      footage_query: "healthy salad bowl table"
+      narration: >-
+        Healthy eating helps your kidneys. Eat less salt and fewer processed foods. Choose more vegetables, fruits, whole
+        grains, beans and fish. In later stages of kidney disease, you may need to limit protein, potassium or phosphorus, but
+        do not make big changes on your own. A registered dietitian can make a meal plan that fits your kidney stage.
+    - layout: "bullets"
+      heading: "Everyday Habits"
+      points: ["Stay active", "Quit smoking", "Limit alcohol", "Keep a healthy weight"]
+      footage_query: "people walking park"
+      narration: >-
+        Your everyday habits matter too. Aim for about thirty minutes of activity most days, like brisk walking. Quit smoking,
+        which damages blood vessels, including those in the kidneys. Limit alcohol. Reaching a healthy weight lowers your risk
+        of diabetes and high blood pressure. Get enough sleep and manage stress. These steps protect your heart and kidneys
+        together.
+    - layout: "myth_fact"
+      heading: "Drinking More Water Cures It"
+      points: ["Lots of water heals kidneys", "Follow your doctor's fluid advice"]
+      footage_query: "glass of water close up"
+      narration: >-
+        Myth: drinking huge amounts of water will cure kidney disease. Fact: staying hydrated is good for most people, but
+        extra water does not repair kidney damage. In advanced kidney disease, too much fluid can actually build up and cause
+        swelling or breathing problems. Ask your doctor how much fluid is right for you.
+    - layout: "bullets"
+      heading: "Kidneys and Your Heart"
+      points: ["Kidney disease raises heart risk", "Heart disease harms kidneys", "Treat both together", "Watch cholesterol too"]
+      footage_query: "heart model doctor"
+      narration: >-
+        Your kidneys and your heart are closely linked. People with kidney disease are more likely to have a heart attack or
+        stroke than to reach kidney failure. And heart disease can harm the kidneys. That is why your doctor may focus on
+        blood pressure, cholesterol, blood sugar and smoking, all at once. Protecting one helps protect the other.
+    - layout: "bullets"
+      heading: "If Kidneys Fail"
+      points: ["Dialysis options", "Kidney transplant", "Supportive care", "Plan early with your team"]
+      footage_query: "dialysis machine hospital"
+      narration: >-
+        If kidney disease reaches kidney failure, there are choices. Dialysis cleans the blood with a machine, at a center or
+        at home. A kidney transplant, from a living or deceased donor, offers the best long term results for many people. Some
+        people choose supportive care focused on comfort. Planning early with your care team gives you more choices and better
+        outcomes.
+    - layout: "bullets"
+      heading: "Questions for Your Doctor"
+      points: ["What is my eGFR?", "What is my urine albumin?", "Am I at risk?", "How can I protect my kidneys?"]
+      footage_query: "patient talking doctor"
+      narration: >-
+        At your next visit, ask: what is my eGFR, and what is my urine albumin result? Am I at risk for kidney disease? Should
+        I be tested every year? Are any of my medicines hard on my kidneys? And what can I do to protect them? Knowing your
+        numbers is the first step to keeping your kidneys healthy.
+    - layout: "bullets"
+      heading: "Quick Recap"
+      points: ["Kidney disease is often silent", "Diabetes and blood pressure top causes", "Get the blood and urine tests", "Early action slows damage"]
+      footage_query: "notebook checklist pen"
+      narration: >-
+        Let us recap. Kidney disease is common and usually silent. Diabetes and high blood pressure are the top causes. Two
+        simple tests, the eGFR blood test and the urine albumin test, can find it early. And when found early, medicines and
+        healthy habits can slow it down, and help many people avoid dialysis.
     - layout: "outro"
-      heading: "Know Your Kidney Numbers"
-      points: ["Ask about eGFR", "Ask about urine albumin", "Especially with diabetes or high BP"]
-      footage_query: "patient talking doctor office"
+      heading: "Remember"
+      points: ["Ask for both tests", "Control sugar and pressure", "Be careful with painkillers"]
+      footage_query: "family walking outdoors"
       narration: >-
-        At your next checkup, ask: what are my kidney numbers? This video is for education only, not medical advice. Like and
-        subscribe to Health Support Studio for a new health video every day.
+        Remember: ask for both kidney tests if you are at risk, control your blood sugar and blood pressure, and be careful
+        with everyday painkillers. Share this with someone who has diabetes or high blood pressure. This video is for
+        education only, not medical advice. Like and subscribe to Health Support Studio for a new health video every day.
   short_title: "9 in 10 don't know they have this #Shorts"
   short_caption: >-
     Most people with kidney disease don't know they have it. These two simple tests can find it early. Educational only, not
