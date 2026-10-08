@@ -1,0 +1,282 @@
+queue_topic: "Kidney stones: warning signs, when to go to the ER, and prevention"
+style: "Warning Signs"
+sources:
+  - "NIDDK, Kidney Stones: https://www.niddk.nih.gov/health-information/urologic-diseases/kidney-stones"
+  - "MedlinePlus, Kidney Stones: https://medlineplus.gov/kidneystones.html"
+  - "NIDDK, Eating, Diet and Nutrition for Kidney Stones: https://www.niddk.nih.gov/health-information/urologic-diseases/kidney-stones/eating-diet-nutrition"
+plan:
+  topic: "Kidney stones: warning signs, when to go to the ER, and prevention"
+  title: "Kidney Stone Warning Signs: When It's an Emergency"
+  description: |-
+    Kidney stones are common and extremely painful. Learn the warning signs, the one symptom that means go to the ER, how stones are treated, and the simple habits that keep new stones from forming.
+
+    In this video:
+    • What kidney stones are and who gets them
+    • The classic pain and other warning signs
+    • Why fever with stone pain is an emergency
+    • Passing a stone and when you need a procedure
+    • Prevention: water, salt, calcium and oxalate
+
+    #KidneyStones #KidneyHealth #WarningSigns #Hydration #HealthEducation
+  tags: ["kidney stones", "kidney stone symptoms", "kidney stone pain", "passing a kidney stone", "kidney stone prevention", "flank pain", "blood in urine", "lithotripsy", "drink more water", "kidney health", "health education"]
+  thumbnail_text: "KIDNEY STONE PAIN?"
+  thumbnail_highlight: "PAIN?"
+  thumbnail_photo_query: "man back pain holding side"
+  playlist: "Healthy Habits & Prevention"
+  scenes:
+    - layout: "title"
+      heading: "Kidney Stone Warning Signs"
+      points: ["When to go to the ER"]
+      footage_query: "man back pain holding side"
+      narration: >-
+        People who have had a kidney stone often say it was the worst pain of their life, worse than a broken bone or even
+        childbirth. Kidney stones are common, and most pass on their own, but some cause dangerous infections or block the
+        kidney. Today you will learn the warning signs, when a stone is an emergency, and how to keep new stones from forming.
+    - layout: "big_number"
+      heading: "Very Common"
+      points: ["About 1 in 11", "People in the US get kidney stones"]
+      footage_query: "group of people walking city"
+      narration: >-
+        Kidney stones are very common. About one in eleven people in the United States will have a kidney stone at some point.
+        They are more common in men, but rates have been rising in women and younger people. And once you have had one stone,
+        your chance of getting another is high, which is why prevention matters so much.
+    - layout: "bullets"
+      heading: "What Is a Kidney Stone?"
+      points: ["Hard deposit of minerals", "Forms in the kidney", "Size of sand to a pebble", "Pain when it moves"]
+      footage_query: "kidney stones close up"
+      narration: >-
+        A kidney stone is a hard piece of material that forms in the kidney when certain minerals and salts in the urine stick
+        together. Stones can be as small as a grain of sand, or as big as a pebble. Many cause no pain while they sit in the
+        kidney. The pain starts when a stone moves into the narrow tube that carries urine to the bladder, called the ureter.
+    - layout: "bullets"
+      heading: "Types of Stones"
+      points: ["Calcium oxalate, most common", "Uric acid", "Struvite, from infection", "Cystine, inherited"]
+      footage_query: "medical illustration kidneys"
+      narration: >-
+        There are several types of stones. Most are made of calcium oxalate. Others are made of calcium phosphate, uric acid,
+        which is linked to gout and diets high in animal protein, struvite, which forms with certain urinary infections, or
+        cystine, from a rare inherited condition. Knowing your stone type helps your doctor choose the best way to prevent new
+        ones.
+    - layout: "bullets"
+      heading: "Who Is at Risk?"
+      points: ["Not drinking enough", "Diets high in salt and meat", "Obesity and diabetes", "Family history"]
+      footage_query: "man drinking soda"
+      narration: >-
+        Who is at risk? People who do not drink enough fluids, especially in hot weather or with heavy sweating. People who
+        eat a lot of salt, animal protein, or sugary drinks. People with obesity, diabetes, gout, high blood pressure, or
+        bowel diseases. People who had weight loss surgery. And those with a family history of kidney stones.
+    - layout: "warning"
+      heading: "The Classic Pain"
+      points: ["Severe side or back pain", "Below the ribs", "Spreads to belly or groin", "Comes in waves"]
+      footage_query: "man back pain holding side"
+      narration: >-
+        The classic sign is sudden, severe pain in your side or back, below the ribs. The pain often spreads to the lower
+        belly and groin. It usually comes in waves, getting stronger and then easing, as the stone moves and the ureter
+        squeezes. People often cannot sit still and keep changing positions trying to get comfortable.
+    - layout: "warning"
+      heading: "Other Warning Signs"
+      points: ["Pink, red or brown urine", "Burning when peeing", "Urge to go often", "Nausea and vomiting"]
+      footage_query: "woman holding lower belly"
+      narration: >-
+        Other signs include pink, red or brown urine from blood, cloudy or bad smelling urine, pain or burning when you pee,
+        needing to go often or urgently while passing only small amounts, and nausea and vomiting. As a stone gets close to
+        the bladder, people often feel a strong urge to urinate.
+    - layout: "warning"
+      heading: "Go to the ER Now"
+      points: ["Fever or chills with pain", "Pain you cannot control", "Cannot keep fluids down", "Cannot pee at all"]
+      footage_query: "hospital emergency entrance"
+      narration: >-
+        Go to the emergency room right away if you have fever or chills with kidney stone pain, pain so severe you cannot get
+        comfortable or control it, vomiting so much you cannot keep fluids or medicine down, or if you cannot pass urine at
+        all. Also go if you have only one kidney, or a kidney transplant, and think you have a stone.
+    - layout: "warning"
+      heading: "Why Fever Is So Serious"
+      points: ["Infection behind a blocked stone", "Can spread to the blood", "Can cause sepsis", "Needs urgent drainage"]
+      footage_query: "paramedic helping patient"
+      narration: >-
+        Here is why fever matters so much. When a stone blocks urine flow and the urine behind it gets infected, bacteria can
+        spread quickly into the blood. This can cause sepsis, a life threatening emergency. Antibiotics alone may not be
+        enough. The blockage often needs to be relieved urgently with a small tube. Never wait out a fever with kidney stone
+        pain.
+    - layout: "myth_fact"
+      heading: "It Must Be My Back"
+      points: ["Side pain is just a pulled muscle", "Stone pain does not change with movement"]
+      footage_query: "man holding back"
+      narration: >-
+        Myth: pain in the back or side is always a pulled muscle. Fact: muscle pain usually gets worse with certain movements
+        and better with rest. Kidney stone pain is often deeper, comes in waves, and does not ease no matter how you move or
+        lie. Blood in the urine, nausea, or pain spreading to the groin point toward a stone.
+    - layout: "bullets"
+      heading: "Other Conditions That Look Similar"
+      points: ["Appendicitis", "Aortic aneurysm in older adults", "Gallbladder problems", "Ectopic pregnancy"]
+      footage_query: "doctor examining patient belly"
+      narration: >-
+        Other serious problems can look like a kidney stone. These include appendicitis, gallbladder problems, a bowel
+        blockage, and, in women, an ectopic pregnancy or ovarian problems. In older adults, especially smokers, sudden back or
+        belly pain can be a tear in the body's main artery, called an aortic aneurysm. That is why new, severe pain should
+        always be checked.
+    - layout: "bullets"
+      heading: "Stones in Pregnancy and Kids"
+      points: ["Pregnancy: ultrasound first", "Tell your doctor right away", "Children can get stones too", "Often linked to diet and fluids"]
+      footage_query: "pregnant woman talking doctor"
+      narration: >-
+        Kidney stones can happen during pregnancy, often causing side pain and blood in the urine. Pregnant women should call
+        their doctor right away, since a fever or infection is especially risky. Ultrasound is usually used instead of a CT
+        scan. Children can get stones too, and rates are rising, often linked to salty diets, sugary drinks, and not drinking
+        enough water.
+    - layout: "bullets"
+      heading: "How Stones Are Diagnosed"
+      points: ["Urine test for blood", "CT scan finds most stones", "Ultrasound", "Blood tests for kidneys"]
+      footage_query: "ct scanner hospital"
+      narration: >-
+        How are kidney stones diagnosed? A urine test checks for blood and infection. A CT scan is very good at finding stones
+        and showing their size and location. Ultrasound is often used for pregnant women and children, and to avoid radiation.
+        Blood tests check kidney function and signs of infection. Your doctor will also look for what caused the stone.
+    - layout: "bullets"
+      heading: "Will It Pass on Its Own?"
+      points: ["Small stones usually pass", "Under about 5 millimeters", "Can take days to weeks", "Larger ones may need help"]
+      footage_query: "doctor reading lab results"
+      narration: >-
+        Will the stone pass on its own? Small stones, under about five millimeters, which is about the size of a pencil eraser
+        tip, usually pass in days to a few weeks. Larger stones are less likely to pass without help. Location matters too.
+        Your doctor will look at the size and position, along with your symptoms, to decide the best plan.
+    - layout: "bullets"
+      heading: "Passing a Stone at Home"
+      points: ["Drink plenty of water", "Pain relief as advised", "Medicine to relax the ureter", "Strain your urine"]
+      footage_query: "glass of water close up"
+      narration: >-
+        If your doctor says you can try passing the stone at home, drink plenty of water, unless told otherwise. Take pain
+        medicine as advised. Some people get a medicine that relaxes the ureter, which can help stones pass faster. Pee
+        through a strainer, or a coffee filter, to catch the stone. Bring it to your doctor for testing.
+    - layout: "myth_fact"
+      heading: "Beer Flushes Out Stones"
+      points: ["Drinking beer helps stones pass", "Alcohol dehydrates you"]
+      footage_query: "beer glass bar"
+      narration: >-
+        Myth: drinking beer helps flush out kidney stones. Fact: beer makes you urinate more, but alcohol also dehydrates you,
+        and beer contains purines that can raise uric acid, a stone ingredient. Water is the best drink for passing and
+        preventing stones. Avoid alcohol while you have a stone, especially if you take pain medicines.
+    - layout: "bullets"
+      heading: "When Stones Need a Procedure"
+      points: ["Shock wave lithotripsy", "Ureteroscopy with a laser", "Surgery for large stones", "A temporary stent"]
+      footage_query: "surgeon preparing operating room"
+      narration: >-
+        If a stone is too big to pass, causes infection, or keeps you in severe pain, it can be removed. Shock wave
+        lithotripsy uses sound waves from outside the body to break the stone into small pieces. In ureteroscopy, a thin scope
+        passes up through the urinary tract, and a laser breaks up or removes the stone. Very large stones may need surgery
+        through the back.
+    - layout: "bullets"
+      heading: "Find Out Why You Get Stones"
+      points: ["Test the stone", "24-hour urine test", "Blood tests", "Personal prevention plan"]
+      footage_query: "lab test tubes"
+      narration: >-
+        After a stone, especially if you have had more than one, ask your doctor to find out why. Testing the stone shows its
+        type. A twenty four hour urine collection measures the minerals and volume of your urine. Blood tests check calcium,
+        uric acid, and kidney function. With these results, your doctor can make a prevention plan made for you.
+    - layout: "big_number"
+      heading: "Stones Come Back"
+      points: ["About half", "Get another stone within 10 years"]
+      footage_query: "calendar notebook planning"
+      narration: >-
+        Without prevention, kidney stones often come back. Studies suggest that about half of people who have a stone will
+        have another within about ten years. The good news is that simple changes, especially drinking more water, can greatly
+        lower that risk. Let us go through the most effective prevention steps.
+    - layout: "bullets"
+      heading: "Prevention 1: Drink More Water"
+      points: ["Aim for pale yellow urine", "About 8 to 12 cups a day", "More in hot weather", "Spread through the day"]
+      footage_query: "woman drinking water bottle"
+      narration: >-
+        The most important step is drinking enough fluids, mostly water. Many people with stones are advised to drink enough
+        to make about two liters of urine a day, which often means eight to twelve cups of fluid. Your urine should be pale
+        yellow, like lemonade. Drink more in hot weather or when sweating. Spread it out through the day, and have a glass
+        before bed.
+    - layout: "bullets"
+      heading: "Prevention 2: Less Salt"
+      points: ["Salt raises calcium in urine", "Limit processed foods", "Read sodium on labels", "Cook more at home"]
+      footage_query: "woman reading food label"
+      narration: >-
+        Eating less salt helps prevent calcium stones, because a high salt diet makes the kidneys release more calcium into
+        the urine. Most salt comes from processed and restaurant foods, like deli meats, canned soups, frozen meals, chips and
+        fast food. Read labels for sodium, cook at home more often, and flavor food with herbs and lemon.
+    - layout: "myth_fact"
+      heading: "Cut Out Calcium"
+      points: ["Avoid dairy to stop stones", "Food calcium helps prevent them"]
+      footage_query: "glass of milk breakfast"
+      narration: >-
+        Myth: if your stones contain calcium, you should avoid milk and other calcium foods. Fact: getting normal amounts of
+        calcium from food actually helps prevent the most common stones, because calcium binds oxalate in the gut so it is not
+        absorbed. Cutting calcium can raise your risk. Calcium supplements are different, so ask your doctor about them.
+    - layout: "bullets"
+      heading: "Prevention 3: Watch Oxalate"
+      points: ["Only if your doctor advises", "Spinach, nuts, beets", "Pair with calcium foods", "Do not overdo vitamin C pills"]
+      footage_query: "spinach leaves close up"
+      narration: >-
+        If you form calcium oxalate stones, your doctor may suggest limiting very high oxalate foods, like spinach, rhubarb,
+        beets, nuts and chocolate. Eating oxalate foods together with a calcium food, like spinach with cheese, lowers
+        absorption. Very high dose vitamin C supplements can raise oxalate. Do not cut out healthy foods unless your doctor or
+        a dietitian advises it.
+    - layout: "bullets"
+      heading: "Prevention 4: Less Meat and Sugar"
+      points: ["Limit red meat and organ meats", "Choose plant proteins", "Avoid sugary drinks", "Healthy weight helps"]
+      footage_query: "grilled steak plate"
+      narration: >-
+        Eating a lot of animal protein, like red meat, organ meats, poultry and seafood, can raise uric acid and calcium in
+        the urine and lower citrate, which protects against stones. Enjoy moderate portions, and add more plant proteins like
+        beans and lentils. Avoid sugary drinks and sodas with high fructose corn syrup. Reaching a healthy weight also lowers
+        risk.
+    - layout: "bullets"
+      heading: "Citrus May Help"
+      points: ["Citrate blocks stones", "Lemon or lime in water", "Some medicines add citrate", "Ask your doctor"]
+      footage_query: "lemon water glass"
+      narration: >-
+        Citrate, found in citrus fruits, helps prevent stones by binding calcium and stopping crystals from growing. Adding
+        fresh lemon or lime juice to water is an easy habit, though the effect is modest. For some people, doctors prescribe
+        potassium citrate. Other medicines can lower calcium or uric acid in the urine, depending on your stone type.
+    - layout: "bullets"
+      heading: "Questions for Your Doctor"
+      points: ["What type of stone is it?", "Will it pass on its own?", "What are my warning signs?", "How do I prevent more?"]
+      footage_query: "patient talking doctor"
+      narration: >-
+        At your visit, ask: how big is my stone, and where is it? Will it likely pass on its own? What should I do for pain,
+        and when should I come back? What type of stone was it? Do I need a twenty four hour urine test? And what is my
+        personal plan to prevent more stones?
+    - layout: "bullets"
+      heading: "Quick Recap"
+      points: ["Severe side pain in waves", "Fever with pain: ER", "Drink water, less salt", "Do not cut food calcium"]
+      footage_query: "notebook checklist pen"
+      narration: >-
+        Let us recap. Kidney stones cause severe pain in the side or back that comes in waves, often with blood in the urine
+        and nausea. Fever or chills with stone pain is an emergency. Small stones often pass with water and pain relief. To
+        prevent new ones, drink plenty of water, eat less salt and meat, and keep calcium from food.
+    - layout: "outro"
+      heading: "Remember"
+      points: ["Fever plus pain: ER", "Drink more water", "Find your stone type"]
+      footage_query: "woman drinking water bottle"
+      narration: >-
+        Remember: fever with kidney stone pain means go to the ER, drink more water every day, and find out your stone type to
+        prevent the next one. Share this with someone who has had a kidney stone. This video is for education only, not
+        medical advice. Like and subscribe to Health Support Studio for a new health video every day.
+  short_title: "Kidney stone pain? This sign means ER #Shorts"
+  short_caption: >-
+    Fever with kidney stone pain is an emergency. Here is why. Educational only, not medical advice. #KidneyStones
+    #KidneyHealth #WarningSigns #HealthEducation
+  short_scenes:
+    - layout: "title"
+      heading: "Kidney Stone Pain?"
+      points: ["One sign means ER"]
+      footage_query: "man back pain holding side"
+      narration: >-
+        Kidney stone pain is severe, but one sign means you need the emergency room right away.
+    - layout: "warning"
+      heading: "Fever Plus Pain"
+      points: ["Fever or chills with stone pain", "Infection behind a blockage", "Can cause sepsis"]
+      footage_query: "paramedic helping patient"
+      narration: >-
+        If you have fever or chills with kidney stone pain, go to the ER. Infected urine trapped behind a stone can spread to
+        the blood and cause sepsis. Also go if you cannot keep fluids down, cannot pee, or cannot control the pain.
+    - layout: "outro"
+      heading: "Full Video"
+      points: ["On YouTube"]
+      footage_query: "woman drinking water bottle"
+      narration: >-
+        Learn how to prevent stones in our full video, on the Health Support Studio YouTube channel.
