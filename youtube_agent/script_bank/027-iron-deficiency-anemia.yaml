@@ -12,8 +12,9 @@ plan:
 
     In this video:
     • What iron does in your body
-    • Signs of iron deficiency anemia
-    • Common causes, including blood loss
+    • Signs of iron deficiency anemia, including ice cravings
+    • Common causes, including hidden blood loss
+    • How to take iron pills the right way
     • Iron-rich foods and tips to absorb more
 
     #Anemia #IronDeficiency #WomensHealth #Nutrition #HealthEducation
@@ -25,69 +26,237 @@ plan:
   scenes:
     - layout: "title"
       heading: "Always Tired?"
-      points: ["It might be low iron"]
-      footage_query: "tired woman desk"
+      points: ["Signs of low iron"]
+      footage_query: "tired woman desk exhausted"
       narration: >-
-        Exhausted no matter how much you sleep? Out of breath climbing the stairs? Craving ice? These can all be signs of iron
-        deficiency anemia, one of the most common types of anemia. Today we explain what it is, what causes it, and what to do
-        about it.
+        Do you feel exhausted no matter how much you sleep? Get out of breath climbing the stairs? Crave ice, and crunch on it
+        all day? These can be signs of iron deficiency anemia, one of the most common blood problems in the world. Today you
+        will learn what iron does, the warning signs, the hidden causes, and the right way to fix it.
     - layout: "bullets"
-      heading: "Why You Need Iron"
-      points: ["Makes hemoglobin", "Hemoglobin carries oxygen", "Too little: less oxygen to body"]
-      footage_query: "red blood cells animation"
+      heading: "What Iron Does"
+      points: ["Makes hemoglobin", "Carries oxygen in blood", "Fuels muscles and brain", "Supports growth in kids"]
+      footage_query: "red blood cells illustration"
       narration: >-
-        Your body uses iron to make hemoglobin, the protein in red blood cells that carries oxygen from your lungs to the rest
-        of your body. When you do not have enough iron, your body cannot make enough healthy red blood cells. That is called
-        iron deficiency anemia, and it means less oxygen reaches your organs and muscles.
+        Iron is a mineral your body needs to make hemoglobin, the protein in red blood cells that carries oxygen from your
+        lungs to every part of your body. Iron also helps your muscles store and use oxygen, and it is needed for normal
+        growth, brain development in children, and a healthy immune system. Without enough iron, your body runs short of
+        oxygen.
     - layout: "bullets"
-      heading: "Signs to Notice"
-      points: ["Tiredness and weakness", "Pale skin", "Shortness of breath, dizziness", "Cold hands, brittle nails"]
-      footage_query: "woman tired stairs"
+      heading: "What Is Anemia?"
+      points: ["Too few healthy red cells", "Or too little hemoglobin", "Less oxygen to the body", "Iron deficiency is a top cause"]
+      footage_query: "doctor explaining patient"
       narration: >-
-        Signs can include tiredness and weakness, pale skin, shortness of breath or a pounding heart with activity, dizziness,
-        headaches, cold hands and feet, and brittle nails. Some people crave ice or non food items, which is called pica. Mild
-        iron deficiency may cause no symptoms at all.
+        Anemia means you have fewer healthy red blood cells than normal, or less hemoglobin in them. Your body gets less
+        oxygen, so you feel tired and weak. There are many kinds of anemia, but iron deficiency is the most common. It
+        develops in stages: first iron stores run low, then fewer red cells are made, and finally anemia appears.
     - layout: "bullets"
-      heading: "Common Causes"
-      points: ["Blood loss: heavy periods", "Bleeding in the gut", "Not enough iron in diet", "Pregnancy, poor absorption"]
-      footage_query: "woman stomach pain couch"
+      heading: "Who Is Most at Risk"
+      points: ["Women with heavy periods", "Pregnant women", "Babies, toddlers and teens", "Frequent blood donors"]
+      footage_query: "pregnant woman sitting"
       narration: >-
-        What causes it? The most common cause is blood loss. For many women, that means heavy periods. Slow bleeding in the
-        stomach or intestines is another cause, from ulcers, polyps, or sometimes cancer. Iron deficiency can also come from not
-        getting enough iron in food, pregnancy, or conditions like celiac disease that affect absorption.
+        Who is most at risk? Women and girls with heavy periods. Pregnant women, who need much more iron for the baby. Babies,
+        toddlers and teenagers, who are growing fast. People who give blood often. People who eat little or no meat, if they
+        do not plan their diet carefully. And people with certain stomach and gut problems.
     - layout: "warning"
-      heading: "Important for Men and After Menopause"
-      points: ["Low iron needs a cause", "Could be hidden bleeding", "Don't just take pills"]
-      footage_query: "senior man talking doctor"
+      heading: "Common Signs"
+      points: ["Tiredness and weakness", "Pale skin, inner eyelids", "Short of breath", "Fast heartbeat"]
+      footage_query: "woman tired holding head"
       narration: >-
-        Here is something important. In men, and in women after menopause, iron deficiency is not normal. Doctors will want to
-        find out why, because it can be a sign of hidden bleeding in the gut. That is one reason not to simply start iron pills
-        on your own. Taking iron can hide the problem without fixing the cause.
+        The most common signs are tiredness and weakness that do not go away with rest. You may look pale, especially on the
+        inside of your lower eyelids, your gums, or your nail beds. You may get short of breath or feel your heart pounding
+        with activity that used to be easy. Dizziness, headaches, and cold hands and feet are also common.
+    - layout: "warning"
+      heading: "Unusual Signs"
+      points: ["Craving ice or dirt", "Restless legs at night", "Brittle, spoon-shaped nails", "Sore tongue, cracked mouth corners"]
+      footage_query: "ice cubes glass close up"
+      narration: >-
+        Some signs are more unusual. Many people with low iron crave ice and chew it constantly. Some crave dirt, clay or
+        starch, which is called pica. Restless legs, an urge to move your legs at night, can be linked to low iron. Other
+        signs include brittle nails that curve upward like a spoon, a sore or smooth tongue, cracks at the corners of the
+        mouth, and hair loss.
+    - layout: "myth_fact"
+      heading: "Tiredness Is Just Life"
+      points: ["Being tired is normal", "Ongoing tiredness needs a check"]
+      footage_query: "woman yawning office"
+      narration: >-
+        Myth: being tired all the time is just part of busy life. Fact: everyone gets tired sometimes, but tiredness that
+        lasts for weeks, especially with shortness of breath or paleness, deserves a simple blood test. Iron deficiency is
+        easy to check and usually easy to treat. Many people feel much better within weeks of treatment.
     - layout: "bullets"
-      heading: "How It's Diagnosed"
-      points: ["Complete blood count", "Ferritin: iron stores", "Other iron tests", "Tests to find the cause"]
-      footage_query: "blood test lab tube"
+      heading: "Signs in Children"
+      points: ["Pale skin", "Tired, fussy, poor appetite", "Slow growth", "Trouble learning or focusing"]
+      footage_query: "toddler eating meal"
       narration: >-
-        Diagnosis starts with blood tests. A complete blood count checks your hemoglobin and red blood cells. A ferritin test
-        shows how much iron your body has stored. Depending on the results, your doctor may order other tests to find the
-        cause.
+        In children, signs may include pale skin, being tired or fussy, poor appetite, slow growth, and frequent infections.
+        Over time, iron deficiency can affect learning, attention and behavior. Babies are usually checked for anemia around
+        their first birthday. If your child seems pale and tired, or eats very little iron rich food, ask the pediatrician
+        about testing.
     - layout: "bullets"
-      heading: "Foods With Iron"
-      points: ["Lean red meat, poultry, fish", "Beans, lentils, tofu", "Spinach, fortified cereals", "Add vitamin C for absorption"]
-      footage_query: "lentils beans spinach food"
+      heading: "Cause One: Blood Loss"
+      points: ["Heavy menstrual periods", "Bleeding in the gut", "Ulcers, polyps, cancer", "Frequent blood donation"]
+      footage_query: "woman holding lower belly"
       narration: >-
-        Food can help. Iron from meat, poultry and fish is absorbed most easily. Plant sources include beans, lentils, tofu,
-        spinach and iron fortified cereals. Eating these with vitamin C, like oranges, strawberries or bell peppers, helps you
-        absorb more. Tea and coffee with meals can reduce absorption. If your doctor recommends an iron supplement, take it
-        exactly as directed, and keep it away from children, because too much iron is very dangerous for kids.
+        The most common cause of iron deficiency in adults is blood loss. In women, heavy periods are a top cause. Bleeding
+        can also happen slowly in the stomach or intestines, from ulcers, hemorrhoids, polyps, or colon cancer, often without
+        visible blood. Regular use of pain relievers like aspirin and ibuprofen can cause stomach bleeding. Frequent blood
+        donation also lowers iron.
+    - layout: "warning"
+      heading: "Heavy Periods Are Not Normal"
+      points: ["Soaking a pad every hour", "Periods over 7 days", "Large clots", "Talk to your doctor"]
+      footage_query: "woman talking doctor office"
+      narration: >-
+        Many women think heavy periods are just normal for them. But soaking through a pad or tampon every hour for several
+        hours, needing to change at night, passing clots larger than a quarter, or periods lasting more than seven days are
+        signs of heavy bleeding. This can cause iron deficiency. Talk to your doctor, because treatments can help.
+    - layout: "warning"
+      heading: "Men and Older Women"
+      points: ["Iron deficiency needs a cause", "Check for gut bleeding", "May need a colonoscopy", "Do not just take pills"]
+      footage_query: "middle aged man doctor consultation"
+      narration: >-
+        Here is a very important point. In men, and in women after menopause, iron deficiency is not normal and should never
+        just be treated with pills without looking for the cause. It may be a sign of slow bleeding in the gut, including from
+        colon cancer. Your doctor will likely recommend tests, which may include a colonoscopy and an upper endoscopy.
+    - layout: "bullets"
+      heading: "Cause Two: Not Absorbing Iron"
+      points: ["Celiac disease", "Weight loss surgery", "Stomach acid medicines", "Inflammatory bowel disease"]
+      footage_query: "medical illustration intestines"
+      narration: >-
+        Some people eat enough iron but cannot absorb it. This happens with celiac disease, inflammatory bowel disease, after
+        weight loss surgery, and with long term use of some acid reducing medicines. An infection in the stomach called H.
+        pylori can also lower iron absorption. If your iron stays low despite pills, your doctor may look for these problems.
+    - layout: "bullets"
+      heading: "Cause Three: Not Enough in Diet"
+      points: ["Little meat, fish or beans", "Toddlers drinking lots of milk", "Restrictive diets", "Increased needs in pregnancy"]
+      footage_query: "toddler drinking milk bottle"
+      narration: >-
+        Some people simply do not get enough iron from food. This can happen with very restrictive diets, poor appetite in
+        older adults, or vegetarian and vegan diets that are not well planned. Toddlers who drink a lot of cow's milk are at
+        risk, because milk is low in iron and fills them up. Most toddlers should have no more than about two to three cups a
+        day.
+    - layout: "bullets"
+      heading: "Pregnancy Needs More Iron"
+      points: ["Needs go up a lot", "Prenatal vitamin with iron", "Tested during pregnancy", "Low iron raises risks"]
+      footage_query: "pregnant woman talking doctor"
+      narration: >-
+        During pregnancy, the body needs much more iron to support the growing baby and the extra blood volume. Low iron in
+        pregnancy is linked to early birth and low birth weight, and can leave the mother very tired after delivery. Most
+        pregnant women should take a prenatal vitamin with iron. Your doctor will check for anemia during pregnancy.
+    - layout: "bullets"
+      heading: "How It Is Diagnosed"
+      points: ["Complete blood count", "Ferritin test", "Iron and iron binding tests", "Looking for the cause"]
+      footage_query: "blood test tube lab"
+      narration: >-
+        How is iron deficiency diagnosed? A simple blood test called a complete blood count checks your hemoglobin and the
+        size of your red cells. In iron deficiency, the cells are often small and pale. A ferritin test shows how much iron
+        your body has stored. Low ferritin is a clear sign of low iron. Then, your doctor looks for the cause.
+    - layout: "myth_fact"
+      heading: "Iron Pills Are Always Safe"
+      points: ["Take iron anytime you feel tired", "Too much iron can harm"]
+      footage_query: "pill bottles table"
+      narration: >-
+        Myth: iron pills are safe for anyone who feels tired. Fact: taking iron without testing can hide a serious cause, like
+        bleeding. Some people have a genetic condition called hemochromatosis, where the body stores too much iron, which can
+        damage the liver, heart and joints. Get tested first, and take iron only if you need it.
+    - layout: "warning"
+      heading: "Keep Iron Away From Kids"
+      points: ["Iron overdose is dangerous", "Even a few adult pills", "Use child-proof caps", "Call Poison Control: 1-800-222-1222"]
+      footage_query: "child reaching medicine cabinet"
+      narration: >-
+        Iron pills can be very dangerous for young children. Accidental iron overdose was once a leading cause of poisoning
+        deaths in children under six. Even a small number of adult iron pills or prenatal vitamins can be harmful. Keep them
+        locked up and out of reach. If a child swallows iron pills, call Poison Control at one eight hundred two two two, one
+        two two two, right away.
+    - layout: "bullets"
+      heading: "Taking Iron Pills Right"
+      points: ["Take as your doctor advises", "Some do better every other day", "With vitamin C or juice", "Not with tea, coffee or milk"]
+      footage_query: "glass orange juice pill"
+      narration: >-
+        If your doctor recommends iron pills, take them as directed. Iron is absorbed best on an empty stomach, but if it
+        upsets your stomach, taking it with a little food is okay. Vitamin C, like a glass of orange juice, helps absorption.
+        Avoid taking it with tea, coffee, milk, calcium or antacids. Some studies suggest taking it every other day may work
+        as well with fewer side effects.
+    - layout: "bullets"
+      heading: "Side Effects of Iron Pills"
+      points: ["Dark or black stool", "Constipation", "Upset stomach", "Ask about another type"]
+      footage_query: "woman holding stomach"
+      narration: >-
+        Iron pills often cause dark green or black stools, which is normal. Constipation and an upset stomach are common.
+        Drinking water, eating fiber, and taking the pill with a small snack can help. If side effects are hard to tolerate,
+        ask your doctor about a lower dose or a different type. Do not stop on your own, since it takes months to rebuild iron
+        stores.
+    - layout: "bullets"
+      heading: "How Long It Takes"
+      points: ["Feel better in a few weeks", "Hemoglobin rises in about a month", "Rebuild stores for months", "Follow-up blood tests"]
+      footage_query: "calendar notebook planning"
+      narration: >-
+        How long does it take? Many people start to feel better in a few weeks. Hemoglobin usually starts rising within about
+        a month. But it takes three months or longer to fully refill your iron stores, so keep taking iron as long as your
+        doctor recommends. Follow up blood tests make sure the treatment is working and the cause has been fixed.
+    - layout: "bullets"
+      heading: "Iron Through a Vein"
+      points: ["When pills do not work", "Absorption problems", "Severe or fast blood loss", "Late pregnancy"]
+      footage_query: "iv drip hospital"
+      narration: >-
+        Some people need iron given through a vein, called IV iron. This is used when pills do not work or cause bad side
+        effects, when the gut cannot absorb iron, when blood loss is ongoing, in late pregnancy, and in some people with
+        kidney disease. IV iron can raise iron levels much faster. In severe cases, a blood transfusion may be needed.
+    - layout: "bullets"
+      heading: "Iron From Animal Foods"
+      points: ["Red meat", "Chicken and turkey", "Fish and shellfish", "Absorbed best"]
+      footage_query: "grilled steak plate"
+      narration: >-
+        Food is a great source of iron. Iron from animal foods, called heme iron, is absorbed best. Good sources include lean
+        red meat like beef, poultry like chicken and turkey, and seafood such as clams, oysters, sardines, and tuna. Liver is
+        very high in iron, though pregnant women should limit it because it is also very high in vitamin A.
+    - layout: "bullets"
+      heading: "Iron From Plant Foods"
+      points: ["Beans and lentils", "Tofu", "Spinach and leafy greens", "Fortified cereals and bread"]
+      footage_query: "lentils beans bowl"
+      narration: >-
+        Plant foods also contain iron, called non heme iron. Good sources include beans, lentils, chickpeas, tofu, spinach and
+        other dark leafy greens, nuts, seeds, raisins, and iron fortified breakfast cereals and breads. Plant iron is absorbed
+        less easily, but you can boost absorption with a few simple tricks.
+    - layout: "bullets"
+      heading: "Boost Iron Absorption"
+      points: ["Add vitamin C foods", "Combine plant and animal iron", "Tea and coffee between meals", "Cook in cast iron"]
+      footage_query: "bell peppers vegetables kitchen"
+      narration: >-
+        Here is how to absorb more iron. Eat foods high in vitamin C with iron rich meals, like oranges, strawberries,
+        tomatoes, bell peppers or broccoli. Combining a little meat or fish with beans or greens helps you absorb more plant
+        iron. Drink tea and coffee between meals instead of with them. Cooking in a cast iron pan can add a little iron to
+        food.
+    - layout: "bullets"
+      heading: "Iron for Babies"
+      points: ["Breastfed babies may need drops", "Iron fortified formula", "Iron rich first foods", "No cow milk before age 1"]
+      footage_query: "mother feeding baby spoon"
+      narration: >-
+        Babies are born with iron stores that last about four to six months. Breastfed babies may need iron drops, so ask your
+        pediatrician. Formula fed babies should use iron fortified formula. When starting solid foods, choose iron rich foods
+        like iron fortified cereal, pureed meats and beans. Do not give cow's milk as a main drink before one year of age.
+    - layout: "bullets"
+      heading: "Questions for Your Doctor"
+      points: ["Do I have anemia?", "What is my ferritin?", "What is causing it?", "How long should I take iron?"]
+      footage_query: "patient talking doctor"
+      narration: >-
+        At your next visit, ask: do I have anemia, and what is my ferritin level? What is causing my low iron? Do I need other
+        tests, like for bleeding or celiac disease? What type and dose of iron should I take, and for how long? And when
+        should I have my blood checked again?
+    - layout: "bullets"
+      heading: "Quick Recap"
+      points: ["Tired, pale, short of breath", "Craving ice is a clue", "Always find the cause", "Get tested before taking iron"]
+      footage_query: "notebook checklist pen"
+      narration: >-
+        Let us recap. Iron deficiency anemia can cause tiredness, paleness, shortness of breath, and even ice cravings. Heavy
+        periods and hidden gut bleeding are common causes. In men and women after menopause, the cause must be found. Get
+        tested before taking iron, take it the right way, and eat iron rich foods with vitamin C.
     - layout: "outro"
-      heading: "Get Checked"
-      points: ["Tired all the time?", "Ask about a blood test", "Find the cause"]
-      footage_query: "woman walking morning park"
+      heading: "Remember"
+      points: ["Tired for weeks: get tested", "Find the cause", "Keep iron away from kids"]
+      footage_query: "family meal table"
       narration: >-
-        Tired all the time? Ask your doctor about a blood test, and about finding the cause. Call 911 for chest pain, fainting,
-        or severe shortness of breath. This video is for education only, not medical advice. Like and subscribe to Health
-        Support Studio for a new health video every day.
+        Remember: tiredness that lasts weeks deserves a blood test, low iron always needs a cause, and iron pills must be kept
+        away from children. Share this with someone who is always tired. This video is for education only, not medical advice.
+        Like and subscribe to Health Support Studio for a new health video every day.
   short_title: "Craving ice? It could be low iron #Shorts"
   short_caption: >-
     Craving ice and always tired? It could be a sign of iron deficiency anemia. Here is what to do. Educational only, not
