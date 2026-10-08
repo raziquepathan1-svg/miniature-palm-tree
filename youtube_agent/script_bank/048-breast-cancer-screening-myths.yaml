@@ -1,0 +1,300 @@
+queue_topic: "Breast cancer screening: myths vs facts and the new advice"
+style: "Myth vs Fact"
+sources:
+  - "US Preventive Services Task Force, Breast Cancer: Screening: https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/breast-cancer-screening"
+  - "CDC, Breast Cancer Screening: https://www.cdc.gov/breast-cancer/screening/index.html"
+  - "NIH National Cancer Institute, Breast Cancer Screening: https://www.cancer.gov/types/breast/patient/breast-screening-pdq"
+plan:
+  topic: "Breast cancer screening: myths vs facts and the new advice"
+  title: "Breast Cancer Screening Myths (Mammograms Now Start at 40)"
+  description: |-
+    Breast cancer screening advice changed in 2024: mammograms now start at 40. We bust nine common myths about breast cancer and mammograms, explain dense breasts and callbacks, and cover the warning signs every woman, and man, should know.
+
+    In this video:
+    • The new advice: every 2 years from 40
+    • 9 breast cancer screening myths busted
+    • Dense breasts, 3D mammograms and callbacks
+    • Warning signs to report
+    • Genetic testing, coverage and lowering your risk
+
+    #BreastCancer #Mammogram #BreastCancerAwareness #WomensHealth #HealthEducation
+  tags: ["breast cancer", "mammogram", "breast cancer screening", "mammogram at 40", "dense breasts", "breast cancer myths", "breast cancer signs", "brca", "3d mammogram", "womens health", "health education"]
+  thumbnail_text: "MAMMOGRAMS AT 40"
+  thumbnail_highlight: "40"
+  thumbnail_photo_query: "woman mammogram clinic"
+  playlist: "Tests & Doctor Visits"
+  scenes:
+    - layout: "title"
+      heading: "Breast Cancer Screening Myths"
+      points: ["That could cost lives"]
+      footage_query: "woman mammogram clinic"
+      narration: >-
+        Breast cancer is one of the most common cancers in American women, and finding it early can save lives. Yet many women
+        put off screening because of myths, fear, or confusion about when to start. In 2024, the guidelines changed. Today we
+        bust the most common breast cancer screening myths, explain the new advice, and cover the warning signs every woman,
+        and man, should know.
+    - layout: "big_number"
+      heading: "How Common Is It?"
+      points: ["About 1 in 8", "US women will get breast cancer"]
+      footage_query: "group of women walking"
+      narration: >-
+        About one in eight women in the United States will develop breast cancer during her lifetime. It is the second most
+        common cancer in American women, after skin cancer. But thanks to earlier detection and better treatment, death rates
+        have dropped a lot over the past few decades. When breast cancer is found early, most women survive.
+    - layout: "bullets"
+      heading: "The New Screening Advice"
+      points: ["Start at age 40", "Every 2 years", "Through age 74", "Talk to your doctor"]
+      footage_query: "calendar notebook planning"
+      narration: >-
+        In 2024, the US Preventive Services Task Force updated its advice. It now recommends that women at average risk get a
+        mammogram every two years starting at age forty, through age seventy four. This was lowered from fifty, because breast
+        cancer is being found more often in women in their forties. Some groups advise yearly screening, so talk to your
+        doctor about what fits you.
+    - layout: "myth_fact"
+      heading: "Start Screening at 50"
+      points: ["I can wait until 50", "Average risk starts at 40"]
+      footage_query: "woman birthday candles"
+      narration: >-
+        Myth one: you do not need a mammogram until you are fifty. Fact: the Task Force now recommends starting at forty for
+        women at average risk. Rates of breast cancer in women in their forties have been rising. Women at higher risk, like
+        those with a strong family history or a gene change, may need to start even earlier.
+    - layout: "myth_fact"
+      heading: "No Family History, No Risk"
+      points: ["No one in my family had it", "Most women diagnosed have no family history"]
+      footage_query: "family photo generations"
+      narration: >-
+        Myth two: if no one in my family had breast cancer, I will not get it. Fact: most women who get breast cancer have no
+        family history of the disease. The biggest risk factors are simply being a woman and getting older. Family history
+        does raise your risk, but its absence does not mean you are safe. Every woman needs screening.
+    - layout: "bullets"
+      heading: "Who Is at Higher Risk?"
+      points: ["Close relatives with breast cancer", "BRCA or other gene changes", "Chest radiation when young", "Dense breasts"]
+      footage_query: "woman talking doctor office"
+      narration: >-
+        Some women have a higher risk. This includes women with a mother, sister or daughter who had breast or ovarian cancer,
+        especially at a young age, women with a known gene change like BRCA1 or BRCA2, women who had radiation to the chest
+        before age thirty, and women with dense breasts. Women at higher risk may need earlier screening, MRI, or genetic
+        counseling.
+    - layout: "bullets"
+      heading: "Other Risk Factors"
+      points: ["Older age", "Alcohol", "Extra weight after menopause", "Not being active"]
+      footage_query: "wine glasses table"
+      narration: >-
+        Other things raise the risk too. Getting older. Starting periods early or menopause late. Having a first child after
+        thirty, or never having children. Taking some types of hormone therapy after menopause. Drinking alcohol, even
+        moderately. Having extra weight after menopause. And not being physically active. Some of these you can change.
+    - layout: "myth_fact"
+      heading: "Mammograms Are Dangerous"
+      points: ["Radiation from mammograms causes cancer", "The dose is very low"]
+      footage_query: "mammogram machine clinic"
+      narration: >-
+        Myth three: the radiation from mammograms is dangerous. Fact: mammograms use a very small dose of radiation, about the
+        same as what you get from natural background radiation over a few weeks. The benefit of finding cancer early is far
+        greater than the tiny risk from the radiation. Modern machines use even lower doses.
+    - layout: "myth_fact"
+      heading: "Mammograms Hurt Too Much"
+      points: ["The test is too painful", "It is brief discomfort"]
+      footage_query: "woman mammogram clinic"
+      narration: >-
+        Myth four: mammograms are too painful. Fact: a mammogram can be uncomfortable, because the breast is pressed for a few
+        seconds to get a clear picture, but it is quick. To make it easier, schedule it a week after your period, when breasts
+        are less tender, avoid caffeine beforehand if it makes your breasts sore, and tell the technologist if it hurts.
+    - layout: "bullets"
+      heading: "What Happens at a Mammogram"
+      points: ["Takes about 20 minutes", "Each breast pressed briefly", "Skip deodorant that day", "Results in days to weeks"]
+      footage_query: "mammogram machine clinic"
+      narration: >-
+        What happens during a mammogram? You undress from the waist up and wear a gown. A technologist places each breast on a
+        plate, and another plate presses it flat for a few seconds while the picture is taken. The whole visit takes about
+        twenty minutes. Do not wear deodorant, powder or lotion that day, since they can show up on the image.
+    - layout: "bullets"
+      heading: "3D Mammograms"
+      points: ["Also called tomosynthesis", "Takes pictures from many angles", "May find more cancers", "May mean fewer callbacks"]
+      footage_query: "doctor reading scan"
+      narration: >-
+        Many centers now offer 3D mammograms, also called digital breast tomosynthesis. The machine takes pictures from
+        several angles to create a layered image. Studies suggest they may find a few more cancers and lead to fewer callbacks
+        for extra images, especially in women with dense breasts. Ask your center whether they offer it, and whether your
+        insurance covers it.
+    - layout: "myth_fact"
+      heading: "A Callback Means Cancer"
+      points: ["Being called back means cancer", "Most callbacks are not cancer"]
+      footage_query: "woman talking phone desk"
+      narration: >-
+        Myth five: if you are called back after a mammogram, you have cancer. Fact: about one in ten women are called back for
+        more images or an ultrasound, and the great majority of them do not have cancer. Often the first image was not clear,
+        or there is normal dense tissue. Try not to panic, and go to your follow up appointment.
+    - layout: "bullets"
+      heading: "If Cancer Is Found Early"
+      points: ["Smaller surgery often possible", "More treatment choices", "High survival rates", "Strong support available"]
+      footage_query: "woman smiling outdoors"
+      narration: >-
+        Why does finding breast cancer early matter so much? Cancers found early are usually smaller and have not spread,
+        which means more treatment choices, often less surgery, and sometimes no need for chemotherapy. When breast cancer is
+        found before it spreads, the five year survival rate is very high. Today, millions of breast cancer survivors are
+        living in the United States.
+    - layout: "bullets"
+      heading: "Getting Your Results"
+      points: ["Ask how you will be told", "Check your patient portal", "Call if you do not hear", "Keep a copy of reports"]
+      footage_query: "woman reading phone"
+      narration: >-
+        After your mammogram, ask how and when you will get your results. Many centers post them on a patient portal and mail
+        a letter. If you have not heard back within two weeks, call. Never assume no news is good news. Keep copies of your
+        reports, and if you change centers, ask them to send your old images so they can compare.
+    - layout: "bullets"
+      heading: "Dense Breasts"
+      points: ["Common, and normal", "Can hide cancer", "Slightly higher risk", "You will be told"]
+      footage_query: "doctor explaining patient"
+      narration: >-
+        About half of women over forty have dense breasts, meaning more glandular and fibrous tissue than fat. This is normal,
+        but it can make cancers harder to see on a mammogram, and slightly raises risk. Since 2024, the FDA requires mammogram
+        centers to tell women whether their breasts are dense. If yours are, ask your doctor whether extra imaging makes
+        sense.
+    - layout: "warning"
+      heading: "Warning Signs to Know"
+      points: ["A new lump or thickening", "Change in breast size or shape", "Skin dimpling or redness", "Nipple changes or discharge"]
+      footage_query: "woman self exam"
+      narration: >-
+        Screening is important, but so is knowing your body. See your doctor if you notice a new lump or thickening in the
+        breast or underarm, a change in size or shape, dimpling or puckering of the skin, redness, scaling or an orange peel
+        look, a nipple turning inward, nipple discharge other than milk, or pain in one spot that does not go away.
+    - layout: "myth_fact"
+      heading: "A Lump Always Means Cancer"
+      points: ["Any lump is cancer", "Most lumps are not cancer"]
+      footage_query: "woman talking doctor office"
+      narration: >-
+        Myth six: finding a lump means you have cancer. Fact: most breast lumps are not cancer. They are often cysts or
+        harmless growths. But every new lump should be checked by a doctor, even if you just had a normal mammogram. Do not
+        wait to see if it goes away. Early checking brings peace of mind, or early treatment.
+    - layout: "myth_fact"
+      heading: "No Lump Means No Cancer"
+      points: ["If I feel nothing, I am fine", "Early cancer often cannot be felt"]
+      footage_query: "woman mammogram clinic"
+      narration: >-
+        Myth seven: if I do not feel a lump, I do not have breast cancer. Fact: mammograms can find cancers years before they
+        are big enough to feel. That is the main reason screening saves lives. Some breast cancers, like inflammatory breast
+        cancer, cause redness and swelling rather than a lump. Do not skip screening just because you feel fine.
+    - layout: "bullets"
+      heading: "Breast Self-Awareness"
+      points: ["Know how your breasts normally look", "Notice changes", "Report changes quickly", "No strict schedule needed"]
+      footage_query: "woman looking mirror"
+      narration: >-
+        Experts now focus on breast self awareness. This means knowing how your breasts normally look and feel, so you notice
+        when something changes. You do not have to follow a strict monthly exam routine, but many women find regular checks in
+        the shower or mirror helpful. Report any change to your doctor promptly.
+    - layout: "myth_fact"
+      heading: "Men Cannot Get It"
+      points: ["Breast cancer is only for women", "Men get it too"]
+      footage_query: "middle aged man doctor consultation"
+      narration: >-
+        Myth eight: men cannot get breast cancer. Fact: men have breast tissue too, and about one in every hundred breast
+        cancers in the United States is found in a man. Men often find it later, because they do not expect it. Men should see
+        a doctor for any lump, swelling, nipple change or discharge, especially with a family history or BRCA gene change.
+    - layout: "myth_fact"
+      heading: "Deodorant and Bras Cause It"
+      points: ["Antiperspirants and underwire bras cause cancer", "No proven link"]
+      footage_query: "deodorant close up"
+      narration: >-
+        Myth nine: antiperspirants, underwire bras, or cell phones cause breast cancer. Fact: large studies have found no
+        proven link between these and breast cancer. These myths spread quickly online, but they can distract from the real
+        risk factors and from the step that matters most: getting screened on time.
+    - layout: "bullets"
+      heading: "Genetic Testing"
+      points: ["Strong family history", "Ashkenazi Jewish heritage", "Cancer at a young age", "Talk to a genetic counselor"]
+      footage_query: "lab test tubes"
+      narration: >-
+        Who should think about genetic testing? Women with close relatives who had breast cancer at a young age, ovarian
+        cancer, or male breast cancer, women with Ashkenazi Jewish heritage, and those with a known family gene change. Your
+        doctor can use a risk tool and refer you to a genetic counselor. If you have a gene change, there are options to lower
+        your risk.
+    - layout: "bullets"
+      heading: "Unequal Outcomes"
+      points: ["Black women more likely to die", "Often diagnosed younger", "More aggressive types", "Screening on time matters"]
+      footage_query: "diverse women group"
+      narration: >-
+        Breast cancer does not affect everyone equally. Black women in the United States are about forty percent more likely
+        to die of breast cancer than white women, partly because they are more likely to get aggressive types and be diagnosed
+        at younger ages, and partly because of unequal access to care. This is one reason screening now starts at forty.
+    - layout: "bullets"
+      heading: "Cost and Coverage"
+      points: ["Most plans cover screening", "No out-of-pocket cost", "Free programs if uninsured", "Ask about follow-up costs"]
+      footage_query: "insurance card hand"
+      narration: >-
+        Cost should not stop you. Under federal law, most health insurance plans, including Medicare, cover screening
+        mammograms with no out of pocket cost. If you do not have insurance, the CDC's National Breast and Cervical Cancer
+        Early Detection Program offers free or low cost mammograms in every state. Ask about costs for follow up tests if you
+        are called back.
+    - layout: "bullets"
+      heading: "Lowering Your Risk"
+      points: ["Limit alcohol", "Stay active", "Healthy weight after menopause", "Breastfeed if you can"]
+      footage_query: "women exercising park"
+      narration: >-
+        You cannot control every risk, but some habits help. Limit alcohol, or avoid it. Stay physically active, with at least
+        one hundred fifty minutes of activity a week. Keep a healthy weight, especially after menopause. If you can,
+        breastfeeding may lower your risk. If you take hormone therapy after menopause, talk with your doctor about the risks
+        and benefits.
+    - layout: "bullets"
+      heading: "After 74"
+      points: ["Talk with your doctor", "Depends on your health", "Depends on your wishes", "Keep reporting changes"]
+      footage_query: "elderly woman talking doctor"
+      narration: >-
+        What about women over seventy four? The Task Force says there is not enough evidence to make a clear recommendation.
+        Many women in good health continue screening, while others decide to stop. Talk with your doctor about your health,
+        life expectancy and wishes. At any age, report new breast changes to your doctor.
+    - layout: "bullets"
+      heading: "Questions for Your Doctor"
+      points: ["When should I start?", "How often should I go?", "Are my breasts dense?", "Do I need other tests?"]
+      footage_query: "patient talking doctor"
+      narration: >-
+        At your next visit, ask: based on my risk, when should I start mammograms, and how often? Are my breasts dense, and do
+        I need extra imaging? Should I consider genetic counseling? Is a 3D mammogram right for me? And what should I do if I
+        notice a change between screenings?
+    - layout: "bullets"
+      heading: "Help Someone Get Screened"
+      points: ["Remind your mother or sister", "Go together", "Help with rides or childcare", "Share this video"]
+      footage_query: "women friends walking"
+      narration: >-
+        Many women skip screening because they are busy caring for everyone else. You can help. Remind your mother, sister,
+        wife or friends. Book your appointments on the same day and go together. Offer a ride or watch the kids. A simple
+        reminder from someone who cares can save a life.
+    - layout: "bullets"
+      heading: "Quick Recap"
+      points: ["Mammogram every 2 years from 40", "Most women have no family history", "Callbacks are usually not cancer", "Report any breast change"]
+      footage_query: "notebook checklist pen"
+      narration: >-
+        Let us recap. Women at average risk should get a mammogram every two years starting at forty, through seventy four.
+        Most women with breast cancer have no family history. Mammograms are safe and quick. Most callbacks and lumps are not
+        cancer, but always get them checked. Men can get breast cancer too. And know your body, and report any change.
+    - layout: "outro"
+      heading: "Remember"
+      points: ["Start at 40", "Every 2 years", "Report changes"]
+      footage_query: "women friends walking"
+      narration: >-
+        Remember: start screening at forty, go every two years, and report any breast change to your doctor. Share this with
+        every woman you love. This video is for education only, not medical advice. Like and subscribe to Health Support
+        Studio for a new health video every day.
+  short_title: "Mammograms now start at 40 #Shorts"
+  short_caption: >-
+    Breast cancer screening advice changed. Here is what to know. Educational only, not medical advice. #BreastCancer
+    #Mammogram #WomensHealth #HealthEducation
+  short_scenes:
+    - layout: "title"
+      heading: "Mammograms Start at 40"
+      points: ["The new advice"]
+      footage_query: "woman mammogram clinic"
+      narration: >-
+        Breast cancer screening advice changed in 2024. Here is what you need to know.
+    - layout: "bullets"
+      heading: "New Advice"
+      points: ["Average risk: start at 40", "Every 2 years", "Through age 74"]
+      footage_query: "calendar notebook planning"
+      narration: >-
+        Women at average risk should now get a mammogram every two years starting at age forty, not fifty. Most women with
+        breast cancer have no family history, so do not wait. Most insurance covers it with no cost, and free programs help if
+        you are uninsured.
+    - layout: "outro"
+      heading: "Full Video"
+      points: ["On YouTube"]
+      footage_query: "women friends walking"
+      narration: >-
+        Learn more breast cancer myths in our full video, on the Health Support Studio YouTube channel.
