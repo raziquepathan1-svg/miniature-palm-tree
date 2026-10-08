@@ -13,8 +13,9 @@ plan:
     In this video:
     • What happens in the airways during an asthma attack
     • Early warning signs and common triggers
-    • Why you need an asthma action plan
-    • Emergency signs in adults and children
+    • Danger signs that mean call 911
+    • Rescue and controller inhalers, and why you need an action plan
+    • Preventing attacks at home, school and outdoors
 
     #Asthma #AsthmaAttack #WarningSigns #LungHealth #HealthEducation
   tags: ["asthma attack", "asthma attack symptoms", "asthma warning signs", "asthma action plan", "rescue inhaler", "asthma in children", "asthma triggers", "wheezing", "shortness of breath", "lung health", "health education"]
@@ -25,75 +26,237 @@ plan:
   scenes:
     - layout: "title"
       heading: "Asthma Attack Warning Signs"
-      points: ["And when to call 911"]
-      footage_query: "person using inhaler"
+      points: ["When to call 911"]
+      footage_query: "person using asthma inhaler"
       narration: >-
-        Millions of Americans live with asthma, including many children. Most of the time it can be controlled. But an asthma
-        attack can go from mild to life threatening, sometimes quickly. Today you will learn the early signs, what to do, and
-        the danger signs that mean call 911.
+        An asthma attack can start with a little cough or a tight chest, and within minutes become a fight for every breath.
+        Most attacks can be managed at home with the right plan, but some are life threatening. Today you will learn what
+        happens during an asthma attack, the early warning signs, the danger signs that mean call 911, and how to prevent
+        attacks.
+    - layout: "big_number"
+      heading: "A Common Condition"
+      points: ["About 1 in 12", "Americans have asthma"]
+      footage_query: "children playing park"
+      narration: >-
+        Asthma is very common. About one in twelve people in the United States has it, including millions of children. It is
+        one of the most common long term conditions in kids, and a leading reason for missed school days. Every year, asthma
+        sends many people to the emergency room, and thousands of Americans die from it. Most of these deaths can be
+        prevented.
     - layout: "bullets"
-      heading: "What Happens"
-      points: ["Airways swell", "Muscles around them tighten", "Extra mucus forms", "Less air gets through"]
-      footage_query: "lungs breathing animation"
+      heading: "What Happens in an Attack"
+      points: ["Airways swell inside", "Muscles around them tighten", "Extra mucus blocks air", "Breathing gets hard"]
+      footage_query: "medical illustration lungs"
       narration: >-
-        During an asthma attack, three things happen in the airways of the lungs. The lining swells, the muscles around the
-        airways tighten, and the airways make extra mucus. Together, these make the airways narrow, so it is harder to move air
-        in and out.
+        In asthma, the airways in the lungs are sensitive and inflamed. During an attack, three things happen. The lining of
+        the airways swells. The muscles around the airways squeeze tight. And the airways make extra thick mucus. Together,
+        this narrows the tubes air must pass through, making it hard to breathe, especially to breathe out.
     - layout: "bullets"
       heading: "Common Triggers"
-      points: ["Colds and flu", "Smoke and air pollution", "Pollen, dust mites, pets", "Exercise and cold air"]
-      footage_query: "smoke air pollution city"
+      points: ["Colds and flu", "Smoke and air pollution", "Pollen, dust mites, pets, mold", "Cold air and exercise"]
+      footage_query: "pollen flowers close up"
       narration: >-
-        Common triggers include colds and the flu, tobacco smoke, air pollution and wildfire smoke, pollen, mold, dust mites,
-        pet dander, strong smells, cold air, and exercise. Knowing your triggers, and avoiding them when you can, helps prevent
-        attacks.
-    - layout: "bullets"
+        Asthma attacks are often set off by triggers. Common ones include colds, flu and other respiratory infections, tobacco
+        smoke, wildfire smoke and air pollution, allergens like pollen, dust mites, pet dander, mold and cockroaches, cold
+        air, exercise, strong smells and chemicals, and sometimes strong emotions. Some medicines, like aspirin, trigger
+        attacks in some adults.
+    - layout: "warning"
       heading: "Early Warning Signs"
-      points: ["Coughing, especially at night", "Wheezing", "Chest tightness", "Shortness of breath"]
-      footage_query: "woman coughing home"
+      points: ["Coughing, especially at night", "Mild wheezing", "Tight chest", "Tired, short of breath"]
+      footage_query: "woman coughing night"
       narration: >-
-        Early warning signs include coughing, especially at night or with exercise, wheezing, which is a whistling sound when
-        breathing, chest tightness, and shortness of breath. You may also feel tired or notice you cannot do your usual
-        activities. Treating these early signs quickly can stop an attack from getting worse.
+        Many attacks give early warnings, hours or even days before. Watch for coughing, especially at night or early morning,
+        mild wheezing, a tight chest, shortness of breath with activity, feeling tired or weak with exercise, and signs of a
+        cold or allergies. If your asthma plan includes a peak flow meter, a drop in your reading is another early sign.
     - layout: "bullets"
-      heading: "Follow Your Action Plan"
-      points: ["Written plan from your doctor", "Use rescue inhaler as directed", "Know when to get help", "Share it with school, family"]
-      footage_query: "doctor explaining inhaler patient"
+      heading: "Act Early"
+      points: ["Follow your action plan", "Use your rescue inhaler", "Avoid the trigger", "Watch how you respond"]
+      footage_query: "person using asthma inhaler"
       narration: >-
-        Everyone with asthma should have a written asthma action plan from their doctor. It tells you which medicines to take
-        every day, how to use your rescue inhaler when symptoms start, and exactly when to call the doctor or get emergency
-        help. Give a copy to your child's school, and to family members.
+        The earlier you act, the easier an attack is to control. At the first warning signs, follow your asthma action plan.
+        Usually, this means using your quick relief, or rescue, inhaler, getting away from the trigger, and sitting upright.
+        Then watch closely. If you get better and stay better, keep following your plan. If not, move to the next step.
     - layout: "warning"
-      heading: "Call 911 If"
-      points: ["Trouble talking or walking", "Lips or nails blue or gray", "Rescue inhaler isn't helping", "Skin sucking in at ribs or neck"]
-      footage_query: "ambulance emergency lights"
+      heading: "Signs of a Serious Attack"
+      points: ["Rescue inhaler not helping", "Hard to talk in sentences", "Ribs pull in with breaths", "Using neck and belly muscles"]
+      footage_query: "man struggling breathe"
       narration: >-
-        Now the danger signs. Call 911 if someone is struggling to breathe, cannot talk or walk because they are out of breath,
-        their lips or fingernails look blue or gray, their rescue inhaler is not helping, or the skin between their ribs or at
-        the neck is sucking in with each breath. In children, also watch for very fast breathing and flaring nostrils.
+        Now the danger signs. Get medical help right away if your rescue inhaler is not helping, or you need it more often
+        than every four hours. Other danger signs include trouble speaking in full sentences, breathing very fast, the skin
+        pulling in between the ribs or at the neck with each breath, and using shoulder and belly muscles to breathe.
     - layout: "warning"
-      heading: "While You Wait"
-      points: ["Sit upright, stay calm", "Use rescue inhaler per plan", "Move away from triggers"]
-      footage_query: "person sitting calm breathing"
+      heading: "Call 911 Now"
+      points: ["Blue or gray lips or nails", "Very hard to breathe", "Confused or drowsy", "Too breathless to walk"]
+      footage_query: "person calling phone emergency"
       narration: >-
-        While you wait for help, sit upright, and try to stay calm. Keep using the rescue inhaler as the action plan or
-        emergency dispatcher instructs. Move away from smoke or other triggers. Do not lie down, and do not wait to see if it
-        passes.
+        Call 911 right away if lips, face or fingernails turn blue or gray, if breathing is extremely hard, if the person is
+        too breathless to walk or talk, or if they become confused, very sleepy, or pass out. These signs mean the body is not
+        getting enough oxygen. Keep using the rescue inhaler as your plan says while you wait for help.
+    - layout: "myth_fact"
+      heading: "No Wheeze Means Safe"
+      points: ["Quiet chest means improving", "A silent chest is dangerous"]
+      footage_query: "doctor stethoscope chest"
+      narration: >-
+        Myth: if the wheezing stops, the attack must be getting better. Fact: in a very severe attack, so little air is moving
+        that wheezing can go quiet. Doctors call this a silent chest, and it is an emergency. Look at the whole person: are
+        they breathing easier, talking more easily, and is their color normal? If not, call 911.
     - layout: "bullets"
-      heading: "Signs Asthma Isn't Controlled"
-      points: ["Rescue inhaler more than 2 days a week", "Waking up at night", "Missing work or school", "Talk to your doctor"]
-      footage_query: "patient talking doctor office"
+      heading: "While You Wait for Help"
+      points: ["Sit upright", "Stay calm, slow breaths", "Keep using rescue inhaler", "Loosen tight clothing"]
+      footage_query: "paramedic helping patient"
       narration: >-
-        Finally, if you need your rescue inhaler more than two days a week, wake up at night with asthma, or miss work or
-        school because of it, your asthma may not be well controlled. Talk to your doctor. Better daily treatment can prevent
-        attacks.
+        While waiting for help, have the person sit upright, leaning slightly forward, not lying down. Stay calm and help them
+        take slow, steady breaths. Loosen tight clothing. Keep using the rescue inhaler as the action plan or 911 dispatcher
+        instructs. If they become unresponsive and are not breathing normally, start CPR.
+    - layout: "bullets"
+      heading: "Signs in Children"
+      points: ["Fast breathing", "Belly sucking in with breaths", "Grunting or nostrils flaring", "Too breathless to eat or play"]
+      footage_query: "child coughing mother"
+      narration: >-
+        Children may not tell you they are short of breath. Watch for fast breathing, the belly or skin between the ribs
+        sucking in with each breath, flaring nostrils, grunting, a cough that will not stop, and being too breathless to eat,
+        talk, or play. Babies may have trouble feeding. If a child's lips turn blue or gray, call 911.
+    - layout: "bullets"
+      heading: "Rescue Inhalers"
+      points: ["Quick relief in minutes", "Opens tight airways", "Carry it everywhere", "Track how often you use it"]
+      footage_query: "asthma inhaler close up"
+      narration: >-
+        Let us talk about medicines. A rescue inhaler, often albuterol, works within minutes to relax the tight muscles around
+        the airways. Everyone with asthma should carry one everywhere. But it does not treat the swelling underneath. If you
+        need it more than two days a week, other than before exercise, your asthma is not well controlled.
+    - layout: "bullets"
+      heading: "Controller Medicines"
+      points: ["Used every day", "Calm airway swelling", "Prevent attacks", "Do not stop when you feel well"]
+      footage_query: "woman using inhaler morning"
+      narration: >-
+        Many people with asthma also need a controller medicine, usually an inhaled steroid, taken every day. It calms the
+        swelling in the airways over time and prevents attacks. It does not work right away, so it is not for emergencies.
+        Keep taking it even when you feel well, because that means it is working. Rinse your mouth after using it.
+    - layout: "bullets"
+      heading: "Use Your Inhaler Right"
+      points: ["Shake if needed", "Breathe out fully first", "Use a spacer", "Ask to check your technique"]
+      footage_query: "doctor teaching inhaler"
+      narration: >-
+        Many people use their inhalers the wrong way, so less medicine reaches the lungs. Follow the instructions for your
+        device. With many inhalers, you shake it, breathe out fully, then breathe in slowly as you press it, and hold your
+        breath for about ten seconds. A spacer, a tube that attaches to the inhaler, helps more medicine reach the lungs. Ask
+        to check your technique.
+    - layout: "myth_fact"
+      heading: "Steroid Inhalers Are Dangerous"
+      points: ["Inhaled steroids are risky", "They are safe and effective"]
+      footage_query: "pharmacist counter customer"
+      narration: >-
+        Myth: inhaled steroids are dangerous, like bodybuilding steroids. Fact: they are a different kind of medicine, and are
+        very safe for long term use at prescribed doses, including for most children. They deliver small doses right to the
+        lungs. Not using a needed controller is much riskier, because uncontrolled asthma leads to more attacks and emergency
+        visits.
+    - layout: "bullets"
+      heading: "Your Asthma Action Plan"
+      points: ["Written plan from your doctor", "Green, yellow and red zones", "What to take and when", "When to get help"]
+      footage_query: "doctor giving instructions papers"
+      narration: >-
+        Everyone with asthma should have a written asthma action plan. It tells you what medicines to take each day, what to
+        do when symptoms start, and when to get emergency help. Many plans use three zones, like a traffic light. Ask your
+        doctor to make one with you, and share it with family, school, and caregivers.
+    - layout: "bullets"
+      heading: "The Three Zones"
+      points: ["Green: doing well", "Yellow: getting worse", "Red: medical alert", "Act on each zone"]
+      footage_query: "traffic light close up"
+      narration: >-
+        In the green zone, you have no symptoms and can do your usual activities, so you take your daily medicines. In the
+        yellow zone, symptoms like coughing, wheezing or a tight chest have started, so you add quick relief medicine as the
+        plan says. In the red zone, medicine is not helping, or breathing is very hard, so you get emergency help right away.
+    - layout: "bullets"
+      heading: "Peak Flow Meters"
+      points: ["Measures how well you blow out", "Know your personal best", "Readings guide your zone", "Helpful for some people"]
+      footage_query: "peak flow meter close up"
+      narration: >-
+        A peak flow meter is a small handheld device that measures how fast you can blow air out. Some people use it daily to
+        spot problems early, before symptoms appear. You first find your personal best number when you feel well. Your action
+        plan then uses percentages of that number to show your zone. Ask your doctor if one is right for you.
+    - layout: "myth_fact"
+      heading: "Asthma Means No Exercise"
+      points: ["People with asthma should avoid sports", "Most can be very active"]
+      footage_query: "woman jogging park"
+      narration: >-
+        Myth: people with asthma should avoid exercise. Fact: with good control, most people with asthma can be very active,
+        and many top athletes have asthma. Exercise strengthens the heart and lungs. Warm up first, and if your doctor
+        recommends it, use your rescue inhaler about fifteen minutes before exercise. In cold weather, cover your nose and
+        mouth with a scarf.
+    - layout: "myth_fact"
+      heading: "Kids Always Outgrow It"
+      points: ["Children always outgrow asthma", "It can come back later"]
+      footage_query: "teenager playing basketball"
+      narration: >-
+        Myth: children always outgrow asthma. Fact: symptoms often get better in the teen years, but the sensitive airways may
+        still be there, and asthma can come back later in life. Adults can also develop asthma for the first time. Keep taking
+        asthma seriously, and see a doctor if symptoms return.
+    - layout: "bullets"
+      heading: "Control Triggers at Home"
+      points: ["No smoking inside", "Wash bedding in hot water", "Control dust, mold and pests", "Keep pets out of bedrooms"]
+      footage_query: "bed sheets laundry"
+      narration: >-
+        You can reduce many triggers at home. Never allow smoking in your home or car. Wash bedding in hot water every week,
+        and use dust mite covers on pillows and mattresses. Fix leaks and clean mold. Keep pets out of the bedroom. Control
+        cockroaches with traps and sealed food. Use the exhaust fan when cooking, and avoid strong cleaning sprays and air
+        fresheners.
+    - layout: "bullets"
+      heading: "Watch the Air Outside"
+      points: ["Check the air quality index", "Stay in on bad air days", "Watch for wildfire smoke", "Plan around high pollen"]
+      footage_query: "smoky city skyline"
+      narration: >-
+        Outdoor air matters too. Check the air quality index on your weather app or AirNow dot gov. On days with high
+        pollution, ozone or wildfire smoke, limit time outdoors, especially exercise, and keep windows closed. During pollen
+        season, check pollen counts, shower after being outside, and ask your doctor about allergy treatment.
+    - layout: "bullets"
+      heading: "Vaccines Help Prevent Attacks"
+      points: ["Yearly flu shot", "COVID vaccine", "Pneumonia vaccine", "RSV vaccine if eligible"]
+      footage_query: "vaccine syringe arm"
+      narration: >-
+        Respiratory infections are one of the most common asthma triggers. People with asthma are more likely to have serious
+        problems from the flu. Get a flu shot every year, and stay up to date on COVID vaccines. Ask your doctor about
+        pneumonia and RSV vaccines, which are recommended for some adults with asthma. Wash your hands often during cold and
+        flu season.
+    - layout: "bullets"
+      heading: "Asthma at School"
+      points: ["Share the action plan", "Inhaler at school", "Train school staff", "Kids can often carry their own"]
+      footage_query: "children classroom teacher"
+      narration: >-
+        If your child has asthma, give the school a copy of the action plan. Make sure a rescue inhaler is at school, and on
+        field trips and at sports. Every state allows students to carry their own inhaler when appropriate, with the doctor's
+        and parents' permission. Make sure the teacher, coach and school staff know the danger signs and when to call 911.
+    - layout: "warning"
+      heading: "After an Attack"
+      points: ["See your doctor within days", "Review what happened", "Update your plan", "Refill your medicines"]
+      footage_query: "patient talking doctor"
+      narration: >-
+        After any serious attack or emergency visit, see your doctor within a few days. Talk about what triggered the attack,
+        whether you were taking your controller medicine, and whether your plan needs changing. Make sure your prescriptions
+        are filled. One emergency visit is a strong sign that your asthma needs better control. Ask whether you should see an
+        asthma specialist, such as an allergist or a lung doctor.
+    - layout: "bullets"
+      heading: "Signs of Poor Control"
+      points: ["Symptoms more than 2 days a week", "Waking at night", "Rescue inhaler often", "Limiting your activities"]
+      footage_query: "man waking night"
+      narration: >-
+        How do you know your asthma is not well controlled? If you have symptoms more than two days a week, wake up at night
+        with asthma more than twice a month, use your rescue inhaler more than two days a week, or have to limit your
+        activities, talk to your doctor. Newer treatments are available for people whose asthma stays hard to control.
+    - layout: "bullets"
+      heading: "Quick Recap"
+      points: ["Know your early signs", "Carry your rescue inhaler", "Have an action plan", "Blue lips or no relief: 911"]
+      footage_query: "notebook checklist pen"
+      narration: >-
+        Let us recap. Watch for early warning signs like coughing at night and a tight chest. Carry your rescue inhaler
+        everywhere, and take controller medicine every day if prescribed. Have a written asthma action plan. And call 911 if
+        the rescue inhaler is not helping, if talking is hard, or if lips turn blue or gray.
     - layout: "outro"
       heading: "Remember"
-      points: ["Know your triggers", "Follow your action plan", "Blue lips or can't talk? Call 911"]
-      footage_query: "family park playing"
+      points: ["Act early", "Follow your plan", "No relief: call 911"]
+      footage_query: "family walking outdoors"
       narration: >-
-        Remember: know your triggers, follow your action plan, and call 911 for the danger signs. This video is for education
-        only, not medical advice. Like and subscribe to Health Support Studio for a new health video every day.
+        Remember: act early, follow your asthma action plan, and call 911 if the rescue inhaler does not help. Share this with
+        a parent, teacher or coach of a child with asthma. This video is for education only, not medical advice. Like and
+        subscribe to Health Support Studio for a new health video every day.
   short_title: "Asthma attack? These signs mean call 911 #Shorts"
   short_caption: >-
     An asthma attack can go from mild to life-threatening. Know the signs that mean call 911 right away. Educational only,
