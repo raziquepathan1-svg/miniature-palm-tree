@@ -144,7 +144,7 @@ plan:
         to sleep, since many attacks end with sleep. Anti nausea medicine can help if you feel sick.
     - layout: "warning"
       heading: "Medication Overuse Headache"
-      points: ["Pain pills more than 2 to 3 days a week", "Can cause more headaches", "Track your use", "Talk to your doctor"]
+      points: ["Pain pills over 3 days weekly", "Can cause more headaches", "Track your use", "Talk to your doctor"]
       footage_query: "pill bottles table"
       narration: >-
         Here is an important warning. Taking pain relievers or migraine medicines too often, generally more than two or three
@@ -284,7 +284,7 @@ plan:
         Taking pain pills for headaches too often can actually make them worse.
     - layout: "warning"
       heading: "Rebound Headaches"
-      points: ["Pain pills over 2 to 3 days a week", "More frequent headaches", "Ask about prevention"]
+      points: ["Pain pills over 3 days weekly", "More frequent headaches", "Ask about prevention"]
       footage_query: "woman holding head pain"
       narration: >-
         Using pain relievers or migraine medicines more than two or three days a week can cause rebound headaches, which
