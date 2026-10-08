@@ -1,0 +1,295 @@
+queue_topic: "Anxiety disorders: signs, types and treatments that work"
+style: "Explainer"
+sources:
+  - "NIH NIMH, Anxiety Disorders: https://www.nimh.nih.gov/health/topics/anxiety-disorders"
+  - "MedlinePlus, Anxiety: https://medlineplus.gov/anxiety.html"
+  - "988 Suicide and Crisis Lifeline: https://988lifeline.org/"
+plan:
+  topic: "Anxiety disorders: signs, types and treatments that work"
+  title: "Anxiety: When Worry Takes Over (and What Helps)"
+  description: |-
+    Anxiety disorders are the most common mental health conditions in the US, and they are very treatable. Learn the signs, the types, how panic attacks differ from heart attacks, and the treatments and skills that really help.
+
+    In this video:
+    • Normal worry or an anxiety disorder?
+    • Physical and emotional signs
+    • Panic attacks, social anxiety and phobias
+    • Therapy, medicines and calm breathing
+    • Helping children, older adults and loved ones
+
+    #Anxiety #MentalHealth #PanicAttack #StressRelief #HealthEducation
+  tags: ["anxiety", "anxiety symptoms", "anxiety disorder", "panic attack", "generalized anxiety", "social anxiety", "breathing exercise", "cbt therapy", "stress relief", "mental health", "health education"]
+  thumbnail_text: "WHEN WORRY TAKES OVER"
+  thumbnail_highlight: "WORRY"
+  thumbnail_photo_query: "woman anxious hands"
+  playlist: "Healthy Habits & Prevention"
+  scenes:
+    - layout: "title"
+      heading: "Anxiety Explained"
+      points: ["When worry takes over"]
+      footage_query: "woman anxious hands"
+      narration: >-
+        Everyone feels anxious sometimes, before a test, a job interview, or a big decision. That is normal, and it can even
+        help us. But for millions of people, worry and fear do not go away, and they start to take over daily life. Today you
+        will learn the difference between normal worry and an anxiety disorder, the signs to watch for, and the treatments
+        that really work.
+    - layout: "big_number"
+      heading: "Very Common"
+      points: ["Nearly 1 in 5", "US adults have an anxiety disorder each year"]
+      footage_query: "group of people walking city"
+      narration: >-
+        Anxiety disorders are the most common mental health conditions in the United States. Nearly one in five adults has an
+        anxiety disorder in a given year, and about one in three will have one at some point in life. They are more common in
+        women. Anxiety disorders are very treatable, yet many people never get help.
+    - layout: "bullets"
+      heading: "Normal Worry or a Disorder?"
+      points: ["Normal: tied to a real event", "Normal: passes with time", "Disorder: most days, months", "Disorder: gets in the way of life"]
+      footage_query: "woman thinking window"
+      narration: >-
+        How do you tell normal worry from an anxiety disorder? Normal anxiety is tied to a real event and fades when it
+        passes. An anxiety disorder means the worry or fear is much bigger than the situation, happens most days for months,
+        is hard to control, and gets in the way of work, school, relationships or sleep.
+    - layout: "bullets"
+      heading: "What Happens in Your Body"
+      points: ["Fight or flight response", "Heart races, breathing speeds up", "Muscles tense", "Stomach churns"]
+      footage_query: "medical illustration brain"
+      narration: >-
+        Anxiety is your body's alarm system. When the brain senses danger, it releases stress hormones like adrenaline. Your
+        heart races, breathing speeds up, muscles tense, and your stomach churns, getting you ready to fight or run. This is
+        helpful in real danger. In anxiety disorders, the alarm goes off too often, too strongly, or when there is no real
+        danger.
+    - layout: "warning"
+      heading: "Common Signs of Anxiety"
+      points: ["Constant worry", "Restless or on edge", "Trouble concentrating", "Irritability"]
+      footage_query: "man stressed at desk"
+      narration: >-
+        Common signs of anxiety include worrying most of the time about many things, feeling restless, keyed up, or on edge,
+        trouble concentrating or feeling your mind go blank, irritability, and avoiding situations that make you anxious. Many
+        people also seek constant reassurance, or spend a lot of time planning for every possible problem.
+    - layout: "warning"
+      heading: "Physical Signs"
+      points: ["Racing heart", "Tight muscles, headaches", "Stomach upset", "Trouble sleeping"]
+      footage_query: "woman holding stomach"
+      narration: >-
+        Anxiety is not just in your head. It often causes physical symptoms, like a racing or pounding heart, sweating,
+        shaking, shortness of breath, tight muscles, headaches, stomach aches, nausea or diarrhea, feeling tired, and trouble
+        falling or staying asleep. Many people see doctors for these symptoms before anxiety is recognized.
+    - layout: "bullets"
+      heading: "Generalized Anxiety Disorder"
+      points: ["Worry about many things", "Most days for 6 months", "Hard to control", "Tired and tense"]
+      footage_query: "woman lying awake bed"
+      narration: >-
+        There are several types of anxiety disorders. Generalized anxiety disorder, or GAD, means excessive worry about many
+        everyday things, like health, money, work or family, on most days for at least six months. The worry is hard to
+        control, and often comes with tiredness, muscle tension, poor sleep and trouble focusing.
+    - layout: "bullets"
+      heading: "Panic Disorder"
+      points: ["Sudden waves of intense fear", "Peak within minutes", "Racing heart, chest pain", "Fear of the next attack"]
+      footage_query: "woman panic breathing"
+      narration: >-
+        Panic disorder involves repeated panic attacks, sudden waves of intense fear that peak within minutes. During an
+        attack, people may have a pounding heart, chest pain, shortness of breath, shaking, dizziness, tingling, or a feeling
+        of losing control or dying. People with panic disorder often worry about the next attack, and may avoid places where
+        attacks happened.
+    - layout: "warning"
+      heading: "Panic Attack or Heart Attack?"
+      points: ["They can feel alike", "Chest pain needs checking", "Especially if you have risk factors", "Call 911 if unsure"]
+      footage_query: "person calling phone emergency"
+      narration: >-
+        A panic attack can feel very much like a heart attack. If you have chest pain or pressure, shortness of breath, or
+        pain in your arm, jaw or back, especially for the first time, or if you have heart risk factors, call 911. It is
+        always better to be checked. Once heart problems are ruled out, your doctor can help with panic attacks.
+    - layout: "bullets"
+      heading: "Social Anxiety and Phobias"
+      points: ["Intense fear of being judged", "Avoiding social situations", "Strong fear of specific things", "Far beyond the real danger"]
+      footage_query: "man alone party"
+      narration: >-
+        Social anxiety disorder is an intense fear of being judged, embarrassed or watched by others. People may avoid
+        speaking up, eating in public, or meeting new people. Specific phobias are strong fears of particular things, like
+        flying, heights, needles or animals, far beyond the real danger. People often go out of their way to avoid them.
+    - layout: "bullets"
+      heading: "Related Conditions"
+      points: ["Obsessive-compulsive disorder", "Post-traumatic stress disorder", "Separation anxiety", "Treated with similar methods"]
+      footage_query: "woman thinking window"
+      narration: >-
+        Some related conditions share features with anxiety. Obsessive compulsive disorder involves unwanted, repeated
+        thoughts and behaviors. Post traumatic stress disorder can follow a frightening or dangerous event, with flashbacks,
+        nightmares and feeling on guard. Children and adults can have separation anxiety. Many of the same treatments help
+        these conditions too.
+    - layout: "bullets"
+      heading: "What Causes Anxiety?"
+      points: ["Genes and family history", "Brain chemistry", "Stressful or traumatic events", "Health conditions"]
+      footage_query: "family photo generations"
+      narration: >-
+        What causes anxiety disorders? Usually a mix of things. They often run in families. Brain chemistry plays a role.
+        Stressful or traumatic life events, especially in childhood, raise the risk. Personality traits, like being shy or
+        cautious as a child, can too. Some health conditions, like thyroid problems or heart rhythm problems, and some
+        medicines and substances can cause anxiety symptoms.
+    - layout: "warning"
+      heading: "Things That Make It Worse"
+      points: ["Too much caffeine", "Alcohol and drugs", "Some medicines", "Poor sleep"]
+      footage_query: "coffee cup table"
+      narration: >-
+        Some things can make anxiety worse. Too much caffeine, from coffee, energy drinks, or some pain relievers, can cause a
+        racing heart and jitters. Alcohol may calm you briefly, but often makes anxiety worse the next day. Nicotine, cannabis
+        and other drugs can too. Some decongestants, asthma medicines, and thyroid medicines can also cause anxiety symptoms.
+    - layout: "myth_fact"
+      heading: "Just Stop Worrying"
+      points: ["You can just choose to relax", "It is a real health condition"]
+      footage_query: "woman anxious hands"
+      narration: >-
+        Myth: people with anxiety should just stop worrying and relax. Fact: anxiety disorders are real health conditions, not
+        a weakness or a choice. Telling someone to calm down rarely helps. What helps is understanding, support, and effective
+        treatment. With the right help, people can learn to manage anxiety and live full lives.
+    - layout: "myth_fact"
+      heading: "Avoiding Fears Helps"
+      points: ["Avoid whatever makes you anxious", "Avoidance makes fear grow"]
+      footage_query: "woman looking window"
+      narration: >-
+        Myth: the best way to handle anxiety is to avoid whatever makes you anxious. Fact: avoiding feared situations brings
+        quick relief, but over time it teaches your brain that the situation really is dangerous, so the fear grows and your
+        world gets smaller. Gradually facing fears, with support, is one of the most effective ways to reduce anxiety.
+    - layout: "bullets"
+      heading: "How Anxiety Is Diagnosed"
+      points: ["Talk with your doctor", "Questions about symptoms", "Check for other causes", "Short questionnaires"]
+      footage_query: "patient talking doctor"
+      narration: >-
+        How is anxiety diagnosed? Start with your primary care doctor. They will ask about your symptoms, how long they have
+        lasted, and how they affect your life, often using a short questionnaire. They may check for other causes, like
+        thyroid problems, heart rhythm problems, or side effects from medicines. They can treat you or refer you to a mental
+        health professional.
+    - layout: "bullets"
+      heading: "Talk Therapy Works"
+      points: ["Cognitive behavioral therapy", "Exposure therapy", "Learn new coping skills", "Lasting results"]
+      footage_query: "woman talking therapist"
+      narration: >-
+        Talk therapy is one of the most effective treatments for anxiety. Cognitive behavioral therapy, or CBT, helps you
+        recognize anxious thoughts, test whether they are true, and change unhelpful habits. Exposure therapy helps you face
+        fears gradually, in a safe way. Therapy teaches skills you keep using for life, and the benefits often last after
+        therapy ends.
+    - layout: "bullets"
+      heading: "Medicines"
+      points: ["Certain antidepressants", "Take weeks to work", "Short-term calming medicines", "Ask about risks"]
+      footage_query: "pill bottle close up"
+      narration: >-
+        Medicines can also help, especially for moderate to severe anxiety. Certain antidepressants are often the first choice
+        for long term treatment. They take several weeks to work. Some calming medicines, like benzodiazepines, work quickly,
+        but can cause drowsiness, falls, and dependence, so they are usually only used for a short time. Many people do best
+        with both therapy and medicine.
+    - layout: "bullets"
+      heading: "Calm Breathing"
+      points: ["Breathe in for 4 counts", "Hold briefly", "Breathe out for 6 counts", "Repeat for a few minutes"]
+      footage_query: "woman breathing exercise"
+      narration: >-
+        Here is a simple technique you can use anytime. Slow breathing calms the body's alarm system. Breathe in gently
+        through your nose for a count of four. Pause briefly. Then breathe out slowly through your mouth for a count of six.
+        Repeat for a few minutes. Breathing out longer than you breathe in helps slow your heart rate.
+    - layout: "bullets"
+      heading: "Grounding Technique"
+      points: ["5 things you see", "4 things you feel", "3 things you hear", "2 smells, 1 taste"]
+      footage_query: "woman sitting calm park"
+      narration: >-
+        When anxiety spikes, a grounding exercise can bring you back to the present. Name five things you can see, four things
+        you can feel, like your feet on the floor, three things you can hear, two things you can smell, and one thing you can
+        taste. This shifts your attention away from racing thoughts and toward what is actually around you.
+    - layout: "bullets"
+      heading: "Daily Habits That Help"
+      points: ["Regular exercise", "Steady sleep schedule", "Less caffeine and alcohol", "Time with people you trust"]
+      footage_query: "people walking park"
+      narration: >-
+        Daily habits can lower anxiety. Regular exercise, like brisk walking, is one of the best natural anxiety reducers.
+        Keep a regular sleep schedule. Cut back on caffeine and alcohol. Eat regular meals. Limit news and social media if
+        they make you anxious. Spend time with people you trust. Mindfulness, meditation, yoga and tai chi can also help.
+    - layout: "bullets"
+      heading: "Anxiety at Work"
+      points: ["Break tasks into steps", "Plan short breaks", "Talk to your manager", "Use employee help programs"]
+      footage_query: "office worker computer"
+      narration: >-
+        Anxiety can make work feel overwhelming. Break big tasks into small steps, and focus on one at a time. Plan short
+        breaks to move and breathe. If anxiety is affecting your job, consider talking to your manager about small
+        adjustments. Many employers offer a free, confidential employee assistance program that can connect you with
+        counseling.
+    - layout: "bullets"
+      heading: "Anxiety in Children and Teens"
+      points: ["Stomach aches before school", "Clinging, tantrums", "Avoiding school or friends", "Treatment works well"]
+      footage_query: "child holding mother hand"
+      narration: >-
+        Children and teens get anxiety too. It may show up as stomach aches or headaches before school, clinging to parents,
+        tantrums, trouble sleeping, avoiding school or friends, or constant worry and need for reassurance. Anxiety in
+        children is very treatable, especially with therapy that includes parents. Talk to your child's doctor if worry is
+        getting in the way of daily life.
+    - layout: "bullets"
+      heading: "Anxiety in Older Adults"
+      points: ["Often missed", "Worry about health and falls", "Can look like physical illness", "Treatment helps at any age"]
+      footage_query: "elderly woman thinking"
+      narration: >-
+        Anxiety is common in older adults, but it is often missed. It may show up as worry about health, money or falling,
+        trouble sleeping, or physical symptoms like a racing heart or stomach problems. It can also come with depression or
+        memory concerns. Treatment works at any age. Be careful with calming medicines, which raise the risk of falls and
+        confusion in older adults.
+    - layout: "bullets"
+      heading: "How to Help Someone"
+      points: ["Listen without judging", "Do not dismiss their fears", "Encourage professional help", "Do not do everything for them"]
+      footage_query: "friends talking cafe"
+      narration: >-
+        If someone you love has anxiety, listen without judging. Do not dismiss their fears or tell them to just relax.
+        Encourage them to see a doctor or therapist, and offer to help them make the appointment. Support them in facing fears
+        gradually, rather than helping them avoid everything. And take care of yourself too.
+    - layout: "warning"
+      heading: "When to Get Help Now"
+      points: ["Panic you cannot control", "Not able to function", "Thoughts of self-harm", "Call or text 988"]
+      footage_query: "person calling phone"
+      narration: >-
+        Get help right away if anxiety is so severe you cannot function, if you are using alcohol or drugs to cope, or if you
+        have thoughts of harming yourself. In the United States, you can call or text nine eight eight, the Suicide and Crisis
+        Lifeline, any time, day or night, for free, confidential support. If there is immediate danger, call 911.
+    - layout: "bullets"
+      heading: "Questions for Your Doctor"
+      points: ["Could this be anxiety?", "Could something else cause it?", "Would therapy help me?", "What are my options?"]
+      footage_query: "patient talking doctor"
+      narration: >-
+        At your next visit, you can say: I have been feeling anxious most days, and it is affecting my life. Then ask: could
+        this be an anxiety disorder? Could a health problem or medicine be causing it? Would therapy help, and how do I find a
+        therapist? Should I consider medicine? What can I do on my own?
+    - layout: "bullets"
+      heading: "Quick Recap"
+      points: ["Worry most days for months", "Physical symptoms are common", "Therapy and medicine work", "Face fears gradually"]
+      footage_query: "notebook checklist pen"
+      narration: >-
+        Let us recap. Anxiety disorders are common and very treatable. Signs include constant worry, feeling on edge, panic
+        attacks, avoiding situations, and physical symptoms like a racing heart and poor sleep. Chest pain should always be
+        checked. Therapy, especially CBT, and medicines work. Calm breathing, exercise, less caffeine and facing fears
+        gradually also help.
+    - layout: "outro"
+      heading: "Remember"
+      points: ["Anxiety is treatable", "Do not avoid, face gradually", "988 is always there"]
+      footage_query: "family hugging"
+      narration: >-
+        Remember: anxiety is real and treatable, facing fears gradually helps more than avoiding them, and nine eight eight is
+        always there if you need it. Share this with someone who worries all the time. This video is for education only, not
+        medical advice. Like and subscribe to Health Support Studio for a new health video every day.
+  short_title: "Feeling anxious? Try this breathing trick #Shorts"
+  short_caption: >-
+    A simple breathing trick to calm anxiety. Educational only, not medical advice. In crisis? Call or text 988. #Anxiety
+    #MentalHealth #StressRelief #HealthEducation
+  short_scenes:
+    - layout: "title"
+      heading: "Feeling Anxious?"
+      points: ["Try this right now"]
+      footage_query: "woman anxious hands"
+      narration: >-
+        Feeling anxious right now? Try this simple breathing trick.
+    - layout: "bullets"
+      heading: "Calm Breathing"
+      points: ["In for 4 counts", "Out for 6 counts", "Repeat a few minutes"]
+      footage_query: "woman breathing exercise"
+      narration: >-
+        Breathe in gently through your nose for a count of four. Then breathe out slowly through your mouth for a count of
+        six. Breathing out longer than you breathe in helps slow your heart rate. If worry takes over most days, talk to your
+        doctor. Anxiety is very treatable.
+    - layout: "outro"
+      heading: "Full Video"
+      points: ["On YouTube"]
+      footage_query: "family hugging"
+      narration: >-
+        Learn more about anxiety in our full video, on the Health Support Studio YouTube channel.
