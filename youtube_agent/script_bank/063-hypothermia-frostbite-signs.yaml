@@ -1,0 +1,296 @@
+queue_topic: "Hypothermia and frostbite: warning signs and first aid"
+style: "Warning Signs"
+sources:
+  - "CDC, Preventing Hypothermia: https://www.cdc.gov/winter-weather/prevention/index.html"
+  - "CDC, Frostbite: https://www.cdc.gov/winter-weather/about/index.html"
+  - "MedlinePlus, Hypothermia: https://medlineplus.gov/hypothermia.html"
+plan:
+  topic: "Hypothermia and frostbite: warning signs and first aid"
+  title: "Hypothermia and Frostbite: Cold Weather Warning Signs"
+  description: |-
+    Cold weather kills over a thousand Americans a year, often indoors. Learn the warning signs of hypothermia and frostbite, the right first aid, the mistakes to avoid, and how to protect older adults, babies, and yourself in winter.
+
+    In this video:
+    • What hypothermia is, even above freezing
+    • Warning signs in adults and babies
+    • First aid steps and what not to do
+    • Frostbite and frostnip
+    • Dressing, heating safely and checking on others
+
+    #Hypothermia #Frostbite #WinterSafety #ColdWeather #HealthEducation
+  tags: ["hypothermia", "hypothermia symptoms", "frostbite", "frostbite first aid", "cold weather safety", "winter safety", "frostnip", "older adults cold", "winter storm safety", "first aid", "health education"]
+  thumbnail_text: "COLD WEATHER DANGER"
+  thumbnail_highlight: "COLD"
+  thumbnail_photo_query: "person snow cold winter"
+  playlist: "Emergencies & First Aid"
+  scenes:
+    - layout: "title"
+      heading: "Hypothermia and Frostbite"
+      points: ["Cold weather warning signs"]
+      footage_query: "person snow cold winter"
+      narration: >-
+        A power outage in a winter storm. A car stuck in the snow. An older neighbor who keeps the heat too low to save money.
+        Cold weather can be deadly, and the danger often starts quietly. Today you will learn the warning signs of hypothermia
+        and frostbite, what to do right away, and who is most at risk, so you can protect yourself and the people you love.
+    - layout: "big_number"
+      heading: "Cold Can Kill"
+      points: ["Over 1,000", "US deaths from cold each year"]
+      footage_query: "snowy street winter"
+      narration: >-
+        Each year in the United States, more than a thousand people die from causes related to extreme cold, according to the
+        CDC. Many more are treated for hypothermia and frostbite. Cold related deaths often happen indoors, in poorly heated
+        homes, and in older adults living alone. Most can be prevented with the right knowledge.
+    - layout: "bullets"
+      heading: "What Is Hypothermia?"
+      points: ["Body loses heat too fast", "Temperature drops below 95", "Brain and heart slow down", "Can be deadly"]
+      footage_query: "medical illustration body"
+      narration: >-
+        Hypothermia happens when your body loses heat faster than it can make it, and your body temperature drops below ninety
+        five degrees Fahrenheit. The brain and heart start to slow down. People often do not realize it is happening, because
+        the cold affects thinking. Without help, it can lead to heart failure and death.
+    - layout: "bullets"
+      heading: "It Can Happen Above Freezing"
+      points: ["Cool, wet, windy weather", "Falling into cold water", "Wet clothes and wind", "Cold homes"]
+      footage_query: "person rain cold"
+      narration: >-
+        Hypothermia does not need freezing temperatures. It can happen at temperatures above forty degrees, if a person is wet
+        from rain, sweat, or falling into cold water, or if it is windy. Wet clothing pulls heat away from the body much
+        faster. Cold water steals body heat about twenty five times faster than cold air.
+    - layout: "bullets"
+      heading: "Who Is Most at Risk?"
+      points: ["Older adults", "Babies sleeping in cold rooms", "People drinking alcohol", "People without shelter"]
+      footage_query: "elderly man blanket"
+      narration: >-
+        Who is most at risk? Older adults, especially those living alone, with limited food, heating or clothing. Babies
+        sleeping in cold bedrooms. People who drink alcohol or use drugs. People without shelter. People who are outdoors for
+        long periods, like hikers, hunters, and workers. And people with certain conditions like diabetes, thyroid problems,
+        or dementia.
+    - layout: "warning"
+      heading: "Early Signs in Adults"
+      points: ["Shivering", "Exhaustion", "Confusion", "Fumbling hands"]
+      footage_query: "man shivering cold"
+      narration: >-
+        Early signs of hypothermia in adults include shivering, which is the body's way of making heat, exhaustion or feeling
+        very tired, confusion, fumbling hands, memory loss, slurred speech, and drowsiness. People may make poor decisions,
+        like taking off clothing. Because thinking is affected, they may not realize they are in danger.
+    - layout: "warning"
+      heading: "Signs in Babies"
+      points: ["Bright red, cold skin", "Very low energy", "Weak cry", "Not feeding"]
+      footage_query: "baby blanket crib"
+      narration: >-
+        Babies show hypothermia differently. Watch for bright red, cold skin, and very low energy. A baby may be limp, have a
+        weak cry, or not want to feed. Keep babies' bedrooms warm, and dress them in layers rather than using loose blankets
+        in the crib. If you think a baby has hypothermia, get medical help right away.
+    - layout: "warning"
+      heading: "Severe Signs"
+      points: ["Shivering stops", "Slow, shallow breathing", "Weak pulse", "Unconscious"]
+      footage_query: "paramedic helping patient"
+      narration: >-
+        As hypothermia gets worse, shivering may stop, which is a dangerous sign, not a sign of improvement. Breathing becomes
+        slow and shallow. The pulse becomes weak. The person may be very confused, stumble, or lose consciousness. Severe
+        hypothermia is a medical emergency. Call 911 right away.
+    - layout: "bullets"
+      heading: "Check the Temperature"
+      points: ["Below 95 is an emergency", "Use a thermometer", "Get help right away", "Warm while you wait"]
+      footage_query: "thermometer close up"
+      narration: >-
+        If you have a thermometer, check the person's temperature. A temperature below ninety five degrees Fahrenheit is a
+        medical emergency. Call 911, then start warming the person while you wait. If you do not have a thermometer and see
+        signs of hypothermia, do not wait. Act as if it is hypothermia.
+    - layout: "bullets"
+      heading: "What to Do: Step 1"
+      points: ["Call 911", "Move to a warm place", "Remove wet clothing", "Handle gently"]
+      footage_query: "person calling phone emergency"
+      narration: >-
+        What should you do? Call 911. Move the person into a warm room or shelter if you can. Remove any wet clothing and
+        replace it with dry layers. Handle the person gently, because rough movement can trigger a dangerous heart rhythm in
+        severe hypothermia. Lay them down if possible.
+    - layout: "bullets"
+      heading: "What to Do: Step 2"
+      points: ["Warm the center of the body first", "Chest, neck, head, groin", "Blankets, skin-to-skin", "Warm sweet drinks if alert"]
+      footage_query: "blanket warm person"
+      narration: >-
+        Warm the center of the body first: the chest, neck, head and groin. Use an electric blanket if available, or layers of
+        dry blankets, clothing, towels, or sheets. Skin to skin contact under loose blankets also helps. If the person is
+        awake and can swallow, give warm, sweet drinks, but no alcohol. Keep them wrapped, including the head and neck.
+    - layout: "warning"
+      heading: "What Not to Do"
+      points: ["No hot baths", "No rubbing arms and legs", "No alcohol", "Do not warm limbs first"]
+      footage_query: "warning sign close up"
+      narration: >-
+        Some well meaning steps can be dangerous. Do not put the person in a hot bath or shower. Do not rub or massage their
+        arms and legs. Do not warm the arms and legs first, since this can send cold blood back to the heart and drop the core
+        temperature further. Do not give alcohol, which makes the body lose heat faster.
+    - layout: "warning"
+      heading: "No Pulse or Breathing"
+      points: ["Start CPR", "Keep going while warming", "Do not give up", "Help is on the way"]
+      footage_query: "cpr training dummy"
+      narration: >-
+        If the person has no pulse or is not breathing, start CPR right away, and continue while warming them until help
+        arrives. People with severe hypothermia may look dead but can still be revived. Doctors say a person is not dead until
+        they are warm and dead. Keep going until emergency responders take over.
+    - layout: "bullets"
+      heading: "What Is Frostbite?"
+      points: ["Freezing of skin and tissue", "Fingers, toes, nose, ears", "Cheeks and chin", "Can cause permanent damage"]
+      footage_query: "frostbite fingers"
+      narration: >-
+        Frostbite is an injury caused by freezing of the skin and the tissue underneath. It most often affects the fingers,
+        toes, nose, ears, cheeks, and chin. Severe frostbite can cause permanent damage, and in serious cases, amputation.
+        People with poor blood flow, like those with diabetes, and people who are not dressed warmly enough are at higher
+        risk.
+    - layout: "warning"
+      heading: "Signs of Frostbite"
+      points: ["Redness or pain first", "White or grayish-yellow skin", "Skin feels firm or waxy", "Numbness"]
+      footage_query: "cold hands close up"
+      narration: >-
+        The first sign of frostbite is often redness or pain in the skin. If you notice this, get out of the cold right away.
+        Other signs include white or grayish yellow skin, skin that feels unusually firm or waxy, and numbness. Because the
+        area is numb, people often do not realize they have frostbite until someone else notices.
+    - layout: "bullets"
+      heading: "Frostnip: An Early Warning"
+      points: ["Mild, no permanent damage", "Red, cold, tingling", "Rewarm right away", "A sign to get inside"]
+      footage_query: "cold face winter"
+      narration: >-
+        Frostnip is a milder early stage. The skin becomes red, cold and tingly or numb, but there is no permanent damage. It
+        improves with rewarming. Think of frostnip as a warning sign: get indoors, warm up, and protect your skin, before it
+        turns into real frostbite.
+    - layout: "bullets"
+      heading: "First Aid for Frostbite"
+      points: ["Get to a warm place", "Warm water, not hot", "Body heat on the area", "Seek medical care"]
+      footage_query: "hands warm water bowl"
+      narration: >-
+        If you think someone has frostbite, get them into a warm place and check for hypothermia, which is more urgent. Do not
+        walk on frostbitten feet or toes if possible. Put the area in warm, not hot, water, that feels comfortable to
+        unaffected skin, or use body heat, like tucking fingers in the armpits. Get medical care, especially for severe or
+        blistered frostbite.
+    - layout: "warning"
+      heading: "Frostbite: What Not to Do"
+      points: ["Do not rub with snow", "No heating pads or fires", "Do not rub the skin", "Do not rewarm if it may refreeze"]
+      footage_query: "warning sign close up"
+      narration: >-
+        Do not rub frostbitten skin with snow, or massage it, which can cause more damage. Do not use heating pads, heat
+        lamps, a stove, fireplace or radiator to warm it, because numb skin can burn easily. If there is a chance the area
+        could freeze again before you reach help, wait to rewarm it, since refreezing causes worse damage.
+    - layout: "bullets"
+      heading: "Warm Up Safely After"
+      points: ["Warm drinks and food", "Dry, warm clothes", "Rest before going out", "Watch for lasting numbness"]
+      footage_query: "woman tea cup blanket"
+      narration: >-
+        After coming in from the cold, warm up gradually. Change into dry, warm clothes, wrap up in blankets, and have warm
+        drinks and a meal, which help your body make heat. Rest before going back out. If numbness, pain, blisters or color
+        changes in fingers or toes last after warming, see a doctor, since frostbite damage can take a day or two to show.
+    - layout: "myth_fact"
+      heading: "Alcohol Keeps You Warm"
+      points: ["A drink warms you up", "Alcohol makes you lose heat"]
+      footage_query: "wine glasses table"
+      narration: >-
+        Myth: a drink of alcohol will warm you up in the cold. Fact: alcohol makes you feel warm by opening up blood vessels
+        in your skin, but this actually makes your body lose heat faster. It also dulls shivering and judgment. Many cold
+        weather deaths involve alcohol. Stay sober when you are out in the cold.
+    - layout: "myth_fact"
+      heading: "Most Heat Leaves Through the Head"
+      points: ["Your head loses most heat", "Any uncovered skin loses heat"]
+      footage_query: "winter hat scarf"
+      narration: >-
+        Myth: you lose most of your body heat through your head. Fact: your head is not special. Any uncovered part of the
+        body loses heat. But since the head and neck are often the only parts left uncovered, wearing a hat and scarf really
+        does help. Cover as much skin as you can in very cold weather.
+    - layout: "bullets"
+      heading: "Dress for the Cold"
+      points: ["Layers of loose clothing", "Hat, scarf, gloves", "Water-resistant coat and boots", "Stay dry"]
+      footage_query: "person winter clothes"
+      narration: >-
+        Dress in several layers of loose, warm clothing. Layers trap warm air better than one thick layer. Wear a hat, a scarf
+        or knit mask over your face and mouth, mittens or gloves, and a water resistant coat and boots. Mittens are warmer
+        than gloves. Change out of wet clothing as soon as you can.
+    - layout: "bullets"
+      heading: "Keep Your Home Warm"
+      points: ["Heat to at least 68 degrees", "Close off unused rooms", "Check on older neighbors", "Know your local warming centers"]
+      footage_query: "thermostat close up"
+      narration: >-
+        Older adults can get hypothermia indoors, even in mildly cold homes. Keep your home heated to at least sixty eight
+        degrees Fahrenheit if you can. Close off rooms you do not use. Wear warm layers indoors, and use extra blankets at
+        night. If heating bills are a problem, ask about energy assistance programs, and know where your local warming centers
+        are.
+    - layout: "warning"
+      heading: "Heat Safely"
+      points: ["Generators outside only", "No ovens to heat the home", "Space heaters 3 feet from things", "Working CO and smoke alarms"]
+      footage_query: "space heater room"
+      narration: >-
+        Stay safe when heating your home. Never use a gas oven, stove, or grill to heat your home, and run generators only
+        outdoors, far from windows, because of carbon monoxide. Keep space heaters at least three feet from anything that can
+        burn, and turn them off when you leave the room or sleep. Make sure smoke and carbon monoxide alarms work.
+    - layout: "bullets"
+      heading: "If Your Car Gets Stuck"
+      points: ["Stay with the car", "Run engine 10 minutes an hour", "Clear snow from the tailpipe", "Keep a winter car kit"]
+      footage_query: "car stuck snow"
+      narration: >-
+        If your car gets stuck in snow, stay in the car, where you are easier to find. Run the engine about ten minutes each
+        hour for heat, with a window cracked slightly, and make sure the tailpipe is clear of snow to prevent carbon monoxide
+        poisoning. Keep a winter emergency kit with blankets, water, snacks, a flashlight, and a phone charger.
+    - layout: "bullets"
+      heading: "Outdoor Workers and Athletes"
+      points: ["Take warm breaks", "Stay dry", "Watch each other", "Know the signs"]
+      footage_query: "construction worker winter"
+      narration: >-
+        People who work or play outside in the cold, like construction workers, delivery drivers, hikers, and skiers, should
+        take regular breaks in warm places, stay dry, and wear proper gear. Work in pairs so you can watch each other for
+        warning signs. Tell someone your plans before heading out, especially in remote areas.
+    - layout: "bullets"
+      heading: "Check on Others"
+      points: ["Older neighbors and relatives", "People living alone", "People without homes", "Pets too"]
+      footage_query: "young woman visiting elderly neighbor"
+      narration: >-
+        During cold snaps, check on older neighbors, relatives, and anyone living alone, at least once a day. Make sure their
+        heat is working and they have food and medicines. If you see someone without shelter in dangerous cold, call your
+        local outreach line or 911. And bring pets indoors, since they can suffer from the cold too.
+    - layout: "bullets"
+      heading: "Questions for Your Doctor"
+      points: ["Do my medicines affect cold?", "Am I at higher risk?", "How to protect my feet?", "Should I check my thyroid?"]
+      footage_query: "patient talking doctor"
+      narration: >-
+        If you are an older adult or have health conditions, ask your doctor: do any of my medicines make me more sensitive to
+        cold? Am I at higher risk of hypothermia? How should I protect my hands and feet, especially with diabetes? And could
+        a thyroid or other problem be making me feel cold all the time?
+    - layout: "bullets"
+      heading: "Quick Recap"
+      points: ["Shivering, confusion: hypothermia", "White, waxy skin: frostbite", "Warm the core, call 911", "Dress in layers, stay dry"]
+      footage_query: "notebook checklist pen"
+      narration: >-
+        Let us recap. Hypothermia causes shivering, confusion, drowsiness, and slurred speech, and can happen even above
+        freezing if you are wet. Call 911, move to warmth, remove wet clothes, and warm the core first. Frostbite causes numb,
+        white or waxy skin; rewarm gently in warm water. No alcohol, no rubbing, no hot baths. And check on older neighbors in
+        the cold.
+    - layout: "outro"
+      heading: "Remember"
+      points: ["Know the signs", "Warm the core first", "Check on neighbors"]
+      footage_query: "family winter walk"
+      narration: >-
+        Remember: know the signs of hypothermia and frostbite, warm the center of the body first, and check on older neighbors
+        during cold weather. Share this before winter arrives. This video is for education only, not medical advice. Like and
+        subscribe to Health Support Studio for a new health video every day.
+  short_title: "Signs of hypothermia most people miss #Shorts"
+  short_caption: >-
+    Hypothermia affects thinking, so people often don't notice. Educational only, not medical advice. #Hypothermia
+    #WinterSafety #ColdWeather #HealthEducation
+  short_scenes:
+    - layout: "title"
+      heading: "Too Cold to Think?"
+      points: ["Signs of hypothermia"]
+      footage_query: "man shivering cold"
+      narration: >-
+        Shivering, confusion and slurred speech in the cold can be hypothermia, and the person may not realize it.
+    - layout: "bullets"
+      heading: "What to Do"
+      points: ["Call 911", "Remove wet clothes", "Warm the chest first"]
+      footage_query: "blanket warm person"
+      narration: >-
+        Call 911, move them somewhere warm, and remove wet clothing. Warm the center of the body first, the chest, neck and
+        head, with dry blankets. Give warm, sweet drinks only if they are alert. No alcohol, no hot baths, and no rubbing the
+        arms and legs.
+    - layout: "outro"
+      heading: "Full Video"
+      points: ["On YouTube"]
+      footage_query: "family winter walk"
+      narration: >-
+        Learn more about cold weather safety in our full video, on the Health Support Studio YouTube channel.
