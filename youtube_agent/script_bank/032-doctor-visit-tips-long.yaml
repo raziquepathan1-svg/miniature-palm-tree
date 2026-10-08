@@ -1,0 +1,286 @@
+queue_topic: "How to get the most out of a 15-minute doctor's appointment"
+style: "Top Questions"
+sources:
+  - "AHRQ, Questions to Ask Your Doctor: https://www.ahrq.gov/questions/index.html"
+  - "MedlinePlus, Talking With Your Doctor: https://medlineplus.gov/talkingwithyourdoctor.html"
+  - "National Institute on Aging, How to Prepare for a Doctor's Appointment: https://www.nia.nih.gov/health/medical-care-and-treatment/how-prepare-doctors-appointment"
+plan:
+  topic: "How to get the most out of a 15-minute doctor's appointment"
+  title: "Short Doctor Visit? Do This to Get Real Answers"
+  description: |-
+    The average doctor visit is short, and it is easy to walk out with questions unanswered. Here is how to prepare, what to ask, and how to make sure nothing gets missed, before, during and after your appointment.
+
+    In this video:
+    • What to bring and how to prioritize
+    • Why you should never save the big question for last
+    • Questions to ask about tests and new medicines
+    • The teach-back trick
+    • Telehealth, costs and second opinions
+
+    #DoctorVisit #PatientTips #HealthTips #PatientSafety #HealthEducation
+  tags: ["doctor appointment tips", "questions to ask your doctor", "doctor visit", "patient advocate", "ask me three", "telehealth tips", "second opinion", "patient tips", "health literacy", "health education"]
+  thumbnail_text: "SHORT DOCTOR VISIT?"
+  thumbnail_highlight: "VISIT?"
+  thumbnail_photo_query: "patient talking doctor office"
+  playlist: "Tests & Doctor Visits"
+  scenes:
+    - layout: "title"
+      heading: "Make Every Minute Count"
+      points: ["Your doctor visit"]
+      footage_query: "patient talking doctor"
+      narration: >-
+        You wait weeks for an appointment, sit in the waiting room, and then the doctor is in and out in fifteen minutes. You
+        walk out and remember the question you forgot to ask. Sound familiar? Today we answer the top questions about getting
+        the most out of a short doctor's visit, before, during and after, so you leave with answers, not regrets.
+    - layout: "big_number"
+      heading: "Visits Are Short"
+      points: ["About 18 minutes", "Average primary care visit"]
+      footage_query: "clock wall office"
+      narration: >-
+        Studies of primary care visits in the United States have found the average visit lasts about eighteen minutes, and
+        much of that time goes to the computer, paperwork and the exam. Your doctor may be trying to cover several health
+        problems in that time. That is why a little planning on your side can make a big difference in what you get out of
+        each visit.
+    - layout: "bullets"
+      heading: "Why Preparation Matters"
+      points: ["Doctors are busy", "Important details get missed", "Patients forget questions", "Prepared patients get better care"]
+      footage_query: "woman writing notebook"
+      narration: >-
+        Why does preparation matter? Research shows patients often forget most of what the doctor says soon after a visit.
+        People also leave out important symptoms because they feel rushed or embarrassed. When you come prepared, the doctor
+        gets the information they need faster, and you get clearer answers. You become a partner in your care.
+    - layout: "bullets"
+      heading: "Question 1: What Should I Bring?"
+      points: ["Medication list or bottles", "Insurance card and ID", "Records from other doctors", "Your list of questions"]
+      footage_query: "pill bottles table"
+      narration: >-
+        First question: what should I bring? Bring your up to date medication list, or all your pill bottles, including
+        vitamins and supplements. Bring your insurance card and ID. Bring results or records from other doctors, specialists
+        or the emergency room. And bring a written list of your questions and concerns. A notebook or your phone for notes is
+        helpful too.
+    - layout: "bullets"
+      heading: "Question 2: How Do I Prioritize?"
+      points: ["Write all your concerns", "Pick the top 3", "Say them at the start", "Most important first"]
+      footage_query: "checklist clipboard pen"
+      narration: >-
+        Next: how do I decide what to talk about? Before your visit, write down everything you want to discuss. Then pick your
+        top three. At the start of the visit, tell the doctor: I have three things I want to talk about today. This helps the
+        doctor plan the time. Put the most important or worrying concern first, not last.
+    - layout: "warning"
+      heading: "Do Not Save the Big One"
+      points: ["Say serious symptoms first", "Chest pain, bleeding, lumps", "Mood or memory changes", "Do not wait for the doorknob"]
+      footage_query: "woman holding chest"
+      narration: >-
+        Here is a common mistake. Many people mention their most worrying symptom at the very end, with their hand on the
+        door. Doctors even call it the doorknob question. By then, there is no time to look into it properly. If you have
+        something serious, like chest pain, a new lump, bleeding, or feeling very down, say it first.
+    - layout: "bullets"
+      heading: "Describe Symptoms Clearly"
+      points: ["When did it start?", "How often, how long?", "What makes it better or worse?", "How it affects your life"]
+      footage_query: "man talking doctor office"
+      narration: >-
+        How do you describe a symptom well? Before the visit, jot down when it started, how often it happens, how long it
+        lasts, and how bad it is on a scale of one to ten. Note what makes it better or worse, and what you have already
+        tried. Explain how it affects your daily life, like sleep, work or walking.
+    - layout: "bullets"
+      heading: "Keep a Symptom Diary"
+      points: ["Date and time", "What you were doing", "Readings like blood pressure", "Photos of rashes or swelling"]
+      footage_query: "woman writing journal"
+      narration: >-
+        For symptoms that come and go, keep a simple diary for a week or two before your visit. Write the date, time, what you
+        were doing, and what you felt. If you check your blood pressure or blood sugar at home, bring the readings. Take
+        photos of rashes or swelling that might not be there on the day of the visit.
+    - layout: "bullets"
+      heading: "Question 3: Should Someone Come?"
+      points: ["A second pair of ears", "They can take notes", "They can ask questions", "Helpful for serious news"]
+      footage_query: "family sitting doctor office"
+      narration: >-
+        Should someone come with me? Bringing a family member or friend can really help, especially if you are worried, have
+        trouble hearing, or expect complicated news. They can take notes, remember details, and ask questions you might
+        forget. Talk before the visit about what you want them to do. If they cannot come, many clinics allow them to join by
+        phone.
+    - layout: "bullets"
+      heading: "Be Honest"
+      points: ["Smoking, alcohol, drugs", "Skipped medicines", "Sexual health", "Money worries"]
+      footage_query: "patient talking doctor"
+      narration: >-
+        Be honest, even about things that feel embarrassing. Tell your doctor if you smoke, drink, or use other drugs, if you
+        skipped your medicines, or if you have sexual health concerns. Mention if cost is a problem. Doctors have heard it all
+        before, and they cannot help you with problems they do not know about. Your information is private.
+    - layout: "myth_fact"
+      heading: "Do Not Bother the Doctor"
+      points: ["Questions waste the doctor's time", "Questions help you get better care"]
+      footage_query: "doctor listening patient"
+      narration: >-
+        Myth: asking questions bothers the doctor and wastes their time. Fact: good doctors want you to ask questions.
+        Patients who understand their care are more likely to take medicines correctly and get better results. If something is
+        unclear, say so. It is your health and your right to understand what is happening.
+    - layout: "bullets"
+      heading: "Question 4: What Should I Ask?"
+      points: ["What is my main problem?", "What do I need to do?", "Why is it important?", "What are my options?"]
+      footage_query: "patient talking doctor"
+      narration: >-
+        What should I ask during the visit? A simple set of questions is called Ask Me Three. What is my main problem? What do
+        I need to do? Why is it important for me to do this? You can also ask: what are my options, what are the risks and
+        benefits of each, and what happens if I wait?
+    - layout: "bullets"
+      heading: "Questions About Tests"
+      points: ["Why do I need this test?", "How do I prepare?", "When will I get results?", "Who explains them?"]
+      footage_query: "blood test tube lab"
+      narration: >-
+        If your doctor orders a test, ask a few questions. Why do I need this test, and what will it show? How do I prepare?
+        Is it covered by my insurance? When and how will I get the results, and who will explain them to me? Never assume that
+        no news is good news. If you do not hear back, call.
+    - layout: "bullets"
+      heading: "Questions About New Medicines"
+      points: ["What is it for?", "How do I take it?", "Side effects to watch?", "Interactions with my others?"]
+      footage_query: "doctor giving prescription"
+      narration: >-
+        If you get a new medicine, ask: what is it for, and how will I know it is working? How and when should I take it? What
+        side effects should I watch for, and when should I call? Does it interact with my other medicines or supplements? Is
+        there a cheaper option? Then add it to your medication list.
+    - layout: "bullets"
+      heading: "Use the Teach-Back"
+      points: ["Repeat it in your own words", "Confirm the plan", "Ask for it in writing", "Check the after-visit summary"]
+      footage_query: "patient reading document"
+      narration: >-
+        Before you leave, repeat the plan back in your own words. For example: so I will take this pill once a day, get blood
+        work in two weeks, and call if the pain gets worse. This is called teach back, and it catches misunderstandings right
+        away. Ask for written instructions or check your after visit summary.
+    - layout: "bullets"
+      heading: "Language and Hearing Help"
+      points: ["Ask for a free interpreter", "Sign language interpreter", "Large print papers", "Speak up if you cannot hear"]
+      footage_query: "interpreter talking patient"
+      narration: >-
+        If English is not your first language, ask for a medical interpreter when you book the visit. Most clinics that take
+        Medicare or Medicaid must offer one at no cost. Do not rely on children to translate. If you are deaf or hard of
+        hearing, ask for a sign language interpreter or captioning. You can also ask for large print instructions.
+    - layout: "bullets"
+      heading: "Can I Record or Take Notes?"
+      points: ["Take notes on paper or phone", "Ask before recording", "Write down key numbers", "Use the patient portal"]
+      footage_query: "woman taking notes phone"
+      narration: >-
+        Can I take notes or record the visit? Taking notes is always fine. If you want to record the conversation on your
+        phone, ask the doctor first. Many are happy to allow it. Write down key numbers, like blood pressure, test results and
+        doses. Afterwards, check your patient portal for the visit summary and results.
+    - layout: "bullets"
+      heading: "Question 5: Out of Time?"
+      points: ["Ask for a follow-up visit", "Ask about telehealth", "Use portal messages", "Ask for the right specialist"]
+      footage_query: "woman using laptop home"
+      narration: >-
+        What if we run out of time? It is okay to say: I have one more concern, should we schedule another visit for it? Ask
+        whether a follow up can be done by telehealth or phone. Many clinics let you send short questions through the patient
+        portal. For some problems, a referral to a specialist may be the better next step.
+    - layout: "bullets"
+      heading: "Telehealth Visits"
+      points: ["Find a quiet, private spot", "Test your device first", "Have readings ready", "Good lighting on your face"]
+      footage_query: "man video call doctor laptop"
+      narration: >-
+        Telehealth visits are common now. Find a quiet, private place with good internet. Test your camera and microphone
+        ahead of time. Have your medication list, home readings, like blood pressure or weight, and your questions ready. Sit
+        with light on your face so the doctor can see you. Telehealth is great for follow ups, but some problems need an in
+        person exam.
+    - layout: "bullets"
+      heading: "Getting an Appointment Sooner"
+      points: ["Ask to be on a cancellation list", "See another clinician", "Check same-day slots", "Use urgent care for urgent needs"]
+      footage_query: "woman talking phone desk"
+      narration: >-
+        Cannot get an appointment for weeks? Ask to be put on a cancellation list. Ask if you can see another clinician on the
+        same team, like a physician assistant, who can often see you sooner. Call early in the morning for same day openings.
+        For problems that cannot wait, use urgent care, and for emergencies, call 911.
+    - layout: "bullets"
+      heading: "Understanding Costs"
+      points: ["Ask what is covered", "Preventive visits may be free", "Discussing new problems may cost", "Ask for estimates"]
+      footage_query: "insurance card hand"
+      narration: >-
+        Ask about costs before tests or procedures. Many preventive visits, like a yearly wellness exam, are covered with no
+        cost under most plans. But if you discuss a new problem during that visit, it may be billed separately. Ask the front
+        desk how your visit will be billed. You can also ask for cost estimates and cheaper generic medicines.
+    - layout: "bullets"
+      heading: "Your Yearly Checkup"
+      points: ["Screening tests due", "Vaccines due", "Medication review", "Long-term goals"]
+      footage_query: "doctor checking blood pressure"
+      narration: >-
+        Use your yearly checkup to plan ahead. Ask which screening tests you are due for, like blood pressure, cholesterol,
+        diabetes, and cancer screening. Ask which vaccines you need. Review all your medicines. And talk about long term
+        goals, like losing weight, quitting smoking, or staying independent as you age.
+    - layout: "bullets"
+      heading: "For Caregivers"
+      points: ["Bring a summary of changes", "Bring the medication list", "Ask about care options", "Ask about caregiver support"]
+      footage_query: "caregiver helping elderly parent"
+      narration: >-
+        If you are going with a parent or loved one, bring a short summary of changes you have noticed, like memory, mood,
+        falls or eating. Bring their medication list. Let your loved one speak for themselves when they can. Ask about options
+        for help at home, and ask what support exists for caregivers.
+    - layout: "bullets"
+      heading: "After the Visit"
+      points: ["Book tests and follow-ups", "Fill prescriptions", "Read your summary", "Call if anything is unclear"]
+      footage_query: "calendar notebook planning"
+      narration: >-
+        After the visit, act on the plan. Book any tests, referrals and follow up visits before you leave, or the same day.
+        Fill new prescriptions. Read your after visit summary. If something does not match what you heard, or you have new
+        questions, call the office or send a portal message. Do not wait until your next visit.
+    - layout: "bullets"
+      heading: "When to Get a Second Opinion"
+      points: ["Serious diagnosis", "Major surgery suggested", "Treatment not working", "You feel unsure"]
+      footage_query: "doctor reading brain scan"
+      narration: >-
+        It is okay to get a second opinion. Consider one if you get a serious diagnosis, if a major surgery or treatment is
+        recommended, if your treatment is not working, or if you simply feel unsure. Most doctors are comfortable with this,
+        and many insurance plans cover second opinions. Ask your doctor to share your records.
+    - layout: "myth_fact"
+      heading: "The Doctor Knows It All"
+      points: ["The doctor knows my whole history", "You are the expert on you"]
+      footage_query: "medical records folder"
+      narration: >-
+        Myth: the doctor already knows my whole history. Fact: your doctor sees many patients and may not remember every
+        detail, and records from other clinics are often missing. You are the expert on your own body and your own life.
+        Sharing what you notice, what worries you, and what matters to you leads to better decisions.
+    - layout: "bullets"
+      heading: "Your Visit Checklist"
+      points: ["Write top 3 concerns", "Bring meds and records", "Bring a helper", "Repeat the plan back"]
+      footage_query: "checklist clipboard pen"
+      narration: >-
+        Here is your visit checklist. Write your top three concerns, most important first. Bring your medication list and
+        records. Describe symptoms with when, how often and how bad. Bring a helper if you can. Ask Ask Me Three. Repeat the
+        plan back. And book your next steps before you leave.
+    - layout: "bullets"
+      heading: "Quick Recap"
+      points: ["Prepare before you go", "Say the big one first", "Ask questions", "Confirm the plan"]
+      footage_query: "notebook checklist pen"
+      narration: >-
+        Let us recap. Prepare before you go, with your list of concerns and your medicines. Say your most important concern
+        first, not at the door. Be honest, and ask questions until you understand. Use teach back to confirm the plan. And
+        follow through afterwards. A short visit can still be a great visit.
+    - layout: "outro"
+      heading: "Remember"
+      points: ["Top 3 concerns", "Big one first", "Repeat the plan"]
+      footage_query: "family walking outdoors"
+      narration: >-
+        Remember: bring your top three concerns, say the big one first, and repeat the plan back before you leave. Share this
+        with someone who has a doctor's visit coming up. This video is for education only, not medical advice. Like and
+        subscribe to Health Support Studio for a new health video every day.
+  short_title: "3 tricks for a short doctor visit #Shorts"
+  short_caption: >-
+    Only 15 minutes with your doctor? Make them count with these 3 tricks. Educational only, not medical advice.
+    #DoctorVisit #PatientTips #HealthTips #HealthEducation
+  short_scenes:
+    - layout: "title"
+      heading: "Short Doctor Visit?"
+      points: ["Try this"]
+      footage_query: "patient talking doctor"
+      narration: >-
+        Your doctor's visit is only fifteen minutes. Here is how to make it count.
+    - layout: "bullets"
+      heading: "3 Tricks"
+      points: ["Write your top 3 concerns", "Say the big one first", "Repeat the plan back"]
+      footage_query: "woman writing notebook"
+      narration: >-
+        Write down your top three concerns before you go, and say the most important one first, not with your hand on the
+        door. Bring your medication list. Before you leave, repeat the plan back in your own words, so nothing gets missed.
+    - layout: "outro"
+      heading: "Full Video"
+      points: ["On YouTube"]
+      footage_query: "family walking outdoors"
+      narration: >-
+        Get the full checklist in our video on the Health Support Studio YouTube channel.
