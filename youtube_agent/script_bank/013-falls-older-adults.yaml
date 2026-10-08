@@ -11,10 +11,11 @@ plan:
     One in four older adults in the US falls every year, and falls are the leading cause of injury death for adults 65 and older. But many falls can be prevented. We bust five common myths and share simple ways to make a home safer.
 
     In this video:
-    • Why falls are not a normal part of aging
-    • Why staying active lowers your risk
-    • How medicines and vision affect falls
-    • A quick home safety checklist
+    • Why falls are serious, and 5 common myths
+    • What causes falls: muscles, balance, medicines, vision
+    • Simple balance exercises
+    • A room-by-room home safety checklist
+    • What to do if you fall, and how caregivers can help
 
     #FallPrevention #OlderAdults #Caregiving #HealthyAging #HealthEducation
   tags: ["fall prevention", "falls in older adults", "fall prevention for seniors", "home safety for seniors", "healthy aging", "caregiver tips", "balance exercises", "tai chi", "elderly falls", "health education"]
@@ -24,77 +25,236 @@ plan:
   playlist: "Older Adults & Caregiving"
   scenes:
     - layout: "title"
-      heading: "Falls: Myth vs Fact"
-      points: ["Protect yourself and loved ones"]
-      footage_query: "senior woman walking home"
+      heading: "Falls Aren't Just Aging"
+      points: ["Myths, facts and prevention"]
+      footage_query: "senior woman walking cane home"
       narration: >-
-        A single fall can change an older adult's life, leading to a broken hip, a head injury, or a loss of independence. The
-        good news? Many falls can be prevented. Today we are busting five common myths about falls, and sharing simple steps to
-        make a home safer.
+        Every year, one in four adults aged sixty five and older in the United States has a fall. Many people think falling is
+        just a normal part of getting older, something you cannot prevent. That is not true. Most falls can be prevented.
+        Today we will bust the most common myths and share simple steps that protect you or someone you love.
+    - layout: "bullets"
+      heading: "What We Will Cover"
+      points: ["Why falls are so serious", "Myths that raise the risk", "What causes falls", "How to prevent them"]
+      footage_query: "senior couple reading"
+      narration: >-
+        Here is what we will cover. Why falls are more serious than most people think. Five common myths that actually raise
+        the risk of falling. The main causes, from weak muscles to medicines and eyesight. A simple home safety checklist.
+        Exercises that improve balance. And what to do if you or a loved one does fall. Stay to the end, because the last part
+        could help in an emergency.
     - layout: "big_number"
       heading: "1 in 4"
-      points: ["adults 65+ fall every year", "CDC"]
-      footage_query: "senior couple living room"
+      points: ["adults 65 and older", "fall each year"]
+      footage_query: "senior man sitting floor"
       narration: >-
-        First, how big is the problem? According to the CDC, more than fourteen million older adults, about one in four people
-        sixty five and older, report falling every year. Falls are the leading cause of injury and injury death in this age
-        group. And falling once doubles your chances of falling again.
+        Here is how common falls are. According to the CDC, about one in four adults sixty five and older falls each year,
+        which adds up to millions of falls. Falls are the leading cause of injury and injury death in this age group. And one
+        out of every five falls causes a serious injury, like a broken bone or a head injury.
+    - layout: "bullets"
+      heading: "Why Falls Are Serious"
+      points: ["Broken hips and wrists", "Head injuries", "Loss of independence", "Fear of falling again"]
+      footage_query: "hospital hip x-ray"
+      narration: >-
+        Why are falls so serious? Most hip fractures in older adults are caused by falls, and a broken hip can mean surgery, a
+        long recovery, and sometimes needing help with daily life. Falls are also the most common cause of traumatic brain
+        injuries. And even a fall without injury can make someone afraid of falling again, which can change their whole life.
     - layout: "myth_fact"
       heading: "Myth 1"
-      points: ["Falls are a normal part of aging", "Many falls can be prevented"]
-      footage_query: "senior man smiling garden"
+      points: ["Falling is a normal part of aging", "Most falls can be prevented"]
+      footage_query: "senior woman smiling garden"
       narration: >-
-        Myth number one: falling is just a normal part of getting older. Fact: falls are common, but they are not normal, and
-        many can be prevented. Things like weak muscles, balance problems, some medicines, vision problems and hazards at home
-        all raise the risk, and most of them can be changed.
+        Myth number one: falling is just a normal part of aging. Fact: falls are common, but they are not a normal or
+        unavoidable part of getting older. Most falls have causes that can be found and fixed, like weak leg muscles, medicine
+        side effects, poor lighting or loose rugs. Strength and balance can improve at any age.
     - layout: "myth_fact"
       heading: "Myth 2"
-      points: ["Staying still keeps you safe", "Activity builds strength and balance"]
-      footage_query: "seniors tai chi park"
+      points: ["Staying home keeps me safe", "Staying active lowers your risk"]
+      footage_query: "senior man walking outdoors"
       narration: >-
-        Myth number two: if I limit my activity, I will not fall. Fact: moving less makes muscles weaker and balance worse,
-        which actually raises the risk. Exercises that build leg strength and balance, like tai chi, can lower the chance of
-        falling. Ask your doctor about a program that is safe for you.
+        Myth number two: if I limit my activity and stay home, I will not fall. Fact: being less active makes your muscles
+        weaker and your balance worse, which actually raises your risk of falling. Many falls happen at home. Staying active,
+        safely, is one of the best ways to prevent falls and keep your independence.
     - layout: "myth_fact"
       heading: "Myth 3"
-      points: ["My medicines don't matter", "Some medicines raise fall risk"]
-      footage_query: "pill organizer table"
+      points: ["It won't happen to me", "Anyone can fall"]
+      footage_query: "older couple living room"
       narration: >-
-        Myth number three: my medicines have nothing to do with falling. Fact: some medicines can cause dizziness, sleepiness
-        or low blood pressure when standing up. These include some sleep aids, anxiety medicines, blood pressure medicines and
-        certain allergy medicines. Ask your doctor or pharmacist to review all your medicines once a year. Never stop a
-        medicine on your own.
+        Myth number three: it will not happen to me. Fact: many people who fall never expected it. A small change, like a new
+        medicine, an illness, or a dark hallway at night, can be enough. Thinking about your risk now, before a fall happens,
+        is the smartest thing you can do.
     - layout: "myth_fact"
       heading: "Myth 4"
-      points: ["Falls mostly happen outside", "Many falls happen at home"]
-      footage_query: "home staircase"
+      points: ["Muscle strength can't come back", "Strength improves at any age"]
+      footage_query: "senior exercise class"
       narration: >-
-        Myth number four: falls mostly happen outside, on ice or uneven sidewalks. Fact: many falls happen at home, during
-        everyday activities, like getting out of bed at night, walking to the bathroom, or climbing stairs.
+        Myth number four: muscle strength and flexibility cannot be regained once you are older. Fact: research shows that
+        strength and balance exercises can make a real difference at any age, even in your eighties and nineties. It is never
+        too late to start, and even small improvements can lower your risk.
     - layout: "myth_fact"
       heading: "Myth 5"
-      points: ["Talking about it makes me look weak", "Telling your doctor protects you"]
-      footage_query: "senior patient talking doctor"
+      points: ["Using a cane makes me more dependent", "The right aid keeps you independent"]
+      footage_query: "senior woman walker"
       narration: >-
-        Myth number five: if I mention a fall, people will think I cannot live on my own. Fact: telling your doctor about a
-        fall, or feeling unsteady, is how you stay independent. They can check your balance, vision, feet, and medicines, and
-        find ways to lower your risk.
+        Myth number five: using a cane or walker will make me more dependent. Fact: the right walking aid, fitted correctly,
+        helps you stay active and independent for longer. A physical therapist can help you choose the right one and teach you
+        how to use it safely. Using one is a smart choice, not a weakness.
     - layout: "bullets"
-      heading: "Home Safety Checklist"
-      points: ["Remove loose rugs and clutter", "Grab bars in the bathroom", "Night lights and bright stairs", "Yearly eye exam"]
+      heading: "What Causes Falls?"
+      points: ["Weak leg muscles", "Poor balance", "Medicine side effects", "Vision problems"]
+      footage_query: "senior balance exercise"
+      narration: >-
+        So what actually causes falls? Usually it is more than one thing. Common causes include weakness in the legs, problems
+        with balance or walking, side effects of medicines, vision problems, foot pain or poor shoes, low vitamin D, and
+        hazards at home, like clutter or poor lighting. The more of these you have, the higher the risk. The good news is that
+        most can be improved.
+    - layout: "warning"
+      heading: "Medicines That Raise Risk"
+      points: ["Sleeping pills and sedatives", "Some antidepressants", "Blood pressure medicines", "Medicines that cause dizziness"]
+      footage_query: "pill bottles table"
+      narration: >-
+        Some medicines can make you dizzy, sleepy or unsteady. These include sleeping pills, medicines for anxiety, some
+        antidepressants, strong pain medicines, and some blood pressure medicines. Taking many medicines together can add up.
+        Ask your doctor or pharmacist to review all your medicines, including over the counter ones, at least once a year.
+        Never stop a medicine on your own.
+    - layout: "bullets"
+      heading: "Dizziness When Standing"
+      points: ["Sit up slowly", "Wait a moment", "Then stand", "Tell your doctor"]
+      footage_query: "senior getting out of bed"
+      narration: >-
+        Some people get dizzy or lightheaded when they stand up quickly, because their blood pressure drops for a moment. To
+        prevent a fall, get up slowly. Sit on the edge of the bed for a moment, then stand, and hold on to something steady.
+        If dizziness happens often, tell your doctor, because a medicine or another problem may be the cause.
+    - layout: "bullets"
+      heading: "Check Your Eyes and Feet"
+      points: ["Eye exam every year", "Update your glasses", "Comfortable, supportive shoes", "Treat foot pain"]
+      footage_query: "eye exam senior"
+      narration: >-
+        Your eyes and feet matter too. Have an eye exam at least once a year and update your glasses when needed. Be careful
+        with bifocals or new glasses on stairs. Wear shoes that fit well, with non slip soles and support, both inside and
+        outside the house. Avoid walking in socks or loose slippers. And see a doctor about foot pain.
+    - layout: "bullets"
+      heading: "Talk to Your Doctor"
+      points: ["Tell them if you fell", "Ask for a fall risk check", "Review your medicines", "Ask about vitamin D"]
+      footage_query: "doctor talking senior patient"
+      narration: >-
+        Talk to your doctor about falls, even if you have never fallen. Tell them if you have fallen, nearly fallen, or feel
+        unsteady. Ask for a fall risk check, where they test your strength and balance. Review your medicines together. And
+        ask whether you should have your vitamin D or bone health checked, because strong bones are less likely to break.
+    - layout: "bullets"
+      heading: "Exercises That Help"
+      points: ["Strength for legs", "Balance practice", "Tai chi", "Walking"]
+      footage_query: "tai chi seniors park"
+      narration: >-
+        Exercise is one of the best ways to prevent falls. Focus on strengthening your legs and improving your balance. Tai
+        chi, a gentle exercise with slow, flowing movements, has been shown to lower the risk of falls. Walking, chair
+        exercises, and community fall prevention classes also help. Start slowly, and ask your doctor which exercises are safe
+        for you.
+    - layout: "bullets"
+      heading: "Simple Balance Practice"
+      points: ["Hold a sturdy counter", "Stand on one foot briefly", "Heel to toe walking", "Sit to stand from a chair"]
+      footage_query: "senior woman kitchen counter balance"
+      narration: >-
+        Here are a few simple exercises many people can do at home, holding on to a sturdy kitchen counter for safety. Stand
+        on one foot for a few seconds, then switch. Walk heel to toe along the counter. And practice standing up from a chair
+        without using your hands, then sitting down slowly. Do them a little every day, and stop if you feel pain or
+        dizziness.
+    - layout: "bullets"
+      heading: "Home Safety: Floors"
+      points: ["Remove loose rugs", "Clear clutter and cords", "Wipe spills right away", "Keep paths open"]
+      footage_query: "living room clean floor"
+      narration: >-
+        Now let's make the home safer, starting with the floors. Remove loose throw rugs, or secure them with double sided
+        tape. Keep floors clear of clutter, shoes, books and electrical cords. Wipe up spills right away. And arrange
+        furniture so you have clear, wide paths to walk through, especially between the bedroom and the bathroom.
+    - layout: "bullets"
+      heading: "Home Safety: Stairs"
+      points: ["Railings on both sides", "Bright lights top and bottom", "Nothing left on steps", "Fix loose steps"]
+      footage_query: "home staircase railing"
+      narration: >-
+        Stairs are a common place for falls. Make sure there are sturdy railings on both sides, and use them every time. Put
+        bright lights, with switches, at the top and bottom of the stairs. Never leave items on the steps. Fix any loose or
+        uneven steps, and consider adding non slip strips to the edges.
+    - layout: "bullets"
+      heading: "Home Safety: Bathroom"
+      points: ["Grab bars by tub and toilet", "Non-slip mat in shower", "Shower chair if needed", "Night light on the way"]
       footage_query: "bathroom grab bar"
       narration: >-
-        Here is a quick home safety checklist. Remove throw rugs and clutter from walkways. Install grab bars in the bathroom,
-        and railings on both sides of stairs. Add night lights between the bedroom and bathroom. Wear sturdy, non slip shoes
-        at home. And get your eyes checked every year.
-    - layout: "outro"
-      heading: "Start Today"
-      points: ["Stay active", "Review your medicines", "Make home safer"]
-      footage_query: "senior couple walking park"
+        The bathroom is one of the most dangerous rooms, because surfaces get wet and slippery. Install grab bars next to the
+        toilet and inside the shower or tub. Do not use towel racks as grab bars, because they can pull out of the wall. Use a
+        non slip mat or strips in the tub. A shower chair and a hand held shower head can make bathing much safer.
+    - layout: "bullets"
+      heading: "Home Safety: Lighting"
+      points: ["Night lights in hallways", "Lamp within reach of the bed", "Bright bulbs", "Light switches at doorways"]
+      footage_query: "night light hallway"
       narration: >-
-        Share this with a parent or grandparent. If someone falls and hits their head, cannot get up, or seems confused, call
-        911. This video is for education only, not medical advice. Like and subscribe to Health Support Studio for a new health
-        video every day.
+        Good lighting prevents many falls, especially at night. Use night lights in the bedroom, hallway and bathroom. Keep a
+        lamp or a light switch within reach of your bed, so you never walk in the dark. Use bright bulbs, and make sure there
+        is a light switch at the entrance of every room.
+    - layout: "bullets"
+      heading: "Home Safety: Kitchen"
+      points: ["Keep items within reach", "Avoid step stools", "Use a sturdy step stool with a bar", "Wipe spills"]
+      footage_query: "kitchen shelves senior"
+      narration: >-
+        In the kitchen, keep the things you use most often on lower shelves, between waist and shoulder height, so you do not
+        need to climb. Avoid standing on chairs. If you must reach higher, use a sturdy step stool with a handle bar, or ask
+        someone for help. And clean up spills right away.
+    - layout: "warning"
+      heading: "Alcohol and Falls"
+      points: ["Affects balance", "Mixes badly with medicines", "Slows reaction time", "Limit or avoid"]
+      footage_query: "glass of wine dinner"
+      narration: >-
+        Alcohol affects balance and reaction time, and it can mix badly with many medicines, making falls more likely. As we
+        age, the body handles alcohol differently, so the same amount can have a stronger effect. If you drink, keep it light,
+        and ask your doctor whether alcohol is safe with your medicines.
+    - layout: "bullets"
+      heading: "If You Fall: Stay Calm"
+      points: ["Take a few breaths", "Check for pain or injury", "If hurt, don't get up", "Call for help"]
+      footage_query: "senior woman floor phone"
+      narration: >-
+        What should you do if you fall? First, stay calm and take a few deep breaths. Check your body for pain or injury
+        before trying to move. If you are hurt, or you cannot get up, do not force it. Call for help. Use your phone or a
+        medical alert button if you have one, or call out loudly. Try to keep warm while you wait.
+    - layout: "bullets"
+      heading: "How to Get Up Safely"
+      points: ["Roll onto your side", "Get onto hands and knees", "Crawl to a sturdy chair", "Rise slowly, then sit"]
+      footage_query: "senior chair living room"
+      narration: >-
+        If you are not hurt and feel able to get up, do it slowly. Roll onto your side, then get onto your hands and knees.
+        Crawl to a sturdy chair or piece of furniture. Put your hands on the seat, bring one foot forward, and push yourself
+        up slowly. Turn and sit down. Rest before you do anything else, and tell your doctor about the fall.
+    - layout: "bullets"
+      heading: "Be Ready Before a Fall"
+      points: ["Carry your phone", "Consider a medical alert device", "Daily check-in with someone", "Keep a phone near the floor"]
+      footage_query: "medical alert button senior"
+      narration: >-
+        Prepare before a fall ever happens. Carry your phone with you around the house, even to the bathroom. Consider a
+        medical alert device you can wear, especially if you live alone. Set up a daily check in call with a family member or
+        friend. Practicing how to get up from the floor, with a physical therapist, can also give you confidence.
+    - layout: "bullets"
+      heading: "Protect Your Bones"
+      points: ["Ask about a bone density test", "Get enough calcium and vitamin D", "Keep doing weight-bearing exercise", "Ask if bone medicine fits you"]
+      footage_query: "older woman walking outdoors"
+      narration: >-
+        Falls hurt more when bones are thin. Osteoporosis has no symptoms until a bone breaks, so ask your doctor whether you
+        need a bone density test. Most women should be checked starting at age sixty five, and some men and younger women need
+        it sooner. Eat foods with calcium, get enough vitamin D, and keep walking and lifting light weights. If your bones are
+        thin, there are medicines that lower the chance of a break.
+    - layout: "bullets"
+      heading: "For Family and Caregivers"
+      points: ["Ask about falls and dizziness", "Do a home safety check together", "Help with medicine reviews", "Encourage activity"]
+      footage_query: "daughter helping elderly father"
+      narration: >-
+        If you care for an older parent or relative, you can help a lot. Ask them gently about falls, near falls and
+        dizziness, because many people do not mention them. Walk through the home together and fix hazards. Go with them to
+        doctor visits to review medicines. And encourage them to stay active, instead of doing everything for them.
+    - layout: "outro"
+      heading: "Remember"
+      points: ["Falls are not normal aging", "Stay active, build strength", "Review medicines, check eyes", "Make your home safer"]
+      footage_query: "happy senior couple walking"
+      narration: >-
+        Let's recap. Falls are common, but they are not a normal part of aging, and most can be prevented. Stay active and
+        build strength and balance, review your medicines, check your eyes and feet, and make your home safer. This video is
+        for education only, not medical advice. If it helped you, share it with an older parent or friend, subscribe to Health
+        Support Studio, and tell me in the comments what topic you want next.
   short_title: "1 in 4 older adults fall each year #Shorts"
   short_caption: >-
     Falls are the leading cause of injury for adults 65 and older, but many can be prevented. Share this with someone you

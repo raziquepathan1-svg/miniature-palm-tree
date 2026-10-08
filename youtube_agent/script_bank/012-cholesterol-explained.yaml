@@ -11,10 +11,11 @@ plan:
     High cholesterol has no symptoms, but it quietly raises your risk of heart attack and stroke. Here is what LDL, HDL and triglycerides mean on your lab report, and what you can do about them.
 
     In this video:
-    • What cholesterol is and why your body needs it
-    • "Bad" LDL vs "good" HDL, explained simply
-    • Triglycerides and what raises them
-    • How often to get checked, and lifestyle steps that help
+    • What cholesterol is and how it travels in your blood
+    • LDL, HDL and triglycerides, and what the numbers mean
+    • How often to get checked, and why there are no symptoms
+    • What raises cholesterol, including genes
+    • Foods, exercise and medicine that help
 
     #Cholesterol #HeartHealth #LDL #HealthyHeart #HealthEducation
   tags: ["cholesterol explained", "ldl cholesterol", "hdl cholesterol", "triglycerides", "high cholesterol", "lipid panel", "heart health", "how to lower cholesterol", "bad cholesterol", "good cholesterol", "health education"]
@@ -26,74 +27,239 @@ plan:
     - layout: "title"
       heading: "Cholesterol, Made Simple"
       points: ["LDL, HDL and triglycerides"]
-      footage_query: "healthy breakfast oats berries"
+      footage_query: "healthy heart food oats"
       narration: >-
-        You get your lab results back and see words like LDL, HDL and triglycerides, with numbers next to them. What do they
-        actually mean, and should you be worried? Today we explain cholesterol in plain language, and what you can do about it.
+        You got your blood test results back, and there is a line that says cholesterol, with numbers like LDL, HDL and
+        triglycerides. What do they mean, and should you worry? High cholesterol usually has no symptoms at all, but it
+        quietly raises the risk of heart attack and stroke. Today we will make it simple, and show you what you can do about
+        it.
+    - layout: "bullets"
+      heading: "What We Will Cover"
+      points: ["What cholesterol actually is", "LDL, HDL and triglycerides", "What raises your numbers", "How to lower them"]
+      footage_query: "person reading notes"
+      narration: >-
+        Here is what we will cover. What cholesterol actually is, and why your body needs some. The difference between LDL,
+        HDL and triglycerides. How to read your numbers. What raises cholesterol, including things you cannot control. And the
+        steps that really help bring it down, from food and exercise to medicine. Stay to the end for an easy trick to
+        remember which number is which.
     - layout: "bullets"
       heading: "What Is Cholesterol?"
-      points: ["A waxy, fat-like substance", "Your body makes what it needs", "Also comes from food", "Travels in the blood"]
-      footage_query: "blood vessels animation"
+      points: ["A waxy, fat-like substance", "Your liver makes it", "Builds cells and hormones", "Too much causes problems"]
+      footage_query: "doctor explaining model"
       narration: >-
-        Cholesterol is a waxy, fat like substance. Your body actually needs some of it to build cells and make hormones, and
-        your liver makes all you need. You also get it from foods that come from animals. Because it does not mix with blood,
-        it travels through your bloodstream in little packages called lipoproteins.
+        Cholesterol is a waxy, fat like substance found in every cell of your body. Your body uses it to build cells and make
+        hormones and vitamin D. Here is the surprising part: your liver makes all the cholesterol your body needs. The extra
+        comes from food. Problems start when there is too much of the wrong kind traveling in your blood.
+    - layout: "bullets"
+      heading: "How It Travels"
+      points: ["Carried by lipoproteins", "LDL carries it to the body", "HDL carries it back to the liver", "Balance matters"]
+      footage_query: "blood vessel illustration"
+      narration: >-
+        Cholesterol cannot travel in the blood on its own, because blood is mostly water and cholesterol is fatty. So it rides
+        in tiny packages called lipoproteins. The two main ones are LDL and HDL. You can think of them as delivery trucks
+        going in opposite directions. The balance between them is what really matters for your heart.
     - layout: "bullets"
       heading: "LDL: The Bad One"
-      points: ["Carries cholesterol to arteries", "Builds up as plaque", "Plaque narrows arteries", "Lower is better"]
-      footage_query: "doctor explaining heart model"
+      points: ["Low density lipoprotein", "Builds up in artery walls", "Forms plaque", "Lower is better"]
+      footage_query: "artery plaque diagram"
       narration: >-
-        LDL is often called the bad cholesterol. When there is too much of it, it can build up in the walls of your arteries,
-        forming plaque. Over time, plaque narrows the arteries and can lead to a heart attack or stroke. For LDL, lower is
-        generally better.
+        LDL, or low density lipoprotein, is called the bad cholesterol. When there is too much, it can build up in the walls
+        of your arteries and form plaque, a thick, hard deposit. Plaque makes the arteries narrower and stiffer, so less blood
+        can flow through. For LDL, lower is generally better.
     - layout: "bullets"
       heading: "HDL: The Good One"
-      points: ["Carries cholesterol to the liver", "Liver removes it", "Higher is generally better"]
-      footage_query: "person jogging morning"
+      points: ["High density lipoprotein", "Carries cholesterol away", "Back to the liver", "Higher is better"]
+      footage_query: "healthy heart illustration"
       narration: >-
-        HDL is called the good cholesterol, because it helps carry extra cholesterol back to your liver, which removes it from
-        your body. In general, a higher HDL is better. Regular physical activity can help raise it.
+        HDL, or high density lipoprotein, is called the good cholesterol. It works like a cleanup crew, picking up extra
+        cholesterol and carrying it back to the liver, which removes it from the body. For HDL, higher is generally better.
+        Being active and not smoking can help raise it.
     - layout: "bullets"
       heading: "Triglycerides"
-      points: ["A type of fat in blood", "Stores extra calories", "Raised by sugar and alcohol", "High levels add risk"]
+      points: ["The most common fat in the body", "Stores extra calories", "Raised by sugar and alcohol", "High levels add risk"]
       footage_query: "sugary drinks soda"
       narration: >-
-        Triglycerides are a different type of fat in your blood. They store extra calories from food. High triglycerides,
-        often linked to eating a lot of sugar and refined carbs, drinking alcohol, excess weight and diabetes, can also raise
-        your risk of heart disease.
+        Triglycerides are a different type of fat in your blood. Your body turns calories it does not need right away into
+        triglycerides and stores them for energy. Eating more calories than you burn, especially from sugar, refined
+        carbohydrates and alcohol, can raise them. High triglycerides, especially with high LDL or low HDL, add to the risk of
+        heart disease.
     - layout: "big_number"
-      heading: "No Symptoms"
-      points: ["high cholesterol is silent", "only a blood test can tell"]
-      footage_query: "blood test tube"
+      heading: "200"
+      points: ["total cholesterol: under 200", "is the usual goal for adults"]
+      footage_query: "lab blood test tubes"
       narration: >-
-        Here is the tricky part. High cholesterol usually has no symptoms at all. The only way to know is a simple blood test
-        called a lipid panel. Many adults should be checked every four to six years starting at age twenty, and more often if
-        you have risk factors. Your doctor will tell you what your numbers mean, because healthy targets depend on your
-        overall risk.
+        So what do the numbers mean? Results are usually given in milligrams per deciliter. For many adults, a total
+        cholesterol under two hundred is considered desirable. LDL under one hundred is often called optimal, and HDL of sixty
+        or higher is considered protective. Triglycerides under one hundred fifty are normal. Your own goals can be different,
+        so always go over them with your doctor.
+    - layout: "bullets"
+      heading: "Reading Your Lab Report"
+      points: ["Total cholesterol", "LDL and HDL", "Triglycerides", "Sometimes non-HDL cholesterol"]
+      footage_query: "woman reading lab report"
+      narration: >-
+        When you look at your lab report, called a lipid panel, you will usually see four lines: total cholesterol, LDL, HDL
+        and triglycerides. Some reports also show non HDL cholesterol, which is all the cholesterol except the good kind. Your
+        doctor may ask you not to eat for several hours before the test, because a recent meal can raise triglycerides. Ask if
+        you need to fast before you go.
+    - layout: "bullets"
+      heading: "Your Goals Can Be Different"
+      points: ["Diabetes or heart disease", "Smoking or high blood pressure", "Age and family history", "Your doctor sets your target"]
+      footage_query: "doctor talking patient office"
+      narration: >-
+        Your personal targets depend on your overall risk, not just one number. If you have diabetes, heart disease, high
+        blood pressure, smoke, or have a strong family history, your doctor may want your LDL much lower. Someone with no
+        other risk factors may have more room. That is why the same cholesterol number can mean different things for different
+        people.
+    - layout: "bullets"
+      heading: "Plaque Affects More Than the Heart"
+      points: ["Heart: chest pain, heart attack", "Brain: stroke", "Legs: pain when walking", "Kidneys and other organs"]
+      footage_query: "senior woman walking pain legs"
+      narration: >-
+        Plaque does not only build up in the heart. It can narrow arteries all over the body. In the heart, it can cause chest
+        pain and heart attacks. In the arteries to the brain, it can cause strokes. In the legs, it can cause pain or cramping
+        when walking, called peripheral artery disease. That is why keeping cholesterol in a healthy range protects your whole
+        body.
+    - layout: "warning"
+      heading: "No Symptoms"
+      points: ["You can't feel high cholesterol", "Plaque builds silently", "First sign can be a heart attack", "Only a blood test shows it"]
+      footage_query: "man chest pain"
+      narration: >-
+        Here is why this matters. High cholesterol usually causes no symptoms at all. You cannot feel plaque building up in
+        your arteries. For some people, the first sign is a heart attack or stroke. The only way to know your numbers is a
+        simple blood test called a lipid panel. That is why regular checks are so important.
+    - layout: "bullets"
+      heading: "How Often to Get Checked"
+      points: ["Adults: every 4 to 6 years", "More often with risk factors", "Children: once age 9 to 11", "Ask your doctor"]
+      footage_query: "blood test arm"
+      narration: >-
+        How often should you get checked? Many health groups recommend that healthy adults have their cholesterol checked
+        every four to six years, starting at age twenty. If you have heart disease, diabetes, or a family history of high
+        cholesterol, you may need it more often. Children should usually have it checked once between ages nine and eleven,
+        and again in the late teens or early twenties.
+    - layout: "bullets"
+      heading: "What Raises Cholesterol"
+      points: ["Saturated and trans fats", "Not enough activity", "Extra weight", "Smoking lowers good HDL"]
+      footage_query: "fried food burger"
+      narration: >-
+        What raises cholesterol? Eating a lot of saturated fat, found in fatty meats, butter and full fat dairy, and trans
+        fats, found in some fried and packaged foods. Not being active. Carrying extra weight, especially around the waist.
+        And smoking, which lowers your good HDL and damages artery walls. Diabetes and some medicines can also affect your
+        numbers.
     - layout: "bullets"
       heading: "Not Just Your Diet"
-      points: ["Family history and genes", "Age", "Diabetes and excess weight", "Smoking and inactivity"]
-      footage_query: "family portrait generations"
+      points: ["Genes play a big role", "Age and menopause", "Familial hypercholesterolemia", "Thin people can have it too"]
+      footage_query: "family photo generations"
       narration: >-
-        High cholesterol is not only about what you eat. Your genes play a big role, and some families have an inherited
-        condition that causes very high LDL, even in young, thin people. Age, diabetes, excess weight, smoking and not moving
-        enough also matter. That is why even people who eat well should get tested.
+        But it is not just about food. Your genes play a big role. Some families have an inherited condition called familial
+        hypercholesterolemia, which causes very high LDL from a young age, even in people who are fit and eat well.
+        Cholesterol also tends to rise with age, and after menopause in women. So even if you are thin and healthy, get
+        tested.
+    - layout: "myth_fact"
+      heading: "Common Belief"
+      points: ["Thin people don't get high cholesterol", "Anyone can have it"]
+      footage_query: "slim woman jogging"
+      narration: >-
+        That brings us to a common myth: only overweight people have high cholesterol. In fact, people of any size can have
+        high cholesterol, because genes and other factors matter too. Being at a healthy weight helps, but it does not
+        guarantee healthy numbers. The only way to know is to get tested.
+    - layout: "myth_fact"
+      heading: "Common Belief"
+      points: ["Young people don't need a test", "Start checking in your 20s"]
+      footage_query: "young adults friends"
+      narration: >-
+        Another myth: cholesterol is only a concern for older people. In fact, plaque can start building up in childhood and
+        early adulthood. That is why testing is recommended starting at age twenty for adults, and even earlier for children
+        with a family history. Finding high cholesterol early gives you many more years to do something about it.
     - layout: "bullets"
-      heading: "What Helps"
-      points: ["More fiber: oats, beans, fruit", "Less saturated and trans fat", "Move most days", "Don't smoke"]
-      footage_query: "vegetables cutting board kitchen"
+      heading: "Foods That Help"
+      points: ["Oats, beans, and lentils", "Fruits and vegetables", "Nuts and olive oil", "Fish twice a week"]
+      footage_query: "oatmeal berries breakfast"
       narration: >-
-        What can you do? Eat more fiber from oats, beans, fruits and vegetables. Choose less saturated fat, found in fatty
-        meats, butter and full fat dairy, and avoid trans fats. Move your body most days of the week. Do not smoke. And keep a
-        healthy weight. For some people, lifestyle changes are enough. Others also need medicine, like a statin, and that is a
-        decision to make with your doctor.
+        Now the good news: food can help. Foods rich in soluble fiber, like oats, beans, lentils, apples and barley, can help
+        lower LDL. Eat plenty of fruits and vegetables. Choose healthy fats, like nuts, seeds, avocado and olive oil, instead
+        of butter. And try to eat fish, like salmon or sardines, about twice a week.
+    - layout: "myth_fact"
+      heading: "Common Belief"
+      points: ["Eggs are banned with high cholesterol", "Saturated fat matters more"]
+      footage_query: "eggs breakfast plate"
+      narration: >-
+        What about eggs? For years people were told to avoid them completely. Today, experts say that for most people,
+        saturated fat and trans fat raise LDL more than the cholesterol in foods like eggs. Many healthy eating plans include
+        eggs in moderation. If you have diabetes, heart disease or very high cholesterol, ask your doctor how many are right
+        for you.
+    - layout: "bullets"
+      heading: "Foods to Limit"
+      points: ["Fatty and processed meats", "Fried foods and pastries", "Full-fat dairy and butter", "Sugary drinks and sweets"]
+      footage_query: "processed meat bacon"
+      narration: >-
+        And there are foods to limit. Fatty and processed meats, like sausage and bacon. Fried foods, pastries and many
+        packaged snacks. Full fat cheese, cream and butter. And sugary drinks and sweets, which especially raise
+        triglycerides. You do not have to be perfect. Small swaps, made every day, add up over time.
+    - layout: "bullets"
+      heading: "Move More"
+      points: ["Aim for 150 minutes a week", "Brisk walking counts", "Raises good HDL", "Helps triglycerides too"]
+      footage_query: "people walking park"
+      narration: >-
+        Exercise helps too. Aim for at least one hundred fifty minutes of moderate activity a week, like brisk walking, which
+        is about thirty minutes on five days. Regular activity can raise your good HDL and lower triglycerides. If you are
+        just starting, even ten minute walks after meals are a great beginning. Find something you enjoy, so you keep doing it.
+    - layout: "bullets"
+      heading: "Other Habits That Help"
+      points: ["Quit smoking", "Limit alcohol", "Lose a little weight", "Manage blood sugar"]
+      footage_query: "man breaking cigarette"
+      narration: >-
+        Other habits matter as well. Quitting smoking can raise your HDL and protect your arteries, and the benefits start
+        quickly. Limiting alcohol helps lower triglycerides. Losing even a small amount of weight, if you need to, can improve
+        your numbers. And if you have diabetes, keeping your blood sugar in range protects your heart.
+    - layout: "bullets"
+      heading: "When Medicine Is Needed"
+      points: ["Statins are most common", "Lower LDL and heart risk", "Based on your overall risk", "Keep healthy habits too"]
+      footage_query: "pharmacist medicine bottle"
+      narration: >-
+        Sometimes lifestyle changes are not enough, especially when genes play a big role or your risk is high. Then your
+        doctor may recommend medicine. The most common type is a statin, which lowers LDL and reduces the risk of heart attack
+        and stroke. Other medicines are also available. Medicine works best together with healthy habits, not instead of them.
+    - layout: "bullets"
+      heading: "Questions About Statins"
+      points: ["Muscle aches: tell your doctor", "Don't stop on your own", "Regular follow-up tests", "Ask about side effects"]
+      footage_query: "senior man talking doctor"
+      narration: >-
+        If you take a statin, some people notice muscle aches. Do not stop the medicine on your own. Tell your doctor, who may
+        adjust the dose or try a different one. Your doctor will also check your numbers with follow up blood tests. Bring
+        your questions to every visit. A medicine only works if you take it, so find one that works for you.
+    - layout: "myth_fact"
+      heading: "Common Belief"
+      points: ["My numbers are fine, I can stop", "Keep taking it as prescribed"]
+      footage_query: "pill bottle hand"
+      narration: >-
+        A common mistake: my cholesterol is normal now, so I can stop my medicine. In fact, the numbers are often normal
+        because the medicine is working. Stopping can let your cholesterol climb back up. Never stop a prescribed cholesterol
+        medicine without talking to your doctor first.
+    - layout: "warning"
+      heading: "Heart Attack and Stroke Signs"
+      points: ["Chest pain or pressure", "Face drooping, arm weakness", "Trouble speaking", "Call 911 right away"]
+      footage_query: "ambulance emergency lights"
+      narration: >-
+        Because high cholesterol raises the risk of heart attack and stroke, know the warning signs. For a heart attack: chest
+        pain or pressure, pain in the arm, jaw or back, shortness of breath, cold sweat or nausea. For a stroke: face
+        drooping, arm weakness, or trouble speaking. Call 911 right away. Every minute counts.
+    - layout: "bullets"
+      heading: "Easy Memory Trick"
+      points: ["LDL: L for lousy, keep it low", "HDL: H for healthy, keep it high", "Triglycerides: watch sugar", "Test regularly"]
+      footage_query: "sticky note reminder"
+      narration: >-
+        Here is the easy trick I promised. LDL starts with L, for lousy, so you want it low. HDL starts with H, for healthy,
+        so you want it high. For triglycerides, watch the sugar and alcohol. And remember, you cannot feel any of these, so
+        the only way to know them is to test regularly.
     - layout: "outro"
-      heading: "Know Your Numbers"
-      points: ["LDL: lower is better", "HDL: higher is better", "Ask when to get tested"]
-      footage_query: "couple walking park"
+      heading: "Remember"
+      points: ["Know your numbers", "LDL low, HDL high", "Small daily changes help", "Ask about your risk"]
+      footage_query: "family cooking healthy"
       narration: >-
-        So remember: LDL, lower is better. HDL, higher is better. And ask your doctor when you should get tested. This video
-        is for education only, not medical advice. Like and subscribe to Health Support Studio for a new health video every day.
+        Let's recap. Cholesterol has no symptoms, so get tested. Keep LDL low and HDL high, eat more fiber and healthy fats,
+        move more, and do not smoke. If your doctor recommends medicine, take it as prescribed. This video is for education
+        only, not medical advice. If it helped you, share it with someone who has not checked their cholesterol in a while,
+        subscribe to Health Support Studio, and tell me in the comments what topic you want next.
   short_title: "Good vs bad cholesterol in 30 seconds #Shorts"
   short_caption: >-
     LDL or HDL: which one is the good cholesterol? Here is the simple way to remember. Educational only, not medical advice.
