@@ -1,0 +1,277 @@
+queue_topic: "Sunscreen and skin cancer: myths vs facts"
+style: "Myth vs Fact"
+sources:
+  - "CDC, Sun Safety: https://www.cdc.gov/skin-cancer/sun-safety/index.html"
+  - "FDA, Sunscreen: How to Help Protect Your Skin from the Sun: https://www.fda.gov/drugs/understanding-over-counter-medicines/sunscreen-how-help-protect-your-skin-sun"
+  - "NIH National Cancer Institute, Skin Cancer: https://www.cancer.gov/types/skin"
+plan:
+  topic: "Sunscreen and skin cancer: myths vs facts"
+  title: "Sunscreen Myths That Put Your Skin at Risk"
+  description: |-
+    Skin cancer is the most common cancer in the US, and most cases are linked to the sun. We bust seven common sunscreen myths, show you how to apply it the right way, and explain how to spot skin cancer early.
+
+    In this video:
+    • Who is at risk, including darker skin
+    • Cloudy days, base tans and tanning beds
+    • How to choose and apply sunscreen
+    • 7 sunscreen myths busted
+    • The ABCDEs of melanoma and monthly skin checks
+
+    #Sunscreen #SkinCancer #SunSafety #Melanoma #HealthEducation
+  tags: ["sunscreen", "sunscreen myths", "skin cancer", "melanoma", "abcde melanoma", "spf explained", "sun safety", "tanning beds", "skin check", "myth vs fact", "health education"]
+  thumbnail_text: "SUNSCREEN MYTHS"
+  thumbnail_highlight: "MYTHS"
+  thumbnail_photo_query: "applying sunscreen beach"
+  playlist: "Healthy Habits & Prevention"
+  scenes:
+    - layout: "title"
+      heading: "Sunscreen Myths"
+      points: ["That put your skin at risk"]
+      footage_query: "applying sunscreen beach"
+      narration: >-
+        Skin cancer is the most common cancer in the United States, and most cases are linked to too much sun. Yet many people
+        skip sunscreen on cloudy days, use far too little, or believe darker skin cannot burn. Today we bust the biggest
+        sunscreen and sun safety myths, and show you how to spot skin cancer early, when it is easiest to treat.
+    - layout: "big_number"
+      heading: "The Most Common Cancer"
+      points: ["Millions", "Skin cancers treated in the US each year"]
+      footage_query: "doctor examining skin"
+      narration: >-
+        Every year in the United States, millions of people are treated for skin cancer, more than all other cancers combined.
+        Most are basal cell and squamous cell cancers, which are very treatable when found early. Melanoma is less common, but
+        more dangerous, because it can spread. The good news is that most skin cancers can be prevented.
+    - layout: "bullets"
+      heading: "How the Sun Harms Skin"
+      points: ["Ultraviolet rays", "UVA ages the skin", "UVB burns the skin", "Both raise cancer risk"]
+      footage_query: "sun shining sky"
+      narration: >-
+        The sun gives off invisible ultraviolet, or UV, rays. UVA rays reach deep into the skin and cause wrinkles, spots and
+        aging. UVB rays cause sunburn. Both damage the DNA in skin cells, and over time this damage can lead to skin cancer.
+        Tanning beds give off UV rays too, often stronger than the midday sun.
+    - layout: "bullets"
+      heading: "Who Is at Higher Risk"
+      points: ["Fair skin that burns easily", "Many or unusual moles", "Family history of skin cancer", "Many past sunburns"]
+      footage_query: "woman freckles sunlight"
+      narration: >-
+        Anyone can get skin cancer, but the risk is higher for people with fair skin that burns easily, light hair, and light
+        eyes. Having many moles or unusual moles, a family history of skin cancer, a history of sunburns, especially
+        blistering ones in childhood, and using tanning beds also raise the risk. So does a weakened immune system.
+    - layout: "myth_fact"
+      heading: "Dark Skin Cannot Burn"
+      points: ["Darker skin is fully protected", "Anyone can burn and get skin cancer"]
+      footage_query: "diverse people outdoors"
+      narration: >-
+        Myth one: people with darker skin do not need sunscreen. Fact: darker skin has more natural protection, but it can
+        still burn and get sun damage. Skin cancer is less common in people with darker skin, but it is often found later,
+        when it is harder to treat. Some melanomas appear on the palms, soles of the feet, or under the nails.
+    - layout: "myth_fact"
+      heading: "Cloudy Days Are Safe"
+      points: ["No sun, no need for sunscreen", "UV rays pass through clouds"]
+      footage_query: "cloudy sky beach"
+      narration: >-
+        Myth two: you do not need sunscreen on cloudy days. Fact: most UV rays pass right through clouds. Many people get
+        their worst sunburns on cool or cloudy days, because they do not feel the heat and stay out longer. Check the UV index
+        on your weather app. When it is three or higher, protect your skin.
+    - layout: "myth_fact"
+      heading: "A Base Tan Protects You"
+      points: ["Tan first to prevent burns", "A tan is skin damage"]
+      footage_query: "woman tanning beach"
+      narration: >-
+        Myth three: getting a base tan protects you from sunburn. Fact: a tan is your skin's response to injury from UV rays.
+        A tan gives very little protection, about the same as a very low SPF sunscreen, and the damage that caused it raises
+        your risk of skin cancer. There is no such thing as a safe tan from the sun or a tanning bed.
+    - layout: "warning"
+      heading: "Tanning Beds"
+      points: ["Raise melanoma risk", "Especially before age 35", "No safe level", "Use self-tanner instead"]
+      footage_query: "tanning bed salon"
+      narration: >-
+        Indoor tanning is especially harmful. The World Health Organization lists tanning beds as a cause of cancer, in the
+        same group as tobacco. Using them, especially before age thirty five, greatly raises the risk of melanoma. If you want
+        a tan look, use a sunless self tanner, but remember it does not protect you from the sun.
+    - layout: "bullets"
+      heading: "Choosing a Sunscreen"
+      points: ["Broad spectrum", "SPF 30 or higher", "Water resistant if active", "One you will use"]
+      footage_query: "sunscreen bottle close up"
+      narration: >-
+        How do you choose a sunscreen? Look for broad spectrum on the label, which means it protects against both UVA and UVB
+        rays. Choose SPF thirty or higher, as dermatologists recommend. If you will be swimming or sweating, choose water
+        resistant. The best sunscreen is one you like enough to use every day, whether lotion, stick or spray.
+    - layout: "bullets"
+      heading: "What SPF Means"
+      points: ["Measures UVB protection", "SPF 30 blocks about 97 percent", "Higher is not much stronger", "No sunscreen blocks all rays"]
+      footage_query: "sunscreen bottle label"
+      narration: >-
+        What does SPF mean? SPF, or sun protection factor, measures protection against sunburn from UVB rays. SPF thirty
+        blocks about ninety seven percent of UVB rays, and SPF fifty blocks about ninety eight percent. Higher numbers add
+        only a little more protection. No sunscreen blocks all rays, so use it along with shade and clothing.
+    - layout: "myth_fact"
+      heading: "A Little Sunscreen Is Enough"
+      points: ["A thin layer protects you", "Most people use too little"]
+      footage_query: "sunscreen hands"
+      narration: >-
+        Myth four: a thin layer of sunscreen is enough. Fact: most people apply only a quarter to half of the amount needed,
+        so they get much less protection than the label says. Adults need about one ounce, enough to fill a shot glass, to
+        cover the whole body. Use about a nickel sized amount for your face alone.
+    - layout: "bullets"
+      heading: "How to Apply It Right"
+      points: ["15 minutes before going out", "All exposed skin", "Ears, neck, feet, scalp", "Lips with SPF lip balm"]
+      footage_query: "applying sunscreen face"
+      narration: >-
+        Apply sunscreen about fifteen minutes before going outside, so it can bind to your skin. Cover all exposed skin, and
+        do not forget commonly missed spots: the ears, back of the neck, tops of the feet, the scalp where hair is thin, and
+        the backs of the hands. Use a lip balm with SPF. Ask someone to help with your back.
+    - layout: "myth_fact"
+      heading: "Once a Day Is Enough"
+      points: ["Morning sunscreen lasts all day", "Reapply every 2 hours"]
+      footage_query: "family beach sunscreen"
+      narration: >-
+        Myth five: if you put sunscreen on in the morning, you are covered all day. Fact: sunscreen wears off. Reapply at
+        least every two hours when outside, and right after swimming, sweating or towel drying. Water resistant sunscreens
+        last forty or eighty minutes in water, as stated on the label. No sunscreen is waterproof or sweatproof.
+    - layout: "myth_fact"
+      heading: "Sunscreen Is Toxic"
+      points: ["Sunscreen chemicals are dangerous", "Sun damage is the proven risk"]
+      footage_query: "sunscreen bottle beach"
+      narration: >-
+        Myth six: sunscreen is toxic and does more harm than good. Fact: the FDA is studying some sunscreen ingredients, but
+        there is no evidence that they cause harm in people at normal use, while the harm from UV rays is well proven. If you
+        are concerned, mineral sunscreens with zinc oxide or titanium dioxide are an option, and the FDA considers them safe
+        and effective.
+    - layout: "bullets"
+      heading: "Spray Sunscreen Tips"
+      points: ["Spray until skin glistens", "Rub it in", "Not on the face directly", "Avoid breathing it in"]
+      footage_query: "spray sunscreen arm"
+      narration: >-
+        Spray sunscreens are convenient, but easy to underuse. Spray until your skin glistens, then rub it in to make sure it
+        covers evenly. Do not spray directly on the face. Spray it into your hands and apply it, to avoid breathing it in.
+        Avoid spraying near heat or flames, and be careful on windy days, when much of it blows away.
+    - layout: "bullets"
+      heading: "Check the Expiration Date"
+      points: ["Most last about 3 years", "Toss if expired", "Toss if it changed", "Do not leave in a hot car"]
+      footage_query: "sunscreen bottle close up"
+      narration: >-
+        Sunscreen does not last forever. The FDA requires sunscreens to stay effective for at least three years, unless they
+        have an earlier expiration date. Throw it out if it is expired, or if it changes color, smell or texture. Heat can
+        break it down faster, so do not leave it in a hot car for long periods. Buy new at the start of each summer.
+    - layout: "bullets"
+      heading: "Shade and Timing"
+      points: ["Seek shade midday", "UV strongest 10 to 4", "Shadow rule", "Plan outdoor time"]
+      footage_query: "tree shade park"
+      narration: >-
+        Sunscreen is just one part of sun safety. UV rays are strongest from about ten in the morning to four in the
+        afternoon. Try to plan outdoor activities earlier or later, and seek shade during the middle of the day. A simple
+        rule: if your shadow is shorter than you are, the sun's rays are strong.
+    - layout: "bullets"
+      heading: "Clothing and Hats"
+      points: ["Long sleeves and pants", "Wide-brimmed hat", "UV-blocking sunglasses", "UPF-rated clothes"]
+      footage_query: "woman wearing sun hat"
+      narration: >-
+        Clothing is great protection. Long sleeves and long pants made from tightly woven fabric block more sun. Some clothing
+        has a UPF rating, which tells how much UV it blocks. Wear a wide brimmed hat that shades your face, ears and neck.
+        Baseball caps leave the ears and neck exposed. Wear sunglasses that block UVA and UVB rays to protect your eyes.
+    - layout: "bullets"
+      heading: "Water, Snow and Sand"
+      points: ["Reflect the sun's rays", "Higher altitude, stronger UV", "Reapply more often", "Protect your eyes"]
+      footage_query: "snow skiing mountains"
+      narration: >-
+        Water, sand and snow reflect UV rays, which increases your exposure. Snow can reflect most of the sun's UV rays, so
+        skiers can burn badly, even on cold days. UV also gets stronger at higher altitudes. At the beach, on the water, or on
+        the slopes, reapply sunscreen often, and wear sunglasses or goggles.
+    - layout: "warning"
+      heading: "Babies and Children"
+      points: ["Under 6 months: keep out of sun", "Shade, hats, clothing", "Sunscreen after 6 months", "Prevent childhood burns"]
+      footage_query: "mother baby sun hat"
+      narration: >-
+        Children's skin burns easily, and childhood sunburns raise the risk of skin cancer later in life. Keep babies under
+        six months out of direct sun, using shade, hats, and light clothing. After six months, use sunscreen along with shade
+        and clothing. Teach kids sun safety early, and set a good example. Make sure schools and camps allow sunscreen.
+    - layout: "myth_fact"
+      heading: "Sunscreen Causes Low Vitamin D"
+      points: ["Sunscreen blocks all vitamin D", "Most people still get enough"]
+      footage_query: "grilled salmon plate"
+      narration: >-
+        Myth seven: using sunscreen will make you low in vitamin D. Fact: studies show that people who use sunscreen in real
+        life still make vitamin D, because no sunscreen blocks all UV rays, and most people do not apply it perfectly. You can
+        also get vitamin D from foods like fatty fish and fortified milk. Ask your doctor if you are concerned.
+    - layout: "bullets"
+      heading: "Some Medicines Raise Sensitivity"
+      points: ["Some antibiotics", "Some acne medicines", "Some water pills", "Extra sun protection"]
+      footage_query: "pill bottles table"
+      narration: >-
+        Some medicines make your skin more sensitive to the sun, so you burn faster. These include certain antibiotics, like
+        doxycycline, some acne medicines, some water pills, some heart medicines, and some pain relievers. Read your medicine
+        labels, and ask your pharmacist. If you take these, be extra careful with sun protection.
+    - layout: "warning"
+      heading: "The ABCDEs of Melanoma"
+      points: ["Asymmetry", "Border is irregular", "Color varies", "Diameter, Evolving"]
+      footage_query: "doctor examining mole"
+      narration: >-
+        Now, how to spot melanoma early. Use the ABCDE rule. A is for asymmetry: one half does not match the other. B is for
+        border: edges are ragged or blurred. C is for color: several shades of brown, black, red, white or blue. D is for
+        diameter: larger than a pencil eraser. E is for evolving: a mole that changes in size, shape, color, or starts to
+        bleed or itch.
+    - layout: "warning"
+      heading: "Other Warning Signs"
+      points: ["A new spot that grows", "A sore that does not heal", "A shiny bump", "The ugly duckling mole"]
+      footage_query: "skin close up"
+      narration: >-
+        Other signs to watch for include a new spot that grows, a sore that does not heal in a few weeks, a shiny pink or
+        pearly bump, a scaly red patch, or a spot that bleeds easily. Also look for the ugly duckling, a mole that looks
+        different from your other moles. Any of these deserves a check by a doctor.
+    - layout: "bullets"
+      heading: "Check Your Skin Monthly"
+      points: ["Good light and a mirror", "Check everywhere", "Scalp, nails, soles", "Take photos to compare"]
+      footage_query: "woman checking skin mirror"
+      narration: >-
+        Check your skin once a month. Use a full length mirror and a hand mirror in a well lit room. Look at your whole body,
+        including your scalp, behind your ears, between your toes, the soles of your feet, under your nails, and your back.
+        Ask a partner to help. Taking photos of moles makes it easier to notice changes over time.
+    - layout: "bullets"
+      heading: "When to See a Doctor"
+      points: ["Any changing mole", "A new or unusual spot", "A sore that will not heal", "Ask about skin checks"]
+      footage_query: "doctor talking patient office"
+      narration: >-
+        See your doctor or a dermatologist if you notice any of these warning signs. Early skin cancers are usually easy to
+        treat, often with a simple procedure in the office. People at higher risk, such as those with many moles, a history of
+        skin cancer, or a family history of melanoma, should ask how often they need a professional skin exam.
+    - layout: "bullets"
+      heading: "Quick Recap"
+      points: ["Broad spectrum, SPF 30+", "A shot glass for the body", "Reapply every 2 hours", "Check your skin monthly"]
+      footage_query: "notebook checklist pen"
+      narration: >-
+        Let us recap. Everyone needs sun protection, including people with darker skin and on cloudy days. Use a broad
+        spectrum sunscreen with SPF thirty or higher, about a shot glass for your body, and reapply every two hours. Seek
+        shade, wear hats and protective clothing, skip tanning beds, and check your skin every month using the ABCDEs.
+    - layout: "outro"
+      heading: "Remember"
+      points: ["Protect every day", "Use enough, reapply", "Know the ABCDEs"]
+      footage_query: "family beach shade"
+      narration: >-
+        Remember: protect your skin every day, use enough sunscreen and reapply, and know the ABCDEs of melanoma. Share this
+        with someone who loves the beach. This video is for education only, not medical advice. Like and subscribe to Health
+        Support Studio for a new health video every day.
+  short_title: "You're not using enough sunscreen #Shorts"
+  short_caption: >-
+    Most people use only half the sunscreen they need. Here is how much to use. Educational only, not medical advice.
+    #Sunscreen #SkinCancer #SunSafety #HealthEducation
+  short_scenes:
+    - layout: "title"
+      heading: "Using Enough Sunscreen?"
+      points: ["Most people do not"]
+      footage_query: "applying sunscreen beach"
+      narration: >-
+        Most people use only a quarter to half of the sunscreen they need.
+    - layout: "bullets"
+      heading: "Do It Right"
+      points: ["A shot glass for your body", "Broad spectrum, SPF 30+", "Reapply every 2 hours"]
+      footage_query: "sunscreen hands"
+      narration: >-
+        Adults need about one ounce, enough to fill a shot glass, to cover the body. Choose broad spectrum SPF thirty or
+        higher, apply it fifteen minutes before going out, and reapply every two hours and after swimming. Clouds do not block
+        most UV rays.
+    - layout: "outro"
+      heading: "Full Video"
+      points: ["On YouTube"]
+      footage_query: "family beach shade"
+      narration: >-
+        Learn more sun safety myths in our full video, on the Health Support Studio YouTube channel.
