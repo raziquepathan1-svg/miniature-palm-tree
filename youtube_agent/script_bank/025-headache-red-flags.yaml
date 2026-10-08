@@ -12,8 +12,9 @@ plan:
 
     In this video:
     • The common, harmless kinds of headache
-    • The "worst headache of my life" warning
+    • The worst headache of my life warning
     • Headache with stroke signs, fever and stiff neck, or after a head injury
+    • Red flags in pregnancy, after 50 and at home
     • When to see your doctor about headaches
 
     #Headache #Migraine #WarningSigns #Stroke #HealthEducation
@@ -24,76 +25,239 @@ plan:
   playlist: "Emergencies & First Aid"
   scenes:
     - layout: "title"
-      heading: "Headache Red Flags"
-      points: ["When it's an emergency"]
+      heading: "Not Just a Headache"
+      points: ["When a headache is an emergency"]
       footage_query: "woman headache holding head"
       narration: >-
-        Almost everyone gets headaches, and the vast majority are not dangerous. But once in a while, a headache is a warning
-        sign of something serious, like a stroke or bleeding in the brain. Today you will learn the red flags that mean get
-        help now.
+        Almost everyone gets headaches, and most of them are not dangerous. But once in a while, a headache is a warning sign
+        of something serious, like a stroke, bleeding in the brain, or a dangerous infection. Today you will learn the common
+        harmless headaches, the red flags that mean call 911 right now, and when to see your doctor soon.
+    - layout: "big_number"
+      heading: "Headaches Are Common"
+      points: ["Most", "Headaches are not dangerous"]
+      footage_query: "office worker rubbing temples"
+      narration: >-
+        Headaches are one of the most common health complaints. Most adults have at least one each year. The great majority
+        are primary headaches, meaning the headache itself is the problem, not a sign of another disease. These include
+        tension headaches, migraines and cluster headaches. They can be very painful, but they are not life threatening.
+        Knowing the usual patterns helps you spot the unusual ones.
     - layout: "bullets"
-      heading: "Common Headaches"
-      points: ["Tension headaches", "Migraines", "Sinus pressure", "Too little sleep, water or caffeine"]
-      footage_query: "man rubbing temples desk"
+      heading: "Tension Headache"
+      points: ["Band of pressure", "Both sides of the head", "Stress, poor sleep, posture", "Mild to moderate pain"]
+      footage_query: "man stressed at desk"
       narration: >-
-        First, the common ones. Tension headaches feel like a tight band around the head. Migraines often cause throbbing pain,
-        nausea, and sensitivity to light and sound. Headaches can also come from a cold, sinus pressure, lack of sleep, skipped
-        meals, dehydration, or missing your usual caffeine. These can be miserable, but are usually not dangerous.
+        The most common type is the tension headache. It feels like a tight band or pressure around the head, often on both
+        sides, and sometimes in the neck and shoulders. It is usually mild to moderate. Stress, poor sleep, skipped meals, eye
+        strain and long hours hunched over a screen are common triggers. Rest, water, and an over the counter pain reliever
+        often help.
+    - layout: "bullets"
+      heading: "Migraine"
+      points: ["Throbbing, often one side", "Sensitive to light and sound", "Nausea or vomiting", "Sometimes an aura first"]
+      footage_query: "woman lying dark room"
+      narration: >-
+        Migraine is a throbbing or pounding headache, often on one side, that can last hours to days. Light, sound and
+        movement usually make it worse, and many people feel sick to their stomach. Some people get an aura first, like
+        flashing lights or zigzag lines, lasting up to an hour. Migraines often run in families and are more common in women.
+    - layout: "bullets"
+      heading: "Cluster Headache"
+      points: ["Severe pain around one eye", "Short attacks, often at night", "Watery eye, runny nose", "Comes in clusters"]
+      footage_query: "man holding eye pain"
+      narration: >-
+        Cluster headaches are less common but extremely painful. They cause sharp, burning pain around or behind one eye,
+        often with a red, watery eye and a runny nose on the same side. Attacks last fifteen minutes to three hours, and often
+        come at the same time each day, in clusters lasting weeks. They are not dangerous, but they need a doctor's care.
+    - layout: "myth_fact"
+      heading: "It Is Just My Sinuses"
+      points: ["Face pressure means sinus headache", "Many are really migraines"]
+      footage_query: "woman holding nose bridge"
+      narration: >-
+        Myth: pressure around the eyes and cheeks always means a sinus headache. Fact: studies have found that most people who
+        think they have sinus headaches actually have migraines. A true sinus infection usually comes with thick colored
+        mucus, fever, and a recent cold. If decongestants never seem to help your sinus headaches, ask your doctor whether it
+        could be migraine, which needs different treatment.
+    - layout: "bullets"
+      heading: "Other Common Causes"
+      points: ["Sinus infections", "Caffeine withdrawal", "Dehydration, skipped meals", "Too much pain medicine"]
+      footage_query: "coffee cup table"
+      narration: >-
+        Other common causes include colds and sinus infections, dehydration, skipping meals, too much or too little caffeine,
+        alcohol, and lack of sleep. A surprising one is medication overuse headache. Taking pain relievers for headaches more
+        than two or three days a week can actually cause more frequent headaches. If you need them that often, see your
+        doctor.
     - layout: "warning"
-      heading: "Worst Headache of Your Life"
-      points: ["Sudden and severe", "Peaks within a minute", "Call 911 right away"]
-      footage_query: "ambulance emergency lights"
+      heading: "Red Flag: Thunderclap"
+      points: ["Sudden, explosive pain", "Peak within one minute", "Worst headache of your life", "Call 911"]
+      footage_query: "woman headache holding head"
       narration: >-
-        Red flag number one: a sudden, severe headache that reaches its worst within about a minute. People often call it the
-        worst headache of their life, or say it felt like a thunderclap. This can be a sign of bleeding in the brain. Call 911
+        Now the red flags. The most important is a thunderclap headache: a sudden, severe headache that reaches full strength
+        within about one minute, often described as the worst headache of my life. It can be a sign of bleeding around the
+        brain from a burst blood vessel. Call 911 right away. Do not drive yourself, and do not wait for it to pass.
+    - layout: "bullets"
+      heading: "Signs of a Brain Bleed"
+      points: ["Sudden severe headache", "Stiff neck, vomiting", "Light hurts the eyes", "Confusion or passing out"]
+      footage_query: "paramedic helping patient"
+      narration: >-
+        Bleeding around the brain, called a subarachnoid hemorrhage, often comes from a weak, bulging blood vessel called an
+        aneurysm. Besides the sudden headache, there may be a stiff neck, nausea and vomiting, sensitivity to light, blurred
+        or double vision, a seizure, confusion, or passing out. Some people have a smaller warning headache days before. Fast
+        treatment saves lives.
+    - layout: "warning"
+      heading: "Red Flag: Stroke Signs"
+      points: ["Face drooping", "Arm weakness", "Speech trouble", "Time to call 911"]
+      footage_query: "elderly man face drooping"
+      narration: >-
+        The next red flag is a headache with signs of a stroke. Remember the letters F A S T. Face drooping on one side. Arm
+        or leg weakness, especially on one side. Speech that is slurred or strange. Time to call 911. Other signs include
+        sudden trouble seeing, sudden dizziness or loss of balance, and sudden confusion. Note the time symptoms started.
+    - layout: "myth_fact"
+      heading: "Strokes Never Cause Headaches"
+      points: ["Strokes are always painless", "Some strokes start with headache"]
+      footage_query: "doctor reading brain scan"
+      narration: >-
+        Myth: strokes never cause headaches. Fact: many strokes are painless, but some, especially those caused by bleeding,
+        begin with a sudden, severe headache. A tear in a neck artery can also cause neck pain and headache before a stroke.
+        Any headache with weakness, numbness, vision changes or trouble speaking needs emergency care.
+    - layout: "warning"
+      heading: "Red Flag: Fever and Stiff Neck"
+      points: ["Headache with high fever", "Stiff neck", "Confusion or sleepiness", "Rash that does not fade"]
+      footage_query: "thermometer fever close up"
+      narration: >-
+        Another red flag is a headache with fever and a stiff neck, which can mean meningitis, an infection of the lining
+        around the brain. Other signs include confusion, sleepiness, vomiting, sensitivity to light, and sometimes a rash of
+        small purple spots that do not fade when pressed. Meningitis can get worse within hours. Go to the emergency room
         right away.
     - layout: "warning"
-      heading: "Headache Plus Stroke Signs"
-      points: ["Face drooping", "Arm or leg weakness", "Trouble speaking", "Vision loss or confusion"]
-      footage_query: "senior man confused"
+      heading: "Red Flag: After a Head Injury"
+      points: ["Headache getting worse", "Repeated vomiting", "Very sleepy or confused", "Unequal pupils"]
+      footage_query: "child bike helmet fall"
       narration: >-
-        Red flag number two: a headache with signs of a stroke. That includes a drooping face, weakness or numbness in an arm or
-        leg, trouble speaking or understanding, sudden vision loss, confusion, or trouble walking. Call 911 and note the time
-        symptoms started.
-    - layout: "warning"
-      heading: "Fever and Stiff Neck"
-      points: ["Headache with fever", "Stiff neck", "Confusion or rash", "Could be meningitis"]
-      footage_query: "person sick bed fever"
-      narration: >-
-        Red flag number three: a headache with fever and a stiff neck, especially with confusion, vomiting, or a rash. This can
-        be a sign of meningitis, a serious infection around the brain and spinal cord. Get emergency care right away.
-    - layout: "warning"
-      heading: "After a Head Injury"
-      points: ["Headache getting worse", "Repeated vomiting", "Very sleepy or confused", "Seizure"]
-      footage_query: "bicycle helmet road"
-      narration: >-
-        Red flag number four: a headache after a blow to the head that keeps getting worse, especially with repeated vomiting,
-        unusual sleepiness, confusion, or a seizure. This is an emergency, especially for older adults and anyone who takes a
-        blood thinner.
+        A headache after a fall or a blow to the head needs attention. Get emergency care if the headache gets worse, or if
+        there is repeated vomiting, confusion, unusual sleepiness, a seizure, slurred speech, weakness, or one pupil larger
+        than the other. Older adults and people on blood thinners can bleed inside the skull even after a minor bump,
+        sometimes hours or days later.
     - layout: "bullets"
-      heading: "For Everyday Headaches"
-      points: ["Drink water, eat regularly", "Rest in a dark, quiet room", "Keep a headache diary", "Ask about safe pain relief"]
-      footage_query: "woman resting dark room"
+      heading: "Concussion Care"
+      points: ["Rest the first day or two", "Return to activity slowly", "No sports until cleared", "Watch for warning signs"]
+      footage_query: "teen resting couch"
       narration: >-
-        For everyday headaches, simple steps often help. Drink enough water, eat regular meals, and keep a steady sleep
-        schedule. Resting in a dark, quiet room can ease a migraine. A headache diary, noting when headaches happen and what
-        you ate or did, can help you and your doctor spot triggers. And ask your pharmacist which pain reliever is safe for
-        you.
+        Most concussions get better with time. Rest for the first day or two, then slowly return to normal activities, as long
+        as symptoms do not get worse. Limit screens if they make symptoms worse. Athletes should not return to sports until a
+        health professional clears them, because a second injury before healing can be very dangerous.
+    - layout: "warning"
+      heading: "Red Flag: New After 50"
+      points: ["A new type of headache", "Pain at the temples", "Jaw pain when chewing", "Vision changes"]
+      footage_query: "elderly woman holding temple"
+      narration: >-
+        A new kind of headache that starts after age fifty deserves a check up. One cause is giant cell arteritis, an
+        inflammation of blood vessels in the head. Signs include headache at the temples, a tender scalp, jaw pain when
+        chewing, fever, tiredness, and vision problems. Without fast treatment, it can cause permanent blindness. See a doctor
+        promptly.
+    - layout: "warning"
+      heading: "Red Flag: Changes in Pattern"
+      points: ["Headaches getting worse", "Waking you from sleep", "Worse with coughing or straining", "Different from your usual"]
+      footage_query: "man waking night headache"
+      narration: >-
+        Pay attention to changes in your headache pattern. See your doctor if headaches are getting more frequent or more
+        severe over weeks, wake you from sleep, are worse when you cough, sneeze or strain, or feel very different from your
+        usual headaches. These can have many causes, and most are not serious, but they should be checked.
+    - layout: "warning"
+      heading: "Red Flag: With Other Symptoms"
+      points: ["Weight loss or night sweats", "Cancer or weak immune system", "Seizure", "Personality changes"]
+      footage_query: "doctor talking patient office"
+      narration: >-
+        A headache needs a closer look if it comes with other problems, like unexplained weight loss, night sweats, a seizure,
+        personality changes, or trouble thinking. It also needs prompt attention in people with cancer or a weakened immune
+        system, such as from HIV or certain medicines, because they are more likely to have a serious cause.
+    - layout: "warning"
+      heading: "Red Flag: Pregnancy"
+      points: ["New or severe headache", "Vision changes", "Swelling of face or hands", "Call your doctor now"]
+      footage_query: "pregnant woman holding head"
+      narration: >-
+        Pregnant women and those who recently gave birth should take headaches seriously. A severe headache, especially with
+        vision changes, swelling of the face or hands, or pain under the ribs, can be a sign of preeclampsia, a dangerous rise
+        in blood pressure. This can happen during pregnancy or in the weeks after delivery. Call your doctor or go to the
+        hospital right away.
+    - layout: "warning"
+      heading: "Red Flag: Carbon Monoxide"
+      points: ["Several people with headaches", "Worse at home, better outside", "Dizziness, nausea", "Get out and call 911"]
+      footage_query: "smoke detector ceiling"
+      narration: >-
+        Here is a red flag many people miss. If several people in the same home have headaches, dizziness, nausea or
+        confusion, especially in winter, and feel better when they leave, think about carbon monoxide poisoning. This gas has
+        no smell or color. Get everyone outside, then call 911. Install carbon monoxide alarms near bedrooms.
+    - layout: "warning"
+      heading: "Red Flag: Eye Pain and Vision"
+      points: ["Painful red eye", "Halos around lights", "Sudden vision loss", "Nausea with eye pain"]
+      footage_query: "eye close up red"
+      narration: >-
+        A headache with a painful red eye, blurred vision, halos around lights, and nausea can be a sign of acute angle
+        closure glaucoma, where pressure inside the eye rises suddenly. This can cause blindness within hours. Sudden loss of
+        vision, or double vision with a headache, also needs emergency care. Go to an emergency room or eye emergency clinic.
+    - layout: "myth_fact"
+      heading: "High Blood Pressure Always Hurts"
+      points: ["You will feel high blood pressure", "It is usually silent"]
+      footage_query: "blood pressure monitor arm"
+      narration: >-
+        Myth: if your blood pressure is high, you will get a headache. Fact: high blood pressure usually causes no symptoms at
+        all. But a very high reading, like one hundred eighty over one hundred twenty, with a severe headache, chest pain,
+        shortness of breath, confusion or vision changes, is an emergency. Call 911.
     - layout: "bullets"
-      heading: "See a Doctor Soon If"
-      points: ["New headaches after age 50", "Pattern suddenly changes", "Wakes you from sleep", "Using pain pills very often"]
-      footage_query: "patient talking doctor office"
+      heading: "When to See Your Doctor Soon"
+      points: ["Headaches more than weekly", "Pain relievers not working", "Headaches affect work or life", "New headaches with no clear cause"]
+      footage_query: "patient talking doctor"
       narration: >-
-        See your doctor soon, not in the ER, if you start getting new headaches after age fifty, if your usual headache pattern
-        changes, if headaches wake you from sleep, or if you have headaches with pregnancy. Also, if you take pain relievers for
-        headaches very often, ask your doctor, because overusing them can actually cause more headaches.
+        Not every worrying headache is an emergency. Make an appointment with your doctor if you have headaches more than once
+        a week, if pain relievers no longer work, if you need them more than two or three days a week, or if headaches are
+        affecting your work or family life. Effective treatments and prevention options are available.
+    - layout: "bullets"
+      heading: "Keep a Headache Diary"
+      points: ["Date and time", "What you were doing", "Food, sleep, stress", "What helped"]
+      footage_query: "woman writing journal"
+      narration: >-
+        A headache diary helps you and your doctor find patterns. Write down the date and time, how bad it was, what it felt
+        like, and how long it lasted. Note what you ate, how you slept, your stress level, and for women, where you are in
+        your cycle. Also write what medicine you took and whether it helped. Bring it to your visit.
+    - layout: "bullets"
+      heading: "Prevent Common Headaches"
+      points: ["Regular sleep", "Do not skip meals", "Drink water", "Manage stress"]
+      footage_query: "woman drinking water bottle"
+      narration: >-
+        You can prevent many common headaches with simple habits. Keep a regular sleep schedule, even on weekends. Eat regular
+        meals and drink enough water. Keep caffeine steady, without big ups and downs. Move your body every day. Take breaks
+        from screens, and check your posture. Relaxation, stretching and gentle exercise can help with tension and stress.
+    - layout: "bullets"
+      heading: "Safe Pain Relief"
+      points: ["Follow the label", "Limit days per week", "Ask about other medicines", "Ask about prevention"]
+      footage_query: "pharmacist counter customer"
+      narration: >-
+        For common headaches, over the counter pain relievers can help, but use them wisely. Follow the label, do not take
+        more than directed, and limit them to a few days per week, to avoid rebound headaches. Ask your pharmacist if they are
+        safe with your other medicines and health conditions. For frequent migraines, ask your doctor about preventive
+        treatment.
+    - layout: "bullets"
+      heading: "Headaches in Children"
+      points: ["Usually not serious", "Watch for red flags", "Morning vomiting", "Changes in behavior"]
+      footage_query: "child holding head"
+      narration: >-
+        Children get headaches too, and most are not serious, often from colds, dehydration, poor sleep, or skipping meals.
+        But take your child to the doctor quickly if headaches wake them from sleep, come with morning vomiting, get worse
+        over time, or come with clumsiness, vision trouble, or behavior changes. Call 911 for the same red flags as adults.
+    - layout: "bullets"
+      heading: "Quick Recap"
+      points: ["Most headaches are harmless", "Thunderclap: call 911", "Stroke signs: call 911", "Fever and stiff neck: ER"]
+      footage_query: "notebook checklist pen"
+      narration: >-
+        Let us recap. Most headaches, like tension headaches and migraines, are not dangerous. Call 911 for a sudden, worst
+        ever headache, a headache with stroke signs, or a severe headache after a head injury. Go to the ER for headache with
+        fever and a stiff neck. And see your doctor for new, changing or frequent headaches.
     - layout: "outro"
       heading: "Remember"
-      points: ["Sudden and severe? Call 911", "Stroke signs? Call 911", "New pattern? See your doctor"]
-      footage_query: "sunrise calm city"
+      points: ["Sudden and severe: call 911", "Know the stroke signs", "Changes deserve a check"]
+      footage_query: "family walking outdoors"
       narration: >-
-        Remember: sudden, severe, or with stroke signs, call 911. This video is for education only, not medical advice. Like and
-        subscribe to Health Support Studio for a new health video every day.
+        Remember: a sudden, severe headache is an emergency, know the signs of stroke, and a change in your usual headaches
+        deserves a check up. Share this with someone who always says it is just a headache. This video is for education only,
+        not medical advice. Like and subscribe to Health Support Studio for a new health video every day.
   short_title: "When a headache is an emergency #Shorts"
   short_caption: >-
     Most headaches aren't dangerous, but this one is. Know the red flag that means call 911. Educational only, not medical
