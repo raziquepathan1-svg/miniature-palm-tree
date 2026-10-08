@@ -1,0 +1,298 @@
+queue_topic: "Measles: myths vs facts and the MMR vaccine"
+style: "Myth vs Fact"
+sources:
+  - "CDC, About Measles: https://www.cdc.gov/measles/about/index.html"
+  - "CDC, Measles Vaccination: https://www.cdc.gov/measles/vaccines/index.html"
+  - "MedlinePlus, Measles: https://medlineplus.gov/measles.html"
+plan:
+  topic: "Measles: myths vs facts and the MMR vaccine"
+  title: "Measles Is Back: 5 Myths That Put Kids at Risk"
+  description: |-
+    Measles was eliminated in the US in 2000, but outbreaks have returned. We bust five common measles myths and explain the symptoms, serious complications, the MMR vaccine, and what to do if you are exposed.
+
+    In this video:
+    • Why measles is so contagious
+    • Symptoms and the measles rash
+    • Serious complications and immune amnesia
+    • 5 measles myths, including the autism myth
+    • The MMR vaccine, travel and exposure
+
+    #Measles #MMR #Vaccines #ChildHealth #HealthEducation
+  tags: ["measles", "measles outbreak", "measles symptoms", "mmr vaccine", "measles rash", "vaccines and autism", "childhood vaccines", "herd immunity", "measles exposure", "vaccine myths", "health education"]
+  thumbnail_text: "MEASLES IS BACK"
+  thumbnail_highlight: "BACK"
+  thumbnail_photo_query: "child rash fever"
+  playlist: "Infections & Vaccines"
+  scenes:
+    - layout: "title"
+      heading: "Measles Myths"
+      points: ["Why it is back"]
+      footage_query: "child rash fever"
+      narration: >-
+        Measles was declared eliminated from the United States in the year 2000. But it is back, with large outbreaks in
+        recent years and even deaths of children. Measles is one of the most contagious diseases on Earth, and it can be
+        serious. Today we bust the most common measles myths, and explain the signs, the risks, and how the vaccine protects
+        your family.
+    - layout: "big_number"
+      heading: "Extremely Contagious"
+      points: ["9 in 10", "Unvaccinated close contacts get infected"]
+      footage_query: "children classroom"
+      narration: >-
+        How contagious is measles? If one person has it, about nine out of ten people around them who are not immune will also
+        get infected. The virus spreads through the air when an infected person coughs, sneezes, or even breathes, and it can
+        stay in the air for up to two hours after they leave the room. People are contagious before the rash appears.
+    - layout: "bullets"
+      heading: "What Is Measles?"
+      points: ["A viral infection", "Spreads through the air", "Starts like a bad cold", "Then a full-body rash"]
+      footage_query: "medical illustration virus"
+      narration: >-
+        Measles is an infection caused by a virus. It spreads through the air and by touching contaminated surfaces. Symptoms
+        usually appear seven to fourteen days after exposure. It starts like a bad cold, then a rash spreads over the whole
+        body. People can spread measles from about four days before the rash to four days after.
+    - layout: "warning"
+      heading: "Early Symptoms"
+      points: ["High fever", "Cough", "Runny nose", "Red, watery eyes"]
+      footage_query: "child fever bed"
+      narration: >-
+        The first symptoms of measles usually include a high fever, which can go above one hundred four degrees, a cough, a
+        runny nose, and red, watery eyes. A few days later, tiny white spots may appear inside the mouth, on the inside of the
+        cheeks, called Koplik spots. People feel very sick.
+    - layout: "warning"
+      heading: "The Measles Rash"
+      points: ["3 to 5 days after first symptoms", "Starts at the hairline", "Spreads down the body", "Flat red spots that join"]
+      footage_query: "child rash fever"
+      narration: >-
+        Three to five days after symptoms start, a rash appears. It usually starts as flat red spots on the face at the
+        hairline, and spreads down to the neck, trunk, arms, legs, and feet. The spots may join together. The fever may spike
+        even higher when the rash appears. The rash fades after several days.
+    - layout: "myth_fact"
+      heading: "Measles Is Mild"
+      points: ["It is just a rash and fever", "It can be deadly"]
+      footage_query: "hospital child bed"
+      narration: >-
+        Myth one: measles is a mild childhood illness. Fact: measles can be very serious. About one in five unvaccinated
+        people who get measles in the US are hospitalized. About one in twenty children with measles gets pneumonia, the most
+        common cause of measles deaths in young children. About one to three of every thousand children who get measles die.
+    - layout: "warning"
+      heading: "Serious Complications"
+      points: ["Pneumonia", "Brain swelling", "Deafness", "Death"]
+      footage_query: "doctor examining child"
+      narration: >-
+        Measles can cause serious complications. These include pneumonia, ear infections that can lead to hearing loss, severe
+        diarrhea and dehydration, and encephalitis, a swelling of the brain that happens in about one in a thousand children
+        and can cause lasting brain damage. Children under five, adults over twenty, pregnant women, and people with weak
+        immune systems are at highest risk.
+    - layout: "warning"
+      heading: "A Rare, Deadly Late Effect"
+      points: ["Called SSPE", "Years after measles", "Damages the brain", "Always fatal"]
+      footage_query: "medical illustration brain"
+      narration: >-
+        There is also a rare but always fatal brain disease called SSPE, which can appear seven to ten years after a measles
+        infection, even when the person seemed to recover fully. It is more likely in people who got measles as babies, before
+        they were old enough to be vaccinated. Vaccination protects babies by stopping the spread.
+    - layout: "bullets"
+      heading: "Measles Weakens Immunity"
+      points: ["Wipes out immune memory", "Harder to fight other infections", "Can last years", "Called immune amnesia"]
+      footage_query: "medical illustration cells"
+      narration: >-
+        Research has shown that measles can erase part of the immune system's memory of germs it has already fought, sometimes
+        called immune amnesia. This can leave children more vulnerable to other infections, like pneumonia and ear infections,
+        for months or even years after measles. This is another reason to prevent measles.
+    - layout: "bullets"
+      heading: "The MMR Vaccine"
+      points: ["Measles, mumps, rubella", "Two doses", "12 to 15 months", "4 to 6 years"]
+      footage_query: "child vaccine doctor"
+      narration: >-
+        The best protection against measles is the MMR vaccine, which protects against measles, mumps, and rubella. Children
+        get two doses: the first at twelve to fifteen months, and the second at four to six years. Some children get the MMRV
+        vaccine, which also protects against chickenpox. The vaccine has been used safely for decades.
+    - layout: "big_number"
+      heading: "How Well It Works"
+      points: ["97 percent", "Protection after 2 doses"]
+      footage_query: "family smiling outdoors"
+      narration: >-
+        How well does the MMR vaccine work? Two doses are about ninety seven percent effective at preventing measles. One dose
+        is about ninety three percent effective. Protection usually lasts for life. In rare cases, a vaccinated person can
+        still get measles, but they usually have a milder illness and are less likely to spread it.
+    - layout: "myth_fact"
+      heading: "MMR Causes Autism"
+      points: ["The vaccine causes autism", "Many studies show no link"]
+      footage_query: "scientist laboratory research"
+      narration: >-
+        Myth two: the MMR vaccine causes autism. Fact: this claim came from a 1998 study that was found to be fraudulent and
+        was retracted, and the doctor lost his medical license. Many large studies, including millions of children around the
+        world, have found no link between the MMR vaccine and autism. Signs of autism often appear around the same age
+        vaccines are given, which is a coincidence.
+    - layout: "bullets"
+      heading: "Common Side Effects"
+      points: ["Sore arm", "Mild fever", "Mild rash", "Swollen glands"]
+      footage_query: "child holding arm"
+      narration: >-
+        Side effects of the MMR vaccine are usually mild. They can include a sore arm, a fever, a mild rash, or swollen glands
+        in the cheeks or neck. A small number of children have a seizure caused by fever, which is scary but usually not
+        harmful. Serious allergic reactions are very rare. The risks of measles itself are far greater.
+    - layout: "myth_fact"
+      heading: "Natural Immunity Is Better"
+      points: ["Catching measles is better", "The risks are too high"]
+      footage_query: "mother holding sick toddler"
+      narration: >-
+        Myth three: it is better to get immunity naturally, by catching measles. Fact: natural infection does give immunity,
+        but it comes with a real risk of pneumonia, brain swelling, hospitalization, immune amnesia, and death. The vaccine
+        gives strong, long lasting protection without those risks. There is no reason to put a child through measles.
+    - layout: "myth_fact"
+      heading: "Vitamin A Prevents Measles"
+      points: ["Vitamin A stops measles", "It does not prevent infection"]
+      footage_query: "vitamin bottles shelf"
+      narration: >-
+        Myth four: vitamin A or other supplements prevent measles. Fact: vitamin A does not prevent measles. Doctors sometimes
+        give vitamin A to children who already have measles, under medical supervision, to help lower the risk of
+        complications. Taking high doses of vitamin A on your own can be toxic, especially for children. Only the vaccine
+        prevents measles.
+    - layout: "myth_fact"
+      heading: "Measles Only Happens Abroad"
+      points: ["There is no measles in the US", "Outbreaks happen here"]
+      footage_query: "airport travelers"
+      narration: >-
+        Myth five: measles does not happen in the United States anymore. Fact: measles is brought in by travelers, and spreads
+        quickly in communities with low vaccination rates. In recent years, the US has had large outbreaks, with hundreds of
+        cases, many hospitalizations, and deaths of children. Keeping vaccination rates high protects everyone.
+    - layout: "bullets"
+      heading: "Mumps and Rubella Too"
+      points: ["Mumps: swollen glands", "Can cause deafness", "Rubella: harms unborn babies", "MMR prevents all three"]
+      footage_query: "pregnant woman sitting"
+      narration: >-
+        The MMR vaccine also protects against mumps and rubella. Mumps causes fever and swollen glands in the cheeks and jaw,
+        and can lead to deafness, brain swelling, and swelling of the testicles or ovaries. Rubella is usually mild in
+        children, but if a pregnant woman catches it, it can cause miscarriage or serious birth defects. One vaccine prevents
+        all three.
+    - layout: "bullets"
+      heading: "Who Needs the Vaccine?"
+      points: ["All children", "Adults without proof of immunity", "College students, health workers", "International travelers"]
+      footage_query: "young adults group outdoors"
+      narration: >-
+        Who should get the MMR vaccine? All children, on schedule. Adults who do not have proof of immunity, which can be
+        vaccine records, a blood test, or being born before 1957. College students, health care workers, and international
+        travelers usually need two doses. Ask your doctor if you are not sure whether you are protected.
+    - layout: "bullets"
+      heading: "Before International Travel"
+      points: ["Babies 6 to 11 months: 1 dose", "Older children: 2 doses", "Adults: check your records", "At least 2 weeks before"]
+      footage_query: "airplane window view"
+      narration: >-
+        Measles is common in many parts of the world. Before international travel, babies six to eleven months old should get
+        an early dose of MMR, then still get the routine two doses later. Children twelve months and older and adults without
+        immunity should get two doses, separated by at least four weeks. Get vaccinated at least two weeks before you travel.
+    - layout: "warning"
+      heading: "Who Should Not Get MMR"
+      points: ["Pregnant women", "Severely weak immune system", "Severe allergy to a past dose", "Ask your doctor"]
+      footage_query: "pregnant woman talking doctor"
+      narration: >-
+        A few people should not get the MMR vaccine. Pregnant women should wait until after pregnancy, and women should avoid
+        getting pregnant for four weeks after the vaccine. People with severely weakened immune systems, and people with a
+        severe allergic reaction to a past dose or its ingredients, should not get it. These people depend on everyone around
+        them being vaccinated.
+    - layout: "bullets"
+      heading: "Herd Immunity Protects Others"
+      points: ["Babies too young for vaccine", "People with weak immune systems", "Needs about 95 percent vaccinated", "Outbreaks start below that"]
+      footage_query: "newborn baby hospital"
+      narration: >-
+        When most people in a community are vaccinated, measles cannot spread easily, which protects those who cannot be
+        vaccinated, like young babies, pregnant women, and people with weak immune systems. For measles, about ninety five
+        percent of people need to be immune. When vaccination rates fall below that, outbreaks can start.
+    - layout: "warning"
+      heading: "If You Think It Is Measles"
+      points: ["Call before you go", "Do not walk into a waiting room", "Stay home", "Avoid babies and pregnant women"]
+      footage_query: "woman talking phone desk"
+      narration: >-
+        If you think you or your child has measles, call your doctor's office or urgent care before going in, so they can
+        prepare and protect other patients from exposure. Do not walk into a crowded waiting room. Stay home, and away from
+        babies, pregnant women, and people with weak immune systems until you get medical advice.
+    - layout: "bullets"
+      heading: "If You Were Exposed"
+      points: ["Call your doctor right away", "MMR within 3 days can help", "Immune globulin within 6 days", "Watch for symptoms for 3 weeks"]
+      footage_query: "doctor talking patient office"
+      narration: >-
+        If you were exposed to measles and are not sure you are immune, call your doctor right away. Getting the MMR vaccine
+        within three days of exposure, or a shot of immune globulin within six days for those who cannot get the vaccine, may
+        prevent illness or make it milder. Watch for symptoms for about three weeks.
+    - layout: "warning"
+      heading: "Get Emergency Care"
+      points: ["Trouble breathing", "Confusion or seizures", "Very drowsy, hard to wake", "Signs of dehydration"]
+      footage_query: "paramedic helping patient"
+      narration: >-
+        Get emergency care for someone with measles who has trouble breathing, chest pain, confusion, a seizure, a stiff neck,
+        severe headache, is very drowsy or hard to wake, or shows signs of dehydration, like not urinating, no tears, or a
+        very dry mouth. These can be signs of pneumonia, brain swelling, or other serious complications.
+    - layout: "bullets"
+      heading: "Caring for Measles at Home"
+      points: ["Rest and fluids", "Fever reducers as advised", "No aspirin for children", "Stay isolated"]
+      footage_query: "mother caring sick child"
+      narration: >-
+        There is no specific medicine that cures measles. Care at home includes rest, plenty of fluids, and fever reducers
+        like acetaminophen or ibuprofen as your doctor advises. Never give aspirin to children, because it can cause a
+        dangerous condition called Reye's syndrome. Dim lights may help sore eyes. Stay home until four days after the rash
+        appears.
+    - layout: "bullets"
+      heading: "Check Your Records"
+      points: ["Find your vaccine records", "Ask your doctor or state registry", "Blood test can check immunity", "When in doubt, get vaccinated"]
+      footage_query: "medical records folder"
+      narration: >-
+        Not sure if you are protected? Look for your vaccine records, or ask your doctor, school, or your state's immunization
+        registry. A blood test can check whether you are immune. If you cannot find records, it is safe to simply get the MMR
+        vaccine. There is no harm in getting an extra dose.
+    - layout: "bullets"
+      heading: "Talking With Other Parents"
+      points: ["Share facts kindly", "Listen to their concerns", "Point to trusted sources", "Encourage a doctor visit"]
+      footage_query: "parents talking park"
+      narration: >-
+        If friends or family are unsure about vaccines, share facts kindly, and listen to their concerns without judging.
+        Point them to trusted sources like the CDC and their pediatrician. Many parents have questions, and a calm
+        conversation with a doctor they trust can make a big difference. Our goal is the same: healthy, safe children.
+    - layout: "bullets"
+      heading: "Questions for Your Doctor"
+      points: ["Is my child up to date?", "Am I immune?", "Do we need doses before travel?", "What if we are exposed?"]
+      footage_query: "patient talking doctor"
+      narration: >-
+        At your next visit, ask: is my child up to date on the MMR vaccine? Am I immune, or do I need a dose? Do we need extra
+        doses before international travel? What should we do if we are exposed to measles? And what other vaccines are we due
+        for?
+    - layout: "bullets"
+      heading: "Quick Recap"
+      points: ["Extremely contagious", "Can be serious or deadly", "MMR: 2 doses, 97 percent", "No link to autism"]
+      footage_query: "notebook checklist pen"
+      narration: >-
+        Let us recap. Measles is one of the most contagious diseases, and it is not mild: it can cause pneumonia, brain
+        swelling, and death. It is back in the US because of falling vaccination rates. Two doses of the MMR vaccine are about
+        ninety seven percent effective, safe, and not linked to autism. If you suspect measles, call before you go in.
+    - layout: "outro"
+      heading: "Remember"
+      points: ["Get both MMR doses", "Check your records", "Call before you go in"]
+      footage_query: "family smiling outdoors"
+      narration: >-
+        Remember: make sure your family has both MMR doses, check your own records, and call ahead if you think it is measles.
+        Share this with parents you know. This video is for education only, not medical advice. Like and subscribe to Health
+        Support Studio for a new health video every day.
+  short_title: "Measles is back: know the facts #Shorts"
+  short_caption: >-
+    Measles is one of the most contagious diseases on Earth. Educational only, not medical advice. #Measles #MMR #Vaccines
+    #HealthEducation
+  short_scenes:
+    - layout: "title"
+      heading: "Measles Is Back"
+      points: ["Know the facts"]
+      footage_query: "child rash fever"
+      narration: >-
+        Measles was eliminated in the US in 2000. Now it is back, and children have died.
+    - layout: "bullets"
+      heading: "The Facts"
+      points: ["9 in 10 exposed get it", "Not a mild illness", "MMR: 97 percent protection"]
+      footage_query: "child vaccine doctor"
+      narration: >-
+        Measles is so contagious that nine in ten unvaccinated people exposed will catch it. It can cause pneumonia, brain
+        swelling and death. Two doses of the MMR vaccine give about ninety seven percent protection, and large studies show no
+        link to autism.
+    - layout: "outro"
+      heading: "Full Video"
+      points: ["On YouTube"]
+      footage_query: "family smiling outdoors"
+      narration: >-
+        Learn the measles myths in our full video, on the Health Support Studio YouTube channel.
