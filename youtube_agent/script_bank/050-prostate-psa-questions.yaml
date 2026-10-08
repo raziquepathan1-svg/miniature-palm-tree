@@ -1,0 +1,300 @@
+queue_topic: "Prostate health: enlarged prostate, prostate cancer and the PSA test"
+style: "Top Questions"
+sources:
+  - "US Preventive Services Task Force, Prostate Cancer: Screening: https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/prostate-cancer-screening"
+  - "CDC, Prostate Cancer Screening: https://www.cdc.gov/prostate-cancer/screening/index.html"
+  - "NIDDK, Prostate Enlargement (BPH): https://www.niddk.nih.gov/health-information/urologic-diseases/prostate-problems/prostate-enlargement-benign-prostatic-hyperplasia"
+plan:
+  topic: "Prostate health: enlarged prostate, prostate cancer and the PSA test"
+  title: "Up at Night to Pee? Prostate Questions Every Man Should Ask"
+  description: |-
+    Prostate problems are common, and many men avoid talking about them. We answer the top questions: enlarged prostate, prostatitis, prostate cancer, the PSA test, and how to decide about screening.
+
+    In this video:
+    • What the prostate is and 3 common problems
+    • Signs of an enlarged prostate and when it's urgent
+    • Prostate cancer risk, including for Black men
+    • The PSA test: benefits, harms and what raises it
+    • Active surveillance and treatment options
+
+    #ProstateHealth #ProstateCancer #MensHealth #PSA #HealthEducation
+  tags: ["prostate", "enlarged prostate", "bph", "prostate cancer", "psa test", "prostate cancer screening", "frequent urination at night", "mens health", "active surveillance", "prostatitis", "health education"]
+  thumbnail_text: "UP AT NIGHT TO PEE?"
+  thumbnail_highlight: "PEE?"
+  thumbnail_photo_query: "middle aged man doctor consultation"
+  playlist: "Tests & Doctor Visits"
+  scenes:
+    - layout: "title"
+      heading: "Prostate Health Questions"
+      points: ["And the PSA test"]
+      footage_query: "middle aged man doctor consultation"
+      narration: >-
+        Getting up three times a night to pee. A weak stream. Or a friend just found out he has prostate cancer, and now you
+        wonder if you should be tested. Many men avoid talking about prostate health. Today we answer the top questions about
+        the prostate: common problems, warning signs, the PSA test, and how to decide about screening.
+    - layout: "bullets"
+      heading: "What Is the Prostate?"
+      points: ["Walnut-sized gland", "Below the bladder", "Surrounds the urine tube", "Makes fluid for semen"]
+      footage_query: "medical illustration prostate"
+      narration: >-
+        What is the prostate? It is a small gland, about the size of a walnut, found only in men. It sits just below the
+        bladder and wraps around the urethra, the tube that carries urine out of the body. It makes some of the fluid in
+        semen. Because of where it sits, prostate problems often affect urination.
+    - layout: "bullets"
+      heading: "Three Common Problems"
+      points: ["Enlarged prostate, called BPH", "Prostatitis, inflammation", "Prostate cancer", "Can have more than one"]
+      footage_query: "doctor explaining anatomy model"
+      narration: >-
+        What can go wrong with the prostate? There are three common problems. An enlarged prostate, called benign prostatic
+        hyperplasia or BPH, which is not cancer. Prostatitis, which is inflammation or infection of the prostate. And prostate
+        cancer. They can cause similar symptoms, and a man can have more than one at the same time.
+    - layout: "big_number"
+      heading: "Enlarged Prostate Is Common"
+      points: ["About half", "Men in their 50s have BPH"]
+      footage_query: "older men talking park"
+      narration: >-
+        How common is an enlarged prostate? Very. The prostate keeps growing slowly through life. About half of men in their
+        fifties, and most men over eighty, have some enlargement. It is not cancer, and it does not raise your risk of cancer.
+        But as it grows, it can squeeze the urethra and cause bothersome urinary symptoms.
+    - layout: "warning"
+      heading: "Signs of an Enlarged Prostate"
+      points: ["Peeing often, especially at night", "Weak or stop-start stream", "Trouble starting", "Feeling bladder is not empty"]
+      footage_query: "man waking night"
+      narration: >-
+        What are the signs of an enlarged prostate? Needing to pee often, especially at night. A weak or slow stream, or one
+        that stops and starts. Trouble getting started. Straining. Dribbling at the end. A sudden, strong urge to go. And
+        feeling that your bladder is not completely empty. Many men think this is just aging, but it can be treated.
+    - layout: "warning"
+      heading: "When to Get Help Fast"
+      points: ["Cannot pee at all", "Blood in urine", "Fever with urinary pain", "Severe belly pain"]
+      footage_query: "hospital emergency entrance"
+      narration: >-
+        When is it urgent? Go to the emergency room if you suddenly cannot pee at all, which is called urinary retention and
+        can be very painful. Get prompt care for blood in your urine, fever and chills with burning or pain when urinating, or
+        severe pain in the lower belly or between the legs. These need quick treatment.
+    - layout: "bullets"
+      heading: "Treating an Enlarged Prostate"
+      points: ["Lifestyle changes", "Medicines to relax or shrink", "Minimally invasive procedures", "Surgery for severe cases"]
+      footage_query: "pharmacist counter customer"
+      narration: >-
+        How is an enlarged prostate treated? For mild symptoms, simple changes may be enough. Medicines can relax the muscles
+        around the prostate, or slowly shrink it. Several office procedures can open the urine channel with less recovery
+        time. For severe symptoms, surgery can remove the part of the prostate blocking the flow. Your doctor will help you
+        choose.
+    - layout: "bullets"
+      heading: "Simple Changes That Help"
+      points: ["Less fluid before bed", "Limit caffeine and alcohol", "Double voiding", "Review your medicines"]
+      footage_query: "glass of water close up"
+      narration: >-
+        Some simple changes can ease symptoms. Drink less fluid in the two hours before bed. Cut back on caffeine and alcohol,
+        which irritate the bladder. Try double voiding: after you pee, wait a moment and try again. Do not hold urine too
+        long. Some cold medicines, like decongestants and antihistamines, can make symptoms worse, so ask your pharmacist.
+    - layout: "bullets"
+      heading: "What Is Prostatitis?"
+      points: ["Inflammation of the prostate", "Can be an infection", "Pain in pelvis or lower back", "Painful urination"]
+      footage_query: "man holding lower back"
+      narration: >-
+        What is prostatitis? It is inflammation of the prostate, and it can affect men of any age. Sometimes it is caused by a
+        bacterial infection, which can come on suddenly with fever, chills and painful urination, and needs antibiotics. Other
+        times it is a long lasting pain in the pelvis, lower back or groin. A doctor can find the cause and the right
+        treatment.
+    - layout: "big_number"
+      heading: "Prostate Cancer"
+      points: ["About 1 in 8", "US men will be diagnosed"]
+      footage_query: "men group walking city"
+      narration: >-
+        How common is prostate cancer? It is the most common cancer in American men, after skin cancer. About one in eight men
+        will be diagnosed during his lifetime. Most cases are found in men over sixty five. Many prostate cancers grow very
+        slowly and may never cause harm, but some are aggressive and can spread.
+    - layout: "bullets"
+      heading: "Who Is at Higher Risk?"
+      points: ["Age over 50", "Black men", "Family history", "Certain gene changes"]
+      footage_query: "family photo generations"
+      narration: >-
+        Who is at higher risk? The risk rises with age, especially after fifty. Black men have a higher risk of getting
+        prostate cancer, and are about twice as likely to die from it as white men. A father or brother with prostate cancer
+        raises your risk. So do some inherited gene changes, like BRCA1 and BRCA2, which are also linked to breast cancer in
+        families.
+    - layout: "myth_fact"
+      heading: "Symptoms Will Warn You"
+      points: ["Prostate cancer causes early symptoms", "Early cancer is usually silent"]
+      footage_query: "man smiling outdoors"
+      narration: >-
+        Myth: if I had prostate cancer, I would have symptoms. Fact: early prostate cancer usually causes no symptoms at all.
+        Urinary problems are much more likely to come from an enlarged prostate. When prostate cancer does cause symptoms,
+        like bone pain, it has often already spread. That is why some men choose screening.
+    - layout: "bullets"
+      heading: "What Is the PSA Test?"
+      points: ["A simple blood test", "Measures a prostate protein", "Higher can mean cancer", "Not specific"]
+      footage_query: "blood test tube lab"
+      narration: >-
+        What is the PSA test? PSA stands for prostate specific antigen, a protein made by the prostate. A simple blood test
+        measures its level. A higher PSA can be a sign of prostate cancer, but it can also be raised by many other things.
+        There is no single normal number for everyone, and your doctor will look at your age and history.
+    - layout: "bullets"
+      heading: "What Else Raises PSA?"
+      points: ["Enlarged prostate", "Infection or inflammation", "Recent ejaculation", "Bike riding, recent procedures"]
+      footage_query: "man cycling road"
+      narration: >-
+        Many things besides cancer can raise PSA. An enlarged prostate, prostatitis or a urinary infection. Ejaculation in the
+        past day or two. Long bike rides. A recent prostate exam or procedure. Some medicines for an enlarged prostate lower
+        PSA, which your doctor needs to know. This is why one high reading is usually repeated before any next step.
+    - layout: "bullets"
+      heading: "Should I Get Screened?"
+      points: ["Ages 55 to 69: your choice", "Talk with your doctor", "Weigh benefits and harms", "Over 70: usually not"]
+      footage_query: "patient talking doctor"
+      narration: >-
+        Should you get a PSA test? The US Preventive Services Task Force says men aged fifty five to sixty nine should make an
+        individual decision with their doctor, after talking about the benefits and harms. For men seventy and older, it
+        recommends against routine PSA screening. Some groups suggest starting talks earlier, around forty to forty five, for
+        Black men and those with a family history.
+    - layout: "bullets"
+      heading: "The Benefits"
+      points: ["Can find cancer early", "May lower death risk slightly", "Treatment works best early", "Peace of mind"]
+      footage_query: "doctor smiling patient"
+      narration: >-
+        What are the possible benefits of screening? PSA testing can find prostate cancer early, before it causes symptoms or
+        spreads, when treatment is most likely to cure it. Large studies suggest screening can slightly lower the chance of
+        dying from prostate cancer. Some men value knowing, and the peace of mind of a normal result.
+    - layout: "bullets"
+      heading: "The Possible Harms"
+      points: ["False alarms", "Biopsies with side effects", "Finding cancers that never harm", "Treatment side effects"]
+      footage_query: "doctor talking patient office"
+      narration: >-
+        What are the possible harms? PSA can give false alarms, leading to worry and more tests. A biopsy can cause bleeding
+        and infection. Screening often finds slow growing cancers that would never have caused harm, which is called
+        overdiagnosis. Treating them can cause side effects like trouble with erections or leaking urine. This is why it is a
+        personal decision.
+    - layout: "myth_fact"
+      heading: "High PSA Means Cancer"
+      points: ["A high PSA means cancer", "Most high results are not cancer"]
+      footage_query: "man reading lab results"
+      narration: >-
+        Myth: a high PSA means you have prostate cancer. Fact: most men with a mildly high PSA do not have prostate cancer.
+        The number is often raised by an enlarged prostate or inflammation. Your doctor will usually repeat the test, and may
+        order an MRI or other tests, before deciding whether a biopsy is needed.
+    - layout: "bullets"
+      heading: "If PSA Is High"
+      points: ["Repeat the test", "MRI of the prostate", "Other blood or urine tests", "Biopsy if needed"]
+      footage_query: "mri scanner hospital"
+      narration: >-
+        What happens if your PSA is high? Your doctor will usually repeat the test, and look for other causes like infection.
+        An MRI of the prostate can show areas that look suspicious, and helps decide whether a biopsy is needed. Other blood
+        and urine tests can also help. If a biopsy is done, small samples are taken and checked for cancer.
+    - layout: "bullets"
+      heading: "Understanding a Diagnosis"
+      points: ["Grade: how aggressive", "Stage: how far it spread", "Many are low risk", "Ask about all options"]
+      footage_query: "doctor reading lab results"
+      narration: >-
+        If prostate cancer is found, doctors look at the grade, which shows how aggressive the cancer cells look, often given
+        as a Gleason score or grade group, and the stage, which shows how far it has spread. Many prostate cancers found by
+        screening are low risk. Understanding your risk group is key to choosing treatment.
+    - layout: "bullets"
+      heading: "Active Surveillance"
+      points: ["For low-risk cancer", "Watch closely, not ignore", "Regular PSA, MRI, biopsy", "Treat if it changes"]
+      footage_query: "calendar notebook planning"
+      narration: >-
+        For many men with low risk prostate cancer, the best choice may be active surveillance. This means closely watching
+        the cancer with regular PSA tests, exams, MRIs and sometimes biopsies, instead of treating right away. If the cancer
+        shows signs of growing, treatment can start then. This avoids or delays side effects for many men, without lowering
+        their chances of survival.
+    - layout: "bullets"
+      heading: "Treatment Options"
+      points: ["Surgery to remove the prostate", "Radiation", "Hormone therapy", "Other treatments for advanced cancer"]
+      footage_query: "surgeon preparing operating room"
+      narration: >-
+        For prostate cancer that needs treatment, options include surgery to remove the prostate, radiation therapy, and
+        hormone therapy that lowers testosterone, which feeds most prostate cancers. For advanced cancer, there are other
+        medicines too. Each choice has different side effects. Talk with both a urologist and a radiation oncologist before
+        you decide.
+    - layout: "bullets"
+      heading: "Side Effects to Ask About"
+      points: ["Leaking urine", "Erection problems", "Bowel changes after radiation", "Many improve with time"]
+      footage_query: "man talking doctor office"
+      narration: >-
+        Ask about side effects before treatment. Surgery and radiation can cause urine leakage and erection problems, and
+        radiation can cause bowel changes. Many of these improve over months, and there are good treatments and exercises to
+        help, like pelvic floor exercises and erection medicines. Do not be embarrassed to bring them up. Your care team has
+        heard it all.
+    - layout: "myth_fact"
+      heading: "Prostate Cancer Is Always Deadly"
+      points: ["A diagnosis means death", "Most men survive"]
+      footage_query: "older couple walking park"
+      narration: >-
+        Myth: being diagnosed with prostate cancer means you will die from it. Fact: when prostate cancer is found before it
+        spreads, nearly all men are alive five years later, and most die of something else. Even advanced prostate cancer can
+        often be controlled for years with treatment. Early detection and good care matter.
+    - layout: "bullets"
+      heading: "Keep Your Prostate Healthy"
+      points: ["Stay active", "Eat vegetables and whole grains", "Keep a healthy weight", "Do not smoke"]
+      footage_query: "man jogging park"
+      narration: >-
+        Can you protect your prostate? There is no sure way to prevent prostate problems, but healthy habits help your overall
+        health. Stay physically active. Eat plenty of vegetables, fruits and whole grains, and limit red and processed meats.
+        Keep a healthy weight. Do not smoke. Be cautious with supplements marketed for prostate health, which often lack
+        proof.
+    - layout: "bullets"
+      heading: "Talking About It"
+      points: ["Do not be embarrassed", "Your doctor hears this daily", "Bring your symptoms list", "Bring your family history"]
+      footage_query: "man talking doctor office"
+      narration: >-
+        Many men avoid the doctor because talking about urination or sex feels awkward. But doctors discuss these topics every
+        day. Write down your symptoms, how often you get up at night, and any family history of prostate, breast or ovarian
+        cancer. Bring the list to your visit. Early conversations lead to better choices.
+    - layout: "bullets"
+      heading: "Questions for Your Doctor"
+      points: ["Are my symptoms from BPH?", "Should I get a PSA test?", "What do my results mean?", "What are all my options?"]
+      footage_query: "patient talking doctor"
+      narration: >-
+        At your next visit, ask: could my urinary symptoms be from an enlarged prostate? What treatments would help? Based on
+        my age, race and family history, should I get a PSA test? If my PSA is high, what are the next steps? And if cancer is
+        found, is active surveillance an option for me?
+    - layout: "bullets"
+      heading: "For Families"
+      points: ["Encourage him to talk", "Share family history", "Go with him to visits", "Support his decisions"]
+      footage_query: "family sitting home"
+      narration: >-
+        Families can help. Encourage the men in your life to talk with their doctor about prostate health, especially Black
+        men and those with a family history. Share your family's cancer history, including breast and ovarian cancer in women,
+        since some gene changes run in families. Offer to go with him to appointments. And support his decisions.
+    - layout: "bullets"
+      heading: "Quick Recap"
+      points: ["BPH is common, treatable", "Urinary symptoms need a check", "PSA: a personal decision", "Many cancers are slow growing"]
+      footage_query: "notebook checklist pen"
+      narration: >-
+        Let us recap. An enlarged prostate is very common and treatable. Urinary symptoms deserve a checkup, and not being
+        able to pee is an emergency. Early prostate cancer is usually silent. The PSA test is a personal decision for men
+        fifty five to sixty nine, or earlier for those at higher risk. Many prostate cancers grow slowly, and active
+        surveillance is often a good option.
+    - layout: "outro"
+      heading: "Remember"
+      points: ["Do not ignore urinary changes", "Talk about PSA", "Know your family history"]
+      footage_query: "older men talking park"
+      narration: >-
+        Remember: do not ignore urinary changes, talk with your doctor about the PSA test, and know your family history. Share
+        this with the men in your life. This video is for education only, not medical advice. Like and subscribe to Health
+        Support Studio for a new health video every day.
+  short_title: "Up at night to pee? It could be your prostate #Shorts"
+  short_caption: >-
+    Frequent night-time urination is often an enlarged prostate. Educational only, not medical advice. #ProstateHealth
+    #MensHealth #PSA #HealthEducation
+  short_scenes:
+    - layout: "title"
+      heading: "Up at Night to Pee?"
+      points: ["It could be your prostate"]
+      footage_query: "man waking night"
+      narration: >-
+        Getting up several times a night to pee, or a weak stream, is often an enlarged prostate.
+    - layout: "bullets"
+      heading: "Know This"
+      points: ["Enlarged prostate is common", "It is not cancer", "Very treatable"]
+      footage_query: "middle aged man doctor consultation"
+      narration: >-
+        About half of men in their fifties have an enlarged prostate. It is not cancer, and it is very treatable. Early
+        prostate cancer usually has no symptoms, so talk with your doctor about whether a PSA test is right for you.
+    - layout: "outro"
+      heading: "Full Video"
+      points: ["On YouTube"]
+      footage_query: "older men talking park"
+      narration: >-
+        Learn more about prostate health in our full video, on the Health Support Studio YouTube channel.
