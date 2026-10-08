@@ -811,9 +811,11 @@ def make_thumbnail(text: str, channel_name: str, out: Path, background: Path | N
         if poses:
             day = dt.date.today().toordinal()
             host_img = Image.open(poses[day % len(poses)]).convert("RGBA")
-            zoom = 0.56 if (day // len(poses)) % 2 == 0 else 0.44  # waist-up, or closer (chest-up)
+            zoom = 0.58 if (day // len(poses)) % 2 == 0 else 1.0  # half body, or the whole pose (full body)
     elif host and Path(host).exists():
         host_img = Image.open(host).convert("RGBA")
+    if host_img and host_img.height < host_img.width * 1.6:  # a pose that is already waist-up: show all of it
+        zoom = 1.0
     max_w, max_lines = int(W * (0.53 if host_img else 0.62)), 3
     size = 150
     bottom_limit = H - 120  # keep clear of the brand badge
