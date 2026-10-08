@@ -1,0 +1,298 @@
+queue_topic: "Migraine: symptoms, triggers and treatment"
+style: "Top Questions"
+sources:
+  - "NIH NINDS, Migraine: https://www.ninds.nih.gov/health-information/disorders/migraine"
+  - "MedlinePlus, Migraine: https://medlineplus.gov/migraine.html"
+  - "MedlinePlus, Headache: https://medlineplus.gov/headache.html"
+plan:
+  topic: "Migraine: symptoms, triggers and treatment"
+  title: "Migraine: Why It's More Than a Headache (and What Helps)"
+  description: |-
+    Migraine is a real neurological condition that affects millions of Americans. We answer the top questions: symptoms and aura, triggers, emergency warning signs, treatments for attacks, prevention, and rebound headaches.
+
+    In this video:
+    • What migraine is and its four phases
+    • Aura and emergency warning signs
+    • Triggers and keeping a migraine diary
+    • Treating attacks and avoiding rebound headaches
+    • Prevention, hormones and lifestyle habits
+
+    #Migraine #Headache #MigraineRelief #ChronicPain #HealthEducation
+  tags: ["migraine", "migraine symptoms", "migraine triggers", "migraine with aura", "migraine treatment", "migraine prevention", "rebound headache", "chronic migraine", "headache relief", "migraine relief", "health education"]
+  thumbnail_text: "MORE THAN A HEADACHE"
+  thumbnail_highlight: "HEADACHE"
+  thumbnail_photo_query: "woman lying dark room"
+  playlist: "Healthy Habits & Prevention"
+  scenes:
+    - layout: "title"
+      heading: "Migraine Questions"
+      points: ["More than a bad headache"]
+      footage_query: "woman lying dark room"
+      narration: >-
+        A migraine is not just a bad headache. It can bring throbbing pain, nausea, and sensitivity to light and sound that
+        can knock you out of work and family life for days. Millions of Americans live with migraine, and many never get
+        proper treatment. Today we answer the top questions about migraine: what it is, what triggers it, and the treatments
+        that can give you your life back.
+    - layout: "big_number"
+      heading: "How Common Is Migraine?"
+      points: ["About 1 in 8", "Americans have migraine"]
+      footage_query: "office worker rubbing temples"
+      narration: >-
+        How common is migraine? It affects about one in eight people in the United States, tens of millions of adults, and
+        many children too. Women are about three times more likely than men to have migraine, often linked to hormone changes.
+        It is one of the leading causes of disability worldwide, especially in people between their teens and fifties.
+    - layout: "bullets"
+      heading: "What Is Migraine?"
+      points: ["A brain disorder", "Often runs in families", "Comes in attacks", "Not just a headache"]
+      footage_query: "medical illustration brain"
+      narration: >-
+        What is migraine? It is a neurological condition, meaning it involves the brain and nerves. People with migraine have
+        a brain that is more sensitive to changes, like stress, sleep, hormones or lights. During an attack, nerves and blood
+        vessels around the brain release chemicals that cause pain and inflammation. Migraine often runs in families.
+    - layout: "warning"
+      heading: "Typical Migraine Symptoms"
+      points: ["Throbbing, often one side", "Worse with activity", "Sensitive to light and sound", "Nausea or vomiting"]
+      footage_query: "woman holding head pain"
+      narration: >-
+        What does a migraine feel like? The pain is usually throbbing or pulsing, often on one side of the head, though it can
+        be on both. It is moderate to severe, and gets worse with routine activity, like walking or climbing stairs. Most
+        people are sensitive to light and sound, and many feel sick to their stomach or vomit. An attack can last four hours
+        to three days.
+    - layout: "bullets"
+      heading: "The Four Phases"
+      points: ["Warning signs a day before", "Aura in some people", "The headache", "Feeling drained after"]
+      footage_query: "calendar notebook planning"
+      narration: >-
+        Many migraines go through phases. A day or two before, some people notice warning signs, like yawning, food cravings,
+        mood changes or a stiff neck. About one in four people then have an aura. Next comes the headache itself. Afterwards,
+        many people feel drained, foggy or washed out for a day, sometimes called a migraine hangover.
+    - layout: "bullets"
+      heading: "What Is an Aura?"
+      points: ["Flashing lights or zigzags", "Blind spots", "Tingling in face or hand", "Lasts up to an hour"]
+      footage_query: "bright lights blurry"
+      narration: >-
+        What is an aura? It is a set of symptoms that usually comes before the headache and lasts up to an hour. Most often it
+        is visual, like flashing lights, zigzag lines, or blind spots that slowly spread. Some people feel tingling or
+        numbness in the face or hand, or have trouble speaking. Some people have aura with little or no headache.
+    - layout: "warning"
+      heading: "When Is It an Emergency?"
+      points: ["Sudden, worst headache ever", "Weakness on one side", "Headache with fever, stiff neck", "First aura after 50"]
+      footage_query: "person calling phone emergency"
+      narration: >-
+        When is a headache an emergency, not a migraine? Call 911 for a sudden, explosive headache, the worst of your life, or
+        a headache with weakness, numbness, slurred speech, confusion, or loss of vision. Get urgent care for a headache with
+        fever and a stiff neck, after a head injury, or a new kind of headache or aura after age fifty. Do not assume it is
+        just a migraine.
+    - layout: "bullets"
+      heading: "Common Triggers"
+      points: ["Stress and letdown after stress", "Poor or changed sleep", "Skipped meals", "Hormone changes"]
+      footage_query: "woman stressed desk"
+      narration: >-
+        What triggers migraines? Common triggers include stress, and also the letdown after stress, like on weekends. Too
+        little or too much sleep. Skipping meals and dehydration. Hormone changes, especially around periods. Bright or
+        flickering lights, loud noise, and strong smells. Weather changes. And for some people, alcohol, especially red wine,
+        and too much caffeine.
+    - layout: "bullets"
+      heading: "Food Triggers"
+      points: ["Not the same for everyone", "Aged cheese, processed meats", "Alcohol", "Keep a diary to find yours"]
+      footage_query: "cheese plate close up"
+      narration: >-
+        Are there food triggers? Some people react to aged cheeses, processed meats with nitrates, MSG, artificial sweeteners,
+        chocolate or alcohol. But triggers are very personal, and many foods blamed for migraine turn out not to be the cause.
+        Craving certain foods can even be an early sign of an attack. Keep a diary rather than cutting out many foods.
+    - layout: "bullets"
+      heading: "Keep a Migraine Diary"
+      points: ["Date, time and length", "How bad, what it felt like", "Sleep, food, stress, cycle", "What medicine helped"]
+      footage_query: "woman writing journal"
+      narration: >-
+        A migraine diary is one of the most useful tools. Write down the date, time, and how long each attack lasted, how bad
+        it was, and your symptoms. Note your sleep, meals, stress, weather, and for women, where you are in your cycle. Record
+        what medicine you took and whether it helped. Phone apps can make this easy. Bring it to your doctor.
+    - layout: "myth_fact"
+      heading: "It Is Just a Headache"
+      points: ["Migraine is just a bad headache", "It is a real neurological disease"]
+      footage_query: "woman lying dark room"
+      narration: >-
+        Myth: migraine is just a bad headache, and people should push through it. Fact: migraine is a real neurological
+        disease, with symptoms that go beyond pain, like nausea, dizziness, and trouble thinking. Severe attacks can be
+        disabling. People with migraine deserve the same understanding and treatment as people with any other medical
+        condition.
+    - layout: "bullets"
+      heading: "How Is It Diagnosed?"
+      points: ["Your symptoms and history", "A physical and nerve exam", "Scans usually not needed", "Unless warning signs"]
+      footage_query: "doctor talking patient office"
+      narration: >-
+        How is migraine diagnosed? Usually by your symptoms, your history, and an exam. There is no blood test or scan that
+        shows migraine. Most people do not need a brain scan. Your doctor may order one if you have warning signs, an unusual
+        pattern, or a big change in your headaches. A headache diary makes diagnosis much easier.
+    - layout: "bullets"
+      heading: "Treating an Attack"
+      points: ["Treat early", "Over-the-counter pain relief", "Triptans", "Newer migraine medicines"]
+      footage_query: "pharmacist giving medicine"
+      narration: >-
+        How do you treat an attack? Treat it early, at the first sign of pain, when medicines work best. For mild attacks,
+        over the counter pain relievers like ibuprofen, naproxen, aspirin or acetaminophen, sometimes with caffeine, may help.
+        For moderate to severe attacks, prescription triptans work for many people. Newer medicines called gepants and ditans
+        are options for those who cannot take triptans.
+    - layout: "bullets"
+      heading: "Comfort Measures"
+      points: ["Rest in a dark, quiet room", "Cold pack on the forehead", "Sip water", "Sleep if you can"]
+      footage_query: "ice pack forehead"
+      narration: >-
+        Comfort measures can help too. Rest in a dark, quiet room. Place a cold pack on your forehead or the back of your
+        neck. Sip water, especially if you have been vomiting. Some people find a small amount of caffeine helps early on. Try
+        to sleep, since many attacks end with sleep. Anti nausea medicine can help if you feel sick.
+    - layout: "warning"
+      heading: "Medication Overuse Headache"
+      points: ["Pain pills more than 2 to 3 days a week", "Can cause more headaches", "Track your use", "Talk to your doctor"]
+      footage_query: "pill bottles table"
+      narration: >-
+        Here is an important warning. Taking pain relievers or migraine medicines too often, generally more than two or three
+        days a week, can cause medication overuse headache, also called rebound headache. Headaches become more frequent and
+        harder to treat. If you need acute medicine that often, it is a sign you need a preventive plan. Talk to your doctor.
+    - layout: "bullets"
+      heading: "Who Needs Prevention?"
+      points: ["4 or more migraine days a month", "Attacks that disrupt life", "Acute meds not working", "Overusing pain relief"]
+      footage_query: "calendar notebook planning"
+      narration: >-
+        Who needs preventive treatment? Doctors often suggest it for people with four or more migraine days a month, attacks
+        that are severe or long lasting, attacks that do not respond well to acute medicines, or people who are using pain
+        relievers too often. The goal is fewer, shorter and milder attacks. It does not have to be every day for life.
+    - layout: "bullets"
+      heading: "Preventive Medicines"
+      points: ["Some blood pressure medicines", "Some seizure medicines", "Some antidepressants", "Newer CGRP medicines"]
+      footage_query: "pill organizer close up"
+      narration: >-
+        Preventive medicines are taken regularly to reduce attacks. Older options include certain blood pressure medicines,
+        some seizure medicines, and some antidepressants, which were found to help migraine. Newer medicines target a protein
+        called CGRP that plays a key role in migraine, given as monthly or quarterly shots, or as pills. For chronic migraine,
+        Botox injections are another option.
+    - layout: "bullets"
+      heading: "Chronic Migraine"
+      points: ["15 or more headache days a month", "At least 8 are migraine", "Needs a specialist plan", "Very treatable"]
+      footage_query: "woman holding head pain"
+      narration: >-
+        What is chronic migraine? It means having headaches on fifteen or more days a month for over three months, with at
+        least eight of those days having migraine features. It affects a smaller group of people but can be very disabling.
+        Chronic migraine is treatable, often with a headache specialist's help, and many people move back to having fewer
+        attacks.
+    - layout: "myth_fact"
+      heading: "Nothing Can Be Done"
+      points: ["You just have to live with it", "Many treatments work"]
+      footage_query: "woman smiling outdoors"
+      narration: >-
+        Myth: there is nothing you can do about migraine, so you just have to live with it. Fact: today there are more
+        treatment options than ever. Most people can find a combination of lifestyle changes, acute medicines and prevention
+        that greatly reduces their attacks. If your treatment is not working, ask about other options, or a referral to a
+        headache specialist.
+    - layout: "bullets"
+      heading: "Lifestyle Habits That Help"
+      points: ["Regular sleep schedule", "Regular meals and water", "Regular exercise", "Manage stress"]
+      footage_query: "woman walking park"
+      narration: >-
+        Daily habits can lower how often migraines happen. Keep a regular sleep schedule, even on weekends. Eat regular meals
+        and drink plenty of water. Get regular aerobic exercise, like brisk walking or cycling. Keep caffeine steady and
+        moderate. Manage stress with relaxation techniques, biofeedback, or cognitive behavioral therapy, which all have
+        evidence for migraine.
+    - layout: "bullets"
+      heading: "Migraine and Sleep"
+      points: ["Too little sleep triggers attacks", "Oversleeping can too", "Same bedtime daily", "Ask about sleep apnea"]
+      footage_query: "woman lying awake bed"
+      narration: >-
+        Sleep and migraine are closely linked. Too little sleep, too much sleep, and irregular sleep can all trigger attacks.
+        Try to go to bed and wake up at the same time every day, even on weekends and holidays. Keep the bedroom dark and
+        cool, and limit screens before bed. Morning headaches with loud snoring can be a sign of sleep apnea, so mention it to
+        your doctor.
+    - layout: "bullets"
+      heading: "Supplements With Some Evidence"
+      points: ["Magnesium", "Riboflavin, vitamin B2", "Coenzyme Q10", "Ask your doctor first"]
+      footage_query: "supplement capsules close up"
+      narration: >-
+        Some supplements have modest evidence for preventing migraine, including magnesium, riboflavin, which is vitamin B2,
+        and coenzyme Q10. They may help some people with few side effects. But supplements can interact with medicines and are
+        not regulated like drugs. Ask your doctor before trying them, especially if you are pregnant or have kidney disease.
+    - layout: "bullets"
+      heading: "Migraine and Hormones"
+      points: ["Attacks around periods", "Changes in pregnancy", "Often better after menopause", "Ask about options"]
+      footage_query: "woman talking doctor office"
+      narration: >-
+        Many women have migraines around their periods, when estrogen drops. Migraines often improve during pregnancy,
+        especially later on, though some women get worse. They often improve after menopause. Your doctor may suggest timing
+        medicines around your period, or other options. Tell your doctor if you are pregnant or planning, since some migraine
+        medicines are not safe in pregnancy.
+    - layout: "warning"
+      heading: "Aura and Birth Control"
+      points: ["Aura raises stroke risk slightly", "Estrogen pills add risk", "Smoking adds more", "Tell your doctor"]
+      footage_query: "birth control pills close up"
+      narration: >-
+        Here is an important safety point for women. Migraine with aura is linked to a small increase in stroke risk. Birth
+        control pills that contain estrogen, and smoking, raise that risk further. If you have migraine with aura, tell the
+        doctor who prescribes your birth control. There are other good birth control options without estrogen. And if you
+        smoke, try to quit.
+    - layout: "bullets"
+      heading: "Migraine in Children"
+      points: ["Shorter attacks", "Belly pain or vomiting", "Both sides of the head", "Routine and sleep help"]
+      footage_query: "child holding head"
+      narration: >-
+        Children get migraines too. Their attacks are often shorter, and the pain may be on both sides of the head. Some
+        children mainly have belly pain, vomiting, or dizziness. Regular sleep, meals, water, and limiting screen time can
+        help. Talk to your pediatrician, who can recommend safe treatment. Watch for warning signs that need urgent care, as
+        in adults.
+    - layout: "bullets"
+      heading: "Migraine at Work"
+      points: ["Talk to your employer", "Ask about adjustments", "Screen filters, breaks", "Know your rights"]
+      footage_query: "office worker computer"
+      narration: >-
+        Migraine can make work hard. Consider talking with your employer about simple adjustments, like anti glare screen
+        filters, dimmer lighting, a quiet space, breaks, or flexible hours. Under US law, people with migraine may qualify for
+        reasonable accommodations at work. Planning ahead, with medicine at work, can help you stay productive.
+    - layout: "bullets"
+      heading: "Questions for Your Doctor"
+      points: ["Is this migraine?", "What should I take for attacks?", "Do I need prevention?", "When should I worry?"]
+      footage_query: "patient talking doctor"
+      narration: >-
+        At your next visit, ask: is this migraine, or another type of headache? What should I take at the start of an attack,
+        and how often can I take it? Do I need preventive treatment? Are my other medicines or birth control safe with my
+        migraine? And which symptoms mean I should go to the emergency room?
+    - layout: "bullets"
+      heading: "Quick Recap"
+      points: ["A real brain condition", "Know your triggers", "Treat attacks early", "Ask about prevention"]
+      footage_query: "notebook checklist pen"
+      narration: >-
+        Let us recap. Migraine is a common, real neurological condition, not just a bad headache. Keep a diary to find your
+        triggers and patterns. Treat attacks early, but limit pain relievers to two or three days a week. If you have frequent
+        attacks, ask about prevention. And a sudden, worst ever headache, or a headache with weakness or confusion, is an
+        emergency.
+    - layout: "outro"
+      heading: "Remember"
+      points: ["Treat early", "Track your attacks", "Ask about prevention"]
+      footage_query: "woman smiling outdoors"
+      narration: >-
+        Remember: treat attacks early, track your migraines in a diary, and ask your doctor about prevention if attacks are
+        frequent. Share this with someone who loses days to migraine. This video is for education only, not medical advice.
+        Like and subscribe to Health Support Studio for a new health video every day.
+  short_title: "This migraine mistake makes it worse #Shorts"
+  short_caption: >-
+    Using pain pills too often can cause rebound headaches. Educational only, not medical advice. #Migraine #Headache
+    #HealthTips #HealthEducation
+  short_scenes:
+    - layout: "title"
+      heading: "Migraine Mistake"
+      points: ["That makes it worse"]
+      footage_query: "pill bottles table"
+      narration: >-
+        Taking pain pills for headaches too often can actually make them worse.
+    - layout: "warning"
+      heading: "Rebound Headaches"
+      points: ["Pain pills over 2 to 3 days a week", "More frequent headaches", "Ask about prevention"]
+      footage_query: "woman holding head pain"
+      narration: >-
+        Using pain relievers or migraine medicines more than two or three days a week can cause rebound headaches, which
+        become more frequent and harder to treat. If you need them that often, ask your doctor about preventive treatment.
+        There are more options today than ever.
+    - layout: "outro"
+      heading: "Full Video"
+      points: ["On YouTube"]
+      footage_query: "woman smiling outdoors"
+      narration: >-
+        Learn more about migraine in our full video, on the Health Support Studio YouTube channel.
