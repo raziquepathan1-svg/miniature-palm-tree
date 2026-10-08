@@ -1,0 +1,292 @@
+queue_topic: "Lyme disease and ticks: warning signs and prevention"
+style: "Warning Signs"
+sources:
+  - "CDC, Lyme Disease: https://www.cdc.gov/lyme/index.html"
+  - "CDC, Removing Ticks: https://www.cdc.gov/ticks/after-a-tick-bite/index.html"
+  - "MedlinePlus, Lyme Disease: https://medlineplus.gov/lymedisease.html"
+plan:
+  topic: "Lyme disease and ticks: warning signs and prevention"
+  title: "Lyme Disease Warning Signs (and How to Remove a Tick)"
+  description: |-
+    Lyme disease is the most common tick-borne disease in the US, and most people never see the tick. Learn the early and later warning signs, how to remove a tick the right way, treatment, other tick diseases, and how to protect your family and pets.
+
+    In this video:
+    • How Lyme disease spreads and the 36-hour window
+    • The rash, including on darker skin
+    • Later signs: face, joints and heart
+    • How to remove a tick, and myths to skip
+    • Repellent, permethrin, tick checks and yard tips
+
+    #LymeDisease #Ticks #TickBite #SummerSafety #HealthEducation
+  tags: ["lyme disease", "lyme disease symptoms", "tick bite", "how to remove a tick", "bulls eye rash", "deer tick", "tick prevention", "permethrin", "tick borne disease", "outdoor safety", "health education"]
+  thumbnail_text: "FOUND A TICK?"
+  thumbnail_highlight: "TICK?"
+  thumbnail_photo_query: "tick on skin close up"
+  playlist: "Infections & Vaccines"
+  scenes:
+    - layout: "title"
+      heading: "Lyme Disease Warning Signs"
+      points: ["Tick bites to take seriously"]
+      footage_query: "tick on skin close up"
+      narration: >-
+        A walk in the woods, gardening in the backyard, or playing in tall grass. A tiny tick, no bigger than a poppy seed,
+        can latch on without you feeling it, and pass on Lyme disease. Most people never see the tick that bit them. Today you
+        will learn the warning signs of Lyme disease, how to remove a tick the right way, and how to protect your family.
+    - layout: "big_number"
+      heading: "Very Common"
+      points: ["About 476,000", "Americans treated for Lyme each year"]
+      footage_query: "family hiking forest"
+      narration: >-
+        Lyme disease is the most common disease spread by ticks in the United States. Based on insurance records, about four
+        hundred seventy six thousand Americans are diagnosed and treated for Lyme disease each year. Most cases happen in the
+        Northeast, the mid Atlantic, and the upper Midwest, but the ticks are spreading to new areas.
+    - layout: "bullets"
+      heading: "What Causes Lyme Disease?"
+      points: ["Bacteria from tick bites", "Blacklegged or deer ticks", "Young ticks are tiny", "Most bites in late spring and summer"]
+      footage_query: "tick on leaf"
+      narration: >-
+        Lyme disease is caused by bacteria spread by the bite of infected blacklegged ticks, also called deer ticks. Young
+        ticks, called nymphs, are about the size of a poppy seed, and are most active in late spring and summer. Because they
+        are so small and their bite does not hurt, most people never notice them.
+    - layout: "bullets"
+      heading: "How Long Before It Spreads?"
+      points: ["Usually 36 to 48 hours", "Quick removal lowers risk", "Check every day", "Ticks hide in warm spots"]
+      footage_query: "person checking skin"
+      narration: >-
+        Here is good news. In most cases, a tick must be attached for thirty six to forty eight hours or more before it can
+        spread Lyme disease. That means finding and removing ticks quickly, with daily tick checks, can greatly lower your
+        risk. Ticks like warm, hidden places, like the scalp, behind the ears, armpits, groin, and behind the knees.
+    - layout: "warning"
+      heading: "Early Sign: The Rash"
+      points: ["Expanding red rash", "Often at the bite site", "Can look like a bull's eye", "Not always"]
+      footage_query: "skin rash close up"
+      narration: >-
+        The most common early sign is a rash called erythema migrans. It appears in about seven or eight out of ten people
+        with Lyme disease, usually three to thirty days after the bite. It starts at the bite site and slowly expands,
+        sometimes to twelve inches or more. It may look like a bull's eye, but often it is just a solid red patch. It may feel
+        warm, but is rarely itchy or painful.
+    - layout: "warning"
+      heading: "The Rash on Darker Skin"
+      points: ["Harder to see", "May look like a bruise", "Look for a growing patch", "Ask a doctor if unsure"]
+      footage_query: "skin close up"
+      narration: >-
+        On brown and black skin, the Lyme rash can be harder to see, and may look darker, purple, or like a bruise, rather
+        than red. This can delay diagnosis. Look for any patch that slowly grows over several days, especially after time
+        outdoors. If you are unsure, take a photo each day and show it to your doctor.
+    - layout: "warning"
+      heading: "Early Flu-Like Symptoms"
+      points: ["Fever and chills", "Headache", "Tiredness", "Muscle and joint aches"]
+      footage_query: "woman tired holding head"
+      narration: >-
+        Along with the rash, or sometimes without it, early Lyme disease can cause flu like symptoms: fever, chills, headache,
+        tiredness, muscle and joint aches, and swollen lymph nodes. A summer flu with no cough or runny nose, in someone who
+        has been outdoors in a tick area, should make you think about Lyme disease.
+    - layout: "myth_fact"
+      heading: "No Rash Means No Lyme"
+      points: ["You always get a bull's eye rash", "Many people have no rash"]
+      footage_query: "woman scratching arm"
+      narration: >-
+        Myth: if you do not have a bull's eye rash, you do not have Lyme disease. Fact: about one in four people with Lyme
+        disease never notice a rash, and most rashes are not shaped like a bull's eye. Some appear in hidden places, like the
+        back or scalp. If you have flu like symptoms after time in tick areas, see a doctor, even without a rash.
+    - layout: "warning"
+      heading: "Later Signs"
+      points: ["New rashes elsewhere", "Facial droop", "Severe headache, stiff neck", "Heart palpitations"]
+      footage_query: "man holding chest heartbeat"
+      narration: >-
+        If Lyme disease is not treated, the bacteria can spread through the body over days to weeks. Signs include more rashes
+        on other parts of the body, drooping on one or both sides of the face, called facial palsy, severe headaches and neck
+        stiffness, heart palpitations, dizziness or shortness of breath, and shooting pains, numbness or tingling in the hands
+        or feet.
+    - layout: "warning"
+      heading: "Lyme Arthritis"
+      points: ["Swollen, painful joints", "Often the knee", "Comes and goes", "Can appear months later"]
+      footage_query: "person holding knee pain"
+      narration: >-
+        Months after an untreated infection, some people develop Lyme arthritis, with episodes of joint pain and swelling,
+        especially in the knees. The swelling can come and go, and move between joints. This is more common in children and
+        teens. Lyme arthritis is treatable with antibiotics, so it is worth getting checked if you have a swollen knee without
+        an injury.
+    - layout: "warning"
+      heading: "Lyme and the Heart"
+      points: ["Rare but serious", "Fainting or dizziness", "Palpitations, chest pain", "Get care right away"]
+      footage_query: "person calling phone emergency"
+      narration: >-
+        In rare cases, Lyme disease affects the heart's electrical system, called Lyme carditis. It can cause lightheadedness,
+        fainting, shortness of breath, palpitations, and chest pain. It can be serious, but responds well to antibiotics. If
+        you have any of these symptoms after a possible tick exposure, get medical care right away.
+    - layout: "bullets"
+      heading: "How Lyme Is Diagnosed"
+      points: ["Symptoms and tick exposure", "The rash alone is enough", "Blood tests for later stages", "Tests may be negative early"]
+      footage_query: "blood test tube lab"
+      narration: >-
+        How is Lyme disease diagnosed? Doctors look at symptoms, a physical exam, and the chance you were exposed to ticks. If
+        you have the typical rash and were in a tick area, you can be treated without a blood test. Blood tests are more
+        useful a few weeks after infection, because they can be negative early on. Two step testing is recommended.
+    - layout: "bullets"
+      heading: "Treatment Works"
+      points: ["Antibiotics, usually doxycycline", "Often 10 to 14 days", "Best when started early", "Finish every dose"]
+      footage_query: "pharmacist giving medicine"
+      narration: >-
+        Most people with Lyme disease recover fully with a short course of antibiotics, usually doxycycline, for ten to
+        fourteen days, or longer for some later stages. Doxycycline is safe for children of all ages for short courses.
+        Treatment works best when started early. Take every dose, even if you feel better. Some later stages may need IV
+        antibiotics.
+    - layout: "bullets"
+      heading: "Lingering Symptoms"
+      points: ["Tiredness, aches, brain fog", "Can last months", "Usually improve over time", "Long antibiotics do not help"]
+      footage_query: "woman tired on couch"
+      narration: >-
+        Some people have lingering tiredness, body aches, or trouble thinking after treatment, sometimes for six months or
+        more. This is called post treatment Lyme disease syndrome. Most people slowly improve over time. Studies have shown
+        that long term antibiotics do not help and can cause harm. Work with your doctor on managing symptoms.
+    - layout: "bullets"
+      heading: "How to Remove a Tick"
+      points: ["Fine-tipped tweezers", "Grab close to the skin", "Pull up with steady pressure", "Do not twist or jerk"]
+      footage_query: "tweezers removing tick"
+      narration: >-
+        If you find a tick, remove it right away. Use clean, fine tipped tweezers to grab the tick as close to the skin as
+        possible. Pull upward with steady, even pressure. Do not twist or jerk, which can cause the mouth parts to break off.
+        If they do break off, try to remove them with tweezers. If you cannot easily remove them, leave them, and let the skin
+        heal.
+    - layout: "myth_fact"
+      heading: "Burn It or Smother It"
+      points: ["Use a match or petroleum jelly", "Remove it quickly with tweezers"]
+      footage_query: "tweezers removing tick"
+      narration: >-
+        Myth: you should burn a tick with a match, or cover it with petroleum jelly or nail polish to make it back out. Fact:
+        these methods do not work well and waste time, which gives the tick more time to spread germs. Some can even make the
+        tick release more fluid into the bite. Use tweezers to remove it as quickly as possible.
+    - layout: "bullets"
+      heading: "After You Remove It"
+      points: ["Clean the bite and your hands", "Do not crush the tick", "Save it in a bag or photo", "Watch for 30 days"]
+      footage_query: "washing hands sink"
+      narration: >-
+        After removing a tick, clean the bite area and your hands with rubbing alcohol or soap and water. Dispose of the tick
+        by putting it in alcohol, a sealed bag, or flushing it. Never crush it with your fingers. You may want to take a photo
+        of it. Write down the date. Watch for a rash, fever, or other symptoms over the next thirty days.
+    - layout: "bullets"
+      heading: "Preventive Antibiotic"
+      points: ["Single dose of doxycycline", "For high-risk bites", "Within 72 hours", "Ask your doctor"]
+      footage_query: "doctor talking patient office"
+      narration: >-
+        In some cases, a doctor may recommend a single dose of doxycycline after a tick bite to help prevent Lyme disease.
+        This is usually considered if you live in an area with lots of Lyme disease, the tick was a blacklegged tick, it was
+        attached for thirty six hours or more, and the dose can be started within seventy two hours of removal. Ask your
+        doctor.
+    - layout: "bullets"
+      heading: "Other Tick-Borne Diseases"
+      points: ["Anaplasmosis and ehrlichiosis", "Babesiosis", "Rocky Mountain spotted fever", "Alpha-gal syndrome"]
+      footage_query: "tick on leaf"
+      narration: >-
+        Ticks can spread other diseases too. Anaplasmosis, ehrlichiosis and babesiosis cause fever, chills and aches, and can
+        be serious in older adults. Rocky Mountain spotted fever can be deadly if not treated quickly, and causes fever,
+        headache, and a spotted rash. The lone star tick can cause alpha gal syndrome, an allergy to red meat. See a doctor
+        for fever after a tick bite.
+    - layout: "bullets"
+      heading: "Use Insect Repellent"
+      points: ["EPA-registered repellent", "DEET, picaridin, or IR3535", "Oil of lemon eucalyptus", "Follow the label"]
+      footage_query: "insect repellent spray"
+      narration: >-
+        Prevention is the best protection. Use an EPA registered insect repellent on exposed skin. Effective ingredients
+        include DEET, picaridin, IR3535, oil of lemon eucalyptus, PMD, and 2 undecanone. Follow the label. Do not use oil of
+        lemon eucalyptus on children under three. Parents should apply repellent to their child's hands, and avoid the eyes
+        and mouth.
+    - layout: "bullets"
+      heading: "Treat Clothing and Gear"
+      points: ["Permethrin on clothes", "Boots, socks, tents", "Lasts through washes", "Never on skin"]
+      footage_query: "hiking boots trail"
+      narration: >-
+        Treat clothing, boots, socks and camping gear with products containing zero point five percent permethrin, which kills
+        ticks on contact and lasts through several washes. You can also buy clothing that is already treated. Permethrin is
+        for clothing and gear only. Never put it directly on your skin.
+    - layout: "bullets"
+      heading: "Dress and Walk Smart"
+      points: ["Long sleeves and pants", "Tuck pants into socks", "Light colors show ticks", "Walk in the center of trails"]
+      footage_query: "family hiking forest"
+      narration: >-
+        When in wooded or grassy areas, wear long sleeves and long pants, and tuck your pants into your socks. Light colored
+        clothing makes ticks easier to spot. Walk in the center of trails, and avoid brushing against tall grass, bushes and
+        leaf litter, where ticks wait to grab on.
+    - layout: "bullets"
+      heading: "Do Tick Checks"
+      points: ["Check your whole body", "Use a mirror", "Check children and pets", "Check gear and clothes"]
+      footage_query: "person checking skin"
+      narration: >-
+        After coming indoors from tick areas, check your whole body, using a hand held or full length mirror. Look under the
+        arms, in and around the ears, inside the belly button, behind the knees, between the legs, around the waist, and in
+        the hair. Check children carefully, and check pets, gear, and clothing, since ticks can ride inside.
+    - layout: "bullets"
+      heading: "Shower and Dry Clothes"
+      points: ["Shower within 2 hours", "Washes off unattached ticks", "Dryer on high heat", "10 minutes kills ticks"]
+      footage_query: "clothes dryer laundry"
+      narration: >-
+        Showering within two hours of coming indoors has been shown to lower the risk of Lyme disease, by washing off
+        unattached ticks, and it is a good time for a tick check. Put dry clothes in a dryer on high heat for ten minutes to
+        kill ticks. If clothes are damp, use more time. Washing alone may not kill ticks.
+    - layout: "bullets"
+      heading: "Protect Your Yard"
+      points: ["Keep grass short", "Clear leaf litter", "Wood chips between lawn and woods", "Keep play areas sunny"]
+      footage_query: "backyard lawn mowing"
+      narration: >-
+        You can make your yard less friendly to ticks. Keep grass mowed short. Clear tall grass, brush, and leaf litter,
+        especially at the edge of the lawn. Put a three foot barrier of wood chips or gravel between lawns and wooded areas.
+        Keep play equipment, decks and patios in sunny areas, away from yard edges and trees. Discourage deer from entering.
+    - layout: "bullets"
+      heading: "Protect Your Pets"
+      points: ["Ask your vet about tick prevention", "Check pets daily", "Ticks ride indoors on pets", "Dogs can get Lyme too"]
+      footage_query: "dog grass park"
+      narration: >-
+        Pets can carry ticks into your home, and dogs can get Lyme disease too. Talk to your veterinarian about tick
+        prevention products for your pets. Check your pets for ticks every day, especially after they have been outside. Some
+        products for dogs are toxic to cats, so always use products made for the right animal.
+    - layout: "bullets"
+      heading: "Questions for Your Doctor"
+      points: ["Do I need treatment?", "Should I take a preventive dose?", "What signs should I watch?", "When should I come back?"]
+      footage_query: "patient talking doctor"
+      narration: >-
+        If you were bitten by a tick or have symptoms, ask your doctor: could this be Lyme disease or another tick disease? Do
+        I need treatment now, or a preventive dose? Do I need a blood test, or is the rash enough? What signs should I watch
+        for, and for how long? And when should I come back?
+    - layout: "bullets"
+      heading: "Quick Recap"
+      points: ["Expanding rash or flu-like illness", "Remove ticks quickly with tweezers", "Repellent and permethrin", "Daily tick checks"]
+      footage_query: "notebook checklist pen"
+      narration: >-
+        Let us recap. Lyme disease often starts with an expanding red rash, or a summer flu like illness, three to thirty days
+        after a tick bite. Later, it can affect the face, joints, heart, and nerves. Antibiotics work well, especially early.
+        Remove ticks quickly with tweezers. Use repellent, treat clothes with permethrin, shower after being outdoors, and do
+        daily tick checks.
+    - layout: "outro"
+      heading: "Remember"
+      points: ["Check for ticks daily", "Remove them fast", "Watch for a rash or fever"]
+      footage_query: "family hiking forest"
+      narration: >-
+        Remember: check for ticks every day, remove them quickly with tweezers, and watch for a rash or fever for thirty days.
+        Share this with anyone who loves the outdoors. This video is for education only, not medical advice. Like and
+        subscribe to Health Support Studio for a new health video every day.
+  short_title: "Found a tick? Remove it the right way #Shorts"
+  short_caption: >-
+    How to remove a tick, and what to watch for after. Educational only, not medical advice. #LymeDisease #Ticks #TickBite
+    #HealthEducation
+  short_scenes:
+    - layout: "title"
+      heading: "Found a Tick?"
+      points: ["Do this, not that"]
+      footage_query: "tick on skin close up"
+      narration: >-
+        Found a tick on your skin? Do not burn it or cover it with petroleum jelly.
+    - layout: "bullets"
+      heading: "Remove It Right"
+      points: ["Fine-tipped tweezers", "Close to the skin", "Pull up, steady pressure"]
+      footage_query: "tweezers removing tick"
+      narration: >-
+        Use fine tipped tweezers, grab the tick close to the skin, and pull straight up with steady pressure. Clean the bite.
+        Then watch for an expanding rash, fever, or aches over the next thirty days. Quick removal lowers the risk of Lyme
+        disease.
+    - layout: "outro"
+      heading: "Full Video"
+      points: ["On YouTube"]
+      footage_query: "family hiking forest"
+      narration: >-
+        Learn the warning signs of Lyme disease in our full video, on the Health Support Studio YouTube channel.
