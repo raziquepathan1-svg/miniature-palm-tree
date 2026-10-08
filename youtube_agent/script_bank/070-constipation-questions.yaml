@@ -1,0 +1,300 @@
+queue_topic: "Constipation: causes, relief and when to worry"
+style: "Top Questions"
+sources:
+  - "NIDDK, Constipation: https://www.niddk.nih.gov/health-information/digestive-diseases/constipation"
+  - "MedlinePlus, Constipation: https://medlineplus.gov/constipation.html"
+  - "MedlinePlus, Laxatives: https://medlineplus.gov/laxatives.html"
+plan:
+  topic: "Constipation: causes, relief and when to worry"
+  title: "Constipated? What Actually Works (and When to Worry)"
+  description: |-
+    Constipation is one of the most common digestive problems. We answer the top questions: what is normal, common causes and medicines, fiber, water and bathroom habits, which laxative to choose, and the red flags that need a doctor.
+
+    In this video:
+    • What counts as constipation, and what is normal
+    • Common causes and medicines that cause it
+    • Red flags and emergency signs
+    • Fiber, prunes, water, exercise and bathroom habits
+    • Choosing a laxative, and myths about cleanses
+
+    #Constipation #GutHealth #DigestiveHealth #Fiber #HealthEducation
+  tags: ["constipation", "constipation relief", "how to relieve constipation", "laxatives", "fiber", "prunes", "bowel movements", "constipation causes", "gut health", "digestive health", "health education"]
+  thumbnail_text: "CONSTIPATED?"
+  thumbnail_highlight: "CONSTIPATED?"
+  thumbnail_photo_query: "woman holding stomach"
+  playlist: "Healthy Habits & Prevention"
+  scenes:
+    - layout: "title"
+      heading: "Constipation Questions"
+      points: ["Relief that actually works"]
+      footage_query: "woman holding stomach"
+      narration: >-
+        It is not the most comfortable topic, but almost everyone deals with it at some point. Constipation can leave you
+        bloated, uncomfortable, and straining in the bathroom. For some people it lasts for months. Today we answer the top
+        questions about constipation: what is normal, what causes it, what helps, which laxatives to choose, and when it is a
+        sign of something serious.
+    - layout: "big_number"
+      heading: "Very Common"
+      points: ["About 1 in 6", "US adults have constipation"]
+      footage_query: "group of people walking city"
+      narration: >-
+        How common is constipation? About sixteen out of a hundred adults in the United States have symptoms of constipation,
+        and about one in three adults over sixty. It is also common in children, pregnant women, and people taking certain
+        medicines. It is one of the most common digestive complaints, yet many people are too embarrassed to bring it up.
+    - layout: "bullets"
+      heading: "What Counts as Constipation?"
+      points: ["Fewer than 3 bowel movements a week", "Hard, dry or lumpy stools", "Straining or pain", "Feeling not fully empty"]
+      footage_query: "medical illustration intestines"
+      narration: >-
+        What counts as constipation? Doctors usually define it as having fewer than three bowel movements a week, or stools
+        that are hard, dry, or lumpy, difficult or painful to pass, or a feeling that not all stool has passed. Constipation
+        that lasts three months or more is called chronic constipation.
+    - layout: "myth_fact"
+      heading: "You Must Go Every Day"
+      points: ["A daily bowel movement is required", "Normal ranges widely"]
+      footage_query: "calendar notebook planning"
+      narration: >-
+        Myth: you need a bowel movement every day to be healthy. Fact: normal ranges from about three times a day to three
+        times a week. What matters most is what is normal for you, and whether stools are comfortable to pass. A change from
+        your usual pattern is more important than the number.
+    - layout: "bullets"
+      heading: "Why Does It Happen?"
+      points: ["Stool moves too slowly", "Colon absorbs too much water", "Stool becomes hard and dry", "Harder to pass"]
+      footage_query: "medical illustration intestines"
+      narration: >-
+        Why does constipation happen? As stool moves through the colon, water is absorbed. If stool moves too slowly, too much
+        water is absorbed, and the stool becomes hard, dry, and difficult to pass. Sometimes the problem is with the muscles
+        of the pelvic floor, which do not relax properly to let stool out.
+    - layout: "bullets"
+      heading: "Common Causes"
+      points: ["Not enough fiber", "Not enough fluids", "Not enough activity", "Ignoring the urge to go"]
+      footage_query: "fast food meal"
+      narration: >-
+        What are the common causes? Not eating enough fiber, from fruits, vegetables, beans and whole grains. Not drinking
+        enough fluids. Not being physically active. Ignoring the urge to have a bowel movement, often because of a busy
+        schedule or not wanting to use public restrooms. Changes in routine, like travel, can also cause it.
+    - layout: "warning"
+      heading: "Medicines That Cause It"
+      points: ["Opioid pain medicines", "Iron and calcium pills", "Some blood pressure medicines", "Antacids, allergy and bladder pills"]
+      footage_query: "pill bottles table"
+      narration: >-
+        Many medicines can cause constipation. Opioid pain medicines are a major cause. Others include iron and calcium
+        supplements, some blood pressure medicines, antacids with aluminum or calcium, some antidepressants, allergy pills,
+        bladder control medicines, and medicines for Parkinson's disease. If constipation started with a new medicine, talk to
+        your doctor. Do not stop it on your own.
+    - layout: "bullets"
+      heading: "Health Conditions Linked to It"
+      points: ["Irritable bowel syndrome", "Underactive thyroid", "Diabetes", "Parkinson's, MS, spinal injuries"]
+      footage_query: "doctor talking patient office"
+      narration: >-
+        Some health conditions cause constipation, including irritable bowel syndrome, an underactive thyroid, diabetes, high
+        calcium levels, and nervous system conditions like Parkinson's disease, multiple sclerosis, stroke, and spinal cord
+        injuries. Pregnancy commonly causes constipation too. If you have ongoing constipation, your doctor may check for
+        these.
+    - layout: "warning"
+      heading: "Red Flags: See a Doctor"
+      points: ["Blood in stool", "Unexplained weight loss", "New change after age 45", "Family history of colon cancer"]
+      footage_query: "doctor talking patient office"
+      narration: >-
+        When is constipation a warning sign? See a doctor if you have blood in your stool, or black, tarry stool, unexplained
+        weight loss, a new change in bowel habits that lasts more than a few weeks, especially after age forty five, a family
+        history of colon cancer, or signs of anemia like tiredness. You may need a colonoscopy.
+    - layout: "warning"
+      heading: "Get Emergency Care"
+      points: ["Severe belly pain", "Vomiting", "No gas, swollen belly", "Fever"]
+      footage_query: "hospital emergency entrance"
+      narration: >-
+        Get emergency care for severe belly pain, vomiting, a swollen, hard belly, or not being able to pass gas or stool.
+        These can be signs of a bowel blockage, which is an emergency. Also get urgent care for constipation with fever, or
+        rectal bleeding that is heavy or does not stop.
+    - layout: "bullets"
+      heading: "Question 1: How Much Fiber?"
+      points: ["Adults: about 25 to 34 grams", "Most get only half", "Add it slowly", "Drink water with it"]
+      footage_query: "bowl of oatmeal berries"
+      narration: >-
+        How much fiber do you need? Most adults need about twenty five to thirty four grams of fiber a day, depending on age
+        and sex, but most Americans get only about half that. Add fiber slowly, over a few weeks, to avoid gas and bloating,
+        and drink more water as you add fiber, so it can do its job.
+    - layout: "bullets"
+      heading: "High-Fiber Foods"
+      points: ["Beans and lentils", "Whole grains and bran", "Fruits like pears, berries", "Vegetables, nuts, seeds"]
+      footage_query: "lentils beans bowl"
+      narration: >-
+        Good sources of fiber include beans, lentils, and chickpeas, whole grain bread, brown rice, oats, and bran cereals,
+        fruits like pears, apples with skin, berries, and kiwi, vegetables like broccoli, carrots, and leafy greens, and nuts
+        and seeds, like chia and flax. Read labels, and choose foods with at least three grams of fiber per serving.
+    - layout: "bullets"
+      heading: "Prunes and Kiwi Help"
+      points: ["Prunes or prune juice", "Two kiwis a day", "Natural and gentle", "Studies show benefit"]
+      footage_query: "prunes bowl close up"
+      narration: >-
+        Some foods have extra evidence. Prunes, also called dried plums, contain fiber and a natural sugar called sorbitol
+        that draws water into the stool. Studies show prunes can work as well as some fiber supplements. Eating two green
+        kiwis a day has also been shown to help with constipation in several studies.
+    - layout: "bullets"
+      heading: "Question 2: How Much Water?"
+      points: ["Fluids help soften stool", "Water is best", "More with fiber", "More in hot weather"]
+      footage_query: "woman drinking water bottle"
+      narration: >-
+        How much water should you drink? There is no single number for everyone, but drinking enough fluids helps keep stool
+        soft, especially when eating more fiber. Water is the best choice. Drink more in hot weather or when exercising. If
+        your doctor limits your fluids for heart or kidney disease, follow their advice.
+    - layout: "bullets"
+      heading: "Question 3: Does Exercise Help?"
+      points: ["Moving helps the bowels move", "Walk most days", "Even short walks help", "Stay active as you age"]
+      footage_query: "woman walking park"
+      narration: >-
+        Does exercise help? Yes. Physical activity helps the muscles of the intestines move stool along. Try to be active most
+        days, like a brisk walk for twenty to thirty minutes. Even short walks after meals can help. This is especially
+        important for older adults and people who spend a lot of time sitting.
+    - layout: "bullets"
+      heading: "Bathroom Habits That Help"
+      points: ["Go when you feel the urge", "Try after breakfast", "Feet up on a small stool", "Do not strain"]
+      footage_query: "bathroom stool footrest"
+      narration: >-
+        Bathroom habits matter. Go when you feel the urge; do not hold it. Try to sit on the toilet at the same time each day,
+        often after breakfast, when the bowels are most active. Put your feet on a small stool, so your knees are higher than
+        your hips, which straightens the passage. Relax, breathe, and avoid straining.
+    - layout: "bullets"
+      heading: "Question 4: Which Laxative?"
+      points: ["Fiber supplements", "Osmotic laxatives", "Stool softeners", "Stimulant laxatives"]
+      footage_query: "pharmacy shelf store"
+      narration: >-
+        Which laxative should you choose? There are several types. Fiber supplements, like psyllium, add bulk. Osmotic
+        laxatives, like polyethylene glycol and milk of magnesia, draw water into the stool. Stool softeners, like docusate,
+        help water mix into stool. Stimulant laxatives, like senna and bisacodyl, make the intestine muscles move. Ask your
+        pharmacist which is best for you.
+    - layout: "bullets"
+      heading: "Fiber Supplements"
+      points: ["Psyllium or methylcellulose", "Start with a low dose", "Drink plenty of water", "Takes a few days"]
+      footage_query: "glass of water pill hand"
+      narration: >-
+        Fiber supplements, like psyllium or methylcellulose, are often a good first step. Start with a low dose and increase
+        slowly. Always take them with a full glass of water. They may take a few days to work. Take them at a different time
+        from other medicines, since they can affect how some medicines are absorbed.
+    - layout: "bullets"
+      heading: "Osmotic Laxatives"
+      points: ["Polyethylene glycol is common", "Gentle and effective", "Works in 1 to 3 days", "Safe for long-term use for many"]
+      footage_query: "pharmacist counter customer"
+      narration: >-
+        Osmotic laxatives, especially polyethylene glycol, are gentle and effective for many people. They usually work in one
+        to three days. Many doctors consider them safe for longer term use in most adults. People with kidney disease should
+        avoid laxatives with magnesium or phosphate, and should ask their doctor first.
+    - layout: "myth_fact"
+      heading: "Laxatives Are Always Addictive"
+      points: ["Your bowels will depend on them", "Most are safe when used right"]
+      footage_query: "pill bottle close up"
+      narration: >-
+        Myth: laxatives are addictive and will ruin your bowels. Fact: when used as directed, most laxatives are safe, and
+        research has not shown that stimulant laxatives damage the colon. Many people with chronic constipation need ongoing
+        treatment, and that is okay. Talk to your doctor if you need laxatives regularly, to find the best plan and rule out
+        other causes.
+    - layout: "myth_fact"
+      heading: "Detox Cleanses Help"
+      points: ["Colon cleanses remove toxins", "They can cause harm"]
+      footage_query: "herbal supplements bottle"
+      narration: >-
+        Myth: colon cleanses and detox teas flush out toxins and fix constipation. Fact: your colon and liver already remove
+        waste on their own. Colon cleansing products and enemas can cause cramping, dehydration, electrolyte problems, and
+        even bowel damage. Some detox teas contain strong laxatives without clear labeling. Skip them, and talk to your doctor
+        instead.
+    - layout: "bullets"
+      heading: "Hemorrhoids and Fissures"
+      points: ["Straining can cause them", "Bleeding, itching, pain", "Soften stools to heal", "See a doctor if bleeding"]
+      footage_query: "woman talking doctor office"
+      narration: >-
+        Straining and hard stools can lead to hemorrhoids, which are swollen veins around the anus, and anal fissures, which
+        are small tears. These can cause pain, itching, and bright red blood on the toilet paper. Softening stools with fiber
+        and water, warm sitz baths, and over the counter creams often help. But always have rectal bleeding checked by a
+        doctor, to rule out other causes.
+    - layout: "bullets"
+      heading: "Constipation From Opioids"
+      points: ["Very common with opioids", "Start a laxative right away", "Fiber alone may not work", "Special medicines exist"]
+      footage_query: "pill organizer close up"
+      narration: >-
+        Constipation is very common with opioid pain medicines, and it does not go away with time. If you are prescribed
+        opioids, ask your doctor about starting a laxative at the same time, usually a stimulant or osmotic laxative. Fiber
+        alone may not be enough. There are also prescription medicines made specifically for opioid related constipation.
+    - layout: "bullets"
+      heading: "Constipation in Children"
+      points: ["Holding in stool", "Painful bowel movements", "Toilet training stress", "Too much cow's milk"]
+      footage_query: "child holding stomach"
+      narration: >-
+        Children often get constipated, especially during toilet training, starting school, or after a painful bowel movement,
+        which makes them hold it in. Too much cow's milk and not enough fiber can add to it. Signs include hard stools, belly
+        pain, and soiling. Offer fruits, vegetables, and water, encourage regular toilet time, and talk to your pediatrician.
+    - layout: "bullets"
+      heading: "Constipation in Pregnancy"
+      points: ["Hormones slow the bowels", "Iron pills add to it", "Fiber, water, walking", "Ask before laxatives"]
+      footage_query: "pregnant woman sitting"
+      narration: >-
+        Constipation is very common in pregnancy, because hormones slow the bowels, and prenatal vitamins with iron can make
+        it worse. Eat high fiber foods, drink plenty of fluids, and stay active, like walking. Some fiber supplements and
+        stool softeners are considered safe in pregnancy, but ask your doctor or midwife before taking any laxative.
+    - layout: "bullets"
+      heading: "Older Adults"
+      points: ["More common with age", "Medicines are a big cause", "Less activity and fluids", "Watch for impaction"]
+      footage_query: "elderly man sitting"
+      narration: >-
+        Older adults are more likely to be constipated, often because of medicines, less physical activity, drinking less, and
+        health conditions. Severe constipation can lead to fecal impaction, where hard stool gets stuck, sometimes causing
+        confusion, loss of appetite, or watery leakage that looks like diarrhea. Caregivers should watch for changes and tell
+        the doctor.
+    - layout: "bullets"
+      heading: "When Basics Do Not Work"
+      points: ["See your doctor", "Tests may be needed", "Pelvic floor therapy", "Prescription medicines"]
+      footage_query: "patient talking doctor"
+      narration: >-
+        If lifestyle changes and over the counter products do not help after a few weeks, see your doctor. They may order
+        blood tests or a colonoscopy. Some people have pelvic floor problems, where the muscles do not relax properly, which
+        can be treated with a type of physical therapy called biofeedback. There are also prescription medicines for chronic
+        constipation.
+    - layout: "bullets"
+      heading: "Questions for Your Doctor"
+      points: ["Could my medicines cause this?", "Which laxative is right?", "Do I need a colonoscopy?", "When should I worry?"]
+      footage_query: "patient talking doctor"
+      narration: >-
+        At your visit, ask: could my medicines or health conditions be causing my constipation? How much fiber and fluid
+        should I aim for? Which laxative is right for me, and for how long? Do I need any tests, like a colonoscopy? And what
+        signs mean I should come back right away?
+    - layout: "bullets"
+      heading: "Quick Recap"
+      points: ["Fewer than 3 times a week", "Fiber, water and movement", "Laxatives are safe used right", "Know the red flags"]
+      footage_query: "notebook checklist pen"
+      narration: >-
+        Let us recap. Constipation means fewer than three bowel movements a week, or hard stools that are difficult to pass.
+        Fiber, fluids, physical activity, and good bathroom habits help most people. Laxatives are safe when used correctly.
+        Watch for red flags, like blood in the stool, weight loss, or a new change after forty five, and see your doctor.
+    - layout: "outro"
+      heading: "Remember"
+      points: ["More fiber, slowly", "Water and walking", "Blood in stool: see a doctor"]
+      footage_query: "family walking outdoors"
+      narration: >-
+        Remember: add fiber slowly, drink water and keep moving, and see a doctor for blood in your stool or a lasting change
+        in bowel habits. Share this with someone who needs it, even if they will not admit it. This video is for education
+        only, not medical advice. Like and subscribe to Health Support Studio for a new health video every day.
+  short_title: "Constipated? Try these first #Shorts"
+  short_caption: >-
+    Simple steps that help constipation, and red flags to know. Educational only, not medical advice. #Constipation
+    #GutHealth #DigestiveHealth #HealthEducation
+  short_scenes:
+    - layout: "title"
+      heading: "Constipated?"
+      points: ["Try these first"]
+      footage_query: "woman holding stomach"
+      narration: >-
+        Constipated? Before reaching for a detox tea, try these simple steps.
+    - layout: "bullets"
+      heading: "What Helps"
+      points: ["Add fiber slowly", "Water and walking", "Feet up on a stool"]
+      footage_query: "bathroom stool footrest"
+      narration: >-
+        Add fiber slowly, from beans, whole grains, fruits like pears and kiwi, and prunes. Drink water and walk most days. On
+        the toilet, put your feet up on a small stool. And see a doctor for blood in your stool or a new change in your
+        habits.
+    - layout: "outro"
+      heading: "Full Video"
+      points: ["On YouTube"]
+      footage_query: "family walking outdoors"
+      narration: >-
+        Get all the answers in our full video, on the Health Support Studio YouTube channel.
