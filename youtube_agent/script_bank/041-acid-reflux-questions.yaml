@@ -1,0 +1,289 @@
+queue_topic: "Acid reflux and GERD: causes, warning signs and treatment"
+style: "Top Questions"
+sources:
+  - "NIDDK, Acid Reflux (GER and GERD) in Adults: https://www.niddk.nih.gov/health-information/digestive-diseases/acid-reflux-ger-gerd-adults"
+  - "MedlinePlus, GERD: https://medlineplus.gov/gerd.html"
+  - "MedlinePlus, Heartburn: https://medlineplus.gov/heartburn.html"
+plan:
+  topic: "Acid reflux and GERD: causes, warning signs and treatment"
+  title: "Heartburn Every Week? What You Need to Know About Acid Reflux"
+  description: |-
+    Occasional heartburn is common, but frequent reflux may be GERD, which can damage the food pipe over time. We answer the top questions: causes, triggers, red flags, medicines and when heartburn could be your heart.
+
+    In this video:
+    • Heartburn or GERD, and the less obvious symptoms
+    • Is it heartburn or a heart attack?
+    • Triggers, medicines and lifestyle changes
+    • Red flags that need prompt care
+    • Acid pills: safe use and stopping
+
+    #AcidReflux #GERD #Heartburn #DigestiveHealth #HealthEducation
+  tags: ["acid reflux", "gerd", "heartburn", "heartburn relief", "gerd symptoms", "acid reflux at night", "ppi", "barretts esophagus", "reflux diet", "digestive health", "health education"]
+  thumbnail_text: "HEARTBURN EVERY WEEK?"
+  thumbnail_highlight: "HEARTBURN"
+  thumbnail_photo_query: "man holding chest heartburn"
+  playlist: "Healthy Habits & Prevention"
+  scenes:
+    - layout: "title"
+      heading: "Heartburn or Something More?"
+      points: ["Acid reflux questions"]
+      footage_query: "man holding chest heartburn"
+      narration: >-
+        That burning feeling in your chest after a big meal, or a sour taste rising into your throat at night. Most people
+        have heartburn now and then. But when it happens often, it may be GERD, a condition that can damage the food pipe over
+        time. Today we answer the top questions about acid reflux: causes, warning signs, treatment, and when heartburn is
+        actually something more serious.
+    - layout: "big_number"
+      heading: "How Common Is It?"
+      points: ["About 1 in 5", "US adults have GERD"]
+      footage_query: "family dinner table"
+      narration: >-
+        How common is acid reflux? Very. About one in five adults in the United States has GERD, short for gastroesophageal
+        reflux disease, and many more have occasional heartburn. It affects all ages, including babies, children, and pregnant
+        women. Many people treat it with over the counter medicines for years without ever talking to a doctor.
+    - layout: "bullets"
+      heading: "What Is Acid Reflux?"
+      points: ["Stomach acid flows backward", "Into the food pipe", "A muscle valve does not close well", "Causes burning"]
+      footage_query: "medical illustration stomach"
+      narration: >-
+        What is acid reflux? At the bottom of your food pipe, or esophagus, is a ring of muscle that works like a valve. It
+        opens to let food into the stomach, then closes. If it relaxes when it should not, or is weak, stomach acid can flow
+        back up into the esophagus. The lining there is not built to handle acid, so it burns.
+    - layout: "bullets"
+      heading: "Heartburn or GERD?"
+      points: ["Heartburn: now and then", "GERD: twice a week or more", "Or causes damage", "GERD needs a plan"]
+      footage_query: "woman holding chest"
+      narration: >-
+        What is the difference between heartburn and GERD? Heartburn is a symptom, a burning feeling behind the breastbone.
+        Having it once in a while, after a big or spicy meal, is common. GERD is when reflux happens often, usually twice a
+        week or more, or when it causes damage or other problems. GERD usually needs a longer term plan.
+    - layout: "warning"
+      heading: "Common Symptoms"
+      points: ["Burning in the chest", "Sour taste in the mouth", "Food coming back up", "Worse after meals or lying down"]
+      footage_query: "man holding chest heartburn"
+      narration: >-
+        What are the common symptoms? A burning pain in the chest, often after eating, that may spread toward the throat. A
+        sour or bitter taste in the mouth. Food or liquid coming back up. Symptoms are often worse after big meals, when
+        bending over, or when lying down, especially at night.
+    - layout: "bullets"
+      heading: "Less Obvious Symptoms"
+      points: ["Chronic cough", "Hoarse voice", "Sore throat, throat clearing", "Asthma getting worse"]
+      footage_query: "woman coughing night"
+      narration: >-
+        Reflux does not always cause heartburn. Some people only have a chronic cough, a hoarse voice, a sore throat, frequent
+        throat clearing, a feeling of a lump in the throat, or asthma that gets worse at night. Acid can also wear down tooth
+        enamel. If you have these symptoms and nothing else explains them, ask your doctor about reflux.
+    - layout: "warning"
+      heading: "Is It Heartburn or the Heart?"
+      points: ["Chest pain with exertion", "Shortness of breath, sweating", "Pain in arm, jaw or back", "Call 911 if unsure"]
+      footage_query: "person calling phone emergency"
+      narration: >-
+        Here is the most important question: is it heartburn, or a heart attack? They can feel alike. Call 911 right away for
+        chest pain or pressure with shortness of breath, sweating, nausea, lightheadedness, or pain spreading to the arm, jaw,
+        neck or back, especially with exertion. Women, older adults and people with diabetes may have less typical signs. When
+        in doubt, get checked.
+    - layout: "bullets"
+      heading: "What Causes Reflux?"
+      points: ["Large or late meals", "Extra weight", "Pregnancy", "Smoking"]
+      footage_query: "large meal plate"
+      narration: >-
+        What makes reflux more likely? Large meals, and eating late at night. Extra weight, especially around the belly, which
+        pushes on the stomach. Pregnancy. Smoking, which weakens the valve. A hiatal hernia, where part of the stomach pushes
+        up through the diaphragm. Some medicines can also make reflux worse.
+    - layout: "bullets"
+      heading: "Common Food Triggers"
+      points: ["Fatty and fried foods", "Spicy foods", "Chocolate, coffee, mint", "Alcohol and fizzy drinks"]
+      footage_query: "fried food plate"
+      narration: >-
+        Common triggers include fatty and fried foods, spicy foods, tomatoes and tomato sauces, citrus, chocolate, peppermint,
+        coffee, alcohol, and carbonated drinks. But triggers are different for everyone. Instead of cutting out everything,
+        keep a food and symptom diary for a couple of weeks, and avoid the foods that bother you most.
+    - layout: "warning"
+      heading: "Medicines That Can Worsen It"
+      points: ["Some pain relievers", "Some blood pressure pills", "Some osteoporosis pills", "Ask your pharmacist"]
+      footage_query: "pill bottles table"
+      narration: >-
+        Some medicines can worsen reflux or irritate the esophagus. These include pain relievers like ibuprofen and aspirin,
+        some blood pressure medicines, some medicines for osteoporosis, some antibiotics, iron and potassium pills, and some
+        medicines for anxiety and sleep. Take pills with a full glass of water and stay upright. Ask your pharmacist before
+        changing anything.
+    - layout: "bullets"
+      heading: "Lifestyle Changes That Work"
+      points: ["Smaller meals", "No eating 3 hours before bed", "Raise the head of the bed", "Lose extra weight"]
+      footage_query: "woman sleeping bed pillows"
+      narration: >-
+        What lifestyle changes help? Eat smaller meals. Avoid eating for about three hours before lying down. Raise the head
+        of your bed six to eight inches with blocks or a wedge, since extra pillows alone usually do not work. Losing extra
+        weight is one of the most effective steps. Quit smoking, limit alcohol, and wear looser clothing around the waist.
+    - layout: "bullets"
+      heading: "Sleeping With Reflux"
+      points: ["Raise the head of the bed", "Sleep on your left side", "No late snacks", "Loose pajamas"]
+      footage_query: "woman sleeping bed pillows"
+      narration: >-
+        Night time reflux can ruin sleep and do more damage, because acid stays in the esophagus longer when you lie flat.
+        Raise the head of your bed with blocks or a wedge pillow. Some studies suggest sleeping on your left side may reduce
+        reflux. Finish eating at least three hours before bed, skip late night alcohol and caffeine, and wear loose pajamas.
+    - layout: "bullets"
+      heading: "Simple Daily Habits"
+      points: ["Eat slowly", "Stay upright after meals", "Chew sugar-free gum", "Go for a short walk"]
+      footage_query: "couple walking after dinner"
+      narration: >-
+        Small daily habits also help. Eat slowly and stop before you feel overly full. Stay upright for a few hours after
+        meals, and avoid bending over or lying on the couch right after eating. Chewing sugar free gum after a meal makes more
+        saliva, which can wash acid back down. A gentle walk after dinner may help digestion.
+    - layout: "myth_fact"
+      heading: "Milk Soothes Heartburn"
+      points: ["A glass of milk fixes heartburn", "Relief is brief, then worse"]
+      footage_query: "glass of milk breakfast"
+      narration: >-
+        Myth: drinking a glass of milk cures heartburn. Fact: milk may soothe the burning for a few minutes, but the fat and
+        protein in milk can cause the stomach to make more acid afterwards, so symptoms may come back. Water, sugar free gum,
+        and an antacid if needed are better quick fixes.
+    - layout: "bullets"
+      heading: "Over-the-Counter Medicines"
+      points: ["Antacids: quick relief", "H2 blockers: longer relief", "PPIs: strongest", "Follow the label"]
+      footage_query: "pharmacy shelf store"
+      narration: >-
+        What medicines can help? Antacids neutralize acid quickly, for occasional heartburn. H2 blockers, like famotidine,
+        lower acid for several hours and can be taken before a trigger meal. Proton pump inhibitors, or PPIs, like omeprazole,
+        are the strongest and are taken before breakfast. Over the counter PPIs are meant for a fourteen day course, so follow
+        the label.
+    - layout: "warning"
+      heading: "Talk to a Doctor If"
+      points: ["You need medicine over 2 weeks", "Symptoms keep returning", "Over-the-counter meds do not help", "New symptoms after 60"]
+      footage_query: "patient talking doctor"
+      narration: >-
+        When should you see a doctor? If you need over the counter medicine for more than two weeks, if symptoms keep coming
+        back, or if medicines do not help. Also see a doctor if heartburn starts for the first time after age sixty, or if you
+        have risk factors for heart disease, since chest pain may need to be checked.
+    - layout: "warning"
+      heading: "Red Flags"
+      points: ["Trouble or pain swallowing", "Food getting stuck", "Weight loss, vomiting", "Black stool or vomiting blood"]
+      footage_query: "man holding throat"
+      narration: >-
+        Some symptoms need prompt medical attention. Trouble swallowing, pain when swallowing, food feeling stuck, unintended
+        weight loss, repeated vomiting, vomiting blood or material that looks like coffee grounds, black or tarry stool, and
+        signs of anemia like tiredness and paleness. These can be signs of bleeding, a narrowing, or rarely, cancer.
+    - layout: "bullets"
+      heading: "How GERD Is Diagnosed"
+      points: ["Often by symptoms", "Trial of medicine", "Upper endoscopy", "pH monitoring"]
+      footage_query: "doctor explaining patient"
+      narration: >-
+        How is GERD diagnosed? Often, doctors can diagnose it from your symptoms and how you respond to treatment. If you have
+        red flag symptoms, or treatment is not working, you may need an upper endoscopy, where a thin camera looks at your
+        esophagus and stomach while you are sedated. Other tests measure acid in the esophagus over a day or two.
+    - layout: "bullets"
+      heading: "Complications of GERD"
+      points: ["Inflamed food pipe", "Narrowing and swallowing trouble", "Barrett's esophagus", "Rarely cancer"]
+      footage_query: "medical illustration stomach"
+      narration: >-
+        What can happen if GERD is not treated? Over time, acid can inflame and damage the lining of the esophagus. Scar
+        tissue can narrow it, making swallowing hard. In some people, the lining changes into a different type of tissue,
+        called Barrett's esophagus, which slightly raises the risk of esophageal cancer. Treatment and monitoring lower these
+        risks.
+    - layout: "bullets"
+      heading: "Barrett's Esophagus"
+      points: ["Changed lining from acid", "Usually no symptoms", "Found with endoscopy", "Regular checks needed"]
+      footage_query: "doctor reading lab results"
+      narration: >-
+        Who should be checked for Barrett's esophagus? Doctors may recommend an endoscopy for people with long term GERD plus
+        other risk factors, such as being male, over fifty, white, having obesity, smoking, or a family history of Barrett's
+        or esophageal cancer. If Barrett's is found, regular checks can catch changes early, when they are very treatable.
+    - layout: "myth_fact"
+      heading: "PPIs Are Dangerous"
+      points: ["Everyone should avoid acid pills", "Safe when truly needed"]
+      footage_query: "pharmacist counter customer"
+      narration: >-
+        Myth: acid reducing pills like PPIs are dangerous and should be avoided. Fact: PPIs are safe and very helpful for
+        people who need them. Some studies link long term use to certain risks, but many links are not proven. The best
+        approach is to use the lowest dose that controls symptoms, for as long as you truly need it, and review it with your
+        doctor regularly.
+    - layout: "bullets"
+      heading: "Stopping Acid Pills Safely"
+      points: ["Do not stop suddenly", "Taper with your doctor", "Rebound heartburn can happen", "It usually passes"]
+      footage_query: "calendar notebook planning"
+      narration: >-
+        If you have been taking a PPI for a long time and want to stop, talk to your doctor first. Stopping suddenly can cause
+        rebound acid, where heartburn comes back worse for a few weeks. Your doctor may suggest lowering the dose slowly, or
+        switching to taking it only as needed. Some people, like those with Barrett's, should stay on it.
+    - layout: "bullets"
+      heading: "Surgery and Procedures"
+      points: ["For severe, lasting GERD", "Wrapping the stomach top", "Magnetic ring device", "Ask a specialist"]
+      footage_query: "surgeon preparing operating room"
+      narration: >-
+        For people with severe GERD who do not respond to medicine, or who do not want to take it long term, surgery may help.
+        The most common surgery wraps the top of the stomach around the lower esophagus to strengthen the valve. Other options
+        include a ring of magnetic beads placed around the valve. A specialist can explain the pros and cons.
+    - layout: "bullets"
+      heading: "Stress and Reflux"
+      points: ["Stress can make it feel worse", "Poor sleep adds to it", "Try relaxation", "Regular exercise helps"]
+      footage_query: "woman stressed desk"
+      narration: >-
+        Many people notice their heartburn gets worse when they are stressed or not sleeping well. Stress may not cause more
+        acid, but it can make you more sensitive to it, and it often leads to habits like eating late, drinking more coffee or
+        alcohol, or smoking. Relaxation, regular exercise, and good sleep can make a real difference.
+    - layout: "bullets"
+      heading: "Reflux in Pregnancy"
+      points: ["Very common", "Small meals, stay upright", "Antacids are often okay", "Ask before any medicine"]
+      footage_query: "pregnant woman sitting"
+      narration: >-
+        Heartburn is very common during pregnancy, as hormones relax the valve and the growing baby pushes on the stomach. Eat
+        small meals, stay upright after eating, and avoid late night snacks. Some antacids are often considered safe, but ask
+        your doctor or pharmacist before taking any medicine during pregnancy.
+    - layout: "bullets"
+      heading: "Reflux in Babies"
+      points: ["Spitting up is normal", "Usually improves by 1 year", "Feed smaller amounts", "Call if poor weight gain"]
+      footage_query: "mother feeding baby bottle"
+      narration: >-
+        Many healthy babies spit up often, and it usually improves by their first birthday. Smaller, more frequent feedings
+        and burping help. Babies should always sleep flat on their back, even with reflux. Call your pediatrician if your baby
+        is not gaining weight, refuses to feed, vomits forcefully, has blood or green color in the vomit, or seems in pain.
+    - layout: "bullets"
+      heading: "Questions for Your Doctor"
+      points: ["Is this GERD?", "Do I need an endoscopy?", "How long should I take medicine?", "What can I change?"]
+      footage_query: "patient talking doctor"
+      narration: >-
+        At your next visit, ask: is this GERD, or something else? Do I need an endoscopy? Could my other medicines be making
+        it worse? Which medicine should I take, at what dose, and for how long? And which lifestyle changes would help me the
+        most? Bring your symptom and food diary.
+    - layout: "bullets"
+      heading: "Quick Recap"
+      points: ["Heartburn twice a week: see a doctor", "Chest pain: rule out the heart", "Small meals, no late eating", "Red flags need prompt care"]
+      footage_query: "notebook checklist pen"
+      narration: >-
+        Let us recap. Occasional heartburn is common, but reflux twice a week or more may be GERD. Chest pain with shortness
+        of breath or sweating needs 911. Smaller meals, not eating before bed, raising the head of the bed and losing extra
+        weight help. Medicines work well. And trouble swallowing, weight loss, or bleeding need prompt care.
+    - layout: "outro"
+      heading: "Remember"
+      points: ["Frequent heartburn? Get checked", "Chest pain? Call 911", "Watch the red flags"]
+      footage_query: "family dinner table"
+      narration: >-
+        Remember: frequent heartburn deserves a doctor's visit, chest pain with other symptoms means call 911, and trouble
+        swallowing or weight loss needs prompt care. Share this with someone who lives on antacids. This video is for
+        education only, not medical advice. Like and subscribe to Health Support Studio for a new health video every day.
+  short_title: "Heartburn every week? It could be GERD #Shorts"
+  short_caption: >-
+    Frequent heartburn may be GERD. Here is what helps. Educational only, not medical advice. #AcidReflux #GERD #Heartburn
+    #HealthEducation
+  short_scenes:
+    - layout: "title"
+      heading: "Heartburn Every Week?"
+      points: ["It could be GERD"]
+      footage_query: "man holding chest heartburn"
+      narration: >-
+        Heartburn twice a week or more may be GERD, not just something you ate.
+    - layout: "bullets"
+      heading: "What Helps"
+      points: ["Smaller meals", "No food 3 hours before bed", "Raise the head of your bed"]
+      footage_query: "woman sleeping bed pillows"
+      narration: >-
+        Eat smaller meals, avoid eating for three hours before bed, and raise the head of your bed six to eight inches. If you
+        need antacids for more than two weeks, see your doctor. And chest pain with shortness of breath or sweating means call
+        911.
+    - layout: "outro"
+      heading: "Full Video"
+      points: ["On YouTube"]
+      footage_query: "family dinner table"
+      narration: >-
+        Learn more about acid reflux in our full video, on the Health Support Studio YouTube channel.
