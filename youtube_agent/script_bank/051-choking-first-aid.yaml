@@ -1,0 +1,298 @@
+queue_topic: "Choking first aid for adults, children and babies"
+style: "Explainer"
+sources:
+  - "MedlinePlus, Choking: Adult or Child Over 1 Year: https://medlineplus.gov/ency/article/000049.htm"
+  - "MedlinePlus, Choking: Infant Under 1 Year: https://medlineplus.gov/ency/article/000048.htm"
+  - "MedlinePlus, First Aid: https://medlineplus.gov/firstaid.html"
+plan:
+  topic: "Choking first aid for adults, children and babies"
+  title: "Someone Is Choking: What to Do in the First Minute"
+  description: |-
+    Choking can kill in minutes, and the person next to you is their best chance. Learn how to recognize choking and exactly what to do for adults, children, pregnant people and babies, plus how to prevent choking at home.
+
+    In this video:
+    • Signs of choking: mild or severe
+    • Back blows and abdominal thrusts step by step
+    • Pregnant people, being alone, and when they pass out
+    • Babies under 1: back blows and chest thrusts
+    • The top choking foods and objects for kids
+
+    #FirstAid #Choking #Heimlich #ChildSafety #HealthEducation
+  tags: ["choking first aid", "heimlich maneuver", "abdominal thrusts", "back blows", "infant choking", "choking baby", "choking hazards", "first aid", "cpr", "child safety", "health education"]
+  thumbnail_text: "SOMEONE IS CHOKING"
+  thumbnail_highlight: "CHOKING"
+  thumbnail_photo_query: "man choking restaurant"
+  playlist: "Emergencies & First Aid"
+  scenes:
+    - layout: "title"
+      heading: "Choking First Aid"
+      points: ["Save a life in minutes"]
+      footage_query: "man choking restaurant"
+      narration: >-
+        Someone at the dinner table suddenly grabs their throat. They cannot talk, cannot cough, and their face is turning
+        red. Choking can kill in just a few minutes, often before an ambulance arrives. The person next to them is the best
+        chance they have. Today you will learn how to recognize choking, and exactly what to do for adults, children, and
+        babies.
+    - layout: "big_number"
+      heading: "Choking Is a Real Danger"
+      points: ["Thousands", "Choking deaths in the US each year"]
+      footage_query: "family dinner table"
+      narration: >-
+        Choking causes thousands of deaths in the United States every year. It is a leading cause of injury death in young
+        children, and older adults are also at high risk. Most choking happens while eating, often at home. Knowing a few
+        simple steps can turn a bystander into a lifesaver.
+    - layout: "bullets"
+      heading: "What Is Choking?"
+      points: ["Something blocks the airway", "Usually food", "Air cannot reach the lungs", "Brain damage in minutes"]
+      footage_query: "medical illustration throat"
+      narration: >-
+        Choking happens when something, usually food, gets stuck in the throat or windpipe and blocks the flow of air. Without
+        air, the brain can start to suffer damage within about four to six minutes. A partial blockage may still let some air
+        through. A complete blockage stops air entirely, and needs action right away.
+    - layout: "warning"
+      heading: "Signs of Choking"
+      points: ["Hands clutching the throat", "Cannot speak or cry", "Cannot cough or breathe", "Lips turning blue"]
+      footage_query: "man choking restaurant"
+      narration: >-
+        How do you know someone is choking? The universal sign is hands clutching the throat. Other signs include not being
+        able to speak, cough or breathe, a high pitched sound or no sound when trying to breathe, a weak cough, panic, and
+        skin, lips or nails turning blue or gray. Eventually, the person may pass out.
+    - layout: "bullets"
+      heading: "Mild or Severe?"
+      points: ["Mild: can cough and talk", "Encourage coughing", "Severe: cannot cough or talk", "Act right away"]
+      footage_query: "woman coughing table"
+      narration: >-
+        First, decide if the blockage is mild or severe. If the person can cough forcefully, talk, or breathe, the airway is
+        only partly blocked. Encourage them to keep coughing, and stay with them. Do not slap their back or give abdominal
+        thrusts while they can cough well. If they cannot cough, speak or breathe, the blockage is severe. Act immediately.
+    - layout: "bullets"
+      heading: "Step 1: Ask and Call"
+      points: ["Ask: are you choking?", "Nod means yes", "Tell them you will help", "Have someone call 911"]
+      footage_query: "person calling phone emergency"
+      narration: >-
+        Ask the person: are you choking? If they nod yes and cannot speak, tell them you are going to help. If someone else is
+        nearby, have them call 911 right away while you start first aid. If you are alone with the person, begin helping
+        first. Do not leave them to make a call.
+    - layout: "bullets"
+      heading: "Step 2: Back Blows"
+      points: ["Stand behind and to the side", "Lean them forward", "Heel of your hand", "Between shoulder blades"]
+      footage_query: "first aid training class"
+      narration: >-
+        The Red Cross teaches starting with back blows. Stand slightly behind and to the side of the person. Support their
+        chest with one hand and lean them forward, so the object can come out of the mouth. With the heel of your other hand,
+        give up to five firm blows between the shoulder blades. Check after each blow if the object has come out.
+    - layout: "bullets"
+      heading: "Step 3: Abdominal Thrusts"
+      points: ["Stand behind them", "Fist above the belly button", "Grab fist with other hand", "Quick inward and upward thrusts"]
+      footage_query: "first aid training heimlich"
+      narration: >-
+        If back blows do not work, give abdominal thrusts, also called the Heimlich maneuver. Stand behind the person and wrap
+        your arms around their waist. Make a fist and place the thumb side just above their belly button, below the
+        breastbone. Grab your fist with your other hand. Give quick, hard thrusts inward and upward, as if trying to lift
+        them.
+    - layout: "bullets"
+      heading: "Keep Going"
+      points: ["Five back blows", "Five abdominal thrusts", "Repeat until it comes out", "Or they become unresponsive"]
+      footage_query: "first aid training class"
+      narration: >-
+        Alternate between five back blows and five abdominal thrusts until the object comes out, the person can breathe or
+        cough forcefully, or they become unresponsive. The American Heart Association teaches abdominal thrusts alone, which
+        is also correct. The key is to act quickly and keep going. Do not give up.
+    - layout: "bullets"
+      heading: "Pregnant or Larger Person"
+      points: ["Use chest thrusts instead", "Hands on the breastbone", "Quick backward thrusts", "Same as abdominal thrusts"]
+      footage_query: "pregnant woman sitting"
+      narration: >-
+        If the person is pregnant or too large for you to wrap your arms around, use chest thrusts instead. Stand behind them,
+        place your arms under their armpits, and put your fist on the center of the breastbone. Grab your fist with your other
+        hand and give quick, firm thrusts straight back. Continue until the object comes out.
+    - layout: "warning"
+      heading: "If They Pass Out"
+      points: ["Lower them to the floor", "Call 911 if not done", "Start CPR", "Look in the mouth before breaths"]
+      footage_query: "cpr training dummy"
+      narration: >-
+        If the person becomes unresponsive, carefully lower them to the floor. Make sure 911 has been called. Start CPR,
+        beginning with chest compressions, pushing hard and fast in the center of the chest. Chest compressions can help push
+        the object out. Before giving breaths, look in the mouth, and if you can see the object, carefully remove it.
+    - layout: "myth_fact"
+      heading: "Sweep the Mouth"
+      points: ["Reach in to grab the object", "Only remove what you can see"]
+      footage_query: "first aid kit open"
+      narration: >-
+        Myth: you should reach into the mouth and feel around to pull out the object. Fact: blind finger sweeps can push the
+        object deeper and make things worse. Only remove an object if you can clearly see it and easily take it out.
+        Otherwise, keep doing back blows, thrusts, or CPR.
+    - layout: "bullets"
+      heading: "If You Are Alone and Choking"
+      points: ["Call 911 if you can", "Your own fist above navel", "Thrust against a chair back", "Push in and up hard"]
+      footage_query: "man alone kitchen"
+      narration: >-
+        What if you are alone and choking? Call 911 if you can, even if you cannot talk, so help can find you. Then give
+        yourself abdominal thrusts: place your fist above your belly button, grab it with your other hand, and thrust inward
+        and upward. Or lean over the back of a sturdy chair or counter edge and push your upper belly hard against it.
+    - layout: "bullets"
+      heading: "What to Tell 911"
+      points: ["Your exact address", "Someone is choking", "Their age", "Follow their instructions"]
+      footage_query: "woman talking phone desk"
+      narration: >-
+        When you call 911, stay calm and give your exact address first, including apartment number. Say that someone is
+        choking, and give their age. Tell them whether the person is awake and breathing. Put the phone on speaker so your
+        hands are free. The dispatcher can coach you through first aid and CPR until help arrives. Do not hang up until told
+        to.
+    - layout: "bullets"
+      heading: "Choking While Eating Out"
+      points: ["Act just like at home", "Ask others to call 911", "Ask for anyone trained", "Do not take them away"]
+      footage_query: "restaurant dining people"
+      narration: >-
+        Choking often happens in restaurants. If you see someone choking, act just like you would at home. Do not let the
+        person leave the table or go to the restroom alone, since they could collapse where no one can help. Ask someone to
+        call 911, and ask if anyone nearby is trained in first aid. Start back blows and thrusts right away.
+    - layout: "bullets"
+      heading: "Children Over Age 1"
+      points: ["Same steps as adults", "Kneel to their height", "Use less force", "Call 911"]
+      footage_query: "child eating table"
+      narration: >-
+        For children over one year old, the steps are the same as for adults: back blows and abdominal thrusts. Kneel or sit
+        behind the child so you are at their height. Use enough force to remove the object, but less than you would for an
+        adult. Have someone call 911. If the child becomes unresponsive, start CPR.
+    - layout: "warning"
+      heading: "Babies Under 1 Year"
+      points: ["No abdominal thrusts", "5 back blows", "5 chest thrusts", "Support the head"]
+      footage_query: "baby lying blanket"
+      narration: >-
+        Babies under one year need different first aid. Never use abdominal thrusts on a baby. Instead, alternate five back
+        blows and five chest thrusts. Signs a baby is choking include not being able to cry or cough, a weak cry, high pitched
+        breathing sounds, and turning blue. Have someone call 911 right away.
+    - layout: "bullets"
+      heading: "Back Blows for Babies"
+      points: ["Face down on your forearm", "Head lower than chest", "Support the jaw", "Heel of hand between shoulders"]
+      footage_query: "baby first aid training"
+      narration: >-
+        To give back blows to a baby, hold the baby face down along your forearm, with their head lower than their chest.
+        Support their head and jaw with your hand, without covering the mouth. Rest your arm on your thigh. With the heel of
+        your other hand, give five firm blows between the shoulder blades.
+    - layout: "bullets"
+      heading: "Chest Thrusts for Babies"
+      points: ["Turn baby face up", "Head lower than chest", "Two fingers on breastbone", "Push down about 1.5 inches"]
+      footage_query: "baby first aid training"
+      narration: >-
+        Then turn the baby face up on your other forearm, still supporting the head, which stays lower than the chest. Place
+        two fingers in the center of the chest, just below the nipple line. Give five quick chest thrusts, pushing down about
+        one and a half inches. Repeat back blows and chest thrusts until the object comes out or the baby becomes
+        unresponsive.
+    - layout: "warning"
+      heading: "Always Get Checked Afterwards"
+      points: ["Thrusts can cause injury", "Object may be partly stuck", "Ongoing cough or trouble breathing", "See a doctor"]
+      footage_query: "doctor examining patient"
+      narration: >-
+        Even after the object comes out, the person should be checked by a doctor, especially if abdominal thrusts or chest
+        thrusts were used, which can cause internal injuries. Also see a doctor if there is an ongoing cough, trouble
+        swallowing, wheezing or pain, since a small piece may still be stuck or may have gone into the lungs.
+    - layout: "bullets"
+      heading: "Top Choking Foods for Kids"
+      points: ["Hot dogs", "Whole grapes", "Nuts and popcorn", "Hard candy, chunks of meat"]
+      footage_query: "grapes bowl close up"
+      narration: >-
+        Young children, especially under age four, are at high risk because their airways are small and they are still
+        learning to chew. The most dangerous foods include hot dogs, whole grapes, nuts and seeds, popcorn, hard or sticky
+        candy, chunks of meat or cheese, raw carrots, apple chunks, and spoonfuls of peanut butter.
+    - layout: "bullets"
+      heading: "Make Food Safer for Kids"
+      points: ["Cut grapes into quarters", "Slice hot dogs lengthwise", "Cook or grate hard vegetables", "Sit down to eat"]
+      footage_query: "cutting fruit kitchen"
+      narration: >-
+        You can make food safer. Cut grapes and cherry tomatoes into quarters. Cut hot dogs lengthwise and then into small
+        pieces. Cook, grate or thinly slice hard fruits and vegetables. Spread peanut butter thinly. Always have children sit
+        down while eating, and supervise them. No running, playing, or riding in the car with food in their mouths.
+    - layout: "warning"
+      heading: "Small Objects Are Dangerous"
+      points: ["Coins and small toys", "Button batteries", "Magnets", "Balloons"]
+      footage_query: "child toys floor"
+      narration: >-
+        Small objects can also cause choking. Keep coins, marbles, small toy parts and pen caps away from young children.
+        Button batteries and small magnets are especially dangerous if swallowed, and need emergency care right away, even if
+        the child seems fine. Uninflated or broken balloons are a leading cause of choking deaths in children. Check toy
+        labels for age warnings.
+    - layout: "bullets"
+      heading: "Older Adults at Risk"
+      points: ["Swallowing problems", "Dentures", "Stroke or Parkinson's", "Some medicines"]
+      footage_query: "elderly man eating"
+      narration: >-
+        Older adults are also at higher risk of choking. Swallowing can become harder with age, and after a stroke, with
+        Parkinson's disease, or dementia. Poorly fitting dentures, dry mouth from medicines, and eating quickly can add to the
+        risk. Signs of swallowing trouble include coughing during meals, a wet voice, or food sticking. Ask about a swallowing
+        evaluation.
+    - layout: "bullets"
+      heading: "Safer Eating Habits"
+      points: ["Take small bites", "Chew well", "Do not talk with a full mouth", "Limit alcohol with meals"]
+      footage_query: "family dinner table"
+      narration: >-
+        Simple eating habits help everyone. Cut food into small pieces and take small bites. Chew thoroughly before
+        swallowing. Avoid talking or laughing with food in your mouth. Eat slowly and sit upright. Limit alcohol at meals,
+        since it dulls the swallowing reflex. Make sure dentures fit well.
+    - layout: "myth_fact"
+      heading: "Water Will Wash It Down"
+      points: ["Give water to someone choking", "Never give drinks while choking"]
+      footage_query: "glass of water close up"
+      narration: >-
+        Myth: giving a choking person a glass of water will wash the food down. Fact: if someone cannot breathe or cough, they
+        cannot swallow safely, and water could make things worse. Never give anything to drink to someone who is choking. Give
+        back blows and thrusts instead, and call 911.
+    - layout: "bullets"
+      heading: "Take a First Aid Class"
+      points: ["Hands-on practice", "Learn CPR too", "Many free or low cost", "Refresh every 2 years"]
+      footage_query: "cpr training class"
+      narration: >-
+        Reading about first aid helps, but practicing makes you ready. Take a first aid and CPR class from the American Red
+        Cross, the American Heart Association, a local hospital, or a community center. Many are low cost, and some are free.
+        Classes let you practice on manikins, including baby manikins. Refresh your skills every couple of years.
+    - layout: "bullets"
+      heading: "Teach Your Family"
+      points: ["Know the choking sign", "Teach older kids to call 911", "Post emergency numbers", "Practice together"]
+      footage_query: "family kitchen table"
+      narration: >-
+        Teach your family what to do. Make sure everyone knows the universal choking sign of hands at the throat. Teach older
+        children how and when to call 911, and what to say. Post your address and emergency numbers near the phone.
+        Babysitters and grandparents caring for young children should know infant choking first aid.
+    - layout: "bullets"
+      heading: "Quick Recap"
+      points: ["Can cough? Keep coughing", "Cannot? Back blows and thrusts", "Babies: back blows, chest thrusts", "Unresponsive: CPR"]
+      footage_query: "notebook checklist pen"
+      narration: >-
+        Let us recap. If someone can cough, encourage them to keep coughing. If they cannot cough, speak or breathe, call 911
+        and give back blows and abdominal thrusts. For pregnant or large people, use chest thrusts. For babies under one, use
+        back blows and chest thrusts, never abdominal thrusts. If they become unresponsive, start CPR. Always get checked
+        afterwards.
+    - layout: "outro"
+      heading: "Remember"
+      points: ["Know the choking sign", "Act fast", "Take a first aid class"]
+      footage_query: "family dinner table"
+      narration: >-
+        Remember: know the choking sign, act fast, and take a first aid class so you are ready. Share this with every parent,
+        grandparent and babysitter you know. This video is for education only, not medical advice or a substitute for
+        training. Like and subscribe to Health Support Studio for a new health video every day.
+  short_title: "Someone is choking? Do this now #Shorts"
+  short_caption: >-
+    Back blows and abdominal thrusts can save a life. Educational only, not a substitute for first aid training. #FirstAid
+    #Choking #Heimlich #HealthEducation
+  short_scenes:
+    - layout: "title"
+      heading: "Someone Is Choking"
+      points: ["Do this now"]
+      footage_query: "man choking restaurant"
+      narration: >-
+        Someone grabs their throat and cannot talk or cough. Here is what to do.
+    - layout: "bullets"
+      heading: "Act Fast"
+      points: ["Call 911", "5 back blows", "5 abdominal thrusts, repeat"]
+      footage_query: "first aid training heimlich"
+      narration: >-
+        Have someone call 911. Lean the person forward and give five firm back blows between the shoulder blades. Then give
+        five quick abdominal thrusts, with your fist just above their belly button, pushing in and up. Repeat until it comes
+        out. For babies, never use abdominal thrusts.
+    - layout: "outro"
+      heading: "Full Video"
+      points: ["On YouTube"]
+      footage_query: "family dinner table"
+      narration: >-
+        Learn choking first aid for babies and kids in our full video, on the Health Support Studio YouTube channel.
