@@ -1,0 +1,299 @@
+queue_topic: "Insomnia: causes and proven ways to sleep better"
+style: "Explainer"
+sources:
+  - "NIH NHLBI, Insomnia: https://www.nhlbi.nih.gov/health/insomnia"
+  - "MedlinePlus, Insomnia: https://medlineplus.gov/insomnia.html"
+  - "CDC, About Sleep: https://www.cdc.gov/sleep/about/index.html"
+plan:
+  topic: "Insomnia: causes and proven ways to sleep better"
+  title: "Can't Sleep? How to Fix Insomnia Without Pills"
+  description: |-
+    Insomnia is one of the most common health complaints, and it is very treatable. Learn what causes it, why it becomes chronic, the CBT-I techniques experts recommend first, good sleep habits, and the truth about sleeping pills, alcohol and melatonin.
+
+    In this video:
+    • What insomnia is and how much sleep you need
+    • Common causes and other sleep disorders
+    • CBT-I: wake time, the 20-minute rule and more
+    • Sleep habits, alcohol and weekend catch-up myths
+    • Sleeping pills, melatonin and when to see a doctor
+
+    #Insomnia #SleepBetter #SleepHealth #MentalHealth #HealthEducation
+  tags: ["insomnia", "cant sleep", "how to sleep better", "cbt-i", "sleep hygiene", "sleeping pills", "melatonin", "insomnia causes", "sleep tips", "sleep health", "health education"]
+  thumbnail_text: "CAN'T SLEEP?"
+  thumbnail_highlight: "SLEEP?"
+  thumbnail_photo_query: "woman lying awake bed"
+  playlist: "Healthy Habits & Prevention"
+  scenes:
+    - layout: "title"
+      heading: "Insomnia Explained"
+      points: ["How to finally sleep better"]
+      footage_query: "woman lying awake bed"
+      narration: >-
+        Lying awake staring at the ceiling. Waking up at three in the morning with your mind racing. Dragging through the day,
+        exhausted. If this sounds familiar, you are not alone. Insomnia is one of the most common health complaints. The good
+        news is that it is very treatable, often without sleeping pills. Today you will learn what causes insomnia, and the
+        proven ways to sleep better.
+    - layout: "big_number"
+      heading: "Very Common"
+      points: ["About 1 in 3", "Adults have insomnia symptoms"]
+      footage_query: "man tired office"
+      narration: >-
+        About one in three adults have symptoms of insomnia at some point, and about one in ten have chronic insomnia, which
+        lasts for months. It is more common in women, older adults, and people with stress, anxiety, depression, or chronic
+        pain. Poor sleep affects mood, focus, work, relationships, and long term health.
+    - layout: "bullets"
+      heading: "What Is Insomnia?"
+      points: ["Trouble falling asleep", "Trouble staying asleep", "Waking too early", "Feeling tired during the day"]
+      footage_query: "woman lying awake bed"
+      narration: >-
+        Insomnia means having trouble falling asleep, staying asleep, or waking up too early and not being able to get back to
+        sleep, even when you have the chance to sleep, and it affects how you feel and function during the day. Short term
+        insomnia lasts days or weeks, often due to stress. Chronic insomnia happens at least three nights a week for three
+        months or more.
+    - layout: "bullets"
+      heading: "How Much Sleep Do You Need?"
+      points: ["Adults: 7 or more hours", "Teens: 8 to 10 hours", "Quality matters too", "Needs vary a little"]
+      footage_query: "clock bedside table"
+      narration: >-
+        How much sleep do adults need? The CDC recommends at least seven hours a night for adults. Teens need eight to ten
+        hours, and children need even more. Quality matters as much as quantity. Waking up feeling rested, and being alert
+        during the day, are good signs you are getting enough.
+    - layout: "warning"
+      heading: "Daytime Effects"
+      points: ["Tired and low energy", "Trouble focusing or remembering", "Irritable or anxious", "Mistakes and accidents"]
+      footage_query: "man yawning office"
+      narration: >-
+        Insomnia affects more than the night. During the day, people may feel tired and low on energy, have trouble
+        concentrating or remembering, feel irritable, anxious or down, and make more mistakes at work or while driving. Over
+        time, poor sleep is linked to high blood pressure, diabetes, weight gain, depression, and a weaker immune system.
+    - layout: "bullets"
+      heading: "Common Causes"
+      points: ["Stress and worry", "Anxiety and depression", "Pain and health problems", "Irregular schedules"]
+      footage_query: "woman stressed desk"
+      narration: >-
+        What causes insomnia? Often, it starts with stress, like problems at work, money worries, or a loss. Anxiety and
+        depression are closely linked to insomnia. Chronic pain, acid reflux, frequent urination at night, breathing problems,
+        and menopause symptoms can disrupt sleep. Shift work, jet lag, and irregular schedules confuse the body clock.
+    - layout: "warning"
+      heading: "Medicines and Substances"
+      points: ["Caffeine late in the day", "Alcohol", "Nicotine", "Some medicines"]
+      footage_query: "coffee cup table"
+      narration: >-
+        Some substances keep you awake. Caffeine can stay in your body for many hours, so an afternoon coffee can affect your
+        sleep at night. Alcohol may help you fall asleep, but it causes waking later in the night. Nicotine is a stimulant.
+        Some medicines, including steroids, some antidepressants, decongestants, and some asthma and blood pressure medicines,
+        can cause insomnia.
+    - layout: "warning"
+      heading: "Other Sleep Disorders"
+      points: ["Sleep apnea", "Restless legs syndrome", "Body clock problems", "Get them checked"]
+      footage_query: "man snoring bed"
+      narration: >-
+        Sometimes trouble sleeping is caused by another sleep disorder. Sleep apnea can cause frequent waking, snoring, and
+        gasping. Restless legs syndrome causes an urge to move the legs at night. Body clock problems can make you sleepy too
+        early or too late. Tell your doctor about snoring, pauses in breathing, or leg discomfort.
+    - layout: "bullets"
+      heading: "How Insomnia Becomes Chronic"
+      points: ["Short-term stress starts it", "Worry about sleep keeps it going", "Bad habits form", "The bed becomes a place of worry"]
+      footage_query: "woman looking window"
+      narration: >-
+        Why does insomnia sometimes become chronic? It often starts with stress. Then, people start worrying about sleep,
+        spending longer in bed, napping, or using screens in bed. The brain begins to link the bed with being awake and
+        frustrated, instead of sleep. These patterns can keep insomnia going long after the original stress is gone.
+    - layout: "big_number"
+      heading: "The Best Treatment"
+      points: ["CBT-I", "First choice for chronic insomnia"]
+      footage_query: "woman talking therapist"
+      narration: >-
+        What is the best treatment for chronic insomnia? Medical experts, including the American College of Physicians,
+        recommend cognitive behavioral therapy for insomnia, called CBT I, as the first treatment, before sleeping pills. It
+        helps most people sleep better, and the benefits last long after treatment ends, unlike pills.
+    - layout: "bullets"
+      heading: "What Is CBT-I?"
+      points: ["Changes sleep habits", "Changes unhelpful thoughts", "Usually 4 to 8 sessions", "In person, online or apps"]
+      footage_query: "woman using laptop home"
+      narration: >-
+        CBT I is a structured program that changes the habits and thoughts that keep insomnia going. It usually takes four to
+        eight sessions with a trained therapist, and can also be done through online programs or apps, including a free app
+        from the Department of Veterans Affairs. Let us look at some of its key parts.
+    - layout: "bullets"
+      heading: "Keep a Regular Wake Time"
+      points: ["Same wake time every day", "Even on weekends", "Sets your body clock", "Most important habit"]
+      footage_query: "alarm clock morning"
+      narration: >-
+        One of the most important habits is getting up at the same time every day, even on weekends and after a bad night. A
+        regular wake time sets your body clock, and builds up the drive to sleep for the next night. Get bright light, ideally
+        sunlight, soon after waking, which also helps set your clock.
+    - layout: "bullets"
+      heading: "The 20-Minute Rule"
+      points: ["Bed only for sleep and sex", "Cannot sleep? Get up", "Do something calm in dim light", "Return when sleepy"]
+      footage_query: "woman reading couch"
+      narration: >-
+        Use your bed only for sleep and sex, not for watching TV, working, or scrolling. If you cannot fall asleep in about
+        twenty minutes, or wake up and cannot get back to sleep, get out of bed. Go to another room and do something calm in
+        dim light, like reading a book, until you feel sleepy. Then go back to bed. This retrains your brain to link bed with
+        sleep.
+    - layout: "bullets"
+      heading: "Limit Time in Bed"
+      points: ["Do not lie awake for hours", "Match bed time to sleep time", "Then slowly add more", "Best with a therapist"]
+      footage_query: "woman lying awake bed"
+      narration: >-
+        People with insomnia often spend more time in bed to catch up, but lying awake makes things worse. Part of CBT I,
+        called sleep restriction, limits time in bed to the amount you are actually sleeping, then slowly increases it as
+        sleep improves. It can be tiring at first, so it works best with guidance from a trained therapist or program.
+    - layout: "bullets"
+      heading: "Calm a Racing Mind"
+      points: ["Write down worries early", "Make a to-do list", "Relaxation breathing", "Challenge sleep worries"]
+      footage_query: "woman writing journal"
+      narration: >-
+        If your mind races at night, set aside time in the early evening to write down your worries and a to do list for
+        tomorrow. In bed, try slow breathing, muscle relaxation, or a body scan. CBT I also helps you challenge thoughts like,
+        I will never sleep, or tomorrow will be ruined, which make it harder to fall asleep.
+    - layout: "bullets"
+      heading: "Good Sleep Habits"
+      points: ["Cool, dark, quiet bedroom", "No screens an hour before bed", "Wind-down routine", "Limit naps"]
+      footage_query: "bedroom dark night"
+      narration: >-
+        Good sleep habits support treatment. Keep your bedroom cool, dark, and quiet. Put away phones, tablets and computers
+        about an hour before bed. Create a relaxing wind down routine, like a warm shower, reading, or gentle stretching.
+        Limit naps to twenty or thirty minutes, early in the afternoon, or skip them if they make nights worse.
+    - layout: "bullets"
+      heading: "Daytime Habits Matter"
+      points: ["Get morning sunlight", "Exercise regularly", "Caffeine only before noon", "Light dinner, not too late"]
+      footage_query: "woman walking park"
+      narration: >-
+        What you do during the day matters too. Get sunlight in the morning. Exercise regularly, but try to finish intense
+        workouts a few hours before bed. Limit caffeine to the morning. Avoid alcohol close to bedtime. Eat dinner a few hours
+        before bed, and avoid large, spicy, or heavy meals late at night.
+    - layout: "myth_fact"
+      heading: "Alcohol Helps You Sleep"
+      points: ["A nightcap improves sleep", "It disrupts sleep later"]
+      footage_query: "wine glasses table"
+      narration: >-
+        Myth: a nightcap helps you sleep. Fact: alcohol may help you fall asleep faster, but it disrupts sleep later in the
+        night, causing more waking, less deep sleep, and more trips to the bathroom. It also worsens snoring and sleep apnea.
+        If you drink, have it earlier in the evening, and in moderation.
+    - layout: "myth_fact"
+      heading: "Catch Up on Weekends"
+      points: ["Sleep in to make up", "Irregular sleep makes it worse"]
+      footage_query: "man sleeping late"
+      narration: >-
+        Myth: you can make up for poor sleep by sleeping in on weekends. Fact: sleeping in for hours confuses your body clock,
+        making it harder to fall asleep on Sunday night, sometimes called social jet lag. It is better to keep a steady wake
+        time every day, and go to bed when you feel sleepy.
+    - layout: "bullets"
+      heading: "Sleeping Pills"
+      points: ["Best for short-term use", "Can cause next-day drowsiness", "Risk of falls and dependence", "Use with a doctor's guidance"]
+      footage_query: "pill bottle close up"
+      narration: >-
+        What about sleeping pills? Prescription sleep medicines can help in the short term, for example during a stressful
+        event. But they can cause next day drowsiness, memory problems, falls, and dependence, and some carry warnings about
+        rare but serious behaviors, like sleepwalking or driving while not fully awake. They work best combined with CBT I,
+        under a doctor's guidance.
+    - layout: "warning"
+      heading: "Over-the-Counter Sleep Aids"
+      points: ["Often contain antihistamines", "Next-day grogginess", "Confusion in older adults", "Not for long-term use"]
+      footage_query: "pharmacy shelf store"
+      narration: >-
+        Many over the counter sleep aids contain antihistamines, like diphenhydramine. They can cause next day grogginess, dry
+        mouth, constipation, and trouble urinating. In older adults, they can cause confusion and falls, and experts recommend
+        avoiding them. They are not meant for long term use. Talk to your pharmacist before taking them, especially with other
+        medicines.
+    - layout: "myth_fact"
+      heading: "Melatonin Is a Sleeping Pill"
+      points: ["Melatonin knocks you out", "It mainly shifts timing"]
+      footage_query: "supplement capsules close up"
+      narration: >-
+        Myth: melatonin is a natural sleeping pill that works for everyone. Fact: melatonin is a hormone that mainly helps
+        signal the timing of sleep. It may help a little with jet lag and some body clock problems, but has only a small
+        effect on chronic insomnia. As a supplement, the amount in the bottle can vary a lot from the label. Ask your doctor
+        first, especially for children.
+    - layout: "bullets"
+      heading: "Insomnia and Mental Health"
+      points: ["Linked to anxiety and depression", "Each can worsen the other", "Treating insomnia helps mood", "Ask for help"]
+      footage_query: "man sad sitting"
+      narration: >-
+        Insomnia and mental health are closely linked. Insomnia raises the risk of depression and anxiety, and these
+        conditions also cause insomnia. Treating insomnia, especially with CBT I, can improve mood. If you feel down,
+        hopeless, or anxious most days, tell your doctor. If you are in crisis, call or text nine eight eight.
+    - layout: "bullets"
+      heading: "Older Adults and Sleep"
+      points: ["Sleep gets lighter with age", "Still need 7 or more hours", "Watch for medicine effects", "Avoid sedating sleep aids"]
+      footage_query: "elderly woman sleeping"
+      narration: >-
+        As we age, sleep often becomes lighter, with more waking at night, and people tend to get sleepy earlier. But older
+        adults still need seven or more hours of sleep. Insomnia in older adults is often linked to health problems, pain,
+        frequent urination, or medicines. CBT I works well at any age, and is safer than most sleep medicines.
+    - layout: "bullets"
+      heading: "Menopause and Sleep"
+      points: ["Night sweats wake you", "Mood changes", "Higher risk of sleep apnea", "Treatment helps"]
+      footage_query: "woman fanning herself"
+      narration: >-
+        Many women have trouble sleeping during menopause, often from hot flashes and night sweats, mood changes, and a higher
+        risk of sleep apnea. Keep the bedroom cool, use breathable bedding, and talk to your doctor about treating hot flashes
+        and night sweats. CBT I also helps women with menopause related insomnia.
+    - layout: "bullets"
+      heading: "Shift Workers"
+      points: ["Sleep in a dark, quiet room", "Blackout curtains, earplugs", "Keep a consistent schedule", "Bright light at work"]
+      footage_query: "night shift worker"
+      narration: >-
+        Night shift workers often struggle with sleep. Sleep in a dark, quiet, cool room, using blackout curtains, an eye
+        mask, and earplugs or white noise. Try to keep a consistent sleep schedule, even on days off. Bright light during your
+        shift, and sunglasses on the way home, can help. Ask your doctor if sleepiness is affecting your safety.
+    - layout: "bullets"
+      heading: "When to See a Doctor"
+      points: ["Lasts more than a few weeks", "Daytime tiredness affects life", "Snoring or gasping", "Low mood or anxiety"]
+      footage_query: "patient talking doctor"
+      narration: >-
+        See your doctor if trouble sleeping lasts more than a few weeks, or affects your work, mood, safety, or relationships.
+        Also see your doctor if you snore loudly, stop breathing or gasp at night, have uncomfortable leg sensations, or feel
+        down or anxious. Bring a sleep diary of one to two weeks, with bedtimes, wake times, naps, caffeine and alcohol.
+    - layout: "bullets"
+      heading: "Questions for Your Doctor"
+      points: ["What is causing my insomnia?", "Can I try CBT-I?", "Are my medicines affecting sleep?", "Do I need a sleep study?"]
+      footage_query: "patient talking doctor"
+      narration: >-
+        At your visit, ask: what could be causing my insomnia? Could my medicines or health conditions be affecting my sleep?
+        Can I be referred for CBT I, or is there an app or online program I can use? Do I need a sleep study for sleep apnea
+        or another sleep disorder? And are sleeping pills safe for me?
+    - layout: "bullets"
+      heading: "Quick Recap"
+      points: ["Common and treatable", "Regular wake time", "Bed only for sleep", "CBT-I works best"]
+      footage_query: "notebook checklist pen"
+      narration: >-
+        Let us recap. Insomnia is common and treatable. Keep a regular wake time, use the bed only for sleep, and get up if
+        you cannot sleep after about twenty minutes. Limit caffeine, alcohol, and screens at night. CBT I is the most
+        effective long term treatment, better than sleeping pills. And see a doctor if it lasts or comes with snoring or low
+        mood.
+    - layout: "outro"
+      heading: "Remember"
+      points: ["Same wake time daily", "Get up if you cannot sleep", "Ask about CBT-I"]
+      footage_query: "woman sleeping peacefully"
+      narration: >-
+        Remember: get up at the same time every day, get out of bed if you cannot sleep, and ask your doctor about CBT I.
+        Share this with someone who is always tired. This video is for education only, not medical advice. Like and subscribe
+        to Health Support Studio for a new health video every day.
+  short_title: "Can't sleep? Try this instead of pills #Shorts"
+  short_caption: >-
+    The best treatment for chronic insomnia isn't a pill. Educational only, not medical advice. #Insomnia #SleepBetter
+    #SleepHealth #HealthEducation
+  short_scenes:
+    - layout: "title"
+      heading: "Cannot Sleep?"
+      points: ["Try this instead of pills"]
+      footage_query: "woman lying awake bed"
+      narration: >-
+        Lying awake for hours? The best treatment for chronic insomnia is not a sleeping pill.
+    - layout: "bullets"
+      heading: "What Works"
+      points: ["Same wake time every day", "Get up after 20 minutes awake", "Ask about CBT-I"]
+      footage_query: "alarm clock morning"
+      narration: >-
+        Get up at the same time every day, even on weekends. If you cannot sleep after about twenty minutes, get out of bed
+        and do something calm until you feel sleepy. And ask your doctor about cognitive behavioral therapy for insomnia, the
+        recommended first treatment.
+    - layout: "outro"
+      heading: "Full Video"
+      points: ["On YouTube"]
+      footage_query: "woman sleeping peacefully"
+      narration: >-
+        Learn more about insomnia in our full video, on the Health Support Studio YouTube channel.
