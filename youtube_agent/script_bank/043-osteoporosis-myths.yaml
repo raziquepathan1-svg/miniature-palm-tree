@@ -1,0 +1,288 @@
+queue_topic: "Osteoporosis: myths vs facts about bone health"
+style: "Myth vs Fact"
+sources:
+  - "NIH NIAMS, Osteoporosis: https://www.niams.nih.gov/health-topics/osteoporosis"
+  - "US Preventive Services Task Force, Osteoporosis to Prevent Fractures: Screening: https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/osteoporosis-screening"
+  - "MedlinePlus, Osteoporosis: https://medlineplus.gov/osteoporosis.html"
+plan:
+  topic: "Osteoporosis: myths vs facts about bone health"
+  title: "Osteoporosis Myths: The Silent Bone Thief"
+  description: |-
+    Osteoporosis causes no symptoms until a bone breaks. We bust five common myths about bone health, and explain who should get a bone density test, what your score means, and the treatments that prevent fractures.
+
+    In this video:
+    • What osteoporosis is and who gets it
+    • 5 bone health myths busted
+    • The bone density test and your T-score
+    • Calcium, vitamin D and the best exercises
+    • Treatments, safety tips and fall prevention
+
+    #Osteoporosis #BoneHealth #HealthyAging #WomensHealth #HealthEducation
+  tags: ["osteoporosis", "bone health", "bone density test", "dexa scan", "osteopenia", "hip fracture", "calcium", "vitamin d", "osteoporosis exercises", "healthy aging", "health education"]
+  thumbnail_text: "SILENT BONE THIEF"
+  thumbnail_highlight: "BONE"
+  thumbnail_photo_query: "elderly woman walking cane"
+  playlist: "Older Adults & Caregiving"
+  scenes:
+    - layout: "title"
+      heading: "Osteoporosis Myths"
+      points: ["The silent bone thief"]
+      footage_query: "elderly woman walking cane"
+      narration: >-
+        You cannot feel your bones getting thinner. For many people, the first sign of osteoporosis is a broken hip, wrist or
+        spine, often from a simple fall or even a hug. Osteoporosis is called a silent disease for this reason. Today we bust
+        the most common myths about bone health, and explain the simple test and treatments that can prevent a life changing
+        fracture.
+    - layout: "big_number"
+      heading: "Who Breaks a Bone?"
+      points: ["1 in 2", "Women over 50 break a bone"]
+      footage_query: "older women walking park"
+      narration: >-
+        About one in two women and up to one in four men over age fifty will break a bone because of osteoporosis. Millions of
+        Americans have osteoporosis, and many more have low bone mass, which puts them at risk. Most of them do not know it
+        until a bone breaks.
+    - layout: "bullets"
+      heading: "What Is Osteoporosis?"
+      points: ["Bones become thin and weak", "Inside looks like a sponge", "Holes get bigger", "Bones break easily"]
+      footage_query: "medical illustration bone"
+      narration: >-
+        Osteoporosis means porous bone. Healthy bone looks like a honeycomb inside. With osteoporosis, the holes in the
+        honeycomb become much bigger, and the bone becomes thin and weak. Bones break more easily, even from a minor fall,
+        bending over, or coughing. The most common breaks are in the hip, spine and wrist.
+    - layout: "bullets"
+      heading: "How Bones Change With Age"
+      points: ["Bone is always rebuilding", "Peak bone mass by about 30", "Slow loss after that", "Faster loss after menopause"]
+      footage_query: "woman different ages photos"
+      narration: >-
+        Bone is living tissue that is always being broken down and rebuilt. Until about age thirty, you build more bone than
+        you lose, reaching your peak bone mass. After that, you slowly lose more than you build. In women, bone loss speeds up
+        for several years after menopause, because estrogen, which protects bones, drops sharply.
+    - layout: "myth_fact"
+      heading: "Only Women Get It"
+      points: ["Osteoporosis is a woman's disease", "Men get it too"]
+      footage_query: "older man walking park"
+      narration: >-
+        Myth one: only women get osteoporosis. Fact: women are at higher risk, but men get osteoporosis too. Up to one in four
+        men over fifty will break a bone because of it. Men who break a hip are more likely than women to die within a year
+        after the fracture. Men are also less likely to be tested or treated.
+    - layout: "myth_fact"
+      heading: "I Would Feel It"
+      points: ["Thin bones cause pain", "There are no early symptoms"]
+      footage_query: "woman smiling outdoors"
+      narration: >-
+        Myth two: if my bones were getting weak, I would feel it. Fact: bone loss causes no pain or symptoms. Most people find
+        out only after a fracture. Some signs can appear later, like losing height, a stooped back, or back pain from small
+        fractures in the spine. A bone density test is the only way to know early.
+    - layout: "warning"
+      heading: "Warning Signs to Notice"
+      points: ["Losing an inch or more of height", "A curved, stooped back", "Sudden back pain", "A break from a minor fall"]
+      footage_query: "elderly woman stooped back"
+      narration: >-
+        Some signs mean you should ask about osteoporosis. Losing an inch or more of height. A back that is becoming curved or
+        stooped. Sudden back pain, which can be a small fracture in the spine. And any bone broken from a fall from standing
+        height or less, especially after age fifty. Such a break is a strong warning sign.
+    - layout: "bullets"
+      heading: "Risk Factors You Cannot Change"
+      points: ["Being female", "Older age", "Family history", "Small, thin frame"]
+      footage_query: "family photo generations"
+      narration: >-
+        Some risk factors cannot be changed. Being a woman, especially after menopause. Getting older. Having a parent who
+        broke a hip. Having a small, thin body frame. White and Asian women are at higher risk, but people of every background
+        can get osteoporosis. Knowing your risk helps you and your doctor decide when to test.
+    - layout: "bullets"
+      heading: "Risk Factors You Can Change"
+      points: ["Smoking", "Too much alcohol", "Not enough calcium and vitamin D", "Not enough activity"]
+      footage_query: "man smoking cigarette"
+      narration: >-
+        Other risk factors can be changed. Smoking weakens bones. Drinking more than two alcoholic drinks a day raises the
+        risk. Not getting enough calcium and vitamin D, being inactive, and being underweight also weaken bones. Eating
+        disorders and very low calorie diets can cause bone loss at any age.
+    - layout: "warning"
+      heading: "Medicines and Conditions"
+      points: ["Long-term steroid pills", "Some seizure and cancer drugs", "Rheumatoid arthritis", "Celiac and thyroid disease"]
+      footage_query: "pill bottles table"
+      narration: >-
+        Some medicines and health conditions cause bone loss. Long term use of steroid pills, like prednisone, is one of the
+        most common causes. Some medicines for seizures, breast and prostate cancer, and acid reflux may also play a part.
+        Conditions like rheumatoid arthritis, celiac disease, an overactive thyroid, and kidney disease can weaken bones.
+    - layout: "bullets"
+      heading: "The Bone Density Test"
+      points: ["Called a DXA scan", "Quick and painless", "Low radiation", "Measures hip and spine"]
+      footage_query: "dexa scan hospital"
+      narration: >-
+        The bone density test, called a DXA scan, is the main way to find osteoporosis before a fracture. You lie on a table
+        while a scanner passes over your hip and spine. It takes about ten to twenty minutes, does not hurt, and uses a very
+        small amount of radiation, less than a regular x ray. You can usually wear your clothes.
+    - layout: "bullets"
+      heading: "Who Should Be Tested"
+      points: ["All women 65 and older", "Younger women at higher risk", "Men: ask your doctor", "After a fragile fracture"]
+      footage_query: "doctor talking older woman"
+      narration: >-
+        Who should get tested? The US Preventive Services Task Force recommends bone density screening for all women sixty
+        five and older, and for younger women after menopause who have a higher risk. For men, experts disagree, so ask your
+        doctor, especially if you are seventy or older, take steroids, or have other risk factors. Medicare covers the test.
+    - layout: "bullets"
+      heading: "Understanding Your Score"
+      points: ["T-score compares to young adults", "Minus 1 or higher: normal", "Minus 1 to minus 2.5: low bone mass", "Minus 2.5 or lower: osteoporosis"]
+      footage_query: "doctor reading lab results"
+      narration: >-
+        Your results are given as a T score, which compares your bone density to a healthy young adult. A T score of minus one
+        or higher is normal. Between minus one and minus two point five is called low bone mass, or osteopenia. Minus two
+        point five or lower is osteoporosis. Your doctor may also estimate your ten year chance of breaking a bone.
+    - layout: "myth_fact"
+      heading: "Milk Alone Prevents It"
+      points: ["Drinking milk is enough", "Bones need much more"]
+      footage_query: "glass of milk breakfast"
+      narration: >-
+        Myth three: drinking milk is all you need to prevent osteoporosis. Fact: calcium is important, but it is only one
+        part. Bones also need vitamin D, protein, and regular exercise that puts weight on them. And genes, hormones and
+        medicines matter a lot. Many people who drink milk still get osteoporosis and need treatment.
+    - layout: "bullets"
+      heading: "Calcium: How Much?"
+      points: ["Women 51+: 1,200 milligrams", "Men 71+: 1,200 milligrams", "Food first", "Supplements only if needed"]
+      footage_query: "cheese yogurt dairy"
+      narration: >-
+        How much calcium do you need? Women over fifty and men over seventy need about twelve hundred milligrams a day.
+        Younger adults need about one thousand. Try to get it from food first: milk, yogurt, cheese, fortified plant milks and
+        juice, canned salmon or sardines with bones, tofu made with calcium, and leafy greens like kale. Take supplements only
+        to fill the gap.
+    - layout: "bullets"
+      heading: "Vitamin D and Protein"
+      points: ["Vitamin D helps absorb calcium", "600 to 800 units a day", "Enough protein at meals", "Ask before high doses"]
+      footage_query: "grilled salmon plate"
+      narration: >-
+        Vitamin D helps your body absorb calcium. Adults need about six hundred international units a day, and those over
+        seventy need about eight hundred. Sources include fatty fish, fortified milk, and some sunlight. Your doctor may
+        suggest a supplement. Protein also matters for bone and muscle, so include some at every meal. Very high doses of
+        vitamin D are not better.
+    - layout: "myth_fact"
+      heading: "Too Late to Exercise"
+      points: ["Older bones cannot get stronger", "Exercise helps at any age"]
+      footage_query: "elderly woman exercising weights"
+      narration: >-
+        Myth four: once you are older, it is too late for exercise to help your bones. Fact: weight bearing and muscle
+        strengthening exercise can help slow bone loss at any age, and even improve bone density a little. Just as important,
+        exercise builds muscle strength and balance, which lowers the chance of falling and breaking a bone.
+    - layout: "bullets"
+      heading: "Best Exercises for Bones"
+      points: ["Walking, dancing, stairs", "Lifting weights or bands", "Balance exercises", "Tai chi"]
+      footage_query: "tai chi older adults park"
+      narration: >-
+        The best exercises for bones are weight bearing, like brisk walking, dancing, hiking and climbing stairs, and muscle
+        strengthening, like lifting weights, using resistance bands, or bodyweight exercises. Balance exercises and tai chi
+        help prevent falls. Swimming and cycling are good for the heart, but do not put much load on bones, so add some weight
+        bearing activity.
+    - layout: "warning"
+      heading: "Moves to Avoid"
+      points: ["Deep forward bending", "Twisting the spine hard", "Heavy lifting with a rounded back", "Ask a physical therapist"]
+      footage_query: "woman bending forward"
+      narration: >-
+        If you already have osteoporosis, some movements can raise the risk of spine fractures. Avoid deep forward bending,
+        like toe touches and sit ups, hard twisting of the spine, and lifting heavy things with a rounded back. Some yoga and
+        golf moves may need changes. A physical therapist can design a safe exercise plan for you.
+    - layout: "myth_fact"
+      heading: "Bone Medicines Are Too Risky"
+      points: ["The side effects are not worth it", "Benefits usually outweigh risks"]
+      footage_query: "pharmacist counter customer"
+      narration: >-
+        Myth five: osteoporosis medicines are too dangerous to take. Fact: for people at high risk of fractures, these
+        medicines greatly lower the chance of breaking a bone, including the hip and spine. Serious side effects, like jaw
+        bone problems or unusual thigh fractures, are rare. For most people at high risk, the benefits are much greater than
+        the risks.
+    - layout: "bullets"
+      heading: "Treatment Options"
+      points: ["Pills taken weekly or monthly", "Yearly IV infusion", "Shots every 6 months", "Bone-building shots"]
+      footage_query: "doctor giving prescription"
+      narration: >-
+        There are several types of treatment. The most common are bisphosphonates, like alendronate, taken as a weekly or
+        monthly pill, or as a yearly IV infusion. Another medicine is a shot every six months. For people at very high risk,
+        there are daily or monthly shots that actually build new bone. Your doctor will choose based on your risk and health.
+    - layout: "bullets"
+      heading: "Taking Bone Pills Right"
+      points: ["First thing in the morning", "Full glass of plain water", "Stay upright 30 to 60 minutes", "No food or other pills first"]
+      footage_query: "glass of water pill hand"
+      narration: >-
+        Some bone pills must be taken a special way to work and to avoid irritating the esophagus. Take them first thing in
+        the morning on an empty stomach, with a full glass of plain water. Stay sitting or standing for thirty to sixty
+        minutes, and do not eat, drink anything else, or take other medicines during that time. Follow your label exactly.
+    - layout: "warning"
+      heading: "Do Not Stop Some Shots Late"
+      points: ["Some shots must be on time", "Stopping can cause fast bone loss", "Spine fractures can follow", "Plan with your doctor"]
+      footage_query: "calendar notebook planning"
+      narration: >-
+        Here is an important safety tip. If you get the osteoporosis shot given every six months, called denosumab, do not
+        delay or stop it without a plan. Stopping it suddenly can cause rapid bone loss and multiple spine fractures. If you
+        need to stop, your doctor will usually switch you to another medicine. Mark your next shot on the calendar.
+    - layout: "bullets"
+      heading: "Prevent Falls"
+      points: ["Clear clutter and cords", "Good lighting, night lights", "Grab bars in the bathroom", "Check vision and medicines"]
+      footage_query: "living room night light"
+      narration: >-
+        Since most fractures happen from falls, preventing falls is just as important as treating bones. Clear clutter, cords
+        and loose rugs. Use night lights and grab bars. Wear sturdy shoes. Get your vision checked. Ask your doctor whether
+        any medicines make you dizzy or sleepy. And do balance exercises to stay steady on your feet.
+    - layout: "warning"
+      heading: "After a Fracture"
+      points: ["Ask for a bone density test", "Ask about treatment", "Get a fall check", "One break predicts another"]
+      footage_query: "elderly woman arm cast"
+      narration: >-
+        If you break a bone after age fifty from a minor fall, ask your doctor about osteoporosis. One fracture greatly raises
+        the chance of another, especially in the next one to two years. Yet many people leave the hospital without a bone
+        density test or treatment. Ask: do I need a bone test, and should I start medicine?
+    - layout: "bullets"
+      heading: "Build Bones Young"
+      points: ["Calcium and vitamin D in kids", "Active play and sports", "No smoking or vaping", "Healthy weight in teens"]
+      footage_query: "kids playing soccer"
+      narration: >-
+        Osteoporosis prevention starts in childhood. Most bone is built before age thirty, so children and teens need enough
+        calcium and vitamin D, plenty of active play and sports, and to avoid smoking and vaping. Teens, especially girls and
+        athletes, should avoid extreme diets. Strong bones built young protect you for life.
+    - layout: "bullets"
+      heading: "Questions for Your Doctor"
+      points: ["Do I need a bone density test?", "What is my fracture risk?", "Do I need medicine?", "Which exercises are safe?"]
+      footage_query: "patient talking doctor"
+      narration: >-
+        At your next visit, ask: am I at risk for osteoporosis? Do I need a bone density test? What is my chance of breaking a
+        bone in the next ten years? Are any of my medicines affecting my bones? Do I need treatment? And which exercises are
+        safe and helpful for me?
+    - layout: "bullets"
+      heading: "Quick Recap"
+      points: ["Silent until a bone breaks", "Men get it too", "Women 65+: get tested", "Medicines lower fractures"]
+      footage_query: "notebook checklist pen"
+      narration: >-
+        Let us recap. Osteoporosis is silent until a bone breaks. Men get it too. Women sixty five and older should get a bone
+        density test, and younger people at higher risk should ask. Calcium, vitamin D, protein and exercise help, but are not
+        always enough. Medicines greatly lower fracture risk. And preventing falls protects your bones.
+    - layout: "outro"
+      heading: "Remember"
+      points: ["Get tested", "Stay active", "Prevent falls"]
+      footage_query: "older couple walking park"
+      narration: >-
+        Remember: ask about a bone density test, keep moving with weight bearing exercise, and make your home safe from falls.
+        Share this with your mother, grandmother, or anyone over sixty five. This video is for education only, not medical
+        advice. Like and subscribe to Health Support Studio for a new health video every day.
+  short_title: "Osteoporosis: the silent bone thief #Shorts"
+  short_caption: >-
+    You can't feel your bones getting thinner. Here is how to find out. Educational only, not medical advice.
+    #Osteoporosis #BoneHealth #HealthyAging #HealthEducation
+  short_scenes:
+    - layout: "title"
+      heading: "Silent Bone Thief"
+      points: ["Osteoporosis"]
+      footage_query: "elderly woman walking cane"
+      narration: >-
+        You cannot feel your bones getting thinner. Often the first sign is a broken bone.
+    - layout: "bullets"
+      heading: "Protect Your Bones"
+      points: ["1 in 2 women over 50 at risk", "Women 65+: bone density test", "Men get it too"]
+      footage_query: "dexa scan hospital"
+      narration: >-
+        About one in two women over fifty will break a bone from osteoporosis. A quick, painless bone density test can find it
+        early. Women sixty five and older should be tested, and men at risk should ask too. Treatment can greatly lower your
+        chance of a fracture.
+    - layout: "outro"
+      heading: "Full Video"
+      points: ["On YouTube"]
+      footage_query: "older couple walking park"
+      narration: >-
+        Learn the myths about bone health in our full video, on the Health Support Studio YouTube channel.
