@@ -62,10 +62,11 @@ jobs:
           d = Path("branding/health-support-studio/avatar/speaking")
           whisper = WhisperModel("small.en", device="cpu", compute_type="int8")
           notes = []
-          for name, end in (("sit", "0"),):
+          # every speaking clip that has no "_myvoice" version yet
+          todo = [p.stem for p in sorted(d.glob("*.mp4")) if not p.stem.endswith("_myvoice")
+                  and not p.stem.startswith("preview") and not (d / f"{p.stem}_myvoice.mp4").exists()]
+          for name, end in ((n, "0") for n in todo):
               src = d / f"{name}.mp4"
-              if not src.exists():
-                  continue
               cut = ["-t", end] if end and float(end) > 0 else []
               wav = Path(f"/tmp/{name}.wav")
               subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(src), *cut, "-vn", "-ac", "1",
