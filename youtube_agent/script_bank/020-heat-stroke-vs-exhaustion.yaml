@@ -11,9 +11,11 @@ plan:
     Heat exhaustion and heat stroke can look alike at first, but one is a life-threatening emergency. Learn the warning signs of each and exactly what to do, based on CDC guidance.
 
     In this video:
-    • Who is most at risk in the heat
+    • How the body cools itself, and who is most at risk
+    • Heat rash and heat cramps
     • Signs of heat exhaustion, and what to do
     • Signs of heat stroke, and why you call 911
+    • How to cool someone fast
     • Simple ways to stay safe in hot weather
 
     #HeatStroke #HeatExhaustion #FirstAid #SummerSafety #HealthEducation
@@ -26,74 +28,247 @@ plan:
     - layout: "title"
       heading: "Heat Stroke or Exhaustion?"
       points: ["Know the difference"]
-      footage_query: "hot sun city street"
+      footage_query: "man sweating hot sun"
       narration: >-
-        It is a hot day, and someone near you starts to feel sick. Is it heat exhaustion, or heat stroke? They can look alike
-        at first, but heat stroke is a life threatening emergency. Here is how to tell the difference, and exactly what to do,
-        based on CDC guidance.
+        It is a hot afternoon. Someone at a ball game, a job site, or a family barbecue starts to feel dizzy and sick. Is it
+        heat exhaustion, which you can treat on the spot, or heat stroke, which can kill within hours? They can look alike at
+        first. Today you will learn how to tell them apart, and exactly what to do for each.
+    - layout: "big_number"
+      heading: "Heat Is a Silent Killer"
+      points: ["Thousands", "Heat deaths in the US each year"]
+      footage_query: "thermometer hot weather city"
+      narration: >-
+        Extreme heat kills more people in the United States than hurricanes, floods or tornadoes. In recent years, heat has
+        been linked to more than two thousand deaths a year, and many more emergency room visits. Heat waves are becoming
+        longer and more common. The good news is that almost every heat death can be prevented, if people know the signs and
+        act early.
     - layout: "bullets"
-      heading: "Who's Most at Risk"
-      points: ["Adults 65 and older", "Babies and young children", "Outdoor workers and athletes", "People with chronic illness"]
-      footage_query: "construction worker hot sun"
+      heading: "How the Body Cools Itself"
+      points: ["Sweating", "Blood moves to the skin", "Breathing faster", "Fails in extreme heat"]
+      footage_query: "woman wiping sweat forehead"
       narration: >-
-        Anyone can get sick from heat, but some people are at higher risk. That includes older adults, babies and young
-        children, people who work or exercise outdoors, people with heart disease or other chronic conditions, and people who
-        take certain medicines. Never leave a child, an adult, or a pet in a parked car, even for a few minutes.
+        Your body normally keeps its temperature steady. When you get hot, you sweat, and as sweat dries it cools your skin.
+        Blood moves toward the skin to release heat. But in very hot or humid weather, sweat does not dry well, and the body
+        can lose too much water and salt. When cooling fails, body temperature climbs, and heat illness begins.
     - layout: "bullets"
-      heading: "Heat Exhaustion Signs"
-      points: ["Heavy sweating", "Cold, pale, clammy skin", "Fast, weak pulse", "Nausea, cramps, dizziness"]
-      footage_query: "tired runner sweating"
+      heading: "Heat Illness Is a Ladder"
+      points: ["Heat rash and cramps", "Heat exhaustion", "Heat stroke", "Each step is more dangerous"]
+      footage_query: "stairs steps close up"
       narration: >-
-        First, heat exhaustion. This is your body struggling with the heat. Signs include heavy sweating, cold, pale and clammy
-        skin, a fast but weak pulse, nausea or vomiting, muscle cramps, tiredness or weakness, dizziness, headache, and fainting.
+        Think of heat illness as a ladder. At the bottom are heat rash and heat cramps. In the middle is heat exhaustion. At
+        the top is heat stroke, a medical emergency. People can climb the ladder quickly, especially if they keep working or
+        playing in the heat. The goal is to notice the early steps and stop before reaching the top.
     - layout: "bullets"
-      heading: "For Heat Exhaustion"
-      points: ["Move to a cool place", "Loosen clothing", "Cool, wet cloths", "Sip water"]
-      footage_query: "person resting shade water"
+      heading: "Who Is Most at Risk"
+      points: ["Adults over 65", "Babies and young children", "Outdoor workers, athletes", "People with chronic illness"]
+      footage_query: "elderly man fanning himself"
       narration: >-
-        What should you do? Move the person to a cooler place, like the shade or air conditioning. Loosen their clothes, and
-        put cool, wet cloths on their body, or have them take a cool bath. Have them sip water. Get medical help right away if
-        they are throwing up, their symptoms get worse, or they last longer than an hour.
+        Anyone can get sick from heat, but some people are at much higher risk. Older adults, especially those who live alone.
+        Babies and young children. Outdoor workers and athletes. People with heart disease, lung disease, diabetes, kidney
+        disease or obesity. People with mental illness, and people who are pregnant. Homeless people and those without air
+        conditioning face great danger too.
     - layout: "warning"
-      heading: "Heat Stroke Signs"
-      points: ["Temperature 103°F or higher", "Hot, red, dry or damp skin", "Fast, strong pulse", "Confusion or passing out"]
-      footage_query: "ambulance emergency lights"
+      heading: "Medicines That Raise Risk"
+      points: ["Water pills", "Some blood pressure pills", "Some mental health medicines", "Allergy and bladder pills"]
+      footage_query: "pill bottles table"
       narration: >-
-        Now, heat stroke. This is when the body can no longer cool itself. Signs include a body temperature of one hundred
-        three degrees Fahrenheit or higher, hot, red, dry or damp skin, a fast, strong pulse, headache, dizziness, nausea,
-        confusion, and passing out. Heat stroke can cause death or permanent damage if not treated quickly.
+        Some medicines make it harder for the body to handle heat. These include water pills, some blood pressure and heart
+        medicines, some medicines for depression, anxiety, and other mental health conditions, and drugs that reduce sweating,
+        such as some allergy and bladder pills. Alcohol and stimulant drugs raise the risk too. Do not stop any medicine on
+        your own, but ask your doctor about heat safety.
+    - layout: "bullets"
+      heading: "Heat Rash"
+      points: ["Small red bumps", "Neck, chest, skin folds", "Move to a cooler place", "Keep the skin dry"]
+      footage_query: "skin rash close up"
+      narration: >-
+        Heat rash is the first warning. It looks like clusters of small red bumps or blisters, often on the neck, chest,
+        groin, or in skin folds. It happens when sweat gets trapped in the skin. Move to a cooler, less humid place, and keep
+        the area dry. Avoid heavy creams. Heat rash is not dangerous itself, but it tells you the body is struggling with
+        heat.
+    - layout: "bullets"
+      heading: "Heat Cramps"
+      points: ["Painful muscle spasms", "Legs, arms, belly", "Heavy sweating", "Stop and rest"]
+      footage_query: "runner holding leg cramp"
+      narration: >-
+        Heat cramps are painful muscle spasms, often in the legs, arms or belly, that come with heavy sweating during
+        activity. Stop what you are doing and move to a cool place. Drink water or a sports drink. Wait for the cramps to go
+        away before going back to activity. Get medical help if cramps last more than an hour, or if you have heart problems
+        or a low salt diet.
     - layout: "warning"
-      heading: "For Heat Stroke"
-      points: ["Call 911 right away", "Move to a cooler place", "Cool with wet cloths or bath", "Don't give anything to drink"]
+      heading: "Signs of Heat Exhaustion"
+      points: ["Heavy sweating", "Cool, pale, clammy skin", "Fast, weak pulse", "Nausea, dizziness, headache"]
+      footage_query: "woman dizzy holding head sun"
+      narration: >-
+        Heat exhaustion is the middle step. Signs include heavy sweating, cool, pale and clammy skin, a fast and weak pulse,
+        nausea or vomiting, muscle cramps, tiredness, weakness, dizziness, headache, and fainting. The body temperature is
+        often raised, but the person is usually still thinking clearly. Heat exhaustion is serious, and without care it can
+        turn into heat stroke.
+    - layout: "bullets"
+      heading: "What to Do for Heat Exhaustion"
+      points: ["Move to a cool place", "Loosen clothes", "Cool wet cloths or a cool bath", "Sip water"]
+      footage_query: "man resting shade water bottle"
+      narration: >-
+        If you think someone has heat exhaustion, act right away. Move them to a cool place, ideally with air conditioning or
+        shade. Loosen or remove extra clothing. Put cool, wet cloths on the body, or have them take a cool bath. Give sips of
+        water if they are awake and not vomiting. Have them lie down with their legs raised a little.
+    - layout: "warning"
+      heading: "When to Get Medical Help"
+      points: ["Vomiting", "Symptoms getting worse", "Not better within 1 hour", "Confusion: call 911"]
       footage_query: "person calling phone emergency"
       narration: >-
-        If you think it is heat stroke, call 911 right away. Then move the person to a cooler place and help lower their
-        temperature with cool cloths or a cool bath. Do not give the person anything to drink. Stay with them until help
-        arrives.
-    - layout: "bullets"
+        Get medical help right away if the person is vomiting, if their symptoms get worse, or if they do not improve within
+        an hour. If they become confused, very sleepy, or stop making sense, treat it as heat stroke and call 911. Never leave
+        someone with heat illness alone, because things can change quickly.
+    - layout: "warning"
+      heading: "Signs of Heat Stroke"
+      points: ["Body temperature 103 or higher", "Hot, red skin, dry or damp", "Confusion, slurred speech", "Seizures or passing out"]
+      footage_query: "paramedic helping patient outdoors"
+      narration: >-
+        Heat stroke is the top of the ladder, and a true emergency. Body temperature rises to one hundred three degrees
+        Fahrenheit or higher. The skin may be hot and red, and either dry or damp. The pulse is fast and strong. The person
+        may have a throbbing headache, confusion, slurred speech, strange behavior, seizures, or may pass out. Brain and organ
+        damage can happen fast.
+    - layout: "myth_fact"
+      heading: "No Sweat Means Stroke"
+      points: ["Heat stroke always means dry skin", "Many people still sweat"]
+      footage_query: "athlete sweating running"
+      narration: >-
+        Myth: if someone is still sweating, it cannot be heat stroke. Fact: many people with heat stroke, especially athletes
+        and workers who were exercising hard, are still sweating. Dry skin can happen, but it is not required. The most
+        important sign is a change in thinking or behavior. Confusion in the heat means heat stroke until proven otherwise.
+    - layout: "warning"
       heading: "The Key Difference"
-      points: ["Exhaustion: sweaty, cool, clammy", "Stroke: hot skin, high temperature", "Stroke: confusion is a red flag"]
-      footage_query: "thermometer hot weather"
+      points: ["Exhaustion: thinking clearly", "Stroke: confused or acting strange", "Exhaustion: cool, clammy skin", "Stroke: hot skin, very high temperature"]
+      footage_query: "doctor pointing chart"
       narration: >-
-        So what is the quickest way to tell them apart? With heat exhaustion, the skin is usually sweaty, cool and clammy, and
-        the person is still thinking clearly. With heat stroke, the skin is hot, the temperature is very high, and the person
-        may become confused, act strangely, or pass out. Any confusion in the heat is a red flag. If you are not sure, treat
-        it as heat stroke and call 911.
+        So here is the key difference. With heat exhaustion, the person usually has cool, clammy skin and is still thinking
+        clearly. With heat stroke, the skin is hot, the temperature is very high, and the brain is affected, so the person is
+        confused, acting strange, or unconscious. If you are not sure which one it is, treat it as heat stroke.
+    - layout: "warning"
+      heading: "Heat Stroke: Call 911"
+      points: ["Call 911 right away", "Move to a cool place", "Cool them fast", "Stay with them"]
+      footage_query: "person calling phone emergency"
+      narration: >-
+        For heat stroke, call 911 right away. While you wait, move the person to a cooler place and start cooling them as fast
+        as you can. Every minute matters. The faster the body temperature comes down, the better the chance of survival
+        without lasting damage. Do not wait to see if they get better on their own.
     - layout: "bullets"
-      heading: "Stay Safe in the Heat"
-      points: ["Drink water often", "Light, loose clothing", "Avoid the hottest hours", "Check on older neighbors"]
-      footage_query: "woman drinking water outdoors"
+      heading: "How to Cool Someone Fast"
+      points: ["Cold water tub if possible", "Soak with cold water", "Ice packs to neck, armpits, groin", "Fan while wet"]
+      footage_query: "ice packs cold water"
       narration: >-
-        To stay safe, drink water often, even before you feel thirsty. Wear light, loose clothing. Plan outdoor activity for
-        cooler morning or evening hours, and take breaks in the shade. And check on older relatives and neighbors during heat
-        waves, especially those living alone without air conditioning.
+        The fastest way to cool someone is to put their body in a tub of cold or ice water, up to the neck, if it is safe and
+        someone can hold their head up. If you cannot, soak their clothes and skin with cold water, and fan them. Put ice
+        packs or cold wet towels on the neck, armpits and groin. Keep cooling until help arrives.
+    - layout: "warning"
+      heading: "What Not to Do"
+      points: ["No drinks if confused", "No fever medicines", "Do not leave them alone", "Do not wait"]
+      footage_query: "warning sign close up"
+      narration: >-
+        Some things can make heat stroke worse. Do not give drinks to someone who is confused, vomiting, or not fully awake,
+        because they could choke. Do not give fever medicines like acetaminophen or aspirin, since they do not help with heat
+        stroke and may harm the liver or stomach. Do not leave the person alone, and do not delay calling 911.
+    - layout: "warning"
+      heading: "Hot Cars Can Kill"
+      points: ["Never leave a child in a car", "Not even for a minute", "Check the back seat", "Call 911 if you see one"]
+      footage_query: "child car seat back seat"
+      narration: >-
+        Never leave a child, an older adult, or a pet alone in a car, not even for a minute with the windows cracked. On an
+        eighty degree day, the inside of a car can heat up by about twenty degrees in ten minutes. Make a habit of checking
+        the back seat every time you leave the car. If you see a child alone in a hot car, call 911.
+    - layout: "bullets"
+      heading: "Older Adults in a Heat Wave"
+      points: ["Check on them twice a day", "Make sure the AC works", "Watch for confusion", "Offer cooling centers"]
+      footage_query: "young woman visiting elderly neighbor"
+      narration: >-
+        Older adults may not feel thirst or heat as well, and many live alone. During a heat wave, check on older relatives
+        and neighbors at least twice a day, by phone or in person. Make sure their air conditioning works, and that they can
+        afford to use it. If not, help them get to a cooling center. Watch for confusion, weakness or a change in behavior.
+    - layout: "bullets"
+      heading: "Kids and Teen Athletes"
+      points: ["Build up slowly in summer", "Water breaks every 15 to 20 minutes", "Practice in cooler hours", "Coaches watch for signs"]
+      footage_query: "kids football practice summer"
+      narration: >-
+        Heat stroke is a leading cause of death in high school athletes, especially in the first days of summer practice.
+        Bodies need about one to two weeks to adjust to the heat, so activity should build up slowly. Schedule practices in
+        the cooler parts of the day, give frequent water breaks in the shade, and make sure coaches have a plan and a tub of
+        cold water ready.
+    - layout: "bullets"
+      heading: "Outdoor Workers"
+      points: ["Water, rest, shade", "New workers need time to adjust", "Use a buddy system", "Know the emergency plan"]
+      footage_query: "construction worker drinking water"
+      narration: >-
+        For outdoor workers, the simple rule is water, rest, shade. Drink water often, even if you are not thirsty. Take
+        breaks in the shade or a cool place. New workers, and workers returning from time off, need to adjust gradually, since
+        many heat deaths happen in the first few days on the job. Watch your coworkers, and know how to call for help at your
+        site.
+    - layout: "bullets"
+      heading: "Drink Smart"
+      points: ["Drink before you feel thirsty", "Water is best", "Sports drinks for long sweating", "Limit alcohol and sugary drinks"]
+      footage_query: "woman drinking water bottle"
+      narration: >-
+        Staying hydrated is key. Drink water before you feel thirsty, and keep drinking throughout the day. For long, sweaty
+        activity, a sports drink can help replace salt. Limit alcohol and very sugary drinks, which can make dehydration
+        worse. If your doctor limits your fluids because of heart or kidney disease, ask how much you should drink when it is
+        hot.
+    - layout: "bullets"
+      heading: "Check Your Urine"
+      points: ["Pale yellow: good", "Dark yellow: drink more", "Very little urine: warning", "Dizziness: rest and cool down"]
+      footage_query: "glass of water close up"
+      narration: >-
+        A simple way to check your hydration is the color of your urine. Pale yellow, like lemonade, usually means you are
+        drinking enough. Dark yellow, like apple juice, means you need more fluids. Passing very little urine is a warning
+        sign. Some vitamins and medicines change urine color, so also pay attention to how you feel.
+    - layout: "bullets"
+      heading: "Dress and Plan for Heat"
+      points: ["Light, loose, light-colored clothes", "Wide-brimmed hat", "Avoid the hottest hours", "Plan rest in the shade"]
+      footage_query: "woman wearing sun hat"
+      narration: >-
+        What you wear matters. Choose light colored, loose fitting, lightweight clothes, and a wide brimmed hat. Use
+        sunscreen, because sunburn makes it harder for your body to cool itself. Plan outdoor activities for early morning or
+        evening, and avoid the hottest part of the day, usually from late morning to late afternoon. Take frequent breaks in
+        the shade.
+    - layout: "bullets"
+      heading: "Keep Your Home Cool"
+      points: ["Use air conditioning", "Close blinds by day", "Cool showers", "Go to a cooling center"]
+      footage_query: "air conditioner home room"
+      narration: >-
+        Air conditioning is the best protection in extreme heat. Fans help a little, but when it is very hot, a fan alone
+        cannot prevent heat illness. Close blinds and curtains during the day. Take cool showers or baths. If your home gets
+        too hot, spend a few hours in an air conditioned place like a library, mall, or a public cooling center. Many cities
+        list them online.
+    - layout: "bullets"
+      heading: "Watch the Heat Index"
+      points: ["Humidity makes it worse", "Check the daily forecast", "Heed heat warnings", "Plan ahead"]
+      footage_query: "weather forecast phone"
+      narration: >-
+        Watch the heat index, not just the temperature. Humidity makes heat more dangerous, because sweat cannot dry and cool
+        you. Check the daily forecast, and pay attention to heat advisories and warnings from the National Weather Service. On
+        those days, change your plans, check on people at risk, and keep your cooling plan ready.
+    - layout: "bullets"
+      heading: "Recovery After Heat Illness"
+      points: ["Rest for a day or more", "Avoid heat for a while", "Return to activity slowly", "Follow-up with a doctor"]
+      footage_query: "man resting bed home"
+      narration: >-
+        After heat exhaustion, rest and avoid hot weather and hard activity for at least a day or two. After heat stroke,
+        recovery can take much longer, and some people need weeks before returning to work or sports. Follow your doctor's
+        advice, and return to activity slowly. People who have had heat illness may be more sensitive to heat for a while.
+    - layout: "bullets"
+      heading: "Quick Recap"
+      points: ["Exhaustion: cool, clammy, clear mind", "Stroke: hot, confused, very high temp", "Cool fast, call 911", "Water, rest, shade"]
+      footage_query: "notebook checklist pen"
+      narration: >-
+        Let us recap. Heat exhaustion means heavy sweating, cool clammy skin, and a clear mind. Move to a cool place, cool
+        down and sip water. Heat stroke means a very high temperature and confusion or strange behavior. Call 911 and cool the
+        person fast. And to prevent it, remember water, rest and shade, and check on those most at risk.
     - layout: "outro"
       heading: "Remember"
-      points: ["Exhaustion: cool down and sip", "Stroke: call 911", "When in doubt, call"]
-      footage_query: "family park summer shade"
+      points: ["Confusion in heat: call 911", "Cool first, ask later", "Check on neighbors"]
+      footage_query: "family summer park shade"
       narration: >-
-        Remember: heat exhaustion, cool down and sip water. Heat stroke, call 911. This video is for education only, not
-        medical advice. Like and subscribe to Health Support Studio for a new health video every day.
+        Remember: confusion in the heat is an emergency, so call 911 and cool the person fast. Share this before the next heat
+        wave, especially with coaches, outdoor workers and families caring for older adults. This video is for education only,
+        not medical advice. Like and subscribe to Health Support Studio for a new health video every day.
   short_title: "Heat stroke vs heat exhaustion #Shorts"
   short_caption: >-
     Heat exhaustion and heat stroke can look alike, but one is a 911 emergency. Here is how to tell. Educational only, not
