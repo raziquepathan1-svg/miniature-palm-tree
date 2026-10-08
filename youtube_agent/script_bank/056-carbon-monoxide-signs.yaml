@@ -1,0 +1,293 @@
+queue_topic: "Carbon monoxide poisoning: warning signs and prevention"
+style: "Warning Signs"
+sources:
+  - "CDC, Carbon Monoxide Poisoning Basics: https://www.cdc.gov/carbon-monoxide/about/index.html"
+  - "CDC, Preventing Carbon Monoxide Poisoning: https://www.cdc.gov/carbon-monoxide/prevention/index.html"
+  - "MedlinePlus, Carbon Monoxide Poisoning: https://medlineplus.gov/carbonmonoxidepoisoning.html"
+plan:
+  topic: "Carbon monoxide poisoning: warning signs and prevention"
+  title: "Carbon Monoxide Warning Signs: The Invisible Killer"
+  description: |-
+    Carbon monoxide has no color or smell, and it can kill in your sleep. Learn the warning signs that look like the flu, what to do right away, the most common sources at home, and how CO alarms and simple habits protect your family.
+
+    In this video:
+    • What carbon monoxide is and how it harms you
+    • Flu-like warning signs and clues it could be CO
+    • What to do right away
+    • Generators, cars, grills and heating dangers
+    • CO alarms, appliance checks and power outage tips
+
+    #CarbonMonoxide #HomeSafety #WinterSafety #WarningSigns #HealthEducation
+  tags: ["carbon monoxide", "carbon monoxide poisoning", "co poisoning symptoms", "carbon monoxide alarm", "generator safety", "winter safety", "home safety", "power outage safety", "furnace safety", "warning signs", "health education"]
+  thumbnail_text: "THE INVISIBLE KILLER"
+  thumbnail_highlight: "INVISIBLE"
+  thumbnail_photo_query: "carbon monoxide alarm"
+  playlist: "Emergencies & First Aid"
+  scenes:
+    - layout: "title"
+      heading: "Carbon Monoxide Warning Signs"
+      points: ["The invisible killer"]
+      footage_query: "carbon monoxide alarm"
+      narration: >-
+        It has no color, no smell, and no taste. You cannot see it or sense it, but it can kill you in your sleep. Carbon
+        monoxide poisoning sends tens of thousands of Americans to the emergency room every year, and it often looks like the
+        flu. Today you will learn the warning signs, the most common sources at home, and the simple steps that protect your
+        family.
+    - layout: "big_number"
+      heading: "A Preventable Killer"
+      points: ["Over 400", "Americans die each year from CO"]
+      footage_query: "house winter snow"
+      narration: >-
+        According to the CDC, more than four hundred Americans die each year from carbon monoxide poisoning not linked to
+        fires, and more than one hundred thousand visit the emergency room. Poisonings rise in winter, when furnaces run and
+        people use generators during power outages. Almost all of these deaths can be prevented.
+    - layout: "bullets"
+      heading: "What Is Carbon Monoxide?"
+      points: ["A poisonous gas", "Made when fuel burns", "No color or smell", "Builds up indoors"]
+      footage_query: "gas stove flame"
+      narration: >-
+        Carbon monoxide, or CO, is a poisonous gas made whenever fuel is burned, like gas, oil, wood, propane, kerosene, or
+        charcoal. Outdoors, it spreads out. But when fuel burning devices are not working right, or are used in closed spaces,
+        CO can build up to dangerous levels. Because you cannot see or smell it, you may not know you are breathing it.
+    - layout: "bullets"
+      heading: "How It Harms the Body"
+      points: ["Replaces oxygen in the blood", "Starves the brain and heart", "Can cause lasting damage", "Can kill quickly"]
+      footage_query: "medical illustration blood cells"
+      narration: >-
+        How does carbon monoxide harm you? When you breathe it in, it attaches to your red blood cells much more strongly than
+        oxygen does. This crowds out oxygen, so your brain, heart and other organs do not get enough. High levels can cause
+        passing out and death within minutes. Even lower levels over time can cause lasting brain and heart damage.
+    - layout: "warning"
+      heading: "Early Warning Signs"
+      points: ["Headache", "Dizziness", "Weakness", "Upset stomach or vomiting"]
+      footage_query: "woman headache holding head"
+      narration: >-
+        The most common early signs of carbon monoxide poisoning are a dull headache, dizziness, weakness, nausea or vomiting,
+        chest pain, and confusion. Many people describe flu like symptoms. These can come on slowly with low levels, or
+        quickly with high levels. People who are asleep or drunk may die before they notice any symptoms.
+    - layout: "warning"
+      heading: "Clues It Could Be CO"
+      points: ["Several people sick at once", "Pets acting sick too", "Better when away from home", "Worse when heating is on"]
+      footage_query: "family sick couch"
+      narration: >-
+        How can you tell it might be carbon monoxide instead of the flu? Watch for these clues. Several people in the same
+        home feel sick at the same time. Pets seem sick or sluggish too. Symptoms get better when you leave the house and come
+        back when you return. Symptoms appear when the furnace, stove or a generator is running. And there is no fever.
+    - layout: "warning"
+      heading: "Severe Signs"
+      points: ["Confusion", "Fainting", "Trouble breathing", "Seizures"]
+      footage_query: "paramedic helping patient"
+      narration: >-
+        As carbon monoxide levels rise, symptoms become severe: confusion, blurry vision, loss of coordination, trouble
+        breathing, a fast heartbeat, fainting, seizures, and unconsciousness. Without fresh air and treatment, it can lead to
+        death. Act right away at the first sign of trouble.
+    - layout: "warning"
+      heading: "What to Do Right Away"
+      points: ["Get everyone outside now", "Do not stop to open windows", "Call 911 from outside", "Do not go back in"]
+      footage_query: "family outside house night"
+      narration: >-
+        If your CO alarm goes off, or you suspect carbon monoxide poisoning, get everyone, including pets, out into fresh air
+        immediately. Do not waste time opening windows or searching for the source. Once outside, call 911 or the fire
+        department. Do not go back inside until emergency responders say it is safe.
+    - layout: "myth_fact"
+      heading: "You Would Smell It"
+      points: ["You can smell carbon monoxide", "It has no smell at all"]
+      footage_query: "gas stove flame"
+      narration: >-
+        Myth: you would smell carbon monoxide if it was there. Fact: carbon monoxide has no smell, color or taste. Natural gas
+        companies add a rotten egg smell to natural gas, but that is a different gas. You can have a dangerous carbon monoxide
+        level with no smell at all. The only way to detect it is with a CO alarm.
+    - layout: "bullets"
+      heading: "Treatment"
+      points: ["Oxygen", "Sometimes a pressure chamber", "Check for heart damage", "Follow-up care"]
+      footage_query: "oxygen mask hospital"
+      narration: >-
+        How is carbon monoxide poisoning treated? In the emergency room, people get high flow oxygen through a mask, which
+        helps clear CO from the blood faster. A simple blood test can measure CO levels. Some severe cases are treated in a
+        hyperbaric chamber, which delivers oxygen under high pressure. Doctors also check for heart and brain effects.
+    - layout: "warning"
+      heading: "Who Is at Highest Risk"
+      points: ["Babies and young children", "Pregnant women and unborn babies", "Older adults", "Heart and lung disease"]
+      footage_query: "pregnant woman sitting"
+      narration: >-
+        Everyone is at risk, but some people are more vulnerable. Unborn babies, infants and young children, pregnant women,
+        older adults, and people with heart disease, lung disease or anemia can be harmed by lower levels of carbon monoxide.
+        People who are sleeping or have been drinking alcohol may not wake up to symptoms.
+    - layout: "bullets"
+      heading: "Common Sources at Home"
+      points: ["Furnaces and boilers", "Gas water heaters and dryers", "Gas stoves and ovens", "Fireplaces and wood stoves"]
+      footage_query: "furnace basement"
+      narration: >-
+        Where does carbon monoxide come from at home? Any appliance that burns fuel can produce it, especially if it is
+        broken, poorly vented, or not maintained. Common sources include gas or oil furnaces and boilers, gas water heaters
+        and clothes dryers, gas stoves and ovens, fireplaces and wood burning stoves, and blocked chimneys or vents.
+    - layout: "warning"
+      heading: "Generators Are a Top Danger"
+      points: ["Never use indoors", "Not in garages or basements", "At least 20 feet from the house", "Point exhaust away"]
+      footage_query: "portable generator outdoors"
+      narration: >-
+        Portable generators are one of the biggest causes of carbon monoxide deaths, especially after storms and power
+        outages. A single generator can produce as much CO as hundreds of cars. Never run a generator inside your home,
+        garage, basement, crawl space, or shed, even with doors and windows open. Keep it at least twenty feet away from your
+        home, with exhaust pointed away.
+    - layout: "warning"
+      heading: "Cars and Garages"
+      points: ["Never run a car in a closed garage", "Even with the door open", "Clear snow from the tailpipe", "Check exhaust systems"]
+      footage_query: "car garage door"
+      narration: >-
+        Never leave a car, truck or motorcycle running in an attached garage, even with the garage door open. CO can quickly
+        build up and seep into the house. If your car is stuck in snow, clear snow from the tailpipe before running the
+        engine. Have your car's exhaust system checked every year, since leaks can let CO into the car.
+    - layout: "myth_fact"
+      heading: "Open Windows Make It Safe"
+      points: ["A cracked window is enough", "Not enough to stop CO"]
+      footage_query: "window open curtains"
+      narration: >-
+        Myth: opening a window or door makes it safe to run a generator, grill or engine indoors. Fact: opening windows and
+        doors does not prevent carbon monoxide from building up to dangerous levels. Fuel burning tools made for outdoor use
+        should never be used indoors, in garages, or in tents, no matter how much ventilation there is.
+    - layout: "warning"
+      heading: "Never Heat Your Home With These"
+      points: ["Gas oven or stove", "Charcoal or gas grills", "Camp stoves", "Outdoor heaters"]
+      footage_query: "charcoal grill close up"
+      narration: >-
+        During cold weather or power outages, people sometimes use unsafe ways to stay warm. Never use a gas oven or stovetop
+        to heat your home. Never use charcoal grills, gas grills, camp stoves or outdoor propane heaters indoors, in a garage,
+        or in a tent. Even a small charcoal grill can produce deadly levels of carbon monoxide.
+    - layout: "bullets"
+      heading: "Install CO Alarms"
+      points: ["On every level of your home", "Outside sleeping areas", "Battery backup", "Follow the label"]
+      footage_query: "carbon monoxide alarm"
+      narration: >-
+        The single most important protection is a working carbon monoxide alarm. Install one on every level of your home, and
+        outside each sleeping area, so it can wake you up. Choose alarms with battery backup, or plug in alarms with backup
+        batteries. Some smoke alarms also detect CO, so check the label. Many states require CO alarms in homes.
+    - layout: "bullets"
+      heading: "Keep Alarms Working"
+      points: ["Test them monthly", "Change batteries yearly", "Replace the alarm on time", "Never disable it"]
+      footage_query: "man checking smoke detector"
+      narration: >-
+        Keep your CO alarms working. Test them every month by pressing the test button. Replace batteries at least once a
+        year, or when the alarm chirps, a good habit when you change the clocks. Carbon monoxide alarms wear out, so replace
+        them as the label says, often every five to ten years. Never take out the batteries to stop a false alarm.
+    - layout: "bullets"
+      heading: "Get Appliances Checked"
+      points: ["Yearly heating system check", "Chimney and vents cleaned", "Use a qualified technician", "Look for warning signs"]
+      footage_query: "technician repairing furnace"
+      narration: >-
+        Have your heating system, water heater, and any other gas, oil or coal burning appliances checked by a qualified
+        technician every year, ideally before winter. Have chimneys and flues inspected and cleaned. Warning signs of a
+        problem include soot or yellow stains around appliances, a yellow instead of blue flame, and moisture on windows.
+    - layout: "bullets"
+      heading: "Check Vents After Storms"
+      points: ["Clear snow from outside vents", "Furnace and dryer vents", "After heavy snowfall", "Keep vents clear of debris"]
+      footage_query: "snow covered house"
+      narration: >-
+        After a heavy snowfall, check that the outside vents for your furnace, water heater and dryer are not blocked by snow
+        or ice. Blocked vents can push carbon monoxide back into your home. Also keep vents clear of leaves, bird nests and
+        other debris throughout the year.
+    - layout: "bullets"
+      heading: "Camping and Boating"
+      points: ["No fuel heaters in tents", "No grills inside campers", "Boat exhaust can poison", "Stay away from engines"]
+      footage_query: "camping tent night"
+      narration: >-
+        Carbon monoxide can also be dangerous outdoors in enclosed spaces. Never use fuel burning heaters, lanterns or stoves
+        inside tents, campers or cabins. On boats, carbon monoxide can build up near the back of the boat and under swim
+        platforms. Stay away from areas where engine exhaust collects, and install CO alarms in boats and RVs.
+    - layout: "bullets"
+      heading: "Smoking and Fire Smoke"
+      points: ["Cigarette smoke contains CO", "Fire smoke is full of CO", "Smoke alarms and CO alarms", "Both save lives"]
+      footage_query: "smoke detector ceiling"
+      narration: >-
+        Carbon monoxide is also found in cigarette smoke and in the smoke from house fires. In fact, many fire deaths are
+        caused by breathing carbon monoxide and other toxic gases, not by burns. That is why every home needs both smoke
+        alarms and carbon monoxide alarms. Combination alarms can do both jobs. Test them every month.
+    - layout: "bullets"
+      heading: "Workplaces and Businesses"
+      points: ["Forklifts and engines indoors", "Poorly ventilated garages", "Know the warning signs", "Report concerns"]
+      footage_query: "warehouse forklift"
+      narration: >-
+        Carbon monoxide can also build up at work, in warehouses with fuel powered forklifts, garages, loading docks, and
+        buildings with gas powered tools or heaters. Workers should know the warning signs, and employers should provide
+        ventilation and CO monitors. If you feel a headache or dizziness at work that improves when you leave, report it.
+    - layout: "myth_fact"
+      heading: "Only Old Homes Are at Risk"
+      points: ["New homes are always safe", "Any fuel appliance can leak"]
+      footage_query: "modern house exterior"
+      narration: >-
+        Myth: carbon monoxide only happens in old houses. Fact: any home with fuel burning appliances, an attached garage, or
+        a fireplace can have a carbon monoxide problem. In fact, newer homes are often more airtight, which can let CO build
+        up faster. Every home with these risks needs working CO alarms.
+    - layout: "bullets"
+      heading: "In Apartments and Rentals"
+      points: ["Ask if CO alarms are installed", "Know your state rules", "Report problems to the landlord", "Buy your own if needed"]
+      footage_query: "apartment building"
+      narration: >-
+        If you rent, ask your landlord whether carbon monoxide alarms are installed. Many states and cities require them in
+        rental homes. Report any problems with heating, appliances or alarms right away. If there is no alarm, buy a battery
+        powered one for yourself. They are low cost and could save your life.
+    - layout: "bullets"
+      heading: "After Exposure"
+      points: ["Some symptoms show up later", "Memory or mood changes", "Follow up with a doctor", "Report lasting symptoms"]
+      footage_query: "patient talking doctor"
+      narration: >-
+        Some people who survive serious carbon monoxide poisoning have symptoms that show up days or weeks later, like memory
+        problems, trouble concentrating, mood changes, or movement problems. If you have been exposed, follow up with your
+        doctor, and report any new symptoms. Pregnant women who are exposed should be checked, even if they feel fine.
+    - layout: "bullets"
+      heading: "Power Outage Checklist"
+      points: ["Generator outside, far from home", "No grills or ovens for heat", "Check CO alarm batteries", "Warm safely with layers"]
+      footage_query: "flashlight dark room"
+      narration: >-
+        Here is a power outage checklist. Run generators only outdoors, at least twenty feet from your home, away from windows
+        and doors. Never use grills, camp stoves or gas ovens for heat. Check that your CO alarms have working batteries. Stay
+        warm with layers of clothing and blankets, and if your home gets too cold, go to a warming center.
+    - layout: "bullets"
+      heading: "Teach Your Family"
+      points: ["What the alarm sounds like", "Get out first", "Call 911 from outside", "Where to meet"]
+      footage_query: "family kitchen table"
+      narration: >-
+        Teach your family what to do. Make sure everyone knows the difference between the smoke alarm and the carbon monoxide
+        alarm sounds. If the CO alarm sounds, everyone gets out first, then calls 911 from outside. Choose a meeting spot
+        outside your home. Practice your plan, just like a fire drill.
+    - layout: "bullets"
+      heading: "Quick Recap"
+      points: ["No color, no smell", "Flu-like symptoms, no fever", "Get out, then call 911", "CO alarms on every level"]
+      footage_query: "notebook checklist pen"
+      narration: >-
+        Let us recap. Carbon monoxide is a poisonous gas with no color or smell. It causes headache, dizziness, weakness and
+        nausea, often in several people at once. If you suspect it, get everyone outside and call 911. Never use generators,
+        grills or ovens to heat indoors. And install carbon monoxide alarms on every level of your home.
+    - layout: "outro"
+      heading: "Remember"
+      points: ["Install CO alarms", "Generators stay outside", "Get out, then call"]
+      footage_query: "family outside house"
+      narration: >-
+        Remember: install carbon monoxide alarms today, keep generators far outside, and if the alarm sounds, get out first
+        and then call 911. Share this before winter with everyone you love. This video is for education only, not medical
+        advice. Like and subscribe to Health Support Studio for a new health video every day.
+  short_title: "The invisible killer in your home #Shorts"
+  short_caption: >-
+    Carbon monoxide has no color or smell. Know the signs. Educational only, not medical advice. #CarbonMonoxide
+    #HomeSafety #WinterSafety #HealthEducation
+  short_scenes:
+    - layout: "title"
+      heading: "The Invisible Killer"
+      points: ["Carbon monoxide"]
+      footage_query: "carbon monoxide alarm"
+      narration: >-
+        No color, no smell, no taste. Carbon monoxide can kill you in your sleep.
+    - layout: "warning"
+      heading: "Know the Signs"
+      points: ["Headache and dizziness", "Several people sick at once", "Get out, call 911"]
+      footage_query: "family sick couch"
+      narration: >-
+        Headache, dizziness, nausea and weakness, especially in several people at once and better when you leave home, can be
+        carbon monoxide. Get everyone outside and call 911. Never run a generator indoors, and install CO alarms on every
+        level of your home.
+    - layout: "outro"
+      heading: "Full Video"
+      points: ["On YouTube"]
+      footage_query: "family outside house"
+      narration: >-
+        Learn how to protect your family in our full video, on the Health Support Studio YouTube channel.
