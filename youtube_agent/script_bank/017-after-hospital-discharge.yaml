@@ -12,9 +12,10 @@ plan:
 
     In this video:
     • What to understand before leaving the hospital
-    • Getting medicines right
-    • The follow-up appointment and warning signs
-    • Making the home safe, and taking care of yourself
+    • Getting medicines right, and which ones to watch
+    • The follow-up visit and warning signs
+    • Making the home safe and getting strength back
+    • Help, benefits, and taking care of yourself
 
     #Caregiving #HospitalDischarge #FamilyCaregiver #HealthyAging #HealthEducation
   tags: ["hospital discharge", "caring for elderly parent", "family caregiver", "caregiver tips", "after hospital care", "discharge instructions", "hospital readmission", "medication safety", "home care", "health education"]
@@ -25,75 +26,233 @@ plan:
   scenes:
     - layout: "title"
       heading: "Home From the Hospital"
-      points: ["A caregiver's plan"]
-      footage_query: "caregiver helping senior home"
+      points: ["A safe plan for the first weeks"]
+      footage_query: "caregiver helping elderly parent home"
       narration: >-
-        Your loved one is finally coming home from the hospital. It is a relief, but it can also be scary. The first days and
-        weeks at home are a risky time, and many patients end up going back to the hospital. Here is a simple plan to help your
-        loved one recover safely.
+        Your loved one is finally coming home from the hospital. It feels like the hard part is over, but the first weeks at
+        home are actually a risky time. Many people end up back in the hospital within a month, often for problems that could
+        have been prevented. Today you will get a simple step by step plan to help them recover safely.
+    - layout: "big_number"
+      heading: "Why the First Month Matters"
+      points: ["1 in 5", "Older adults back in the hospital"]
+      footage_query: "elderly man resting couch"
+      narration: >-
+        Studies of Medicare patients have found that close to one in five returned to the hospital within thirty days. Common
+        reasons include medicine mix ups, missed follow up visits, infections, falls, and warning signs that were noticed too
+        late. The good news is that families can prevent many of these problems with a clear plan and a few good questions.
     - layout: "bullets"
       heading: "Before You Leave"
-      points: ["Get written discharge instructions", "Ask about the diagnosis", "Ask: what should we watch for?", "Repeat the plan back"]
-      footage_query: "doctor talking family hospital"
+      points: ["Ask why they were admitted", "What changed in treatment", "What to watch for", "Who to call with questions"]
+      footage_query: "doctor giving instructions papers"
       narration: >-
-        Before leaving the hospital, make sure you get written discharge instructions, and that you understand them. Ask what
-        the main diagnosis was, what activity is allowed, and what to watch for. A great trick is to repeat the plan back in
-        your own words. If anything is unclear, ask again. There are no silly questions.
+        The plan starts before you leave the hospital. Ask the team to explain, in plain words, why your loved one was
+        admitted and what was done. What changed in their treatment? What should you watch for at home? Who do you call with
+        questions, during the day and at night? Ask for everything in writing, and take notes yourself.
     - layout: "bullets"
-      heading: "Get Medicines Right"
-      points: ["Which are new?", "Which were stopped or changed?", "Update the medication list", "Fill prescriptions right away"]
-      footage_query: "pill organizer table"
+      heading: "Use the Teach-Back"
+      points: ["Repeat it in your own words", "Show how to do care tasks", "Ask again if unsure", "Get printed copies"]
+      footage_query: "family talking doctor hospital"
       narration: >-
-        Medicine mix ups are one of the biggest risks after a hospital stay. Ask which medicines are new, which ones changed,
-        and which ones should be stopped. Update the medication list, and throw out old instructions. Fill new prescriptions
-        right away, and a weekly pill organizer can help. Your pharmacist can review everything with you.
-    - layout: "big_number"
-      heading: "Follow-Up"
-      points: ["book it before you leave", "usually within 1 to 2 weeks"]
-      footage_query: "calendar appointment writing"
-      narration: >-
-        Book the follow up appointment before you leave the hospital, if you can. It is often recommended within one to two
-        weeks. Bring the discharge papers and medication list with you. This visit helps catch problems early, before they turn
-        into another hospital stay.
+        A simple trick helps a lot. After the team explains something, repeat it back in your own words. For example: so we
+        give this pill twice a day, and call if his weight goes up three pounds. If you will change a dressing, check blood
+        sugar, or use oxygen, ask them to show you, then do it yourself while they watch. It is okay to ask twice.
     - layout: "warning"
-      heading: "Know the Warning Signs"
-      points: ["Ask which signs to watch", "Know who to call, day and night", "Call 911 for emergencies"]
-      footage_query: "person calling phone concerned"
+      heading: "Do Not Leave Too Soon"
+      points: ["Ask if they are ready", "Can they walk and eat?", "Is help arranged?", "Medicare: ask for an appeal"]
+      footage_query: "patient wheelchair hospital hallway"
       narration: >-
-        Every condition has its own warning signs, like fever, increasing pain, shortness of breath, swelling or confusion. Ask
-        the care team which ones matter for your loved one, and who to call, day or night. Keep that number on the fridge. For
-        chest pain, severe trouble breathing, or signs of a stroke, call 911.
+        If you feel your loved one is not ready to go home, say so. Can they walk safely, eat, use the bathroom, and take
+        their medicines? Is help at home in place? People with Medicare receive a notice explaining their rights, including
+        how to ask for a fast appeal if they believe they are being discharged too soon. Ask the case manager how it works.
     - layout: "bullets"
-      heading: "The First Week Home"
-      points: ["Check in every day", "Help them eat and drink", "Encourage safe movement", "Write down questions"]
-      footage_query: "daughter helping elderly mother kitchen"
+      heading: "Equipment and Services"
+      points: ["Walker, shower chair, commode", "Oxygen or other supplies", "Home health visits", "Physical therapy"]
+      footage_query: "walker elderly woman home"
       narration: >-
-        During the first week, check in every day, even by phone. Notice whether your loved one is eating, drinking and
-        sleeping, and whether they seem more confused or weaker than before. Encourage gentle movement, as the care team
-        allowed, because staying in bed too long weakens muscles. Keep a notebook for questions to bring to the follow up visit.
+        Ask what equipment and services will be needed, and get them set up before you arrive home. This may include a walker,
+        a shower chair, a bedside commode, a hospital bed, or oxygen. Many people qualify for home health visits, including
+        therapy and wound care, often covered by Medicare when ordered by a doctor. Ask who is arranging each one, and when it
+        will start.
     - layout: "bullets"
-      heading: "Make Home Safe"
-      points: ["Clear walkways", "Bathroom grab bars", "Get needed equipment", "Ask about home health services"]
-      footage_query: "home living room tidy"
+      heading: "Getting Medicines Right"
+      points: ["Get a complete new list", "New, changed or stopped?", "Compare with pills at home", "Remove old bottles"]
+      footage_query: "pill organizer close up"
       narration: >-
-        Get the home ready. Clear walkways, add night lights, and put commonly used items within easy reach. Ask whether your
-        loved one needs equipment, like a walker, shower chair, or raised toilet seat. And ask whether home health services,
-        like visiting therapists, are available and covered.
+        Medicine mistakes are one of the biggest dangers after discharge. Get a complete, updated medicine list. For every
+        pill, ask: is this new, changed, or stopped? Then compare the list with the bottles at home. Old bottles of stopped
+        medicines should be set aside, so no one takes them by mistake. Bring all the bottles to the first follow up visit.
     - layout: "bullets"
-      heading: "Care for Yourself Too"
-      points: ["Accept help", "Share tasks with family", "Rest and eat well", "Caregiver support groups"]
-      footage_query: "woman resting tea window"
+      heading: "Fill Prescriptions Right Away"
+      points: ["Fill them the same day", "Ask about cost first", "Ask about side effects", "Use one pharmacy"]
+      footage_query: "pharmacist counter customer"
       narration: >-
-        Finally, take care of yourself. Caregiving is hard work, physically and emotionally. Accept help when it is offered,
-        and share tasks among family members. Try to rest and eat well. Caregiver support groups, online or in person, can help
-        you feel less alone.
+        Fill new prescriptions on the way home, or the same day. Missing even a day or two of some medicines, like blood
+        thinners or antibiotics, can cause problems. If a medicine costs too much, tell the team before you leave, since there
+        may be a cheaper choice. Using one pharmacy for everything lets the pharmacist check for drug interactions.
+    - layout: "bullets"
+      heading: "A Daily Medicine Routine"
+      points: ["Weekly pill organizer", "Tie doses to daily habits", "Use phone alarms", "Keep a simple log"]
+      footage_query: "weekly pill box hand"
+      narration: >-
+        Set up a routine that makes mistakes hard. Fill a weekly pill organizer, and check it together. Link doses to daily
+        habits, like breakfast and bedtime. Phone alarms help. Keep a simple chart where you tick each dose. If your loved one
+        manages their own pills, check in each day for the first couple of weeks, without taking away their independence.
+    - layout: "warning"
+      heading: "Medicines to Watch Closely"
+      points: ["Blood thinners", "Insulin and diabetes pills", "Opioid pain medicines", "Water pills"]
+      footage_query: "insulin pen close up"
+      narration: >-
+        Some medicines need extra care at home. Blood thinners can cause bleeding. Insulin and some diabetes pills can drop
+        blood sugar too low, especially if appetite is poor. Opioid pain medicines can cause sleepiness, constipation and
+        falls. Water pills can cause dizziness and dehydration. Ask the team what side effects to watch for with each of
+        these.
+    - layout: "bullets"
+      heading: "The Follow-Up Visit"
+      points: ["Within 7 to 14 days", "Book it before leaving", "Bring the medicine bottles", "Bring your questions"]
+      footage_query: "doctor talking patient office"
+      narration: >-
+        The follow up visit is one of the most important steps. Most people should see their main doctor or specialist within
+        one to two weeks, sometimes sooner. Try to book it before you leave the hospital. Bring the discharge papers, all
+        medicine bottles, and a list of questions. Make sure the doctor has the hospital records, or bring a copy.
+    - layout: "bullets"
+      heading: "Pending Test Results"
+      points: ["Ask what is still pending", "Who will check the results", "When you will hear", "Call if you do not"]
+      footage_query: "lab test tubes"
+      narration: >-
+        Some test results come back after the person goes home. Ask the hospital team which results are still pending, who
+        will check them, and when you will hear. If you have not heard by then, call. Important results can fall through the
+        cracks between the hospital and the regular doctor. A short phone call can catch them.
+    - layout: "warning"
+      heading: "Warning Signs to Watch"
+      points: ["Fever or chills", "Worse pain or breathing", "New confusion", "Not eating or drinking"]
+      footage_query: "thermometer fever close up"
+      narration: >-
+        Learn the warning signs for their condition, and write them on the fridge. In general, call the doctor for a fever,
+        chills, worse pain, more trouble breathing, new swelling, a wound that is red or draining, new confusion, or not
+        eating or drinking. Call 911 for chest pain, severe trouble breathing, fainting, signs of a stroke, or if they are
+        very hard to wake.
+    - layout: "bullets"
+      heading: "Heart Failure at Home"
+      points: ["Weigh every morning", "Same scale, same time", "Watch for swelling", "Call about sudden gain"]
+      footage_query: "bathroom scale feet"
+      narration: >-
+        If your loved one has heart failure, a daily weight is one of the best early warnings. Weigh them every morning after
+        using the bathroom, before breakfast, on the same scale. Write it down. A gain of two to three pounds in a day, or
+        about five pounds in a week, can mean fluid is building up. Ask the doctor for their exact limits.
+    - layout: "bullets"
+      heading: "Wound and Surgery Care"
+      points: ["Keep it clean and dry", "Follow bathing rules", "Check it every day", "Watch for redness or pus"]
+      footage_query: "bandage wound care hands"
+      narration: >-
+        After surgery, check the wound every day. Follow the instructions about bathing and dressing changes, and always wash
+        your hands first. Some redness right at the edge is normal early on. But spreading redness, warmth, swelling, pus, a
+        bad smell, opening of the wound, or a fever should be reported to the surgeon's office right away.
+    - layout: "bullets"
+      heading: "Make the Home Safe"
+      points: ["Clear walking paths", "Bed on the main floor", "Night lights", "Grab bars in the bathroom"]
+      footage_query: "living room night light"
+      narration: >-
+        Falls are a big risk after a hospital stay, because people are weaker than before. Clear the walking paths of rugs,
+        cords and clutter. If stairs are hard, set up a bed on the main floor for now. Put night lights between the bed and
+        the bathroom. A shower chair, a raised toilet seat and grab bars make the bathroom much safer.
+    - layout: "bullets"
+      heading: "Getting Strength Back"
+      points: ["Follow therapy exercises", "Walk a little more each day", "Sit up for meals", "Rest, but not all day"]
+      footage_query: "elderly man walking hallway"
+      narration: >-
+        Many people lose strength in the hospital, even after just a few days in bed. Recovery comes from moving, a little at
+        a time. Do the exercises the physical therapist gives. Walk short distances several times a day, and slowly add more.
+        Sit up in a chair for meals. Rest is important, but staying in bed all day makes weakness worse.
+    - layout: "bullets"
+      heading: "Food and Fluids"
+      points: ["Small, frequent meals", "Protein at every meal", "Follow any diet limits", "Watch fluid intake"]
+      footage_query: "healthy soup bowl kitchen"
+      narration: >-
+        Appetite is often poor after a hospital stay, but the body needs fuel to heal. Offer small meals and snacks often,
+        with some protein each time, like eggs, yogurt, beans, fish or chicken. Follow any special diet, such as low salt for
+        heart failure or carb counting for diabetes. Ask whether fluids should be encouraged or limited, since this depends on
+        the condition.
+    - layout: "bullets"
+      heading: "Watch for Confusion"
+      points: ["Delirium can linger", "Keep a daily routine", "Glasses and hearing aids on", "Report sudden changes"]
+      footage_query: "elderly woman looking window"
+      narration: >-
+        Older adults sometimes stay a little confused for days or weeks after a hospital stay. A calm, steady routine helps.
+        Keep glasses and hearing aids on, open the curtains during the day, and keep nights dark and quiet. Talk about the
+        date and plans for the day. But a sudden change in thinking is a warning sign, and needs a call to the doctor.
+    - layout: "bullets"
+      heading: "Mood After the Hospital"
+      points: ["Sadness is common", "Worry and poor sleep", "Encourage contact", "Ask about depression"]
+      footage_query: "elderly man sad sitting"
+      narration: >-
+        It is common to feel low, frustrated or anxious after a hospital stay, especially after a big diagnosis or a loss of
+        independence. Encourage visits and phone calls with friends. Give your loved one choices, so they feel in control. If
+        sadness, hopelessness or poor sleep last more than two weeks, tell the doctor. Depression is treatable, and it can
+        slow recovery.
+    - layout: "bullets"
+      heading: "Preventing Infections"
+      points: ["Wash hands often", "Keep up with vaccines", "Watch catheters and lines", "Limit sick visitors"]
+      footage_query: "washing hands sink"
+      narration: >-
+        After a hospital stay, the body is often run down and more open to infection. Wash your hands before helping with
+        medicines, meals or wound care. Ask whether your loved one is due for flu, COVID, pneumonia or shingles vaccines. If
+        they went home with a urine tube or an IV line, ask how to care for it. Politely ask sick friends to visit later.
+    - layout: "bullets"
+      heading: "Keep Everything in One Place"
+      points: ["A care binder", "Medicine list and log", "Appointments and contacts", "Questions for the doctor"]
+      footage_query: "folder documents table"
+      narration: >-
+        Make a simple care binder. Put in the discharge papers, the medicine list and daily log, appointment dates, phone
+        numbers for every doctor and service, and a page for questions as they come up. Take it to every visit. If more than
+        one person helps with care, the binder keeps everyone on the same page.
+    - layout: "bullets"
+      heading: "Share the Work"
+      points: ["Make a care schedule", "Ask for specific help", "Use group texts or apps", "Include long-distance family"]
+      footage_query: "family meeting kitchen table"
+      narration: >-
+        Caring for someone is too much for one person. Make a simple schedule of tasks, like rides, meals, medicine checks,
+        and overnight stays. When people offer help, give them something specific: can you drive Dad to his appointment on
+        Tuesday? Family who live far away can still help by handling phone calls, insurance paperwork, or ordering supplies.
+    - layout: "bullets"
+      heading: "Help and Benefits"
+      points: ["Ask about home health", "Area Agency on Aging", "Meals on wheels", "Respite care"]
+      footage_query: "caregiver talking phone"
+      narration: >-
+        You do not have to figure everything out alone. Ask the doctor or hospital case manager what home health services your
+        loved one qualifies for. Your local Area Agency on Aging can connect you with meal delivery, transportation, adult day
+        programs and respite care, which gives caregivers a short break. Many of these services are low cost or free.
+    - layout: "bullets"
+      heading: "Take Care of Yourself"
+      points: ["Sleep and eat well", "Take short breaks", "Keep your own appointments", "Talk to someone"]
+      footage_query: "woman resting tea cup"
+      narration: >-
+        Caregivers often forget about themselves. But you cannot pour from an empty cup. Try to sleep, eat regular meals, and
+        take short breaks every day, even ten minutes outside. Keep your own doctor visits. Talk to a friend, or join a
+        caregiver support group, in person or online. Feeling tired, guilty or overwhelmed is normal. Ask for help early.
+    - layout: "bullets"
+      heading: "Plan for Next Time"
+      points: ["Keep the ready folder updated", "Talk about wishes", "Update the advance directive", "Know your local hospital"]
+      footage_query: "signing document pen"
+      narration: >-
+        Once things settle down, use what you learned to plan ahead. Keep the medicine list and the ready folder up to date.
+        Have a calm talk with your loved one about their wishes for future care, and make sure an advance directive names who
+        can speak for them. Planning now makes the next emergency much less stressful for everyone.
+    - layout: "bullets"
+      heading: "Your First-Week Checklist"
+      points: ["Medicines filled and sorted", "Follow-up visit booked", "Warning signs on the fridge", "Home made safe"]
+      footage_query: "checklist clipboard pen"
+      narration: >-
+        Here is your first week checklist. Medicines are filled, sorted and checked against the list. The follow up visit is
+        booked. Warning signs and phone numbers are on the fridge. Equipment and home health services are in place. Walking
+        paths are clear. And you have a plan for who helps with what, including time for yourself.
     - layout: "outro"
-      heading: "The Caregiver Plan"
-      points: ["Understand the instructions", "Get medicines right", "Book the follow-up"]
-      footage_query: "family hugging home"
+      heading: "Remember"
+      points: ["Understand the plan", "Get medicines right", "Keep the follow-up", "Ask for help"]
+      footage_query: "family hugging elderly parent"
       narration: >-
-        Understand the instructions, get the medicines right, and book the follow up. You have got this. This video is for
-        education only, not medical advice. Like and subscribe to Health Support Studio for a new health video every day.
+        Remember: understand the plan before you leave, get the medicines right, keep the follow up visit, watch for warning
+        signs, and ask for help. Share this with a family caregiver who might need it. This video is for education only, not
+        medical advice. Like and subscribe to Health Support Studio for a new health video every day.
   short_title: "Before leaving the hospital, ask this #Shorts"
   short_caption: >-
     Bringing a loved one home from the hospital? Ask these three questions before you leave. Educational only, not medical
