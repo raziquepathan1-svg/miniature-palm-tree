@@ -13,7 +13,8 @@ plan:
     In this video:
     • Why the last thing you ate may not be the culprit
     • Why you shouldn't wash raw chicken
-    • The 2-hour rule for leftovers
+    • The 2-hour rule and how long leftovers last
+    • Safe cooking temperatures and the 4 food safety steps
     • Symptoms that mean see a doctor
 
     #FoodSafety #FoodPoisoning #KitchenTips #MythVsFact #HealthEducation
@@ -25,75 +26,247 @@ plan:
   scenes:
     - layout: "title"
       heading: "Food Poisoning Myths"
-      points: ["5 myths that can make you sick"]
-      footage_query: "family kitchen cooking"
+      points: ["That could make you sick"]
+      footage_query: "raw chicken kitchen sink"
       narration: >-
-        According to the CDC, about forty eight million people in the United States get sick from food every year. Many of
-        those illnesses start in home kitchens, with habits based on myths. Today we are busting five food poisoning myths that
-        could be making you sick.
-    - layout: "myth_fact"
-      heading: "Myth 1"
-      points: ["It was the last thing I ate", "Illness can start hours to days later"]
-      footage_query: "restaurant meal plate"
-      narration: >-
-        Myth number one: it must have been the last thing I ate. Fact: food poisoning symptoms can start anywhere from about
-        thirty minutes to several days, or even weeks, after eating contaminated food, depending on the germ. So the meal you
-        blame may not be the real culprit.
-    - layout: "myth_fact"
-      heading: "Myth 2"
-      points: ["Wash raw chicken first", "Washing spreads germs around"]
-      footage_query: "raw chicken cutting board"
-      narration: >-
-        Myth number two: you should rinse raw chicken before cooking. Fact: washing raw chicken or meat does not make it safer.
-        It can splash germs onto your sink, counters and other foods. Cooking to the right temperature is what kills the germs.
-        For chicken, that is one hundred sixty five degrees Fahrenheit, checked with a food thermometer.
-    - layout: "myth_fact"
-      heading: "Myth 3"
-      points: ["Let food cool before the fridge", "Refrigerate within 2 hours"]
-      footage_query: "leftovers containers refrigerator"
-      narration: >-
-        Myth number three: let hot food cool on the counter before putting it in the fridge. Fact: germs grow fast at room
-        temperature. Refrigerate leftovers within two hours of cooking, or within one hour if it is hotter than ninety degrees
-        outside. Divide big batches into smaller, shallow containers so they cool faster.
-    - layout: "myth_fact"
-      heading: "Myth 4"
-      points: ["If it smells fine, it's safe", "Harmful germs don't change smell"]
-      footage_query: "person smelling food container"
-      narration: >-
-        Myth number four: if it smells and looks fine, it is safe to eat. Fact: the germs that cause food poisoning usually do
-        not change how food looks, smells or tastes. Most leftovers should be eaten within three to four days. When in doubt,
-        throw it out.
-    - layout: "myth_fact"
-      heading: "Myth 5"
-      points: ["The 5-second rule works", "Germs transfer instantly"]
-      footage_query: "food dropped floor kitchen"
-      narration: >-
-        Myth number five: food dropped on the floor is fine if you grab it within five seconds. Fact: germs can transfer to
-        food almost instantly, especially to wet or sticky foods. Five seconds is not a safety rule.
-    - layout: "bullets"
-      heading: "4 Steps to Food Safety"
-      points: ["Clean hands and surfaces", "Separate raw meat", "Cook to safe temperatures", "Chill leftovers quickly"]
-      footage_query: "washing vegetables kitchen"
-      narration: >-
-        The CDC's four simple steps: clean, wash hands and surfaces often. Separate, keep raw meat away from ready to eat
-        foods. Cook, use a food thermometer. And chill, refrigerate leftovers promptly.
-    - layout: "warning"
-      heading: "See a Doctor If"
-      points: ["Bloody diarrhea", "Fever over 102°F", "Can't keep fluids down", "Diarrhea over 3 days"]
-      footage_query: "person calling phone concerned"
-      narration: >-
-        Most food poisoning gets better on its own. But see a doctor if you have bloody diarrhea, a fever over one hundred two
-        degrees, vomiting so often you cannot keep liquids down, signs of dehydration like very little urine or dizziness when
-        standing, or diarrhea lasting more than three days. Pregnant women, older adults, young children and people with weak
-        immune systems should call sooner.
-    - layout: "outro"
-      heading: "When in Doubt"
-      points: ["Throw it out"]
+        You rinse raw chicken in the sink, sniff the leftovers to see if they are okay, and blame the last thing you ate when
+        your stomach turns. Sound familiar? These habits are common, and some of them can actually make you sick. Today we
+        bust the most common food poisoning myths, and explain when food poisoning needs a doctor.
+    - layout: "big_number"
+      heading: "How Common Is It?"
+      points: ["48 million", "Americans sick from food each year"]
       footage_query: "family dinner table"
       narration: >-
-        Remember: when in doubt, throw it out. Share this with the person who does the cooking in your home. This video is
-        for education only, not medical advice. Like and subscribe to
-        Health Support Studio for a new health video every day.
+        According to the CDC, about forty eight million Americans get sick from food each year. That is about one in six
+        people. Around one hundred twenty eight thousand are hospitalized, and about three thousand die. Most cases are mild
+        and pass in a day or two, but some can be serious, especially for young children, older adults and pregnant women.
+    - layout: "bullets"
+      heading: "What Causes Food Poisoning"
+      points: ["Norovirus", "Salmonella", "E. coli, Listeria", "Campylobacter"]
+      footage_query: "bacteria microscope close up"
+      narration: >-
+        Food poisoning is caused by germs or their toxins in food or drinks. The most common cause in the US is norovirus,
+        often spread by sick food handlers. Salmonella, Campylobacter, E. coli and Listeria are bacteria that can come from
+        raw meat, poultry, eggs, unwashed produce, and unpasteurized milk. Some germs make toxins that heat cannot destroy.
+    - layout: "warning"
+      heading: "Common Symptoms"
+      points: ["Nausea and vomiting", "Diarrhea", "Stomach cramps", "Fever"]
+      footage_query: "woman holding stomach"
+      narration: >-
+        The most common symptoms are nausea, vomiting, diarrhea, stomach cramps, and sometimes fever. Symptoms can start
+        within thirty minutes or take several days or even weeks, depending on the germ. Most people get better on their own
+        within a few days. The main danger for most people is losing too much fluid.
+    - layout: "myth_fact"
+      heading: "The Last Meal Did It"
+      points: ["Blame the last thing you ate", "Symptoms can take days"]
+      footage_query: "restaurant meal table"
+      narration: >-
+        Myth one: food poisoning always comes from the last thing you ate. Fact: some germs make you sick within hours, but
+        many take one to three days, and some, like Listeria, can take weeks. So the burger you ate an hour ago may not be to
+        blame. This is why health departments ask about everything you ate over several days.
+    - layout: "myth_fact"
+      heading: "Wash Raw Chicken First"
+      points: ["Rinse chicken before cooking", "Washing spreads germs around"]
+      footage_query: "raw chicken kitchen sink"
+      narration: >-
+        Myth two: you should wash raw chicken before cooking it. Fact: washing raw poultry or meat does not remove the germs.
+        Instead, water splashes bacteria onto the sink, counters, dishes and nearby food, sometimes up to a few feet away.
+        Cooking to the right temperature is what kills the germs. If you need to remove slime or bits, use a paper towel and
+        wash your hands.
+    - layout: "bullets"
+      heading: "Do Wash Fruits and Vegetables"
+      points: ["Rinse under running water", "Scrub firm produce", "Wash even if you peel it", "No soap or bleach"]
+      footage_query: "washing vegetables sink"
+      narration: >-
+        But do wash fruits and vegetables. Rinse them under running water just before eating, cutting or cooking. Scrub firm
+        produce like melons and potatoes with a clean brush. Wash produce even if you will peel it, so germs on the skin do
+        not get on the inside when you cut it. Do not use soap, bleach or produce washes.
+    - layout: "myth_fact"
+      heading: "The Smell Test Works"
+      points: ["If it smells fine, it is safe", "Dangerous germs have no smell"]
+      footage_query: "woman smelling food container"
+      narration: >-
+        Myth three: if food looks and smells fine, it is safe to eat. Fact: the bacteria that make food go bad and smell are
+        different from the germs that cause food poisoning. Salmonella, E. coli and Listeria do not change the smell, taste or
+        look of food. When in doubt, throw it out.
+    - layout: "myth_fact"
+      heading: "Leftovers Can Sit Out"
+      points: ["Food can cool on the counter", "Refrigerate within 2 hours"]
+      footage_query: "leftovers containers fridge"
+      narration: >-
+        Myth four: you should let food cool on the counter before putting it in the fridge. Fact: bacteria grow fastest
+        between forty and one hundred forty degrees Fahrenheit, called the danger zone. Refrigerate leftovers within two hours
+        of cooking, or within one hour if it is above ninety degrees outside, like at a picnic. Divide large amounts into
+        shallow containers so they cool faster.
+    - layout: "bullets"
+      heading: "How Long Leftovers Last"
+      points: ["3 to 4 days in the fridge", "Freeze for longer", "Label with the date", "Reheat until steaming hot"]
+      footage_query: "leftovers containers fridge"
+      narration: >-
+        How long can leftovers stay in the fridge? Most cooked leftovers are safe for three to four days. If you will not eat
+        them by then, freeze them. Label containers with the date. When reheating, heat leftovers until they are steaming hot
+        throughout, to one hundred sixty five degrees. Bring sauces, soups and gravies to a rolling boil.
+    - layout: "myth_fact"
+      heading: "The 5-Second Rule"
+      points: ["Food dropped quickly is safe", "Germs transfer instantly"]
+      footage_query: "food dropped on floor"
+      narration: >-
+        Myth five: food dropped on the floor is safe if you pick it up within five seconds. Fact: studies show bacteria can
+        transfer to food in less than one second. Wet foods, like watermelon, pick up more germs than dry foods. The time
+        matters less than how dirty the floor is. If it fell somewhere dirty, toss it.
+    - layout: "myth_fact"
+      heading: "Freezing Kills Germs"
+      points: ["The freezer kills bacteria", "Freezing only pauses them"]
+      footage_query: "freezer open food"
+      narration: >-
+        Myth six: freezing food kills bacteria. Fact: freezing stops germs from growing, but most of them survive. Once the
+        food thaws, they can start growing again. That is why you should cook frozen food to the right temperature, and thaw
+        it safely, in the fridge, in cold water that is changed every thirty minutes, or in the microwave if you will cook it
+        right away.
+    - layout: "myth_fact"
+      heading: "Color Shows It Is Done"
+      points: ["Brown burgers are cooked", "Only a thermometer knows"]
+      footage_query: "meat thermometer grill"
+      narration: >-
+        Myth seven: you can tell meat is cooked by its color. Fact: a burger can turn brown before it is hot enough inside to
+        kill germs, and some safely cooked meat can still look pink. The only way to know is a food thermometer. Many people
+        do not own one, but it is a cheap tool that prevents a lot of illness.
+    - layout: "bullets"
+      heading: "Safe Cooking Temperatures"
+      points: ["Poultry: 165 degrees", "Ground meat: 160 degrees", "Steaks and roasts: 145, then rest", "Fish: 145 degrees"]
+      footage_query: "meat thermometer close up"
+      narration: >-
+        Here are the key temperatures. Cook all poultry, including ground chicken and turkey, to one hundred sixty five
+        degrees Fahrenheit. Ground beef and pork to one hundred sixty degrees. Whole cuts of beef, pork, veal and lamb to one
+        hundred forty five, then let them rest for three minutes. Fish to one hundred forty five. Egg dishes to one hundred
+        sixty.
+    - layout: "myth_fact"
+      heading: "Raw Cookie Dough Is Fine"
+      points: ["Just a taste is safe", "Raw flour and eggs can sicken"]
+      footage_query: "cookie dough bowl"
+      narration: >-
+        Myth eight: a little taste of raw cookie dough is harmless. Fact: raw eggs can carry Salmonella, and raw flour can
+        carry E. coli, because flour is not treated to kill germs. Outbreaks have been linked to raw dough and batter. Bake it
+        first, or buy edible cookie dough made with heat treated flour and pasteurized eggs.
+    - layout: "bullets"
+      heading: "The Four Steps"
+      points: ["Clean", "Separate", "Cook", "Chill"]
+      footage_query: "clean kitchen counter"
+      narration: >-
+        The CDC sums up food safety in four steps: clean, separate, cook and chill. Let us go through each one quickly. These
+        four simple habits prevent most food poisoning at home, and they are easy to teach to kids and everyone who cooks in
+        your family.
+    - layout: "bullets"
+      heading: "Step 1: Clean"
+      points: ["Wash hands for 20 seconds", "Wash cutting boards and knives", "Clean counters often", "Wash dish towels"]
+      footage_query: "washing hands sink"
+      narration: >-
+        Clean. Wash your hands with soap and water for twenty seconds before, during and after preparing food, and after
+        handling raw meat, eggs or poultry. Wash cutting boards, dishes, knives and counters with hot soapy water after each
+        use. Change and wash dish towels and sponges often, since they can hold lots of germs.
+    - layout: "bullets"
+      heading: "Step 2: Separate"
+      points: ["Separate cutting boards", "Keep raw meat away from produce", "Bag meat at the store", "Store raw meat on the bottom shelf"]
+      footage_query: "cutting boards kitchen"
+      narration: >-
+        Separate. Use one cutting board for raw meat, poultry and seafood, and a different one for fruits, vegetables and
+        bread. Keep raw meat away from ready to eat foods in your shopping cart and bags. In the fridge, store raw meat in
+        sealed containers on the bottom shelf, so juices do not drip onto other food. Never put cooked food on a plate that
+        held raw meat.
+    - layout: "bullets"
+      heading: "Step 3: Cook"
+      points: ["Use a food thermometer", "Check the thickest part", "Microwave evenly, stir", "Keep hot food hot"]
+      footage_query: "meat thermometer grill"
+      narration: >-
+        Cook. Use a food thermometer to check that food has reached a safe temperature, placing it in the thickest part. When
+        microwaving, cover the food, stir it, and rotate it so it heats evenly, then let it stand. At parties and buffets,
+        keep hot food at one hundred forty degrees or above, using warming trays or slow cookers.
+    - layout: "bullets"
+      heading: "Step 4: Chill"
+      points: ["Fridge at 40 or below", "Freezer at 0", "Refrigerate within 2 hours", "Thaw in the fridge"]
+      footage_query: "refrigerator open food"
+      narration: >-
+        Chill. Keep your fridge at forty degrees Fahrenheit or below, and your freezer at zero. An appliance thermometer can
+        check this. Refrigerate perishable food within two hours. Never thaw food on the counter. Do not overfill the fridge,
+        so cold air can flow. After a power outage, throw out perishable food that sat above forty degrees for more than two
+        hours.
+    - layout: "bullets"
+      heading: "Picnics and Takeout"
+      points: ["Use coolers with ice", "Keep cold food cold", "Eat takeout within 2 hours", "Check restaurant inspections"]
+      footage_query: "family picnic park"
+      narration: >-
+        Food safety matters away from home too. At picnics and barbecues, pack cold food in a cooler with ice or ice packs,
+        keep it in the shade, and use a separate cooler for drinks, since it gets opened more. Bring a clean plate for cooked
+        meat. Eat or refrigerate takeout within two hours. Many cities post restaurant inspection scores online, so check
+        before you go.
+    - layout: "warning"
+      heading: "Higher Risk People"
+      points: ["Adults 65 and older", "Children under 5", "Pregnant people", "Weakened immune system"]
+      footage_query: "elderly woman eating"
+      narration: >-
+        Some people are more likely to get very sick from food poisoning: adults sixty five and older, children under five,
+        pregnant people, and people with weakened immune systems, such as from diabetes, cancer treatment, or organ
+        transplants. They should take extra care with high risk foods like raw sprouts, undercooked eggs, and unpasteurized
+        milk and juice.
+    - layout: "warning"
+      heading: "Pregnancy and Listeria"
+      points: ["Avoid unpasteurized soft cheese", "Heat deli meats until steaming", "Avoid refrigerated smoked fish", "Can harm the baby"]
+      footage_query: "pregnant woman kitchen"
+      narration: >-
+        Pregnant women are about ten times more likely to get a Listeria infection. It may cause only mild flu like symptoms
+        in the mother, but can lead to miscarriage, stillbirth, or serious illness in the newborn. Avoid unpasteurized milk
+        and soft cheeses, heat deli meats and hot dogs until steaming hot, and avoid refrigerated smoked seafood unless
+        cooked.
+    - layout: "bullets"
+      heading: "Caring for Yourself at Home"
+      points: ["Small sips of fluids", "Oral rehydration drinks", "Rest", "Bland foods as you feel better"]
+      footage_query: "woman drinking water bottle"
+      narration: >-
+        Most food poisoning gets better on its own. The key is to prevent dehydration. Take small, frequent sips of water or
+        an oral rehydration drink. For children, oral rehydration solutions are best. As you feel better, slowly add bland
+        foods like toast, rice, bananas and crackers. Wash your hands well, and do not prepare food for others while you are
+        sick.
+    - layout: "warning"
+      heading: "When to See a Doctor"
+      points: ["Bloody diarrhea", "Fever over 102", "Vomiting so you cannot keep fluids down", "Diarrhea over 3 days"]
+      footage_query: "doctor talking patient office"
+      narration: >-
+        See a doctor if you have bloody diarrhea, a fever higher than one hundred two degrees, diarrhea that lasts more than
+        three days, or vomiting so often you cannot keep liquids down. Also get help for signs of dehydration: very little
+        urine, a very dry mouth and throat, or feeling dizzy when standing up.
+    - layout: "warning"
+      heading: "Get Emergency Help"
+      points: ["Signs of severe dehydration", "Confusion or extreme weakness", "Blurred vision, trouble swallowing", "Babies with signs of dehydration"]
+      footage_query: "hospital emergency entrance"
+      narration: >-
+        Get emergency help for signs of severe dehydration, confusion, or extreme weakness. Blurred or double vision, drooping
+        eyelids, slurred speech, or trouble swallowing or breathing could be botulism, a rare but life threatening illness.
+        For babies and young children, watch for no wet diapers in several hours, no tears when crying, and unusual
+        sleepiness.
+    - layout: "bullets"
+      heading: "Report an Outbreak"
+      points: ["Tell your doctor what you ate", "Call your local health department", "Keep leftover food", "Check for recalls"]
+      footage_query: "woman talking phone desk"
+      narration: >-
+        If you think a restaurant or a store bought food made you sick, report it to your local health department. This can
+        help find outbreaks and protect others. Tell your doctor what you ate over the past several days. If you still have
+        the food or its packaging, keep it in the fridge, labeled do not eat. You can check foodsafety dot gov for recalls.
+    - layout: "bullets"
+      heading: "Quick Recap"
+      points: ["Do not wash raw chicken", "Smell does not prove safety", "Refrigerate within 2 hours", "Use a food thermometer"]
+      footage_query: "notebook checklist pen"
+      narration: >-
+        Let us recap. The last meal is not always to blame. Do not wash raw chicken. The smell test does not prove food is
+        safe. Refrigerate leftovers within two hours, and eat them within three to four days. Freezing does not kill germs.
+        And a food thermometer is the only way to know meat is cooked.
+    - layout: "outro"
+      heading: "Remember"
+      points: ["Clean, separate, cook, chill", "When in doubt, throw it out", "Watch for dehydration"]
+      footage_query: "family cooking kitchen"
+      narration: >-
+        Remember: clean, separate, cook and chill, and when in doubt, throw it out. Share this with the person who always
+        rinses the chicken. This video is for education only, not medical advice. Like and subscribe to Health Support Studio
+        for a new health video every day.
   short_title: "Stop washing raw chicken #Shorts"
   short_caption: >-
     Do you rinse raw chicken before cooking? Here is why food safety experts say stop. Educational only, not medical advice.
