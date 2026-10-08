@@ -1,0 +1,299 @@
+queue_topic: "Diabetic foot care: daily habits that prevent amputations"
+style: "Top Questions"
+sources:
+  - "CDC, Diabetes and Your Feet: https://www.cdc.gov/diabetes/diabetes-complications/diabetes-and-your-feet.html"
+  - "NIDDK, Diabetes and Foot Problems: https://www.niddk.nih.gov/health-information/diabetes/overview/preventing-problems/foot-problems"
+  - "MedlinePlus, Diabetic Foot: https://medlineplus.gov/diabeticfoot.html"
+plan:
+  topic: "Diabetic foot care: daily habits that prevent amputations"
+  title: "Diabetic Foot Care: The Daily Habit That Saves Feet"
+  description: |-
+    Diabetes is the leading cause of lower leg and foot amputations in the US, and most start with a small sore. We answer the top questions about diabetic foot care: daily checks, washing, nails, shoes, warning signs, and when to call your doctor.
+
+    In this video:
+    • Why diabetes harms the feet
+    • Signs of nerve damage and poor blood flow
+    • Daily checks, washing, moisturizing and nails
+    • Shoes, socks and never going barefoot
+    • Warning signs, Charcot foot and foot exams
+
+    #Diabetes #DiabeticFoot #FootCare #DiabetesTips #HealthEducation
+  tags: ["diabetic foot care", "diabetes feet", "diabetic neuropathy", "foot ulcer", "diabetic shoes", "podiatrist", "foot numbness", "charcot foot", "diabetes amputation", "diabetes tips", "health education"]
+  thumbnail_text: "DIABETES AND YOUR FEET"
+  thumbnail_highlight: "FEET"
+  thumbnail_photo_query: "person checking feet"
+  playlist: "Diabetes & Metabolism"
+  scenes:
+    - layout: "title"
+      heading: "Diabetic Foot Care"
+      points: ["Questions that save feet"]
+      footage_query: "person checking feet"
+      narration: >-
+        A small blister from a new pair of shoes. For most people, it heals in days. But for someone with diabetes, it can
+        turn into a serious wound, and sometimes even lead to amputation. The good news is that most diabetic foot problems
+        can be prevented with a few minutes of care each day. Today we answer the top questions about diabetic foot care.
+    - layout: "big_number"
+      heading: "Why It Matters"
+      points: ["Leading cause", "Of leg and foot amputations in the US"]
+      footage_query: "doctor examining foot"
+      narration: >-
+        Why does foot care matter so much? Diabetes is the leading cause of lower leg and foot amputations in the United
+        States, not from accidents. Most of these amputations start with a small foot sore that was not noticed or treated
+        early. Experts believe that most of them could be prevented with daily foot checks and good care.
+    - layout: "bullets"
+      heading: "Why Diabetes Hurts Feet"
+      points: ["Nerve damage: less feeling", "Poor blood flow: slow healing", "High sugar: more infections", "Together they add up"]
+      footage_query: "medical illustration foot"
+      narration: >-
+        Why does diabetes affect the feet? High blood sugar over time can damage nerves, so you may not feel a cut, blister,
+        or burn. It can also narrow blood vessels, so less blood reaches the feet, and wounds heal slowly. High sugar also
+        weakens the body's ability to fight infection. Together, these turn small injuries into big problems.
+    - layout: "big_number"
+      heading: "Nerve Damage Is Common"
+      points: ["About half", "People with diabetes have nerve damage"]
+      footage_query: "person holding foot"
+      narration: >-
+        How common is nerve damage? About half of people with diabetes have some kind of nerve damage, called diabetic
+        neuropathy. It most often affects the feet and legs first. Many people do not realize they have it, because the main
+        symptom can be a loss of feeling, rather than pain.
+    - layout: "warning"
+      heading: "Signs of Nerve Damage"
+      points: ["Numbness or tingling", "Burning or sharp pain", "Feet feel cold or dead", "Not feeling cuts or heat"]
+      footage_query: "man holding foot pain"
+      narration: >-
+        What are the signs of nerve damage in the feet? Numbness, tingling, or pins and needles. Burning, stabbing or shooting
+        pains, often worse at night. Feeling like you are wearing socks when you are not. Not noticing cuts, blisters or hot
+        water. Muscle weakness and changes in the shape of the feet can also happen.
+    - layout: "warning"
+      heading: "Signs of Poor Blood Flow"
+      points: ["Cramping when walking", "Cold feet", "Shiny skin, less hair", "Sores that heal slowly"]
+      footage_query: "person holding leg pain"
+      narration: >-
+        What are the signs of poor blood flow? Pain or cramping in the calves, thighs or buttocks when walking, that eases
+        with rest. Feet that feel cold or look pale or bluish. Shiny skin, thin skin, or loss of hair on the feet and legs.
+        Weak pulses in the feet. And sores that are slow to heal. Smoking makes poor blood flow much worse.
+    - layout: "bullets"
+      heading: "Check Your Feet Every Day"
+      points: ["Tops and bottoms", "Between the toes", "Use a mirror", "Or ask someone to help"]
+      footage_query: "person checking feet"
+      narration: >-
+        How do you check your feet? Every day, at the same time, like after a shower or before bed, look at the tops and
+        bottoms of your feet, your heels, and between your toes. Use a mirror on the floor, or ask a family member to help if
+        you cannot see well or bend easily. Many people put a reminder by their bed.
+    - layout: "warning"
+      heading: "What to Look For"
+      points: ["Cuts, blisters, sores", "Redness, swelling, warmth", "Calluses and corns", "Ingrown or thick nails"]
+      footage_query: "foot close up"
+      narration: >-
+        What should you look for? Cuts, scratches, blisters, sores or cracks. Redness, swelling, or areas that feel warm.
+        Calluses, corns, and changes in skin color. Ingrown, thick or discolored toenails. Fluid or drainage on your socks.
+        Any change from yesterday. If you notice something, do not wait to see if it gets better.
+    - layout: "bullets"
+      heading: "Wash and Dry Gently"
+      points: ["Warm, not hot, water", "Test with your elbow", "Dry well between toes", "Do not soak your feet"]
+      footage_query: "washing feet basin"
+      narration: >-
+        How should you wash your feet? Wash them every day with warm, not hot, water and mild soap. Test the water temperature
+        with your elbow or a thermometer, since your feet may not feel heat. Do not soak your feet, which can dry out the
+        skin. Dry them gently but well, especially between the toes, where moisture can lead to infection.
+    - layout: "bullets"
+      heading: "Moisturize the Right Way"
+      points: ["Lotion on tops and bottoms", "Not between the toes", "Prevents cracks", "Unscented is best"]
+      footage_query: "applying lotion feet"
+      narration: >-
+        Should you moisturize? Yes. Dry skin can crack and let germs in. Rub a thin layer of lotion or cream on the tops and
+        bottoms of your feet. But do not put lotion between your toes, because extra moisture there can lead to fungal
+        infections. Unscented products are usually gentler on the skin.
+    - layout: "bullets"
+      heading: "Toenail Care"
+      points: ["Trim after bathing", "Cut straight across", "File sharp edges", "See a podiatrist if needed"]
+      footage_query: "foot care nail clippers"
+      narration: >-
+        How should you care for your toenails? Trim them after bathing, when they are soft. Cut straight across, and gently
+        file any sharp edges. Do not cut into the corners, which can cause ingrown nails. If you cannot see well, cannot reach
+        your feet, or your nails are thick or yellow, have a foot doctor, called a podiatrist, trim them.
+    - layout: "myth_fact"
+      heading: "Treat Corns at Home"
+      points: ["Cut corns or use acid pads", "Let a professional handle them"]
+      footage_query: "foot close up"
+      narration: >-
+        Myth: you can treat corns and calluses yourself with a razor, scissors or over the counter acid pads. Fact: for people
+        with diabetes, these can cause burns, cuts and infections that may not heal. Never cut corns or calluses yourself, and
+        avoid chemical corn removers. Ask your doctor or podiatrist to treat them safely.
+    - layout: "bullets"
+      heading: "Never Go Barefoot"
+      points: ["Not even at home", "Wear shoes and socks", "Water shoes at the beach", "Slippers at night"]
+      footage_query: "slippers bedroom floor"
+      narration: >-
+        Should you ever go barefoot? No, not even at home. Small objects on the floor, hot pavement, or sand can cause
+        injuries you may not feel. Always wear shoes or slippers with socks, including when getting up at night. At the beach
+        or pool, wear water shoes. This simple habit prevents many serious wounds.
+    - layout: "bullets"
+      heading: "Choosing Shoes"
+      points: ["Comfortable, roomy toe box", "Shop late in the day", "Break in new shoes slowly", "No pointy or high heels"]
+      footage_query: "shoe store fitting"
+      narration: >-
+        What shoes should you wear? Choose comfortable, well fitting shoes with plenty of room for your toes, good support,
+        and a closed toe. Shop late in the day, when your feet are largest. Break in new shoes slowly, an hour or two at a
+        time, and check your feet for red spots. Avoid pointed toes, high heels, flip flops and sandals.
+    - layout: "bullets"
+      heading: "Check Inside Your Shoes"
+      points: ["Feel inside before putting on", "Look for pebbles or rough seams", "Shake them out", "Check for torn linings"]
+      footage_query: "hands checking shoe"
+      narration: >-
+        Before putting on your shoes, feel inside them with your hand and shake them out. Look for pebbles, rough seams, torn
+        linings, or anything that could rub or poke your foot. If you have numb feet, you may not feel a small stone until it
+        has already caused a wound.
+    - layout: "bullets"
+      heading: "The Right Socks"
+      points: ["Clean and dry daily", "Soft, seamless", "Not too tight at the top", "Moisture-wicking"]
+      footage_query: "socks close up"
+      narration: >-
+        What socks are best? Wear clean, dry socks every day. Choose soft socks without thick seams that can rub. Avoid socks
+        with tight elastic tops that cut into your legs and reduce blood flow. Socks that wick moisture away help prevent
+        blisters and fungus. Special diabetic socks are available, but any soft, well fitting sock can work.
+    - layout: "bullets"
+      heading: "Special Shoes"
+      points: ["Therapeutic shoes and inserts", "For people at high risk", "Medicare may help pay", "Ask your doctor"]
+      footage_query: "doctor examining foot"
+      narration: >-
+        Do you need special shoes? People with nerve damage, poor blood flow, foot deformities, or a history of ulcers may
+        benefit from therapeutic shoes or custom inserts. These reduce pressure on high risk spots. Medicare Part B may help
+        cover therapeutic shoes and inserts each year for people with diabetes who qualify. Ask your doctor.
+    - layout: "warning"
+      heading: "Call Your Doctor Today"
+      points: ["A sore or blister", "Red, warm or swollen foot", "Ingrown or infected nail", "Pain or change in color"]
+      footage_query: "woman talking phone desk"
+      narration: >-
+        When should you call your doctor? The same day you notice a sore, blister, cut that is not healing, an ingrown or
+        infected toenail, or a foot that is red, warm, swollen, or changing color. Also call for new pain, tingling or
+        numbness. Early treatment of a small wound can prevent a much bigger problem.
+    - layout: "warning"
+      heading: "Get Emergency Care"
+      points: ["Fever with a foot wound", "Spreading redness", "Black or dark skin", "Foul-smelling drainage"]
+      footage_query: "hospital emergency entrance"
+      narration: >-
+        Get emergency care for a foot wound with fever or chills, redness or red streaks spreading up the foot or leg, black
+        or dark skin, a bad smelling drainage, or a sudden red, hot, swollen foot without a wound. These can be signs of a
+        serious infection, gangrene, or a bone and joint problem called Charcot foot.
+    - layout: "bullets"
+      heading: "Charcot Foot"
+      points: ["Weak bones in the foot", "Red, warm, swollen foot", "Little or no pain", "Needs fast treatment"]
+      footage_query: "swollen foot close up"
+      narration: >-
+        What is Charcot foot? In people with nerve damage, the bones in the foot can weaken and break without much pain, and
+        the foot can change shape. Signs include a red, warm, swollen foot, often with little pain. It is sometimes mistaken
+        for a sprain or infection. Early treatment, usually keeping weight off the foot, can prevent serious deformity.
+    - layout: "myth_fact"
+      heading: "Foot Ulcers Heal on Their Own"
+      points: ["Leave it alone and it will heal", "Ulcers need medical care"]
+      footage_query: "bandage wound care hands"
+      narration: >-
+        Myth: a foot sore will heal on its own if you leave it alone. Fact: diabetic foot ulcers often do not heal without
+        treatment, and they can quickly become infected. Treatment may include cleaning the wound, removing dead tissue,
+        special dressings, and taking pressure off the foot. Getting care early gives the best chance of healing.
+    - layout: "bullets"
+      heading: "Foot Exams at the Doctor"
+      points: ["Take off shoes at every visit", "Full foot exam yearly", "Test for feeling", "Check pulses"]
+      footage_query: "doctor examining foot"
+      narration: >-
+        How often should a doctor check your feet? Take off your shoes and socks at every diabetes visit, even if they do not
+        ask, so your feet can be checked. You should have a thorough foot exam at least once a year. This includes testing
+        your feeling with a soft nylon thread, checking your pulses, and looking at your skin and shape.
+    - layout: "bullets"
+      heading: "See a Podiatrist"
+      points: ["Nerve damage or poor blood flow", "Corns, calluses, thick nails", "Past foot ulcers", "Regular visits"]
+      footage_query: "podiatrist examining foot"
+      narration: >-
+        When should you see a podiatrist, a foot and ankle specialist? If you have nerve damage, poor blood flow, foot
+        deformities, corns, calluses, thick nails, or have had a foot ulcer before, regular visits to a podiatrist can prevent
+        serious problems. Ask your doctor for a referral. Medicare often covers foot care for people with diabetic nerve
+        damage.
+    - layout: "bullets"
+      heading: "Control Blood Sugar"
+      points: ["Keep A1C in your target", "Protects nerves and vessels", "Helps wounds heal", "Check sugar regularly"]
+      footage_query: "blood glucose meter finger"
+      narration: >-
+        One of the best ways to protect your feet is to keep your blood sugar in your target range. Good control can prevent
+        or slow nerve damage and blood vessel damage, and it helps wounds heal faster. Work with your doctor on your A1C goal,
+        take your medicines, and check your blood sugar as advised.
+    - layout: "bullets"
+      heading: "Quit Smoking"
+      points: ["Narrows blood vessels", "Slows healing", "Raises amputation risk", "Free help available"]
+      footage_query: "broken cigarette close up"
+      narration: >-
+        If you smoke, quitting is one of the most important things you can do for your feet. Smoking narrows blood vessels and
+        reduces blood flow to the legs and feet, which slows healing and raises the risk of amputation. Call one eight hundred
+        QUIT NOW for free help, and ask your doctor about medicines to help you quit.
+    - layout: "bullets"
+      heading: "Keep the Blood Flowing"
+      points: ["Walk if you can", "Wiggle toes, move ankles", "Put feet up when sitting", "Do not cross legs long"]
+      footage_query: "person walking park"
+      narration: >-
+        Help keep blood flowing to your feet. Stay active, like walking, if your doctor says it is safe. If you have numb feet
+        or ulcers, swimming or chair exercises may be better. Wiggle your toes and move your ankles up and down several times
+        a day. Put your feet up when sitting, and avoid crossing your legs for long periods.
+    - layout: "bullets"
+      heading: "Winter and Summer Care"
+      points: ["No heating pads or hot bottles", "Wear warm socks at night", "Sunscreen on tops of feet", "Water shoes on hot sand"]
+      footage_query: "warm socks feet"
+      narration: >-
+        Be careful with heat and cold. In winter, do not use heating pads, hot water bottles, or put your feet near a fire or
+        space heater, since you may get burned without feeling it. Wear warm socks at night instead. In summer, protect the
+        tops of your feet with sunscreen, and never walk on hot pavement or sand without shoes.
+    - layout: "bullets"
+      heading: "Questions for Your Doctor"
+      points: ["Do I have nerve damage?", "How is my blood flow?", "Do I need special shoes?", "Should I see a podiatrist?"]
+      footage_query: "patient talking doctor"
+      narration: >-
+        At your next visit, ask: do I have nerve damage in my feet? How is the blood flow to my feet? Am I at high risk for
+        foot ulcers? Do I need special shoes or inserts? Should I see a podiatrist? And what should I do if I find a sore or
+        blister?
+    - layout: "bullets"
+      heading: "For Family and Caregivers"
+      points: ["Help with daily foot checks", "Trim nails safely", "Watch for changes", "Help get to foot visits"]
+      footage_query: "caregiver helping elderly parent"
+      narration: >-
+        If you care for someone with diabetes, you can help protect their feet. Help them check their feet every day,
+        especially if they have trouble seeing or bending. Help with washing, drying and moisturizing. Watch for changes, like
+        redness or swelling. And help them get to their foot doctor visits.
+    - layout: "bullets"
+      heading: "Quick Recap"
+      points: ["Check your feet daily", "Never go barefoot", "Good shoes and socks", "Call early about any sore"]
+      footage_query: "notebook checklist pen"
+      narration: >-
+        Let us recap. Diabetes can damage nerves and blood flow in the feet, turning small injuries into big problems. Check
+        your feet every day, wash and dry them carefully, and moisturize but not between the toes. Never go barefoot, and wear
+        good shoes and socks. Take off your shoes at every visit. And call your doctor early about any sore.
+    - layout: "outro"
+      heading: "Remember"
+      points: ["Look at your feet daily", "Never go barefoot", "Small sore? Call today"]
+      footage_query: "person walking park"
+      narration: >-
+        Remember: look at your feet every day, never go barefoot, and call your doctor the same day about any sore or blister.
+        Share this with someone who has diabetes. This video is for education only, not medical advice. Like and subscribe to
+        Health Support Studio for a new health video every day.
+  short_title: "Diabetes? Do this for your feet every day #Shorts"
+  short_caption: >-
+    A 2-minute daily foot check can prevent amputations. Educational only, not medical advice. #Diabetes #DiabeticFoot
+    #FootCare #HealthEducation
+  short_scenes:
+    - layout: "title"
+      heading: "Diabetes and Your Feet"
+      points: ["A 2-minute habit"]
+      footage_query: "person checking feet"
+      narration: >-
+        Diabetes is the leading cause of leg and foot amputations in the US. A two minute daily habit can help prevent them.
+    - layout: "bullets"
+      heading: "Every Day"
+      points: ["Check tops, bottoms, between toes", "Never go barefoot", "Call about any sore"]
+      footage_query: "foot close up"
+      narration: >-
+        Check your feet every day, including between your toes, using a mirror if needed. Look for cuts, blisters, redness or
+        swelling. Never go barefoot, even at home. And call your doctor the same day about any sore that is not healing.
+    - layout: "outro"
+      heading: "Full Video"
+      points: ["On YouTube"]
+      footage_query: "person walking park"
+      narration: >-
+        Learn more diabetic foot care tips in our full video, on the Health Support Studio YouTube channel.
