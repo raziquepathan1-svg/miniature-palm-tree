@@ -11,10 +11,11 @@ plan:
     Vitamin D is one of the most popular supplements in America, but a lot of what people believe about it isn't true. We bust five common vitamin D myths, using guidance from the NIH and the US Preventive Services Task Force.
 
     In this video:
-    • Why more vitamin D isn't always better
-    • Can you make vitamin D through a window?
-    • Does everyone need a supplement or a blood test?
-    • Where to get vitamin D from food
+    • What vitamin D does, and how much you need
+    • 9 common vitamin D myths
+    • Who may need a supplement or a test
+    • The best food sources
+    • Signs of taking too much
 
     #VitaminD #Supplements #Nutrition #MythVsFact #HealthEducation
   tags: ["vitamin d", "vitamin d myths", "vitamin d supplements", "vitamin d deficiency", "vitamin d foods", "too much vitamin d", "vitamin d test", "supplements", "bone health", "myth vs fact", "health education"]
@@ -24,77 +25,238 @@ plan:
   playlist: "Healthy Habits & Prevention"
   scenes:
     - layout: "title"
-      heading: "Vitamin D: Myth vs Fact"
-      points: ["5 myths, busted"]
-      footage_query: "sunlight window morning"
+      heading: "The Truth About Vitamin D"
+      points: ["Myths and facts"]
+      footage_query: "vitamin d supplement capsules sunlight"
       narration: >-
-        Vitamin D is one of the most popular supplements in America. People take it for their bones, their mood, their
-        immune system, and more. But a lot of what we hear about vitamin D is not quite true. Today we are busting five common
-        myths.
+        Vitamin D is one of the most popular supplements in America. Millions of people take it every day, hoping it will
+        protect their bones, their heart, and even prevent cancer or colds. But a lot of what people believe about vitamin D
+        is not true. Today we look at the most common vitamin D myths, using guidance from the National Institutes of Health
+        and other trusted sources.
     - layout: "bullets"
-      heading: "Why Vitamin D Matters"
-      points: ["Helps absorb calcium", "Keeps bones strong", "Muscles and nerves use it", "Skin makes it from sunlight"]
-      footage_query: "person walking sunshine"
+      heading: "What Vitamin D Does"
+      points: ["Helps absorb calcium", "Keeps bones strong", "Helps muscles work", "Supports the immune system"]
+      footage_query: "woman holding glass milk"
       narration: >-
-        First, why does it matter? Vitamin D helps your body absorb calcium, which keeps bones strong. Your muscles, nerves
-        and immune system also use it. Your skin makes vitamin D when it is exposed to sunlight, and you can also get it from
-        some foods and supplements.
-    - layout: "myth_fact"
-      heading: "Myth 1"
-      points: ["More vitamin D is always better", "Too much can be harmful"]
-      footage_query: "supplement bottles shelf"
+        First, what does vitamin D actually do? Its main job is helping your body absorb calcium from food, which keeps bones
+        strong. Without enough, children can get rickets, with soft and bent bones, and adults can get weak, painful bones.
+        Vitamin D also helps muscles and nerves work, and plays a role in the immune system. So it really matters.
+    - layout: "bullets"
+      heading: "Where It Comes From"
+      points: ["Sunlight on bare skin", "A few foods", "Fortified foods", "Supplements"]
+      footage_query: "sunlight through trees"
       narration: >-
-        Myth number one: more is always better. Fact: taking very high doses of vitamin D supplements for a long time can cause
-        too much calcium in the blood. That can lead to nausea, weakness, confusion, kidney stones, and heart rhythm problems.
-        You cannot get too much from the sun, but you can from supplements. Do not take high doses unless your doctor advises it.
-    - layout: "myth_fact"
-      heading: "Myth 2"
-      points: ["Sun through a window counts", "Glass blocks the rays you need"]
-      footage_query: "person sitting by window"
+        Your body can make vitamin D when sunlight hits your bare skin. You can also get it from a small number of foods, from
+        foods that have vitamin D added, and from supplements. Vitamin D from all of these sources has to be changed by the
+        liver and kidneys before the body can use it. That is why kidney and liver disease can affect vitamin D levels.
+    - layout: "bullets"
+      heading: "Signs of Low Vitamin D"
+      points: ["Often no symptoms", "Bone pain or aches", "Muscle weakness", "Soft bones in children"]
+      footage_query: "man tired holding back"
       narration: >-
-        Myth number two: sitting by a sunny window gives you vitamin D. Fact: your skin needs a type of sunlight called UVB to
-        make vitamin D, and window glass blocks it. The same UVB rays can also cause sunburn and skin cancer, so it is not a
-        reason to skip sun protection.
-    - layout: "myth_fact"
-      heading: "Myth 3"
-      points: ["Everyone needs a vitamin D test", "Not recommended for most healthy adults"]
-      footage_query: "blood test lab tube"
-      narration: >-
-        Myth number three: everyone should get their vitamin D level tested. Fact: expert groups do not recommend routine
-        testing for healthy adults with no symptoms or risk factors. Your doctor may test you if you have a condition that
-        affects absorption, bone disease, or other risk factors.
-    - layout: "myth_fact"
-      heading: "Myth 4"
-      points: ["Vitamin D prevents falls", "Evidence says it doesn't for most"]
-      footage_query: "senior couple walking park"
-      narration: >-
-        Myth number four: vitamin D supplements prevent falls in older adults. Fact: the US Preventive Services Task Force
-        recommends against taking vitamin D to prevent falls in older adults who live independently, because studies show it
-        does not help. Exercise for strength and balance works better. People with low levels may still need it, so ask your
-        doctor.
-    - layout: "myth_fact"
-      heading: "Myth 5"
-      points: ["You can only get it from the sun", "Some foods provide it too"]
-      footage_query: "salmon dinner plate"
-      narration: >-
-        Myth number five: you can only get vitamin D from the sun. Fact: some foods have it too. Fatty fish like salmon, trout
-        and sardines are good sources. Many milks, plant milks, cereals and orange juices are fortified with vitamin D. Egg
-        yolks and some mushrooms have smaller amounts.
+        Most people with low vitamin D have no symptoms at all. When levels are very low for a long time, adults may notice
+        bone pain, aching muscles, weakness, or more falls. Children may have delayed growth, bowed legs, or soft bones. These
+        symptoms have many other causes too, so do not guess. If you notice them, see your doctor.
     - layout: "big_number"
-      heading: "600 IU"
-      points: ["daily amount for most adults", "800 IU after age 70 (NIH)"]
-      footage_query: "healthy breakfast table"
+      heading: "How Much You Need"
+      points: ["600", "International units a day, ages 1 to 70"]
+      footage_query: "vitamin bottle close up"
       narration: >-
-        How much do you need? According to the NIH, most adults need six hundred international units a day, and eight hundred
-        after age seventy. People who may need more include older adults, people with darker skin, people who get little sun,
-        and people with certain health conditions. Ask your doctor before starting a supplement.
+        How much do you need each day? For most people from age one to seventy, the recommended amount is six hundred
+        international units. Adults over seventy need eight hundred. Babies under one year need four hundred. Most people can
+        meet much of this with fortified foods and some sun. Your own doctor may suggest a different amount based on your
+        health.
+    - layout: "myth_fact"
+      heading: "More Is Better"
+      points: ["Higher doses mean more benefit", "Too much can harm you"]
+      footage_query: "pile of pills table"
+      narration: >-
+        Myth one: if some vitamin D is good, more must be better. Fact: once you have enough, extra vitamin D does not give
+        more benefit. And too much can be harmful. For most adults, the safe upper limit from supplements is four thousand
+        international units a day, unless a doctor prescribes more for a specific reason and checks your levels.
+    - layout: "warning"
+      heading: "Signs of Too Much"
+      points: ["Nausea and vomiting", "Weakness and confusion", "Thirst and frequent urination", "Kidney stones"]
+      footage_query: "woman nausea holding stomach"
+      narration: >-
+        Too much vitamin D raises the calcium in your blood. This can cause nausea, vomiting, poor appetite, constipation,
+        weakness, confusion, extreme thirst and frequent urination. Over time it can cause kidney stones, kidney damage, and
+        heart rhythm problems. This almost never happens from sun or food. It usually comes from taking very high dose
+        supplements for a long time.
+    - layout: "myth_fact"
+      heading: "Sun Through a Window"
+      points: ["Sitting by a window works", "Glass blocks the rays you need"]
+      footage_query: "woman sitting by window sunlight"
+      narration: >-
+        Myth two: you can make vitamin D by sitting in the sun next to a window. Fact: the type of sunlight your skin needs,
+        called UVB, mostly cannot pass through regular window glass. So sitting in a sunny room or driving in your car does
+        not help much. You need direct sunlight on bare skin, outdoors.
+    - layout: "bullets"
+      heading: "What Affects Sun Vitamin D"
+      points: ["Season and latitude", "Time of day", "Skin color", "Age"]
+      footage_query: "winter snowy street people"
+      narration: >-
+        Even outdoors, how much vitamin D you make depends on many things. In winter, in northern states, the sun is too low
+        for much vitamin D to be made. Clouds, smog and the time of day matter too. People with darker skin make less vitamin
+        D from the same sun. And as we age, the skin makes less than it used to.
+    - layout: "myth_fact"
+      heading: "Skip the Sunscreen"
+      points: ["You need sunburn for vitamin D", "Protect your skin from damage"]
+      footage_query: "applying sunscreen beach"
+      narration: >-
+        Myth three: you should skip sunscreen to get enough vitamin D. Fact: sun damage raises the risk of skin cancer, and
+        experts do not recommend getting extra sun to make vitamin D. In real life, people who use sunscreen still make some
+        vitamin D. If you are worried about your levels, food and supplements are a safer way to get it.
+    - layout: "myth_fact"
+      heading: "Everyone Needs a Pill"
+      points: ["Every adult should take one", "Many people get enough already"]
+      footage_query: "vitamin bottles shelf store"
+      narration: >-
+        Myth four: every adult needs a vitamin D pill. Fact: many people get enough from food, fortified products and everyday
+        sun. Supplements are helpful for some groups, such as breastfed babies, people who get very little sun, and people
+        with certain health problems. Ask your doctor whether a supplement makes sense for you, instead of guessing.
+    - layout: "bullets"
+      heading: "Who May Need More"
+      points: ["Breastfed babies", "Older adults", "People with darker skin", "Little time outdoors"]
+      footage_query: "elderly woman sitting home"
+      narration: >-
+        Some people are at higher risk of low vitamin D. These include breastfed babies, older adults, people with darker
+        skin, and people who are mostly indoors, such as those who are homebound or work night shifts. People with obesity,
+        and people who have had weight loss surgery, may also have lower levels. These groups should talk to their doctor.
+    - layout: "bullets"
+      heading: "Health Problems That Lower It"
+      points: ["Crohn's or celiac disease", "Kidney or liver disease", "Weight loss surgery", "Some medicines"]
+      footage_query: "doctor talking patient office"
+      narration: >-
+        Certain health problems make it harder to absorb or use vitamin D. These include Crohn's disease, celiac disease and
+        other gut problems, kidney and liver disease, and weight loss surgery. Some medicines can also lower vitamin D or
+        affect how it works, including steroids, some seizure medicines, and a weight loss drug called orlistat. Ask your
+        doctor or pharmacist about yours.
+    - layout: "warning"
+      heading: "Breastfed Babies"
+      points: ["400 units a day", "Starting in the first days", "Formula is already fortified", "Ask your baby's doctor"]
+      footage_query: "mother holding newborn baby"
+      narration: >-
+        Here is one group where experts agree. Breast milk is the best food for babies, but it is naturally low in vitamin D.
+        So the American Academy of Pediatrics recommends four hundred international units of vitamin D drops a day for
+        breastfed and partly breastfed babies, starting soon after birth. Babies on enough formula usually get it from the
+        formula. Ask your baby's doctor.
+    - layout: "myth_fact"
+      heading: "Everyone Needs a Test"
+      points: ["Get your level checked yearly", "Testing is for certain people"]
+      footage_query: "blood test tube lab"
+      narration: >-
+        Myth five: everyone should get their vitamin D level checked. Fact: the US Preventive Services Task Force found not
+        enough evidence to recommend screening adults who have no symptoms. Testing makes sense for people with certain
+        conditions, like bone loss, gut problems or kidney disease. Many people get tested, take pills, and see no health
+        benefit.
+    - layout: "bullets"
+      heading: "Understanding Your Results"
+      points: ["Measured in nanograms", "20 or higher: enough for most", "Very high can be harmful", "Labs use different ranges"]
+      footage_query: "doctor reading lab results"
+      narration: >-
+        If you are tested, the result is usually shown in nanograms per milliliter. According to the NIH, a level of twenty or
+        higher is enough for bone health in most people. Levels below twelve are low. Very high levels, above about fifty, may
+        be harmful. Some labs and doctors use different cutoffs, so talk through your own result with your doctor.
+    - layout: "myth_fact"
+      heading: "It Prevents Falls"
+      points: ["Pills prevent falls in older adults", "Exercise prevents falls better"]
+      footage_query: "elderly man walking park"
+      narration: >-
+        Myth six: vitamin D pills prevent falls in older adults. Fact: for older adults living at home who do not have low
+        vitamin D, the Task Force recommends against taking vitamin D just to prevent falls, because large studies showed no
+        benefit. What does help? Exercise for strength and balance, which lowers the chance of falling.
+    - layout: "myth_fact"
+      heading: "It Prevents Cancer"
+      points: ["Vitamin D stops cancer", "Large studies found no clear benefit"]
+      footage_query: "scientist laboratory research"
+      narration: >-
+        Myth seven: vitamin D prevents cancer and heart disease. Fact: a very large study called VITAL gave vitamin D or a
+        placebo to over twenty five thousand adults for about five years. Vitamin D did not lower the rate of cancer, heart
+        attacks or strokes. Researchers are still studying some possible benefits, but it is not a shield against these
+        diseases.
+    - layout: "myth_fact"
+      heading: "It Stops Colds"
+      points: ["Vitamin D prevents colds", "Evidence is mixed and modest"]
+      footage_query: "woman sneezing tissue"
+      narration: >-
+        Myth eight: taking vitamin D will stop colds and the flu. Fact: some studies suggest a small benefit, mostly in people
+        with very low levels, but results are mixed. Vitamin D is not a replacement for proven steps like handwashing, staying
+        home when sick, and getting your flu shot and other recommended vaccines.
+    - layout: "myth_fact"
+      heading: "D2 and D3 Are the Same"
+      points: ["Both forms work exactly alike", "D3 may last longer in blood"]
+      footage_query: "supplement capsules close up"
+      narration: >-
+        Myth nine: all vitamin D supplements are the same. Fact: supplements come in two forms, D2 and D3. Both can raise
+        vitamin D levels, but D3 may raise and keep levels up a bit longer. Vitamin D is fat soluble, so it is absorbed better
+        when taken with a meal that has some fat. Choose products with a third party quality seal.
+    - layout: "bullets"
+      heading: "Best Food Sources"
+      points: ["Salmon, trout, tuna, sardines", "Fortified milk and plant milks", "Fortified cereals, orange juice", "Egg yolks, UV mushrooms"]
+      footage_query: "grilled salmon plate"
+      narration: >-
+        Now the good news: food can help. The best natural sources are fatty fish like salmon, trout, tuna, mackerel and
+        sardines. In America, most milk has vitamin D added, and so do many plant milks, breakfast cereals, yogurts and some
+        orange juices. Egg yolks, beef liver, and mushrooms grown under UV light also have some. Check the label.
+    - layout: "bullets"
+      heading: "Easy Ways to Get More"
+      points: ["Fish twice a week", "Fortified milk at breakfast", "Read nutrition labels", "Sun on a short walk"]
+      footage_query: "family breakfast table"
+      narration: >-
+        A few simple habits can raise your vitamin D without pills. Eat fish twice a week. Choose fortified milk, plant milk
+        or yogurt. Read nutrition labels, which now list vitamin D. Take a short walk outside, while still protecting your
+        skin from burning. These habits also help your heart, your weight and your mood, which pills cannot do.
+    - layout: "bullets"
+      heading: "Calcium Works With It"
+      points: ["Dairy and fortified foods", "Leafy greens", "Canned fish with bones", "Do not overdo supplements"]
+      footage_query: "leafy greens vegetables"
+      narration: >-
+        Vitamin D and calcium work as a team for strong bones. Good calcium sources include milk, yogurt, cheese, fortified
+        plant milks, leafy greens like kale, tofu made with calcium, and canned salmon or sardines with the bones. Try to get
+        calcium from food first. Very high calcium supplements can cause constipation and kidney stones in some people.
+    - layout: "bullets"
+      heading: "If You Take a Supplement"
+      points: ["Check every product", "Add up all sources", "Tell your doctor", "Keep away from children"]
+      footage_query: "reading supplement label"
+      narration: >-
+        If you do take vitamin D, check every product you use. Multivitamins, calcium pills and some cold remedies can contain
+        vitamin D too, and the amounts add up. Tell your doctor and pharmacist about all supplements, especially if you have
+        kidney disease or take heart medicines. Keep high dose pills away from children, who can be harmed by much smaller
+        amounts.
+    - layout: "bullets"
+      heading: "Bone Health Is More"
+      points: ["Weight-bearing exercise", "Enough protein", "No smoking", "Limit alcohol"]
+      footage_query: "elderly woman exercising weights"
+      narration: >-
+        Strong bones take more than one vitamin. Weight bearing exercise, like walking, dancing and climbing stairs, and
+        muscle strengthening exercise, build and protect bone. Eat enough protein. Do not smoke, and limit alcohol. Ask your
+        doctor about a bone density test, especially women sixty five and older, and anyone who has broken a bone from a minor
+        fall.
+    - layout: "bullets"
+      heading: "Questions for Your Doctor"
+      points: ["Am I at risk of low levels?", "Do I need a test?", "Should I take a supplement?", "How much is right for me?"]
+      footage_query: "patient talking doctor"
+      narration: >-
+        At your next visit, ask your doctor a few simple questions. Am I at higher risk of low vitamin D? Do I need a blood
+        test, or not? Should I take a supplement, and if so, how much? Could it interact with my medicines? Getting a clear
+        answer is much better than following advice from social media.
+    - layout: "bullets"
+      heading: "Quick Recap"
+      points: ["More is not better", "Glass blocks the rays", "Not everyone needs a pill", "Not a cure-all"]
+      footage_query: "notebook checklist pen"
+      narration: >-
+        Let us recap. More vitamin D is not better, and too much can harm you. Sunlight through a window does not count. Not
+        everyone needs a pill or a blood test. Vitamin D does not prevent falls, cancer or heart disease in people who already
+        have enough. Food, safe sun, and a talk with your doctor are the best plan.
     - layout: "outro"
-      heading: "The Takeaway"
-      points: ["More isn't better", "Food and sun both count", "Ask before high doses"]
-      footage_query: "family outdoor walk"
+      heading: "Remember"
+      points: ["Food first", "Supplement only if needed", "Stay under the safe limit"]
+      footage_query: "family picnic park sunlight"
       narration: >-
-        The takeaway: vitamin D is important, but more is not better. This video is for education only, not medical advice. Like
-        and subscribe to Health Support Studio for a new health video every day.
+        Remember: get vitamin D from food first, take a supplement only if you need one, and stay under the safe upper limit.
+        Share this with someone who takes a handful of supplements every morning. This video is for education only, not
+        medical advice. Like and subscribe to Health Support Studio for a new health video every day.
   short_title: "Can you get vitamin D through a window? #Shorts"
   short_caption: >-
     Sitting by a sunny window all day? Here is why that doesn't give you vitamin D. Educational only, not medical advice.
