@@ -1,0 +1,302 @@
+queue_topic: "Burns first aid: what to do and what not to do"
+style: "Explainer"
+sources:
+  - "MedlinePlus, Burns: https://medlineplus.gov/burns.html"
+  - "MedlinePlus, Minor Burns - Aftercare: https://medlineplus.gov/ency/patientinstructions/000641.htm"
+  - "NIH NIGMS, Burns and Traumatic Injury: https://www.nigms.nih.gov/education/fact-sheets/Pages/burns.aspx"
+plan:
+  topic: "Burns first aid: what to do and what not to do"
+  title: "Burns First Aid: Stop Using Ice (Do This Instead)"
+  description: |-
+    What you do in the first few minutes after a burn makes a big difference. Learn the types of burns, the right first aid steps, the myths that make burns worse, when to call 911, and how to prevent burns at home.
+
+    In this video:
+    • First, second and third-degree burns
+    • 5 first aid steps for burns
+    • 3 burn myths: ice, butter and blisters
+    • When to call 911 or see a doctor
+    • Chemical, electrical and sunburns, plus prevention
+
+    #FirstAid #Burns #HomeSafety #ChildSafety #HealthEducation
+  tags: ["burn first aid", "how to treat a burn", "burns", "second degree burn", "scald", "burn blister", "chemical burn", "sunburn relief", "kitchen safety", "first aid", "health education"]
+  thumbnail_text: "STOP USING ICE"
+  thumbnail_highlight: "ICE"
+  thumbnail_photo_query: "hand under running water"
+  playlist: "Emergencies & First Aid"
+  scenes:
+    - layout: "title"
+      heading: "Burns First Aid"
+      points: ["What to do, and what not to"]
+      footage_query: "hand under running water"
+      narration: >-
+        A splash of boiling water, a hot pan handle, a spark from the grill. Burns happen in seconds, and what you do in the
+        first few minutes can make a big difference in pain, healing and scarring. Many people still reach for ice, butter or
+        toothpaste, which can make burns worse. Today you will learn the right way to treat burns, and when to get emergency
+        help.
+    - layout: "big_number"
+      heading: "Burns Are Common"
+      points: ["Hundreds of thousands", "US burn injuries treated each year"]
+      footage_query: "kitchen stove cooking"
+      narration: >-
+        Burns are one of the most common household injuries. Every year in the United States, hundreds of thousands of people
+        get medical treatment for burns, and many more treat minor burns at home. Most burns happen at home, often in the
+        kitchen and bathroom. Young children and older adults are at the highest risk.
+    - layout: "bullets"
+      heading: "Types of Burns"
+      points: ["Heat: flames, hot liquids", "Chemical", "Electrical", "Sun and radiation"]
+      footage_query: "chemical bottles shelf"
+      narration: >-
+        Burns can be caused by many things. Heat burns from flames, hot surfaces, hot liquids and steam are most common.
+        Scalds from hot liquids are the top cause of burns in young children. Burns can also come from chemicals, electricity,
+        the sun, and radiation. Each type needs slightly different first aid, which we will cover.
+    - layout: "bullets"
+      heading: "First-Degree Burns"
+      points: ["Top layer of skin", "Red and painful", "No blisters", "Heals in about a week"]
+      footage_query: "red skin burn arm"
+      narration: >-
+        Burns are described by how deep they go. A first degree, or superficial, burn affects only the top layer of skin. The
+        skin is red, dry and painful, like a mild sunburn, with no blisters. It usually heals within about a week without
+        scarring. Most first degree burns can be treated at home.
+    - layout: "bullets"
+      heading: "Second-Degree Burns"
+      points: ["Deeper skin layers", "Blisters", "Very painful", "Can scar"]
+      footage_query: "burn blister close up"
+      narration: >-
+        A second degree, or partial thickness, burn goes deeper into the skin. The skin is red, swollen, wet or shiny, and
+        forms blisters. These burns are usually very painful. Small ones can often be treated at home, but larger ones, or
+        those on the face, hands, feet, genitals or over joints, need medical care. They may take a few weeks to heal and can
+        scar.
+    - layout: "warning"
+      heading: "Third-Degree Burns"
+      points: ["All layers of skin", "White, brown or charred", "May not hurt", "Always an emergency"]
+      footage_query: "paramedic helping patient"
+      narration: >-
+        A third degree, or full thickness, burn destroys all layers of the skin and may go into fat, muscle or bone. The skin
+        may look white, waxy, leathery, brown or charred. It may not hurt much, because the nerves are damaged. Third degree
+        burns always need emergency care. Call 911.
+    - layout: "bullets"
+      heading: "Step 1: Stop the Burning"
+      points: ["Move away from the heat", "Stop, drop and roll", "Remove hot or wet clothing", "Unless it is stuck"]
+      footage_query: "fire extinguisher kitchen"
+      narration: >-
+        Step one: stop the burning. Move the person away from the source of heat. If clothing is on fire, stop, drop to the
+        ground, cover your face, and roll to put out the flames, or smother them with a blanket. Remove clothing soaked with
+        hot liquid or chemicals, but do not pull off clothing stuck to the skin.
+    - layout: "bullets"
+      heading: "Step 2: Cool It Down"
+      points: ["Cool running water", "For about 20 minutes", "Not ice or ice water", "Keep the person warm"]
+      footage_query: "hand under running water"
+      narration: >-
+        Step two: cool the burn. Hold it under cool, not cold, running tap water for about twenty minutes, or until the pain
+        eases. Cooling works best right away, but still helps within the first few hours. If running water is not available,
+        use cool, wet compresses. Keep the rest of the body warm, especially for children and large burns.
+    - layout: "bullets"
+      heading: "Step 3: Remove Tight Items"
+      points: ["Rings and watches", "Bracelets and belts", "Before swelling starts", "Gently and quickly"]
+      footage_query: "removing ring finger"
+      narration: >-
+        Step three: remove rings, watches, bracelets, belts and tight clothing from the burned area, gently and quickly,
+        before swelling starts. Swelling can make them hard to remove later, and they can cut off blood flow. If something is
+        stuck to the burn, leave it and let medical staff remove it.
+    - layout: "bullets"
+      heading: "Step 4: Cover It"
+      points: ["Clean, non-stick dressing", "Or plastic wrap, laid loosely", "Do not wrap tightly", "Protects from germs"]
+      footage_query: "bandage wound care hands"
+      narration: >-
+        Step four: cover the burn loosely with a clean, non stick bandage or sterile gauze. Plastic food wrap, laid loosely
+        over the burn, also works well for a short time, especially on the way to get care. Do not use fluffy cotton, which
+        can stick. Do not wrap tightly, since swelling can occur.
+    - layout: "bullets"
+      heading: "Step 5: Ease the Pain"
+      points: ["Pain reliever if safe", "Raise the burned area", "Aloe for minor burns", "Keep it clean"]
+      footage_query: "pharmacist counter customer"
+      narration: >-
+        Step five: ease the pain. For minor burns, an over the counter pain reliever like acetaminophen or ibuprofen can help,
+        if it is safe for you. Raise a burned arm or leg to reduce swelling. Once the burn has cooled, aloe vera gel or a
+        gentle moisturizer may soothe a first degree burn. Keep it clean.
+    - layout: "myth_fact"
+      heading: "Put Ice on a Burn"
+      points: ["Ice is the fastest fix", "Ice can damage skin more"]
+      footage_query: "ice cubes close up"
+      narration: >-
+        Myth one: put ice on a burn. Fact: ice and ice water can damage skin tissue further, and can even cause frostbite on
+        burned skin. They can also make the body too cold, especially in children. Cool running tap water is the best first
+        aid for a heat burn.
+    - layout: "myth_fact"
+      heading: "Butter Soothes Burns"
+      points: ["Butter or oil helps", "It traps heat and germs"]
+      footage_query: "butter dish kitchen"
+      narration: >-
+        Myth two: butter, oil, or grease soothes a burn. Fact: these trap heat in the skin, which can make the burn deeper,
+        and they can raise the risk of infection. The same goes for toothpaste, egg whites, mustard, and other home remedies.
+        Stick to cool water, then a clean cover.
+    - layout: "myth_fact"
+      heading: "Pop the Blisters"
+      points: ["Popping blisters speeds healing", "Blisters protect the skin"]
+      footage_query: "burn blister close up"
+      narration: >-
+        Myth three: you should pop burn blisters so they heal faster. Fact: blisters protect the healing skin underneath from
+        infection. Leave them alone. If a blister breaks on its own, gently clean the area with mild soap and water, apply an
+        antibiotic ointment if advised, and cover it with a non stick bandage.
+    - layout: "warning"
+      heading: "Call 911 for"
+      points: ["Third-degree burns", "Large burns", "Burns with breathing trouble", "Electrical burns"]
+      footage_query: "person calling phone emergency"
+      narration: >-
+        Call 911 for third degree burns, large burns, burns that cover the hands, feet, face, groin, buttocks or a major
+        joint, or burns that go all the way around an arm or leg. Also call for electrical burns, serious chemical burns,
+        burns with trouble breathing, and if the person seems in shock, with pale clammy skin, weakness, or confusion.
+    - layout: "warning"
+      heading: "Get Medical Care for"
+      points: ["Burns bigger than the palm", "Babies and older adults", "Deep or blistering burns", "Signs of infection"]
+      footage_query: "doctor examining arm"
+      narration: >-
+        Get medical care the same day for second degree burns larger than the palm of the hand, burns on babies, young
+        children and older adults, burns in people with diabetes or weak immune systems, burns that are not healing, and burns
+        that show signs of infection. When in doubt, have it checked.
+    - layout: "warning"
+      heading: "Smoke and Breathing Burns"
+      points: ["Burns in a closed space", "Soot around nose or mouth", "Hoarse voice, coughing", "Call 911"]
+      footage_query: "smoke fire building"
+      narration: >-
+        If someone was burned in a fire, especially in a closed space, they may have breathed in hot air or smoke, which can
+        burn the airway and cause swelling. Warning signs include soot around the nose or mouth, singed nose hair, coughing, a
+        hoarse voice, and trouble breathing. Call 911 right away, even if they seem okay at first.
+    - layout: "bullets"
+      heading: "Chemical Burns"
+      points: ["Brush off dry chemicals", "Flush with running water", "At least 20 minutes", "Call Poison Control"]
+      footage_query: "chemical bottles shelf"
+      narration: >-
+        For chemical burns, protect yourself with gloves. Brush off any dry chemical powder first, then remove contaminated
+        clothing and jewelry. Flush the area with cool running water for at least twenty minutes. For chemicals in the eye,
+        flush the eye continuously and get emergency care. Call Poison Control at one eight hundred two two two, one two two
+        two for advice.
+    - layout: "warning"
+      heading: "Electrical Burns"
+      points: ["Do not touch the person", "Turn off the power first", "Call 911", "Damage may be hidden"]
+      footage_query: "electrical outlet close up"
+      narration: >-
+        For electrical burns, do not touch the person if they are still in contact with the electrical source. Turn off the
+        power first, if you can do so safely. Call 911. Electrical burns may look small on the skin, but can cause serious
+        damage inside the body and heart rhythm problems. Everyone with an electrical burn needs medical care.
+    - layout: "bullets"
+      heading: "Sunburn Care"
+      points: ["Cool shower or compress", "Moisturize with aloe", "Drink extra water", "Stay out of the sun"]
+      footage_query: "sunburn back close up"
+      narration: >-
+        For sunburn, take a cool shower or use cool compresses. Apply aloe vera or a gentle moisturizer. Drink extra water.
+        Take an over the counter pain reliever if it is safe for you. Leave blisters alone, and stay out of the sun while it
+        heals. Get medical care for severe blistering, fever, chills, or dizziness.
+    - layout: "bullets"
+      heading: "Caring for a Minor Burn"
+      points: ["Wash gently each day", "Thin layer of ointment", "Fresh non-stick bandage", "Protect from sun as it heals"]
+      footage_query: "bandage wound care hands"
+      narration: >-
+        For minor burns at home, gently wash the area each day with mild soap and water, and pat it dry. If your doctor
+        recommends it, apply a thin layer of antibiotic ointment or petroleum jelly. Cover with a fresh, non stick bandage.
+        Once healed, protect the new skin from sun for several months, since it burns easily and may darken.
+    - layout: "warning"
+      heading: "Signs of Infection"
+      points: ["Spreading redness", "More pain or swelling", "Pus or bad smell", "Fever"]
+      footage_query: "thermometer fever close up"
+      narration: >-
+        Watch for signs of infection while the burn heals: redness spreading around the burn, increasing pain, swelling or
+        warmth, pus or cloudy fluid, a bad smell, red streaks, or fever. Call your doctor right away if you notice any of
+        these. Also check that your tetanus shot is up to date, within the past five to ten years.
+    - layout: "bullets"
+      heading: "Burns in Children"
+      points: ["Skin burns faster", "Scalds are most common", "Call the doctor sooner", "Watch for abuse signs"]
+      footage_query: "mother holding child kitchen"
+      narration: >-
+        Children's skin is thinner and burns more quickly and deeply than adult skin. Scalds from hot drinks, soup, bath water
+        and steam are the most common burns in young children. Have any burn on a baby or young child checked by a doctor,
+        except very small first degree burns. Burns with unusual shapes or patterns may need further attention.
+    - layout: "bullets"
+      heading: "Kitchen Safety"
+      points: ["Turn pot handles inward", "Use back burners", "Keep kids 3 feet away", "No hot drinks while holding a child"]
+      footage_query: "kitchen stove cooking"
+      narration: >-
+        Most burns happen in the kitchen. Turn pot handles toward the back of the stove, and cook on back burners when you
+        can. Keep a kid free zone of about three feet around the stove. Never hold a child while cooking or carrying hot
+        drinks. Keep hot drinks away from table edges, and skip tablecloths that toddlers can pull.
+    - layout: "bullets"
+      heading: "Bathroom Safety"
+      points: ["Water heater at 120 degrees", "Test bath water first", "Never leave kids alone in the bath", "Anti-scald devices"]
+      footage_query: "bathtub water faucet"
+      narration: >-
+        Hot tap water can cause serious burns in seconds, especially in young children and older adults. Set your water heater
+        to one hundred twenty degrees Fahrenheit or lower. Always test bath water with your wrist or elbow before putting a
+        child in. Never leave a young child alone in the bathtub. Consider anti scald devices on faucets and showers.
+    - layout: "bullets"
+      heading: "Fire Safety at Home"
+      points: ["Smoke alarms on every level", "Test them monthly", "Fire escape plan", "Keep a fire extinguisher"]
+      footage_query: "smoke detector ceiling"
+      narration: >-
+        Fire safety prevents the most serious burns. Install smoke alarms on every level of your home, inside and outside
+        sleeping areas. Test them monthly and replace batteries as needed. Make a fire escape plan and practice it with your
+        family. Keep a fire extinguisher in the kitchen, and learn how to use it.
+    - layout: "bullets"
+      heading: "Other Burn Hazards"
+      points: ["Space heaters and fireplaces", "Curling irons and irons", "Grills and fireworks", "Microwave food and steam"]
+      footage_query: "space heater room"
+      narration: >-
+        Watch for other hidden burn hazards. Keep space heaters at least three feet from anything that can burn, and away from
+        children. Unplug curling irons and clothing irons, and keep them out of reach. Use caution with grills, campfires and
+        fireworks. Microwaved food and liquids can heat unevenly and cause scalds, so stir and test them.
+    - layout: "bullets"
+      heading: "Older Adults and Burns"
+      points: ["Thinner skin", "Slower reactions", "Less feeling in hands and feet", "Extra care with heat"]
+      footage_query: "elderly woman kitchen"
+      narration: >-
+        Older adults are also at higher risk of serious burns. Their skin is thinner, reactions may be slower, and conditions
+        like diabetes can reduce feeling in the hands and feet, so they may not notice heat. Be careful with heating pads, hot
+        water bottles and bath water. Never smoke in bed or near home oxygen.
+    - layout: "bullets"
+      heading: "Keep a First Aid Kit"
+      points: ["Non-stick dressings", "Gauze and tape", "Burn gel or aloe", "Gloves and pain relievers"]
+      footage_query: "first aid kit open"
+      narration: >-
+        Keep a well stocked first aid kit at home and in your car. Include non stick sterile dressings, gauze, medical tape,
+        plastic wrap, burn gel or aloe, gloves, scissors, and pain relievers. Check it every few months and replace used or
+        expired items. Taking a first aid class helps you feel ready to act.
+    - layout: "bullets"
+      heading: "Quick Recap"
+      points: ["Cool water for 20 minutes", "No ice, butter or popping", "Cover loosely", "Big or deep burns: 911"]
+      footage_query: "notebook checklist pen"
+      narration: >-
+        Let us recap. Stop the burning, then cool the burn with cool running water for about twenty minutes. Remove rings and
+        tight items. Cover loosely with a clean, non stick dressing. Do not use ice, butter or home remedies, and do not pop
+        blisters. Call 911 for large, deep, electrical, chemical or breathing related burns.
+    - layout: "outro"
+      heading: "Remember"
+      points: ["Cool, cover, call", "No ice or butter", "Prevent burns at home"]
+      footage_query: "family kitchen smiling"
+      narration: >-
+        Remember: cool the burn with running water, cover it loosely, and call for help for serious burns. Skip the ice and
+        butter. Share this with every parent and grandparent you know. This video is for education only, not medical advice.
+        Like and subscribe to Health Support Studio for a new health video every day.
+  short_title: "Burned yourself? Don't use ice #Shorts"
+  short_caption: >-
+    Cool running water is the best first aid for burns. Educational only, not medical advice. #FirstAid #Burns #HomeSafety
+    #HealthEducation
+  short_scenes:
+    - layout: "title"
+      heading: "Burned Your Hand?"
+      points: ["Do not use ice"]
+      footage_query: "hand under running water"
+      narration: >-
+        Burned yourself? Do not reach for ice, butter or toothpaste.
+    - layout: "bullets"
+      heading: "Do This"
+      points: ["Cool running water 20 minutes", "Remove rings", "Cover loosely"]
+      footage_query: "bandage wound care hands"
+      narration: >-
+        Hold the burn under cool running water for about twenty minutes. Remove rings and watches before swelling starts.
+        Cover it loosely with a clean, non stick bandage. Leave blisters alone. Call 911 for large, deep, electrical or
+        chemical burns.
+    - layout: "outro"
+      heading: "Full Video"
+      points: ["On YouTube"]
+      footage_query: "family kitchen smiling"
+      narration: >-
+        Learn more burn first aid in our full video, on the Health Support Studio YouTube channel.
