@@ -1,0 +1,293 @@
+queue_topic: "HPV vaccine: myths vs facts about cancer prevention"
+style: "Myth vs Fact"
+sources:
+  - "CDC, HPV Vaccination: https://www.cdc.gov/hpv/vaccines/index.html"
+  - "CDC, HPV and Cancer: https://www.cdc.gov/cancer/hpv/index.html"
+  - "NIH National Cancer Institute, HPV Vaccines: https://www.cancer.gov/about-cancer/causes-prevention/risk/infectious-agents/hpv-vaccine-fact-sheet"
+plan:
+  topic: "HPV vaccine: myths vs facts about cancer prevention"
+  title: "HPV Vaccine Myths: The Shot That Prevents Cancer"
+  description: |-
+    HPV is the most common sexually transmitted infection, and it causes about 37,000 cancers in the US each year. We bust seven common HPV vaccine myths and explain who should get it, how many doses, side effects, and why screening still matters.
+
+    In this video:
+    • What HPV is and the cancers it causes
+    • Who should get the vaccine and how many doses
+    • 7 HPV vaccine myths busted
+    • Side effects, safety and results so far
+    • Screening, warning signs and cost
+
+    #HPVVaccine #CancerPrevention #Vaccines #ParentingTips #HealthEducation
+  tags: ["hpv vaccine", "hpv", "gardasil", "hpv vaccine myths", "cervical cancer", "throat cancer", "cancer prevention", "preteen vaccines", "vaccines for boys", "vaccine safety", "health education"]
+  thumbnail_text: "A SHOT AGAINST CANCER"
+  thumbnail_highlight: "CANCER"
+  thumbnail_photo_query: "teenager vaccine doctor"
+  playlist: "Infections & Vaccines"
+  scenes:
+    - layout: "title"
+      heading: "HPV Vaccine Myths"
+      points: ["Cancer prevention, explained"]
+      footage_query: "teenager vaccine doctor"
+      narration: >-
+        What if there was a vaccine that could prevent several kinds of cancer? There is. The HPV vaccine protects against a
+        very common virus that causes cancers of the cervix, throat, and other parts of the body. Yet many parents are unsure
+        about it, often because of myths. Today we bust the most common HPV vaccine myths, using facts from the CDC.
+    - layout: "big_number"
+      heading: "HPV Is Very Common"
+      points: ["13 million", "Americans infected with HPV each year"]
+      footage_query: "group of young adults walking"
+      narration: >-
+        HPV, or human papillomavirus, is the most common sexually transmitted infection in the United States. About thirteen
+        million Americans, including teens, become infected each year. Nearly everyone who is not vaccinated will get HPV at
+        some point in their life. Most people never know they have it, because it usually causes no symptoms.
+    - layout: "bullets"
+      heading: "HPV Often Has No Symptoms"
+      points: ["Most people never know", "Can pass it on unknowingly", "Usually clears in 2 years", "Some infections stay"]
+      footage_query: "young couple talking"
+      narration: >-
+        Most people with HPV never know they have it. They have no symptoms, and can pass it on without knowing. In most
+        people, the immune system clears the virus within about two years. But in some people the infection stays, and over
+        many years, it can slowly cause changes in cells that may turn into cancer.
+    - layout: "bullets"
+      heading: "Throat Cancer in Men"
+      points: ["Now the most common HPV cancer", "Back of the throat and tonsils", "Often found late", "No screening test"]
+      footage_query: "man holding throat"
+      narration: >-
+        HPV related throat cancer, in the back of the throat, the base of the tongue and the tonsils, has been rising for
+        years, mostly in men. It is now the most common cancer caused by HPV in the United States. There is no screening test
+        for it, and it is often found only after a neck lump appears. Vaccination is the best prevention.
+    - layout: "bullets"
+      heading: "What HPV Can Cause"
+      points: ["Cervical cancer", "Throat and mouth cancers", "Anal and genital cancers", "Genital warts"]
+      footage_query: "medical illustration cells"
+      narration: >-
+        Most HPV infections go away on their own. But some last for years and can cause cancer. HPV causes nearly all cervical
+        cancers, most cancers of the back of the throat, and most anal cancers, plus cancers of the vagina, vulva and penis.
+        Some types cause genital warts. These cancers often take years or decades to develop.
+    - layout: "big_number"
+      heading: "Cancers Caused by HPV"
+      points: ["About 37,000", "US cancers from HPV each year"]
+      footage_query: "doctor reading lab results"
+      narration: >-
+        Each year in the United States, HPV causes about thirty seven thousand cancers in men and women. Today, the most
+        common HPV cancer is throat cancer, mostly in men. And there is no routine screening test for most HPV cancers, except
+        cervical cancer. The HPV vaccine could prevent most of these cancers from ever happening.
+    - layout: "bullets"
+      heading: "Who Should Get It?"
+      points: ["All kids at 11 or 12", "Can start at age 9", "Catch up through age 26", "Ages 27 to 45: ask your doctor"]
+      footage_query: "doctor child vaccine"
+      narration: >-
+        Who should get the HPV vaccine? The CDC recommends it for all children at age eleven or twelve, and it can be started
+        as early as age nine. Teens and young adults through age twenty six who were not vaccinated should catch up. Adults
+        twenty seven to forty five can talk with their doctor about whether it might help them.
+    - layout: "bullets"
+      heading: "How Many Doses?"
+      points: ["Start before 15: 2 doses", "6 to 12 months apart", "Start at 15 or older: 3 doses", "Weak immune system: 3 doses"]
+      footage_query: "calendar notebook planning"
+      narration: >-
+        How many shots are needed? Children who start the series before their fifteenth birthday need only two doses, given
+        six to twelve months apart. Those who start at age fifteen or older, and people with weakened immune systems, need
+        three doses. Getting it younger means fewer shots and a stronger immune response.
+    - layout: "myth_fact"
+      heading: "My Child Is Too Young"
+      points: ["Eleven is too young", "It works best before exposure"]
+      footage_query: "mother child doctor"
+      narration: >-
+        Myth one: eleven or twelve is too young for the HPV vaccine. Fact: the vaccine works best when given long before any
+        exposure to the virus. Children this age also make more antibodies, so they need fewer doses and get stronger
+        protection. It is not about expecting sexual activity. It is about protecting them for the future.
+    - layout: "myth_fact"
+      heading: "It Encourages Sex"
+      points: ["The vaccine leads to earlier sex", "Studies show it does not"]
+      footage_query: "teenagers talking school"
+      narration: >-
+        Myth two: getting the HPV vaccine will encourage kids to have sex earlier. Fact: several large studies have found no
+        change in sexual behavior after HPV vaccination. Teens who get it are not more likely to start having sex earlier.
+        Think of it like a seatbelt. Wearing one does not make you drive more dangerously.
+    - layout: "myth_fact"
+      heading: "The Vaccine Is Not Safe"
+      points: ["It is new and risky", "Over 15 years of safety data"]
+      footage_query: "scientist laboratory research"
+      narration: >-
+        Myth three: the HPV vaccine is new and not safe. Fact: HPV vaccines have been used in the United States since 2006,
+        and well over one hundred thirty five million doses have been given. Safety is monitored closely, and studies
+        involving millions of people have found it to be very safe. It is recommended in countries around the world.
+    - layout: "bullets"
+      heading: "Common Side Effects"
+      points: ["Sore arm", "Redness or swelling", "Headache", "Dizziness or fainting"]
+      footage_query: "teen holding arm"
+      narration: >-
+        What are the side effects? Most are mild and short lived: pain, redness or swelling where the shot was given,
+        headache, or feeling tired. Some teens feel dizzy or faint after any shot, including this one. To prevent falls, they
+        should sit or lie down for fifteen minutes afterward. Serious allergic reactions are very rare.
+    - layout: "myth_fact"
+      heading: "It Causes Infertility"
+      points: ["The vaccine harms fertility", "No link to infertility"]
+      footage_query: "young couple smiling"
+      narration: >-
+        Myth four: the HPV vaccine can cause infertility. Fact: there is no evidence that HPV vaccines cause fertility
+        problems. In fact, the vaccine helps protect fertility, because treatment for cervical precancer and cancer can affect
+        a woman's ability to have children. Preventing those problems is good for future families.
+    - layout: "myth_fact"
+      heading: "Only Girls Need It"
+      points: ["It is just for girls", "Boys need it too"]
+      footage_query: "father son doctor"
+      narration: >-
+        Myth five: the HPV vaccine is only for girls. Fact: HPV causes cancers in men too, including throat, anal and penile
+        cancers. Throat cancer from HPV is now more common in men than cervical cancer is in women. Boys also can pass HPV to
+        future partners. The vaccine is recommended for all children, boys and girls.
+    - layout: "myth_fact"
+      heading: "My Child Will Not Need It"
+      points: ["My child will not be at risk", "Almost everyone is exposed"]
+      footage_query: "parent teen talking"
+      narration: >-
+        Myth six: my child will not need it because they will not be at risk. Fact: HPV is so common that almost everyone who
+        is sexually active at some point will be exposed, even with just one partner. You cannot predict your child's future,
+        or their partner's past. The vaccine protects them, no matter what life brings.
+    - layout: "big_number"
+      heading: "It Is Working"
+      points: ["Nearly 9 in 10", "Drop in vaccine-type HPV in teen girls"]
+      footage_query: "young women smiling outdoors"
+      narration: >-
+        Is the vaccine working? Yes. Since the vaccine was introduced, infections with the HPV types it targets have dropped
+        by about eighty eight percent among teen girls, and by about eighty one percent among young women. Cervical precancers
+        have also dropped sharply in vaccinated groups. Some countries are on track to nearly eliminate cervical cancer.
+    - layout: "bullets"
+      heading: "How the Vaccine Works"
+      points: ["Contains no live virus", "Cannot cause HPV infection", "Teaches the immune system", "Long-lasting protection"]
+      footage_query: "vaccine syringe arm"
+      narration: >-
+        How does the vaccine work? It contains proteins that look like the outside of the virus, but no live virus and no
+        genetic material, so it cannot cause an HPV infection or cancer. It teaches the immune system to recognize and block
+        HPV. Studies show protection stays strong for at least twelve years, with no sign of fading.
+    - layout: "myth_fact"
+      heading: "Natural Immunity Is Better"
+      points: ["Getting HPV gives better protection", "Infection gives weak protection"]
+      footage_query: "doctor talking patient office"
+      narration: >-
+        Myth seven: it is better to get natural immunity from infection. Fact: natural HPV infection often does not create
+        strong protection, and people can be infected again. And the risk of natural infection is the very thing we want to
+        avoid, since it can lead to cancer. The vaccine creates much stronger protection than infection does.
+    - layout: "bullets"
+      heading: "Who Should Wait or Skip It"
+      points: ["Severe allergy to a past dose", "Severe yeast allergy", "Pregnant: wait until after", "Sick with fever: wait"]
+      footage_query: "pregnant woman talking doctor"
+      narration: >-
+        A few people should not get the vaccine, or should wait. Anyone who had a severe allergic reaction to a past dose, or
+        has a severe allergy to yeast, should not get it. The vaccine is not recommended during pregnancy, so wait until after
+        the baby is born, but there is no need for a pregnancy test first. If someone is sick with a fever, wait until they
+        recover.
+    - layout: "bullets"
+      heading: "If You Already Have HPV"
+      points: ["Vaccine still protects other types", "Does not treat current infection", "Keep up with screening", "Follow up abnormal results"]
+      footage_query: "woman talking doctor office"
+      narration: >-
+        What if you already have HPV, or had an abnormal Pap test? The vaccine does not treat an existing infection, but it
+        can still protect you against other HPV types you have not been exposed to, if you are within the recommended age.
+        Keep up with screening, and always follow up on abnormal results. Precancer found early is very treatable.
+    - layout: "bullets"
+      heading: "Still Need Cervical Screening"
+      points: ["Vaccine does not cover every type", "Screening from age 21", "Pap or HPV tests", "Follow your doctor's schedule"]
+      footage_query: "woman talking doctor office"
+      narration: >-
+        Even after getting the vaccine, women still need cervical cancer screening, because the vaccine does not protect
+        against every cancer causing HPV type, and some women were exposed before vaccination. Screening usually starts at age
+        twenty one, with a Pap test, an HPV test, or both, on a regular schedule until about sixty five. Ask your doctor what
+        you need.
+    - layout: "warning"
+      heading: "Signs to Never Ignore"
+      points: ["Bleeding after sex or between periods", "Lasting sore throat or neck lump", "Trouble swallowing", "Unusual growths"]
+      footage_query: "man holding throat"
+      narration: >-
+        Since most HPV cancers have no routine screening, know the warning signs. See a doctor for bleeding after sex, between
+        periods, or after menopause, unusual discharge, pelvic pain, a sore throat that lasts weeks, a lump in the neck,
+        trouble swallowing, ear pain on one side, or unusual growths or sores in the genital or anal area.
+    - layout: "bullets"
+      heading: "Other Ways to Lower Risk"
+      points: ["Condoms lower but do not eliminate risk", "Fewer partners", "Do not smoke", "Regular checkups"]
+      footage_query: "doctor smiling patient"
+      narration: >-
+        Besides the vaccine, you can lower your risk of HPV and its cancers. Using condoms correctly every time lowers, but
+        does not eliminate, the risk. Having fewer sexual partners helps. Not smoking matters, since smoking makes it harder
+        for the body to clear HPV and raises the risk of cervical and throat cancer. Keep regular checkups and screenings.
+    - layout: "bullets"
+      heading: "Cost and Access"
+      points: ["Covered by most insurance", "Vaccines for Children program", "Free or low cost", "Pharmacies and clinics"]
+      footage_query: "insurance card hand"
+      narration: >-
+        Cost should not be a barrier. Most insurance plans cover the HPV vaccine with no out of pocket cost for recommended
+        ages. The Vaccines for Children program provides free vaccines to children who are uninsured, underinsured, or on
+        Medicaid. It is given at doctor's offices, health departments, school clinics, and some pharmacies.
+    - layout: "bullets"
+      heading: "Getting It at the Same Visit"
+      points: ["Given with other preteen shots", "Tdap and meningococcal", "Fewer trips", "Safe together"]
+      footage_query: "teen doctor office"
+      narration: >-
+        The HPV vaccine is usually given at the same visit as other preteen vaccines, like Tdap, which protects against
+        whooping cough, and the meningococcal vaccine, which protects against meningitis. Getting them together is safe and
+        means fewer trips to the doctor. Ask about the HPV vaccine at your child's next checkup or sports physical.
+    - layout: "bullets"
+      heading: "Talking With Your Teen"
+      points: ["Focus on cancer prevention", "Answer questions honestly", "Explain it like other vaccines", "Let them ask the doctor"]
+      footage_query: "mother teen talking"
+      narration: >-
+        How do you talk with your preteen about it? Keep it simple. Explain that this vaccine prevents certain cancers later
+        in life, just as other vaccines prevent other diseases. Answer their questions honestly. Let them ask the doctor
+        questions too. Older teens and young adults can make the choice themselves, so share the facts with them.
+    - layout: "bullets"
+      heading: "Adults 27 to 45"
+      points: ["Not routinely recommended", "May help some people", "Talk to your doctor", "Depends on new exposure"]
+      footage_query: "adult woman doctor office"
+      narration: >-
+        What about adults twenty seven to forty five? The vaccine is not routinely recommended for this age group, because
+        most have already been exposed to HPV. But some adults may benefit, especially those who might have new sexual
+        partners. Talk with your doctor about your situation. It is approved for use up to age forty five.
+    - layout: "bullets"
+      heading: "Questions for Your Doctor"
+      points: ["Is my child due?", "How many doses are needed?", "Can we do it today?", "Do I need screening?"]
+      footage_query: "patient talking doctor"
+      narration: >-
+        At your next visit, ask: is my child due for the HPV vaccine? Can we start it today? How many doses will they need,
+        and when is the next one? Am I, as an adult, a candidate? Which other vaccines are due? And for women, when is my next
+        cervical cancer screening?
+    - layout: "bullets"
+      heading: "Quick Recap"
+      points: ["HPV is very common", "Causes 6 types of cancer", "Vaccine at 11 or 12", "Safe and highly effective"]
+      footage_query: "notebook checklist pen"
+      narration: >-
+        Let us recap. HPV is very common and causes several types of cancer in men and women. The vaccine is recommended for
+        all children at eleven or twelve, with catch up through twenty six. It is safe, does not affect fertility or behavior,
+        and has already cut HPV infections dramatically. Women still need cervical screening.
+    - layout: "outro"
+      heading: "Remember"
+      points: ["Vaccinate at 11 or 12", "Boys and girls", "Keep up with screening"]
+      footage_query: "family smiling outdoors"
+      narration: >-
+        Remember: the HPV vaccine is cancer prevention, it is for boys and girls at eleven or twelve, and women still need
+        regular screening. Share this with a parent of a preteen. This video is for education only, not medical advice. Like
+        and subscribe to Health Support Studio for a new health video every day.
+  short_title: "The vaccine that prevents cancer #Shorts"
+  short_caption: >-
+    The HPV vaccine prevents several cancers in men and women. Educational only, not medical advice. #HPVVaccine
+    #CancerPrevention #Vaccines #HealthEducation
+  short_scenes:
+    - layout: "title"
+      heading: "A Vaccine Against Cancer"
+      points: ["The HPV vaccine"]
+      footage_query: "teenager vaccine doctor"
+      narration: >-
+        There is a vaccine that can prevent several kinds of cancer. It is the HPV vaccine.
+    - layout: "bullets"
+      heading: "Know This"
+      points: ["Prevents 6 types of cancer", "For boys and girls at 11 or 12", "Safe since 2006"]
+      footage_query: "doctor child vaccine"
+      narration: >-
+        HPV causes cancers of the cervix, throat and other areas, in men and women. The vaccine is recommended for all kids at
+        eleven or twelve, and works best before any exposure. Over one hundred thirty five million doses have been given in
+        the US, and it has already cut HPV infections dramatically.
+    - layout: "outro"
+      heading: "Full Video"
+      points: ["On YouTube"]
+      footage_query: "family smiling outdoors"
+      narration: >-
+        Learn the HPV vaccine myths in our full video, on the Health Support Studio YouTube channel.
