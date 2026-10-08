@@ -79,7 +79,6 @@ video:
       - {file: "branding/health-support-studio/avatar/speaking/intro_myvoice.mp4", start: 0.6, end: 9.3}
       - {file: "branding/health-support-studio/avatar/speaking/sit_myvoice.mp4", start: 4.4, end: 8.9}
       - {file: "branding/health-support-studio/avatar/speaking/office_fixed_myvoice.mp4", start: 0, end: 7.6}
-      - {file: "branding/health-support-studio/avatar/speaking/sit_wave_fixed_myvoice.mp4", start: 0, end: 6.1}
     outro: {file: "branding/health-support-studio/avatar/speaking/outro_v1_myvoice.mp4", start: 0, end: 8.0}
   # You on screen in the middle of the video: about every minute you appear for 5-10 s next to the slide,
   # while your voice keeps narrating. mode "broll": your Flow clips of walking / reading a chart / at the desk
