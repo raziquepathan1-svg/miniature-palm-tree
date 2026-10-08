@@ -1,0 +1,285 @@
+queue_topic: "Blood clots (DVT and pulmonary embolism): warning signs and prevention"
+style: "Warning Signs"
+sources:
+  - "CDC, Venous Thromboembolism (Blood Clots): https://www.cdc.gov/blood-clots/about/index.html"
+  - "NIH NHLBI, Venous Thromboembolism: https://www.nhlbi.nih.gov/health/venous-thromboembolism"
+  - "MedlinePlus, Deep Vein Thrombosis: https://medlineplus.gov/deepveinthrombosis.html"
+plan:
+  topic: "Blood clots (DVT and pulmonary embolism): warning signs and prevention"
+  title: "Blood Clot Warning Signs: Don't Ignore a Swollen Leg"
+  description: |-
+    Blood clots affect hundreds of thousands of Americans each year, and many can be prevented. Learn the warning signs of a clot in the leg and in the lungs, who is at risk, how clots are treated, and how to prevent them in the hospital and while traveling.
+
+    In this video:
+    • DVT and pulmonary embolism explained
+    • Warning signs in the leg and lungs
+    • When to call 911
+    • Hospital stays, pregnancy, hormones and travel
+    • Treatment, blood thinner safety and prevention
+
+    #BloodClots #DVT #PulmonaryEmbolism #WarningSigns #HealthEducation
+  tags: ["blood clot", "dvt", "deep vein thrombosis", "pulmonary embolism", "blood clot symptoms", "swollen leg", "calf pain", "blood thinners", "travel blood clots", "clot prevention", "health education"]
+  thumbnail_text: "SWOLLEN LEG?"
+  thumbnail_highlight: "LEG?"
+  thumbnail_photo_query: "swollen leg close up"
+  playlist: "Emergencies & First Aid"
+  scenes:
+    - layout: "title"
+      heading: "Blood Clot Warning Signs"
+      points: ["A swollen leg could be serious"]
+      footage_query: "swollen leg close up"
+      narration: >-
+        A swollen, sore calf after a long flight. Sudden shortness of breath a week after surgery. These can be signs of a
+        blood clot, a condition that affects hundreds of thousands of Americans every year and can be deadly. The good news is
+        that most clots can be prevented and treated, if you know the warning signs. Today you will learn them, and what to
+        do.
+    - layout: "big_number"
+      heading: "A Hidden Danger"
+      points: ["Up to 900,000", "Americans affected by clots each year"]
+      footage_query: "hospital hallway doctors"
+      narration: >-
+        According to the CDC, as many as nine hundred thousand people in the United States may be affected by blood clots in
+        the veins each year, and tens of thousands die. Many of these clots happen during or after a hospital stay or surgery.
+        Many could be prevented. Yet most people do not know the signs.
+    - layout: "bullets"
+      heading: "What Is a Blood Clot?"
+      points: ["Blood forms a gel-like clump", "Normal when you are cut", "Dangerous inside a vein", "Can block blood flow"]
+      footage_query: "medical illustration blood clot"
+      narration: >-
+        Blood clotting is normal and helpful when you cut yourself, because it stops the bleeding. But sometimes a clot forms
+        inside a blood vessel when it should not. A clot in a deep vein, usually in the leg, is called deep vein thrombosis,
+        or DVT. It can block blood flow and cause swelling and pain.
+    - layout: "bullets"
+      heading: "DVT and Pulmonary Embolism"
+      points: ["DVT: clot in a deep vein", "Usually in the leg", "Can break off and travel", "PE: clot in the lungs"]
+      footage_query: "medical illustration lungs"
+      narration: >-
+        The biggest danger is that part of a DVT can break off and travel through the bloodstream to the lungs. This is called
+        a pulmonary embolism, or PE. It can block blood flow to the lungs, strain the heart, and can be deadly. Together, DVT
+        and PE are called venous thromboembolism, or VTE.
+    - layout: "warning"
+      heading: "Clot in the Leg: Signs"
+      points: ["Swelling in one leg", "Pain or tenderness, often calf", "Warm skin", "Red or darker skin"]
+      footage_query: "swollen leg close up"
+      narration: >-
+        What are the signs of a DVT? Swelling in one leg, or sometimes an arm. Pain or tenderness, often in the calf or thigh,
+        which may feel like a cramp or charley horse that does not go away. Skin that feels warm to the touch. And skin that
+        looks red, or darker than usual. About half of people with DVT have no symptoms.
+    - layout: "warning"
+      heading: "Clot in the Lungs: Signs"
+      points: ["Sudden shortness of breath", "Chest pain worse with breathing", "Fast heartbeat", "Coughing up blood"]
+      footage_query: "man struggling breathe"
+      narration: >-
+        What are the signs of a pulmonary embolism? Sudden shortness of breath. Sharp chest pain that gets worse when you
+        breathe in deeply or cough. A fast or irregular heartbeat. Coughing up blood. Feeling lightheaded or fainting. Anxiety
+        or a feeling that something is wrong. A PE can happen with or without leg symptoms first.
+    - layout: "warning"
+      heading: "Call 911"
+      points: ["Sudden shortness of breath", "Chest pain", "Fainting", "Coughing up blood"]
+      footage_query: "person calling phone emergency"
+      narration: >-
+        Call 911 right away if you have sudden shortness of breath, chest pain, fainting, or are coughing up blood, especially
+        if you have had recent surgery, a hospital stay, or a swollen leg. A pulmonary embolism is a medical emergency. Fast
+        treatment saves lives. Do not drive yourself to the hospital.
+    - layout: "bullets"
+      heading: "See a Doctor Today"
+      points: ["New swelling in one leg", "Calf pain that will not go away", "Warm, red or dark skin", "Especially after surgery or travel"]
+      footage_query: "doctor examining leg"
+      narration: >-
+        See a doctor the same day if you have new swelling, pain, warmth or redness in one leg or arm, especially after
+        surgery, a hospital stay, an injury, a long trip, or if you are pregnant or recently gave birth. Do not rub or massage
+        the leg, since this could loosen a clot. Your doctor can check quickly with an ultrasound.
+    - layout: "myth_fact"
+      heading: "Clots Only Hit Older People"
+      points: ["Only the elderly get clots", "Young people get them too"]
+      footage_query: "young woman holding leg"
+      narration: >-
+        Myth: only older people get blood clots. Fact: the risk does rise with age, but blood clots can happen at any age,
+        including in young, healthy people, especially after surgery, injury, during pregnancy, or while taking estrogen birth
+        control. Athletes and long distance travelers can get them too. Knowing the signs matters for everyone.
+    - layout: "bullets"
+      heading: "Biggest Risk: Hospital Stays"
+      points: ["Surgery, especially hip or knee", "Being in the hospital", "Not moving for a long time", "Up to 3 months after"]
+      footage_query: "patient hospital bed"
+      narration: >-
+        The biggest risk factor is a hospital stay, especially with surgery. Many clots happen during or within three months
+        after hospitalization, surgery, or an injury. Hip and knee replacements, major surgery, cancer surgery, and serious
+        injuries carry the highest risk. Being in bed and not moving much lets blood pool in the legs, where clots can form.
+    - layout: "bullets"
+      heading: "Other Risk Factors"
+      points: ["Cancer and its treatment", "Pregnancy and after birth", "Estrogen pills or hormone therapy", "Previous clot or family history"]
+      footage_query: "pregnant woman sitting"
+      narration: >-
+        Other risk factors include cancer and some cancer treatments, pregnancy and the first three months after giving birth,
+        birth control pills, patches or rings with estrogen, and hormone therapy after menopause. A previous clot, a family
+        history of clots, or an inherited clotting disorder also raise the risk.
+    - layout: "bullets"
+      heading: "More Risk Factors"
+      points: ["Obesity", "Smoking", "Long trips sitting still", "Some chronic illnesses"]
+      footage_query: "airplane seats passengers"
+      narration: >-
+        More risk factors include obesity, smoking, being over sixty, sitting still for long periods, like on trips of four
+        hours or more, and some long term illnesses, like heart failure, inflammatory bowel disease, and kidney disease. COVID
+        and other serious infections can also raise clot risk. Having several risk factors at once raises the risk more.
+    - layout: "myth_fact"
+      heading: "Only Flying Causes Clots"
+      points: ["Long flights are the main cause", "Hospital stays cause the most"]
+      footage_query: "airplane window view"
+      narration: >-
+        Myth: long flights are the main cause of blood clots. Fact: long trips do raise the risk a little, especially for
+        people with other risk factors. But the biggest risk by far comes from hospital stays, surgery and serious injury. So
+        if you are going into the hospital, ask about your clot risk and how it will be prevented.
+    - layout: "bullets"
+      heading: "In the Hospital, Ask"
+      points: ["What is my clot risk?", "How will clots be prevented?", "Should I take a blood thinner?", "When can I start walking?"]
+      footage_query: "patient talking doctor"
+      narration: >-
+        If you are admitted to the hospital or having surgery, ask your care team: what is my risk of a blood clot? What are
+        you doing to prevent one? Do I need a blood thinner shot, or compression devices on my legs? When can I start walking?
+        And should I take clot prevention medicine after I go home?
+    - layout: "bullets"
+      heading: "After Surgery at Home"
+      points: ["Move and walk as advised", "Do leg exercises", "Take blood thinners as prescribed", "Watch for warning signs"]
+      footage_query: "elderly man walking hallway"
+      narration: >-
+        After surgery or a hospital stay, keep moving as your doctor advises. Walk around the house several times a day. Do
+        simple leg exercises in bed or a chair, like pointing and flexing your feet. Take any blood thinner exactly as
+        prescribed, for the full time. Drink fluids. And watch for leg swelling or shortness of breath for several weeks.
+    - layout: "bullets"
+      heading: "Travel Smart"
+      points: ["Walk every 1 to 2 hours", "Flex and stretch your legs", "Drink water", "Loose clothing"]
+      footage_query: "airplane aisle passengers"
+      narration: >-
+        On long trips of four hours or more, by plane, car, bus or train, get up and walk every one to two hours if you can.
+        When seated, flex your ankles, point your toes, and tighten your calf muscles. Drink plenty of water and limit
+        alcohol. Wear loose clothing. If you have risk factors, ask your doctor about compression stockings.
+    - layout: "bullets"
+      heading: "Compression Stockings"
+      points: ["Gently squeeze the legs", "Help blood flow", "Need the right fit", "Ask your doctor"]
+      footage_query: "compression socks legs"
+      narration: >-
+        Compression stockings gently squeeze the legs to help blood flow back to the heart. They can help prevent clots in
+        some people, such as long distance travelers with risk factors, and may reduce symptoms after a DVT. They need to fit
+        properly. Ask your doctor or pharmacist whether they are right for you, and what strength to use.
+    - layout: "bullets"
+      heading: "How Clots Are Diagnosed"
+      points: ["Ultrasound for leg clots", "CT scan for lung clots", "D-dimer blood test", "Quick testing matters"]
+      footage_query: "ultrasound scan leg"
+      narration: >-
+        How are clots diagnosed? For a suspected DVT, an ultrasound of the leg is quick, painless, and very accurate. For a
+        suspected pulmonary embolism, a CT scan of the chest with contrast dye is most common. A blood test called D dimer can
+        help rule out a clot in people at lower risk. Fast testing leads to fast treatment.
+    - layout: "bullets"
+      heading: "How Clots Are Treated"
+      points: ["Blood thinner medicines", "Usually for 3 months or more", "Stop clots from growing", "Body slowly breaks them down"]
+      footage_query: "pill organizer close up"
+      narration: >-
+        How are clots treated? Most people take blood thinner medicines, also called anticoagulants. They do not dissolve the
+        clot, but they stop it from getting bigger and prevent new clots, while the body slowly breaks it down. Treatment
+        usually lasts at least three months, and sometimes longer. Many people can be treated at home.
+    - layout: "bullets"
+      heading: "Severe Clots"
+      points: ["Clot-busting medicines", "Procedures to remove clots", "Filters in some cases", "Hospital care"]
+      footage_query: "hospital emergency entrance"
+      narration: >-
+        For very large or dangerous clots, especially a pulmonary embolism that strains the heart, doctors may use clot
+        busting medicines, or procedures that remove or break up the clot through a thin tube. Some people who cannot take
+        blood thinners may get a small filter placed in a large vein to catch clots. These are done in the hospital.
+    - layout: "warning"
+      heading: "Blood Thinner Safety"
+      points: ["Watch for unusual bleeding", "Tell every doctor and dentist", "Ask before new medicines", "Do not stop on your own"]
+      footage_query: "bandage wound care hands"
+      narration: >-
+        Blood thinners raise the risk of bleeding, so take them exactly as prescribed. Call your doctor for unusual bruising,
+        nosebleeds that will not stop, blood in urine or stool, or black stools. Get emergency care for a fall with a head
+        injury. Tell every doctor and dentist you take one. Ask before taking pain relievers or supplements. Never stop on
+        your own.
+    - layout: "bullets"
+      heading: "After a Clot"
+      points: ["Leg swelling can linger", "Compression and movement help", "Ask about long-term risk", "Some need longer treatment"]
+      footage_query: "woman walking park"
+      narration: >-
+        After a DVT, some people have long lasting leg swelling, pain or skin changes, called post thrombotic syndrome.
+        Staying active and following your doctor's advice can help. After a PE, some people have ongoing shortness of breath,
+        which should be checked. Ask your doctor about your chance of another clot, and how long you need blood thinners.
+    - layout: "warning"
+      heading: "Pregnancy and After Birth"
+      points: ["Risk rises in pregnancy", "Highest after delivery", "Watch for leg swelling", "Report shortness of breath"]
+      footage_query: "pregnant woman talking doctor"
+      narration: >-
+        Pregnancy raises the risk of clots, and the risk is highest in the weeks after giving birth, especially after a C
+        section. Some swelling in both legs is common in pregnancy, but swelling, pain, or redness in one leg, or sudden
+        shortness of breath or chest pain, needs urgent care. Blood clots are a leading cause of pregnancy related deaths.
+    - layout: "bullets"
+      heading: "Birth Control and Hormones"
+      points: ["Estrogen raises clot risk", "Risk is still small", "Higher with smoking", "Talk about options"]
+      footage_query: "birth control pills close up"
+      narration: >-
+        Birth control pills, patches and rings that contain estrogen, and some hormone therapy after menopause, slightly raise
+        the risk of clots. For most healthy women, the risk is still small, but it is higher with smoking, obesity, age over
+        thirty five, or a history of clots. Talk with your doctor about options, especially before surgery or long trips.
+    - layout: "bullets"
+      heading: "Everyday Prevention"
+      points: ["Stay active", "Keep a healthy weight", "Do not smoke", "Know your family history"]
+      footage_query: "people walking park"
+      narration: >-
+        Some everyday habits lower your risk of clots. Stay physically active, and take breaks to move if you sit for long
+        periods at work. Keep a healthy weight. Do not smoke. Drink enough water. Know your family history of blood clots, and
+        tell your doctor, especially before surgery, pregnancy, or starting hormones.
+    - layout: "myth_fact"
+      heading: "Leg Cramps Are Always Harmless"
+      points: ["Calf pain is just a cramp", "It could be a clot"]
+      footage_query: "man holding leg pain"
+      narration: >-
+        Myth: pain in your calf is always just a muscle cramp. Fact: most leg cramps are harmless and go away quickly. But
+        calf pain that does not go away, especially with swelling, warmth or redness in one leg, can be a blood clot. If you
+        have risk factors, like recent surgery or travel, get it checked the same day.
+    - layout: "bullets"
+      heading: "Questions for Your Doctor"
+      points: ["What is my clot risk?", "Do I need prevention?", "What signs should I watch?", "How long on blood thinners?"]
+      footage_query: "patient talking doctor"
+      narration: >-
+        At your next visit, ask: what is my risk of a blood clot? Do I need prevention before surgery, travel or pregnancy?
+        Are my hormones or birth control raising my risk? What warning signs should I watch for? And if I have had a clot, how
+        long should I take blood thinners, and what is my chance of another?
+    - layout: "bullets"
+      heading: "Quick Recap"
+      points: ["Swelling, pain, warmth in one leg", "Sudden breathlessness or chest pain", "Hospital stays are biggest risk", "Move, ask, prevent"]
+      footage_query: "notebook checklist pen"
+      narration: >-
+        Let us recap. Blood clots in the legs can cause swelling, pain, warmth and redness, usually in one leg. A clot in the
+        lungs can cause sudden shortness of breath, chest pain, and fainting, which means call 911. Hospital stays and surgery
+        are the biggest risks. Ask about prevention, keep moving, and know the signs for several weeks afterward.
+    - layout: "outro"
+      heading: "Remember"
+      points: ["One swollen leg: get checked", "Sudden breathlessness: call 911", "Ask about clot prevention"]
+      footage_query: "family walking outdoors"
+      narration: >-
+        Remember: one swollen, painful leg needs a same day check, sudden shortness of breath or chest pain means call 911,
+        and always ask about clot prevention in the hospital. Share this with someone having surgery soon. This video is for
+        education only, not medical advice. Like and subscribe to Health Support Studio for a new health video every day.
+  short_title: "Swollen leg? It could be a blood clot #Shorts"
+  short_caption: >-
+    A swollen, painful leg after surgery or travel could be a clot. Educational only, not medical advice. #BloodClots #DVT
+    #WarningSigns #HealthEducation
+  short_scenes:
+    - layout: "title"
+      heading: "Swollen Leg?"
+      points: ["It could be a blood clot"]
+      footage_query: "swollen leg close up"
+      narration: >-
+        A swollen, sore calf after surgery or a long trip could be a blood clot.
+    - layout: "warning"
+      heading: "Know the Signs"
+      points: ["Swelling, pain, warmth in one leg", "Sudden shortness of breath", "Chest pain: call 911"]
+      footage_query: "man struggling breathe"
+      narration: >-
+        Swelling, pain, warmth or redness in one leg needs a same day check. If a clot travels to the lungs, it can cause
+        sudden shortness of breath, chest pain or fainting. That is an emergency, so call 911. Hospital stays and surgery are
+        the biggest risks.
+    - layout: "outro"
+      heading: "Full Video"
+      points: ["On YouTube"]
+      footage_query: "family walking outdoors"
+      narration: >-
+        Learn how to prevent clots in our full video, on the Health Support Studio YouTube channel.
