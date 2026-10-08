@@ -1,0 +1,301 @@
+queue_topic: "Stroke recovery: rehab and preventing another stroke"
+style: "Explainer"
+sources:
+  - "NIH NINDS, Post-Stroke Rehabilitation: https://www.ninds.nih.gov/health-information/disorders/post-stroke-rehabilitation"
+  - "CDC, About Stroke: https://www.cdc.gov/stroke/about/index.html"
+  - "MedlinePlus, Stroke Rehabilitation: https://medlineplus.gov/strokerehabilitation.html"
+plan:
+  topic: "Stroke recovery: rehab and preventing another stroke"
+  title: "Life After a Stroke: How Recovery Really Works"
+  description: |-
+    After a stroke, the brain can rewire and relearn, often more than people expect. Learn how recovery works, what physical, occupational and speech therapy do, common challenges like swallowing and depression, and how to prevent another stroke.
+
+    In this video:
+    • How the brain heals and the recovery timeline
+    • Where rehab happens and the 3 types of therapy
+    • Aphasia, swallowing, fatigue and depression
+    • Preventing falls and another stroke
+    • Returning to daily life and support for caregivers
+
+    #Stroke #StrokeRecovery #Rehabilitation #Caregiving #HealthEducation
+  tags: ["stroke recovery", "stroke rehab", "life after stroke", "aphasia", "physical therapy", "occupational therapy", "speech therapy", "prevent stroke", "stroke caregiver", "be fast", "health education"]
+  thumbnail_text: "LIFE AFTER A STROKE"
+  thumbnail_highlight: "STROKE"
+  thumbnail_photo_query: "elderly man physical therapy"
+  playlist: "Older Adults & Caregiving"
+  scenes:
+    - layout: "title"
+      heading: "Life After a Stroke"
+      points: ["Recovery, step by step"]
+      footage_query: "elderly man physical therapy"
+      narration: >-
+        A stroke can change life in an instant. One day you are walking, talking and working, and the next, an arm will not
+        move, words will not come, or walking is hard. But the brain can heal and relearn, often more than people expect.
+        Today you will learn how stroke recovery works, what rehab looks like, and how to prevent another stroke.
+    - layout: "big_number"
+      heading: "Stroke Is Common"
+      points: ["About 795,000", "Americans have a stroke each year"]
+      footage_query: "hospital hallway doctors"
+      narration: >-
+        About seven hundred ninety five thousand people in the United States have a stroke each year, and about one in four of
+        those strokes happen in people who have had a stroke before. Stroke is a leading cause of serious long term
+        disability. But millions of Americans are living after a stroke, and many return to active, meaningful lives.
+    - layout: "bullets"
+      heading: "What Happens in a Stroke"
+      points: ["Blood flow to the brain stops", "Brain cells are damaged", "Usually a clot", "Sometimes bleeding"]
+      footage_query: "medical illustration brain"
+      narration: >-
+        A stroke happens when blood flow to part of the brain is blocked or a blood vessel bursts. Without oxygen, brain cells
+        in that area are damaged. Most strokes are caused by a clot blocking an artery. Some are caused by bleeding in the
+        brain. The effects depend on which part of the brain was hurt, and how much.
+    - layout: "warning"
+      heading: "Know the Signs: BE FAST"
+      points: ["Balance and Eyes", "Face drooping", "Arm weakness, Speech trouble", "Time to call 911"]
+      footage_query: "person calling phone emergency"
+      narration: >-
+        Before we talk about recovery, everyone should know the signs. Remember BE FAST. Balance: sudden loss of balance.
+        Eyes: sudden vision loss. Face: one side drooping. Arm: weakness on one side. Speech: slurred or strange. Time: call
+        911 right away. Fast treatment can save brain cells and reduce disability.
+    - layout: "bullets"
+      heading: "Common Effects of Stroke"
+      points: ["Weakness on one side", "Speech and language problems", "Trouble swallowing", "Vision and balance problems"]
+      footage_query: "elderly man walker"
+      narration: >-
+        What are the common effects of stroke? Weakness or paralysis on one side of the body. Trouble speaking or
+        understanding language, called aphasia. Trouble swallowing. Problems with vision, balance and coordination. Numbness.
+        Trouble with memory, attention, and planning. Emotional changes. Every stroke is different, and so is every recovery.
+    - layout: "bullets"
+      heading: "How the Brain Heals"
+      points: ["Neuroplasticity", "Healthy areas take over", "Practice builds new paths", "Repetition is key"]
+      footage_query: "medical illustration brain"
+      narration: >-
+        How does recovery happen? The brain can rewire itself, which is called neuroplasticity. Healthy parts of the brain can
+        learn to take over jobs that damaged parts used to do. This happens through practice, repeating movements and tasks
+        many times. That is why rehabilitation, and practicing every day, is so important.
+    - layout: "big_number"
+      heading: "Recovery Timeline"
+      points: ["First 3 months", "Fastest recovery"]
+      footage_query: "calendar notebook planning"
+      narration: >-
+        When does recovery happen? The fastest improvement usually happens in the first three months after a stroke, when the
+        brain is most ready to rewire. But recovery does not stop there. Many people keep improving for a year or more, and
+        some continue to make gains for years with practice. Never give up.
+    - layout: "bullets"
+      heading: "Rehab Starts Early"
+      points: ["Often in the hospital", "Within a day or two", "When it is safe", "Sitting, standing, moving"]
+      footage_query: "patient hospital bed"
+      narration: >-
+        Rehab often starts in the hospital, as soon as it is medically safe, sometimes within a day or two of the stroke. The
+        team may help the person sit up, stand, move their arms and legs, and check their swallowing. Starting early helps
+        prevent problems like stiff joints, blood clots, and pneumonia.
+    - layout: "bullets"
+      heading: "Where Rehab Happens"
+      points: ["Inpatient rehab hospital", "Skilled nursing facility", "Home health", "Outpatient clinic"]
+      footage_query: "rehab center gym"
+      narration: >-
+        Where does rehab happen after the hospital? Some people go to an inpatient rehabilitation facility, with several hours
+        of therapy a day. Others go to a skilled nursing facility, with less intense therapy. Some go home with home health
+        therapy, or attend outpatient therapy. Research shows inpatient rehab can lead to better recovery for people who
+        qualify. Ask about it.
+    - layout: "bullets"
+      heading: "Physical Therapy"
+      points: ["Strength and balance", "Walking practice", "Using a cane or walker", "Preventing falls"]
+      footage_query: "physical therapist patient"
+      narration: >-
+        Physical therapists help with movement, strength, balance and walking. They may use exercises, walking practice with
+        support, and equipment like canes, walkers, or leg braces. Some therapies have the person use the weaker arm or leg as
+        much as possible. The goal is to help people move safely and as independently as possible.
+    - layout: "bullets"
+      heading: "Occupational Therapy"
+      points: ["Daily tasks: dressing, bathing", "Using the weaker arm and hand", "Home safety", "Adaptive tools"]
+      footage_query: "occupational therapy hands"
+      narration: >-
+        Occupational therapists help people get back to daily activities, like dressing, bathing, cooking, and writing. They
+        work on hand and arm function, memory and thinking skills for daily life, and suggest tools that make tasks easier,
+        like special utensils, shower chairs, and grab bars. They can also suggest changes to make the home safer.
+    - layout: "bullets"
+      heading: "Speech Therapy"
+      points: ["Speaking and understanding", "Reading and writing", "Swallowing safely", "Thinking and memory"]
+      footage_query: "speech therapy session"
+      narration: >-
+        Speech and language therapists help with communication problems, like trouble finding words, speaking clearly,
+        understanding others, reading and writing. They also help with swallowing problems, which can cause choking or
+        pneumonia, and with memory, attention, and problem solving. They may suggest safer food textures or drinks while
+        swallowing improves.
+    - layout: "bullets"
+      heading: "Living With Aphasia"
+      points: ["Speak slowly and simply", "Give extra time", "Use gestures and pictures", "Do not finish their sentences"]
+      footage_query: "family talking elderly man"
+      narration: >-
+        Aphasia is a language problem after stroke. The person's intelligence is not affected, but finding or understanding
+        words is hard. To help, speak slowly in short sentences, give them time to answer, use gestures, pictures, or writing,
+        and reduce background noise. Avoid finishing their sentences for them unless they ask. Be patient. Communication often
+        improves over time.
+    - layout: "warning"
+      heading: "Swallowing Problems"
+      points: ["Coughing when eating", "Wet or gurgly voice", "Food left in the mouth", "Pneumonia risk"]
+      footage_query: "elderly man eating"
+      narration: >-
+        Many people have trouble swallowing after a stroke, which can cause food or drink to go into the lungs and lead to
+        pneumonia. Signs include coughing or choking while eating, a wet or gurgly voice, food left in the mouth, and
+        drooling. Follow the speech therapist's advice on food textures and positions, and sit fully upright to eat.
+    - layout: "bullets"
+      heading: "Fatigue Is Common"
+      points: ["Tired for months", "Brain is working hard", "Plan rest breaks", "Pace yourself"]
+      footage_query: "elderly man resting couch"
+      narration: >-
+        Extreme tiredness is very common after a stroke, and can last for months. The brain is working hard to heal and
+        relearn. Plan short rest breaks during the day. Do the most important tasks when you have the most energy. Pace
+        yourself, and slowly build up activity. Tell your doctor if fatigue is severe, since it can also be a sign of
+        depression or other problems.
+    - layout: "warning"
+      heading: "Depression After Stroke"
+      points: ["About 1 in 3 people", "Sadness, no interest", "Slows recovery", "Treatment works"]
+      footage_query: "elderly man sad sitting"
+      narration: >-
+        About one in three people have depression after a stroke. It is not a sign of weakness. It can come from brain changes
+        and from the big life changes stroke brings. Signs include sadness, hopelessness, loss of interest, and poor sleep.
+        Depression can slow recovery, but treatment with therapy and medicine works. Tell the care team. In crisis, call or
+        text nine eight eight.
+    - layout: "bullets"
+      heading: "Emotional Changes"
+      points: ["Sudden crying or laughing", "Frustration and anger", "Anxiety", "Ask about treatment"]
+      footage_query: "elderly woman anxious"
+      narration: >-
+        Some people have sudden crying or laughing that does not match how they feel, called pseudobulbar affect. Frustration,
+        anger, and anxiety are also common. These changes can be hard on the person and family. Let the care team know,
+        because there are treatments that help. Support groups can also help people feel less alone.
+    - layout: "bullets"
+      heading: "Muscle Stiffness"
+      points: ["Tight, stiff muscles", "Called spasticity", "Stretching helps", "Ask about treatments"]
+      footage_query: "physical therapist stretching"
+      narration: >-
+        Some people develop tight, stiff muscles in the weaker arm or leg, called spasticity. It can cause pain and make
+        movement harder. Regular stretching, splints, and exercises help. Medicines and injections can also relax tight
+        muscles. Ask the therapy team about a stretching plan that you can do at home every day.
+    - layout: "warning"
+      heading: "Preventing Falls"
+      points: ["Fall risk is high", "Clear walking paths", "Grab bars, good lighting", "Use walking aids"]
+      footage_query: "elderly man walker"
+      narration: >-
+        Falls are very common after a stroke, due to weakness, balance problems, and vision changes. Clear walking paths of
+        rugs and clutter. Install grab bars in the bathroom and good lighting, especially at night. Use walking aids as
+        advised. Wear sturdy, non slip shoes. Ask the physical therapist to check the home for safety.
+    - layout: "big_number"
+      heading: "Prevent Another Stroke"
+      points: ["About 1 in 4", "Strokes are repeat strokes"]
+      footage_query: "doctor talking patient office"
+      narration: >-
+        One of the most important parts of recovery is preventing another stroke. About one in four strokes happen in people
+        who already had one. The good news is that most strokes can be prevented by controlling risk factors and taking
+        medicines as prescribed. The next steps can make a big difference.
+    - layout: "bullets"
+      heading: "Control Blood Pressure"
+      points: ["Biggest risk factor", "Check it at home", "Take medicines daily", "Cut back on salt"]
+      footage_query: "blood pressure monitor arm"
+      narration: >-
+        High blood pressure is the biggest risk factor for stroke. Ask your doctor what your target is, often below one
+        hundred thirty over eighty. Check your blood pressure at home and keep a log. Take your medicines every day, even when
+        you feel fine. Eat less salt, limit alcohol, and stay active. Controlling blood pressure greatly lowers the risk of
+        another stroke.
+    - layout: "bullets"
+      heading: "Take Prevention Medicines"
+      points: ["Antiplatelets or blood thinners", "Statins for cholesterol", "Diabetes medicines", "Never stop on your own"]
+      footage_query: "pill organizer close up"
+      narration: >-
+        Many people need medicines to prevent another stroke. These may include antiplatelet medicines like aspirin or
+        clopidogrel, a blood thinner if you have atrial fibrillation, a statin to lower cholesterol, and medicines for blood
+        pressure and diabetes. Take them exactly as prescribed, and never stop them on your own, since stopping can raise the
+        risk of another stroke.
+    - layout: "bullets"
+      heading: "Healthy Habits"
+      points: ["Quit smoking", "Limit alcohol", "Eat heart-healthy food", "Move every day"]
+      footage_query: "healthy salad bowl table"
+      narration: >-
+        Healthy habits help prevent another stroke. Quit smoking, which doubles stroke risk. Limit alcohol. Eat plenty of
+        vegetables, fruits, whole grains, beans, fish and healthy fats, and less salt, sugar, and processed meat. Stay as
+        active as you safely can, even short walks help. Reach a healthy weight. And treat sleep apnea if you have it.
+    - layout: "bullets"
+      heading: "Returning to Daily Life"
+      points: ["Driving: get cleared first", "Work: may need changes", "Sex: usually safe, ask", "Hobbies: adapt and enjoy"]
+      footage_query: "elderly man driving car"
+      narration: >-
+        Many people want to know when they can return to normal life. Do not drive until your doctor clears you, since stroke
+        can affect vision, reaction time and judgment. Some people need a driving evaluation. Many return to work with
+        changes. Sexual activity is usually safe, but ask your doctor. Hobbies can often be adapted, and they help recovery.
+    - layout: "bullets"
+      heading: "For Caregivers"
+      points: ["Learn about the stroke", "Encourage, do not do everything", "Take breaks", "Ask for help"]
+      footage_query: "caregiver helping elderly parent"
+      narration: >-
+        Caregivers play a huge role in recovery. Learn about the type of stroke and its effects. Go to therapy sessions when
+        you can, and learn the exercises. Encourage independence, even when it is faster to do things for them. Watch for
+        warning signs of another stroke. And take care of yourself: rest, eat well, take breaks, and ask for help. Caregiver
+        burnout is real.
+    - layout: "bullets"
+      heading: "Support and Resources"
+      points: ["Stroke support groups", "Area Agency on Aging", "Home modifications help", "Financial and disability benefits"]
+      footage_query: "support group meeting"
+      narration: >-
+        You do not have to do this alone. Stroke support groups, in person or online, connect survivors and families. Your
+        local Area Agency on Aging can help with meals, transportation and caregiver respite. Ask a social worker about
+        disability benefits, home modifications, and equipment. National stroke organizations have free resources and
+        helplines.
+    - layout: "myth_fact"
+      heading: "Recovery Stops at 6 Months"
+      points: ["No progress after 6 months", "Gains can continue for years"]
+      footage_query: "elderly man walking park"
+      narration: >-
+        Myth: after six months, a stroke survivor cannot improve any more. Fact: the fastest gains happen early, but many
+        people keep improving for years with practice and therapy. The brain stays able to learn. Keep doing exercises at
+        home, stay active, and ask about further therapy if you hit a plateau.
+    - layout: "bullets"
+      heading: "Questions for the Care Team"
+      points: ["What type of stroke was it?", "What rehab is best?", "How do I prevent another?", "What signs need 911?"]
+      footage_query: "patient talking doctor"
+      narration: >-
+        Ask the care team: what type of stroke was it, and what caused it? What rehab setting is best, and can we try
+        inpatient rehab? What exercises should we do at home? What medicines prevent another stroke? What are the target
+        numbers for blood pressure, cholesterol and blood sugar? And what signs mean we should call 911?
+    - layout: "bullets"
+      heading: "Quick Recap"
+      points: ["Brain can rewire", "Rehab early and often", "Prevent another stroke", "Support for everyone"]
+      footage_query: "notebook checklist pen"
+      narration: >-
+        Let us recap. After a stroke, the brain can rewire itself through practice, with the fastest recovery in the first
+        three months, and gains continuing for years. Rehab includes physical, occupational, and speech therapy. Watch for
+        swallowing problems, depression, and falls. Prevent another stroke by controlling blood pressure and taking medicines.
+        And know BE FAST.
+    - layout: "outro"
+      heading: "Remember"
+      points: ["Practice every day", "Control blood pressure", "Know BE FAST"]
+      footage_query: "older couple walking park"
+      narration: >-
+        Remember: practice every day, control your blood pressure, and know the BE FAST signs of stroke. Share this with a
+        stroke survivor or their family. This video is for education only, not medical advice. Like and subscribe to Health
+        Support Studio for a new health video every day.
+  short_title: "After a stroke, the brain can heal #Shorts"
+  short_caption: >-
+    Stroke recovery can continue for years. Educational only, not medical advice. #Stroke #StrokeRecovery #Rehabilitation
+    #HealthEducation
+  short_scenes:
+    - layout: "title"
+      heading: "After a Stroke"
+      points: ["The brain can heal"]
+      footage_query: "elderly man physical therapy"
+      narration: >-
+        After a stroke, the brain can rewire itself and relearn, often more than people expect.
+    - layout: "bullets"
+      heading: "Recovery Facts"
+      points: ["Fastest in first 3 months", "Gains continue for years", "1 in 4 strokes are repeats"]
+      footage_query: "physical therapist patient"
+      narration: >-
+        The fastest recovery usually happens in the first three months, but many people keep improving for years with
+        practice. About one in four strokes are repeat strokes, so controlling blood pressure and taking prevention medicines
+        is key. And know the BE FAST signs.
+    - layout: "outro"
+      heading: "Full Video"
+      points: ["On YouTube"]
+      footage_query: "older couple walking park"
+      narration: >-
+        Learn more about stroke recovery in our full video, on the Health Support Studio YouTube channel.
