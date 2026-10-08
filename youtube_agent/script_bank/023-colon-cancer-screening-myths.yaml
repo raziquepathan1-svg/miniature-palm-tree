@@ -13,7 +13,8 @@ plan:
     In this video:
     • Why screening starts at 45
     • Why you shouldn't wait for symptoms
-    • At-home stool tests vs colonoscopy
+    • Home stool tests, colonoscopy and other options
+    • 8 common myths busted
     • Warning signs to never ignore
 
     #ColonCancer #ColorectalCancer #CancerScreening #Prevention #HealthEducation
@@ -24,75 +25,236 @@ plan:
   playlist: "Tests & Doctor Visits"
   scenes:
     - layout: "title"
-      heading: "Colon Cancer Screening Myths"
-      points: ["It starts at 45"]
-      footage_query: "doctor consultation middle aged"
+      heading: "Screening Starts at 45"
+      points: ["Colon cancer myths busted"]
+      footage_query: "middle aged man doctor consultation"
       narration: >-
-        Colorectal cancer is one of the leading causes of cancer death in the United States. But it is also one of the most
-        preventable cancers, thanks to screening. So why do so many people put it off? Often, because of myths. Let's bust five
-        of them.
-    - layout: "myth_fact"
-      heading: "Myth 1"
-      points: ["Screening starts at 50", "Now it starts at 45"]
-      footage_query: "birthday cake candles adult"
+        Colon cancer is one of the most preventable cancers there is. Screening can find it early, and can even stop it before
+        it starts. Yet millions of Americans who should be screened are not, often because of myths, fear, or embarrassment.
+        Today we bust the most common colon cancer screening myths, and help you pick a test that works for you.
+    - layout: "big_number"
+      heading: "A Leading Cancer Killer"
+      points: ["2nd", "Leading cause of US cancer deaths"]
+      footage_query: "hospital hallway doctors"
       narration: >-
-        Myth number one: screening starts at fifty. Fact: the US Preventive Services Task Force now recommends that adults at
-        average risk start screening at forty five, and continue through age seventy five. People with a family history or
-        other risk factors may need to start even earlier, so ask your doctor.
-    - layout: "myth_fact"
-      heading: "Myth 2"
-      points: ["No symptoms means no cancer", "Early cancer often has no symptoms"]
-      footage_query: "man smiling healthy outdoors"
-      narration: >-
-        Myth number two: I feel fine, so I do not need it. Fact: early colorectal cancer often causes no symptoms at all.
-        Screening is for people who feel healthy. It can find cancer early, when it is most treatable, and a colonoscopy can
-        even remove growths called polyps before they turn into cancer.
-    - layout: "myth_fact"
-      heading: "Myth 3"
-      points: ["Colonoscopy is the only option", "At-home stool tests are options too"]
-      footage_query: "test kit mailbox home"
-      narration: >-
-        Myth number three: a colonoscopy is the only option. Fact: there are several choices. Some are at home stool tests,
-        like a FIT test done every year, or a stool DNA test done every one to three years. Others include colonoscopy, usually
-        every ten years if normal, and CT colonography. The best test is the one you will actually do.
-    - layout: "myth_fact"
-      heading: "Myth 4"
-      points: ["A positive stool test is the end", "Follow up with a colonoscopy"]
-      footage_query: "patient talking doctor office"
-      narration: >-
-        Myth number four: if my stool test is positive, I have cancer, or if I ignore it, it will go away. Fact: a positive
-        stool test does not mean you have cancer, but it does mean you need a follow up colonoscopy to find out why. Skipping
-        that step makes the screening incomplete.
-    - layout: "myth_fact"
-      heading: "Myth 5"
-      points: ["Only older men get it", "Women and younger adults get it too"]
-      footage_query: "young adults group friends"
-      narration: >-
-        Myth number five: this is a disease of older men. Fact: colorectal cancer affects men and women, and rates have been
-        rising in adults younger than fifty. That is one reason the screening age was lowered to forty five.
-    - layout: "warning"
-      heading: "Don't Ignore These"
-      points: ["Blood in stool or rectal bleeding", "Change in bowel habits", "Belly pain that won't go away", "Unexplained weight loss"]
-      footage_query: "man stomach pain"
-      narration: >-
-        And at any age, do not ignore these symptoms: blood in your stool or bleeding from the rectum, a change in your bowel
-        habits that lasts, belly pain that will not go away, unexplained weight loss, or feeling tired from anemia. See your
-        doctor, even if you are younger than forty five.
+        Colorectal cancer, which means cancer of the colon or rectum, is the second leading cause of cancer deaths in the
+        United States when men and women are counted together. Each year, well over one hundred and fifty thousand Americans
+        are diagnosed. But when it is found early, before it spreads, most people survive. That is the power of screening.
     - layout: "bullets"
-      heading: "Cost and Insurance"
-      points: ["Most plans cover screening", "Ask about follow-up costs", "Low-cost programs exist"]
-      footage_query: "person reading insurance papers"
+      heading: "How Colon Cancer Starts"
+      points: ["Small growths called polyps", "Most are harmless", "Some slowly turn to cancer", "Takes about 10 years"]
+      footage_query: "medical illustration colon"
       narration: >-
-        Worried about cost? Most private insurance plans and Medicare cover colorectal cancer screening. Ask your plan how a
-        follow up colonoscopy after a positive stool test is covered. If you do not have insurance, ask your local health
-        department about low cost screening programs.
+        Most colon cancers start as small growths on the inner wall of the colon or rectum, called polyps. Most polyps are
+        harmless, but some can slowly turn into cancer over about ten years or more. This slow growth is good news, because it
+        gives screening time to find polyps and remove them, before they ever become cancer.
+    - layout: "myth_fact"
+      heading: "Screening Starts at 50"
+      points: ["I can wait until 50", "Average risk starts at 45"]
+      footage_query: "birthday cake candles"
+      narration: >-
+        Myth one: colon cancer screening starts at fifty. Fact: in 2021, the US Preventive Services Task Force lowered the age
+        to forty five for adults at average risk. This is because colon cancer has been rising in younger adults. If you are
+        forty five or older and have never been screened, now is the time to talk to your doctor.
+    - layout: "big_number"
+      heading: "Rising in Younger Adults"
+      points: ["1 in 5", "New cases in people 54 or younger"]
+      footage_query: "young adults group outdoors"
+      narration: >-
+        Colon cancer is being found more often in people under fifty five. The American Cancer Society reports that about one
+        in five new cases now happens in people fifty four or younger. It is now a leading cause of cancer death in younger
+        men and women. Doctors are still studying why, but it is a big reason screening starts earlier.
+    - layout: "bullets"
+      heading: "Who Should Screen Earlier"
+      points: ["Parent or sibling with colon cancer", "Advanced polyps in family", "Inflammatory bowel disease", "Inherited cancer syndromes"]
+      footage_query: "family photo generations"
+      narration: >-
+        Some people need to start even earlier than forty five, or test more often. This includes people whose parent,
+        brother, sister or child had colon cancer or advanced polyps, people with Crohn's disease or ulcerative colitis, and
+        people with inherited conditions like Lynch syndrome. Often, screening starts at forty, or ten years before the age
+        the relative was diagnosed. Ask your doctor.
+    - layout: "myth_fact"
+      heading: "No Symptoms, No Need"
+      points: ["I feel fine, so I am safe", "Early cancer has no symptoms"]
+      footage_query: "man smiling outdoors"
+      narration: >-
+        Myth two: I feel fine, so I do not need screening. Fact: polyps and early colon cancer usually cause no symptoms at
+        all. By the time symptoms appear, the cancer may be more advanced and harder to treat. Screening is for people who
+        feel healthy. That is the whole point, to catch problems before you feel them.
+    - layout: "warning"
+      heading: "Symptoms Never to Ignore"
+      points: ["Blood in or on stool", "Change in bowel habits", "Belly pain that lasts", "Unexplained weight loss, tiredness"]
+      footage_query: "woman holding stomach pain"
+      narration: >-
+        Even so, some symptoms need a doctor's visit right away, at any age. Blood in or on your stool, or very dark stool. A
+        change in bowel habits that lasts more than a few days, like diarrhea, constipation, or narrower stools. Belly pain or
+        cramps that do not go away. Weight loss without trying, and feeling tired because of low iron. Do not wait for a
+        screening date.
+    - layout: "myth_fact"
+      heading: "Colonoscopy Is the Only Test"
+      points: ["Colonoscopy is the only option", "Several good tests exist"]
+      footage_query: "medical equipment clinic"
+      narration: >-
+        Myth three: colonoscopy is the only way to screen. Fact: there are several good options. Some are done at home, using
+        a stool sample. Others look inside the colon. The Task Force says the best test is the one you will actually do. Let
+        us go through the main choices.
+    - layout: "bullets"
+      heading: "The FIT Stool Test"
+      points: ["Done at home", "Checks for hidden blood", "No prep, no time off", "Repeat every year"]
+      footage_query: "home test kit mail"
+      narration: >-
+        The first option is the FIT test, short for fecal immunochemical test. You collect a small stool sample at home, using
+        a kit, and mail it to a lab. It looks for tiny amounts of blood that you cannot see. There is no diet change, no prep,
+        and no time off work. But it must be done every year to work well.
+    - layout: "bullets"
+      heading: "The Stool DNA Test"
+      points: ["Done at home", "Checks blood and DNA changes", "Repeat every 1 to 3 years", "More false alarms"]
+      footage_query: "home test kit bathroom"
+      narration: >-
+        Another home option is the stool DNA test, sometimes known by brand names like Cologuard. It checks a stool sample for
+        both blood and changes in DNA that can come from polyps or cancer. It is repeated every one to three years. It finds
+        more problems than FIT, but it also has more false alarms, which lead to a follow up colonoscopy.
+    - layout: "bullets"
+      heading: "Colonoscopy"
+      points: ["A thin camera looks inside", "Polyps removed during the test", "Every 10 years if normal", "Needs prep and a ride"]
+      footage_query: "doctor colonoscopy room"
+      narration: >-
+        Colonoscopy uses a thin, flexible tube with a camera to look at the whole colon. The big advantage is that polyps can
+        be found and removed during the same test. If your results are normal and you are at average risk, you may not need
+        another one for ten years. You do need to clean out the bowel beforehand, and someone to drive you home.
+    - layout: "bullets"
+      heading: "Other Options"
+      points: ["CT colonography every 5 years", "Flexible sigmoidoscopy", "Blood-based tests are newer", "Ask what fits you"]
+      footage_query: "ct scanner hospital"
+      narration: >-
+        There are other choices too. CT colonography, sometimes called virtual colonoscopy, uses a CT scan and is repeated
+        every five years. Flexible sigmoidoscopy looks at the lower part of the colon. Newer blood tests are also available,
+        but they are less likely to find polyps, and are not first choices in current guidelines. Your doctor can help you
+        compare them.
+    - layout: "warning"
+      heading: "A Positive Home Test"
+      points: ["You need a colonoscopy", "Do not skip it", "Most are not cancer", "Act within a few months"]
+      footage_query: "doctor talking patient office"
+      narration: >-
+        Here is something very important. If a stool test comes back positive, you need a follow up colonoscopy. A home test
+        is only the first step. Most positive results are not cancer, but some are polyps or early cancer that need to be
+        found. Studies show that waiting many months after a positive test raises the risk. Do not skip it.
+    - layout: "myth_fact"
+      heading: "The Prep Is Unbearable"
+      points: ["The bowel prep is terrible", "Preps are easier today"]
+      footage_query: "woman drinking glass water"
+      narration: >-
+        Myth four: colonoscopy prep is unbearable. Fact: the prep is the least fun part, but it has gotten easier. There are
+        smaller volume drinks, and split doses, where you take half the evening before and half the morning of the test.
+        Mixing it with a clear sports drink and chilling it can help. Most people say it was easier than they feared.
+    - layout: "bullets"
+      heading: "Tips for an Easier Prep"
+      points: ["Low fiber diet a few days before", "Follow the instructions exactly", "Stay near a bathroom", "Use soft wipes and cream"]
+      footage_query: "bathroom toilet paper"
+      narration: >-
+        A few tips make prep easier. Follow your instructions exactly, since a clean colon means a better test. Some doctors
+        suggest a low fiber diet for a few days before. Drink plenty of clear liquids to stay hydrated. Stay near a bathroom.
+        Soft wipes and a barrier cream help with soreness. Tell your doctor about diabetes medicines or blood thinners
+        beforehand.
+    - layout: "myth_fact"
+      heading: "Colonoscopy Hurts"
+      points: ["The test is very painful", "Most people sleep through it"]
+      footage_query: "patient resting hospital bed"
+      narration: >-
+        Myth five: a colonoscopy is very painful. Fact: most people get medicine to make them relaxed and sleepy, and many do
+        not remember the test at all. It usually takes about thirty to sixty minutes. Afterward, you may feel some gas or
+        bloating for a short time. Serious problems, like bleeding or a tear, are rare.
+    - layout: "myth_fact"
+      heading: "Screening Is Too Expensive"
+      points: ["I cannot afford screening", "Most plans cover it fully"]
+      footage_query: "insurance card hand"
+      narration: >-
+        Myth six: screening costs too much. Fact: under federal law, most private insurance plans and Medicare cover
+        recommended colon cancer screening with no out of pocket cost. Many plans now also cover the follow up colonoscopy
+        after a positive stool test. If you have no insurance, ask about community health centers and state programs that
+        offer free or low cost screening.
+    - layout: "bullets"
+      heading: "Check Your Coverage"
+      points: ["Call your insurance first", "Ask if it counts as screening", "Ask about follow-up costs", "Ask about anesthesia fees"]
+      footage_query: "woman talking phone desk"
+      narration: >-
+        To avoid surprise bills, call your insurance before the test. Ask whether the test counts as screening or diagnostic,
+        since this can change the cost. Ask whether a follow up colonoscopy after a positive stool test is covered, and
+        whether polyp removal or anesthesia fees are included. Get the answers written down, with the name of the person you
+        spoke to.
+    - layout: "myth_fact"
+      heading: "No Family History, No Risk"
+      points: ["No one in my family had it", "Most cases have no family history"]
+      footage_query: "family dinner table"
+      narration: >-
+        Myth seven: if no one in my family had colon cancer, I am not at risk. Fact: most people who get colon cancer have no
+        family history of it. Age is still the biggest risk factor. Family history raises your risk, but a lack of family
+        history does not protect you. Everyone forty five and older should be screened.
+    - layout: "myth_fact"
+      heading: "It Is a Man's Disease"
+      points: ["Only men get colon cancer", "Women get it nearly as often"]
+      footage_query: "women walking park"
+      narration: >-
+        Myth eight: colon cancer is mostly a disease of men. Fact: women get colon cancer almost as often as men. Some women
+        focus on breast and cervical screening, and forget about the colon. If you are a woman forty five or older, add colon
+        cancer screening to your list, and talk to your doctor about which test fits you.
+    - layout: "bullets"
+      heading: "Other Risk Factors"
+      points: ["Older age", "Obesity and inactivity", "Smoking and heavy alcohol", "Lots of red and processed meat"]
+      footage_query: "man smoking cigarette"
+      narration: >-
+        Besides age and family history, other things raise the risk. Having obesity, not being physically active, smoking, and
+        drinking a lot of alcohol. Eating a lot of red meat, like beef and pork, and processed meats, like bacon, hot dogs and
+        deli meats. Having type two diabetes. Some of these risks are things you can change.
+    - layout: "bullets"
+      heading: "Lower Your Risk"
+      points: ["Stay active", "Eat more fiber and vegetables", "Limit red and processed meat", "Do not smoke, limit alcohol"]
+      footage_query: "healthy salad bowl table"
+      narration: >-
+        You can lower your risk with everyday habits. Move your body most days. Eat more vegetables, fruits, beans and whole
+        grains, which are high in fiber. Limit red and processed meats. Keep a healthy weight. Do not smoke, and limit
+        alcohol. These habits help, but they do not replace screening. Even healthy people can get colon cancer.
+    - layout: "bullets"
+      heading: "After Polyps Are Found"
+      points: ["Most are removed and tested", "Results guide your next test", "May need it sooner", "Keep your report"]
+      footage_query: "doctor reading lab results"
+      narration: >-
+        What if polyps are found? During a colonoscopy, they are usually removed right away and sent to a lab. The results
+        decide when you need your next test. Depending on the number, size and type of polyps, that may be in three, five,
+        seven or ten years. Ask for a copy of your report, and keep it with your health records.
+    - layout: "bullets"
+      heading: "When to Stop Screening"
+      points: ["Most screen until 75", "76 to 85: decide with your doctor", "Over 85: usually stop", "Depends on health and history"]
+      footage_query: "elderly couple talking doctor"
+      narration: >-
+        When can you stop? Most people should keep screening regularly until age seventy five. Between seventy six and eighty
+        five, the decision depends on your overall health, past screening results, and your own wishes, so talk with your
+        doctor. After eighty five, screening is usually not recommended. If you have never been screened, earlier testing may
+        still help.
+    - layout: "bullets"
+      heading: "How to Get Started"
+      points: ["Ask your doctor at your next visit", "Ask which tests you can do", "Pick one and schedule it", "Put the next date on your calendar"]
+      footage_query: "calendar notebook planning"
+      narration: >-
+        Getting started is simple. At your next visit, say: I am forty five or older, and I want to get screened for colon
+        cancer. Ask which tests are right for you. Pick one and schedule it before you leave. Then put the next screening date
+        on your calendar. If you are due for a home test, do it the week it arrives.
+    - layout: "bullets"
+      heading: "Quick Recap"
+      points: ["Screening starts at 45", "Early cancer has no symptoms", "Home tests are an option", "Positive test needs colonoscopy"]
+      footage_query: "notebook checklist pen"
+      narration: >-
+        Let us recap. For people at average risk, screening starts at forty five. Early colon cancer usually has no symptoms.
+        You have several test choices, including home stool tests. A positive home test always needs a follow up colonoscopy.
+        Most insurance covers screening. And symptoms like blood in your stool need a doctor's visit at any age.
     - layout: "outro"
-      heading: "45 or Older?"
-      points: ["Ask about screening", "Pick the test you'll do", "Share with a friend"]
-      footage_query: "couple walking park"
+      heading: "Remember"
+      points: ["45 is the new 50", "The best test is one you do", "Never ignore blood in stool"]
+      footage_query: "family walking outdoors"
       narration: >-
-        Forty five or older? Ask your doctor about screening this year. This video is for education only, not medical advice.
-        Like and subscribe to Health Support Studio for a new health video every day.
+        Remember: forty five is the new fifty, the best test is the one you actually do, and blood in your stool always needs
+        a doctor. Share this with someone who just turned forty five, or who keeps putting it off. This video is for education
+        only, not medical advice. Like and subscribe to Health Support Studio for a new health video every day.
   short_title: "Colon cancer screening starts at 45 now #Shorts"
   short_caption: >-
     Colon cancer screening now starts at 45, and a colonoscopy isn't your only option. Share this with someone who turns 45
