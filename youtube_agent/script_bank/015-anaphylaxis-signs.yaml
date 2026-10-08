@@ -11,10 +11,12 @@ plan:
     A severe allergic reaction, called anaphylaxis, can become life-threatening within minutes. Learn the warning signs, what to do right away, and why you should still go to the ER even if you feel better.
 
     In this video:
-    • Common triggers: foods, insect stings, medicines, latex
-    • Mild reaction vs anaphylaxis
-    • Why epinephrine comes first
-    • Why symptoms can come back hours later
+    • What anaphylaxis is and how fast it moves
+    • Food, sting and medicine triggers
+    • Skin, breathing, heart and gut signs
+    • How to use epinephrine and what comes next
+    • 4 dangerous myths
+    • Staying safe at home, school and work
 
     #Anaphylaxis #Allergies #FoodAllergy #FirstAid #HealthEducation
   tags: ["anaphylaxis", "severe allergic reaction", "anaphylaxis symptoms", "food allergy", "epinephrine auto injector", "epipen", "bee sting allergy", "allergic reaction signs", "first aid", "health education"]
@@ -29,72 +31,235 @@ plan:
       footage_query: "peanuts bowl close up"
       narration: >-
         A bite of food, a bee sting, or a new medicine. Within minutes, someone's lips start swelling and they struggle to
-        breathe. This is anaphylaxis, a severe allergic reaction that can be life threatening. Knowing the signs, and what to
-        do first, can save a life.
+        breathe. This is anaphylaxis, a severe allergic reaction that can be life threatening. In the next few minutes you
+        will learn the warning signs, the one medicine that comes first, the mistakes people make, and how to stay safe every
+        day if you or your child has allergies.
     - layout: "bullets"
-      heading: "Common Triggers"
-      points: ["Foods: peanuts, tree nuts, shellfish", "Insect stings", "Medicines", "Latex"]
+      heading: "What Is Anaphylaxis"
+      points: ["Whole-body allergic reaction", "Starts in minutes", "Can close the airway", "Can drop blood pressure"]
+      footage_query: "doctor explaining patient"
+      narration: >-
+        Anaphylaxis is an allergic reaction that spreads through the whole body. The immune system mistakes something harmless
+        for a threat and releases a flood of chemicals. Blood vessels widen, blood pressure can fall, and the airway can swell
+        shut. It usually starts within minutes of contact, though sometimes it takes up to an hour or two. Because it moves
+        fast, every minute matters.
+    - layout: "big_number"
+      heading: "How Fast It Moves"
+      points: ["Minutes", "From contact to danger"]
+      footage_query: "clock ticking close up"
+      narration: >-
+        In many cases, serious symptoms begin within five to thirty minutes. With an insect sting or a medicine given through
+        a vein, it can be even faster. That is why people with known severe allergies are told to act at the first sign, not
+        to wait and watch. A reaction that looks mild at first can become life threatening very quickly.
+    - layout: "bullets"
+      heading: "Common Food Triggers"
+      points: ["Peanuts and tree nuts", "Shellfish and fish", "Milk, eggs, wheat, soy", "Sesame"]
+      footage_query: "peanuts bowl close up"
+      narration: >-
+        Food is the most common trigger, especially in children. The main ones are peanuts, tree nuts like cashews and
+        walnuts, shellfish like shrimp, fish, milk, eggs, wheat, soy and sesame. Peanut, tree nut, fish and shellfish
+        allergies often last for life. Even a tiny amount hidden in a sauce or a baked good can be enough to set off a
+        reaction.
+    - layout: "bullets"
+      heading: "Other Triggers"
+      points: ["Bee and wasp stings", "Fire ant bites", "Some medicines", "Latex"]
       footage_query: "bee flower close up"
       narration: >-
-        Anaphylaxis happens when the immune system overreacts to something. Common triggers include foods like peanuts, tree
-        nuts, shellfish, fish, milk and eggs, insect stings from bees or wasps, some medicines, and latex. It can happen even if
-        a person had only mild reactions before.
+        Insect stings from bees, wasps, hornets, yellow jackets and fire ants are another big cause. Some medicines can
+        trigger it too, including certain antibiotics like penicillin, aspirin and similar pain relievers, and contrast dye
+        used for scans. Latex in gloves or balloons is less common today but still possible. In some people, exercise after
+        eating a certain food can trigger a reaction.
+    - layout: "bullets"
+      heading: "Who Is at Higher Risk"
+      points: ["Had a serious reaction before", "Have asthma", "Have heart disease", "Teens and young adults"]
+      footage_query: "teenagers eating together"
+      narration: >-
+        Anyone can have anaphylaxis, but some people face more danger. People who had a severe reaction before are more likely
+        to have another. Asthma raises the risk of a breathing emergency. People with heart disease may react more severely.
+        Teens and young adults are at higher risk too, often because they skip carrying their medicine or take chances with
+        food.
     - layout: "bullets"
       heading: "Mild Allergic Reaction"
-      points: ["A few hives or itchy skin", "Runny nose, sneezing", "Only one body area"]
+      points: ["A few hives or itchy skin", "Runny nose, sneezing", "Itchy mouth", "Only one body area"]
       footage_query: "person scratching arm"
       narration: >-
-        First, what does a mild allergic reaction look like? A few hives, itchy skin, sneezing, or a runny nose, usually
-        affecting only one part of the body. Watch the person closely, because a reaction can get worse, and follow any
-        allergy plan their doctor has given them.
+        First, what does a mild allergic reaction look like? A few hives, itchy skin, sneezing, a runny nose, or a slightly
+        itchy mouth, usually affecting only one part of the body. Watch the person closely for at least the next hour, because
+        a reaction can get worse. Follow any written allergy plan their doctor has given them, and keep the epinephrine close
+        by.
     - layout: "warning"
-      heading: "Signs of Anaphylaxis"
-      points: ["Swelling of lips, tongue, throat", "Trouble breathing or wheezing", "Tight throat, hoarse voice", "Dizziness or fainting"]
+      heading: "Skin Signs"
+      points: ["Hives spreading fast", "Flushing or redness", "Swelling of face or lips", "Itching all over"]
+      footage_query: "skin rash close up"
+      narration: >-
+        Most people with anaphylaxis have skin signs first. Hives may spread quickly over the chest, back and arms. The skin
+        may turn red and warm. The face, eyelids, lips or tongue can swell. But here is the catch: up to one in five people
+        with anaphylaxis have no skin signs at all. So no hives does not mean no danger.
+    - layout: "warning"
+      heading: "Breathing Signs"
+      points: ["Wheezing or coughing", "Short of breath", "Tight throat", "Hoarse voice"]
       footage_query: "woman touching throat"
       narration: >-
-        Now the danger signs. Swelling of the lips, tongue or throat. Trouble breathing, wheezing or a lot of coughing. A
-        tight throat, trouble swallowing or a hoarse voice. Hives spreading over the body. Vomiting or stomach cramps. Feeling
-        dizzy or faint, or a sense that something terrible is happening. Symptoms involving more than one part of the body
-        can mean anaphylaxis.
+        Breathing signs are the most urgent. Watch for wheezing, a lot of coughing, or feeling short of breath. A tight or
+        scratchy throat, trouble swallowing, drooling, or a hoarse voice can mean the throat is swelling. A high pitched sound
+        when breathing in is a serious warning. If breathing is affected at all, treat it as anaphylaxis right away.
+    - layout: "warning"
+      heading: "Heart and Gut Signs"
+      points: ["Dizziness or fainting", "Fast, weak pulse", "Pale or blue skin", "Vomiting, cramps"]
+      footage_query: "man dizzy holding head"
+      narration: >-
+        Anaphylaxis can also hit the heart and the gut. Feeling dizzy, lightheaded or faint can mean blood pressure is
+        falling. The pulse may be fast and weak, and the skin pale, cool or bluish. Vomiting, belly cramps and diarrhea are
+        common, especially with food allergies. Some people describe a strong feeling that something terrible is about to
+        happen. Take that feeling seriously.
+    - layout: "bullets"
+      heading: "Signs in Young Children"
+      points: ["Sudden crying or fussiness", "Clinging, acting scared", "Vomiting after a new food", "Floppy or sleepy"]
+      footage_query: "toddler crying mother"
+      narration: >-
+        Young children cannot always tell you what they feel. A child may suddenly become fussy, cry hard, cling to you, or
+        act scared. They may scratch at their mouth or ears, vomit after trying a new food, or have a hoarse cry. A child who
+        becomes floppy, very sleepy or hard to wake needs emergency help right now.
+    - layout: "warning"
+      heading: "The Two-System Rule"
+      points: ["Skin plus breathing", "Breathing plus dizziness", "Gut plus skin", "Any two: act now"]
+      footage_query: "doctor pointing chart"
+      narration: >-
+        Here is a simple way to remember it. If symptoms involve two or more body systems after a likely trigger, think
+        anaphylaxis. For example, hives plus vomiting, or swollen lips plus wheezing. Breathing trouble or fainting alone is
+        also enough. Many allergy action plans say to give epinephrine even for one severe symptom, so follow the plan you
+        were given.
     - layout: "warning"
       heading: "Act Immediately"
-      points: ["Use epinephrine if prescribed", "Call 911", "Lie down, legs raised", "Sit up if hard to breathe"]
+      points: ["Use epinephrine", "Call 911", "Lie down, legs raised", "Sit up if hard to breathe"]
       footage_query: "person calling phone emergency"
       narration: >-
         If you see these signs, act immediately. If the person has a prescribed epinephrine auto injector, use it right away,
-        following the instructions on it. Then call 911. Have the person lie down with their legs raised, or sit up if they
-        are having trouble breathing. Do not wait to see if it gets better.
+        following the instructions on it. Then call 911, and say the word anaphylaxis. Have the person lie down with their
+        legs raised, or sit up if they are having trouble breathing. Do not wait to see if it gets better.
+    - layout: "bullets"
+      heading: "How to Use the Injector"
+      points: ["Remove the safety cap", "Press into the outer thigh", "Hold as instructed", "Note the time"]
+      footage_query: "epinephrine auto injector hand"
+      narration: >-
+        Each brand works a little differently, so read your own device now, before an emergency. In general, you remove the
+        safety cap, hold it in your fist, and press the tip firmly into the outer middle of the thigh. It can go through
+        clothing. Hold it in place for the time the label says. Then write down or remember the time you gave it.
+    - layout: "bullets"
+      heading: "The Nasal Spray Option"
+      points: ["Needle-free epinephrine", "One spray in one nostril", "Ask if it fits you", "Works the same way"]
+      footage_query: "nasal spray close up"
+      narration: >-
+        Some people now have a needle free choice. An epinephrine nasal spray was approved in the United States for adults and
+        children who weigh enough. You spray it into one nostril. It is still epinephrine, so the steps after are the same:
+        call 911 and go to the ER. Ask your doctor whether a spray or an injector is the better fit for you.
+    - layout: "warning"
+      heading: "After the First Dose"
+      points: ["Stay with the person", "A second dose may be needed", "Do not let them stand up", "Start CPR if not breathing"]
+      footage_query: "paramedic helping patient"
+      narration: >-
+        After the first dose, stay with the person. If symptoms do not improve, or come back, in about five to fifteen
+        minutes, a second dose may be needed if one is available. Do not let them stand or walk suddenly, because blood
+        pressure can drop and they can collapse. If they stop breathing or have no pulse, start CPR and keep going until help
+        arrives.
     - layout: "myth_fact"
-      heading: "Common Belief"
-      points: ["An antihistamine is enough", "Epinephrine is the first treatment"]
+      heading: "Benadryl Is Enough"
+      points: ["An allergy pill can stop it", "Epinephrine comes first"]
       footage_query: "pharmacy medicine shelf"
       narration: >-
-        Here is a dangerous belief: an allergy pill like Benadryl will stop anaphylaxis. Fact: antihistamines can help with
-        itching and hives, but they do not stop a severe reaction. Epinephrine is the first line treatment for anaphylaxis.
-        Waiting can be deadly.
+        Myth: an allergy pill like Benadryl will stop anaphylaxis. Fact: antihistamines can help with itching and hives, but
+        they work too slowly and do not open the airway or raise blood pressure. Epinephrine is the first line treatment.
+        Giving an allergy pill and waiting is one of the most common and dangerous delays.
+    - layout: "myth_fact"
+      heading: "Epinephrine Is Risky"
+      points: ["It is too strong to use", "Waiting is the bigger risk"]
+      footage_query: "woman purse medicine"
+      narration: >-
+        Myth: epinephrine is so strong that you should only use it if you are completely sure. Fact: the medicine is the same
+        hormone your body already makes. It may cause a fast heartbeat, shakiness or a pale face for a short time. Allergy
+        experts agree that giving it when in doubt is far safer than waiting too long.
+    - layout: "myth_fact"
+      heading: "Mild Last Time"
+      points: ["My last reaction was mild", "The next one can be severe"]
+      footage_query: "family dinner table"
+      narration: >-
+        Myth: my past reactions were mild, so the next one will be mild too. Fact: there is no reliable way to predict how bad
+        the next reaction will be. Someone who once had only hives can have trouble breathing the next time. That is why
+        anyone with a known food or sting allergy should see a doctor and ask about carrying epinephrine.
+    - layout: "myth_fact"
+      heading: "Asthma Inhaler Works"
+      points: ["An inhaler treats anaphylaxis", "It does not treat the whole reaction"]
+      footage_query: "asthma inhaler close up"
+      narration: >-
+        Myth: an asthma inhaler is enough if breathing gets tight. Fact: a rescue inhaler may ease wheezing a little, but it
+        does nothing for throat swelling or falling blood pressure. During anaphylaxis, epinephrine comes first, then the
+        inhaler if the doctor's plan says so. Never let an inhaler delay the injector or the call to 911.
     - layout: "warning"
       heading: "Go to the ER Anyway"
       points: ["Even if they feel better", "Symptoms can come back", "Hours later"]
       footage_query: "hospital emergency entrance"
       narration: >-
-        Even if the person feels better after epinephrine, they still need to go to the emergency room. Symptoms can come
-        back hours later, even without being exposed again. Doctors will want to watch them for a while.
+        Even if the person feels better after epinephrine, they still need to go to the emergency room. The medicine wears off
+        in about ten to twenty minutes. In some people, symptoms come back hours later without any new exposure. This is
+        called a second phase reaction. Doctors will watch them for several hours and may give more treatment.
     - layout: "bullets"
-      heading: "If You Have Allergies"
-      points: ["See an allergist", "Carry your epinephrine", "Wear medical ID", "Tell family and friends"]
+      heading: "At the Hospital"
+      points: ["Oxygen and fluids", "More epinephrine if needed", "Antihistamines, steroids", "Watched for hours"]
+      footage_query: "hospital bed patient monitor"
+      narration: >-
+        In the emergency room, the team may give oxygen, fluids through a vein, and more epinephrine if needed. Antihistamines
+        and steroids may be added to ease symptoms. The person is usually watched for several hours, longer after a severe
+        reaction. Before going home, they should leave with a prescription for epinephrine and a referral to an allergy
+        specialist.
+    - layout: "bullets"
+      heading: "See an Allergist"
+      points: ["Find your exact triggers", "Skin or blood testing", "Get a written action plan", "Ask about allergy shots"]
+      footage_query: "doctor talking patient office"
+      narration: >-
+        After any serious reaction, see an allergist. They can test your skin or blood to find the exact trigger. They will
+        write an anaphylaxis action plan that says what to do and when. For insect sting allergy, allergy shots can greatly
+        lower the risk of a future severe reaction. For some food allergies, newer treatments may also be an option.
+    - layout: "bullets"
+      heading: "Carry Two, Every Day"
+      points: ["Two doses with you", "Check the expiration date", "Keep at room temperature", "Never leave it in a hot car"]
       footage_query: "woman purse medicine"
       narration: >-
-        If you have had a serious reaction, see an allergist to find your triggers. If you are prescribed epinephrine, carry it
-        with you every day, check the expiration date, and teach family and friends how to use it. A medical ID bracelet can
-        also help others act fast.
+        If you are prescribed epinephrine, carry two doses with you every day, everywhere. A second dose is sometimes needed
+        before help arrives. Check the expiration date and set a reminder to refill it. Keep it at room temperature, not in a
+        hot car or a freezing glove box. If the liquid looks cloudy or brown, replace it.
+    - layout: "bullets"
+      heading: "Avoid Your Triggers"
+      points: ["Read every food label", "Ask at restaurants", "Watch for cross-contact", "Cover food outdoors"]
+      footage_query: "woman reading food label"
+      narration: >-
+        Avoiding your trigger is the best prevention. Read every food label, every time, because recipes change. At
+        restaurants, tell the staff about your allergy and ask how food is prepared. Watch for cross contact from shared
+        knives, fryers and cutting boards. Outdoors, cover food and drinks, wear shoes in grass, and avoid strong perfume that
+        can attract stinging insects.
+    - layout: "bullets"
+      heading: "Children at School"
+      points: ["Share the action plan", "Keep epinephrine at school", "Train teachers and coaches", "Teach kids to speak up"]
+      footage_query: "children classroom teacher"
+      narration: >-
+        If your child has a severe allergy, give the school a copy of the action plan and make sure epinephrine is kept there
+        and on field trips. Teachers, coaches and bus drivers should know how to use it. Teach your child, as early as they
+        can understand, to never share food, to ask before eating, and to tell an adult right away if they feel strange.
+    - layout: "bullets"
+      heading: "Tell the People Around You"
+      points: ["Wear a medical ID", "Teach family and friends", "Tell coworkers", "Save your plan on your phone"]
+      footage_query: "friends talking cafe"
+      narration: >-
+        In an emergency you may not be able to speak. Wear a medical ID bracelet or necklace that names your allergy. Show
+        family, friends and coworkers where you keep your epinephrine and how to use it. Many phones let you add medical
+        information to the lock screen, so first responders can see it. A little preparation lets others act fast.
     - layout: "outro"
       heading: "Remember"
       points: ["Epinephrine first", "Then call 911", "Always go to the ER"]
       footage_query: "family picnic park"
       narration: >-
-        Remember: epinephrine first, then call 911, and always go to the ER. Share this with anyone who has a food allergy,
-        or who cares for a child with one. This video is for education only, not medical
-        advice. Like and subscribe to Health Support Studio for a new health video every day.
+        Remember: know the signs, give epinephrine first, then call 911, and always go to the ER, even if things improve.
+        Share this with anyone who has a food allergy, or who cares for a child with one. This video is for education only,
+        not medical advice. Like and subscribe to Health Support Studio for a new health video every day.
   short_title: "Why Benadryl isn't enough for anaphylaxis #Shorts"
   short_caption: >-
     Think an allergy pill can stop a severe allergic reaction? It can't. Know the signs and what to do first. Educational

@@ -12,9 +12,11 @@ plan:
 
     In this video:
     • What to pack, and what to leave at home
-    • Why your medication list matters
-    • "Inpatient" vs "observation" status, and why it can affect your bill
-    • How to speak up and plan for going home
+    • Why your medicine list matters
+    • Inpatient or observation status, and your bill
+    • Preventing infections, falls, clots and confusion
+    • How to speak up and who should be with you
+    • Planning for going home from day one
 
     #Hospital #PatientSafety #PatientTips #Caregiving #HealthEducation
   tags: ["going to the hospital", "hospital stay tips", "what to bring to the hospital", "observation status", "inpatient vs observation", "patient safety", "patient advocate", "hospital discharge", "caregiver tips", "us healthcare", "health education"]
@@ -26,66 +28,237 @@ plan:
     - layout: "title"
       heading: "Before the Hospital"
       points: ["Questions to ask first"]
-      footage_query: "hospital hallway walking"
+      footage_query: "hospital bed room window"
       narration: >-
-        A hospital stay can feel overwhelming, whether it is a planned surgery or a sudden trip to the ER. But a little
-        preparation can make it safer and less stressful, for you and your family. Today we answer the top questions people
-        have before going to the hospital.
+        Going to the hospital can feel scary, whether it is a planned surgery or a sudden emergency. But a little preparation
+        makes your stay safer, less stressful, and sometimes less expensive. Today we answer the top questions people ask
+        before a hospital stay: what to bring, what to leave home, what to ask about your bill, how to speak up, and how to
+        plan for going home.
+    - layout: "bullets"
+      heading: "Planned or Emergency?"
+      points: ["Planned: time to prepare", "Emergency: keep a ready kit", "Both: know your medicines", "Both: name a support person"]
+      footage_query: "calendar notebook planning"
+      narration: >-
+        Some hospital stays are planned, like a knee replacement or a scheduled surgery. Others start in the emergency room
+        with no warning. If your stay is planned, you have time to prepare everything in this video. If it is not, you can
+        still get ready today, by keeping an updated medicine list and a small emergency folder at home, so you or your family
+        can grab it fast.
     - layout: "bullets"
       heading: "What Should I Bring?"
-      points: ["ID and insurance card", "Medication list and allergies", "Contacts and advance directive", "Phone charger, glasses, hearing aids"]
-      footage_query: "packing bag bedroom"
+      points: ["Photo ID and insurance card", "Medication list", "Glasses, hearing aids", "Phone and charger"]
+      footage_query: "packing bag clothes"
       narration: >-
-        Question one: what should I bring? Your photo ID and insurance card. A list of all your medicines, doses, and allergies.
-        Phone numbers of family members and your doctors. A copy of your advance directive, if you have one. Plus comfortable
-        clothes, a phone charger, and your glasses, hearing aids or dentures, labeled with your name.
+        First question: what should I bring? Bring your photo ID and insurance card, a written list of all your medicines,
+        your glasses, hearing aids and dentures with their cases, a phone and a long charger cord, and comfortable clothes for
+        going home. A notebook and pen are also helpful, so you can write down what the care team tells you.
+    - layout: "bullets"
+      heading: "Comfort Items That Help"
+      points: ["Non-slip socks or slippers", "Loose, comfortable clothes", "Lip balm, toothbrush", "Earplugs and sleep mask"]
+      footage_query: "slippers bedroom floor"
+      narration: >-
+        Hospitals can be noisy, bright and cold. A few small items make a big difference. Bring non slip socks or slippers,
+        since hospital floors can be slippery. Pack loose clothes, a toothbrush, lip balm, and a hairbrush. Earplugs and a
+        sleep mask can help you rest. A short list of phone numbers on paper is useful if your phone battery runs out.
     - layout: "bullets"
       heading: "What Should I Leave?"
-      points: ["Jewelry and valuables", "Large amounts of cash", "Your own medicines, unless asked"]
-      footage_query: "jewelry box table"
+      points: ["Jewelry and valuables", "Large amounts of cash", "Your own medicine bottles", "Unless you are asked"]
+      footage_query: "jewelry box close up"
       narration: >-
-        Question two: what should I leave at home? Jewelry, valuables and large amounts of cash. Also ask before bringing your
-        own medicine bottles. Hospitals usually give you your medicines themselves, to avoid double doses and dangerous mix
-        ups, but they may want to see the bottles.
-    - layout: "big_number"
-      heading: "Inpatient?"
-      points: ["or observation?", "ask, it can affect your bill"]
-      footage_query: "hospital reception desk"
+        Next: what should I leave at home? Leave jewelry, valuables and large amounts of cash at home. In most cases, do not
+        bring your own medicine bottles, because the hospital will give you your medicines. But do ask first, since some
+        hospitals want to see your bottles or let you use a special medicine they do not stock.
+    - layout: "bullets"
+      heading: "Your Medicine List"
+      points: ["Every prescription", "Vitamins and supplements", "Over-the-counter medicines", "Dose and time of day"]
+      footage_query: "pill organizer close up"
       narration: >-
-        Question three: am I admitted, or under observation? This surprises many people. You can stay overnight in a hospital
-        bed and still be an outpatient, under what is called observation status. For people with Medicare, this can change what
-        you pay, and whether Medicare covers a nursing home stay afterward. So ask: am I an inpatient, or under observation?
+        Your medicine list may be the most important thing you bring. Write down every prescription, plus vitamins, herbal
+        supplements, inhalers, eye drops, creams, and over the counter medicines. For each one, list the dose, how often you
+        take it, and when you last took it. Mistakes with medicines are one of the most common problems in hospitals, and a
+        clear list prevents many of them.
+    - layout: "warning"
+      heading: "Allergies and Reactions"
+      points: ["Medicine allergies", "Food and latex allergies", "What happened last time", "Repeat it to every new person"]
+      footage_query: "medical bracelet wrist"
+      narration: >-
+        Write down every allergy, including medicines, foods, tape and latex, and what happened during the reaction. A rash is
+        different from trouble breathing, and the care team needs to know which. Check that your allergy band on your wrist is
+        correct. Do not be shy about repeating your allergies to each new person who gives you a medicine. It is a key safety
+        step.
+    - layout: "bullets"
+      heading: "Your Health History"
+      points: ["Past surgeries", "Long-term conditions", "Implants or pacemaker", "Names of your doctors"]
+      footage_query: "medical records folder"
+      narration: >-
+        Bring a short health history on one page. List long term conditions like diabetes or heart disease, past surgeries and
+        hospital stays, and any implants such as a pacemaker or joint replacement. Add the names and phone numbers of your
+        main doctor and any specialists. This helps the hospital team understand you quickly, especially if you are too sick
+        to explain.
+    - layout: "bullets"
+      heading: "Advance Directive"
+      points: ["Who decides if you cannot", "Your wishes for care", "Bring a copy", "Tell your family"]
+      footage_query: "signing document pen"
+      narration: >-
+        Here is a question many people skip: who speaks for me if I cannot speak for myself? An advance directive is a
+        document that names a health care agent and records your wishes about treatment. You do not need a lawyer for a basic
+        one in most states. If you have one, bring a copy, and make sure your family knows what it says.
+    - layout: "bullets"
+      heading: "Inpatient or Observation?"
+      points: ["Ask your status every day", "Observation counts as outpatient", "It can change your costs", "Especially for Medicare"]
+      footage_query: "hospital billing paperwork"
+      narration: >-
+        Now an important money question: am I inpatient, or under observation? You can be in a hospital bed overnight and
+        still be an outpatient under observation status. This can change what you pay. For people with Medicare, it can also
+        affect whether a later stay in a skilled nursing facility is covered. Ask your status each day, since it can change.
+    - layout: "bullets"
+      heading: "Questions About Cost"
+      points: ["Is this hospital in-network?", "Are the doctors in-network?", "Get an estimate if planned", "Ask for an itemized bill"]
+      footage_query: "calculator bills table"
+      narration: >-
+        If your stay is planned, call your insurance first. Ask whether the hospital is in network, and whether the surgeon,
+        the anesthesia team and other doctors are too. Ask the hospital for a cost estimate. After you go home, ask for an
+        itemized bill and check it for mistakes. Many hospitals also have financial help programs, so ask if money is a worry.
+    - layout: "bullets"
+      heading: "Before a Planned Surgery"
+      points: ["When to stop eating", "Which medicines to stop", "Blood thinners and diabetes", "Arrange a ride home"]
+      footage_query: "surgeon preparing operating room"
+      narration: >-
+        Before a planned surgery, ask clear questions. When should I stop eating and drinking? Which medicines should I stop,
+        and when? This matters most for blood thinners, diabetes medicines and some supplements. Will I need tests beforehand?
+        Who will drive me home? Write down the answers. Never stop a medicine on your own without asking the doctor who
+        prescribed it.
+    - layout: "bullets"
+      heading: "On the First Day"
+      points: ["Meet your care team", "Learn how to call for help", "Ask for the daily plan", "Write down names"]
+      footage_query: "hospital room doctor talking"
+      narration: >-
+        On the first day, learn the names of your care team. Ask who is the main doctor in charge of your care, and how often
+        they visit. Learn how to use the call button, how to adjust the bed, and how to reach someone at night. Ask each
+        morning: what is the plan for today, and what are we waiting for?
     - layout: "bullets"
       heading: "How Do I Speak Up?"
-      points: ["Ask what each medicine is for", "Ask staff to wash their hands", "Confirm your name and birthday", "Ask for a patient advocate"]
-      footage_query: "patient talking doctor hospital"
+      points: ["Ask questions until clear", "Ask what each medicine is", "Ask if hands are clean", "Repeat back what you heard"]
+      footage_query: "patient talking doctor"
       narration: >-
-        Question four: how do I stay safe? Speak up. Ask what each new medicine is for. It is okay to ask staff if they have
-        washed their hands. Expect them to check your name and date of birth before tests and medicines. And if you have
-        concerns that are not being answered, ask for the hospital's patient advocate.
+        Next: how do I speak up? You are part of the care team. Ask questions until you understand. Before you take any
+        medicine, ask what it is and what it is for. If something seems different from your usual pills, say so. It is okay to
+        ask anyone who touches you if they cleaned their hands. Repeat back the instructions in your own words.
+    - layout: "warning"
+      heading: "Report Changes Fast"
+      points: ["New pain or chest pain", "Trouble breathing", "Confusion", "Feeling something is wrong"]
+      footage_query: "woman holding chest"
+      narration: >-
+        Tell the care team right away about any change. New pain, chest pain, trouble breathing, sudden weakness, bleeding,
+        fever, or new confusion all need quick attention. Family members often notice confusion first. If you feel that
+        something is wrong and no one is responding, ask for the charge person on the unit, or ask if the hospital has a rapid
+        response team.
+    - layout: "bullets"
+      heading: "Prevent Infections"
+      points: ["Clean hands, every time", "Ask about catheters daily", "Keep wounds clean", "Get up and move if allowed"]
+      footage_query: "washing hands sink"
+      narration: >-
+        Hospital infections are a real risk, but you can lower it. Clean your own hands often, and ask visitors to clean
+        theirs. If you have a urine tube or an IV line, ask each day whether you still need it, because the sooner it comes
+        out, the lower the chance of infection. Do not touch your wound. Get up and walk when your team says it is safe.
+    - layout: "bullets"
+      heading: "Prevent Falls"
+      points: ["Call before getting up", "Wear non-slip socks", "Keep the light on at night", "Ask about dizziness"]
+      footage_query: "elderly patient walking hospital"
+      narration: >-
+        Falls are common in hospitals, especially at night, after surgery, or on new medicines. Call for help before getting
+        out of bed if you are weak, dizzy, or attached to tubes. Wear non slip socks. Keep your glasses, phone and call button
+        within reach. Ask whether any of your new medicines can make you sleepy or lightheaded.
+    - layout: "bullets"
+      heading: "Prevent Blood Clots"
+      points: ["Ask about clot prevention", "Move your legs and feet", "Walk when you are allowed", "Report leg swelling"]
+      footage_query: "legs feet bed exercise"
+      narration: >-
+        Lying in bed for a long time raises the risk of blood clots in the legs, which can travel to the lungs. Ask what the
+        team is doing to prevent clots. This may include a blood thinner shot, leg squeeze sleeves, or getting up to walk.
+        Move your feet and ankles in bed. Report any new leg swelling, pain, or sudden shortness of breath.
+    - layout: "bullets"
+      heading: "Older Adults: Watch for Confusion"
+      points: ["Delirium is common", "Keep glasses and hearing aids on", "Keep a day-night routine", "Family visits help"]
+      footage_query: "elderly man hospital bed family"
+      narration: >-
+        Older adults can develop sudden confusion in the hospital, called delirium. It can come from infection, new medicines,
+        pain, poor sleep, or being in a strange place. It is often missed. Help prevent it by keeping glasses and hearing aids
+        on, opening the blinds in the day, keeping lights low at night, and having familiar people visit. Tell the team if
+        your loved one seems different.
     - layout: "bullets"
       heading: "Who Should Be With Me?"
-      points: ["Pick one main family contact", "Share your wishes", "A second set of ears helps"]
-      footage_query: "family visiting hospital"
+      points: ["Choose one support person", "They can take notes", "They can ask questions", "Share the contact plan"]
+      footage_query: "family sitting hospital"
       narration: >-
-        Question five: who should be involved? Choose one family member or friend as the main contact, and tell the care team.
-        Make sure they know your wishes for care. When doctors come by, having someone else there to listen and take notes
-        can make a big difference, because it is hard to remember everything when you are sick.
+        Next: who should be with me? Choose one support person, a family member or friend, to be your advocate. They can
+        listen, take notes, ask questions when you are tired, and notice changes. Tell the team who this person is. Decide who
+        will update the rest of the family, so the hospital is not getting ten phone calls a day.
+    - layout: "bullets"
+      heading: "Privacy and Permission"
+      points: ["Sign a privacy release", "Name who can get updates", "Tell the team your wishes", "You can change it later"]
+      footage_query: "signing hospital form"
+      narration: >-
+        Because of privacy laws, the hospital may not share details with your family unless you allow it. Ask how to name the
+        people who can get updates about your care. You can include or leave out anyone you want, and you can change your mind
+        later. This simple step saves a lot of frustration for your support person.
+    - layout: "bullets"
+      heading: "Interpreter and Disability Help"
+      points: ["Free interpreter by law", "Sign language help", "Ask for large print", "Ask for accessible equipment"]
+      footage_query: "interpreter talking patient"
+      narration: >-
+        If English is not your first language, you have the right to a free medical interpreter at most US hospitals. Do not
+        rely on a child or a family member to translate medical details. If you are deaf or hard of hearing, ask for a sign
+        language interpreter or other help. You can also ask for large print papers or other help you need.
+    - layout: "bullets"
+      heading: "Eating and Sleeping"
+      points: ["Ask about your diet order", "Tell them about special diets", "Ask about sleep interruptions", "Bring a small snack only if allowed"]
+      footage_query: "hospital food tray"
+      narration: >-
+        Ask what you are allowed to eat and drink, because it may change before tests or surgery. Tell the team about
+        diabetes, swallowing trouble, food allergies or religious diet needs. Sleep is hard in hospitals. You can ask whether
+        vital signs or blood draws at night can be grouped together, so you get longer stretches of rest.
     - layout: "bullets"
       heading: "When to Plan Going Home?"
-      points: ["Start on day one", "Ask what you'll need at home", "Get a follow-up appointment", "Know warning signs"]
-      footage_query: "person leaving hospital wheelchair"
+      points: ["Start on day one", "Ask what is needed to leave", "Will I need help at home?", "Equipment, therapy, home care"]
+      footage_query: "patient leaving hospital wheelchair"
       narration: >-
-        Question six: when should I start planning to go home? From the very first day. Ask what help or equipment you may
-        need at home, who will give you rides, and when your follow up appointment will be. Before you leave, make sure you
-        understand your medicines and the warning signs that mean you should call the doctor.
+        Next: when should I plan going home? Start on the very first day. Ask what needs to happen before you can leave. Will
+        I need help at home, special equipment, home health visits, or a short stay at a rehab center? The earlier you ask,
+        the more time your family has to prepare, and the less likely you are to be sent home before you are ready.
+    - layout: "bullets"
+      heading: "Before You Leave"
+      points: ["Review your new medicine list", "Know warning signs", "Know who to call", "Get a follow-up visit"]
+      footage_query: "doctor giving instructions papers"
+      narration: >-
+        Before you leave, go over your instructions with the team. Which medicines are new, changed, or stopped? What warning
+        signs mean you should call or come back? Who do you call with questions, even at night? When is your follow up visit?
+        Ask for everything in writing, and have your support person listen too. We have a full video on going home safely.
+    - layout: "bullets"
+      heading: "Your Rights as a Patient"
+      points: ["To understand your care", "To refuse treatment", "To see your records", "To file a complaint"]
+      footage_query: "patient reading document"
+      narration: >-
+        As a patient, you have rights. You have the right to understand your diagnosis and treatment, to agree to or refuse
+        treatment, to see your medical records, and to be treated with respect. If something goes wrong, ask for the patient
+        advocate or patient relations office. If you have Medicare and think you are being sent home too soon, you can ask for
+        a fast appeal.
+    - layout: "bullets"
+      heading: "Your Ready Folder"
+      points: ["Medicine and allergy list", "Insurance and ID copies", "Advance directive", "Emergency contacts"]
+      footage_query: "folder documents table"
+      narration: >-
+        Here is a simple step you can do this week, even if you have no hospital stay planned. Make a ready folder with your
+        medicine and allergy list, copies of your ID and insurance cards, your advance directive, your health history, and
+        emergency contacts. Keep it by the door or in your bag. In an emergency, it speaks for you.
     - layout: "outro"
       heading: "Be Prepared"
-      points: ["Bring your medication list", "Ask: inpatient or observation?", "Plan for home early"]
-      footage_query: "family home together"
+      points: ["Bring your medicine list", "Ask your status", "Speak up", "Plan for home early"]
+      footage_query: "family hugging hospital"
       narration: >-
-        Be prepared, ask questions, and speak up. It is your right as a patient. This video is for education only, not medical
-        or financial advice. Like and subscribe to Health Support Studio for a new health video every day.
+        Remember: bring your medicine list, ask whether you are inpatient or under observation, speak up about anything that
+        seems wrong, and plan for going home from day one. Share this with someone who has a hospital stay coming up. This
+        video is for education only, not medical advice. Like and subscribe to Health Support Studio for a new health video
+        every day.
   short_title: "Staying overnight? Ask this at the hospital #Shorts"
   short_caption: >-
     You can sleep in a hospital bed and still not be "admitted." Here is the question that can affect your bill.
