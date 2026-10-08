@@ -1,0 +1,296 @@
+queue_topic: "Hearing loss: warning signs, causes and hearing aids"
+style: "Warning Signs"
+sources:
+  - "NIH NIDCD, Age-Related Hearing Loss: https://www.nidcd.nih.gov/health/age-related-hearing-loss"
+  - "NIH NIDCD, Over-the-Counter Hearing Aids: https://www.nidcd.nih.gov/health/over-counter-hearing-aids"
+  - "MedlinePlus, Hearing Disorders and Deafness: https://medlineplus.gov/hearingdisordersanddeafness.html"
+plan:
+  topic: "Hearing loss: warning signs, causes and hearing aids"
+  title: "Hearing Loss Warning Signs You Shouldn't Ignore"
+  description: |-
+    Hearing loss creeps in slowly, and family often notices first. Learn the warning signs, when sudden hearing loss is an emergency, the causes, the link to brain health, and how over-the-counter and prescription hearing aids can help.
+
+    In this video:
+    • 5 warning signs of hearing loss
+    • Sudden hearing loss is an emergency
+    • Causes: aging, noise, earwax and medicines
+    • Hearing and brain health
+    • Hearing tests, OTC hearing aids and protecting your ears
+
+    #HearingLoss #HearingAids #Tinnitus #HealthyAging #HealthEducation
+  tags: ["hearing loss", "signs of hearing loss", "hearing aids", "over the counter hearing aids", "tinnitus", "sudden hearing loss", "hearing test", "noise induced hearing loss", "hearing and dementia", "healthy aging", "health education"]
+  thumbnail_text: "TURNING UP THE TV?"
+  thumbnail_highlight: "TV?"
+  thumbnail_photo_query: "older man hand behind ear"
+  playlist: "Older Adults & Caregiving"
+  scenes:
+    - layout: "title"
+      heading: "Hearing Loss Warning Signs"
+      points: ["More than turning up the TV"]
+      footage_query: "older man hand behind ear"
+      narration: >-
+        Turning up the TV louder than everyone likes. Asking people to repeat themselves. Feeling like others mumble. Hearing
+        loss often creeps in so slowly that people do not notice it for years, while family members do. Untreated hearing loss
+        can affect your relationships, safety, and even your brain health. Today you will learn the warning signs, the causes,
+        and what helps.
+    - layout: "big_number"
+      heading: "Very Common"
+      points: ["About 1 in 8", "Americans 12+ have hearing loss in both ears"]
+      footage_query: "group of people talking"
+      narration: >-
+        Hearing loss is very common. About one in eight Americans aged twelve and older has hearing loss in both ears. It
+        becomes much more common with age: about one in three people between sixty five and seventy four, and nearly half of
+        those seventy five and older, have hearing loss. Yet many people who could benefit from hearing aids never use them.
+    - layout: "bullets"
+      heading: "How We Hear"
+      points: ["Sound enters the ear canal", "Eardrum vibrates", "Tiny hair cells in the inner ear", "Signals sent to the brain"]
+      footage_query: "medical illustration ear"
+      narration: >-
+        How do we hear? Sound waves travel through the ear canal and make the eardrum vibrate. Tiny bones pass the vibrations
+        to the inner ear, where thousands of tiny hair cells turn them into nerve signals, which travel to the brain. Damage
+        anywhere along this path can cause hearing loss. Hair cells that die do not grow back.
+    - layout: "warning"
+      heading: "Sign 1: Asking People to Repeat"
+      points: ["Often saying what?", "Mishearing words", "Answering the wrong question", "Hard in groups"]
+      footage_query: "elderly couple talking"
+      narration: >-
+        The first warning sign is often asking people to repeat themselves, or saying, what, a lot. You may mishear words,
+        answer the wrong question, or laugh at the wrong time because you missed part of a conversation. It is often hardest
+        in groups, where several people talk at once.
+    - layout: "warning"
+      heading: "Sign 2: Others Seem to Mumble"
+      points: ["Speech sounds unclear", "Trouble with women and children", "Consonants get lost", "You hear but do not understand"]
+      footage_query: "woman talking cafe"
+      narration: >-
+        Another common sign is feeling like other people are mumbling. Many people with hearing loss say, I can hear, but I
+        cannot understand. High pitched sounds, like the voices of women and children, and consonants like s, f and th, are
+        often the first to go. This makes words sound unclear, even when they are loud enough.
+    - layout: "warning"
+      heading: "Sign 3: Turning Up the Volume"
+      points: ["TV or radio too loud", "Family complains", "Trouble on the phone", "Missing the doorbell"]
+      footage_query: "man watching tv"
+      narration: >-
+        Another sign is turning up the TV, radio, or phone volume louder than others like. Family members may complain. You
+        may have trouble hearing on the phone, miss the doorbell or phone ringing, or not hear alarms, timers, or birds
+        singing. Often, family notices these changes before you do.
+    - layout: "warning"
+      heading: "Sign 4: Trouble in Noisy Places"
+      points: ["Restaurants and parties", "Cannot follow conversation", "Background noise takes over", "Avoiding social events"]
+      footage_query: "restaurant dining people"
+      narration: >-
+        Another sign is having a hard time hearing in noisy places, like restaurants, parties, family gatherings, or meetings.
+        Background noise drowns out the voices you want to hear. Many people start avoiding these events because listening is
+        exhausting and embarrassing. Over time, this can lead to loneliness.
+    - layout: "warning"
+      heading: "Sign 5: Ringing in the Ears"
+      points: ["Ringing, buzzing or hissing", "Called tinnitus", "Often with hearing loss", "Worse in quiet rooms"]
+      footage_query: "man holding ear"
+      narration: >-
+        Ringing, buzzing, hissing or roaring in the ears is called tinnitus. It often comes with hearing loss, and can be more
+        noticeable in quiet rooms or at night. Tinnitus can have many causes, including loud noise, earwax, and some
+        medicines. If it is new, only in one ear, or pulses with your heartbeat, see your doctor.
+    - layout: "warning"
+      heading: "Sudden Hearing Loss: Emergency"
+      points: ["Sudden loss in one ear", "Often on waking", "May have ringing or fullness", "See a doctor within days"]
+      footage_query: "woman holding ear"
+      narration: >-
+        Sudden hearing loss, usually in one ear, often noticed on waking up or as a sudden pop, is a medical emergency. It may
+        come with ringing, dizziness, or a feeling of fullness. Many people think it is just earwax or a cold, and wait. But
+        treatment, often with steroids, works best when started within a few days. See a doctor right away.
+    - layout: "warning"
+      heading: "Other Urgent Signs"
+      points: ["Hearing loss with weakness", "Severe dizziness", "Ear pain with fever", "Fluid from the ear"]
+      footage_query: "person calling phone emergency"
+      narration: >-
+        Call 911 if hearing loss comes with sudden weakness, numbness, facial drooping, trouble speaking, or severe dizziness,
+        which could be a stroke. See a doctor promptly for ear pain with fever, fluid or blood draining from the ear, hearing
+        loss after a head injury, or hearing loss in only one ear.
+    - layout: "bullets"
+      heading: "Common Causes"
+      points: ["Aging", "Loud noise", "Earwax buildup", "Ear infections"]
+      footage_query: "man headphones loud"
+      narration: >-
+        What causes hearing loss? The most common cause is aging, called presbyacusis, which slowly affects both ears. Loud
+        noise is another major cause. Earwax buildup, ear infections, and fluid behind the eardrum can block sound, and are
+        often easy to fix. Genes, head injuries, and some diseases also play a role.
+    - layout: "warning"
+      heading: "Noise Damage Adds Up"
+      points: ["Loud noise kills hair cells", "85 decibels and above", "Lawn mowers, concerts, tools", "Damage is permanent"]
+      footage_query: "concert crowd loud"
+      narration: >-
+        Noise induced hearing loss is permanent, but preventable. Long exposure to sounds at eighty five decibels or louder,
+        like heavy traffic, lawn mowers, power tools and loud music, can damage the hair cells. Very loud sounds, like
+        gunshots and fireworks, can cause damage instantly. If you have to shout to be heard, it is too loud.
+    - layout: "warning"
+      heading: "Medicines That Can Harm Hearing"
+      points: ["Some antibiotics", "Some cancer drugs", "High doses of aspirin", "Some water pills"]
+      footage_query: "pill bottles table"
+      narration: >-
+        Some medicines can damage hearing or cause tinnitus. These include certain antibiotics, some cancer chemotherapy
+        drugs, high doses of aspirin, and some water pills used for heart failure or kidney disease. If you notice ringing or
+        hearing changes after starting a medicine, tell your doctor. Do not stop it on your own.
+    - layout: "myth_fact"
+      heading: "Only Old People Lose Hearing"
+      points: ["Hearing loss is only from aging", "Young people lose hearing too"]
+      footage_query: "teen earbuds music"
+      narration: >-
+        Myth: hearing loss only happens to older people. Fact: hearing loss affects people of all ages. Many young people and
+        teens are damaging their hearing with loud earbuds, concerts, and gaming. Workers in noisy jobs, like construction,
+        factories, farming and the military, are at high risk. Protecting your hearing starts young.
+    - layout: "myth_fact"
+      heading: "It Is Just a Small Problem"
+      points: ["Hearing loss is just annoying", "It affects health and safety"]
+      footage_query: "elderly man alone couch"
+      narration: >-
+        Myth: hearing loss is just a small inconvenience. Fact: untreated hearing loss is linked to loneliness, depression,
+        falls, and trouble at work. Studies have also linked it to a higher risk of memory problems and dementia. Some
+        research suggests that treating hearing loss with hearing aids may slow thinking decline in some older adults.
+    - layout: "bullets"
+      heading: "Hearing and Your Brain"
+      points: ["Brain works harder to listen", "Less social contact", "Linked to dementia risk", "Treatment may help"]
+      footage_query: "medical illustration brain"
+      narration: >-
+        Why might hearing loss affect the brain? When hearing is poor, the brain has to work harder to understand speech,
+        leaving less energy for memory and thinking. People with hearing loss also tend to talk with others less, and social
+        contact is important for brain health. Hearing loss is now considered one of the biggest changeable risk factors for
+        dementia.
+    - layout: "bullets"
+      heading: "Hearing Loss in Children"
+      points: ["Newborn hearing screening", "Speech delays", "Not responding to sounds", "Ear infections"]
+      footage_query: "baby hearing test"
+      narration: >-
+        Children can have hearing loss too. Every newborn in the United States should have a hearing screening before leaving
+        the hospital. Later, signs in children include not responding to sounds or their name, delayed speech, speaking
+        loudly, turning up the TV, or trouble at school. Repeated ear infections can affect hearing. If you are worried, ask
+        your pediatrician for a hearing test.
+    - layout: "bullets"
+      heading: "Getting Your Hearing Tested"
+      points: ["Ask your doctor", "See an audiologist", "Painless booth test", "Results in a hearing chart"]
+      footage_query: "hearing test booth"
+      narration: >-
+        How do you get your hearing tested? Ask your doctor, who may check your ears and refer you to an audiologist, a
+        hearing specialist. A hearing test is painless. You sit in a quiet booth wearing headphones, and press a button when
+        you hear tones. You may also repeat words. The results show what you can and cannot hear.
+    - layout: "bullets"
+      heading: "When to Get Tested"
+      points: ["Notice any warning signs", "Family says you miss things", "Adults 50+: regular checks", "After loud noise exposure"]
+      footage_query: "calendar notebook planning"
+      narration: >-
+        When should you get tested? If you notice any warning signs, or family members say you miss things. Many experts
+        suggest a baseline hearing test around age fifty, and regular checks after that. People with noisy jobs, tinnitus, or
+        a family history of hearing loss should be checked more often. Children are tested at birth and in school.
+    - layout: "myth_fact"
+      heading: "Hearing Aids Do Not Help"
+      points: ["Hearing aids just make noise louder", "Modern aids are very smart"]
+      footage_query: "hearing aid close up"
+      narration: >-
+        Myth: hearing aids just make everything louder and do not really help. Fact: modern hearing aids are small, digital,
+        and smart. They can boost the sounds you have trouble hearing, reduce background noise, connect to your phone and TV,
+        and be adjusted for different places. Most people need a few weeks to get used to them.
+    - layout: "bullets"
+      heading: "Over-the-Counter Hearing Aids"
+      points: ["Approved since 2022", "For adults with mild to moderate loss", "No exam or prescription needed", "Much lower cost"]
+      footage_query: "hearing aid close up"
+      narration: >-
+        Since 2022, the FDA has allowed over the counter hearing aids for adults eighteen and older with perceived mild to
+        moderate hearing loss. They can be bought in stores and online, without an exam or prescription, often at a much lower
+        price. For more severe hearing loss, children, or sudden or one sided loss, see a professional first.
+    - layout: "bullets"
+      heading: "Prescription Hearing Aids"
+      points: ["For more severe loss", "Fitted by a professional", "Custom settings", "Follow-up adjustments"]
+      footage_query: "audiologist fitting hearing aid"
+      narration: >-
+        Prescription hearing aids are fitted by an audiologist or hearing aid specialist, who programs them to your exact
+        hearing test results and makes adjustments over time. They are best for more severe hearing loss, complicated needs,
+        or people who want hands on support. Some Medicare Advantage plans, Medicaid, and veterans' benefits may help with
+        costs.
+    - layout: "bullets"
+      heading: "Other Options"
+      points: ["Cochlear implants", "Captioned phones", "TV listening devices", "Alerting devices"]
+      footage_query: "cochlear implant"
+      narration: >-
+        For severe hearing loss where hearing aids do not help enough, cochlear implants may be an option. They are surgically
+        placed devices that send sound signals directly to the hearing nerve. Other helpful tools include captioned phones, TV
+        listening devices, apps that show live captions, and alarms that flash or vibrate.
+    - layout: "bullets"
+      heading: "Earwax: Leave It Alone"
+      points: ["Ears clean themselves", "No cotton swabs inside", "Do not use ear candles", "See a doctor for blockage"]
+      footage_query: "cotton swabs close up"
+      narration: >-
+        What about earwax? Earwax is normal and protects your ears, which usually clean themselves. Do not put cotton swabs,
+        bobby pins, or anything else into your ear canal, which can push wax deeper or damage the eardrum. Ear candles are
+        unsafe. If wax blocks your hearing, your doctor can safely remove it, or suggest ear drops.
+    - layout: "bullets"
+      heading: "Protect Your Hearing"
+      points: ["Turn the volume down", "Use earplugs or earmuffs", "Take breaks from noise", "Move away from speakers"]
+      footage_query: "woman earplugs"
+      narration: >-
+        How can you protect your hearing? Turn down the volume on TVs, music, and earbuds. Wear earplugs or earmuffs when
+        using loud tools, lawn equipment, at concerts, sports events, and shooting ranges. Take breaks from loud noise. Move
+        away from speakers. Teach children to protect their hearing too.
+    - layout: "bullets"
+      heading: "The 60 60 Rule"
+      points: ["Earbuds at 60 percent volume", "For no more than 60 minutes", "Then take a break", "Noise-canceling helps"]
+      footage_query: "teen earbuds music"
+      narration: >-
+        For earbuds and headphones, try the sixty sixty rule: listen at no more than sixty percent of maximum volume, for no
+        more than sixty minutes at a time, then take a break. Noise canceling headphones can help, because you do not need to
+        turn the volume up to drown out background noise. Many phones can warn you when volume is too high.
+    - layout: "bullets"
+      heading: "Tips for Talking"
+      points: ["Face the person", "Get their attention first", "Speak clearly, not louder", "Reduce background noise"]
+      footage_query: "family sitting home"
+      narration: >-
+        If someone you love has hearing loss, a few simple habits help. Face them when you speak, so they can see your lips
+        and expressions. Get their attention first. Speak clearly and a little slower, without shouting. Turn down the TV or
+        move to a quieter spot. If they do not understand, rephrase instead of repeating the same words.
+    - layout: "bullets"
+      heading: "Questions for Your Doctor"
+      points: ["Do I have hearing loss?", "What is causing it?", "Would hearing aids help?", "Are my medicines involved?"]
+      footage_query: "patient talking doctor"
+      narration: >-
+        At your next visit, ask: should I have my hearing tested? What could be causing my hearing loss or ringing? Is earwax
+        part of the problem? Would over the counter or prescription hearing aids help me? Are any of my medicines affecting my
+        hearing? And how can I protect the hearing I have?
+    - layout: "bullets"
+      heading: "Quick Recap"
+      points: ["Asking people to repeat", "TV too loud, trouble in noise", "Sudden loss: see a doctor fast", "Hearing aids help"]
+      footage_query: "notebook checklist pen"
+      narration: >-
+        Let us recap. Warning signs of hearing loss include asking people to repeat themselves, thinking others mumble,
+        turning up the TV, trouble in noisy places, and ringing in the ears. Sudden hearing loss needs a doctor within days.
+        Untreated hearing loss affects health and may raise dementia risk. Get tested, protect your ears, and consider hearing
+        aids.
+    - layout: "outro"
+      heading: "Remember"
+      points: ["Get your hearing tested", "Protect your ears", "Hearing aids help"]
+      footage_query: "older couple walking park"
+      narration: >-
+        Remember: get your hearing tested if you notice the signs, protect your ears from loud noise, and do not wait to try
+        hearing aids. Share this with someone who keeps turning up the TV. This video is for education only, not medical
+        advice. Like and subscribe to Health Support Studio for a new health video every day.
+  short_title: "Turning up the TV? It could be hearing loss #Shorts"
+  short_caption: >-
+    Hearing loss creeps in slowly. Know the signs. Educational only, not medical advice. #HearingLoss #HearingAids
+    #HealthyAging #HealthEducation
+  short_scenes:
+    - layout: "title"
+      heading: "Turning Up the TV?"
+      points: ["It could be hearing loss"]
+      footage_query: "older man hand behind ear"
+      narration: >-
+        Turning up the TV, asking people to repeat, and thinking everyone mumbles can be signs of hearing loss.
+    - layout: "bullets"
+      heading: "Do Not Wait"
+      points: ["Linked to dementia risk", "Get a hearing test", "OTC hearing aids since 2022"]
+      footage_query: "hearing aid close up"
+      narration: >-
+        Untreated hearing loss is linked to loneliness, falls, and a higher risk of dementia. Get your hearing tested. Since
+        2022, adults with mild to moderate hearing loss can buy hearing aids over the counter. And sudden hearing loss in one
+        ear needs a doctor within days.
+    - layout: "outro"
+      heading: "Full Video"
+      points: ["On YouTube"]
+      footage_query: "older couple walking park"
+      narration: >-
+        Learn all the warning signs in our full video, on the Health Support Studio YouTube channel.
