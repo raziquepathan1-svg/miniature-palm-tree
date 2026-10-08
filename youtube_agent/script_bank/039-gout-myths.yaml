@@ -1,0 +1,288 @@
+queue_topic: "Gout: myths vs facts"
+style: "Myth vs Fact"
+sources:
+  - "CDC, Gout: https://www.cdc.gov/arthritis/gout/index.html"
+  - "NIH NIAMS, Gout: https://www.niams.nih.gov/health-topics/gout"
+  - "MedlinePlus, Gout: https://medlineplus.gov/gout.html"
+plan:
+  topic: "Gout: myths vs facts"
+  title: "Gout Myths: Why Your Big Toe Is on Fire"
+  description: |-
+    Gout is one of the most painful kinds of arthritis, and one of the most treatable. We bust five common gout myths, explain what triggers flares, and show how daily treatment can stop the attacks for good.
+
+    In this video:
+    • What causes gout and the signs of a flare
+    • 5 gout myths busted
+    • Foods and drinks that trigger flares
+    • Treating a flare at home and with medicine
+    • Daily medicine to keep uric acid low
+
+    #Gout #Arthritis #JointPain #UricAcid #HealthEducation
+  tags: ["gout", "gout symptoms", "gout flare", "uric acid", "big toe pain", "gout diet", "allopurinol", "gout myths", "arthritis", "myth vs fact", "health education"]
+  thumbnail_text: "BIG TOE ON FIRE?"
+  thumbnail_highlight: "FIRE?"
+  thumbnail_photo_query: "man holding foot pain"
+  playlist: "Healthy Habits & Prevention"
+  scenes:
+    - layout: "title"
+      heading: "Gout Myths"
+      points: ["What really causes the pain"]
+      footage_query: "man holding foot pain"
+      narration: >-
+        You go to bed feeling fine, and wake up at night with your big toe on fire, so painful that even a bedsheet hurts.
+        That is often how gout begins. Gout is one of the most painful kinds of arthritis, but it is also one of the most
+        treatable. Today we bust the most common gout myths, and explain how to stop the attacks for good.
+    - layout: "big_number"
+      heading: "Gout Is Common"
+      points: ["About 1 in 25", "US adults have gout"]
+      footage_query: "older adults walking park"
+      narration: >-
+        Gout affects about one in twenty five adults in the United States, more than nine million people. It is the most
+        common type of inflammatory arthritis in men, and it becomes more common in women after menopause. Gout has been
+        rising for decades, along with obesity, high blood pressure, diabetes and kidney disease, which are all linked to it.
+    - layout: "bullets"
+      heading: "What Causes Gout?"
+      points: ["Too much uric acid", "Forms sharp crystals", "Crystals collect in joints", "Body attacks them"]
+      footage_query: "medical illustration foot joint"
+      narration: >-
+        What causes gout? Uric acid is a normal waste product in the blood. When there is too much of it, it can form tiny,
+        needle shaped crystals that collect in and around joints. The immune system sees the crystals as invaders and attacks
+        them, causing sudden, intense inflammation. That is a gout flare.
+    - layout: "warning"
+      heading: "Signs of a Gout Flare"
+      points: ["Sudden, severe joint pain", "Red, hot, swollen joint", "Often the big toe", "Often starts at night"]
+      footage_query: "swollen foot close up"
+      narration: >-
+        A gout flare usually comes on fast, often at night. The joint becomes extremely painful, swollen, red or purple, and
+        hot to the touch. The big toe is the most common place, but gout can also affect the ankle, foot, knee, wrist, elbow
+        and fingers. The worst pain is often in the first day, and a flare can last a week or two.
+    - layout: "myth_fact"
+      heading: "Gout Is a Rich Man's Disease"
+      points: ["Only wealthy, overeating men get it", "Anyone can get gout"]
+      footage_query: "family dinner table"
+      narration: >-
+        Myth one: gout is a rich man's disease, caused by too much fancy food and wine. Fact: gout has been called the disease
+        of kings, but anyone can get it. Genes play a big role, and so do kidney function, weight, blood pressure, and some
+        medicines. Many people who eat a healthy diet still get gout.
+    - layout: "bullets"
+      heading: "Who Is at Risk?"
+      points: ["Men, and women after menopause", "Family history", "Obesity, high blood pressure", "Kidney disease, diabetes"]
+      footage_query: "middle aged man doctor consultation"
+      narration: >-
+        Who is at risk? Men are more likely to get gout, usually starting in middle age. Women are protected by estrogen until
+        menopause, after which their risk rises. Other risk factors include a family history of gout, obesity, high blood
+        pressure, diabetes, chronic kidney disease, heart disease, and drinking alcohol, especially beer.
+    - layout: "warning"
+      heading: "Medicines That Raise Uric Acid"
+      points: ["Some water pills", "Low-dose aspirin", "Some transplant medicines", "Never stop on your own"]
+      footage_query: "pill bottles table"
+      narration: >-
+        Some medicines raise uric acid and can trigger gout. These include certain water pills used for blood pressure and
+        heart failure, low dose aspirin, and some medicines used after organ transplants. If you get gout and take these, do
+        not stop them on your own, since they may be important for your heart. Ask your doctor whether a different medicine
+        could work.
+    - layout: "myth_fact"
+      heading: "It Is Just Diet"
+      points: ["Changing diet cures gout", "Most uric acid is made by the body"]
+      footage_query: "healthy salad bowl table"
+      narration: >-
+        Myth two: gout is caused only by diet, so eating right will cure it. Fact: most uric acid is made by your own body,
+        and how well your kidneys remove it depends a lot on your genes. Diet changes can help lower uric acid somewhat and
+        reduce flares, but most people with frequent gout also need medicine to keep uric acid low.
+    - layout: "bullets"
+      heading: "Foods That Can Trigger Gout"
+      points: ["Red meat and organ meats", "Some seafood", "Beer and liquor", "Sugary drinks"]
+      footage_query: "grilled steak plate"
+      narration: >-
+        That said, some foods and drinks raise uric acid and can trigger flares. These include red meat, organ meats like
+        liver, some seafood like shellfish, sardines and anchovies, beer and liquor, and drinks sweetened with sugar or high
+        fructose corn syrup, like regular soda and some fruit drinks. Large meals and binge drinking are common triggers.
+    - layout: "bullets"
+      heading: "Foods That May Help"
+      points: ["Low-fat dairy", "Vegetables and whole grains", "Water throughout the day", "Coffee in moderation"]
+      footage_query: "glass of milk breakfast"
+      narration: >-
+        Some foods may help. Low fat milk and yogurt are linked to lower uric acid levels. Vegetables, fruits, beans, whole
+        grains and nuts are good choices, and vegetables high in purines, like spinach, do not seem to raise gout risk the way
+        meat does. Drink water throughout the day. Some studies link coffee and cherries to fewer flares, but they are not a
+        cure.
+    - layout: "myth_fact"
+      heading: "Wine Is Safe for Gout"
+      points: ["Only beer causes flares", "Any alcohol can trigger gout"]
+      footage_query: "wine glasses table"
+      narration: >-
+        Myth three: only beer causes gout, so wine is safe. Fact: beer and liquor raise uric acid the most, but studies show
+        any type of alcohol, including wine, can trigger a gout flare, especially when you drink several drinks at once. If
+        you have gout, limiting alcohol is one of the best things you can do.
+    - layout: "myth_fact"
+      heading: "The Pain Will Just Go Away"
+      points: ["Flares stop, so no treatment needed", "Untreated gout gets worse"]
+      footage_query: "man holding foot pain"
+      narration: >-
+        Myth four: once the flare goes away, the gout is gone. Fact: the crystals stay in the body between flares. Without
+        treatment, flares usually come more often, last longer, and spread to more joints. Over years, uric acid can form
+        lumps under the skin, called tophi, and permanently damage joints. It can also cause kidney stones.
+    - layout: "warning"
+      heading: "When It Might Not Be Gout"
+      points: ["Fever with a hot joint", "Feeling very ill", "Joint after injury or surgery", "Get seen today"]
+      footage_query: "thermometer fever close up"
+      narration: >-
+        A hot, swollen, painful joint is not always gout. A joint infection, called septic arthritis, can look very similar,
+        and it is an emergency that can destroy a joint quickly. Get medical care the same day if you have a fever or chills,
+        feel very ill, or if the joint is swollen after an injury, surgery, or an injection.
+    - layout: "bullets"
+      heading: "How Gout Is Diagnosed"
+      points: ["History and exam", "Fluid from the joint", "Uric acid blood test", "Imaging sometimes"]
+      footage_query: "doctor examining foot"
+      narration: >-
+        How is gout diagnosed? Your doctor will ask about your symptoms and examine the joint. The most certain test is taking
+        a small amount of fluid from the joint with a needle and looking for uric acid crystals under a microscope. A blood
+        test for uric acid helps, but it can be normal during a flare. Ultrasound or a special CT scan can also show crystals.
+    - layout: "bullets"
+      heading: "Treating a Flare"
+      points: ["Start treatment early", "Anti-inflammatory pills", "Colchicine", "Steroids"]
+      footage_query: "pharmacist giving medicine"
+      narration: >-
+        Treat a flare as early as possible, ideally within the first day. Your doctor may recommend anti inflammatory pain
+        relievers, like naproxen or ibuprofen, a medicine called colchicine, or steroids, as a pill or a joint injection. The
+        right choice depends on your kidneys, stomach, heart, and other medicines. Many people keep a flare plan and medicine
+        at home.
+    - layout: "bullets"
+      heading: "Home Care During a Flare"
+      points: ["Rest the joint", "Ice for 20 minutes", "Raise the joint", "Drink plenty of water"]
+      footage_query: "ice pack foot"
+      narration: >-
+        At home during a flare, rest the joint and keep weight off it. Put ice wrapped in a cloth on the joint for about
+        twenty minutes at a time, several times a day. Raise the joint on a pillow. Drink plenty of water, and avoid alcohol
+        and sugary drinks. A bed cradle can keep the sheets off a painful toe.
+    - layout: "bullets"
+      heading: "Long-Term Treatment"
+      points: ["Medicines that lower uric acid", "Allopurinol is common", "Goal: uric acid below 6", "Taken every day"]
+      footage_query: "pill organizer close up"
+      narration: >-
+        The key to stopping gout is lowering uric acid for the long term. Medicines like allopurinol and febuxostat lower how
+        much uric acid your body makes. Others help the kidneys remove it. The usual goal is a uric acid level below six. When
+        uric acid stays low, the crystals slowly dissolve, and flares become rare. These medicines are taken every day.
+    - layout: "bullets"
+      heading: "Who Needs Daily Medicine?"
+      points: ["Two or more flares a year", "Tophi under the skin", "Joint damage on x-ray", "Kidney stones from uric acid"]
+      footage_query: "doctor talking patient office"
+      narration: >-
+        Who should take uric acid lowering medicine? Guidelines recommend it for people with two or more flares a year, lumps
+        of crystals under the skin called tophi, joint damage from gout, or kidney stones. Your doctor may also suggest it
+        after a first flare if you have chronic kidney disease or very high uric acid. Ask whether it is right for you.
+    - layout: "myth_fact"
+      heading: "Stop Pills During a Flare"
+      points: ["Stop uric acid medicine in a flare", "Keep taking it"]
+      footage_query: "glass of water pill hand"
+      narration: >-
+        Myth five: if you have a flare while taking allopurinol, stop the medicine. Fact: keep taking your daily uric acid
+        lowering medicine during a flare, unless your doctor tells you otherwise. Stopping and starting can make flares worse.
+        Treat the flare separately with your flare medicine, and call your doctor.
+    - layout: "bullets"
+      heading: "Starting Medicine the Right Way"
+      points: ["Start with a low dose", "Raise slowly", "Flares may happen at first", "Preventive medicine for months"]
+      footage_query: "pharmacist counter customer"
+      narration: >-
+        When you start uric acid lowering medicine, flares can actually happen more at first, as crystals start to dissolve.
+        That is normal and does not mean the medicine is failing. Doctors usually start with a low dose and raise it slowly,
+        checking blood levels. They often add a low dose of colchicine or an anti inflammatory for the first three to six
+        months to prevent flares.
+    - layout: "warning"
+      heading: "Allopurinol Safety"
+      points: ["Rash: stop and call", "Ask about genetic testing", "Regular blood tests", "Tell doctors about it"]
+      footage_query: "woman scratching arm"
+      narration: >-
+        Allopurinol is safe for most people, but rarely it can cause a serious skin reaction. Stop it and call your doctor
+        right away if you get a rash, especially with fever, blisters or mouth sores. People of certain Asian and African
+        ancestry have a higher risk, and doctors may recommend a gene test first. You will need regular blood tests.
+    - layout: "bullets"
+      heading: "Gout and Your Heart and Kidneys"
+      points: ["Linked to heart disease", "Linked to kidney disease", "Check blood pressure", "Check sugar and cholesterol"]
+      footage_query: "blood pressure monitor arm"
+      narration: >-
+        Gout is linked to heart disease, high blood pressure, diabetes and kidney disease. That does not mean gout causes all
+        of them, but they often go together. If you have gout, ask your doctor to check your blood pressure, blood sugar,
+        cholesterol and kidney function regularly. Treating these together protects your heart and kidneys.
+    - layout: "bullets"
+      heading: "Habits That Help"
+      points: ["Reach a healthy weight slowly", "Limit alcohol", "Avoid sugary drinks", "Stay well hydrated"]
+      footage_query: "people walking park"
+      narration: >-
+        Healthy habits can lower uric acid and reduce flares. Lose extra weight slowly, since crash diets can trigger flares.
+        Limit alcohol, especially beer and liquor. Avoid sugary drinks. Eat more vegetables, whole grains and low fat dairy,
+        and less red meat and organ meat. Drink plenty of water, and stay active. These habits also help your heart.
+    - layout: "bullets"
+      heading: "Women and Gout"
+      points: ["Rare before menopause", "Risk rises after", "Often in other joints", "Often missed"]
+      footage_query: "mature woman holding hand"
+      narration: >-
+        Gout is less common in women, but it does happen, mostly after menopause, when estrogen no longer helps the kidneys
+        clear uric acid. In women, gout may affect the knees, ankles, or fingers instead of the big toe, and may be mistaken
+        for other types of arthritis, especially osteoarthritis. Women with water pills, kidney disease or high blood pressure
+        are at higher risk.
+    - layout: "bullets"
+      heading: "Prevent the Next Flare"
+      points: ["Know your triggers", "Keep a flare diary", "Carry flare medicine when traveling", "Stay hydrated on trips"]
+      footage_query: "woman writing journal"
+      narration: >-
+        To prevent the next flare, learn your personal triggers. Keep a simple diary of what you ate and drank, your activity,
+        and any new medicines before each flare. Common triggers include big meals, alcohol, dehydration, illness, and
+        surgery. When traveling, carry your flare medicine, drink plenty of water, and go easy on alcohol, since flares often
+        strike on vacation.
+    - layout: "bullets"
+      heading: "Kidney Stones and Gout"
+      points: ["Uric acid can form stones", "Severe side or back pain", "Drink more water", "Medicine helps prevent them"]
+      footage_query: "man back pain holding side"
+      narration: >-
+        People with gout are more likely to get kidney stones, some made of uric acid. A kidney stone can cause severe pain in
+        the side or back, nausea, and blood in the urine. Drinking plenty of water helps prevent stones. Uric acid lowering
+        medicine can help prevent both gout flares and uric acid stones.
+    - layout: "bullets"
+      heading: "Questions for Your Doctor"
+      points: ["Is this definitely gout?", "What is my uric acid level?", "Do I need daily medicine?", "What is my flare plan?"]
+      footage_query: "patient talking doctor"
+      narration: >-
+        At your next visit, ask: is this definitely gout? What is my uric acid level, and what should my goal be? Do I need
+        daily medicine to lower it? Could any of my current medicines be making it worse? What should I take at the first sign
+        of a flare? And how often should my blood be checked?
+    - layout: "bullets"
+      heading: "Quick Recap"
+      points: ["Gout is uric acid crystals", "Not just diet", "Treat flares early", "Daily medicine stops flares"]
+      footage_query: "notebook checklist pen"
+      narration: >-
+        Let us recap. Gout is caused by uric acid crystals in the joints, and it is not just about diet or wealth. Any alcohol
+        can trigger flares. Treat flares early, and do not ignore gout between flares. For many people, daily medicine that
+        keeps uric acid below six stops flares and protects the joints. Keep taking it, even during a flare.
+    - layout: "outro"
+      heading: "Remember"
+      points: ["Treat flares early", "Keep uric acid low", "Do not stop meds in a flare"]
+      footage_query: "man walking outdoors"
+      narration: >-
+        Remember: treat flares early, keep your uric acid low, and do not stop your daily gout medicine during a flare. Share
+        this with someone who has had a painful big toe. This video is for education only, not medical advice. Like and
+        subscribe to Health Support Studio for a new health video every day.
+  short_title: "Big toe on fire at night? It could be gout #Shorts"
+  short_caption: >-
+    Gout isn't just about diet. Here is what really causes it. Educational only, not medical advice. #Gout #Arthritis
+    #JointPain #HealthEducation
+  short_scenes:
+    - layout: "title"
+      heading: "Big Toe on Fire?"
+      points: ["It could be gout"]
+      footage_query: "man holding foot pain"
+      narration: >-
+        Waking up at night with your big toe red, swollen and on fire is a classic sign of gout.
+    - layout: "myth_fact"
+      heading: "Gout Is Just Diet"
+      points: ["Diet alone causes gout", "Most uric acid is made by the body"]
+      footage_query: "healthy salad bowl table"
+      narration: >-
+        Many people think gout is only about diet. But most uric acid is made by your own body, and genes play a big role.
+        Diet helps, but many people need daily medicine that keeps uric acid low. With it, flares become rare.
+    - layout: "outro"
+      heading: "Full Video"
+      points: ["On YouTube"]
+      footage_query: "man walking outdoors"
+      narration: >-
+        Learn more gout myths in our full video, on the Health Support Studio YouTube channel.
