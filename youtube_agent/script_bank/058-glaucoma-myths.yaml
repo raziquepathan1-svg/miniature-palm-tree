@@ -1,0 +1,296 @@
+queue_topic: "Glaucoma: myths vs facts about the silent thief of sight"
+style: "Myth vs Fact"
+sources:
+  - "NIH National Eye Institute, Glaucoma: https://www.nei.nih.gov/learn-about-eye-health/eye-conditions-and-diseases/glaucoma"
+  - "CDC, Glaucoma: https://www.cdc.gov/vision-health/about-eye-disorders/glaucoma.html"
+  - "MedlinePlus, Glaucoma: https://medlineplus.gov/glaucoma.html"
+plan:
+  topic: "Glaucoma: myths vs facts about the silent thief of sight"
+  title: "Glaucoma Myths: The Silent Thief of Sight"
+  description: |-
+    Glaucoma often has no symptoms until vision is permanently lost, and about half of people with it don't know. We bust six common glaucoma myths, explain who is at risk, the dilated eye exam, emergency warning signs, and treatments that save sight.
+
+    In this video:
+    • What glaucoma is and why it is silent
+    • 6 glaucoma myths busted
+    • Who is at higher risk and how often to get checked
+    • Angle-closure emergency warning signs
+    • Eye drops, laser and surgery
+
+    #Glaucoma #EyeHealth #VisionLoss #HealthyAging #HealthEducation
+  tags: ["glaucoma", "glaucoma symptoms", "eye pressure", "dilated eye exam", "vision loss", "optic nerve", "glaucoma eye drops", "angle closure glaucoma", "eye health", "myth vs fact", "health education"]
+  thumbnail_text: "SILENT THIEF OF SIGHT"
+  thumbnail_highlight: "SIGHT"
+  thumbnail_photo_query: "eye exam close up"
+  playlist: "Tests & Doctor Visits"
+  scenes:
+    - layout: "title"
+      heading: "Glaucoma Myths"
+      points: ["The silent thief of sight"]
+      footage_query: "eye exam close up"
+      narration: >-
+        You could be losing your vision right now and not know it. Glaucoma often has no symptoms until a lot of vision is
+        already gone, and that lost vision cannot be brought back. It is called the silent thief of sight. Today we bust the
+        most common glaucoma myths, and explain the simple eye exam that can catch it early and save your sight.
+    - layout: "big_number"
+      heading: "A Hidden Problem"
+      points: ["About 3 million", "Americans have glaucoma"]
+      footage_query: "older adults walking park"
+      narration: >-
+        About three million Americans have glaucoma, and experts estimate that about half of them do not know it. It is a
+        leading cause of blindness in the United States, and the number of people with glaucoma is expected to grow as the
+        population ages. The good news is that early treatment can usually prevent serious vision loss.
+    - layout: "bullets"
+      heading: "What Is Glaucoma?"
+      points: ["A group of eye diseases", "Damages the optic nerve", "Often linked to eye pressure", "Vision loss is permanent"]
+      footage_query: "medical illustration eye"
+      narration: >-
+        What is glaucoma? It is a group of eye diseases that damage the optic nerve, the cable that carries signals from the
+        eye to the brain. Damage is often linked to high pressure inside the eye, from fluid that does not drain properly.
+        Over time, nerve fibers die, and vision is lost. That lost vision cannot be restored.
+    - layout: "bullets"
+      heading: "Open-Angle Glaucoma"
+      points: ["Most common type", "Develops slowly", "No pain", "Side vision lost first"]
+      footage_query: "eye exam chart"
+      narration: >-
+        The most common type is open angle glaucoma. The eye's drainage system slowly becomes less efficient, and pressure
+        builds gradually. There is no pain, and vision usually looks normal at first. It slowly takes away side vision, also
+        called peripheral vision. Many people do not notice until the damage is advanced.
+    - layout: "myth_fact"
+      heading: "I Would Notice Vision Loss"
+      points: ["I would know if I was losing sight", "Early glaucoma has no symptoms"]
+      footage_query: "man reading glasses"
+      narration: >-
+        Myth one: if I had glaucoma, I would notice my vision getting worse. Fact: early glaucoma usually has no symptoms at
+        all. It first affects side vision, and the brain fills in the gaps, so you do not notice. By the time people notice,
+        they may have lost a lot of vision. The only way to catch it early is an eye exam.
+    - layout: "myth_fact"
+      heading: "Good Vision Means Healthy Eyes"
+      points: ["Seeing 20 20 means no glaucoma", "You can see clearly and still have it"]
+      footage_query: "eye chart close up"
+      narration: >-
+        Myth two: if I can see clearly and pass the eye chart, my eyes are healthy. Fact: glaucoma can steal side vision while
+        your central, reading vision stays sharp until late in the disease. A basic vision test or glasses check does not find
+        glaucoma. You need a dilated eye exam that looks at the optic nerve.
+    - layout: "bullets"
+      heading: "Who Is at Higher Risk?"
+      points: ["Age over 60", "Black adults over 40", "Hispanic adults over 60", "Family history"]
+      footage_query: "family photo generations"
+      narration: >-
+        Who is at higher risk? People over sixty. Black Americans over forty, who are several times more likely to get
+        glaucoma and to lose vision from it. Hispanic Americans over sixty. People with a parent, brother or sister who has
+        glaucoma. Asian Americans are at higher risk of some types. Anyone can get glaucoma, but these groups should be
+        especially careful.
+    - layout: "bullets"
+      heading: "Other Risk Factors"
+      points: ["Diabetes", "High eye pressure", "Very nearsighted", "Long-term steroid use"]
+      footage_query: "blood glucose meter finger"
+      narration: >-
+        Other risk factors include diabetes, high blood pressure, high pressure inside the eye, being very nearsighted or
+        farsighted, a past eye injury, thin corneas, and long term use of steroid medicines, including steroid eye drops,
+        inhalers and pills. Tell your eye doctor about all your medicines and health conditions.
+    - layout: "myth_fact"
+      heading: "Only Older People Get It"
+      points: ["Glaucoma is only for the elderly", "It can happen at any age"]
+      footage_query: "young adults group outdoors"
+      narration: >-
+        Myth three: only older people get glaucoma. Fact: glaucoma is more common with age, but it can happen at any age, even
+        in babies and children. Black adults are at higher risk starting at age forty. Young adults with a family history,
+        diabetes, or steroid use should also get regular eye exams.
+    - layout: "myth_fact"
+      heading: "Normal Pressure Means No Glaucoma"
+      points: ["Normal eye pressure rules it out", "Glaucoma can occur with normal pressure"]
+      footage_query: "eye pressure test"
+      narration: >-
+        Myth four: if my eye pressure is normal, I cannot have glaucoma. Fact: many people with glaucoma have normal eye
+        pressure. This is called normal tension glaucoma. And some people with high pressure never develop glaucoma. That is
+        why an eye pressure check alone is not enough. The doctor must also look at the optic nerve and test side vision.
+    - layout: "bullets"
+      heading: "The Dilated Eye Exam"
+      points: ["Drops widen the pupils", "Doctor looks at the optic nerve", "Painless", "Blurry vision for a few hours"]
+      footage_query: "eye doctor exam"
+      narration: >-
+        How is glaucoma found? With a comprehensive dilated eye exam. The eye doctor puts drops in your eyes to widen the
+        pupils, then uses a special lens to look at the optic nerve for signs of damage. It is painless. Your vision may be
+        blurry and sensitive to light for a few hours, so bring sunglasses and someone to drive you home.
+    - layout: "bullets"
+      heading: "Other Glaucoma Tests"
+      points: ["Eye pressure check", "Visual field test for side vision", "Optic nerve scan", "Cornea thickness"]
+      footage_query: "visual field test machine"
+      narration: >-
+        Other tests help diagnose and track glaucoma. Tonometry measures eye pressure, sometimes with a quick puff of air. A
+        visual field test checks your side vision, as you click a button when you see lights. A scan called OCT takes detailed
+        pictures of the optic nerve. A test also measures the thickness of the cornea.
+    - layout: "bullets"
+      heading: "How Often to Get Checked"
+      points: ["Adults: ask your eye doctor", "High risk: every 1 to 2 years", "Age 60+: every 1 to 2 years", "Black adults: from age 40"]
+      footage_query: "calendar notebook planning"
+      narration: >-
+        How often should you get checked? The National Eye Institute recommends a dilated eye exam every one to two years for
+        people at higher risk, including everyone over sixty, Black and Hispanic adults starting at forty or sixty, and those
+        with a family history or diabetes. Your eye doctor will tell you what schedule is right for you.
+    - layout: "bullets"
+      heading: "Medicare Covers Exams"
+      points: ["Yearly glaucoma exam", "For people at high risk", "Diabetes, family history", "Black and Hispanic adults"]
+      footage_query: "insurance card hand"
+      narration: >-
+        Medicare Part B covers a glaucoma exam once a year for people at high risk. This includes people with diabetes, a
+        family history of glaucoma, Black Americans fifty and older, and Hispanic Americans sixty five and older. Other
+        insurance plans and community programs may also help. Ask your doctor or eye clinic about coverage.
+    - layout: "warning"
+      heading: "Angle-Closure Emergency"
+      points: ["Sudden severe eye pain", "Headache, nausea", "Blurry vision, halos", "Red eye: go to ER"]
+      footage_query: "woman holding eye pain"
+      narration: >-
+        There is another type, called angle closure glaucoma, which can come on suddenly. The drainage area in the eye gets
+        blocked and pressure rises quickly. Signs include sudden, severe eye pain, a red eye, headache, nausea and vomiting,
+        blurred vision, and rainbow colored halos around lights. This is an emergency. Go to an emergency room or eye doctor
+        right away, or vision can be lost within hours.
+    - layout: "myth_fact"
+      heading: "Glaucoma Can Be Cured"
+      points: ["Treatment restores lost vision", "Treatment saves remaining sight"]
+      footage_query: "eye drops close up"
+      narration: >-
+        Myth five: glaucoma can be cured, and lost vision can be restored. Fact: there is no cure, and vision lost to glaucoma
+        cannot be brought back. But treatment can usually slow or stop further damage, and protect the vision you still have.
+        That is why catching it early matters so much.
+    - layout: "bullets"
+      heading: "Eye Drops"
+      points: ["Most common treatment", "Lower eye pressure", "Use every day", "Even when you feel fine"]
+      footage_query: "eye drops close up"
+      narration: >-
+        The most common treatment is prescription eye drops that lower eye pressure, either by making less fluid or helping it
+        drain better. They must be used every day, exactly as prescribed, usually for life. Glaucoma does not cause symptoms,
+        so it is easy to forget doses. But skipping drops can let damage continue silently.
+    - layout: "bullets"
+      heading: "How to Use Eye Drops"
+      points: ["Wash your hands", "Tilt head, pull lower lid", "One drop, do not touch", "Close eye, press inner corner"]
+      footage_query: "woman eye drops"
+      narration: >-
+        How do you use eye drops correctly? Wash your hands. Tilt your head back and gently pull down your lower eyelid to
+        make a small pocket. Put one drop in, without touching the tip to your eye. Close your eye and gently press the inner
+        corner for a minute or two, which keeps more medicine in the eye. Wait five minutes between different drops.
+    - layout: "bullets"
+      heading: "Tips to Remember Drops"
+      points: ["Link to daily habits", "Set phone alarms", "Keep a checklist", "Ask about drop aids"]
+      footage_query: "smartphone alarm"
+      narration: >-
+        Tips to help you remember: link your drops to daily habits, like brushing your teeth. Set phone alarms. Keep a simple
+        checklist. If you have trouble getting drops in, ask about devices that help aim the bottle. And refill your
+        prescription before you run out. If drops cause side effects or cost too much, tell your doctor.
+    - layout: "bullets"
+      heading: "Glaucoma in Children"
+      points: ["Rare but serious", "Cloudy or large eyes", "Tearing, light sensitivity", "See an eye doctor"]
+      footage_query: "baby face close up"
+      narration: >-
+        Glaucoma can also affect babies and children, though it is rare. Signs in babies include eyes that look cloudy or
+        unusually large, a lot of tearing, sensitivity to light, and squeezing the eyes shut in bright light. Children with
+        these signs need to see an eye doctor promptly. Early surgery can often save their vision.
+    - layout: "bullets"
+      heading: "Side Effects of Drops"
+      points: ["Red or stinging eyes", "Changes in eye color or lashes", "Tiredness or slow pulse", "Tell your doctor"]
+      footage_query: "woman eye drops"
+      narration: >-
+        Glaucoma drops can have side effects. Some cause red, itchy or stinging eyes, darkening of eye color, or longer
+        eyelashes. Some can be absorbed into the body and affect breathing, heart rate, or energy, especially in people with
+        asthma or heart conditions. Tell your eye doctor about side effects. There are often other options that work just as
+        well.
+    - layout: "bullets"
+      heading: "Laser Treatment"
+      points: ["Helps fluid drain", "Quick, in the office", "May reduce need for drops", "Effect can wear off"]
+      footage_query: "eye laser surgery"
+      narration: >-
+        Laser treatment is another option. A common laser treatment helps fluid drain from the eye better, and lowers
+        pressure. It is done in the eye doctor's office, takes only minutes, and is usually painless. For some people, it can
+        be a first treatment instead of drops, or reduce the number of drops needed. The effect can wear off over years and
+        may be repeated.
+    - layout: "bullets"
+      heading: "Surgery"
+      points: ["When drops and laser are not enough", "Creates a new drainage path", "Small implants", "Ask about risks and benefits"]
+      footage_query: "surgeon preparing operating room"
+      narration: >-
+        When drops and laser are not enough, surgery may help. Glaucoma surgery creates a new path for fluid to drain, or
+        places a tiny drainage implant. Newer, less invasive surgeries can sometimes be done along with cataract surgery. Your
+        eye doctor will explain the benefits and risks of each option.
+    - layout: "myth_fact"
+      heading: "Marijuana Treats Glaucoma"
+      points: ["Smoking cannabis treats glaucoma", "Effects are too short"]
+      footage_query: "eye drops close up"
+      narration: >-
+        Myth six: marijuana is a good treatment for glaucoma. Fact: marijuana can lower eye pressure for a few hours, but the
+        effect does not last, so it would have to be used many times a day. It also lowers blood pressure, which may reduce
+        blood flow to the optic nerve, and has other side effects. Eye doctors recommend proven treatments instead.
+    - layout: "bullets"
+      heading: "Protect Your Eyes"
+      points: ["Wear eye protection", "Stay active", "Control diabetes and blood pressure", "Do not smoke"]
+      footage_query: "safety glasses work"
+      narration: >-
+        You cannot prevent all glaucoma, but you can protect your eyes. Wear protective eyewear during sports, yard work, and
+        home projects, since eye injuries can lead to glaucoma. Stay physically active, which may help lower eye pressure.
+        Control diabetes and blood pressure. Do not smoke. And tell your eye doctor if you use steroid medicines.
+    - layout: "bullets"
+      heading: "Know Your Family History"
+      points: ["Ask relatives about glaucoma", "Tell your eye doctor", "Encourage family to get checked", "Start exams earlier"]
+      footage_query: "family dinner table"
+      narration: >-
+        Glaucoma runs in families. Ask your parents, brothers, sisters and grandparents if they have glaucoma. Tell your eye
+        doctor, since a family history may mean you need exams earlier and more often. If you are diagnosed, encourage your
+        relatives to get checked too. Your diagnosis could save their sight.
+    - layout: "bullets"
+      heading: "Living With Glaucoma"
+      points: ["Most people keep useful vision", "Keep all follow-up visits", "Low vision aids help", "Driving checks"]
+      footage_query: "older man smiling outdoors"
+      narration: >-
+        Most people with glaucoma who get treatment and keep their follow up visits keep useful vision for life. If you have
+        some vision loss, low vision specialists can help with magnifiers, lighting, and other tools to stay independent. Ask
+        your eye doctor whether your side vision is still safe for driving.
+    - layout: "bullets"
+      heading: "Questions for Your Eye Doctor"
+      points: ["Do I have glaucoma?", "What is my eye pressure?", "How often should I come?", "Am I using drops correctly?"]
+      footage_query: "patient talking doctor"
+      narration: >-
+        At your next eye exam, ask: am I at risk for glaucoma? Do I have any signs of it? What is my eye pressure, and what
+        should it be? How often should I have a dilated exam? If I am on drops, am I using them correctly? And are any of my
+        medicines, like steroids, affecting my eyes?
+    - layout: "bullets"
+      heading: "Quick Recap"
+      points: ["Often no symptoms", "Vision loss is permanent", "Dilated eye exam finds it", "Treatment saves sight"]
+      footage_query: "notebook checklist pen"
+      narration: >-
+        Let us recap. Glaucoma often has no symptoms until vision is lost, and lost vision cannot be restored. Good vision and
+        normal eye pressure do not rule it out. A dilated eye exam is the best way to find it early. People over sixty, Black
+        adults over forty, and those with a family history should be checked regularly. Treatment can protect your remaining
+        sight.
+    - layout: "outro"
+      heading: "Remember"
+      points: ["Get a dilated eye exam", "Know your family history", "Use drops every day"]
+      footage_query: "older couple walking park"
+      narration: >-
+        Remember: get a dilated eye exam, know your family history, and if you have glaucoma, use your drops every day. Share
+        this with your parents and grandparents. This video is for education only, not medical advice. Like and subscribe to
+        Health Support Studio for a new health video every day.
+  short_title: "The silent thief of your sight #Shorts"
+  short_caption: >-
+    Glaucoma often has no symptoms until vision is lost. Get checked. Educational only, not medical advice. #Glaucoma
+    #EyeHealth #VisionLoss #HealthEducation
+  short_scenes:
+    - layout: "title"
+      heading: "Silent Thief of Sight"
+      points: ["Glaucoma"]
+      footage_query: "eye exam close up"
+      narration: >-
+        You could be losing your vision right now and not know it.
+    - layout: "bullets"
+      heading: "Know This"
+      points: ["Often no symptoms", "Half do not know they have it", "Dilated eye exam finds it"]
+      footage_query: "eye doctor exam"
+      narration: >-
+        Glaucoma slowly steals side vision with no pain and no early symptoms, and the loss is permanent. About half of people
+        with it do not know. A dilated eye exam can catch it early. People over sixty, Black adults over forty, and those with
+        a family history should be checked regularly.
+    - layout: "outro"
+      heading: "Full Video"
+      points: ["On YouTube"]
+      footage_query: "older couple walking park"
+      narration: >-
+        Learn the glaucoma myths in our full video, on the Health Support Studio YouTube channel.
