@@ -794,8 +794,9 @@ def make_thumbnail(text: str, channel_name: str, out: Path, background: Path | N
     # Dark brand gradient on the left so the text pops; the photo stays visible on the right
     shade = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     sd = ImageDraw.Draw(shade)
+    dark_to, fade = (0.30, 0.12) if scene_day else (0.38, 0.30)  # scenes: keep both people in the light
     for x in range(W):
-        a = 245 if x < W * 0.38 else int(245 * max(0.0, 1 - (x - W * 0.38) / (W * 0.30)))
+        a = 245 if x < W * dark_to else int(245 * max(0.0, 1 - (x - W * dark_to) / (W * fade)))
         sd.line([(x, 0), (x, H)], fill=(*DARK, a))
     img.alpha_composite(shade)
     d = ImageDraw.Draw(img)
@@ -826,7 +827,7 @@ def make_thumbnail(text: str, channel_name: str, out: Path, background: Path | N
         host_img = Image.open(host).convert("RGBA")
     if host_img and host_img.height < host_img.width * 1.6:  # a pose that is already waist-up: show all of it
         zoom = 1.0
-    max_w, max_lines = int(W * (0.53 if host_img else 0.46 if scene_day else 0.62)), 3
+    max_w, max_lines = int(W * (0.53 if host_img else 0.37 if scene_day else 0.62)), 3
     size = 150
     bottom_limit = H - 120  # keep clear of the brand badge
     while size > 70:
