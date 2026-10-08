@@ -1,0 +1,299 @@
+queue_topic: "Low blood sugar (hypoglycemia): warning signs and the rule of 15"
+style: "Warning Signs"
+sources:
+  - "CDC, Low Blood Sugar (Hypoglycemia): https://www.cdc.gov/diabetes/about/low-blood-sugar-hypoglycemia.html"
+  - "NIDDK, Low Blood Glucose (Hypoglycemia): https://www.niddk.nih.gov/health-information/diabetes/overview/preventing-problems/low-blood-glucose-hypoglycemia"
+  - "MedlinePlus, Low Blood Sugar: https://medlineplus.gov/lowbloodsugar.html"
+plan:
+  topic: "Low blood sugar (hypoglycemia): warning signs and the rule of 15"
+  title: "Low Blood Sugar Warning Signs (and the Rule of 15)"
+  description: |-
+    Low blood sugar can come on fast for people with diabetes. Learn the early and severe warning signs, how to treat it with the rule of 15, when to use glucagon, and how to prevent lows at night, while driving and during exercise.
+
+    In this video:
+    • What low blood sugar is and who is at risk
+    • Early, worsening and severe warning signs
+    • The rule of 15 and what counts as 15 grams
+    • Glucagon, CGMs and night-time lows
+    • Driving, alcohol, exercise and prevention
+
+    #Diabetes #LowBloodSugar #Hypoglycemia #DiabetesTips #HealthEducation
+  tags: ["low blood sugar", "hypoglycemia", "hypoglycemia symptoms", "rule of 15", "glucagon", "diabetes", "insulin", "cgm", "low blood sugar at night", "diabetes tips", "health education"]
+  thumbnail_text: "LOW BLOOD SUGAR?"
+  thumbnail_highlight: "LOW"
+  thumbnail_photo_query: "man sweating dizzy"
+  playlist: "Diabetes & Metabolism"
+  scenes:
+    - layout: "title"
+      heading: "Low Blood Sugar Warning Signs"
+      points: ["Know them, act fast"]
+      footage_query: "man sweating dizzy"
+      narration: >-
+        Shaky, sweaty, confused, and your heart is racing. For people with diabetes, these can be signs of low blood sugar,
+        also called hypoglycemia. It can come on fast, and if it is not treated, it can lead to seizures, passing out, or
+        worse. Today you will learn the warning signs, the simple rule of fifteen to treat it, and how to prevent it from
+        happening.
+    - layout: "bullets"
+      heading: "What Is Low Blood Sugar?"
+      points: ["Blood sugar below 70", "Brain runs short of fuel", "Common with some diabetes medicines", "Can come on quickly"]
+      footage_query: "blood glucose meter finger"
+      narration: >-
+        Low blood sugar means the level of glucose, your body's main fuel, drops too low. For most people with diabetes, that
+        means below seventy. A level below fifty four is considered serious and needs fast action. The brain depends on
+        glucose, so when it drops, thinking, mood and coordination are affected quickly.
+    - layout: "bullets"
+      heading: "Who Is at Risk?"
+      points: ["People who take insulin", "Some diabetes pills", "Older adults", "Kidney disease"]
+      footage_query: "insulin pen close up"
+      narration: >-
+        Who is most at risk? People who take insulin, and people who take certain diabetes pills, called sulfonylureas, like
+        glipizide and glyburide, that make the body release more insulin. Older adults, people with kidney disease, and people
+        who have had diabetes a long time are at higher risk. Most other diabetes medicines rarely cause low blood sugar on
+        their own.
+    - layout: "bullets"
+      heading: "Common Causes"
+      points: ["Skipping or delaying meals", "Too much insulin", "More exercise than usual", "Drinking alcohol"]
+      footage_query: "empty plate table"
+      narration: >-
+        What causes a low? Common causes include skipping or delaying a meal, eating fewer carbs than usual, taking too much
+        insulin or taking it at the wrong time, exercising more than usual, and drinking alcohol, especially without food.
+        Illness, vomiting, and changes in medicine doses can also cause lows.
+    - layout: "warning"
+      heading: "Early Warning Signs"
+      points: ["Shaky or jittery", "Sweating, chills", "Fast heartbeat", "Hungry, anxious, irritable"]
+      footage_query: "man sweating dizzy"
+      narration: >-
+        Early warning signs often come on suddenly. You may feel shaky or jittery, sweaty or clammy, have a fast heartbeat,
+        feel very hungry, anxious, nervous or irritable, or have tingling around the lips. These signs are your body's alarm
+        system. When you notice them, check your blood sugar if you can, and treat it right away.
+    - layout: "warning"
+      heading: "Signs It Is Getting Worse"
+      points: ["Confusion", "Blurry vision", "Weakness, clumsiness", "Slurred speech"]
+      footage_query: "woman confused holding head"
+      narration: >-
+        If blood sugar keeps dropping, the brain is affected more. Signs include confusion, trouble concentrating, blurry
+        vision, weakness, clumsiness, headaches, and slurred speech. A person may look drunk, act strangely, or become
+        stubborn and argue. Family members often notice these changes before the person does.
+    - layout: "warning"
+      heading: "Severe Low: Emergency"
+      points: ["Seizure", "Passing out", "Cannot swallow safely", "Use glucagon, call 911"]
+      footage_query: "paramedic helping patient"
+      narration: >-
+        Severe low blood sugar is an emergency. Signs include seizures, passing out, or being too confused to eat or drink
+        safely. Never put food or drink in the mouth of someone who is unconscious or cannot swallow. If they have glucagon,
+        someone should give it right away, then call 911. Turn the person on their side in case they vomit.
+    - layout: "bullets"
+      heading: "The Rule of 15"
+      points: ["Eat 15 grams of fast sugar", "Wait 15 minutes", "Check again", "Repeat if still under 70"]
+      footage_query: "orange juice glass"
+      narration: >-
+        Here is how to treat a low. Use the rule of fifteen. Eat or drink fifteen grams of fast acting carbohydrate. Wait
+        fifteen minutes, then check your blood sugar again. If it is still below seventy, have another fifteen grams. Repeat
+        until your blood sugar is back in range. This simple rule works for most adults.
+    - layout: "bullets"
+      heading: "What Counts as 15 Grams"
+      points: ["4 glucose tablets", "Half a cup of juice or soda", "1 tablespoon of sugar or honey", "Hard candies, check the label"]
+      footage_query: "glucose tablets close up"
+      narration: >-
+        What counts as fifteen grams of fast acting sugar? Four glucose tablets, or one tube of glucose gel. Half a cup of
+        fruit juice or regular, not diet, soda. One tablespoon of sugar or honey. Or hard candies or jellybeans, checking the
+        label for the amount. Glucose tablets are best because the dose is exact and they work quickly.
+    - layout: "myth_fact"
+      heading: "Chocolate Fixes a Low Fast"
+      points: ["Chocolate is the best fix", "Fat slows the sugar down"]
+      footage_query: "chocolate bar close up"
+      narration: >-
+        Myth: a chocolate bar is the best way to fix a low. Fact: chocolate, cookies, and other foods with fat or protein
+        absorb more slowly, so they take longer to raise blood sugar. Use something that is mostly sugar, like glucose tablets
+        or juice. Many people also overtreat lows by eating too much, which leads to high blood sugar later.
+    - layout: "bullets"
+      heading: "After You Treat It"
+      points: ["Eat a snack or meal", "If your next meal is later", "Rest before driving", "Find the cause"]
+      footage_query: "peanut butter crackers"
+      narration: >-
+        After your blood sugar is back in range, eat a small snack with some protein and carbs, like crackers with peanut
+        butter, or have your next meal if it is soon. This helps keep it from dropping again. Rest for a bit. Think about what
+        caused the low, and if lows keep happening, talk to your doctor about adjusting your plan.
+    - layout: "bullets"
+      heading: "Glucagon Saves Lives"
+      points: ["Emergency medicine for severe lows", "Nasal spray or auto-injector", "Teach family and friends", "Check the expiration date"]
+      footage_query: "nasal spray close up"
+      narration: >-
+        Glucagon is an emergency medicine that raises blood sugar quickly when someone cannot eat or drink. Today, it comes as
+        easy to use nasal sprays and ready to use injection pens. Anyone at risk of severe lows should have a prescription.
+        Teach family, friends, coworkers and coaches where it is and how to use it. Check the expiration date regularly.
+    - layout: "warning"
+      heading: "Low Blood Sugar at Night"
+      points: ["Nightmares, crying out", "Sweaty pajamas or sheets", "Morning headache", "Feeling tired on waking"]
+      footage_query: "man sleeping night"
+      narration: >-
+        Lows can happen during sleep and go unnoticed. Signs include nightmares, crying out, sweating through pajamas or
+        sheets, and waking up with a headache, feeling tired, or confused. Check your blood sugar before bed. A bedtime snack
+        may help if your doctor recommends it. A continuous glucose monitor can alert you to lows during the night.
+    - layout: "warning"
+      heading: "Hypoglycemia Unawareness"
+      points: ["No early warning signs", "More common over time", "Raises risk of severe lows", "Check sugar often"]
+      footage_query: "blood glucose meter finger"
+      narration: >-
+        Some people, especially those who have had diabetes a long time or have frequent lows, stop feeling the early warning
+        signs. This is called hypoglycemia unawareness. They may go straight to confusion or passing out. It is dangerous. If
+        this happens to you, check more often, consider a continuous glucose monitor, and talk to your doctor. Avoiding lows
+        for a few weeks can help the warning signs return.
+    - layout: "bullets"
+      heading: "Continuous Glucose Monitors"
+      points: ["Small sensor on the skin", "Checks sugar all day", "Alarms for lows", "Share data with family"]
+      footage_query: "glucose monitor sensor arm"
+      narration: >-
+        A continuous glucose monitor, or CGM, is a small sensor worn on the arm or belly that checks your glucose every few
+        minutes. It can sound an alarm when your sugar is dropping or low, including at night. Some can share readings with
+        family members. Many people who use insulin now qualify for coverage. Ask your doctor if a CGM is right for you.
+    - layout: "warning"
+      heading: "Driving and Low Blood Sugar"
+      points: ["Check before you drive", "Do not drive if under 70", "Keep fast sugar in the car", "Pull over if you feel low"]
+      footage_query: "man driving car"
+      narration: >-
+        Low blood sugar while driving can cause crashes. If you take insulin or medicines that can cause lows, check your
+        blood sugar before driving and every couple of hours on long trips. Do not drive if it is low or dropping. Keep
+        glucose tablets in your car. If you feel low while driving, pull over safely, treat it, and wait until you have fully
+        recovered.
+    - layout: "warning"
+      heading: "Alcohol and Lows"
+      points: ["Alcohol blocks the liver's sugar release", "Lows can happen hours later", "Always eat when drinking", "Check before bed"]
+      footage_query: "wine glasses table"
+      narration: >-
+        Alcohol makes the liver stop releasing sugar into the blood, which can cause lows, sometimes many hours later, even
+        overnight. If you have diabetes and choose to drink, do so in moderation, always with food. Check your blood sugar
+        before bed, and have a snack if needed. Remember, a low can look like being drunk, so wear a medical ID.
+    - layout: "bullets"
+      heading: "Exercise Safely"
+      points: ["Check before and after", "Carry fast sugar", "Snack if needed", "Lows can come hours later"]
+      footage_query: "woman jogging park"
+      narration: >-
+        Exercise is great for diabetes, but it can lower blood sugar during activity and for many hours afterwards. Check
+        before, during long sessions, and after exercise. Carry fast acting sugar with you. You may need a snack before, or a
+        lower insulin dose. Talk with your care team about a plan for your type and timing of exercise.
+    - layout: "bullets"
+      heading: "Older Adults"
+      points: ["Higher risk of lows", "Signs may look like confusion", "Can cause falls", "Ask about safer medicines"]
+      footage_query: "elderly man confused sitting"
+      narration: >-
+        Older adults with diabetes are at higher risk of lows, and the signs may be harder to spot. A low may look like
+        confusion, dizziness, or sudden weakness, and can cause falls, heart problems, or car crashes. For many older adults,
+        doctors now aim for slightly higher blood sugar targets and choose medicines less likely to cause lows. Ask about
+        yours.
+    - layout: "bullets"
+      heading: "Children and Teens"
+      points: ["May not describe symptoms", "Watch for mood changes", "Plan for school and sports", "Teach teachers and coaches"]
+      footage_query: "child blood test finger"
+      narration: >-
+        Children with diabetes may not be able to describe how they feel. Watch for sudden changes in mood or behavior,
+        crying, pale skin, sweating, or not acting like themselves. Make a plan with the school, so teachers, coaches and
+        staff know the signs and how to treat a low. Make sure glucose tablets and glucagon are always available.
+    - layout: "bullets"
+      heading: "When You Are Sick"
+      points: ["Keep checking blood sugar", "Keep drinking fluids", "Ask about medicine doses", "Have a sick-day plan"]
+      footage_query: "woman sick bed tea"
+      narration: >-
+        Being sick can make blood sugar unpredictable. If you are vomiting or not eating, you may be at risk of lows,
+        especially on insulin or sulfonylureas. Check your blood sugar more often, every few hours. Sip fluids, and if you
+        cannot eat, try juice or crackers. Ask your doctor for a written sick day plan that tells you how to adjust your
+        medicines.
+    - layout: "bullets"
+      heading: "Keep a Low Log"
+      points: ["Date and time", "Blood sugar number", "What you ate and did", "What you took to treat it"]
+      footage_query: "woman writing journal"
+      narration: >-
+        Keep a simple log of every low. Write the date and time, your blood sugar number, what you ate, your activity, your
+        medicine doses, and how you treated it. Patterns often appear, like lows every afternoon after a walk, or the night
+        after drinking. Bring the log to your doctor, who can use it to adjust your plan and prevent future lows.
+    - layout: "myth_fact"
+      heading: "Only Insulin Users Get Lows"
+      points: ["Only insulin causes lows", "Some pills do too"]
+      footage_query: "pill bottle close up"
+      narration: >-
+        Myth: only people who take insulin can have low blood sugar. Fact: some diabetes pills, especially sulfonylureas like
+        glipizide, glyburide and glimepiride, can also cause lows, sometimes serious ones in older adults or people with
+        kidney problems. Know which of your medicines can cause lows, and ask your doctor whether another option would be
+        safer.
+    - layout: "bullets"
+      heading: "Low Sugar Without Diabetes"
+      points: ["Rare", "Some medicines", "Alcohol, illness", "See a doctor if it happens"]
+      footage_query: "doctor talking patient office"
+      narration: >-
+        Can people without diabetes get low blood sugar? It is rare. It can happen with some medicines, heavy alcohol use,
+        serious illnesses of the liver, kidney or heart, some hormone problems, after certain stomach surgeries, or very
+        rarely from a tumor that makes insulin. If you have symptoms of low blood sugar without diabetes, see your doctor for
+        testing.
+    - layout: "bullets"
+      heading: "Prevent Lows"
+      points: ["Eat regular meals", "Match insulin to food", "Check blood sugar often", "Review medicines with your doctor"]
+      footage_query: "healthy salad bowl table"
+      narration: >-
+        How can you prevent lows? Eat regular meals and snacks, and do not skip meals if you take medicines that can cause
+        lows. Learn to match your insulin to what you eat. Check your blood sugar often, especially before driving and
+        exercise. Keep a log of lows and what caused them. And review your medicines and doses with your doctor regularly.
+    - layout: "bullets"
+      heading: "Always Be Prepared"
+      points: ["Carry glucose tablets", "Wear a medical ID", "Keep glucagon handy", "Tell people around you"]
+      footage_query: "medical bracelet wrist"
+      narration: >-
+        Always be prepared. Carry glucose tablets or another fast sugar with you everywhere, in your bag, car, desk and
+        nightstand. Wear a medical ID that says you have diabetes. Keep glucagon at home and work, and make sure people around
+        you know where it is and how to use it. Being prepared turns a scary low into a quick fix.
+    - layout: "bullets"
+      heading: "How Family Can Help"
+      points: ["Learn the warning signs", "Know the rule of 15", "Learn to use glucagon", "Stay calm and patient"]
+      footage_query: "family kitchen table"
+      narration: >-
+        Family and friends can make a big difference. Learn the warning signs, and know that someone having a low may be
+        confused or grumpy, and that is not their fault. Know the rule of fifteen. Learn how to use glucagon, and when to call
+        911. Stay calm and patient. Afterwards, talk together about what may have caused it.
+    - layout: "bullets"
+      heading: "Questions for Your Doctor"
+      points: ["Can my medicines cause lows?", "What is my target range?", "Do I need glucagon?", "Would a CGM help?"]
+      footage_query: "patient talking doctor"
+      narration: >-
+        At your next visit, ask: can my medicines cause low blood sugar? What is my target range? What should I do if I have
+        lows often? Do I need a glucagon prescription? Would a continuous glucose monitor help me? And should my doses change
+        when I exercise, get sick, or skip a meal?
+    - layout: "bullets"
+      heading: "Quick Recap"
+      points: ["Below 70 is low", "Shaky, sweaty, confused", "Rule of 15", "Glucagon for severe lows"]
+      footage_query: "notebook checklist pen"
+      narration: >-
+        Let us recap. Low blood sugar, usually below seventy, is common with insulin and some diabetes pills. Warning signs
+        include shakiness, sweating, a fast heartbeat, hunger and confusion. Use the rule of fifteen: fifteen grams of fast
+        sugar, wait fifteen minutes, check again. For severe lows, use glucagon and call 911. And always carry fast sugar.
+    - layout: "outro"
+      heading: "Remember"
+      points: ["Know the signs", "Use the rule of 15", "Carry fast sugar"]
+      footage_query: "family walking outdoors"
+      narration: >-
+        Remember: know the warning signs, use the rule of fifteen, and always carry fast acting sugar. Share this with someone
+        who has diabetes, and their family. This video is for education only, not medical advice. Like and subscribe to Health
+        Support Studio for a new health video every day.
+  short_title: "Low blood sugar? Use the rule of 15 #Shorts"
+  short_caption: >-
+    Shaky and sweaty with diabetes? Here is how to treat a low. Educational only, not medical advice. #Diabetes
+    #LowBloodSugar #Hypoglycemia #HealthEducation
+  short_scenes:
+    - layout: "title"
+      heading: "Low Blood Sugar?"
+      points: ["Use the rule of 15"]
+      footage_query: "man sweating dizzy"
+      narration: >-
+        Shaky, sweaty and confused? If you have diabetes, it could be low blood sugar. Here is what to do.
+    - layout: "bullets"
+      heading: "Rule of 15"
+      points: ["15 grams of fast sugar", "Wait 15 minutes", "Check, repeat if under 70"]
+      footage_query: "orange juice glass"
+      narration: >-
+        Have fifteen grams of fast sugar, like four glucose tablets or half a cup of juice. Wait fifteen minutes and check
+        again. If you are still below seventy, repeat. Skip the chocolate, since fat slows it down. If someone passes out, use
+        glucagon and call 911.
+    - layout: "outro"
+      heading: "Full Video"
+      points: ["On YouTube"]
+      footage_query: "family walking outdoors"
+      narration: >-
+        Learn all the warning signs in our full video, on the Health Support Studio YouTube channel.
