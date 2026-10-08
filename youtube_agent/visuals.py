@@ -524,7 +524,10 @@ def render_host_scene(talk: Path, wav: Path, ass: Path | None, duration: float, 
     if W > H and landscape_crop < 1:
         talk_in += f",crop=iw:trunc(ih*{landscape_crop}/2)*2:0:0"
     fades = f"fade=t=in:st=0:d=0.3" + (f",fade=t=out:st={fade_at:.2f}:d=0.3" if fade_out else "")
-    if H > W:  # vertical: the host fills the screen (waist-up, sides cropped)
+    probe = subprocess.run([ffmpeg_bin(), "-hide_banner", "-i", str(talk)], capture_output=True, text=True).stderr
+    dims = re.search(r"Video:.*?(\d{3,5})x(\d{3,5})", probe)
+    wide_clip = bool(dims) and int(dims.group(1)) > int(dims.group(2))
+    if H > W or (wide_clip and not side_panel):  # vertical, or a 16:9 clip in a 16:9 video: fill the screen
         chain = [f"{talk_in},scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},setsar=1,{fades}"]
     elif side_panel and W > H:  # landscape: the host on the left, the scene's card on the right
         fh = int(H * 0.92) // 2 * 2
@@ -623,6 +626,8 @@ def build_video(plan, video_cfg: dict, voice_cfg: dict, channel_name: str, workd
 
         cuts = talking.pick_snippets([(d, caps) for _, d, caps in narrated], host_cfg)
         broll = talking.broll_clips(host_cfg)
+        if size[1] > size[0]:  # Shorts: only the vertical clips (a 16:9 clip would be cut in half)
+            broll = [c for c in broll if talking._is_portrait(c)]
         mode = host_cfg.get("mode", "broll")
         if mode in ("broll", "mix"):
             # The host walking or working without talking, while the narration continues: no lip-sync needed.
@@ -635,7 +640,10 @@ def build_video(plan, video_cfg: dict, voice_cfg: dict, channel_name: str, workd
             quiet = [i for i in cuts if i not in talk_ids]
             if broll and quiet:
                 print(f"    The host appears (walking or working) in scenes {[i + 1 for i in quiet]}")
-            snips = {i: (cuts[i], broll[k % len(broll)]) for k, i in enumerate(quiet)} if broll else {}
+            # 16:9 videos: the quiet moments use the 16:9 scenes (report, x-ray, ward) when there are any
+            wide = [c for c in broll if not talking._is_portrait(c)] if size[0] > size[1] else []
+            pool = wide or broll
+            snips = {i: (cuts[i], pool[k % len(pool)]) for k, i in enumerate(quiet)} if pool else {}
             cuts = {i: cuts[i] for i in talk_ids}
         jobs = {}
         for i, cut in cuts.items():
@@ -666,8 +674,9 @@ def build_video(plan, video_cfg: dict, voice_cfg: dict, channel_name: str, workd
                             scenes_dir / f"{i:02d}.mp4")
         if i - 1 in snips:
             cut, talk = snips[i - 1]
+            wide = size[0] > size[1] and not talking._is_portrait(talk)  # a 16:9 clip fills the screen
             panel = render_side_panel(scene, size, channel_name, scenes_dir / f"{i:02d}_side.png") \
-                if size[0] > size[1] else None
+                if size[0] > size[1] and not wide else None
             crop = 1.0 if talk.parent.name == "broll" else talking.landscape_crop(host_cfg)
             parts.append(render_host_scene(talk, wav, ass, cut, size, scenes_dir / f"{i:02d}_host.mp4",
                                            crop, fade_out=False, side_panel=panel))

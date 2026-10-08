@@ -86,7 +86,7 @@ video:
   host:
     enabled: true
     mode: "mix"      # the host talks (lip-synced) while walking, holding the tablet, reading the chart, at the desk
-    talk_every: 1    # 1 = talks every time; 2 = every other time (the others are voice-over)
+    talk_every: 2    # 1 = talks every time; 2 = every other time (the others show the 16:9 scenes: report, x-ray, ward)
     broll: "branding/health-support-studio/avatar/broll"
     moves: "branding/health-support-studio/avatar/broll"    # the clips the lips are synced on (face visible)
     moves_only:
@@ -95,7 +95,7 @@ video:
       - "Man_reading_patient_chart_20261007132917.mp4"
       - "Man_writing_notes_at_desk_20261007133446.mp4"
     landscape_crop: 1.0
-    every_seconds: 60
+    every_seconds: 45
     first_at: 30
     snippet_seconds: [5, 10]
     max_wait_minutes: 150
