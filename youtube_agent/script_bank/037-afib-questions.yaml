@@ -1,0 +1,301 @@
+queue_topic: "Atrial fibrillation (AFib): symptoms, stroke risk and treatment"
+style: "Top Questions"
+sources:
+  - "CDC, About Atrial Fibrillation: https://www.cdc.gov/heart-disease/about/atrial-fibrillation.html"
+  - "NIH NHLBI, Atrial Fibrillation: https://www.nhlbi.nih.gov/health/atrial-fibrillation"
+  - "MedlinePlus, Atrial Fibrillation: https://medlineplus.gov/atrialfibrillation.html"
+plan:
+  topic: "Atrial fibrillation (AFib): symptoms, stroke risk and treatment"
+  title: "Heart Fluttering? What You Need to Know About AFib"
+  description: |-
+    Atrial fibrillation is the most common irregular heartbeat, and it raises the risk of stroke about five times. We answer the top questions: how AFib feels, who gets it, how it's found, and the treatments that prevent strokes.
+
+    In this video:
+    • What AFib is and how it feels
+    • Why AFib raises stroke risk, and the BE FAST signs
+    • Triggers, smartwatches and diagnosis
+    • Blood thinners, rate and rhythm control, ablation
+    • Lifestyle changes that help
+
+    #AFib #AtrialFibrillation #HeartHealth #StrokePrevention #HealthEducation
+  tags: ["afib", "atrial fibrillation", "irregular heartbeat", "heart palpitations", "afib symptoms", "afib stroke risk", "blood thinners", "ablation", "smartwatch afib", "heart health", "health education"]
+  thumbnail_text: "HEART FLUTTERING?"
+  thumbnail_highlight: "FLUTTERING?"
+  thumbnail_photo_query: "man holding chest heartbeat"
+  playlist: "Heart & Blood Pressure"
+  scenes:
+    - layout: "title"
+      heading: "What Is AFib?"
+      points: ["Top questions answered"]
+      footage_query: "man holding chest heartbeat"
+      narration: >-
+        Have you ever felt your heart flutter, race, or beat out of rhythm for no reason? It could be atrial fibrillation,
+        often called AFib, the most common type of irregular heartbeat. AFib is not usually deadly by itself, but it greatly
+        raises the risk of stroke. Today we answer the top questions about AFib: what it is, how it feels, why it matters, and
+        how it is treated.
+    - layout: "big_number"
+      heading: "How Common Is AFib?"
+      points: ["12 million", "Americans expected to have AFib by 2030"]
+      footage_query: "older adults walking park"
+      narration: >-
+        How common is AFib? The CDC estimates that more than twelve million people in the United States will have AFib by
+        2030. The risk rises with age, and about one in three adults may develop it at some point in life. Many people have it
+        without knowing, because it does not always cause symptoms.
+    - layout: "bullets"
+      heading: "What Happens in AFib?"
+      points: ["Upper chambers quiver", "Signals become chaotic", "Heartbeat is irregular", "Often fast"]
+      footage_query: "medical illustration heart"
+      narration: >-
+        What happens in AFib? Normally, a natural pacemaker in the heart sends steady signals, so the upper chambers, called
+        the atria, squeeze in a regular rhythm. In AFib, the signals become chaotic, and the atria quiver instead of
+        squeezing. The lower chambers then beat irregularly, often too fast. The heart pumps less efficiently.
+    - layout: "warning"
+      heading: "What Does It Feel Like?"
+      points: ["Fluttering or pounding", "Racing heartbeat", "Short of breath, tired", "Dizzy or lightheaded"]
+      footage_query: "woman holding chest"
+      narration: >-
+        What does AFib feel like? Many people feel a fluttering, flip flopping, or pounding in the chest, or a racing,
+        irregular heartbeat. Others feel tired, weak, short of breath, dizzy or lightheaded, or have trouble exercising. Some
+        have chest discomfort. But many people feel nothing at all, and AFib is found by chance during a checkup.
+    - layout: "bullets"
+      heading: "Types of AFib"
+      points: ["Comes and goes", "Lasts more than a week", "Long-lasting", "Can change over time"]
+      footage_query: "calendar notebook planning"
+      narration: >-
+        Is AFib always there? Not always. In paroxysmal AFib, episodes come and go, often stopping on their own within a week.
+        Persistent AFib lasts more than a week and usually needs treatment to stop. Long standing persistent AFib lasts more
+        than a year. AFib often gets more frequent over time, which is one reason early treatment matters.
+    - layout: "big_number"
+      heading: "Why AFib Matters"
+      points: ["About 5 times", "Higher stroke risk"]
+      footage_query: "elderly man face drooping"
+      narration: >-
+        Why does AFib matter so much? Because it raises the risk of stroke about five times. When the upper chambers quiver,
+        blood can pool and form clots. A clot can travel to the brain and block an artery, causing a stroke. Strokes caused by
+        AFib tend to be more severe. AFib can also weaken the heart over time and lead to heart failure.
+    - layout: "warning"
+      heading: "Know the Stroke Signs"
+      points: ["Balance loss", "Eyes: vision change", "Face drooping", "Arm weakness, Speech, Time"]
+      footage_query: "person calling phone emergency"
+      narration: >-
+        Everyone with AFib, and their family, should know the signs of stroke. Remember BE FAST. Balance: sudden loss of
+        balance. Eyes: sudden vision loss. Face: one side drooping. Arm: weakness in one arm. Speech: slurred or strange.
+        Time: call 911 right away. Fast treatment can save brain function and lives.
+    - layout: "bullets"
+      heading: "Who Gets AFib?"
+      points: ["Older adults", "High blood pressure", "Heart disease", "Obesity, diabetes, sleep apnea"]
+      footage_query: "blood pressure monitor arm"
+      narration: >-
+        Who is at risk? AFib is more common with age, especially after sixty five. Other risk factors include high blood
+        pressure, coronary artery disease, heart failure, heart valve problems, obesity, diabetes, sleep apnea, thyroid
+        disease, chronic kidney disease, and a family history of AFib. Heavy drinking and smoking also raise the risk.
+    - layout: "bullets"
+      heading: "Common Triggers"
+      points: ["Alcohol, especially binges", "Lack of sleep", "Stress and illness", "Stimulants"]
+      footage_query: "wine glasses table"
+      narration: >-
+        What can trigger an episode? Alcohol is a big one. Episodes after a night of heavy drinking are sometimes called
+        holiday heart. Lack of sleep, untreated sleep apnea, stress, infections, dehydration, and stimulants, like some cold
+        medicines, energy drinks, and illegal drugs, can also trigger AFib. Keeping a diary helps you spot your triggers.
+    - layout: "myth_fact"
+      heading: "Coffee Causes AFib"
+      points: ["Coffee always triggers AFib", "Moderate coffee is usually fine"]
+      footage_query: "coffee cup table"
+      narration: >-
+        Myth: people with AFib must give up coffee. Fact: large studies have found that moderate coffee drinking does not
+        raise the risk of AFib for most people. Some people do notice that caffeine triggers their symptoms, and they should
+        cut back. Energy drinks, which contain much more caffeine and other stimulants, are a different story and are best
+        avoided.
+    - layout: "bullets"
+      heading: "How to Check Your Pulse"
+      points: ["Two fingers on the wrist", "Below the thumb", "Count for 30 seconds", "Note if it is irregular"]
+      footage_query: "checking pulse wrist"
+      narration: >-
+        Learning to check your pulse can help you notice AFib. Place two fingers on the inside of your wrist, just below the
+        base of your thumb. Press lightly until you feel the beat. Count the beats for thirty seconds and double it. Notice
+        whether the beats feel steady, or irregular and jumpy. Write down the date, the rate, and how you felt, and share it
+        with your doctor.
+    - layout: "bullets"
+      heading: "Exercise With AFib"
+      points: ["Usually safe and helpful", "Start slow", "Ask about cardiac rehab", "Stop if dizzy or chest pain"]
+      footage_query: "woman walking park"
+      narration: >-
+        Can you exercise with AFib? For most people, yes, and regular moderate exercise may even reduce episodes. Walking,
+        cycling and swimming are good choices. Start slowly and build up. Ask your doctor what heart rate is safe for you.
+        Stop and get help if you feel chest pain, faint, or very short of breath. Blood thinner users should avoid activities
+        with a high risk of falls or head injury.
+    - layout: "bullets"
+      heading: "How Is AFib Diagnosed?"
+      points: ["Checking your pulse", "ECG", "Wearable heart monitor", "Echocardiogram"]
+      footage_query: "ecg heart monitor"
+      narration: >-
+        How is AFib diagnosed? Your doctor may notice an irregular pulse. An electrocardiogram, or ECG, records the heart's
+        electrical activity and can confirm AFib. If episodes come and go, you may wear a heart monitor for days or weeks. An
+        echocardiogram, an ultrasound of the heart, checks its structure and valves. Blood tests check thyroid and other
+        causes.
+    - layout: "bullets"
+      heading: "Can a Smartwatch Detect It?"
+      points: ["Some can notice irregular rhythm", "Not a diagnosis", "Can have false alarms", "Show results to your doctor"]
+      footage_query: "smartwatch wrist heart"
+      narration: >-
+        Can a smartwatch find AFib? Some smartwatches and phone devices are cleared by the FDA to detect an irregular rhythm
+        that may be AFib. They can help find AFib earlier, especially in people without symptoms. But they can also give false
+        alarms, and they do not replace a doctor's diagnosis. If your device alerts you, share the reading with your doctor.
+    - layout: "myth_fact"
+      heading: "No Symptoms, No Problem"
+      points: ["If I feel fine, AFib is harmless", "Silent AFib still raises stroke risk"]
+      footage_query: "man smiling outdoors"
+      narration: >-
+        Myth: if I do not feel my AFib, it is not dangerous. Fact: AFib without symptoms raises the risk of stroke just as
+        much as AFib with symptoms. Some people only learn they have AFib after a stroke. That is why treatment decisions,
+        especially about blood thinners, are based on your overall stroke risk, not on how you feel.
+    - layout: "bullets"
+      heading: "Goal 1: Prevent Stroke"
+      points: ["Check your stroke risk", "Blood thinners for many", "Lower clot risk", "Take them every day"]
+      footage_query: "pill organizer close up"
+      narration: >-
+        Treatment has three goals. The first is preventing stroke. Your doctor will estimate your stroke risk using factors
+        like age, sex, high blood pressure, diabetes, heart failure, and past stroke. Many people with AFib need a blood
+        thinner, also called an anticoagulant, which greatly lowers the risk of stroke. It must be taken every day, exactly as
+        prescribed.
+    - layout: "bullets"
+      heading: "About Blood Thinners"
+      points: ["Warfarin", "Newer blood thinners", "Need fewer blood tests", "Ask what fits you"]
+      footage_query: "pharmacist counter customer"
+      narration: >-
+        There are two main types of blood thinners. Warfarin has been used for decades and needs regular blood tests and
+        careful diet. Newer blood thinners, sometimes called DOACs, like apixaban and rivaroxaban, usually do not need regular
+        blood tests and have fewer food interactions. Your doctor will choose based on your health, kidneys, other medicines
+        and cost.
+    - layout: "warning"
+      heading: "Blood Thinner Safety"
+      points: ["Watch for unusual bleeding", "Tell every doctor and dentist", "Avoid ibuprofen unless approved", "Never stop on your own"]
+      footage_query: "bandage wound care hands"
+      narration: >-
+        Blood thinners raise the risk of bleeding, so be careful. Call your doctor for unusual bruising, nosebleeds that will
+        not stop, blood in urine or stool, or black stools. Get emergency help after a serious fall or head injury, or for
+        vomiting blood. Tell every doctor and dentist you take one. Avoid ibuprofen and aspirin unless your doctor says
+        otherwise. Never stop it on your own.
+    - layout: "myth_fact"
+      heading: "Aspirin Is Enough"
+      points: ["Aspirin prevents AFib strokes", "It does not work well"]
+      footage_query: "aspirin pills close up"
+      narration: >-
+        Myth: taking a daily aspirin is enough to prevent stroke in AFib. Fact: current guidelines do not recommend aspirin
+        alone for stroke prevention in AFib, because it does not work well for this and still causes bleeding. If your doctor
+        recommends a blood thinner, aspirin is not a substitute. Ask before taking any aspirin with a blood thinner.
+    - layout: "bullets"
+      heading: "Goal 2: Control the Rate"
+      points: ["Slow a fast heartbeat", "Beta blockers", "Other rate medicines", "Helps you feel better"]
+      footage_query: "doctor talking patient office"
+      narration: >-
+        The second goal is controlling the heart rate. Even if AFib continues, slowing a fast heart rate helps you feel better
+        and protects the heart muscle. Medicines like beta blockers and certain calcium channel blockers are commonly used.
+        Your doctor will aim for a resting heart rate that feels comfortable and is safe for your heart.
+    - layout: "bullets"
+      heading: "Goal 3: Control the Rhythm"
+      points: ["Medicines to keep rhythm", "Electrical cardioversion", "Catheter ablation", "Best for some people"]
+      footage_query: "heart surgery hospital"
+      narration: >-
+        The third goal, for many people, is restoring a normal rhythm. Rhythm control medicines can help keep the heart in
+        normal rhythm. Cardioversion uses a quick, controlled electrical shock, under sedation, to reset the rhythm. Catheter
+        ablation uses thin tubes through a vein to scar the small areas causing the chaotic signals. Ablation works well for
+        many people.
+    - layout: "bullets"
+      heading: "Other Procedures"
+      points: ["Closing the left atrial appendage", "For those who cannot take thinners", "Pacemaker in some cases", "Ask about your options"]
+      footage_query: "doctor reading heart scan"
+      narration: >-
+        For some people who cannot safely take blood thinners long term, a procedure can close off a small pouch in the heart
+        called the left atrial appendage, where most AFib clots form. Some people with slow heart rates also need a pacemaker.
+        Your cardiologist can explain which options fit your situation.
+    - layout: "bullets"
+      heading: "Lifestyle Helps AFib"
+      points: ["Lose extra weight", "Limit or stop alcohol", "Treat sleep apnea", "Control blood pressure"]
+      footage_query: "people walking park"
+      narration: >-
+        Lifestyle changes can make a real difference in AFib. Studies show that losing extra weight can reduce AFib episodes,
+        and for some people, make them go away. Cutting back or stopping alcohol helps. Treating sleep apnea, controlling
+        blood pressure and blood sugar, and quitting smoking all help. Regular moderate exercise is good for most people with
+        AFib.
+    - layout: "bullets"
+      heading: "Sleep Apnea and AFib"
+      points: ["Loud snoring", "Stops breathing at night", "Daytime sleepiness", "Ask about a sleep test"]
+      footage_query: "man snoring bed"
+      narration: >-
+        Sleep apnea is very common in people with AFib, and untreated apnea makes AFib harder to control. Signs include loud
+        snoring, pauses in breathing noticed by a partner, waking up gasping, and feeling very sleepy during the day. Ask your
+        doctor about a sleep test. Treatment, like a CPAP machine, may help reduce AFib episodes.
+    - layout: "warning"
+      heading: "When to Get Help"
+      points: ["Chest pain", "Fainting", "Severe shortness of breath", "Stroke signs: call 911"]
+      footage_query: "hospital emergency entrance"
+      narration: >-
+        When should you get emergency help? Call 911 for chest pain, fainting, severe shortness of breath, or any sign of
+        stroke. Call your doctor soon if your heart is racing for a long time, if symptoms are new or worse, if you feel
+        dizzy, or if you notice bleeding while on a blood thinner.
+    - layout: "bullets"
+      heading: "Living Well With AFib"
+      points: ["Take medicines daily", "Know your pulse", "Keep a symptom diary", "Keep follow-up visits"]
+      footage_query: "woman smiling outdoors"
+      narration: >-
+        Most people with AFib live full, active lives. Take your medicines every day, especially your blood thinner. Learn to
+        check your pulse. Keep a diary of symptoms and possible triggers. Keep your follow up visits and blood tests. Tell all
+        your health care providers that you have AFib. And reach out to your care team with any questions.
+    - layout: "bullets"
+      heading: "Questions for Your Doctor"
+      points: ["What is my stroke risk?", "Do I need a blood thinner?", "Rate or rhythm control?", "Is ablation an option?"]
+      footage_query: "patient talking doctor"
+      narration: >-
+        At your next visit, ask: what is my stroke risk, and do I need a blood thinner? Which blood thinner is best for me?
+        Should we focus on controlling my rate, my rhythm, or both? Am I a candidate for ablation? And what lifestyle changes
+        would help me most? Bring your symptom diary.
+    - layout: "bullets"
+      heading: "For Families"
+      points: ["Learn the stroke signs", "Know the medicines", "Help with healthy habits", "Watch for bleeding"]
+      footage_query: "family sitting home"
+      narration: >-
+        If someone you love has AFib, learn the BE FAST stroke signs, and know what medicines they take. Encourage healthy
+        habits together, like walking, cooking lower salt meals, and limiting alcohol. Watch for signs of bleeding if they
+        take a blood thinner. And keep a list of their doctors and medicines handy for emergencies.
+    - layout: "bullets"
+      heading: "Quick Recap"
+      points: ["AFib is an irregular heartbeat", "5 times stroke risk", "Blood thinners prevent strokes", "Know BE FAST"]
+      footage_query: "notebook checklist pen"
+      narration: >-
+        Let us recap. AFib is a common irregular heartbeat that can cause fluttering, tiredness or shortness of breath, or no
+        symptoms at all. It raises stroke risk about five times. Blood thinners greatly lower that risk. Other treatments
+        control the rate and rhythm. Healthy habits help. And everyone should know the BE FAST signs of stroke.
+    - layout: "outro"
+      heading: "Remember"
+      points: ["Fluttering heart? Get checked", "Take blood thinners daily", "Know BE FAST"]
+      footage_query: "older couple walking park"
+      narration: >-
+        Remember: if your heart flutters or races, get checked, take your blood thinner every day if prescribed, and know the
+        BE FAST signs of stroke. Share this with someone who has AFib. This video is for education only, not medical advice.
+        Like and subscribe to Health Support Studio for a new health video every day.
+  short_title: "Heart fluttering? It could be AFib #Shorts"
+  short_caption: >-
+    AFib raises your stroke risk about 5 times, and many people feel nothing. Educational only, not medical advice. #AFib
+    #HeartHealth #StrokePrevention #HealthEducation
+  short_scenes:
+    - layout: "title"
+      heading: "Heart Fluttering?"
+      points: ["It could be AFib"]
+      footage_query: "man holding chest heartbeat"
+      narration: >-
+        A fluttering, racing or irregular heartbeat could be atrial fibrillation, or AFib.
+    - layout: "warning"
+      heading: "Why It Matters"
+      points: ["5 times stroke risk", "Can have no symptoms", "Blood thinners help"]
+      footage_query: "elderly man face drooping"
+      narration: >-
+        AFib raises the risk of stroke about five times, because blood can pool and form clots in the heart. Many people feel
+        nothing at all. If your heart flutters, or your watch alerts you, see your doctor. Treatment, including blood
+        thinners, greatly lowers the risk.
+    - layout: "outro"
+      heading: "Full Video"
+      points: ["On YouTube"]
+      footage_query: "older couple walking park"
+      narration: >-
+        Learn more about AFib in our full video, on the Health Support Studio YouTube channel.
