@@ -1,0 +1,294 @@
+queue_topic: "RSV: symptoms, risks and new ways to protect babies and older adults"
+style: "Top Questions"
+sources:
+  - "CDC, About RSV: https://www.cdc.gov/rsv/about/index.html"
+  - "CDC, RSV Immunization for Infants and Young Children: https://www.cdc.gov/rsv/vaccines/protect-infants.html"
+  - "CDC, RSV Vaccines for Older Adults: https://www.cdc.gov/rsv/vaccines/older-adults.html"
+plan:
+  topic: "RSV: symptoms, risks and new ways to protect babies and older adults"
+  title: "RSV: Not Just a Cold for Babies and Older Adults"
+  description: |-
+    RSV is the leading cause of hospital stays for US babies, and it is serious for older adults too. We answer the top questions: symptoms, emergency signs, treatment, and the new vaccine and antibody options that protect babies and older adults.
+
+    In this video:
+    • What RSV is and who is at highest risk
+    • Symptoms in adults, kids and young babies
+    • Breathing trouble and emergency signs
+    • Pregnancy vaccine or baby antibody shot
+    • One-dose RSV vaccine for older adults
+
+    #RSV #BabyHealth #Vaccines #HealthyAging #HealthEducation
+  tags: ["rsv", "rsv symptoms", "rsv in babies", "rsv vaccine", "rsv in older adults", "bronchiolitis", "nirsevimab", "rsv pregnancy vaccine", "respiratory virus season", "vaccines", "health education"]
+  thumbnail_text: "NOT JUST A COLD"
+  thumbnail_highlight: "COLD"
+  thumbnail_photo_query: "baby sick breathing"
+  playlist: "Infections & Vaccines"
+  scenes:
+    - layout: "title"
+      heading: "RSV Questions"
+      points: ["Protect babies and older adults"]
+      footage_query: "baby sick breathing"
+      narration: >-
+        For most adults, RSV feels like a common cold. But for babies and older adults, it can be serious, and even life
+        threatening. RSV is the leading cause of hospital stays for babies in the United States. The good news is that there
+        are now new ways to protect both babies and older adults. Today we answer the top questions about RSV.
+    - layout: "bullets"
+      heading: "What Is RSV?"
+      points: ["Respiratory syncytial virus", "Infects nose, throat and lungs", "Very common", "Most kids get it by age 2"]
+      footage_query: "medical illustration lungs"
+      narration: >-
+        What is RSV? It stands for respiratory syncytial virus, a common virus that infects the nose, throat, and lungs.
+        Almost all children get RSV at least once by age two. People can get it again throughout life. In healthy older
+        children and adults, it usually causes cold like symptoms. In some people, it can cause serious lung infections.
+    - layout: "big_number"
+      heading: "Top Cause of Baby Hospital Stays"
+      points: ["58,000 to 80,000", "US children under 5 hospitalized yearly"]
+      footage_query: "newborn baby hospital"
+      narration: >-
+        How serious is RSV for babies? Each year in the United States, RSV leads to an estimated fifty eight thousand to
+        eighty thousand hospital stays in children under five. It is the leading cause of hospitalization for babies. Babies
+        under six months, those born early, and those with heart or lung problems are at highest risk.
+    - layout: "big_number"
+      heading: "Serious for Older Adults Too"
+      points: ["Tens of thousands", "Older adults hospitalized each year"]
+      footage_query: "elderly man hospital bed"
+      narration: >-
+        What about older adults? RSV sends tens of thousands of older adults to the hospital each year in the US, and causes
+        thousands of deaths. Adults seventy five and older, and adults with heart disease, lung disease like COPD or asthma,
+        diabetes, kidney disease, or weakened immune systems are at highest risk. Many people do not know RSV can be this
+        serious.
+    - layout: "bullets"
+      heading: "When Is RSV Season?"
+      points: ["Fall and winter", "Often peaks in winter", "Varies by region", "Same time as flu and COVID"]
+      footage_query: "snowy street winter"
+      narration: >-
+        When does RSV spread? In most of the United States, RSV season starts in the fall and peaks in winter, often at the
+        same time as flu and COVID. The timing can vary by region and year. This is why protection for babies and older adults
+        is usually given before or early in the fall season.
+    - layout: "bullets"
+      heading: "How Does It Spread?"
+      points: ["Coughs and sneezes", "Touching surfaces", "Kissing a baby's face", "Contagious about 3 to 8 days"]
+      footage_query: "person coughing crowd"
+      narration: >-
+        How does RSV spread? Through droplets when an infected person coughs or sneezes, by touching a surface with the virus
+        and then your face, and by direct contact, like kissing the face of a child with RSV. The virus can live on hard
+        surfaces like tables and crib rails for hours. People are usually contagious for three to eight days, and babies can
+        spread it for up to four weeks.
+    - layout: "warning"
+      heading: "Symptoms in Adults and Kids"
+      points: ["Runny nose", "Cough and sneezing", "Fever", "Less appetite"]
+      footage_query: "woman sneezing tissue"
+      narration: >-
+        What are the symptoms? RSV usually starts four to six days after exposure. Common symptoms include a runny nose, less
+        appetite, coughing, sneezing, and fever. Symptoms often come on in stages, not all at once. In older children and
+        healthy adults, it usually feels like a cold and gets better in a week or two.
+    - layout: "warning"
+      heading: "Symptoms in Young Babies"
+      points: ["Fussy, irritable", "Less active, tired", "Poor feeding", "Pauses in breathing"]
+      footage_query: "baby sick breathing"
+      narration: >-
+        In very young babies, the only signs may be irritability, being less active or very sleepy, poor feeding, and pauses
+        in breathing, called apnea. Babies may not have a fever. Because babies have tiny airways, RSV can quickly make
+        breathing hard. Trust your instincts. If your baby does not seem right, call the doctor.
+    - layout: "warning"
+      heading: "Signs of Trouble Breathing"
+      points: ["Fast breathing", "Belly sucks in under the ribs", "Flaring nostrils, grunting", "Wheezing"]
+      footage_query: "baby breathing hard"
+      narration: >-
+        Watch closely for signs of breathing trouble in babies and young children: fast breathing, the skin pulling in between
+        or under the ribs, flaring nostrils, grunting, wheezing, or the head bobbing with each breath. These mean the child is
+        working hard to breathe. Call your doctor right away, or get urgent care.
+    - layout: "warning"
+      heading: "Get Emergency Care"
+      points: ["Bluish lips or skin", "Pauses in breathing", "Very hard to wake", "Signs of dehydration"]
+      footage_query: "person calling phone emergency"
+      narration: >-
+        Call 911 or go to the emergency room if a child has bluish or gray lips, face, or fingernails, long pauses in
+        breathing, is very hard to wake or very limp, or shows signs of dehydration, like no wet diapers in eight hours, no
+        tears when crying, or a very dry mouth. Older adults with trouble breathing, chest pain, or confusion also need
+        emergency care.
+    - layout: "bullets"
+      heading: "What Can RSV Lead To?"
+      points: ["Bronchiolitis in babies", "Pneumonia", "Worse asthma or COPD", "Heart failure flares"]
+      footage_query: "doctor stethoscope chest"
+      narration: >-
+        RSV can lead to bronchiolitis, an inflammation of the small airways in the lungs, which is the most common reason
+        babies are hospitalized with RSV. It can also cause pneumonia. In older adults, it can make asthma, COPD, and heart
+        failure worse. Some people need oxygen, IV fluids, or even a breathing machine.
+    - layout: "bullets"
+      heading: "How Is It Diagnosed?"
+      points: ["Symptoms and exam", "Nasal swab test", "Oxygen level check", "Often tested with flu and COVID"]
+      footage_query: "nasal swab test"
+      narration: >-
+        How is RSV diagnosed? Often by symptoms and a physical exam, especially during RSV season. A quick nasal swab can test
+        for RSV, often at the same time as flu and COVID. A clip on the finger checks oxygen levels. Doctors may order a chest
+        x ray if pneumonia is a concern.
+    - layout: "bullets"
+      heading: "How Is It Treated?"
+      points: ["No specific cure", "Fluids and fever control", "Suction a stuffy nose", "Hospital care if severe"]
+      footage_query: "mother caring sick child"
+      narration: >-
+        How is RSV treated? There is no specific antiviral medicine for most people. Most infections go away on their own in
+        one to two weeks. At home, keep the person hydrated, manage fever and pain with acetaminophen or ibuprofen as advised,
+        and gently suction a baby's stuffy nose with saline drops. Never give aspirin to children. Antibiotics do not help,
+        because RSV is a virus.
+    - layout: "myth_fact"
+      heading: "RSV Is Just a Cold"
+      points: ["RSV is always mild", "It can be serious"]
+      footage_query: "baby sick breathing"
+      narration: >-
+        Myth: RSV is just a cold. Fact: for most healthy adults it is mild, but for babies, older adults, and people with
+        chronic health problems, RSV can cause serious lung infections, hospital stays, and death. That is why protecting
+        these groups, and not spreading it to them, matters so much.
+    - layout: "bullets"
+      heading: "Protecting Babies: Two Options"
+      points: ["Vaccine during pregnancy", "Or an antibody shot for baby", "Most babies need just one", "Ask your doctor"]
+      footage_query: "pregnant woman talking doctor"
+      narration: >-
+        How can you protect your baby? There are now two main options, and most babies need only one of them. One option is a
+        vaccine given to the mother during pregnancy. The other is a preventive antibody shot given to the baby. Both greatly
+        lower the chance that a baby will be hospitalized with RSV. Talk with your doctor about which is right for your
+        family.
+    - layout: "bullets"
+      heading: "The Pregnancy Vaccine"
+      points: ["Given at 32 to 36 weeks", "During RSV season months", "Antibodies pass to baby", "Protects first months of life"]
+      footage_query: "pregnant woman sitting"
+      narration: >-
+        The RSV vaccine for pregnant women is given between thirty two and thirty six weeks of pregnancy, usually from
+        September through January in most of the US. The mother's body makes antibodies that pass to the baby before birth,
+        protecting the baby for the first months of life, when RSV is most dangerous.
+    - layout: "bullets"
+      heading: "The Baby's Antibody Shot"
+      points: ["For babies under 8 months", "Entering their first RSV season", "Some high-risk toddlers too", "One shot lasts the season"]
+      footage_query: "baby vaccine doctor"
+      narration: >-
+        The other option is a preventive antibody shot given to the baby, for babies younger than eight months who are born
+        during or entering their first RSV season, if the mother did not get the vaccine, or the baby was born soon after.
+        Some babies and toddlers up to nineteen months who are at higher risk get a dose in their second season. One shot
+        protects through the season.
+    - layout: "myth_fact"
+      heading: "The Baby Shot Is a Vaccine"
+      points: ["It works like a vaccine", "It gives ready-made antibodies"]
+      footage_query: "baby vaccine doctor"
+      narration: >-
+        Myth: the RSV shot for babies is the same as a vaccine. Fact: it is a monoclonal antibody, which gives the baby ready
+        made protection right away, instead of teaching the immune system to make its own antibodies. Studies showed it lowers
+        the risk of RSV hospital stays in babies by about eighty percent. Side effects are usually mild, like redness at the
+        shot site.
+    - layout: "bullets"
+      heading: "Older Adults: RSV Vaccine"
+      points: ["All adults 75 and older", "Ages 50 to 74 at higher risk", "Just one dose", "Not every year"]
+      footage_query: "elderly woman vaccine"
+      narration: >-
+        What about older adults? The CDC recommends a single dose of RSV vaccine for all adults seventy five and older, and
+        for adults fifty to seventy four who are at higher risk because of chronic heart or lung disease, diabetes, kidney
+        disease, a weakened immune system, or living in a nursing home. It is just one dose, not yearly. Late summer or early
+        fall is the best time.
+    - layout: "myth_fact"
+      heading: "You Need It Every Year"
+      points: ["RSV vaccine is yearly like flu", "One dose for now"]
+      footage_query: "calendar notebook planning"
+      narration: >-
+        Myth: you need an RSV vaccine every year, like the flu shot. Fact: for adults, the RSV vaccine is currently
+        recommended as a single dose, which gives protection for at least two seasons. Researchers are studying whether a
+        booster will be needed later. You do still need a flu shot every year.
+    - layout: "bullets"
+      heading: "Side Effects of the Vaccine"
+      points: ["Sore arm", "Tiredness", "Headache", "Muscle aches"]
+      footage_query: "woman holding arm"
+      narration: >-
+        What are the side effects of the RSV vaccine? Most are mild and go away in a day or two: pain, redness, or swelling
+        where the shot was given, tiredness, headache, and muscle or joint aches. A rare nerve condition called Guillain Barre
+        syndrome has been reported in a small number of older adults after vaccination. Talk to your doctor about benefits and
+        risks.
+    - layout: "bullets"
+      heading: "Getting the Shots"
+      points: ["Most pharmacies for adults", "Doctor's office", "Hospitals for newborns", "Usually covered by insurance"]
+      footage_query: "pharmacist giving vaccine"
+      narration: >-
+        Where can you get protected? Adults can get the RSV vaccine at most pharmacies and doctor's offices. Medicare Part D
+        and most insurance plans cover it. Pregnant women can get the vaccine at their prenatal care visits. Many babies get
+        the antibody shot in the hospital after birth, or at their pediatrician's office. Vaccines for Children covers
+        eligible babies.
+    - layout: "bullets"
+      heading: "Stop the Spread"
+      points: ["Wash hands often", "Cover coughs and sneezes", "Stay home when sick", "Clean surfaces"]
+      footage_query: "washing hands sink"
+      narration: >-
+        Everyone can help stop RSV from spreading. Wash your hands often with soap and water for twenty seconds. Cover your
+        coughs and sneezes with a tissue or your elbow. Avoid close contact, like kissing and sharing cups, when you are sick.
+        Clean frequently touched surfaces, like doorknobs and phones. Stay home when you are sick.
+    - layout: "bullets"
+      heading: "Protect Your Newborn"
+      points: ["Ask visitors to wash hands", "No kisses on the face", "Sick visitors stay away", "Limit crowds in RSV season"]
+      footage_query: "mother holding newborn"
+      narration: >-
+        If you have a newborn, especially during RSV season, ask visitors to wash their hands before holding the baby. Ask
+        people not to kiss your baby's face. Ask anyone who is sick, even with a mild cold, to stay away. Limit time in
+        crowded places, and keep older siblings who are sick away from the baby when possible.
+    - layout: "bullets"
+      heading: "Smoke-Free Home"
+      points: ["Smoke raises severe RSV risk", "No smoking around babies", "Smoke-free home and car", "Includes vaping"]
+      footage_query: "no smoking sign"
+      narration: >-
+        Exposure to tobacco smoke raises the risk of severe RSV in babies and children. Do not smoke around children, and keep
+        your home and car smoke free. This includes vapes. Breastfeeding can also help protect babies from respiratory
+        infections. Ask your doctor for free help to quit smoking.
+    - layout: "bullets"
+      heading: "For High-Risk Adults"
+      points: ["Get your RSV vaccine", "Flu and COVID shots too", "Have a sick-day plan", "Know when to call"]
+      footage_query: "elderly man doctor office"
+      narration: >-
+        If you are an older adult or have a chronic condition, protect yourself during respiratory virus season. Get your RSV
+        vaccine if eligible, along with your flu and COVID vaccines. Have a plan with your doctor for what to do if you get
+        sick, especially if you have COPD, asthma, or heart failure. Call early if your breathing gets worse.
+    - layout: "bullets"
+      heading: "Questions for Your Doctor"
+      points: ["Does my baby need protection?", "Vaccine or antibody shot?", "Am I eligible for the vaccine?", "What signs need care?"]
+      footage_query: "patient talking doctor"
+      narration: >-
+        Ask your doctor: should I get the RSV vaccine during pregnancy, or should my baby get the antibody shot? Is my baby at
+        higher risk? Am I, or is my parent, eligible for the adult RSV vaccine? Can I get it with my flu shot? And what signs
+        of RSV mean we should call or go to the emergency room?
+    - layout: "bullets"
+      heading: "Quick Recap"
+      points: ["Serious for babies and older adults", "Watch for breathing trouble", "New protection for babies", "One-dose vaccine for older adults"]
+      footage_query: "notebook checklist pen"
+      narration: >-
+        Let us recap. RSV is a common virus that can be serious for babies and older adults. Watch for fast breathing, ribs
+        pulling in, pauses in breathing, and poor feeding in babies. Babies can be protected by a vaccine during pregnancy or
+        an antibody shot. Older adults seventy five and up, and those at higher risk from fifty, need just one RSV vaccine
+        dose.
+    - layout: "outro"
+      heading: "Remember"
+      points: ["Protect your baby", "Older adults: one dose", "Wash hands, stay home sick"]
+      footage_query: "family smiling outdoors"
+      narration: >-
+        Remember: talk to your doctor about protecting your baby from RSV, older adults need just one RSV vaccine dose, and
+        wash hands and stay home when sick. Share this with expecting parents and grandparents. This video is for education
+        only, not medical advice. Like and subscribe to Health Support Studio for a new health video every day.
+  short_title: "RSV is not just a cold #Shorts"
+  short_caption: >-
+    New ways to protect babies and older adults from RSV. Educational only, not medical advice. #RSV #BabyHealth #Vaccines
+    #HealthEducation
+  short_scenes:
+    - layout: "title"
+      heading: "RSV Is Not Just a Cold"
+      points: ["For babies and older adults"]
+      footage_query: "baby sick breathing"
+      narration: >-
+        RSV is the leading cause of hospital stays for babies in the US, and it is serious for older adults too.
+    - layout: "bullets"
+      heading: "New Protection"
+      points: ["Pregnancy vaccine at 32 to 36 weeks", "Or an antibody shot for baby", "One dose for adults 75+"]
+      footage_query: "pregnant woman talking doctor"
+      narration: >-
+        Babies can be protected by a vaccine during pregnancy, or an antibody shot after birth. Adults seventy five and older,
+        and those fifty to seventy four at higher risk, need just one RSV vaccine dose. Watch babies for fast breathing or
+        ribs pulling in.
+    - layout: "outro"
+      heading: "Full Video"
+      points: ["On YouTube"]
+      footage_query: "family smiling outdoors"
+      narration: >-
+        Get all the answers in our full video, on the Health Support Studio YouTube channel.
