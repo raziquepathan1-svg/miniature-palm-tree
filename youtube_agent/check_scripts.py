@@ -5,6 +5,7 @@
     CHANNEL=restore_remake python -m youtube_agent.check_scripts   # another channel's script bank
 """
 
+import os
 import re
 import sys
 
@@ -113,6 +114,9 @@ def main() -> None:
         errs = check(f, config) + (broken_links(f) if "--links" in sys.argv else [])
         bad += bool(errs)
         print(f"{'OK  ' if not errs else 'FAIL'} {f.name}" + "".join(f"\n     - {e}" for e in errs))
+        if os.environ.get("GITHUB_ACTIONS"):  # also show each problem on the run's summary page
+            for e in errs:
+                print(f"::error file=youtube_agent/script_bank/{f.name}::{e}")
     print(f"\n{len(files) - bad}/{len(files)} scripts OK")
     sys.exit(1 if bad else 0)
 
