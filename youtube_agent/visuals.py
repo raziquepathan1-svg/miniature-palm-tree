@@ -772,6 +772,16 @@ def make_thumbnail(text: str, channel_name: str, out: Path, background: Path | N
     from PIL import ImageEnhance
 
     W, H = 1280, 720
+    # Every third day: a scene from the host's clips (with a patient, at the x-ray, in the office) as the photo
+    scenes_dir = Path(host).parent / "scenes" if host and Path(host).is_dir() else None
+    scenes = sorted(scenes_dir.glob("*.jpg")) if scenes_dir and scenes_dir.exists() else []
+    scene_day = False
+    if scenes:
+        import datetime as dt
+
+        day = dt.date.today().toordinal()
+        if day % 3 == 2:
+            background, host, scene_day = scenes[(day // 3) % len(scenes)], None, True
     if background and background.exists():
         img = _cover(Image.open(background).convert("RGB"), W, H)
         img = ImageEnhance.Contrast(ImageEnhance.Color(img).enhance(1.25)).enhance(1.1)
@@ -816,7 +826,7 @@ def make_thumbnail(text: str, channel_name: str, out: Path, background: Path | N
         host_img = Image.open(host).convert("RGBA")
     if host_img and host_img.height < host_img.width * 1.6:  # a pose that is already waist-up: show all of it
         zoom = 1.0
-    max_w, max_lines = int(W * (0.53 if host_img else 0.62)), 3
+    max_w, max_lines = int(W * (0.53 if host_img else 0.46 if scene_day else 0.62)), 3
     size = 150
     bottom_limit = H - 120  # keep clear of the brand badge
     while size > 70:
