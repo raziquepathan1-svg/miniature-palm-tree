@@ -1,1 +1,1 @@
-sit: converted=True | said: Hi everyone, welcome back. Welcome back to Health Support Studio. Let's get started.
+office_16x9: converted=True | said: Hi everyone, welcome back to Health Support Support Studio. Let's get started.
