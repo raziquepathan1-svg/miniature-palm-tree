@@ -11,10 +11,11 @@ plan:
     Acetaminophen (Tylenol) and ibuprofen (Advil, Motrin) are in almost every medicine cabinet, but they work differently and carry different risks. We answer the top questions about using over-the-counter pain relievers safely.
 
     In this video:
-    • How acetaminophen and NSAIDs like ibuprofen differ
-    • The hidden acetaminophen in cold and flu products
-    • Who should be careful with NSAIDs
-    • Why aspirin isn't for kids
+    • How acetaminophen and NSAIDs like ibuprofen differ, and which to choose
+    • The hidden acetaminophen in cold and flu products, and alcohol
+    • Who should be careful with NSAIDs: stomach, kidneys, heart
+    • Pregnancy, children, and medicine interactions
+    • Pain relief without pills, and when to see a doctor
 
     #PainRelief #MedicationSafety #Tylenol #Ibuprofen #HealthEducation
   tags: ["acetaminophen vs ibuprofen", "tylenol vs advil", "otc pain relievers", "nsaids", "ibuprofen side effects", "acetaminophen liver", "medication safety", "naproxen", "pain relief", "pharmacist tips", "health education"]
@@ -29,8 +30,17 @@ plan:
       footage_query: "medicine cabinet pills"
       narration: >-
         Headache, back pain, fever. Most of us reach for a pain reliever without a second thought. They are sold everywhere,
-        so they must be totally safe, right? Not always. Today we answer the top questions about the two most common choices:
-        acetaminophen, known as Tylenol, and ibuprofen, known as Advil or Motrin.
+        so they must be totally safe, right? Not always. Today we answer the most common questions about the two most popular
+        choices: acetaminophen, known as Tylenol, and ibuprofen, known as Advil or Motrin, so you can use them safely.
+    - layout: "bullets"
+      heading: "What We Will Cover"
+      points: ["How they work differently", "Hidden risks on the label", "Who should be careful", "Safer ways to use them"]
+      footage_query: "person reading notes"
+      narration: >-
+        Here is what we will cover. How these medicines work and how they are different. The hidden risk that catches many
+        people out. Who should be extra careful. What is safe in pregnancy and for children. And simple habits that keep you
+        safe, plus non medicine ways to ease pain. Stay to the end for a quick checklist you can use every time you open your
+        medicine cabinet.
     - layout: "bullets"
       heading: "How Are They Different?"
       points: ["Acetaminophen: pain and fever", "NSAIDs: pain, fever, inflammation", "NSAIDs: ibuprofen, naproxen, aspirin", "Different risks for each"]
@@ -38,59 +48,207 @@ plan:
       narration: >-
         Question one: how are they different? Acetaminophen relieves pain and lowers fever, but does not reduce swelling.
         Ibuprofen belongs to a group called NSAIDs, which also includes naproxen, known as Aleve, and aspirin. NSAIDs relieve
-        pain and fever, and they also reduce inflammation, which can help with things like sprains. Each group has its own
-        risks.
+        pain and fever, and they also reduce inflammation, which can help with things like sprains and swollen joints. Each
+        group has its own risks, so the right choice depends on you.
+    - layout: "bullets"
+      heading: "Which One for What?"
+      points: ["Headache or fever: either can work", "Swelling or sprain: NSAID may help more", "Stomach or kidney problems: ask first", "Ask your pharmacist"]
+      footage_query: "woman headache holding head"
+      narration: >-
+        Question two: which one should you choose? For a headache or a fever, either can work for most healthy adults. For
+        pain with swelling, like a sprained ankle, an NSAID may help more because it also fights inflammation. But if you have
+        stomach, kidney or heart problems, acetaminophen may be the safer choice. When in doubt, ask your pharmacist. It is
+        free, and they know your other medicines.
     - layout: "big_number"
       heading: "Hundreds"
       points: ["of medicines contain acetaminophen", "check every label"]
       footage_query: "reading medicine label"
       narration: >-
-        Question two: what is the biggest risk with acetaminophen? Taking too much, which can seriously damage the liver. The
-        catch is that acetaminophen is hidden in hundreds of products, including many cold, flu and sleep medicines. Taking
-        Tylenol plus a cold medicine can add up without you realizing it. Look for acetaminophen on the label, sometimes
-        written as APAP, and never take two products that both contain it.
+        Question three: what is the biggest risk with acetaminophen? Taking too much, which can seriously damage the liver.
+        The catch is that acetaminophen is hidden in hundreds of products, including many cold, flu, cough and sleep
+        medicines. Taking Tylenol plus a cold medicine can add up without you realizing it. Look for acetaminophen on the
+        label, sometimes written as APAP, and never take two products that both contain it.
+    - layout: "bullets"
+      heading: "Stay Under the Daily Limit"
+      points: ["Follow the label exactly", "Count every product you take", "Space out the doses", "Ask about a lower limit"]
+      footage_query: "pill organizer table"
+      narration: >-
+        Always follow the dose and the daily maximum on the label. Count every product you take that day, not just the pain
+        reliever. Space out the doses as directed, and do not take an extra dose because the pain is strong. People who drink
+        alcohol regularly, have liver disease, or take certain other medicines may need a lower daily limit, so ask your
+        doctor or pharmacist what is right for you.
+    - layout: "warning"
+      heading: "Alcohol and Acetaminophen"
+      points: ["Three or more drinks a day", "Higher risk of liver damage", "Talk to your doctor first", "Don't mix after a night out"]
+      footage_query: "glass of beer bar"
+      narration: >-
+        Alcohol makes acetaminophen riskier for the liver. The FDA warns that people who have three or more alcoholic drinks
+        every day should ask their doctor before taking it. And taking extra acetaminophen to treat a hangover after heavy
+        drinking is a common and dangerous mistake. If you drink regularly, talk honestly with your doctor about which pain
+        reliever is safest for you.
+    - layout: "warning"
+      heading: "Signs of Too Much"
+      points: ["Nausea or vomiting", "Loss of appetite, stomach pain", "Yellow skin or eyes", "Call Poison Help right away"]
+      footage_query: "woman nausea bathroom"
+      narration: >-
+        What if someone took too much acetaminophen? Early signs can be mild, like nausea, vomiting, loss of appetite,
+        sweating or stomach pain, and some people feel fine at first. Later, the skin or eyes may turn yellow. Do not wait for
+        symptoms. Call the Poison Help line right away at one eight hundred, two two two, one two two two, or call 911 if the
+        person is very sick.
     - layout: "warning"
       heading: "Careful With NSAIDs If"
       points: ["Age 60 or older", "Stomach ulcers or bleeding", "Heart or kidney disease", "Taking blood thinners"]
       footage_query: "senior man medicine bottle"
       narration: >-
-        Question three: who should be careful with ibuprofen and other NSAIDs? They can cause stomach ulcers and bleeding, and
+        Question four: who should be careful with ibuprofen and other NSAIDs? They can cause stomach ulcers and bleeding, and
         can harm the kidneys. The FDA also warns they can raise the risk of heart attack and stroke. Talk to your doctor or
         pharmacist first if you are sixty or older, have had stomach ulcers, heart disease, high blood pressure or kidney
         disease, or take blood thinners.
-    - layout: "bullets"
-      heading: "Pregnant or Drinking?"
-      points: ["Pregnant: ask before any pain reliever", "NSAIDs: avoid from 20 weeks unless advised", "Alcohol raises risks for both", "Ask your pharmacist"]
-      footage_query: "pregnant woman talking doctor"
-      narration: >-
-        Question four: what about pregnancy and alcohol? If you are pregnant, ask your doctor before taking any pain reliever.
-        The FDA advises avoiding NSAIDs from twenty weeks of pregnancy unless your doctor recommends them. And if you drink
-        three or more alcoholic drinks a day, both types carry extra risks, liver damage with acetaminophen, and stomach
-        bleeding with NSAIDs.
     - layout: "warning"
-      heading: "No Aspirin for Kids"
-      points: ["Linked to Reye's syndrome", "Children and teens", "Ask about the right child dose"]
-      footage_query: "parent child kitchen"
+      heading: "Stomach Bleeding Signs"
+      points: ["Black or bloody stool", "Vomiting blood or dark grounds", "Stomach pain that won't go away", "Feeling faint or weak"]
+      footage_query: "man stomach pain couch"
       narration: >-
-        Question five: can I give aspirin to my kids? No. Aspirin should not be given to children or teenagers, especially
-        when they have a viral illness like the flu or chickenpox, because it is linked to Reye's syndrome, a rare but serious
-        illness. For children, ask your pediatrician or pharmacist which medicine and dose is right, since it depends on weight.
+        NSAIDs can cause bleeding in the stomach, sometimes without much warning. Stop taking the medicine and get medical
+        help if you notice black, tarry or bloody stools, vomit that contains blood or looks like coffee grounds, stomach pain
+        that does not go away, or if you feel faint or very weak. The risk goes up with age, alcohol, and taking NSAIDs for a
+        long time.
     - layout: "bullets"
-      heading: "Safe Use Rules"
-      points: ["Read the Drug Facts label", "Never take more than directed", "Don't combine same ingredients", "See a doctor if pain lasts"]
-      footage_query: "person reading medicine box"
+      heading: "NSAIDs and Your Kidneys"
+      points: ["Drink enough fluids", "Extra care when dehydrated", "Some blood pressure pills", "Kidney disease? Ask first"]
+      footage_query: "glass of water table"
       narration: >-
-        Question six: what are the basic safety rules? Read the Drug Facts label every time. Never take more, or more often,
-        than it says. Do not combine products with the same active ingredient. And if you need a pain reliever for more than
-        a few days, or your pain keeps coming back, see your doctor to find the cause.
-    - layout: "outro"
-      heading: "Ask Your Pharmacist"
-      points: ["It's free", "They know your medicines", "They can check interactions"]
+        NSAIDs can also affect the kidneys, especially when you are dehydrated, for example during a stomach bug or after
+        heavy exercise in the heat. The risk is higher in older adults, people with kidney disease, and people who take
+        certain blood pressure medicines or water pills. If any of these apply to you, ask your doctor before using NSAIDs,
+        even for a few days.
+    - layout: "myth_fact"
+      heading: "Common Belief"
+      points: ["Over the counter means risk free", "Strong medicine, follow the label"]
+      footage_query: "pharmacy aisle shopping"
+      narration: >-
+        Here is a myth many people believe: if a medicine is sold over the counter, it must be completely safe. In fact, these
+        are real medicines with real side effects, and they can interact with other medicines. They are safe for most people
+        when used as directed on the label, for the shortest time, at the lowest dose that works. More is not better.
+    - layout: "bullets"
+      heading: "How Long Is Too Long?"
+      points: ["Pain: about 10 days", "Fever: about 3 days", "Unless your doctor says so", "Then get checked"]
+      footage_query: "calendar on wall"
+      narration: >-
+        Question five: how long can you take them on your own? Most over the counter pain relievers say not to use them for
+        pain for more than ten days, or for fever for more than three days, unless a doctor tells you to. If you still need
+        them after that, it is time to get checked. Pain or fever that keeps going can be a sign of something that needs
+        treatment.
+    - layout: "bullets"
+      heading: "Aspirin and Ibuprofen Together?"
+      points: ["Daily aspirin for your heart?", "Ibuprofen can block its effect", "Ask about timing", "Don't stop aspirin on your own"]
+      footage_query: "pill bottles kitchen counter"
+      narration: >-
+        Question six: what if you take a daily low dose aspirin for your heart? Ibuprofen can interfere with the protective
+        effect of aspirin if the timing is wrong. Ask your doctor or pharmacist how to space them, or whether a different pain
+        reliever is better for you. And never stop a daily aspirin that your doctor prescribed without talking to them first.
+    - layout: "warning"
+      heading: "Pregnancy"
+      points: ["Ask before taking any pain reliever", "Avoid NSAIDs from 20 weeks", "Unless your doctor says so", "Tell every doctor you're pregnant"]
+      footage_query: "pregnant woman holding belly"
+      narration: >-
+        Question seven: what about pregnancy? Always ask your doctor or midwife before taking any pain reliever while
+        pregnant. The FDA advises avoiding NSAIDs like ibuprofen and naproxen from about twenty weeks of pregnancy onward,
+        unless your doctor specifically recommends them, because they can affect the baby's kidneys. Your doctor can tell you
+        which option is safest for you.
+    - layout: "bullets"
+      heading: "Pain Relievers for Children"
+      points: ["Dose by weight, not age guess", "Use the dosing tool provided", "Ibuprofen: 6 months and older", "Never give aspirin"]
+      footage_query: "parent giving child medicine"
+      narration: >-
+        Question eight: what about children? Use products made for children, and dose by weight, using the measuring tool that
+        comes in the box, never a kitchen spoon. Ibuprofen is for babies six months and older. Never give aspirin to children
+        or teenagers, because it is linked to a rare but serious illness called Reye's syndrome. For babies under three
+        months, call the doctor before giving anything.
+    - layout: "bullets"
+      heading: "Check for Interactions"
+      points: ["Blood thinners", "Blood pressure medicines", "Steroids", "Other pain relievers"]
       footage_query: "pharmacist talking customer"
       narration: >-
-        Here is a tip most people forget: your pharmacist is a free expert. Ask them which pain reliever is safest with your
-        other medicines. This video is for education only, not medical advice. Like and subscribe to Health Support Studio for
-        a new health video every day.
+        Question nine: can they interact with other medicines? Yes. NSAIDs can raise bleeding risk with blood thinners and
+        steroids, and can make some blood pressure medicines work less well. Acetaminophen can add up with combination
+        products. Keep an up to date list of everything you take, including vitamins and supplements, and show it to your
+        pharmacist when you buy a new pain reliever.
+    - layout: "myth_fact"
+      heading: "Common Belief"
+      points: ["Alternating is always best", "Only if your doctor advises"]
+      footage_query: "thermometer medicine table"
+      narration: >-
+        Some people alternate acetaminophen and ibuprofen every few hours, especially for a child's fever. This can make it
+        easy to lose track and give too much of one. Do not alternate unless your doctor or pharmacist tells you to, and if
+        you do, write down every dose and the time. Remember, the goal is comfort, not a perfect number on the thermometer.
+    - layout: "bullets"
+      heading: "Creams and Gels"
+      points: ["NSAID gels for joint pain", "Less medicine in the blood", "Still read the label", "Don't use on broken skin"]
+      footage_query: "applying cream knee"
+      narration: >-
+        Question ten: are there other options? For pain in a few joints, like knees or hands, an NSAID gel rubbed on the skin
+        can help, and less of the medicine reaches the rest of the body. It is still a medicine, so follow the label, do not
+        use it on broken skin, and ask first if you have the conditions we talked about earlier.
+    - layout: "bullets"
+      heading: "Pain Relief Without Pills"
+      points: ["Ice for new injuries", "Heat for stiff muscles", "Gentle movement and stretching", "Rest, sleep, and stress relief"]
+      footage_query: "ice pack knee"
+      narration: >-
+        Medicine is not the only answer. For a new injury, try ice for short periods. For stiff, sore muscles, warmth often
+        helps. Gentle movement and stretching can ease back and joint pain over time. Good sleep and stress relief can also
+        lower how much pain you feel. Combining these with the lowest dose of medicine often works best.
+    - layout: "warning"
+      heading: "Rebound Headaches"
+      points: ["Pain pills most days?", "Headaches can get worse", "Called medication overuse headache", "Talk to your doctor"]
+      footage_query: "woman headache desk laptop"
+      narration: >-
+        Here is a surprising one. If you take pain relievers for headaches on many days of the month, the headaches themselves
+        can become more frequent. This is called medication overuse headache, or rebound headache. If you find yourself
+        reaching for pain pills more than a couple of days a week, talk to your doctor about a better plan to prevent the
+        headaches.
+    - layout: "bullets"
+      heading: "Long-Term Pain"
+      points: ["Back pain, arthritis, old injuries", "Make a plan with your doctor", "Physical therapy can help", "Don't rely on pills alone"]
+      footage_query: "physical therapist patient exercise"
+      narration: >-
+        What about pain that lasts for months, like back pain or arthritis? Taking pain relievers every day for a long time
+        raises the risks we talked about. Make a plan with your doctor. Physical therapy, exercise, weight management and
+        other treatments often help more than pills alone, and your doctor can check you for side effects if you do need daily
+        medicine.
+    - layout: "warning"
+      heading: "See a Doctor If"
+      points: ["Pain lasts more than 10 days", "Fever lasts more than 3 days", "New, severe, or unusual pain", "Pain with chest pain or weakness"]
+      footage_query: "doctor talking patient office"
+      narration: >-
+        See a doctor if pain lasts more than ten days, fever lasts more than three days, or the pain is new, severe or
+        different from usual. Get emergency help right away for chest pain, a sudden severe headache, weakness on one side of
+        the body, or trouble breathing. Pain relievers can hide symptoms, so do not use them to push through warning signs.
+    - layout: "bullets"
+      heading: "Store Them Safely"
+      points: ["Up high and locked", "In original containers", "Count pills in the house", "Get rid of old medicines"]
+      footage_query: "medicine cabinet locked"
+      narration: >-
+        Keep all medicines up high, out of sight, and ideally locked, especially if children or teenagers live in or visit
+        your home. Keep them in their original containers with the label. Many pharmacies and police stations have take back
+        programs for old or unused medicines, which is the safest way to get rid of them.
+    - layout: "bullets"
+      heading: "Your Safety Checklist"
+      points: ["Right medicine for the problem", "Check every label for duplicates", "Lowest dose, shortest time", "Ask your pharmacist"]
+      footage_query: "woman checklist kitchen"
+      narration: >-
+        Here is your checklist every time you open the medicine cabinet. Pick the right medicine for your problem. Check every
+        label for acetaminophen and NSAIDs so you do not double up. Use the lowest dose that works for the shortest time. And
+        if you have health conditions, are pregnant, or take other medicines, ask your pharmacist first.
+    - layout: "outro"
+      heading: "Remember"
+      points: ["Read every label", "Watch for hidden acetaminophen", "NSAIDs: careful with age and health", "Ask your pharmacist"]
+      footage_query: "family kitchen morning"
+      narration: >-
+        Let's recap. Acetaminophen and NSAIDs are useful, but they are real medicines. Watch for hidden acetaminophen, be
+        careful with NSAIDs if you are older or have heart, stomach or kidney problems, and never give aspirin to children.
+        This video is for education only, not medical advice. If it helped you, share it with someone who keeps a full
+        medicine cabinet, subscribe to Health Support Studio, and tell me in the comments what topic you want next.
   short_title: "The hidden Tylenol in your cold medicine #Shorts"
   short_caption: >-
     Taking Tylenol and a cold medicine together? You might be doubling up without knowing it. Educational only, not medical
