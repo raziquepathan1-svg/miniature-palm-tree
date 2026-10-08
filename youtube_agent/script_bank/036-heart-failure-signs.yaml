@@ -1,0 +1,291 @@
+queue_topic: "Heart failure: warning signs and daily care"
+style: "Warning Signs"
+sources:
+  - "NIH NHLBI, Heart Failure: https://www.nhlbi.nih.gov/health/heart-failure"
+  - "CDC, About Heart Failure: https://www.cdc.gov/heart-disease/about/heart-failure.html"
+  - "MedlinePlus, Heart Failure: https://medlineplus.gov/heartfailure.html"
+plan:
+  topic: "Heart failure: warning signs and daily care"
+  title: "Heart Failure Warning Signs Most People Miss"
+  description: |-
+    Heart failure doesn't mean the heart has stopped. Millions of Americans live with it. Learn the early warning signs, the causes, the treatments that help people live longer, and the daily habits that prevent hospital stays.
+
+    In this video:
+    • What heart failure is, and ejection fraction explained
+    • Warning signs: breathlessness, swelling, sudden weight gain
+    • When to call 911
+    • Medicines that help, and medicines to avoid
+    • Daily weights, salt, activity and the zone chart
+
+    #HeartFailure #HeartHealth #WarningSigns #Caregiving #HealthEducation
+  tags: ["heart failure", "heart failure symptoms", "congestive heart failure", "ejection fraction", "swollen ankles", "shortness of breath", "daily weight", "low sodium diet", "cardiac rehab", "heart health", "health education"]
+  thumbnail_text: "HEART FAILURE SIGNS"
+  thumbnail_highlight: "SIGNS"
+  thumbnail_photo_query: "elderly man short of breath"
+  playlist: "Heart & Blood Pressure"
+  scenes:
+    - layout: "title"
+      heading: "Heart Failure Warning Signs"
+      points: ["Know the early clues"]
+      footage_query: "elderly man short of breath"
+      narration: >-
+        Heart failure sounds like the heart has stopped working. It has not. It means the heart is not pumping as well as it
+        should, so the body does not get the blood and oxygen it needs. Millions of Americans live with it, and many live well
+        for years with the right care. Today you will learn the warning signs, the causes, and the daily habits that keep
+        people out of the hospital.
+    - layout: "big_number"
+      heading: "A Common Condition"
+      points: ["About 6.7 million", "US adults live with heart failure"]
+      footage_query: "older adults walking park"
+      narration: >-
+        About six point seven million adults in the United States are living with heart failure, and the number is expected to
+        rise as the population ages. It is one of the most common reasons people over sixty five are admitted to the hospital.
+        The good news is that treatment has improved a lot, and many people now live longer, fuller lives with heart failure.
+    - layout: "bullets"
+      heading: "What Heart Failure Means"
+      points: ["Heart pumps too weakly", "Or is too stiff to fill", "Fluid backs up", "Body gets less oxygen"]
+      footage_query: "medical illustration heart"
+      narration: >-
+        In heart failure, the heart muscle is either too weak to pump blood out well, or too stiff to fill with blood
+        properly. Either way, the body does not get enough blood. Fluid can back up into the lungs, making it hard to breathe,
+        and into the legs, belly and feet, causing swelling. The kidneys respond by holding on to salt and water, which adds
+        more fluid.
+    - layout: "bullets"
+      heading: "Ejection Fraction Explained"
+      points: ["How much blood is pumped out", "Normal is about 50 or higher", "Reduced: weak pump", "Preserved: stiff heart"]
+      footage_query: "doctor reading heart scan"
+      narration: >-
+        Doctors often talk about the ejection fraction, the share of blood the main pumping chamber pushes out with each beat.
+        A normal ejection fraction is about fifty or higher. In heart failure with reduced ejection fraction, the pump is
+        weak. In heart failure with preserved ejection fraction, the pump squeezes normally, but the heart is stiff. Both are
+        serious and both need treatment.
+    - layout: "bullets"
+      heading: "Common Causes"
+      points: ["Coronary artery disease", "Past heart attack", "High blood pressure", "Diabetes and obesity"]
+      footage_query: "blood pressure monitor arm"
+      narration: >-
+        What causes heart failure? The most common causes are coronary artery disease, where narrowed arteries starve the
+        heart muscle, and a past heart attack that damaged the muscle. Years of high blood pressure make the heart work harder
+        and grow stiff. Diabetes and obesity also raise the risk. Many people have more than one of these causes.
+    - layout: "bullets"
+      heading: "Other Causes"
+      points: ["Heart valve disease", "Irregular heartbeat", "Heart muscle disease", "Alcohol, drugs, some cancer treatments"]
+      footage_query: "doctor stethoscope chest"
+      narration: >-
+        Other causes include leaky or narrowed heart valves, an irregular heartbeat like atrial fibrillation, diseases of the
+        heart muscle called cardiomyopathy, some of which run in families, heart damage from viral infections, heavy alcohol
+        use, drugs like cocaine, and some cancer treatments. Sleep apnea and thyroid disease can make it worse.
+    - layout: "warning"
+      heading: "Sign 1: Short of Breath"
+      points: ["With activity", "When lying flat", "Waking up gasping", "Needing more pillows"]
+      footage_query: "man struggling breathe"
+      narration: >-
+        The first warning sign is shortness of breath. At first it may happen only with activity, like climbing stairs. Later,
+        it may happen when lying flat, so people prop themselves up on extra pillows or sleep in a chair. Waking up at night
+        suddenly short of breath and needing to sit up is a classic sign of fluid in the lungs.
+    - layout: "warning"
+      heading: "Sign 2: Swelling"
+      points: ["Feet, ankles and legs", "Belly swelling", "Tight shoes or socks", "Marks that stay when pressed"]
+      footage_query: "swollen feet ankles close up"
+      narration: >-
+        The second sign is swelling, from fluid building up in the body. It usually starts in the feet, ankles and lower legs,
+        and gets worse during the day. Shoes may feel tight, and socks may leave deep marks. When you press on the swollen
+        skin, a dent may stay for a while. Fluid can also build up in the belly, causing bloating and poor appetite.
+    - layout: "warning"
+      heading: "Sign 3: Sudden Weight Gain"
+      points: ["2 to 3 pounds in a day", "5 pounds in a week", "Usually fluid, not fat", "Call your doctor"]
+      footage_query: "bathroom scale feet"
+      narration: >-
+        The third sign is sudden weight gain. Gaining two to three pounds in a day, or about five pounds in a week, usually
+        means fluid is building up, not fat. This often shows up before breathing gets worse, which makes the bathroom scale
+        one of the best early warning tools. Ask your doctor for your personal limits.
+    - layout: "warning"
+      heading: "Other Signs"
+      points: ["Tired and weak", "Lasting cough or wheeze", "Fast or irregular heartbeat", "Confusion, poor appetite"]
+      footage_query: "woman tired holding head"
+      narration: >-
+        Other signs include feeling very tired and weak, even with simple daily tasks, a cough or wheezing that does not go
+        away, sometimes with white or pink mucus, a fast or irregular heartbeat, needing to urinate at night, poor appetite or
+        feeling full quickly, and, in older adults, confusion or trouble thinking. These signs often come on slowly.
+    - layout: "warning"
+      heading: "Call 911"
+      points: ["Chest pain", "Severe trouble breathing", "Fainting", "Pink, foamy mucus"]
+      footage_query: "person calling phone emergency"
+      narration: >-
+        Call 911 right away for chest pain or pressure, severe shortness of breath, especially at rest, fainting, a very fast
+        or irregular heartbeat with dizziness, coughing up pink, foamy mucus, or sudden confusion. These can be signs of a
+        heart attack or fluid flooding the lungs. Do not drive yourself to the hospital.
+    - layout: "myth_fact"
+      heading: "Heart Failure Means the End"
+      points: ["Heart failure means the heart stopped", "Many live well for years"]
+      footage_query: "older couple walking park"
+      narration: >-
+        Myth: heart failure means your heart has stopped or is about to. Fact: heart failure is a long term condition, and
+        with modern treatment, many people live active lives for many years. Some people's hearts even get stronger with
+        treatment. The key is taking medicines as prescribed, tracking symptoms, and working closely with your care team.
+    - layout: "bullets"
+      heading: "How It Is Diagnosed"
+      points: ["Exam and history", "Blood tests like BNP", "Echocardiogram", "ECG and chest x-ray"]
+      footage_query: "ultrasound scan chest"
+      narration: >-
+        How is heart failure diagnosed? Your doctor will ask about symptoms and examine you, listening for fluid in the lungs
+        and checking for swelling. A blood test called BNP is often high in heart failure. An echocardiogram, an ultrasound of
+        the heart, shows how well it pumps and measures the ejection fraction. An ECG and chest x ray are also common.
+    - layout: "bullets"
+      heading: "Medicines That Help"
+      points: ["Several medicines work together", "Help you live longer", "Fewer hospital stays", "Take them every day"]
+      footage_query: "pill organizer close up"
+      narration: >-
+        Treatment has improved greatly. For heart failure with reduced ejection fraction, several groups of medicines work
+        together to help the heart. These include certain blood pressure medicines, beta blockers, medicines that block a
+        hormone called aldosterone, and a newer group called SGLT2 inhibitors. Taken together, they help people live longer
+        and stay out of the hospital.
+    - layout: "bullets"
+      heading: "Water Pills"
+      points: ["Remove extra fluid", "Ease swelling and breathing", "Watch for dizziness", "Check blood tests"]
+      footage_query: "glass of water pill hand"
+      narration: >-
+        Water pills, also called diuretics, help the kidneys remove extra fluid, which eases swelling and breathing. You will
+        urinate more after taking them, so many people take them in the morning. They can cause dizziness and change potassium
+        and other blood levels, so your doctor will check your blood regularly. Never stop or change the dose on your own.
+    - layout: "warning"
+      heading: "Medicines to Avoid"
+      points: ["Ibuprofen and naproxen", "Some decongestants", "Some diabetes medicines", "Ask before any new pill"]
+      footage_query: "pill bottles table"
+      narration: >-
+        Some common medicines can make heart failure worse. Pain relievers like ibuprofen and naproxen can cause the body to
+        hold fluid. Some cold medicines with decongestants can raise blood pressure and heart rate. Some diabetes medicines
+        and some supplements can also be harmful. Ask your doctor or pharmacist before taking any new medicine, even over the
+        counter.
+    - layout: "bullets"
+      heading: "Devices and Procedures"
+      points: ["Pacemakers", "Implanted defibrillators", "Valve repair", "Heart pumps or transplant"]
+      footage_query: "heart surgery hospital"
+      narration: >-
+        Some people need devices or procedures. A special pacemaker can help both sides of the heart beat together. An
+        implanted defibrillator can shock the heart back into rhythm if a dangerous rhythm starts. Narrowed arteries or leaky
+        valves may be repaired. For advanced heart failure, a mechanical heart pump or a heart transplant may be options.
+    - layout: "bullets"
+      heading: "Weigh Yourself Every Day"
+      points: ["Every morning", "After using the bathroom", "Before breakfast", "Write it down"]
+      footage_query: "bathroom scale feet"
+      narration: >-
+        The most important daily habit is weighing yourself. Weigh every morning, after using the bathroom and before eating,
+        wearing similar clothing, on the same scale. Write it down or use an app. Bring your log to every visit. Call your
+        doctor if you gain two to three pounds in a day or five in a week, or whatever limit your doctor gives you.
+    - layout: "bullets"
+      heading: "Cut Back on Salt"
+      points: ["Salt makes you hold fluid", "Most comes from packaged food", "Read labels for sodium", "Ask your daily limit"]
+      footage_query: "woman reading food label"
+      narration: >-
+        Salt, or sodium, makes your body hold on to water, which strains the heart. Most salt comes from packaged, canned,
+        restaurant and fast foods, not the salt shaker. Read labels and choose lower sodium options. Season food with herbs,
+        spices, lemon and garlic. Ask your doctor or a dietitian how much sodium is right for you.
+    - layout: "bullets"
+      heading: "Fluids and Alcohol"
+      points: ["Ask about a fluid limit", "Soups and ice count too", "Limit or avoid alcohol", "No smoking"]
+      footage_query: "glass of water close up"
+      narration: >-
+        Some people with heart failure need to limit how much fluid they drink each day. Ask your doctor if this applies to
+        you. Remember that soups, ice, gelatin and fruits with lots of water count too. Limit or avoid alcohol, which can
+        weaken the heart muscle. And if you smoke, quitting is one of the best things you can do for your heart.
+    - layout: "bullets"
+      heading: "Stay Active Safely"
+      points: ["Ask about cardiac rehab", "Walk most days", "Build up slowly", "Rest when needed"]
+      footage_query: "elderly man walking park"
+      narration: >-
+        Exercise is safe and helpful for most people with heart failure. It can improve energy, breathing and quality of life.
+        Ask your doctor about cardiac rehabilitation, a supervised exercise and education program covered by Medicare for many
+        people with heart failure. Start slowly, build up over time, and rest when you need to. Stop and call if you have
+        chest pain or severe breathlessness.
+    - layout: "bullets"
+      heading: "Use the Zones"
+      points: ["Green: doing well", "Yellow: call your doctor", "Red: call 911", "Keep it on the fridge"]
+      footage_query: "traffic light close up"
+      narration: >-
+        Many clinics give patients a heart failure zone chart. Green means no new symptoms and stable weight, so keep doing
+        what you are doing. Yellow means warning signs like weight gain, more swelling, or more shortness of breath, so call
+        your doctor today. Red means severe symptoms like chest pain or struggling to breathe at rest, so call 911. Keep it on
+        the fridge.
+    - layout: "bullets"
+      heading: "Prevent Infections"
+      points: ["Yearly flu shot", "COVID vaccine", "Pneumonia vaccine", "RSV vaccine if eligible"]
+      footage_query: "vaccine syringe arm"
+      narration: >-
+        Infections like the flu and pneumonia can make heart failure much worse, and are a common reason for hospital stays.
+        Get a flu shot every year, stay up to date on COVID vaccines, and ask about pneumonia and RSV vaccines, which are
+        recommended for many older adults and people with heart disease. Wash your hands often.
+    - layout: "bullets"
+      heading: "Sleep and Mood"
+      points: ["Ask about sleep apnea", "Sleep propped up if needed", "Depression is common", "Ask for support"]
+      footage_query: "man sad sitting"
+      narration: >-
+        Sleep apnea, where breathing stops and starts during sleep, is common in heart failure and can make it worse. Tell
+        your doctor if you snore loudly or feel very sleepy in the day. Depression and anxiety are also common, and they can
+        make it harder to take care of yourself. They are treatable, so talk to your doctor and lean on family and support
+        groups.
+    - layout: "bullets"
+      heading: "Can It Be Prevented?"
+      points: ["Control blood pressure", "Manage diabetes and cholesterol", "Healthy weight", "No smoking, limit alcohol"]
+      footage_query: "healthy salad bowl table"
+      narration: >-
+        Many cases of heart failure can be prevented or delayed. Keep your blood pressure, blood sugar and cholesterol in a
+        healthy range. Stay active, keep a healthy weight, eat plenty of vegetables, fruits and whole grains, and limit salt.
+        Do not smoke, and limit alcohol. If you have had a heart attack, take your medicines and go to cardiac rehab.
+    - layout: "bullets"
+      heading: "Questions for Your Doctor"
+      points: ["What type do I have?", "What is my ejection fraction?", "What are my weight limits?", "When should I call?"]
+      footage_query: "patient talking doctor"
+      narration: >-
+        At your next visit, ask: what type of heart failure do I have, and what is my ejection fraction? Am I on all the
+        medicines that could help me? What is my daily salt and fluid limit? How much weight gain should make me call? And
+        would I benefit from cardiac rehab? Write the answers down.
+    - layout: "bullets"
+      heading: "For Caregivers"
+      points: ["Watch for warning signs", "Help with weights and pills", "Cook low-salt meals", "Go to appointments"]
+      footage_query: "caregiver helping elderly parent"
+      narration: >-
+        If you care for someone with heart failure, you can make a big difference. Help them weigh daily and keep the log.
+        Help organize their medicines. Cook low salt meals together. Watch for warning signs, like more swelling, more
+        breathlessness, or new confusion. Go to appointments when you can. And take care of yourself too.
+    - layout: "bullets"
+      heading: "Quick Recap"
+      points: ["Short of breath, swelling", "Sudden weight gain", "Medicines help you live longer", "Weigh daily, cut salt"]
+      footage_query: "notebook checklist pen"
+      narration: >-
+        Let us recap. Heart failure means the heart is not pumping as well as it should. Warning signs include shortness of
+        breath, especially lying down, swelling in the legs, and sudden weight gain. Modern medicines help people live longer.
+        Weigh yourself every day, cut back on salt, stay active, and call your doctor early when signs change.
+    - layout: "outro"
+      heading: "Remember"
+      points: ["Weigh every morning", "Watch for swelling", "Call early, not late"]
+      footage_query: "family walking outdoors"
+      narration: >-
+        Remember: weigh yourself every morning, watch for swelling and breathlessness, and call your doctor early, not late.
+        Share this with someone living with heart disease. This video is for education only, not medical advice. Like and
+        subscribe to Health Support Studio for a new health video every day.
+  short_title: "A heart failure warning sign on your scale #Shorts"
+  short_caption: >-
+    Sudden weight gain can be an early sign of heart failure getting worse. Educational only, not medical advice.
+    #HeartFailure #HeartHealth #HealthTips #HealthEducation
+  short_scenes:
+    - layout: "title"
+      heading: "Heart Failure Clue"
+      points: ["Watch your scale"]
+      footage_query: "bathroom scale feet"
+      narration: >-
+        One of the earliest warning signs of heart failure getting worse is on your bathroom scale.
+    - layout: "warning"
+      heading: "Sudden Weight Gain"
+      points: ["2 to 3 pounds in a day", "5 pounds in a week", "Call your doctor"]
+      footage_query: "swollen feet ankles close up"
+      narration: >-
+        Gaining two to three pounds in a day, or five in a week, usually means fluid is building up, often before breathing
+        gets worse. Weigh yourself every morning, before breakfast. Also watch for swollen ankles and shortness of breath when
+        lying flat, and call your doctor early.
+    - layout: "outro"
+      heading: "Full Video"
+      points: ["On YouTube"]
+      footage_query: "family walking outdoors"
+      narration: >-
+        Learn all the warning signs in our full video, on the Health Support Studio YouTube channel.
