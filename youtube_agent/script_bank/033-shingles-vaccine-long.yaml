@@ -1,0 +1,288 @@
+queue_topic: "Shingles and the shingles vaccine"
+style: "Myth vs Fact"
+sources:
+  - "CDC, Shingles Vaccination: https://www.cdc.gov/shingles/vaccines/index.html"
+  - "CDC, About Shingles: https://www.cdc.gov/shingles/about/index.html"
+  - "MedlinePlus, Shingles: https://medlineplus.gov/shingles.html"
+plan:
+  topic: "Shingles and the shingles vaccine"
+  title: "Shingles: 5 Myths That Could Leave You in Pain for Years"
+  description: |-
+    About 1 in 3 Americans will get shingles, and the nerve pain can last for years. We bust five common myths about shingles and the shingles vaccine, and explain the signs, treatment, and who should get vaccinated.
+
+    In this video:
+    • What causes shingles and the early warning signs
+    • Why shingles near the eye is urgent
+    • Long-lasting nerve pain and other complications
+    • 5 myths about shingles and the Shingrix vaccine
+    • Side effects, cost and where to get it
+
+    #Shingles #ShinglesVaccine #Vaccines #HealthyAging #HealthEducation
+  tags: ["shingles", "shingles vaccine", "shingrix", "shingles symptoms", "shingles rash", "postherpetic neuralgia", "chickenpox virus", "vaccines for adults", "healthy aging", "myth vs fact", "health education"]
+  thumbnail_text: "HAD CHICKENPOX?"
+  thumbnail_highlight: "CHICKENPOX?"
+  thumbnail_photo_query: "older woman holding side pain"
+  playlist: "Infections & Vaccines"
+  scenes:
+    - layout: "title"
+      heading: "Had Chickenpox?"
+      points: ["You could get shingles"]
+      footage_query: "older woman holding side pain"
+      narration: >-
+        If you had chickenpox as a child, the virus never really left your body. It is sleeping in your nerves, and years
+        later it can wake up as shingles, a painful rash that can cause nerve pain lasting months or even years. Today we bust
+        the most common myths about shingles and the shingles vaccine, and explain who should get vaccinated.
+    - layout: "big_number"
+      heading: "How Common Is Shingles?"
+      points: ["1 in 3", "Americans will get shingles"]
+      footage_query: "group of older adults"
+      narration: >-
+        Shingles is very common. According to the CDC, about one in three people in the United States will get shingles in
+        their lifetime. That is roughly one million cases each year. The risk rises sharply after age fifty, and people with
+        weakened immune systems are at higher risk at any age.
+    - layout: "bullets"
+      heading: "What Causes Shingles?"
+      points: ["The chickenpox virus", "Hides in nerve cells", "Wakes up years later", "Often when immunity weakens"]
+      footage_query: "medical illustration nerves"
+      narration: >-
+        Shingles is caused by the same virus that causes chickenpox, called varicella zoster virus. After you recover from
+        chickenpox, the virus stays inactive in nerve cells near the spinal cord and brain. Years or decades later, it can
+        become active again and travel along a nerve to the skin. This often happens as the immune system weakens with age,
+        illness, or stress.
+    - layout: "warning"
+      heading: "Early Warning Signs"
+      points: ["Burning, tingling or itching", "Pain on one side of the body", "Fever, headache, tiredness", "Rash a few days later"]
+      footage_query: "woman scratching arm"
+      narration: >-
+        Shingles often starts with pain, burning, tingling or itching in one area of the skin, usually on one side of the
+        body. Some people have fever, headache, chills or an upset stomach. A few days later, a rash appears in the same area.
+        Some people mistake the early pain for a heart, lung or kidney problem.
+    - layout: "warning"
+      heading: "The Shingles Rash"
+      points: ["A band or strip of blisters", "One side of the body", "Often the chest or back", "Scabs over in 7 to 10 days"]
+      footage_query: "skin rash close up"
+      narration: >-
+        The rash usually appears as a band or strip of red skin with fluid filled blisters, on one side of the body, often
+        wrapping around the chest, belly or back. It can also appear on the face. The blisters scab over in about seven to ten
+        days, and the rash usually clears in two to four weeks. The pain can be severe.
+    - layout: "warning"
+      heading: "Shingles Near the Eye"
+      points: ["Rash on forehead or nose", "Eye pain or redness", "Vision changes", "See a doctor today"]
+      footage_query: "eye close up red"
+      narration: >-
+        Shingles on the face, especially on the forehead, around the eye, or on the tip of the nose, needs urgent care. It can
+        affect the eye and cause serious problems, including vision loss. If you have a rash in these areas, or eye pain,
+        redness or blurry vision with shingles, see a doctor the same day.
+    - layout: "bullets"
+      heading: "Treatment Works Best Early"
+      points: ["Antiviral medicines", "Start within 3 days of rash", "Shorter, milder illness", "Pain relief"]
+      footage_query: "pharmacist giving medicine"
+      narration: >-
+        If you think you have shingles, see a doctor as soon as possible. Antiviral medicines, like acyclovir and
+        valacyclovir, can make shingles shorter and less severe, especially when started within three days of the rash
+        appearing. Your doctor can also suggest medicines for pain. Cool compresses, calamine lotion, and loose clothing can
+        help ease discomfort.
+    - layout: "bullets"
+      heading: "Caring for the Rash at Home"
+      points: ["Keep it clean and dry", "Cool compresses", "Loose cotton clothing", "Do not scratch"]
+      footage_query: "woman resting couch"
+      narration: >-
+        While the rash heals, keep it clean and dry. Cool, wet compresses and oatmeal baths can soothe itching. Wear loose,
+        soft cotton clothing. Try not to scratch or pop the blisters, which can cause infection and scars. Get enough rest and
+        eat well to help your body heal. Call your doctor if the rash looks infected, with spreading redness, pus or fever.
+    - layout: "warning"
+      heading: "Long-Lasting Nerve Pain"
+      points: ["Postherpetic neuralgia", "Pain after the rash heals", "Can last months or years", "Risk rises with age"]
+      footage_query: "elderly man holding side pain"
+      narration: >-
+        The most common complication of shingles is long lasting nerve pain, called postherpetic neuralgia. The pain stays
+        where the rash was, even after it heals, and can last for months or years. It can make it hard to sleep, work or enjoy
+        life. The risk is higher in older adults. Preventing shingles is the best way to prevent this pain.
+    - layout: "bullets"
+      heading: "Living With Nerve Pain"
+      points: ["Ask about nerve pain medicines", "Numbing patches and creams", "Gentle activity and sleep", "Ask for a pain specialist"]
+      footage_query: "elderly man talking doctor"
+      narration: >-
+        If nerve pain continues after the rash heals, do not just suffer through it. Several treatments can help, including
+        certain nerve pain medicines, numbing patches and creams, and other options your doctor may suggest. Gentle activity,
+        good sleep and support from family can also help. If pain is hard to control, ask about a pain specialist. Depression
+        is common with long lasting pain, and it is treatable.
+    - layout: "bullets"
+      heading: "Other Complications"
+      points: ["Vision loss", "Hearing or balance problems", "Skin infections", "Rarely pneumonia or brain swelling"]
+      footage_query: "doctor talking patient office"
+      narration: >-
+        Shingles can cause other complications too. Shingles in the eye can cause vision loss. Shingles near the ear can cause
+        hearing problems, balance problems, or weakness of the face. The blisters can get infected with bacteria. Rarely,
+        shingles can lead to pneumonia, brain inflammation, or stroke. People with weakened immune systems are at higher risk
+        of severe illness.
+    - layout: "myth_fact"
+      heading: "Long Ago Means Safe"
+      points: ["Chickenpox decades ago protects me", "The virus stays for life"]
+      footage_query: "old family photos"
+      narration: >-
+        Myth one: I had chickenpox so long ago, I cannot get shingles now. Fact: the virus stays in your body for life. Anyone
+        who has had chickenpox can get shingles, no matter how long ago it was. Most adults born before 1980 have had
+        chickenpox, even if they do not remember it.
+    - layout: "myth_fact"
+      heading: "Only Old People Get It"
+      points: ["Shingles is only for the elderly", "Younger adults get it too"]
+      footage_query: "young adults group outdoors"
+      narration: >-
+        Myth two: only very old people get shingles. Fact: the risk rises with age, but shingles can happen at any age, even
+        in children. People with weakened immune systems, such as from cancer treatment, HIV, organ transplants, or medicines
+        that suppress the immune system, are at higher risk, even when younger.
+    - layout: "myth_fact"
+      heading: "Once Means Never Again"
+      points: ["You cannot get it twice", "It can come back"]
+      footage_query: "woman holding side pain"
+      narration: >-
+        Myth three: if you already had shingles, you cannot get it again. Fact: shingles can come back, and some people get it
+        two or even three times. That is why the CDC recommends the shingles vaccine even for people who have already had
+        shingles. Ask your doctor how long to wait after an outbreak before getting vaccinated.
+    - layout: "bullets"
+      heading: "The Shingles Vaccine"
+      points: ["Called Shingrix", "Recommended at 50 and older", "Also at 19+ with weak immunity", "Two doses"]
+      footage_query: "vaccine syringe arm"
+      narration: >-
+        Now the good news. There is a very effective vaccine, called Shingrix. The CDC recommends it for all adults fifty and
+        older, and for adults nineteen and older who have a weakened immune system because of disease or treatment. It is
+        given as two shots, a few months apart. It is not a live vaccine, so it cannot give you shingles.
+    - layout: "big_number"
+      heading: "How Well It Works"
+      points: ["More than 9 in 10", "Protected against shingles"]
+      footage_query: "doctor smiling patient"
+      narration: >-
+        How well does it work? In studies, two doses of Shingrix were more than ninety percent effective at preventing
+        shingles and its long lasting nerve pain, in adults fifty and older. Protection stays strong for at least seven years
+        after vaccination. It is one of the most effective vaccines available for older adults.
+    - layout: "myth_fact"
+      heading: "One Dose Is Enough"
+      points: ["One shot gives full protection", "You need both doses"]
+      footage_query: "calendar notebook planning"
+      narration: >-
+        Myth four: one shot of the shingles vaccine is enough. Fact: you need two doses for strong, long lasting protection.
+        The second dose is usually given two to six months after the first. If more than six months pass, you do not need to
+        start over, just get the second dose as soon as you can. Put a reminder on your calendar.
+    - layout: "bullets"
+      heading: "Who Should Get It"
+      points: ["Adults 50 and older", "Even if you had shingles", "Even if unsure about chickenpox", "Even after the old vaccine"]
+      footage_query: "elderly couple talking doctor"
+      narration: >-
+        Who should get Shingrix? Adults fifty and older, even if they have already had shingles, even if they are not sure
+        they had chickenpox, and even if they got the older shingles vaccine, called Zostavax, which is no longer available in
+        the US. Adults nineteen and older with weakened immune systems should talk to their doctor about getting it.
+    - layout: "warning"
+      heading: "Who Should Wait"
+      points: ["Currently have shingles", "Pregnant", "Severe reaction to a dose", "Ask your doctor"]
+      footage_query: "pregnant woman talking doctor"
+      narration: >-
+        Some people should wait or not get the vaccine. If you have shingles right now, wait until the rash is gone. Pregnant
+        people should wait until after pregnancy. People who had a severe allergic reaction to a previous dose or any part of
+        the vaccine should not get it. If you are sick with a fever, wait until you recover.
+    - layout: "bullets"
+      heading: "Common Side Effects"
+      points: ["Sore, red, swollen arm", "Tiredness, muscle pain", "Headache, shivering, fever", "Lasts 2 to 3 days"]
+      footage_query: "woman holding arm"
+      narration: >-
+        What about side effects? They are common, but short lived. Many people get a sore, red or swollen arm, and some feel
+        tired, achy, have a headache, shiver, or have a fever or upset stomach. These usually last two to three days. About
+        one in six people feel unwell enough to take it easy for a day or two. This shows the immune system is working.
+    - layout: "bullets"
+      heading: "Plan Around Side Effects"
+      points: ["Get it before a quiet day", "Use the non-dominant arm", "Rest and drink fluids", "Ask about pain relievers"]
+      footage_query: "woman resting tea cup"
+      narration: >-
+        A few tips help. Schedule your shot before a day when you can rest, not before a big event. Get it in your non
+        dominant arm. Drink plenty of fluids, and move your arm. Ask your pharmacist whether a pain reliever is right for you
+        afterwards. Do not let side effects from the first dose stop you from getting the second.
+    - layout: "myth_fact"
+      heading: "The Vaccine Is Too Expensive"
+      points: ["I cannot afford it", "Most plans cover it"]
+      footage_query: "insurance card hand"
+      narration: >-
+        Myth five: the shingles vaccine is too expensive. Fact: since 2023, people with Medicare Part D pay nothing out of
+        pocket for the shingles vaccine. Most private insurance plans also cover it without cost for recommended adults.
+        Medicaid often covers it too. Ask your pharmacy or doctor to check your coverage before you go.
+    - layout: "bullets"
+      heading: "Where to Get It"
+      points: ["Most pharmacies", "Your doctor's office", "Health departments", "No prescription usually needed"]
+      footage_query: "pharmacist counter customer"
+      narration: >-
+        Where can you get it? Most pharmacies give the shingles vaccine, often without an appointment and without a
+        prescription. Your doctor's office and local health departments may also offer it. Many people can get it at the same
+        visit as other vaccines, like flu or COVID shots. Ask your pharmacist.
+    - layout: "bullets"
+      heading: "Is Shingles Contagious?"
+      points: ["Shingles itself does not spread", "The virus can cause chickenpox", "Spread through blister fluid", "Cover the rash"]
+      footage_query: "woman covering arm bandage"
+      narration: >-
+        Is shingles contagious? You cannot catch shingles from someone with shingles. But a person with shingles can spread
+        the virus to someone who has never had chickenpox or the chickenpox vaccine, and that person may get chickenpox. The
+        virus spreads from fluid in the blisters. Keep the rash covered, wash your hands, and avoid touching it until it
+        crusts over.
+    - layout: "warning"
+      heading: "Protect People at Risk"
+      points: ["Pregnant people", "Newborns", "Weak immune systems", "Avoid until blisters crust"]
+      footage_query: "newborn baby hospital"
+      narration: >-
+        While you have a shingles rash with blisters, stay away from people who are at high risk of serious chickenpox. This
+        includes pregnant people who have never had chickenpox or the vaccine, premature or very young babies, and people with
+        weakened immune systems. Once the blisters have crusted over, you are no longer contagious.
+    - layout: "bullets"
+      heading: "Protect Children Too"
+      points: ["Chickenpox vaccine for kids", "Two doses", "Lower shingles risk later", "Ask your pediatrician"]
+      footage_query: "child vaccine doctor"
+      narration: >-
+        Children can be protected too. The chickenpox vaccine is recommended for children in two doses, usually at twelve to
+        fifteen months and again at four to six years. It prevents most chickenpox, and children who get it are much less
+        likely to get shingles later in life. Ask your pediatrician if your child is up to date.
+    - layout: "bullets"
+      heading: "Questions for Your Doctor"
+      points: ["Am I due for Shingrix?", "Is it safe with my condition?", "When should I get dose two?", "What other vaccines do I need?"]
+      footage_query: "patient talking doctor"
+      narration: >-
+        At your next visit or pharmacy trip, ask: am I due for the shingles vaccine? Is it safe with my health conditions and
+        medicines? When should I get my second dose? And which other vaccines am I due for, like flu, COVID, pneumonia, RSV or
+        tetanus? Many adults are missing at least one recommended vaccine.
+    - layout: "bullets"
+      heading: "Quick Recap"
+      points: ["1 in 3 will get shingles", "Pain can last for years", "Shingrix: 2 doses at 50+", "Treat early with antivirals"]
+      footage_query: "notebook checklist pen"
+      narration: >-
+        Let us recap. About one in three Americans will get shingles. It can cause nerve pain that lasts for years. Anyone who
+        had chickenpox can get it, and you can get it more than once. The Shingrix vaccine is more than ninety percent
+        effective in two doses, for adults fifty and older. And if you get shingles, see a doctor within three days.
+    - layout: "outro"
+      heading: "Remember"
+      points: ["50 or older: get Shingrix", "Get both doses", "Early treatment helps"]
+      footage_query: "older couple walking park"
+      narration: >-
+        Remember: if you are fifty or older, ask about the shingles vaccine, get both doses, and see a doctor quickly if a
+        painful rash appears. Share this with someone who just turned fifty. This video is for education only, not medical
+        advice. Like and subscribe to Health Support Studio for a new health video every day.
+  short_title: "Had chickenpox? Shingles could be next #Shorts"
+  short_caption: >-
+    If you had chickenpox, the virus is still in your body. Here is how to protect yourself from shingles. Educational
+    only, not medical advice. #Shingles #ShinglesVaccine #Vaccines #HealthEducation
+  short_scenes:
+    - layout: "title"
+      heading: "Had Chickenpox?"
+      points: ["You could get shingles"]
+      footage_query: "older woman holding side pain"
+      narration: >-
+        If you ever had chickenpox, the virus is still hiding in your nerves, and it can come back as shingles.
+    - layout: "bullets"
+      heading: "Protect Yourself"
+      points: ["1 in 3 get shingles", "Shingrix: 2 doses at 50+", "More than 9 in 10 protected"]
+      footage_query: "vaccine syringe arm"
+      narration: >-
+        About one in three Americans will get shingles, and the nerve pain can last for years. The Shingrix vaccine is
+        recommended for adults fifty and older, in two doses. It is more than ninety percent effective, and Medicare Part D
+        covers it with no cost.
+    - layout: "outro"
+      heading: "Full Video"
+      points: ["On YouTube"]
+      footage_query: "older couple walking park"
+      narration: >-
+        Get all the facts in our full video, on the Health Support Studio YouTube channel.
