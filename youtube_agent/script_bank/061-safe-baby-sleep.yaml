@@ -1,0 +1,295 @@
+queue_topic: "Safe sleep for babies: preventing SIDS and suffocation"
+style: "Top Questions"
+sources:
+  - "CDC, Helping Babies Sleep Safely: https://www.cdc.gov/sudden-infant-death/sleep-safely/index.html"
+  - "NIH NICHD, Safe to Sleep: https://safetosleep.nichd.nih.gov/"
+  - "MedlinePlus, Sudden Infant Death Syndrome: https://medlineplus.gov/suddeninfantdeathsyndrome.html"
+plan:
+  topic: "Safe sleep for babies: preventing SIDS and suffocation"
+  title: "Safe Baby Sleep: What Every Parent Must Know"
+  description: |-
+    Thousands of US babies die suddenly during sleep each year, and many of these deaths can be prevented. We answer the top questions about safe sleep: position, where baby sleeps, what goes in the crib, swaddling, pacifiers, and products to avoid.
+
+    In this video:
+    • What SIDS and SUID are
+    • Back to sleep, and what if baby rolls
+    • Room sharing versus bed sharing
+    • A bare crib, bumpers and inclined sleepers
+    • Swaddling, pacifiers, overheating and the ABCs
+
+    #SafeSleep #SIDS #NewParents #BabyCare #HealthEducation
+  tags: ["safe sleep", "sids", "safe baby sleep", "back to sleep", "bed sharing", "crib safety", "swaddling", "new parents", "baby care", "infant safety", "health education"]
+  thumbnail_text: "SAFE BABY SLEEP"
+  thumbnail_highlight: "SAFE"
+  thumbnail_photo_query: "baby sleeping crib"
+  playlist: "Kids & Family Health"
+  scenes:
+    - layout: "title"
+      heading: "Safe Baby Sleep"
+      points: ["Questions every parent asks"]
+      footage_query: "baby sleeping crib"
+      narration: >-
+        Bringing a new baby home is full of joy, and full of questions. One of the most important is how to put your baby to
+        sleep safely. Every year in the United States, thousands of babies die suddenly and unexpectedly during sleep. Many of
+        these deaths can be prevented. Today we answer the top questions parents ask about safe sleep for babies.
+    - layout: "big_number"
+      heading: "Why It Matters"
+      points: ["About 3,500", "US babies die suddenly in sleep each year"]
+      footage_query: "newborn baby hospital"
+      narration: >-
+        Why does safe sleep matter so much? According to the CDC, about three thousand five hundred babies in the United
+        States die each year from sudden unexpected infant death, often during sleep. This includes sudden infant death
+        syndrome, or SIDS, and accidental suffocation. Most happen in babies under six months old. Following safe sleep advice
+        can greatly lower the risk.
+    - layout: "bullets"
+      heading: "What Are SIDS and SUID?"
+      points: ["SIDS: no known cause", "Accidental suffocation in bed", "Most before 6 months", "Peak at 1 to 4 months"]
+      footage_query: "medical illustration baby"
+      narration: >-
+        What are SIDS and SUID? Sudden unexpected infant death, or SUID, is the sudden death of a baby under one year with no
+        obvious cause before investigation. It includes SIDS, where no cause is found even after a full investigation, and
+        accidental suffocation or strangulation in bed. The risk is highest between one and four months of age.
+    - layout: "big_number"
+      heading: "Back to Sleep Works"
+      points: ["About half", "Drop in SIDS since back sleeping began"]
+      footage_query: "baby sleeping back"
+      narration: >-
+        Does safe sleep advice really work? Yes. Since the 1990s, when the Back to Sleep campaign began telling parents to put
+        babies on their backs, SIDS rates in the United States have dropped by about half. That is thousands of babies' lives
+        saved. Today, the campaign is called Safe to Sleep, and it covers the whole sleep space.
+    - layout: "bullets"
+      heading: "Question 1: Which Position?"
+      points: ["Always on the back", "For naps and at night", "Every sleep, every time", "Until age 1"]
+      footage_query: "baby sleeping back"
+      narration: >-
+        Which position is safest? Always put your baby to sleep on their back, for naps and at night, every time, until their
+        first birthday. Babies who sleep on their stomach or side are at much higher risk of SIDS. Make sure everyone who
+        cares for your baby, including grandparents and babysitters, knows this rule.
+    - layout: "myth_fact"
+      heading: "Babies Choke on Their Backs"
+      points: ["Back sleeping causes choking", "Healthy babies protect their airway"]
+      footage_query: "baby sleeping crib"
+      narration: >-
+        Myth: babies who sleep on their backs will choke if they spit up. Fact: healthy babies have a natural reflex that
+        protects their airway when they spit up, and studies show no increase in choking with back sleeping. In fact, the
+        airway is better protected on the back. Even babies with reflux should sleep on their backs, unless a doctor says
+        otherwise.
+    - layout: "bullets"
+      heading: "What If Baby Rolls Over?"
+      points: ["Still place on back", "If they roll both ways, okay", "Remove swaddle once rolling", "Keep the crib bare"]
+      footage_query: "baby rolling over"
+      narration: >-
+        What if my baby rolls onto their stomach? Always place your baby on their back to start. Once your baby can roll over
+        on their own, both from back to tummy and tummy to back, you do not need to turn them back over. Stop swaddling as
+        soon as your baby shows signs of trying to roll, usually around two to three months.
+    - layout: "bullets"
+      heading: "Question 2: Where to Sleep?"
+      points: ["Own crib, bassinet or play yard", "In your room", "Near your bed", "Ideally the first 6 months"]
+      footage_query: "baby bassinet bedroom"
+      narration: >-
+        Where should your baby sleep? In their own separate sleep space, like a crib, bassinet, or portable play yard, that
+        meets current safety standards. The American Academy of Pediatrics recommends keeping your baby's sleep space in your
+        room, close to your bed, ideally for at least the first six months. Room sharing makes feeding and comforting easier,
+        and lowers SIDS risk.
+    - layout: "warning"
+      heading: "Bed-Sharing Risks"
+      points: ["Higher risk of suffocation", "Especially under 4 months", "With smoking, alcohol, drugs", "On sofas or armchairs"]
+      footage_query: "parent baby sleeping bed"
+      narration: >-
+        Is it safe to share a bed with my baby? The American Academy of Pediatrics recommends against bed sharing, because it
+        raises the risk of suffocation and SIDS. The risk is highest for babies under four months, babies born early or small,
+        and when a parent smokes, has been drinking alcohol, takes sedating medicines or drugs, or is very tired.
+    - layout: "warning"
+      heading: "Never on a Sofa or Armchair"
+      points: ["Extremely dangerous", "Baby can get trapped", "Move baby before you doze", "Put baby in crib to sleep"]
+      footage_query: "sofa living room"
+      narration: >-
+        Falling asleep with a baby on a sofa, couch, or armchair is extremely dangerous, much riskier than a bed. Babies can
+        get trapped between the adult and the cushions and suffocate. If you feel sleepy while feeding or holding your baby,
+        put them in their crib or bassinet first. If you do fall asleep with your baby, move them to their own space as soon
+        as you wake.
+    - layout: "bullets"
+      heading: "Question 3: What Goes Inside?"
+      points: ["A firm, flat mattress", "A fitted sheet", "Nothing else", "No pillows, blankets or toys"]
+      footage_query: "empty crib fitted sheet"
+      narration: >-
+        What should be in the crib? Only a firm, flat mattress that fits snugly, with a fitted sheet made for that mattress.
+        Nothing else. No pillows, blankets, quilts, stuffed animals, bumper pads, or sleep positioners. These items can cover
+        the baby's face and cause suffocation. A bare crib is the safest crib.
+    - layout: "myth_fact"
+      heading: "Bumpers Protect Babies"
+      points: ["Bumpers keep baby safe", "Bumpers can cause suffocation"]
+      footage_query: "crib bumper pads"
+      narration: >-
+        Myth: crib bumpers protect babies from bumping their heads or getting arms stuck. Fact: padded crib bumpers have been
+        linked to suffocation and strangulation deaths. Since 2022, US federal law has banned the sale of padded crib bumpers.
+        Modern cribs have slats close enough together to keep babies safe without bumpers.
+    - layout: "warning"
+      heading: "Inclined Sleepers Are Unsafe"
+      points: ["No sleeping on an incline", "Over 10 degrees is unsafe", "Inclined sleepers are banned", "Flat and firm only"]
+      footage_query: "baby rocker seat"
+      narration: >-
+        Inclined sleepers, where babies sleep at an angle, have been linked to many infant deaths, because babies can roll or
+        slump into positions that block their breathing. Since 2022, federal law has banned infant sleep products with an
+        incline greater than ten degrees. Babies should always sleep on a firm, flat surface.
+    - layout: "bullets"
+      heading: "Car Seats and Swings"
+      points: ["Not for routine sleep", "Move baby to a crib", "Keep straps buckled in the car", "Never on soft surfaces"]
+      footage_query: "baby car seat"
+      narration: >-
+        What about car seats, swings, and bouncers? These are not safe for routine sleep. If your baby falls asleep in one,
+        move them to a firm, flat sleep surface as soon as you can. Car seats are safe in the car when installed and buckled
+        correctly. Never put a car seat with a sleeping baby on a bed, sofa, or soft surface.
+    - layout: "bullets"
+      heading: "Question 4: Keeping Baby Warm"
+      points: ["Wearable blanket or sleep sack", "One more layer than you", "No hats indoors for sleep", "No loose blankets"]
+      footage_query: "baby sleep sack"
+      narration: >-
+        How do you keep your baby warm without blankets? Use a wearable blanket or sleep sack. Dress your baby in no more than
+        one layer more than an adult would wear to be comfortable. Do not put a hat on your baby indoors for sleep. Avoid
+        weighted sleep sacks and weighted swaddles, which are not recommended.
+    - layout: "warning"
+      heading: "Watch for Overheating"
+      points: ["Sweating or damp hair", "Flushed cheeks", "Hot chest", "Fast breathing"]
+      footage_query: "baby sleeping crib"
+      narration: >-
+        Overheating raises the risk of SIDS. Keep the room at a temperature comfortable for a lightly dressed adult. Signs
+        your baby is too hot include sweating, damp hair, flushed cheeks, heat rash, a hot chest, and fast breathing. Do not
+        use heavy clothing or blankets, and do not put the crib near a heater or in direct sun.
+    - layout: "bullets"
+      heading: "Question 5: Is Swaddling Safe?"
+      points: ["Can calm newborns", "Snug at chest, loose at hips", "Always on the back", "Stop when baby tries to roll"]
+      footage_query: "swaddled newborn baby"
+      narration: >-
+        Is swaddling safe? Swaddling can help calm newborns, but do it safely. Wrap your baby snugly around the chest, but
+        loosely around the hips and legs, so their hips can move. Always place a swaddled baby on their back. Stop swaddling
+        as soon as your baby shows signs of trying to roll over, usually around two to three months.
+    - layout: "bullets"
+      heading: "Question 6: What About Pacifiers?"
+      points: ["Offer at sleep times", "Lowers SIDS risk", "Do not force it", "Wait until breastfeeding is set"]
+      footage_query: "baby pacifier close up"
+      narration: >-
+        Should you give a pacifier? Offering a pacifier at nap time and bedtime may lower the risk of SIDS. If your baby does
+        not want it, do not force it. If it falls out after your baby falls asleep, you do not need to put it back. If you are
+        breastfeeding, you may wait until breastfeeding is going well, usually about three to four weeks.
+    - layout: "bullets"
+      heading: "Breastfeeding Helps"
+      points: ["Lowers SIDS risk", "Any amount helps", "Longer is more protective", "Get support"]
+      footage_query: "mother breastfeeding baby"
+      narration: >-
+        Breastfeeding lowers the risk of SIDS. Any amount of breastmilk helps, and breastfeeding for longer gives more
+        protection. If you are breastfeeding and fall asleep while feeding in bed, put your baby back in their own sleep space
+        when you wake up. Ask your hospital, doctor, or a lactation consultant for breastfeeding support.
+    - layout: "warning"
+      heading: "Smoke-Free Baby"
+      points: ["No smoking during pregnancy", "No smoking around baby", "Smoke-free home and car", "Includes vaping"]
+      footage_query: "no smoking sign"
+      narration: >-
+        Smoking during pregnancy, and exposure to smoke after birth, greatly raises the risk of SIDS. Keep your home and car
+        completely smoke free, and do not let anyone smoke around your baby. This includes cigarettes, cigars, and vapes.
+        Alcohol and drug use by parents also raise the risk, especially with bed sharing. Ask your doctor for free help to
+        quit.
+    - layout: "bullets"
+      heading: "Other Protective Steps"
+      points: ["Prenatal care", "Keep up with vaccines", "Regular checkups", "Tummy time when awake"]
+      footage_query: "baby doctor checkup"
+      narration: >-
+        Other steps help protect your baby. Get regular prenatal care during pregnancy. Keep your baby's vaccines up to date,
+        which may lower SIDS risk. Go to all well baby checkups. And give your baby supervised tummy time while they are
+        awake, which helps build strong neck and shoulder muscles and prevents flat spots on the head.
+    - layout: "myth_fact"
+      heading: "Monitors Prevent SIDS"
+      points: ["Baby monitors prevent SIDS", "No proof they lower risk"]
+      footage_query: "baby monitor close up"
+      narration: >-
+        Myth: home heart and breathing monitors, or smart socks, prevent SIDS. Fact: there is no evidence that these products
+        lower the risk of SIDS. They can give a false sense of security, or cause worry with false alarms. A regular audio or
+        video monitor is fine for convenience, but following safe sleep steps is what protects your baby.
+    - layout: "bullets"
+      heading: "Tummy Time"
+      points: ["Only when awake", "Always supervised", "Start from day one", "Build up to 15 to 30 minutes"]
+      footage_query: "baby tummy time"
+      narration: >-
+        What is tummy time? It is time your baby spends on their tummy while awake and watched. It helps build strength for
+        rolling, sitting, and crawling, and prevents flat spots on the back of the head. Start with a few minutes a few times
+        a day from the first days home, and build up to fifteen to thirty minutes a day by seven weeks.
+    - layout: "bullets"
+      heading: "Daycare and Babysitters"
+      points: ["Ask about sleep rules", "Back to sleep every time", "Bare crib", "Share your safe sleep plan"]
+      footage_query: "daycare babies room"
+      narration: >-
+        Many sudden infant deaths happen when a baby is cared for by someone else. Before choosing daycare or a babysitter,
+        ask about their sleep practices. Make sure they always put your baby on their back, in a bare crib, on a firm flat
+        surface. Share safe sleep information with everyone who cares for your baby, including grandparents.
+    - layout: "bullets"
+      heading: "Traveling With Baby"
+      points: ["Bring a portable play yard", "Check hotel cribs", "No adult beds or sofas", "Same rules everywhere"]
+      footage_query: "baby travel play yard"
+      narration: >-
+        When traveling or visiting family, keep the same safe sleep rules. Bring a portable play yard or ask for a crib that
+        meets safety standards. Check that it is in good condition, with a firm mattress and fitted sheet only. Avoid letting
+        your baby sleep in adult beds, on sofas, or in car seats outside the car.
+    - layout: "bullets"
+      heading: "Products to Avoid"
+      points: ["Sleep positioners and wedges", "In-bed sleepers", "Weighted sleep sacks", "Anything not made for sleep"]
+      footage_query: "baby products store"
+      narration: >-
+        Be careful with baby products sold as sleep aids. Avoid sleep positioners and wedges, in bed sleepers, weighted sleep
+        sacks or swaddles, and pillows or loungers. Many have been linked to infant deaths. If a product claims to prevent
+        SIDS, be skeptical. Check for recalls at the Consumer Product Safety Commission website.
+    - layout: "warning"
+      heading: "When to Call 911"
+      points: ["Baby is not breathing", "Blue or gray color", "Limp and unresponsive", "Start CPR"]
+      footage_query: "person calling phone emergency"
+      narration: >-
+        If you ever find your baby not breathing, blue or gray, or limp and unresponsive, call 911 right away and start infant
+        CPR if you know how. Taking an infant CPR class before your baby arrives, or soon after, is one of the best things new
+        parents and grandparents can do.
+    - layout: "bullets"
+      heading: "Questions for Your Pediatrician"
+      points: ["Is our sleep setup safe?", "When to stop swaddling?", "Is my baby's reflux a concern?", "When can baby sleep alone?"]
+      footage_query: "mother talking doctor"
+      narration: >-
+        At your baby's checkups, ask: is our sleep setup safe? When should we stop swaddling? Is my baby's spitting up or
+        reflux a concern for sleep? When can my baby move to their own room? And what should we do when our baby starts
+        rolling? Your pediatrician is happy to help.
+    - layout: "bullets"
+      heading: "Quick Recap"
+      points: ["Alone, on the back, in a crib", "Room share, not bed share", "Bare crib, firm flat mattress", "No smoke, no overheating"]
+      footage_query: "notebook checklist pen"
+      narration: >-
+        Let us recap the ABCs of safe sleep. Alone: your baby sleeps in their own space. Back: always on their back. Crib: in
+        a crib, bassinet, or play yard with a firm, flat mattress and nothing else. Share a room, not a bed. Avoid smoke,
+        overheating, sofas, and inclined products. Offer a pacifier and breastfeed if you can.
+    - layout: "outro"
+      heading: "Remember"
+      points: ["Alone", "Back", "Crib"]
+      footage_query: "baby sleeping crib"
+      narration: >-
+        Remember the ABCs: Alone, on their Back, in a Crib, for every sleep. Share this with every new and expecting parent,
+        and every grandparent you know. This video is for education only, not medical advice. Like and subscribe to Health
+        Support Studio for a new health video every day.
+  short_title: "Safe baby sleep: remember the ABCs #Shorts"
+  short_caption: >-
+    Alone, on their Back, in a Crib. Educational only, not medical advice. #SafeSleep #SIDS #NewParents #HealthEducation
+  short_scenes:
+    - layout: "title"
+      heading: "Safe Baby Sleep"
+      points: ["Remember the ABCs"]
+      footage_query: "baby sleeping crib"
+      narration: >-
+        Thousands of babies die suddenly in their sleep every year. Most of these deaths can be prevented.
+    - layout: "bullets"
+      heading: "The ABCs"
+      points: ["Alone in their own space", "On their Back", "In a bare Crib"]
+      footage_query: "empty crib fitted sheet"
+      narration: >-
+        Follow the ABCs of safe sleep. Alone, in their own sleep space, in your room. On their Back, for every nap and every
+        night. In a Crib with a firm, flat mattress and a fitted sheet, and nothing else: no pillows, blankets, bumpers or
+        toys.
+    - layout: "outro"
+      heading: "Full Video"
+      points: ["On YouTube"]
+      footage_query: "baby sleeping crib"
+      narration: >-
+        Get all the answers in our full video, on the Health Support Studio YouTube channel.
