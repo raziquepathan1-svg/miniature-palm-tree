@@ -1,0 +1,296 @@
+queue_topic: "Stopping germs at home: handwashing, cleaning and when to stay home"
+style: "Explainer"
+sources:
+  - "CDC, About Handwashing: https://www.cdc.gov/clean-hands/about/index.html"
+  - "CDC, When and How to Wash Your Hands: https://www.cdc.gov/clean-hands/about/hand-hygiene.html"
+  - "FDA, Antibacterial Soap? You Can Skip It, Use Plain Soap and Water: https://www.fda.gov/consumers/consumer-updates/antibacterial-soap-you-can-skip-it-use-plain-soap-and-water"
+plan:
+  topic: "Stopping germs at home: handwashing, cleaning and when to stay home"
+  title: "You're Probably Washing Your Hands Wrong (Stop Germs at Home)"
+  description: |-
+    Colds and stomach bugs love to sweep through families. Learn the right way to wash your hands, when hand sanitizer works and when it doesn't, how to clean your home the smart way, and when to stay home.
+
+    In this video:
+    • When and how to wash your hands
+    • Hot water and antibacterial soap myths
+    • When hand sanitizer is not enough
+    • Cleaning versus disinfecting at home
+    • Stomach bug cleanup and when to stay home
+
+    #Handwashing #GermPrevention #FluSeason #FamilyHealth #HealthEducation
+  tags: ["handwashing", "how to wash your hands", "hand sanitizer", "germs at home", "cleaning and disinfecting", "norovirus", "stomach bug", "flu season tips", "family health", "health education"]
+  thumbnail_text: "WASHING HANDS WRONG?"
+  thumbnail_highlight: "WRONG?"
+  thumbnail_photo_query: "washing hands sink"
+  playlist: "Infections & Vaccines"
+  scenes:
+    - layout: "title"
+      heading: "Stop Germs at Home"
+      points: ["The habits that really work"]
+      footage_query: "washing hands sink"
+      narration: >-
+        Every cold, stomach bug and flu season seems to sweep through the whole family. But a few simple habits can stop many
+        of those germs before they spread. Today you will learn the right way to wash your hands, when hand sanitizer works
+        and when it does not, how to clean your home the smart way, and when to stay home to protect others.
+    - layout: "big_number"
+      heading: "Clean Hands Prevent Illness"
+      points: ["About 1 in 3", "Fewer diarrhea illnesses with handwashing"]
+      footage_query: "family kitchen sink"
+      narration: >-
+        Handwashing is one of the most powerful ways to prevent illness. According to the CDC, teaching people about
+        handwashing can cut diarrhea illnesses by about one third, and colds and other respiratory illnesses by about one
+        fifth. It also helps reduce the need for antibiotics, which fights antibiotic resistance. All for the cost of soap and
+        water.
+    - layout: "bullets"
+      heading: "How Germs Spread"
+      points: ["Hands touch everything", "Then eyes, nose and mouth", "Coughs and sneezes", "Shared surfaces and food"]
+      footage_query: "person touching face"
+      narration: >-
+        How do germs spread? Most often through our hands. We touch door handles, phones, money, shopping carts and other
+        people, and then touch our eyes, nose and mouth without noticing, many times an hour. Germs also spread through coughs
+        and sneezes, through food prepared with unwashed hands, and from surfaces that many people touch.
+    - layout: "bullets"
+      heading: "When to Wash Your Hands"
+      points: ["Before eating or cooking", "After the bathroom", "After coughing or sneezing", "After touching garbage or pets"]
+      footage_query: "washing hands sink"
+      narration: >-
+        When should you wash your hands? Before, during and after preparing food. Before eating. After using the bathroom or
+        changing diapers. After blowing your nose, coughing or sneezing. After touching garbage, animals, pet food or pet
+        waste. Before and after caring for someone who is sick, and before and after treating a cut or wound.
+    - layout: "bullets"
+      heading: "Steps 1 and 2: Wet, Lather"
+      points: ["Wet hands with clean water", "Warm or cold is fine", "Turn off the tap", "Lather with soap"]
+      footage_query: "soap hands lather"
+      narration: >-
+        Now, the right way to wash. Step one: wet your hands with clean, running water. Warm or cold both work. You can turn
+        off the tap to save water. Step two: apply soap and rub your hands together to make a lather. Lather the backs of your
+        hands, between your fingers, and under your nails. These spots are often missed.
+    - layout: "bullets"
+      heading: "Step 3: Scrub 20 Seconds"
+      points: ["At least 20 seconds", "Hum Happy Birthday twice", "Thumbs and fingertips", "Under the nails"]
+      footage_query: "scrubbing hands close up"
+      narration: >-
+        Step three: scrub for at least twenty seconds. That is about as long as humming the Happy Birthday song from beginning
+        to end twice. Most people wash for only a few seconds. Do not forget your thumbs, fingertips and wrists. Rubbing
+        fingertips into the palm of the other hand helps clean under the nails.
+    - layout: "bullets"
+      heading: "Steps 4 and 5: Rinse, Dry"
+      points: ["Rinse under running water", "Dry with a clean towel", "Or air dry", "Wet hands spread more germs"]
+      footage_query: "drying hands towel"
+      narration: >-
+        Step four: rinse your hands well under clean, running water. Step five: dry them with a clean towel, a paper towel, or
+        air dry them. Drying matters, because germs spread more easily from wet hands. At home, change hand towels often,
+        especially when someone is sick. In public restrooms, you can use a paper towel to turn off the tap and open the door.
+    - layout: "bullets"
+      heading: "Dry Skin From Washing"
+      points: ["Use a gentle soap", "Pat hands dry", "Use hand cream often", "Gloves for chores"]
+      footage_query: "hand cream close up"
+      narration: >-
+        Frequent handwashing can dry out your skin, and cracked skin can actually hold more germs. Use a gentle, fragrance
+        free soap. Pat your hands dry instead of rubbing. Apply a hand cream or ointment after washing, especially before bed.
+        Wear gloves for dishwashing and cleaning chores. If your skin cracks or bleeds, talk to your doctor.
+    - layout: "myth_fact"
+      heading: "Hot Water Kills Germs"
+      points: ["Hotter water is cleaner", "Soap and scrubbing matter most"]
+      footage_query: "water tap running"
+      narration: >-
+        Myth: you need hot water to kill germs. Fact: water hot enough to kill germs would burn your skin. Studies show warm
+        and cold water remove germs about equally well. What matters is soap, scrubbing for twenty seconds, and rinsing. Use
+        whatever temperature is comfortable, so you are more likely to wash long enough.
+    - layout: "myth_fact"
+      heading: "Antibacterial Soap Is Better"
+      points: ["Antibacterial soap kills more germs", "Plain soap works just as well"]
+      footage_query: "soap bottle sink"
+      narration: >-
+        Myth: antibacterial soap is better than regular soap. Fact: the FDA has found no evidence that over the counter
+        antibacterial soaps are better at preventing illness than plain soap and water. Some antibacterial ingredients were
+        removed from household soaps for this reason. Plain soap works by lifting germs off your skin so water can rinse them
+        away.
+    - layout: "bullets"
+      heading: "When to Use Hand Sanitizer"
+      points: ["When soap is not available", "At least 60 percent alcohol", "Cover all surfaces", "Rub until dry"]
+      footage_query: "hand sanitizer bottle"
+      narration: >-
+        When soap and water are not available, hand sanitizer is a good backup. Choose one with at least sixty percent
+        alcohol. Put enough on your palm to cover all surfaces of both hands, then rub your hands together, including between
+        fingers and on the backs, until they are completely dry, which takes about twenty seconds. Do not wipe it off.
+    - layout: "warning"
+      heading: "When Sanitizer Is Not Enough"
+      points: ["Visibly dirty or greasy hands", "Stomach bugs like norovirus", "After handling chemicals", "Wash with soap instead"]
+      footage_query: "dirty hands garden"
+      narration: >-
+        Hand sanitizer does not work well on hands that are visibly dirty or greasy, like after gardening, sports or cooking.
+        It also does not work well against some germs, like norovirus, a common cause of stomach bugs, and a germ called C.
+        diff. It does not remove harmful chemicals. In these cases, wash with soap and water.
+    - layout: "warning"
+      heading: "Keep Sanitizer Safe"
+      points: ["Keep away from children", "Swallowing can poison", "Watch for methanol recalls", "Call Poison Control"]
+      footage_query: "child reaching medicine cabinet"
+      narration: >-
+        Keep hand sanitizer out of reach of young children, and supervise its use. Swallowing even a small amount can cause
+        alcohol poisoning in children. Some sanitizers sold in the past contained methanol, a toxic alcohol, and were recalled
+        by the FDA. If someone swallows sanitizer, call Poison Control at one eight hundred two two two, one two two two.
+    - layout: "bullets"
+      heading: "Cover Coughs and Sneezes"
+      points: ["Use a tissue", "Or your elbow", "Throw tissues away", "Then wash your hands"]
+      footage_query: "woman sneezing tissue"
+      narration: >-
+        Cover your mouth and nose with a tissue when you cough or sneeze, then throw the tissue away right away and wash your
+        hands. If you do not have a tissue, cough or sneeze into your elbow, not your hands. This keeps germs off your hands,
+        and off everything you touch afterwards. Teach children to do the same.
+    - layout: "bullets"
+      heading: "Clean High-Touch Surfaces"
+      points: ["Door handles, light switches", "Phones and remotes", "Faucets and toilet handles", "Counters and tables"]
+      footage_query: "cleaning door handle"
+      narration: >-
+        In your home, focus cleaning on surfaces many people touch: door handles, light switches, faucets, toilet handles,
+        counters, tables, phones, tablets, keyboards and TV remotes. Cleaning with soap or detergent and water removes most
+        germs and dirt. For most homes, regular cleaning is enough when no one is sick.
+    - layout: "bullets"
+      heading: "When to Disinfect"
+      points: ["When someone is sick", "After raw meat on counters", "Bathrooms after stomach bugs", "Follow the label"]
+      footage_query: "disinfecting kitchen counter"
+      narration: >-
+        Disinfecting kills germs that are left after cleaning. Disinfect high touch surfaces when someone in your home is
+        sick, after preparing raw meat, and especially in bathrooms after vomiting or diarrhea. Follow the label carefully.
+        Many products need the surface to stay wet for several minutes to work. Clean first, then disinfect.
+    - layout: "warning"
+      heading: "Use Cleaners Safely"
+      points: ["Never mix bleach and ammonia", "Never mix bleach and vinegar", "Open windows", "Wear gloves"]
+      footage_query: "cleaning products shelf"
+      narration: >-
+        Use cleaning products safely. Never mix bleach with ammonia, vinegar, or other cleaners, because this can create toxic
+        gases. Open windows or turn on a fan for fresh air. Wear gloves. Store cleaners in their original containers, locked
+        up and away from children. And never use disinfectants on your skin or in your body.
+    - layout: "bullets"
+      heading: "Kitchen Germ Hot Spots"
+      points: ["Sponges and dishcloths", "Cutting boards", "Sink and faucet", "Fridge handles"]
+      footage_query: "kitchen sponge sink"
+      narration: >-
+        Some of the germiest places at home are in the kitchen. Sponges and dishcloths can hold huge numbers of bacteria.
+        Replace sponges often, or clean them by microwaving them damp for one minute, or running them through the dishwasher.
+        Wash dishcloths often in hot water. Clean cutting boards, the sink, faucets and fridge handles regularly.
+    - layout: "bullets"
+      heading: "Phones and Screens"
+      points: ["Wipe them often", "Follow maker instructions", "No phones in the bathroom", "Wash hands after using"]
+      footage_query: "cleaning smartphone"
+      narration: >-
+        Your phone goes everywhere with you, including the bathroom, and you touch it many times a day. Wipe your phone,
+        tablet and keyboard regularly, following the maker's instructions, often with an alcohol wipe. Avoid using your phone
+        in the bathroom, and wash your hands after touching shared screens, like at stores and airports.
+    - layout: "bullets"
+      heading: "When Someone Is Sick"
+      points: ["Separate towels and cups", "Clean bathroom more often", "Wash laundry well", "Wash hands after caring"]
+      footage_query: "mother caring sick child"
+      narration: >-
+        When someone at home is sick, take extra steps. Give them their own towels, cups and utensils. Clean and disinfect the
+        bathroom and high touch surfaces more often. Wash their laundry, especially if soiled, with detergent on the warmest
+        setting the fabric allows, and dry it fully. Wash your hands after caring for them or handling their things.
+    - layout: "bullets"
+      heading: "Laundry and Bedding"
+      points: ["Wash towels often", "Hot water for sick laundry", "Dry completely", "Do not shake dirty laundry"]
+      footage_query: "laundry basket washing machine"
+      narration: >-
+        Laundry matters too. Wash bath and hand towels at least weekly, and more often when someone is sick. Wash bedding
+        regularly. For laundry from someone who is ill, use the warmest water the fabric allows and dry everything completely.
+        Do not shake dirty laundry, which can spread germs into the air. Wash your hands after handling it, and clean the
+        hamper.
+    - layout: "bullets"
+      heading: "Stomach Bug Cleanup"
+      points: ["Wear gloves and a mask", "Clean up quickly", "Use a bleach solution", "Wash hands with soap"]
+      footage_query: "gloves cleaning bathroom"
+      narration: >-
+        Norovirus, the common stomach bug, spreads very easily and survives on surfaces. When cleaning vomit or diarrhea, wear
+        disposable gloves, and a mask if possible. Wipe up the mess with paper towels and put them in a plastic bag. Then
+        disinfect the area with a bleach based cleaner, following the label. Wash your hands with soap and water, not
+        sanitizer.
+    - layout: "bullets"
+      heading: "When to Stay Home"
+      points: ["Fever", "Vomiting or diarrhea", "Bad cough", "Until 24 hours better"]
+      footage_query: "woman resting bed sick"
+      narration: >-
+        Staying home when sick is one of the kindest things you can do for others. Stay home from work or school if you have a
+        fever, vomiting or diarrhea, or a bad cough with other symptoms. A general guide is to return when your symptoms have
+        been getting better, and you have had no fever without fever medicine, for at least twenty four hours.
+    - layout: "bullets"
+      heading: "Teach Kids Good Habits"
+      points: ["Make it a song", "Wash at key times", "Be a role model", "Use a step stool"]
+      footage_query: "child washing hands"
+      narration: >-
+        Children learn by watching. Make handwashing a family habit before meals, after the bathroom, and when coming home.
+        Sing a twenty second song together. Put a step stool at the sink, and keep soap where little hands can reach it.
+        Praise them for doing it right. Teach them to cough into their elbow, and to keep fingers away from their face.
+    - layout: "bullets"
+      heading: "Pets and Germs"
+      points: ["Wash hands after pets", "Clean litter boxes carefully", "Keep pet food away from kitchen", "Kids under 5 and reptiles"]
+      footage_query: "dog family home"
+      narration: >-
+        Pets bring joy, but they can also carry germs, like Salmonella. Wash your hands after touching pets, their food,
+        bowls, toys, or waste. Clean litter boxes and cages regularly, and pregnant women should avoid cleaning litter boxes
+        if possible. Keep pet food and bowls out of the kitchen sink. Children under five should not handle reptiles, turtles,
+        or backyard chickens.
+    - layout: "bullets"
+      heading: "Germs Outside the Home"
+      points: ["Shopping carts", "Gym equipment", "Public restrooms", "Sanitizer in your bag"]
+      footage_query: "shopping cart store"
+      narration: >-
+        Out and about, use sanitizing wipes on shopping cart handles and gym equipment. In public restrooms, wash your hands
+        well and use a paper towel to open the door. Keep a small bottle of hand sanitizer in your bag or car for times when
+        soap is not available. And wash your hands as soon as you get home.
+    - layout: "bullets"
+      heading: "Vaccines Work With Clean Hands"
+      points: ["Yearly flu shot", "COVID vaccine", "Other recommended vaccines", "Together they protect"]
+      footage_query: "vaccine syringe arm"
+      narration: >-
+        Clean hands and vaccines work together. Handwashing lowers the spread of many germs, but vaccines give your body
+        strong protection against specific serious illnesses, like the flu, COVID, measles, whooping cough and pneumonia. Ask
+        your doctor or pharmacist which vaccines you and your family are due for this season.
+    - layout: "myth_fact"
+      heading: "More Germs Build Immunity"
+      points: ["Dirt keeps kids healthy", "Skip the risky germs"]
+      footage_query: "children playing outdoors"
+      narration: >-
+        Myth: letting kids be exposed to all germs makes them stronger. Fact: playing outside, getting dirty, and being around
+        pets can be good for children's health. But exposure to dangerous germs, like those from raw meat, stomach bugs, or
+        sick people, can cause serious illness. Let kids play freely, and still wash hands at the important times.
+    - layout: "bullets"
+      heading: "Quick Recap"
+      points: ["Wash with soap for 20 seconds", "Sanitizer when no soap", "Clean high-touch spots", "Stay home when sick"]
+      footage_query: "notebook checklist pen"
+      narration: >-
+        Let us recap. Wash your hands with soap and water for at least twenty seconds, at key times like before eating and
+        after the bathroom. Use sanitizer with at least sixty percent alcohol when soap is not available, but not for stomach
+        bugs or dirty hands. Clean high touch surfaces, disinfect when someone is sick, and stay home when you are ill.
+    - layout: "outro"
+      heading: "Remember"
+      points: ["20 seconds with soap", "Cover coughs", "Stay home when sick"]
+      footage_query: "family kitchen smiling"
+      narration: >-
+        Remember: twenty seconds with soap, cover your coughs, and stay home when you are sick. Share this with your family
+        before cold and flu season. This video is for education only, not medical advice. Like and subscribe to Health Support
+        Studio for a new health video every day.
+  short_title: "You're probably washing your hands wrong #Shorts"
+  short_caption: >-
+    Most people wash for only a few seconds. Here is the right way. Educational only, not medical advice. #Handwashing
+    #GermPrevention #HealthTips #HealthEducation
+  short_scenes:
+    - layout: "title"
+      heading: "Washing Your Hands Wrong?"
+      points: ["Most people do"]
+      footage_query: "washing hands sink"
+      narration: >-
+        Most people wash their hands for only a few seconds. Here is how to do it right.
+    - layout: "bullets"
+      heading: "The Right Way"
+      points: ["Wet and lather", "Scrub 20 seconds", "Rinse and dry well"]
+      footage_query: "scrubbing hands close up"
+      narration: >-
+        Wet your hands and lather with soap, including the backs, between your fingers and under your nails. Scrub for at
+        least twenty seconds, about two rounds of Happy Birthday. Rinse and dry with a clean towel. Sanitizer works when there
+        is no soap, but not for stomach bugs.
+    - layout: "outro"
+      heading: "Full Video"
+      points: ["On YouTube"]
+      footage_query: "family kitchen smiling"
+      narration: >-
+        Learn more ways to stop germs at home in our full video, on the Health Support Studio YouTube channel.
