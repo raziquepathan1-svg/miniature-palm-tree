@@ -1,0 +1,291 @@
+queue_topic: "Why you should keep an up-to-date medication list"
+style: "Explainer"
+sources:
+  - "FDA, Create and Keep a Medication List for Your Health: https://www.fda.gov/consumers/consumer-updates/create-and-keep-medication-list-your-health"
+  - "AHRQ, Your Medicine: Be Smart. Be Safe.: https://www.ahrq.gov/patients-consumers/diagnosis-treatment/treatments/safemeds/yourmeds.html"
+  - "FDA, Where and How to Dispose of Unused Medicines: https://www.fda.gov/consumers/consumer-updates/where-and-how-dispose-unused-medicines"
+plan:
+  topic: "Why you should keep an up-to-date medication list"
+  title: "The 1 List That Could Save Your Life in an Emergency"
+  description: |-
+    In an emergency, you may not be able to tell doctors what medicines you take. An up-to-date medication list prevents dangerous mix-ups. Here is exactly what to put on it, where to keep it, and how to keep it current.
+
+    In this video:
+    • Why a medication list matters
+    • What to include: prescriptions, OTC, supplements, allergies
+    • Where to keep it and when to update it
+    • The brown bag checkup and avoiding duplicates
+    • Storing and disposing of medicines safely
+
+    #MedicationSafety #PatientSafety #HealthTips #Caregiving #HealthEducation
+  tags: ["medication list", "medication safety", "patient safety", "drug interactions", "supplements", "brown bag review", "caregiver tips", "medication errors", "emergency preparedness", "health education"]
+  thumbnail_text: "KEEP THIS LIST"
+  thumbnail_highlight: "LIST"
+  thumbnail_photo_query: "pill bottles table"
+  playlist: "Medications & Safety"
+  scenes:
+    - layout: "title"
+      heading: "The List That Saves Lives"
+      points: ["Your medication list"]
+      footage_query: "pill bottles kitchen table"
+      narration: >-
+        If you ended up in the emergency room tonight, could you name every medicine you take, the dose, and why you take it?
+        Most people cannot, and that can lead to dangerous mistakes. Today you will learn why an up to date medication list is
+        one of the most powerful safety tools you have, exactly what to put on it, and how to keep it current.
+    - layout: "big_number"
+      heading: "Medicine Mistakes Are Common"
+      points: ["1.5 million", "People harmed by medication errors yearly"]
+      footage_query: "pharmacy shelves medicine"
+      narration: >-
+        Medication mistakes are one of the most common causes of preventable harm in American health care. One well known
+        national report estimated that about one and a half million people are harmed by medication errors each year. Many of
+        these happen when information is lost between doctors, hospitals and pharmacies. A clear, complete list closes many of
+        those gaps.
+    - layout: "bullets"
+      heading: "Why a List Matters"
+      points: ["Emergencies", "New doctors and specialists", "Hospital stays", "Avoiding dangerous mixes"]
+      footage_query: "paramedic helping patient"
+      narration: >-
+        Why does a list matter so much? In an emergency, you may be too sick, confused or scared to remember your medicines.
+        When you see a new doctor or specialist, they may not have your records. In the hospital, your medicines may be
+        changed several times. And every time a new medicine is added, someone needs to check it against everything you
+        already take.
+    - layout: "bullets"
+      heading: "Many People Take a Lot"
+      points: ["Several prescriptions", "Plus over-the-counter medicines", "Plus vitamins and supplements", "Risk rises with each one"]
+      footage_query: "pill organizer close up"
+      narration: >-
+        Many Americans take several medicines. Older adults often take five or more prescriptions, plus over the counter
+        medicines and supplements. The more medicines you take, the higher the chance of side effects and harmful
+        interactions. Even people who take just one or two medicines can benefit from a list, because it is easy to forget
+        what you take only once in a while.
+    - layout: "bullets"
+      heading: "Step 1: Prescriptions"
+      points: ["Name of each medicine", "Strength and dose", "How often and when", "What it is for"]
+      footage_query: "pill bottle label close up"
+      narration: >-
+        Let us build the list. Start with every prescription medicine. For each one, write the name, the strength printed on
+        the bottle, how much you take, how often and at what time of day, and what it is for. Writing the reason helps catch
+        mistakes, like a medicine prescribed for one problem being confused with another that has a similar name.
+    - layout: "bullets"
+      heading: "Do Not Forget These"
+      points: ["Inhalers and eye drops", "Creams and patches", "Injections like insulin", "Medicines taken only as needed"]
+      footage_query: "asthma inhaler close up"
+      narration: >-
+        People often forget medicines that are not pills. Add inhalers, eye drops, ear drops, nasal sprays, creams, ointments
+        and patches. Include injections like insulin or weekly shots. Add medicines you take only as needed, like a pain
+        reliever or a sleep aid, and write how often you actually use them. These all count.
+    - layout: "bullets"
+      heading: "Step 2: Over-the-Counter"
+      points: ["Pain relievers", "Allergy and sleep aids", "Antacids and laxatives", "Cold and flu medicines"]
+      footage_query: "pharmacy shelf store"
+      narration: >-
+        Next, add over the counter medicines, the ones you buy without a prescription. These include pain relievers like
+        acetaminophen, ibuprofen and aspirin, allergy pills, sleep aids, antacids, laxatives, and cold and flu medicines. Many
+        people do not think of these as real medicines, but they can cause serious side effects and interact with
+        prescriptions.
+    - layout: "bullets"
+      heading: "Step 3: Vitamins and Supplements"
+      points: ["Vitamins and minerals", "Herbal products", "Fish oil, protein powders", "Weight loss products"]
+      footage_query: "supplement capsules close up"
+      narration: >-
+        Then add vitamins, minerals, herbal supplements and other products, like fish oil, protein powders, and weight loss or
+        energy products. Supplements can be powerful. For example, Saint John's wort can make some medicines less effective,
+        including birth control, and some supplements can raise bleeding risk with blood thinners. Your doctor needs to know
+        about all of them.
+    - layout: "warning"
+      heading: "Step 4: Allergies"
+      points: ["Medicine allergies", "What happened", "Food and latex allergies", "Side effects you cannot take"]
+      footage_query: "medical bracelet wrist"
+      narration: >-
+        Add a section for allergies. List any medicine that caused a reaction, and what happened, like a rash, swelling, or
+        trouble breathing. Also list food and latex allergies. Separately, note side effects that made you stop a medicine,
+        like a cough or upset stomach. This helps doctors tell true allergies from side effects.
+    - layout: "bullets"
+      heading: "Step 5: Key Health Information"
+      points: ["Your health conditions", "Your doctors and pharmacy", "Emergency contact", "Date of the list"]
+      footage_query: "medical records folder"
+      narration: >-
+        Finally, add key information. List your health conditions, like diabetes, heart disease or kidney disease. Write the
+        names and phone numbers of your doctors and your pharmacy. Add an emergency contact, and note if you have an advance
+        directive. And always write the date you last updated the list at the top.
+    - layout: "bullets"
+      heading: "Free Forms Can Help"
+      points: ["FDA medication record", "Your pharmacy's list", "Patient portal", "Phone health apps"]
+      footage_query: "person writing notebook"
+      narration: >-
+        You do not have to start from scratch. The FDA offers a free printable medication record on its website. Many
+        pharmacies can print a list of everything you fill there. Your patient portal may show a medication list, but check it
+        carefully, because these lists are often out of date. Some phone apps can store your list too.
+    - layout: "bullets"
+      heading: "Where to Keep It"
+      points: ["A copy in your wallet", "A photo on your phone", "A copy on the fridge", "Share with a family member"]
+      footage_query: "wallet cards table"
+      narration: >-
+        Keep your list where it will be found. Carry a copy in your wallet or purse. Take a photo of it on your phone. Many
+        phones let you add medical information to the lock screen, so first responders can see it. Keep a copy on the fridge,
+        where emergency workers often look. And give a copy to a trusted family member.
+    - layout: "warning"
+      heading: "Update It Every Time"
+      points: ["New medicine", "Dose change", "Stopped medicine", "After every hospital stay"]
+      footage_query: "calendar notebook planning"
+      narration: >-
+        A list is only helpful if it is current. Update it every time a medicine is started, stopped, or changed, including
+        after every doctor visit and hospital stay. Cross out stopped medicines clearly or start a new list, so no one gets
+        confused. Set a reminder to review it every few months, even if nothing has changed.
+    - layout: "bullets"
+      heading: "Bring It Everywhere"
+      points: ["Doctor visits", "Dentist visits", "Pharmacy", "Emergency room"]
+      footage_query: "patient talking doctor"
+      narration: >-
+        Bring your list to every health visit: your primary doctor, specialists, the dentist, urgent care, and the emergency
+        room. Ask the staff to compare it with their records. Doctors call this medication reconciliation, and it is one of
+        the best ways to catch errors, like duplicate medicines or a dose that was changed by mistake.
+    - layout: "bullets"
+      heading: "The Brown Bag Checkup"
+      points: ["Bring all your bottles", "Include supplements", "Ask what each one is for", "Find duplicates and old meds"]
+      footage_query: "paper bag pill bottles"
+      narration: >-
+        Once a year, try a brown bag checkup. Put all your medicines, including over the counter products and supplements, in
+        a bag, and bring them to your doctor or pharmacist. They can check for duplicates, expired medicines, harmful
+        combinations, and medicines you may no longer need. Many pharmacists offer this review for free, especially for people
+        on Medicare.
+    - layout: "warning"
+      heading: "Watch for Duplicates"
+      points: ["Same medicine, two names", "Brand and generic", "Combination cold medicines", "Too much acetaminophen"]
+      footage_query: "pill bottles table"
+      narration: >-
+        One common danger is taking the same medicine twice without knowing it. A brand name and a generic version of the same
+        drug may look different. Many cold, flu and sleep products contain acetaminophen, so taking them with a separate
+        acetaminophen pill can lead to an overdose that damages the liver. Your list makes these overlaps easier to spot.
+    - layout: "bullets"
+      heading: "Use One Pharmacy"
+      points: ["One place sees everything", "Checks for interactions", "Keeps a full history", "Easier refills"]
+      footage_query: "pharmacist counter customer"
+      narration: >-
+        If you can, fill all your prescriptions at one pharmacy. Then your pharmacist can see everything you take and warn you
+        about harmful interactions. If you use more than one pharmacy, or mail order, make sure each one has your full list.
+        Tell them about over the counter medicines and supplements too.
+    - layout: "bullets"
+      heading: "Questions for Each New Medicine"
+      points: ["What is it for?", "How and when do I take it?", "What side effects to watch?", "Does it interact with my others?"]
+      footage_query: "doctor giving prescription"
+      narration: >-
+        Every time you get a new medicine, ask a few questions. What is it for? How and when should I take it, with food or
+        without? How long will I take it? What side effects should I watch for? Does it interact with any of my other
+        medicines, foods or supplements? Then add it to your list right away.
+    - layout: "myth_fact"
+      heading: "Doctors Already Know"
+      points: ["My doctors share all records", "Records are often incomplete"]
+      footage_query: "doctor computer office"
+      narration: >-
+        Myth: my doctors already know everything I take, because it is all in the computer. Fact: different hospitals and
+        clinics often use different record systems that do not fully share information. Your records may be missing medicines
+        from other doctors, over the counter products, or recent changes. You are the one person who sees the whole picture.
+    - layout: "myth_fact"
+      heading: "Supplements Are Not Medicine"
+      points: ["Natural products do not count", "Supplements can interact"]
+      footage_query: "herbal supplements bottle"
+      narration: >-
+        Myth: vitamins and herbal products are natural, so they do not need to be on the list. Fact: supplements can cause
+        side effects and interact with prescriptions. Some affect bleeding, blood pressure, blood sugar or how the liver
+        handles medicines. Supplements are not checked by the FDA for safety and effectiveness before they are sold, like
+        prescriptions are.
+    - layout: "bullets"
+      heading: "For Caregivers"
+      points: ["Keep a list for your loved one", "Track who prescribed what", "Watch for new symptoms", "Bring it to every visit"]
+      footage_query: "caregiver helping elderly parent"
+      narration: >-
+        If you care for a parent, spouse or child, keep their list too. Note which doctor prescribed each medicine, and watch
+        for new symptoms after a change, like confusion, dizziness, or falls, which can be side effects. Bring the list to
+        every appointment. If you share caregiving, keep one shared list so everyone works from the same information.
+    - layout: "bullets"
+      heading: "Kids Need a List Too"
+      points: ["Daily medicines", "Inhalers and allergy pens", "Weight-based doses", "Share with school and sitters"]
+      footage_query: "mother holding child doctor"
+      narration: >-
+        Children need a medication list too, especially if they have asthma, allergies, ADHD, seizures or other long term
+        conditions. Include inhalers, epinephrine pens, and the dose based on their current weight, since children's doses
+        change as they grow. Give a copy to the school health office, babysitters, grandparents and anyone who cares for your
+        child.
+    - layout: "bullets"
+      heading: "Medicine Safety for Older Adults"
+      points: ["Some medicines raise fall risk", "Ask about lower doses", "Ask what can be stopped", "Review every year"]
+      footage_query: "elderly man pill bottles"
+      narration: >-
+        Older adults are more sensitive to many medicines, because the liver and kidneys process drugs more slowly. Some
+        medicines, like certain sleep aids, allergy pills and anxiety medicines, raise the risk of falls and confusion. Ask
+        your doctor each year whether any medicine can be lowered or stopped. Never stop one on your own, but do ask.
+    - layout: "bullets"
+      heading: "Store Medicines Safely"
+      points: ["Cool, dry place", "Not in the bathroom", "Locked up from kids", "In original bottles"]
+      footage_query: "medicine cabinet close up"
+      narration: >-
+        Store medicines in a cool, dry place, not in a steamy bathroom or a hot car. Keep them in their original bottles, so
+        the label stays with the medicine. Lock up medicines, especially opioids, and keep them out of reach and sight of
+        children and visitors. Use a pill organizer for daily doses, but keep the bottles too.
+    - layout: "bullets"
+      heading: "Get Rid of Old Medicines"
+      points: ["Drug take-back sites", "Pharmacy disposal kiosks", "Check the label", "Remove personal information"]
+      footage_query: "medicine disposal box"
+      narration: >-
+        Old and unused medicines can be dangerous if someone takes them by mistake. Many pharmacies and police stations have
+        drug take back boxes, and there are national take back days. If none is available, check the FDA's guidance on how to
+        safely throw medicines away. Scratch out your personal information on bottles before you toss them.
+    - layout: "bullets"
+      heading: "In an Emergency"
+      points: ["Hand the list to responders", "Tell them recent changes", "Mention blood thinners", "Mention allergies"]
+      footage_query: "paramedic ambulance"
+      narration: >-
+        In an emergency, hand your list to the paramedics or emergency staff. Point out any recent changes. Mention if you
+        take blood thinners, insulin, or medicines for heart problems or seizures, since these matter right away. Mention your
+        allergies. If you cannot speak, the list on your phone or in your wallet speaks for you.
+    - layout: "bullets"
+      heading: "Your To-Do Today"
+      points: ["Gather every medicine", "Write the list", "Make copies", "Set an update reminder"]
+      footage_query: "checklist clipboard pen"
+      narration: >-
+        Here is your to do list for today. Gather every medicine, cream, inhaler and supplement in your home. Write your list,
+        or fill in a free form. Make copies for your wallet, your fridge and a family member, and snap a photo for your phone.
+        Then set a reminder to review it every three months and after every visit.
+    - layout: "bullets"
+      heading: "Quick Recap"
+      points: ["List everything you take", "Include supplements and allergies", "Update after every change", "Bring it everywhere"]
+      footage_query: "notebook checklist pen"
+      narration: >-
+        Let us recap. An up to date medication list prevents dangerous mistakes. Include every prescription, over the counter
+        medicine, vitamin and supplement, plus allergies and key health information. Keep copies in your wallet, phone and
+        fridge. Update it after every change, and bring it to every visit. It takes ten minutes, and it could save your life.
+    - layout: "outro"
+      heading: "Remember"
+      points: ["Write it down today", "Keep it current", "Bring it everywhere"]
+      footage_query: "family kitchen table smiling"
+      narration: >-
+        Remember: write your list today, keep it current, and bring it everywhere. Share this with a parent or grandparent who
+        takes several medicines. This video is for education only, not medical advice. Like and subscribe to Health Support
+        Studio for a new health video every day.
+  short_title: "The list that could save you in the ER #Shorts"
+  short_caption: >-
+    Could you name every medicine you take in an emergency? Keep this list. Educational only, not medical advice.
+    #MedicationSafety #PatientSafety #HealthTips #HealthEducation
+  short_scenes:
+    - layout: "title"
+      heading: "Could You Name Every Pill?"
+      points: ["In an emergency"]
+      footage_query: "pill bottles kitchen table"
+      narration: >-
+        If you ended up in the ER tonight, could you name every medicine you take, and the dose? Most people cannot.
+    - layout: "bullets"
+      heading: "Keep a List"
+      points: ["Every medicine and dose", "Supplements and allergies", "Wallet, phone and fridge"]
+      footage_query: "person writing notebook"
+      narration: >-
+        So keep a list. Write every prescription with its dose and why you take it, plus over the counter medicines, vitamins,
+        supplements and allergies. Keep a copy in your wallet, a photo on your phone, and one on the fridge. Update it after
+        every change.
+    - layout: "outro"
+      heading: "Full Video"
+      points: ["On YouTube"]
+      footage_query: "family kitchen table smiling"
+      narration: >-
+        Learn exactly what to put on it in our full video, on the Health Support Studio YouTube channel.
