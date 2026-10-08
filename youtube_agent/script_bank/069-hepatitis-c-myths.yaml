@@ -1,0 +1,300 @@
+queue_topic: "Hepatitis C: myths vs facts about testing and cure"
+style: "Myth vs Fact"
+sources:
+  - "CDC, Hepatitis C Basics: https://www.cdc.gov/hepatitis-c/about/index.html"
+  - "CDC, Testing for Hepatitis C: https://www.cdc.gov/hepatitis-c/testing/index.html"
+  - "MedlinePlus, Hepatitis C: https://medlineplus.gov/hepatitisc.html"
+plan:
+  topic: "Hepatitis C: myths vs facts about testing and cure"
+  title: "Hepatitis C Myths: The Silent Virus You Can Cure"
+  description: |-
+    Millions of Americans have hepatitis C, and about half don't know it. We bust seven common hepatitis C myths and explain how it spreads, who should get tested, and the 8 to 12 week treatment that cures more than 95 percent of people.
+
+    In this video:
+    • What hepatitis C is and why it is silent
+    • How it spreads, and how it does not
+    • Who should get tested, and the blood tests
+    • 7 hepatitis C myths busted
+    • Modern cure, pregnancy and protecting your liver
+
+    #HepatitisC #LiverHealth #GetTested #HealthEducation #PublicHealth
+  tags: ["hepatitis c", "hepatitis c test", "hepatitis c cure", "hep c symptoms", "liver health", "hepatitis c treatment", "how hepatitis c spreads", "liver disease", "hepatitis screening", "myth vs fact", "health education"]
+  thumbnail_text: "A VIRUS YOU CAN CURE"
+  thumbnail_highlight: "CURE"
+  thumbnail_photo_query: "blood test tube lab"
+  playlist: "Infections & Vaccines"
+  scenes:
+    - layout: "title"
+      heading: "Hepatitis C Myths"
+      points: ["A silent virus you can cure"]
+      footage_query: "blood test tube lab"
+      narration: >-
+        Millions of Americans have hepatitis C, and many of them have no idea. The virus can quietly damage the liver for
+        decades, leading to scarring, liver failure, or liver cancer. But here is the good news: today, hepatitis C can be
+        cured with a few months of pills. Today we bust the most common hepatitis C myths, and explain who should get tested.
+    - layout: "big_number"
+      heading: "A Hidden Infection"
+      points: ["Millions", "Americans living with hepatitis C"]
+      footage_query: "group of people walking city"
+      narration: >-
+        The CDC estimates that millions of people in the United States are living with hepatitis C, and about half do not know
+        they have it. Hepatitis C is one of the leading causes of liver cancer and liver transplants. Many people who have it
+        were infected years or decades ago, and feel completely fine.
+    - layout: "bullets"
+      heading: "What Is Hepatitis C?"
+      points: ["A virus that infects the liver", "Causes inflammation", "Often becomes long-term", "Can scar the liver"]
+      footage_query: "medical illustration liver"
+      narration: >-
+        Hepatitis C is a liver infection caused by the hepatitis C virus. Hepatitis means inflammation of the liver. For most
+        people who get infected, the virus stays in the body and becomes a long term, or chronic, infection. Over many years,
+        it can cause scarring of the liver, called cirrhosis, liver failure, and liver cancer.
+    - layout: "myth_fact"
+      heading: "You Would Feel Sick"
+      points: ["Hepatitis C causes clear symptoms", "Most people feel fine"]
+      footage_query: "man smiling outdoors"
+      narration: >-
+        Myth one: if I had hepatitis C, I would feel sick. Fact: most people with hepatitis C have no symptoms for years, even
+        decades, while the virus slowly damages the liver. By the time symptoms appear, there may already be serious liver
+        damage. The only way to know is a simple blood test.
+    - layout: "warning"
+      heading: "Possible Symptoms"
+      points: ["Tiredness", "Yellow skin or eyes", "Dark urine, pale stool", "Belly pain or swelling"]
+      footage_query: "woman tired holding head"
+      narration: >-
+        When symptoms do appear, they may include tiredness, poor appetite, nausea, belly pain, dark urine, pale or clay
+        colored stool, joint pain, and yellowing of the skin or eyes, called jaundice. With advanced liver damage, people may
+        have swelling in the belly or legs, easy bruising, confusion, or vomiting blood. These need medical care right away.
+    - layout: "bullets"
+      heading: "Baby Boomers and Hep C"
+      points: ["Born 1945 to 1965", "Higher rates of infection", "Many infected long ago", "Get tested if never tested"]
+      footage_query: "older adults walking park"
+      narration: >-
+        Adults born between 1945 and 1965, the baby boomers, have higher rates of hepatitis C than other age groups. Many were
+        infected decades ago, before blood screening began and before the virus was even discovered. If you are in this group
+        and have never been tested, now is the time. Many boomers who test positive are cured within months.
+    - layout: "bullets"
+      heading: "What Happens Without Treatment"
+      points: ["Cirrhosis over 20 to 30 years", "Liver failure", "Liver cancer", "Other organ problems"]
+      footage_query: "medical illustration liver"
+      narration: >-
+        Without treatment, many people with long term hepatitis C slowly develop liver scarring over twenty to thirty years.
+        Some develop cirrhosis, which can lead to liver failure, bleeding, confusion, and fluid in the belly. Hepatitis C also
+        raises the risk of liver cancer. It can affect other organs too, including the kidneys, skin, and blood. Treatment
+        prevents most of this.
+    - layout: "bullets"
+      heading: "How It Spreads"
+      points: ["Contact with infected blood", "Sharing needles or drug equipment", "Before 1992: blood transfusions", "Mother to baby at birth"]
+      footage_query: "syringe close up"
+      narration: >-
+        How does hepatitis C spread? Through contact with blood from an infected person. Today, most new infections come from
+        sharing needles, syringes, or other equipment to inject drugs. Before 1992, before blood was screened, some people got
+        it through blood transfusions or organ transplants. It can also pass from a mother to her baby during birth.
+    - layout: "bullets"
+      heading: "Less Common Ways"
+      points: ["Unsterile tattoos or piercings", "Sharing razors or toothbrushes", "Needle-stick injuries", "Sometimes through sex"]
+      footage_query: "tattoo artist working"
+      narration: >-
+        Less common ways include tattoos or piercings done with unsterile equipment, sharing personal items that may have
+        blood on them, like razors, nail clippers, or toothbrushes, and needle stick injuries in health care. Sexual spread is
+        possible but less common, more likely with multiple partners, HIV, or sex that may involve blood.
+    - layout: "myth_fact"
+      heading: "Casual Contact Spreads It"
+      points: ["You can catch it from hugs", "Not spread by casual contact"]
+      footage_query: "family hugging"
+      narration: >-
+        Myth two: you can catch hepatitis C from hugging, kissing, coughing, or sharing food. Fact: hepatitis C is not spread
+        by casual contact. It is not spread by hugging, kissing, holding hands, coughing, sneezing, sharing eating utensils or
+        drinking glasses, or through food or water. It is not spread by breastfeeding, unless the nipples are cracked and
+        bleeding.
+    - layout: "myth_fact"
+      heading: "Only Drug Users Get It"
+      points: ["Only people who inject drugs", "Anyone can have it"]
+      footage_query: "older couple walking park"
+      narration: >-
+        Myth three: only people who inject drugs get hepatitis C. Fact: anyone can have hepatitis C. Many people were infected
+        decades ago through blood transfusions, medical procedures, or a single exposure they no longer remember. Many people
+        born between 1945 and 1965 have it. That is why the CDC recommends testing for all adults, without judgment.
+    - layout: "bullets"
+      heading: "Who Should Get Tested?"
+      points: ["All adults 18 and older, once", "Every pregnancy", "People with ongoing risk, regularly", "Anyone who asks"]
+      footage_query: "patient talking doctor"
+      narration: >-
+        Who should get tested? The CDC recommends a hepatitis C test at least once for all adults eighteen and older. Pregnant
+        women should be tested during every pregnancy. People with ongoing risk, like those who inject drugs, should be tested
+        regularly. And anyone who wants a test should be able to get one. Ask for it at your next checkup.
+    - layout: "bullets"
+      heading: "The Blood Test"
+      points: ["Antibody test first", "Shows past or current infection", "RNA test confirms", "Simple blood draw"]
+      footage_query: "blood test tube lab"
+      narration: >-
+        How does testing work? It starts with a hepatitis C antibody test, which shows whether you have ever been infected. If
+        it is positive, a second test, called an RNA test, checks whether the virus is still in your blood. Some people clear
+        the virus on their own, so a positive antibody test does not always mean current infection. Many labs do both tests
+        from one sample.
+    - layout: "myth_fact"
+      heading: "It Cannot Be Cured"
+      points: ["Hepatitis C is lifelong", "It can be cured"]
+      footage_query: "pharmacist giving medicine"
+      narration: >-
+        Myth four: hepatitis C is a lifelong disease with no cure. Fact: today's medicines can cure more than ninety five
+        percent of people with hepatitis C. Treatment is usually one to three pills a day for eight to twelve weeks, with few
+        side effects. The old treatments with weekly shots and harsh side effects are a thing of the past.
+    - layout: "bullets"
+      heading: "Modern Treatment"
+      points: ["Pills for 8 to 12 weeks", "Few side effects", "Cure rate over 95 percent", "Works for most types"]
+      footage_query: "pill bottle close up"
+      narration: >-
+        Modern hepatitis C medicines are called direct acting antivirals. They block the virus from making copies of itself.
+        Most people take them for eight to twelve weeks. Side effects are usually mild, like headache or tiredness. Cure means
+        the virus is no longer found in the blood twelve weeks after finishing treatment. Many primary care doctors can treat
+        it now.
+    - layout: "myth_fact"
+      heading: "Treatment Is Unaffordable"
+      points: ["Only the rich get treated", "Most insurance covers it"]
+      footage_query: "insurance card hand"
+      narration: >-
+        Myth five: hepatitis C treatment is too expensive for regular people. Fact: the medicines used to cost a lot, but
+        prices have come down, and most insurance plans, Medicare, and Medicaid in all states now cover treatment. Many
+        Medicaid programs have removed old restrictions. Drug companies also have patient assistance programs. Ask your doctor
+        or pharmacist for help.
+    - layout: "myth_fact"
+      heading: "Wait Until Liver Damage"
+      points: ["Only treat when the liver is damaged", "Treat everyone, early"]
+      footage_query: "doctor talking patient office"
+      narration: >-
+        Myth six: you should wait until your liver is damaged before treating hepatitis C. Fact: experts now recommend
+        treating almost everyone with hepatitis C, as early as possible. Early treatment prevents liver damage, lowers the
+        risk of liver cancer, and stops the virus from spreading to others. There is no need to wait.
+    - layout: "bullets"
+      heading: "Before Treatment"
+      points: ["Check liver health", "Test for hepatitis B and HIV", "Review all medicines", "Ask about alcohol"]
+      footage_query: "doctor reading lab results"
+      narration: >-
+        Before starting treatment, your doctor will check how healthy your liver is, often with blood tests and sometimes a
+        special ultrasound. They will test for hepatitis B and HIV, review all your medicines and supplements for
+        interactions, and ask about alcohol use. Some acid reducing medicines can interfere with hepatitis C pills, so tell
+        your doctor everything you take.
+    - layout: "bullets"
+      heading: "During Treatment"
+      points: ["Take every dose", "Same time each day", "Do not stop early", "Report side effects"]
+      footage_query: "pill organizer close up"
+      narration: >-
+        During treatment, take every dose, at the same time every day. Use a pill box or phone reminder. Do not stop early,
+        even if you feel fine. Tell your doctor about any side effects or new medicines. After treatment, you will have a
+        blood test to confirm you are cured. Most people are.
+    - layout: "myth_fact"
+      heading: "Once Cured, Always Safe"
+      points: ["You cannot get it again", "You can be reinfected"]
+      footage_query: "syringe close up"
+      narration: >-
+        Myth seven: once you are cured of hepatitis C, you can never get it again. Fact: being cured does not make you immune.
+        You can get infected again if you are exposed to the virus. People with ongoing risk should keep getting tested, use
+        new, sterile needles and equipment every time, and seek treatment again if they get reinfected.
+    - layout: "bullets"
+      heading: "No Vaccine Yet"
+      points: ["No hepatitis C vaccine", "Vaccines exist for A and B", "Get hepatitis A and B shots", "Protects your liver"]
+      footage_query: "vaccine syringe arm"
+      narration: >-
+        Is there a vaccine for hepatitis C? Not yet. But there are vaccines for hepatitis A and hepatitis B, other viruses
+        that infect the liver. People with hepatitis C should get vaccinated against hepatitis A and B, if they are not
+        already immune, to protect their liver. Hepatitis B vaccine is now recommended for all adults up to fifty nine, and
+        many older adults.
+    - layout: "bullets"
+      heading: "Pregnancy and Babies"
+      points: ["Test in every pregnancy", "Can pass to baby at birth", "Babies can be tested early", "Treat mother after birth"]
+      footage_query: "pregnant woman talking doctor"
+      narration: >-
+        Hepatitis C can pass from a mother to her baby during pregnancy or birth, in about six out of a hundred cases. That is
+        why every pregnant woman should be tested. Babies born to mothers with hepatitis C should be tested starting at two to
+        six months of age. Breastfeeding is usually safe. The mother can be treated after pregnancy.
+    - layout: "bullets"
+      heading: "Protect Your Liver"
+      points: ["Limit or avoid alcohol", "Healthy weight", "Ask before supplements", "Get recommended vaccines"]
+      footage_query: "healthy salad bowl table"
+      narration: >-
+        Whether you have hepatitis C or not, protect your liver. Alcohol and hepatitis C together greatly speed up liver
+        damage, so people with hepatitis C should avoid alcohol. Keep a healthy weight, since fatty liver adds to the damage.
+        Ask your doctor before taking supplements or herbal products, some of which can harm the liver. Get vaccinated for
+        hepatitis A and B.
+    - layout: "bullets"
+      heading: "After Cure With Cirrhosis"
+      points: ["Liver checks continue", "Ultrasound every 6 months", "Watch for liver cancer", "Keep follow-up visits"]
+      footage_query: "ultrasound scan"
+      narration: >-
+        If you had cirrhosis, or serious scarring, before being cured, you still need regular follow up, because the risk of
+        liver cancer remains. This usually means a liver ultrasound, and sometimes a blood test, every six months. Keep these
+        appointments, since liver cancer found early is much easier to treat.
+    - layout: "bullets"
+      heading: "Prevent Spread"
+      points: ["Never share needles or equipment", "Do not share razors or toothbrushes", "Cover cuts", "Licensed tattoo shops only"]
+      footage_query: "tattoo artist working"
+      narration: >-
+        How can you prevent spreading or catching hepatitis C? Never share needles, syringes, or any drug equipment. Do not
+        share razors, nail clippers, or toothbrushes. Cover cuts and sores. Clean up blood spills with bleach. Get tattoos and
+        piercings only at licensed shops that use new, sterile needles. Many communities offer free syringe services and
+        testing.
+    - layout: "bullets"
+      heading: "Free and Low-Cost Testing"
+      points: ["Your doctor's office", "Health departments", "Community health centers", "Some pharmacies"]
+      footage_query: "pharmacist counter customer"
+      narration: >-
+        Where can you get tested? Ask your doctor at your next checkup. Many local health departments, community health
+        centers, and some pharmacies offer free or low cost hepatitis C testing. Rapid tests can give results in about twenty
+        minutes. Most insurance plans cover screening without a copay, as a preventive service.
+    - layout: "bullets"
+      heading: "Living With Hepatitis C"
+      points: ["You can live a normal life", "Tell your doctors", "Do not donate blood", "Talk openly with partners"]
+      footage_query: "friends talking cafe"
+      narration: >-
+        If you have hepatitis C, you can live a normal life: work, go to school, play sports, and be with family. Tell your
+        doctors and dentist. Do not donate blood, organs, or semen until you are cured. Talk openly with sexual partners about
+        safer sex. And start treatment, so you can be cured and stop worrying about it.
+    - layout: "bullets"
+      heading: "Questions for Your Doctor"
+      points: ["Have I been tested?", "Do I need the RNA test?", "How is my liver?", "When can I start treatment?"]
+      footage_query: "patient talking doctor"
+      narration: >-
+        At your next visit, ask: have I ever been tested for hepatitis C? If not, can I be tested today? If my antibody test
+        was positive, do I need an RNA test? How healthy is my liver? Can you treat me, or should I see a specialist? And am I
+        protected against hepatitis A and B?
+    - layout: "bullets"
+      heading: "Quick Recap"
+      points: ["Often silent for years", "Test all adults at least once", "Cure rate over 95 percent", "Not spread by casual contact"]
+      footage_query: "notebook checklist pen"
+      narration: >-
+        Let us recap. Hepatitis C is a liver infection that is often silent for years. All adults should be tested at least
+        once, and pregnant women during every pregnancy. It is spread by blood, not by hugging or sharing food. Today, a few
+        months of pills cure more than ninety five percent of people. And early treatment protects your liver.
+    - layout: "outro"
+      heading: "Remember"
+      points: ["Get tested once", "It can be cured", "Protect your liver"]
+      footage_query: "family walking outdoors"
+      narration: >-
+        Remember: every adult should get a hepatitis C test at least once, it can be cured, and early treatment protects your
+        liver. Share this with someone who has never been tested. This video is for education only, not medical advice. Like
+        and subscribe to Health Support Studio for a new health video every day.
+  short_title: "Hepatitis C: a silent virus you can cure #Shorts"
+  short_caption: >-
+    Every adult should be tested for hepatitis C at least once. Educational only, not medical advice. #HepatitisC
+    #LiverHealth #GetTested #HealthEducation
+  short_scenes:
+    - layout: "title"
+      heading: "A Virus You Can Cure"
+      points: ["Hepatitis C"]
+      footage_query: "blood test tube lab"
+      narration: >-
+        Millions of Americans have hepatitis C, and about half do not know it.
+    - layout: "bullets"
+      heading: "Know This"
+      points: ["Often no symptoms for years", "All adults: test once", "Over 95 percent cured"]
+      footage_query: "pharmacist giving medicine"
+      narration: >-
+        Hepatitis C can quietly damage your liver for decades. The CDC recommends that every adult get tested at least once.
+        And today, eight to twelve weeks of pills cure more than ninety five percent of people. Ask for the test at your next
+        checkup.
+    - layout: "outro"
+      heading: "Full Video"
+      points: ["On YouTube"]
+      footage_query: "family walking outdoors"
+      narration: >-
+        Learn the hepatitis C myths in our full video, on the Health Support Studio YouTube channel.
