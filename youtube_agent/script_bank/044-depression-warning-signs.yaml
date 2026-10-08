@@ -1,0 +1,300 @@
+queue_topic: "Depression: warning signs and how to get help"
+style: "Warning Signs"
+sources:
+  - "NIH NIMH, Depression: https://www.nimh.nih.gov/health/topics/depression"
+  - "MedlinePlus, Depression: https://medlineplus.gov/depression.html"
+  - "988 Suicide and Crisis Lifeline: https://988lifeline.org/"
+plan:
+  topic: "Depression: warning signs and how to get help"
+  title: "Signs of Depression Most People Miss"
+  description: |-
+    Depression is more than feeling sad, and it is very treatable. Learn the warning signs, how depression can look different in men, older adults, teens and new mothers, and how to get help. If you're in crisis, call or text 988.
+
+    In this video:
+    • What depression is and what causes it
+    • 6 warning signs, and when it's a crisis
+    • How it looks in men, older adults, teens and new mothers
+    • Myths that stop people from getting help
+    • Therapy, medicine, self-care and where to find help
+
+    #Depression #MentalHealth #988 #MentalHealthAwareness #HealthEducation
+  tags: ["depression", "signs of depression", "depression symptoms", "mental health", "depression in men", "postpartum depression", "988 lifeline", "therapy", "antidepressants", "mental health awareness", "health education"]
+  thumbnail_text: "SIGNS OF DEPRESSION"
+  thumbnail_highlight: "DEPRESSION"
+  thumbnail_photo_query: "man sad sitting window"
+  playlist: "Healthy Habits & Prevention"
+  scenes:
+    - layout: "title"
+      heading: "Signs of Depression"
+      points: ["More than feeling sad"]
+      footage_query: "man sad sitting window"
+      narration: >-
+        Everyone feels sad or down sometimes. But depression is different. It is a real medical condition that can drain your
+        energy, change your sleep and appetite, and make it hard to get through the day. And it is very treatable. Today you
+        will learn the warning signs of depression, how it can look different in men, older adults and teens, and how to get
+        help.
+    - layout: "big_number"
+      heading: "Depression Is Common"
+      points: ["About 1 in 6", "Adults will have depression in their life"]
+      footage_query: "group of people walking city"
+      narration: >-
+        Depression is one of the most common health conditions in the United States. About one in six adults will have
+        depression at some point in their life, and millions have it in any given year. It can affect anyone, of any age,
+        background or income. Yet many people never get treatment, often because they do not recognize the signs, or feel
+        ashamed to ask for help.
+    - layout: "bullets"
+      heading: "What Is Depression?"
+      points: ["A real medical condition", "Affects mood, body and thinking", "Lasts at least 2 weeks", "Not a weakness"]
+      footage_query: "doctor talking patient office"
+      narration: >-
+        Depression, also called major depression, is a common and serious medical condition. It affects how you feel, think
+        and handle daily activities, like sleeping, eating and working. Doctors diagnose it when symptoms last most of the
+        day, nearly every day, for at least two weeks. It is not a sign of weakness or something you can simply snap out of.
+    - layout: "bullets"
+      heading: "What Causes It?"
+      points: ["Brain chemistry", "Genes and family history", "Stressful life events", "Medical conditions"]
+      footage_query: "medical illustration brain"
+      narration: >-
+        There is no single cause of depression. It usually comes from a mix of factors: brain chemistry, genes and family
+        history, stressful or painful life events, like losing a loved one, a divorce, money problems or trauma, and medical
+        conditions such as heart disease, diabetes, chronic pain, or thyroid problems. Some medicines and alcohol or drug use
+        can also play a role.
+    - layout: "warning"
+      heading: "Sign 1: Low Mood"
+      points: ["Sad, empty or hopeless", "Most of the day", "Nearly every day", "Crying more often"]
+      footage_query: "woman sad crying"
+      narration: >-
+        The first warning sign is a low mood that does not lift. You may feel sad, empty, or hopeless most of the day, nearly
+        every day. Some people cry more often, or feel like crying but cannot. Others mostly feel numb. A bad day or a bad
+        week is normal. A low mood that lasts two weeks or more is a reason to talk to someone.
+    - layout: "warning"
+      heading: "Sign 2: Loss of Interest"
+      points: ["No joy in hobbies", "Pulling away from friends", "Less interest in sex", "Everything feels like effort"]
+      footage_query: "man alone couch"
+      narration: >-
+        The second key sign is losing interest or pleasure in things you used to enjoy, like hobbies, sports, time with
+        friends and family, or intimacy. Everything starts to feel like an effort. Many people pull away from others and stop
+        returning calls. Friends and family may notice this before the person does.
+    - layout: "warning"
+      heading: "Sign 3: Sleep and Energy"
+      points: ["Sleeping too much or too little", "Waking up very early", "Tired all the time", "Moving or talking slowly"]
+      footage_query: "woman lying awake bed"
+      narration: >-
+        Depression often changes sleep and energy. Some people have trouble falling or staying asleep, or wake up very early
+        and cannot get back to sleep. Others sleep much more than usual and still feel exhausted. You may feel tired all the
+        time, even after rest. Some people move, think or talk more slowly. Others feel restless and cannot sit still.
+    - layout: "warning"
+      heading: "Sign 4: Appetite and Weight"
+      points: ["Eating much less or more", "Weight loss or gain", "Not caring about food", "Comfort eating"]
+      footage_query: "woman not eating plate"
+      narration: >-
+        Appetite often changes too. Some people lose interest in food and lose weight without trying. Others eat more,
+        especially sweets and comfort foods, and gain weight. A change of more than about five percent of body weight in a
+        month, without trying, is a sign worth mentioning to your doctor.
+    - layout: "warning"
+      heading: "Sign 5: Thinking and Feelings"
+      points: ["Trouble concentrating", "Feeling worthless or guilty", "Hard to make decisions", "Very self-critical"]
+      footage_query: "man stressed at desk"
+      narration: >-
+        Depression affects thinking. It can be hard to concentrate, remember things, or make even small decisions. Many people
+        feel worthless, or feel guilty about things that are not their fault. Negative thoughts can feel very real and very
+        convincing. Work or school performance may slip, which can add to the feeling of failure.
+    - layout: "warning"
+      heading: "Sign 6: Body Symptoms"
+      points: ["Headaches", "Aches and pains", "Stomach problems", "No clear physical cause"]
+      footage_query: "woman headache holding head"
+      narration: >-
+        Depression can also cause physical symptoms. Headaches, back pain, muscle aches, stomach problems, and digestive
+        issues that do not have a clear physical cause and do not get better with treatment. Some people visit the doctor many
+        times for these symptoms before depression is recognized. It is worth mentioning your mood, even at a regular checkup.
+    - layout: "warning"
+      heading: "Thoughts of Death or Suicide"
+      points: ["Thinking about dying", "Feeling like a burden", "Giving things away", "Call or text 988"]
+      footage_query: "person calling phone"
+      narration: >-
+        The most serious sign is thinking about death or suicide, feeling like others would be better off without you, or
+        making a plan. If you or someone you know is having these thoughts, reach out right away. In the United States, you
+        can call or text nine eight eight, the Suicide and Crisis Lifeline, any time, day or night. It is free and
+        confidential. If there is immediate danger, call 911.
+    - layout: "bullets"
+      heading: "How to Help Someone in Crisis"
+      points: ["Ask directly about suicide", "Listen without judging", "Stay with them", "Connect them to 988"]
+      footage_query: "friends talking cafe"
+      narration: >-
+        If you are worried about someone, it is okay to ask directly: are you thinking about suicide? Asking does not put the
+        idea in their head, and it often brings relief. Listen without judging. Do not leave them alone if they are in danger.
+        Help them call or text nine eight eight, and remove things they could use to hurt themselves, like firearms or extra
+        medicines.
+    - layout: "bullets"
+      heading: "Depression in Men"
+      points: ["Anger or irritability", "Risky behavior", "More alcohol or drug use", "Working all the time"]
+      footage_query: "man angry frustrated"
+      narration: >-
+        Depression can look different in men. Instead of sadness, men may show anger, irritability, or aggression. They may
+        drink more, use drugs, take dangerous risks, or throw themselves into work. They may complain of tiredness, headaches
+        or stomach problems. Men are less likely to seek help, and men die by suicide at much higher rates. Real strength is
+        asking for help.
+    - layout: "bullets"
+      heading: "Depression in Older Adults"
+      points: ["Not a normal part of aging", "Often shows as tiredness or pain", "Can look like memory problems", "Linked to illness and loss"]
+      footage_query: "elderly man sad sitting"
+      narration: >-
+        Depression is not a normal part of aging. In older adults, it often shows up as tiredness, aches, poor sleep, loss of
+        appetite, or memory problems, rather than sadness. It can be linked to illness, loss of loved ones, loneliness, or
+        medicines. It is often missed. Treatment works just as well in older adults, and can improve health and quality of
+        life.
+    - layout: "bullets"
+      heading: "Depression in Teens"
+      points: ["Irritable or angry", "Grades dropping", "Pulling away from family", "Social media struggles"]
+      footage_query: "teenager sad bedroom"
+      narration: >-
+        Teens with depression may seem irritable, angry or very sensitive, rather than sad. They may pull away from family,
+        lose interest in activities, have falling grades, sleep a lot, or complain of aches. Some use alcohol or drugs, or
+        hurt themselves. If you are worried about a teen, talk with them calmly and contact their doctor. Do not wait for it
+        to pass.
+    - layout: "bullets"
+      heading: "After Having a Baby"
+      points: ["Baby blues: first 2 weeks", "Postpartum depression lasts longer", "Can affect bonding", "Very treatable"]
+      footage_query: "mother holding newborn sad"
+      narration: >-
+        Many new mothers have the baby blues, with mood swings and crying in the first two weeks after birth. Postpartum
+        depression is stronger and lasts longer. Signs include deep sadness, anxiety, feeling disconnected from the baby, or
+        thoughts of harming yourself or the baby. It can start during pregnancy or up to a year after birth. Partners can get
+        depression too. It is very treatable.
+    - layout: "bullets"
+      heading: "Anxiety Often Comes Too"
+      points: ["Constant worry", "Feeling on edge", "Panic attacks", "Treated together"]
+      footage_query: "woman anxious hands"
+      narration: >-
+        Depression and anxiety often happen together. Many people with depression also feel constant worry, restlessness, a
+        racing heart, or panic attacks. Each one can make the other worse. The good news is that many of the same treatments,
+        like talk therapy and certain medicines, help both. Tell your doctor about all your symptoms, not just the ones that
+        feel most important.
+    - layout: "myth_fact"
+      heading: "Just Snap Out of It"
+      points: ["Depression is a choice", "It is a medical condition"]
+      footage_query: "woman sad crying"
+      narration: >-
+        Myth: people with depression should just try harder, think positive, or snap out of it. Fact: depression is a medical
+        condition involving changes in the brain and body, not a choice or a character flaw. You would not tell someone with
+        diabetes to just think their blood sugar down. People with depression need support and treatment, not blame.
+    - layout: "myth_fact"
+      heading: "Treatment Does Not Work"
+      points: ["Nothing will help me", "Most people improve with treatment"]
+      footage_query: "man smiling outdoors"
+      narration: >-
+        Myth: treatment does not work, so why bother? Fact: most people with depression get better with treatment, even when
+        it is severe. It may take time to find the right treatment or combination, so do not give up if the first one does not
+        work. Feeling hopeless is a symptom of depression, not a fact about your future.
+    - layout: "bullets"
+      heading: "How Depression Is Diagnosed"
+      points: ["Talk with your doctor", "Questions about symptoms", "Simple questionnaire", "Check for other causes"]
+      footage_query: "patient talking doctor"
+      narration: >-
+        How is depression diagnosed? Start with your regular doctor. They will ask about your symptoms, how long they have
+        lasted, and how they affect your life, often using a short questionnaire. They may do blood tests to check for other
+        causes, like thyroid problems or low vitamin B12. Many primary care doctors can treat depression, or refer you to a
+        specialist.
+    - layout: "bullets"
+      heading: "Talk Therapy"
+      points: ["Cognitive behavioral therapy", "Interpersonal therapy", "In person or online", "Works well for many"]
+      footage_query: "woman talking therapist"
+      narration: >-
+        Talk therapy, also called psychotherapy, is an effective treatment for depression. Cognitive behavioral therapy helps
+        you notice and change negative thought patterns and behaviors. Interpersonal therapy focuses on relationships and life
+        changes. Therapy can be done in person, by video, or in groups. For mild to moderate depression, therapy alone often
+        works well.
+    - layout: "bullets"
+      heading: "Medicines"
+      points: ["Antidepressants", "Take a few weeks to work", "Side effects often ease", "Do not stop suddenly"]
+      footage_query: "pill bottle close up"
+      narration: >-
+        Antidepressant medicines can help, especially for moderate to severe depression. They usually take two to six weeks to
+        start working, and side effects often ease over time. If one does not help, another may. Do not stop them suddenly,
+        which can cause withdrawal symptoms. Young people should be watched closely when starting them. Many people do best
+        with both therapy and medicine.
+    - layout: "bullets"
+      heading: "Other Treatments"
+      points: ["Brain stimulation therapies", "For hard-to-treat depression", "Ask a specialist", "Many options exist"]
+      footage_query: "doctor reading brain scan"
+      narration: >-
+        For depression that does not get better with therapy and medicines, other treatments can help. These include
+        transcranial magnetic stimulation, which uses magnetic pulses, electroconvulsive therapy, which is safe and very
+        effective for severe depression, and newer medicines. A psychiatrist can explain the options. There is almost always
+        another step to try.
+    - layout: "bullets"
+      heading: "Self-Care That Helps"
+      points: ["Move your body daily", "Keep a regular sleep schedule", "Spend time with others", "Limit alcohol"]
+      footage_query: "woman walking park"
+      narration: >-
+        Self care cannot replace treatment, but it helps. Regular physical activity, even a daily walk, can improve mood. Keep
+        a regular sleep schedule. Eat regular, balanced meals. Spend time with people you trust, even when you do not feel
+        like it. Get some sunlight. Limit alcohol and avoid drugs, which make depression worse. Break big tasks into small
+        steps.
+    - layout: "myth_fact"
+      heading: "Talking Makes It Worse"
+      points: ["Do not bring it up", "Talking helps people get help"]
+      footage_query: "family sitting home"
+      narration: >-
+        Myth: talking about depression or suicide makes it worse. Fact: talking openly helps people feel less alone and more
+        likely to get help. You do not need the perfect words. Saying, I have noticed you seem down lately, and I care about
+        you, can open the door. Then listen, and help them connect with a doctor or counselor.
+    - layout: "bullets"
+      heading: "Finding Help"
+      points: ["Your primary care doctor", "Your insurance plan", "Community health centers", "988 for crisis support"]
+      footage_query: "woman using laptop home"
+      narration: >-
+        Where can you find help? Start with your primary care doctor. Call the number on your insurance card for a list of
+        mental health providers. Community health centers often offer care on a sliding scale based on income. Many employers
+        have free, confidential employee assistance programs. And the nine eight eight Lifeline can connect you to support and
+        local resources.
+    - layout: "bullets"
+      heading: "Questions for Your Doctor"
+      points: ["Could this be depression?", "What are my options?", "How long until I feel better?", "What if it does not work?"]
+      footage_query: "patient talking doctor"
+      narration: >-
+        At your visit, you can say: I have not been feeling like myself for a few weeks. Then ask: could this be depression?
+        Could anything else be causing it? What are my treatment options? How long until I feel better? What side effects
+        should I watch for? And what should I do if I feel worse?
+    - layout: "bullets"
+      heading: "Quick Recap"
+      points: ["Low mood or no interest 2+ weeks", "Sleep, energy, appetite changes", "Treatment works", "988 in a crisis"]
+      footage_query: "notebook checklist pen"
+      narration: >-
+        Let us recap. Depression is a common, real medical condition. Warning signs include a low mood or loss of interest for
+        two weeks or more, changes in sleep, energy and appetite, trouble thinking, and feeling worthless. It can look
+        different in men, older adults and teens. Treatment works. And if you or someone you know is thinking about suicide,
+        call or text nine eight eight.
+    - layout: "outro"
+      heading: "Remember"
+      points: ["It is not weakness", "Help works", "Call or text 988"]
+      footage_query: "family hugging"
+      narration: >-
+        Remember: depression is not weakness, treatment works, and you can call or text nine eight eight any time. Share this
+        with someone who might need to hear it today. This video is for education only, not medical advice. Like and subscribe
+        to Health Support Studio for a new health video every day.
+  short_title: "Depression signs most people miss #Shorts"
+  short_caption: >-
+    Depression isn't always sadness. Know the signs. In crisis? Call or text 988. Educational only, not medical advice.
+    #Depression #MentalHealth #988 #HealthEducation
+  short_scenes:
+    - layout: "title"
+      heading: "Not Just Sadness"
+      points: ["Signs of depression"]
+      footage_query: "man sad sitting window"
+      narration: >-
+        Depression is more than feeling sad, and it can look different than you think.
+    - layout: "warning"
+      heading: "Watch for This"
+      points: ["No joy for 2+ weeks", "Sleep and appetite changes", "Anger or pulling away"]
+      footage_query: "man alone couch"
+      narration: >-
+        Losing interest in things you enjoy, changes in sleep and appetite, feeling worthless, or, especially in men, anger
+        and pulling away, for two weeks or more, can be depression. It is treatable. If you or someone you know is thinking
+        about suicide, call or text nine eight eight.
+    - layout: "outro"
+      heading: "Full Video"
+      points: ["On YouTube"]
+      footage_query: "family hugging"
+      narration: >-
+        Learn all the signs in our full video, on the Health Support Studio YouTube channel.
