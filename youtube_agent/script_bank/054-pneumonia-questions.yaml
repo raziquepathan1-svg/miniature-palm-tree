@@ -1,0 +1,289 @@
+queue_topic: "Pneumonia: symptoms, treatment and vaccines that prevent it"
+style: "Top Questions"
+sources:
+  - "CDC, About Pneumonia: https://www.cdc.gov/pneumonia/about/index.html"
+  - "NIH NHLBI, Pneumonia: https://www.nhlbi.nih.gov/health/pneumonia"
+  - "CDC, Pneumococcal Vaccine Recommendations: https://www.cdc.gov/pneumococcal/vaccines/index.html"
+plan:
+  topic: "Pneumonia: symptoms, treatment and vaccines that prevent it"
+  title: "Cold or Pneumonia? Signs Your Cough Is Serious"
+  description: |-
+    Pneumonia sends over a million Americans to the ER every year. We answer the top questions: symptoms in adults, older adults and children, when to go to the ER, how it is treated, how long recovery takes, and the vaccines that prevent it.
+
+    In this video:
+    • What pneumonia is and what causes it
+    • Symptoms, including in older adults and kids
+    • Cold, flu or pneumonia, and when to go to the ER
+    • Treatment, walking pneumonia and recovery
+    • Vaccines and everyday prevention
+
+    #Pneumonia #LungHealth #Vaccines #HealthyAging #HealthEducation
+  tags: ["pneumonia", "pneumonia symptoms", "walking pneumonia", "pneumonia in elderly", "pneumococcal vaccine", "lung infection", "aspiration pneumonia", "pneumonia recovery", "flu", "vaccines for adults", "health education"]
+  thumbnail_text: "COLD OR PNEUMONIA?"
+  thumbnail_highlight: "PNEUMONIA?"
+  thumbnail_photo_query: "elderly man coughing"
+  playlist: "Infections & Vaccines"
+  scenes:
+    - layout: "title"
+      heading: "Pneumonia Questions"
+      points: ["When a cough becomes serious"]
+      footage_query: "elderly man coughing"
+      narration: >-
+        A cold that will not go away. A cough with fever, chills, and getting short of breath. It could be pneumonia, a lung
+        infection that sends over a million Americans to the emergency room each year. Many people recover at home, but for
+        older adults and babies, it can be life threatening. Today we answer the top questions about pneumonia: signs, causes,
+        treatment, and the vaccines that prevent it.
+    - layout: "big_number"
+      heading: "How Serious Is It?"
+      points: ["Over 1 million", "US emergency visits for pneumonia yearly"]
+      footage_query: "hospital emergency entrance"
+      narration: >-
+        How serious is pneumonia? Every year in the United States, it leads to over a million emergency room visits, and tens
+        of thousands of deaths. It is one of the most common reasons for hospital stays in adults. Pneumonia is a leading
+        cause of death in children worldwide. Adults sixty five and older are at highest risk.
+    - layout: "bullets"
+      heading: "What Is Pneumonia?"
+      points: ["Infection in the lungs", "Air sacs fill with fluid or pus", "Harder to get oxygen", "One or both lungs"]
+      footage_query: "medical illustration lungs"
+      narration: >-
+        What is pneumonia? It is an infection in one or both lungs. The tiny air sacs, where oxygen passes into the blood,
+        become inflamed and fill with fluid or pus. This makes it harder to breathe and harder for oxygen to get into your
+        blood. Pneumonia can range from mild to life threatening.
+    - layout: "bullets"
+      heading: "What Causes It?"
+      points: ["Bacteria", "Viruses like flu, COVID, RSV", "Rarely fungi", "Breathing food or vomit into lungs"]
+      footage_query: "bacteria microscope close up"
+      narration: >-
+        What causes pneumonia? Many germs can. The most common bacterial cause in adults is pneumococcus. Viruses, like flu,
+        COVID, and RSV, are also common causes, especially in children and older adults. Fungi rarely cause it, usually in
+        people with weak immune systems. Aspiration pneumonia happens when food, drink, saliva or vomit is breathed into the
+        lungs.
+    - layout: "bullets"
+      heading: "Who Is at Higher Risk?"
+      points: ["Adults 65 and older", "Children under 2", "Chronic heart or lung disease", "Smokers"]
+      footage_query: "older adults walking park"
+      narration: >-
+        Who is at higher risk? Adults sixty five and older, and children under two. People with chronic conditions like
+        asthma, COPD, heart disease, diabetes, or kidney disease. People with weakened immune systems from cancer treatment,
+        HIV, or steroid medicines. Smokers. People who have trouble swallowing. And people who were recently in the hospital,
+        especially on a breathing machine.
+    - layout: "warning"
+      heading: "Common Symptoms"
+      points: ["Cough, often with mucus", "Fever, chills, sweating", "Shortness of breath", "Chest pain when breathing"]
+      footage_query: "woman coughing night"
+      narration: >-
+        What are the common symptoms? A cough, which may bring up yellow, green or even bloody mucus. Fever, sweating and
+        shaking chills. Shortness of breath, or breathing fast. Sharp chest pain that gets worse when you breathe deeply or
+        cough. Feeling very tired, loss of appetite, and sometimes nausea, vomiting or diarrhea.
+    - layout: "warning"
+      heading: "Older Adults May Look Different"
+      points: ["New confusion", "Lower than normal temperature", "Weakness or falls", "Not eating"]
+      footage_query: "elderly woman confused sitting"
+      narration: >-
+        Here is something many families do not know. Older adults with pneumonia may not have a high fever or a bad cough.
+        Instead, the first signs may be new confusion, a lower than normal body temperature, weakness, falls, or not eating.
+        If an older loved one suddenly seems not themselves, especially with any breathing changes, get them checked.
+    - layout: "warning"
+      heading: "Signs in Babies and Children"
+      points: ["Fast breathing", "Ribs pulling in with breaths", "Grunting, flaring nostrils", "Poor feeding, very sleepy"]
+      footage_query: "mother holding sick toddler"
+      narration: >-
+        In babies and young children, watch for fast breathing, the skin between the ribs pulling in with each breath,
+        grunting, flaring nostrils, wheezing, fever, poor feeding or drinking, fewer wet diapers, and being very sleepy or
+        fussy. Bluish lips or face, or pauses in breathing, need emergency care right away.
+    - layout: "warning"
+      heading: "When to Go to the ER"
+      points: ["Trouble breathing", "Bluish lips or fingertips", "Chest pain", "Confusion or very sleepy"]
+      footage_query: "person calling phone emergency"
+      narration: >-
+        When should you go to the ER or call 911? For trouble breathing or breathing very fast, bluish or gray lips or
+        fingertips, chest pain, new confusion, being hard to wake, a very high fever that will not come down, or coughing up a
+        lot of blood. These signs can mean the body is not getting enough oxygen, or that sepsis is starting.
+    - layout: "bullets"
+      heading: "Cold, Flu or Pneumonia?"
+      points: ["Cold: mild, gets better", "Flu: sudden fever and aches", "Pneumonia: worse, not better", "Second fever is a red flag"]
+      footage_query: "woman sneezing tissue"
+      narration: >-
+        How can you tell a cold or flu from pneumonia? A cold usually gets better within a week to ten days. The flu comes on
+        suddenly with fever and body aches. Pneumonia is more likely if symptoms get worse instead of better, if you get short
+        of breath, or if a fever comes back after you seemed to be improving. That second fever is a red flag.
+    - layout: "myth_fact"
+      heading: "Pneumonia Is Not Contagious"
+      points: ["You cannot catch pneumonia", "The germs can spread"]
+      footage_query: "person coughing crowd"
+      narration: >-
+        Myth: pneumonia is not contagious. Fact: pneumonia itself is a lung infection, but the germs that cause it, like flu,
+        COVID, RSV and some bacteria, spread through coughs, sneezes and touch. Not everyone who catches the germ will get
+        pneumonia, but it can spread. Cover coughs, wash hands, and stay home when sick.
+    - layout: "bullets"
+      heading: "Walking Pneumonia"
+      points: ["A milder form", "Often from Mycoplasma bacteria", "Common in kids and young adults", "Still needs a check"]
+      footage_query: "teenager coughing school"
+      narration: >-
+        What is walking pneumonia? It is a milder form, often caused by bacteria called Mycoplasma. People may feel well
+        enough to keep going to school or work, with a lingering dry cough, tiredness, low fever and sore throat. It is common
+        in school aged children and young adults. It can still need antibiotics, so see a doctor if a cough lasts.
+    - layout: "bullets"
+      heading: "How It Is Diagnosed"
+      points: ["Listening to your lungs", "Oxygen level check", "Chest x-ray", "Sometimes blood or mucus tests"]
+      footage_query: "doctor stethoscope chest"
+      narration: >-
+        How is pneumonia diagnosed? Your doctor will ask about symptoms and listen to your lungs with a stethoscope, for
+        crackling or bubbling sounds. A small clip on your finger checks your oxygen level. A chest x ray can confirm
+        pneumonia. Blood tests, mucus tests, or tests for flu, COVID and RSV can help find the cause.
+    - layout: "bullets"
+      heading: "How It Is Treated"
+      points: ["Antibiotics for bacteria", "Antivirals for some viruses", "Rest and fluids", "Hospital for severe cases"]
+      footage_query: "pharmacist giving medicine"
+      narration: >-
+        How is pneumonia treated? Bacterial pneumonia is treated with antibiotics. Pneumonia from flu or COVID may be treated
+        with antiviral medicines, best started early. Many people can recover at home with rest, fluids, and medicines for
+        fever. People who are very sick, or have low oxygen, may need hospital care, oxygen, and IV medicines.
+    - layout: "myth_fact"
+      heading: "All Pneumonia Needs Antibiotics"
+      points: ["Antibiotics cure every pneumonia", "They only work on bacteria"]
+      footage_query: "pill bottles table"
+      narration: >-
+        Myth: antibiotics cure every case of pneumonia. Fact: antibiotics only work against bacteria, not viruses. But since
+        it can be hard to tell the cause, doctors often prescribe antibiotics when bacterial pneumonia is possible. If you are
+        prescribed antibiotics, take every dose exactly as directed, even if you start to feel better.
+    - layout: "bullets"
+      heading: "Recovering at Home"
+      points: ["Rest", "Drink plenty of fluids", "Take medicines as directed", "Do not smoke"]
+      footage_query: "woman resting tea cup"
+      narration: >-
+        If you are recovering at home, get plenty of rest. Drink fluids to loosen mucus and stay hydrated. Take medicines
+        exactly as directed, and use fever reducers if your doctor says it is okay. Do not take cough medicine without asking,
+        since coughing helps clear the lungs. Avoid smoke. Use a humidifier if the air is dry.
+    - layout: "warning"
+      heading: "Call Your Doctor If"
+      points: ["Not better in 2 to 3 days", "Breathing gets harder", "Fever returns", "Cannot keep fluids down"]
+      footage_query: "woman talking phone desk"
+      narration: >-
+        Call your doctor if you are not starting to improve within two to three days of treatment, if breathing becomes
+        harder, if your fever returns or climbs, if you cannot keep fluids or medicines down, or if you feel more confused or
+        weak. These can be signs that you need a different medicine, or hospital care.
+    - layout: "bullets"
+      heading: "How Long Recovery Takes"
+      points: ["Fever improves in days", "Cough can last weeks", "Tiredness can last a month", "Older adults take longer"]
+      footage_query: "calendar notebook planning"
+      narration: >-
+        How long does recovery take? Most healthy people start feeling better within a few days of treatment. But the cough
+        can last for several weeks, and tiredness can last a month or more. Older adults and people with chronic illness may
+        take longer. Return to activity slowly. Your doctor may want a follow up chest x ray in some cases.
+    - layout: "bullets"
+      heading: "Pneumococcal Vaccine"
+      points: ["Adults 50 and older", "Some younger adults at risk", "Babies get it as routine", "Often one dose for adults"]
+      footage_query: "vaccine syringe arm"
+      narration: >-
+        The best way to prevent pneumonia is vaccination. The pneumococcal vaccine protects against the most common bacterial
+        cause. The CDC now recommends it for all adults fifty and older, and for younger adults with certain health conditions
+        or who smoke. Babies get a series as part of routine childhood shots. Many adults need only one dose. Ask which one
+        you need.
+    - layout: "bullets"
+      heading: "Other Vaccines That Help"
+      points: ["Yearly flu shot", "COVID vaccine", "RSV vaccine for some adults", "Whooping cough vaccine"]
+      footage_query: "pharmacist giving vaccine"
+      narration: >-
+        Other vaccines help prevent pneumonia too, because flu, COVID and RSV are common causes. Get a flu shot every year,
+        and stay up to date on COVID vaccines. An RSV vaccine is recommended for older adults and some people at higher risk,
+        and there is protection for babies too. Children should also get Hib and whooping cough vaccines.
+    - layout: "myth_fact"
+      heading: "Healthy People Do Not Need Vaccines"
+      points: ["Only sick people need them", "Healthy older adults are at risk"]
+      footage_query: "older couple walking park"
+      narration: >-
+        Myth: if I am healthy, I do not need a pneumonia vaccine. Fact: age alone raises the risk of serious pneumonia, even
+        in healthy people. That is why the pneumococcal vaccine is now recommended for all adults fifty and older. Being
+        vaccinated also protects people around you, like grandchildren and those who are sick.
+    - layout: "bullets"
+      heading: "Aspiration Pneumonia"
+      points: ["Food or drink enters the lungs", "After a stroke or with dementia", "Sit upright to eat", "Ask about a swallow test"]
+      footage_query: "elderly man eating"
+      narration: >-
+        Aspiration pneumonia happens when food, liquid, saliva or stomach contents go into the lungs instead of the stomach.
+        It is more common after a stroke, with dementia, Parkinson's disease, heavy alcohol use, or sedating medicines.
+        Coughing or choking while eating, or a wet sounding voice, are warning signs. Sit fully upright to eat, and ask about
+        a swallowing evaluation.
+    - layout: "bullets"
+      heading: "Good Mouth Care Matters"
+      points: ["Brush teeth twice a day", "Clean dentures daily", "Help others with mouth care", "Fewer germs to breathe in"]
+      footage_query: "toothbrush close up"
+      narration: >-
+        Good mouth care can help prevent pneumonia, especially in older adults and people in nursing homes or hospitals. Germs
+        in the mouth can be breathed into the lungs. Brush teeth twice a day, clean dentures every day, and help loved ones
+        who cannot do it themselves. Regular dental checkups help too.
+    - layout: "bullets"
+      heading: "Everyday Prevention"
+      points: ["Wash hands often", "Do not smoke", "Manage chronic conditions", "Stay active and eat well"]
+      footage_query: "washing hands sink"
+      narration: >-
+        Everyday habits lower your risk. Wash your hands often, especially during cold and flu season. Do not smoke, since
+        smoking damages the lungs' natural defenses. Limit alcohol. Keep chronic conditions like diabetes, asthma and heart
+        disease under control. Stay active, eat well and get enough sleep to keep your immune system strong.
+    - layout: "bullets"
+      heading: "After a Hospital Stay"
+      points: ["Keep moving", "Breathing exercises", "Take all medicines", "Keep follow-up visits"]
+      footage_query: "patient leaving hospital wheelchair"
+      narration: >-
+        After a hospital stay for pneumonia, keep moving, gently, as you are able. Your team may give you a device to help
+        with deep breathing, to keep your lungs open. Finish all your medicines. Keep your follow up visit, usually within one
+        to two weeks. Watch for warning signs like worsening breathing or a returning fever, and call right away if they
+        appear.
+    - layout: "bullets"
+      heading: "Questions for Your Doctor"
+      points: ["Is this pneumonia?", "What is causing it?", "When should I feel better?", "Am I up to date on vaccines?"]
+      footage_query: "patient talking doctor"
+      narration: >-
+        At your visit, ask: is this pneumonia, or a cold or bronchitis? Do I need a chest x ray? What is likely causing it,
+        and do I need antibiotics? When should I start feeling better? What signs mean I should come back or go to the ER? And
+        which vaccines am I due for to prevent this in the future?
+    - layout: "bullets"
+      heading: "For Caregivers"
+      points: ["Watch for confusion", "Check breathing and eating", "Help with medicines", "Keep vaccines up to date"]
+      footage_query: "caregiver helping elderly parent"
+      narration: >-
+        If you care for an older adult, watch for subtle signs, like new confusion, weakness, not eating, or faster breathing.
+        Help them take medicines on time and drink fluids. Help with mouth care and sitting upright to eat. Make sure their
+        vaccines are up to date, and get your own vaccines too, so you do not bring germs home.
+    - layout: "bullets"
+      heading: "Quick Recap"
+      points: ["Cough, fever, short of breath", "Older adults: confusion", "Trouble breathing: ER", "Vaccines prevent many cases"]
+      footage_query: "notebook checklist pen"
+      narration: >-
+        Let us recap. Pneumonia is a lung infection that causes cough, fever, chills and shortness of breath. In older adults,
+        confusion may be the main sign. Trouble breathing, bluish lips, or confusion need emergency care. Treatment depends on
+        the cause. And vaccines for pneumococcus, flu, COVID and RSV prevent many cases.
+    - layout: "outro"
+      heading: "Remember"
+      points: ["Worse, not better: get checked", "Trouble breathing: ER", "Get your vaccines"]
+      footage_query: "family walking outdoors"
+      narration: >-
+        Remember: a cough that gets worse instead of better needs a checkup, trouble breathing means go to the ER, and
+        vaccines are your best protection. Share this with someone over fifty. This video is for education only, not medical
+        advice. Like and subscribe to Health Support Studio for a new health video every day.
+  short_title: "Cold or pneumonia? Watch for this #Shorts"
+  short_caption: >-
+    A cold that gets worse instead of better could be pneumonia. Educational only, not medical advice. #Pneumonia
+    #LungHealth #Vaccines #HealthEducation
+  short_scenes:
+    - layout: "title"
+      heading: "Cold or Pneumonia?"
+      points: ["Watch for this"]
+      footage_query: "elderly man coughing"
+      narration: >-
+        Your cold seemed to be getting better, then suddenly got worse. That could be pneumonia.
+    - layout: "warning"
+      heading: "Red Flags"
+      points: ["Getting worse, not better", "Fever comes back", "Short of breath or confused"]
+      footage_query: "woman coughing night"
+      narration: >-
+        Watch for a cough that gets worse instead of better, a fever that comes back, shortness of breath, or chest pain when
+        breathing. In older adults, new confusion may be the only sign. The pneumococcal vaccine is now recommended for all
+        adults fifty and older.
+    - layout: "outro"
+      heading: "Full Video"
+      points: ["On YouTube"]
+      footage_query: "family walking outdoors"
+      narration: >-
+        Learn more about pneumonia in our full video, on the Health Support Studio YouTube channel.
