@@ -121,5 +121,17 @@
     "youtube_id": "GbUiKFvmobc",
     "publish_at": "2026-10-08T16:00:00Z",
     "short_youtube_id": "7W6jSyuA2C4"
+  },
+  {
+    "date": "2026-10-08T05:22:40",
+    "topic": "Sepsis: the emergency most people have never heard of",
+    "requested_topic": "Sepsis: the emergency most people have never heard of",
+    "title": "Sepsis: The Deadly Emergency Most People Don't Know",
+    "style": "Warning Signs",
+    "script_file": "010-sepsis-signs.yaml",
+    "youtube_id": "rmcgEZjyhQ8",
+    "publish_at": "2026-10-09T16:00:00Z",
+    "short_youtube_id": "DdnTKyU33fc",
+    "short2_youtube_id": "Hn8YAbR6SqI"
   }
 ]
