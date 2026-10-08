@@ -1,0 +1,295 @@
+queue_topic: "Opioid overdose: signs and how to use naloxone"
+style: "Explainer"
+sources:
+  - "CDC, Preventing Opioid Overdose: https://www.cdc.gov/overdose-prevention/prevention/index.html"
+  - "CDC, Lifesaving Naloxone: https://www.cdc.gov/stop-overdose/caring/naloxone.html"
+  - "SAMHSA, Opioid Overdose Prevention: https://www.samhsa.gov/substance-use/treatment/overdose-prevention"
+plan:
+  topic: "Opioid overdose: signs and how to use naloxone"
+  title: "How to Stop an Opioid Overdose: Naloxone Step by Step"
+  description: |-
+    Opioid overdoses kill tens of thousands of Americans each year, and naloxone can reverse them. Learn the signs of an overdose, how to use naloxone step by step, myths that cost lives, and where to find help and treatment.
+
+    In this video:
+    • Opioids and the danger of fentanyl
+    • Signs of an opioid overdose
+    • How to use naloxone, step by step
+    • Naloxone myths and Good Samaritan laws
+    • Safe storage, recovery and where to get help
+
+    #Naloxone #Narcan #OverdosePrevention #Fentanyl #HealthEducation
+  tags: ["naloxone", "narcan", "opioid overdose", "overdose signs", "fentanyl", "how to use narcan", "opioid crisis", "overdose prevention", "good samaritan law", "opioid addiction treatment", "health education"]
+  thumbnail_text: "STOP AN OVERDOSE"
+  thumbnail_highlight: "OVERDOSE"
+  thumbnail_photo_query: "naloxone nasal spray"
+  playlist: "Emergencies & First Aid"
+  scenes:
+    - layout: "title"
+      heading: "Naloxone Saves Lives"
+      points: ["Opioid overdose first aid"]
+      footage_query: "naloxone nasal spray"
+      narration: >-
+        An opioid overdose can happen to anyone: a teenager who took a pill from a friend, an older adult who mixed up their
+        pain medicine, or someone living with addiction. Many overdose deaths happen with someone nearby who could have
+        helped. Today you will learn the signs of an opioid overdose, how to use naloxone, and the steps that can save a life.
+    - layout: "big_number"
+      heading: "A National Crisis"
+      points: ["Tens of thousands", "Opioid overdose deaths each year in the US"]
+      footage_query: "city street night"
+      narration: >-
+        Opioid overdoses kill tens of thousands of Americans every year. Deaths have started to fall in recent years, in part
+        because more people carry naloxone. But the crisis is far from over. Most deaths now involve illegally made fentanyl,
+        a powerful opioid that is often hidden in other drugs and fake pills.
+    - layout: "bullets"
+      heading: "What Are Opioids?"
+      points: ["Prescription pain medicines", "Heroin", "Fentanyl", "Slow down breathing"]
+      footage_query: "pill bottles table"
+      narration: >-
+        Opioids are drugs that relieve pain and can cause a sense of calm or euphoria. They include prescription pain
+        medicines like oxycodone, hydrocodone, morphine and codeine, as well as heroin and fentanyl. In large amounts, opioids
+        slow down breathing. In an overdose, breathing can slow or stop, and the brain is starved of oxygen.
+    - layout: "warning"
+      heading: "The Danger of Fentanyl"
+      points: ["50 times stronger than heroin", "Hidden in fake pills", "Mixed into other drugs", "Tiny amounts can kill"]
+      footage_query: "pills close up"
+      narration: >-
+        Fentanyl is a synthetic opioid that is about fifty times stronger than heroin. Illegally made fentanyl is often mixed
+        into other drugs, like cocaine, meth, and heroin, or pressed into fake pills that look exactly like real prescription
+        medicines. People often do not know they are taking it. Even a tiny amount can be deadly.
+    - layout: "bullets"
+      heading: "Who Is at Risk?"
+      points: ["People who use drugs", "People on high-dose pain medicine", "Mixing opioids with alcohol or sedatives", "After a break in use"]
+      footage_query: "man sad sitting"
+      narration: >-
+        Who is at risk of an opioid overdose? People who use drugs, especially from an unknown source. People taking high
+        doses of prescription opioids, or mixing them with alcohol, sleeping pills, or anxiety medicines like benzodiazepines.
+        People who have recently stopped using, such as after jail or treatment, since their tolerance is lower. And children
+        who find pills at home.
+    - layout: "warning"
+      heading: "Signs of an Overdose"
+      points: ["Will not wake up", "Slow or no breathing", "Blue or gray lips", "Pinpoint pupils"]
+      footage_query: "person unconscious floor"
+      narration: >-
+        How do you know someone is overdosing? They will not wake up or respond, even when you shout their name or rub their
+        breastbone. Their breathing is very slow, shallow, or stopped. They may make gurgling or snoring sounds. Their lips
+        and fingertips may be blue or gray. Their pupils may be very small, like pinpoints. Their skin may be cold and clammy.
+    - layout: "bullets"
+      heading: "What Is Naloxone?"
+      points: ["Reverses opioid overdose", "Works in minutes", "Nasal spray or shot", "Brand name Narcan"]
+      footage_query: "naloxone nasal spray"
+      narration: >-
+        Naloxone is a medicine that can quickly reverse an opioid overdose. It works by kicking opioids off the brain's
+        receptors, which can restore normal breathing within two to three minutes. It comes as an easy to use nasal spray,
+        often known by the brand name Narcan, and as an injection. It does not work on other drugs, but it is safe to give if
+        you are not sure.
+    - layout: "big_number"
+      heading: "Available Without a Prescription"
+      points: ["Since 2023", "Naloxone sold over the counter"]
+      footage_query: "pharmacy shelf store"
+      narration: >-
+        In 2023, the FDA approved naloxone nasal spray for sale without a prescription. You can now buy it at most pharmacies,
+        grocery stores and online. Many health departments, community groups and libraries give it out for free. Some states
+        let you get it through your insurance as well. Everyone can carry it.
+    - layout: "bullets"
+      heading: "Step 1: Try to Wake Them"
+      points: ["Shout their name", "Rub the breastbone hard", "Check their breathing", "No response: act now"]
+      footage_query: "person unconscious floor"
+      narration: >-
+        Step one: try to wake the person. Shout their name, and firmly rub your knuckles on the center of their chest, along
+        the breastbone. Check if they are breathing. If they do not respond, or are breathing very slowly or not at all, act
+        right away. Every minute without oxygen counts.
+    - layout: "bullets"
+      heading: "Step 2: Call 911"
+      points: ["Call right away", "Say they are not breathing", "Give your exact location", "Put phone on speaker"]
+      footage_query: "person calling phone emergency"
+      narration: >-
+        Step two: call 911. Say that someone is not responding and not breathing normally, and give your exact address. Put
+        your phone on speaker, so your hands are free. The dispatcher can guide you. If someone else is there, have them call
+        while you give naloxone. Naloxone is not a replacement for emergency care.
+    - layout: "bullets"
+      heading: "Step 3: Give Naloxone"
+      points: ["Lay them on their back", "Tip in one nostril", "Press the plunger firmly", "One spray is one dose"]
+      footage_query: "naloxone nasal spray"
+      narration: >-
+        Step three: give naloxone. Lay the person on their back. Peel open the package and hold the nasal spray with your
+        thumb on the plunger and two fingers on either side of the nozzle. Tilt their head back, insert the tip into one
+        nostril, and press the plunger firmly. That gives the full dose. You do not need to prime it.
+    - layout: "bullets"
+      heading: "Step 4: Support Breathing"
+      points: ["Give rescue breaths if trained", "Or start CPR", "If no pulse or breathing", "Keep going until help arrives"]
+      footage_query: "cpr training dummy"
+      narration: >-
+        Step four: support their breathing. If they are not breathing and you are trained, give rescue breaths: tilt their
+        head back, pinch the nose, and give one breath every five seconds. If they have no pulse or are not breathing at all,
+        start CPR with chest compressions. Keep going until they start breathing or help arrives.
+    - layout: "bullets"
+      heading: "Step 5: Second Dose if Needed"
+      points: ["Wait 2 to 3 minutes", "No response: give another", "Use the other nostril", "Fentanyl may need more"]
+      footage_query: "naloxone nasal spray"
+      narration: >-
+        Step five: if the person does not respond within two to three minutes, give a second dose of naloxone in the other
+        nostril, using a new device. Strong opioids like fentanyl may need more than one dose. Keep supporting their breathing
+        between doses. Many naloxone packages come with two doses.
+    - layout: "bullets"
+      heading: "Step 6: Recovery Position"
+      points: ["If breathing, turn on their side", "Top knee bent", "Hand under the head", "Prevents choking"]
+      footage_query: "recovery position first aid"
+      narration: >-
+        Step six: if the person starts breathing but is still drowsy, put them in the recovery position. Roll them onto their
+        side, with the top knee bent and their hand supporting their head. This keeps the airway open and stops them from
+        choking if they vomit. Stay with them and keep watching their breathing.
+    - layout: "warning"
+      heading: "Stay Until Help Arrives"
+      points: ["Naloxone wears off", "Overdose can return", "They may be confused", "Do not leave them alone"]
+      footage_query: "paramedic helping patient"
+      narration: >-
+        Stay with the person until emergency help arrives. Naloxone wears off in thirty to ninety minutes, but some opioids,
+        especially fentanyl and long acting pills, last longer, so the overdose can come back. When the person wakes up, they
+        may feel sick, confused, or have withdrawal symptoms. Keep them calm, and do not let them use more drugs.
+    - layout: "myth_fact"
+      heading: "Naloxone Is Dangerous"
+      points: ["It can harm someone", "Safe even if not opioids"]
+      footage_query: "naloxone nasal spray"
+      narration: >-
+        Myth: naloxone can hurt someone if you are not sure it is an opioid overdose. Fact: naloxone is very safe. If the
+        person has not taken opioids, it simply has no effect. It cannot be misused to get high. If you think someone might be
+        overdosing, give it. You could save a life, and it will not cause harm.
+    - layout: "myth_fact"
+      heading: "Naloxone Encourages Drug Use"
+      points: ["Carrying it promotes drug use", "Research shows it does not"]
+      footage_query: "pharmacy shelf store"
+      narration: >-
+        Myth: making naloxone easy to get encourages more drug use. Fact: research has found that naloxone access does not
+        increase drug use, but does reduce overdose deaths. Think of it like a seatbelt or a fire extinguisher. It is a safety
+        tool for emergencies. Every person who survives an overdose has a chance at recovery.
+    - layout: "myth_fact"
+      heading: "Ice Baths Revive People"
+      points: ["Cold water or slapping helps", "These can cause harm"]
+      footage_query: "bathtub water faucet"
+      narration: >-
+        Myth: putting someone in a cold shower, slapping them, or giving them coffee or other drugs will bring them out of an
+        overdose. Fact: these do not work, waste precious time, and can cause injury or drowning. The right steps are to call
+        911, give naloxone, support breathing, and stay with them.
+    - layout: "bullets"
+      heading: "Good Samaritan Laws"
+      points: ["Protect people who call 911", "Most states have them", "Do not fear calling", "Saving a life comes first"]
+      footage_query: "police officer helping"
+      narration: >-
+        Many people hesitate to call 911 during an overdose because they fear getting in trouble. Most states have Good
+        Samaritan laws that protect people who call for help during an overdose from some drug related charges. The details
+        vary by state. But the most important thing is to call. A life is on the line.
+    - layout: "bullets"
+      heading: "Who Should Carry Naloxone?"
+      points: ["Anyone using opioids", "Families of people at risk", "People on high-dose pain medicine", "Anyone willing to help"]
+      footage_query: "family kitchen table"
+      narration: >-
+        Who should carry naloxone? Anyone who uses opioids, or other drugs that might contain fentanyl. Family members and
+        friends of people who use drugs. People taking high dose prescription opioids, especially with other sedating
+        medicines, and those living with them. Teachers, coaches, and workers in public places. In fact, anyone can carry it,
+        just like a first aid kit.
+    - layout: "bullets"
+      heading: "Where to Keep Naloxone"
+      points: ["Easy to reach", "Room temperature", "Tell your family where", "Check the expiration date"]
+      footage_query: "medicine cabinet close up"
+      narration: >-
+        Keep naloxone where you and others can get it quickly, like your bag, car, or kitchen. Store it at room temperature,
+        away from extreme heat or cold. Tell family members and friends where it is, and how to use it. Check the expiration
+        date and replace it when needed. Many people keep one at home and one on the go.
+    - layout: "bullets"
+      heading: "Prescription Opioid Safety"
+      points: ["Take exactly as prescribed", "Never mix with alcohol", "Never share pills", "Ask for naloxone too"]
+      footage_query: "pill bottle close up"
+      narration: >-
+        If you are prescribed opioids for pain, take them exactly as directed, for the shortest time needed. Never mix them
+        with alcohol, sleeping pills, or anxiety medicines unless your doctor says it is safe. Never share your pills, and
+        never take someone else's. Ask your doctor or pharmacist about getting naloxone, especially if you take a high dose.
+    - layout: "bullets"
+      heading: "Lock Up and Dispose"
+      points: ["Store opioids locked", "Count your pills", "Use drug take-back sites", "Protect children and teens"]
+      footage_query: "medicine disposal box"
+      narration: >-
+        Many people who misuse prescription opioids get them from a friend or relative's medicine cabinet. Store opioids in a
+        locked place, and keep track of how many pills you have. Get rid of leftover pills safely, at a pharmacy drug take
+        back kiosk or a take back event. This protects children, teens, and visitors in your home.
+    - layout: "warning"
+      heading: "Children and Opioids"
+      points: ["Accidental poisoning is rising", "One pill can kill a child", "Fentanyl patches are dangerous", "Call 911 right away"]
+      footage_query: "child reaching medicine cabinet"
+      narration: >-
+        Young children can be poisoned by even a single opioid pill, or by a used fentanyl patch. Accidental poisonings in
+        children have been rising. If you think a child swallowed an opioid, call 911 right away. Naloxone is safe for
+        children. Signs include extreme sleepiness, slow breathing, and small pupils.
+    - layout: "bullets"
+      heading: "Fentanyl Test Strips"
+      points: ["Check drugs for fentanyl", "Available in many places", "Legal in most states", "Never use alone"]
+      footage_query: "test strips close up"
+      narration: >-
+        For people who use drugs, fentanyl test strips can show whether fentanyl is present in a drug before it is used. They
+        are low cost and available in many places, and are legal in most states. Another key safety step is to never use
+        alone. If something goes wrong, someone needs to be there to call 911 and give naloxone.
+    - layout: "bullets"
+      heading: "Recovery Is Possible"
+      points: ["Addiction is a treatable illness", "Medicines for opioid use disorder", "Counseling and support", "It is never too late"]
+      footage_query: "support group meeting"
+      narration: >-
+        Opioid addiction, called opioid use disorder, is a treatable medical condition, not a moral failing. Medicines like
+        buprenorphine, methadone, and naltrexone, combined with counseling and support, help people recover and greatly lower
+        the risk of death. Many people return to healthy, full lives. It is never too late to start.
+    - layout: "bullets"
+      heading: "Where to Get Help"
+      points: ["SAMHSA helpline, free and private", "1-800-662-4357", "Find treatment online", "988 in a crisis"]
+      footage_query: "woman talking phone desk"
+      narration: >-
+        Where can you get help? The SAMHSA National Helpline, one eight hundred six six two, four three five seven, is free,
+        confidential, and open around the clock, every day of the year. It can connect you to treatment and support in your
+        area. You can also search for treatment at FindTreatment dot gov. If you are in emotional crisis, call or text nine
+        eight eight.
+    - layout: "bullets"
+      heading: "Talk About It"
+      points: ["Reduce shame and stigma", "Talk with your kids", "Share facts about fentanyl", "Encourage carrying naloxone"]
+      footage_query: "parent teen talking"
+      narration: >-
+        Talking openly about opioids saves lives. Shame and stigma keep people from asking for help. Talk with your teens
+        about the risk of fake pills and fentanyl, and that any pill not from a pharmacy could be deadly. Encourage friends
+        and family to carry naloxone. Treat people who use drugs with respect and compassion.
+    - layout: "bullets"
+      heading: "Quick Recap"
+      points: ["Will not wake, slow breathing", "Call 911", "Give naloxone, support breathing", "Stay with them"]
+      footage_query: "notebook checklist pen"
+      narration: >-
+        Let us recap. Signs of an opioid overdose include not waking up, slow or stopped breathing, blue lips, and pinpoint
+        pupils. Call 911, give naloxone in one nostril, support breathing with rescue breaths or CPR, give a second dose if
+        needed after two to three minutes, and stay with them. Naloxone is safe, legal, and sold without a prescription.
+    - layout: "outro"
+      heading: "Remember"
+      points: ["Carry naloxone", "Call 911 and stay", "Recovery is possible"]
+      footage_query: "family walking outdoors"
+      narration: >-
+        Remember: carry naloxone, call 911 and stay with the person, and know that recovery is possible. Share this video,
+        because you never know who it might help. This video is for education only, not medical advice. Like and subscribe to
+        Health Support Studio for a new health video every day.
+  short_title: "Could you stop an overdose? #Shorts"
+  short_caption: >-
+    Naloxone can reverse an opioid overdose in minutes. Educational only, not medical advice. #Naloxone #Narcan
+    #OverdosePrevention #HealthEducation
+  short_scenes:
+    - layout: "title"
+      heading: "Could You Stop an Overdose?"
+      points: ["Naloxone saves lives"]
+      footage_query: "naloxone nasal spray"
+      narration: >-
+        Someone will not wake up, and their breathing is slow or stopped. It could be an opioid overdose.
+    - layout: "bullets"
+      heading: "What to Do"
+      points: ["Call 911", "Spray naloxone in one nostril", "Support breathing, stay with them"]
+      footage_query: "person calling phone emergency"
+      narration: >-
+        Call 911. Give naloxone nasal spray in one nostril. If they are not breathing, give rescue breaths or CPR. Give a
+        second dose after two to three minutes if needed, and stay with them. Naloxone is safe and sold without a
+        prescription.
+    - layout: "outro"
+      heading: "Full Video"
+      points: ["On YouTube"]
+      footage_query: "family walking outdoors"
+      narration: >-
+        Learn more in our full video, on the Health Support Studio YouTube channel.
