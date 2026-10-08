@@ -13,6 +13,10 @@ on:
         description: "Cut the outro at this second (0 = keep all)"
         required: false
         default: "0"
+      redo:
+        description: "Clips to convert again, comma-separated (e.g. office_16x9)"
+        required: false
+        default: ""
 
 permissions:
   contents: write
@@ -53,6 +57,7 @@ jobs:
         env:
           INTRO_END: ${{ inputs.intro_end }}
           OUTRO_END: ${{ inputs.outro_end }}
+          REDO: ${{ inputs.redo }}
         run: |
           python - <<'PY'
           import os, subprocess
@@ -63,16 +68,20 @@ jobs:
           whisper = WhisperModel("small.en", device="cpu", compute_type="int8")
           notes = []
           # every speaking clip that has no "_myvoice" version yet
+          redo = [n.strip() for n in os.environ.get("REDO", "").split(",") if n.strip()]
           todo = [p.stem for p in sorted(d.glob("*.mp4")) if not p.stem.endswith("_myvoice")
-                  and not p.stem.startswith("preview") and not (d / f"{p.stem}_myvoice.mp4").exists()]
+                  and not p.stem.startswith("preview")
+                  and (p.stem in redo or not (d / f"{p.stem}_myvoice.mp4").exists())]
           for name, end in ((n, "0") for n in todo):
               src = d / f"{name}.mp4"
               cut = ["-t", end] if end and float(end) > 0 else []
               wav = Path(f"/tmp/{name}.wav")
               subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(src), *cut, "-vn", "-ac", "1",
                               "-ar", "24000", str(wav)], check=True)
-              segs, _ = whisper.transcribe(str(wav))
+              segs = list(whisper.transcribe(str(wav), word_timestamps=True)[0])
               said = " ".join(s.text.strip() for s in segs)
+              said += " | words: " + " ".join(f"{w.word.strip()}@{w.start:.1f}-{w.end:.1f}"
+                                              for s in segs for w in (s.words or []))
               ok = voice.convert_file(wav)
               out = d / f"{name}_myvoice.mp4"
               subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(src), "-i", str(wav), *cut,
