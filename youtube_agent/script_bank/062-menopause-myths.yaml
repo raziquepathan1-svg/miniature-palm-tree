@@ -1,0 +1,306 @@
+queue_topic: "Menopause: myths vs facts about symptoms and treatment"
+style: "Myth vs Fact"
+sources:
+  - "National Institute on Aging, What Is Menopause?: https://www.nia.nih.gov/health/menopause/what-menopause"
+  - "MedlinePlus, Menopause: https://medlineplus.gov/menopause.html"
+  - "FDA, Menopause: https://www.fda.gov/consumers/womens-health-topics/menopause"
+plan:
+  topic: "Menopause: myths vs facts about symptoms and treatment"
+  title: "Menopause Myths: You Don't Have to Tough It Out"
+  description: |-
+    Menopause is a natural stage of life, but many women suffer in silence because of myths. We bust five common menopause myths and explain the stages, symptoms, health changes, hormone and non-hormone treatments, and how to protect your bones and heart.
+
+    In this video:
+    • Perimenopause, menopause and postmenopause
+    • Common symptoms and warning signs
+    • 5 menopause myths busted
+    • Hormone therapy, non-hormone options and vaginal dryness
+    • Sleep, mood, weight, bones and heart
+
+    #Menopause #WomensHealth #HotFlashes #Perimenopause #HealthEducation
+  tags: ["menopause", "menopause symptoms", "perimenopause", "hot flashes", "hormone therapy", "menopause myths", "night sweats", "vaginal dryness", "womens health", "midlife health", "health education"]
+  thumbnail_text: "MENOPAUSE MYTHS"
+  thumbnail_highlight: "MYTHS"
+  thumbnail_photo_query: "mature woman smiling"
+  playlist: "Healthy Habits & Prevention"
+  scenes:
+    - layout: "title"
+      heading: "Menopause Myths"
+      points: ["What every woman should know"]
+      footage_query: "mature woman smiling"
+      narration: >-
+        Hot flashes, sleepless nights, mood swings, and a lot of confusing advice. Menopause is a natural stage of life that
+        every woman goes through, yet many women feel unprepared and unsure where to turn. Some suffer in silence because of
+        myths about treatment. Today we bust the most common menopause myths, and explain the symptoms, the health risks, and
+        the treatments that help.
+    - layout: "big_number"
+      heading: "A Normal Life Stage"
+      points: ["Average age 52", "Menopause in the United States"]
+      footage_query: "group of women walking"
+      narration: >-
+        Menopause is when a woman's periods stop for good, because the ovaries stop releasing eggs and make much less
+        estrogen. It is official after twelve months in a row without a period. In the United States, the average age is fifty
+        two, but it usually happens between forty five and fifty five. More than a million American women reach menopause each
+        year.
+    - layout: "bullets"
+      heading: "The Stages"
+      points: ["Perimenopause: the transition", "Menopause: 12 months no period", "Postmenopause: the years after", "Symptoms can last years"]
+      footage_query: "calendar notebook planning"
+      narration: >-
+        There are three stages. Perimenopause is the transition, which can start in your forties and last four to eight years,
+        with irregular periods and symptoms. Menopause is the point after twelve months without a period. Postmenopause is all
+        the years after. Many symptoms are strongest in late perimenopause and the first years after menopause.
+    - layout: "warning"
+      heading: "Common Symptoms"
+      points: ["Hot flashes and night sweats", "Trouble sleeping", "Mood changes", "Irregular periods"]
+      footage_query: "woman fanning herself"
+      narration: >-
+        The most common symptoms include hot flashes, sudden waves of heat in the face and chest, often with sweating and a
+        racing heart. Night sweats can disrupt sleep. Many women have trouble sleeping, mood changes, irritability, anxiety,
+        or feeling low. Periods may become irregular, heavier or lighter before they stop.
+    - layout: "warning"
+      heading: "Other Symptoms"
+      points: ["Vaginal dryness", "Painful sex", "Bladder changes", "Brain fog, joint aches"]
+      footage_query: "woman thinking window"
+      narration: >-
+        Other common symptoms include vaginal dryness, itching, and pain during sex, more frequent urination or bladder
+        infections, lower sex drive, trouble concentrating or brain fog, joint aches, dry skin, and thinning hair. Every
+        woman's experience is different. Some have few symptoms, while others have symptoms that affect work and
+        relationships.
+    - layout: "myth_fact"
+      heading: "Symptoms Last a Few Months"
+      points: ["It is over in a few months", "Hot flashes can last years"]
+      footage_query: "woman fanning herself"
+      narration: >-
+        Myth one: menopause symptoms only last a few months. Fact: for many women, hot flashes last much longer. A large study
+        found hot flashes lasted about seven years on average, and more than ten years for some women. Black women often had
+        hot flashes for longer. If symptoms are affecting your life, you do not have to wait them out.
+    - layout: "myth_fact"
+      heading: "Just Tough It Out"
+      points: ["Symptoms must be endured", "Many treatments help"]
+      footage_query: "woman talking doctor office"
+      narration: >-
+        Myth two: menopause symptoms are just something women have to tough out. Fact: there are many effective treatments,
+        including hormone therapy, non hormone medicines, and lifestyle changes. Too many women never mention their symptoms
+        to a doctor, or are told to just live with them. You deserve care. Talk to your doctor about your options.
+    - layout: "bullets"
+      heading: "Early or Surgical Menopause"
+      points: ["Before 40: premature", "Before 45: early", "After ovaries are removed", "Some cancer treatments"]
+      footage_query: "woman talking doctor office"
+      narration: >-
+        Some women reach menopause early. Menopause before age forty is called premature, and before forty five is called
+        early. It can happen naturally, after surgery to remove both ovaries, or after some cancer treatments. Early menopause
+        raises the risk of bone loss and heart disease, so it is important to talk with your doctor about treatment, usually
+        hormone therapy until the typical age of menopause.
+    - layout: "bullets"
+      heading: "Is It Menopause?"
+      points: ["Usually based on age and symptoms", "Blood tests not always needed", "Rule out thyroid problems", "Ask about pregnancy"]
+      footage_query: "blood test tube lab"
+      narration: >-
+        How do you know it is menopause? For most women over forty five, doctors diagnose it based on age, symptoms, and
+        changes in periods. Blood tests are usually not needed, because hormone levels go up and down a lot in perimenopause.
+        Your doctor may check your thyroid, since thyroid problems can cause similar symptoms. You can still get pregnant
+        during perimenopause.
+    - layout: "warning"
+      heading: "Bleeding After Menopause"
+      points: ["Any bleeding after menopause", "Even spotting", "Needs a doctor visit", "Usually not serious, but check"]
+      footage_query: "woman talking doctor office"
+      narration: >-
+        Here is an important warning sign. Any vaginal bleeding after menopause, even light spotting, should be checked by a
+        doctor. Most of the time, the cause is not serious, like thinning of the vaginal lining. But bleeding can also be an
+        early sign of uterine cancer, which is very treatable when found early. Do not ignore it.
+    - layout: "bullets"
+      heading: "Health Changes After Menopause"
+      points: ["Faster bone loss", "Higher heart disease risk", "Weight shifts to the belly", "Bladder and vaginal changes"]
+      footage_query: "doctor checking blood pressure"
+      narration: >-
+        Lower estrogen after menopause brings some health changes. Bone loss speeds up for several years, raising the risk of
+        osteoporosis. The risk of heart disease rises, and it becomes the leading cause of death in women. Many women notice
+        weight moving to the belly, and cholesterol can rise. This is a great time to focus on prevention.
+    - layout: "myth_fact"
+      heading: "Hormone Therapy Is Always Dangerous"
+      points: ["Hormones cause cancer and strokes", "Safe for many healthy women"]
+      footage_query: "pill bottle close up"
+      narration: >-
+        Myth three: hormone therapy is always dangerous. Fact: early study results in 2002 caused fear, but later research
+        showed that for most healthy women under sixty, or within ten years of menopause, the benefits of hormone therapy for
+        bothersome symptoms often outweigh the risks. The risks depend on your age, health, and the type of hormones. It is a
+        personal decision.
+    - layout: "bullets"
+      heading: "About Hormone Therapy"
+      points: ["Most effective for hot flashes", "Pills, patches, gels, sprays", "Estrogen plus progestogen if uterus", "Lowest dose that works"]
+      footage_query: "doctor giving prescription"
+      narration: >-
+        Hormone therapy is the most effective treatment for hot flashes and night sweats. It also helps prevent bone loss. It
+        comes as pills, skin patches, gels and sprays. Women who still have a uterus need a progestogen along with estrogen,
+        to protect the uterine lining. Doctors usually recommend the lowest dose that works, and review it regularly.
+    - layout: "warning"
+      heading: "Who Should Avoid Hormones"
+      points: ["History of breast cancer", "Blood clots or stroke", "Heart disease", "Liver disease or unexplained bleeding"]
+      footage_query: "woman talking doctor office"
+      narration: >-
+        Hormone therapy is not right for everyone. Women with a history of breast cancer, uterine cancer, blood clots, stroke,
+        heart attack, heart disease, liver disease, or unexplained vaginal bleeding usually should not use it. Starting it
+        long after menopause, or after age sixty, carries more risk. Your doctor will review your personal and family history.
+    - layout: "bullets"
+      heading: "Non-Hormone Options"
+      points: ["Some antidepressants", "A newer hot flash medicine", "Gabapentin", "Ask what fits you"]
+      footage_query: "pharmacist counter customer"
+      narration: >-
+        If you cannot or do not want to take hormones, other medicines can help hot flashes. These include certain
+        antidepressants at low doses, gabapentin, and a newer non hormone medicine approved for hot flashes called
+        fezolinetant. Each has its own side effects. Ask your doctor which option fits your health and symptoms.
+    - layout: "myth_fact"
+      heading: "Natural Supplements Are Safer"
+      points: ["Herbal remedies work better", "Most lack proof"]
+      footage_query: "herbal supplements bottle"
+      narration: >-
+        Myth four: natural supplements are safer and work better than medicine. Fact: most herbal products marketed for
+        menopause, like black cohosh, soy, and evening primrose oil, have not been shown to work better than a placebo in good
+        studies. Some can interact with medicines or harm the liver. Supplements are not tested by the FDA like medicines.
+        Talk to your doctor first.
+    - layout: "bullets"
+      heading: "Vaginal Dryness Help"
+      points: ["Moisturizers used regularly", "Lubricants for sex", "Low-dose vaginal estrogen", "Safe for most women"]
+      footage_query: "woman talking doctor office"
+      narration: >-
+        Vaginal dryness and painful sex are very common after menopause, and unlike hot flashes, they often get worse over
+        time without treatment. Over the counter vaginal moisturizers, used a few times a week, and lubricants during sex can
+        help. Low dose vaginal estrogen is very effective, and because very little enters the bloodstream, it is safe for most
+        women.
+    - layout: "bullets"
+      heading: "Bladder Changes"
+      points: ["Leaking with cough or sneeze", "Urgent need to go", "More bladder infections", "Pelvic floor exercises help"]
+      footage_query: "woman holding lower belly"
+      narration: >-
+        Lower estrogen also affects the bladder and the muscles that support it. Many women notice leaking when they cough,
+        sneeze, or exercise, a sudden urge to go, or more frequent bladder infections. Pelvic floor exercises, also called
+        Kegels, can help a lot. Vaginal estrogen may reduce repeat infections. Do not be embarrassed to mention these changes
+        to your doctor.
+    - layout: "bullets"
+      heading: "Brain Fog and Memory"
+      points: ["Common in the transition", "Trouble finding words", "Usually improves after", "Sleep and activity help"]
+      footage_query: "woman stressed desk"
+      narration: >-
+        Many women notice brain fog during the menopause transition: forgetting words, losing track of tasks, or trouble
+        concentrating. Studies suggest this is common and usually improves after menopause. Poor sleep and hot flashes can
+        make it worse. Regular exercise, good sleep, and managing stress help. If memory problems are severe or getting worse,
+        talk to your doctor.
+    - layout: "bullets"
+      heading: "Lifestyle Tips for Hot Flashes"
+      points: ["Dress in layers", "Keep the bedroom cool", "Notice your triggers", "Slow breathing"]
+      footage_query: "woman fanning herself"
+      narration: >-
+        Some simple steps can make hot flashes easier. Dress in layers you can remove. Keep your bedroom cool, and use a fan.
+        Notice your triggers, which can include spicy foods, alcohol, caffeine, hot drinks, and stress. Try slow, deep
+        breathing when a hot flash starts. Cognitive behavioral therapy and clinical hypnosis also have evidence for reducing
+        bothersome hot flashes.
+    - layout: "bullets"
+      heading: "Better Sleep"
+      points: ["Regular sleep schedule", "Cool, dark bedroom", "Limit alcohol and caffeine", "Treat night sweats"]
+      footage_query: "woman lying awake bed"
+      narration: >-
+        Sleep problems are common in menopause. Keep a regular sleep schedule. Keep your bedroom cool, dark, and quiet, and
+        use breathable bedding and sleepwear. Limit alcohol and caffeine, especially in the afternoon and evening. Treating
+        night sweats often improves sleep. Snoring and gasping can be signs of sleep apnea, which becomes more common after
+        menopause.
+    - layout: "bullets"
+      heading: "Mood and Mental Health"
+      points: ["Mood swings are common", "Higher risk of depression", "Talk to someone", "Treatment works"]
+      footage_query: "woman sad sitting"
+      narration: >-
+        Mood swings, irritability, and anxiety are common during the menopause transition, and the risk of depression goes up,
+        especially for women with a history of depression. Poor sleep and hot flashes can make it worse. Talk to your doctor
+        if you feel down most days for two weeks or more. Treatment helps. If you are in crisis, call or text nine eight
+        eight.
+    - layout: "myth_fact"
+      heading: "Weight Gain Is Unavoidable"
+      points: ["Menopause makes you gain weight", "Habits matter most"]
+      footage_query: "women exercising park"
+      narration: >-
+        Myth five: menopause makes weight gain unavoidable. Fact: many women do gain some weight in midlife, mostly due to
+        aging, less muscle, and lifestyle, not menopause alone. But lower estrogen does shift weight to the belly. Regular
+        activity, strength training, enough protein and sleep, and limiting alcohol can help you stay at a healthy weight.
+    - layout: "bullets"
+      heading: "Protect Your Bones"
+      points: ["Weight-bearing exercise", "Calcium and vitamin D", "Bone density test at 65", "Earlier if at risk"]
+      footage_query: "elderly woman exercising weights"
+      narration: >-
+        Protect your bones. Do weight bearing exercise, like walking and dancing, and strength training two or more days a
+        week. Get enough calcium and vitamin D, mostly from food. Do not smoke, and limit alcohol. Women should get a bone
+        density test at sixty five, or earlier if they have risk factors like early menopause or low body weight.
+    - layout: "bullets"
+      heading: "Protect Your Heart"
+      points: ["Know your numbers", "Blood pressure and cholesterol", "Stay active", "Do not smoke"]
+      footage_query: "blood pressure monitor arm"
+      narration: >-
+        Protect your heart. Heart disease is the leading cause of death in women, and the risk rises after menopause. Know
+        your numbers: blood pressure, cholesterol, and blood sugar. Get at least one hundred fifty minutes of activity a week.
+        Eat plenty of vegetables, fruits, whole grains, and healthy fats. Do not smoke. And learn the heart attack signs in
+        women, which can be subtle.
+    - layout: "bullets"
+      heading: "Sex and Intimacy"
+      points: ["Lower desire is common", "Pain can be treated", "Talk with your partner", "Still use protection if needed"]
+      footage_query: "mature couple smiling"
+      narration: >-
+        Many women notice changes in sex drive and comfort during menopause. Pain from dryness can be treated. Talking openly
+        with your partner and your doctor helps. Remember that you can still get pregnant until you have gone twelve months
+        without a period, so keep using birth control until then. Condoms still protect against sexually transmitted
+        infections at any age.
+    - layout: "bullets"
+      heading: "Questions for Your Doctor"
+      points: ["Are my symptoms from menopause?", "Is hormone therapy right for me?", "What non-hormone options exist?", "Which screenings do I need?"]
+      footage_query: "patient talking doctor"
+      narration: >-
+        At your next visit, ask: are my symptoms from menopause, or something else? Is hormone therapy safe and right for me?
+        What non hormone options could help? What can I do for vaginal dryness? Which screenings do I need now, like bone
+        density, mammograms, and colon cancer screening? Write your symptoms down before you go.
+    - layout: "bullets"
+      heading: "For Partners and Families"
+      points: ["Learn about menopause", "Be patient and supportive", "Help keep the bedroom cool", "Encourage a doctor visit"]
+      footage_query: "family sitting home"
+      narration: >-
+        Partners and families can help a lot. Learn about menopause, so you understand what she is going through. Be patient
+        with mood changes and sleepless nights. Help keep the bedroom cool. Share household tasks. And encourage her to talk
+        with a doctor if symptoms are affecting her life. Menopause is easier with support.
+    - layout: "bullets"
+      heading: "Quick Recap"
+      points: ["Natural stage, average age 52", "Symptoms can last years", "Many treatments work", "Bleeding after menopause: see a doctor"]
+      footage_query: "notebook checklist pen"
+      narration: >-
+        Let us recap. Menopause is a natural stage, usually around age fifty two. Symptoms like hot flashes can last for
+        years, and you do not have to tough them out. Hormone therapy is safe and effective for many healthy women, and other
+        options exist. Protect your bones and heart. And any bleeding after menopause needs a doctor's visit.
+    - layout: "outro"
+      heading: "Remember"
+      points: ["You do not have to suffer", "Ask about treatment", "Protect bones and heart"]
+      footage_query: "women friends walking"
+      narration: >-
+        Remember: you do not have to suffer through menopause, ask your doctor about treatment options, and use this time to
+        protect your bones and heart. Share this with the women in your life. This video is for education only, not medical
+        advice. Like and subscribe to Health Support Studio for a new health video every day.
+  short_title: "Menopause myth: you must tough it out #Shorts"
+  short_caption: >-
+    You don't have to suffer through menopause. Educational only, not medical advice. #Menopause #WomensHealth #HotFlashes
+    #HealthEducation
+  short_scenes:
+    - layout: "title"
+      heading: "Menopause Myth"
+      points: ["You must tough it out"]
+      footage_query: "mature woman smiling"
+      narration: >-
+        Many women think they just have to tough out menopause symptoms. That is a myth.
+    - layout: "bullets"
+      heading: "The Facts"
+      points: ["Hot flashes can last 7+ years", "Many treatments work", "Hormones safe for many"]
+      footage_query: "woman talking doctor office"
+      narration: >-
+        Hot flashes can last seven years or more. But there are many effective treatments, including hormone therapy, which is
+        safe for many healthy women under sixty, non hormone medicines, and lifestyle changes. Talk to your doctor. And any
+        bleeding after menopause needs a checkup.
+    - layout: "outro"
+      heading: "Full Video"
+      points: ["On YouTube"]
+      footage_query: "women friends walking"
+      narration: >-
+        Learn more menopause myths in our full video, on the Health Support Studio YouTube channel.
