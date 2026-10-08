@@ -1,0 +1,291 @@
+queue_topic: "Low back pain: causes, what helps, and red flags"
+style: "Explainer"
+sources:
+  - "NIH NIAMS, Back Pain: https://www.niams.nih.gov/health-topics/back-pain"
+  - "MedlinePlus, Back Pain: https://medlineplus.gov/backpain.html"
+  - "NIH NINDS, Low Back Pain: https://www.ninds.nih.gov/health-information/disorders/low-back-pain"
+plan:
+  topic: "Low back pain: causes, what helps, and red flags"
+  title: "Back Pain: What Actually Helps (and When It's Serious)"
+  description: |-
+    Most back pain gets better on its own within weeks. Learn what usually causes it, what actually helps, the red flags that mean go to the ER, and how to keep it from coming back.
+
+    In this video:
+    • Common causes and sciatica
+    • Red flags that need urgent care
+    • Why bed rest and early scans are myths
+    • Heat, movement, physical therapy and other treatments
+    • Lifting, sitting and exercises to protect your back
+
+    #BackPain #LowerBackPain #Sciatica #Posture #HealthEducation
+  tags: ["back pain", "lower back pain", "back pain relief", "sciatica", "herniated disc", "back pain red flags", "heat or ice", "physical therapy", "core exercises", "posture", "health education"]
+  thumbnail_text: "BACK PAIN?"
+  thumbnail_highlight: "PAIN?"
+  thumbnail_photo_query: "man holding lower back"
+  playlist: "Healthy Habits & Prevention"
+  scenes:
+    - layout: "title"
+      heading: "Back Pain Explained"
+      points: ["What helps and what to watch"]
+      footage_query: "man holding lower back"
+      narration: >-
+        You bend down to pick something up, and your lower back suddenly seizes. Or it just aches after a long day at your
+        desk. Back pain is one of the most common reasons people see a doctor or miss work. Today you will learn what usually
+        causes it, what actually helps, the warning signs that need urgent care, and how to keep it from coming back.
+    - layout: "big_number"
+      heading: "Very Common"
+      points: ["8 in 10", "People will have back pain"]
+      footage_query: "office worker rubbing back"
+      narration: >-
+        About eight in ten people will have low back pain at some point in their lives. It is one of the leading causes of
+        disability around the world. The good news is that most back pain, even when it is very painful, is not caused by
+        anything dangerous, and gets much better within a few weeks.
+    - layout: "bullets"
+      heading: "How Your Back Works"
+      points: ["Bones called vertebrae", "Discs act as cushions", "Muscles and ligaments", "Nerves pass through"]
+      footage_query: "medical illustration spine"
+      narration: >-
+        Your spine is a stack of bones called vertebrae, with soft, rubbery discs between them that act as cushions. Muscles,
+        ligaments and tendons hold it all together and let you bend and twist. Nerves come out of the spinal cord and pass
+        between the bones, carrying signals to your legs. A problem with any of these can cause pain.
+    - layout: "bullets"
+      heading: "Most Common Causes"
+      points: ["Strained muscles or ligaments", "Lifting the wrong way", "Sudden awkward movement", "Poor posture, sitting long"]
+      footage_query: "man lifting heavy box"
+      narration: >-
+        Most back pain comes from strained muscles or ligaments. Lifting something heavy the wrong way, a sudden twist, a
+        fall, or even sneezing can cause it. Sitting for long hours, poor posture, being out of shape, and stress can all add
+        to it. Often, there is no single clear cause, and that is okay. It still usually gets better.
+    - layout: "bullets"
+      heading: "Other Causes"
+      points: ["Bulging or herniated disc", "Arthritis of the spine", "Narrowing of the spinal canal", "Osteoporosis fractures"]
+      footage_query: "doctor reading spine x-ray"
+      narration: >-
+        Other causes include a bulging or herniated disc, where the soft center of a disc pushes out and can press on a nerve.
+        Arthritis can wear down the joints of the spine with age. Spinal stenosis is a narrowing of the space around the
+        spinal cord. In older adults, weak bones from osteoporosis can lead to small fractures in the spine.
+    - layout: "warning"
+      heading: "Sciatica"
+      points: ["Pain down the leg", "Below the knee", "Numbness or tingling", "Often from a disc"]
+      footage_query: "man holding leg pain"
+      narration: >-
+        Sciatica is pain that travels from the lower back or buttock down the back of one leg, sometimes to the foot. It often
+        feels sharp, burning or electric, and may come with numbness or tingling. It usually happens when a disc or bone spur
+        presses on a nerve root. Most sciatica gets better on its own within weeks to a few months.
+    - layout: "bullets"
+      heading: "Acute or Chronic?"
+      points: ["Acute: under 4 weeks", "Subacute: 4 to 12 weeks", "Chronic: over 12 weeks", "Most get better early"]
+      footage_query: "calendar notebook planning"
+      narration: >-
+        Doctors describe back pain by how long it lasts. Acute back pain lasts less than four weeks, and most people recover
+        in this time. Subacute pain lasts four to twelve weeks. Chronic back pain lasts more than twelve weeks. Chronic pain
+        is less common, but it can affect sleep, work and mood, and needs a longer term plan.
+    - layout: "warning"
+      heading: "Red Flags: Get Help Now"
+      points: ["Loss of bladder or bowel control", "Numbness in the groin or inner thighs", "Leg weakness getting worse", "Go to the ER"]
+      footage_query: "hospital emergency entrance"
+      narration: >-
+        Now the red flags. Go to the emergency room right away if back pain comes with new trouble controlling your bladder or
+        bowels, numbness in the groin, buttocks or inner thighs, or weakness in the legs that is getting worse. These can be
+        signs of cauda equina syndrome, where nerves at the bottom of the spine are badly squeezed. It needs urgent surgery to
+        prevent lasting damage.
+    - layout: "warning"
+      heading: "Other Warning Signs"
+      points: ["Fever with back pain", "Cancer history", "Unexplained weight loss", "After a fall or accident"]
+      footage_query: "thermometer fever close up"
+      narration: >-
+        See a doctor promptly if back pain comes with fever or chills, which can mean infection. Also if you have a history of
+        cancer, unexplained weight loss, pain after a serious fall or accident, pain that is worse at night or at rest, or if
+        you are over fifty with new back pain. People who use IV drugs or have a weak immune system also need prompt care.
+    - layout: "warning"
+      heading: "When It Is Not the Back"
+      points: ["Kidney stones or infection", "Aortic aneurysm", "Pancreas or gallbladder", "Heart problems"]
+      footage_query: "man back pain holding side"
+      narration: >-
+        Sometimes pain in the back comes from something else. Kidney stones and kidney infections can cause pain in the side
+        or back. In older adults, especially smokers, sudden severe pain in the back or belly can be a tear in the aorta, the
+        body's main artery, which is an emergency. Pancreas, gallbladder, and even heart problems can cause back pain.
+    - layout: "myth_fact"
+      heading: "Rest in Bed Until It Heals"
+      points: ["Bed rest helps back pain", "Staying active heals faster"]
+      footage_query: "woman lying bed sick"
+      narration: >-
+        Myth: the best thing for back pain is bed rest. Fact: studies show that people who stay as active as they can recover
+        faster than those who stay in bed. Bed rest for more than a day or two can make muscles stiff and weak. Keep moving
+        gently, with walking and normal daily activities, avoiding only the movements that really hurt.
+    - layout: "myth_fact"
+      heading: "You Need an X-Ray or MRI"
+      points: ["Every back pain needs a scan", "Most do not need imaging"]
+      footage_query: "mri scanner hospital"
+      narration: >-
+        Myth: you need an x ray or MRI to find out what is wrong. Fact: for most new back pain without red flags, imaging is
+        not needed in the first six weeks. Scans often show changes like bulging discs that are common in people with no pain
+        at all, which can lead to worry and unneeded procedures. Scans are used when there are warning signs or pain does not
+        improve.
+    - layout: "bullets"
+      heading: "What Helps Right Away"
+      points: ["Keep moving gently", "Heat on the sore area", "Over-the-counter pain relief", "Find comfortable positions"]
+      footage_query: "heating pad lying couch"
+      narration: >-
+        What helps in the first days? Keep moving gently. A heating pad or warm shower can relax tight muscles. Over the
+        counter pain relievers, like ibuprofen, naproxen or acetaminophen, can help if they are safe for you. Find positions
+        that ease the pain, like lying on your side with a pillow between your knees, or on your back with a pillow under your
+        knees.
+    - layout: "bullets"
+      heading: "Heat or Ice?"
+      points: ["Heat often helps most", "Ice for the first day or two", "Twenty minutes at a time", "Protect your skin"]
+      footage_query: "ice pack back"
+      narration: >-
+        Should you use heat or ice? Research shows heat often helps more for back pain from muscle strain. Some people prefer
+        ice in the first day or two. Use either for about fifteen to twenty minutes at a time, with a cloth between it and
+        your skin. Never sleep on a heating pad, and be careful if you have diabetes or poor feeling in your skin.
+    - layout: "bullets"
+      heading: "Gentle Movement"
+      points: ["Short, frequent walks", "Gentle stretches", "Avoid heavy lifting at first", "Slowly return to activity"]
+      footage_query: "woman walking park"
+      narration: >-
+        Gentle movement helps your back heal. Take short walks several times a day, and slowly increase the distance. Gentle
+        stretches, like pulling one knee toward your chest while lying on your back, may help. Avoid heavy lifting and
+        twisting for a little while, then slowly return to your normal activities, including work, as pain allows.
+    - layout: "myth_fact"
+      heading: "Pain Means Damage"
+      points: ["More pain means more injury", "Hurt does not always mean harm"]
+      footage_query: "man stretching outdoors"
+      narration: >-
+        Myth: if it hurts, you are causing more damage. Fact: with common back pain, some discomfort when moving is normal and
+        does not mean you are harming your back. Pain is the body's alarm system, and with back pain, the alarm is often too
+        sensitive. Gradually moving more, even with some discomfort, helps the alarm settle down.
+    - layout: "bullets"
+      heading: "Physical Therapy"
+      points: ["Personalized exercises", "Strengthen core muscles", "Improve flexibility", "Learn safe movement"]
+      footage_query: "physical therapist patient"
+      narration: >-
+        If pain lasts more than a few weeks, physical therapy can help a lot. A physical therapist can teach you exercises to
+        strengthen the muscles that support your spine, especially your core, improve flexibility, and show you safer ways to
+        move, lift and sit. In many states you can see a physical therapist without a referral.
+    - layout: "bullets"
+      heading: "Other Helpful Treatments"
+      points: ["Massage", "Spinal manipulation", "Acupuncture", "Yoga or tai chi"]
+      footage_query: "yoga class people"
+      narration: >-
+        Other treatments with some evidence for back pain include massage, spinal manipulation by a chiropractor or physical
+        therapist, acupuncture, yoga, tai chi and mindfulness programs. These may help some people feel better and move more.
+        They work best alongside staying active and exercise, not instead of it. Ask your doctor what might fit you.
+    - layout: "warning"
+      heading: "Be Careful With Opioids"
+      points: ["Rarely the best choice", "Risk of dependence", "Short course only if needed", "Ask about alternatives"]
+      footage_query: "pill bottle close up"
+      narration: >-
+        Strong prescription pain medicines, called opioids, are rarely the best choice for back pain. Studies show they often
+        do not work better than other options for long term back pain, and they carry risks of dependence, overdose,
+        constipation and falls. If they are prescribed, it should be for the shortest time possible. Ask your doctor about
+        other options first.
+    - layout: "bullets"
+      heading: "Shots and Surgery"
+      points: ["For some nerve pain", "Steroid injections", "Surgery for severe cases", "Most people never need it"]
+      footage_query: "surgeon preparing operating room"
+      narration: >-
+        For some people with severe sciatica or nerve pain, a steroid injection near the nerve may give short term relief.
+        Surgery may be an option when nerve pain does not improve after several weeks, or if there is serious weakness or red
+        flag symptoms. But most people with back pain, even with a herniated disc, get better without surgery.
+    - layout: "bullets"
+      heading: "Chronic Back Pain"
+      points: ["A whole-person approach", "Exercise and physical therapy", "Sleep and stress care", "Talk therapy can help"]
+      footage_query: "man talking therapist"
+      narration: >-
+        If back pain has lasted more than three months, a whole person approach works best. Regular exercise and physical
+        therapy are key. Good sleep, stress management, and staying socially active matter too. A type of talk therapy called
+        cognitive behavioral therapy can help people cope with pain and get back to life. Depression and anxiety are common,
+        and treatable.
+    - layout: "bullets"
+      heading: "Lift the Right Way"
+      points: ["Bend your knees", "Keep the load close", "Do not twist", "Get help for heavy items"]
+      footage_query: "man lifting box properly"
+      narration: >-
+        To protect your back, lift the right way. Stand close to the object with your feet apart. Bend at your knees and hips,
+        not your waist. Keep your back straight and the load close to your body. Lift with your legs. Turn by moving your
+        feet, not by twisting. And ask for help, or use a cart, for heavy items.
+    - layout: "bullets"
+      heading: "Sit and Work Smarter"
+      points: ["Support your lower back", "Feet flat on the floor", "Screen at eye level", "Stand up every 30 minutes"]
+      footage_query: "office worker desk posture"
+      narration: >-
+        If you sit a lot, set up your space to help your back. Use a chair that supports your lower back, or a small pillow.
+        Keep your feet flat on the floor and your screen at eye level. Most important, get up and move at least every thirty
+        minutes. A short walk or stretch breaks up long periods of sitting.
+    - layout: "bullets"
+      heading: "Strengthen Your Core"
+      points: ["Core muscles support the spine", "Bridges and planks", "Walking and swimming", "Start easy"]
+      footage_query: "woman exercising mat"
+      narration: >-
+        Strong core muscles, in your belly, back and hips, act like a natural brace for your spine. Simple exercises like
+        bridges, bird dogs and modified planks can help. Low impact activities like walking, swimming and cycling are great
+        for your back. Start easy, and build up slowly. If you have pain, ask a physical therapist which exercises are right
+        for you.
+    - layout: "bullets"
+      heading: "Everyday Habits"
+      points: ["Keep a healthy weight", "Quit smoking", "Sleep on a supportive mattress", "Manage stress"]
+      footage_query: "people walking park"
+      narration: >-
+        Some everyday habits lower the risk of back pain. Keep a healthy weight, which reduces strain on your spine. Quit
+        smoking, which reduces blood flow to the discs. Sleep on a mattress that supports you comfortably. Manage stress,
+        since tense muscles can make pain worse. Wear comfortable, supportive shoes, and avoid carrying heavy bags on one
+        shoulder.
+    - layout: "bullets"
+      heading: "Back Pain in Older Adults"
+      points: ["Arthritis and stenosis", "Watch for bone fractures", "Stay active safely", "Ask about bone density"]
+      footage_query: "elderly woman holding back"
+      narration: >-
+        In older adults, back pain may come from arthritis, spinal stenosis, or fractures from osteoporosis, sometimes after
+        only a minor fall or even a cough. Sudden, sharp back pain in an older adult, especially a woman after menopause,
+        should be checked. Staying active, balance exercises, and a bone density test can help protect the spine.
+    - layout: "bullets"
+      heading: "Questions for Your Doctor"
+      points: ["What is likely causing my pain?", "Do I need a scan?", "What can I do at home?", "When should I come back?"]
+      footage_query: "patient talking doctor"
+      narration: >-
+        At your visit, ask: what is likely causing my back pain? Do I have any warning signs? Do I need a scan, and why or why
+        not? What can I do at home, and which activities should I avoid for now? Would physical therapy help? And what signs
+        should make me come back or go to the ER?
+    - layout: "bullets"
+      heading: "Quick Recap"
+      points: ["Most back pain gets better", "Stay active, use heat", "Know the red flags", "Strengthen and lift right"]
+      footage_query: "notebook checklist pen"
+      narration: >-
+        Let us recap. Back pain is very common, and most of it gets better within a few weeks. Stay as active as you can, use
+        heat, and take pain relievers if they are safe for you. Most people do not need a scan. Know the red flags, like
+        bladder or bowel problems, numbness in the groin, or leg weakness. And protect your back with exercise and smart
+        lifting.
+    - layout: "outro"
+      heading: "Remember"
+      points: ["Keep moving", "Know the red flags", "Build a strong core"]
+      footage_query: "man walking outdoors"
+      narration: >-
+        Remember: keep moving, know the red flags that need the ER, and build a strong core to protect your back. Share this
+        with someone who sits at a desk all day. This video is for education only, not medical advice. Like and subscribe to
+        Health Support Studio for a new health video every day.
+  short_title: "Back pain? Don't stay in bed #Shorts"
+  short_caption: >-
+    Staying active helps back pain heal faster. Know the red flags too. Educational only, not medical advice. #BackPain
+    #Sciatica #HealthTips #HealthEducation
+  short_scenes:
+    - layout: "title"
+      heading: "Back Pain?"
+      points: ["Do not stay in bed"]
+      footage_query: "man holding lower back"
+      narration: >-
+        Hurt your back? The old advice to rest in bed is wrong.
+    - layout: "bullets"
+      heading: "What Helps"
+      points: ["Keep moving gently", "Use heat", "Most get better in weeks"]
+      footage_query: "woman walking park"
+      narration: >-
+        People who stay active recover faster. Take short walks, use a heating pad, and take a pain reliever if it is safe for
+        you. But go to the ER if back pain comes with trouble controlling your bladder or bowels, numbness in the groin, or
+        leg weakness.
+    - layout: "outro"
+      heading: "Full Video"
+      points: ["On YouTube"]
+      footage_query: "man walking outdoors"
+      narration: >-
+        Learn more about back pain in our full video, on the Health Support Studio YouTube channel.
