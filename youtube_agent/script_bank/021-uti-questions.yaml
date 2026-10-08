@@ -11,10 +11,11 @@ plan:
     Burning when you pee? Needing to go all the time? Urinary tract infections are one of the most common infections in the US. We answer the top questions: symptoms, how older adults can look different, whether cranberry works, and when a UTI becomes serious.
 
     In this video:
-    • Common UTI symptoms
-    • Signs the infection may have reached the kidneys
+    • What a UTI is and who gets them
+    • Bladder and kidney infection symptoms
     • Why older adults may just seem confused
-    • Prevention tips
+    • Treatment, and 4 common myths
+    • Prevention tips and frequent UTIs
 
     #UTI #UrinaryTractInfection #WomensHealth #HealthTips #HealthEducation
   tags: ["uti", "uti symptoms", "urinary tract infection", "bladder infection", "kidney infection", "uti in elderly", "cranberry for uti", "uti prevention", "burning when peeing", "womens health", "health education"]
@@ -25,68 +26,233 @@ plan:
   scenes:
     - layout: "title"
       heading: "Is It a UTI?"
-      points: ["Your top questions answered"]
-      footage_query: "woman discomfort couch"
+      points: ["Top questions answered"]
+      footage_query: "woman stomach pain couch"
       narration: >-
-        Burning when you pee, and feeling like you need to go every few minutes. Urinary tract infections, or UTIs, are among
-        the most common infections doctors see, especially in women. Today we answer the top questions about UTIs, including
-        when one can become serious.
+        Burning when you pee. Needing to go again and again, even when little comes out. Urinary tract infections, or UTIs,
+        are one of the most common infections in America, causing millions of doctor visits every year. Today we answer the
+        top questions about UTIs: the symptoms, who gets them, when they become serious, what treatment works, and how to
+        prevent them.
     - layout: "bullets"
-      heading: "What Are the Symptoms?"
-      points: ["Burning or pain when peeing", "Needing to go often and urgently", "Cloudy or bloody urine", "Pressure in lower belly"]
-      footage_query: "woman holding stomach"
+      heading: "What Is a UTI?"
+      points: ["Infection in the urinary tract", "Usually bacteria from the gut", "Bladder is most common", "Can spread to kidneys"]
+      footage_query: "doctor explaining anatomy model"
       narration: >-
-        Question one: what are the symptoms? The most common are pain or burning when you pee, needing to pee often or
-        urgently, even when little comes out, cloudy or strong smelling urine, blood in the urine, and pressure or pain in the
-        lower belly.
+        First question: what is a UTI? It is an infection anywhere in the urinary tract, which includes the kidneys, the tubes
+        from the kidneys, the bladder, and the urethra, the tube urine leaves through. Most UTIs are caused by bacteria from
+        the gut, often E. coli, that get into the urethra and travel up. Most stay in the bladder, but some reach the kidneys.
+    - layout: "big_number"
+      heading: "How Common Are UTIs?"
+      points: ["1 in 2", "Women will have at least one"]
+      footage_query: "group of women walking"
+      narration: >-
+        How common are UTIs? Very. About half of all women will have at least one UTI in their lifetime, and many will have
+        more than one. Men get them less often, but the risk rises as men get older. Children can get them too. Because they
+        are so common, it is worth knowing the signs and when to get help.
     - layout: "bullets"
-      heading: "Why Are Women at Higher Risk?"
-      points: ["Shorter urethra", "Bacteria reach the bladder easier", "Sex and menopause raise risk"]
-      footage_query: "woman walking city"
+      heading: "Why Women Get More UTIs"
+      points: ["Shorter urethra", "Opening near the rectum", "Sex can move bacteria", "Menopause changes"]
+      footage_query: "woman talking doctor office"
       narration: >-
-        Question two: why do women get more UTIs? Women have a shorter urethra, the tube that carries urine out of the body, so
-        bacteria can reach the bladder more easily. Sexual activity and the changes after menopause can also raise the risk.
-        Men can get UTIs too, and in men, a UTI should always be checked by a doctor.
+        Why do women get more UTIs? A woman's urethra is much shorter than a man's, so bacteria have a shorter trip to the
+        bladder. The opening is also close to the rectum, where gut bacteria live. Sex can push bacteria toward the urethra.
+        After menopause, lower estrogen changes the tissues and the healthy bacteria in the area, raising the risk.
+    - layout: "bullets"
+      heading: "Other Risk Factors"
+      points: ["Pregnancy", "Diabetes", "Kidney stones, enlarged prostate", "Urinary catheters"]
+      footage_query: "pregnant woman sitting"
+      narration: >-
+        Other things raise the risk too. Pregnancy. Diabetes, especially when blood sugar is high. Anything that blocks the
+        flow of urine, like kidney stones or an enlarged prostate in men. Not emptying the bladder fully. Using a urinary
+        catheter. Certain birth control, like diaphragms and spermicides. And a weakened immune system. Some people also just
+        seem more prone to them.
     - layout: "warning"
-      heading: "Kidney Infection Signs"
-      points: ["Fever or chills", "Pain in back or side", "Nausea or vomiting", "See a doctor the same day"]
-      footage_query: "man back pain"
+      heading: "Common Bladder Symptoms"
+      points: ["Burning when you pee", "Going often, in small amounts", "Strong urge to go", "Cloudy or bloody urine"]
+      footage_query: "woman holding lower belly"
       narration: >-
-        Question three: when is a UTI serious? If the infection travels up to the kidneys, it can become dangerous. Watch for
-        fever or chills, pain in your back or side, below the ribs, and nausea or vomiting. If you have these, see a doctor the
-        same day. If you also feel confused, very weak, or have a fast heartbeat, go to the ER.
+        What are the common symptoms of a bladder infection? Burning or pain when you pee. Needing to go often, but passing
+        only small amounts. A strong urge that is hard to hold. Pressure or pain in the lower belly. Urine that looks cloudy,
+        smells strong, or has blood in it, which can look pink, red or brown.
+    - layout: "warning"
+      heading: "Signs of a Kidney Infection"
+      points: ["Fever and chills", "Pain in the back or side", "Nausea or vomiting", "Feeling very sick"]
+      footage_query: "man back pain holding side"
+      narration: >-
+        How do you know if the infection reached the kidneys? Watch for fever and shaking chills, pain in the back or side
+        just below the ribs, nausea and vomiting, and feeling very sick. A kidney infection is more serious than a bladder
+        infection and needs prompt medical care. Without treatment, it can damage the kidneys or spread to the blood.
+    - layout: "warning"
+      heading: "When It Is an Emergency"
+      points: ["High fever with confusion", "Very low blood pressure", "Cannot keep fluids down", "Pregnant with UTI symptoms"]
+      footage_query: "hospital emergency entrance"
+      narration: >-
+        When is a UTI an emergency? Go to the emergency room, or call 911, for a high fever with confusion, fast breathing, a
+        racing heart, feeling faint, or cold, clammy skin. These can be signs of sepsis, a life threatening reaction to
+        infection. Also get urgent care if you cannot keep fluids or medicine down, or if you are pregnant and have UTI
+        symptoms.
     - layout: "bullets"
-      heading: "Older Adults Look Different"
-      points: ["New confusion", "Sudden falls", "Changes in behavior", "May not have burning"]
-      footage_query: "senior woman sitting home"
+      heading: "Older Adults Can Look Different"
+      points: ["May have no burning", "New confusion", "Falls or weakness", "Not eating, acting different"]
+      footage_query: "elderly woman confused sitting"
       narration: >-
-        Question four: do UTIs look different in older adults? Sometimes, yes. An older adult may not complain of burning.
-        Instead, a family member may notice new confusion or agitation. But confusion has many possible causes, so do not
-        assume. Any sudden change in thinking or behavior in an older adult is a reason to call their doctor.
+        Here is something many families do not know. In older adults, a UTI may not cause the usual burning. Instead, the
+        first sign may be new confusion, agitation, falls, weakness, loss of appetite, or new trouble controlling urine. If an
+        older loved one suddenly seems different, a doctor should check for infection, along with other causes.
     - layout: "myth_fact"
-      heading: "Does Cranberry Work?"
-      points: ["Cranberry juice cures a UTI", "It doesn't treat an infection"]
+      heading: "Smelly Urine Means a UTI"
+      points: ["Strong-smelling urine means infection", "Smell alone is not enough"]
+      footage_query: "glass of water close up"
+      narration: >-
+        Myth: cloudy or strong smelling urine always means a UTI. Fact: urine can smell or look different because of
+        dehydration, foods, vitamins or medicines. Older adults often have bacteria in their urine without any infection, and
+        treating it with antibiotics does not help and can cause harm. Doctors look at symptoms, not just the urine test.
+    - layout: "bullets"
+      heading: "Symptoms in Children"
+      points: ["Fever with no clear cause", "Fussiness, poor feeding", "Accidents after potty training", "Pain when peeing"]
+      footage_query: "mother holding sick toddler"
+      narration: >-
+        What about children? Babies and toddlers may only have a fever, fussiness, vomiting, or poor feeding. Older children
+        may complain of pain when peeing, need to go often, or start having wetting accidents after being potty trained. UTIs
+        in children should always be checked by a doctor, because they can affect growing kidneys.
+    - layout: "bullets"
+      heading: "UTIs in Men"
+      points: ["Less common, but happen", "Often linked to prostate", "Can need longer treatment", "Always see a doctor"]
+      footage_query: "man talking doctor office"
+      narration: >-
+        Men can get UTIs too. They are less common, but when they happen, they are often linked to a problem like an enlarged
+        prostate, a kidney stone, or a catheter. In men, a UTI may involve the prostate and can need longer treatment. Men
+        with UTI symptoms should always see a doctor rather than trying to wait it out.
+    - layout: "bullets"
+      heading: "How Is a UTI Diagnosed?"
+      points: ["Your symptoms", "Urine test", "Urine culture", "Imaging if needed"]
+      footage_query: "urine sample cup lab"
+      narration: >-
+        How is a UTI diagnosed? Your doctor will ask about your symptoms and may test a urine sample for signs of infection. A
+        urine culture can show which bacteria are growing and which antibiotics will work. This is important for repeat
+        infections. For kidney infections or frequent UTIs, imaging like an ultrasound may be used to look for a blockage.
+    - layout: "bullets"
+      heading: "How to Give a Clean Sample"
+      points: ["Wash your hands", "Clean the area", "Start peeing, then collect", "Do not touch the inside"]
+      footage_query: "washing hands sink"
+      narration: >-
+        A clean urine sample gives a more accurate result. Wash your hands. Clean the genital area with the wipe you are
+        given. Start peeing into the toilet, then move the cup into the stream to catch the middle part. Do not touch the
+        inside of the cup or the lid. This is called a clean catch sample.
+    - layout: "bullets"
+      heading: "How Are UTIs Treated?"
+      points: ["Antibiotics", "Take every dose", "Feel better in 1 to 2 days", "Call if no improvement"]
+      footage_query: "pharmacist giving medicine"
+      narration: >-
+        How are UTIs treated? Most need antibiotics prescribed by a doctor. Simple bladder infections often need only a short
+        course of a few days. Kidney infections need longer treatment, and sometimes a hospital stay. Take every dose exactly
+        as prescribed, even if you feel better. Most people feel better within a day or two. If you do not, call your doctor.
+    - layout: "myth_fact"
+      heading: "Leftover Antibiotics Work"
+      points: ["Use old antibiotics for a UTI", "The wrong drug can fail"]
+      footage_query: "pill bottles table"
+      narration: >-
+        Myth: you can take leftover antibiotics from last time. Fact: the old pills may be the wrong drug, the wrong dose, or
+        not enough for a full course. Bacteria that cause UTIs are becoming more resistant to common antibiotics. Using the
+        wrong one can let the infection spread to the kidneys. Always get checked, and never share antibiotics.
+    - layout: "bullets"
+      heading: "Easing the Discomfort"
+      points: ["Drink plenty of water", "Heating pad on the belly", "Pain reliever if safe", "Avoid bladder irritants"]
+      footage_query: "heating pad lying couch"
+      narration: >-
+        While the antibiotics start working, you can ease the discomfort. Drink plenty of water. A heating pad on the lower
+        belly can help. An over the counter pain reliever may help if it is safe for you. There is also a medicine that numbs
+        the bladder for a day or two, which turns urine bright orange. Avoid coffee, alcohol and spicy foods for now.
+    - layout: "myth_fact"
+      heading: "Cranberry Juice Cures It"
+      points: ["Cranberry juice treats a UTI", "It does not cure infection"]
       footage_query: "cranberry juice glass"
       narration: >-
-        Question five: can cranberry juice cure a UTI? No. Cranberry does not treat an active infection. Some studies suggest
-        cranberry products might help lower the chance of repeat UTIs in some women, but the evidence is mixed. Bacterial UTIs
-        usually need antibiotics prescribed by a clinician, and it is important to take them exactly as directed.
+        Myth: cranberry juice will cure a UTI. Fact: cranberry does not treat an infection that has already started. Some
+        studies suggest cranberry products may lower the chance of repeat UTIs in some women, but the evidence is mixed, and
+        sugary juice adds a lot of calories. If you have symptoms, see a doctor instead of waiting on juice.
+    - layout: "myth_fact"
+      heading: "It Will Go Away"
+      points: ["Just wait it out", "Infection can spread"]
+      footage_query: "woman lying bed sick"
+      narration: >-
+        Myth: a UTI will always go away on its own. Fact: some mild bladder infections do clear up, but many do not, and some
+        spread to the kidneys. Waiting can turn a simple infection into a serious one. If you have symptoms, especially with
+        fever or back pain, get checked. Many clinics and telehealth visits can help the same day.
     - layout: "bullets"
-      heading: "Can I Prevent Them?"
-      points: ["Drink enough fluids", "Don't hold it in", "Pee after sex", "Wipe front to back"]
-      footage_query: "glass of water table"
+      heading: "Is a UTI Contagious?"
+      points: ["Not spread like a cold", "Not passed by toilet seats", "Sex can move bacteria", "STIs can look similar"]
+      footage_query: "couple talking sofa"
       narration: >-
-        Question six: how can I lower my risk? Drink enough fluids so you pee regularly. Do not hold it in for long periods.
-        Pee soon after sex. Wipe from front to back after using the toilet. And if you keep getting UTIs, talk to your doctor
-        about why, and what prevention options might be right for you.
+        Is a UTI contagious? Not in the usual way. You cannot catch it from a toilet seat or from someone coughing. Sex can
+        move bacteria near the urethra, but the infection comes from your own bacteria. Some sexually transmitted infections
+        can cause burning when you pee too, so tell your doctor if you might have been exposed.
+    - layout: "bullets"
+      heading: "Preventing UTIs"
+      points: ["Drink enough water", "Do not hold urine long", "Pee after sex", "Wipe front to back"]
+      footage_query: "woman drinking water bottle"
+      narration: >-
+        How can you prevent UTIs? Drink enough water so you pee regularly, which flushes bacteria out. Do not hold urine for
+        long periods. Pee soon after sex. Women should wipe from front to back after using the toilet. Wear cotton underwear
+        and loose clothing, and change out of wet swimsuits or sweaty workout clothes soon. These simple habits help many
+        people have fewer infections, and they cost nothing.
+    - layout: "bullets"
+      heading: "More Prevention Tips"
+      points: ["Avoid harsh soaps and douches", "Change birth control if needed", "Treat constipation", "Control blood sugar"]
+      footage_query: "bathroom toiletries shelf"
+      narration: >-
+        A few more tips. Avoid douches, scented sprays and harsh soaps in the genital area, since they can upset the natural
+        balance. If you use a diaphragm or spermicide and get frequent UTIs, ask about other birth control. Treat
+        constipation, which can press on the bladder. If you have diabetes, keeping blood sugar in range lowers infection
+        risk.
+    - layout: "bullets"
+      heading: "Frequent UTIs"
+      points: ["2 or more in 6 months", "Find the cause", "Ask about prevention options", "See a specialist if needed"]
+      footage_query: "doctor talking patient office"
+      narration: >-
+        What if you keep getting UTIs? Two or more in six months, or three or more in a year, is called recurrent UTI. Your
+        doctor may look for a cause, like a blockage or a stone. There are prevention options, including vaginal estrogen for
+        women after menopause, and sometimes a low dose antibiotic. A urologist can help if they keep coming back.
+    - layout: "bullets"
+      heading: "After Menopause"
+      points: ["Lower estrogen raises risk", "Vaginal estrogen can help", "Low risk for most women", "Ask your doctor"]
+      footage_query: "mature woman smiling"
+      narration: >-
+        For women after menopause, vaginal estrogen, used as a cream, tablet or ring, can lower the chance of repeat UTIs by
+        helping restore the natural tissues and healthy bacteria. It is applied locally, so very little enters the blood. Ask
+        your doctor whether it is right for you, especially if you have had breast cancer or other health concerns.
+    - layout: "bullets"
+      heading: "Catheters and Caregivers"
+      points: ["Clean hands before touching", "Keep the bag below the bladder", "Keep the tube unkinked", "Ask if still needed"]
+      footage_query: "caregiver helping elderly man"
+      narration: >-
+        If a loved one uses a urinary catheter, infection prevention is very important. Clean your hands before touching the
+        catheter or bag. Keep the bag below the level of the bladder, and keep the tube from kinking. Empty the bag regularly.
+        Ask the doctor regularly whether the catheter is still needed, because the longer it stays, the higher the risk.
+    - layout: "bullets"
+      heading: "Questions for Your Doctor"
+      points: ["Is this a bladder or kidney infection?", "Which antibiotic and for how long?", "What if I do not improve?", "How can I prevent more?"]
+      footage_query: "patient talking doctor"
+      narration: >-
+        At your visit, ask a few questions. Is this a bladder infection, or could it be in the kidneys? Which antibiotic is
+        this, and how long do I take it? What side effects should I watch for? What should I do if I do not feel better in two
+        days? And how can I prevent this from happening again?
+    - layout: "bullets"
+      heading: "Quick Recap"
+      points: ["Burning, urgency, cloudy urine", "Fever or back pain: kidneys", "Older adults: watch for confusion", "Get checked, finish antibiotics"]
+      footage_query: "notebook checklist pen"
+      narration: >-
+        Let us recap. Common UTI symptoms are burning, needing to go often, and cloudy or bloody urine. Fever, chills and back
+        pain may mean a kidney infection. In older adults, sudden confusion can be the main sign. Get checked instead of
+        waiting, take antibiotics exactly as prescribed, and use simple habits to prevent the next one.
     - layout: "outro"
-      heading: "Don't Wait"
-      points: ["Symptoms? See a clinician", "Fever or back pain? Same day", "Men: always get checked"]
-      footage_query: "patient talking doctor office"
+      heading: "Remember"
+      points: ["Do not wait it out", "Fever or back pain: get care", "Drink water, pee after sex"]
+      footage_query: "woman smiling outdoors"
       narration: >-
-        If you think you have a UTI, do not wait it out. See a clinician, especially if you have fever or back pain. This
-        video is for education only, not medical advice. Like and subscribe to Health Support Studio for a new health video
-        every day.
+        Remember: do not wait it out, get care fast for fever or back pain, and watch older loved ones for sudden confusion.
+        Share this with someone who keeps getting UTIs. This video is for education only, not medical advice. Like and
+        subscribe to Health Support Studio for a new health video every day.
   short_title: "Does cranberry juice cure a UTI? #Shorts"
   short_caption: >-
     Reaching for cranberry juice when you have a UTI? Here is what it can and can't do, and the signs that mean see a doctor
