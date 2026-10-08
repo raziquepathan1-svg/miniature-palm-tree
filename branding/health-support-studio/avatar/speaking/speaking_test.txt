@@ -1,1 +1,2 @@
-office_16x9: converted=True | said: Hi everyone, welcome back to Health Support Support Studio. Let's get started.
+office_16x9: converted=True | said: Hi everyone, welcome back to Health Support Support Studio. Let's get started. | words: Hi@1.3-2.1 everyone,@2.1-2.5 welcome@3.3-3.5 back@3.5-3.9 to@3.9-4.1 Health@4.1-4.3 Support@4.3-4.7 Support@4.7-5.2 Studio.@5.2-5.7 Let's@7.2-7.8 get@7.8-7.9 started.@7.9-8.3
+sit_wave: converted=True | said: Hi, everyone. Welcome back to Welcome Back to Health Support Studio. Let's get started. | words: Hi,@0.7-1.3 everyone.@1.4-1.7 Welcome@2.6-2.6 back@2.6-2.9 to@2.9-3.0 Welcome@3.0-3.3 Back@3.3-3.6 to@3.6-3.8 Health@3.8-4.1 Support@4.1-4.4 Studio.@4.4-4.8 Let's@5.6-5.8 get@5.8-5.9 started.@5.9-6.3
