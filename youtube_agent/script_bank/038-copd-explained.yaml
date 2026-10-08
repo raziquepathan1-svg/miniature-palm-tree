@@ -1,0 +1,282 @@
+queue_topic: "COPD: symptoms, causes and how to breathe easier"
+style: "Explainer"
+sources:
+  - "CDC, About COPD: https://www.cdc.gov/copd/about/index.html"
+  - "NIH NHLBI, COPD: https://www.nhlbi.nih.gov/health/copd"
+  - "MedlinePlus, COPD: https://medlineplus.gov/copd.html"
+plan:
+  topic: "COPD: symptoms, causes and how to breathe easier"
+  title: "Smoker's Cough or COPD? Signs You Shouldn't Ignore"
+  description: |-
+    COPD is a common lung disease, and millions of Americans have it without knowing. Learn the early signs, the causes beyond smoking, the simple breathing test that finds it, and the treatments that help people breathe easier.
+
+    In this video:
+    • What COPD is: emphysema and chronic bronchitis
+    • Causes, including in people who never smoked
+    • Early and late warning signs
+    • Spirometry and lung cancer screening
+    • Quitting, inhalers, pulmonary rehab and flare-up plans
+
+    #COPD #LungHealth #QuitSmoking #Emphysema #HealthEducation
+  tags: ["copd", "copd symptoms", "emphysema", "chronic bronchitis", "smokers cough", "spirometry", "pulmonary rehab", "quit smoking", "inhaler technique", "lung health", "health education"]
+  thumbnail_text: "SMOKER'S COUGH?"
+  thumbnail_highlight: "COUGH?"
+  thumbnail_photo_query: "elderly man coughing"
+  playlist: "Healthy Habits & Prevention"
+  scenes:
+    - layout: "title"
+      heading: "COPD Explained"
+      points: ["More than a smoker's cough"]
+      footage_query: "elderly man coughing"
+      narration: >-
+        A cough that never goes away. Getting winded walking to the mailbox. Many people blame these on age or a smoker's
+        cough. But they can be signs of COPD, a long term lung disease that affects millions of Americans, and many do not
+        know they have it. Today you will learn what COPD is, its causes and signs, the simple breathing test that finds it,
+        and what helps people breathe easier.
+    - layout: "big_number"
+      heading: "A Leading Cause of Death"
+      points: ["14 million", "US adults diagnosed with COPD"]
+      footage_query: "older adults walking park"
+      narration: >-
+        About fourteen million adults in the United States have been diagnosed with COPD, and millions more may have it
+        without knowing. COPD is one of the leading causes of death in the country, and a major reason for hospital stays,
+        especially in winter. But with early diagnosis and good treatment, people can feel better, stay active, and slow the
+        disease.
+    - layout: "bullets"
+      heading: "What Is COPD?"
+      points: ["Chronic obstructive pulmonary disease", "Airways narrowed and inflamed", "Air sacs damaged", "Hard to breathe out"]
+      footage_query: "medical illustration lungs"
+      narration: >-
+        COPD stands for chronic obstructive pulmonary disease. It is a group of lung diseases that block airflow and make it
+        hard to breathe. The airways become inflamed, thickened and full of mucus, and the tiny air sacs at the ends lose
+        their stretch. Air gets trapped in the lungs, so it is hard to breathe out fully, leaving less room for fresh air.
+    - layout: "bullets"
+      heading: "Emphysema and Bronchitis"
+      points: ["Emphysema: damaged air sacs", "Chronic bronchitis: inflamed airways", "Many people have both", "Both are COPD"]
+      footage_query: "doctor explaining anatomy model"
+      narration: >-
+        You may have heard of emphysema and chronic bronchitis. Both are types of COPD. In emphysema, the walls between the
+        air sacs are damaged, so the lungs cannot move oxygen into the blood as well. In chronic bronchitis, the lining of the
+        airways is inflamed and makes a lot of mucus, causing a daily cough. Many people have both.
+    - layout: "bullets"
+      heading: "The Main Cause: Smoking"
+      points: ["Most cases linked to smoking", "Cigarettes, pipes, cigars", "Secondhand smoke", "Damage builds over years"]
+      footage_query: "man smoking cigarette"
+      narration: >-
+        The main cause of COPD in the United States is smoking. Most people with COPD smoke or used to smoke. Cigarettes cause
+        most cases, but pipes, cigars and other tobacco can too. Breathing secondhand smoke also raises the risk. The damage
+        builds up slowly over many years, which is why COPD is usually found in people over forty.
+    - layout: "bullets"
+      heading: "Other Causes"
+      points: ["Dust and fumes at work", "Air pollution", "Smoke from cooking fires", "Genetic alpha-1 deficiency"]
+      footage_query: "construction worker dust"
+      narration: >-
+        But about one in four people with COPD never smoked. Other causes include long term exposure to dust, chemicals and
+        fumes at work, air pollution, and smoke from burning wood or other fuels for cooking and heating. A genetic condition
+        called alpha one antitrypsin deficiency can cause COPD at a younger age. Childhood lung infections and asthma may also
+        play a part.
+    - layout: "warning"
+      heading: "Early Warning Signs"
+      points: ["Cough that will not go away", "Mucus most days", "Short of breath with activity", "Wheezing"]
+      footage_query: "woman coughing night"
+      narration: >-
+        COPD comes on slowly, so early signs are easy to ignore. Watch for a cough that lasts for months, coughing up mucus
+        most days, shortness of breath with everyday activities like climbing stairs or carrying groceries, wheezing, and a
+        tight chest. Many people slowly cut back on activity without noticing, to avoid feeling breathless.
+    - layout: "warning"
+      heading: "Later Signs"
+      points: ["Short of breath at rest", "Frequent chest infections", "Tired and losing weight", "Swollen ankles"]
+      footage_query: "elderly man short of breath"
+      narration: >-
+        As COPD gets worse, people may be short of breath even when resting or getting dressed, get frequent chest colds and
+        infections, feel very tired, lose weight without trying, and have swelling in the ankles, feet or legs. Some people's
+        lips or fingernails turn bluish. These signs need prompt medical attention.
+    - layout: "myth_fact"
+      heading: "Just a Smoker's Cough"
+      points: ["A daily cough is normal for smokers", "It can be early COPD"]
+      footage_query: "man coughing outdoors"
+      narration: >-
+        Myth: a daily cough is just normal for a smoker. Fact: a long lasting cough is not normal for anyone. It is often one
+        of the first signs of COPD, sometimes years before shortness of breath appears. If you smoke or used to smoke and have
+        a cough that will not go away, ask your doctor about a lung test.
+    - layout: "bullets"
+      heading: "The Breathing Test"
+      points: ["Called spirometry", "Blow hard into a tube", "Measures airflow", "Quick and painless"]
+      footage_query: "spirometry breathing test"
+      narration: >-
+        How is COPD diagnosed? With a simple breathing test called spirometry. You take a deep breath and blow out as hard and
+        fast as you can into a tube connected to a machine. It measures how much air you can blow out, and how fast. It takes
+        only a few minutes and does not hurt. You may repeat it after using an inhaler.
+    - layout: "bullets"
+      heading: "Other Tests"
+      points: ["Chest x-ray or CT scan", "Oxygen level check", "Blood test for alpha-1", "Rule out other causes"]
+      footage_query: "ct scanner hospital"
+      narration: >-
+        Your doctor may also order a chest x ray or CT scan to look at your lungs and rule out other problems. A small clip on
+        your finger measures your oxygen level. A blood test can check for alpha one antitrypsin deficiency, which is
+        recommended for everyone with COPD. Other tests check your heart, since heart problems can also cause shortness of
+        breath.
+    - layout: "bullets"
+      heading: "Lung Cancer Screening"
+      points: ["Ages 50 to 80", "20 pack-year smoking history", "Smoke now or quit within 15 years", "Yearly low-dose CT"]
+      footage_query: "ct scanner hospital"
+      narration: >-
+        People with COPD who smoked are also at higher risk for lung cancer. The US Preventive Services Task Force recommends
+        a yearly low dose CT scan for adults fifty to eighty who have a twenty pack year smoking history, and who smoke now or
+        quit within the past fifteen years. A pack year means one pack a day for one year. Ask your doctor if you qualify.
+    - layout: "big_number"
+      heading: "Quit Smoking"
+      points: ["Number 1", "Step to slow COPD"]
+      footage_query: "broken cigarette close up"
+      narration: >-
+        The single most important thing a person with COPD who smokes can do is quit. Quitting slows the loss of lung
+        function, reduces symptoms and flare ups, and helps you live longer, at any age and any stage. It is never too late.
+        Call one eight hundred QUIT NOW for free help, and ask your doctor about medicines that double your chances of
+        quitting.
+    - layout: "myth_fact"
+      heading: "Too Late to Quit"
+      points: ["The damage is done, why bother?", "Quitting helps at any stage"]
+      footage_query: "older man smiling outdoors"
+      narration: >-
+        Myth: I already have COPD, so there is no point in quitting. Fact: lung damage from COPD cannot be fully reversed, but
+        quitting slows how fast it gets worse. People who quit have fewer flare ups, better breathing, and longer lives than
+        those who keep smoking. Many people need several tries before quitting for good. Keep trying.
+    - layout: "bullets"
+      heading: "Inhaler Medicines"
+      points: ["Rescue inhaler for quick relief", "Long-acting inhalers daily", "Some include steroids", "Open the airways"]
+      footage_query: "asthma inhaler close up"
+      narration: >-
+        Medicines help many people with COPD breathe easier. A quick relief inhaler opens the airways within minutes when you
+        are short of breath. Long acting inhalers, used every day, keep the airways open for twelve to twenty four hours. Some
+        people also need an inhaled steroid to lower inflammation, especially if they have frequent flare ups.
+    - layout: "bullets"
+      heading: "Use Inhalers the Right Way"
+      points: ["Each device is different", "Ask for a demo", "Use a spacer if advised", "Rinse after steroid inhalers"]
+      footage_query: "doctor teaching inhaler"
+      narration: >-
+        Studies show many people with COPD do not use their inhalers correctly, so the medicine does not reach the lungs. Each
+        device works differently. Ask your doctor, pharmacist or respiratory therapist to show you, and then show them how you
+        do it. Use a spacer if advised. Rinse your mouth after steroid inhalers to prevent thrush.
+    - layout: "bullets"
+      heading: "Pulmonary Rehab"
+      points: ["Supervised exercise", "Breathing techniques", "Education and support", "Covered by Medicare"]
+      footage_query: "elderly man exercising gym"
+      narration: >-
+        One of the most helpful treatments for COPD is pulmonary rehabilitation. It is a program of supervised exercise,
+        breathing training, education and support, usually twice a week for several weeks. People who complete it can walk
+        farther, feel less breathless, and have a better quality of life. Medicare covers it for many people with COPD. Ask
+        for a referral.
+    - layout: "bullets"
+      heading: "Breathing Techniques"
+      points: ["Pursed-lip breathing", "In through the nose", "Out slowly through pursed lips", "Helps when breathless"]
+      footage_query: "woman breathing exercise"
+      narration: >-
+        A simple technique called pursed lip breathing can help when you feel short of breath. Breathe in slowly through your
+        nose for about two counts. Then pucker your lips, like you are about to whistle, and breathe out slowly for about four
+        counts. This keeps the airways open longer and helps you empty your lungs. Practice it when you feel well.
+    - layout: "bullets"
+      heading: "Oxygen Therapy"
+      points: ["For low blood oxygen", "Portable tanks", "Use as prescribed", "Never near flames"]
+      footage_query: "oxygen tank elderly"
+      narration: >-
+        Some people with advanced COPD have low oxygen levels in the blood and need extra oxygen. It can help them feel
+        better, be more active, and live longer. Use it exactly as prescribed. Oxygen is a fire hazard, so never smoke or
+        allow open flames, candles or gas stoves near it. Portable tanks let people get out and stay active.
+    - layout: "warning"
+      heading: "Signs of a Flare-Up"
+      points: ["More breathless than usual", "More or thicker mucus", "Change in mucus color", "Fever, more coughing"]
+      footage_query: "man struggling breathe"
+      narration: >-
+        A COPD flare up, or exacerbation, is when symptoms suddenly get worse for days. Signs include more shortness of breath
+        than usual, more coughing, more mucus, mucus that is thicker or changes color, wheezing, or fever. Flare ups are often
+        caused by colds, flu, or air pollution. Have a written action plan from your doctor for what to do, and keep any
+        rescue medicines at home ready to use.
+    - layout: "warning"
+      heading: "Call 911"
+      points: ["Severe trouble breathing", "Blue lips or fingers", "Confusion or drowsiness", "Chest pain"]
+      footage_query: "person calling phone emergency"
+      narration: >-
+        Call 911 if you have severe trouble breathing, cannot speak in full sentences, your lips or fingertips turn blue or
+        gray, you become confused or very drowsy, or you have chest pain or a fast heartbeat. These are signs your body is not
+        getting enough oxygen. Do not wait for it to get better on its own.
+    - layout: "bullets"
+      heading: "Prevent Flare-Ups"
+      points: ["Yearly flu shot", "COVID, pneumonia, RSV vaccines", "Wash hands often", "Avoid sick people"]
+      footage_query: "vaccine syringe arm"
+      narration: >-
+        Preventing infections helps prevent flare ups. Get a flu shot every year, and ask about COVID, pneumonia, RSV, and
+        whooping cough vaccines. Wash your hands often, and avoid close contact with people who are sick, especially in
+        winter. Take your daily inhalers as prescribed, even when you feel well.
+    - layout: "bullets"
+      heading: "Protect Your Lungs at Home"
+      points: ["No smoking indoors", "Avoid strong fumes", "Check air quality", "Use fans when cooking"]
+      footage_query: "smoky city skyline"
+      narration: >-
+        Protect your lungs at home and outside. Make your home and car smoke free. Avoid strong fumes from paint, cleaning
+        products, and sprays. Use the stove fan when cooking. Check the air quality index each day, and stay indoors on days
+        with high pollution or wildfire smoke. In cold weather, cover your nose and mouth with a scarf.
+    - layout: "bullets"
+      heading: "Eat and Stay Active"
+      points: ["Small, frequent meals", "Enough protein", "Stay at a healthy weight", "Keep moving every day"]
+      footage_query: "healthy soup bowl kitchen"
+      narration: >-
+        Eating well helps with COPD. Breathing takes more energy, so some people lose weight and muscle. Small, frequent meals
+        can be easier than large ones, which can press on the lungs. Include protein at every meal. Drink fluids to keep mucus
+        thin, unless your doctor limits fluids. And keep moving every day, as much as you safely can.
+    - layout: "bullets"
+      heading: "Mood and COPD"
+      points: ["Anxiety and breathlessness", "Depression is common", "Support groups help", "Talk to your doctor"]
+      footage_query: "man sad sitting"
+      narration: >-
+        Living with COPD can be hard. Feeling short of breath can cause anxiety, which makes breathing even harder. Depression
+        is also common. Both are treatable. Talk to your doctor if you feel anxious, hopeless, or are losing interest in
+        things you enjoy. Pulmonary rehab and COPD support groups help many people feel less alone.
+    - layout: "bullets"
+      heading: "Questions for Your Doctor"
+      points: ["Do I need a breathing test?", "Am I using my inhaler right?", "Can I join pulmonary rehab?", "What is my action plan?"]
+      footage_query: "patient talking doctor"
+      narration: >-
+        At your next visit, ask: should I have a spirometry breathing test? What stage is my COPD? Am I using my inhaler the
+        right way? Can I join pulmonary rehab? Which vaccines do I need? Do I qualify for lung cancer screening? And what is
+        my action plan for flare ups?
+    - layout: "bullets"
+      heading: "Quick Recap"
+      points: ["Cough and breathlessness", "Spirometry finds it", "Quitting smoking is key", "Rehab and inhalers help"]
+      footage_query: "notebook checklist pen"
+      narration: >-
+        Let us recap. COPD is a common lung disease that makes it hard to breathe out. Early signs include a cough that will
+        not go away, mucus, and breathlessness with activity. A simple breathing test called spirometry finds it. Quitting
+        smoking, using inhalers correctly, pulmonary rehab, and vaccines help people breathe easier and live longer.
+    - layout: "outro"
+      heading: "Remember"
+      points: ["Lasting cough? Get tested", "Quit smoking", "Ask about pulmonary rehab"]
+      footage_query: "older couple walking park"
+      narration: >-
+        Remember: a cough that will not go away deserves a breathing test, quitting smoking helps at any stage, and pulmonary
+        rehab can help you breathe and live better. Share this with someone who has a smoker's cough. This video is for
+        education only, not medical advice. Like and subscribe to Health Support Studio for a new health video every day.
+  short_title: "That smoker's cough could be COPD #Shorts"
+  short_caption: >-
+    A cough that never goes away isn't normal. It could be early COPD. Educational only, not medical advice. #COPD
+    #LungHealth #QuitSmoking #HealthEducation
+  short_scenes:
+    - layout: "title"
+      heading: "Smoker's Cough?"
+      points: ["It could be COPD"]
+      footage_query: "elderly man coughing"
+      narration: >-
+        A cough that never goes away is not normal, even for a smoker.
+    - layout: "bullets"
+      heading: "Get Checked"
+      points: ["Cough and mucus for months", "Short of breath on stairs", "Simple breathing test"]
+      footage_query: "spirometry breathing test"
+      narration: >-
+        A daily cough with mucus, and getting winded on the stairs, can be early signs of COPD, a lung disease millions of
+        Americans have without knowing. A quick, painless breathing test called spirometry can find it. Quitting smoking slows
+        it down at any age.
+    - layout: "outro"
+      heading: "Full Video"
+      points: ["On YouTube"]
+      footage_query: "older couple walking park"
+      narration: >-
+        Learn more about COPD in our full video, on the Health Support Studio YouTube channel.
