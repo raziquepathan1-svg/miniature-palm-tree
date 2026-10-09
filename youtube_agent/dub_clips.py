@@ -158,13 +158,69 @@ def _words(path: Path, whisper) -> list[tuple[float, float, str]]:
     return [(w.start, w.end, re.sub(r"[^a-z0-9']", "", w.word.lower())) for s in segs for w in (s.words or [])]
 
 
-def _speaking(clip: Path, tmp: Path, n: int) -> np.ndarray:
-    """0..1 per sample: 1 while the clip's own voice is heard (so the lips are moving), fading to 0 in silences.
-    Keeps the new voice from sounding while the mouth is closed."""
+def _wsola(y: np.ndarray, src_times: np.ndarray, sr: int, hop: float = 0.01, win: float = 0.04) -> np.ndarray:
+    """Time-warp without changing the pitch: output grain k (every `hop` s) comes from source time src_times[k],
+    overlap-added with a small search for the best-fitting grain (WSOLA)."""
+    H, N = int(hop * sr), int(win * sr)
+    search = int(0.006 * sr)
+    w = np.hanning(N).astype(np.float32)
+    out = np.zeros(len(src_times) * H + N, np.float32)
+    norm = np.zeros_like(out)
+    yp = np.pad(y, (N + search, N + search))
+    prev = None
+    for k, t in enumerate(src_times):
+        c = int(t * sr) + N + search - N // 2
+        if prev is not None:  # pick the offset whose grain best continues the previous one
+            best, best_d = 0, -1e9
+            ref = yp[prev + H: prev + H + N]
+            for d in range(-search, search + 1, 4):
+                seg = yp[c + d: c + d + N]
+                v = float(np.dot(ref, seg))
+                if v > best_d:
+                    best, best_d = d, v
+            c += best
+        out[k * H: k * H + N] += yp[c: c + N] * w
+        norm[k * H: k * H + N] += w
+        prev = c
+    return out / np.maximum(norm, 1e-3)
+
+
+def dtw_refine(orig: np.ndarray, new: np.ndarray, sr: int = SR) -> np.ndarray:
+    """Move every syllable of `new` (the cloned voice, roughly in place) to where the same sound is in `orig`
+    (the clip's own voice, which the lips follow): MFCC dynamic time warping, then a pitch-safe time warp."""
+    import librosa
+
+    hop = int(0.01 * sr)
+    feats = []
+    for a in (orig, new):
+        m = librosa.feature.mfcc(y=a.astype(np.float32), sr=sr, n_mfcc=20, hop_length=hop, n_fft=int(0.032 * sr))[1:]
+        feats.append((m - m.mean(1, keepdims=True)) / (m.std(1, keepdims=True) + 1e-6))
+    _, path = librosa.sequence.dtw(X=feats[0], Y=feats[1], global_constraints=True, band_rad=0.08)
+    path = path[::-1]
+    n = feats[0].shape[1]
+    src = np.zeros(n)
+    for i in range(n):  # for each output frame, the matching source frame
+        src[i] = np.median(path[path[:, 0] == i, 1]) if np.any(path[:, 0] == i) else np.nan
+    idx = np.arange(n)
+    good = ~np.isnan(src)
+    src = np.interp(idx, idx[good], src[good])
+    src = np.convolve(np.pad(src, 4, mode="edge"), np.ones(9) / 9, "valid")  # smooth (no warbling)
+    for i in range(1, n):  # never go backwards, speed between 0.5x and 2x
+        src[i] = min(max(src[i], src[i - 1] + 0.5), src[i - 1] + 2.0)
+    return _wsola(new.astype(np.float32), src * 0.01, sr)[: len(orig)]
+
+
+def _orig_audio(clip: Path, tmp: Path) -> np.ndarray:
     wav = tmp / f"{clip.stem}_orig.wav"
     subprocess.run([ffmpeg_bin(), "-y", "-loglevel", "error", "-i", str(clip), "-ac", "1", "-ar", str(SR), str(wav)],
                    check=True)
-    a = _read_wav(wav)
+    return _read_wav(wav)
+
+
+def _speaking(clip: Path, tmp: Path, n: int) -> np.ndarray:
+    """0..1 per sample: 1 while the clip's own voice is heard (so the lips are moving), fading to 0 in silences.
+    Keeps the new voice from sounding while the mouth is closed."""
+    a = _orig_audio(clip, tmp)
     hop = int(0.02 * SR)
     rms = np.array([np.sqrt(np.mean(a[i:i + hop] ** 2) + 1e-12) for i in range(0, len(a), hop)])
     on = 20 * np.log10(rms) > max(-38.0, 20 * np.log10(rms.max()) - 30)
@@ -211,7 +267,14 @@ def dub_aligned(clip: Path, whisper, voice_cfg: dict, tmp: Path) -> tuple[Path, 
         piece = piece[: max(0, len(track) - a)]
         track[a:a + len(piece)] += piece
         stretch.append(speed)
-    track = track[: int(_duration(clip) * SR)] * _speaking(clip, tmp, len(track[: int(_duration(clip) * SR)]))
+    track = track[: int(_duration(clip) * SR)]
+    try:  # syllable by syllable, on top of the word-by-word placement
+        orig = _orig_audio(clip, tmp)
+        track = dtw_refine(orig[: len(track)], track)
+        track = np.pad(track, (0, max(0, int(_duration(clip) * SR) - len(track))))
+    except Exception as e:
+        print(f"  (fine alignment skipped: {e})")
+    track = track * _speaking(clip, tmp, len(track))
     out = clip.with_name(clip.stem + "_aligned.mp4")
     voice_wav = tmp / f"{clip.stem}_aligned.wav"
     _write(voice_wav, track)
