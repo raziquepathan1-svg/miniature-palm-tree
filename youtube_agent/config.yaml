@@ -75,11 +75,12 @@ video:
   # Your spoken intro and outro (Flow clips, voice changed to your cloned voice): the intro opens every long
   # video, the outro closes every video and Short. start/end trim the clip (seconds).
   host_clips:
-    intro:   # standing and sitting take turns, a different one each day
-      - {file: "branding/health-support-studio/avatar/speaking/intro_myvoice.mp4", start: 0.6, end: 9.3}
-      - {file: "branding/health-support-studio/avatar/speaking/sit_myvoice.mp4", start: 4.4, end: 8.9}
-      - {file: "branding/health-support-studio/avatar/speaking/office_fixed_myvoice.mp4", start: 0, end: 7.6}
-    outro: {file: "branding/health-support-studio/avatar/speaking/outro_v1_myvoice.mp4", start: 0, end: 8.0}
+    # Your desk clips in scrubs, re-spoken in your cloned voice with the lips matched (dub_clips.py)
+    intro:
+      - {file: "branding/health-support-studio/avatar/speaking/intro_desk_16x9_dub.mp4"}
+    outro:   # a different one each day
+      - {file: "branding/health-support-studio/avatar/speaking/desk_scrubs_16x9_dub.mp4"}
+      - {file: "branding/health-support-studio/avatar/speaking/outro_desk2_16x9_dub.mp4"}
   # You on screen in the middle of the video: about every minute you appear for 5-10 s next to the slide,
   # while your voice keeps narrating. mode "broll": your Flow clips of walking / reading a chart / at the desk
   # (no talking, so no lip-sync needed; folder avatar/broll). mode "lipsync": the talking "moves" clips,
