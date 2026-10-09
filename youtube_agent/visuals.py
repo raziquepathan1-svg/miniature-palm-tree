@@ -498,6 +498,24 @@ def render_scene(bg: Path, is_video: bool, overlay: Path, wav: Path, ass: Path |
     return out
 
 
+def render_host_overlay(scene, size: tuple[int, int], channel_name: str, out_png: Path) -> Path:
+    """The scene's slide for a host moment: the host fills the screen behind it, so the slide is drawn a bit
+    smaller in the lower part of the frame (the face stays visible above it); the brand tag stays top-left."""
+    W, H = size
+    full = Image.open(render_overlay(scene, size, channel_name, out_png.with_suffix(".full.png"))).convert("RGBA")
+    top = int(110 * W / 1920)
+    body = full.crop((0, top, W, H))
+    box = body.getbbox()
+    ov = Image.new("RGBA", size, (0, 0, 0, 0))
+    ov.alpha_composite(full.crop((0, 0, W, top)), (0, 0))
+    if box:
+        card = body.crop(box)
+        card = card.resize((int(card.width * 0.74), int(card.height * 0.74)), Image.LANCZOS)
+        ov.alpha_composite(card, ((W - card.width) // 2, max(top, int(H * 0.80) - card.height)))
+    ov.save(out_png)
+    return out_png
+
+
 def render_side_panel(scene, size: tuple[int, int], channel_name: str, out_png: Path) -> Path:
     """Landscape frame for the host: brand background, with the scene's card (heading and points, myth vs fact,
     ...) drawn on the right side, leaving the left side free for the host."""
@@ -512,7 +530,7 @@ def render_side_panel(scene, size: tuple[int, int], channel_name: str, out_png: 
 
 def render_host_scene(talk: Path, wav: Path, ass: Path | None, duration: float, size: tuple[int, int],
                       out: Path, landscape_crop: float = 1.0, fade_out: bool = True,
-                      side_panel: Path | None = None) -> Path:
+                      side_panel: Path | None = None, front: Path | None = None) -> Path:
     """The talking host with captions; audio is the narration. Landscape: the host on the left with the scene's
     card on the right (side_panel), or centred over a blurred copy of the same picture. Vertical: full screen.
 
@@ -527,7 +545,17 @@ def render_host_scene(talk: Path, wav: Path, ass: Path | None, duration: float, 
     probe = subprocess.run([ffmpeg_bin(), "-hide_banner", "-i", str(talk)], capture_output=True, text=True).stderr
     dims = re.search(r"Video:.*?(\d{3,5})x(\d{3,5})", probe)
     wide_clip = bool(dims) and int(dims.group(1)) > int(dims.group(2))
-    if H > W or (wide_clip and not side_panel):  # vertical, or a 16:9 clip in a 16:9 video: fill the screen
+    if front and W > H:  # the host fills the screen (blurred copy at the sides), the slide in front
+        fit = "increase,crop={W}:{H}".format(W=W, H=H) if wide_clip else "decrease"
+        chain = [
+            f"{talk_in},split[a][b]",
+            f"[a]scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},boxblur=28:2,eq=brightness=-0.08[bg]",
+            f"[b]scale={W}:{H}:force_original_aspect_ratio={fit},setsar=1[fg]",
+            "[bg][fg]overlay=(W-w)/2:(H-h)/2[v0]",
+            "[2:v]format=rgba[ov]",
+            f"[v0][ov]overlay=0:0,setsar=1,{fades}",
+        ]
+    elif H > W or (wide_clip and not side_panel):  # vertical, or a 16:9 clip in a 16:9 video: fill the screen
         chain = [f"{talk_in},scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},setsar=1,{fades}"]
     elif side_panel and W > H:  # landscape: the host on the left, the scene's card on the right
         fh = int(H * 0.92) // 2 * 2
@@ -547,7 +575,8 @@ def render_host_scene(talk: Path, wav: Path, ass: Path | None, duration: float, 
         fonts = f":fontsdir='{_escape_filter_path(FONT_DIR)}'" if FONT_DIR.exists() else ""
         chain[-1] += f",subtitles='{_escape_filter_path(ass)}'{fonts}"
     chain[-1] += ",format=yuv420p[v]"
-    panel_in = ["-loop", "1", "-i", str(side_panel)] if side_panel and W > H else []
+    panel_in = ["-loop", "1", "-i", str(front if front and W > H else side_panel)] \
+        if (front or side_panel) and W > H else []
     _run([
         "-y", "-i", str(talk), "-i", str(wav), *panel_in,
         "-filter_complex", ";".join(chain),
@@ -674,12 +703,12 @@ def build_video(plan, video_cfg: dict, voice_cfg: dict, channel_name: str, workd
                             scenes_dir / f"{i:02d}.mp4")
         if i - 1 in snips:
             cut, talk = snips[i - 1]
-            wide = size[0] > size[1] and not talking._is_portrait(talk)  # a 16:9 clip fills the screen
-            panel = render_side_panel(scene, size, channel_name, scenes_dir / f"{i:02d}_side.png") \
-                if size[0] > size[1] and not wide else None
+            # 16:9 videos: the host fills the screen, the scene's slide in front of them
+            front = render_host_overlay(scene, size, channel_name, scenes_dir / f"{i:02d}_front.png") \
+                if size[0] > size[1] else None
             crop = 1.0 if talk.parent.name == "broll" else talking.landscape_crop(host_cfg)
             parts.append(render_host_scene(talk, wav, ass, cut, size, scenes_dir / f"{i:02d}_host.mp4",
-                                           crop, fade_out=False, side_panel=panel))
+                                           crop, fade_out=False, front=front))
             if duration - cut > 0.3:
                 parts.append(trim_part(part, cut, scenes_dir / f"{i:02d}_rest.mp4"))
             continue
