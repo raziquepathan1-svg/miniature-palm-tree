@@ -14,6 +14,7 @@ from googleapiclient.http import MediaFileUpload
 SCOPES = [
     "https://www.googleapis.com/auth/youtube.upload",
     "https://www.googleapis.com/auth/youtube",
+    "https://www.googleapis.com/auth/youtube.force-ssl",  # posting the question comment
 ]
 HERE = Path(__file__).parent
 CLIENT_SECRET = HERE / "client_secret.json"
@@ -47,7 +48,9 @@ def _credentials() -> Credentials:
         info = json.loads(TOKEN_FILE.read_text())
     else:
         raise RuntimeError("No YouTube login found. Run `python -m youtube_agent.main --setup-youtube` first.")
-    creds = Credentials.from_authorized_user_info(info, SCOPES)
+    # No scopes asked for on refresh: the token keeps every permission it was given (asking for a scope it
+    # lacks would fail the refresh). Comments need youtube.force-ssl in the login (README step 3D).
+    creds = Credentials.from_authorized_user_info(info)
     if not creds.valid:
         creds.refresh(Request())
     return creds

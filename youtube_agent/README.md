@@ -65,7 +65,8 @@ Do all of this signed in as **healthsupportstudio@gmail.com**.
 1. Open **developers.google.com/oauthplayground**.
 2. Click the ⚙️ gear (top right) → tick **Use your own OAuth credentials** → paste the Client ID and Client secret → close.
 3. On the left, in "Input your own scopes", paste:
-   `https://www.googleapis.com/auth/youtube.upload https://www.googleapis.com/auth/youtube`
+   `https://www.googleapis.com/auth/youtube.upload https://www.googleapis.com/auth/youtube https://www.googleapis.com/auth/youtube.force-ssl`
+   (the last one lets the agent post the question comment under each video)
    then click **Authorize APIs**.
 4. Sign in as **healthsupportstudio@gmail.com**, choose the **Health Support Studio** channel if asked, and allow access. On the "Google hasn't verified this app" screen, click **Advanced → Go to …**.
 5. Click **Exchange authorization code for tokens**, then copy the **Refresh token**.
