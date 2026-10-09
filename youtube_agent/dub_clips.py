@@ -158,6 +158,23 @@ def _words(path: Path, whisper) -> list[tuple[float, float, str]]:
     return [(w.start, w.end, re.sub(r"[^a-z0-9']", "", w.word.lower())) for s in segs for w in (s.words or [])]
 
 
+def _speaking(clip: Path, tmp: Path, n: int) -> np.ndarray:
+    """0..1 per sample: 1 while the clip's own voice is heard (so the lips are moving), fading to 0 in silences.
+    Keeps the new voice from sounding while the mouth is closed."""
+    wav = tmp / f"{clip.stem}_orig.wav"
+    subprocess.run([ffmpeg_bin(), "-y", "-loglevel", "error", "-i", str(clip), "-ac", "1", "-ar", str(SR), str(wav)],
+                   check=True)
+    a = _read_wav(wav)
+    hop = int(0.02 * SR)
+    rms = np.array([np.sqrt(np.mean(a[i:i + hop] ** 2) + 1e-12) for i in range(0, len(a), hop)])
+    on = 20 * np.log10(rms) > max(-38.0, 20 * np.log10(rms.max()) - 30)
+    k = 6  # keep 0.12 s around each sound (word ends, breaths)
+    on = np.convolve(on.astype(float), np.ones(2 * k + 1), "same") > 0
+    gate = np.convolve(on.astype(float), np.ones(5) / 5, "same")  # soft edges
+    g = np.repeat(gate, hop)[:n]
+    return np.pad(g, (0, max(0, n - len(g))))
+
+
 def dub_aligned(clip: Path, whisper, voice_cfg: dict, tmp: Path) -> tuple[Path, str]:
     """The cloned voice says the clip's words; each word is moved and stretched to when the lips say it.
     For Flow clips that say exactly the intended line: the lips are not touched, so they look natural."""
@@ -194,9 +211,10 @@ def dub_aligned(clip: Path, whisper, voice_cfg: dict, tmp: Path) -> tuple[Path, 
         piece = piece[: max(0, len(track) - a)]
         track[a:a + len(piece)] += piece
         stretch.append(speed)
+    track = track[: int(_duration(clip) * SR)] * _speaking(clip, tmp, len(track[: int(_duration(clip) * SR)]))
     out = clip.with_name(clip.stem + "_aligned.mp4")
     voice_wav = tmp / f"{clip.stem}_aligned.wav"
-    _write(voice_wav, track[: int(_duration(clip) * SR)])
+    _write(voice_wav, track)
     _mux(clip, voice_wav, out)
     return out, f"{len(pairs)}/{len(flow)} words matched, speed {min(stretch):.2f}-{max(stretch):.2f}: {text}"
 
