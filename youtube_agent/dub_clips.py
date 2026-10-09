@@ -1,7 +1,8 @@
 """Re-voice the host's spoken intro/outro clips with the cloned voice, the same voice as the narration.
 
 Voice conversion (speaking_test) keeps much of the original Flow voice, so it does not sound fully like the host.
-Here the clone speaks the words itself: Whisper finds what is said, the clone says the cleaned-up line at the
+Default: the clone says the clip's words and each word is moved and stretched to when the lips say it (for Flow
+clips that say exactly the intended line; the video is untouched). --lipsync: the clone says the cleaned-up line at the
 normal narration pace, and LatentSync (Kaggle's free GPU, as for the talking host) moves the lips to the new
 voice, so words and lips match. Without the Kaggle secrets, each phrase is fitted to the time the lips move instead.
 Writes <name>_dub.mp4 next to each clip, starting just before the first word.
@@ -152,6 +153,54 @@ def dub(clip: Path, whisper, voice_cfg: dict) -> tuple[Path, str]:
     return out, " | ".join(said)
 
 
+def _words(path: Path, whisper) -> list[tuple[float, float, str]]:
+    segs, _ = whisper.transcribe(str(path), word_timestamps=True)
+    return [(w.start, w.end, re.sub(r"[^a-z0-9']", "", w.word.lower())) for s in segs for w in (s.words or [])]
+
+
+def dub_aligned(clip: Path, whisper, voice_cfg: dict, tmp: Path) -> tuple[Path, str]:
+    """The cloned voice says the clip's words; each word is moved and stretched to when the lips say it.
+    For Flow clips that say exactly the intended line: the lips are not touched, so they look natural."""
+    import difflib
+
+    flow = [w for w in _words(clip, whisper) if w[2]]
+    text = _fix_text(" ".join(t for _, _, t in phrases(clip, whisper)))
+    if not flow or not text:
+        raise RuntimeError("no speech found")
+    wav = tmp / f"{clip.stem}_clone.wav"
+    narrate_scene(text, voice_cfg, wav)
+    clone_audio = _read_wav(wav)
+    clone = [w for w in _words(wav, whisper) if w[2]]
+    match = difflib.SequenceMatcher(None, [w[2] for w in clone], [w[2] for w in flow], autojunk=False)
+    pairs = [(a + k, b + k) for a, b, n in match.get_matching_blocks() for k in range(n)]
+    if len(pairs) < max(2, len(flow) * 0.6):
+        raise RuntimeError(f"the clip does not say the same words ({len(pairs)} of {len(flow)} match)")
+    track = np.zeros(int((_duration(clip) + 1) * SR), np.float32)
+    stretch = []
+    for n, (ci, fi) in enumerate(pairs):
+        nci, nfi = pairs[n + 1] if n + 1 < len(pairs) else (len(clone), len(flow))
+        cs, ce = clone[ci][0], clone[nci - 1][1]  # this word plus any unmatched words after it
+        fs, fe = flow[fi][0], flow[nfi - 1][1]
+        piece = clone_audio[int(cs * SR):int(ce * SR) + int(0.03 * SR)]
+        if len(piece) < 10 or fe <= fs:
+            continue
+        speed = min(1.6, max(0.6, (ce - cs) / (fe - fs)))
+        piece = voice._tempo(piece, SR, speed)
+        ramp = min(len(piece) // 4, int(0.008 * SR))  # tiny fades: no clicks between words
+        if ramp:
+            piece[:ramp] *= np.linspace(0, 1, ramp)
+            piece[-ramp:] *= np.linspace(1, 0, ramp)
+        a = int(fs * SR)
+        piece = piece[: max(0, len(track) - a)]
+        track[a:a + len(piece)] += piece
+        stretch.append(speed)
+    out = clip.with_name(clip.stem + "_aligned.mp4")
+    voice_wav = tmp / f"{clip.stem}_aligned.wav"
+    _write(voice_wav, track[: int(_duration(clip) * SR)])
+    _mux(clip, voice_wav, out)
+    return out, f"{len(pairs)}/{len(flow)} words matched, speed {min(stretch):.2f}-{max(stretch):.2f}: {text}"
+
+
 def config_clips(config: dict) -> list[Path]:
     clips = []
     for key in ("intro", "outro"):
@@ -165,13 +214,22 @@ def main() -> None:
     from faster_whisper import WhisperModel
 
     config = load_config()
-    clips = [Path(a).resolve() for a in sys.argv[1:]] or config_clips(config)
+    args = [a for a in sys.argv[1:] if not a.startswith("--")]
+    clips = [Path(a).resolve() for a in args] or config_clips(config)
     missing = [c for c in clips if not c.exists()]
     clips = [c for c in clips if c.exists()]
     whisper = WhisperModel("small.en", device="cpu", compute_type="int8")
     voice_cfg = config.get("voice") or {}
     notes = [f"{c.name}: not found" for c in missing]
-    if clips and talking.kaggle_ready():
+    if "--lipsync" not in sys.argv:  # default: the cloned voice fitted word by word to the clip's own lips
+        with tempfile.TemporaryDirectory() as tmp:
+            for clip in clips:
+                try:
+                    out, said = dub_aligned(clip, whisper, voice_cfg, Path(tmp))
+                    notes.append(f"{out.name}: {said}")
+                except Exception as e:
+                    notes.append(f"{clip.name}: FAILED {e}")
+    elif clips and talking.kaggle_ready():
         with tempfile.TemporaryDirectory() as tmp:
             done = dub_lipsync(clips, whisper, voice_cfg, Path(tmp))
         notes += [f"{_out(c).name}: {n}" for c, n in done.items()]
