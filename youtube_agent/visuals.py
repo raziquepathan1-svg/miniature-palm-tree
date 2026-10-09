@@ -681,11 +681,16 @@ def build_video(plan, video_cfg: dict, voice_cfg: dict, channel_name: str, workd
             jobs[f"s{i + 1:02d}"] = short_wav
         if cuts:
             print(f"    The host says the start of scenes {[i + 1 for i in cuts]} (lip-synced on Kaggle)...")
-            clips = talking.make_clips(jobs, workdir, host_cfg)
+            talk_cfg = host_cfg
+            if size[0] > size[1] and host_cfg.get("moves_wide"):  # 16:9 videos: the 16:9 desk clips, full screen
+                talk_cfg = {**host_cfg, "moves": host_cfg.get("moves_wide_folder", host_cfg.get("moves")),
+                            "moves_only": host_cfg["moves_wide"], "any_shape": True}
+            clips = talking.make_clips(jobs, workdir, talk_cfg)
             snips.update({i: (cut, clips[f"s{i + 1:02d}"]) for i, cut in cuts.items() if f"s{i + 1:02d}" in clips})
             missing = [i for i in cuts if i not in snips]
             if missing and broll:  # lip-sync didn't come back for these: the host still appears, as voice-over
-                snips.update({i: (cuts[i], broll[k % len(broll)]) for k, i in enumerate(missing)})
+                pool = ([c for c in broll if not talking._is_portrait(c)] if size[0] > size[1] else []) or broll
+                snips.update({i: (cuts[i], pool[(k + len(snips)) % len(pool)]) for k, i in enumerate(missing)})
 
     parts = []
     labels: list[str | None] = []  # chapter title for the first part of each scene (None: same chapter)

@@ -95,6 +95,12 @@ video:
       - "Man_holding_tablet_in_hospital_20261007133319.mp4"
       - "Man_reading_patient_chart_20261007132917.mp4"
       - "Man_writing_notes_at_desk_20261007133446.mp4"
+    # 16:9 videos: the host talks on these 16:9 desk clips instead (full screen, the slide in front)
+    moves_wide_folder: "branding/health-support-studio/avatar/speaking"
+    moves_wide:
+      - "desk_scrubs_16x9.mp4"
+      - "intro_desk_16x9.mp4"
+      - "outro_desk2_16x9.mp4"
     landscape_crop: 1.0
     every_seconds: 45
     first_at: 30
