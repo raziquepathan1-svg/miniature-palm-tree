@@ -661,8 +661,10 @@ def build_video(plan, video_cfg: dict, voice_cfg: dict, channel_name: str, workd
         if mode in ("broll", "mix"):
             # The host walking or working without talking, while the narration continues: no lip-sync needed.
             # "mix": every other moment the host talks instead (lip-synced on Kaggle, front-facing clips).
-            if mode == "mix" and host_cfg.get("moves_only"):
-                every = int(host_cfg.get("talk_every", 2))  # 1 = the host talks every time
+            every = int(host_cfg.get("talk_every", 2))  # 1 = the host talks every time, 0 = never
+            if size[0] > size[1] and "talk_every_wide" in host_cfg:
+                every = int(host_cfg["talk_every_wide"])
+            if mode == "mix" and host_cfg.get("moves_only") and every > 0:
                 talk_ids = set(list(cuts)[0::every])
             else:
                 talk_ids = set()
@@ -731,7 +733,14 @@ def build_video(plan, video_cfg: dict, voice_cfg: dict, channel_name: str, workd
         if not path.exists():
             print(f"    (No {key} clip at {path})")
             continue
-        part = render_clip_scene(path, size, scenes_dir / f"{key}.mp4", clip_cfg.get("start", 0), clip_cfg.get("end"))
+        if clip_cfg.get("say"):  # a clip without talking, your cloned voice saying the line over it (no lip-sync)
+            wav = scenes_dir / f"{key}_voice.wav"
+            dur, caps = voice.narrate_scene(clip_cfg["say"], voice_cfg, wav)
+            ass = write_ass(caps, size, scenes_dir / f"{key}.ass") if video_cfg.get("captions", True) else None
+            part = render_host_scene(path, wav, ass, dur, size, scenes_dir / f"{key}.mp4")
+        else:
+            part = render_clip_scene(path, size, scenes_dir / f"{key}.mp4", clip_cfg.get("start", 0),
+                                     clip_cfg.get("end"))
         if key == "intro":  # the hook (first scene) comes first, then "welcome back": viewers stay longer
             after = next((k for k in range(1, len(labels)) if labels[k]), len(parts)) if len(parts) > 1 else 0
             parts.insert(after, part)
