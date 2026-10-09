@@ -2,6 +2,7 @@
 
 import json
 import os
+import time
 from pathlib import Path
 
 from google.auth.transport.requests import Request
@@ -135,11 +136,18 @@ def add_to_playlists(video_id: str, playlist_titles: list[str], about: str | Non
                 ).execute()
                 playlist_id = existing[title.lower()] = created["id"]
                 print(f"  Created playlist: {title}")
-            youtube.playlistItems().insert(
-                part="snippet",
-                body={"snippet": {"playlistId": playlist_id,
-                                  "resourceId": {"kind": "youtube#video", "videoId": video_id}}},
-            ).execute()
+            for attempt in range(4):  # a just-created playlist can answer 409 "aborted" for a few seconds
+                try:
+                    youtube.playlistItems().insert(
+                        part="snippet",
+                        body={"snippet": {"playlistId": playlist_id,
+                                          "resourceId": {"kind": "youtube#video", "videoId": video_id}}},
+                    ).execute()
+                    break
+                except HttpError as e:
+                    if attempt == 3 or e.resp.status not in (409, 500, 503):
+                        raise
+                    time.sleep(10 * (attempt + 1))
             print(f"  Added to playlist: {title}")
     except Exception as e:  # playlists are nice-to-have; never fail the upload for them
         print(f"  (Could not update playlists: {e})")
