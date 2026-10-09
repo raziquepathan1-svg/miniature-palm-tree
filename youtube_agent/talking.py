@@ -73,6 +73,21 @@ def _status(kid: str) -> str:
     return "cancelled" if word.startswith("cancel") else (word or "unknown")
 
 
+def _push_direct(kid: str, title: str, code: str) -> None:
+    """Push the notebook through Kaggle's older REST API, which says why a push is refused."""
+    import requests
+
+    user, key, token = (os.environ.get(k, "").strip() for k in ("KAGGLE_USERNAME", "KAGGLE_KEY", "KAGGLE_API_TOKEN"))
+    auth = {"auth": (user, key)} if key else {"headers": {"Authorization": f"Bearer {token}"}}
+    r = requests.post("https://www.kaggle.com/api/v1/kernels/push", timeout=120, json={
+        "slug": kid, "newTitle": title, "text": code, "language": "python", "kernelType": "script",
+        "isPrivate": True, "enableGpu": True, "enableInternet": True, "datasetDataSources": [],
+        "competitionDataSources": [], "kernelDataSources": [], "modelDataSources": [], "categoryIds": []}, **auth)
+    print(f"  Kaggle push (direct): {r.status_code} {r.text[:800]}")
+    if r.status_code >= 400 or (r.headers.get("content-type", "").startswith("application/json") and r.json().get("error")):
+        raise RuntimeError(f"Kaggle refused the notebook: {r.text[:800]}")
+
+
 def host_image(s: dict) -> bytes:
     """The waist-up host picture as JPEG bytes (even width and height)."""
     img = Image.open(ROOT / s["image"]).convert("RGB")
@@ -147,11 +162,16 @@ def make_clips(audio: dict[str, Path], workdir: Path, cfg: dict | None = None) -
     try:
         with tempfile.TemporaryDirectory() as d:
             (Path(d) / "talk.py").write_text(code)
+            print(f"  Kaggle notebook: {len(code) / 1e6:.1f} MB, {len(jobs)} clips")
             (Path(d) / "kernel-metadata.json").write_text(json.dumps({
                 "id": kid, "title": s["kernel_slug"], "code_file": "talk.py", "language": "python",
                 "kernel_type": "script", "is_private": True, "enable_gpu": True, "enable_internet": True,
                 "dataset_sources": [], "competition_sources": [], "kernel_sources": [], "model_sources": []}))
-            print("  " + _kaggle("kernels", "push", "-p", d)[-300:])
+            try:
+                print("  " + _kaggle("kernels", "push", "-p", d)[-300:])
+            except RuntimeError as e:  # the CLI hides Kaggle's reason; the older API shows it (and may still work)
+                print(f"  ({e})")
+                _push_direct(kid, s["kernel_slug"], code)
         started = time.time()
         time.sleep(60)
         status = "unknown"
