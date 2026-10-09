@@ -1,7 +1,3 @@
-desk_scrubs_16x9_dub.mp4: lip-sync FAILED (kept the old version): If this video helped you, like it, share it, and subscribe to Health Support Studio. Take care.
-intro_dub.mp4: lip-sync FAILED (kept the old version): Hi everyone, welcome back to Health Support Studio. Today's topic is really important, so let's get started.
-sit_dub.mp4: lip-sync FAILED (kept the old version): Hi, everyone. Welcome back to Health Support Studio. Let's get started.
-office_fixed_dub.mp4: lip-sync FAILED (kept the old version): Hi everyone, welcome back to Health Support Studio. Let's get started.
-desk_still_16x9_dub.mp4: lip-sync FAILED (kept the old version): Hi everyone, welcome to Health Support Studio.
-outro_desk_16x9_dub.mp4: lip-sync FAILED (kept the old version): If this video helped you, like it, share it, and subscribe to Health Support Studio. Take care.
-outro_v1_dub.mp4: lip-sync FAILED (kept the old version): if this video helped you like it share it and subscribe to Health Support Studio tell me in the comments what topic you want next take care
+intro_desk_16x9_dub.mp4: lips matched, from 0.0s: Hi everyone, welcome back to Health Support Studio. Today's topic is really important, so let's get started.
+desk_scrubs_16x9_dub.mp4: lips matched, from 0.2s: If this video helped you, like it, share it, and subscribe to Health Support Studio. Take care.
+outro_desk2_16x9_dub.mp4: lips matched, from 0.0s: Thanks for watching. Please share this with someone who needs it. And take care.
