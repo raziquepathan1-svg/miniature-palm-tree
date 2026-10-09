@@ -96,7 +96,7 @@ def moves_clips(s: dict) -> list[str]:
     folder = ROOT / s["moves"]
     clips = sorted(folder.glob("*.mp4")) if folder.exists() else []
     only = s.get("moves_only")  # optional: just these files
-    return [c.name for c in clips if _is_portrait(c) and (not only or c.name in only)]
+    return [c.name for c in clips if (_is_portrait(c) or s.get("any_shape")) and (not only or c.name in only)]
 
 
 def _raw_base(s: dict) -> str:
@@ -127,10 +127,14 @@ def make_clips(audio: dict[str, Path], workdir: Path, cfg: dict | None = None) -
     b64 = lambda data: base64.b64encode(data).decode()  # noqa: E731
     moves = moves_clips(s)
     jobs = [{"id": k, "audio": b64(_mp3(w)), "start": n} for n, (k, w) in enumerate(audio.items())]
+    for job in jobs:  # optional: each job lip-syncs its own clip, from second `ss` (see dub_clips.py)
+        if job["id"] in (s.get("job_clips") or {}):
+            job.update(start=moves.index(s["job_clips"][job["id"]]), only=True, ss=s.get("job_ss", {}).get(job["id"], 0))
     if moves:  # natural movement: the moves clips, lip-synced
         print(f"  Host: {len(moves)} moves clips, lip-synced on Kaggle")
         settings_json = {"moves": moves, "raw_base": _raw_base(s), "pads": s["pads"], "engine": s["lipsync"],
-                         "steps": s["lipsync_steps"], "guidance": s["lipsync_guidance"]}
+                         "steps": s["lipsync_steps"], "guidance": s["lipsync_guidance"],
+                         "keep_size": bool(s.get("any_shape"))}
         code = (LIPSYNC_TEMPLATE.read_text()
                 .replace("__JOBS__", b64(json.dumps(jobs).encode()))
                 .replace("__SETTINGS__", b64(json.dumps(settings_json).encode())))

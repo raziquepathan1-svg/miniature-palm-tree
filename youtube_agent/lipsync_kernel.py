@@ -115,8 +115,10 @@ def get_moves() -> list[Path]:
         raw = MOVES / f"raw{k}.mp4"
         sh(f"wget -q -O {raw} '{url}'")
         clip = MOVES / f"m{k}.mp4"
-        sh(f"ffmpeg -y -loglevel error -i {raw} -an -vf 'scale=720:1280:force_original_aspect_ratio=increase,"
-           f"crop=720:1280,fps={FPS},setsar=1' -c:v libx264 -preset veryfast -crf 18 {clip}")
+        vf = ("scale=trunc(iw/2)*2:trunc(ih/2)*2" if SETTINGS.get("keep_size")  # spoken clips: keep 16:9 as it is
+              else "scale=720:1280:force_original_aspect_ratio=increase,crop=720:1280")
+        sh(f"ffmpeg -y -loglevel error -i {raw} -an -vf '{vf},fps={FPS},setsar=1' "
+           f"-c:v libx264 -preset veryfast -crf 18 {clip}")
         clips.append(clip)
     return clips
 
@@ -150,7 +152,13 @@ def talk(job: dict, clips: list[Path]) -> Path:
     mp3.write_bytes(base64.b64decode(job["audio"]))
     sh(f"ffmpeg -y -loglevel error -i {mp3} -ar 16000 -ac 1 {wav}")
     base = jd / "base.mp4"
-    base_video(clips, job.get("start", 0), duration(wav), base)
+    if job.get("only"):  # re-lip-sync one clip (from second `ss`) to new speech, e.g. the intro in the cloned voice
+        seg = jd / "seg.mp4"
+        sh(f"ffmpeg -y -loglevel error -ss {job.get('ss', 0)} -i {clips[job['start']]} -c:v libx264 -preset veryfast "
+           f"-crf 18 {seg}")
+        base_video([seg], 0, duration(wav), base)
+    else:
+        base_video(clips, job.get("start", 0), duration(wav), base)
     out = jd / "talk.mp4"
     if ENGINE == "latentsync":
         sh(f"{PY} -m scripts.inference --unet_config_path configs/unet/stage2.yaml "
