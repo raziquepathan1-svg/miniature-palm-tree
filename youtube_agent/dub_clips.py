@@ -113,8 +113,7 @@ def dub_lipsync(clips: list[Path], whisper, voice_cfg: dict, workdir: Path) -> d
         audio[k], job_clips[k] = wav, clip.name
     folder = clips[0].parent.relative_to(ROOT).as_posix()
     made = talking.make_clips(audio, workdir, {"moves": folder, "moves_only": list(job_clips.values()),
-                                               "any_shape": True, "job_clips": job_clips, "job_ss": job_ss,
-                                               "kernel_slug": "hss-dub-lipsync"})
+                                               "any_shape": True, "job_clips": job_clips, "job_ss": job_ss})
     for clip in clips:
         k = re.sub(r"\W", "_", clip.stem)
         if k in made:
