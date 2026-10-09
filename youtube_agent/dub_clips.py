@@ -231,16 +231,43 @@ def _speaking(clip: Path, tmp: Path, n: int) -> np.ndarray:
     return np.pad(g, (0, max(0, n - len(g))))
 
 
-def dub_aligned(clip: Path, whisper, voice_cfg: dict, tmp: Path) -> tuple[Path, str]:
-    """The cloned voice says the clip's words; each word is moved and stretched to when the lips say it.
-    For Flow clips that say exactly the intended line: the lips are not touched, so they look natural."""
+MOUTH_BOX = (600, 194, 80, 44)  # x, y, w, h of the mouth in the 1280x720 desk clips (fixed camera)
+
+
+def _mouth_motion(clip: Path, box=MOUTH_BOX) -> np.ndarray:
+    """How much the mouth area changes per frame (25 fps): high while the lips move."""
+    x, y, w, h = box
+    raw = subprocess.run([ffmpeg_bin(), "-loglevel", "error", "-i", str(clip), "-vf",
+                          f"fps=25,crop={w}:{h}:{x}:{y},format=gray", "-f", "rawvideo", "-"],
+                         capture_output=True, check=True).stdout
+    fr = np.frombuffer(raw, np.uint8).reshape(-1, h, w).astype(np.float32)
+    m = np.concatenate([[0], np.abs(np.diff(fr, axis=0)).mean((1, 2))])
+    return (m - m.mean()) / (m.std() + 1e-6)
+
+
+def _loud25(a: np.ndarray) -> np.ndarray:
+    h = SR // 25
+    e = np.log(np.array([np.sqrt(np.mean(a[i:i + h] ** 2) + 1e-10) for i in range(0, len(a) - h + 1, h)]) + 1e-3)
+    return (e - e.mean()) / (e.std() + 1e-6)
+
+
+def _sync(mouth: np.ndarray, audio: np.ndarray, lag: int) -> float:
+    """How well the sound follows the mouth, with the sound `lag` frames after the mouth moves."""
+    e = _loud25(audio)
+    n = min(len(mouth), len(e))
+    return float(np.mean(mouth[:n - lag] * e[lag:n])) if lag >= 0 else float(np.mean(mouth[-lag:n] * e[:n + lag]))
+
+
+def _shift(a: np.ndarray, ms: int) -> np.ndarray:
+    k = int(ms / 1000 * SR)
+    return np.concatenate([a[-k:], np.zeros(-k, np.float32)]) if k < 0 else \
+        np.concatenate([np.zeros(k, np.float32), a[:len(a) - k]])
+
+
+def _one_take(clip: Path, flow: list, text: str, voice_cfg: dict, wav: Path, whisper) -> tuple[np.ndarray, str]:
+    """One take of the cloned voice, each word moved and stretched to when the lips say it."""
     import difflib
 
-    flow = [w for w in _words(clip, whisper) if w[2]]
-    text = _fix_text(" ".join(t for _, _, t in phrases(clip, whisper)))
-    if not flow or not text:
-        raise RuntimeError("no speech found")
-    wav = tmp / f"{clip.stem}_clone.wav"
     narrate_scene(text, voice_cfg, wav)
     clone_audio = _read_wav(wav)
     clone = [w for w in _words(wav, whisper) if w[2]]
@@ -267,19 +294,49 @@ def dub_aligned(clip: Path, whisper, voice_cfg: dict, tmp: Path) -> tuple[Path, 
         piece = piece[: max(0, len(track) - a)]
         track[a:a + len(piece)] += piece
         stretch.append(speed)
-    track = track[: int(_duration(clip) * SR)]
-    try:  # syllable by syllable, on top of the word-by-word placement
+    return track[: int(_duration(clip) * SR)], f"{len(pairs)}/{len(flow)} words, speed {min(stretch):.2f}-{max(stretch):.2f}"
+
+
+def dub_aligned(clip: Path, whisper, voice_cfg: dict, tmp: Path, takes: int = 1) -> tuple[Path, str]:
+    """The cloned voice says the clip's words; each word is moved and stretched to when the lips say it, the
+    whole line is moved to match the mouth seen in the video, and of several takes the best-matching one is kept.
+    For Flow clips that say exactly the intended line: the lips are not touched, so they look natural."""
+    flow = [w for w in _words(clip, whisper) if w[2]]
+    text = _fix_text(" ".join(t for _, _, t in phrases(clip, whisper)))
+    if not flow or not text:
+        raise RuntimeError("no speech found")
+    gate = None
+    try:
+        mouth = _mouth_motion(clip)
         orig = _orig_audio(clip, tmp)
-        track = dtw_refine(orig[: len(track)], track)
-        track = np.pad(track, (0, max(0, int(_duration(clip) * SR) - len(track))))
+        lag = max(range(-3, 6), key=lambda k: _sync(mouth, orig, k))  # the Flow voice's own delay after the mouth
     except Exception as e:
-        print(f"  (fine alignment skipped: {e})")
-    track = track * _speaking(clip, tmp, len(track))
+        print(f"  (mouth not measured: {e})")
+        mouth = None
+    best = None
+    for t in range(takes):
+        try:
+            track, info = _one_take(clip, flow, text, voice_cfg, tmp / f"{clip.stem}_take{t}.wav", whisper)
+        except Exception as e:
+            print(f"  take {t + 1}: {e}")
+            continue
+        if gate is None:
+            gate = _speaking(clip, tmp, len(track))
+        ms, score = 0, 0.0
+        if mouth is not None:  # move the whole line so the sound follows the mouth like the Flow voice did
+            ms, score = max(((m, _sync(mouth, _shift(track, m) * gate, lag)) for m in range(-300, 110, 10)),
+                            key=lambda x: x[1])
+        print(f"  take {t + 1}: {info}, moved {ms:+d} ms, match {score:.2f}", flush=True)
+        if best is None or score > best[0]:
+            best = (score, _shift(track, ms) * gate, f"{info}, moved {ms:+d} ms, match {score:.2f} (take {t + 1}/{takes})")
+    if best is None:
+        raise RuntimeError("no usable take")
     out = clip.with_name(clip.stem + "_aligned.mp4")
     voice_wav = tmp / f"{clip.stem}_aligned.wav"
-    _write(voice_wav, track)
+    _write(voice_wav, best[1])
     _mux(clip, voice_wav, out)
-    return out, f"{len(pairs)}/{len(flow)} words matched, speed {min(stretch):.2f}-{max(stretch):.2f}: {text}"
+    flow_score = f", Flow voice {_sync(mouth, orig, lag):.2f}" if mouth is not None else ""
+    return out, f"{best[2]}{flow_score}: {text}"
 
 
 def config_clips(config: dict) -> list[Path]:
@@ -302,11 +359,12 @@ def main() -> None:
     whisper = WhisperModel("small.en", device="cpu", compute_type="int8")
     voice_cfg = config.get("voice") or {}
     notes = [f"{c.name}: not found" for c in missing]
+    takes = next((int(a.split("=")[1]) for a in sys.argv if a.startswith("--takes=")), 1)
     if "--lipsync" not in sys.argv:  # default: the cloned voice fitted word by word to the clip's own lips
         with tempfile.TemporaryDirectory() as tmp:
             for clip in clips:
                 try:
-                    out, said = dub_aligned(clip, whisper, voice_cfg, Path(tmp))
+                    out, said = dub_aligned(clip, whisper, voice_cfg, Path(tmp), takes)
                     notes.append(f"{out.name}: {said}")
                 except Exception as e:
                     notes.append(f"{clip.name}: FAILED {e}")
