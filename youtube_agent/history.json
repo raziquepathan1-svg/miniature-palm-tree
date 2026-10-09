@@ -133,5 +133,17 @@
     "publish_at": "2026-10-09T16:00:00Z",
     "short_youtube_id": "DdnTKyU33fc",
     "short2_youtube_id": "Hn8YAbR6SqI"
+  },
+  {
+    "date": "2026-10-09T05:18:19",
+    "topic": "Over-the-counter pain relievers: acetaminophen vs ibuprofen safety",
+    "requested_topic": "Over-the-counter pain relievers: acetaminophen vs ibuprofen safety",
+    "title": "Tylenol or Advil? What to Know Before You Take Them",
+    "style": "Top Questions",
+    "script_file": "011-otc-pain-relievers.yaml",
+    "youtube_id": "hHIxJVUTm1k",
+    "publish_at": "2026-10-10T16:00:00Z",
+    "short_youtube_id": "bkk_1-y10hA",
+    "short2_youtube_id": "G6hVt-eIk8k"
   }
 ]
