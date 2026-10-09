@@ -1,0 +1,6 @@
+intro_dub.mp4: 1.8-2.8s x1.01: Hi everyone, | 3.2-4.8s x1.20: welcome back to Health Support Studio. | 5.6-7.1s x1.19: Today's topic is really important, | 7.6-8.9s x0.81: so let's get started.
+sit_dub.mp4: 1.8-2.9s x0.75: Hi, everyone. | 3.3-3.6s x1.45: Welcome back. | 4.6-6.9s x0.75: Welcome back to Health Support Studio. | 7.7-8.3s x1.33: Let's get started.
+office_fixed_dub.mp4: 0.0-1.5s x0.75: Hi everyone, | 2.5-4.3s x0.91: welcome back to Health Support Studio. | 6.1-6.8s x1.03: Let's get started.
+outro_v1_dub.mp4: 0.0-7.5s x1.16: if this video helped you like it share it and subscribe to Health Support Studio tell me in the comments what topic you want next take care
+sit_wave_fixed_dub.mp4: 0.0-1.4s x0.75: Hi everyone, | 2.0-3.7s x1.15: welcome back to Health Support Studio. | 4.4-5.1s x1.15: Let's get started.
+desk_still_16x9_dub.mp4: 0.0-2.0s x0.75: Hi everyone, | 2.4-4.2s x0.88: welcome to Health Support Studio.
