@@ -75,11 +75,10 @@ video:
   # Your spoken intro and outro (Flow clips, voice changed to your cloned voice): the intro opens every long
   # video, the outro closes every video and Short. start/end trim the clip (seconds).
   host_clips:
-    # Your desk clips in scrubs (no talking) with your cloned voice saying the line over them. Lip-synced versions
-    # showed a second mouth (the face is too small in a 16:9 shot), so the lips are not re-drawn.
+    # Your desk clips in scrubs: your real Flow lips with your cloned voice fitted word by word (dub_clips.py,
+    # best of 8 takes). Fallback without lip-sync: a no-talking clip with "say:" (the cloned voice over it).
     intro:
-      - file: "branding/health-support-studio/avatar/broll/16x9_desk_laptop.mp4"
-        say: "Hi everyone, welcome back to Health Support Studio. Today's topic is really important, so let's get started."
+      - {file: "branding/health-support-studio/avatar/speaking/intro_desk_16x9_aligned.mp4"}
     outro:   # a different one each day: your real Flow lips with your cloned voice fitted word by word (dub_clips.py)
       - {file: "branding/health-support-studio/avatar/speaking/desk_scrubs_16x9_aligned.mp4"}
       - {file: "branding/health-support-studio/avatar/speaking/outro_desk2_16x9_aligned.mp4"}
