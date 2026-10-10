@@ -224,9 +224,9 @@ def _speaking(clip: Path, tmp: Path, n: int) -> np.ndarray:
     hop = int(0.02 * SR)
     rms = np.array([np.sqrt(np.mean(a[i:i + hop] ** 2) + 1e-12) for i in range(0, len(a), hop)])
     on = 20 * np.log10(rms) > max(-38.0, 20 * np.log10(rms.max()) - 30)
-    k = 6  # keep 0.12 s around each sound (word ends, breaths)
+    k = 12  # keep 0.24 s around each sound (word ends, breaths are not cut)
     on = np.convolve(on.astype(float), np.ones(2 * k + 1), "same") > 0
-    gate = np.convolve(on.astype(float), np.ones(5) / 5, "same")  # soft edges
+    gate = np.convolve(on.astype(float), np.ones(9) / 9, "same")  # soft edges
     g = np.repeat(gate, hop)[:n]
     return np.pad(g, (0, max(0, n - len(g))))
 
@@ -277,16 +277,23 @@ def _one_take(clip: Path, flow: list, text: str, voice_cfg: dict, wav: Path, whi
         raise RuntimeError(f"the clip does not say the same words ({len(pairs)} of {len(flow)} match)")
     track = np.zeros(int((_duration(clip) + 1) * SR), np.float32)
     stretch = []
+    spans = []  # (clone start, clone end, clip start, clip end) per matched word, with unmatched words after it
     for n, (ci, fi) in enumerate(pairs):
         nci, nfi = pairs[n + 1] if n + 1 < len(pairs) else (len(clone), len(flow))
-        cs, ce = clone[ci][0], clone[nci - 1][1]  # this word plus any unmatched words after it
-        fs, fe = flow[fi][0], flow[nfi - 1][1]
-        piece = clone_audio[int(cs * SR):int(ce * SR) + int(0.03 * SR)]
+        spans.append([clone[ci][0], clone[nci - 1][1], flow[fi][0], flow[nfi - 1][1]])
+    chunks = []  # words said together are stretched together: no cuts (breaks) inside a phrase
+    for sp in spans:
+        if chunks and sp[2] - chunks[-1][3] < 0.18 and sp[0] - chunks[-1][1] < 0.25:
+            chunks[-1][1], chunks[-1][3] = sp[1], sp[3]
+        else:
+            chunks.append(sp)
+    for cs, ce, fs, fe in chunks:
+        piece = clone_audio[int(cs * SR):int(ce * SR) + int(0.05 * SR)]
         if len(piece) < 10 or fe <= fs:
             continue
-        speed = min(1.6, max(0.6, (ce - cs) / (fe - fs)))
+        speed = min(1.5, max(0.7, (ce - cs) / (fe - fs)))
         piece = voice._tempo(piece, SR, speed)
-        ramp = min(len(piece) // 4, int(0.008 * SR))  # tiny fades: no clicks between words
+        ramp = min(len(piece) // 4, int(0.02 * SR))  # soft edges: no clicks
         if ramp:
             piece[:ramp] *= np.linspace(0, 1, ramp)
             piece[-ramp:] *= np.linspace(1, 0, ramp)
@@ -331,7 +338,8 @@ def dub_aligned(clip: Path, whisper, voice_cfg: dict, tmp: Path, takes: int = 1)
             best = (score, _shift(track, ms) * gate, f"{info}, moved {ms:+d} ms, match {score:.2f} (take {t + 1}/{takes})")
     if best is None:
         raise RuntimeError("no usable take")
-    out = clip.with_name(clip.stem + "_aligned.mp4")
+    suffix = next((a.split("=", 1)[1] for a in sys.argv if a.startswith("--suffix=")), "")  # try a new version
+    out = clip.with_name(clip.stem + f"_aligned{suffix}.mp4")
     voice_wav = tmp / f"{clip.stem}_aligned.wav"
     _write(voice_wav, best[1])
     _mux(clip, voice_wav, out)
