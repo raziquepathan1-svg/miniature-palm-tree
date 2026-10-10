@@ -80,6 +80,7 @@ jobs:
           KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
           KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
           KAGGLE_API_TOKEN: ${{ secrets.KAGGLE_API_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # voice files for Kaggle, previews
           TOPIC: ${{ inputs.topic }}
           DRY_RUN: ${{ inputs.dry_run }}
         run: |

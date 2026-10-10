@@ -174,6 +174,9 @@ youtube:
   auto_publish_timezone: "America/New_York"
   # Used only if auto_publish_time is removed: true = upload as Private and publish yourself.
   review_before_publish: true
+  # Upload private and NOT scheduled: you get a preview first, and the "Approve video" workflow schedules it
+  # (for the planned time, or the next free slot if approved late). false = schedule automatically.
+  hold_for_approval: true
   privacy: "public"            # used only when both options above are off
   playlists: true              # add each video to its topic playlist (+ "Health Shorts" for Shorts)
   upload_short: true           # also upload the daily vertical Short to YouTube Shorts

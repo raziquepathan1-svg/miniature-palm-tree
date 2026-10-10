@@ -17,6 +17,7 @@ import argparse
 import datetime as dt
 import json
 import os
+import subprocess
 import re
 from pathlib import Path
 
@@ -96,7 +97,8 @@ def next_publish_time(time_str: str, tz_name: str, now: dt.datetime | None = Non
 
 
 def last_scheduled(history: list[dict]) -> dt.datetime | None:
-    times = [dt.datetime.fromisoformat(h["publish_at"].replace("Z", "+00:00")) for h in history if h.get("publish_at")]
+    times = [dt.datetime.fromisoformat(t.replace("Z", "+00:00"))
+             for h in history for t in (h.get("publish_at"), h.get("planned_publish_at")) if t]
     return max(times) if times else None
 
 
@@ -237,6 +239,11 @@ def make_one_video(config: dict, history: list[dict], topic: str | None, dry_run
         yt["publish_at"] = publish_at.strftime("%Y-%m-%dT%H:%M:%SZ")
     elif yt.get("review_before_publish", True):
         yt["privacy"] = "private"
+    if yt.get("hold_for_approval") and yt.get("publish_at"):
+        # Uploaded private and NOT scheduled yet: you watch the preview first, then "Approve video" schedules it.
+        entry["planned_publish_at"] = yt.pop("publish_at")
+        entry["awaiting_approval"] = True
+        publish_at = None
     print(f"6/6 Uploading to YouTube ({'scheduled ' + yt['publish_at'] if publish_at else yt.get('privacy')})...")
     video_id = uploader.upload_video(
         final, thumb, title, description, plan.tags, yt,
@@ -317,8 +324,25 @@ def make_one_video(config: dict, history: list[dict], topic: str | None, dry_run
     if publish_at:
         summary.append(f"- **Scheduled** to go public automatically at {yt['publish_at']} (UTC). "
                        "Watch it before then; to stop it, set Visibility to Private or delete it.")
+    elif entry.get("awaiting_approval"):
+        summary.append(f"- **Waiting for your OK** (planned for {entry['planned_publish_at']} UTC). "
+                       "Run the 'Approve video' workflow to schedule it.")
     elif yt.get("privacy") == "private":
         summary.append("- **Waiting for your review**: open the link, watch it, then set Visibility to Public.")
+    if entry.get("awaiting_approval"):  # a small copy to watch before approving
+        try:
+            preview = workdir / "preview.mp4"
+            subprocess.run([editor.ffmpeg_bin(), "-y", "-loglevel", "error", "-i", str(final), "-vf", "scale=-2:360",
+                            "-c:v", "libx264", "-preset", "veryfast", "-b:v", "350k", "-c:a", "aac", "-b:a", "64k",
+                            str(preview)], check=True)
+            from .talking import upload_to_branch
+
+            url = upload_to_branch("previews", f"previews/{video_id}.mp4", preview.read_bytes())
+            entry["preview"] = f"previews/{video_id}.mp4"
+            save_history(history)
+            summary.append(f"- Preview: {url}")
+        except Exception as e:
+            print(f"  (Could not save the preview: {e})")
     print("\n".join(summary))
     write_summary(summary)
 

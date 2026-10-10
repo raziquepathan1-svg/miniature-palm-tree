@@ -149,7 +149,10 @@ def talk(job: dict, clips: list[Path]) -> Path:
     jd = WORK / job["id"]
     jd.mkdir(parents=True, exist_ok=True)
     mp3, wav = jd / "voice.mp3", jd / "voice.wav"
-    mp3.write_bytes(base64.b64decode(job["audio"]))
+    if job.get("audio_url"):  # long narrations are downloaded (a notebook must stay under 1 MB)
+        sh(f"wget -q -O {mp3} '{job['audio_url']}'")
+    else:
+        mp3.write_bytes(base64.b64decode(job["audio"]))
     sh(f"ffmpeg -y -loglevel error -i {mp3} -ar 16000 -ac 1 {wav}")
     base = jd / "base.mp4"
     if job.get("only"):  # re-lip-sync one clip (from second `ss`) to new speech, e.g. the intro in the cloned voice

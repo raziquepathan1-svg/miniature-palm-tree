@@ -121,10 +121,39 @@ def _raw_base(s: dict) -> str:
     return f"https://raw.githubusercontent.com/{repo}/{branch}/{s['moves']}"
 
 
+AUDIO_BRANCH = "kaggle-audio"  # voice files for Kaggle to download (a notebook must stay under 1 MB)
+
+
+def _upload_audio(name: str, data: bytes) -> str | None:
+    """Put a voice file on the repo's kaggle-audio branch; returns its download link (None if not possible)."""
+    return upload_to_branch(AUDIO_BRANCH, f"audio/{name}", data)
+
+
+def upload_to_branch(branch: str, path: str, data: bytes) -> str | None:
+    """Put a file on a side branch of this repo (created if needed); returns its download link."""
+    import requests
+
+    token, repo = os.environ.get("GITHUB_TOKEN"), os.environ.get("GITHUB_REPOSITORY")
+    if not (token and repo):
+        return None
+    api = f"https://api.github.com/repos/{repo}"
+    h = {"Authorization": f"Bearer {token}", "Accept": "application/vnd.github+json"}
+    if requests.get(f"{api}/git/ref/heads/{branch}", headers=h, timeout=30).status_code == 404:
+        head = requests.get(f"{api}/git/ref/heads/{os.environ.get('GITHUB_REF_NAME', 'main')}", headers=h,
+                            timeout=30).json()["object"]["sha"]
+        requests.post(f"{api}/git/refs", headers=h, timeout=30,
+                      json={"ref": f"refs/heads/{branch}", "sha": head}).raise_for_status()
+    r = requests.put(f"{api}/contents/{path}", headers=h, timeout=300, json={
+        "message": f"Add {path}", "branch": branch, "content": base64.b64encode(data).decode()})
+    r.raise_for_status()
+    return f"https://raw.githubusercontent.com/{repo}/{branch}/{path}"
+
+
 def _mp3(wav: Path) -> bytes:
     with tempfile.TemporaryDirectory() as d:
         out = Path(d) / "a.mp3"
-        subprocess.run([ffmpeg_bin(), "-y", "-loglevel", "error", "-i", str(wav), "-ac", "1", "-b:a", "64k", str(out)],
+        subprocess.run([ffmpeg_bin(), "-y", "-loglevel", "error", "-i", str(wav), "-ac", "1", "-ar", "24000",
+                        "-b:a", "48k", str(out)],
                        check=True)
         return out.read_bytes()
 
@@ -142,6 +171,13 @@ def make_clips(audio: dict[str, Path], workdir: Path, cfg: dict | None = None) -
     b64 = lambda data: base64.b64encode(data).decode()  # noqa: E731
     moves = moves_clips(s)
     jobs = [{"id": k, "audio": b64(_mp3(w)), "start": n} for n, (k, w) in enumerate(audio.items())]
+    if sum(len(j["audio"]) for j in jobs) > 600_000:  # too big to go inside the notebook: Kaggle downloads it
+        stamp = f"{os.environ.get('GITHUB_RUN_ID', int(time.time()))}"
+        for job in jobs:
+            url = _upload_audio(f"{stamp}_{job['id']}.mp3", base64.b64decode(job["audio"]))
+            if url:
+                job["audio_url"] = url
+                job["audio"] = ""
     for job in jobs:  # optional: each job lip-syncs its own clip, from second `ss` (see dub_clips.py)
         if job["id"] in (s.get("job_clips") or {}):
             job.update(start=moves.index(s["job_clips"][job["id"]]), only=True, ss=s.get("job_ss", {}).get(job["id"], 0))
