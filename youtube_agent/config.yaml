@@ -80,7 +80,7 @@ video:
     intro:
       - {file: "branding/health-support-studio/avatar/speaking/intro_desk_16x9_aligned.mp4"}
     outro:   # a different one each day: your real Flow lips with your cloned voice fitted word by word (dub_clips.py)
-      - {file: "branding/health-support-studio/avatar/speaking/desk_scrubs_16x9_aligned.mp4"}
+      - {file: "branding/health-support-studio/avatar/speaking/desk_scrubs_16x9_aligned_v2.mp4"}
       - {file: "branding/health-support-studio/avatar/speaking/outro_desk2_16x9_aligned.mp4"}
   # You on screen in the middle of the video: about every minute you appear for 5-10 s next to the slide,
   # while your voice keeps narrating. mode "broll": your Flow clips of walking / reading a chart / at the desk
