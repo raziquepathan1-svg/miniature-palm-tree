@@ -145,5 +145,17 @@
     "publish_at": "2026-10-10T16:00:00Z",
     "short_youtube_id": "bkk_1-y10hA",
     "short2_youtube_id": "G6hVt-eIk8k"
+  },
+  {
+    "date": "2026-10-10T04:38:30",
+    "topic": "Cholesterol explained: LDL, HDL and triglycerides",
+    "requested_topic": "Cholesterol explained: LDL, HDL and triglycerides",
+    "title": "Cholesterol Explained: LDL, HDL and Triglycerides",
+    "style": "Explainer",
+    "script_file": "012-cholesterol-explained.yaml",
+    "youtube_id": "Y6y9rJEg5AU",
+    "publish_at": "2026-10-11T16:00:00Z",
+    "short_youtube_id": "hQt_jZVjJKQ",
+    "short2_youtube_id": "VmkIxKZ2j2E"
   }
 ]
