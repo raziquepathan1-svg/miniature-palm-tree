@@ -1,0 +1,57 @@
+name: Corner presenter - lip-sync test
+
+# Lip-syncs the green-screen presenter clip to a voice file on Kaggle's free GPU and saves the result,
+# so the corner presenter can be checked before it goes into the daily videos.
+on:
+  workflow_dispatch:
+    inputs:
+      clip:
+        description: "Green-screen clip"
+        default: "branding/health-support-studio/avatar/speaking/presenter_green.mp4"
+      audio:
+        description: "Voice (wav)"
+        default: "branding/health-support-studio/avatar/presenter/sample_voice.wav"
+      out:
+        description: "Where to save the lip-synced clip"
+        default: "branding/health-support-studio/avatar/presenter/sample_lipsync.mp4"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: kaggle-host
+  cancel-in-progress: false
+
+jobs:
+  lipsync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install
+        run: |
+          sudo apt-get update -q && sudo apt-get install -y -q ffmpeg
+          pip install -q -r requirements.txt kaggle
+
+      - name: Lip-sync on Kaggle
+        env:
+          KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
+          KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
+          KAGGLE_API_TOKEN: ${{ secrets.KAGGLE_API_TOKEN }}
+        run: |
+          [ -z "$KAGGLE_KEY" ] && unset KAGGLE_KEY
+          [ -z "$KAGGLE_API_TOKEN" ] && unset KAGGLE_API_TOKEN
+          python -m youtube_agent.presenter lipsync "${{ inputs.clip }}" "${{ inputs.audio }}" "${{ inputs.out }}"
+
+      - name: Save
+        run: |
+          git config user.name "youtube-agent"
+          git config user.email "youtube-agent@users.noreply.github.com"
+          git add "${{ inputs.out }}"
+          git commit -m "Corner presenter: lip-sync test" || exit 0
+          for i in 1 2 3; do git pull --rebase && git push && break; sleep 5; done
