@@ -5,9 +5,12 @@ name: Corner presenter - lip-sync test
 on:
   workflow_dispatch:
     inputs:
-      clip:
-        description: "Green-screen clip"
+      clips:
+        description: "Green-screen clips (space-separated)"
         default: "branding/health-support-studio/avatar/speaking/presenter_green.mp4"
+      engine:
+        description: "wav2lip (fast) or latentsync (sharp, slow)"
+        default: "wav2lip"
       audio:
         description: "Voice (wav)"
         default: "branding/health-support-studio/avatar/presenter/sample_voice.wav"
@@ -46,7 +49,7 @@ jobs:
         run: |
           [ -z "$KAGGLE_KEY" ] && unset KAGGLE_KEY
           [ -z "$KAGGLE_API_TOKEN" ] && unset KAGGLE_API_TOKEN
-          python -m youtube_agent.presenter lipsync "${{ inputs.clip }}" "${{ inputs.audio }}" "${{ inputs.out }}"
+          python -m youtube_agent.presenter lipsync "${{ inputs.out }}" "${{ inputs.audio }}" ${{ inputs.clips }} --engine=${{ inputs.engine }}
 
       - name: Save
         run: |
