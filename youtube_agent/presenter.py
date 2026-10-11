@@ -38,25 +38,31 @@ if __name__ == "__main__":
     print(__doc__)
 
 
-def _key_frames(src: Path, out: Path, height: int) -> Path:
-    """Green screen -> transparent, at the size shown on screen (fast enough for a whole video)."""
+def _probe(path: Path) -> tuple[int, int, str]:
+    import re
+    import subprocess
+
+    from .editor import ffmpeg_bin
+
+    err = subprocess.run([ffmpeg_bin(), "-hide_banner", "-i", str(path)], capture_output=True, text=True).stderr
+    w, h = map(int, re.search(r"Video:.*?(\d{3,5})x(\d{3,5})", err).groups())
+    return w, h, re.search(r"(\d+(?:\.\d+)?) fps", err).group(1)
+
+
+def _key_frames(src: Path, height: int, sink) -> tuple[int, int, str]:
+    """Green screen -> transparent RGBA frames at the size shown on screen, written to `sink` (a pipe);
+    nothing big is stored, so a whole video fits. Returns (width, height, fps)."""
     import subprocess
 
     import numpy as np
 
     from .editor import ffmpeg_bin
 
-    probe = subprocess.run([ffmpeg_bin(), "-hide_banner", "-i", str(src)], capture_output=True, text=True).stderr
-    import re
-
-    w0, h0 = map(int, re.search(r"Video:.*?(\d{3,5})x(\d{3,5})", probe).groups())
-    fps = re.search(r"(\d+(?:\.\d+)?) fps", probe).group(1)
+    w0, h0, fps = _probe(src)
     h = height // 2 * 2
     w = int(w0 * h / h0) // 2 * 2
     dec = subprocess.Popen([ffmpeg_bin(), "-loglevel", "error", "-i", str(src), "-vf", f"scale={w}:{h}",
                             "-f", "rawvideo", "-pix_fmt", "rgb24", "-"], stdout=subprocess.PIPE)
-    enc = subprocess.Popen([ffmpeg_bin(), "-loglevel", "error", "-y", "-f", "rawvideo", "-pix_fmt", "rgba",
-                            "-s", f"{w}x{h}", "-r", fps, "-i", "-", "-c:v", "qtrle", str(out)], stdin=subprocess.PIPE)
     size = w * h * 3
     while True:
         buf = dec.stdout.read(size)
@@ -67,11 +73,13 @@ def _key_frames(src: Path, out: Path, height: int) -> Path:
         green = g - np.maximum(r, b)
         alpha = np.clip((32 - green) * 255 // 18, 0, 255)  # >32 more green than red/blue: background
         g = np.where(green > 0, np.maximum(r, b) + green // 7, g)  # no green glow on hair and edges
-        enc.stdin.write(np.dstack([r, g, b, alpha]).astype(np.uint8).tobytes())
-    enc.stdin.close()
-    enc.wait()
+        try:
+            sink.write(np.dstack([r, g, b, alpha]).astype(np.uint8).tobytes())
+        except BrokenPipeError:  # the video ended first: the rest of the presenter is not needed
+            break
+    dec.kill()
     dec.wait()
-    return out
+    return w, h, fps
 
 
 def add_presenter(video: Path, shows: list[tuple[float, float]], cfg: dict, workdir: Path) -> Path:
@@ -91,14 +99,25 @@ def add_presenter(video: Path, shows: list[tuple[float, float]], cfg: dict, work
         if not lip:
             print("    (Corner presenter skipped: lip-sync did not come back)")
             return video
-        keyed = _key_frames(lip, workdir / "presenter_keyed.mov", int(cfg.get("height", 760)))
+        height = int(cfg.get("height", 760)) // 2 * 2
+        w0, h0, fps = _probe(lip)
+        w = int(w0 * height / h0) // 2 * 2
         enable = "+".join(f"between(t,{a:.2f},{b:.2f})" for a, b in shows) or "0"
         out = video.with_name(video.stem + "_presenter.mp4")
-        subprocess.run([ffmpeg_bin(), "-y", "-loglevel", "error", "-i", str(video), "-i", str(keyed),
-                        "-filter_complex", f"[1:v]format=rgba[p];[0:v][p]overlay=W-w-20:H-h:eof_action=pass:"
-                        f"enable='{enable}',format=yuv420p[v]",
-                        "-map", "[v]", "-map", "0:a", "-c:v", "libx264", "-preset", "veryfast", "-crf", "20",
-                        "-c:a", "copy", "-movflags", "+faststart", str(out)], check=True)
+        mix = subprocess.Popen([ffmpeg_bin(), "-y", "-loglevel", "error", "-i", str(video),
+                                "-f", "rawvideo", "-pix_fmt", "rgba", "-s", f"{w}x{height}", "-r", fps, "-i", "-",
+                                "-filter_complex", f"[0:v][1:v]overlay=W-w-20:H-h:eof_action=pass:"
+                                f"enable='{enable}',format=yuv420p[v]",
+                                "-map", "[v]", "-map", "0:a", "-c:v", "libx264", "-preset", "veryfast",
+                                "-crf", "20", "-c:a", "copy", "-movflags", "+faststart", str(out)],
+                               stdin=subprocess.PIPE)
+        _key_frames(lip, height, mix.stdin)
+        try:
+            mix.stdin.close()
+        except BrokenPipeError:
+            pass
+        if mix.wait():
+            raise RuntimeError("ffmpeg could not add the presenter")
         print(f"    Corner presenter added ({len(shows)} parts)")
         return out
     except Exception as e:  # never lose the video over the presenter

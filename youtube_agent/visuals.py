@@ -428,7 +428,8 @@ def _ass_time(t: float) -> str:
     return f"{h}:{m:02d}:{s:02d}.{cs:02d}"
 
 
-def write_ass(captions: list[tuple[float, float, str]], size: tuple[int, int], out: Path) -> Path:
+def write_ass(captions: list[tuple[float, float, str]], size: tuple[int, int], out: Path,
+              margin_r: int = 60) -> Path:
     W, H = size
     portrait = H > W
     fs = int(W * (0.075 if portrait else 0.036))
@@ -441,7 +442,7 @@ WrapStyle: 0
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
-Style: Cap,{caption_font_name()},{fs},&H00FFFFFF,&H00FFFFFF,&H00000000,&H96000000,-1,0,0,0,100,100,0,0,1,{max(3, fs // 12)},2,2,60,60,{margin_v},1
+Style: Cap,{caption_font_name()},{fs},&H00FFFFFF,&H00FFFFFF,&H00000000,&H96000000,-1,0,0,0,100,100,0,0,1,{max(3, fs // 12)},2,2,60,{margin_r},{margin_v},1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
@@ -694,17 +695,24 @@ def build_video(plan, video_cfg: dict, voice_cfg: dict, channel_name: str, workd
                 pool = ([c for c in broll if not talking._is_portrait(c)] if size[0] > size[1] else []) or broll
                 snips.update({i: (cuts[i], pool[(k + len(snips)) % len(pool)]) for k, i in enumerate(missing)})
 
+    pres_cfg = video_cfg.get("presenter") or {}
+    presenter_on = bool(pres_cfg.get("enabled")) and size[0] > size[1]
+    room = int(size[0] * float(pres_cfg.get("room", 0.20))) if presenter_on else 0  # right side kept for him
     parts = []
+    kinds: list[str] = []  # "scene" (the presenter may show), "host" or "clip" (the host is already on screen)
     labels: list[str | None] = []  # chapter title for the first part of each scene (None: same chapter)
     subscribe_at = len(plan.scenes) // 2 if video_cfg.get("format") != "shorts" else -1
     for i, (scene, (wav, duration, captions)) in enumerate(zip(plan.scenes, narrated), 1):
         print(f"    Scene {i}/{len(plan.scenes)}: {scene.layout} - {scene.heading}")
         labels += [None] * (len(parts) - len(labels))
         labels.append(scene.heading)
-        ass = write_ass(captions, size, scenes_dir / f"{i:02d}.ass") if video_cfg.get("captions", True) else None
+        ass = write_ass(captions, size, scenes_dir / f"{i:02d}.ass", 60 + room) \
+            if video_cfg.get("captions", True) else None
         _scene_accent(i - 1)
         overlay = render_overlay(scene, size, channel_name, scenes_dir / f"{i:02d}_overlay.png",
                                  subscribe=(i - 1 == subscribe_at))
+        if room:  # the slide moves left and gets a little smaller, so the corner presenter covers nothing
+            _shrink_left(overlay, size, room)
         clip = fetch_footage(scene.footage_query, size, scenes_dir / f"{i:02d}_bg.mp4", used) if use_footage else None
         part = render_scene(clip or gradient, clip is not None, overlay, wav, ass, duration, size,
                             scenes_dir / f"{i:02d}.mp4")
@@ -714,6 +722,7 @@ def build_video(plan, video_cfg: dict, voice_cfg: dict, channel_name: str, workd
             front = render_host_overlay(scene, size, channel_name, scenes_dir / f"{i:02d}_front.png") \
                 if size[0] > size[1] else None
             crop = 1.0 if talk.parent.name == "broll" else talking.landscape_crop(host_cfg)
+            kinds += ["scene"] * (len(parts) - len(kinds)) + ["host"]
             parts.append(render_host_scene(talk, wav, ass, cut, size, scenes_dir / f"{i:02d}_host.mp4",
                                            crop, fade_out=False, front=front))
             if duration - cut > 0.3:
@@ -743,14 +752,45 @@ def build_video(plan, video_cfg: dict, voice_cfg: dict, channel_name: str, workd
                                      clip_cfg.get("end"))
         if key == "intro":  # the hook (first scene) comes first, then "welcome back": viewers stay longer
             after = next((k for k in range(1, len(labels)) if labels[k]), len(parts)) if len(parts) > 1 else 0
+            kinds += ["scene"] * (len(parts) - len(kinds))
             parts.insert(after, part)
+            kinds.insert(after, "clip")
             labels.insert(after, None)
         else:
+            kinds += ["scene"] * (len(parts) - len(kinds))
             parts.append(part)
+            kinds.append("clip")
             labels.append(None)
     labels += [None] * (len(parts) - len(labels))
     write_chapters(parts, labels, workdir / "chapters.txt")
-    return concat(parts, workdir / "narrated.mp4")
+    video = concat(parts, workdir / "narrated.mp4")
+    if presenter_on:  # the lip-synced host in the corner while the slides and footage play
+        from . import presenter
+        from .editor import _duration
+
+        kinds += ["scene"] * (len(parts) - len(kinds))
+        shows, t = [], 0.0
+        for part, kind in zip(parts, kinds):
+            d = _duration(part)
+            if kind == "scene":
+                if shows and abs(shows[-1][1] - t) < 0.05:
+                    shows[-1] = (shows[-1][0], t + d)
+                else:
+                    shows.append((t, t + d))
+            t += d
+        video = presenter.add_presenter(video, shows, pres_cfg, workdir)
+    return video
+
+
+def _shrink_left(overlay: Path, size: tuple[int, int], room: int) -> None:
+    """Scale the slide picture so it fits left of the corner presenter (same height ratio, kept centred)."""
+    W, H = size
+    img = Image.open(overlay).convert("RGBA")
+    f = (W - room) / W
+    small = img.resize((int(W * f), int(H * f)), Image.LANCZOS)
+    out = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    out.alpha_composite(small, (int(W * 0.01), (H - small.height) // 2))
+    out.save(overlay)
 
 
 def write_chapters(parts: list[Path], labels: list[str | None], out: Path) -> Path:
