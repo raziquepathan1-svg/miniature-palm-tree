@@ -157,5 +157,19 @@
     "publish_at": "2026-10-11T16:00:00Z",
     "short_youtube_id": "hQt_jZVjJKQ",
     "short2_youtube_id": "VmkIxKZ2j2E"
+  },
+  {
+    "date": "2026-10-11T05:07:41",
+    "topic": "How to prevent a fall at home for older adults",
+    "requested_topic": "How to prevent a fall at home for older adults",
+    "title": "Falls Aren't Just Part of Aging: 5 Myths Busted",
+    "style": "Myth vs Fact",
+    "script_file": "013-falls-older-adults.yaml",
+    "planned_publish_at": "2026-10-12T16:00:00Z",
+    "awaiting_approval": true,
+    "youtube_id": "yeRj5dGymRU",
+    "short_youtube_id": "740GYrC3lmk",
+    "short2_youtube_id": "Qj7qKKSuFsQ",
+    "preview": "previews/yeRj5dGymRU.mp4"
   }
 ]
