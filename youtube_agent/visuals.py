@@ -589,8 +589,10 @@ def render_host_scene(talk: Path, wav: Path, ass: Path | None, duration: float, 
     return out
 
 
-def render_clip_scene(clip: Path, size: tuple[int, int], out: Path, start: float = 0, end: float | None = None) -> Path:
-    """A finished clip with its own sound (the host's spoken intro or outro), fitted like a host scene."""
+def render_clip_scene(clip: Path, size: tuple[int, int], out: Path, start: float = 0, end: float | None = None,
+                      speed: float = 1.0) -> Path:
+    """A finished clip with its own sound (the host's spoken intro or outro), fitted like a host scene.
+    speed > 1 plays picture and voice a little faster together (lips stay in sync)."""
     W, H = size
     span = ["-ss", f"{start}"] + (["-to", f"{end}"] if end else [])
     if H > W:
@@ -602,11 +604,14 @@ def render_clip_scene(clip: Path, size: tuple[int, int], out: Path, start: float
             f"[b]scale={W}:{H}:force_original_aspect_ratio=decrease,setsar=1[fg]",
             "[bg][fg]overlay=(W-w)/2:(H-h)/2,setsar=1",
         ]
+    if abs(speed - 1) > 0.01:
+        chain[0] = chain[0].replace("[0:v]", f"[0:v]setpts=PTS/{speed},", 1)
     chain[-1] += ",fade=t=in:st=0:d=0.3,format=yuv420p[v]"
+    chain.append(f"[0:a]atempo={speed}[a]")
     _run([
         "-y", *span, "-i", str(clip),
         "-filter_complex", ";".join(chain),
-        "-map", "[v]", "-map", "0:a",
+        "-map", "[v]", "-map", "[a]",
         "-c:v", "libx264", "-preset", "veryfast", "-crf", "21", "-r", str(FPS),
         "-c:a", "aac", "-b:a", "160k", "-ar", "48000", "-ac", "2",
         str(out),
@@ -749,7 +754,7 @@ def build_video(plan, video_cfg: dict, voice_cfg: dict, channel_name: str, workd
             part = render_host_scene(path, wav, ass, dur, size, scenes_dir / f"{key}.mp4")
         else:
             part = render_clip_scene(path, size, scenes_dir / f"{key}.mp4", clip_cfg.get("start", 0),
-                                     clip_cfg.get("end"))
+                                     clip_cfg.get("end"), float(clip_cfg.get("speed", 1.0)))
         if key == "intro":  # the hook (first scene) comes first, then "welcome back": viewers stay longer
             after = next((k for k in range(1, len(labels)) if labels[k]), len(parts)) if len(parts) > 1 else 0
             kinds += ["scene"] * (len(parts) - len(kinds))
