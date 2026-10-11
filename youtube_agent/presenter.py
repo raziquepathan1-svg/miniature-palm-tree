@@ -100,7 +100,9 @@ def add_presenter(video: Path, shows: list[tuple[float, float]], cfg: dict, work
     try:
         clips = [ROOT / c for c in cfg["clips"]]
         wav = workdir / "presenter_voice.wav"
+        # louder, evened-out voice for the lip-sync only: quiet syllables still move the mouth
         subprocess.run([ffmpeg_bin(), "-y", "-loglevel", "error", "-i", str(video), "-vn", "-ac", "1", "-ar", "16000",
+                        "-af", "acompressor=threshold=-28dB:ratio=6:attack=5:release=80,loudnorm=I=-14:TP=-1",
                         str(wav)], check=True)
         print(f"    Corner presenter: lip-syncing {len(clips)} clips to the narration on Kaggle...")
         lip = lipsync(clips, wav, workdir / "presenter_lipsync.mp4", cfg.get("engine", "wav2lip"))

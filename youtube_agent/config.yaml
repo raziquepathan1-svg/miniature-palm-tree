@@ -89,10 +89,11 @@ video:
     engine: "wav2lip"
     height: 760             # on a 1080-pixel-high video
     room: 0.20              # part of the width kept free on the right (slides and captions move left)
-    clips:
-      - "branding/health-support-studio/avatar/presenter/clips/p1_hands.mp4"
-      - "branding/health-support-studio/avatar/presenter/clips/p2_gesture.mp4"
-      - "branding/health-support-studio/avatar/presenter/clips/p4_stand.mp4"
+    clips:   # only the parts with hand movement; played forwards and backwards for variety
+      - "branding/health-support-studio/avatar/presenter/clips/m1.mp4"
+      - "branding/health-support-studio/avatar/presenter/clips/m2.mp4"
+      - "branding/health-support-studio/avatar/presenter/clips/m3_m1_reversed.mp4"
+      - "branding/health-support-studio/avatar/presenter/clips/m4_m2_reversed.mp4"
   # You on screen in the middle of the video: about every minute you appear for 5-10 s next to the slide,
   # while your voice keeps narrating. mode "broll": your Flow clips of walking / reading a chart / at the desk
   # (no talking, so no lip-sync needed; folder avatar/broll). mode "lipsync": the talking "moves" clips,
