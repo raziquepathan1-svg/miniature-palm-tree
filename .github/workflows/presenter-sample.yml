@@ -1,0 +1,72 @@
+name: Corner presenter - narrated sample
+
+# Your cloned voice narrates the first scenes of a script and the corner presenter is lip-synced to it,
+# so the lips can be checked on real narration before it goes into the daily videos.
+on:
+  workflow_dispatch:
+    inputs:
+      script:
+        description: "Script from the script bank"
+        default: "youtube_agent/script_bank/003-flu-vaccine-myths.yaml"
+      scenes:
+        description: "How many scenes"
+        default: "2"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: kaggle-host
+  cancel-in-progress: false
+
+jobs:
+  sample:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Cache voice models
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/huggingface
+          key: voice-models-clone-v1
+
+      - name: Install
+        run: |
+          sudo apt-get update -q && sudo apt-get install -y -q ffmpeg
+          pip install -q -r requirements.txt kaggle
+          pip install -q torch==2.6.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cpu
+          pip install -q chatterbox-tts
+
+      - name: Unlock the voice sample
+        env:
+          VOICE_KEY: ${{ secrets.VOICE_KEY }}
+        run: |
+          openssl enc -d -aes-256-cbc -pbkdf2 -iter 200000 -in voice/voice_sample.wav.enc \
+            -out "$RUNNER_TEMP/voice_sample.wav" -pass env:VOICE_KEY
+          echo "VOICE_SAMPLE=$RUNNER_TEMP/voice_sample.wav" >> "$GITHUB_ENV"
+
+      - name: Narrate and lip-sync
+        env:
+          KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
+          KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
+          KAGGLE_API_TOKEN: ${{ secrets.KAGGLE_API_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          [ -z "$KAGGLE_KEY" ] && unset KAGGLE_KEY
+          [ -z "$KAGGLE_API_TOKEN" ] && unset KAGGLE_API_TOKEN
+          python -m youtube_agent.presenter sample "${{ inputs.script }}" "${{ inputs.scenes }}" branding/health-support-studio/avatar/presenter/sample
+          rm -f "$VOICE_SAMPLE"
+
+      - name: Save
+        run: |
+          git config user.name "youtube-agent"
+          git config user.email "youtube-agent@users.noreply.github.com"
+          git add branding/health-support-studio/avatar/presenter/sample
+          git commit -m "Corner presenter: narrated sample" || exit 0
+          for i in 1 2 3; do git pull --rebase && git push && break; sleep 5; done

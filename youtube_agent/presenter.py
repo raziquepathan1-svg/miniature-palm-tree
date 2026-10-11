@@ -28,7 +28,50 @@ def lipsync(clips: list[Path], wav: Path, out: Path, engine: str = "wav2lip") ->
     return out
 
 
+def sample(script: Path, scenes: int, out_dir: Path) -> None:
+    """A test: the cloned voice narrates the first scenes of a script, and the corner presenter is lip-synced
+    to it (Wav2Lip on Kaggle). Saves narration.wav, scenes.json and lipsync.mp4 in out_dir."""
+    import json
+    import subprocess
+
+    import yaml
+
+    from . import voice
+    from .editor import ffmpeg_bin
+    from .main import load_config
+
+    config = load_config()
+    plan = yaml.safe_load(script.read_text())["plan"]
+    picked = [sc for sc in plan["scenes"] if sc["layout"] != "title"][:scenes]
+    out_dir.mkdir(parents=True, exist_ok=True)
+    wavs, info = [], []
+    for i, sc in enumerate(picked):
+        wav = out_dir / f"scene{i}.wav"
+        dur, _ = voice.narrate_scene(sc["narration"], config.get("voice") or {}, wav)
+        wavs.append(wav)
+        info.append({"heading": sc["heading"], "seconds": dur})
+    listing = out_dir / "list.txt"
+    listing.write_text("".join(f"file '{w.resolve()}'\n" for w in wavs))
+    narration = out_dir / "narration.wav"
+    subprocess.run([ffmpeg_bin(), "-y", "-loglevel", "error", "-f", "concat", "-safe", "0", "-i", str(listing),
+                    str(narration)], check=True)
+    for w in wavs + [listing]:
+        w.unlink()
+    (out_dir / "scenes.json").write_text(json.dumps(info, indent=2))
+    lip_voice = out_dir / "lipsync_voice.wav"  # same treatment as in the daily video
+    subprocess.run([ffmpeg_bin(), "-y", "-loglevel", "error", "-i", str(narration), "-ac", "1", "-ar", "16000",
+                    "-af", "acompressor=threshold=-28dB:ratio=6:attack=5:release=80,loudnorm=I=-14:TP=-1",
+                    str(lip_voice)], check=True)
+    clips = [ROOT / c for c in config["video"]["presenter"]["clips"]]
+    done = lipsync(clips, lip_voice, out_dir / "lipsync.mp4", config["video"]["presenter"].get("engine", "wav2lip"))
+    lip_voice.unlink()
+    print(f"Sample: {done}" if done else "Lip-sync failed")
+
+
 if __name__ == "__main__":
+    if len(sys.argv) >= 2 and sys.argv[1] == "sample":
+        sample(Path(sys.argv[2]), int(sys.argv[3]), Path(sys.argv[4]))
+        sys.exit(0)
     args = [a for a in sys.argv[1:] if not a.startswith("--")]
     engine = next((a.split("=", 1)[1] for a in sys.argv if a.startswith("--engine=")), "wav2lip")
     if len(args) >= 4 and args[0] == "lipsync":
