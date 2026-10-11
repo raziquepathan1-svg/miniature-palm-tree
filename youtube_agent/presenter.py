@@ -49,7 +49,8 @@ def _probe(path: Path) -> tuple[int, int, str]:
     return w, h, re.search(r"(\d+(?:\.\d+)?) fps", err).group(1)
 
 
-def _key_frames(src: Path, height: int, sink) -> tuple[int, int, str]:
+def _key_frames(src: Path, height: int, sink, shows: list[tuple[float, float]] | None = None,
+                fade: float = 0.35) -> tuple[int, int, str]:
     """Green screen -> transparent RGBA frames at the size shown on screen, written to `sink` (a pipe);
     nothing big is stored, so a whole video fits. Returns (width, height, fps)."""
     import subprocess
@@ -61,9 +62,11 @@ def _key_frames(src: Path, height: int, sink) -> tuple[int, int, str]:
     w0, h0, fps = _probe(src)
     h = height // 2 * 2
     w = int(w0 * h / h0) // 2 * 2
-    dec = subprocess.Popen([ffmpeg_bin(), "-loglevel", "error", "-i", str(src), "-vf", f"scale={w}:{h}",
+    dec = subprocess.Popen([ffmpeg_bin(), "-loglevel", "error", "-i", str(src), "-vf",
+                            f"scale={w}:{h}:flags=lanczos,unsharp=5:5:0.7:3:3:0.0",  # crisp at the small size
                             "-f", "rawvideo", "-pix_fmt", "rgb24", "-"], stdout=subprocess.PIPE)
     size = w * h * 3
+    rate, n = float(fps), 0
     while True:
         buf = dec.stdout.read(size)
         if len(buf) < size:
@@ -72,6 +75,11 @@ def _key_frames(src: Path, height: int, sink) -> tuple[int, int, str]:
         r, g, b = a[..., 0], a[..., 1], a[..., 2]
         green = g - np.maximum(r, b)
         alpha = np.clip((32 - green) * 255 // 18, 0, 255)  # >32 more green than red/blue: background
+        if shows is not None:  # fade in and out instead of popping on and off
+            t = n / rate
+            vis = max((min(1.0, (t - a) / fade, (b - t) / fade) for a, b in shows if a <= t <= b), default=0.0)
+            alpha = alpha * vis
+        n += 1
         g = np.where(green > 0, np.maximum(r, b) + green // 7, g)  # no green glow on hair and edges
         try:
             sink.write(np.dstack([r, g, b, alpha]).astype(np.uint8).tobytes())
@@ -102,16 +110,14 @@ def add_presenter(video: Path, shows: list[tuple[float, float]], cfg: dict, work
         height = int(cfg.get("height", 760)) // 2 * 2
         w0, h0, fps = _probe(lip)
         w = int(w0 * height / h0) // 2 * 2
-        enable = "+".join(f"between(t,{a:.2f},{b:.2f})" for a, b in shows) or "0"
         out = video.with_name(video.stem + "_presenter.mp4")
         mix = subprocess.Popen([ffmpeg_bin(), "-y", "-loglevel", "error", "-i", str(video),
                                 "-f", "rawvideo", "-pix_fmt", "rgba", "-s", f"{w}x{height}", "-r", fps, "-i", "-",
-                                "-filter_complex", f"[0:v][1:v]overlay=W-w-20:H-h:eof_action=pass:"
-                                f"enable='{enable}',format=yuv420p[v]",
+                                "-filter_complex", "[0:v][1:v]overlay=W-w-20:H-h:eof_action=pass,format=yuv420p[v]",
                                 "-map", "[v]", "-map", "0:a", "-c:v", "libx264", "-preset", "veryfast",
                                 "-crf", "20", "-c:a", "copy", "-movflags", "+faststart", str(out)],
                                stdin=subprocess.PIPE)
-        _key_frames(lip, height, mix.stdin)
+        _key_frames(lip, height, mix.stdin, shows)
         try:
             mix.stdin.close()
         except BrokenPipeError:

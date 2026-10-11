@@ -85,6 +85,10 @@ def setup_latentsync() -> None:
 
 def setup_wav2lip() -> None:
     sh(f"git clone -q --depth 1 https://github.com/Rudrabha/Wav2Lip {REPO}")
+    # Sharper output: Wav2Lip saves its frames as low-quality DIVX and re-encodes them; keep near-lossless instead
+    inf = REPO / "inference.py"
+    code = inf.read_text().replace("*'DIVX'", "*'MJPG'").replace("-q:v 1", "-c:v libx264 -crf 14 -preset veryfast")
+    inf.write_text(code)
     (REPO / "temp").mkdir(exist_ok=True)
     uv = _venv()
     sh(f"{uv} 'setuptools<70' wheel")  # librosa 0.9 needs pkg_resources
