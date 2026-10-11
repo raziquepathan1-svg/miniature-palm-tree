@@ -93,7 +93,7 @@ def _probe(path: Path) -> tuple[int, int, str]:
 
 
 def _key_frames(src: Path, height: int, sink, shows: list[tuple[float, float]] | None = None,
-                fade: float = 0.35) -> tuple[int, int, str]:
+                fade: float = 0.35, keep_top: float = 1.0) -> tuple[int, int, str]:
     """Green screen -> transparent RGBA frames at the size shown on screen, written to `sink` (a pipe);
     nothing big is stored, so a whole video fits. Returns (width, height, fps)."""
     import subprocess
@@ -103,10 +103,12 @@ def _key_frames(src: Path, height: int, sink, shows: list[tuple[float, float]] |
     from .editor import ffmpeg_bin
 
     w0, h0, fps = _probe(src)
+    h0 = int(h0 * keep_top) // 2 * 2  # cut every clip at the same height (thighs), so none ends in mid-air
     h = height // 2 * 2
     w = int(w0 * h / h0) // 2 * 2
     dec = subprocess.Popen([ffmpeg_bin(), "-loglevel", "error", "-i", str(src), "-vf",
-                            f"scale={w}:{h}:flags=lanczos,unsharp=5:5:0.7:3:3:0.0",  # crisp at the small size
+                            f"crop={w0}:{h0}:0:0,scale={w}:{h}:flags=lanczos,"
+                            "unsharp=5:5:0.7:3:3:0.0",  # crisp at the small size
                             "-f", "rawvideo", "-pix_fmt", "rgb24", "-"], stdout=subprocess.PIPE)
     size = w * h * 3
     rate, n = float(fps), 0
@@ -153,7 +155,9 @@ def add_presenter(video: Path, shows: list[tuple[float, float]], cfg: dict, work
             print("    (Corner presenter skipped: lip-sync did not come back)")
             return video
         height = int(cfg.get("height", 760)) // 2 * 2
+        keep = float(cfg.get("keep_top", 1.0))
         w0, h0, fps = _probe(lip)
+        h0 = int(h0 * keep) // 2 * 2
         w = int(w0 * height / h0) // 2 * 2
         out = video.with_name(video.stem + "_presenter.mp4")
         mix = subprocess.Popen([ffmpeg_bin(), "-y", "-loglevel", "error", "-i", str(video),
@@ -162,7 +166,7 @@ def add_presenter(video: Path, shows: list[tuple[float, float]], cfg: dict, work
                                 "-map", "[v]", "-map", "0:a", "-c:v", "libx264", "-preset", "veryfast",
                                 "-crf", "20", "-c:a", "copy", "-movflags", "+faststart", str(out)],
                                stdin=subprocess.PIPE)
-        _key_frames(lip, height, mix.stdin, shows)
+        _key_frames(lip, height, mix.stdin, shows, keep_top=keep)
         try:
             mix.stdin.close()
         except BrokenPipeError:
