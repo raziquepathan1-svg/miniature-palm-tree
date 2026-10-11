@@ -165,11 +165,11 @@
     "title": "Falls Aren't Just Part of Aging: 5 Myths Busted",
     "style": "Myth vs Fact",
     "script_file": "013-falls-older-adults.yaml",
-    "planned_publish_at": "2026-10-12T16:00:00Z",
-    "awaiting_approval": true,
+    "awaiting_approval": false,
     "youtube_id": "yeRj5dGymRU",
     "short_youtube_id": "740GYrC3lmk",
     "short2_youtube_id": "Qj7qKKSuFsQ",
-    "preview": "previews/yeRj5dGymRU.mp4"
+    "preview": "previews/yeRj5dGymRU.mp4",
+    "publish_at": "2026-10-12T16:00:00Z"
   }
 ]
