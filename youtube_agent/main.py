@@ -162,6 +162,13 @@ def make_one_video(config: dict, history: list[dict], topic: str | None, dry_run
         sources = review.sources
         fact_issues = review.issues
 
+    if video_cfg.get("format") != "shorts":
+        from . import growth
+
+        nxt = growth.next_in_series(plan.playlist, bank_file, bank)
+        growth.LAST_MID = growth.apply(plan, config.get("growth") or {}, len(history), nxt)
+        print(f"    Series: {growth.series_for(plan.playlist, config.get('growth') or {})} | next: {nxt}")
+
     (workdir / "plan.json").write_text(plan.model_dump_json(indent=2))
     (workdir / "script.txt").write_text("\n\n".join(plan.narration()))
     if script_only:
@@ -408,8 +415,11 @@ def upload_second_short(plan, video_id: str, video_cfg: dict, config: dict, chan
     title += " #Shorts"
     hook_scene = Scene(layout="title", heading="Myth or Fact?" if scene.layout == "myth_fact" else scene.heading[:40],
                        points=[topic[:40]], footage_query=scene.footage_query, narration=hook)
-    body = scene.model_copy(update={"narration": scene.narration.rstrip() +
-                                    " Watch the full video on the Health Support Studio channel."})
+    from . import growth
+
+    narration = scene.narration.replace(growth.LAST_MID or "\0", "").strip()
+    body = scene.model_copy(update={"narration": narration + " Watch the full video on the Health Support "
+                                    "Studio channel, and subscribe for a new health tip every day."})
     print(f"    Making a second Short: {title}")
     raw = visuals.build_video(SimpleNamespace(scenes=[hook_scene, body], short_scenes=[]),
                               {**video_cfg, "format": "shorts"}, config.get("voice", {}), channel_name,
