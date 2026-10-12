@@ -179,11 +179,11 @@
     "title": "Anaphylaxis: Signs of a Severe Allergic Reaction",
     "style": "Warning Signs",
     "script_file": "015-anaphylaxis-signs.yaml",
-    "planned_publish_at": "2026-10-13T16:00:00Z",
-    "awaiting_approval": true,
+    "awaiting_approval": false,
     "youtube_id": "B8kEqFsTjXQ",
     "short_youtube_id": "d7qx1WS4aH8",
     "short2_youtube_id": "YSHK64Iz-Xw",
-    "preview": "previews/B8kEqFsTjXQ.mp4"
+    "preview": "previews/B8kEqFsTjXQ.mp4",
+    "publish_at": "2026-10-13T16:00:00Z"
   }
 ]
