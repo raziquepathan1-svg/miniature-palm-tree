@@ -101,6 +101,8 @@ video:
       - "branding/health-support-studio/avatar/presenter/clips/m8_m7_reversed.mp4"
       - "branding/health-support-studio/avatar/presenter/clips/m9_chest.mp4"
       - "branding/health-support-studio/avatar/presenter/clips/m10_m9_reversed.mp4"
+      - "branding/health-support-studio/avatar/presenter/clips/m11_fingertips.mp4"
+      - "branding/health-support-studio/avatar/presenter/clips/m12_m11_reversed.mp4"
   # You on screen in the middle of the video: about every minute you appear for 5-10 s next to the slide,
   # while your voice keeps narrating. mode "broll": your Flow clips of walking / reading a chart / at the desk
   # (no talking, so no lip-sync needed; folder avatar/broll). mode "lipsync": the talking "moves" clips,
