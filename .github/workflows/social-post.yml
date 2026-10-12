@@ -2,11 +2,18 @@ name: Post Short to Instagram and Facebook
 
 on:
   schedule:
-    # 17:25 UTC = after the YouTube video goes public (12 PM New York) in both summer and winter
-    # (~8:25 PM Saudi time). Posts only if the YouTube video is public.
+    # Two Reels a day, each only once its YouTube video is public:
+    # 23:35 UTC = ~7:30 PM New York (evening, when US viewers scroll most): the main Reel (slot 1).
+    # 17:25 UTC = ~1:25 PM New York (lunch): the second Reel, cut from the video's best scene (slot 2).
+    - cron: "35 23 * * *"
     - cron: "25 17 * * *"
   workflow_dispatch:
     inputs:
+      slot:
+        description: "Which Reel: 1 = main Reel, 2 = second Reel"
+        type: choice
+        options: ["1", "2"]
+        default: "1"
       check_only:
         description: "Only test the Facebook/Instagram connection (posts nothing)"
         type: boolean
@@ -46,19 +53,25 @@ jobs:
         id: find
         env:
           GH_TOKEN: ${{ github.token }}
+          SLOT: ${{ github.event.schedule == '25 17 * * *' && '2' || inputs.slot || '1' }}
         run: |
+          echo "slot=$SLOT" >> "$GITHUB_OUTPUT"
+          MARK=$([ "$SLOT" = "2" ] && echo "-2" || echo "")
           # Videos are scheduled a day ahead, so the newest run's video is usually not public yet.
           # Walk back through recent runs (newest first) and take the first one that is due.
           now=$(date -u +%s)
           for RUN_ID in $(gh run list --repo "$GITHUB_REPOSITORY" --workflow daily-video.yml --status success \
                           --limit 6 --json databaseId --jq '.[].databaseId'); do
-            if [ "${{ inputs.instagram_only }}" != "true" ] && grep -qx "$RUN_ID" youtube_agent/social_posted.txt 2>/dev/null; then
+            if [ "${{ inputs.instagram_only }}" != "true" ] && grep -qx "$RUN_ID$MARK" youtube_agent/social_posted.txt 2>/dev/null; then
               echo "Newest due Short (run $RUN_ID) was already posted."; break
             fi
             rm -rf social_dl && mkdir social_dl
             gh run download "$RUN_ID" --repo "$GITHUB_REPOSITORY" --name "social-$RUN_ID" --dir social_dl 2>/dev/null || continue
             f=$(find social_dl -name social.json | head -1)
             [ -n "$f" ] || continue
+            if [ "$SLOT" = "2" ] && [ ! -f "$(dirname "$f")/reel2.mp4" ]; then
+              echo "Run $RUN_ID has no second Reel."; continue
+            fi
             at=$(python3 -c "import json,sys; print(json.load(open(sys.argv[1])).get('publish_at') or '')" "$f")
             if [ -z "$at" ] || [ "$(date -u -d "$at" +%s)" -le "$now" ]; then
               echo "Posting the Short from run $RUN_ID (YouTube video public since ${at:-upload})."
@@ -82,6 +95,7 @@ jobs:
           META_PAGE_TOKEN: ${{ secrets.META_PAGE_TOKEN }}
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
           ONLY_INSTAGRAM: ${{ inputs.instagram_only }}
+          SOCIAL_SLOT: ${{ steps.find.outputs.slot }}
           YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
           YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
           YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
@@ -96,8 +110,10 @@ jobs:
       - name: Remember it was posted
         if: ${{ always() && !inputs.check_only && !inputs.instagram_only && steps.find.outputs.skip != 'true' }}
         run: |
-          find social_dl -name posted.flag | grep -q . || { echo "Nothing was posted."; exit 0; }
-          echo "${{ steps.find.outputs.run_id }}" >> youtube_agent/social_posted.txt
+          FLAG=$([ "${{ steps.find.outputs.slot }}" = "2" ] && echo posted2.flag || echo posted.flag)
+          MARK=$([ "${{ steps.find.outputs.slot }}" = "2" ] && echo "-2" || echo "")
+          find social_dl -name "$FLAG" | grep -q . || { echo "Nothing was posted."; exit 0; }
+          echo "${{ steps.find.outputs.run_id }}$MARK" >> youtube_agent/social_posted.txt
           git config user.name "youtube-agent"
           git config user.email "youtube-agent@users.noreply.github.com"
           git add youtube_agent/social_posted.txt

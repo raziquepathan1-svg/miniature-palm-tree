@@ -160,8 +160,18 @@ def _tempo(audio: np.ndarray, sample_rate: int, speed: float) -> np.ndarray:
     return pcm.astype(np.float32) / 32767
 
 
+_SPOKEN: dict = {}  # sentence -> audio, so a variant of a video (e.g. the Instagram ending) reuses the takes
+
+
 def synthesize(text: str, voice: str, speed: float, voice_cfg: dict | None = None) -> tuple[np.ndarray, int]:
-    """Return mono float32 audio for one sentence."""
+    """Return mono float32 audio for one sentence (the same sentence is only spoken once per run)."""
+    key = (text, voice, speed, (voice_cfg or {}).get("engine"))
+    if key not in _SPOKEN:
+        _SPOKEN[key] = _synthesize(text, voice, speed, voice_cfg)
+    return _SPOKEN[key]
+
+
+def _synthesize(text: str, voice: str, speed: float, voice_cfg: dict | None = None) -> tuple[np.ndarray, int]:
     voice_cfg = voice_cfg or {}
     if voice_cfg.get("engine") == "clone":
         model = _clone_engine(voice_cfg)

@@ -14,6 +14,7 @@ Needs these environment variables (GitHub secrets):
 """
 
 import json
+import re
 import os
 import shutil
 import subprocess
@@ -282,9 +283,45 @@ def captions(meta: dict, page_id: str, ig_user_id: str | None, token: str) -> tu
     return "\n".join(fb), "\n".join(ig)
 
 
+QUESTIONS = [
+    "Did you know this? Tell us in the comments 👇",
+    "Has this happened to you or someone you know? Share below 👇",
+    "What health topic should we explain next? Comment below 👇",
+    "Any questions about this? Ask below, we read every comment 👇",
+    "Save this and share it with someone who needs it ❤️ Questions? Comment below 👇",
+]
+
+
+def native_captions(text: str, tags: str, ig_user_id: str | None, token: str, day: int) -> tuple[str, str]:
+    """Short captions written for Instagram/Facebook themselves: the point, one question to start comments,
+    follow the page, AI voice note, 3-5 hashtags. No YouTube link in the post (only 'link in bio' on IG)."""
+    ig_name = _graph_field(ig_user_id, "username", token) if ig_user_id else ""
+    question = QUESTIONS[day % len(QUESTIONS)]
+    tags = " ".join([t for t in tags.split() if not re.search(r"nurse|doctor", t, re.I)][:5])
+    ai_note = "🤖 Narrated with an AI voice."
+    fb = [text, "", question, "", "👉 Follow our page for one simple health tip every day.", ai_note]
+    ig = [text, "", question, "", f"👉 Follow{f' @{ig_name}' if ig_name else ' us'} for one simple health tip "
+          "every day.", "▶️ Full videos on YouTube: link in bio", ai_note]
+    if tags:
+        fb += ["", tags]
+        ig += ["", tags]
+    return "\n".join(fb), "\n".join(ig)
+
+
 def post(social_dir: Path) -> None:
     meta = json.loads((social_dir / "social.json").read_text())
     video = social_dir / "short.mp4"
+    # Health Support Studio posts its own Instagram/Facebook versions ("native"): slot 1 in the evening, slot 2
+    # (the second Short) at midday. Other channels keep the original behaviour.
+    slot = os.environ.get("SOCIAL_SLOT", "1")
+    native = meta.get("style") == "native"
+    if native and slot == "2":
+        if not (social_dir / "reel2.mp4").exists():
+            print("No second Reel in this run - nothing to post.")
+            return
+        video = social_dir / "reel2.mp4"
+    elif native and (social_dir / "reel.mp4").exists():
+        video = social_dir / "reel.mp4"
     page_id, token = _env("META_PAGE_ID"), _env("META_PAGE_TOKEN")
     ig_user_id = _env("IG_USER_ID")
     if not (page_id and token):
@@ -297,7 +334,7 @@ def post(social_dir: Path) -> None:
     if was_user:
         print("  (META_PAGE_TOKEN is a user token; using the Page token derived from it)")
 
-    if meta.get("comment"):  # a question from the channel starts the conversation (pin it in Studio)
+    if meta.get("comment") and slot == "1":  # a question from the channel starts the conversation (pin it in Studio)
         try:
             from googleapiclient.discovery import build
 
@@ -310,7 +347,15 @@ def post(social_dir: Path) -> None:
             print("  Posted the question comment on YouTube")
         except Exception as e:
             print(f"  (Could not post the YouTube comment: {e})")
-    fb_caption, ig_caption = captions(meta, page_id, ig_user_id, token)
+    if native:
+        text, tags = _split_hashtags(meta["caption"])
+        if slot == "2":
+            r2 = json.loads((social_dir / "reel2.json").read_text())
+            text, tags = f"{r2['hook']} Educational only, not medical advice.", r2.get("tags") or tags
+        day = int(time.time() // 86400) * 2 + (slot == "2")
+        fb_caption, ig_caption = native_captions(text, tags, ig_user_id, token, day)
+    else:
+        fb_caption, ig_caption = captions(meta, page_id, ig_user_id, token)
     results = []
     fb_video_id = None
     if os.environ.get("ONLY_INSTAGRAM", "").lower() == "true":  # retrying Instagram alone
@@ -345,7 +390,7 @@ def post(social_dir: Path) -> None:
         with open(summary, "a") as f:
             f.write(f"## Short for: {meta['title']}\n" + "\n".join(f"- {r}" for r in results) + "\n")
     if any("posted" in r for r in results):
-        (social_dir / "posted.flag").write_text("\n".join(results))  # tells the workflow not to post again
+        (social_dir / ("posted.flag" if slot == "1" else "posted2.flag")).write_text("\n".join(results))  # tells the workflow not to post again
     if any("FAILED" in r for r in results):
         sys.exit(1)
 

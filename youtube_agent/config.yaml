@@ -101,6 +101,8 @@ video:
     outro:   # a different one each day: your real Flow lips with your cloned voice fitted word by word (dub_clips.py)
       - {file: "branding/health-support-studio/avatar/speaking/desk_scrubs_16x9_aligned_v2.mp4", speed: 1.12}
       - {file: "branding/health-support-studio/avatar/speaking/outro_desk2_16x9_aligned.mp4", speed: 1.12}
+    # Instagram/Facebook Reels end with this one ("Thanks for watching. Please share this...": no "subscribe")
+    reel_outro: {file: "branding/health-support-studio/avatar/speaking/outro_desk2_16x9_aligned.mp4", speed: 1.12}
   # The small presenter in the bottom-right corner (16:9 videos): your green-screen clips, lip-synced to the
   # narration on Kaggle (Wav2Lip), cut out; hidden while you are already full screen (desk clips, intro, outro).
   presenter:

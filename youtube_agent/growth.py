@@ -131,3 +131,18 @@ def apply(plan, ep: Episode | None, day: int) -> str | None:
     if plan.short_scenes and "subscribe" not in plan.short_scenes[-1].narration.lower():
         plan.short_scenes[-1].narration = f"{plan.short_scenes[-1].narration.rstrip()} {SHORT_LINE}"
     return mid
+
+
+REEL_FOLLOW = "Follow us for one simple health tip every day."
+_OFF_PLATFORM = re.compile(r"youtube|channel|subscrib|full video|link", re.I)
+
+
+def native_reel(scenes: list, follow: str = REEL_FOLLOW) -> list:
+    """The Instagram/Facebook version of a Short: the ending asks people to follow the page there, instead of
+    sending them to YouTube (Instagram and Facebook show posts that send people away to fewer people)."""
+    *body, last = scenes
+    kept = [x for x in re.split(r"(?<=[.!?])\s+", last.narration.strip()) if x and not _OFF_PLATFORM.search(x)]
+    update = {"narration": " ".join(kept + [follow])}
+    if last.layout == "outro":
+        update.update(heading="Follow for more", points=["One simple health tip every day"])
+    return body + [last.model_copy(update=update)]

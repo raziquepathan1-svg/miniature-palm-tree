@@ -19,6 +19,7 @@ import json
 import os
 import subprocess
 import re
+import shutil
 from pathlib import Path
 
 from types import SimpleNamespace
@@ -317,6 +318,7 @@ def make_one_video(config: dict, history: list[dict], topic: str | None, dry_run
         (social_dir / "social.json").write_text(json.dumps({
             "youtube_id": video_id, "title": title, "caption": plan.short_caption,
             "publish_at": yt.get("publish_at"), "comment": comment,
+            "style": config.get("social", {}).get("style", "native"),
         }, indent=2))
 
     summary = [
@@ -443,6 +445,17 @@ def upload_second_short(plan, video_id: str, video_cfg: dict, config: dict, chan
                                      config["channel"].get("language_code", "en-US"))
     if yt.get("playlists", True):
         uploader.add_to_playlists(short_id, [yt.get("shorts_playlist", "Health Shorts")], yt.get("playlist_description"))
+    try:  # its Instagram/Facebook version, posted at a second time of day
+        social_dir = workdir / "social"
+        if social_dir.is_dir():
+            reel_body = scene.model_copy(update={"narration": f"{narration} {growth.REEL_FOLLOW}"})
+            reel = visuals.build_video(SimpleNamespace(scenes=[hook_scene, reel_body], short_scenes=[]),
+                                       _reel_cfg({**video_cfg, "format": "shorts"}), config.get("voice", {}),
+                                       channel_name, workdir / "reel2_build")
+            shutil.copyfile(reel, social_dir / "reel2.mp4")
+            (social_dir / "reel2.json").write_text(json.dumps({"hook": hook, "tags": tags}))
+    except Exception as e:
+        print(f"  (Could not make the second Instagram/Facebook Reel: {e})")
     return short_id
 
 
@@ -465,7 +478,27 @@ def make_social_short(plan, final: Path, video_cfg: dict, config: dict, channel_
     raw = visuals.build_video(SimpleNamespace(scenes=plan.short_scenes), short_cfg, config.get("voice", {}),
                               channel_name, workdir / "short_build")
     shutil.copyfile(raw, social_dir / "short.mp4")
+    try:  # the Instagram/Facebook version: same Short, but it ends with "follow us" instead of YouTube
+        from . import growth
+
+        print("    Making the Instagram/Facebook version (native ending)...")
+        reel = visuals.build_video(SimpleNamespace(scenes=growth.native_reel(plan.short_scenes)),
+                                   _reel_cfg(short_cfg), config.get("voice", {}), channel_name, workdir / "reel_build")
+        shutil.copyfile(reel, social_dir / "reel.mp4")
+    except Exception as e:  # the YouTube version is posted instead
+        print(f"  (Could not make the Instagram/Facebook version: {e})")
     return social_dir
+
+
+def _reel_cfg(short_cfg: dict) -> dict:
+    """Variants for Instagram/Facebook: the host appears without talking, so no second lip-sync job is needed."""
+    host = short_cfg.get("host") or {}
+    cfg = {**short_cfg, "host": {**host, "talk_every": 0}} if host else dict(short_cfg)
+    clips = dict(cfg.get("host_clips") or {})
+    if clips:  # the host's closing clip without "subscribe" (that's a YouTube word)
+        clips["outro"] = clips.get("reel_outro")
+        cfg["host_clips"] = clips
+    return cfg
 
 
 def main() -> None:
