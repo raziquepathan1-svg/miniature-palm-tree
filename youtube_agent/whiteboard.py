@@ -154,6 +154,88 @@ class _Text:
         return (self.x + x_to, self.y + bob)
 
 
+class _Picture:
+    """A line drawing (black outlines + flat colors on white): the pen first traces the outlines, then colors
+    them in, row by row. Item: {"kind": "image", "path": ..., "x": centre x, "y": top, "h": height,
+    "outline": share of the time spent on the outlines (default 0.65)}."""
+
+    def __init__(self, it: dict):
+        self.it = it
+        src = Image.open(it["path"]).convert("RGB")
+        a = np.asarray(src).astype(np.int16)
+        ink = a.min(2) < 235
+        ys, xs = np.where(ink)
+        src = src.crop((xs.min() - 4, ys.min() - 4, xs.max() + 5, ys.max() + 5))
+        self.scale = it["h"] / src.height
+        src = src.resize((max(1, round(src.width * self.scale)), it["h"]), Image.LANCZOS)
+        self.crop_origin = (xs.min() - 4, ys.min() - 4)
+        self.x, self.y = int(it["x"] - src.width / 2), int(it["y"])
+        a = np.asarray(src).astype(np.int16)
+        lum = a.mean(2)
+        line = a.max(2) < 100
+        color = (a.min(2) < 225) & ~line
+        rgba = np.dstack([a.astype(np.uint8), np.zeros(lum.shape, np.uint8)])
+        self.line_img = Image.fromarray(np.where(line[..., None], rgba | np.uint8([0, 0, 0, 255]), 0).astype(np.uint8))
+        self.color_img = Image.fromarray(np.where(color[..., None], rgba | np.uint8([0, 0, 0, 255]), 0).astype(np.uint8))
+        self.cells = self._order(line, 18)
+        band = 36
+        self.rows = [r for r in range(0, src.height, band) if color[r:r + band].any()]
+        self.band, self.w = band, src.width
+        self.shown_cells = self.shown_fill = 0
+
+    @staticmethod
+    def _order(mask: np.ndarray, c: int) -> list:
+        """Ink cells in drawing order: always continue with the nearest unfinished cell (follows the lines)."""
+        hh, ww = mask.shape
+        cells = np.array([(y, x) for y in range(0, hh, c) for x in range(0, ww, c) if mask[y:y + c, x:x + c].any()],
+                         float)
+        if not len(cells):
+            return []
+        left = np.ones(len(cells), bool)
+        cur = int(np.argmin(cells[:, 0] * 4 + cells[:, 1] * 0.1))
+        order = []
+        for _ in range(len(cells)):
+            order.append(cur)
+            left[cur] = False
+            if not left.any():
+                break
+            d = np.abs(cells - cells[cur]).sum(1)
+            d[~left] = 1e9
+            cur = int(np.argmin(d))
+        return [(int(cells[i][0]), int(cells[i][1]), c) for i in order]
+
+    def point(self, sx: float, sy: float) -> tuple:
+        """Board position of a point given in the original picture's pixels (for labels and arrows)."""
+        return (self.x + (sx - self.crop_origin[0]) * self.scale, self.y + (sy - self.crop_origin[1]) * self.scale)
+
+    def draw_to(self, board: Image.Image, frac: float):
+        split = self.it.get("outline", 0.65)
+        tip = None
+        k = len(self.cells) if frac >= split else int(len(self.cells) * frac / split)
+        for y, x, c in self.cells[self.shown_cells:k]:
+            part = self.line_img.crop((x, y, x + c, y + c))
+            board.paste(part, (self.x + x, self.y + y), part)
+            tip = (self.x + x + c / 2, self.y + y + c / 2)
+        self.shown_cells = max(self.shown_cells, k)
+        if frac < split:
+            return tip or (self.x, self.y)
+        g = (frac - split) / (1 - split)
+        total = len(self.rows) * self.w
+        upto = int(total * g) if g < 1 else total
+        pos = self.shown_fill
+        while pos < upto:
+            r, off = divmod(pos, self.w)
+            n = min(self.w - off, upto - pos)
+            row = self.rows[r]
+            x0 = off if r % 2 == 0 else self.w - off - n  # back and forth, like coloring in
+            part = self.color_img.crop((x0, row, x0 + n, row + self.band))
+            board.paste(part, (self.x + x0, self.y + row), part)
+            pos += n
+            tip = (self.x + (x0 + n if r % 2 == 0 else x0), self.y + row + self.band / 2)
+        self.shown_fill = upto
+        return tip or (self.x + self.w / 2, self.y)
+
+
 def _pen(frame: Image.Image, tip, color) -> None:
     """A marker pen held at an angle, its tip on the board."""
     x, y = tip
@@ -181,7 +263,9 @@ def render(items: list, duration: float, out: Path, audio: Path | None = None) -
     board = clean.copy()
     objs = []
     for n, it in enumerate(sorted(items, key=lambda i: i["t"])):
-        objs.append((it, _Text(it) if it["kind"] == "text" else None if it["kind"] == "wipe" else _Stroke(it, n)))
+        obj = (_Text(it) if it["kind"] == "text" else _Picture(it) if it["kind"] == "image"
+               else None if it["kind"] == "wipe" else _Stroke(it, n))
+        objs.append((it, obj))
     cmd = [ffmpeg_bin(), "-loglevel", "error", "-y", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}",
            "-r", str(FPS), "-i", "-"]
     if audio:
@@ -204,7 +288,7 @@ def render(items: list, duration: float, out: Path, audio: Path | None = None) -
         still = []
         for it, obj in active:
             frac = min(1.0, (t - it["t"]) / max(it.get("dur", 1.0), 1e-3))
-            tip = obj.draw_to(board, frac) if isinstance(obj, _Text) else obj.draw_to(d, frac)
+            tip = obj.draw_to(board, frac) if isinstance(obj, (_Text, _Picture)) else obj.draw_to(d, frac)
             pen_color, last_tip_t = _color(it.get("color", "ink")), t
             if frac < 1:
                 still.append((it, obj))
@@ -252,8 +336,38 @@ def heart_demo() -> tuple[list, float]:
     return I, 28.5
 
 
+def heart_picture_demo() -> tuple[list, float]:
+    """A real heart drawing, then its main parts labelled with arrows."""
+    path = Path(__file__).resolve().parent.parent / "branding/health-support-studio/whiteboard/heart_front.png"
+    pic = {"t": 2.6, "dur": 9.0, "kind": "image", "path": str(path), "x": 960, "y": 190, "h": 840}
+    P = _Picture(pic).point
+    I = [{"t": 0.3, "dur": 2.0, "kind": "text", "x": 960, "y": 30, "text": "The Parts of Your Heart", "size": 84,
+          "align": "center"}, pic]
+    t = 12.2
+
+    def label(text, x, y, sx, sy, color, side):
+        nonlocal t
+        f = _font(50)
+        w = f.getbbox(text)[2]
+        tx, ty = P(sx, sy)
+        I.append({"t": t, "dur": 1.3, "kind": "text", "x": x, "y": y, "text": text, "size": 50, "color": color})
+        start = (x + w + 22, y + 42) if side == "left" else (x - 18, y + 42)
+        I.append({"t": t + 1.4, "dur": 0.8, "kind": "line", "points": [list(start), [tx, ty]], "color": color,
+                  "arrow": True, "width": 8, "head": 26})
+        t += 2.6
+
+    label("Aorta", 1420, 120, 1105, 215, "red", "right")
+    label("Superior vena cava", 120, 230, 830, 300, "blue", "left")
+    label("Pulmonary artery", 1440, 300, 1215, 345, "blue", "right")
+    label("Pulmonary veins", 1440, 470, 1245, 505, "red", "right")
+    label("Coronary arteries", 1440, 700, 1130, 700, "red", "right")
+    label("Inferior vena cava", 150, 850, 860, 905, "blue", "left")
+    return I, t + 1.0
+
+
 if __name__ == "__main__":
     import sys
 
-    items, dur = heart_demo()
+    demo = sys.argv[2] if len(sys.argv) > 2 else "boxes"
+    items, dur = heart_picture_demo() if demo == "picture" else heart_demo()
     print(render(items, dur, Path(sys.argv[1] if len(sys.argv) > 1 else "whiteboard_demo.mp4")))
