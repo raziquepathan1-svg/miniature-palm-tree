@@ -172,9 +172,24 @@ def talk(job: dict, clips: list[Path]) -> Path:
            f"--inference_ckpt_path checkpoints/latentsync_unet.pt --inference_steps {SETTINGS.get('steps', 20)} "
            f"--guidance_scale {SETTINGS.get('guidance', 1.5)} --enable_deepcache --video_path {base} --audio_path {wav} --video_out_path {out}",
            cwd=REPO)
-    else:
-        sh(f"{PY} inference.py --checkpoint_path checkpoints/wav2lip_gan.pth --face {base} --audio {wav} "
-           f"--outfile {out} --pads {SETTINGS['pads']} --face_det_batch_size 8 --wav2lip_batch_size 64", cwd=REPO)
+    else:  # Wav2Lip keeps every frame in memory: long narrations go in 40-second pieces, joined afterwards
+        total, piece = duration(wav), 40.0
+        parts, k = [], 0
+        while k * piece < total - 0.05:
+            b, a, o = jd / f"b{k}.mp4", jd / f"a{k}.wav", jd / f"t{k}.mp4"
+            sh(f"ffmpeg -y -loglevel error -ss {k * piece} -t {piece} -i {base} -an -c:v libx264 -preset veryfast "
+               f"-crf 14 -r {FPS} {b}")
+            sh(f"ffmpeg -y -loglevel error -ss {k * piece} -t {piece} -i {wav} {a}")
+            sh(f"{PY} inference.py --checkpoint_path checkpoints/wav2lip_gan.pth --face {b} --audio {a} "
+               f"--outfile {o} --pads {SETTINGS['pads']} --face_det_batch_size 8 --wav2lip_batch_size 64", cwd=REPO)
+            parts.append(o)
+            for f in (b, a):
+                f.unlink()
+            k += 1
+        listing = jd / "parts.txt"
+        listing.write_text("".join(f"file '{o}'\n" for o in parts))
+        sh(f"ffmpeg -y -loglevel error -f concat -safe 0 -i {listing} -c:v libx264 -preset veryfast -crf 14 "
+           f"-r {FPS} -c:a aac -b:a 128k {out}")
     dest = OUT / f"{job['id']}.mp4"
     shutil.copy(out, dest)
     return dest
