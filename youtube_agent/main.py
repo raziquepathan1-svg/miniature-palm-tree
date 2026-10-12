@@ -111,11 +111,13 @@ def write_summary(lines: list[str]) -> None:
 
 
 def make_one_video(config: dict, history: list[dict], topic: str | None, dry_run: bool, script_only: bool) -> None:
-    from . import planner
+    from . import growth, planner
 
     # A script from the bank is used first (free); otherwise Claude writes one through the API.
+    # The bank is used in 5-part series: one theme for 5 days in a row, then the next series.
     bank = [] if topic else unused_bank_scripts(history)
-    bank_file = bank[0] if bank else None
+    episode = growth.next_episode(history, bank, config.get("growth") or {}) if bank else None
+    bank_file = episode.bank_file if episode else (bank[0] if bank else None)
     bank_data = yaml.safe_load(bank_file.read_text()) if bank_file else {}
     styles = {s["name"]: s for s in config["video"].get("styles") or []}
     style = styles.get(bank_data.get("style")) or pick_style(config, history)
@@ -130,7 +132,7 @@ def make_one_video(config: dict, history: list[dict], topic: str | None, dry_run
         plan = planner.plan_video(config["channel"], video_cfg, [h["topic"] for h in history], topic, style)
     if style:
         print(f"    Style: {style['name']} ({video_cfg.get('format')})")
-    print(f"    Topic: {plan.topic}\n    Title: {plan.title}")
+    print(f"    Topic: {plan.topic}")
 
     stamp = dt.datetime.now().strftime("%Y%m%d-%H%M")
     workdir = OUTPUT_DIR / f"{stamp}-{slugify(plan.title)}"
@@ -162,12 +164,13 @@ def make_one_video(config: dict, history: list[dict], topic: str | None, dry_run
         sources = review.sources
         fact_issues = review.issues
 
-    if video_cfg.get("format") != "shorts":
-        from . import growth
-
-        nxt = growth.next_in_series(plan.playlist, bank_file, bank)
-        growth.LAST_MID = growth.apply(plan, config.get("growth") or {}, len(history), nxt)
-        print(f"    Series: {growth.series_for(plan.playlist, config.get('growth') or {})} | next: {nxt}")
+    if video_cfg.get("format") == "shorts":
+        episode = None
+    growth.LAST_MID = growth.apply(plan, episode, len(history))
+    if episode:
+        print(f"    Series: {episode.series}, part {episode.n} of {episode.total} | next: "
+              f"{episode.next_series or ''} {episode.next_topic or ''}".rstrip())
+    print(f"    Title: {plan.title}")
 
     (workdir / "plan.json").write_text(plan.model_dump_json(indent=2))
     (workdir / "script.txt").write_text("\n\n".join(plan.narration()))
@@ -230,6 +233,8 @@ def make_one_video(config: dict, history: list[dict], topic: str | None, dry_run
              "requested_topic": topic, "title": title, "style": (style or {}).get("name")}
     if bank_file:
         entry["script_file"] = bank_file.name
+    if episode:
+        entry["series"], entry["episode"] = episode.series, episode.n
     if dry_run:
         print(f"6/6 Dry run - not uploading. Files in {workdir}")
         return
@@ -268,6 +273,8 @@ def make_one_video(config: dict, history: list[dict], topic: str | None, dry_run
                                 yt.get("default_playlist", "Health Tips"))]
     if shorts:
         playlists.append(shorts_playlist)
+    if episode:  # one playlist per series, so viewers can watch all its parts in a row
+        playlists.append(episode.series)
     if yt.get("playlists", True):
         uploader.add_to_playlists(video_id, playlists, playlist_about)
 

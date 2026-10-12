@@ -1,22 +1,34 @@
-"""Gives viewers a reason to subscribe: every video belongs to a named series, asks for the subscribe early
-(after the first useful part, not only at the end where most viewers have already left) and names the next
-episode of its series in the outro. Works on pre-written bank scripts and on scripts Claude writes."""
+"""Gives viewers a reason to subscribe: the channel runs 5-part series (one theme for 5 days in a row, then a
+new series). Each video says which part it is, asks for the subscribe early (after the first useful part, not
+only at the end where most viewers have already left) and names the next part in the outro. Shorts end with a
+subscribe line too."""
 
 import re
+from dataclasses import dataclass
 from pathlib import Path
 
 import yaml
 
 MID_LINES = [
-    "Quick note: this video is part of our {series} series. Every day I explain one health topic in plain "
-    "words, so if this is helping you, subscribe and you won't miss the next one.",
-    "By the way, this is part of our {series} series, with a new video every day. If you're finding this "
-    "useful, subscribe so the next one finds you.",
-    "This video is one part of our {series} series. If you want simple, trustworthy health information every "
-    "day, subscribe now, then let's keep going.",
+    "Quick note: this is part {n} of our {total} part series, {series}. Every day I explain one health topic in "
+    "plain words, so if this is helping you, subscribe and you won't miss the next part.",
+    "By the way, this video is part {n} of {total} in our {series} series. If you're finding this useful, "
+    "subscribe so the next part finds you.",
+    "This is part {n} of our {total} part {series} series. If you want simple, trustworthy health information "
+    "every day, subscribe now, then let's keep going.",
 ]
 SHORT_LINE = "Subscribe for one simple health tip every day."
 LAST_MID: str | None = None  # the line added mid-video (left out of the second Short)
+
+
+@dataclass
+class Episode:
+    series: str
+    n: int
+    total: int
+    bank_file: Path
+    next_topic: str | None   # the next part of this series, or the first video of the next series
+    next_series: str | None  # set on the last part: the series that starts next
 
 
 def _spoken(text: str) -> str:
@@ -29,15 +41,50 @@ def series_for(playlist: str, cfg: dict) -> str | None:
     return (cfg.get("series") or {}).get(playlist)
 
 
-def next_in_series(playlist: str, after: Path | None, bank: list[Path]) -> str | None:
-    """The topic of the next unused bank script in the same playlist (the next episode of this series)."""
+def _load(f: Path) -> dict:
+    return yaml.safe_load(f.read_text())
+
+
+def _topic(f: Path) -> str:
+    d = _load(f)
+    return d.get("queue_topic") or d["plan"]["topic"]
+
+
+def _by_series(bank: list[Path], cfg: dict) -> dict[str, list[Path]]:
+    out: dict[str, list[Path]] = {}
     for f in bank:
-        if after and f.name <= after.name:
-            continue
-        data = yaml.safe_load(f.read_text())
-        if data["plan"].get("playlist") == playlist:
-            return data.get("queue_topic") or data["plan"]["topic"]
-    return None
+        s = series_for(_load(f)["plan"].get("playlist", ""), cfg)
+        if s:
+            out.setdefault(s, []).append(f)
+    return out
+
+
+def _new_series(groups: dict[str, list[Path]], total: int, skip: str | None) -> str | None:
+    """The series to start next: one with enough scripts for all its parts, earliest in the bank first."""
+    ready = [s for s, fs in groups.items() if len(fs) >= total and s != skip]
+    return min(ready, key=lambda s: groups[s][0].name) if ready else None
+
+
+def next_episode(history: list[dict], bank: list[Path], cfg: dict) -> Episode | None:
+    """Which series and part today's video is, and its bank script. None = no series (old behaviour)."""
+    if not cfg.get("enabled", True) or not cfg.get("series"):
+        return None
+    total = int(cfg.get("parts", 5))
+    groups = _by_series(bank, cfg)
+    last = next((h for h in reversed(history) if h.get("series") and h.get("status") != "rejected_by_fact_check"),
+                None)
+    if last and last.get("episode", total) < total and groups.get(last["series"]):
+        series, n = last["series"], last["episode"] + 1
+    else:
+        series, n = _new_series(groups, total, last and last.get("series")), 1
+    if not series:
+        return None
+    files = groups[series]
+    if n < total and len(files) > 1:
+        return Episode(series, n, total, files[0], _topic(files[1]), None)
+    rest = {s: [f for f in fs if f != files[0]] for s, fs in groups.items()}
+    upcoming = _new_series(rest, total, series)
+    return Episode(series, n, total, files[0], _topic(rest[upcoming][0]) if upcoming else None, upcoming)
 
 
 def _mid_index(scenes) -> int:
@@ -50,29 +97,36 @@ def _mid_index(scenes) -> int:
     return min(1, len(scenes) - 2)
 
 
-def apply(plan, cfg: dict, day: int, next_topic: str | None) -> str | None:
-    """Adds the series, the early subscribe line and the next-episode teaser to the plan. Returns the line
+def apply(plan, ep: Episode | None, day: int) -> str | None:
+    """Adds the series part, the early subscribe line and the next-part teaser to the plan. Returns the line
     added mid-video (so the second Short, cut from a middle scene, can leave it out)."""
-    if not cfg.get("enabled", True) or len(plan.scenes) < 3:
-        return None
-    series = series_for(plan.playlist, cfg)
     mid = None
-    if series:
+    if ep and len(plan.scenes) >= 3:
         i = _mid_index(plan.scenes)
         if "subscribe" not in plan.scenes[i].narration.lower():
-            mid = MID_LINES[day % len(MID_LINES)].format(series=series)
+            mid = MID_LINES[day % len(MID_LINES)].format(n=ep.n, total=ep.total, series=ep.series)
             plan.scenes[i].narration = f"{plan.scenes[i].narration.rstrip()} {mid}"
 
+        if ep.next_series and ep.next_topic:
+            teaser = (f"That's the end of our {ep.series} series. Next, we start a brand new series, "
+                      f"{ep.next_series}, beginning with {_spoken(ep.next_topic)}. Subscribe to Health Support "
+                      "Studio so you don't miss it.")
+            top = (f"📌 {ep.series}: part {ep.n} of {ep.total} (final part). "
+                   f"Next series: {ep.next_series}, starting with {ep.next_topic}.")
+        elif ep.next_topic:
+            teaser = (f"Next, in part {ep.n + 1} of our {ep.series} series: {_spoken(ep.next_topic)}. "
+                      "Subscribe to Health Support Studio so you don't miss it.")
+            top = f"📌 {ep.series}: part {ep.n} of {ep.total}. Next: {ep.next_topic}."
+        else:
+            teaser = "Subscribe to Health Support Studio for a new health video every day."
+            top = f"📌 {ep.series}: part {ep.n} of {ep.total}."
         outro = plan.scenes[-1]
-        teaser = (f"Next in our {series} series: {_spoken(next_topic)}. Subscribe to Health Support Studio so "
-                  "you don't miss it." if next_topic else
-                  f"Subscribe to Health Support Studio for the next video in our {series} series.")
         sentences = re.split(r"(?<=[.!?])\s+", outro.narration.strip())
-        kept = [s for s in sentences if "subscribe" not in s.lower()]
-        outro.narration = " ".join(kept + [teaser])
-
-        top = f"📌 Part of our {series} series." + (f" Next: {next_topic}." if next_topic else "")
+        outro.narration = " ".join([s for s in sentences if "subscribe" not in s.lower()] + [teaser])
         plan.description = f"{top}\n\n{plan.description}"
+        part = f" (Part {ep.n}/{ep.total})"
+        if len(plan.title) + len(part) <= 70:
+            plan.title += part
 
     if plan.short_scenes and "subscribe" not in plan.short_scenes[-1].narration.lower():
         plan.short_scenes[-1].narration = f"{plan.short_scenes[-1].narration.rstrip()} {SHORT_LINE}"

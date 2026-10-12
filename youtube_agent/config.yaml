@@ -57,11 +57,13 @@ channel:
     - "Caring for a loved one after hospital discharge"
 
 # ---- Growing subscribers ----
-# Every video belongs to a series (by its playlist). About 45 seconds in, the narration says which series it
-# is and asks viewers to subscribe; the outro names the next episode of the series. Shorts end with a
-# subscribe line too.
+# The channel runs 5-part series: one theme for 5 days in a row, then a new series (from the script bank).
+# About 45 seconds in, the narration says "part 2 of our 5 part series ..." and asks viewers to subscribe;
+# the outro names the next part; the title gets "(Part 2/5)"; each series has its own playlist.
+# Shorts end with a subscribe line too.
 growth:
   enabled: true
+  parts: 5
   series:
     "Heart & Blood Pressure": "Know Your Numbers"
     "Diabetes & Metabolism": "Know Your Numbers"
