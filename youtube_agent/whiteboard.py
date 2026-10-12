@@ -53,6 +53,8 @@ def _board() -> Image.Image:
 
 def _wobble(points: list, seed: int, amp: float = 2.2, step: float = 14) -> list:
     """Resample a polyline and add a smooth, small wobble so it looks drawn by hand."""
+    if not amp:  # straight lines: keep the corners only, so edges stay clean
+        return [tuple(p) for p in points]
     rnd = random.Random(seed)
     out = []
     phase, freq = rnd.uniform(0, 6.28), rnd.uniform(0.02, 0.04)
@@ -93,8 +95,8 @@ class _Stroke:
     def __init__(self, it: dict, seed: int):
         self.it = it
         self.color = _color(it.get("color", "ink"))
-        self.width = it.get("width", 7)
-        self.pts = _wobble(_shape_points(it), seed, amp=it.get("wobble", 2.2))
+        self.width = it.get("width", 12)
+        self.pts = _wobble(_shape_points(it), seed, amp=it.get("wobble", 0.0))
         self.cum = [0.0]
         for a, b in zip(self.pts, self.pts[1:]):
             self.cum.append(self.cum[-1] + math.hypot(b[0] - a[0], b[1] - a[1]))
@@ -119,7 +121,7 @@ class _Stroke:
         if frac >= 1 and self.it.get("arrow") and not getattr(self, "headed", False):
             self.headed = True
             (x0, y0), (x1, y1) = self.pts[-4] if len(self.pts) > 4 else self.pts[0], self.pts[-1]
-            ang, L = math.atan2(y1 - y0, x1 - x0), self.it.get("head", 30)
+            ang, L = math.atan2(y1 - y0, x1 - x0), self.it.get("head", 38)
             for s in (-0.5, 0.5):
                 d.line([(x1, y1), (x1 - L * math.cos(ang + s), y1 - L * math.sin(ang + s))],
                        fill=self.color, width=self.width)
@@ -224,11 +226,11 @@ def heart_demo() -> tuple[list, float]:
         I.append({"t": t, "dur": dur, "kind": kind, **kw})
 
     add(0.3, 2.2, "text", x=960, y=40, text="How Your Heart Pumps Blood", size=86, align="center")
-    add(2.5, 0.8, "line", points=[[560, 168], [1360, 168]], color="red", width=6)
+    add(2.5, 0.8, "line", points=[[560, 168], [1360, 168]], color="red")
     # the heart: four rooms (your right side is on the left of the picture)
-    add(3.4, 2.0, "box", x=560, y=380, w=800, h=520, width=8)
-    add(5.4, 0.7, "line", points=[[960, 380], [960, 900]], width=8)
-    add(6.1, 0.7, "line", points=[[560, 640], [1360, 640]], width=8)
+    add(3.4, 2.0, "box", x=560, y=380, w=800, h=520)
+    add(5.4, 0.7, "line", points=[[960, 380], [960, 900]])
+    add(6.1, 0.7, "line", points=[[560, 640], [1360, 640]])
     add(6.9, 1.2, "text", x=740, y=470, text="Right atrium", size=46, align="center", color="blue")
     add(8.1, 1.2, "text", x=740, y=770, text="Right ventricle", size=46, align="center", color="blue")
     add(9.3, 1.2, "text", x=1180, y=470, text="Left atrium", size=46, align="center", color="red")
@@ -239,7 +241,7 @@ def heart_demo() -> tuple[list, float]:
     add(14.0, 0.7, "line", points=[[740, 560], [740, 760]], color="blue", arrow=True)
     add(14.9, 1.4, "line", points=[[925, 860], [925, 318]], color="blue", arrow=True)
     add(16.3, 1.2, "text", x=960, y=198, text="Lungs", size=64, align="center", color="green")
-    add(17.5, 1.4, "circle", x=960, y=248, r=170, ry=56, color="green", width=6)
+    add(17.5, 1.4, "circle", x=960, y=248, r=170, ry=56, color="green")
     # oxygen-rich blood: lungs -> left side -> body
     add(19.0, 1.0, "line", points=[[1000, 318], [1000, 450]], color="red", arrow=True)
     add(20.2, 0.7, "line", points=[[1180, 560], [1180, 760]], color="red", arrow=True)
