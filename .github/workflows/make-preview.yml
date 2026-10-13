@@ -33,7 +33,7 @@ jobs:
           GITHUB_TOKEN: ${{ github.token }}
         run: |
           command -v ffmpeg >/dev/null || { sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg; }
-          pip install -q requests
+          pip install -q requests pillow numpy pyyaml
           f=$(find dl -name final.mp4 -not -path "*short*" | head -1)
           [ -n "$f" ] || { echo "No final.mp4 in the run's files"; exit 1; }
           ffmpeg -y -loglevel error -i "$f" -vf scale=-2:360 -c:v libx264 -preset veryfast -b:v 350k -c:a aac -b:a 64k preview.mp4
