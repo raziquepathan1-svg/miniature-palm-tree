@@ -37,9 +37,12 @@ jobs:
           f=$(find dl -name final.mp4 -not -path "*short*" | head -1)
           [ -n "$f" ] || { echo "No final.mp4 in the run's files"; exit 1; }
           ffmpeg -y -loglevel error -i "$f" -vf scale=-2:360 -c:v libx264 -preset veryfast -b:v 350k -c:a aac -b:a 64k preview.mp4
-          python - <<'PY'
-          from pathlib import Path
-          from youtube_agent.talking import upload_to_branch
-          vid = "${{ inputs.video_id }}"
-          print(upload_to_branch("previews", f"previews/{vid}.mp4", Path("preview.mp4").read_bytes()))
-          PY
+          ls -la preview.mp4
+          git config user.name "youtube-agent"
+          git config user.email "youtube-agent@users.noreply.github.com"
+          git fetch -q origin previews
+          git checkout -q -B previews origin/previews
+          mkdir -p previews && cp preview.mp4 "previews/${{ inputs.video_id }}.mp4"
+          git add "previews/${{ inputs.video_id }}.mp4"
+          git commit -qm "Add previews/${{ inputs.video_id }}.mp4"
+          git push -q origin previews
