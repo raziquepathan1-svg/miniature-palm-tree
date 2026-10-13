@@ -143,8 +143,12 @@ def upload_to_branch(branch: str, path: str, data: bytes) -> str | None:
                             timeout=30).json()["object"]["sha"]
         requests.post(f"{api}/git/refs", headers=h, timeout=30,
                       json={"ref": f"refs/heads/{branch}", "sha": head}).raise_for_status()
-    r = requests.put(f"{api}/contents/{path}", headers=h, timeout=300, json={
-        "message": f"Add {path}", "branch": branch, "content": base64.b64encode(data).decode()})
+    body = {"message": f"Add {path}", "branch": branch, "content": base64.b64encode(data).decode()}
+    for attempt in range(4):  # GitHub sometimes answers 502/503 on big files: wait and try again
+        r = requests.put(f"{api}/contents/{path}", headers=h, timeout=300, json=body)
+        if r.status_code < 500:
+            break
+        time.sleep(15 * (attempt + 1))
     r.raise_for_status()
     return f"https://raw.githubusercontent.com/{repo}/{branch}/{path}"
 
