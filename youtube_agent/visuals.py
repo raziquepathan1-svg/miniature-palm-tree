@@ -354,6 +354,18 @@ def _download(url: str, dest: Path) -> Path:
     return dest
 
 
+# Stock clips/photos whose page name or tags mention any of these are never used (a family health channel:
+# no kissing, romance, intimacy or revealing clothes behind the slides).
+UNSUITABLE = re.compile(
+    r"kiss|romanc|romantic|intimate|intimacy|sensual|sexy|seduc|lingerie|bikini|swimsuit|swimwear|underwear|"
+    r"naked|nude|topless|shirtless|lovers|making[- ]out|cuddl|flirt|date[- ]night|honeymoon|passion|erotic|"
+    r"bathtub|shower|in[- ]bed[- ]together|couple[- ]in[- ]bed|striptease|stripper|pole[- ]danc|nightclub|twerk|bra\b", re.I)
+
+
+def _suitable(*texts) -> bool:
+    return not UNSUITABLE.search(" ".join(str(t or "") for t in texts))
+
+
 def fetch_footage(query: str, size: tuple[int, int], dest: Path, used: set) -> Path | None:
     """A free stock clip: Pexels first, then Pixabay (each only if its API key is set)."""
     if not query:
@@ -370,12 +382,15 @@ def _pexels_footage(query: str, size: tuple[int, int], dest: Path, used: set) ->
     try:
         r = requests.get(
             "https://api.pexels.com/videos/search",
-            params={"query": query, "orientation": orientation, "size": "medium", "per_page": 10},
+            params={"query": query, "orientation": orientation, "size": "medium", "per_page": 15},
             headers={"Authorization": key}, timeout=30,
         )
         r.raise_for_status()
         for video in r.json().get("videos", []):
             if video["id"] in used:
+                continue
+            if not _suitable(video.get("url"), video.get("tags")):
+                print(f"    (skipped an unsuitable clip: {video.get('url')})")
                 continue
             files = [f for f in video.get("video_files", [])
                      if f.get("file_type") == "video/mp4" and f.get("width") and f.get("height")
@@ -404,6 +419,8 @@ def _pixabay_footage(query: str, size: tuple[int, int], dest: Path, used: set) -
         r.raise_for_status()
         for hit in r.json().get("hits", []):
             if f"pixabay-{hit['id']}" in used:
+                continue
+            if not _suitable(hit.get("tags"), hit.get("pageURL")):
                 continue
             files = [f for f in (hit.get("videos") or {}).values()
                      if f.get("url") and f.get("width") and f.get("height")
@@ -833,7 +850,7 @@ def fetch_photo(query: str, dest: Path) -> Path | None:
                          params={"query": query, "orientation": "landscape", "per_page": 5},
                          headers={"Authorization": key}, timeout=30)
         r.raise_for_status()
-        photos = r.json().get("photos", [])
+        photos = [p for p in r.json().get("photos", []) if _suitable(p.get("alt"), p.get("url"))]
         if not photos:
             return None
         url = photos[0]["src"].get("large2x") or photos[0]["src"]["original"]
