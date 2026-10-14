@@ -145,19 +145,17 @@ clips:
     - "{n} Satisfying Makeovers: Abandoned to Amazing"
     - "From Abandoned to Dream Space: {n} Incredible Transformations"
     - "{n} Abandoned Places Brought Back to Life"
-  clip_titles:                 # a title not used recently is picked
-    - "Abandoned {Place} Transformed ✨"
-    - "This Abandoned {Place} Got a Second Life 😍"
-    - "Abandoned {Place} → Dream Space"
-    - "Nobody Wanted This {Place}… Until Now 😳"
-    - "From Forgotten {Place} to Dream Space 🔨"
-    - "This {Place} Was a Disaster. Look Now! ✨"
-    - "Watch This {Place} Come Back to Life 😍"
-    - "Restoring an Abandoned {Place} 🛠️"
-    - "The Most Satisfying {Place} Makeover 🤩"
-    - "Can This {Place} Be Saved? 😱"
-    - "Abandoned {Place} Rebuilt in Minutes ⏱️"
-    - "You Won't Believe This {Place} Makeover 🔥"
+  clip_titles:                 # a title not used recently is picked (every makeover ends in luxury)
+    - "Abandoned {Place} → Luxury {Place} 😍"
+    - "From Junk to Luxury: {Place} Makeover ✨"
+    - "They Turned This Abandoned {Place} Into Luxury 😳"
+    - "Abandoned {Place} → 5-Star Luxury in 30 Seconds ⏱️"
+    - "Nobody Wanted This {Place}… Now It's Pure Luxury 😱"
+    - "Wait for the Reveal: Abandoned {Place} → Luxury 🤩"
+    - "The Most Satisfying Luxury {Place} Makeover 🤩"
+    - "Trash to Luxury: This {Place} Is Unrecognizable 🔥"
+    - "Can This Abandoned {Place} Become Luxury? 😱"
+    - "Abandoned {Place} Turned Into a Luxury Dream ✨"
   tags: ["satisfying makeover", "abandoned transformation", "before and after", "restoration", "time lapse",
          "makeover", "transformation", "satisfying video"]
   hashtags: ["#makeover", "#beforeandafter", "#satisfying", "#transformation"]

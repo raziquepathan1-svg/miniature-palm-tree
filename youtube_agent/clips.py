@@ -238,6 +238,65 @@ def title_overlay(text: str, size: tuple[int, int], out: Path) -> Path:
     return out
 
 
+def _wrap(d, text: str, f, max_w: float) -> list[str]:
+    words, lines, line = text.split(), [], ""
+    for wd in words:
+        trial = f"{line} {wd}".strip()
+        if d.textlength(trial, font=f) > max_w and line:
+            lines.append(line)
+            line = wd
+        else:
+            line = trial
+    return lines + [line]
+
+
+def split_card(before: Path, after: Path, headline: str, out: Path) -> Path:
+    """Vertical 1080x1920 card: the mess on top, the finished space below, a gold divider and a big headline
+    across the middle. Used as the first second of the Short (stops the scroll) and as its thumbnail."""
+    from PIL import ImageDraw, ImageEnhance
+    w, h = SW, SH
+    half = h // 2
+    b = ImageEnhance.Color(visuals._cover(Image.open(before).convert("RGB"), w, half)).enhance(0.75)
+    a = visuals._cover(Image.open(after).convert("RGB"), w, h - half)
+    a = ImageEnhance.Contrast(ImageEnhance.Color(a).enhance(1.25)).enhance(1.08)
+    img = Image.new("RGBA", (w, h))
+    img.paste(b, (0, 0))
+    img.paste(a, (0, half))
+    d = ImageDraw.Draw(img)
+    size = 96
+    f = visuals.font(size, 800)
+    lines = _wrap(d, headline.upper(), f, w * 0.88)[:3]
+    band = int(len(lines) * size * 1.18 + 70)
+    top = half - band // 2
+    d.rectangle((0, top, w, top + band), fill=(0, 0, 0, 175))
+    d.line([(0, top), (w, top)], fill=(253, 230, 138), width=10)
+    d.line([(0, top + band), (w, top + band)], fill=(253, 230, 138), width=10)
+    y = top + 35
+    for ln in lines:
+        lw = d.textlength(ln, font=f)
+        d.text(((w - lw) / 2, y), ln, font=f, fill=(255, 255, 255), stroke_width=6, stroke_fill=(0, 0, 0))
+        y += int(size * 1.18)
+    # labels kept clear of the phone's top bar and of YouTube's buttons and caption at the bottom
+    for text, y, color in (("BEFORE", 170, (87, 83, 78)), ("AFTER", top + band + 40, (13, 148, 136))):
+        f = visuals.font(64, 800)
+        tw = d.textlength(text, font=f)
+        d.rounded_rectangle(((w - tw) / 2 - 36, y, (w + tw) / 2 + 36, y + 104), 52, fill=(*color, 245))
+        d.text(((w - tw) / 2, y + 12), text, font=f, fill=(255, 255, 255))
+    if out.suffix.lower() in (".jpg", ".jpeg"):
+        img.convert("RGB").save(out, quality=90)
+    else:
+        img.save(out)
+    return out
+
+
+def teaser(before: Path, after: Path, hook: str, work: Path, dur: float = 1.3) -> Path:
+    """The Short's opening: before/after split with the hook, so viewers see the payoff and stay to watch."""
+    card = split_card(before, after, hook, work / "teaser_card.png")
+    clear = work / "teaser_clear.png"
+    Image.new("RGBA", (SW, SH), (0, 0, 0, 0)).save(clear)
+    return still(card, clear, dur, (SW, SH), work / "teaser_v.mp4")
+
+
 def ai_note(size: tuple[int, int], out: Path) -> Path:
     from PIL import ImageDraw
     w, h = size
@@ -261,10 +320,10 @@ def _with_overlay(video: Path, overlay: Path, out: Path) -> Path:
     return out
 
 
-def finish(body: Path, overlays: list[tuple[Path, float | None]], music_vol: float, out: Path,
+def finish(body: Path, overlays: list[tuple[Path, float | tuple[float, float] | None]], music_vol: float, out: Path,
            rng: random.Random, narration: Path | None = None, narration_start: float = 0.8) -> Path:
-    """Overlays on the joined video (each until its end time, or the whole video), the clips' sound with
-    soft music underneath and the host's narration on top, loudness evened out for phones."""
+    """Overlays on the joined video (each until its end time, between (start, end), or the whole video), the
+    clips' sound with soft music underneath and the host's narration on top, loudness evened out for phones."""
     dur, _ = probe(body)
     music = makeover._music(dur, out.parent / f"music_{out.stem}.m4a", rng)
     inputs = ["-i", str(body), "-i", str(music)]
@@ -274,7 +333,10 @@ def finish(body: Path, overlays: list[tuple[Path, float | None]], music_vol: flo
     first = 3 if narration else 2
     for i, (ov, until) in enumerate(overlays):
         inputs += ["-i", str(ov)]
-        en = f":enable='lte(t,{until:.2f})'" if until else ""
+        if isinstance(until, tuple):
+            en = f":enable='between(t,{until[0]:.2f},{until[1]:.2f})'"
+        else:
+            en = f":enable='lte(t,{until:.2f})'" if until else ""
         chain.append(f"[{prev}][{i + first}:v]overlay=0:0:format=auto{en}[o{i}]")
         prev = f"o{i}"
     chain.append(f"[{prev}]format=yuv420p[v]")
@@ -298,13 +360,13 @@ PLACE_WORDS = ("rooftop", "backyard", "garden", "terrace", "balcony", "garage", 
                "living room", "house", "car", "bike", "porch", "yard", "attic", "basement", "pool", "room")
 WORK = {  # what the crew does, in order (three are picked per Short)
     "rooftop": ["swept away years of trash", "pressure-washed the old concrete", "laid a beautiful new floor",
-                "built planter boxes along the edges", "hung string lights overhead", "brought in cozy furniture"],
+                "added fresh green plants", "hung warm lights overhead", "brought in stunning furniture"],
     "yard": ["pulled out every dead weed", "hauled away the broken junk", "laid a new stone path",
              "rolled out fresh green grass", "planted new shrubs and flowers", "added soft garden lights"],
-    "garage": ["hauled out all the junk", "swept and scrubbed the floor", "painted the walls bright white",
-               "laid a tough rubber floor", "brought in the new equipment", "installed modern lighting"],
-    "room": ["cleared out the old furniture", "patched and painted the walls", "laid a brand new floor",
-             "hung new curtains and lights", "brought in new furniture", "added the finishing touches"],
+    "garage": ["hauled out all the junk", "swept and scrubbed the floor", "gave the walls a fresh new finish",
+               "put down a brand new floor", "brought in stunning new details", "installed modern lighting"],
+    "room": ["cleared out the old furniture", "made the walls look brand new", "laid a brand new floor",
+             "added beautiful new lighting", "brought in new furniture", "added the finishing touches"],
     "kitchen": ["tore out the old cabinets", "scrubbed every surface", "fitted new cabinets",
                 "installed new countertops", "added modern lighting", "styled it with fresh details"],
     "bathroom": ["ripped out the old tiles", "cleaned up years of grime", "laid fresh new tiles",
@@ -332,7 +394,9 @@ MIDDLES = ["The crew {a}, {b}, and {c}.", "First they {a}. Then they {b}, and {c
 REVEALS = ["And now? Just look at it.", "The final result is unbelievable.", "From forgotten to beautiful.",
            "Same {place}. Completely new life.", "Can you believe it's the same {place}?",
            "Now it's the kind of place you never want to leave.", "What a transformation.",
-           "And just like that, it's brand new.", "Honestly, this one turned out amazing."]
+           "And just like that, it's brand new.", "Honestly, this one turned out amazing.",
+           "Now it looks like a five-star luxury {place}.", "From junk to pure luxury.",
+           "Would you believe this is the same {place}? Pure luxury."]
 CTAS = ["If you loved this, share it with a friend and subscribe for more. And let me know in the comments if "
         "you want more videos like this.",
         "Share this with someone who loves a good makeover, and subscribe so you don't miss the next one. Tell me "
@@ -342,6 +406,10 @@ CTAS = ["If you loved this, share it with a friend and subscribe for more. And l
         "we should restore next.",
         "Hit subscribe, share this with a friend, and drop a comment if you want more videos like this.",
         "Want more makeovers like this? Subscribe, share this video, and tell me in the comments."]
+# On-screen hook over the before/after opening: short, and makes people wait for the reveal.
+HOOKS = ["Wait for the luxury reveal", "From junk to luxury in 30 seconds", "Nobody wanted this {place}",
+         "Watch this {place} turn into luxury", "Wait until you see the end", "Rate this makeover 1 to 10",
+         "This {place} was a disaster", "Abandoned {place} to luxury"]
 CAPTION_CTA = "👉 Share with a friend, subscribe for a new makeover every day, and comment if you want more like this!"
 
 
@@ -395,13 +463,12 @@ def describe(before: Path, after: Path, names: list[str], cfg: dict, rng: random
         if DONE.exists() else ""
     title = _pick([t.replace("{Place}", place.title()).replace("{place}", place)
                    for t in (cfg.get("clip_titles") or ["Abandoned {Place} Transformed ✨"])], recent_titles, rng)
-    hook = rng.choice([f"Watch this abandoned {place} come back to life", f"Nobody wanted this {place}",
-                       f"This {place} was a disaster", f"Can this {place} be saved?", f"Wait for the {place} reveal"])
+    hook = rng.choice(HOOKS).format(place=place)
     caption = rng.choice([f"This abandoned {place} got a second life 😍 Would you live here?",
                           f"From forgotten to beautiful ✨ What would you add to this {place}?",
                           f"Rate this {place} makeover from 1 to 10 👇", f"Same {place}, completely new life 🔨"])
     return {"title": title, "short_title": title, "hook": hook,
-            "before": "ABANDONED", "after": "DREAM " + place.upper(), "caption": f"{caption} {CAPTION_CTA}",
+            "before": "ABANDONED", "after": "LUXURY " + place.upper(), "caption": f"{caption} {CAPTION_CTA}",
             "tags": [f"{place} makeover", f"{place} transformation", f"abandoned {place}"],
             "narration": write_script(place, rng)}
 
@@ -411,13 +478,16 @@ def _gemini_describe(before: Path, after: Path, hint: str, cfg: dict) -> dict:
         "These are the first and last frames of a short AI-generated time-lapse video where workers transform "
         f"a neglected place. The clip files were named: {hint}. Write YouTube Shorts metadata for the channel "
         "Restore Remake Studio (satisfying makeovers, US audience). Reply with JSON only, keys: "
-        '"title" (max 60 chars, catchy, 1 emoji, like "Abandoned Rooftop → Dream Terrace 🌇", no hashtags), '
-        '"hook" (max 45 chars, shown on screen in the first seconds, no emoji), '
-        '"before" (max 2 words, upper case, e.g. "ABANDONED ROOFTOP"), "after" (max 2 words, e.g. "DREAM TERRACE"), '
+        '"title" (max 60 chars, catchy, 1 emoji, like "Abandoned Garage → Luxury Supercar Garage 🏎️": name the '
+        'most eye-catching thing visible in the last frame, no hashtags), '
+        '"hook" (max 35 chars, shown on screen over a before/after split in the first second, makes people wait '
+        'for the reveal, e.g. "Wait for the luxury reveal", no emoji), '
+        '"before" (max 2 words, upper case, e.g. "ABANDONED GARAGE"), "after" (max 2 words, e.g. "LUXURY GARAGE"), '
         '"caption" (1-2 sentences for Instagram/Facebook ending with a question, max 2 emoji, no hashtags), '
         '"tags" (8 lowercase YouTube tags), '
         '"narration" (what the host says over the video: 4-5 short spoken sentences, 55-70 words in total, '
-        'friendly storytelling about the place being cleaned, rebuilt and revealed, ending by asking viewers to '
+        'friendly storytelling about the place being cleaned, rebuilt and revealed; only mention things you can '
+        'see in the two frames, never invent colors or materials; ending by asking viewers to '
         'share the video, subscribe, and say in the comments if they want more videos like this; plain words, '
         'no emoji, no numbers as digits). Do not claim it is a real project or real people. Every video needs '
         'a fresh script: do not reuse the wording of these earlier narrations: ' + " | ".join(_recent_scripts(5)))}]
@@ -476,7 +546,8 @@ def make_short(group: list[Path], workdir: Path, cfg: dict, rng: random.Random,
         print(f"  Short makeover ({total:.0f} s) - playing at {speed:.2f}x")
     norm = [normalize(p, work / f"n{i}_v.mp4", (SW, SH), speed) for i, p in enumerate(group)]
     body = join(norm, work / "body_v.mp4")
-    parts = [body]
+    hook_text = meta.get("hook") or meta["title"]
+    parts = [teaser(before, after, hook_text, work), body]
     min_len = cfg.get("min_short_seconds", 30)
     if probe(body)[0] + 6.5 < min_len:  # too short for a good Short: show the whole makeover once more, faster
         need = min_len - probe(body)[0] - 6.0
@@ -489,7 +560,7 @@ def make_short(group: list[Path], workdir: Path, cfg: dict, rng: random.Random,
         parts.append(_with_overlay(replay, tag, work / "replay_tag_v.mp4"))
     parts.append(reveal(before, after, (SW, SH), work))
     full = join(parts, work / "full_v.mp4", fade=0.4)
-    hook = title_overlay(meta.get("hook") or meta["title"], (SW, SH), work / "hook_v.png")
+    hook = title_overlay(hook_text, (SW, SH), work / "hook_v.png")
     note = ai_note((SW, SH), work / "ai_v.png")
     social = workdir / "social"
     social.mkdir(exist_ok=True)
@@ -497,11 +568,12 @@ def make_short(group: list[Path], workdir: Path, cfg: dict, rng: random.Random,
     if voice_cfg and cfg.get("narration", True) and meta.get("narration"):
         print("  Recording the narration...")
         speech = narrate(meta["narration"], voice_cfg, work / "narration.wav", probe(full)[0] - 1.5)
-    short = finish(full, [(hook, 2.6), (note, None)], cfg.get("music_volume", 0.18), social / "short.mp4", rng,
+    thumb = split_card(before, after, f"{meta['before']} to {meta['after']}", social / "thumbnail.jpg")
+    short = finish(full, [(hook, (1.1, 3.9)), (note, None)], cfg.get("music_volume", 0.18), social / "short.mp4", rng,
                    narration=speech)
     meta["clips"] = [p.name for p in group]
     meta["duration"] = round(probe(short)[0], 1)
-    return {"short": short, "meta": meta, "before": before, "after": after}
+    return {"short": short, "meta": meta, "before": before, "after": after, "thumbnail": thumb}
 
 
 def _footer(config: dict) -> str:
@@ -563,8 +635,8 @@ def process_inbox(config: dict, history: list[dict], dry_run: bool) -> int:
         yt["publish_at"] = publish_at.strftime("%Y-%m-%dT%H:%M:%SZ")
         description = f"{meta['caption']}\n\n{hashtags}\n\n{_footer(config)}"
         print(f"  Uploading the Short (goes public {yt['publish_at']} UTC)...")
-        video_id = uploader.upload_video(made["short"], None, meta["short_title"][:90] + " #Shorts", description,
-                                         tags + ["shorts"], yt, lang)
+        video_id = uploader.upload_video(made["short"], made["thumbnail"], meta["short_title"][:90] + " #Shorts",
+                                         description, tags + ["shorts"], yt, lang)
         entry.update(youtube_id=video_id, publish_at=yt["publish_at"])
         history.append(entry)
         save_history(history)
