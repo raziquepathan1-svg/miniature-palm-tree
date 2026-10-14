@@ -105,6 +105,13 @@ def check_facts(script: ShortScript, topic: str) -> ShortScript:
     script.hook_line, script.hook_text = fixed[0].narration, fixed[0].heading
     for b, s in zip(script.beats, fixed[1:]):
         b.narration, b.label = s.narration, s.heading
+    # The hook must stay a few seconds long: anything the check added to it (e.g. a 911 safety note) moves to
+    # the end of the last beat, where it is still said.
+    first, *rest = re.split(r"(?<=[.!?])\s+", script.hook_line.strip())
+    if rest:
+        script.hook_line = first
+        extra = " ".join(rest).strip("() ")
+        script.beats[-1].narration = f"{script.beats[-1].narration.rstrip()} {extra}"
     return script
 
 
