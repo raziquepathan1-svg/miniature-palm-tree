@@ -517,8 +517,8 @@ def render_scene(bg: Path, is_video: bool, overlay: Path, wav: Path, ass: Path |
 
 
 def render_host_overlay(scene, size: tuple[int, int], channel_name: str, out_png: Path) -> Path:
-    """The scene's slide for a host moment: the host fills the screen behind it, so the slide is drawn a bit
-    smaller in the lower part of the frame (the face stays visible above it); the brand tag stays top-left."""
+    """The scene's slide for a host moment: the host fills the screen behind it, so the slide is drawn small in
+    the bottom-left corner (the host's face in the middle stays clear); the brand tag stays top-left."""
     W, H = size
     full = Image.open(render_overlay(scene, size, channel_name, out_png.with_suffix(".full.png"))).convert("RGBA")
     top = int(110 * W / 1920)
@@ -528,8 +528,9 @@ def render_host_overlay(scene, size: tuple[int, int], channel_name: str, out_png
     ov.alpha_composite(full.crop((0, 0, W, top)), (0, 0))
     if box:
         card = body.crop(box)
-        card = card.resize((int(card.width * 0.74), int(card.height * 0.74)), Image.LANCZOS)
-        ov.alpha_composite(card, ((W - card.width) // 2, max(top, int(H * 0.80) - card.height)))
+        scale = min(0.55, W * 0.42 / card.width, H * 0.36 / card.height)
+        card = card.resize((int(card.width * scale), int(card.height * scale)), Image.LANCZOS)
+        ov.alpha_composite(card, (int(W * 0.025), max(top, int(H * 0.84) - card.height)))
     ov.save(out_png)
     return out_png
 
