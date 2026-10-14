@@ -1,0 +1,42 @@
+{
+  "hook_text": "DON'T SAVE THE BIG THING FOR LAST",
+  "hook_line": "Doctor visits often last just 15 to 20 minutes, yet people frequently save their biggest worry for the door.",
+  "beats": [
+    {
+      "narration": "Bring your medication list, insurance card, and records from other doctors, specialists, or the ER.",
+      "label": "Bring These Items",
+      "footage_query": "medication list pills"
+    },
+    {
+      "narration": "Before your visit, write down your top three concerns, with the most important one first.",
+      "label": "List Top Three",
+      "footage_query": "person writing notes"
+    },
+    {
+      "narration": "Say that big concern first, not with your hand on the door\\u2014doctors call that the doorknob question.",
+      "label": "Say It First",
+      "footage_query": "doctor patient talking"
+    },
+    {
+      "narration": "Describe each symptom clearly: when it started, how often it happens, and how bad it feels, one to ten.",
+      "label": "Describe Clearly",
+      "footage_query": "patient describing symptoms"
+    },
+    {
+      "narration": "Try Ask Me Three: What is my main problem? What do I need to do? Why does it matter?",
+      "label": "Ask Me Three",
+      "footage_query": "doctor explaining chart"
+    },
+    {
+      "narration": "Before you leave, repeat the plan back in your own words\\u2014like dates, doses, and next steps. This catches mix-ups fast. And remember: if you ever have severe or urgent symptoms, like chest pain, trouble breathing, or sudden weakness, don't wait for your appointment\\u2014call 911 or go to the ER right away.",
+      "label": "Repeat The Plan",
+      "footage_query": "patient nodding doctor"
+    }
+  ],
+  "preview": [
+    "how to get a faster appointment",
+    "what to ask about new medicines",
+    "when to get a second opinion"
+  ],
+  "title": "The Doorknob Mistake That Wastes Your Doctor Visit"
+}
