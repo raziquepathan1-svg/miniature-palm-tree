@@ -74,6 +74,21 @@ Rules:
     return response.parsed_output
 
 
+def _clean(text: str) -> str:
+    """Plain spoken text: escaped characters decoded, dashes turned into commas (the voice reads them better)."""
+    text = re.sub(r"\\u([0-9a-fA-F]{4})", lambda m: chr(int(m.group(1), 16)), text)
+    text = re.sub(r"\s*[\u2014\u2013]\s*", ", ", text)
+    return re.sub(r"\s+", " ", text).strip()
+
+
+def clean_script(script: ShortScript) -> ShortScript:
+    script.hook_text, script.hook_line, script.title = map(_clean, (script.hook_text, script.hook_line, script.title))
+    script.preview = [_clean(p) for p in script.preview]
+    for b in script.beats:
+        b.narration, b.label = _clean(b.narration), _clean(b.label)
+    return script
+
+
 def check_facts(script: ShortScript, topic: str) -> ShortScript:
     """The same fact check as the long video (budget mode), on the hook and every beat."""
     from . import fact_check
@@ -314,7 +329,12 @@ def build(script: ShortScript, voice_cfg: dict, workdir: Path, series: str | Non
     parts.append(_segment(_host_clip(day + 3), [list_card("In the full video", script.preview, footer, accent,
                                                           workdir / f"{k:02d}.png")],
                           wav, None, dur, workdir / f"{k:02d}.mp4", zoom=False, blur=True))
-    return visuals.concat(parts, workdir / "short.mp4")
+    # One re-encode of the joined parts, so the timestamps are clean (seeking and players behave)
+    joined = visuals.concat(parts, workdir / "joined.mp4")
+    out = workdir / "short.mp4"
+    visuals._run(["-y", "-i", str(joined), "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-r", str(FPS),
+                  "-c:a", "aac", "-b:a", "160k", "-ar", "48000", "-movflags", "+faststart", str(out)])
+    return out
 
 
 def sample(script_file: str, out_dir: str) -> None:
@@ -330,7 +350,7 @@ def sample(script_file: str, out_dir: str) -> None:
     out = Path(out_dir)
     out.mkdir(parents=True, exist_ok=True)
     print("Writing the Short...")
-    script = check_facts(write_script(plan, series, "3/5"), plan.topic)
+    script = clean_script(check_facts(clean_script(write_script(plan, series, "3/5")), plan.topic))
     (out / "short_script.json").write_text(script.model_dump_json(indent=2))
     print(json.dumps(script.model_dump(), indent=2))
     video = build(script, cfg.get("voice", {}), out / "build", series, "3/5")
