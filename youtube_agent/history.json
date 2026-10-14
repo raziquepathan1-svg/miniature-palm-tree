@@ -210,11 +210,11 @@
     "script_file": "023-colon-cancer-screening-myths.yaml",
     "series": "Doctor Visits Made Simple",
     "episode": 2,
-    "planned_publish_at": "2026-10-15T16:00:00Z",
-    "awaiting_approval": true,
+    "awaiting_approval": false,
     "youtube_id": "42CvOXqrJDw",
     "short_youtube_id": "VBtUeVik9xM",
     "short2_youtube_id": "L2K-BAK3bHI",
-    "preview": "previews/42CvOXqrJDw.mp4"
+    "preview": "previews/42CvOXqrJDw.mp4",
+    "publish_at": "2026-10-15T16:00:00Z"
   }
 ]
