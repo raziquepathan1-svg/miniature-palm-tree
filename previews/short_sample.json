@@ -1,42 +1,37 @@
 {
-  "hook_text": "YOUR VISIT LASTS ABOUT 15, 20 MINUTES",
-  "hook_line": "You wait weeks for an appointment, then it's over before you know it.",
+  "hook_text": "DON'T SAVE THE BIG QUESTION",
+  "hook_line": "Here's how to get real answers in just fifteen minutes with your doctor.",
   "beats": [
     {
-      "narration": "Many doctor visits last around fifteen to twenty minutes, and much of that time goes to paperwork and the exam.",
-      "label": "Short visits, make them count",
-      "footage_query": "doctor patient consultation"
+      "narration": "Before your visit, write down your top three concerns. Put the most worrying one first.",
+      "label": "Top Three First",
+      "footage_query": "woman writing notes"
     },
     {
-      "narration": "Bring your medication list, insurance card, records from other doctors, and a written list of your questions.",
-      "label": "What to bring",
-      "footage_query": "medication list notebook"
+      "narration": "Many people save their biggest worry for the end. Doctors call that the doorknob question. Don't wait.",
+      "label": "Doorknob Question",
+      "footage_query": "patient hand doorknob"
     },
     {
-      "narration": "Write down your top three concerns before you go, and say the most worrying one first, not at the door.",
-      "label": "Say the big one first",
-      "footage_query": "person writing notes"
+      "narration": "Bring your medication list, insurance card, past records, and your written questions.",
+      "label": "What To Bring",
+      "footage_query": "medication list pillbox"
     },
     {
-      "narration": "Describe symptoms clearly. When did it start, how often does it happen, and how bad is it, one to ten. If you ever have severe symptoms like chest pain, trouble breathing, or sudden weakness, don't wait for an appointment, call 911 or go to the ER right away.",
-      "label": "Describe symptoms clearly",
-      "footage_query": "person explaining symptoms"
+      "narration": "Use Ask Me Three: What's my main problem? What do I need to do? Why does it matter?",
+      "label": "Ask Me Three",
+      "footage_query": "patient asking doctor"
     },
     {
-      "narration": "Try the Ask Me 3 approach: What is my main problem? What do I need to do? Why is it important for me to do this?",
-      "label": "Ask Me 3",
-      "footage_query": "doctor explaining diagnosis"
-    },
-    {
-      "narration": "Before you leave, repeat the plan back in your own words. This 'teach-back' method helps catch mix-ups right away, and remember to ask your doctor or pharmacist before stopping or changing any medication on your own. Here's how to make it count.",
-      "label": "Teach-back method",
-      "footage_query": "doctor patient talking"
+      "narration": "Before leaving, repeat the plan back in your own words. This catches mistakes fast.",
+      "label": "Teach It Back",
+      "footage_query": "doctor patient notebook"
     }
   ],
   "preview": [
-    "how telehealth visits work",
-    "keeping a symptom diary",
+    "how to prep for telehealth visits",
+    "what to ask about new medicines",
     "when to get a second opinion"
   ],
-  "title": "How to Get the Most From a 15-Minute Doctor Visit"
+  "title": "How To Get The Most From A 15-Minute Doctor Visit"
 }
