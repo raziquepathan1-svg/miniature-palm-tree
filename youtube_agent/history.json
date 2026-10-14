@@ -200,5 +200,21 @@
     "short_youtube_id": "8jJXfm-VugY",
     "short2_youtube_id": "RPJEJeWA7n0",
     "publish_at": "2026-10-14T16:00:00Z"
+  },
+  {
+    "date": "2026-10-14T06:33:50",
+    "topic": "Colon cancer screening at 45: myths vs facts",
+    "requested_topic": "Colon cancer screening at 45: myths vs facts",
+    "title": "Colon Cancer Screening Starts at 45: 5 Myths Busted (Part 2/5)",
+    "style": "Myth vs Fact",
+    "script_file": "023-colon-cancer-screening-myths.yaml",
+    "series": "Doctor Visits Made Simple",
+    "episode": 2,
+    "planned_publish_at": "2026-10-15T16:00:00Z",
+    "awaiting_approval": true,
+    "youtube_id": "42CvOXqrJDw",
+    "short_youtube_id": "VBtUeVik9xM",
+    "short2_youtube_id": "L2K-BAK3bHI",
+    "preview": "previews/42CvOXqrJDw.mp4"
   }
 ]
