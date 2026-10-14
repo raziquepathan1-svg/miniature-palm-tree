@@ -1,0 +1,61 @@
+name: New-style Short - sample
+
+# Makes one new-style Short (hook over the host's face, quick beats, big captions, full-video preview) from a
+# script-bank file, in your cloned voice, and puts it on the "previews" branch for review.
+on:
+  workflow_dispatch:
+    inputs:
+      script:
+        description: "Script from the script bank"
+        default: "youtube_agent/script_bank/032-doctor-visit-tips-long.yaml"
+
+permissions:
+  contents: write
+
+jobs:
+  sample:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Cache voice models
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/huggingface
+          key: voice-models-clone-v1
+      - name: Install
+        run: |
+          sudo apt-get update -q && sudo apt-get install -y -q ffmpeg
+          pip install -q -r requirements.txt
+          pip install -q torch==2.6.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cpu
+          pip install -q chatterbox-tts
+      - name: Unlock the voice sample
+        env:
+          VOICE_KEY: ${{ secrets.VOICE_KEY }}
+        run: |
+          openssl enc -d -aes-256-cbc -pbkdf2 -iter 200000 -in voice/voice_sample.wav.enc \
+            -out "$RUNNER_TEMP/voice_sample.wav" -pass env:VOICE_KEY
+          echo "VOICE_SAMPLE=$RUNNER_TEMP/voice_sample.wav" >> "$GITHUB_ENV"
+      - name: Make the Short
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+        run: |
+          python -m youtube_agent.shorts2 sample "${{ inputs.script }}" short_out
+          rm -f "$VOICE_SAMPLE"
+      - name: Save to the previews branch
+        run: |
+          git config user.name "youtube-agent"
+          git config user.email "youtube-agent@users.noreply.github.com"
+          cp short_out/short_sample.mp4 short_out/short_script.json "$RUNNER_TEMP/"
+          git fetch -q origin previews
+          git checkout -q -B previews origin/previews
+          mkdir -p previews
+          cp "$RUNNER_TEMP/short_sample.mp4" previews/short_sample.mp4
+          cp "$RUNNER_TEMP/short_script.json" previews/short_sample.json
+          git add previews/short_sample.mp4 previews/short_sample.json
+          git commit -qm "New-style Short sample"
+          git push -q origin previews
