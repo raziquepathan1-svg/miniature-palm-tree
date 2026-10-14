@@ -72,7 +72,16 @@ jobs:
             if [ "$SLOT" = "2" ] && [ ! -f "$(dirname "$f")/reel2.mp4" ]; then
               echo "Run $RUN_ID has no second Reel."; continue
             fi
-            at=$(python3 -c "import json,sys; print(json.load(open(sys.argv[1])).get('publish_at') or '')" "$f")
+            # The publish time is in history.json (videos held for approval get it only when approved).
+            at=$(python3 - "$f" <<'PY2'
+          import json, sys
+          meta = json.load(open(sys.argv[1]))
+          hist = {h.get("youtube_id"): h for h in json.load(open("youtube_agent/history.json")) if h.get("youtube_id")}
+          h = hist.get(meta.get("youtube_id"), {})
+          print("waiting" if h.get("awaiting_approval") else (h.get("publish_at") or meta.get("publish_at") or ""))
+          PY2
+          )
+            if [ "$at" = "waiting" ]; then echo "Run $RUN_ID: video still waiting for approval."; continue; fi
             if [ -z "$at" ] || [ "$(date -u -d "$at" +%s)" -le "$now" ]; then
               echo "Posting the Short from run $RUN_ID (YouTube video public since ${at:-upload})."
               echo "run_id=$RUN_ID" >> "$GITHUB_OUTPUT"
