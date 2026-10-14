@@ -1,42 +1,42 @@
 {
-  "hook_text": "DON'T SAVE THE BIG THING FOR LAST",
-  "hook_line": "Doctor visits often last just 15 to 20 minutes, yet people frequently save their biggest worry for the door.",
+  "hook_text": "DON'T SAVE IT FOR THE DOORKNOB",
+  "hook_line": "The biggest mistake patients make? Saving their worst symptom for the very end. (And if a symptom feels severe or sudden, like chest pain, trouble breathing, or sudden weakness, don't wait for an appointment at all. Call 911 or go to the ER.)",
   "beats": [
     {
-      "narration": "Bring your medication list, insurance card, and records from other doctors, specialists, or the ER.",
-      "label": "Bring These Items",
-      "footage_query": "medication list pills"
+      "narration": "Before your visit, write down everything, then pick your top three concerns.",
+      "label": "Pick Top Three",
+      "footage_query": "writing notes notebook"
     },
     {
-      "narration": "Before your visit, write down your top three concerns, with the most important one first.",
-      "label": "List Top Three",
-      "footage_query": "person writing notes"
-    },
-    {
-      "narration": "Say that big concern first, not with your hand on the door\\u2014doctors call that the doorknob question.",
+      "narration": "Say your biggest worry first, right at the start, not as you're leaving.",
       "label": "Say It First",
-      "footage_query": "doctor patient talking"
+      "footage_query": "doctor patient conversation"
     },
     {
-      "narration": "Describe each symptom clearly: when it started, how often it happens, and how bad it feels, one to ten.",
+      "narration": "Bring your medication list, insurance card, and records from other doctors.",
+      "label": "Bring These Items",
+      "footage_query": "pill bottles insurance card"
+    },
+    {
+      "narration": "Describe symptoms clearly: when it started, how often, and how bad, one to ten.",
       "label": "Describe Clearly",
-      "footage_query": "patient describing symptoms"
+      "footage_query": "person journaling symptoms"
     },
     {
-      "narration": "Try Ask Me Three: What is my main problem? What do I need to do? Why does it matter?",
+      "narration": "Use Ask Me Three: what's my main problem, what do I need to do, and why does it matter.",
       "label": "Ask Me Three",
       "footage_query": "doctor explaining chart"
     },
     {
-      "narration": "Before you leave, repeat the plan back in your own words\\u2014like dates, doses, and next steps. This catches mix-ups fast. And remember: if you ever have severe or urgent symptoms, like chest pain, trouble breathing, or sudden weakness, don't wait for your appointment\\u2014call 911 or go to the ER right away.",
-      "label": "Repeat The Plan",
+      "narration": "Before leaving, repeat the plan back in your own words to catch mistakes, and remember, if new or worsening symptoms show up later, don't wait for your next appointment to get help.",
+      "label": "Teach It Back",
       "footage_query": "patient nodding doctor"
     }
   ],
   "preview": [
     "how to get a faster appointment",
-    "what to ask about new medicines",
+    "what telehealth visits need",
     "when to get a second opinion"
   ],
-  "title": "The Doorknob Mistake That Wastes Your Doctor Visit"
+  "title": "How To Get The Most From A 15-Minute Doctor Visit"
 }
