@@ -1,42 +1,42 @@
 {
-  "hook_text": "DON'T SAVE IT FOR THE DOORKNOB",
-  "hook_line": "The biggest mistake patients make? Saving their worst symptom for the very end. (And if a symptom feels severe or sudden, like chest pain, trouble breathing, or sudden weakness, don't wait for an appointment at all. Call 911 or go to the ER.)",
+  "hook_text": "YOUR VISIT LASTS ABOUT 15, 20 MINUTES",
+  "hook_line": "You wait weeks for an appointment, then it's over before you know it.",
   "beats": [
     {
-      "narration": "Before your visit, write down everything, then pick your top three concerns.",
-      "label": "Pick Top Three",
-      "footage_query": "writing notes notebook"
+      "narration": "Many doctor visits last around fifteen to twenty minutes, and much of that time goes to paperwork and the exam.",
+      "label": "Short visits, make them count",
+      "footage_query": "doctor patient consultation"
     },
     {
-      "narration": "Say your biggest worry first, right at the start, not as you're leaving.",
-      "label": "Say It First",
-      "footage_query": "doctor patient conversation"
+      "narration": "Bring your medication list, insurance card, records from other doctors, and a written list of your questions.",
+      "label": "What to bring",
+      "footage_query": "medication list notebook"
     },
     {
-      "narration": "Bring your medication list, insurance card, and records from other doctors.",
-      "label": "Bring These Items",
-      "footage_query": "pill bottles insurance card"
+      "narration": "Write down your top three concerns before you go, and say the most worrying one first, not at the door.",
+      "label": "Say the big one first",
+      "footage_query": "person writing notes"
     },
     {
-      "narration": "Describe symptoms clearly: when it started, how often, and how bad, one to ten.",
-      "label": "Describe Clearly",
-      "footage_query": "person journaling symptoms"
+      "narration": "Describe symptoms clearly. When did it start, how often does it happen, and how bad is it, one to ten. If you ever have severe symptoms like chest pain, trouble breathing, or sudden weakness, don't wait for an appointment, call 911 or go to the ER right away.",
+      "label": "Describe symptoms clearly",
+      "footage_query": "person explaining symptoms"
     },
     {
-      "narration": "Use Ask Me Three: what's my main problem, what do I need to do, and why does it matter.",
-      "label": "Ask Me Three",
-      "footage_query": "doctor explaining chart"
+      "narration": "Try the Ask Me 3 approach: What is my main problem? What do I need to do? Why is it important for me to do this?",
+      "label": "Ask Me 3",
+      "footage_query": "doctor explaining diagnosis"
     },
     {
-      "narration": "Before leaving, repeat the plan back in your own words to catch mistakes, and remember, if new or worsening symptoms show up later, don't wait for your next appointment to get help.",
-      "label": "Teach It Back",
-      "footage_query": "patient nodding doctor"
+      "narration": "Before you leave, repeat the plan back in your own words. This 'teach-back' method helps catch mix-ups right away, and remember to ask your doctor or pharmacist before stopping or changing any medication on your own. Here's how to make it count.",
+      "label": "Teach-back method",
+      "footage_query": "doctor patient talking"
     }
   ],
   "preview": [
-    "how to get a faster appointment",
-    "what telehealth visits need",
+    "how telehealth visits work",
+    "keeping a symptom diary",
     "when to get a second opinion"
   ],
-  "title": "How To Get The Most From A 15-Minute Doctor Visit"
+  "title": "How to Get the Most From a 15-Minute Doctor Visit"
 }
