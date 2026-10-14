@@ -77,6 +77,7 @@ Rules:
 def _clean(text: str) -> str:
     """Plain spoken text: escaped characters decoded, dashes turned into commas (the voice reads them better)."""
     text = re.sub(r"\\u([0-9a-fA-F]{4})", lambda m: chr(int(m.group(1), 16)), text)
+    text = re.sub(r"(\d)\s*[\u2013\u2014-]\s*(\d)", r"\1 to \2", text)  # "15-20" -> "15 to 20"
     text = re.sub(r"\s*[\u2014\u2013]\s*", ", ", text)
     return re.sub(r"\s+", " ", text).strip()
 
@@ -107,10 +108,16 @@ def check_facts(script: ShortScript, topic: str) -> ShortScript:
         b.narration, b.label = s.narration, s.heading
     # The hook must stay a few seconds long: anything the check added to it (e.g. a 911 safety note) moves to
     # the end of the last beat, where it is still said.
-    first, *rest = re.split(r"(?<=[.!?])\s+", script.hook_line.strip())
-    if rest:
-        script.hook_line = first
-        extra = " ".join(rest).strip("() ")
+    sentences = re.split(r"(?<=[.!?])\s+", script.hook_line.strip())
+    keep = sentences[:1]
+    for x in sentences[1:]:  # a short second sentence may stay; long safety notes move on
+        if len(" ".join(keep + [x]).split()) <= 22 and not re.search(r"911|emergency|ER\b", x):
+            keep.append(x)
+        else:
+            break
+    extra = " ".join(sentences[len(keep):]).strip("() ")
+    if extra:
+        script.hook_line = " ".join(keep)
         script.beats[-1].narration = f"{script.beats[-1].narration.rstrip()} {extra}"
     return script
 
