@@ -366,10 +366,38 @@ def _suitable(*texts) -> bool:
     return not UNSUITABLE.search(" ".join(str(t or "") for t in texts))
 
 
+OWN_FOOTAGE: Path | None = None  # the channel's own clips (set by build_video from video.own_footage)
+
+
+def _own_footage(query: str, size: tuple[int, int], used: set) -> Path | None:
+    """One of the channel's own clips (no faces, made in Flow) whose keywords match the scene, before stock.
+    footage.yaml in the folder: {file.mp4: [keyword, ...]}; a clip is used once per video."""
+    import yaml
+
+    index = OWN_FOOTAGE / "footage.yaml" if OWN_FOOTAGE else None
+    if not index or not index.exists():
+        return None
+    q = query.lower()
+    portrait = size[1] > size[0]
+    for name, words in (yaml.safe_load(index.read_text()) or {}).items():
+        clip = OWN_FOOTAGE / name
+        if (f"own:{name}" in used or not clip.exists() or name.startswith("9x16_") != portrait
+                or not any(w.lower() in q for w in words)):
+            continue
+        used.add(f"own:{name}")
+        return clip
+    return None
+
+
 def fetch_footage(query: str, size: tuple[int, int], dest: Path, used: set) -> Path | None:
-    """A free stock clip: Pexels first, then Pixabay (each only if its API key is set)."""
+    """A background clip: the channel's own clips first, then free stock from Pexels, then Pixabay (each only
+    if its API key is set)."""
     if not query:
         return None
+    own = _own_footage(query, size, used)
+    if own:
+        print(f"    (own clip for '{query}': {own.name})")
+        return own
     return _pexels_footage(query, size, dest, used) or _pixabay_footage(query, size, dest, used)
 
 
@@ -657,6 +685,9 @@ def build_video(plan, video_cfg: dict, voice_cfg: dict, channel_name: str, workd
     from . import voice
 
     ensure_fonts()
+    global OWN_FOOTAGE
+    own = video_cfg.get("own_footage")
+    OWN_FOOTAGE = Path(__file__).resolve().parent.parent / own if own else None
     size = (1080, 1920) if video_cfg.get("format") == "shorts" else (1920, 1080)
     scenes_dir = workdir / "scenes"
     scenes_dir.mkdir(parents=True, exist_ok=True)

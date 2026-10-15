@@ -1,0 +1,3 @@
+# Our own background clips (Google Flow, no faces). A scene uses one when its footage query contains one of
+# the keywords; otherwise the video falls back to stock footage. 16x9_ = normal videos, 9x16_ = Shorts.
+16x9_bp_cuff_home_arm.mp4: [blood pressure, bp cuff, bp monitor, hypertension, sphygmomanometer]
