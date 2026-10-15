@@ -31,7 +31,19 @@ IDENTITY LOCK: Use the uploaded reference image as the only identity source for 
 He wears a silver watch with a black dial on his left wrist naturally. Do not focus on or show off the watch; it is just part of the outfit.
 ```
 
-These details come from the user's avatar reference image (him standing in navy scrubs on a green background). Use this block exactly as written; do not ask for the details again.
+These details come from the user's avatar reference images. Use this block exactly as written; do not ask for the details again.
+
+## Reference images (in `references/`)
+
+| File | View | Use for |
+|---|---|---|
+| `01-front-original.jpg` | Front, navy scrubs, green background | Original avatar (clothes must be ignored) |
+| `02-three-quarter-left.jpg` | ¾ view, black tee, grey background | Walking and side-angle shots |
+| `03-three-quarter-right.jpg` | ¾ view (other side), black tee | Sitting and turning shots |
+| `04-side-profile.jpg` | Side profile, black tee | Profile and tracking shots |
+| `05-full-body-front.jpg` | Full body, black tee, grey jeans, white sneakers, silver watch on left wrist, smiling | Best main reference: body shape, height, watch |
+
+When writing prompts, remind the user to upload **05 + 02 + 03** as character references (and 04 for profile-heavy shots). Use 01 only if the tool allows a single image.
 
 ## AVOID line (paste at the end of every prompt)
 
