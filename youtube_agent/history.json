@@ -226,11 +226,11 @@
     "script_file": "032-doctor-visit-tips-long.yaml",
     "series": "Doctor Visits Made Simple",
     "episode": 3,
-    "planned_publish_at": "2026-10-16T16:00:00Z",
-    "awaiting_approval": true,
+    "awaiting_approval": false,
     "youtube_id": "rHtvGk7TqzM",
     "short_youtube_id": "ykCzkZ_NlwU",
     "short2_youtube_id": "vPsYwn7zyYc",
-    "preview": "previews/rHtvGk7TqzM.mp4"
+    "preview": "previews/rHtvGk7TqzM.mp4",
+    "publish_at": "2026-10-16T16:00:00Z"
   }
 ]
