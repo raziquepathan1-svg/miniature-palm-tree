@@ -216,5 +216,21 @@
     "short2_youtube_id": "L2K-BAK3bHI",
     "preview": "previews/42CvOXqrJDw.mp4",
     "publish_at": "2026-10-15T16:00:00Z"
+  },
+  {
+    "date": "2026-10-15T06:59:15",
+    "topic": "How to get the most out of a 15-minute doctor's appointment",
+    "requested_topic": "How to get the most out of a 15-minute doctor's appointment",
+    "title": "Short Doctor Visit? Do This to Get Real Answers (Part 3/5)",
+    "style": "Top Questions",
+    "script_file": "032-doctor-visit-tips-long.yaml",
+    "series": "Doctor Visits Made Simple",
+    "episode": 3,
+    "planned_publish_at": "2026-10-16T16:00:00Z",
+    "awaiting_approval": true,
+    "youtube_id": "rHtvGk7TqzM",
+    "short_youtube_id": "ykCzkZ_NlwU",
+    "short2_youtube_id": "vPsYwn7zyYc",
+    "preview": "previews/rHtvGk7TqzM.mp4"
   }
 ]
