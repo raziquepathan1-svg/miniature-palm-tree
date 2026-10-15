@@ -27,11 +27,11 @@ The user runs a men's fashion Instagram page. Every video features **their own A
 ## IDENTITY LOCK block (paste at the start of every prompt)
 
 ```
-IDENTITY LOCK: Use the uploaded reference image as the only identity source. The same man appears in every shot: [age], [skin tone], [face shape], [beard style], [hairstyle], [build]. Keep face, beard, hair, skin tone and body exactly identical to the reference in all shots, from every camera angle.
+IDENTITY LOCK: Use the uploaded reference image as the only identity source for the face and body. Ignore the clothes in the reference image. The same man appears in every shot: a man in his late 20s, warm wheatish skin, oval face with strong cheekbones, thick dark eyebrows, dark brown eyes, full dense black beard of medium length with a connected moustache, shoulder-length wavy dark brown-black hair parted near the middle and falling loosely around his face, tall muscular athletic build with broad shoulders and naturally hairy forearms. Keep face, beard, hair, skin tone and body exactly identical to the reference in all shots, from every camera angle.
 He wears a silver watch with a black dial on his left wrist naturally. Do not focus on or show off the watch; it is just part of the outfit.
 ```
 
-If the user has given their real avatar details (age, beard, hair, skin tone, build), fill in the brackets. Otherwise leave them as brackets and remind them once to fill them in.
+These details come from the user's avatar reference image (him standing in navy scrubs on a green background). Use this block exactly as written; do not ask for the details again.
 
 ## AVOID line (paste at the end of every prompt)
 
