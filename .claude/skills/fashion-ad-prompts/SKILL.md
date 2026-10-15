@@ -43,7 +43,13 @@ These details come from the user's avatar reference images. Use this block exact
 | `04-side-profile.jpg` | Side profile, black tee | Profile and tracking shots |
 | `05-full-body-front.jpg` | Full body, black tee, grey jeans, white sneakers, silver watch on left wrist, smiling | Best main reference: body shape, height, watch |
 
-When writing prompts, remind the user to upload **05 + 02 + 03** as character references (and 04 for profile-heavy shots). Use 01 only if the tool allows a single image.
+When writing prompts, remind the user to upload **05 + 02 + 03** as character references (and 04 for profile-heavy shots). Never use 01 (scrubs) as a reference for fashion clips.
+
+## The user's tool: Google Flow (Veo)
+
+- The user makes videos in **Google Flow** with **Ingredients to Video**, which takes up to **3 reference images**: use 05 (full body), 02 (¾ left) and 03 (¾ right).
+- Each Flow clip is about **8 seconds**, so a 15-second, 4-shot ad cannot be made in one generation. Write each ad as **2 Flow clips of 2 shots each** (Clip A = shots 1–2, Clip B = shots 3–4), each a separate copy-paste block with the full IDENTITY LOCK, the same outfit line and the AVOID line, so the user can generate them one by one with the same 3 ingredients.
+- The user then joins the clips in Flow's Scenebuilder or in CapCut.
 
 ## AVOID line (paste at the end of every prompt)
 
