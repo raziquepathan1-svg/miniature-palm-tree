@@ -19,6 +19,8 @@ MID_LINES = [
 ]
 SHORT_LINE = "Subscribe for one simple health tip every day."
 LAST_MID: str | None = None  # the line added mid-video (left out of the second Short)
+LAST_EP = None  # today's series episode (set by main)
+SHORT1_HOOK: str | None = None  # the first new-style Short's hook, so the second one takes another angle
 
 
 @dataclass

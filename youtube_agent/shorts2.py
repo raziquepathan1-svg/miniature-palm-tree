@@ -44,13 +44,15 @@ class ShortScript(BaseModel):
                        "with the topic keyword, no hashtags")
 
 
-def write_script(plan, series: str | None = None, part: str | None = None) -> ShortScript:
+def write_script(plan, series: str | None = None, part: str | None = None, avoid: str | None = None) -> ShortScript:
     """Claude writes the Short from the (already fact-checked) full script, using only facts in it."""
     import anthropic
 
     from .planner import MODEL, _fallback_kwargs
 
     source = "\n".join(f"- {s.heading}: {s.narration}" for s in plan.scenes)
+    second = (f"\n- This is the second Short about this video: use a DIFFERENT angle, hook and takeaway than this "
+              f"one: {avoid}") if avoid else ""
     prompt = f"""You write YouTube Shorts for Health Support Studio, a calm, trustworthy health-education
 channel for US adults. Never call the host a doctor or nurse; never invent personal stories.
 
@@ -67,7 +69,7 @@ Rules:
 - Then deliver ONE complete, useful answer in short beats, so the viewer learns something real.
 - Short sentences, everyday words, American English. Write numbers out as they are spoken.
 - The preview names 3 things the full video covers that this Short does not, so viewers want to watch it.
-- Do not mention YouTube, subscribing or the channel; that is added automatically."""
+- Do not mention YouTube, subscribing or the channel; that is added automatically.{second}"""
     client = anthropic.Anthropic()
     response = client.beta.messages.parse(model=MODEL, max_tokens=4000, **_fallback_kwargs(),
                                           messages=[{"role": "user", "content": prompt}], output_format=ShortScript)
@@ -349,6 +351,17 @@ def build(script: ShortScript, voice_cfg: dict, workdir: Path, series: str | Non
     visuals._run(["-y", "-i", str(joined), "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-r", str(FPS),
                   "-c:a", "aac", "-b:a", "160k", "-ar", "48000", "-movflags", "+faststart", str(out)])
     return out
+
+
+def make_pair(plan, voice_cfg: dict, workdir: Path, series: str | None, part: str | None, day: int,
+              avoid: str | None = None) -> tuple[ShortScript, Path, Path]:
+    """Script (fact-checked) + the YouTube Short + the Instagram/Facebook version (same voice takes)."""
+    script = clean_script(check_facts(clean_script(write_script(plan, series, part, avoid)), plan.topic))
+    (workdir / "short_script.json").parent.mkdir(parents=True, exist_ok=True)
+    (workdir / "short_script.json").write_text(script.model_dump_json(indent=2))
+    youtube = build(script, voice_cfg, workdir / "yt", series, part, "youtube", day)
+    follow = build(script, voice_cfg, workdir / "ig", series, part, "follow", day)
+    return script, youtube, follow
 
 
 def sample(script_file: str, out_dir: str) -> None:

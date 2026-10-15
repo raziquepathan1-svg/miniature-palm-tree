@@ -75,6 +75,13 @@ growth:
     "Kids & Family Health": "Family Health"
     "Older Adults & Caregiving": "Caring for Older Adults"
 
+# ---- Shorts, Instagram and Facebook ----
+social:
+  enabled: true
+  style: "native"        # Instagram/Facebook versions end with "follow us", short captions with a question
+  shorts_style: "v2"     # v2 = a hook made for the topic over the host's face, quick beats, big word captions,
+                         # a preview of the full video (youtube_agent/shorts2.py); "v1" = the old slide Shorts
+
 # ---- Video ----
 video:
   # "voice_slides" = FREE: AI voice + branded graphics + stock video clips (no avatar needed)

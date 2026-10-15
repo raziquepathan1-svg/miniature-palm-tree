@@ -168,6 +168,7 @@ def make_one_video(config: dict, history: list[dict], topic: str | None, dry_run
     if video_cfg.get("format") == "shorts":
         episode = None
     growth.LAST_MID = growth.apply(plan, episode, len(history))
+    growth.LAST_EP = episode
     if episode:
         print(f"    Series: {episode.series}, part {episode.n} of {episode.total} | next: "
               f"{episode.next_series or ''} {episode.next_topic or ''}".rstrip())
@@ -395,8 +396,40 @@ def upload_second_short(plan, video_id: str, video_cfg: dict, config: dict, chan
                         yt: dict, footer: str) -> str | None:
     """A ~45 s vertical Short from one strong scene of the video (myth vs fact, warning signs, a key number),
     with a hook first and the host's outro, scheduled a few hours after the first Short."""
-    from . import uploader, visuals
+    from . import growth, uploader, visuals
     from .planner import Scene
+
+    if config.get("social", {}).get("shorts_style") == "v2":
+        try:  # new style, a different angle from the first Short
+            from . import shorts2
+
+            ep = growth.LAST_EP
+            series, part = (ep.series, f"{ep.n}/{ep.total}") if ep else (None, None)
+            print("    Making the second new-style Short...")
+            script, yt_short, ig_reel = shorts2.make_pair(plan, config.get("voice", {}), workdir / "short2",
+                                                          series, part, dt.date.today().toordinal() + 3,
+                                                          avoid=growth.SHORT1_HOOK)
+            title = f"{script.title[:55]} #Shorts"
+            tags = " ".join(w for w in plan.short_caption.split() if w.startswith("#"))
+            desc = f"{script.hook_line}\n\n▶️ Watch the full video: https://youtu.be/{video_id}\n\n{tags}\n\n{footer}".strip()
+            short_yt = dict(yt)
+            if yt.get("publish_at"):
+                t = dt.datetime.fromisoformat(yt["publish_at"].replace("Z", "+00:00")) + dt.timedelta(
+                    hours=float(yt.get("second_short_delay_hours", 3)))
+                short_yt["publish_at"] = t.strftime("%Y-%m-%dT%H:%M:%SZ")
+            print("    Uploading the second Short...")
+            short_id = uploader.upload_video(yt_short, None, title, desc, plan.tags + ["shorts"], short_yt,
+                                             config["channel"].get("language_code", "en-US"))
+            if yt.get("playlists", True):
+                uploader.add_to_playlists(short_id, [yt.get("shorts_playlist", "Health Shorts")],
+                                          yt.get("playlist_description"))
+            social_dir = workdir / "social"
+            if social_dir.is_dir():
+                shutil.copyfile(ig_reel, social_dir / "reel2.mp4")
+                (social_dir / "reel2.json").write_text(json.dumps({"hook": script.hook_line, "tags": tags}))
+            return short_id
+        except Exception as e:
+            print(f"  (New-style second Short failed, using the old style: {e})")
 
     used = {s.heading for s in plan.short_scenes}
     middle = [s for s in plan.scenes[1:-1] if s.heading not in used]
@@ -471,7 +504,24 @@ def make_social_short(plan, final: Path, video_cfg: dict, config: dict, channel_
         return social_dir
     if not plan.short_scenes:
         return None
-    from . import visuals
+    from . import growth, visuals
+
+    if config.get("social", {}).get("shorts_style") == "v2":
+        try:  # new style: a hook made for the topic over the host's face, quick beats, full-video preview
+            from . import shorts2
+
+            ep = growth.LAST_EP
+            series, part = (ep.series, f"{ep.n}/{ep.total}") if ep else (None, None)
+            print("    Making the new-style Short (and its Instagram/Facebook version)...")
+            script, yt_short, ig_reel = shorts2.make_pair(plan, config.get("voice", {}), workdir / "short1",
+                                                          series, part, dt.date.today().toordinal())
+            shutil.copyfile(yt_short, social_dir / "short.mp4")
+            shutil.copyfile(ig_reel, social_dir / "reel.mp4")
+            plan.short_title = f"{script.title[:55]} #Shorts"
+            growth.SHORT1_HOOK = f"{script.hook_text}: {script.hook_line}"
+            return social_dir
+        except Exception as e:  # the old style is made instead
+            print(f"  (New-style Short failed, using the old style: {e})")
 
     print("    Making the vertical Short for Instagram/Facebook...")
     short_cfg = {**video_cfg, "format": "shorts"}
