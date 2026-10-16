@@ -77,7 +77,13 @@ jobs:
           import json, sys
           meta = json.load(open(sys.argv[1]))
           hist = {h.get("youtube_id"): h for h in json.load(open("youtube_agent/history.json")) if h.get("youtube_id")}
+          for h in list(hist.values()):  # a video replaced after upload (e.g. presenter added): follow the new ID
+              for old in h.get("replaced_ids", []):
+                  hist[old] = h
           h = hist.get(meta.get("youtube_id"), {})
+          if h.get("youtube_id") and h["youtube_id"] != meta.get("youtube_id"):
+              meta["youtube_id"] = h["youtube_id"]
+              json.dump(meta, open(sys.argv[1], "w"), indent=2)
           print("waiting" if h.get("awaiting_approval") else (h.get("publish_at") or meta.get("publish_at") or ""))
           PY2
           )

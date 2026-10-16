@@ -1,0 +1,74 @@
+name: Add corner presenter
+
+# For a daily video that came out without the corner presenter (Kaggle lip-sync did not come back) and is still
+# waiting for approval: adds him from the run's saved files, uploads the fixed video in its place (same title,
+# description, thumbnail, playlists; the Shorts link to it), updates history.json and saves a new preview.
+on:
+  workflow_dispatch:
+    inputs:
+      run_id:
+        description: "Daily video run ID"
+        required: true
+      video_id:
+        description: "YouTube video ID of the video without the presenter"
+        required: true
+
+permissions:
+  contents: write
+  actions: read
+
+concurrency:
+  group: daily-video
+  cancel-in-progress: false
+
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install dependencies
+        run: |
+          sudo apt-get update -q && sudo apt-get install -y -q ffmpeg fonts-dejavu-core
+          pip install -r requirements.txt
+          pip install -q kaggle
+      - name: Download the run's video files
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh run download "${{ inputs.run_id }}" --repo "$GITHUB_REPOSITORY" --name "video-${{ inputs.run_id }}" --dir dl
+      - name: Add the presenter and swap the video on YouTube
+        env:
+          YOUTUBE_TOKEN_JSON: ${{ secrets.YOUTUBE_TOKEN_JSON }}
+          YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
+          YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+          KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
+          KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
+          KAGGLE_API_TOKEN: ${{ secrets.KAGGLE_API_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          [ -z "$KAGGLE_KEY" ] && unset KAGGLE_KEY
+          [ -z "$KAGGLE_API_TOKEN" ] && unset KAGGLE_API_TOKEN
+          python -m youtube_agent.fix_presenter dl "${{ inputs.video_id }}"
+      - name: Remember the new video ID
+        run: |
+          git config user.name "youtube-agent"
+          git config user.email "youtube-agent@users.noreply.github.com"
+          git add youtube_agent/history.json
+          git diff --cached --quiet && exit 0
+          git commit -m "Video replaced (corner presenter added)"
+          git pull --rebase && git push
+      - name: Save the new preview
+        run: |
+          new=$(cat new_video_id.txt)
+          ffmpeg -y -loglevel error -i "$(cat final_presenter_path.txt)" -vf scale=-2:360 -c:v libx264 -preset veryfast \
+            -b:v 350k -c:a aac -b:a 64k preview.mp4
+          git fetch -q origin previews
+          git checkout -q -B previews origin/previews
+          mkdir -p previews && cp preview.mp4 "previews/$new.mp4"
+          git add "previews/$new.mp4"
+          git commit -qm "Add previews/$new.mp4"
+          git push -q origin previews
