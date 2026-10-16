@@ -11,6 +11,10 @@ on:
       video_id:
         description: "YouTube video ID"
         required: true
+      shorts:
+        description: "Also save the run's Shorts (social files) next to the preview"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -27,7 +31,11 @@ jobs:
       - name: Download the run's video files
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh run download "${{ inputs.run_id }}" --repo "$GITHUB_REPOSITORY" --name "video-${{ inputs.run_id }}" --dir dl
+        run: |
+          gh run download "${{ inputs.run_id }}" --repo "$GITHUB_REPOSITORY" --name "video-${{ inputs.run_id }}" --dir dl
+          if [ "${{ inputs.shorts }}" = "true" ]; then
+            gh run download "${{ inputs.run_id }}" --repo "$GITHUB_REPOSITORY" --name "social-${{ inputs.run_id }}" --dir soc || true
+          fi
       - name: Make and save the preview
         env:
           GITHUB_TOKEN: ${{ github.token }}
@@ -43,6 +51,13 @@ jobs:
           git fetch -q origin previews
           git checkout -q -B previews origin/previews
           mkdir -p previews && cp preview.mp4 "previews/${{ inputs.video_id }}.mp4"
-          git add "previews/${{ inputs.video_id }}.mp4"
-          git commit -qm "Add previews/${{ inputs.video_id }}.mp4"
+          if [ -d soc ]; then
+            for n in short reel reel2; do
+              f=$(find soc -name "$n.mp4" | head -1)
+              if [ -n "$f" ]; then ffmpeg -y -loglevel error -i "$f" -vf scale=-2:640 -c:v libx264 -preset veryfast -b:v 600k -c:a aac -b:a 64k "previews/${{ inputs.video_id }}_$n.mp4"; fi
+            done
+            for j in $(find soc -name "*.json"); do cp "$j" "previews/${{ inputs.video_id }}_$(basename "$j")"; done
+          fi
+          git add previews
+          git diff --cached --quiet || git commit -qm "Add previews for ${{ inputs.video_id }}"
           git push -q origin previews
