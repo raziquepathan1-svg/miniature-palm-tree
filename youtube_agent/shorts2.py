@@ -30,7 +30,7 @@ HOOK_COLORS = [((255, 212, 0), (11, 37, 69)), ((255, 107, 107), (255, 255, 255))
 class Beat(BaseModel):
     narration: str = Field(description="1-2 short spoken sentences, max 28 words. Plain words only.")
     label: str = Field(description="2-4 word on-screen keyword for this beat, e.g. 'Start at 45'")
-    footage_query: str = Field(description="2-4 word stock-video search for a calm, relevant, non-graphic clip")
+    footage_query: str = Field(description="2-4 word stock-video search for a calm, non-graphic clip that shows exactly this beat (e.g. 'mammogram machine', 'woman talking to doctor'); never a generic machine or scan word that could find unrelated scans (ultrasound, x-ray, dental)")
 
 
 class ShortScript(BaseModel):
@@ -81,6 +81,10 @@ def _clean(text: str) -> str:
     text = re.sub(r"\\u([0-9a-fA-F]{4})", lambda m: chr(int(m.group(1), 16)), text)
     text = re.sub(r"(\d)\s*[\u2013\u2014-]\s*(\d)", r"\1 to \2", text)  # "15-20" -> "15 to 20"
     text = re.sub(r"\s*[\u2014\u2013]\s*", ", ", text)
+    # brackets are not spoken: citations like "(USPSTF, 2024)" go, other asides become ", like cysts,"
+    text = re.sub(r"\s*\([^()]*\b(?:19|20)\d\d\b[^()]*\)", "", text)
+    text = re.sub(r"\s*\(([^()]*)\)\s*([.!?]?)", lambda m: f", {m.group(1)}{m.group(2) or ','} ", text)
+    text = re.sub(r",\s*([,.!?])", r"\1", text)
     return re.sub(r"\s+", " ", text).strip()
 
 
