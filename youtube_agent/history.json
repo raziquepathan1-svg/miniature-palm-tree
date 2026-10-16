@@ -242,13 +242,13 @@
     "script_file": "048-breast-cancer-screening-myths.yaml",
     "series": "Doctor Visits Made Simple",
     "episode": 4,
-    "planned_publish_at": "2026-10-17T16:00:00Z",
-    "awaiting_approval": true,
+    "awaiting_approval": false,
     "youtube_id": "spq8oOrKcWs",
     "short_youtube_id": "65mR7AfwPUc",
     "short2_youtube_id": "VZmJ9OGvN3c",
     "replaced_ids": [
       "bzpbKhWj_t4"
-    ]
+    ],
+    "publish_at": "2026-10-17T16:00:00Z"
   }
 ]
