@@ -232,5 +232,20 @@
     "short2_youtube_id": "vPsYwn7zyYc",
     "preview": "previews/rHtvGk7TqzM.mp4",
     "publish_at": "2026-10-16T16:00:00Z"
+  },
+  {
+    "date": "2026-10-16T06:01:18",
+    "topic": "Breast cancer screening: myths vs facts and the new advice",
+    "requested_topic": "Breast cancer screening: myths vs facts and the new advice",
+    "title": "Breast Cancer Screening Myths (Mammograms Now Start at 40) (Part 4/5)",
+    "style": "Myth vs Fact",
+    "script_file": "048-breast-cancer-screening-myths.yaml",
+    "series": "Doctor Visits Made Simple",
+    "episode": 4,
+    "planned_publish_at": "2026-10-17T16:00:00Z",
+    "awaiting_approval": true,
+    "youtube_id": "bzpbKhWj_t4",
+    "short_youtube_id": "65mR7AfwPUc",
+    "short2_youtube_id": "VZmJ9OGvN3c"
   }
 ]
