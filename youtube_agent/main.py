@@ -111,6 +111,25 @@ def write_summary(lines: list[str]) -> None:
             f.write("\n".join(lines) + "\n\n")
 
 
+def _git_push_preview(src: Path, dest: str, tree: Path) -> str:
+    """Puts a file on the "previews" branch with git (a worktree of the checkout); returns its download link."""
+    def git(*args, cwd=None):
+        subprocess.run(["git", "-c", "user.name=youtube-agent", "-c",
+                        "user.email=youtube-agent@users.noreply.github.com", *args], check=True, cwd=cwd)
+
+    git("fetch", "-q", "origin", "previews")
+    git("worktree", "add", "-q", "--detach", str(tree), "FETCH_HEAD")
+    try:
+        (tree / dest).parent.mkdir(parents=True, exist_ok=True)
+        shutil.copyfile(src, tree / dest)
+        git("add", dest, cwd=tree)
+        git("commit", "-qm", f"Add {dest}", cwd=tree)
+        git("push", "-q", "origin", "HEAD:previews", cwd=tree)
+    finally:
+        subprocess.run(["git", "worktree", "remove", "--force", str(tree)], check=False)
+    return f"https://raw.githubusercontent.com/{os.environ.get('GITHUB_REPOSITORY', '')}/previews/{dest}"
+
+
 def make_one_video(config: dict, history: list[dict], topic: str | None, dry_run: bool, script_only: bool) -> None:
     from . import growth, planner
 
@@ -354,7 +373,11 @@ def make_one_video(config: dict, history: list[dict], topic: str | None, dry_run
                             str(preview)], check=True)
             from .talking import upload_to_branch
 
-            url = upload_to_branch("previews", f"previews/{video_id}.mp4", preview.read_bytes())
+            try:
+                url = upload_to_branch("previews", f"previews/{video_id}.mp4", preview.read_bytes())
+            except Exception as e:  # the contents API sometimes answers 403 for big files: push with git
+                print(f"  (Preview upload failed ({e}); pushing it with git)")
+                url = _git_push_preview(preview, f"previews/{video_id}.mp4", workdir / "previews_wt")
             entry["preview"] = f"previews/{video_id}.mp4"
             save_history(history)
             summary.append(f"- Preview: {url}")
