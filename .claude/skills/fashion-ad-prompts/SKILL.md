@@ -66,6 +66,23 @@ Transition: at the end of Clip A he tosses the new garment toward the camera and
 - Shot 4 (6-8s): quick slow-motion fabric/shoe close-up, then low-angle hero shot looking into camera.
 Keep the wording short and clear so Veo follows all 4 beats.
 
+The user loved this format ("it was very good"). Always send prompts in exactly this style, and send exactly as many prompts as he asks for (if he says "one prompt", send one). Reference example of the approved style:
+
+```
+IDENTITY LOCK: Use the uploaded reference image as the only identity source for the face and body. Ignore the clothes in the reference image. The same man appears in every shot: a man in his late 20s, warm wheatish skin, oval face with strong cheekbones, thick dark eyebrows, dark brown eyes, full dense black beard of medium length with a connected moustache, shoulder-length wavy dark brown-black hair parted near the middle and falling loosely around his face, tall muscular athletic build with broad shoulders and naturally hairy forearms. Keep face, beard, hair, skin tone and body exactly identical to the reference in all shots.
+He wears a silver watch with a black dial on his left wrist naturally. Do not focus on the watch.
+Before outfit: faded grey oversized hoodie, loose black track pants, black slides.
+After outfit: ivory cable-knit sweater with a light-blue oxford shirt collar at the neck, navy pleated trousers, tan suede loafers.
+Fast cinematic transformation ad, 4 shots, 8 seconds:
+Shot 1 (0-2s): In a plain bedroom, wearing the before outfit, he pulls the ivory sweater out of a black garment bag and holds it up to the camera with a smirk.
+Shot 2 (2-3s): He tosses the sweater at the lens; the ivory fabric fills the whole frame.
+Shot 3 (3-6s): The fabric falls away and he is now wearing the after outfit, walking confidently down a sunny old stone street. Full-body tracking shot.
+Shot 4 (6-8s): Quick slow-motion close-up of the knit texture and loafers, then he stops, fixes his collar and looks into the camera. Low-angle hero shot.
+Style: luxury old-money menswear commercial, warm sunlight, smooth fast cuts, shallow depth of field, vertical 9:16, photorealistic.
+Avoid: face changing between shots, different person, face morphing, changed beard or hair, distorted hands, extra fingers, blurry face, glitchy clothes, cartoon look, text or logos.
+```
+Each prompt gets a title ("Prompt N: Before → After") and a **Hook** line. Vary the before outfit, the toss item (bag/box/hanger) and the after location each time.
+
 Only if the user asks for longer versions, use the 3-clip version below:
 - **Clip A (before):** ordinary outfit; opens the bag/box, holds the new outfit against himself at a mirror, tosses it at the lens. Include BOTH outfit lines (wearing the ordinary one, holding the new one).
 - **Clip B (reveal):** fabric falls away → reveal in the new outfit in the same room → walks out into the main location → sits.
