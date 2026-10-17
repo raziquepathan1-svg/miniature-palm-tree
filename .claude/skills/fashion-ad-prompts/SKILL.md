@@ -59,7 +59,14 @@ Story: he starts in **plain ordinary clothes** (old hoodie, faded tee, track pan
 
 Transition: at the end of Clip A he tosses the new garment toward the camera and the fabric covers the lens; Clip B opens with the fabric falling away from the lens to reveal him in the new outfit, same room and same pose. The user cuts exactly there in CapCut/Scenebuilder.
 
-Write each transformation ad as **3 Flow clips (8s each)**, each with its own outfit line(s):
+**DEFAULT: one single 8-second Flow clip per ad** (the user wants 8–10s Shorts, everything in one generation). Write ONE self-contained copy-paste block per ad: full IDENTITY LOCK, a "Before outfit" line, an "After outfit" line, 4 quick shots, and the AVOID line:
+- Shot 1 (0-2s): ordinary clothes in a simple room, lifts the new outfit from a bag/box and holds it up to camera.
+- Shot 2 (2-3s): tosses the garment at the lens, fabric fills the frame.
+- Shot 3 (3-6s): fabric falls away → he is in the new outfit, in a stylish location, walking or turning (show full outfit).
+- Shot 4 (6-8s): quick slow-motion fabric/shoe close-up, then low-angle hero shot looking into camera.
+Keep the wording short and clear so Veo follows all 4 beats.
+
+Only if the user asks for longer versions, use the 3-clip version below:
 - **Clip A (before):** ordinary outfit; opens the bag/box, holds the new outfit against himself at a mirror, tosses it at the lens. Include BOTH outfit lines (wearing the ordinary one, holding the new one).
 - **Clip B (reveal):** fabric falls away → reveal in the new outfit in the same room → walks out into the main location → sits.
 - **Clip C (show):** slow-motion detail close-ups of fabric, collar, buttons, shoes → hero shot standing, adjusting the outfit, looking into camera.
