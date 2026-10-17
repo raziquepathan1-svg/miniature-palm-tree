@@ -51,6 +51,20 @@ When writing prompts, remind the user to upload **05 + 02 + 03** as character re
 - Each Flow clip is about **8 seconds**, so a 15-second, 4-shot ad cannot be made in one generation. Write each ad as **2 Flow clips of 2 shots each** (Clip A = shots 1–2, Clip B = shots 3–4), each a separate copy-paste block with the full IDENTITY LOCK, the same outfit line and the AVOID line, so the user can generate them one by one with the same 3 ingredients.
 - The user then joins the clips in Flow's Scenebuilder or in CapCut.
 
+## Transformation format ("before → after" outfit change)
+
+The user's current preferred format. Use it whenever he asks for change/transformation clips (and as the default for new prompts unless he asks for the plain ad format).
+
+Story: he starts in **plain ordinary clothes** (old hoodie, faded tee, track pants, slides — modest, never shorts above the knee) in a simple room → **shows the new outfit** to camera (garment bag, box or hanger) → **transition** → **reveal** in the new outfit → **cinematic outfit shots**. Never show undressing; the change happens inside the transition.
+
+Transition: at the end of Clip A he tosses the new garment toward the camera and the fabric covers the lens; Clip B opens with the fabric falling away from the lens to reveal him in the new outfit, same room and same pose. The user cuts exactly there in CapCut/Scenebuilder.
+
+Write each transformation ad as **3 Flow clips (8s each)**, each with its own outfit line(s):
+- **Clip A (before):** ordinary outfit; opens the bag/box, holds the new outfit against himself at a mirror, tosses it at the lens. Include BOTH outfit lines (wearing the ordinary one, holding the new one).
+- **Clip B (reveal):** fabric falls away → reveal in the new outfit in the same room → walks out into the main location → sits.
+- **Clip C (show):** slow-motion detail close-ups of fabric, collar, buttons, shoes → hero shot standing, adjusting the outfit, looking into camera.
+Give the IDENTITY LOCK and AVOID line once at the top of the reply as blocks to paste, and refer to them as `[IDENTITY LOCK]` / `[AVOID LINE]` inside each clip. Recommend Flow's Extend (or using the last frame of the previous clip) to keep continuity between clips.
+
 ## AVOID line (paste at the end of every prompt)
 
 ```
