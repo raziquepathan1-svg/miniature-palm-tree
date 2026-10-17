@@ -1,6 +1,6 @@
 """Make new-style thumbnails for videos that are already on YouTube.
 
-Reads youtube_agent/thumbnail_jobs.json (youtube_id, text, highlight, style, photo_query),
+Reads youtube_agent/thumbnail_jobs.json (youtube_id, text, highlight, style, photo_query or image),
 renders each thumbnail and uploads it. Finished jobs are marked "done" so they never run twice.
 
     python -m youtube_agent.set_thumbnails
@@ -32,10 +32,13 @@ def main() -> None:
     youtube = build("youtube", "v3", credentials=_credentials(), cache_discovery=False)
     for job in pending:
         vid = job["youtube_id"]
-        photo = visuals.fetch_photo(job.get("photo_query", ""), OUT / f"{vid}_photo.jpg")
+        if job.get("image"):  # a picture made for this video (Flow/Gemini): it already shows the host
+            photo, host = HERE.parent / job["image"], None
+        else:
+            photo = visuals.fetch_photo(job.get("photo_query", ""), OUT / f"{vid}_photo.jpg")
+            host = HOST if HOST.exists() else None
         thumb = visuals.make_thumbnail(job["text"], "Health Support Studio", OUT / f"{vid}.jpg", photo,
-                                       style=job.get("style"), highlight=job.get("highlight"),
-                                       host=HOST if HOST.exists() else None)
+                                       style=job.get("style"), highlight=job.get("highlight"), host=host)
         try:
             youtube.thumbnails().set(videoId=vid, media_body=MediaFileUpload(str(thumb))).execute()
             job["done"] = True
