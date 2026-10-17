@@ -58,12 +58,19 @@ def _by_series(bank: list[Path], cfg: dict) -> dict[str, list[Path]]:
         s = series_for(_load(f)["plan"].get("playlist", ""), cfg)
         if s:
             out.setdefault(s, []).append(f)
+    first = cfg.get("first") or []  # scripts that should come early in their series (strong or seasonal topics)
+    for fs in out.values():
+        fs.sort(key=lambda f: (first.index(f.name) if f.name in first else len(first), f.name))
     return out
 
 
-def _new_series(groups: dict[str, list[Path]], total: int, skip: str | None) -> str | None:
-    """The series to start next: one with enough scripts for all its parts, earliest in the bank first."""
+def _new_series(groups: dict[str, list[Path]], total: int, skip: str | None, order: list | None = None) -> str | None:
+    """The series to start next: one with enough scripts for all its parts. The config's `order` (series that
+    get the most views first) decides; otherwise the one earliest in the bank."""
     ready = [s for s, fs in groups.items() if len(fs) >= total and s != skip]
+    for s in order or []:
+        if s in ready:
+            return s
     return min(ready, key=lambda s: groups[s][0].name) if ready else None
 
 
@@ -78,14 +85,14 @@ def next_episode(history: list[dict], bank: list[Path], cfg: dict) -> Episode | 
     if last and last.get("episode", total) < total and groups.get(last["series"]):
         series, n = last["series"], last["episode"] + 1
     else:
-        series, n = _new_series(groups, total, last and last.get("series")), 1
+        series, n = _new_series(groups, total, last and last.get("series"), cfg.get("order")), 1
     if not series:
         return None
     files = groups[series]
     if n < total and len(files) > 1:
         return Episode(series, n, total, files[0], _topic(files[1]), None)
     rest = {s: [f for f in fs if f != files[0]] for s, fs in groups.items()}
-    upcoming = _new_series(rest, total, series)
+    upcoming = _new_series(rest, total, series, cfg.get("order"))
     return Episode(series, n, total, files[0], _topic(rest[upcoming][0]) if upcoming else None, upcoming)
 
 

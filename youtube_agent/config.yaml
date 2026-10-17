@@ -64,6 +64,13 @@ channel:
 growth:
   enabled: true
   parts: 5
+  # Which series starts next (the first one with 5 scripts left). Urgent, common worries get the most views
+  # (CPR, flu shot, Benadryl, sepsis); "Caring for Older Adults" first because Part 5 of the last series
+  # already announced it.
+  order: ["Caring for Older Adults", "Emergency Basics", "Infections Explained", "Healthy Habits",
+          "Know Your Numbers"]
+  first: ["051-choking-first-aid.yaml", "063-hypothermia-frostbite-signs.yaml", "056-carbon-monoxide-signs.yaml",
+          "059-naloxone-opioid-overdose.yaml", "052-blood-clots-dvt-signs.yaml"]
   series:
     "Heart & Blood Pressure": "Know Your Numbers"
     "Diabetes & Metabolism": "Know Your Numbers"
