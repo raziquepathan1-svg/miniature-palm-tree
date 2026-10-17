@@ -901,10 +901,13 @@ def _cover(img: Image.Image, W: int, H: int) -> Image.Image:
 
 
 def make_thumbnail(text: str, channel_name: str, out: Path, background: Path | None = None,
-                   style: str | None = None, highlight: str | None = None, host: Path | None = None) -> Path:
+                   style: str | None = None, highlight: str | None = None, host: Path | None = None,
+                   own_picture: bool = False) -> Path:
     """Eye-catching 1280x720 thumbnail: photo on the right, huge text on the left, style badge, brand.
 
     host: optional cut-out PNG of the presenter (transparent background), shown waist-up on the right.
+    own_picture: the background is a picture made for this video (host on the right, left side kept plain):
+    the text stays narrow on the left so the face and the object stay in full light.
     """
     from PIL import ImageEnhance
 
@@ -912,8 +915,8 @@ def make_thumbnail(text: str, channel_name: str, out: Path, background: Path | N
     # Every third day: a scene from the host's clips (with a patient, at the x-ray, in the office) as the photo
     scenes_dir = Path(host).parent / "scenes" if host and Path(host).is_dir() else None
     scenes = sorted(scenes_dir.glob("*.jpg")) if scenes_dir and scenes_dir.exists() else []
-    scene_day = False
-    if scenes:
+    scene_day = own_picture
+    if scenes and not own_picture:
         import datetime as dt
 
         day = dt.date.today().toordinal()

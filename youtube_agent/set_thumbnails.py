@@ -38,7 +38,8 @@ def main() -> None:
             photo = visuals.fetch_photo(job.get("photo_query", ""), OUT / f"{vid}_photo.jpg")
             host = HOST if HOST.exists() else None
         thumb = visuals.make_thumbnail(job["text"], "Health Support Studio", OUT / f"{vid}.jpg", photo,
-                                       style=job.get("style"), highlight=job.get("highlight"), host=host)
+                                       style=job.get("style"), highlight=job.get("highlight"), host=host,
+                                       own_picture=bool(job.get("image")))
         try:
             youtube.thumbnails().set(videoId=vid, media_body=MediaFileUpload(str(thumb))).execute()
             job["done"] = True
