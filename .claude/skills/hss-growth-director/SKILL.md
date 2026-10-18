@@ -69,20 +69,27 @@ Shorts, you must follow these operational rules for every single upload:
 - Videos are auto-scheduled by the daily check (owner's standing permission, Oct 17) once the corner
   presenter is confirmed.
 
-## Decisions on clashes
+## Decisions on clashes (DECIDED by the owner, Oct 18, 2026: "keep your suggestion")
 
-Listed to the owner on Oct 18, 2026, with suggestions. **Status: waiting for the owner's decision.**
-Update each line when the owner decides.
+1. Titles: main title under 50 characters; "(Part n/5)" is added after it (about 61 total). DONE (packaging.py)
+2. 5 title/thumbnail combos are written daily; the best valid one is used automatically; all 5 are shown in
+   the daily message (owner may swap in Studio / Test & Compare). DONE (history entry "packages", "chosen")
+3. Ending: a 20-second bridge to the most helpful related video (previous part or best match), then one short
+   series/subscribe line. No "thanks for watching" anywhere (comments too). The spoken educational-only line
+   stays. DONE (growth.apply bridge, yt_comments v2)
+4. Visual directions live only in heading/points/footage_query; brackets are stripped from narration. DONE
+5. Voice cues (ellipses/dashes, more expression): A/B test first (voice-ab.yml); switch only if the owner
+   prefers B. Until then narration uses commas and periods only. IN TEST
+6. Short 1 = infinite loop (loop_end leads back into the hook, no ending card, same file on Instagram/Facebook);
+   Short 2 keeps the full-video ending. New shot about every 3 seconds. DONE (shorts2, social.short1_loop)
+7. Questions: open, personal, engaging; never inviting arguments about medical facts, vaccines or treatments. DONE
+8. Power words: strong but accurate; the title must match the video (fact check). DONE
+9. Open loop around 60 s; subscribe ask after ~300 words (about 2 minutes). DONE (growth.subscribe_after_words)
+10. Description: 2 keyword lines first, then "Watch next", then the series line. DONE (finish_description)
+11. ONE pinned comment per video: question first, then links (Shorts: full-video link first). The separate
+    question comment from the Instagram/Facebook post is off. DONE (yt_comments, social.json comment=None)
+12. Retention rewrite of bank scripts at render time + budget fact check (falls back to the original script
+    if the check rejects it). DONE (main.py, growth.retention)
 
-1. Titles < 50 chars vs "(Part n/5)" suffix. Suggested: main title < 50, suffix after it (about 61 total). PENDING
-2. 5 title/thumbnail combos vs auto-scheduling. Suggested: write 5, pick the best automatically, show all 5 in the daily message. PENDING
-3. 20-second bridge ending, no "thanks for watching". Suggested: bridge to the most helpful related video; remove "Thanks for watching" from comments; keep the short educational-only line. PENDING
-4. [Bracketed] visual prompts would be spoken by the voice. Suggested: keep visual directions in the separate footage field, never in narration. PENDING
-5. Ellipses/dashes/brackets for the cloned voice (dashes made odd sounds before). Suggested: make a voice test first, switch only if it sounds better. PENDING
-6. Shorts infinite loop vs "IN THE FULL VIDEO" ending. Suggested: Short 1 loops, Short 2 keeps the full-video ending; cut every ~3 seconds. PENDING
-7. "Highly polarizing" questions on a health channel. Suggested: open, personal questions, never inviting medical-misinformation arguments. PENDING
-8. High-emotion power words vs YouTube health rules. Suggested: strong but accurate words; the title must match the video. PENDING
-9. Narrative bridge at 60 s vs early subscribe ask. Suggested: open loop at 60 s, subscribe ask moves to about 2 minutes. PENDING
-10. Description first 2 lines = keywords (series line moves to line 3). PENDING
-11. One pinned comment: the question first, links below (merge the two channel comments). PENDING
-12. Retention rewrite of the 49 bank scripts at render time (+ fact check): a few cents per video. PENDING
+Daily thumbnail prompt: use the day's chosen package from history.json ("chosen": thumbnail_scene, max 3
+visual elements; thumbnail_text max 3 words, never repeating the title). The host never holds the object.
