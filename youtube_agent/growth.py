@@ -96,22 +96,24 @@ def next_episode(history: list[dict], bank: list[Path], cfg: dict) -> Episode | 
     return Episode(series, n, total, files[0], _topic(rest[upcoming][0]) if upcoming else None, upcoming)
 
 
-def _mid_index(scenes) -> int:
-    """The scene ending about 40-60 seconds in (roughly 100-150 spoken words), never the hook or the outro."""
+def _mid_index(scenes, after_words: int = 100) -> int:
+    """The scene ending after about `after_words` spoken words (100 = 40-60 s, 300 = about 2 minutes),
+    never the hook or the outro."""
     words = 0
     for i, s in enumerate(scenes[:-1]):
         words += len(s.narration.split())
-        if i >= 1 and words >= 100:
+        if i >= 1 and words >= after_words:
             return i
     return min(1, len(scenes) - 2)
 
 
-def apply(plan, ep: Episode | None, day: int) -> str | None:
-    """Adds the series part, the early subscribe line and the next-part teaser to the plan. Returns the line
-    added mid-video (so the second Short, cut from a middle scene, can leave it out)."""
+def apply(plan, ep: Episode | None, day: int, bridge: str | None = None, subscribe_after: int = 100) -> str | None:
+    """Adds the series part, the subscribe line and the ending to the plan. The ending is the next-part teaser,
+    or (bridge given) a 20-second bridge to a related video followed by one short line about the next part.
+    Returns the line added mid-video (so the second Short, cut from a middle scene, can leave it out)."""
     mid = None
     if ep and len(plan.scenes) >= 3:
-        i = _mid_index(plan.scenes)
+        i = _mid_index(plan.scenes, subscribe_after)
         if "subscribe" not in plan.scenes[i].narration.lower():
             mid = MID_LINES[day % len(MID_LINES)].format(n=ep.n, total=ep.total, series=ep.series)
             plan.scenes[i].narration = f"{plan.scenes[i].narration.rstrip()} {mid}"
@@ -129,6 +131,11 @@ def apply(plan, ep: Episode | None, day: int) -> str | None:
         else:
             teaser = "Subscribe to Health Support Studio for a new health video every day."
             top = f"📌 {ep.series}: part {ep.n} of {ep.total}."
+        if bridge:  # no goodbye: the bridge sends viewers on; the series gets one short line
+            nxt = (f"Part {ep.n + 1} is next in this series. Subscribe so it finds you." if ep.next_topic and
+                   not ep.next_series else f"A brand new series, {ep.next_series}, starts next. Subscribe so "
+                   "you don't miss it." if ep.next_series else "Subscribe for a new health video every day.")
+            teaser = f"{bridge} {nxt}"
         outro = plan.scenes[-1]
         sentences = re.split(r"(?<=[.!?])\s+", outro.narration.strip())
         outro.narration = " ".join([s for s in sentences if "subscribe" not in s.lower()] + [teaser])

@@ -64,6 +64,10 @@ channel:
 growth:
   enabled: true
   parts: 5
+  # The owner's growth rules (.claude/skills/hss-growth-director): 5 title/thumbnail packages, 15-second hook,
+  # open loop at 60 s, 20-second bridge ending, keyword description lines, one pinned question.
+  retention: true
+  subscribe_after_words: 300   # the subscribe ask comes after the first payoff (about 2 minutes in)
   # Which series starts next (the first one with 5 scripts left). Urgent, common worries get the most views
   # (CPR, flu shot, Benadryl, sepsis); "Caring for Older Adults" first because Part 5 of the last series
   # already announced it.

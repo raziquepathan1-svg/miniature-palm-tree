@@ -131,7 +131,7 @@ def _git_push_preview(src: Path, dest: str, tree: Path) -> str:
 
 
 def make_one_video(config: dict, history: list[dict], topic: str | None, dry_run: bool, script_only: bool) -> None:
-    from . import growth, planner
+    from . import growth, packaging, planner
 
     # A script from the bank is used first (free); otherwise Claude writes one through the API.
     # The bank is used in 5-part series: one theme for 5 days in a row, then the next series.
@@ -161,17 +161,32 @@ def make_one_video(config: dict, history: list[dict], topic: str | None, dry_run
 
     sources: list[str] = bank_data.get("sources", [])
     fact_issues: list[str] = []
-    if not bank_file and config["video"].get("fact_check", True):
+    gcfg = config.get("growth") or {}
+    original = plan.model_copy(deep=True)
+    packaging.LAST = None
+    if gcfg.get("retention") and video_cfg.get("format") != "shorts":
+        try:  # the owner's growth rules: 5 packages, hook, open loop, bridge ending (re-checked below)
+            print("    Packaging and retention rewrite (titles, hook, open loop, bridge ending)...")
+            packaging.improve(plan, episode, history, config["channel"])
+            print(f"    Packages: {[p['title'] for p in packaging.LAST['packages']]}")
+        except Exception as e:
+            print(f"    (Packaging skipped: {e})")
+            plan, packaging.LAST = original, None
+    rewritten = packaging.LAST is not None
+    if (not bank_file or rewritten) and config["video"].get("fact_check", True):
         from . import fact_check
 
         print("2/6 Fact-checking every health claim against trusted sources...")
         # The companion Short is checked together with the main script.
         review = fact_check.fact_check(plan.topic, plan.scenes + plan.short_scenes,
-                                       config["video"].get("fact_check_searches", 6))
+                                       0 if bank_file else config["video"].get("fact_check_searches", 6))
         (workdir / "fact_check.json").write_text(review.model_dump_json(indent=2))
         for issue in review.issues:
             print(f"    fixed: {issue}")
-        if not review.approved:
+        if not review.approved and bank_file:  # the rewrite broke something: back to the checked bank script
+            print("    Rewrite not approved by the fact check: using the original script.")
+            plan, packaging.LAST = original, None
+        elif not review.approved:
             print(f"    NOT APPROVED - video skipped. Details in {workdir / 'fact_check.json'}")
             if not script_only:  # remember it so the agent moves on to another topic
                 history.append({"date": dt.datetime.now().isoformat(timespec="seconds"),
@@ -179,14 +194,18 @@ def make_one_video(config: dict, history: list[dict], topic: str | None, dry_run
                                 "status": "rejected_by_fact_check"})
                 save_history(history)
             return
-        checked = review.apply_to(plan.scenes + plan.short_scenes)
-        plan.scenes, plan.short_scenes = checked[:len(plan.scenes)], checked[len(plan.scenes):]
-        sources = review.sources
-        fact_issues = review.issues
+        if review.approved:
+            checked = review.apply_to(plan.scenes + plan.short_scenes)
+            plan.scenes, plan.short_scenes = checked[:len(plan.scenes)], checked[len(plan.scenes):]
+            sources = review.sources or sources
+            fact_issues = review.issues
 
     if video_cfg.get("format") == "shorts":
         episode = None
-    growth.LAST_MID = growth.apply(plan, episode, len(history))
+    growth.LAST_MID = growth.apply(plan, episode, len(history),
+                                   bridge=(packaging.LAST or {}).get("bridge") or None,
+                                   subscribe_after=int(gcfg.get("subscribe_after_words", 100)))
+    packaging.finish_description(plan)
     growth.LAST_EP = episode
     if episode:
         print(f"    Series: {episode.series}, part {episode.n} of {episode.total} | next: "
@@ -256,6 +275,9 @@ def make_one_video(config: dict, history: list[dict], topic: str | None, dry_run
         entry["script_file"] = bank_file.name
     if episode:
         entry["series"], entry["episode"] = episode.series, episode.n
+    if packaging.LAST:  # the 5 title/thumbnail options, the pinned question and the bridge video
+        entry.update({k: packaging.LAST[k] for k in ("packages", "chosen", "pin_question", "pin_questions",
+                                                     "bridge_id")})
     if dry_run:
         print(f"6/6 Dry run - not uploading. Files in {workdir}")
         return
@@ -337,7 +359,9 @@ def make_one_video(config: dict, history: list[dict], topic: str | None, dry_run
                    f"someone who needs it ❤️")
         (social_dir / "social.json").write_text(json.dumps({
             "youtube_id": video_id, "title": title, "caption": plan.short_caption,
-            "publish_at": yt.get("publish_at"), "comment": comment,
+            "publish_at": yt.get("publish_at"),
+            # growth.retention: the question goes into the one pinned comment (yt_comments), not a second one
+            "comment": None if (config.get("growth") or {}).get("retention") else comment,
             "style": config.get("social", {}).get("style", "native"),
         }, indent=2))
 
