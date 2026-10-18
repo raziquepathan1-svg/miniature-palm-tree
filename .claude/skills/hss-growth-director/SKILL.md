@@ -78,8 +78,8 @@ Shorts, you must follow these operational rules for every single upload:
    series/subscribe line. No "thanks for watching" anywhere (comments too). The spoken educational-only line
    stays. DONE (growth.apply bridge, yt_comments v2)
 4. Visual directions live only in heading/points/footage_query; brackets are stripped from narration. DONE
-5. Voice cues (ellipses/dashes, more expression): A/B test first (voice-ab.yml); switch only if the owner
-   prefers B. Until then narration uses commas and periods only. IN TEST
+5. Voice cues: tested Oct 18 (voice-ab.yml). The owner chose A (plain): narration uses commas and periods
+   only, no ellipses/dashes/brackets; expression stays at the config value. DECIDED
 6. Short 1 = infinite loop (loop_end leads back into the hook, no ending card, same file on Instagram/Facebook);
    Short 2 keeps the full-video ending. New shot about every 3 seconds. DONE (shorts2, social.short1_loop)
 7. Questions: open, personal, engaging; never inviting arguments about medical facts, vaccines or treatments. DONE
