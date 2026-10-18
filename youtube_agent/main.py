@@ -561,7 +561,8 @@ def make_social_short(plan, final: Path, video_cfg: dict, config: dict, channel_
             series, part = (ep.series, f"{ep.n}/{ep.total}") if ep else (None, None)
             print("    Making the new-style Short (and its Instagram/Facebook version)...")
             script, yt_short, ig_reel = shorts2.make_pair(plan, config.get("voice", {}), workdir / "short1",
-                                                          series, part, dt.date.today().toordinal())
+                                                          series, part, dt.date.today().toordinal(),
+                                                          loop=bool(config["social"].get("short1_loop")))
             shutil.copyfile(yt_short, social_dir / "short.mp4")
             shutil.copyfile(ig_reel, social_dir / "reel.mp4")
             plan.short_title = f"{script.title[:55]} #Shorts"

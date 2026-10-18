@@ -42,9 +42,14 @@ class ShortScript(BaseModel):
                                "this Short does not cover, e.g. 'the 3 home test options'")
     title: str = Field(description="YouTube Shorts title, max 60 characters, a curiosity question or bold claim "
                        "with the topic keyword, no hashtags")
+    loop_end: str = Field(default="", description="Loop Shorts only: the last spoken words (max 12) that flow "
+                          "straight back into hook_line, so the restart sounds like one continuous sentence "
+                          "(e.g. hook 'Most people take this pill wrong.' and loop_end 'And that is exactly why'). "
+                          "Empty for other Shorts.")
 
 
-def write_script(plan, series: str | None = None, part: str | None = None, avoid: str | None = None) -> ShortScript:
+def write_script(plan, series: str | None = None, part: str | None = None, avoid: str | None = None,
+                 loop: bool = False) -> ShortScript:
     """Claude writes the Short from the (already fact-checked) full script, using only facts in it."""
     import anthropic
 
@@ -53,6 +58,10 @@ def write_script(plan, series: str | None = None, part: str | None = None, avoid
     source = "\n".join(f"- {s.heading}: {s.narration}" for s in plan.scenes)
     second = (f"\n- This is the second Short about this video: use a DIFFERENT angle, hook and takeaway than this "
               f"one: {avoid}") if avoid else ""
+    loop_rule = ("\n- INFINITE LOOP: this Short has no ending card. Write loop_end: the final words that lead straight "
+                 "back into hook_line, so when the video restarts it sounds like one continuous thought and people "
+                 "watch it again. The hook must work as the first 1.5 seconds AND as the continuation of loop_end."
+                 ) if loop else ""
     prompt = f"""You write YouTube Shorts for Health Support Studio, a calm, trustworthy health-education
 channel for US adults. Never call the host a doctor or nurse; never invent personal stories.
 
@@ -69,7 +78,8 @@ Rules:
 - Then deliver ONE complete, useful answer in short beats, so the viewer learns something real.
 - Short sentences, everyday words, American English. Write numbers out as they are spoken.
 - The preview names 3 things the full video covers that this Short does not, so viewers want to watch it.
-- Do not mention YouTube, subscribing or the channel; that is added automatically.{second}"""
+- Change the focus every sentence (about every 3 seconds): blistering pace, no filler, never "hey guys" or an intro.
+- Do not mention YouTube, subscribing or the channel; that is added automatically.{second}{loop_rule}"""
     client = anthropic.Anthropic()
     response = client.beta.messages.parse(model=MODEL, max_tokens=4000, **_fallback_kwargs(),
                                           messages=[{"role": "user", "content": prompt}], output_format=ShortScript)
@@ -91,6 +101,7 @@ def _clean(text: str) -> str:
 def clean_script(script: ShortScript) -> ShortScript:
     script.hook_text, script.hook_line, script.title = map(_clean, (script.hook_text, script.hook_line, script.title))
     script.preview = [_clean(p) for p in script.preview]
+    script.loop_end = _clean(script.loop_end)
     for b in script.beats:
         b.narration, b.label = _clean(b.narration), _clean(b.label)
     return script
@@ -249,11 +260,13 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 
 # ---------------------------------------------------------------- rendering
 def _segment(bg: Path | None, cards: list[Path], wav: Path, ass: Path | None, duration: float, out: Path,
-             zoom: bool = True, blur: bool = False, cut_at: float | None = None, bg2: Path | None = None) -> Path:
-    """A background clip (slow push-in, optional second clip from cut_at), card PNGs on top, captions, audio."""
+             zoom: bool = True, blur: bool = False, cut_at: float | None = None, bg2: Path | None = None,
+             more: list | None = None) -> Path:
+    """Background clips (slow push-in; a second clip from cut_at, or several clips in equal parts), card PNGs on
+    top, captions, audio."""
     inputs, chain = [], []
     n = 0
-    clips = [c for c in (bg, bg2) if c]
+    clips = [c for c in [bg, bg2, *(more or [])] if c]
     if not clips:
         grad = visuals.render_background((W, H), out.with_suffix(".bg.png"))
         clips = [grad]
@@ -278,6 +291,11 @@ def _segment(bg: Path | None, cards: list[Path], wav: Path, ass: Path | None, du
     if len(clips) == 2 and cut_at:
         chain.append(f"[b0]trim=0:{cut_at:.2f},setpts=PTS-STARTPTS[c0];"
                      f"[b1]trim=0:{duration - cut_at + 0.1:.2f},setpts=PTS-STARTPTS[c1];[c0][c1]concat=n=2:v=1:a=0[v0]")
+    elif len(clips) > 1:  # a new shot every few seconds
+        seg = duration / len(clips)
+        chain += [f"[b{i}]trim=0:{seg + (0.1 if i == len(clips) - 1 else 0):.2f},setpts=PTS-STARTPTS[c{i}]"
+                  for i in range(len(clips))]
+        chain.append("".join(f"[c{i}]" for i in range(len(clips))) + f"concat=n={len(clips)}:v=1:a=0[v0]")
     else:
         chain.append("[b0]null[v0]")
     n = len(clips)
@@ -327,15 +345,26 @@ def build(script: ShortScript, voice_cfg: dict, workdir: Path, series: str | Non
     for i, b in enumerate(script.beats, 1):
         wav = workdir / f"{i:02d}.wav"
         dur, caps = voice.narrate_scene(b.narration, voice_cfg, wav)
-        c1 = visuals.fetch_footage(b.footage_query, (W, H), workdir / f"{i:02d}a.mp4", used)
-        c2 = visuals.fetch_footage(b.footage_query, (W, H), workdir / f"{i:02d}b.mp4", used) if dur > 5 else None
-        if not c1:
-            c1 = _host_clip(day + i)
-        parts.append(_segment(c1, [label_card(b.label, accent, workdir / f"{i:02d}.png")], wav,
+        want = max(1, min(4, round(dur / 3)))  # a new shot about every 3 seconds
+        shots = [visuals.fetch_footage(b.footage_query, (W, H), workdir / f"{i:02d}{chr(97 + j)}.mp4", used)
+                 for j in range(want)]
+        shots = [c for c in shots if c] or [_host_clip(day + i)]
+        parts.append(_segment(shots[0], [label_card(b.label, accent, workdir / f"{i:02d}.png")], wav,
                               word_captions(caps, workdir / f"{i:02d}.ass"), dur, workdir / f"{i:02d}.mp4",
-                              cut_at=dur / 2 if c2 else None, bg2=c2))
-    # 3. what the full video adds + where to find it
+                              more=shots[1:]))
     k = len(script.beats) + 1
+    if ending == "loop":  # 3. no ending card: the last words lead straight back into the hook (same shot)
+        if script.loop_end:
+            wav = workdir / f"{k:02d}.wav"
+            dur, caps = voice.narrate_scene(script.loop_end, voice_cfg, wav)
+            parts.append(_segment(_host_clip(day), [], wav, word_captions(caps, workdir / f"{k:02d}.ass", y=1560),
+                                  dur, workdir / f"{k:02d}.mp4", zoom=False))
+        joined = visuals.concat(parts, workdir / "joined.mp4")
+        out = workdir / "short.mp4"
+        visuals._run(["-y", "-i", str(joined), "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-r",
+                      str(FPS), "-c:a", "aac", "-b:a", "160k", "-ar", "48000", "-movflags", "+faststart", str(out)])
+        return out
+    # 3. what the full video adds + where to find it
     preview = "In the full video: " + ", ".join(script.preview[:-1]) + f", and {script.preview[-1]}."
     if ending == "youtube":
         footer = "FULL VIDEO: LINK ABOVE THE TITLE"
@@ -358,11 +387,15 @@ def build(script: ShortScript, voice_cfg: dict, workdir: Path, series: str | Non
 
 
 def make_pair(plan, voice_cfg: dict, workdir: Path, series: str | None, part: str | None, day: int,
-              avoid: str | None = None) -> tuple[ShortScript, Path, Path]:
-    """Script (fact-checked) + the YouTube Short + the Instagram/Facebook version (same voice takes)."""
-    script = clean_script(check_facts(clean_script(write_script(plan, series, part, avoid)), plan.topic))
+              avoid: str | None = None, loop: bool = False) -> tuple[ShortScript, Path, Path]:
+    """Script (fact-checked) + the YouTube Short + the Instagram/Facebook version (same voice takes).
+    loop=True: an infinite-loop Short (no ending card), the same file on every platform."""
+    script = clean_script(check_facts(clean_script(write_script(plan, series, part, avoid, loop)), plan.topic))
     (workdir / "short_script.json").parent.mkdir(parents=True, exist_ok=True)
     (workdir / "short_script.json").write_text(script.model_dump_json(indent=2))
+    if loop and script.loop_end:
+        looped = build(script, voice_cfg, workdir / "yt", series, part, "loop", day)
+        return script, looped, looped
     youtube = build(script, voice_cfg, workdir / "yt", series, part, "youtube", day)
     follow = build(script, voice_cfg, workdir / "ig", series, part, "follow", day)
     return script, youtube, follow
