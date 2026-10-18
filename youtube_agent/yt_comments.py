@@ -1,11 +1,15 @@
-"""A comment from the channel on every public video and Short (pin it in Studio when you like):
-- Shorts: a link to their full video, and the subscribe link.
-- Full videos: the series playlist and the previous part (series videos), and the subscribe link.
+"""ONE comment from the channel on every public video and Short, to pin in Studio:
+- Full videos: an open question first (the day's pin question), then the related video, the series playlist,
+  the previous part and the subscribe link. No "thanks for watching".
+- Shorts: the full-video link first, then the question.
+Comments posted in the older format are updated to the new one.
 Only public videos get one (comments on private/scheduled videos fail), each video only once
 (youtube_agent/comments_posted.json remembers them).   python -m youtube_agent.yt_comments"""
 
+import datetime as dt
 import json
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 from googleapiclient.discovery import build
 
@@ -14,7 +18,16 @@ from .uploader import _credentials
 HERE = Path(__file__).parent
 HISTORY = HERE / "history.json"
 DONE = HERE / "comments_posted.json"
-MAX_PER_RUN = 40  # 50 quota units each; the daily upload needs about 5,000 of the 10,000
+MAX_PER_DAY = 25  # 50 quota units each; YouTube's day (Pacific time) also carries the ~5,000-unit daily upload
+VERSION = 2  # bump when the wording changes: older comments are updated
+
+
+def _question(e: dict) -> str:
+    q = e.get("pin_question")
+    if not q:
+        topic = (e.get("topic") or "this").split(":")[0].strip().lower()
+        q = f"What's one thing about {topic} you wish someone had told you sooner?"
+    return f"💬 {q} Tell us below 👇"
 
 
 def _public(yt, ids: list[str]) -> set[str]:
@@ -42,7 +55,9 @@ def texts(history: list[dict], sub: str, playlists: dict[str, str]) -> dict[str,
         vid = e.get("youtube_id")
         if not vid:
             continue
-        lines = ["📌 Thanks for watching!"]
+        lines = [_question(e), ""]
+        if e.get("bridge_id"):
+            lines.append(f"▶ Watch next: https://youtu.be/{e['bridge_id']}")
         series, n = e.get("series"), e.get("episode")
         if series and n:
             lines.append(f"This is part {n} of our {series} series.")
@@ -60,7 +75,7 @@ def texts(history: list[dict], sub: str, playlists: dict[str, str]) -> dict[str,
         out[vid] = "\n".join(lines)
         for key in ("short_youtube_id", "short2_youtube_id"):
             if e.get(key):
-                out[e[key]] = (f"▶ Watch the full video here: https://youtu.be/{vid}\n"
+                out[e[key]] = (f"▶ Watch the full video here: https://youtu.be/{vid}\n\n{_question(e)}\n\n"
                                f"🔔 Subscribe for one simple health tip every day: {sub}")
     return out
 
@@ -71,23 +86,38 @@ def main() -> None:
     sub = f"https://www.youtube.com/channel/{channel}?sub_confirmation=1"
     history = json.loads(HISTORY.read_text())
     done = json.loads(DONE.read_text()) if DONE.exists() else {}
-    todo = {v: t for v, t in texts(history, sub, _playlists(yt)).items() if v not in done}
+    today = dt.datetime.now(ZoneInfo("America/Los_Angeles")).date().isoformat()  # YouTube's quota day
+    budget = done.pop("_budget", {})
+    used = budget.get("used", 0) if budget.get("day") == today else 0
+    def version(v):
+        return v.get("v", 1) if isinstance(v, dict) else 1
+
+    texts_now = texts(history, sub, _playlists(yt))
+    new = [v for v in texts_now if v not in done]
+    todo = {v: texts_now[v] for v in new + [v for v in texts_now if v in done and version(done[v]) < VERSION]}
     public = _public(yt, list(todo))
     posted = 0
     for vid, text in todo.items():
         if vid not in public:
             continue
-        if posted >= MAX_PER_RUN:
-            print("  (Enough for this run; the rest go next time.)")
+        if used + posted >= MAX_PER_DAY:
+            print("  (Today's comment budget is used; the rest go tomorrow.)")
             break
         try:
-            r = yt.commentThreads().insert(part="snippet", body={"snippet": {
-                "videoId": vid, "topLevelComment": {"snippet": {"textOriginal": text}}}}).execute()
-            done[vid] = r["id"]
+            old = done.get(vid)
+            if old:  # the thread id is also its top-level comment's id: rewrite it in the new format
+                cid = old["id"] if isinstance(old, dict) else old
+                yt.comments().update(part="snippet", body={"id": cid, "snippet": {"textOriginal": text}}).execute()
+                print(f"  Updated the comment on https://youtu.be/{vid}")
+            else:
+                cid = yt.commentThreads().insert(part="snippet", body={"snippet": {
+                    "videoId": vid, "topLevelComment": {"snippet": {"textOriginal": text}}}}).execute()["id"]
+                print(f"  Commented on https://youtu.be/{vid}")
+            done[vid] = {"id": cid, "v": VERSION}
             posted += 1
-            print(f"  Commented on https://youtu.be/{vid}")
         except Exception as e:
             print(f"  (Could not comment on {vid}: {e})")
+    done["_budget"] = {"day": today, "used": used + posted}
     DONE.write_text(json.dumps(done, indent=2) + "\n")
     print(f"Posted {posted} comments; {len(todo) - posted} waiting (not public yet or next run).")
 
