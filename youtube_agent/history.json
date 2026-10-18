@@ -266,5 +266,21 @@
     "short2_youtube_id": "A1JEnPLtHIo",
     "preview": "previews/ty-M5_xQGVA.mp4",
     "publish_at": "2026-10-18T16:00:00Z"
+  },
+  {
+    "date": "2026-10-18T07:03:51",
+    "topic": "Caring for a loved one after hospital discharge",
+    "requested_topic": "Caring for a loved one after hospital discharge",
+    "title": "Bringing a Loved One Home From the Hospital? Watch This (Part 1/5)",
+    "style": "Explainer",
+    "script_file": "017-after-hospital-discharge.yaml",
+    "series": "Caring for Older Adults",
+    "episode": 1,
+    "planned_publish_at": "2026-10-19T16:00:00Z",
+    "awaiting_approval": true,
+    "youtube_id": "ynXYX0XwDlU",
+    "short_youtube_id": "0Zg0rxdo5J8",
+    "short2_youtube_id": "vVIkLP_7nUE",
+    "preview": "previews/ynXYX0XwDlU.mp4"
   }
 ]
