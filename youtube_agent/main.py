@@ -178,8 +178,14 @@ def make_one_video(config: dict, history: list[dict], topic: str | None, dry_run
 
         print("2/6 Fact-checking every health claim against trusted sources...")
         # The companion Short is checked together with the main script.
-        review = fact_check.fact_check(plan.topic, plan.scenes + plan.short_scenes,
-                                       0 if bank_file else config["video"].get("fact_check_searches", 6))
+        try:
+            review = fact_check.fact_check(plan.topic, plan.scenes + plan.short_scenes,
+                                           0 if bank_file else config["video"].get("fact_check_searches", 6))
+        except Exception as e:
+            if not bank_file:
+                raise
+            print(f"    (Fact check of the rewrite failed: {e}; using the original checked script.)")
+            review = fact_check.Review(approved=False, issues=[], corrected_scenes=[], sources=[])
         (workdir / "fact_check.json").write_text(review.model_dump_json(indent=2))
         for issue in review.issues:
             print(f"    fixed: {issue}")
