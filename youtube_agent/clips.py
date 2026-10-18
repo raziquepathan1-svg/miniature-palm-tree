@@ -393,6 +393,20 @@ def finish(body: Path, overlays: list[tuple[Path, float | tuple[float, float] | 
 # ---------------------------------------------------------------- scripts: a new one for every Short
 PLACE_WORDS = ("rooftop", "backyard", "garden", "terrace", "balcony", "garage", "kitchen", "bathroom", "bedroom",
                "living room", "house", "car", "bike", "porch", "yard", "attic", "basement", "pool", "room")
+# clip tools cut long file names ("Workers_building_modern_spa_bath…"), so short stems count too
+PLACE_STEMS = {"bath": "bathroom", "spa": "bathroom", "kitch": "kitchen", "bedr": "bedroom", "garag": "garage",
+               "basem": "basement", "cinema": "basement", "rooft": "rooftop", "backy": "backyard", "pond": "garden",
+               "patio": "backyard", "living": "living room", "attic": "attic", "porch": "porch", "pool": "pool"}
+
+
+def _place(hint: str) -> str:
+    low = hint.lower()
+    found = next((w for w in PLACE_WORDS if w in low), None)
+    if found and found not in ("room", "house"):
+        return found
+    return next((v for k, v in PLACE_STEMS.items() if k in low), found or "space")
+
+
 WORK = {  # what the crew does, in order (three are picked per Short)
     "rooftop": ["swept away years of trash", "pressure-washed the old concrete", "laid a beautiful new floor",
                 "added fresh green plants", "hung warm lights overhead", "brought in stunning furniture"],
@@ -488,7 +502,7 @@ def describe(before: Path, after: Path, names: list[str], cfg: dict, rng: random
     without it, a fresh script is put together from many lines so no two Shorts sound the same."""
     hint = " / ".join(re.sub(r"[_-]+", " ", re.sub(r"[_-]?20\d{12}.*$", "", re.sub(r"^[0-9a-f]{8}-", "", n))).strip()
                       for n in names)
-    place = next((w for w in PLACE_WORDS if w in hint.lower()), "space")
+    place = _place(hint)
     if os.environ.get("GEMINI_API_KEY", "").strip():
         try:
             data = _gemini_describe(before, after, hint, cfg)
