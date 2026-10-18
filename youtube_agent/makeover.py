@@ -398,7 +398,7 @@ def _duration(path: Path) -> float:
 
 
 # ---------------------------------------------------------------- thumbnail
-def make_thumbnail(before: Path, after: Path, top: str, bottom: str, out: Path) -> Path:
+def make_thumbnail(before: Path, after: Path, top: str, bottom: str, out: Path, labels: bool = True) -> Path:
     """1280x720: before on the left, after on the right, diagonal gold split, big labels."""
     TW, TH = 1280, 720
     b = visuals._cover(Image.open(before).convert("RGB"), TW, TH)
@@ -411,7 +411,7 @@ def make_thumbnail(before: Path, after: Path, top: str, bottom: str, out: Path) 
     img = Image.composite(a, b, mask).convert("RGBA")
     d = ImageDraw.Draw(img)
     d.line([(TW * 0.56, 0), (TW * 0.44, TH)], fill=(253, 230, 138), width=12)
-    for text, x, color in (("BEFORE", 40, (87, 83, 78)), ("AFTER", TW - 300, (13, 148, 136))):
+    for text, x, color in (("BEFORE", 40, (87, 83, 78)), ("AFTER", TW - 300, (13, 148, 136))) if labels else ():
         f = visuals.font(54, 800)
         tw = d.textlength(text, font=f)
         d.rounded_rectangle((x, 36, x + tw + 50, 116), 40, fill=(*color, 245))

@@ -77,29 +77,29 @@ Shorts, you must follow these operational rules for every single upload:
 
 ## Decisions on clashes
 
-Listed to the owner on Oct 18, 2026, with suggestions. **Status: waiting for the owner's decision.**
-Update each line when the owner decides.
+Listed to the owner on Oct 18, 2026. **The owner chose all suggestions (Oct 18), so there is no open clash.**
+They are built into `youtube_agent/clips.py` and the channel config; follow them as the rule.
 
 1. Shorts "Infinite Loop Hook" vs the current ending ("DAY N+1 IS NEXT" end card + before/after opening).
    A seamless loop means no end card. Suggested: keep the end card, but make the last spoken line lead into
-   the first ("...and nobody wanted it." -> opening "Nobody wanted this kitchen"). PENDING
+   the first ("...and nobody wanted it." -> opening "Nobody wanted this kitchen"). DECIDED: suggestion adopted.
 2. Thumbnail max 3 words, never repeat the title vs current thumbnail "ABANDONED to LUXURY KITCHEN" + BEFORE/AFTER
    labels while the title says the same. Suggested: thumbnail text = 2-3 words that are NOT in the title
-   (e.g. "WAIT FOR IT", "$0 → $1M?"), drop the word labels, keep the before/after split (2 visuals + text). PENDING
+   (e.g. "WAIT FOR IT", "$0 → $1M?"), drop the word labels, keep the before/after split (2 visuals + text). DECIDED: suggestion adopted.
 3. Titles under 50 characters vs "Day N:" prefix (e.g. "Day 18: Abandoned Kitchen → 5-Star Luxury in 30 Seconds"
-   is 56). Suggested: shorter templates so the whole title incl. "Day N:" stays under 50. PENDING
+   is 56). Suggested: shorter templates so the whole title incl. "Day N:" stays under 50. DECIDED: suggestion adopted.
 4. Emotion cues for the cloned voice: brackets would be read out loud. Suggested: only "..." and "—" and short
-   sentences; never [brackets] in narration; test once first. PENDING
+   sentences; never [brackets] in narration; test once first. DECIDED: suggestion adopted; first used only in the loop line "And it all started... right here." — use more "..." once the owner says it sounds good.
 5. Long-form rules (15 s promise, [bracketed] AI video prompts, 60 s bridge, resets every 45 s) vs compilations
    that are just Shorts joined, with no script. Suggested: give compilations a short narrated intro that
    validates the thumbnail in 15 s, a "the craziest one is #6" bridge at 60 s, and a title card between
-   makeovers as the 45 s reset. PENDING
+   makeovers as the 45 s reset. DECIDED: suggestion adopted.
 6. Pinned question "open-ended" vs current A-or-B vote (closed). Suggested: keep A-or-B (it drives replies and
-   picks the next makeover) and add one open question line under it. PENDING
+   picks the next makeover) and add one open question line under it. DECIDED: suggestion adopted.
 7. Description first 2 lines = broad keywords vs current caption first ("Day N of turning abandoned places
    into luxury..."). Suggested: line 1 keywords ("Abandoned kitchen makeover | before and after luxury
-   transformation"), line 2 the Day line. PENDING
+   transformation"), line 2 the Day line. DECIDED: suggestion adopted.
 8. 5 title/thumbnail combos per upload vs fully automatic posting. Suggested: generate 5, auto-pick the best,
-   and list all 5 in the run summary so the owner can swap in Studio. PENDING
+   and list all 5 in the run summary so the owner can swap in Studio. DECIDED: suggestion adopted.
 9. 20-second bridge ending to a previous video vs 35-second Shorts. Suggested: Shorts keep "Day N+1"; the
-   bridge ending is used in compilations ("the one that started it all..."). PENDING
+   bridge ending is used in compilations ("the one that started it all..."). DECIDED: suggestion adopted.

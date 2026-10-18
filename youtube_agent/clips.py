@@ -250,7 +250,7 @@ def _wrap(d, text: str, f, max_w: float) -> list[str]:
     return lines + [line]
 
 
-def split_card(before: Path, after: Path, headline: str, out: Path) -> Path:
+def split_card(before: Path, after: Path, headline: str, out: Path, labels: bool = True) -> Path:
     """Vertical 1080x1920 card: the mess on top, the finished space below, a gold divider and a big headline
     across the middle. Used as the first second of the Short (stops the scroll) and as its thumbnail."""
     from PIL import ImageDraw, ImageEnhance
@@ -277,7 +277,7 @@ def split_card(before: Path, after: Path, headline: str, out: Path) -> Path:
         d.text(((w - lw) / 2, y), ln, font=f, fill=(255, 255, 255), stroke_width=6, stroke_fill=(0, 0, 0))
         y += int(size * 1.18)
     # labels kept clear of the phone's top bar and of YouTube's buttons and caption at the bottom
-    for text, y, color in (("BEFORE", 170, (87, 83, 78)), ("AFTER", top + band + 40, (13, 148, 136))):
+    for text, y, color in (("BEFORE", 170, (87, 83, 78)), ("AFTER", top + band + 40, (13, 148, 136))) if labels else ():
         f = visuals.font(64, 800)
         tw = d.textlength(text, font=f)
         d.rounded_rectangle(((w - tw) / 2 - 36, y, (w + tw) / 2 + 36, y + 104), 52, fill=(*color, 245))
@@ -455,6 +455,18 @@ CTAS = ["If you loved this, share it with a friend and subscribe for more. And l
         "we should restore next.",
         "Hit subscribe, share this with a friend, and drop a comment if you want more videos like this.",
         "Want more makeovers like this? Subscribe, share this video, and tell me in the comments."]
+TITLE_MAX = 50
+LOOP_LINE = "And it all started... right here."
+# thumbnail text: max 3 words, never words from the title
+THUMB_WORDS = ["WAIT FOR IT", "NO WAY", "SAME ROOM?", "WORTH IT?", "UNREAL", "RATE IT 1-10", "BIG MISTAKE?"]
+
+
+def _title_options(place: str, cfg: dict, rng: random.Random, n: int) -> list[str]:
+    opts = [t.replace("{Place}", place.title()).replace("{place}", place) for t in cfg.get("clip_titles") or []]
+    rng.shuffle(opts)
+    return opts[:n]
+
+
 # viewers vote for the next makeover in the pinned comment
 NEXT_PLACES = ["castle", "mansion", "cabin", "barn", "boat", "school bus", "church", "greenhouse", "treehouse",
                "lighthouse", "train car", "shed", "bathroom", "bedroom", "garden", "pool", "garage", "warehouse"]
@@ -539,7 +551,8 @@ def _gemini_describe(before: Path, after: Path, hint: str, cfg: dict) -> dict:
         '"tags" (8 lowercase YouTube tags), '
         '"narration" (what the host says over the video: 4-5 short spoken sentences, 55-70 words in total, '
         'friendly storytelling about the place being cleaned, rebuilt and revealed; only mention things you can '
-        'see in the two frames, never invent colors or materials; ending by asking viewers to '
+        'see in the two frames, never invent colors or materials; short punchy spoken sentences, use "..." '
+        'for dramatic pauses, never brackets or dashes; ending by asking viewers to '
         'share the video, subscribe, and say in the comments if they want more videos like this; plain words, '
         'no emoji, no numbers as digits). Do not claim it is a real project or real people. Every video needs '
         'a fresh script: do not reuse the wording of these earlier narrations: ' + " | ".join(_recent_scripts(5)))}]
@@ -588,9 +601,18 @@ def make_short(group: list[Path], workdir: Path, cfg: dict, rng: random.Random,
     before = frame(group[0], work / "before.jpg", last=False)
     after = frame(group[-1], work / "after.jpg", last=True)
     meta = describe(before, after, [p.name for p in group], cfg, rng)
+    place = _place(" ".join(p.name for p in group))
+    meta["place"] = place
     if day:  # one running series gives viewers a reason to follow
-        meta["title"] = meta["short_title"] = f"Day {day}: {meta['title']}"[:90]
+        meta["title"] = f"Day {day}: {meta['title']}"
+        if len(meta["title"]) > TITLE_MAX:
+            meta["title"] = f"Day {day}: Abandoned {place.title()} → Luxury 😍"
+        meta["short_title"] = meta["title"]
+        meta["alt_titles"] = [f"Day {day}: {t}" for t in _title_options(place, cfg, rng, 5)
+                              if len(f"Day {day}: {t}") <= TITLE_MAX and f"Day {day}: {t}" != meta["title"]][:4]
         meta["caption"] = f"Day {day} of turning abandoned places into luxury 🏚️➡️✨ {meta['caption']}"
+    # the last spoken words lead back into the first second, so the Short loops
+    meta["narration"] = f"{meta['narration'].rstrip()} {LOOP_LINE}"
     print(f"  Title: {meta['title']}")
 
     print(f"  Joining {len(group)} clips...")
@@ -625,7 +647,10 @@ def make_short(group: list[Path], workdir: Path, cfg: dict, rng: random.Random,
     if voice_cfg and cfg.get("narration", True) and meta.get("narration"):
         print("  Recording the narration...")
         speech = narrate(meta["narration"], voice_cfg, work / "narration.wav", probe(full)[0] - 1.5)
-    thumb = split_card(before, after, f"{meta['before']} to {meta['after']}", social / "thumbnail.jpg")
+    # thumbnail: the picture tells before/after; 2-3 words that are not in the title
+    words = [w for w in THUMB_WORDS if not set(w.lower().split()) & set(meta["title"].lower().split())] or THUMB_WORDS
+    meta["thumb_text"] = rng.choice(words)
+    thumb = split_card(before, after, meta["thumb_text"], social / "thumbnail.jpg", labels=False)
     overlays = [(hook, (1.1, 3.9)), (note, None)]
     mid = probe(full)[0] * 0.4
     overlays.append((follow_banner((SW, SH), work / "follow_v.png"), (mid, mid + 3.0)))
@@ -696,7 +721,9 @@ def process_inbox(config: dict, history: list[dict], dry_run: bool) -> int:
         publish_at = _next_slot(yt, history, "clip_short")
         yt["privacy"] = "private"
         yt["publish_at"] = publish_at.strftime("%Y-%m-%dT%H:%M:%SZ")
-        description = f"{meta['caption']}\n\n{hashtags}\n\n{_footer(config)}"
+        place = meta.get("place", "home")
+        keywords = f"Abandoned {place} makeover | before and after luxury {place} transformation"
+        description = f"{keywords}\n{meta['caption']}\n\n{hashtags}\n\n{_footer(config)}"
         print(f"  Uploading the Short (goes public {yt['publish_at']} UTC)...")
         video_id = uploader.upload_video(made["short"], made["thumbnail"], meta["short_title"][:90] + " #Shorts",
                                          description, tags + ["shorts"], yt, lang)
@@ -711,7 +738,11 @@ def process_inbox(config: dict, history: list[dict], dry_run: bool) -> int:
                 print(f"  (Could not add to playlist: {e})")
         a, b = rng.sample(NEXT_PLACES, 2)
         comment = (f"YOU choose Day {day + 1} 👇 Abandoned {a} 🅰️ or abandoned {b} 🅱️? "
-                   "Reply A or B, most votes wins! Follow so you see it 🔔")
+                   "Reply A or B, most votes wins! Follow so you see it 🔔\n\n"
+                   + rng.choice([f"And be honest: what would YOU change in this {meta.get('place', 'room')}? 🤔",
+                                 "Would you actually live here, or is it too much? 👀",
+                                 "What's the first thing you'd do in this room? 👇",
+                                 "Which detail did you notice first? 👀"]))
         (workdir / "social" / "social.json").write_text(json.dumps({
             "youtube_id": video_id, "title": meta["title"], "caption": caption,
             "publish_at": yt["publish_at"], "comment": comment}, indent=2))
@@ -726,7 +757,9 @@ def process_inbox(config: dict, history: list[dict], dry_run: bool) -> int:
         for d in INBOX.iterdir():
             if d.is_dir() and not any(d.iterdir()):
                 d.rmdir()
-        summary += [f"### {meta['title']}", f"- Short ({meta['duration']} s): https://studio.youtube.com/video/{video_id}/edit",
+        summary += [f"### {meta['title']}", f"- Thumbnail text: {meta.get('thumb_text', '')}",
+                    *[f"- Other title option: {t}" for t in meta.get("alt_titles", [])],
+                    f"- Short ({meta['duration']} s): https://studio.youtube.com/video/{video_id}/edit",
                     f"- Goes public {yt['publish_at']} (UTC). To stop it, set it to Private."]
     print("\n".join(summary))
     write_summary(["## Restore Remake Studio - new makeover Shorts", *summary])
@@ -772,17 +805,37 @@ def compile_long(config: dict, history: list[dict], dry_run: bool, force: bool =
         segs += [normalize(p, work / f"n{i}_{k}.mp4", (W, H)) for k, p in enumerate(clips)]
         segs.append(reveal(before, after, (W, H), work, endcard=False))
         parts.append(join(segs, work / f"part{i}.mp4"))
-    body = join(parts, work / "body.mp4", fade=0.6)
-    note = ai_note((W, H), work / "ai_h.png")
-    final = finish(body, [(note, None)], cfg.get("music_volume", 0.18), workdir / "final.mp4", rng)
     n = len(todo)
-    title = rng.choice(cfg.get("compilation_titles") or ["{n} Satisfying Makeovers: Abandoned to Amazing"]).replace(
+    thumb = makeover.make_thumbnail(work / "b1.jpg", work / f"a{n}.jpg", "ABANDONED", "LUXURY",
+                                    workdir / "thumbnail.jpg", labels=False)  # max 3 words of text
+    # first seconds show exactly what the thumbnail promised, with the reason to stay
+    intro = still(thumb, makeover._label(f"WAIT FOR #{n}", (W, H), (245, 158, 11), work / "intro_l.png"), 3.0,
+                  (W, H), work / "intro.mp4")
+    # the ending sends viewers to the previous compilation instead of saying goodbye
+    prev = next((h for h in reversed(history) if h.get("kind") == "compilation" and h.get("youtube_id")), None)
+    outro_text = "WATCH NEXT: WHERE IT ALL STARTED" if prev else "FOLLOW FOR A NEW MAKEOVER DAILY"
+    outro = still(work / "a1.jpg", makeover._label(outro_text, (W, H), (13, 148, 136), work / "outro_l.png"), 5.0,
+                  (W, H), work / "outro.mp4")
+    body = join([intro, *parts, outro], work / "body.mp4", fade=0.6)
+    note = ai_note((W, H), work / "ai_h.png")
+    overlays = [(note, None)]
+    if probe(body)[0] > 75:  # bridge at the one-minute mark, where most viewers usually leave
+        bridge = makeover._label(f"KEEP WATCHING: #{n} IS THE CRAZIEST", (W, H), (245, 158, 11), work / "bridge.png")
+        overlays.append((bridge, (58.0, 64.0)))
+    speech = None
+    if config.get("voice") and cfg.get("narration", True):
+        line = (f"{n} abandoned places... turned into pure luxury. Number one is bad... but number {n}... "
+                "is the craziest one we have ever done. Stay until the end.")
+        speech = narrate(line, config["voice"], work / "intro_narration.wav", 14.0)
+    final = finish(body, overlays, cfg.get("music_volume", 0.18), workdir / "final.mp4", rng, narration=speech)
+    title = rng.choice(cfg.get("compilation_titles") or ["{n} Abandoned Places → Pure Luxury 😱"]).replace(
         "{n}", str(n))
-    thumb = makeover.make_thumbnail(work / "b1.jpg", work / f"a{n}.jpg", "ABANDONED", "AMAZING",
-                                    workdir / "thumbnail.jpg")
     lines = "\n".join(f"{i}. {m['title']}" for i, (_, m) in enumerate(todo, 1))
-    description = (f"{n} abandoned places brought back to life, one after another. Which one is your favorite?\n\n"
-                   f"In this video:\n{lines}\n\n{' '.join(cfg.get('hashtags', []))}\n\n{_footer(config)}")
+    watch_next = f"▶ Watch next: https://youtu.be/{prev['youtube_id']}\n\n" if prev else ""
+    description = (f"Abandoned house makeover compilation | before and after luxury transformations\n"
+                   f"{n} abandoned places brought back to life, one after another. Which one is your favorite?\n\n"
+                   f"{watch_next}In this video:\n{lines}\n\n{' '.join(cfg.get('hashtags', []))}\n\n"
+                   f"{_footer(config)}")
     dur = probe(final)[0]
     print(f"  Compilation: {title} ({dur / 60:.1f} min)")
     if dry_run:

@@ -141,21 +141,19 @@ clips:
   compilation_min_makeovers: 6 # a long video (about 3-4 min) once this many new makeovers are ready
   min_short_seconds: 30        # shorter makeovers get a fast replay so each Short is at least this long
   compilation_playlist: "Makeover Compilations"
-  compilation_titles:
-    - "{n} Satisfying Makeovers: Abandoned to Amazing"
-    - "From Abandoned to Dream Space: {n} Incredible Transformations"
-    - "{n} Abandoned Places Brought Back to Life"
-  clip_titles:                 # a title not used recently is picked (every makeover ends in luxury)
-    - "Abandoned {Place} → Luxury {Place} 😍"
-    - "From Junk to Luxury: {Place} Makeover ✨"
-    - "They Turned This Abandoned {Place} Into Luxury 😳"
-    - "Abandoned {Place} → 5-Star Luxury in 30 Seconds ⏱️"
-    - "Nobody Wanted This {Place}… Now It's Pure Luxury 😱"
-    - "Wait for the Reveal: Abandoned {Place} → Luxury 🤩"
-    - "The Most Satisfying Luxury {Place} Makeover 🤩"
-    - "Trash to Luxury: This {Place} Is Unrecognizable 🔥"
-    - "Can This Abandoned {Place} Become Luxury? 😱"
-    - "Abandoned {Place} Turned Into a Luxury Dream ✨"
+  compilation_titles:          # under 50 characters
+    - "{n} Abandoned Places → Pure Luxury 😱"
+    - "{n} Satisfying Junk to Luxury Makeovers ✨"
+    - "Wait for #{n}: Abandoned to Luxury 🤩"
+  clip_titles:                 # short (with "Day N: " the whole title stays under 50 characters)
+    - "Abandoned {Place} → Luxury 😍"
+    - "Junk {Place} → Pure Luxury ✨"
+    - "This {Place} Is Unrecognizable 🔥"
+    - "Trash to Luxury {Place} 😳"
+    - "Wait for This {Place} Reveal 🤩"
+    - "Nobody Wanted This {Place} 😱"
+    - "Abandoned {Place} Turned Luxury ✨"
+    - "From Ruin to Luxury {Place} 😍"
   tags: ["satisfying makeover", "abandoned transformation", "before and after", "restoration", "time lapse",
          "makeover", "transformation", "satisfying video"]
   hashtags: ["#makeover", "#beforeandafter", "#satisfying", "#transformation"]
