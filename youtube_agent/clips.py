@@ -187,7 +187,8 @@ def still(img: Path, overlay: Path, dur: float, size: tuple[int, int], out: Path
     return out
 
 
-def reveal(before: Path, after: Path, size: tuple[int, int], work: Path, endcard: bool = True) -> Path:
+def reveal(before: Path, after: Path, size: tuple[int, int], work: Path, endcard: bool = True,
+           question: tuple[str, str] = ("Which place should", "we restore next?")) -> Path:
     """BEFORE held briefly, then a wipe to AFTER (with the follow end card on the Short)."""
     w, h = size
     tag = "v" if h > w else "h"
@@ -195,7 +196,6 @@ def reveal(before: Path, after: Path, size: tuple[int, int], work: Path, endcard
               work / f"rv_a_{tag}.mp4", zoom_in=False)
     ov = makeover._label("AFTER", size, (13, 148, 136), work / f"rv_l_{tag}.png")
     if endcard:
-        question = ("Which place should", "we restore next?")
         card = Image.open(makeover._endcard(size, work / f"rv_e_{tag}.png", question)).convert("RGBA")
         lab = Image.open(ov).convert("RGBA")
         lab.alpha_composite(card)
@@ -313,6 +313,41 @@ def ai_note(size: tuple[int, int], out: Path) -> Path:
     return out
 
 
+def day_badge(day: int, size: tuple[int, int], out: Path) -> Path:
+    """'DAY 12' pill at the top left for the whole Short: the channel is one running series."""
+    from PIL import ImageDraw
+    w, h = size
+    img = Image.new("RGBA", size, (0, 0, 0, 0))
+    d = ImageDraw.Draw(img)
+    f = visuals.font(40, 800)
+    text = f"DAY {day}"
+    tw = d.textlength(text, font=f)
+    x, y = 40, 140
+    d.rounded_rectangle((x, y, x + tw + 44, y + 64), 32, fill=(245, 158, 11, 240))
+    d.text((x + 22, y + 8), text, font=f, fill=(28, 25, 23))
+    img.save(out)
+    return out
+
+
+def follow_banner(size: tuple[int, int], out: Path) -> Path:
+    """Shown mid-way, before the reveal, when viewers are most curious."""
+    from PIL import ImageDraw
+    w, h = size
+    img = Image.new("RGBA", size, (0, 0, 0, 0))
+    d = ImageDraw.Draw(img)
+    f = visuals.font(54, 800)
+    lines = ["FOLLOW TO SEE", "THE LUXURY REVEAL"]
+    y = int(h * 0.60)
+    box_h = len(lines) * 70 + 50
+    d.rounded_rectangle((90, y - 25, w - 90, y + box_h - 25), 40, fill=(28, 25, 23, 215))
+    for ln in lines:
+        lw = d.textlength(ln, font=f)
+        d.text(((w - lw) / 2, y), ln, font=f, fill=(255, 255, 255))
+        y += 70
+    img.save(out)
+    return out
+
+
 def _with_overlay(video: Path, overlay: Path, out: Path) -> Path:
     _run(["-y", "-i", str(video), "-i", str(overlay), "-filter_complex", "[0:v][1:v]overlay=0:0:format=auto,"
           "format=yuv420p[v]", "-map", "[v]", "-map", "0:a", "-c:v", "libx264", "-preset", "veryfast", "-crf", "19",
@@ -406,6 +441,9 @@ CTAS = ["If you loved this, share it with a friend and subscribe for more. And l
         "we should restore next.",
         "Hit subscribe, share this with a friend, and drop a comment if you want more videos like this.",
         "Want more makeovers like this? Subscribe, share this video, and tell me in the comments."]
+# viewers vote for the next makeover in the pinned comment
+NEXT_PLACES = ["castle", "mansion", "cabin", "barn", "boat", "school bus", "church", "greenhouse", "treehouse",
+               "lighthouse", "train car", "shed", "bathroom", "bedroom", "garden", "pool", "garage", "warehouse"]
 # On-screen hook over the before/after opening: short, and makes people wait for the reveal.
 HOOKS = ["Wait for the luxury reveal", "From junk to luxury in 30 seconds", "Nobody wanted this {place}",
          "Watch this {place} turn into luxury", "Wait until you see the end", "Rate this makeover 1 to 10",
@@ -530,12 +568,15 @@ def narrate(text: str, voice_cfg: dict, out: Path, max_seconds: float) -> Path |
 
 
 def make_short(group: list[Path], workdir: Path, cfg: dict, rng: random.Random,
-               voice_cfg: dict | None = None) -> dict:
+               voice_cfg: dict | None = None, day: int | None = None) -> dict:
     work = workdir / "build"
     work.mkdir(parents=True, exist_ok=True)
     before = frame(group[0], work / "before.jpg", last=False)
     after = frame(group[-1], work / "after.jpg", last=True)
     meta = describe(before, after, [p.name for p in group], cfg, rng)
+    if day:  # one running series gives viewers a reason to follow
+        meta["title"] = meta["short_title"] = f"Day {day}: {meta['title']}"[:90]
+        meta["caption"] = f"Day {day} of turning abandoned places into luxury 🏚️➡️✨ {meta['caption']}"
     print(f"  Title: {meta['title']}")
 
     print(f"  Joining {len(group)} clips...")
@@ -558,7 +599,9 @@ def make_short(group: list[Path], workdir: Path, cfg: dict, rng: random.Random,
         tag = makeover._label("ONE MORE TIME" if rate < 1.2 else f"REPLAY {rate:.1f}X", (SW, SH), (245, 158, 11),
                               work / "replay_label.png")
         parts.append(_with_overlay(replay, tag, work / "replay_tag_v.mp4"))
-    parts.append(reveal(before, after, (SW, SH), work))
+    question = (f"DAY {day + 1} IS NEXT", "Follow so you don't miss it") if day else \
+        ("Which place should", "we restore next?")
+    parts.append(reveal(before, after, (SW, SH), work, question=question))
     full = join(parts, work / "full_v.mp4", fade=0.4)
     hook = title_overlay(hook_text, (SW, SH), work / "hook_v.png")
     note = ai_note((SW, SH), work / "ai_v.png")
@@ -569,7 +612,12 @@ def make_short(group: list[Path], workdir: Path, cfg: dict, rng: random.Random,
         print("  Recording the narration...")
         speech = narrate(meta["narration"], voice_cfg, work / "narration.wav", probe(full)[0] - 1.5)
     thumb = split_card(before, after, f"{meta['before']} to {meta['after']}", social / "thumbnail.jpg")
-    short = finish(full, [(hook, (1.1, 3.9)), (note, None)], cfg.get("music_volume", 0.18), social / "short.mp4", rng,
+    overlays = [(hook, (1.1, 3.9)), (note, None)]
+    mid = probe(full)[0] * 0.4
+    overlays.append((follow_banner((SW, SH), work / "follow_v.png"), (mid, mid + 3.0)))
+    if day:
+        overlays.append((day_badge(day, (SW, SH), work / "day_v.png"), None))
+    short = finish(full, overlays, cfg.get("music_volume", 0.18), social / "short.mp4", rng,
                    narration=speech)
     meta["clips"] = [p.name for p in group]
     meta["duration"] = round(probe(short)[0], 1)
@@ -614,7 +662,8 @@ def process_inbox(config: dict, history: list[dict], dry_run: bool) -> int:
         rng = random.Random(sum(p.stat().st_size for p in group))
         stamp = (_made_at(group[0]) or dt.datetime.now()).strftime("%Y%m%d-%H%M")
         workdir = OUTPUT_DIR / f"{stamp}-clips"
-        made = make_short(group, workdir, cfg, rng, config.get("voice"))
+        day = sum(1 for h in history if h.get("kind") == "clip_short") + 1
+        made = make_short(group, workdir, cfg, rng, config.get("voice"), day=day)
         meta = made["meta"]
         slug = f"{stamp}-{slugify(meta['title'])[:40]}"
         tags = list(dict.fromkeys(meta.get("tags", []) + cfg.get("tags", [])))[:15]
@@ -646,13 +695,9 @@ def process_inbox(config: dict, history: list[dict], dry_run: bool) -> int:
                                           yt.get("playlist_description"))
             except Exception as e:
                 print(f"  (Could not add to playlist: {e})")
-        comment = rng.choice([
-            "Which place should we restore next? 👇 Tell us in the comments and we might make it!",
-            "Before or after: which one would you rather live in? 😄 Tell us below 👇",
-            "Rate this makeover from 1 to 10! 👇 And subscribe for a new transformation every day.",
-            "What would you change in this makeover? 🤔 Share your idea below 👇",
-            "Would you live here? Yes or no? 👇 Subscribe for more makeovers like this!",
-        ])
+        a, b = rng.sample(NEXT_PLACES, 2)
+        comment = (f"YOU choose Day {day + 1} 👇 Abandoned {a} 🅰️ or abandoned {b} 🅱️? "
+                   "Reply A or B, most votes wins! Follow so you see it 🔔")
         (workdir / "social" / "social.json").write_text(json.dumps({
             "youtube_id": video_id, "title": meta["title"], "caption": caption,
             "publish_at": yt["publish_at"], "comment": comment}, indent=2))
