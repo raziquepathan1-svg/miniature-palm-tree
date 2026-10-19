@@ -337,10 +337,10 @@
       "Which myth in this video surprised you the most?"
     ],
     "bridge_id": "yeRj5dGymRU",
-    "planned_publish_at": "2026-10-20T16:00:00Z",
-    "awaiting_approval": true,
+    "awaiting_approval": false,
     "youtube_id": "lIE-FuDwYEY",
     "short_youtube_id": "Gh7ky0OLwdU",
-    "preview": "previews/lIE-FuDwYEY.mp4"
+    "preview": "previews/lIE-FuDwYEY.mp4",
+    "publish_at": "2026-10-20T16:00:00Z"
   }
 ]
