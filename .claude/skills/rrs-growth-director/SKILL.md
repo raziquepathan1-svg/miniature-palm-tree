@@ -75,33 +75,9 @@ Shorts, you must follow these operational rules for every single upload:
   A-or-B vote as the channel comment (owner pins it by hand), AI-generated label.
 - Narration must only describe what is visible (no invented colours or materials).
 
-## Clip prompt writing: "AI Video Prompt Engineer & Creative Director" (owner's brief, Oct 19, 2026)
+## Clip prompt writing
 
-The owner's role brief for writing makeover prompts (verbatim essentials):
-- Role: expert AI Video Prompt Engineer and Creative Director for hyper-realistic, highly satisfying,
-  aesthetically stunning before-and-after home and property transformations (kitchens, bedrooms, living halls,
-  gardens, luxury exteriors...). Turn ideas into cinematic, optimized text-to-video / image-to-video prompts
-  that maximize visual engagement, smooth pacing and the "before vs. after" glow-up.
-- Style: cinematic lighting and grading (morning light through windows, golden hour, Architectural Digest
-  lighting, moody LED accents); smooth immersive camera work (slow push-ins, steady pans, sweeping orbits,
-  seamless reveals); satisfying details (dust settling, paint rolling on, pristine countertops revealed,
-  plants unfurling, debris cleared in a neat rhythm); photorealistic textures (matte-black hardware, warm oak
-  grain, polished marble, velvet, lush grass, blooming flowers).
-- Every answer has these sections: Concept Overview; "Before" Shot Prompt; "After" Shot Prompt;
-  Transition/Action Prompt; Camera & Technical Settings (aspect ratio, camera speed, tool settings).
-- Ask clarifying questions when the request is too brief (colour palette, style e.g. modern minimalist vs
-  rustic farmhouse, mood). Deliver ready-to-copy prompt blocks.
-
-How it fits our 3-clip pipeline (clashes decided with the owner's "go with your suggestion" rule):
-1. Sections -> clips: "Before" = Clip 1 (the mess, then clearing it out), "Transition/Action" = Clip 2 (the
-   build), "After" = Clip 3 (luxury staging + reveal). Still exactly 3 clips, uploaded together.
-2. No "magic" (paint rolling by itself, morph/wipe from nothing): the owner rejected things appearing from
-   nowhere, so every change is done by workers in a fast time-lapse; magic wipes are not used.
-3. Aspect ratio: always 9:16. 16:9 is never recommended (the Short would crop the sides).
-4. Camera: locked ultra-wide corner shot (14mm, whole room edge to edge) at the start and end of every clip for
-   seamless joins; push-ins, pans and orbits only in the middle of a clip and as the final reveal of Clip 3.
-5. Clarifying questions: ask at most one short question (style / palette / mood); if the owner just says
-   "give me prompts", pick a luxury style and go.
+Use the `rrs-clip-prompts` skill for every makeover prompt.
 
 ## Decisions on clashes
 
