@@ -111,3 +111,10 @@ New prompts keep this simplicity and add the Art Director polish: a macro hook a
 ## If a new instruction clashes with these rules
 
 Tell the user about the clash in simple words, suggest a recommended option, and update this file once they decide.
+
+## Editing Reels from the user's clips
+
+- Clips are uploaded to `reels/raw/`; finished Reels go to `reels/final/` and are sent to the user with SendUserFile.
+- **No text overlays at all** (no hook text, no "LOOK 1/2/3", no end card, no handle). Clean video only.
+- Skip the hospital/scrub clip and any clip that shows a brand logo.
+- Style: chain 3 transformation clips, cutting on the fabric-covers-lens moment with a short white flash; light uniform grade; 1080x1920; silent audio (user adds music in Instagram).
