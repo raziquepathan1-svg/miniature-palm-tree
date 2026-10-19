@@ -282,5 +282,65 @@
     "short2_youtube_id": "vVIkLP_7nUE",
     "preview": "previews/ynXYX0XwDlU.mp4",
     "publish_at": "2026-10-19T16:00:00Z"
+  },
+  {
+    "date": "2026-10-19T06:44:08",
+    "topic": "Osteoporosis: myths vs facts about bone health",
+    "requested_topic": "Osteoporosis: myths vs facts about bone health",
+    "title": "Osteoporosis: 5 Myths That Could Break You (Part 2/5)",
+    "style": "Myth vs Fact",
+    "script_file": "043-osteoporosis-myths.yaml",
+    "series": "Caring for Older Adults",
+    "episode": 2,
+    "packages": [
+      {
+        "title": "Osteoporosis: 5 Myths That Could Break You",
+        "thumbnail_text": "Truth Revealed",
+        "thumbnail_highlight": "Truth",
+        "thumbnail_scene": "Host chest up on the right with a shocked expression, a glowing X-ray of a fragile hip bone beside him, and a small red warning icon."
+      },
+      {
+        "title": "The Silent Disease Breaking Hips",
+        "thumbnail_text": "Hidden Bone Thief",
+        "thumbnail_highlight": "Hidden",
+        "thumbnail_scene": "Host chest up on the right looking concerned, an elderly silhouette using a cane beside him, and a cracked bone icon."
+      },
+      {
+        "title": "Your Bones Are Thinning and You Don't Know",
+        "thumbnail_text": "Early Warning Missed",
+        "thumbnail_highlight": "Missed",
+        "thumbnail_scene": "Host chest up on the right with worried eyes, a thinning honeycomb bone image beside him, and a question mark icon."
+      },
+      {
+        "title": "The Bone Test Doctors Want You to Take",
+        "thumbnail_text": "Quick Painless Scan",
+        "thumbnail_highlight": "Painless",
+        "thumbnail_scene": "Host chest up on the right with a calm reassuring look, a DXA scan machine image beside him, and a stopwatch icon."
+      },
+      {
+        "title": "Weak Bones, No Warning: The Osteoporosis Truth",
+        "thumbnail_text": "Silent Thief",
+        "thumbnail_highlight": "Silent",
+        "thumbnail_scene": "Host chest up on the right with a serious expression, a fragile bone graphic beside him, and a red exclamation icon."
+      }
+    ],
+    "chosen": {
+      "title": "Osteoporosis: 5 Myths That Could Break You",
+      "thumbnail_text": "Truth Revealed",
+      "thumbnail_highlight": "Truth",
+      "thumbnail_scene": "Host chest up on the right with a shocked expression, a glowing X-ray of a fragile hip bone beside him, and a small red warning icon."
+    },
+    "pin_question": "Have you or someone you love ever had a bone density test? What was that experience like?",
+    "pin_questions": [
+      "Have you or someone you love ever had a bone density test? What was that experience like?",
+      "What's one change you've made to protect your bones or prevent falls at home?",
+      "Which myth in this video surprised you the most?"
+    ],
+    "bridge_id": "yeRj5dGymRU",
+    "planned_publish_at": "2026-10-20T16:00:00Z",
+    "awaiting_approval": true,
+    "youtube_id": "lIE-FuDwYEY",
+    "short_youtube_id": "Gh7ky0OLwdU",
+    "preview": "previews/lIE-FuDwYEY.mp4"
   }
 ]
