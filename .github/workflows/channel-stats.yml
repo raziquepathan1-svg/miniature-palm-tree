@@ -4,6 +4,9 @@ name: Channel stats
 on:
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   stats:
     runs-on: ubuntu-latest
@@ -18,4 +21,14 @@ jobs:
           YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
           YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
           YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
-        run: python -m youtube_agent.stats
+        run: python -m youtube_agent.stats | tee stats.txt
+      - name: Save to the previews branch
+        run: |
+          git config user.name "youtube-agent"
+          git config user.email "youtube-agent@users.noreply.github.com"
+          git fetch -q origin previews
+          git checkout -q -B previews origin/previews
+          mkdir -p previews && cp stats.txt previews/stats.txt
+          git add previews/stats.txt
+          git diff --cached --quiet || git commit -qm "Channel stats"
+          git push -q origin previews
