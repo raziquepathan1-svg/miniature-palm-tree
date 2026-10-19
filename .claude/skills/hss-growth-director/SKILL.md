@@ -82,6 +82,7 @@ Shorts, you must follow these operational rules for every single upload:
    only, no ellipses/dashes/brackets; expression stays at the config value. DECIDED
 6. Short 1 = infinite loop (loop_end leads back into the hook, no ending card, same file on Instagram/Facebook);
    Short 2 keeps the full-video ending. New shot about every 3 seconds. DONE (shorts2, social.short1_loop)
+   Oct 19 (owner OK): Short 1 is 35-45 s (3-4 beats); best Shorts so far were 30-42 s. Short 2 stays 50-65 s.
 7. Questions: open, personal, engaging; never inviting arguments about medical facts, vaccines or treatments. DONE
 8. Power words: strong but accurate; the title must match the video (fact check). DONE
 9. Open loop around 60 s; subscribe ask after ~300 words (about 2 minutes). DONE (growth.subscribe_after_words)
@@ -93,3 +94,9 @@ Shorts, you must follow these operational rules for every single upload:
 
 Daily thumbnail prompt: use the day's chosen package from history.json ("chosen": thumbnail_scene, max 3
 visual elements; thumbnail_text max 3 words, never repeating the title). The host never holds the object.
+
+## Host clips and topics
+
+New host clips go in branding/health-support-studio/avatar/broll/. A clip tied to a topic (CPR, fever,
+stroke...) must be listed in topics.yaml with its words, so it only plays in videos about that topic (owner
+complaint Oct 19: a CPR clip in the prostate video). Neutral clips (desk, explaining) are not listed.
