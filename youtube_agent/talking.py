@@ -256,6 +256,39 @@ def broll_clips(cfg: dict | None) -> list[Path]:
     return sorted(folder.glob("*.mp4")) if folder.exists() else []
 
 
+def topic_broll(clips: list[Path], video_text: str, scene_texts: dict[int, str]) -> dict[int, Path]:
+    """Which host clip goes on which scene. topics.yaml (in the clips folder) lists the words each topic clip
+    fits (a CPR class only in CPR/first-aid videos); clips not listed are neutral and fit any video. A topic
+    clip goes to the scene that talks about it; the other scenes take turns over the neutral and fitting clips.
+    scene_texts: {scene index: its narration + heading}. Without topics.yaml: plain turns (old behaviour)."""
+    import yaml
+
+    order = list(scene_texts)
+    if not clips or not order:
+        return {}
+    index = clips[0].parent / "topics.yaml"
+    topics = (yaml.safe_load(index.read_text()) or {}) if index.exists() else None
+    if topics is None:
+        return {i: clips[k % len(clips)] for k, i in enumerate(order)}
+
+    def hits(words, text):
+        return sum(1 for w in words if re.search(rf"\b{re.escape(w.lower())}", text.lower()))
+
+    fitting = [c for c in clips if c.name in topics and hits(topics[c.name], video_text)]
+    neutral = [c for c in clips if c.name not in topics]
+    picks, used = {}, set()
+    for i in order:  # the best-matching unused topic clip for each scene that talks about it
+        best = max(((hits(topics[c.name], scene_texts[i]), c) for c in fitting if c not in used),
+                   key=lambda x: x[0], default=(0, None))
+        if best[0]:
+            picks[i] = best[1]
+            used.add(best[1])
+    rest = [c for c in fitting if c not in used] + neutral or clips
+    for k, i in enumerate(x for x in order if x not in picks):
+        picks[i] = rest[k % len(rest)]
+    return picks
+
+
 def pick_snippets(scenes: list[tuple[float, list]], cfg: dict | None) -> dict[int, float]:
     """About every `every_seconds` of video, the host says the start of a scene on screen.
     scenes: (duration, captions) per scene. Returns {scene index: seconds the host speaks}, ending the host

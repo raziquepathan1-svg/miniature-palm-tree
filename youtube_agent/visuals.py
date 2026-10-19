@@ -729,7 +729,10 @@ def build_video(plan, video_cfg: dict, voice_cfg: dict, channel_name: str, workd
             # 16:9 videos: the quiet moments use the 16:9 scenes (report, x-ray, ward) when there are any
             wide = [c for c in broll if not talking._is_portrait(c)] if size[0] > size[1] else []
             pool = wide or broll
-            snips = {i: (cuts[i], pool[k % len(pool)]) for k, i in enumerate(quiet)} if pool else {}
+            video_text = f"{getattr(plan, 'topic', '')} {getattr(plan, 'title', '')}"
+            texts = {i: f"{plan.scenes[i].narration} {plan.scenes[i].heading}" for i in quiet}
+            chosen = talking.topic_broll(pool, video_text, texts)  # topic clips only where they fit
+            snips = {i: (cuts[i], chosen[i]) for i in quiet if i in chosen}
             cuts = {i: cuts[i] for i in talk_ids}
         jobs = {}
         for i, cut in cuts.items():
@@ -747,7 +750,10 @@ def build_video(plan, video_cfg: dict, voice_cfg: dict, channel_name: str, workd
             missing = [i for i in cuts if i not in snips]
             if missing and broll:  # lip-sync didn't come back for these: the host still appears, as voice-over
                 pool = ([c for c in broll if not talking._is_portrait(c)] if size[0] > size[1] else []) or broll
-                snips.update({i: (cuts[i], pool[(k + len(snips)) % len(pool)]) for k, i in enumerate(missing)})
+                chosen = talking.topic_broll(pool, f"{getattr(plan, 'topic', '')} {getattr(plan, 'title', '')}",
+                                             {i: f"{plan.scenes[i].narration} {plan.scenes[i].heading}"
+                                              for i in missing})
+                snips.update({i: (cuts[i], chosen[i]) for i in missing if i in chosen})
 
     pres_cfg = video_cfg.get("presenter") or {}
     presenter_on = bool(pres_cfg.get("enabled")) and size[0] > size[1]

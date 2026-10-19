@@ -1,0 +1,19 @@
+# Which videos each host clip fits. A clip listed here only plays when the video's topic/title contains one
+# of its words; it is then placed on the scene that talks about it. Clips NOT listed here are neutral
+# (desk, laptop, corridor, explaining) and can play in any video.
+16x9_alarm_pointing.mp4: [carbon monoxide, smoke, alarm, fire, home safety, heating, winter]
+16x9_bathroom_grab_bar.mp4: [fall, bathroom, balance, older adult, osteoporosis, bone, hip, fracture, caregiver, home safety, dizziness]
+16x9_child_temperature.mp4: [fever, temperature, thermometer, flu, rsv, measles, dehydration, infection in children]
+16x9_cpr_class.mp4: [cpr, cardiac arrest, heart attack, choking, first aid, unconscious, aed, overdose, naloxone]
+16x9_desk_bp_cuff.mp4: [blood pressure, hypertension, stroke, kidney, heart failure]
+16x9_desk_glucose.mp4: [diabetes, blood sugar, glucose, a1c, insulin, hypoglycemia, prediabetes]
+16x9_desk_heart.mp4: [heart, cardiac, cholesterol, afib, atrial fibrillation, chest pain, heart failure]
+16x9_home_medicines.mp4: [medicine, medication, pill, prescription, drug, dose, pharmacy, side effect, antibiotic, pain reliever, discharge]
+16x9_kitchen_first_aid.mp4: [first aid, burn, cut, choking, injury, wound, poisoning]
+16x9_kitchen_healthy_food.mp4: [diet, food, nutrition, eating, cholesterol, diabetes, weight, calcium, vitamin, gout, reflux, constipation, kidney stone, iron, anemia]
+16x9_park_walk.mp4: [exercise, walking, activity, fitness, weight, heart, bone, osteoporosis, sleep, mood, depression, anxiety, copd, back pain]
+16x9_stroke_arms_demo.mp4: [stroke, brain, tia, numbness, weakness, slurred speech]
+16x9_walker_rehab.mp4: [fall, rehab, recovery, older adult, mobility, hip, fracture, stroke recovery, discharge, caregiver, osteoporosis, arthritis]
+16x9_winter_thermostat.mp4: [winter, cold, hypothermia, frostbite, heating, carbon monoxide, flu season]
+16x9_ward_discharge_papers.mp4: [hospital, discharge, admission, surgery, caregiver]
+16x9_xray_lady.mp4: [x-ray, bone, fracture, lung, pneumonia, osteoporosis, copd, chest]
