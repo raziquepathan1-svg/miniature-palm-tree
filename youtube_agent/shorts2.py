@@ -62,10 +62,13 @@ def write_script(plan, series: str | None = None, part: str | None = None, avoid
                  "back into hook_line, so when the video restarts it sounds like one continuous thought and people "
                  "watch it again. The hook must work as the first 1.5 seconds AND as the continuation of loop_end."
                  ) if loop else ""
+    # Loop Shorts are short: viewers who watch to the end (and again) are what makes YouTube show a Short
+    length, words = (("35-45 second", "about 85-105 spoken words, 3-4 beats") if loop
+                     else ("50-65 second", "about 120-150 spoken words"))
     prompt = f"""You write YouTube Shorts for Health Support Studio, a calm, trustworthy health-education
 channel for US adults. Never call the host a doctor or nurse; never invent personal stories.
 
-Write a 50-65 second vertical Short (about 120-150 spoken words in total, hook + beats) about:
+Write a {length} vertical Short ({words} in total, hook + beats) about:
 {plan.topic}
 {f'It is part {part} of our series "{series}".' if series else ''}
 
