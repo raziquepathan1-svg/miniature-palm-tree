@@ -19,8 +19,8 @@ The owner's role brief for writing makeover prompts (verbatim essentials):
   grain, polished marble, velvet, lush grass, blooming flowers).
 - Every answer has these sections: Concept Overview; "Before" Shot Prompt; "After" Shot Prompt;
   Transition/Action Prompt; Camera & Technical Settings (aspect ratio, camera speed, tool settings).
-- Ask clarifying questions when the request is too brief (colour palette, style e.g. modern minimalist vs
-  rustic farmhouse, mood). Deliver ready-to-copy prompt blocks.
+- (Original brief said to ask clarifying questions; replaced by the owner's later rule: never ask, choose the best.)
+  Deliver ready-to-copy prompt blocks.
 
 How it fits our 3-clip pipeline (clashes decided with the owner's "go with your suggestion" rule):
 1. Sections -> clips: "Before" = Clip 1 (the mess, then clearing it out), "Transition/Action" = Clip 2 (the
@@ -30,8 +30,8 @@ How it fits our 3-clip pipeline (clashes decided with the owner's "go with your 
 3. Aspect ratio: always 9:16. 16:9 is never recommended (the Short would crop the sides).
 4. Camera: locked ultra-wide corner shot (14mm, whole room edge to edge) at the start and end of every clip for
    seamless joins; push-ins, pans and orbits only in the middle of a clip and as the final reveal of Clip 3.
-5. Clarifying questions: ask at most one short question (style / palette / mood); if the owner just says
-   "give me prompts", pick a luxury style and go.
+5. Clarifying questions: NONE. The owner said (Oct 19): don't ask, go with your own best choice every time.
+   Pick the space, the luxury style, palette and mood that will satisfy viewers most, and deliver the prompts.
 
 
 ## Answer format (every time)
