@@ -397,11 +397,11 @@
       "If you're a caregiver, what's one piece of advice you wish someone had given you sooner?"
     ],
     "bridge_id": "spq8oOrKcWs",
-    "planned_publish_at": "2026-10-21T16:00:00Z",
-    "awaiting_approval": true,
+    "awaiting_approval": false,
     "youtube_id": "2WpLrMDRE4c",
     "short_youtube_id": "uyloSwMnTMU",
     "short2_youtube_id": "xKJxq9yrURM",
-    "preview": "previews/2WpLrMDRE4c.mp4"
+    "preview": "previews/2WpLrMDRE4c.mp4",
+    "publish_at": "2026-10-21T16:00:00Z"
   }
 ]
