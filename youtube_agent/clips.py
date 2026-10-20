@@ -422,6 +422,9 @@ WORK = {  # what the crew does, in order (three are picked per Short)
                  "installed a new vanity", "fitted a modern shower", "added warm lighting"],
     "pool": ["drained the green water", "scooped out the mud and leaves", "repaired the cracked walls",
              "laid new stone around the edge", "filled it with crystal clear water", "set up loungers and lights"],
+    "house": ["hauled away the trash and junk", "pressure-washed years of grime off the walls",
+              "gave the walls a fresh new finish", "put in a brand new driveway", "rolled out fresh green grass",
+              "added warm outdoor lights"],
     "car": ["washed off years of dirt", "pulled out the rusted parts", "sanded down the body",
             "sprayed on a shiny new paint job", "fitted new wheels", "polished every inch"],
     "default": ["cleared out all the trash", "scrubbed away years of dirt", "repaired everything that was broken",
@@ -429,7 +432,7 @@ WORK = {  # what the crew does, in order (three are picked per Short)
 }
 WORK_KEY = {"backyard": "yard", "garden": "yard", "yard": "yard", "porch": "yard", "terrace": "rooftop",
             "balcony": "rooftop", "bedroom": "room", "living room": "room", "attic": "room", "basement": "room",
-            "house": "room", "bike": "car"}
+            "exterior": "house", "bike": "car"}
 OPENERS = ["Nobody had touched this {place} in years.", "This {place} was a total disaster.",
            "Look at this {place}. Trash, dirt, and broken everything.",
            "Would you believe someone just gave up on this {place}?", "This might be the worst {place} we've seen.",
