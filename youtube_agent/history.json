@@ -342,5 +342,66 @@
     "short_youtube_id": "Gh7ky0OLwdU",
     "preview": "previews/lIE-FuDwYEY.mp4",
     "publish_at": "2026-10-20T16:00:00Z"
+  },
+  {
+    "date": "2026-10-20T07:16:46",
+    "topic": "Alzheimer's disease: 10 warning signs and normal aging",
+    "requested_topic": "Alzheimer's disease: 10 warning signs and normal aging",
+    "title": "The Early Alzheimer's Sign Families Miss (Part 3/5)",
+    "style": "Warning Signs",
+    "script_file": "047-alzheimers-warning-signs.yaml",
+    "series": "Caring for Older Adults",
+    "episode": 3,
+    "packages": [
+      {
+        "title": "Alzheimer's or Normal Aging? 10 Signs",
+        "thumbnail_text": "Memory Red Flag",
+        "thumbnail_highlight": "Red",
+        "thumbnail_scene": "Host chest-up, concerned expression, glowing brain icon and a calendar with a question mark beside him"
+      },
+      {
+        "title": "The Early Alzheimer's Sign Families Miss",
+        "thumbnail_text": "Hidden Clue",
+        "thumbnail_highlight": "Hidden",
+        "thumbnail_scene": "Host chest-up, puzzled expression, a set of car keys resting beside him"
+      },
+      {
+        "title": "Is It Alzheimer's? 10 Signs to Watch",
+        "thumbnail_text": "Not Just Forgetting",
+        "thumbnail_highlight": "Forgetting",
+        "thumbnail_scene": "Host chest-up, worried expression, car keys sitting inside a small refrigerator beside him"
+      },
+      {
+        "title": "Alzheimer's Warning Signs Doctors Watch",
+        "thumbnail_text": "Brain Under Attack",
+        "thumbnail_highlight": "Attack",
+        "thumbnail_scene": "Host chest-up, serious expression, glowing brain graphic with dark spots beside him"
+      },
+      {
+        "title": "10 Alzheimer's Signs Most People Miss",
+        "thumbnail_text": "The Overlooked Clue",
+        "thumbnail_highlight": "Overlooked",
+        "thumbnail_scene": "Host chest-up, concerned expression, an elderly man staring blankly beside him"
+      }
+    ],
+    "chosen": {
+      "title": "The Early Alzheimer's Sign Families Miss",
+      "thumbnail_text": "Hidden Clue",
+      "thumbnail_highlight": "Hidden",
+      "thumbnail_scene": "Host chest-up, puzzled expression, a set of car keys resting beside him"
+    },
+    "pin_question": "Have you noticed any of these early signs in a parent or loved one?",
+    "pin_questions": [
+      "Have you noticed any of these early signs in a parent or loved one?",
+      "What's one memory change that first made you worried about someone you love?",
+      "If you're a caregiver, what's one piece of advice you wish someone had given you sooner?"
+    ],
+    "bridge_id": "spq8oOrKcWs",
+    "planned_publish_at": "2026-10-21T16:00:00Z",
+    "awaiting_approval": true,
+    "youtube_id": "2WpLrMDRE4c",
+    "short_youtube_id": "uyloSwMnTMU",
+    "short2_youtube_id": "xKJxq9yrURM",
+    "preview": "previews/2WpLrMDRE4c.mp4"
   }
 ]
