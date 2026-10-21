@@ -413,10 +413,10 @@
     "script_file": "060-hearing-loss-signs.yaml",
     "series": "Caring for Older Adults",
     "episode": 4,
-    "planned_publish_at": "2026-10-22T16:00:00Z",
-    "awaiting_approval": true,
+    "awaiting_approval": false,
     "youtube_id": "qayGBD_Q5aI",
     "short_youtube_id": "3xs7hr0r3F0",
-    "preview": "previews/qayGBD_Q5aI.mp4"
+    "preview": "previews/qayGBD_Q5aI.mp4",
+    "publish_at": "2026-10-22T16:00:00Z"
   }
 ]
