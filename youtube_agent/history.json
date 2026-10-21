@@ -403,5 +403,20 @@
     "short2_youtube_id": "xKJxq9yrURM",
     "preview": "previews/2WpLrMDRE4c.mp4",
     "publish_at": "2026-10-21T16:00:00Z"
+  },
+  {
+    "date": "2026-10-21T06:38:52",
+    "topic": "Hearing loss: warning signs, causes and hearing aids",
+    "requested_topic": "Hearing loss: warning signs, causes and hearing aids",
+    "title": "Hearing Loss Warning Signs You Shouldn't Ignore (Part 4/5)",
+    "style": "Warning Signs",
+    "script_file": "060-hearing-loss-signs.yaml",
+    "series": "Caring for Older Adults",
+    "episode": 4,
+    "planned_publish_at": "2026-10-22T16:00:00Z",
+    "awaiting_approval": true,
+    "youtube_id": "qayGBD_Q5aI",
+    "short_youtube_id": "3xs7hr0r3F0",
+    "preview": "previews/qayGBD_Q5aI.mp4"
   }
 ]
