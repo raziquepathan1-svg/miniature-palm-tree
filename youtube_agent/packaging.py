@@ -21,7 +21,8 @@ LAST: dict | None = None  # today's packaging (main adds it to the history entry
 class Package(BaseModel):
     title: str = Field(description="YouTube title, UNDER 50 characters, high-emotion but accurate power words "
                        "(e.g. mistake, hidden, never, warning, truth), sparks curiosity, matches the video exactly")
-    thumbnail_text: str = Field(description="Max 3 BIG words for the thumbnail. Must NOT repeat any word of the title.")
+    thumbnail_text: str = Field(description="Max 3 BIG words for the thumbnail, a short statement or a 1-3 word "
+                                "question (e.g. 'TOO LATE?'). Must NOT repeat any word of the title.")
     thumbnail_highlight: str = Field(description="The one word of thumbnail_text shown in yellow")
     thumbnail_scene: str = Field(description="Simple high-contrast thumbnail picture with max 3 visual elements: "
                                  "the host (chest-up, right side, expression) + 1-2 topic objects beside him. "
@@ -98,6 +99,8 @@ Do all of this:
 1. PACKAGING: 5 distinct title + thumbnail combinations. Titles under 50 characters, high-emotion power words,
    curiosity, but every title must be fully true to this video (YouTube limits misleading health titles).
    Thumbnail text max 3 words and never repeating title words. Thumbnail picture: max 3 visual elements.
+   At least 2 of the 5 thumbnail texts are a short question of 1-3 words (e.g. "SAY WHAT?", "TOO LATE?",
+   "NORMAL?") paired with a title that is NOT a question; never a question title with a question thumbnail.
    Pick the best one.
 2. HOOK: rewrite scene 1 so the first 15 seconds instantly deliver on the best package's promise with a
    high-stakes hook and an immediate payoff. No "welcome", no channel intro, no "in this video".

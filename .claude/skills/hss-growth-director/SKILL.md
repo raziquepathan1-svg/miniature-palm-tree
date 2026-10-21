@@ -95,6 +95,9 @@ Shorts, you must follow these operational rules for every single upload:
 12. Retention rewrite of bank scripts at render time + budget fact check (falls back to the original script
     if the check rejects it). DONE (main.py, growth.retention)
 
+Oct 21 (owner OK): at least 2 of the 5 packages use a 1-3 word question thumbnail (e.g. "SAY WHAT?") with a
+non-question title; never a question title plus a question thumbnail.
+
 Daily thumbnail prompt: use the day's chosen package from history.json ("chosen": thumbnail_scene, max 3
 visual elements; thumbnail_text max 3 words, never repeating the title). The host never holds the object.
 
