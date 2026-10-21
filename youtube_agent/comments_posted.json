@@ -175,9 +175,18 @@
     "id": "UgyxSsidkDZbx9yYtEB4AaABAg",
     "v": 2
   },
-  "spq8oOrKcWs": "UgxBDMa_qRGmWuHdP_Z4AaABAg",
-  "65mR7AfwPUc": "Ugzc0wn19UBRYyDT0Jl4AaABAg",
-  "VZmJ9OGvN3c": "UgyO3KtN9IZxolm2hHF4AaABAg",
+  "spq8oOrKcWs": {
+    "id": "UgxBDMa_qRGmWuHdP_Z4AaABAg",
+    "v": 2
+  },
+  "65mR7AfwPUc": {
+    "id": "Ugzc0wn19UBRYyDT0Jl4AaABAg",
+    "v": 2
+  },
+  "VZmJ9OGvN3c": {
+    "id": "UgyO3KtN9IZxolm2hHF4AaABAg",
+    "v": 2
+  },
   "ty-M5_xQGVA": {
     "id": "UgxaZ9tVY-W6IsDXvo14AaABAg",
     "v": 2
@@ -202,8 +211,16 @@
     "id": "UgwYg156-MsuE_6ku9J4AaABAg",
     "v": 2
   },
+  "lIE-FuDwYEY": {
+    "id": "UgyDP8xp_AHpvQRY1yl4AaABAg",
+    "v": 2
+  },
+  "Gh7ky0OLwdU": {
+    "id": "Ugw3b5OlL64O63K8jRZ4AaABAg",
+    "v": 2
+  },
   "_budget": {
-    "day": "2026-10-20",
-    "used": 25
+    "day": "2026-10-21",
+    "used": 5
   }
 }
