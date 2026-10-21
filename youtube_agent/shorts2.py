@@ -41,8 +41,10 @@ class ShortScript(BaseModel):
                               "a loop Short.")
     preview: list[str] = Field(description="3 short phrases (max 6 words) naming what the FULL video adds that "
                                "this Short does not cover, e.g. 'the 3 home test options'")
-    title: str = Field(description="YouTube Shorts title, max 60 characters, a curiosity question or bold claim "
-                       "with the topic keyword, no hashtags")
+    title: str = Field(description="YouTube Shorts title, max 60 characters: ONE short, plain question that "
+                       "millions of people really wonder or search, with the topic keyword, answered in the Short "
+                       "(e.g. 'Can the flu shot give you the flu?', 'Why is Benadryl not enough for anaphylaxis?'). "
+                       "Not a statement, no 'myths', no hashtags")
     loop_end: str = Field(default="", description="Loop Shorts only: the last spoken words (max 12) that flow "
                           "straight back into hook_line, so the restart sounds like one continuous sentence "
                           "(e.g. hook 'Most people take this pill wrong.' and loop_end 'And that is exactly why'). "
@@ -65,7 +67,7 @@ def write_script(plan, series: str | None = None, part: str | None = None, avoid
                  ) if loop else ""
     # Loop Shorts are short: viewers who watch to the end (and again) are what makes YouTube show a Short
     length, words = (("35-45 second", "about 85-105 spoken words, 3-4 beats") if loop
-                     else ("50-65 second", "about 120-150 spoken words"))
+                     else ("50-65 second", "about 95-115 spoken words, 4-5 beats; the ending adds about 12 seconds"))
     prompt = f"""You write YouTube Shorts for Health Support Studio, a calm, trustworthy health-education
 channel for US adults. Never call the host a doctor or nurse; never invent personal stories.
 
@@ -83,6 +85,7 @@ Rules:
 - Short sentences, everyday words, American English. Write numbers out as they are spoken.
 - The preview names 3 things the full video covers that this Short does not, so viewers want to watch it.
 - Change the focus every sentence (about every 3 seconds): blistering pace, no filler, never "hey guys" or an intro.
+- The title is a plain question a normal person would ask (see the title field), and the Short answers it.
 - Do not mention YouTube, subscribing or the channel; that is added automatically.{second}{loop_rule}"""
     client = anthropic.Anthropic()
     response = client.beta.messages.parse(model=MODEL, max_tokens=4000, **_fallback_kwargs(),
@@ -111,16 +114,19 @@ def clean_script(script: ShortScript) -> ShortScript:
     return script
 
 
-LOOP_MAX_WORDS = 105  # about 42 seconds of narration: the best Shorts so far were 30-42 s
+# (max beats, max spoken words): the loop Short about 42 s; Short 2 about 50 s plus its ~12 s ending (max 65 s).
+# The best Shorts so far were 30-42 s; long ones were swiped away.
+LIMITS = {True: (4, 105), False: (5, 115)}
 
 
-def trim_loop(script: ShortScript) -> ShortScript:
-    """Loop Shorts stay 35-45 s: at most 4 beats, and later beats go while the narration is too long (min 3).
+def trim(script: ShortScript, loop: bool) -> ShortScript:
+    """At most N beats, and later beats go while the narration is too long (min 3).
     Runs before the fact check, so any safety line it adds is kept."""
-    script.beats = script.beats[:4]
+    max_beats, max_words = LIMITS[loop]
+    script.beats = script.beats[:max_beats]
     def words():
         return sum(len(t.split()) for t in [script.hook_line, script.loop_end] + [b.narration for b in script.beats])
-    while len(script.beats) > 3 and words() > LOOP_MAX_WORDS:
+    while len(script.beats) > 3 and words() > max_words:
         script.beats.pop()
     return script
 
@@ -409,8 +415,7 @@ def make_pair(plan, voice_cfg: dict, workdir: Path, series: str | None, part: st
     """Script (fact-checked) + the YouTube Short + the Instagram/Facebook version (same voice takes).
     loop=True: an infinite-loop Short (no ending card), the same file on every platform."""
     script = clean_script(write_script(plan, series, part, avoid, loop))
-    if loop:
-        script = trim_loop(script)
+    script = trim(script, loop)
     script = clean_script(check_facts(script, plan.topic))
     (workdir / "short_script.json").parent.mkdir(parents=True, exist_ok=True)
     (workdir / "short_script.json").write_text(script.model_dump_json(indent=2))
@@ -435,7 +440,7 @@ def sample(script_file: str, out_dir: str) -> None:
     out = Path(out_dir)
     out.mkdir(parents=True, exist_ok=True)
     print("Writing the Short...")
-    script = clean_script(check_facts(clean_script(write_script(plan, series, "3/5")), plan.topic))
+    script = clean_script(check_facts(trim(clean_script(write_script(plan, series, "3/5")), False), plan.topic))
     (out / "short_script.json").write_text(script.model_dump_json(indent=2))
     print(json.dumps(script.model_dump(), indent=2))
     video = build(script, cfg.get("voice", {}), out / "build", series, "3/5")
