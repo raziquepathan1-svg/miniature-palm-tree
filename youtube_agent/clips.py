@@ -401,6 +401,8 @@ PLACE_STEMS = {"bath": "bathroom", "spa": "bathroom", "kitch": "kitchen", "bedr"
 
 def _place(hint: str) -> str:
     low = hint.lower()
+    if "shel" in low or "wall unit" in low or low.count("wall") >= 2:  # feature-wall makeover in a room
+        return "wall"
     found = next((w for w in PLACE_WORDS if w in low), None)
     if found and found not in ("room", "house"):
         return found

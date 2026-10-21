@@ -61,3 +61,12 @@ warm oak, glowing lights), never ordinary.
   words "wall" and "shelves" in the prompts so the title and narration say "wall".
 - **DIY from trash** (e.g. flower pot from an old plastic bottle / tin can / tyre): planned next; close-up
   table-top hands-only shots, same 3-clip structure (trash -> making -> styled result in a beautiful room).
+
+## Weekly rhythm (owner, Oct 21, 2026)
+
+Alternate every day: one day a full space makeover (room, pool, garage, house, garden...), the next day a
+feature-wall / decor makeover (one wall + built furniture styled with books, lamps, flower pots). Day 21 was a
+wall, so even days = space makeover, odd days = wall makeover. Never repeat the last style: rotate furniture
+and decor styles (walnut + sage, Japandi oak, black + gold, white marble + brass, rattan boho, dark moody
+library, Scandinavian, Art Deco...), lamp types (brass, ceramic, paper globe, arc floor lamp...) and plants /
+flower pots (orchids, olive tree, pampas grass, trailing pothos, terracotta, white ceramic...).
