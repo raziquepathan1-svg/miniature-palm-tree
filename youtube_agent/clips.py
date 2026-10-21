@@ -396,7 +396,7 @@ PLACE_WORDS = ("rooftop", "backyard", "garden", "terrace", "balcony", "garage", 
 # clip tools cut long file names ("Workers_building_modern_spa_bath…"), so short stems count too
 PLACE_STEMS = {"bath": "bathroom", "spa": "bathroom", "kitch": "kitchen", "bedr": "bedroom", "garag": "garage",
                "basem": "basement", "cinema": "basement", "rooft": "rooftop", "backy": "backyard", "pond": "garden",
-               "patio": "backyard", "living": "living room", "attic": "attic", "porch": "porch", "pool": "pool"}
+               "patio": "backyard", "living": "living room", "attic": "attic", "porch": "porch", "pool": "pool", "shel": "wall", "wall": "wall"}
 
 
 def _place(hint: str) -> str:
@@ -425,6 +425,9 @@ WORK = {  # what the crew does, in order (three are picked per Short)
     "house": ["hauled away the trash and junk", "pressure-washed years of grime off the walls",
               "gave the walls a fresh new finish", "put in a brand new driveway", "rolled out fresh green grass",
               "added warm outdoor lights"],
+    "wall": ["cleared everything off the old wall", "patched the cracks and sanded it smooth",
+             "painted it a rich new color", "built custom shelves by hand", "added warm hidden lighting",
+             "styled it with books, plants and a lamp"],
     "car": ["washed off years of dirt", "pulled out the rusted parts", "sanded down the body",
             "sprayed on a shiny new paint job", "fitted new wheels", "polished every inch"],
     "default": ["cleared out all the trash", "scrubbed away years of dirt", "repaired everything that was broken",

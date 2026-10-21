@@ -52,3 +52,12 @@ Each clip prompt is a ready-to-copy block that starts with "Vertical 9:16, photo
 look, ultra-wide-angle 14mm lens..." and ends "Smooth realistic motion, no text." No brand names, no real
 logos or movie scenes, no magic: every change is done by workers. Every ending is luxury (marble, gold, velvet,
 warm oak, glowing lights), never ordinary.
+
+## Variant formats (owner, Oct 21, 2026)
+
+- **Feature wall makeover**: one plain empty wall becomes a built-in shelving / decor wall styled with books, a
+  lamp, flower pots. Same 3 clips (clear + prep the wall -> build the furniture -> style + reveal). Camera:
+  straight-on, centered, ultra-wide, the WHOLE wall from floor to ceiling and both corners in frame. Keep the
+  words "wall" and "shelves" in the prompts so the title and narration say "wall".
+- **DIY from trash** (e.g. flower pot from an old plastic bottle / tin can / tyre): planned next; close-up
+  table-top hands-only shots, same 3-clip structure (trash -> making -> styled result in a beautiful room).
