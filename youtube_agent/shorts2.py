@@ -37,7 +37,8 @@ class ShortScript(BaseModel):
     hook_text: str = Field(description="2-6 BIG words on screen in the first second: a surprising fact or "
                            "question, e.g. 'SCREENING STARTS AT 45'. Must be true. No fear-mongering, no clickbait.")
     hook_line: str = Field(description="The first spoken sentence, max 14 words, that makes people want the answer.")
-    beats: list[Beat] = Field(description="4-6 beats that give ONE complete, useful answer, in order.")
+    beats: list[Beat] = Field(description="Beats that give ONE complete, useful answer, in order: 4-6, or 3-4 for "
+                              "a loop Short.")
     preview: list[str] = Field(description="3 short phrases (max 6 words) naming what the FULL video adds that "
                                "this Short does not cover, e.g. 'the 3 home test options'")
     title: str = Field(description="YouTube Shorts title, max 60 characters, a curiosity question or bold claim "
@@ -107,6 +108,20 @@ def clean_script(script: ShortScript) -> ShortScript:
     script.loop_end = _clean(script.loop_end)
     for b in script.beats:
         b.narration, b.label = _clean(b.narration), _clean(b.label)
+    return script
+
+
+LOOP_MAX_WORDS = 105  # about 42 seconds of narration: the best Shorts so far were 30-42 s
+
+
+def trim_loop(script: ShortScript) -> ShortScript:
+    """Loop Shorts stay 35-45 s: at most 4 beats, and later beats go while the narration is too long (min 3).
+    Runs before the fact check, so any safety line it adds is kept."""
+    script.beats = script.beats[:4]
+    def words():
+        return sum(len(t.split()) for t in [script.hook_line, script.loop_end] + [b.narration for b in script.beats])
+    while len(script.beats) > 3 and words() > LOOP_MAX_WORDS:
+        script.beats.pop()
     return script
 
 
@@ -393,7 +408,10 @@ def make_pair(plan, voice_cfg: dict, workdir: Path, series: str | None, part: st
               avoid: str | None = None, loop: bool = False) -> tuple[ShortScript, Path, Path]:
     """Script (fact-checked) + the YouTube Short + the Instagram/Facebook version (same voice takes).
     loop=True: an infinite-loop Short (no ending card), the same file on every platform."""
-    script = clean_script(check_facts(clean_script(write_script(plan, series, part, avoid, loop)), plan.topic))
+    script = clean_script(write_script(plan, series, part, avoid, loop))
+    if loop:
+        script = trim_loop(script)
+    script = clean_script(check_facts(script, plan.topic))
     (workdir / "short_script.json").parent.mkdir(parents=True, exist_ok=True)
     (workdir / "short_script.json").write_text(script.model_dump_json(indent=2))
     if loop and script.loop_end:
