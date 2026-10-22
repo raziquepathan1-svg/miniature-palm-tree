@@ -66,7 +66,7 @@ def write_script(plan, series: str | None = None, part: str | None = None, avoid
                  "watch it again. The hook must work as the first 1.5 seconds AND as the continuation of loop_end."
                  ) if loop else ""
     # Loop Shorts are short: viewers who watch to the end (and again) are what makes YouTube show a Short
-    length, words = (("35-45 second", "about 85-105 spoken words, 3-4 beats") if loop
+    length, words = (("35-45 second", "about 70-80 spoken words, 3-4 beats") if loop
                      else ("50-65 second", "about 95-115 spoken words, 4-5 beats; the ending adds about 12 seconds"))
     prompt = f"""You write YouTube Shorts for Health Support Studio, a calm, trustworthy health-education
 channel for US adults. Never call the host a doctor or nurse; never invent personal stories.
@@ -114,9 +114,10 @@ def clean_script(script: ShortScript) -> ShortScript:
     return script
 
 
-# (max beats, max spoken words): the loop Short about 42 s; Short 2 about 50 s plus its ~12 s ending (max 65 s).
+# (max beats, max spoken words): the loop Short about 42 s (105 words came out 56 s on Oct 22, so the voice
+# speaks about 1.9 words a second); Short 2 about 50 s plus its ~12 s ending (max 65 s).
 # The best Shorts so far were 30-42 s; long ones were swiped away.
-LIMITS = {True: (4, 105), False: (5, 115)}
+LIMITS = {True: (4, 80), False: (5, 115)}
 
 
 def trim(script: ShortScript, loop: bool) -> ShortScript:

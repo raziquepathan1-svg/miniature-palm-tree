@@ -83,7 +83,7 @@ Shorts, you must follow these operational rules for every single upload:
 6. Short 1 = infinite loop (loop_end leads back into the hook, no ending card, same file on Instagram/Facebook);
    Short 2 keeps the full-video ending. New shot about every 3 seconds. DONE (shorts2, social.short1_loop)
    Oct 19 (owner OK): Short 1 is 35-45 s (3-4 beats); best Shorts so far were 30-42 s. Short 2 stays 50-65 s.
-   Oct 21 (owner OK): hard caps in code (shorts2.LIMITS): Short 1 max 4 beats/105 words, Short 2 max 5 beats/
+   Oct 21 (owner OK): hard caps in code (shorts2.LIMITS): Short 1 max 4 beats/80 words (Oct 22: 105 words = 56 s), Short 2 max 5 beats/
    115 words + its ending (max 65 s). Short titles are one plain question people really ask (like the flu-shot
    Short, 991 views), not statements or "myths".
 7. Questions: open, personal, engaging; never inviting arguments about medical facts, vaccines or treatments. DONE
