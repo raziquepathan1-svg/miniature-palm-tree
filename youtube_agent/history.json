@@ -428,11 +428,11 @@
     "script_file": "064-stroke-recovery.yaml",
     "series": "Caring for Older Adults",
     "episode": 5,
-    "planned_publish_at": "2026-10-23T16:00:00Z",
-    "awaiting_approval": true,
+    "awaiting_approval": false,
     "youtube_id": "QxaO4KhkHII",
     "short_youtube_id": "rOOetBpgvZk",
     "short2_youtube_id": "nEIE1-1fo60",
-    "preview": "previews/QxaO4KhkHII.mp4"
+    "preview": "previews/QxaO4KhkHII.mp4",
+    "publish_at": "2026-10-23T16:00:00Z"
   }
 ]
