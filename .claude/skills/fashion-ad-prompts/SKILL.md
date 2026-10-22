@@ -123,5 +123,5 @@ Tell the user about the clash in simple words, suggest a recommended option, and
 
 ## Hooks & captions (user preference)
 
-- **Trendy style only**: POV / relatable lines, e.g. "POV: you finally upgraded your wardrobe 🔥", "POV: your outfit has main character energy". Never "1 guy, 3 looks" / "X looks every man needs" style.
+- **Mostly trendy, sometimes classy** (about 1 in 3 classy, e.g. "Quiet confidence hits different 🤍", "Dressed for every season of life 🖤"). Trendy = POV / relatable lines, e.g. "POV: you finally upgraded your wardrobe 🔥", "POV: your outfit has main character energy". Never "1 guy, 3 looks" / "X looks every man needs" style.
 - Captions **short**: hook line + one question line + 5–6 hashtags. No long lists.
