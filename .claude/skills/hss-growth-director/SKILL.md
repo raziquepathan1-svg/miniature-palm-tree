@@ -100,6 +100,9 @@ non-question title; never a question title plus a question thumbnail.
 
 Daily thumbnail prompt: use the day's chosen package from history.json ("chosen": thumbnail_scene, max 3
 visual elements; thumbnail_text max 3 words, never repeating the title). The host never holds the object.
+Oct 22 (owner): NO default smiling host. The expression shows the tension of the title: warning = worried/
+serious, myth = skeptical (raised eyebrow, "who told you that?"), surprising fact = shocked, hearing etc. = a
+matching gesture (hand to ear, "stop" palm). Our best so far: "SAY WHAT?" (puzzled, hand to ear).
 
 ## Host clips and topics
 

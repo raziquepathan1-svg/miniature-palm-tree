@@ -26,7 +26,8 @@ class Package(BaseModel):
                                 "question (e.g. 'TOO LATE?'). Must NOT repeat any word of the title.")
     thumbnail_highlight: str = Field(description="The one word of thumbnail_text shown in yellow")
     thumbnail_scene: str = Field(description="Simple high-contrast thumbnail picture with max 3 visual elements: "
-                                 "the host (chest-up, right side, expression) + 1-2 topic objects beside him. "
+                                 "the host (chest-up, right side) with an expression that shows the title's tension "
+                                 "(worried, skeptical, shocked; never a plain smile) + 1-2 topic objects beside him. "
                                  "He never holds the object.")
 
 
