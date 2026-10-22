@@ -163,15 +163,18 @@ def make_one_video(config: dict, history: list[dict], topic: str | None, dry_run
     fact_issues: list[str] = []
     gcfg = config.get("growth") or {}
     original = plan.model_copy(deep=True)
-    packaging.LAST = None
+    packaging.LAST, packaging.ERROR = None, None
     if gcfg.get("retention") and video_cfg.get("format") != "shorts":
-        try:  # the owner's growth rules: 5 packages, hook, open loop, bridge ending (re-checked below)
-            print("    Packaging and retention rewrite (titles, hook, open loop, bridge ending)...")
-            packaging.improve(plan, episode, history, config["channel"])
-            print(f"    Packages: {[p['title'] for p in packaging.LAST['packages']]}")
-        except Exception as e:
-            print(f"    (Packaging skipped: {e})")
-            plan, packaging.LAST = original, None
+        print("    Packaging and retention rewrite (titles, hook, open loop, bridge ending)...")
+        for attempt in (1, 2):  # the owner's growth rules: 5 packages, hook, open loop, bridge ending (re-checked below)
+            try:
+                packaging.improve(plan, episode, history, config["channel"])
+                print(f"    Packages: {[p['title'] for p in packaging.LAST['packages']]}")
+                break
+            except Exception as e:
+                packaging.ERROR = f"{type(e).__name__}: {e}"[:500]  # kept in history.json for the daily check
+                print(f"    (Packaging attempt {attempt} failed: {packaging.ERROR})")
+                plan, packaging.LAST = original.model_copy(deep=True), None
     rewritten = packaging.LAST is not None
     if (not bank_file or rewritten) and config["video"].get("fact_check", True):
         from . import fact_check
@@ -281,6 +284,8 @@ def make_one_video(config: dict, history: list[dict], topic: str | None, dry_run
         entry["script_file"] = bank_file.name
     if episode:
         entry["series"], entry["episode"] = episode.series, episode.n
+    if packaging.ERROR and not packaging.LAST:
+        entry["packaging_error"] = packaging.ERROR
     if packaging.LAST:  # the 5 title/thumbnail options, the pinned question and the bridge video
         entry.update({k: packaging.LAST[k] for k in ("packages", "chosen", "pin_question", "pin_questions",
                                                      "bridge_id")})

@@ -16,6 +16,7 @@ from pydantic import BaseModel, Field
 from .planner import Scene
 
 LAST: dict | None = None  # today's packaging (main adds it to the history entry)
+ERROR: str | None = None  # why it failed, if it did
 
 
 class Package(BaseModel):
