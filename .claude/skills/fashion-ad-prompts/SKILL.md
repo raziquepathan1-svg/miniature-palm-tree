@@ -120,3 +120,8 @@ Tell the user about the clash in simple words, suggest a recommended option, and
 - Style: chain 3 transformation clips, cutting on the fabric-covers-lens moment with a short white flash; light uniform grade; 1080x1920; silent audio (user adds music in Instagram).
 - **Wait for the user's go.** When the user is sending clips one by one, only collect them (copy uploads to `reels/raw2/`); do NOT start editing until the user says to make the Reels.
 - Group Reels by theme (winter, summer, suits/evening, thobe/royal/modest, smart casual/outdoors) and freely reuse older clips from `reels/raw` and `reels/raw2` to fill a theme.
+
+## Hooks & captions (user preference)
+
+- **Trendy style only**: POV / relatable lines, e.g. "POV: you finally upgraded your wardrobe 🔥", "POV: your outfit has main character energy". Never "1 guy, 3 looks" / "X looks every man needs" style.
+- Captions **short**: hook line + one question line + 5–6 hashtags. No long lists.
