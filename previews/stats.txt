@@ -1,62 +1,65 @@
-CHANNEL Healthsupport Studio: subscribers=47 views=2751 videos=55
+CHANNEL Healthsupport Studio: subscribers=52 views=2751 videos=58
 date       priv dur        views likes comm id          title
+2026-10-22 priv PT57S          0     0    0 nEIE1-1fo60 Can you prevent a second stroke? #Shorts
+2026-10-22 priv PT56S          0     0    0 rOOetBpgvZk Does stroke recovery stop after six months? #Shorts
+2026-10-22 priv PT10M13S       0     0    0 QxaO4KhkHII Life After a Stroke: How Recovery Really Works (Part 5/5)
+2026-10-21 publ PT56S          8     0    1 uyloSwMnTMU Forgetting Keys vs Getting Lost: Alzheimer's Signs #Shorts
+2026-10-21 publ PT1M18S       27     2    1 xKJxq9yrURM The Alzheimer's Sign That Isn't Memory Loss #Shorts
+2026-10-21 publ PT10M23S       4     1    1 2WpLrMDRE4c The Early Alzheimer's Sign Families Miss (Part 3/5)
 2026-10-21 priv PT9M59S        0     0    0 qayGBD_Q5aI Hearing Loss Warning Signs You Shouldn't Ignore (Part 4/5)
 2026-10-21 priv PT53S          0     0    0 3xs7hr0r3F0 What Are the Warning Signs of Hearing Loss? #Shorts
-2026-10-20 publ PT1M           3     1    0 Gh7ky0OLwdU Osteoporosis Myths: What You Got Wrong About Bones #Shorts
-2026-10-20 publ PT10M27S       4     1    1 lIE-FuDwYEY Osteoporosis: 5 Myths That Could Break You (Part 2/5)
-2026-10-20 priv PT56S          0     0    0 uyloSwMnTMU Forgetting Keys vs Getting Lost: Alzheimer's Signs #Shorts
-2026-10-20 priv PT1M18S        0     0    0 xKJxq9yrURM The Alzheimer's Sign That Isn't Memory Loss #Shorts
-2026-10-20 priv PT10M23S       1     0    0 2WpLrMDRE4c The Early Alzheimer's Sign Families Miss (Part 3/5)
-2026-10-19 publ PT9M28S       20     6    4 ynXYX0XwDlU Bringing a Loved One Home From the Hospital? Watch This (Part 1/5)
-2026-10-19 publ PT1M19S        7     1    1 vVIkLP_7nUE The #1 Medicine Mistake After Hospital Discharge #Shorts
+2026-10-20 publ PT1M           5     1    1 Gh7ky0OLwdU Osteoporosis Myths: What You Got Wrong About Bones #Shorts
+2026-10-20 publ PT10M27S      30     3    2 lIE-FuDwYEY Osteoporosis: 5 Myths That Could Break You (Part 2/5)
+2026-10-19 publ PT9M28S       27     7    4 ynXYX0XwDlU Bringing a Loved One Home From the Hospital? Watch This (Part 1/5)
+2026-10-19 publ PT1M19S        8     1    1 vVIkLP_7nUE The #1 Medicine Mistake After Hospital Discharge #Shorts
 2026-10-19 publ PT1M18S        5     1    1 0Zg0rxdo5J8 Why 1 in 5 Patients Return to the Hospital #Shorts
-2026-10-18 publ PT1M4S        32     2    1 A1JEnPLtHIo Why Do Men Pee All Night? Enlarged Prostate Explained #Shorts
+2026-10-18 publ PT1M4S        34     3    1 A1JEnPLtHIo Why Do Men Pee All Night? Enlarged Prostate Explained #Shorts
 2026-10-18 publ PT1M18S       12     1    1 3Eb5y9rqj7A Should You Get the PSA Test? #Shorts
 2026-10-18 publ PT10M25S      41     3    2 ty-M5_xQGVA Up at Night to Pee? Prostate Questions Every Man Should Ask (Part 5/5)
 2026-10-17 publ PT1M33S       11     3    1 VZmJ9OGvN3c Breast Cancer Myths Almost Everyone Believes #Shorts
 2026-10-17 publ PT1M31S       24     1    1 65mR7AfwPUc Breast Cancer Screening Myths vs New 2024 Guidelines #Shorts
 2026-10-17 publ PT10M9S        7     4    1 spq8oOrKcWs Breast Cancer Screening Myths (Mammograms Now Start at 40) (Part 4/5)
 2026-10-16 publ PT9M10S       17     4    1 rHtvGk7TqzM Short Doctor Visit? Do This to Get Real Answers (Part 3/5)
-2026-10-16 publ PT34S         15     3    1 vPsYwn7zyYc Myth or fact: The doctor knows my whole history? #Shorts
-2026-10-16 publ PT29S         11     4    1 ykCzkZ_NlwU 3 tricks for a short doctor visit #Shorts
+2026-10-16 publ PT34S         16     3    1 vPsYwn7zyYc Myth or fact: The doctor knows my whole history? #Shorts
+2026-10-16 publ PT29S         12     4    1 ykCzkZ_NlwU 3 tricks for a short doctor visit #Shorts
 2026-10-15 publ PT9M24S        7     2    1 42CvOXqrJDw Colon Cancer Screening Starts at 45: 5 Myths Busted (Part 2/5)
 2026-10-15 publ PT35S         12     2    1 L2K-BAK3bHI Myth or fact: The test is very painful? #Shorts
-2026-10-15 publ PT34S          9     2    1 VBtUeVik9xM Colon cancer screening starts at 45 now #Shorts
+2026-10-15 publ PT34S         11     2    1 VBtUeVik9xM Colon cancer screening starts at 45 now #Shorts
 2026-10-14 publ PT9M35S       20     3    1 jNmAsvC6-1A Going to the Hospital? 6 Questions to Ask First (Part 1/5)
 2026-10-14 publ PT34S         15     2    1 RPJEJeWA7n0 Report Changes Fast: don't ignore these #Shorts
-2026-10-14 publ PT31S         26     3    1 8jJXfm-VugY Staying overnight? Ask this at the hospital #Shorts
+2026-10-14 publ PT31S         27     3    1 8jJXfm-VugY Staying overnight? Ask this at the hospital #Shorts
 2026-10-13 publ PT9M31S       40     5    1 B8kEqFsTjXQ Anaphylaxis: Signs of a Severe Allergic Reaction
 2026-10-13 publ PT34S        141     5    1 d7qx1WS4aH8 Why Benadryl isn't enough for anaphylaxis #Shorts
 2026-10-13 publ PT31S         13     2    1 YSHK64Iz-Xw Myth or fact: My last reaction was mild? #Shorts
 2026-10-12 publ PT9M11S       18     4    1 yeRj5dGymRU Falls Aren't Just Part of Aging: 5 Myths Busted
 2026-10-12 publ PT31S         13     3    1 740GYrC3lmk 1 in 4 older adults fall each year #Shorts
 2026-10-12 publ PT28S         15     4    1 Qj7qKKSuFsQ Myth or fact: It won't happen to me? #Shorts
-2026-10-11 publ PT9M24S       48     5    1 Y6y9rJEg5AU Cholesterol Explained: LDL, HDL and Triglycerides
+2026-10-11 publ PT9M24S       49     5    1 Y6y9rJEg5AU Cholesterol Explained: LDL, HDL and Triglycerides
 2026-10-11 publ PT35S         15     2    1 hQt_jZVjJKQ Good vs bad cholesterol in 30 seconds #Shorts
 2026-10-11 publ PT34S         18     2    1 VmkIxKZ2j2E Myth or fact: Eggs are banned with high... #Shorts
-2026-10-10 publ PT9M23S       63     7    3 hHIxJVUTm1k Tylenol or Advil? What to Know Before You Take Them
+2026-10-10 publ PT9M23S       65     7    3 hHIxJVUTm1k Tylenol or Advil? What to Know Before You Take Them
 2026-10-10 publ PT38S         15     3    1 G6hVt-eIk8k Myth or fact: Alternating is always best? #Shorts
 2026-10-10 publ PT36S         36     3    1 bkk_1-y10hA The hidden Tylenol in your cold medicine #Shorts
 2026-10-09 publ PT9M12S       86    13    3 rmcgEZjyhQ8 Sepsis: The Deadly Emergency Most People Don't Know
 2026-10-09 publ PT36S         21     2    1 DdnTKyU33fc Sepsis: the words that could save a life #Shorts
 2026-10-09 publ PT35S         13     4    1 Hn8YAbR6SqI Myth or fact: Sepsis is a blood infection? #Shorts
-2026-10-08 publ PT8M57S       34    11    1 GbUiKFvmobc 10 Sleep Myths That Are Wrecking Your Rest
+2026-10-08 publ PT8M57S       35    11    1 GbUiKFvmobc 10 Sleep Myths That Are Wrecking Your Rest
 2026-10-08 publ PT31S         21     5    1 7W6jSyuA2C4 Does a nightcap help you sleep? #Shorts
 2026-10-07 publ PT2M30S       31     6    1 ap47sf9a5Qk Urgent Care or ER? How to Choose in 30 Seconds
 2026-10-07 publ PT25S         28     7    1 Oissyg_rRNc Urgent care or ER? The 3-second rule #Shorts
 2026-10-06 publ PT2M25S       22     5    1 bayuaduGQqc Child Has a Fever? When to Worry and When to Call
 2026-10-06 publ PT25S         29     5    1 EH_41v8y_bk Baby has a fever? Know this number #Shorts
 2026-10-05 publ PT30S         93     4    1 15HONB9EDTY 3 dehydration signs parents miss #Shorts
-2026-10-05 publ PT2M51S       85     6    1 selS9_QfgJE Dehydration Warning Signs in Kids and Older Adults
+2026-10-05 publ PT2M51S       92     6    1 selS9_QfgJE Dehydration Warning Signs in Kids and Older Adults
 2026-10-04 publ PT42S        368     5    1 xx7SmrWj7Jg Hands-Only CPR in 2 Steps: This Could Save a Life
-2026-10-03 publ PT3M          18     4    1 qtgvwLYchD8 5 Flu Shot Myths You Probably Still Believe
+2026-10-03 publ PT3M          20     4    1 qtgvwLYchD8 5 Flu Shot Myths You Probably Still Believe
 2026-10-03 publ PT30S        991    13    1 zqbaxNdWzv0 Can the flu shot give you the flu? #Shorts
 2026-10-02 publ PT3M12S       21     3    2 SBCDPO_wfwc Why Antibiotics Won't Fix Your Cold or Flu
 2026-10-02 publ PT35S         25     4    2 sd59JuYdHBQ Why antibiotics won't cure your cold #Shorts
-2026-10-01 publ PT3M5S        41     2    1 MSMDnPoLhsk Your Blood Test Results Explained: CBC and Metabolic Panel
+2026-10-01 publ PT3M5S        45     2    1 MSMDnPoLhsk Your Blood Test Results Explained: CBC and Metabolic Panel
 2026-10-01 publ PT32S         15     4    1 LY6LBNrAEyA That HIGH on your blood test? Read this first #Shorts
 2026-09-30 publ PT48S         33     4    1 KbjQSSUJI8M What Your A1C Number Really Means #Shorts
 2026-09-30 publ PT3M5S         5     2    1 SY8X5CDRW_U Type 2 Diabetes vs Prediabetes: What Your A1C Really Means
 2026-09-29 publ PT52S         25     4    1 _0rvT4bACUQ BE FAST: The Stroke Warning Signs You Can't Miss
 2026-09-28 publ PT4M          22     8    3 Jhis4mR0Rsg Heart Attack Signs in Women: 5 Myths That Cost Time
-2026-09-27 publ PT5M5S        55    22    1 eBLOQcBeKy8 Blood Pressure Numbers Explained (And How to Lower Yours)
+2026-09-27 publ PT5M5S        56    22    1 eBLOQcBeKy8 Blood Pressure Numbers Explained (And How to Lower Yours)
