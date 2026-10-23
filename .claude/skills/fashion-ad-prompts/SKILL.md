@@ -139,3 +139,11 @@ Mix in luxury "arrival" moments instead of only walking: a black luxury car (no 
 - Outfit changes with quick white flash cuts while he keeps walking. No text overlays (the reference has text; we don't).
 - **One theme per video** (all suits, all traditional/kurta, all winter, all classy smart casual, all summer…). Every look is a **different design** in that same style, and never repeats outfits from earlier prompts.
 - Give it as **2 clips (A + B), 2 looks each**, which come out cleaner than 4 looks in one clip. Clip A ends walking; clip B ends with the stop and hero look. Join them later into one Reel.
+
+## Outdoor multi-look format (mix with treadmill videos)
+
+- Alternate formats: sometimes the treadmill runway, sometimes outdoor/luxury videos.
+- Outdoor videos now show **3–4 outfits in one clip, and each outfit is in a different location** (e.g. look 1 snowy forest road → look 2 café street → look 3 frozen lake). One theme per video (all winter, all suits, all traditional…), every design different.
+- Transition between looks: a fast whip-pan blur or a quick white flash while he keeps walking toward the camera; same face, same walk.
+- He poses like a model in every look (2 timed poses per look, same rule as the treadmill format), not just walking.
+- 3 looks in 8s (about 2.7s each) is the most reliable; for 4 looks, give 2 clips (A + B) and join them.
