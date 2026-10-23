@@ -445,11 +445,11 @@
     "series": "Emergency Basics",
     "episode": 1,
     "packaging_error": "ValidationError: 1 validation error for Retention\n  Invalid JSON: EOF while parsing a string at line 1 column 15900 [type=json_invalid, input_value='{\"packages\":[{\"title\":\"C...story, you need to know', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.14/v/json_invalid",
-    "planned_publish_at": "2026-10-24T16:00:00Z",
-    "awaiting_approval": true,
+    "awaiting_approval": false,
     "youtube_id": "O1dW60-m5a0",
     "short_youtube_id": "mn9M4Io2KxA",
     "short2_youtube_id": "K8W5uRDf95Y",
-    "preview": "previews/O1dW60-m5a0.mp4"
+    "preview": "previews/O1dW60-m5a0.mp4",
+    "publish_at": "2026-10-24T16:00:00Z"
   }
 ]
