@@ -74,12 +74,40 @@ def _overlaps(p: Package) -> bool:
     return len(words) > 3 or any(w in title and w not in small for w in words)
 
 
-def improve(plan, episode, history: list[dict], channel: dict) -> Retention:
-    """Rewrites plan in place (scenes, title, thumbnail text) and returns the full result."""
+class Packaging(BaseModel):
+    """Part 1 (small answer): everything except the script."""
+    packages: list[Package] = Retention.model_fields["packages"]
+    best: int = Retention.model_fields["best"]
+    bridge_video: int = Retention.model_fields["bridge_video"]
+    bridge: str = Retention.model_fields["bridge"]
+    description_top: str = Retention.model_fields["description_top"]
+    pin_questions: list[str] = Retention.model_fields["pin_questions"]
+
+
+class Rewrite(BaseModel):
+    """Part 2 (long answer): the script."""
+    scenes: list[Scene] = Retention.model_fields["scenes"]
+
+
+def _ask(prompt: str, schema, max_tokens: int):
     import anthropic
 
     from .planner import MODEL, _fallback_kwargs
 
+    response = anthropic.Anthropic().beta.messages.parse(
+        model=MODEL, max_tokens=max_tokens, **_fallback_kwargs(),
+        messages=[{"role": "user", "content": prompt}], output_format=schema)
+    print(f"    {schema.__name__} tokens: in {response.usage.input_tokens}, out {response.usage.output_tokens} "
+          f"({response.stop_reason})")
+    if response.parsed_output is None:
+        raise RuntimeError(f"{schema.__name__} did not complete ({response.stop_reason})")
+    return response.parsed_output
+
+
+def improve(plan, episode, history: list[dict], channel: dict) -> Retention:
+    """Rewrites plan in place (scenes, title, thumbnail text) and returns the full result.
+    Two calls: the packaging first (small, so it always arrives), then the script rewrite. One long answer with
+    both was cut off on Oct 21-23; if only the rewrite fails now, the original script stays with the new packaging."""
     cands = _candidates(history, episode)
     listing = "\n".join(f"{i}. {h['title']}" + (" (previous part of this series)" if i == 0 and episode and
                                                   episode.n > 1 and h.get("series") == episode.series else "")
@@ -87,47 +115,58 @@ def improve(plan, episode, history: list[dict], channel: dict) -> Retention:
     script = "\n\n".join(f"[Scene {i + 1}] layout={s.layout} heading={s.heading!r} points={s.points} "
                          f"footage={s.footage_query!r}\n{s.narration}" for i, s in enumerate(plan.scenes))
     series = f'It is part {episode.n} of {episode.total} of our series "{episode.series}".' if episode else ""
-    prompt = f"""You are the Executive Growth Director for {channel.get('name', 'Health Support Studio')}, a calm,
+    intro = f"""You are the Executive Growth Director for {channel.get('name', 'Health Support Studio')}, a calm,
 trustworthy health-education YouTube channel for US adults. Goal: maximum click-through rate, average view
 duration and subscriber conversion, without ever misleading anyone about health.
 
 Topic: {plan.topic}. {series}
 
-Current script (already fact-checked; you may rephrase, shorten, reorder within a scene and cut fluff, but do
-NOT add any new fact, number, claim or advice, and do not drop safety warnings or "call 911" lines):
+Current script (already fact-checked):
 {script}
-
-Do all of this:
+"""
+    rules = """Rules: never call the host a doctor or nurse, never invent personal stories, American English, write numbers
+as they are spoken ("120 over 80")."""
+    pack = _ask(intro + f"""
+Do all of this (do NOT rewrite the script here):
 1. PACKAGING: 5 distinct title + thumbnail combinations. Titles under 50 characters, high-emotion power words,
    curiosity, but every title must be fully true to this video (YouTube limits misleading health titles).
    Thumbnail text max 3 words and never repeating title words. Thumbnail picture: max 3 visual elements.
    At least 2 of the 5 thumbnail texts are a short question of 1-3 words (e.g. "SAY WHAT?", "TOO LATE?",
    "NORMAL?") paired with a title that is NOT a question; never a question title with a question thumbnail.
    Pick the best one.
-2. HOOK: rewrite scene 1 so the first 15 seconds instantly deliver on the best package's promise with a
+2. BRIDGE: the separate 20-second ending that sends viewers to the most helpful video from this list (give its
+   number):
+{listing}
+3. DESCRIPTION: 2 natural top lines with broad searchable keywords.
+4. PINNED COMMENT: 3 open, personal questions (best first).
+
+{rules}""", Packaging, 4000)
+    if not pack.packages:
+        raise RuntimeError("packaging returned no packages")
+    best = pack.packages[min(max(pack.best, 0), len(pack.packages) - 1)]
+    try:
+        scenes = _ask(intro + f"""
+The video's title is "{best.title}" and its thumbnail says "{best.thumbnail_text}".
+Rewrite the whole script for retention. You may rephrase, shorten, reorder within a scene and cut fluff, but do
+NOT add any new fact, number, claim or advice, and do not drop safety warnings or "call 911" lines.
+1. HOOK: rewrite scene 1 so the first 15 seconds instantly deliver on the title and thumbnail's promise with a
    high-stakes hook and an immediate payoff. No "welcome", no channel intro, no "in this video".
-3. RETENTION: short, punchy spoken sentences (spoken grammar, contractions, direct "you"). Around the
+2. RETENTION: short, punchy spoken sentences (spoken grammar, contractions, direct "you"). Around the
    60-second mark (after about 150 spoken words) end a scene with an open loop that makes the viewer stay
    (e.g. "But the mistake most people make comes later, and it's the one that matters most."), and pay it off
    later. Vary layouts so something new appears on screen at least every 45 seconds; visual directions go
    only in heading/points/footage_query, never in the narration. No brackets, ellipses or dashes in the
    narration: only commas and periods.
-4. ENDING: the last scene recaps briefly and keeps the spoken "educational, not medical advice" line.
-   Then write the separate 20-second bridge to the most helpful video from this list (give its number):
-{listing}
-5. DESCRIPTION: 2 natural top lines with broad searchable keywords.
-6. PINNED COMMENT: 3 open, personal questions (best first).
+3. ENDING: the last scene recaps briefly and keeps the spoken "educational, not medical advice" line. No
+   goodbye, no subscribe line (both are handled elsewhere).
 
-Rules: never call the host a doctor or nurse, never invent personal stories, American English, write numbers
-as they are spoken ("120 over 80"). Keep roughly the same number of scenes and the same total length."""
-    client = anthropic.Anthropic()
-    response = client.beta.messages.parse(model=MODEL, max_tokens=16000, **_fallback_kwargs(),
-                                          messages=[{"role": "user", "content": prompt}], output_format=Retention)
-    r = response.parsed_output
-    if r is None or len(r.scenes) < 3 or not r.packages:
-        raise RuntimeError(f"packaging did not complete ({response.stop_reason})")
-    print(f"    packaging tokens: in {response.usage.input_tokens}, out {response.usage.output_tokens}")
-    return use(plan, r, cands)
+{rules} Keep roughly the same number of scenes and the same total length.""", Rewrite, 16000).scenes
+        if len(scenes) < 3:
+            raise RuntimeError(f"only {len(scenes)} scenes")
+    except Exception as e:
+        print(f"    (Script rewrite skipped, keeping the original script: {type(e).__name__}: {e})"[:400])
+        scenes = plan.scenes
+    return use(plan, Retention(scenes=scenes, **pack.model_dump()), cands)
 
 
 def use(plan, r: Retention, cands: list[dict]) -> Retention:
