@@ -134,7 +134,8 @@ Mix in luxury "arrival" moments instead of only walking: a black luxury car (no 
 ## Treadmill runway format (user loved it; matches their reference Reel)
 
 - **Setup (from the user's reference):** a bright, minimal white/light-grey room with recessed **vertical LED light panels** on the walls, a glossy light floor, soft even bright lighting. He walks on a **slim, low-profile black walking pad** (no rails, no handles, no console, unbranded, no text); never show a full gym treadmill, only the thin pad edge at the bottom of the frame.
-- **Camera:** slight 3/4 side angle, full body, slow smooth drift. Each look has one small pose while walking (fixing a cuff, touching his hair, buttoning the collar, adjusting sleeves).
+- **Camera:** slight 3/4 side angle, full body, slow smooth drift.
+- **He must act like a confident runway model, not just walk.** Give every look 2 clearly timed poses (e.g. 0-2s runs his fingers through his hair, 2-4s slides his left hand into his trouser pocket; fixing a cuff, buttoning the collar, adjusting the jacket/sleeves, putting on/lifting sunglasses, a slight head turn and smirk). Add the line "He performs every pose clearly and fully; he does not just walk." and put "stiff walking with no poses, arms hanging still" in the Avoid line.
 - Outfit changes with quick white flash cuts while he keeps walking. No text overlays (the reference has text; we don't).
 - **One theme per video** (all suits, all traditional/kurta, all winter, all classy smart casual, all summer…). Every look is a **different design** in that same style, and never repeats outfits from earlier prompts.
 - Give it as **2 clips (A + B), 2 looks each**, which come out cleaner than 4 looks in one clip. Clip A ends walking; clip B ends with the stop and hero look. Join them later into one Reel.
