@@ -59,6 +59,12 @@ warm oak, glowing lights), never ordinary.
   lamp, flower pots. Same 3 clips (clear + prep the wall -> build the furniture -> style + reveal). Camera:
   straight-on, centered, ultra-wide, the WHOLE wall from floor to ceiling and both corners in frame. Keep the
   words "wall" and "shelves" in the prompts so the title and narration say "wall".
+  Lessons from Day 23 (Oct 23): Flow stopped Clip 1 at a scraped grey wall and Clip 2 built straight onto it
+  (the roller did nothing). So Clip 2 always has two stages: STAGE 1 finish the wall completely (fill holes,
+  sand, paint the ENTIRE wall corner to corner, no grey/stains/holes left, floor swept/refinished), STAGE 2
+  build. Clip 3 changed the furniture style, so Clip 3 always restates the exact furniture from Clip 2
+  ("keep EXACTLY the same... do not change, move, replace or restyle; only add decor"). Remind the owner to
+  use Frames to Video with the previous clip's last frame, and to check Clip 2 ends fully finished first.
 - **DIY from trash** (e.g. flower pot from an old plastic bottle / tin can / tyre): planned next; close-up
   table-top hands-only shots, same 3-clip structure (trash -> making -> styled result in a beautiful room).
 
