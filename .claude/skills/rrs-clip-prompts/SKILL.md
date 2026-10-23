@@ -34,6 +34,28 @@ How it fits our 3-clip pipeline (clashes decided with the owner's "go with your 
    Pick the space, the luxury style, palette and mood that will satisfy viewers most, and deliver the prompts.
 
 
+## FIRST-TIME-RIGHT RULES (owner, Oct 23, 2026: "I only get 50 credits a day, give me the correct prompt every time")
+
+The owner gets about 50 Flow credits a day and 3 clips cost about 45, so a failed clip cannot be re-made the same day.
+Every prompt must work on the first try. Before sending prompts, check each one against this list:
+1. One job per clip, in a clear order. Never pack extra jobs into a clip (Day 23 Clip 2 had wall repair + floor
+   refinish + build, so Flow skipped the repair). Clip 1 = clear + fully repair/prepare. Clip 2 = build only.
+   Clip 3 = decor only.
+2. Each clip must END in the exact state the next clip needs, written as "By the end of the clip..." with
+   concrete visible facts (e.g. "one smooth, evenly painted cream wall, no grey, no holes").
+3. Clips 2 and 3 always say "Start from the start image, same camera position" and restate EXACTLY what
+   already exists (colors, each piece of furniture, where it is). Clip 3 says "do not change, move, replace or
+   restyle anything; only add decor".
+4. NO day-to-night or big light change in Clip 3: it made Flow redraw the room (Day 23 the panel, rug and
+   tree vanished). The ending wow = the lamps and LED strips switch on and glow warm, with the same daylight.
+   For the final reveal use only a gentle slow push-in.
+5. Keep the floor simple (swept clean in Clip 1); don't add floor refinishing unless the floor is the subject.
+6. Always tell the owner: use Frames to Video with the previous clip's LAST FRAME as the start image, and
+   check that each clip ended right before spending credits on the next one. If one clip failed, re-make only
+   that clip (offer to extract its last frame), never all 3.
+7. When the owner sends clips, review them frame by frame before they go to rrs_inbox; bad clips go to
+   rrs_review (it never publishes).
+
 ## Answer format (every time)
 
 1. **Concept Overview** - 2-3 lines: the space, the luxury style, the "wow" ending.
@@ -59,6 +81,12 @@ warm oak, glowing lights), never ordinary.
   lamp, flower pots. Same 3 clips (clear + prep the wall -> build the furniture -> style + reveal). Camera:
   straight-on, centered, ultra-wide, the WHOLE wall from floor to ceiling and both corners in frame. Keep the
   words "wall" and "shelves" in the prompts so the title and narration say "wall".
+  Lessons from Day 23 (Oct 23): Flow stopped Clip 1 at a scraped grey wall and Clip 2 built straight onto it
+  (the roller did nothing). So Clip 2 always has two stages: STAGE 1 finish the wall completely (fill holes,
+  sand, paint the ENTIRE wall corner to corner, no grey/stains/holes left, floor swept/refinished), STAGE 2
+  build. Clip 3 changed the furniture style, so Clip 3 always restates the exact furniture from Clip 2
+  ("keep EXACTLY the same... do not change, move, replace or restyle; only add decor"). Remind the owner to
+  use Frames to Video with the previous clip's last frame, and to check Clip 2 ends fully finished first.
 - **DIY from trash** (e.g. flower pot from an old plastic bottle / tin can / tyre): planned next; close-up
   table-top hands-only shots, same 3-clip structure (trash -> making -> styled result in a beautiful room).
 
