@@ -147,3 +147,4 @@ Mix in luxury "arrival" moments instead of only walking: a black luxury car (no 
 - Transition between looks: a fast whip-pan blur or a quick white flash while he keeps walking toward the camera; same face, same walk.
 - He poses like a model in every look (2 timed poses per look, same rule as the treadmill format), not just walking.
 - 3 looks in 8s (about 2.7s each) is the most reliable; for 4 looks, give 2 clips (A + B) and join them.
+- **Before→after only once per outdoor Reel:** only the first clip (Clip A) opens with ordinary clothes and the toss-at-lens transformation into Look 1. All later looks (rest of Clip A and all of Clip B) change ONLY by whip-pan/flash cut to the new outfit + new place — no throwing, no holding up clothes, no dressing. Clip B starts directly in a new outfit.
