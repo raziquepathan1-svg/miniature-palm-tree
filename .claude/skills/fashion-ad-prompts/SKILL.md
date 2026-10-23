@@ -133,7 +133,7 @@ Mix in luxury "arrival" moments instead of only walking: a black luxury car (no 
 
 ## Treadmill runway format (user loved it)
 
-- He walks on a sleek, unbranded matte black treadmill (no text) in a **luxury showroom at night**: charcoal walls, warm golden wall-wash lights, thin vertical warm LED strips, polished dark floor with reflections. **Camera at a 3/4 side angle** (about 45°), chest height, slow drift, never a plain white studio.
+- **Never show the full treadmill:** the treadmill is built flush into the floor / hidden, framed from mid-shin up so it looks like he walks in place on a runway; no rails, no console, no shoe-on-belt shots. He walks on a hidden, unbranded treadmill (no text) in a **luxury showroom at night**: charcoal walls, warm golden wall-wash lights, thin vertical warm LED strips, polished dark floor with reflections. **Camera at a 3/4 side angle** (about 45°), chest height, slow drift, never a plain white studio.
 - Outfit changes with quick white flash cuts while he keeps walking.
 - **One theme per video** (all suits, all traditional/modest, all winter, all classy smart casual, all summer…). Every look is a **different design** in that same style, and never repeats outfits from earlier prompts.
 - Give it as **2 clips (A + B), 2 looks each**, which come out cleaner than 4 looks in one clip. Clip A ends walking; clip B ends with the stop, collar fix and hero look. Join them later into one Reel.
