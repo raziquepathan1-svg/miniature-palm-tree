@@ -34,6 +34,28 @@ How it fits our 3-clip pipeline (clashes decided with the owner's "go with your 
    Pick the space, the luxury style, palette and mood that will satisfy viewers most, and deliver the prompts.
 
 
+## FIRST-TIME-RIGHT RULES (owner, Oct 23, 2026: "I only get 50 credits a day, give me the correct prompt every time")
+
+The owner gets about 50 Flow credits a day and 3 clips cost about 45, so a failed clip cannot be re-made the same day.
+Every prompt must work on the first try. Before sending prompts, check each one against this list:
+1. One job per clip, in a clear order. Never pack extra jobs into a clip (Day 23 Clip 2 had wall repair + floor
+   refinish + build, so Flow skipped the repair). Clip 1 = clear + fully repair/prepare. Clip 2 = build only.
+   Clip 3 = decor only.
+2. Each clip must END in the exact state the next clip needs, written as "By the end of the clip..." with
+   concrete visible facts (e.g. "one smooth, evenly painted cream wall, no grey, no holes").
+3. Clips 2 and 3 always say "Start from the start image, same camera position" and restate EXACTLY what
+   already exists (colors, each piece of furniture, where it is). Clip 3 says "do not change, move, replace or
+   restyle anything; only add decor".
+4. NO day-to-night or big light change in Clip 3: it made Flow redraw the room (Day 23 the panel, rug and
+   tree vanished). The ending wow = the lamps and LED strips switch on and glow warm, with the same daylight.
+   For the final reveal use only a gentle slow push-in.
+5. Keep the floor simple (swept clean in Clip 1); don't add floor refinishing unless the floor is the subject.
+6. Always tell the owner: use Frames to Video with the previous clip's LAST FRAME as the start image, and
+   check that each clip ended right before spending credits on the next one. If one clip failed, re-make only
+   that clip (offer to extract its last frame), never all 3.
+7. When the owner sends clips, review them frame by frame before they go to rrs_inbox; bad clips go to
+   rrs_review (it never publishes).
+
 ## Answer format (every time)
 
 1. **Concept Overview** - 2-3 lines: the space, the luxury style, the "wow" ending.
