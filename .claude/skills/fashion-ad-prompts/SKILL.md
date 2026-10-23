@@ -136,7 +136,7 @@ Mix in luxury "arrival" moments instead of only walking: a black luxury car (no 
 - **Setup (from the user's reference):** a bright, minimal white/light-grey room with recessed **vertical LED light panels** on the walls, a glossy light floor, soft even bright lighting. He walks on a **slim, low-profile black walking pad** (no rails, no handles, no console, unbranded, no text); never show a full gym treadmill, only the thin pad edge at the bottom of the frame.
 - **Camera:** slight 3/4 side angle, full body, slow smooth drift.
 - **He must act like a confident runway model, not just walk.** Give every look 2 clearly timed poses (e.g. 0-2s runs his fingers through his hair, 2-4s slides his left hand into his trouser pocket; fixing a cuff, buttoning the collar, adjusting the jacket/sleeves, putting on/lifting sunglasses, a slight head turn and smirk). Add the line "He performs every pose clearly and fully; he does not just walk." and put "stiff walking with no poses, arms hanging still" in the Avoid line.
-- Outfit changes with quick white flash cuts while he keeps walking. No text overlays (the reference has text; we don't).
+- Outfit changes are **smooth and invisible: no white flash, no light blink, no glitch**. Use a seamless match cut mid-stride (same pose, same position, same camera, the outfit simply changes) so viewers don't notice how it changed. Lights in the room stay steady. No text overlays (the reference has text; we don't).
 - **One theme per video** (all suits, all traditional/kurta, all winter, all classy smart casual, all summer…). Every look is a **different design** in that same style, and never repeats outfits from earlier prompts.
 - Give it as **2 clips (A + B), 2 looks each**, which come out cleaner than 4 looks in one clip. Clip A ends walking; clip B ends with the stop and hero look. Join them later into one Reel.
 
@@ -144,7 +144,12 @@ Mix in luxury "arrival" moments instead of only walking: a black luxury car (no 
 
 - Alternate formats: sometimes the treadmill runway, sometimes outdoor/luxury videos.
 - Outdoor videos now show **3–4 outfits in one clip, and each outfit is in a different location** (e.g. look 1 snowy forest road → look 2 café street → look 3 frozen lake). One theme per video (all winter, all suits, all traditional…), every design different.
-- Transition between looks: a fast whip-pan blur or a quick white flash while he keeps walking toward the camera; same face, same walk.
+- Transition between looks: smooth and invisible, no white flash, no light blink. Use a seamless match cut mid-stride or a smooth whip-pan blur while he keeps walking toward the camera; same face, same walk, same framing.
 - He poses like a model in every look (2 timed poses per look, same rule as the treadmill format), not just walking.
 - 3 looks in 8s (about 2.7s each) is the most reliable; for 4 looks, give 2 clips (A + B) and join them.
-- **Before→after only once per outdoor Reel:** only the first clip (Clip A) opens with ordinary clothes and the toss-at-lens transformation into Look 1. All later looks (rest of Clip A and all of Clip B) change ONLY by whip-pan/flash cut to the new outfit + new place — no throwing, no holding up clothes, no dressing. Clip B starts directly in a new outfit.
+- **Before→after only once per outdoor Reel:** only the first clip (Clip A) opens with ordinary clothes and the toss-at-lens transformation into Look 1. All later looks (rest of Clip A and all of Clip B) change ONLY by a smooth seamless cut/whip-pan to the new outfit + new place — no throwing, no holding up clothes, no dressing. Clip B starts directly in a new outfit.
+
+## Working rules (user instruction)
+
+- **Only send prompts when the user asks for a prompt.** When they explain a new idea or rule, just confirm and save it; don't send a prompt with it.
+- **No light blinks or white flashes between outfit changes** in prompts or in editing new multi-look Reels: changes must be smooth and seamless (match cut). Put "white flash, flickering or blinking lights, glitch transition" in the Avoid line. When editing these clips, join them with a plain hard cut on matching motion (flash=0), never a white flash.
