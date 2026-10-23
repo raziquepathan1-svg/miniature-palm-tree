@@ -117,7 +117,7 @@ Tell the user about the clash in simple words, suggest a recommended option, and
 - Clips are uploaded to `reels/raw/`; finished Reels go to `reels/final/` and are sent to the user with SendUserFile.
 - **No text overlays at all** (no hook text, no "LOOK 1/2/3", no end card, no handle). Clean video only.
 - Skip the hospital/scrub clip and any clip that shows a brand logo.
-- Style: chain 3 transformation clips, cutting on the fabric-covers-lens moment with a short white flash; light uniform grade; 1080x1920; silent audio (user adds music in Instagram).
+- Style: chain 3 transformation clips, cutting on the fabric-covers-lens moment with a clean hard cut (no white flash, per user); light uniform grade; 1080x1920; silent audio (user adds music in Instagram).
 - **Wait for the user's go.** When the user is sending clips one by one, only collect them (copy uploads to `reels/raw2/`); do NOT start editing until the user says to make the Reels.
 - Group Reels by theme (winter, summer, suits/evening, thobe/royal/modest, smart casual/outdoors) and freely reuse older clips from `reels/raw` and `reels/raw2` to fill a theme.
 
