@@ -116,13 +116,16 @@ video:
   host_clips:
     # Your desk clips in scrubs: your real Flow lips with your cloned voice fitted word by word (dub_clips.py,
     # best of 8 takes). Fallback without lip-sync: a no-talking clip with "say:" (the cloned voice over it).
+    # Oct 23 (owner): new clips, no "welcome back" and no "thanks for watching" (growth rules). The intro plays
+    # right after the hook, office and ICU on alternate days.
     intro:
-      - {file: "branding/health-support-studio/avatar/speaking/intro_desk_16x9_aligned.mp4", speed: 1.12}
-    outro:   # a different one each day: your real Flow lips with your cloned voice fitted word by word (dub_clips.py)
-      - {file: "branding/health-support-studio/avatar/speaking/desk_scrubs_16x9_aligned_v2.mp4", speed: 1.12}
-      - {file: "branding/health-support-studio/avatar/speaking/outro_desk2_16x9_aligned.mp4", speed: 1.12}
-    # Instagram/Facebook Reels end with this one ("Thanks for watching. Please share this...": no "subscribe")
-    reel_outro: {file: "branding/health-support-studio/avatar/speaking/outro_desk2_16x9_aligned.mp4", speed: 1.12}
+      - {file: "branding/health-support-studio/avatar/speaking/intro_office_16x9_aligned.mp4", speed: 1.12}
+      - {file: "branding/health-support-studio/avatar/speaking/intro_icu_16x9_aligned.mp4", speed: 1.12}
+    outro:   # "Subscribe to Health Support Studio, so you never miss the sign that matters."
+      - {file: "branding/health-support-studio/avatar/speaking/outro_icu_16x9_aligned.mp4", speed: 1.12}
+    # Instagram/Facebook Reels end with this one (no "subscribe"): "Follow Health Support Studio for one simple
+    # health tip every day."
+    reel_outro: {file: "branding/health-support-studio/avatar/speaking/reel_outro_icu_16x9_aligned.mp4", speed: 1.12}
   # The small presenter in the bottom-right corner (16:9 videos): your green-screen clips, lip-synced to the
   # narration on Kaggle (Wav2Lip), cut out; hidden while you are already full screen (desk clips, intro, outro).
   presenter:
