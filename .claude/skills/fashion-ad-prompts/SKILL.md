@@ -124,7 +124,8 @@ Tell the user about the clash in simple words, suggest a recommended option, and
 ## Hooks & captions (user preference)
 
 - **Mostly trendy, sometimes classy** (about 1 in 3 classy, e.g. "Quiet confidence hits different 🤍", "Dressed for every season of life 🖤"). Trendy = POV / relatable lines, e.g. "POV: you finally upgraded your wardrobe 🔥", "POV: your outfit has main character energy". Never "1 guy, 3 looks" / "X looks every man needs" style.
-- Captions **short**: hook line + one question line + 5–6 hashtags. No long lists.
+- Captions **short**: hook line + one question line + **exactly 5 hashtags** (Instagram allows max 5). No long lists.
+- **Hashtags must fit that specific Reel and be popular (high post counts):** pick 2 big general tags (e.g. #mensfashion #menstyle #outfitoftheday #reelsinstagram #explorepage), 2 medium tags (e.g. #menswear #mensoutfit #streetstylemen #outfitideasformen #fashionreels), and 1 theme tag matching the Reel (luxury → #oldmoneystyle #quietluxury #luxurylifestyle; ethnic/Eid → #ethnicwearformen #eidoutfit #kurtaformen; winter → #winterfashionmen #layeringstyle; wedding → #groomstyle #weddingoutfitformen; summer → #summerstylemen #linenstyle). Change the set per Reel; don't repeat the same 5 every time.
 
 ## Luxury arrival scenes (user request: not always walking)
 
