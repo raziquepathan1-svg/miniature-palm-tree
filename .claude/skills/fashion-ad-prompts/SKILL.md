@@ -131,9 +131,10 @@ Tell the user about the clash in simple words, suggest a recommended option, and
 
 Mix in luxury "arrival" moments instead of only walking: a black luxury car (no badges/logos) pulls up, chauffeur opens the door, he steps out showing the outfit; walking down private-jet stairs; stepping off a helicopter on a helipad; boarding a yacht; arriving at a five-star hotel entrance; sitting in a jet cabin then standing. Match the outfit to the luxury setting (tailoring, overcoats, quiet luxury, travel luxe). Vehicles and aircraft always unbranded, no logos.
 
-## Treadmill runway format (user loved it)
+## Treadmill runway format (user loved it; matches their reference Reel)
 
-- **Never show the full treadmill:** the treadmill is built flush into the floor / hidden, framed from mid-shin up so it looks like he walks in place on a runway; no rails, no console, no shoe-on-belt shots. He walks on a hidden, unbranded treadmill (no text) in a **luxury showroom at night**: charcoal walls, warm golden wall-wash lights, thin vertical warm LED strips, polished dark floor with reflections. **Camera at a 3/4 side angle** (about 45°), chest height, slow drift, never a plain white studio.
-- Outfit changes with quick white flash cuts while he keeps walking.
-- **One theme per video** (all suits, all traditional/modest, all winter, all classy smart casual, all summer…). Every look is a **different design** in that same style, and never repeats outfits from earlier prompts.
-- Give it as **2 clips (A + B), 2 looks each**, which come out cleaner than 4 looks in one clip. Clip A ends walking; clip B ends with the stop, collar fix and hero look. Join them later into one Reel.
+- **Setup (from the user's reference):** a bright, minimal white/light-grey room with recessed **vertical LED light panels** on the walls, a glossy light floor, soft even bright lighting. He walks on a **slim, low-profile black walking pad** (no rails, no handles, no console, unbranded, no text); never show a full gym treadmill, only the thin pad edge at the bottom of the frame.
+- **Camera:** slight 3/4 side angle, full body, slow smooth drift. Each look has one small pose while walking (fixing a cuff, touching his hair, buttoning the collar, adjusting sleeves).
+- Outfit changes with quick white flash cuts while he keeps walking. No text overlays (the reference has text; we don't).
+- **One theme per video** (all suits, all traditional/kurta, all winter, all classy smart casual, all summer…). Every look is a **different design** in that same style, and never repeats outfits from earlier prompts.
+- Give it as **2 clips (A + B), 2 looks each**, which come out cleaner than 4 looks in one clip. Clip A ends walking; clip B ends with the stop and hero look. Join them later into one Reel.
