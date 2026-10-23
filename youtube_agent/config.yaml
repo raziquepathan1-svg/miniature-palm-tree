@@ -122,10 +122,10 @@ video:
     intro:
       - {file: "branding/health-support-studio/avatar/speaking/intro_office_16x9.mp4", start: 0.4, end: 6.2, speed: 1.05}
       - {file: "branding/health-support-studio/avatar/speaking/intro_icu_16x9.mp4", start: 0, end: 7.5, speed: 1.05}
-    # The new ICU YouTube outro said "support" twice in Flow: the old desk outros stay until a new one is made.
-    outro:   # a different one each day: your real Flow lips with your cloned voice fitted word by word (dub_clips.py)
-      - {file: "branding/health-support-studio/avatar/speaking/desk_scrubs_16x9_aligned_v2.mp4", speed: 1.12}
-      - {file: "branding/health-support-studio/avatar/speaking/outro_desk2_16x9_aligned.mp4", speed: 1.12}
+    # Oct 23 (owner approved): ICU outro with its original Flow voice, "Subscribe, so you never miss the sign
+    # that matters." (no "thanks for watching")
+    outro:
+      - {file: "branding/health-support-studio/avatar/speaking/outro_icu2_16x9.mp4", start: 1.1, end: 5.6, speed: 1.05}
     # Instagram/Facebook Reels end with this one (no "subscribe"): "Follow Health Support Studio for one simple
     # health tip every day."
     reel_outro: {file: "branding/health-support-studio/avatar/speaking/reel_outro_icu_16x9_aligned.mp4", speed: 1.12}
