@@ -125,3 +125,7 @@ Tell the user about the clash in simple words, suggest a recommended option, and
 
 - **Mostly trendy, sometimes classy** (about 1 in 3 classy, e.g. "Quiet confidence hits different 🤍", "Dressed for every season of life 🖤"). Trendy = POV / relatable lines, e.g. "POV: you finally upgraded your wardrobe 🔥", "POV: your outfit has main character energy". Never "1 guy, 3 looks" / "X looks every man needs" style.
 - Captions **short**: hook line + one question line + 5–6 hashtags. No long lists.
+
+## Luxury arrival scenes (user request: not always walking)
+
+Mix in luxury "arrival" moments instead of only walking: a black luxury car (no badges/logos) pulls up, chauffeur opens the door, he steps out showing the outfit; walking down private-jet stairs; stepping off a helicopter on a helipad; boarding a yacht; arriving at a five-star hotel entrance; sitting in a jet cabin then standing. Match the outfit to the luxury setting (tailoring, overcoats, quiet luxury, travel luxe). Vehicles and aircraft always unbranded, no logos.
