@@ -153,3 +153,14 @@ Mix in luxury "arrival" moments instead of only walking: a black luxury car (no 
 
 - **Only send prompts when the user asks for a prompt.** When they explain a new idea or rule, just confirm and save it; don't send a prompt with it.
 - **No light blinks or white flashes between outfit changes** in prompts or in editing new multi-look Reels: changes must be smooth and seamless (match cut). Put "white flash, flickering or blinking lights, glitch transition" in the Avoid line. When editing these clips, join them with a plain hard cut on matching motion (flash=0), never a white flash.
+
+## Never repeat outfits or places (user instruction)
+
+- Every new prompt uses **new outfits AND new locations**. Check this list and earlier prompts first; add new ones here after each prompt.
+- Before writing a prompt, **search the internet (WebSearch) for unique, current menswear designs** (designer runway looks, street-style trends, modern ethnic/modest designs) that suit his tall, broad, bearded look, and use those ideas (described in words, no brand names).
+- **Places already used (don't reuse):** desert dunes; white marble courtyard with arches; night city rooftop; private jet + black car; rooftop helipad; yacht at sunset; five-star hotel entrance; tennis clay court; autumn market street; neon tunnel; seaside promenade with vintage car; bright white walking-pad studio (treadmill format is allowed to repeat); dark luxury showroom; snowy pine forest road; snowy café street; frozen lake; mountain cabin deck; bus stop; laundromat; parking lot outside a shop; stone old-town street; golf course; hotel steps; courtyard; hill road; office building; library; bridge; station.
+- **Recent outfits already used (don't reuse):** sand linen overshirt set; off-white knit polo + white trousers; black wool bomber overshirt all-black; terracotta overshirt + white tee; navy unstructured blazer + oxford shirt; charcoal merino quarter-zip; navy chalk-stripe DB suit; grey windowpane 3-piece; ecru suit + black knit polo; black tuxedo; dusty-rose kurta; bottle-green kurta + ivory Nehru jacket; midnight-navy silver-embroidered kurta; powder-blue chikankari kurta; forest-green quilted field jacket; charcoal herringbone topcoat; tan suede shearling jacket; burgundy peacoat; chocolate-brown DB suit; cream linen camp-collar set; midnight-navy suit; camel overcoat; beige wrap overshirt; olive boucle zip jacket; charcoal longline overshirt; ivory shawl cardigan.
+
+## Music
+
+- When the user asks, add their song (`reels/music/song1.mp3`, ~20s) to Reels: replace the silent track, start from 0s, fade out over the last 1.2s. Remind them Instagram may mute downloaded songs; picking the same song in Instagram's library is safer.
