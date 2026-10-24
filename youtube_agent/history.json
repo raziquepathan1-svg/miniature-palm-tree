@@ -462,10 +462,10 @@
     "series": "Emergency Basics",
     "episode": 2,
     "packaging_error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CgLNnBRgUgtZCavHB2w9i'}",
-    "planned_publish_at": "2026-10-25T16:00:00Z",
-    "awaiting_approval": true,
+    "awaiting_approval": false,
     "youtube_id": "PcF6ztyMfjU",
     "short_youtube_id": "ZGCixh_X4x0",
-    "preview": "previews/PcF6ztyMfjU.mp4"
+    "preview": "previews/PcF6ztyMfjU.mp4",
+    "publish_at": "2026-10-25T16:00:00Z"
   }
 ]
