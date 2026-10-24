@@ -109,3 +109,16 @@ matching gesture (hand to ear, "stop" palm). Our best so far: "SAY WHAT?" (puzzl
 New host clips go in branding/health-support-studio/avatar/broll/. A clip tied to a topic (CPR, fever,
 stroke...) must be listed in topics.yaml with its words, so it only plays in videos about that topic (owner
 complaint Oct 19: a CPR clip in the prostate video). Neutral clips (desk, explaining) are not listed.
+
+## Free mode (owner, Oct 24): no paid Anthropic API
+
+The owner does not want to pay for API credit. config: growth.retention false, social.shorts_style "v1".
+Videos come from the fact-checked script bank (youtube_agent/script_bank). Instead of the paid packaging step,
+the daily check (this chat) writes the packaging itself, following the rules above: 5 title/thumbnail combos,
+title under 50 characters + "(Part n/5)", true to the video, thumbnail text max 3 words not repeating the title
+(question thumbnail with a non-question title or the other way round), 2 keyword lines for the description top,
+one open personal pinned question. It adds a job to youtube_agent/packaging_jobs.json and runs packaging.yml
+(set_packaging.py: sets the title, prepends the keyword lines, saves pin_question in history.json for
+yt_comments) BEFORE the video goes public. When fewer than 10 unused scripts are left, the chat writes new
+scripts in the same YAML format (same facts discipline: only well-established guidance from CDC, NIH, AHA,
+Mayo Clinic and similar, sources listed, safety lines kept), adds them to the bank and runs check-scripts.yml.
