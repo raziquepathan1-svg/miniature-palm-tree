@@ -451,5 +451,21 @@
     "short2_youtube_id": "K8W5uRDf95Y",
     "preview": "previews/O1dW60-m5a0.mp4",
     "publish_at": "2026-10-24T16:00:00Z"
+  },
+  {
+    "date": "2026-10-24T06:47:34",
+    "topic": "Hypothermia and frostbite: warning signs and first aid",
+    "requested_topic": "Hypothermia and frostbite: warning signs and first aid",
+    "title": "Hypothermia and Frostbite: Cold Weather Warning Signs (Part 2/5)",
+    "style": "Warning Signs",
+    "script_file": "063-hypothermia-frostbite-signs.yaml",
+    "series": "Emergency Basics",
+    "episode": 2,
+    "packaging_error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CgLNnBRgUgtZCavHB2w9i'}",
+    "planned_publish_at": "2026-10-25T16:00:00Z",
+    "awaiting_approval": true,
+    "youtube_id": "PcF6ztyMfjU",
+    "short_youtube_id": "ZGCixh_X4x0",
+    "preview": "previews/PcF6ztyMfjU.mp4"
   }
 ]
