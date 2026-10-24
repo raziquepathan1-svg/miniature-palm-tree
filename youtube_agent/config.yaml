@@ -66,7 +66,8 @@ growth:
   parts: 5
   # The owner's growth rules (.claude/skills/hss-growth-director): 5 title/thumbnail packages, 15-second hook,
   # open loop at 60 s, 20-second bridge ending, keyword description lines, one pinned question.
-  retention: true
+  # Oct 24 (owner): free mode, no paid Anthropic API. Set back to true (and shorts_style "v2") if credit is added.
+  retention: false
   subscribe_after_words: 300   # the subscribe ask comes after the first payoff (about 2 minutes in)
   # Which series starts next (the first one with 5 scripts left). Urgent, common worries get the most views
   # (CPR, flu shot, Benadryl, sepsis); "Caring for Older Adults" first because Part 5 of the last series
@@ -90,7 +91,7 @@ growth:
 social:
   enabled: true
   style: "native"        # Instagram/Facebook versions end with "follow us", short captions with a question
-  shorts_style: "v2"     # v2 = a hook made for the topic over the host's face, quick beats, big word captions,
+  shorts_style: "v1"     # v2 = a hook made for the topic over the host's face, quick beats, big word captions,
                          # a preview of the full video (youtube_agent/shorts2.py); "v1" = the old slide Shorts
   short1_loop: true      # Short 1 is an infinite loop (no ending card); Short 2 keeps the full-video ending
 
