@@ -466,7 +466,7 @@ CTAS = ["If you loved this, share it with a friend and subscribe for more. And l
 TITLE_MAX = 50
 LOOP_LINE = "And it all started... right here."
 # thumbnail text: max 3 words, never words from the title
-THUMB_WORDS = ["WAIT FOR IT", "NO WAY", "SAME ROOM?", "WORTH IT?", "UNREAL", "RATE IT 1-10", "BIG MISTAKE?"]
+THUMB_WORDS = ["WAIT FOR IT", "NO WAY", "SAME PLACE?", "WORTH IT?", "UNREAL", "RATE IT 1-10", "BIG MISTAKE?"]
 
 
 def _title_options(place: str, cfg: dict, rng: random.Random, n: int) -> list[str]:
