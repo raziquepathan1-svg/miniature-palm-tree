@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-# Usage: make_reel.sh OUT.mp4 "file|start|dur|flash" ...   (flash = 1 for white flash at segment start)
+# Usage: make_reel.sh OUT.mp4 "file|start|dur|flash[|speed]" ...   (flash = 1 for white flash at segment start;
+#        speed < 1 = smooth slow motion via motion interpolation, e.g. 0.5 = half speed)
 # Clean 1080x1920 Reel, no text, silent audio track, last frame held 1s with fade-out.
 set -e
 OUT="$1"; shift
@@ -8,8 +9,11 @@ G="scale=1080:1920:flags=lanczos,setsar=1,eq=contrast=1.05:saturation=1.06,vigne
 ENC="-c:v libx264 -preset slow -crf 18 -pix_fmt yuv420p -an"
 i=0; : > "$W/list.txt"; last=""
 for seg in "$@"; do
-  IFS='|' read -r f st du fl <<< "$seg"
+  IFS='|' read -r f st du fl sp <<< "$seg"
   vf="$G"; [ "$fl" = "1" ] && vf="$vf,fade=in:st=0:d=0.15:color=white"
+  if [ -n "$sp" ] && [ "$sp" != "1" ]; then
+    vf="minterpolate=fps=$(echo "24/$sp" | bc -l):mi_mode=mci:mc_mode=aobmc:me_mode=bidir:vsbmc=1,setpts=PTS/$sp,$vf"
+  fi
   ffmpeg -v error -y -ss "$st" -t "$du" -i "$f" -vf "$vf" $ENC "$W/s$i.mp4"
   echo "file s$i.mp4" >> "$W/list.txt"; last="$W/s$i.mp4"; i=$((i+1))
 done
