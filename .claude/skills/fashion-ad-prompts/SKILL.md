@@ -32,7 +32,9 @@ The user runs the men's fashion Instagram page **@raziquepathan** featuring **th
 - **Camera work:** the hook (dramatic macro detail), the reveal (smooth tracking or slow-motion swagger walk showing the full outfit), rhythmic detail cuts on textures and motion.
 - **Pacing & mood:** sophisticated, confident, rhythmic, aspirational — like an expensive TV spot made for Reels.
 
-## Default video story: before → after transformation + luxury ad polish
+## DEFAULT FORMAT NOW (user, Oct 25): one 8s clip = regular clothes once at the start → toss → then 3–4 outfits, each in a new place, changing smoothly (whip-pan / seamless match cut, no flash, no blending, no throwing or dressing again, never showing the old clothes between looks). He poses like a model in every look. See "Outdoor multi-look format" below for details.
+
+## Older video story (single outfit): before → after transformation + luxury ad polish
 
 One single **8-second** Google Flow clip (the user wants 8–10s Shorts in one generation). 4 beats:
 
