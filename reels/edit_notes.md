@@ -10,3 +10,4 @@
   - NOTE: opening 0.5-1.1s shows light stubble instead of full beard -> option: use only 0-0.5 macro then 1.8-8.0, or user regenerates.
 - Man_modeling_outfits_in_commercial_20261025115730.mp4 (Prompt 81 office): beard OK. Toss: tee reappears 1.85-2.1 -> use 0-1.82 | 2.15-8.0 (fabric falling in lobby = nice reveal). Airport look (~4-6s): colorful airline-style plane tail at left edge, no readable logo -> blur it lightly.
 - Man_modeling_countryside_menswea__20261025120123.mp4 (Prompt 82 countryside): clean toss into lane, beard OK, whip-pans fine -> use whole clip.
+- Man_modeling_luxury_fashion_outfits_20261025120638.mp4 (Prompt 83 Moroccan): beard OK; jacket thrown but drops, hoodie shows 1.5-1.6 -> use 0-1.42 | 1.65-8.0 (cut on jacket flying). Whip-pans fine.
