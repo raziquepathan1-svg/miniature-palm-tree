@@ -131,7 +131,7 @@ Tell the user about the clash in simple words, suggest a recommended option, and
 
 Mix in luxury "arrival" moments instead of only walking: a black luxury car (no badges/logos) pulls up, chauffeur opens the door, he steps out showing the outfit; walking down private-jet stairs; stepping off a helicopter on a helipad; boarding a yacht; arriving at a five-star hotel entrance; sitting in a jet cabin then standing. Match the outfit to the luxury setting (tailoring, overcoats, quiet luxury, travel luxe). Vehicles and aircraft always unbranded, no logos.
 
-## Treadmill runway format (user loved it; matches their reference Reel)
+## Treadmill runway format — STOPPED (user, Oct 25): do NOT make treadmill/walking-pad prompts anymore unless the user asks again. Kept below only for reference.
 
 - **Setup (from the user's reference):** a bright, minimal white/light-grey room with recessed **vertical LED light panels** on the walls, a glossy light floor, soft even bright lighting. He walks on a **slim, low-profile black walking pad** (no rails, no handles, no console, unbranded, no text); never show a full gym treadmill, only the thin pad edge at the bottom of the frame.
 - **Camera:** slight 3/4 side angle, full body, slow smooth drift.
@@ -142,7 +142,7 @@ Mix in luxury "arrival" moments instead of only walking: a black luxury car (no 
 
 ## Outdoor multi-look format (mix with treadmill videos)
 
-- Alternate formats: sometimes the treadmill runway, sometimes outdoor/luxury videos.
+- No more treadmill videos (user, Oct 25). Go back to the earlier outdoor/location clips: the before→after transformation with luxury places, and this outdoor multi-look format.
 - Outdoor videos now show **3–4 outfits in one clip, and each outfit is in a different location** (e.g. look 1 snowy forest road → look 2 café street → look 3 frozen lake). One theme per video (all winter, all suits, all traditional…), every design different.
 - Transition between looks: smooth and invisible, no white flash, no light blink. Use a seamless match cut mid-stride or a smooth whip-pan blur while he keeps walking toward the camera; same face, same walk, same framing.
 - He poses like a model in every look (2 timed poses per look, same rule as the treadmill format), not just walking.
