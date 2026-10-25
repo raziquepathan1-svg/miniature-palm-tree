@@ -53,7 +53,11 @@ Every prompt must work on the first try. Before sending prompts, check each one 
 6. Always tell the owner: use Frames to Video with the previous clip's LAST FRAME as the start image, and
    check that each clip ended right before spending credits on the next one. If one clip failed, re-make only
    that clip (offer to extract its last frame), never all 3.
-7. When the owner sends clips, review them frame by frame before they go to rrs_inbox; bad clips go to
+7. Flow's aspect-ratio setting overrides the prompt text: Day 24 clips came out 16:9 although the prompt said
+   9:16. Always remind the owner to set the aspect ratio to 9:16 / portrait in Flow's settings before generating.
+   If landscape clips arrive anyway, don't waste credits: convert them (4:3 centre crop on a blurred 720x1280
+   background) and use them.
+8. When the owner sends clips, review them frame by frame before they go to rrs_inbox; bad clips go to
    rrs_review (it never publishes).
 
 ## Answer format (every time)
