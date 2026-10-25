@@ -140,7 +140,7 @@ plan:
     - layout: "bullets"
       heading: "After Surgery at Home"
       points: ["Move and walk as advised", "Do leg exercises", "Take blood thinners as prescribed", "Watch for warning signs"]
-      footage_query: "elderly man walking hallway"
+      footage_query: "ankle pumps leg exercise"
       narration: >-
         After surgery or a hospital stay, keep moving as your doctor advises. Walk around the house several times a day. Do
         simple leg exercises in bed or a chair, like pointing and flexing your feet. Take any blood thinner exactly as
@@ -148,7 +148,7 @@ plan:
     - layout: "bullets"
       heading: "Travel Smart"
       points: ["Walk every 1 to 2 hours", "Flex and stretch your legs", "Drink water", "Loose clothing"]
-      footage_query: "airplane aisle passengers"
+      footage_query: "ankle pumps leg exercise"
       narration: >-
         On long trips of four hours or more, by plane, car, bus or train, get up and walk every one to two hours if you can.
         When seated, flex your ankles, point your toes, and tighten your calf muscles. Drink plenty of water and limit
