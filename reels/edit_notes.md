@@ -7,3 +7,4 @@
 - Man_modeling_outfits_in_commercial_20261023220105.mp4 (Prompt 78 night out): no real toss, jacket drops at ~1.2s -> use 0-1.1 (jacket held up to lens) then 2.4-8.0 (opera staircase onward). Whip-pans fine.
 - Man_modeling_knitwear_on_walking__20261025114214.mp4 (Prompt 79 knit): wipe glitches at 2.8s and 5.5-5.7s -> use 0-2.78 | 2.92-5.48 | 5.78-8.0, hard cuts.
 - Man_modeling_ethnic_fashion_outfits_20261025115027.mp4 (Prompt 80 ethnic): jacket drops and shows before outfit at 1.2-1.7s -> use 0-1.1 | 1.8-8.0. Whip-pans fine.
+  - NOTE: opening 0.5-1.1s shows light stubble instead of full beard -> option: use only 0-0.5 macro then 1.8-8.0, or user regenerates.

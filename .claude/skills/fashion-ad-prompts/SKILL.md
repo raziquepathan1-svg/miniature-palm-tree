@@ -166,3 +166,8 @@ Mix in luxury "arrival" moments instead of only walking: a black luxury car (no 
 ## Music
 
 - When the user asks, add their song (`reels/music/song1.mp3`, ~20s) to Reels: replace the silent track, start from 0s, fade out over the last 1.2s. Remind them Instagram may mute downloaded songs; picking the same song in Instagram's library is safer.
+
+## Beard in the opening shot (user, Oct 25)
+
+- Veo sometimes shows him with only light stubble in the opening/before shot. In every prompt's Shot 1 add: "In this opening shot he already has the same full dense black beard and moustache as in all other shots (not stubble, not clean-shaven)." and add "short beard or stubble in the opening shot, clean-shaven face" to the Avoid line. Also keep the opening shot a medium close-up so the beard is clearly visible.
+- When editing, check the opening frames; if the beard is missing, cut the opening (start on the macro hook, then jump to Look 1) or ask the user to regenerate.
