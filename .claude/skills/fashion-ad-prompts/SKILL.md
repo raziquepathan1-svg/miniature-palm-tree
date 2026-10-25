@@ -177,3 +177,7 @@ Mix in luxury "arrival" moments instead of only walking: a black luxury car (no 
 - Prompt 82 (Countryside) generated perfectly: medium close-up opening with the beard line, macro hook on the garment, "throws it hard and fast… slams into the camera", then 3 looks with smooth whip-pans, 2 clear poses per look, one quick watch close-up in the 1-in-3 prompts, low-angle hero. Copy that structure.
 - **Outfits must never look cheap.** Use luxury fabrics and cuts (cashmere, fine wool, suede, silk blends, linen, tweed, quality leather), perfect tailoring and fit, refined colour palettes. Avoid shiny synthetic fabrics, graphic prints, loud mismatched colours, cheap-looking sneakers or baggy ill-fitting pieces.
 - Clothing labels: Veo sometimes adds readable brand-style labels inside collars. Add "no labels or tags with text inside the clothing" to the Avoid line; blur any that appear when editing.
+
+## Slow motion in edits (user, Oct 25)
+
+- Every Reel: add one smooth slow-motion moment (0.8s of source at 0.5x via the `speed` field in `make_reel.sh`) in the middle of each outfit, on a pose (collar, button, watch), never across a whip-pan. Example script: `reels/work/render_oct25.sh`.
