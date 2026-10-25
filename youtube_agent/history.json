@@ -479,8 +479,7 @@
     "script_file": "056-carbon-monoxide-signs.yaml",
     "series": "Emergency Basics",
     "episode": 3,
-    "planned_publish_at": "2026-10-26T16:00:00Z",
-    "awaiting_approval": true,
+    "awaiting_approval": false,
     "youtube_id": "U0Hu-5sg2sg",
     "short_youtube_id": "_l9Eo-dkeNg",
     "short2_youtube_id": "XvQ9bttgwJc",
@@ -517,6 +516,7 @@
       "title": "Carbon Monoxide: The Silent Killer in Your Home",
       "thumbnail_text": "NO SMELL?",
       "thumbnail_highlight": "SMELL?"
-    }
+    },
+    "publish_at": "2026-10-26T16:00:00Z"
   }
 ]
