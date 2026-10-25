@@ -12,5 +12,43 @@
     "description_top": "Hypothermia and frostbite symptoms, warning signs and first aid for cold weather, explained simply.\nLearn who is most at risk, what to do while you wait for help, and how to stay warm and safe this winter.",
     "pin_question": "Have you or someone you know ever been stuck out in the cold longer than planned? What helped you stay warm?",
     "done": true
+  },
+  {
+    "youtube_id": "U0Hu-5sg2sg",
+    "title": "Carbon Monoxide: The Silent Killer in Your Home (Part 3/5)",
+    "description_top": "Carbon monoxide poisoning symptoms, warning signs and prevention, explained simply: the headache, dizziness and flu like signs to watch for.\nLearn how CO alarms, safe generator use and yearly appliance checks protect your family this winter.",
+    "pin_question": "Do you have a carbon monoxide alarm at home, and when did you last test it?",
+    "packages": [
+      {
+        "title": "Carbon Monoxide: The Silent Killer in Your Home",
+        "thumbnail_text": "NO SMELL?",
+        "thumbnail_highlight": "SMELL?"
+      },
+      {
+        "title": "Is It the Flu or Carbon Monoxide?",
+        "thumbnail_text": "CHECK YOUR ALARM",
+        "thumbnail_highlight": "ALARM"
+      },
+      {
+        "title": "The Silent Gas That Kills in Your Sleep",
+        "thumbnail_text": "NO SMELL?",
+        "thumbnail_highlight": "SMELL?"
+      },
+      {
+        "title": "Never Run a Generator in These Places",
+        "thumbnail_text": "DEADLY MISTAKE",
+        "thumbnail_highlight": "DEADLY"
+      },
+      {
+        "title": "Carbon Monoxide Myths That Can Kill You",
+        "thumbnail_text": "OPEN WINDOW?",
+        "thumbnail_highlight": "WINDOW?"
+      }
+    ],
+    "chosen": {
+      "title": "Carbon Monoxide: The Silent Killer in Your Home",
+      "thumbnail_text": "NO SMELL?",
+      "thumbnail_highlight": "SMELL?"
+    }
   }
 ]
