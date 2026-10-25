@@ -1,0 +1,372 @@
+queue_topic: 'Storing and disposing of medicines safely: myths vs facts'
+style: Myth vs Fact
+sources:
+- 'FDA, Where and How to Dispose of Unused Medicines: https://www.fda.gov/consumers/consumer-updates/where-and-how-dispose-unused-medicines'
+- 'FDA, Drug Disposal: Flush Potentially Dangerous Medicine: https://www.fda.gov/drugs/disposal-unused-medicines-what-you-should-know/drug-disposal-flush-potentially-dangerous-medicine'
+- 'FDA, Best Way to Get Rid of Used Needles and Other Sharps: https://www.fda.gov/medical-devices/safely-using-sharps-needles-and-syringes-home-work-and-travel/best-way-get-rid-used-needles-and-other-sharps'
+- 'DEA, National Prescription Drug Take Back Day: https://www.dea.gov/takebackday'
+plan:
+  topic: 'Storing and disposing of medicines safely: myths vs facts'
+  title: Your Medicine Cabinet Is the Wrong Place for Pills
+  description: 'Where you keep your medicines, and how you throw them away, matters more than most people think. Here are
+    the common myths, the facts from the FDA, and simple steps to keep your family and pets safe.
+
+
+    In this video:
+
+    • Why the bathroom is not the best place for medicines
+
+    • Keeping medicines up and away from children
+
+    • Expired medicines
+
+    • Take back programs and the safe trash method
+
+    • Which medicines the FDA says to flush
+
+
+    #MedicationSafety #ChildSafety #MedicineDisposal #HealthTips #HealthEducation'
+  tags:
+  - medicine storage
+  - medicine disposal
+  - medication safety
+  - drug take back
+  - expired medicine
+  - child safety
+  - poison prevention
+  - opioid disposal
+  - sharps disposal
+  - health education
+  thumbnail_text: MOVE THEM NOW
+  thumbnail_highlight: NOW
+  thumbnail_photo_query: bathroom medicine cabinet pills
+  playlist: Medications & Safety
+  short_title: 'The worst place to keep your medicine #Shorts'
+  short_caption: 'Where do you keep your medicines? The bathroom may be the worst spot. Educational only, not medical advice.
+    #MedicationSafety #ChildSafety #HealthTips #HealthEducation'
+  scenes:
+  - layout: title
+    heading: Store and Dispose Safely
+    points:
+    - Myths vs facts
+    footage_query: bathroom medicine cabinet pills
+    narration: Most of us keep medicines in the bathroom cabinet, and throw old pills in the trash or down the toilet. But
+      some of those habits can make medicines work less well, or put children, pets and other people at risk. Today we will
+      bust the most common myths about storing and getting rid of medicines, using advice from the FDA.
+  - layout: myth_fact
+    heading: The Bathroom Cabinet
+    points:
+    - The bathroom cabinet is best
+    - Heat and moisture can harm medicines
+    footage_query: steamy bathroom mirror
+    narration: 'Myth: the bathroom medicine cabinet is the best place for pills. Fact: showers and baths make the bathroom
+      hot and humid, and heat and moisture can damage some medicines, so they may not work as well. Most medicines are best
+      kept in a cool, dry place, like a high shelf in a bedroom closet.'
+  - layout: bullets
+    heading: Follow the Storage Label
+    points:
+    - Room temperature for most
+    - Some need the fridge
+    - Keep the original container
+    footage_query: medicine label storage
+    narration: Always check the label. Most pills should be kept at room temperature, away from heat, light and moisture.
+      Some medicines, like many insulins before opening and some liquid antibiotics, need the refrigerator. Keep medicines
+      in their original containers, so the label, directions and expiration date stay with them.
+  - layout: bullets
+    heading: Medicines for the Fridge
+    points:
+    - Check the label
+    - Never freeze unless told
+    - Opened insulin rules differ
+    footage_query: refrigerator door medicine
+    narration: For medicines that need the refrigerator, keep them in the main part of the fridge, not in the door where the
+      temperature changes, and never freeze them unless the label says so. Some medicines, like many insulins, have different
+      rules once opened and can be kept at room temperature for a set number of days. Your label or pharmacist will tell you
+      how long.
+  - layout: bullets
+    heading: Kitchen Hot Spots
+    points:
+    - Not above the stove
+    - Not next to the sink
+    - Not in a sunny window
+    footage_query: kitchen stove sink
+    narration: If you keep medicines in the kitchen, avoid the spots above the stove, next to the sink or dishwasher, and
+      on a sunny windowsill. These areas get hot and steamy. A cabinet away from heat and water is a better choice, as long
+      as it is out of reach of children.
+  - layout: myth_fact
+    heading: The Car Glove Box
+    points:
+    - The car is fine for a day
+    - Cars get very hot or cold
+    footage_query: car interior hot sun
+    narration: 'Myth: leaving medicines in the car for a day is fine. Fact: the inside of a car can get very hot in summer
+      and very cold in winter, and extreme temperatures can damage medicines. Take them with you. When you travel, keep medicines
+      in your carry on bag, in their original containers.'
+  - layout: big_number
+    heading: Children at Risk
+    points:
+    - Tens of thousands
+    - Young children in the ER each year
+    footage_query: toddler reaching shelf
+    narration: Every year, tens of thousands of young children end up in emergency rooms because they got into medicines while
+      no adult was watching. Most of these medicines belonged to a parent or grandparent. Young children explore with their
+      mouths, and colorful pills and gummy vitamins can look like candy. It can happen in the few seconds an adult turns away
+      to answer the phone.
+  - layout: myth_fact
+    heading: Child Resistant Caps
+    points:
+    - Child resistant caps are childproof
+    - They slow kids down, not stop them
+    footage_query: pill bottle cap child
+    narration: 'Myth: child resistant caps are childproof. Fact: these caps make it harder for children to open the bottle,
+      but they do not stop every child. Some children can open them in seconds. And caps only help if they are closed tightly
+      after every use. Storage is still your main protection.'
+  - layout: warning
+    heading: Up and Away
+    points:
+    - Up high, out of sight
+    - Back after every use
+    - Even between doses
+    footage_query: high shelf cabinet
+    narration: Keep all medicines and vitamins up and away, out of children's reach and out of sight, every single time. Put
+      them back right after every use, even if you will need another dose in a few hours. A locked cabinet or a lock box gives
+      extra protection, especially for strong medicines like opioids.
+  - layout: bullets
+    heading: Purses and Visitors
+    points:
+    - Bags on the floor
+    - Guests' medicines
+    - Grandparents' pill organizers
+    footage_query: handbag on floor
+    narration: Many children get into medicines from a purse, backpack or coat pocket left within reach, or from a visitor's
+      bag. Ask guests to keep their bags up high. Weekly pill organizers are easy for small hands to open, so keep them up
+      and away too, especially at a grandparent's home.
+  - layout: warning
+    heading: Teens and Medicine Cabinets
+    points:
+    - Count strong medicines
+    - Lock up opioids and stimulants
+    - Talk openly
+    footage_query: teenager at home kitchen
+    narration: Teenagers are another group to think about. Some teens try prescription medicines they find at home, like opioid
+      pain medicines, anxiety medicines or ADHD stimulants, believing they are safer than street drugs. Keep these medicines
+      locked, keep track of how many pills are left, and talk openly with teens about the risks.
+  - layout: bullets
+    heading: Pets Too
+    points:
+    - Dogs chew pill bottles
+    - Human medicines can harm pets
+    - Call your vet quickly
+    footage_query: dog in kitchen
+    narration: Pets can get into medicines as well. Dogs can chew right through pill bottles, and many human medicines, like
+      some pain relievers, can be very harmful to cats and dogs. Store medicines where pets cannot reach them, and call your
+      veterinarian or an animal poison hotline right away if a pet swallows a medicine.
+  - layout: myth_fact
+    heading: Expired Medicines
+    points:
+    - Expired medicine is fine to use
+    - Do not use it, dispose of it
+    footage_query: expired medicine box
+    narration: 'Myth: expired medicine is still fine to use. Fact: after the expiration date, the maker cannot promise the
+      medicine is safe and works as it should. Some medicines can lose strength, which matters a lot for things like antibiotics
+      or emergency medicines. Do not use expired medicine. Dispose of it safely and get a fresh supply.'
+  - layout: bullets
+    heading: Clean Out Once a Year
+    points:
+    - Check expiration dates
+    - Remove what you no longer use
+    - Update your medication list
+    footage_query: person sorting pill bottles
+    narration: Once or twice a year, clean out your medicine cabinet. Check expiration dates, and set aside anything expired,
+      anything you no longer take, and any medicine with a damaged label or that looks or smells different. Then update your
+      medication list, so it matches what you actually take.
+  - layout: myth_fact
+    heading: Keep Leftovers Just in Case
+    points:
+    - Save leftovers for next time
+    - Leftovers can be misused or mixed up
+    footage_query: leftover pill bottles
+    narration: 'Myth: it is smart to keep leftover prescription medicines just in case. Fact: leftover medicines can be taken
+      by mistake, used by someone they were not prescribed for, or misused. This is especially true for opioid pain medicines.
+      If you no longer need a prescription medicine, dispose of it safely.'
+  - layout: warning
+    heading: Leftover Opioids
+    points:
+    - Dispose quickly
+    - Lock up until then
+    - Never share
+    footage_query: prescription opioid bottle
+    narration: Leftover opioid pain medicines need special care. Many people who misuse opioids first get them from a friend
+      or family member's medicine cabinet. Keep opioids locked up while you use them, never share them, and get rid of any
+      leftovers as soon as you no longer need them.
+  - layout: bullets
+    heading: 'Best Option: Take Back'
+    points:
+    - Drug take back sites
+    - Pharmacy kiosks
+    - Police stations
+    footage_query: pharmacy drop box
+    narration: The best way to get rid of most unused medicines is a drug take back option. Many pharmacies, hospitals and
+      police stations have year round drop boxes. The Drug Enforcement Administration also holds National Prescription Drug
+      Take Back Days in April and October. Some pharmacies offer free mail back envelopes too, so you can send medicines away
+      safely from home.
+  - layout: myth_fact
+    heading: Flush Everything
+    points:
+    - Flush all old medicines
+    - Only medicines on the FDA flush list
+    footage_query: toilet bathroom
+    narration: 'Myth: the toilet is the right place for all old medicines. Fact: the FDA says to flush only a small group
+      of medicines that are on its flush list, and only when a take back option is not easy to reach. For most other medicines,
+      use a take back site or the household trash method instead.'
+  - layout: warning
+    heading: The FDA Flush List
+    points:
+    - Some strong opioids
+    - Fentanyl patches
+    - Only if no take back
+    footage_query: fentanyl patch box
+    narration: The flush list includes certain medicines that could be especially harmful, even deadly, with just one dose
+      if someone else took them, such as some strong opioid pain medicines. For these, quick disposal is safest. A used fentanyl
+      patch, for example, still has medicine in it. Fold it sticky sides together, and flush it if take back is not available.
+  - layout: bullets
+    heading: The Household Trash Method
+    points:
+    - Mix with dirt or coffee grounds
+    - Seal in a bag
+    - Throw in the trash
+    footage_query: used coffee grounds
+    narration: If there is no take back option and the medicine is not on the flush list, use the household trash. Take pills
+      out of the bottle, and do not crush them. Mix them with something unappealing, like dirt, cat litter or used coffee
+      grounds. Put the mix in a sealed plastic bag or container, and throw it in your trash.
+  - layout: myth_fact
+    heading: Pour It Down the Sink
+    points:
+    - Liquids can go down the sink
+    - Use take back or the trash method
+    footage_query: kitchen sink drain
+    narration: 'Myth: liquid medicines can just be poured down the sink. Fact: unless the medicine is on the FDA flush list,
+      use a take back option, or mix the liquid with something like cat litter or used coffee grounds, seal it in a bag or
+      container, and put it in the trash. That keeps it away from children, pets and anyone looking through the garbage.'
+  - layout: bullets
+    heading: Protect Your Privacy
+    points:
+    - Scratch out your name
+    - Remove the prescription number
+    - Then recycle or toss the bottle
+    footage_query: pill bottle label close up
+    narration: Before you throw away the empty bottle, scratch out or peel off your name, the prescription number and other
+      personal information on the label. That protects your privacy and your health information. Then recycle or throw away
+      the empty bottle, following the rules where you live.
+  - layout: warning
+    heading: Needles and Sharps
+    points:
+    - Use a sharps container
+    - Never loose in trash
+    - Follow local rules
+    footage_query: sharps disposal container
+    narration: Used needles, syringes and lancets need special care. Put them right away in an FDA cleared sharps container,
+      or a strong plastic container with a tight lid if you do not have one. Never throw loose needles in the trash or recycling,
+      and never flush them. Check your local rules for how to dispose of the full container.
+  - layout: bullets
+    heading: Inhalers
+    points:
+    - Do not puncture
+    - Do not burn
+    - Ask about local rules
+    footage_query: asthma inhaler close up
+    narration: Inhalers used for asthma and COPD can be dangerous if punctured or thrown into a fire or incinerator, because
+      they may contain pressurized gas. Ask your pharmacist or local trash and recycling program how to dispose of them in
+      your area.
+  - layout: myth_fact
+    heading: Sharing Medicines
+    points:
+    - Sharing works if symptoms match
+    - Prescriptions are made for one person
+    footage_query: two people pills hands
+    narration: 'Myth: if a friend has the same symptoms, it is fine to share your prescription. Fact: a prescription is chosen
+      for one person, based on their health, other medicines, allergies and weight. A medicine that is safe for you could
+      be harmful for someone else. Never share prescription medicines.'
+  - layout: bullets
+    heading: Travel Smart
+    points:
+    - Carry on, not checked
+    - Original containers
+    - Extra supply
+    footage_query: suitcase airport
+    narration: When you travel, pack medicines in your carry on bag, in their original labeled containers, with a copy of
+      your medication list. Bring a few extra days of supply in case of delays. Keep them away from heat, and remember that
+      hotel rooms and relatives' homes may have curious children too.
+  - layout: bullets
+    heading: Older Adults and Caregivers
+    points:
+    - Clear labels
+    - Good lighting
+    - Avoid mix ups
+    footage_query: older woman reading pill bottle
+    narration: For older adults, good storage also means avoiding mix ups. Keep medicines in one place with good lighting,
+      ask the pharmacy for large print labels if needed, and keep each medicine in its own labeled container. Caregivers can
+      help by checking the supply each week and removing anything that has been stopped.
+  - layout: warning
+    heading: If Someone Swallows Medicine
+    points:
+    - Call Poison Control
+    - Call 911 if very sick
+    - Keep the bottle
+    footage_query: phone call emergency kitchen
+    narration: If a child or anyone else swallows a medicine that is not theirs, call Poison Control at one, eight hundred,
+      two two two, one two two two, even if they seem fine. If the person has trouble breathing, is very sleepy, has a seizure
+      or collapses, call 911 right away. Keep the medicine bottle to show the experts.
+  - layout: bullets
+    heading: A Five Minute Safety Check
+    points:
+    - Move medicines up and away
+    - Toss expired ones safely
+    - Update your list
+    footage_query: family kitchen tidy shelf
+    narration: Here is a five minute safety check you can do today. Move all medicines out of the bathroom to a cool, dry
+      place up high. Set aside expired and unused medicines for take back. Make sure caps are tight. And put the Poison Control
+      number in your phone.
+  - layout: bullets
+    heading: Quick Recap
+    points:
+    - Cool, dry place, up and away
+    - Do not use expired medicine
+    - Take back is best
+    - Flush only if on the list
+    footage_query: pharmacy drop box
+    narration: Let us recap. Store medicines in a cool, dry place, up and away from children and pets, not in a steamy bathroom
+      or a hot car. Do not use expired medicine. Take back programs are the best way to get rid of unused medicines. Flush
+      only medicines on the FDA flush list, and use the trash method for the rest.
+  - layout: outro
+    heading: Remember
+    points:
+    - Up and away
+    - Take back is best
+    - Save the Poison Control number
+    footage_query: family kitchen table
+    narration: 'Remember: keep medicines up and away, clean out your cabinet once a year, and use a take back option when
+      you can. Share this with a parent or grandparent today. This video is for education only, not medical advice.'
+  short_scenes:
+  - layout: title
+    heading: The Worst Place for Pills
+    points:
+    - Your bathroom cabinet
+    footage_query: bathroom medicine cabinet pills
+    narration: The bathroom medicine cabinet may be the worst place to keep your medicine.
+  - layout: bullets
+    heading: Where Instead
+    points:
+    - Heat and steam harm medicines
+    - Cool, dry place
+    - Up and away from kids
+    footage_query: high shelf cabinet
+    narration: Hot showers make the bathroom steamy, and heat and moisture can damage some medicines, so they may not work
+      as well. Keep them in a cool, dry place instead, like a high closet shelf, up and away from children and pets. And check
+      the label for anything that needs the fridge.
+  - layout: outro
+    heading: Full Video
+    points:
+    - On YouTube
+    footage_query: pharmacy counter
+    narration: Learn how to safely get rid of old medicines in our full video, on the Health Support Studio YouTube channel.

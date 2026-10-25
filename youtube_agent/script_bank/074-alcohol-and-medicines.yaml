@@ -1,0 +1,398 @@
+queue_topic: 'Mixing alcohol with medicines: the risks'
+style: Warning Signs
+sources:
+- 'NIAAA, Harmful Interactions: Mixing Alcohol With Medicines: https://www.niaaa.nih.gov/publications/brochures-and-fact-sheets/harmful-interactions-mixing-alcohol-with-medicines'
+- 'FDA, Acetaminophen information: https://www.fda.gov/drugs/information-drug-class/acetaminophen'
+- 'MedlinePlus, Alcohol: https://medlineplus.gov/alcohol.html'
+plan:
+  topic: 'Mixing alcohol with medicines: the risks'
+  title: One Drink With These Medicines Can Be Dangerous
+  description: 'Alcohol can change how many common medicines work, from pain relievers and sleep aids to diabetes and blood
+    pressure medicines. Here is which mixes are risky, the warning signs, and what to ask your pharmacist.
+
+
+    In this video:
+
+    • Why alcohol and medicines clash
+
+    • Pain relievers and your liver and stomach
+
+    • Sleep aids, opioids and slowed breathing
+
+    • Diabetes and blood pressure medicines
+
+    • Who is at higher risk
+
+
+    #MedicationSafety #AlcoholAndMedicine #PatientSafety #HealthTips #HealthEducation'
+  tags:
+  - alcohol and medicine
+  - drug interactions
+  - medication safety
+  - acetaminophen and alcohol
+  - sleep aids
+  - opioids and alcohol
+  - diabetes medicine
+  - older adults
+  - pharmacist tips
+  - health education
+  thumbnail_text: JUST ONE DRINK?
+  thumbnail_highlight: ONE
+  thumbnail_photo_query: glass of wine and pills
+  playlist: Medications & Safety
+  short_title: 'Is one drink okay with your medicine? #Shorts'
+  short_caption: 'Do you check your medicine label before having a drink? Some mixes are risky. Educational only, not medical
+    advice. #MedicationSafety #AlcoholAndMedicine #HealthTips #HealthEducation'
+  scenes:
+  - layout: title
+    heading: Alcohol and Medicines
+    points:
+    - A risky mix
+    footage_query: glass of wine and pills
+    narration: A glass of wine at dinner, then your usual evening medicines. For many people, that habit is more dangerous
+      than they think. Alcohol can change how hundreds of common medicines work. Today you will learn which mixes are risky,
+      the warning signs to watch for, and the simple questions that keep you safe.
+  - layout: big_number
+    heading: Hundreds of Medicines
+    points:
+    - Interact with alcohol
+    - Prescription and over the counter
+    footage_query: pharmacy shelves
+    narration: According to the National Institute on Alcohol Abuse and Alcoholism, hundreds of commonly used medicines can
+      interact with alcohol. That includes prescription medicines and over the counter ones you can buy without a prescription,
+      as well as some herbal remedies. Many people take at least one of them, often without knowing it can interact with a
+      drink.
+  - layout: bullets
+    heading: Why They Clash
+    points:
+    - Both processed by the liver
+    - Effects add together
+    - Medicine can work less well
+    footage_query: liver illustration
+    narration: Why do they clash? Alcohol and many medicines are processed by the liver, and they can get in each other's
+      way. Alcohol can make some medicines stronger, so side effects add up. It can make other medicines work less well. And
+      with some medicines, the mix creates new harmful effects of its own.
+  - layout: warning
+    heading: What Can Happen
+    points:
+    - Drowsiness and falls
+    - Nausea, headache, fainting
+    - Internal bleeding
+    - Trouble breathing
+    footage_query: dizzy man sitting bed
+    narration: What can happen? Mixing alcohol with medicines can cause nausea, vomiting, headaches, drowsiness, fainting
+      and loss of coordination. It can raise the risk of internal bleeding, heart problems and trouble breathing. These effects
+      can happen even if you only have a small amount of alcohol.
+  - layout: warning
+    heading: Acetaminophen and Your Liver
+    points:
+    - Liver is under strain
+    - Higher risk of liver damage
+    - Three or more drinks a day
+    footage_query: pain reliever tablets
+    narration: Acetaminophen, the medicine in Tylenol and many cold and flu products, is broken down by the liver. Alcohol
+      strains the liver too. The FDA label warns that people who have three or more alcoholic drinks every day should ask
+      a doctor before using acetaminophen, because of the risk of severe liver damage.
+  - layout: warning
+    heading: Ibuprofen, Naproxen and Aspirin
+    points:
+    - Stomach irritation
+    - Higher bleeding risk
+    - Ulcers
+    footage_query: man holding stomach pain
+    narration: Pain relievers like ibuprofen, naproxen and aspirin can irritate the lining of the stomach. Alcohol irritates
+      it too. Together they raise the risk of stomach ulcers and bleeding. The label warns that the risk is higher for people
+      who have three or more drinks a day while using these medicines.
+  - layout: warning
+    heading: Opioid Pain Medicines
+    points:
+    - Extreme drowsiness
+    - Slowed or stopped breathing
+    - Overdose risk
+    footage_query: prescription pill bottle
+    narration: Opioid pain medicines, like oxycodone or hydrocodone, slow down breathing. Alcohol does too. Together they
+      can cause extreme drowsiness, slowed or stopped breathing, and overdose, even at doses that would be safe on their own.
+      Do not drink alcohol while taking an opioid medicine.
+  - layout: warning
+    heading: Sleep and Anxiety Medicines
+    points:
+    - Sleep aids
+    - Benzodiazepines
+    - Breathing can slow
+    footage_query: pills on nightstand bed
+    narration: Sleep medicines and some anti anxiety medicines, like benzodiazepines, calm the brain. Alcohol adds to this
+      effect. The mix can cause heavy drowsiness, memory problems, poor coordination, and slowed breathing. Even over the
+      counter sleep aids can make you dangerously sleepy when combined with alcohol.
+  - layout: bullets
+    heading: Allergy and Cold Medicines
+    points:
+    - Drowsy antihistamines
+    - Some contain alcohol
+    - Driving risk
+    footage_query: man sneezing tissue
+    narration: Many allergy and cold medicines contain antihistamines like diphenhydramine, which cause drowsiness. With alcohol,
+      the drowsiness gets much stronger, which can make driving or using stairs dangerous. Some liquid cough and cold medicines
+      also contain alcohol themselves, so check the label before you take them.
+  - layout: warning
+    heading: Diabetes Medicines
+    points:
+    - Blood sugar can drop
+    - Insulin and some pills
+    - Signs can look like drunkenness
+    footage_query: glucose meter test
+    narration: If you take insulin or certain diabetes pills, alcohol can make your blood sugar drop too low, especially if
+      you drink without eating. Low blood sugar can cause shakiness, sweating and confusion, and these signs can look like
+      being drunk, so others may not realize you need help. Ask your doctor what is safe for you.
+  - layout: bullets
+    heading: Blood Pressure Medicines
+    points:
+    - Dizziness on standing
+    - Fainting
+    - Falls
+    footage_query: older man standing up dizzy
+    narration: Alcohol can lower blood pressure, and so do blood pressure medicines. Together they can make you dizzy or faint,
+      especially when you stand up quickly. That raises the risk of falls. Alcohol can also make blood pressure harder to
+      control over time.
+  - layout: bullets
+    heading: Blood Thinners
+    points:
+    - Bleeding risk changes
+    - Warfarin levels can shift
+    - Ask your doctor
+    footage_query: bruise on arm
+    narration: If you take a blood thinner like warfarin, alcohol can change how well it works. Drinking can raise the risk
+      of bleeding, and heavy drinking can make the medicine harder to control. Ask your doctor how much alcohol, if any, is
+      safe with your blood thinner.
+  - layout: bullets
+    heading: Depression Medicines
+    points:
+    - Drowsiness
+    - Depression can worsen
+    - Some need strict limits
+    footage_query: sad woman window
+    narration: Alcohol can make some antidepressants and other mental health medicines cause more drowsiness and poor coordination.
+      Alcohol can also make depression and anxiety worse. A few medicines, like older MAO inhibitors, can cause a dangerous
+      reaction with certain alcoholic drinks. Ask your doctor or pharmacist about your medicine.
+  - layout: warning
+    heading: Certain Antibiotics
+    points:
+    - Metronidazole
+    - Tinidazole
+    - Severe sickness
+    footage_query: antibiotic capsules
+    narration: Most antibiotics do not have a dangerous reaction with alcohol, but some do. Metronidazole and tinidazole can
+      cause flushing, a fast heartbeat, nausea and vomiting when mixed with alcohol. You should avoid alcohol while taking
+      them and for a few days after, as your label or pharmacist explains.
+  - layout: bullets
+    heading: Muscle Relaxants
+    points:
+    - Strong drowsiness
+    - Dizziness
+    - Slowed breathing
+    footage_query: man rubbing back pain
+    narration: Muscle relaxants, like cyclobenzaprine or carisoprodol, are often prescribed for back pain. With alcohol, they
+      can cause strong drowsiness, dizziness and poor coordination. The National Institute on Alcohol Abuse and Alcoholism
+      also warns of slowed breathing and a higher risk of overdose. Do not drink while taking them, even a small amount at
+      bedtime.
+  - layout: bullets
+    heading: Seizure and ADHD Medicines
+    points:
+    - More drowsiness
+    - Dizziness
+    - Seizure control can change
+    footage_query: woman taking pill water
+    narration: Medicines for seizures can cause more drowsiness and dizziness with alcohol, and drinking can make seizures
+      harder to control. Medicines for ADHD can also interact, causing dizziness, drowsiness, trouble concentrating, and possible
+      heart problems. If you or your child takes one of these, ask the doctor about alcohol.
+  - layout: bullets
+    heading: Herbal Remedies Too
+    points:
+    - Kava and valerian
+    - More drowsiness
+    - Tell your pharmacist
+    footage_query: herbal tea capsules
+    narration: Some herbal remedies interact with alcohol too. Herbs used for sleep or stress, like valerian, kava and chamomile
+      in large amounts, can add to the drowsiness from alcohol. Kava has also been linked to liver problems. Tell your pharmacist
+      about any herbs or supplements you use.
+  - layout: myth_fact
+    heading: Space Them Out
+    points:
+    - Drink a few hours later is fine
+    - Many medicines last all day
+    footage_query: clock evening table
+    narration: 'Myth: if you take your medicine in the morning and drink in the evening, it is fine. Fact: many medicines
+      stay in your body for many hours or longer, so they can still interact with alcohol later in the day. Some labels say
+      avoid alcohol completely while taking the medicine. Follow that exactly.'
+  - layout: myth_fact
+    heading: Beer and Wine Are Safer
+    points:
+    - Beer or wine is safer
+    - All alcohol counts the same
+    footage_query: beer glass bar
+    narration: 'Myth: beer or wine is safer with medicines than hard liquor. Fact: the type of drink does not matter. A standard
+      beer, a glass of wine and a shot of spirits contain about the same amount of alcohol. What matters is the medicine and
+      the amount of alcohol you have.'
+  - layout: big_number
+    heading: One Standard Drink
+    points:
+    - Twelve ounces of beer
+    - Five ounces of wine
+    - One and a half ounces of spirits
+    footage_query: beer wine glasses table
+    narration: What counts as one drink? In the United States, one standard drink is twelve ounces of regular beer, five ounces
+      of wine, or one and a half ounces of distilled spirits, like vodka or whiskey. Many glasses served at home or in restaurants
+      hold more than one standard drink, so it is easy to drink more than you think.
+  - layout: bullets
+    heading: How Long Alcohol Stays
+    points:
+    - The liver works slowly
+    - Coffee does not speed it up
+    - Time is the only cure
+    footage_query: coffee cup morning
+    narration: The liver can only break down alcohol at a set pace, roughly about one standard drink per hour for many adults.
+      Coffee, a cold shower or fresh air do not speed this up. Only time does. That is why a drink at night can still be in
+      your body when you take your morning medicines.
+  - layout: bullets
+    heading: Hidden Alcohol
+    points:
+    - Some cough syrups
+    - Some liquid medicines
+    - Some mouthwashes
+    footage_query: cough syrup bottle spoon
+    narration: Alcohol can hide in places you do not expect. Some liquid cough and cold medicines, some herbal tinctures,
+      and some mouthwashes contain alcohol. If you need to avoid alcohol completely, for example with metronidazole, read
+      the ingredients, and ask the pharmacist for an alcohol free version.
+  - layout: bullets
+    heading: Older Adults at Higher Risk
+    points:
+    - Body handles alcohol slower
+    - More medicines
+    - Falls and confusion
+    footage_query: older couple dinner table
+    narration: Older adults face higher risks. With age, the body breaks down alcohol more slowly, so it stays in the blood
+      longer. Older adults also tend to take more medicines, which means more chances for harmful mixes. The results can include
+      falls, confusion and serious injuries. A hip fracture from a fall can change an older person's life, so this risk is
+      worth taking seriously.
+  - layout: bullets
+    heading: Women and Alcohol
+    points:
+    - Higher blood alcohol
+    - From the same amount
+    - Effects can be stronger
+    footage_query: woman holding wine glass
+    narration: Women generally reach a higher blood alcohol level than men after drinking the same amount, partly because
+      of differences in body water. That means alcohol and medicine interactions can affect women more strongly. Pregnant
+      women should not drink alcohol at all.
+  - layout: bullets
+    heading: Read the Label
+    points:
+    - Avoid alcohol warning
+    - May cause drowsiness
+    - Ask your pharmacist
+    footage_query: reading prescription label
+    narration: Many medicine labels and pharmacy stickers carry a warning like avoid alcohol or may cause drowsiness, alcohol
+      may intensify this effect. Take these warnings seriously. If the label says nothing, that does not always mean the mix
+      is safe, so ask your pharmacist to be sure.
+  - layout: warning
+    heading: Signs of a Bad Reaction
+    points:
+    - Very sleepy, hard to wake
+    - Slow or shallow breathing
+    - Confusion or fainting
+    footage_query: person lying couch unresponsive
+    narration: Know the signs of a dangerous reaction. A person who is very sleepy and hard to wake, has slow or shallow breathing,
+      is confused, faints, vomits while drowsy, or has blue or gray lips needs help. Call 911 right away. Do not leave them
+      alone, and turn them on their side if they vomit.
+  - layout: bullets
+    heading: Poison Control
+    points:
+    - Free and confidential
+    - Day and night
+    - 1-800-222-1222
+    footage_query: phone call kitchen
+    narration: If you are worried about a mix of alcohol and medicine, but the person is awake and breathing normally, call
+      Poison Control at one, eight hundred, two two two, one two two two. Experts answer for free, day and night, and they
+      can tell you what to do.
+  - layout: bullets
+    heading: Questions for Your Pharmacist
+    points:
+    - Can I drink with this?
+    - How much, if any?
+    - For how long after?
+    footage_query: pharmacist talking to customer
+    narration: 'When you start any new medicine, ask: can I drink alcohol with this? If so, how much is safe? And how long
+      after my last dose should I wait? Ask about over the counter medicines too. The answers are free and can prevent a trip
+      to the emergency room.'
+  - layout: bullets
+    heading: Tell Your Doctor the Truth
+    points:
+    - How much you really drink
+    - No judgment
+    - Safer prescribing
+    footage_query: doctor patient talking office
+    narration: Be honest with your doctor about how much you drink. It is not about judgment. Your doctor needs the real number
+      to choose medicines and doses that are safe for you. If cutting down is hard, your doctor can also help you find support.
+      Many people find that once they talk about it openly, getting help is easier than they expected.
+  - layout: bullets
+    heading: Safer Habits
+    points:
+    - Check every new medicine
+    - Plan before events
+    - Have a non alcoholic choice
+    footage_query: family dinner table water
+    narration: A few habits help. Check every new medicine for alcohol warnings. Before a party or holiday dinner, think ahead
+      about your medicines and what you will drink. And keep a favorite non alcoholic drink on hand, so you have an easy choice
+      when you are taking a medicine that does not mix.
+  - layout: bullets
+    heading: Caregivers
+    points:
+    - Check the medicine list
+    - Watch for drowsiness
+    - Remove temptation
+    footage_query: caregiver helping older man
+    narration: If you care for an older parent or someone with many medicines, review their list with the pharmacist and ask
+      which ones do not mix with alcohol. Watch for signs like extra sleepiness, confusion or falls after drinking. Small
+      changes at home can prevent a serious accident, like keeping night lights on and clearing paths to the bathroom.
+  - layout: bullets
+    heading: Quick Recap
+    points:
+    - Hundreds of medicines interact
+    - Pain relievers and sleep aids
+    - Diabetes and blood pressure
+    - Ask your pharmacist
+    footage_query: glass of wine and pills
+    narration: Let us recap. Hundreds of medicines interact with alcohol. Pain relievers can harm the liver or stomach, sleep
+      aids and opioids can slow breathing, and diabetes and blood pressure medicines can cause dangerous drops. Older adults
+      and women can be affected more. Read the label, and ask your pharmacist.
+  - layout: outro
+    heading: Remember
+    points:
+    - Check every medicine
+    - Ask about alcohol
+    - Call 911 for slow breathing
+    footage_query: family kitchen table
+    narration: 'Remember: before you drink, check your medicines, and ask your pharmacist when you are not sure. Share this
+      with someone who enjoys a drink with dinner. This video is for education only, not medical advice.'
+  short_scenes:
+  - layout: title
+    heading: Just One Drink?
+    points:
+    - With your medicine
+    footage_query: glass of wine and pills
+    narration: Is one drink okay with your medicine? For some common medicines, the answer is no.
+  - layout: bullets
+    heading: Risky Mixes
+    points:
+    - Pain relievers
+    - Sleep aids and opioids
+    - Diabetes medicines
+    footage_query: pill bottles kitchen
+    narration: Alcohol with acetaminophen strains the liver, and with ibuprofen it raises stomach bleeding risk. With sleep
+      aids or opioids it can slow your breathing. With some diabetes medicines it can drop your blood sugar. So check the
+      label and ask your pharmacist before you drink.
+  - layout: outro
+    heading: Full Video
+    points:
+    - On YouTube
+    footage_query: pharmacy counter
+    narration: Learn the full list of risky mixes in our full video, on the Health Support Studio YouTube channel.

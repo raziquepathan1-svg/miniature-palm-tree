@@ -1,0 +1,379 @@
+queue_topic: Grapefruit and other foods that interact with medicines
+style: Warning Signs
+sources:
+- 'FDA, Grapefruit Juice and Some Drugs Don''t Mix: https://www.fda.gov/consumers/consumer-updates/grapefruit-juice-and-some-drugs-dont-mix'
+- 'FDA, Avoid Food and Drug Interactions: https://www.fda.gov/drugs/resources-you-drugs/avoid-food-and-drug-interactions'
+- 'NIH Office of Dietary Supplements, Vitamin K Fact Sheet for Consumers: https://ods.od.nih.gov/factsheets/VitaminK-Consumer/'
+- 'MedlinePlus, Levothyroxine: https://medlineplus.gov/druginfo/meds/a682461.html'
+plan:
+  topic: Grapefruit and other foods that interact with medicines
+  title: The Breakfast Fruit That Can Clash With Your Medicine
+  description: 'Grapefruit can change how some common medicines work in your body, and it is not the only food that can. Here
+    is which medicines are affected, why it happens, and what to ask your pharmacist.
+
+
+    In this video:
+
+    • Why grapefruit affects some medicines
+
+    • Common medicines that can be affected
+
+    • Leafy greens and blood thinners
+
+    • Dairy, calcium and some antibiotics
+
+    • Simple steps to stay safe
+
+
+    #MedicationSafety #FoodDrugInteractions #Grapefruit #HealthTips #HealthEducation'
+  tags:
+  - grapefruit and medicine
+  - food drug interactions
+  - medication safety
+  - grapefruit juice
+  - statins
+  - warfarin vitamin k
+  - levothyroxine
+  - antibiotics and dairy
+  - pharmacist tips
+  - health education
+  thumbnail_text: CHECK YOUR PILLS
+  thumbnail_highlight: PILLS
+  thumbnail_photo_query: grapefruit and pills
+  playlist: Medications & Safety
+  short_title: 'Why grapefruit and some pills don''t mix #Shorts'
+  short_caption: 'Do you drink grapefruit juice with your morning pills? Check this first. Educational only, not medical advice.
+    #MedicationSafety #Grapefruit #HealthTips #HealthEducation'
+  scenes:
+  - layout: title
+    heading: Food and Medicine Clash
+    points:
+    - Grapefruit and more
+    footage_query: grapefruit breakfast table
+    narration: A glass of grapefruit juice with breakfast sounds healthy. But for people who take certain medicines, that
+      glass can change how much medicine ends up in the blood, sometimes enough to cause harm. Today you will learn which
+      medicines can be affected, why it happens, and the other everyday foods that can clash with common medicines.
+  - layout: big_number
+    heading: More Common Than You Think
+    points:
+    - Many medicines
+    - Can be affected by grapefruit
+    footage_query: pill bottles kitchen
+    narration: According to the FDA, grapefruit juice and fresh grapefruit can interact with a number of common prescription
+      and over the counter medicines. Not every medicine is affected, and the effect depends on the medicine and how much
+      grapefruit you have. That is why it is worth checking every medicine you take, not just guessing.
+  - layout: bullets
+    heading: Why It Happens
+    points:
+    - An enzyme breaks down medicine
+    - Grapefruit blocks it
+    - More medicine stays in blood
+    footage_query: digestive system illustration
+    narration: Here is why. Many medicines are broken down by an enzyme in the small intestine, called C Y P three A four.
+      Grapefruit blocks this enzyme. When it is blocked, more of the medicine gets into your blood and stays there longer.
+      Too much medicine in the blood can increase side effects. Think of it like a drain that suddenly gets partly blocked.
+      The same amount keeps coming in, but less goes out, so the level rises.
+  - layout: bullets
+    heading: The Opposite Problem
+    points:
+    - Some medicines get absorbed less
+    - Allergy medicine fexofenadine
+    - Medicine may work less well
+    footage_query: allergy medicine sneezing
+    narration: With a few medicines, grapefruit does the opposite. It blocks proteins that help move the medicine into the
+      body, so less of it is absorbed. The FDA gives the allergy medicine fexofenadine, sold as Allegra, as an example. Less
+      medicine in the blood can mean it does not work as well as it should.
+  - layout: warning
+    heading: Some Medicines Affected
+    points:
+    - Some cholesterol statins
+    - Some blood pressure medicines
+    - Some heart rhythm medicines
+    footage_query: cholesterol medicine bottle
+    narration: Which medicines can be affected? The FDA lists some statins used to lower cholesterol, such as simvastatin
+      and atorvastatin, some blood pressure medicines like nifedipine, and some medicines for heart rhythm problems, like
+      amiodarone. Not every medicine in these groups is affected, so ask about your specific medicine.
+  - layout: warning
+    heading: More Examples
+    points:
+    - Some anti anxiety medicines
+    - Some transplant medicines
+    - Some steroids
+    footage_query: pharmacist reading prescription
+    narration: Other examples include some anti anxiety medicines like buspirone, some medicines that stop the body from rejecting
+      an organ transplant, like cyclosporine, and some corticosteroids used for Crohn's disease or ulcerative colitis, like
+      budesonide. These are examples, not a complete list. Your pharmacist can check every medicine you take.
+  - layout: bullets
+    heading: Why Too Much Is Risky
+    points:
+    - Stronger side effects
+    - Muscle problems with statins
+    - Low blood pressure, dizziness
+    footage_query: dizzy woman holding head
+    narration: What can happen when too much medicine builds up? The side effects become stronger. With some statins, the
+      risk of muscle problems goes up. With some blood pressure medicines, blood pressure can drop too low, causing dizziness.
+      The exact risk depends on the medicine, which is why one rule does not fit everyone.
+  - layout: myth_fact
+    heading: Take Them Hours Apart
+    points:
+    - Taking them hours apart is enough
+    - The effect can last a day or more
+    footage_query: clock morning kitchen
+    narration: 'Myth: if you take your medicine at night and drink grapefruit juice in the morning, you are fine. Fact: the
+      effect of grapefruit on the enzyme can last a day or more, so spacing them apart may not be enough. If your medicine
+      interacts with grapefruit, your doctor or pharmacist may advise avoiding it altogether.'
+  - layout: bullets
+    heading: Other Fruits Too
+    points:
+    - Seville oranges
+    - Pomelos
+    - Tangelos
+    footage_query: citrus fruits market
+    narration: Grapefruit is not the only fruit that does this. The FDA says Seville oranges, which are often used in orange
+      marmalade, pomelos, and tangelos can have the same effect. If your label or pharmacist warns you about grapefruit, ask
+      whether these fruits are a problem for your medicine too.
+  - layout: bullets
+    heading: Juice or Fruit, Both Count
+    points:
+    - Fresh grapefruit
+    - Grapefruit juice
+    - Even one glass can matter
+    footage_query: grapefruit juice glass
+    narration: It does not matter whether it is fresh grapefruit, a glass of juice, or frozen juice from concentrate. They
+      all contain the natural compounds that block the enzyme. For some medicines, even one glass of juice can make a difference.
+      For others, the effect grows with how much and how often you have it.
+  - layout: bullets
+    heading: You May Have Options
+    points:
+    - Not every medicine is affected
+    - Similar medicines may be fine
+    - Never switch on your own
+    footage_query: doctor patient talking office
+    narration: If you love grapefruit, you may have options. Many medicines are not affected at all. And if one of yours is,
+      your doctor may be able to choose a similar medicine that grapefruit does not affect. Never stop or switch a medicine
+      on your own. Ask your doctor or pharmacist what is safest for you.
+  - layout: bullets
+    heading: Read the Label
+    points:
+    - Prescription leaflet
+    - Warning sticker on bottle
+    - Drug Facts label
+    footage_query: reading prescription label
+    narration: How do you know if your medicine is affected? Check the information leaflet that comes with your prescription,
+      and look for a warning sticker on the bottle. Over the counter medicines list it on the Drug Facts label. If you are
+      not sure, ask your pharmacist. They can check in seconds.
+  - layout: bullets
+    heading: Leafy Greens and Blood Thinners
+    points:
+    - Warfarin and vitamin K
+    - Kale, spinach, broccoli
+    - Keep amounts steady
+    footage_query: leafy green vegetables
+    narration: Another important food and medicine pair is vitamin K and the blood thinner warfarin. Vitamin K helps blood
+      clot, and it is found in leafy greens like kale, spinach and collard greens, and in broccoli. Large changes in how much
+      vitamin K you eat can change how well warfarin works.
+  - layout: myth_fact
+    heading: Stop Eating Greens
+    points:
+    - People on warfarin must avoid greens
+    - Keep vitamin K steady, not zero
+    footage_query: salad bowl healthy
+    narration: 'Myth: people on warfarin must stop eating green vegetables. Fact: according to the National Institutes of
+      Health, the goal is to keep the amount of vitamin K you eat about the same from day to day, not to cut it out. Talk
+      with your care team before making big changes to your diet.'
+  - layout: bullets
+    heading: Dairy and Some Antibiotics
+    points:
+    - Tetracyclines
+    - Some quinolone antibiotics
+    - Calcium blocks absorption
+    footage_query: glass of milk cheese
+    narration: Milk, yogurt and cheese can interfere with some antibiotics, like tetracyclines and some quinolones, such as
+      ciprofloxacin. The calcium binds to the medicine in the gut, so less is absorbed. Antacids and supplements with calcium,
+      iron, magnesium or zinc can do the same. Your label will tell you how many hours to separate them.
+  - layout: bullets
+    heading: Thyroid Medicine
+    points:
+    - Take on an empty stomach
+    - Space from calcium and iron
+    - Coffee can reduce absorption
+    footage_query: morning coffee cup
+    narration: Levothyroxine, a common thyroid medicine, is best taken on an empty stomach, usually with water, thirty minutes
+      to an hour before breakfast. Calcium and iron supplements and some antacids can block it, so they are usually taken
+      at least four hours apart. Coffee and high fiber foods can also reduce how much is absorbed.
+  - layout: warning
+    heading: Aged Cheese and Some Antidepressants
+    points:
+    - MAO inhibitors
+    - Aged cheese, cured meats
+    - Dangerous blood pressure spike
+    footage_query: aged cheese board
+    narration: A less common but serious example involves an older group of antidepressants called MAO inhibitors. Foods high
+      in tyramine, like aged cheeses, cured meats and some fermented foods, can cause a dangerous rise in blood pressure with
+      these medicines. If you take one, you should get a list of foods to avoid.
+  - layout: bullets
+    heading: Potassium and Salt Substitutes
+    points:
+    - Some blood pressure medicines
+    - Salt substitutes have potassium
+    - Too much potassium is risky
+    footage_query: salt shaker kitchen
+    narration: Some blood pressure and heart medicines, like ACE inhibitors and certain water pills, can raise potassium levels
+      in the blood. Many salt substitutes are made with potassium. Using them with these medicines can push potassium too
+      high, which can affect the heart. Ask your doctor before using a salt substitute.
+  - layout: bullets
+    heading: Black Licorice
+    points:
+    - Real licorice root
+    - Can lower potassium
+    - Can raise blood pressure
+    footage_query: black licorice candy
+    narration: Black licorice made with real licorice root contains a compound that can lower potassium and raise blood pressure
+      when eaten in large amounts. The FDA warns this can be a problem for people with heart disease or high blood pressure,
+      and it can interact with some medicines. Enjoy it only in small amounts.
+  - layout: bullets
+    heading: Supplements Count Too
+    points:
+    - Saint John's wort
+    - Vitamin K supplements
+    - Tell your pharmacist
+    footage_query: vitamin supplements bottles
+    narration: Supplements can interact too. Saint John's wort can make some medicines, including some birth control pills
+      and blood thinners, work less well. Vitamin K supplements can affect warfarin. Because supplements are easy to forget,
+      write every one on your medication list and show it to your pharmacist.
+  - layout: bullets
+    heading: Alcohol Is a Big One
+    points:
+    - Many medicines interact
+    - Drowsiness and falls
+    - More in our next video
+    footage_query: glass of wine table
+    narration: Alcohol interacts with many medicines, including pain relievers, sleep aids, allergy medicines and some diabetes
+      medicines. It can increase drowsiness, cause falls, or harm the liver and stomach. It is such a common problem that
+      we cover it in its own video in this series.
+  - layout: bullets
+    heading: With Food or Empty Stomach
+    points:
+    - Some need food
+    - Some need an empty stomach
+    - Follow the label
+    footage_query: breakfast eggs plate
+    narration: Some medicines work best with food, and others on an empty stomach. Taking certain pain relievers with food
+      can protect your stomach, while some medicines are absorbed poorly if you eat. The label and the pharmacy leaflet tell
+      you which. If it is not clear, ask the pharmacist when you pick up your prescription.
+  - layout: warning
+    heading: Mixing Pills Into Food
+    points:
+    - Ask before crushing
+    - Some pills must stay whole
+    - Extended release tablets
+    footage_query: crushing pill spoon
+    narration: Some people crush pills or mix them into applesauce or juice to make them easier to swallow. Ask your pharmacist
+      first. Some pills must not be crushed or chewed, like many extended release tablets, because the whole dose can be released
+      at once. Others should not be mixed with certain foods or drinks.
+  - layout: bullets
+    heading: Add Food Warnings to Your List
+    points:
+    - Write foods to avoid
+    - Note with or without food
+    - Share with family
+    footage_query: person writing notebook kitchen
+    narration: On your medication list, write any food or drink warnings next to each medicine, like avoid grapefruit, take
+      on an empty stomach, or keep greens steady. Share the list with family members who cook for you or help with your medicines.
+      That way everyone knows the rules, not just you.
+  - layout: bullets
+    heading: Older Adults
+    points:
+    - More medicines, more mixes
+    - Changes in the body
+    - Regular medicine reviews
+    footage_query: older couple breakfast
+    narration: Older adults often take several medicines, which means more chances for food and medicine clashes. The body
+      also processes medicines more slowly with age. A yearly review of every medicine and supplement with a doctor or pharmacist
+      is one of the best ways to catch problems early.
+  - layout: warning
+    heading: Warning Signs to Watch
+    points:
+    - New dizziness or fainting
+    - Unusual muscle pain
+    - Unusual bleeding or bruising
+    footage_query: woman holding head dizzy
+    narration: Watch for signs that a medicine may be too strong or not working. New dizziness or fainting, unusual muscle
+      pain or weakness, unusual bleeding or bruising, or a very fast or slow heartbeat are reasons to call your doctor. Do
+      not stop a medicine on your own without talking to them first.
+  - layout: warning
+    heading: When to Call 911
+    points:
+    - Chest pain
+    - Trouble breathing
+    - Fainting or confusion
+    footage_query: ambulance lights night
+    narration: Call 911 right away for chest pain, trouble breathing, fainting, sudden confusion, or signs of a severe allergic
+      reaction like swelling of the face or throat. If you think someone took too much of a medicine, you can also call Poison
+      Control at one, eight hundred, two two two, one two two two.
+  - layout: bullets
+    heading: Questions for Your Pharmacist
+    points:
+    - Any foods to avoid?
+    - With food or without?
+    - Any drinks to avoid?
+    footage_query: pharmacist talking to customer
+    narration: Every time you start a new medicine, ask three questions. Are there any foods I should avoid? Should I take
+      it with food or on an empty stomach? Are there any drinks I should avoid, like grapefruit juice or alcohol? Pharmacists
+      answer these questions for free, and the answers can prevent serious problems. You can also call the pharmacy later
+      if a question comes up at home.
+  - layout: bullets
+    heading: Make It a Habit
+    points:
+    - Use one pharmacy
+    - Keep a full list
+    - Read new leaflets
+    footage_query: person writing medicine list
+    narration: A few habits make food and medicine safety easy. Use one pharmacy if you can, so all your medicines are checked
+      together. Keep a full list of your medicines and supplements. And read the leaflet every time you get a new medicine,
+      even if it is a new brand of one you already take. When a doctor in the hospital or an urgent care starts a new medicine,
+      ask the same food questions before you go home.
+  - layout: bullets
+    heading: Quick Recap
+    points:
+    - Grapefruit affects some medicines
+    - Spacing may not be enough
+    - Keep vitamin K steady on warfarin
+    - Ask your pharmacist
+    footage_query: grapefruit breakfast table
+    narration: Let us recap. Grapefruit can raise or lower the amount of some medicines in your blood, and spacing them apart
+      may not be enough. Seville oranges, pomelos and tangelos can do the same. Keep vitamin K steady if you take warfarin,
+      separate some antibiotics from dairy, and ask your pharmacist about every new medicine.
+  - layout: outro
+    heading: Remember
+    points:
+    - Check every medicine
+    - Ask about food and drinks
+    - Tell us your questions
+    footage_query: family kitchen breakfast
+    narration: 'Remember: check every medicine for food and drink warnings, and ask your pharmacist when in doubt. Share this
+      with someone who has grapefruit with their morning pills. This video is for education only, not medical advice.'
+  short_scenes:
+  - layout: title
+    heading: Grapefruit and Your Pills
+    points:
+    - A surprising clash
+    footage_query: grapefruit breakfast table
+    narration: Grapefruit juice with your morning pills could change how much medicine ends up in your blood.
+  - layout: bullets
+    heading: Why It Matters
+    points:
+    - Blocks a gut enzyme
+    - Some statins and heart medicines
+    - Spacing may not be enough
+    footage_query: pill bottles kitchen
+    narration: Grapefruit blocks an enzyme in your gut that breaks down some medicines, so more stays in your blood. This
+      includes some statins, some blood pressure medicines and some heart rhythm medicines. The effect can last a day or more,
+      so ask your pharmacist if your medicine is affected.
+  - layout: outro
+    heading: Full Video
+    points:
+    - On YouTube
+    footage_query: pharmacy counter
+    narration: Learn the other foods that clash with common medicines in our full video, on the Health Support Studio YouTube
+      channel.

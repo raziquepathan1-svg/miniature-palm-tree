@@ -1,0 +1,365 @@
+queue_topic: How to read an over-the-counter medicine label
+style: Explainer
+sources:
+- 'FDA, The Over-the-Counter Medicine Label: Take a Look: https://www.fda.gov/drugs/understanding-over-counter-medicines/over-counter-medicine-label-take-look'
+- 'FDA, Use Caution With Pain Relievers: https://www.fda.gov/consumers/consumer-updates/use-caution-pain-relievers'
+- 'MedlinePlus, Over-the-Counter Medicines: https://medlineplus.gov/overthecountermedicines.html'
+plan:
+  topic: How to read an over-the-counter medicine label
+  title: How to Read a Medicine Label (Most People Skip This)
+  description: 'Every over-the-counter medicine has a Drug Facts label, and it can stop you from taking a double dose by mistake.
+    Here is how to read each part, in plain words.
+
+
+    In this video:
+
+    • The active ingredient and why it matters most
+
+    • Uses, warnings and directions
+
+    • How double dosing happens with cold medicines
+
+    • Questions to ask your pharmacist
+
+
+    #MedicationSafety #OTCMedicine #HealthTips #PatientSafety #HealthEducation'
+  tags:
+  - medicine label
+  - drug facts label
+  - over the counter medicine
+  - medication safety
+  - active ingredient
+  - acetaminophen
+  - double dosing
+  - cold medicine
+  - pharmacist tips
+  - health education
+  thumbnail_text: READ THIS FIRST
+  thumbnail_highlight: FIRST
+  thumbnail_photo_query: medicine box label close up
+  playlist: Medications & Safety
+  short_title: 'The one line on every medicine box #Shorts'
+  short_caption: 'Do you read the Drug Facts label before you take a medicine? Start with this line. Educational only, not
+    medical advice. #MedicationSafety #OTCMedicine #HealthTips #HealthEducation'
+  scenes:
+  - layout: title
+    heading: Read the Label First
+    points:
+    - The Drug Facts label
+    footage_query: medicine box label close up
+    narration: You are sick, you grab a cold medicine and a pain reliever, and you take them both. But did you just take the
+      same medicine twice? It happens every day, and the label on the box could have stopped it. Today you will learn how
+      to read a medicine label in under a minute, and the one line you should never skip.
+  - layout: big_number
+    heading: Every Box Has One
+    points:
+    - Drug Facts
+    - On every over the counter medicine
+    footage_query: pharmacy shelf medicine boxes
+    narration: Every over the counter medicine sold in the United States has a Drug Facts label. It is set up the same way
+      on every box, so once you learn it, you can read any medicine in seconds. The FDA designed it so people could compare
+      products and use them safely, without a prescription.
+  - layout: bullets
+    heading: Why It Matters
+    points:
+    - Many products share ingredients
+    - Doses add up
+    - Some people need extra care
+    footage_query: woman reading medicine box
+    narration: Why does this matter so much? Many different products contain the same ingredients. Cold medicines, sleep aids
+      and pain relievers often share them. If you take two products with the same ingredient, the doses add up, and too much
+      can harm your liver, stomach or kidneys. Some people also need extra care because of their age or health.
+  - layout: bullets
+    heading: The Parts of the Label
+    points:
+    - Active ingredient
+    - Uses and warnings
+    - Directions
+    - Other information
+    footage_query: reading label magnifying glass
+    narration: The label has the same parts in the same order. Active ingredient, uses, warnings, directions, other information,
+      and inactive ingredients. Let us go through each one, starting with the most important line on the whole box.
+  - layout: warning
+    heading: Active Ingredient First
+    points:
+    - The medicine that does the work
+    - Amount in each dose
+    - Check every product you take
+    footage_query: pill bottle label close up
+    narration: The active ingredient is the medicine that actually does the work, and the amount in each pill or spoonful.
+      This is the line to read first, every time. Before you take two products together, compare their active ingredients.
+      If you see the same name on both, do not take them together unless a doctor or pharmacist says it is okay.
+  - layout: big_number
+    heading: The Hidden Double Dose
+    points:
+    - Acetaminophen
+    - In hundreds of products
+    footage_query: cold medicine bottles shelf
+    narration: The most common example is acetaminophen, the medicine in Tylenol. It is also found in hundreds of other products,
+      like many cold, flu, sinus and sleep medicines. People take a cold medicine and a pain reliever together and do not
+      realize both contain acetaminophen. Too much acetaminophen can cause serious liver damage.
+  - layout: bullets
+    heading: Purpose and Uses
+    points:
+    - What the medicine does
+    - Symptoms it treats
+    - Pick only what you need
+    footage_query: woman with cold blowing nose
+    narration: Right next to the active ingredient you will see its purpose, like pain reliever or antihistamine. Under uses,
+      the label lists the symptoms the product treats. Choose a product that treats only the symptoms you have. Multi symptom
+      products add medicines you may not need, and every extra medicine is another chance for side effects.
+  - layout: warning
+    heading: The Warnings Section
+    points:
+    - Do not use if
+    - Ask a doctor before use
+    - Stop use and ask a doctor
+    footage_query: reading warning label
+    narration: The warnings section is easy to skip, but it tells you who should not take the medicine. Look for do not use,
+      which lists people who should never take it. Ask a doctor before use if you have certain conditions, like liver disease,
+      high blood pressure or glaucoma. And stop use and ask a doctor tells you which reactions mean you should stop.
+  - layout: bullets
+    heading: When Using This Product
+    points:
+    - Drowsiness
+    - Do not drive
+    - Avoid alcohol
+    footage_query: tired man yawning car
+    narration: Under when using this product, the label lists side effects and things to avoid. Many antihistamines and sleep
+      aids cause drowsiness, so the label may warn you not to drive or operate machinery. It may also tell you to avoid alcohol,
+      because alcohol can make drowsiness and other side effects worse.
+  - layout: bullets
+    heading: Ask a Pharmacist If
+    points:
+    - You take prescription medicines
+    - You take blood thinners
+    - You are pregnant or breastfeeding
+    footage_query: pharmacist talking to customer
+    narration: Some labels say ask a doctor or pharmacist before use if you are taking certain prescription medicines, like
+      blood thinners. If you take any prescription medicine, are pregnant or breastfeeding, or are buying for a child or an
+      older adult, ask the pharmacist before you buy. It is free, and it takes a minute.
+  - layout: bullets
+    heading: Follow the Directions
+    points:
+    - How much to take
+    - How often
+    - The most in a day
+    footage_query: measuring medicine dose cup
+    narration: The directions tell you how much to take, how often, and the most you can take in one day. Follow them exactly.
+      Taking more does not work faster or better, but it can cause harm. If the directions say do not take for more than a
+      few days, see a doctor if you still need it after that.
+  - layout: warning
+    heading: Directions for Children
+    points:
+    - Dose by age or weight
+    - Use the cup in the box
+    - Never use kitchen spoons
+    footage_query: parent giving child medicine
+    narration: Children's doses are often based on age or weight, and the label tells you which. If it says ask a doctor for
+      children under a certain age, do that before giving it. Always use the dosing cup or syringe that came with the medicine.
+      Kitchen spoons are not accurate, and small mistakes matter more for small bodies.
+  - layout: myth_fact
+    heading: More Works Faster
+    points:
+    - Taking extra works faster
+    - Extra doses add risk, not relief
+    footage_query: pills spilling hand
+    narration: 'Myth: if one dose is good, taking extra will work faster. Fact: the dose on the label is set to work safely.
+      Taking more does not speed up relief, but it raises the chance of side effects and overdose. If the medicine is not
+      helping at the normal dose, talk to a doctor or pharmacist instead.'
+  - layout: bullets
+    heading: Other Information
+    points:
+    - How to store it
+    - Tamper evident seal
+    - Sodium or other contents
+    footage_query: medicine cabinet shelf
+    narration: Other information tells you how to store the medicine, usually at room temperature and away from moisture.
+      It may say what to check before use, like an unbroken safety seal. It can also list things some people need to watch,
+      such as sodium content for people on a low salt diet.
+  - layout: bullets
+    heading: Inactive Ingredients
+    points:
+    - Dyes and flavors
+    - Check if you have allergies
+    - Includes some sugars
+    footage_query: allergy reaction rash arm
+    narration: Inactive ingredients are the parts that do not treat your symptoms, like colors, flavors and fillers. Most
+      people never need to read them. But if you have an allergy to a dye or another ingredient, check this list every time,
+      because ingredients can change between brands and even between versions of the same brand.
+  - layout: warning
+    heading: Check the Expiration Date
+    points:
+    - Look before you take it
+    - Do not use after it expires
+    - Throw out safely
+    footage_query: expiration date on box
+    narration: Look for the expiration date on the box or bottle. After this date, the maker cannot promise the medicine is
+      safe and works as it should. Do not use expired medicine. Dispose of it safely, and buy a fresh supply when you need
+      it.
+  - layout: bullets
+    heading: Brand or Store Brand
+    points:
+    - Same active ingredient
+    - Same strength
+    - Often lower price
+    footage_query: pharmacy aisle shopping
+    narration: Is the store brand as good as the famous brand? Compare the active ingredients and the amount in each dose.
+      If they match, the medicine works the same way. Store brands are often cheaper. Just remember that the same ingredient
+      under two names is still the same medicine, so do not take both.
+  - layout: myth_fact
+    heading: Natural Means Safe
+    points:
+    - Herbal products are always safe
+    - Supplements can interact too
+    footage_query: herbal supplement capsules
+    narration: 'Myth: herbal products and supplements are natural, so they are always safe with other medicines. Fact: some
+      supplements can interact with medicines. For example, Saint John''s wort can make some prescription medicines work less
+      well. Tell your doctor and pharmacist about every supplement you take, and keep them on your medication list.'
+  - layout: bullets
+    heading: Two Kinds of Pain Relievers
+    points:
+    - Acetaminophen
+    - Ibuprofen, naproxen and aspirin
+    - Different warnings
+    footage_query: pain reliever tablets
+    narration: Pain relievers come in two main kinds. One is acetaminophen. The other group is called NSAIDs, which includes
+      ibuprofen, naproxen and aspirin. They have different warnings. Acetaminophen can harm the liver at high doses. NSAIDs
+      can cause stomach bleeding and kidney problems, especially in older adults or with long use. The label tells you which
+      kind you are holding.
+  - layout: warning
+    heading: Stomach Bleeding Warning
+    points:
+    - Age sixty or older
+    - Stomach ulcers before
+    - Blood thinners
+    footage_query: man holding stomach pain
+    narration: NSAID labels include a stomach bleeding warning. The risk is higher if you are sixty or older, have had stomach
+      ulcers or bleeding, take a blood thinner or a steroid, take more than one NSAID, have three or more alcoholic drinks
+      a day, or take it longer than the label says. If any of these apply, ask a doctor first.
+  - layout: bullets
+    heading: Cold Medicines and Blood Pressure
+    points:
+    - Decongestants
+    - Can raise blood pressure
+    - Ask first if you have it
+    footage_query: blood pressure cuff arm
+    narration: Many cold and sinus medicines contain a decongestant, like pseudoephedrine or phenylephrine. Decongestants
+      can raise blood pressure and heart rate. That is why their labels say ask a doctor before use if you have high blood
+      pressure, heart disease or thyroid disease. A pharmacist can suggest other ways to ease your symptoms.
+  - layout: bullets
+    heading: Liquid Medicines
+    points:
+    - Check the strength
+    - Infant and child versions differ
+    - Measure in milliliters
+    footage_query: liquid medicine syringe
+    narration: With liquid medicines, check the strength on the label, because the same brand can come in different strengths
+      for infants and children. Measure every dose in milliliters with the device that came in the box. Never guess, and never
+      switch between products without checking the new label, because the right amount may be different.
+  - layout: bullets
+    heading: Keep the Original Box
+    points:
+    - Label stays with medicine
+    - Avoid unlabeled containers
+    - Keep the leaflet
+    footage_query: medicine box on shelf
+    narration: Keep medicines in their original box or bottle, so the label and directions stay with them. Pills moved into
+      unlabeled containers are easy to mix up, and you lose the warnings and the expiration date. If you use a weekly pill
+      organizer, keep the original containers too, so you can check the label any time.
+  - layout: bullets
+    heading: Older Adults
+    points:
+    - Medicines can act stronger
+    - More risk of falls
+    - Review all medicines yearly
+    footage_query: older man reading pill bottle
+    narration: Older adults need extra care with over the counter medicines. The body handles some medicines differently with
+      age, so side effects like drowsiness, dizziness or confusion can be stronger and can lead to falls. Some sleep aids
+      and allergy medicines are a common cause. Ask a doctor or pharmacist to review all your medicines at least once a year.
+      If you care for an older parent, read the labels with them, and check that nothing new has been added since the last
+      review, including sleep aids or allergy pills bought at the store.
+  - layout: bullets
+    heading: Keep Your List Updated
+    points:
+    - Write every product
+    - Include supplements
+    - Show it at every visit
+    footage_query: person writing medicine list
+    narration: Add every over the counter medicine and supplement you take to your medication list, not just prescriptions.
+      Write the active ingredient, not only the brand name. Bring the list to every doctor visit and to the pharmacy. It helps
+      everyone spot double doses and dangerous mixes before they happen.
+  - layout: warning
+    heading: When to Get Help
+    points:
+    - Took too much
+    - Call Poison Control
+    - Severe symptoms call 911
+    footage_query: phone call emergency
+    narration: If you think you or someone else took too much of a medicine, call Poison Control at one, eight hundred, two
+      two two, one two two two. It is free and open all day and night. If the person has trouble breathing, is very sleepy
+      and hard to wake, has a seizure, or collapses, call 911 right away.
+  - layout: bullets
+    heading: Questions for the Pharmacist
+    points:
+    - Can I take this with my medicines?
+    - Is this safe for my condition?
+    - How long can I take it?
+    footage_query: pharmacist explaining medicine
+    narration: 'Pharmacists are experts in medicines, and you can ask them questions at no cost. Good questions are: can I
+      take this with my other medicines? Is it safe with my health conditions? How long can I take it? And what side effects
+      should I watch for? Write down the answers and add them to your list.'
+  - layout: bullets
+    heading: A Quick Label Routine
+    points:
+    - Active ingredient
+    - Warnings
+    - Directions
+    - Expiration date
+    footage_query: woman checking medicine label
+    narration: Here is a quick routine you can use every time. One, read the active ingredient and compare it with everything
+      else you take. Two, scan the warnings for anything that applies to you. Three, read the directions and the daily limit.
+      Four, check the expiration date. It takes about a minute.
+  - layout: bullets
+    heading: Quick Recap
+    points:
+    - Active ingredient first
+    - Never double up
+    - Follow the daily limit
+    - Ask the pharmacist
+    footage_query: pharmacy counter
+    narration: Let us recap. Every over the counter medicine has a Drug Facts label. Read the active ingredient first, and
+      never take two products with the same one. Check the warnings, follow the directions and the daily limit, use the dosing
+      cup that comes with the medicine, and ask a pharmacist when you are not sure.
+  - layout: outro
+    heading: Remember
+    points:
+    - Active ingredient first
+    - Never double up
+    - Ask a pharmacist
+    footage_query: family kitchen table
+    narration: 'Remember: read the active ingredient first, never double up on the same medicine, and ask a pharmacist when
+      in doubt. Share this with someone who keeps a full medicine cabinet. This video is for education only, not medical advice.'
+  short_scenes:
+  - layout: title
+    heading: Read This Line First
+    points:
+    - On every medicine box
+    footage_query: medicine box label close up
+    narration: There is one line on every medicine box you should read first, and most people skip it.
+  - layout: bullets
+    heading: The Active Ingredient
+    points:
+    - The medicine that does the work
+    - Compare across products
+    - Same name means do not mix
+    footage_query: pill bottle label close up
+    narration: It is the active ingredient. Many cold, flu and sleep medicines contain the same ingredient as your pain reliever,
+      like acetaminophen. Take two of them and the doses add up, which can harm your liver. So compare the active ingredients
+      before you take two products together.
+  - layout: outro
+    heading: Full Video
+    points:
+    - On YouTube
+    footage_query: pharmacy counter
+    narration: Learn how to read every part of the label in our full video, on the Health Support Studio YouTube channel.
