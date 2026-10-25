@@ -469,5 +469,21 @@
     "preview": "previews/PcF6ztyMfjU.mp4",
     "publish_at": "2026-10-25T16:00:00Z",
     "pin_question": "Have you or someone you know ever been stuck out in the cold longer than planned? What helped you stay warm?"
+  },
+  {
+    "date": "2026-10-25T10:48:32",
+    "topic": "Carbon monoxide poisoning: warning signs and prevention",
+    "requested_topic": "Carbon monoxide poisoning: warning signs and prevention",
+    "title": "Carbon Monoxide Warning Signs: The Invisible Killer (Part 3/5)",
+    "style": "Warning Signs",
+    "script_file": "056-carbon-monoxide-signs.yaml",
+    "series": "Emergency Basics",
+    "episode": 3,
+    "planned_publish_at": "2026-10-26T16:00:00Z",
+    "awaiting_approval": true,
+    "youtube_id": "U0Hu-5sg2sg",
+    "short_youtube_id": "_l9Eo-dkeNg",
+    "short2_youtube_id": "XvQ9bttgwJc",
+    "preview": "previews/U0Hu-5sg2sg.mp4"
   }
 ]
