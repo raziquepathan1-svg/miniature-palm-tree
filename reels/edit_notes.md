@@ -13,3 +13,4 @@
 - Man_modeling_luxury_fashion_outfits_20261025120638.mp4 (Prompt 83 Moroccan): beard OK; jacket thrown but drops, hoodie shows 1.5-1.6 -> use 0-1.42 | 1.65-8.0 (cut on jacket flying). Whip-pans fine.
 - Man_modeling_luxury_menswear_com__20261025121059.mp4 (Prompt 84 Japanese): beard OK; jacket covers lens 1.45-1.65 then he holds it again (label visible) -> use 0-1.62 | 2.2-8.0. Whip-pans fine.
 - Man_modeling_winter_luxury_fashion_20261025121536.mp4 (Prompt 85 Istanbul): clean toss, beard OK. Coat label text blurred -> use reels/work/istanbul_blur.mp4, whole clip.
+- Man_modeling_winter_clothing_20261025122223.mp4 (Prompt 86 alpine): clean toss, beard OK, labels motion-blurred/unreadable -> use whole clip.
