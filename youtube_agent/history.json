@@ -474,7 +474,7 @@
     "date": "2026-10-25T10:48:32",
     "topic": "Carbon monoxide poisoning: warning signs and prevention",
     "requested_topic": "Carbon monoxide poisoning: warning signs and prevention",
-    "title": "Carbon Monoxide Warning Signs: The Invisible Killer (Part 3/5)",
+    "title": "Carbon Monoxide: The Silent Killer in Your Home (Part 3/5)",
     "style": "Warning Signs",
     "script_file": "056-carbon-monoxide-signs.yaml",
     "series": "Emergency Basics",
@@ -484,6 +484,39 @@
     "youtube_id": "U0Hu-5sg2sg",
     "short_youtube_id": "_l9Eo-dkeNg",
     "short2_youtube_id": "XvQ9bttgwJc",
-    "preview": "previews/U0Hu-5sg2sg.mp4"
+    "preview": "previews/U0Hu-5sg2sg.mp4",
+    "pin_question": "Do you have a carbon monoxide alarm at home, and when did you last test it?",
+    "packages": [
+      {
+        "title": "Carbon Monoxide: The Silent Killer in Your Home",
+        "thumbnail_text": "NO SMELL?",
+        "thumbnail_highlight": "SMELL?"
+      },
+      {
+        "title": "Is It the Flu or Carbon Monoxide?",
+        "thumbnail_text": "CHECK YOUR ALARM",
+        "thumbnail_highlight": "ALARM"
+      },
+      {
+        "title": "The Silent Gas That Kills in Your Sleep",
+        "thumbnail_text": "NO SMELL?",
+        "thumbnail_highlight": "SMELL?"
+      },
+      {
+        "title": "Never Run a Generator in These Places",
+        "thumbnail_text": "DEADLY MISTAKE",
+        "thumbnail_highlight": "DEADLY"
+      },
+      {
+        "title": "Carbon Monoxide Myths That Can Kill You",
+        "thumbnail_text": "OPEN WINDOW?",
+        "thumbnail_highlight": "WINDOW?"
+      }
+    ],
+    "chosen": {
+      "title": "Carbon Monoxide: The Silent Killer in Your Home",
+      "thumbnail_text": "NO SMELL?",
+      "thumbnail_highlight": "SMELL?"
+    }
   }
 ]
