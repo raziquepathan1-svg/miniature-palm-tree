@@ -1,5 +1,6 @@
 """Simple whiteboard drawings (black outlines + flat colors on white, no words), made in code so they cost
-nothing. whiteboard.py's pen traces the outlines and then colors them in. Run:
+nothing. People always have real body proportions, modest clothes and a BLANK face (no eyes, nose or
+mouth: the owner's rule). whiteboard.py's pen traces the outlines and then colors them in. Run:
     python -m youtube_agent.doodles   -> branding/health-support-studio/whiteboard/drawings/*.png
 Keywords for each drawing are in drawings.yaml in the same folder."""
 from __future__ import annotations
@@ -68,30 +69,90 @@ class Pad:
         self.img.resize((self.img.width // S, self.img.height // S), Image.LANCZOS).save(OUT / name)
 
 
-def person(p: Pad, x, y, h, shirt, woman=False, cane=False, small=False):
-    """A friendly simple person standing at (x, feet y), modestly dressed."""
-    head = h * 0.13
-    hy = y - h + head
-    p.oval(x, hy, head, fill=SKIN)
-    p.arc(x, hy + head * 0.1, head * 0.5, 30, 150, 7)  # a small smile
-    p.oval(x - head * 0.35, hy - head * 0.15, 4, fill=INK)
-    p.oval(x + head * 0.35, hy - head * 0.15, 4, fill=INK)
-    top, waist = hy + head + 6, y - h * 0.42
-    sw = h * 0.17
-    if woman:  # a long dress
-        p.poly([(x - sw * 0.8, top), (x + sw * 0.8, top), (x + sw * 1.25, y - h * 0.08), (x - sw * 1.25, y - h * 0.08)],
-               shirt)
+def smooth(pts, n=8):
+    """A smooth closed curve through the points (rounded shoulders, bodies)."""
+    out = []
+    for i in range(len(pts)):
+        a, b, c, d = pts[i - 1], pts[i], pts[(i + 1) % len(pts)], pts[(i + 2) % len(pts)]
+        for k in range(n):
+            t = k / n
+            out.append(tuple(0.5 * (2 * b[j] + (-a[j] + c[j]) * t + (2 * a[j] - 5 * b[j] + 4 * c[j] - d[j]) * t * t
+                                    + (-a[j] + 3 * b[j] - 3 * c[j] + d[j]) * t ** 3) for j in (0, 1)))
+    return out
+
+
+def _arm(p: Pad, shoulder, elbow, wrist, u, cloth):
+    """A long-sleeved arm bent a little at the elbow, with the hand."""
+    p.poly(_limb(shoulder, elbow, 0.44 * u, 0.34 * u), cloth)
+    p.poly(_limb(elbow, wrist, 0.34 * u, 0.28 * u), cloth)
+    p.d.ellipse([(elbow[0] - 0.15 * u) * S, (elbow[1] - 0.15 * u) * S, (elbow[0] + 0.15 * u) * S,
+                 (elbow[1] + 0.15 * u) * S], fill=cloth)  # hides the seam at the elbow
+    dx, dy = wrist[0] - elbow[0], wrist[1] - elbow[1]
+    L = math.hypot(dx, dy) or 1
+    p.oval(wrist[0] + dx / L * 0.2 * u, wrist[1] + dy / L * 0.2 * u, 0.16 * u, 0.22 * u, fill=SKIN)
+
+
+def _limb(a, b, w0, w1):
+    """A tapered limb from point a to point b (a 4-corner shape), w0/w1 = width at each end."""
+    (ax, ay), (bx, by) = a, b
+    L = math.hypot(bx - ax, by - ay) or 1
+    nx, ny = -(by - ay) / L, (bx - ax) / L
+    return [(ax + nx * w0 / 2, ay + ny * w0 / 2), (bx + nx * w1 / 2, by + ny * w1 / 2),
+            (bx - nx * w1 / 2, by - ny * w1 / 2), (ax - nx * w0 / 2, ay - ny * w0 / 2)]
+
+
+def _head(p: Pad, cx, cy, u, hair, long_hair=False, side=0):
+    """A head with hair and NO face (no eyes, nose or mouth): the channel's style for people."""
+    rx, ry = 0.40 * u, 0.52 * u
+    if long_hair:  # behind the head, down to the shoulders
+        p.poly([(cx - rx * 1.25, cy - ry * 0.2), (cx - rx * 1.35, cy + ry * 1.5), (cx + rx * 1.35, cy + ry * 1.5),
+                (cx + rx * 1.25, cy - ry * 0.2), (cx, cy - ry * 1.15)], hair)
+    p.oval(cx, cy, rx, ry, fill=SKIN)
+    top = [(cx + rx * 1.06 * math.cos(math.radians(a)), cy + ry * 1.08 * math.sin(math.radians(a)))
+           for a in range(185, 356, 10)]
+    fringe = [(cx + rx * 0.95, cy - ry * 0.25), (cx + side * rx * 0.3, cy - ry * 0.55), (cx - rx * 0.95, cy - ry * 0.25)]
+    p.poly(top + fringe, hair)
+
+
+def person(p: Pad, x, y, h, shirt, pants=None, woman=False, cane=False, kid=False, hair=None):
+    """A standing person with real body proportions, modestly dressed (long sleeves; trousers or a long
+    dress), seen from the front, feet at (x, y). The face is left blank on purpose."""
+    u = h / (6.0 if kid else 7.5)  # one head-height
+    hair = hair or BROWN
+    pants = pants or (GRAY if kid else BLUE)
+    shoes = (90, 70, 60)
+    hy = y - h + 0.55 * u
+    ys = y - h + 1.45 * u  # shoulders
+    sw = (0.80 if kid else 0.85 if woman else 1.0) * u
+    waist = ys + (1.7 if kid else 2.0) * u
+    p.rect(x - 0.14 * u, hy + 0.3 * u, 0.28 * u, 0.6 * u, fill=SKIN)  # neck
+    shoulders = [(x - 0.22 * u, ys - 0.12 * u), (x - sw + 0.12 * u, ys - 0.02 * u), (x - sw, ys + 0.4 * u)]
+    if woman:
+        for sx in (-1, 1):  # shoes under the dress
+            p.oval(x + sx * 0.26 * u, y - 0.13 * u, 0.26 * u, 0.13 * u, fill=shoes)
+        left = shoulders + [(x - sw * 0.74, waist - 0.3 * u), (x - sw * 1.05, y - 1.2 * u), (x - sw * 1.2, y - 0.3 * u)]
+        p.poly(smooth(left + [(x, y - 0.26 * u)] + [(2 * x - a, b) for a, b in reversed(left)] + [(x, ys - 0.05 * u)]),
+               shirt)  # a long dress
+        p.line([(x - sw * 0.72, waist - 0.3 * u), (x + sw * 0.72, waist - 0.3 * u)], 7)
     else:
-        p.rect(x - sw, top, sw * 2, waist - top, fill=shirt, r=12)
-        p.rect(x - sw * 0.85, waist, sw * 1.7, y - h * 0.08 - waist, fill=BLUE if not small else GRAY, r=6)
-        p.line([(x, waist + 10), (x, y - h * 0.08)], 7)
-    p.line([(x - sw * 0.5, y - h * 0.08), (x - sw * 0.6, y)], 12)
-    p.line([(x + sw * 0.5, y - h * 0.08), (x + sw * 0.6, y)], 12)
-    p.line([(x - sw * (0.9 if not woman else 0.7), top + 12), (x - sw * 1.5, waist + 10)], 12)
-    p.line([(x + sw * (0.9 if not woman else 0.7), top + 12), (x + sw * 1.5, waist + 10)], 12)
+        for sx in (-1, 1):  # legs and shoes
+            p.poly([(x + sx * sw * 0.80, waist - 0.1 * u), (x + sx * 0.04 * u, waist - 0.1 * u),
+                    (x + sx * 0.08 * u, y - 0.18 * u), (x + sx * 0.52 * u, y - 0.18 * u)], pants)
+            p.oval(x + sx * 0.32 * u, y - 0.13 * u, 0.3 * u, 0.13 * u, fill=shoes)
+        left = shoulders + [(x - sw * 0.86, ys + 1.2 * u), (x - sw * 0.82, waist + 0.05 * u)]
+        p.poly(smooth(left + [(2 * x - a, b) for a, b in reversed(left)] + [(x, ys - 0.05 * u)]), shirt)
+        p.line([(x - 0.18 * u, ys - 0.08 * u), (x, ys + 0.25 * u), (x + 0.18 * u, ys - 0.08 * u)], 7)  # collar
+    arm = (1.0 if kid else 1.15) * u
+    for sx in (-1, 1):  # long sleeves, a little bent, then the hands
+        sh = (x + sx * (sw - 0.14 * u), ys + 0.22 * u)
+        el = (x + sx * (sw + 0.18 * u), ys + 0.22 * u + arm)
+        wr = (x + sx * (sw + 0.12 * u), ys + 0.22 * u + 1.95 * arm)
+        _arm(p, sh, el, wr, u, shirt)
     if cane:
-        p.line([(x + sw * 1.6, waist + 6), (x + sw * 1.9, y)], 10)
-        p.arc(x + sw * 1.6 - 14, waist + 6, 14, 180, 360, 10)
+        hx, hy2 = x + sw + 0.2 * u, ys + 0.22 * u + 1.95 * arm + 0.2 * u
+        p.line([(hx, hy2), (hx + 0.15 * u, y)], 10)
+        p.arc(hx - 0.14 * u, hy2, 0.14 * u, 180, 360, 10)
+    _head(p, x, hy, u, hair, long_hair=woman)
 
 
 def ambulance():
@@ -153,11 +214,11 @@ def lungs():
 
 def family():
     p = Pad(1200, 800)
-    person(p, 170, 760, 560, PURPLE, woman=True, cane=True)  # grandmother
-    person(p, 420, 760, 640, BLUE)  # father
-    person(p, 680, 760, 610, RED, woman=True)  # mother
-    person(p, 880, 760, 400, GREEN, small=True)  # boy
-    person(p, 1060, 760, 380, YEL, woman=True)  # girl
+    person(p, 160, 770, 600, PURPLE, woman=True, cane=True, hair=(200, 200, 205))  # grandmother
+    person(p, 420, 770, 700, LBLUE, pants=(70, 80, 110), hair=(60, 45, 35))  # father
+    person(p, 670, 770, 660, RED, woman=True, hair=(40, 30, 25))  # mother
+    person(p, 880, 770, 430, GREEN, kid=True, hair=(60, 45, 35))  # boy
+    person(p, 1060, 770, 400, YEL, woman=True, kid=True, hair=(120, 70, 40))  # girl
     p.save("family.png")
 
 
@@ -293,9 +354,7 @@ def sleep():
     p.rect(80, 300, 60, 400, fill=BROWN, r=10)
     p.rect(860, 380, 60, 320, fill=BROWN, r=10)
     p.rect(160, 360, 200, 90, fill="white", r=40)  # pillow
-    p.oval(270, 340, 70, fill=SKIN)
-    p.arc(250, 330, 22, 20, 160, 7)
-    p.arc(300, 330, 22, 20, 160, 7)
+    _head(p, 270, 345, 135, (60, 45, 35))  # no face
     p.rect(330, 380, 530, 130, fill=PURPLE, r=30)  # blanket
     moon = [(760 + 110 * math.cos(math.radians(a)), 150 + 110 * math.sin(math.radians(a))) for a in range(60, 301, 6)]
     moon += [(800 + 85 * math.cos(math.radians(a)), 150 + 85 * math.sin(math.radians(a))) for a in range(270, 89, -6)]
@@ -307,18 +366,27 @@ def sleep():
 
 
 def walking():
-    p = Pad(800, 860)
-    x, y, h = 400, 800, 720
-    head = h * 0.12
-    p.oval(x + 20, y - h + head, head, fill=SKIN)
-    top, hip = y - h + 2 * head + 6, y - h * 0.42
-    p.poly([(x - 55, top), (x + 75, top), (x + 70, hip), (x - 50, hip)], GREEN)
-    p.line([(x, hip), (x - 120, y - 150), (x - 170, y - 20)], 18)
-    p.line([(x + 20, hip), (x + 110, y - 170), (x + 190, y - 40)], 18)
-    p.line([(x - 40, top + 20), (x - 130, hip - 40)], 14)
-    p.line([(x + 60, top + 20), (x + 150, hip + 20)], 14)
+    """A person walking, seen from the side (no face)."""
+    p = Pad(760, 900)
+    u, x, y = 112, 380, 860
+    ys, hip = y - 6.05 * u, y - 3.55 * u
+    back_leg = [(x - 0.1 * u, hip), (x - 0.8 * u, y - 1.7 * u), (x - 1.25 * u, y - 0.2 * u)]
+    front_leg = [(x + 0.1 * u, hip), (x + 0.6 * u, y - 1.8 * u), (x + 1.05 * u, y - 0.2 * u)]
+    for leg, shade in ((back_leg, (55, 65, 95)), (front_leg, (70, 80, 110))):
+        p.poly(_limb(leg[0], leg[1], 0.62 * u, 0.42 * u), shade)
+        p.poly(_limb(leg[1], leg[2], 0.42 * u, 0.32 * u), shade)
+        p.oval(leg[2][0] + 0.18 * u, y - 0.12 * u, 0.36 * u, 0.13 * u, fill=(90, 70, 60))
+    _arm(p, (x - 0.05 * u, ys + 0.3 * u), (x - 0.55 * u, ys + 1.3 * u), (x - 0.7 * u, ys + 2.2 * u), u,
+         (50, 140, 75))  # back arm
+    p.rect(x - 0.13 * u, ys - 0.75 * u, 0.3 * u, 0.6 * u, fill=SKIN)  # neck
+    p.poly(smooth([(x - 0.25 * u, ys - 0.12 * u), (x - 0.55 * u, ys + 0.2 * u), (x - 0.55 * u, ys + 1.3 * u),
+                   (x - 0.5 * u, hip + 0.1 * u), (x + 0.5 * u, hip + 0.1 * u), (x + 0.6 * u, ys + 1.2 * u),
+                   (x + 0.45 * u, ys + 0.1 * u), (x + 0.2 * u, ys - 0.12 * u)]), GREEN)  # body
+    _arm(p, (x + 0.05 * u, ys + 0.3 * u), (x + 0.35 * u, ys + 1.3 * u), (x + 0.85 * u, ys + 2.0 * u), u,
+         GREEN)  # front arm
+    _head(p, x + 0.05 * u, ys - 1.05 * u, u, (60, 45, 35), side=1)
     for k in range(3):
-        p.line([(120, 300 + k * 70), (190, 300 + k * 70)], 9)
+        p.line([(60, 330 + k * 70), (130, 330 + k * 70)], 9)
     p.save("walking.png")
 
 
