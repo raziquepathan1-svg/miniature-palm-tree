@@ -26,7 +26,12 @@ def main() -> None:
         status["privacyStatus"] = "public"
         for key in ("publishAt", "uploadStatus", "failureReason", "rejectionReason"):
             status.pop(key, None)
-        youtube.videos().update(part="status", body={"id": vid, "status": status}).execute()
+        print(f"{vid} before: {item['status']}")
+        res = youtube.videos().update(part="status", body={"id": vid, "status": status}).execute()
+        after = youtube.videos().list(part="status", id=vid).execute()["items"][0]["status"]
+        print(f"{vid} sent: {status}\n{vid} answer: {res.get('status')}\n{vid} now: {after}")
+        if after.get("privacyStatus") != "public":
+            sys.exit(f"{vid} is still {after.get('privacyStatus')}")
         print(f"Public now: https://youtu.be/{vid}")
         for h in history:
             if h.get("youtube_id") == vid:
