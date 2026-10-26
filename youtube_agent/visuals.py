@@ -544,6 +544,49 @@ def render_scene(bg: Path, is_video: bool, overlay: Path, wav: Path, ass: Path |
     return out
 
 
+def render_whiteboard_scene(scene, wav: Path, ass: Path | None, duration: float, size: tuple[int, int],
+                            out: Path, room: int = 0) -> Path:
+    """The slide's heading and points handwritten on a whiteboard (whiteboard.py), with the narration and
+    captions; the right side stays free for the corner presenter."""
+    from . import whiteboard
+
+    items = whiteboard.scene_items(scene.heading, list(scene.points), duration, warning=scene.layout == "warning",
+                                   right_room=room)
+    board = whiteboard.render(items, duration, out.with_name(out.stem + "_board.mp4"))
+    W, H = size
+    fade_out = max(0.0, duration - 0.3)
+    vf = f"[0:v]scale={W}:{H},fps={FPS},setsar=1,fade=t=in:st=0:d=0.3,fade=t=out:st={fade_out:.2f}:d=0.3"
+    if ass:
+        fonts = f":fontsdir='{_escape_filter_path(FONT_DIR)}'" if FONT_DIR.exists() else ""
+        vf += f",subtitles='{_escape_filter_path(ass)}'{fonts}"
+    vf += ",format=yuv420p[v]"
+    _run([
+        "-y", "-i", str(board), "-i", str(wav), "-filter_complex", vf,
+        "-map", "[v]", "-map", "1:a", "-t", f"{duration:.3f}",
+        "-c:v", "libx264", "-preset", "veryfast", "-crf", "21", "-r", str(FPS),
+        "-c:a", "aac", "-b:a", "160k", "-ar", "48000", "-ac", "2",
+        str(out),
+    ])
+    return out
+
+
+def whiteboard_picks(scenes, skip: set, count: int) -> set:
+    """Which scenes become whiteboard pages: bullet or warning slides with 2+ points, away from the start and
+    end, spread evenly through the video (scenes where the host appears are left alone)."""
+    n = len(scenes)
+    cands = [i for i, s in enumerate(scenes) if s.layout in ("bullets", "warning") and len(s.points) >= 2
+             and 2 <= i < n - 2 and i not in skip]
+    if not cands or count <= 0:
+        return set()
+    picks = []
+    for k in range(count):
+        target = cands[0] + (cands[-1] - cands[0]) * (k + 1) / (count + 1)
+        best = min((c for c in cands if c not in picks), key=lambda c: abs(c - target), default=None)
+        if best is not None:
+            picks.append(best)
+    return set(picks)
+
+
 def render_host_overlay(scene, size: tuple[int, int], channel_name: str, out_png: Path) -> Path:
     """The scene's slide for a host moment: the host fills the screen behind it, so the slide is drawn small in
     the bottom-left corner (the host's face in the middle stays clear); the brand tag stays top-left."""
@@ -762,6 +805,11 @@ def build_video(plan, video_cfg: dict, voice_cfg: dict, channel_name: str, workd
     kinds: list[str] = []  # "scene" (the presenter may show), "host" or "clip" (the host is already on screen)
     labels: list[str | None] = []  # chapter title for the first part of each scene (None: same chapter)
     subscribe_at = len(plan.scenes) // 2 if video_cfg.get("format") != "shorts" else -1
+    wb_cfg = video_cfg.get("whiteboard") or {}
+    boards = whiteboard_picks(plan.scenes, set(snips) | {subscribe_at}, int(wb_cfg.get("per_video", 3))) \
+        if wb_cfg.get("enabled") and size[0] > size[1] else set()
+    if boards:
+        print(f"    Whiteboard pages for scenes {sorted(b + 1 for b in boards)}")
     for i, (scene, (wav, duration, captions)) in enumerate(zip(plan.scenes, narrated), 1):
         print(f"    Scene {i}/{len(plan.scenes)}: {scene.layout} - {scene.heading}")
         labels += [None] * (len(parts) - len(labels))
@@ -769,6 +817,13 @@ def build_video(plan, video_cfg: dict, voice_cfg: dict, channel_name: str, workd
         ass = write_ass(captions, size, scenes_dir / f"{i:02d}.ass", 60 + room) \
             if video_cfg.get("captions", True) else None
         _scene_accent(i - 1)
+        if i - 1 in boards:
+            try:
+                parts.append(render_whiteboard_scene(scene, wav, ass, duration, size, scenes_dir / f"{i:02d}.mp4",
+                                                     room))
+                continue
+            except Exception as e:  # never lose the video over a drawing: the normal slide instead
+                print(f"    (Whiteboard page failed, normal slide instead: {e})")
         overlay = render_overlay(scene, size, channel_name, scenes_dir / f"{i:02d}_overlay.png",
                                  subscribe=(i - 1 == subscribe_at))
         if room:  # the slide moves left and gets a little smaller, so the corner presenter covers nothing

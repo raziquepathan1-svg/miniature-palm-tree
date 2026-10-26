@@ -302,6 +302,70 @@ def render(items: list, duration: float, out: Path, audio: Path | None = None) -
     return out
 
 
+def _wrap(text: str, size: int, max_w: int) -> list[str]:
+    f, lines, cur = _font(size), [], ""
+    for w in text.split():
+        test = f"{cur} {w}".strip()
+        if cur and f.getbbox(test)[2] > max_w:
+            lines.append(cur)
+            cur = w
+        else:
+            cur = test
+    return lines + ([cur] if cur else [])
+
+
+def scene_items(heading: str, points: list[str], duration: float, warning: bool = False,
+                right_room: int = 0, bottom_room: int = 230) -> list:
+    """A whiteboard page for a slide: the heading is handwritten and underlined, then each point is written
+    with a check mark (or a red arrow on warning slides), spread over the narration. Free, no pictures."""
+    items, left, right = [], 150, W - right_room - 120
+    width = right - left
+
+    def add(t, dur, kind, **kw):
+        items.append({"t": t, "dur": dur, "kind": kind, **kw})
+
+    head_size, y = 116, 40
+    head_lines = _wrap(heading, head_size, width)
+    t = 0.3
+    for line in head_lines:
+        add(t, min(1.8, 0.25 + 0.045 * len(line)), "text", x=left + width // 2, y=y, text=line, size=head_size,
+            align="center")
+        t += 0.9
+        y += int(head_size * 1.2)
+    line_w = min(width, max(_font(head_size).getbbox(l)[2] for l in head_lines) + 60)
+    x0 = left + (width - line_w) // 2
+    add(t, 0.6, "line", points=[[x0, y + 18], [x0 + line_w, y + 18]], color="red" if warning else "blue")
+    y += 60
+    t += 0.8
+    space = (H - bottom_room) - y
+    for size in (92, 84, 74, 64, 56):  # as big as fits
+        gap, sep = int(size * 1.22), int(size * 0.45)
+        rows = [_wrap(pnt, size, width - 130) for pnt in points]
+        total = sum(len(r) for r in rows) * gap + (len(rows) - 1) * sep
+        if total <= space:
+            break
+    y += max(0, (space - total) // 2)  # the list sits in the middle of the free board
+    start = max(t, 2.2)
+    each = max(1.2, (duration - start - 1.0) / max(len(points), 1))
+    for n, row in enumerate(rows):
+        tp = start + n * each
+        k = size / 62
+        mx, my = left + int(30 * k), y + int(size * 0.62)
+        if warning:
+            add(tp, 0.45, "line", points=[[mx - 24 * k, my], [mx + 46 * k, my]], color="red", arrow=True,
+                width=int(12 * k), head=int(28 * k))
+        else:
+            add(tp, 0.45, "line", points=[[mx - 20 * k, my - 2 * k], [mx, my + 22 * k], [mx + 38 * k, my - 30 * k]],
+                color="green", width=int(13 * k))
+        tt = tp + 0.5
+        for line in row:
+            add(tt, min(1.6, 0.2 + 0.035 * len(line)), "text", x=left + int(110 * k), y=y, text=line, size=size)
+            tt += 0.6
+            y += gap
+        y += sep
+    return items
+
+
 def heart_demo() -> tuple[list, float]:
     """'How your heart pumps blood': a test page."""
     I = []
