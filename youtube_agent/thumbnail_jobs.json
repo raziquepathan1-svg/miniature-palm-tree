@@ -156,13 +156,15 @@
     "text": "IT'S TREATABLE",
     "highlight": "TREATABLE",
     "style": "Top Questions",
-    "photo_query": "tired man sitting on bed at night"
+    "photo_query": "tired man sitting on bed at night",
+    "done": true
   },
   {
     "youtube_id": "spq8oOrKcWs",
     "text": "AGE 40?",
     "highlight": "40?",
     "style": "Myth vs Fact",
-    "photo_query": "woman mammogram clinic"
+    "photo_query": "woman mammogram clinic",
+    "done": true
   }
 ]
