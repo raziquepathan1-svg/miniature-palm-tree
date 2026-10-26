@@ -181,3 +181,8 @@ Mix in luxury "arrival" moments instead of only walking: a black luxury car (no 
 ## Slow motion in edits (user, Oct 25)
 
 - Every Reel: add one smooth slow-motion moment (0.8s of source at 0.5x via the `speed` field in `make_reel.sh`) in the middle of each outfit, on a pose (collar, button, watch), never across a whip-pan. Example script: `reels/work/render_oct25.sh`.
+
+## 3-second rule edits (user, Oct 26)
+
+- Hook without text: `reels/tools/hookify.sh IN OUT TEASER_START TEASER_DUR MAIN_END` puts a 1s cold-open teaser of the best final look first, removes the fade-to-black ending (seamless loop back to the teaser), and restarts the music at 0s. Hooked versions go in `reels/final/hooked/`.
+- New edits should also: open on motion (macro hook ≤0.5s), reach the toss within ~1.5s, keep slow-mo away from the first 3s, and end hard on the hero (no fade) for looping.
