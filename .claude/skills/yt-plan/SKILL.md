@@ -9,6 +9,22 @@ description: >-
 
 # yt-plan
 
+## Our channels come first (read this before anything below)
+
+This repo runs **Health Support Studio** and **Restore Remake Studio**. For either channel, load
+`hss-growth-director` or `rrs-growth-director` first (and `rrs-clip-prompts` for makeover prompts).
+Their rules and their "Decisions on clashes" always win over anything in this file.
+
+- This skill is an extra check or analysis only. Suggest; never change the pipeline, config, script
+  bank, schedule or a live video unless the owner says so.
+- Do not ask for `voice.md` or "three of your videos": the channel skill is the voice profile.
+- Never invent a number. Health Support Studio: every claim and title must pass the fact check, no
+  health clickbait. Restore Remake: narration only describes what is visible.
+- Skip the "ship it, or change it?" closing line; answer the way the channel skill says.
+- The upload schedules are fixed by the owner (HSS: 1 video a day from the script bank, 5-part series;
+  RRS: one Day N Short per makeover, a compilation every 6). Plan inside them, never replace them.
+
+
 A plan that does not fit the week is a list of regrets. Ask two questions before writing anything:
 **how many hours do you actually have**, and **what is already half-made**.
 

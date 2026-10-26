@@ -10,6 +10,25 @@ description: >-
 
 # yt-script
 
+## Our channels come first (read this before anything below)
+
+This repo runs **Health Support Studio** and **Restore Remake Studio**. For either channel, load
+`hss-growth-director` or `rrs-growth-director` first (and `rrs-clip-prompts` for makeover prompts).
+Their rules and their "Decisions on clashes" always win over anything in this file.
+
+- This skill is an extra check or analysis only. Suggest; never change the pipeline, config, script
+  bank, schedule or a live video unless the owner says so.
+- Do not ask for `voice.md` or "three of your videos": the channel skill is the voice profile.
+- Never invent a number. Health Support Studio: every claim and title must pass the fact check, no
+  health clickbait. Restore Remake: narration only describes what is visible.
+- Skip the "ship it, or change it?" closing line; answer the way the channel skill says.
+- Health Support Studio keeps its subscribe line after ~300 words and the spoken educational-only line;
+  narration uses commas and periods only (owner chose plain voice, Oct 18). Restore Remake Shorts have
+  no long script: use the channel's loop line and Day N format.
+- `hookscore.py` is a heuristic (its author says so): use a WEAK score as a reason to look again, never
+  as a reason to break a channel rule.
+
+
 One idea into a script somebody finishes.
 
 Two tools live in this folder and both actually run. Use them. Do not eyeball the hook.

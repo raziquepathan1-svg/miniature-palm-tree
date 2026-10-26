@@ -122,3 +122,20 @@ one open personal pinned question. It adds a job to youtube_agent/packaging_jobs
 yt_comments) BEFORE the video goes public. When fewer than 10 unused scripts are left, the chat writes new
 scripts in the same YAML format (same facts discipline: only well-established guidance from CDC, NIH, AHA,
 Mayo Clinic and similar, sources listed, safety lines kept), adds them to the bank and runs check-scripts.yml.
+
+## Extra checks from the yt-* skills (added Oct 26, 2026, owner OK)
+
+The `yt-*` skills (youtube-agent-skill pack) are helpers only. The rules in this file win every time,
+and they never change the pipeline, config or a live video on their own.
+
+- Packaging: before the 5 combos go into packaging_jobs.json, run them through
+  `python3 -I .claude/skills/yt-package/title.py --title "..." --thumb "..."` and fix any `duplicate`,
+  `shouting`, `vague` or `length` flag. `no-number` is advice only (a number only if true). For
+  `mobile`, keep the subject in the first ~40 characters.
+- New bank scripts and Short hooks: score the first line with
+  `python3 -I .claude/skills/yt-script/hookscore.py --hook "..."`. A WEAK score is a reason to rewrite it
+  within these rules (true, fact-checked, no clickbait), never a reason to break them.
+- Retention: when the owner shares a YouTube Studio audience-retention CSV, use `/yt-retention` to find
+  where viewers leave and suggest the fix; changes still go through the owner.
+- Ideas: `/yt-viral` (public listings only, never a login) can show which health videos beat their own
+  channel, as topic ideas for new bank scripts. Facts still come only from CDC, NIH, AHA, Mayo Clinic and similar.

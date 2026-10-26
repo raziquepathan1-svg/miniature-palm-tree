@@ -8,6 +8,20 @@ description: >-
 
 # yt-chapters
 
+## Our channels come first (read this before anything below)
+
+This repo runs **Health Support Studio** and **Restore Remake Studio**. For either channel, load
+`hss-growth-director` or `rrs-growth-director` first (and `rrs-clip-prompts` for makeover prompts).
+Their rules and their "Decisions on clashes" always win over anything in this file.
+
+- This skill is an extra check or analysis only. Suggest; never change the pipeline, config, script
+  bank, schedule or a live video unless the owner says so.
+- Do not ask for `voice.md` or "three of your videos": the channel skill is the voice profile.
+- Never invent a number. Health Support Studio: every claim and title must pass the fact check, no
+  health clickbait. Restore Remake: narration only describes what is visible.
+- Skip the "ship it, or change it?" closing line; answer the way the channel skill says.
+
+
 ```bash
 python3 chapters.py transcript.srt --target 8
 ```

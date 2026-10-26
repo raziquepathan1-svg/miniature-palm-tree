@@ -107,3 +107,19 @@ They are built into `youtube_agent/clips.py` and the channel config; follow them
    and list all 5 in the run summary so the owner can swap in Studio. DECIDED: suggestion adopted.
 9. 20-second bridge ending to a previous video vs 35-second Shorts. Suggested: Shorts keep "Day N+1"; the
    bridge ending is used in compilations ("the one that started it all..."). DECIDED: suggestion adopted.
+
+## Extra checks from the yt-* skills (added Oct 26, 2026, owner OK)
+
+The `yt-*` skills (youtube-agent-skill pack) are helpers only. The rules in this file win every time,
+and they never change the pipeline, config or a live video on their own.
+
+- Packaging: before the 5 combos go into packaging_jobs.json, run them through
+  `python3 -I .claude/skills/yt-package/title.py --title "..." --thumb "..."` and fix any `duplicate`,
+  `shouting`, `vague` or `length` flag. `no-number` is advice only (a number only if true). For
+  `mobile`, keep the subject in the first ~40 characters.
+- Do not score Restore Remake hooks with `hookscore.py`: it was built for spoken talking-head hooks,
+  and our Shorts hook is the visual before/after split.
+- Retention: when the owner shares a YouTube Studio audience-retention CSV, use `/yt-retention` to find
+  where viewers leave and suggest the fix; changes still go through the owner.
+- Ideas: `/yt-viral` (public listings only, never a login) can show which makeover videos beat their own
+  channel, as ideas for the next makeover (then `rrs-clip-prompts` writes the prompts).
