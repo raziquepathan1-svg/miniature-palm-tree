@@ -544,24 +544,60 @@ def render_scene(bg: Path, is_video: bool, overlay: Path, wav: Path, ass: Path |
     return out
 
 
+DRAWINGS = Path(__file__).resolve().parent.parent / "branding/health-support-studio/whiteboard/drawings"
+
+
+def drawing_for(text: str, used: set) -> Path | None:
+    """A Flow whiteboard drawing (hand drawing a picture, no words) whose keywords match the scene: the one with
+    the most matching words. drawings.yaml in the folder: {file.mp4: [keyword, ...]}; each used once per video."""
+    import re
+
+    import yaml
+
+    index = DRAWINGS / "drawings.yaml"
+    if not index.exists():
+        return None
+    t = text.lower()
+    best, hits = None, 0
+    for name, words in (yaml.safe_load(index.read_text()) or {}).items():
+        clip = DRAWINGS / name
+        if name in used or not clip.exists():
+            continue
+        n = sum(1 for w in words if re.search(rf"\b{re.escape(w.lower())}\b", t))
+        if n > hits:
+            best, hits = clip, n
+    if best:
+        used.add(best.name)
+    return best
+
+
 def render_whiteboard_scene(scene, wav: Path, ass: Path | None, duration: float, size: tuple[int, int],
-                            out: Path, room: int = 0) -> Path:
+                            out: Path, room: int = 0, drawing: Path | None = None) -> Path:
     """The slide's heading and points handwritten on a whiteboard (whiteboard.py), with the narration and
     captions; the right side stays free for the corner presenter."""
     from . import whiteboard
 
-    items = whiteboard.scene_items(scene.heading, list(scene.points), duration, warning=scene.layout == "warning",
-                                   right_room=room)
-    board = whiteboard.render(items, duration, out.with_name(out.stem + "_board.mp4"))
     W, H = size
+    # With a drawing: the words on the left half, the hand-drawn picture on the right (presenter hidden)
+    items = whiteboard.scene_items(scene.heading, list(scene.points), duration, warning=scene.layout == "warning",
+                                   right_room=W // 2 if drawing else room)
+    board = whiteboard.render(items, duration, out.with_name(out.stem + "_board.mp4"))
     fade_out = max(0.0, duration - 0.3)
-    vf = f"[0:v]scale={W}:{H},fps={FPS},setsar=1,fade=t=in:st=0:d=0.3,fade=t=out:st={fade_out:.2f}:d=0.3"
+    inputs = ["-i", str(board), "-i", str(wav)]
+    pic = ""
+    if drawing:  # plays once, then its last frame stays (the finished drawing)
+        dw = W // 2 - 60
+        inputs += ["-i", str(drawing)]
+        pic = (f"[2:v]scale={dw}:-2,fps={FPS},setsar=1,tpad=stop_mode=clone:stop_duration={duration:.2f}[pic];"
+               f"[0:v][pic]overlay={W // 2 + 20}:(H-h)/2-50:shortest=0[b];")
+    vf = (f"{pic}[{'b' if drawing else '0:v'}]scale={W}:{H},fps={FPS},setsar=1,fade=t=in:st=0:d=0.3,"
+          f"fade=t=out:st={fade_out:.2f}:d=0.3")
     if ass:
         fonts = f":fontsdir='{_escape_filter_path(FONT_DIR)}'" if FONT_DIR.exists() else ""
         vf += f",subtitles='{_escape_filter_path(ass)}'{fonts}"
     vf += ",format=yuv420p[v]"
     _run([
-        "-y", "-i", str(board), "-i", str(wav), "-filter_complex", vf,
+        "-y", *inputs, "-filter_complex", vf,
         "-map", "[v]", "-map", "1:a", "-t", f"{duration:.3f}",
         "-c:v", "libx264", "-preset", "veryfast", "-crf", "21", "-r", str(FPS),
         "-c:a", "aac", "-b:a", "160k", "-ar", "48000", "-ac", "2",
@@ -570,7 +606,7 @@ def render_whiteboard_scene(scene, wav: Path, ass: Path | None, duration: float,
     return out
 
 
-def whiteboard_picks(scenes, skip: set, count: int) -> set:
+def whiteboard_picks(scenes, skip: set, count: int, prefer: set = frozenset()) -> set:
     """Which scenes become whiteboard pages: bullet or warning slides with 2+ points, away from the start and
     end, spread evenly through the video (scenes where the host appears are left alone)."""
     n = len(scenes)
@@ -578,8 +614,8 @@ def whiteboard_picks(scenes, skip: set, count: int) -> set:
              and 2 <= i < n - 2 and i not in skip]
     if not cands or count <= 0:
         return set()
-    picks = []
-    for k in range(count):
+    picks = sorted(c for c in cands if c in prefer)[:count]  # scenes that have a drawing come first
+    for k in range(count - len(picks)):
         target = cands[0] + (cands[-1] - cands[0]) * (k + 1) / (count + 1)
         best = min((c for c in cands if c not in picks), key=lambda c: abs(c - target), default=None)
         if best is not None:
@@ -806,10 +842,20 @@ def build_video(plan, video_cfg: dict, voice_cfg: dict, channel_name: str, workd
     labels: list[str | None] = []  # chapter title for the first part of each scene (None: same chapter)
     subscribe_at = len(plan.scenes) // 2 if video_cfg.get("format") != "shorts" else -1
     wb_cfg = video_cfg.get("whiteboard") or {}
-    boards = whiteboard_picks(plan.scenes, set(snips) | {subscribe_at}, int(wb_cfg.get("per_video", 3))) \
-        if wb_cfg.get("enabled") and size[0] > size[1] else set()
-    if boards:
-        print(f"    Whiteboard pages for scenes {sorted(b + 1 for b in boards)}")
+    boards, drawings = set(), {}
+    if wb_cfg.get("enabled") and size[0] > size[1]:
+        used_drawings: set = set()
+        for k, sc in enumerate(plan.scenes):
+            if sc.layout in ("bullets", "warning") and k not in snips:
+                d = drawing_for(f"{sc.heading} {' '.join(sc.points)} {sc.narration}", used_drawings)
+                if d:
+                    drawings[k] = d
+        boards = whiteboard_picks(plan.scenes, set(snips) | {subscribe_at}, int(wb_cfg.get("per_video", 3)),
+                                  set(drawings))
+        drawings = {k: d for k, d in drawings.items() if k in boards}
+        if boards:
+            print(f"    Whiteboard pages for scenes {sorted(b + 1 for b in boards)}"
+                  + (f", drawings: {[d.name for d in drawings.values()]}" if drawings else ""))
     for i, (scene, (wav, duration, captions)) in enumerate(zip(plan.scenes, narrated), 1):
         print(f"    Scene {i}/{len(plan.scenes)}: {scene.layout} - {scene.heading}")
         labels += [None] * (len(parts) - len(labels))
@@ -819,8 +865,11 @@ def build_video(plan, video_cfg: dict, voice_cfg: dict, channel_name: str, workd
         _scene_accent(i - 1)
         if i - 1 in boards:
             try:
-                parts.append(render_whiteboard_scene(scene, wav, ass, duration, size, scenes_dir / f"{i:02d}.mp4",
-                                                     room))
+                part = render_whiteboard_scene(scene, wav, ass, duration, size, scenes_dir / f"{i:02d}.mp4", room,
+                                               drawings.get(i - 1))
+                if i - 1 in drawings:  # the drawing uses the right side: no corner presenter on this page
+                    kinds += ["scene"] * (len(parts) - len(kinds)) + ["clip"]
+                parts.append(part)
                 continue
             except Exception as e:  # never lose the video over a drawing: the normal slide instead
                 print(f"    (Whiteboard page failed, normal slide instead: {e})")
