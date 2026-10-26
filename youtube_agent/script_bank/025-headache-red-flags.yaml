@@ -267,7 +267,7 @@ plan:
       points: ["Know the red flags"]
       footage_query: "woman headache holding head"
       narration: >-
-        Most headaches are not dangerous. But some are a 911 emergency. Here is how to tell.
+        Most headaches are not dangerous. But some are a 911 emergency.
     - layout: "warning"
       heading: "Call 911 If"
       points: ["Sudden, worst-ever headache", "Face drooping or arm weakness", "Fever with stiff neck", "Worsening after a head injury"]

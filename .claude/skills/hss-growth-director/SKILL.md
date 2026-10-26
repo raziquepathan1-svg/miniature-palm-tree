@@ -142,3 +142,8 @@ and they never change the pipeline, config or a live video on their own.
 - Second Short (free mode, Oct 26): its first line and title are made from the chosen scene's own words
   (main.upload_second_short). When that line is vague for the next bank script, add `short2_hook` (first
   spoken line, true to the scene) and `short2_title` (one plain question) at the top of its YAML.
+- Short openings (retention data, Oct 26): on the flu-shot Short (best so far, 991 views) the question
+  "Can the flu shot give you the flu?" held everyone, but the next filler line ("It is the number one flu shot
+  myth, so let's clear it up") lost about a third of viewers in 5 seconds; the "4 more myths in our full video"
+  ending held far better than other Shorts. So: the question, then straight into the answer. No "Here is
+  why / Here is the truth / let's clear it up" lines after the hook. Keep the full-video ending.

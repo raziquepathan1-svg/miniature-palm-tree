@@ -279,7 +279,7 @@ plan:
       points: ["One is a 911 emergency"]
       footage_query: "hot sun city street"
       narration: >-
-        Someone is sick in the heat. Is it heat exhaustion or heat stroke? Here is the difference.
+        Someone is sick in the heat. Is it heat exhaustion or heat stroke?
     - layout: "bullets"
       heading: "Tell the Difference"
       points: ["Exhaustion: heavy sweat, clammy skin", "Stroke: 103°F+, hot red skin", "Stroke: confusion, passing out"]

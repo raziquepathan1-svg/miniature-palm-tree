@@ -261,7 +261,7 @@ plan:
       points: ["Myth vs fact"]
       footage_query: "cranberry juice glass"
       narration: >-
-        Got a UTI and reaching for cranberry juice? Here is the truth.
+        Got a UTI and reaching for cranberry juice?
     - layout: "myth_fact"
       heading: "Myth vs Fact"
       points: ["Cranberry juice cures a UTI", "It doesn't treat an infection"]

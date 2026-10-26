@@ -265,7 +265,7 @@ plan:
       points: ["That they have kidney disease"]
       footage_query: "crowd people walking street"
       narration: >-
-        As many as nine in ten adults with kidney disease do not know they have it. Here is why.
+        As many as nine in ten adults with kidney disease do not know they have it.
     - layout: "bullets"
       heading: "Two Simple Tests"
       points: ["Blood test: eGFR", "Urine test: albumin", "Diabetes or high BP? Ask"]

@@ -276,7 +276,7 @@ plan:
       points: ["Stop"]
       footage_query: "raw chicken cutting board"
       narration: >-
-        Do you rinse raw chicken before cooking it? Here is why you should stop.
+        Do you rinse raw chicken before cooking it? Stop.
     - layout: "myth_fact"
       heading: "Myth vs Fact"
       points: ["Washing chicken makes it safer", "It splashes germs around"]

@@ -278,7 +278,7 @@ plan:
       points: ["Most people do"]
       footage_query: "washing hands sink"
       narration: >-
-        Most people wash their hands for only a few seconds. Here is how to do it right.
+        Most people wash their hands for only a few seconds.
     - layout: "bullets"
       heading: "The Right Way"
       points: ["Wet and lather", "Scrub 20 seconds", "Rinse and dry well"]

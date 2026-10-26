@@ -281,7 +281,7 @@ plan:
       points: ["Use the rule of 15"]
       footage_query: "man sweating dizzy"
       narration: >-
-        Shaky, sweaty and confused? If you have diabetes, it could be low blood sugar. Here is what to do.
+        Shaky, sweaty and confused? If you have diabetes, it could be low blood sugar.
     - layout: "bullets"
       heading: "Rule of 15"
       points: ["15 grams of fast sugar", "Wait 15 minutes", "Check, repeat if under 70"]

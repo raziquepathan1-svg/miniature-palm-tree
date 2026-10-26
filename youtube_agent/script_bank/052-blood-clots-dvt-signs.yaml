@@ -270,7 +270,7 @@ plan:
       points: ["It could be a blood clot"]
       footage_query: "swollen leg close up"
       narration: >-
-        One calf swollen, sore and warm? Don't wait on this one. After surgery or a long trip, it could be a blood clot.
+        One calf swollen, sore and warm? After surgery or a long trip, it could be a blood clot.
     - layout: "warning"
       heading: "Know the Signs"
       points: ["Swelling, pain, warmth in one leg", "Sudden shortness of breath", "Chest pain: call 911"]
