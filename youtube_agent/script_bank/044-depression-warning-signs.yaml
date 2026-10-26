@@ -30,9 +30,7 @@ plan:
       footage_query: "man sad sitting window"
       narration: >-
         Everyone feels sad or down sometimes. But depression is different. It is a real medical condition that can drain your
-        energy, change your sleep and appetite, and make it hard to get through the day. And it is very treatable. Today you
-        will learn the warning signs of depression, how it can look different in men, older adults and teens, and how to get
-        help.
+        energy, change your sleep and appetite, and make it hard to get through the day. And it is very treatable. Here are the warning signs, and how to get help.
     - layout: "big_number"
       heading: "Depression Is Common"
       points: ["About 1 in 6", "Adults will have depression in their life"]

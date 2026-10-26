@@ -30,9 +30,7 @@ plan:
       footage_query: "person using asthma inhaler"
       narration: >-
         An asthma attack can start with a little cough or a tight chest, and within minutes become a fight for every breath.
-        Most attacks can be managed at home with the right plan, but some are life threatening. Today you will learn what
-        happens during an asthma attack, the early warning signs, the danger signs that mean call 911, and how to prevent
-        attacks.
+        Most attacks can be managed at home with the right plan, but some are life threatening. Here is what happens during an attack, the early warning signs, and the danger signs that mean call 911.
     - layout: "big_number"
       heading: "A Common Condition"
       points: ["About 1 in 12", "Americans have asthma"]

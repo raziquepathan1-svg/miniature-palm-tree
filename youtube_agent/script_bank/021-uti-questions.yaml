@@ -30,9 +30,7 @@ plan:
       footage_query: "woman stomach pain couch"
       narration: >-
         Burning when you pee. Needing to go again and again, even when little comes out. Urinary tract infections, or UTIs,
-        are one of the most common infections in America, causing millions of doctor visits every year. Today we answer the
-        top questions about UTIs: the symptoms, who gets them, when they become serious, what treatment works, and how to
-        prevent them.
+        are one of the most common infections in America, causing millions of doctor visits every year. Here are the signs, who gets them, when a UTI turns serious, and what treatment works.
     - layout: "bullets"
       heading: "What Is a UTI?"
       points: ["Infection in the urinary tract", "Usually bacteria from the gut", "Bladder is most common", "Can spread to kidneys"]

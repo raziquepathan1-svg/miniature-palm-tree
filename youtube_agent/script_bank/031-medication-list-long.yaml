@@ -30,8 +30,7 @@ plan:
       footage_query: "pill bottles kitchen table"
       narration: >-
         If you ended up in the emergency room tonight, could you name every medicine you take, the dose, and why you take it?
-        Most people cannot, and that can lead to dangerous mistakes. Today you will learn why an up to date medication list is
-        one of the most powerful safety tools you have, exactly what to put on it, and how to keep it current.
+        Most people cannot, and that can lead to dangerous mistakes. Here is why an up to date medication list is one of the most powerful safety tools you have, exactly what to put on it, and how to keep it current.
     - layout: "big_number"
       heading: "Medicine Mistakes Are Common"
       points: ["1.5 million", "People harmed by medication errors yearly"]

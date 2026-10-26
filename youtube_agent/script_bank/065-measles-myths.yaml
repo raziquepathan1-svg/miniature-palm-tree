@@ -31,8 +31,7 @@ plan:
       narration: >-
         Measles was declared eliminated from the United States in the year 2000. But it is back, with large outbreaks in
         recent years and even deaths of children. Measles is one of the most contagious diseases on Earth, and it can be
-        serious. Today we bust the most common measles myths, and explain the signs, the risks, and how the vaccine protects
-        your family.
+        serious. Here are the myths, and how the vaccine protects your family.
     - layout: "big_number"
       heading: "Extremely Contagious"
       points: ["9 in 10", "Unvaccinated close contacts get infected"]

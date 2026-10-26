@@ -51,8 +51,7 @@ plan:
     - Grapefruit and more
     footage_query: grapefruit breakfast table
     narration: A glass of grapefruit juice with breakfast sounds healthy. But for people who take certain medicines, that
-      glass can change how much medicine ends up in the blood, sometimes enough to cause harm. Today you will learn which
-      medicines can be affected, why it happens, and the other everyday foods that can clash with common medicines.
+      glass can change how much medicine ends up in the blood, sometimes enough to cause harm. Here is which medicines can be affected, and the other everyday foods that can clash with them.
   - layout: big_number
     heading: More Common Than You Think
     points:

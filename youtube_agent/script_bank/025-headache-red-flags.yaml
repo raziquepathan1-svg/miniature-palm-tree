@@ -30,8 +30,7 @@ plan:
       footage_query: "woman headache holding head"
       narration: >-
         Almost everyone gets headaches, and most of them are not dangerous. But once in a while, a headache is a warning sign
-        of something serious, like a stroke, bleeding in the brain, or a dangerous infection. Today you will learn the common
-        harmless headaches, the red flags that mean call 911 right now, and when to see your doctor soon.
+        of something serious, like a stroke, bleeding in the brain, or a dangerous infection. Here are the red flags that mean call 911 right now, and when to see your doctor soon.
     - layout: "big_number"
       heading: "Headaches Are Common"
       points: ["Most", "Headaches are not dangerous"]

@@ -31,8 +31,7 @@ plan:
       narration: >-
         Vitamin D is one of the most popular supplements in America. Millions of people take it every day, hoping it will
         protect their bones, their heart, and even prevent cancer or colds. But a lot of what people believe about vitamin D
-        is not true. Today we look at the most common vitamin D myths, using guidance from the National Institutes of Health
-        and other trusted sources.
+        is not true. Here is what is true, using guidance from the National Institutes of Health.
     - layout: "bullets"
       heading: "What Vitamin D Does"
       points: ["Helps absorb calcium", "Keeps bones strong", "Helps muscles work", "Supports the immune system"]

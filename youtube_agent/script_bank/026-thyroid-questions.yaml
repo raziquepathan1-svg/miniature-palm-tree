@@ -30,8 +30,7 @@ plan:
       footage_query: "woman touching neck thyroid"
       narration: >-
         Feeling tired all the time, cold when others are warm, or gaining weight without changing anything? Or the opposite: a
-        racing heart, feeling shaky, and losing weight without trying? Both can be signs of a thyroid problem. Today we answer
-        the top questions about thyroid disease: what the thyroid does, the warning signs, the tests, and how it is treated.
+        racing heart, feeling shaky, and losing weight without trying? Both can be signs of a thyroid problem. Here is what the thyroid does, the warning signs, the tests, and how it is treated.
     - layout: "bullets"
       heading: "What Does the Thyroid Do?"
       points: ["Small gland in the neck", "Shaped like a butterfly", "Makes thyroid hormone", "Controls your metabolism"]

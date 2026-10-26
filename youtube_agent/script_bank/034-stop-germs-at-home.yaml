@@ -30,8 +30,7 @@ plan:
       footage_query: "washing hands sink"
       narration: >-
         Every cold, stomach bug and flu season seems to sweep through the whole family. But a few simple habits can stop many
-        of those germs before they spread. Today you will learn the right way to wash your hands, when hand sanitizer works
-        and when it does not, how to clean your home the smart way, and when to stay home to protect others.
+        of those germs before they spread. Here is the right way to wash your hands, and when hand sanitizer works.
     - layout: "big_number"
       heading: "Clean Hands Prevent Illness"
       points: ["About 1 in 3", "Fewer diarrhea illnesses with handwashing"]

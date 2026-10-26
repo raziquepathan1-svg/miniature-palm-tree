@@ -31,8 +31,7 @@ plan:
       narration: >-
         A cold that will not go away. A cough with fever, chills, and getting short of breath. It could be pneumonia, a lung
         infection that sends over a million Americans to the emergency room each year. Many people recover at home, but for
-        older adults and babies, it can be life threatening. Today we answer the top questions about pneumonia: signs, causes,
-        treatment, and the vaccines that prevent it.
+        older adults and babies, it can be life threatening. Here are the signs, the causes, the treatment, and the vaccines that prevent it.
     - layout: "big_number"
       heading: "How Serious Is It?"
       points: ["Over 1 million", "US emergency visits for pneumonia yearly"]

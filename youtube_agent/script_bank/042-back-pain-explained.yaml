@@ -30,8 +30,7 @@ plan:
       footage_query: "man holding lower back"
       narration: >-
         You bend down to pick something up, and your lower back suddenly seizes. Or it just aches after a long day at your
-        desk. Back pain is one of the most common reasons people see a doctor or miss work. Today you will learn what usually
-        causes it, what actually helps, the warning signs that need urgent care, and how to keep it from coming back.
+        desk. Back pain is one of the most common reasons people see a doctor or miss work. Here is what actually helps, and the warning signs that need urgent care.
     - layout: "big_number"
       heading: "Very Common"
       points: ["8 in 10", "People will have back pain"]

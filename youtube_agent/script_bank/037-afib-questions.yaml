@@ -31,8 +31,7 @@ plan:
       narration: >-
         Have you ever felt your heart flutter, race, or beat out of rhythm for no reason? It could be atrial fibrillation,
         often called AFib, the most common type of irregular heartbeat. AFib is not usually deadly by itself, but it greatly
-        raises the risk of stroke. Today we answer the top questions about AFib: what it is, how it feels, why it matters, and
-        how it is treated.
+        raises the risk of stroke. Here is what it is, how it feels, and how it is treated.
     - layout: "big_number"
       heading: "How Common Is AFib?"
       points: ["12 million", "Americans expected to have AFib by 2030"]

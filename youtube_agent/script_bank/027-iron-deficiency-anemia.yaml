@@ -30,8 +30,7 @@ plan:
       footage_query: "tired woman desk exhausted"
       narration: >-
         Do you feel exhausted no matter how much you sleep? Get out of breath climbing the stairs? Crave ice, and crunch on it
-        all day? These can be signs of iron deficiency anemia, one of the most common blood problems in the world. Today you
-        will learn what iron does, the warning signs, the hidden causes, and the right way to fix it.
+        all day? These can be signs of iron deficiency anemia, one of the most common blood problems in the world. Here are the warning signs, the hidden causes, and the right way to fix it.
     - layout: "bullets"
       heading: "What Iron Does"
       points: ["Makes hemoglobin", "Carries oxygen in blood", "Fuels muscles and brain", "Supports growth in kids"]

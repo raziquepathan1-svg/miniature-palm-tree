@@ -31,8 +31,7 @@ plan:
       narration: >-
         Shaky, sweaty, confused, and your heart is racing. For people with diabetes, these can be signs of low blood sugar,
         also called hypoglycemia. It can come on fast, and if it is not treated, it can lead to seizures, passing out, or
-        worse. Today you will learn the warning signs, the simple rule of fifteen to treat it, and how to prevent it from
-        happening.
+        worse. Here are the warning signs, and the simple rule of fifteen to treat it.
     - layout: "bullets"
       heading: "What Is Low Blood Sugar?"
       points: ["Blood sugar below 70", "Brain runs short of fuel", "Common with some diabetes medicines", "Can come on quickly"]

@@ -31,8 +31,7 @@ plan:
       narration: >-
         Heart failure sounds like the heart has stopped working. It has not. It means the heart is not pumping as well as it
         should, so the body does not get the blood and oxygen it needs. Millions of Americans live with it, and many live well
-        for years with the right care. Today you will learn the warning signs, the causes, and the daily habits that keep
-        people out of the hospital.
+        for years with the right care. Here are the warning signs, and the daily habits that keep people out of the hospital.
     - layout: "big_number"
       heading: "A Common Condition"
       points: ["About 6.7 million", "US adults live with heart failure"]

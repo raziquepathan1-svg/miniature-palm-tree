@@ -30,9 +30,7 @@ plan:
       footage_query: "doctor kidney model patient"
       narration: >-
         Millions of Americans have kidney disease, and most of them have no idea. There is usually no pain and no warning
-        until the damage is advanced. But two simple, low cost tests can find it early, when you can still slow it down. Today
-        you will learn what your kidneys do, who is at risk, which tests to ask for, and how to protect your kidneys every
-        day.
+        until the damage is advanced. But two simple, low cost tests can find it early, when you can still slow it down. Here are the simple tests to ask for, and how to protect your kidneys every day.
     - layout: "big_number"
       heading: "A Hidden Problem"
       points: ["35.5 million", "US adults may have kidney disease"]

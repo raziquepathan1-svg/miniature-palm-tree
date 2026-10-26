@@ -30,8 +30,7 @@ plan:
       footage_query: "eye exam close up"
       narration: >-
         You could be losing your vision right now and not know it. Glaucoma often has no symptoms until a lot of vision is
-        already gone, and that lost vision cannot be brought back. It is called the silent thief of sight. Today we bust the
-        most common glaucoma myths, and explain the simple eye exam that can catch it early and save your sight.
+        already gone, and that lost vision cannot be brought back. It is called the silent thief of sight. Here are the myths, and the simple eye exam that can catch it early and save your sight.
     - layout: "big_number"
       heading: "A Hidden Problem"
       points: ["About 3 million", "Americans have glaucoma"]
