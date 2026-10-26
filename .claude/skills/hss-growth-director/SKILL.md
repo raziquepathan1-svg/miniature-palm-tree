@@ -139,3 +139,6 @@ and they never change the pipeline, config or a live video on their own.
   where viewers leave and suggest the fix; changes still go through the owner.
 - Ideas: `/yt-viral` (public listings only, never a login) can show which health videos beat their own
   channel, as topic ideas for new bank scripts. Facts still come only from CDC, NIH, AHA, Mayo Clinic and similar.
+- Second Short (free mode, Oct 26): its first line and title are made from the chosen scene's own words
+  (main.upload_second_short). When that line is vague for the next bank script, add `short2_hook` (first
+  spoken line, true to the scene) and `short2_title` (one plain question) at the top of its YAML.

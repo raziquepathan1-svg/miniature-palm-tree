@@ -1,5 +1,8 @@
 queue_topic: "Opioid overdose: signs and how to use naloxone"
 style: "Explainer"
+# First spoken line and title of the second Short (its myth_fact scene "Naloxone Encourages Drug Use"), owner Oct 26
+short2_hook: "Does carrying naloxone encourage drug use? Research says no."
+short2_title: "Does naloxone encourage drug use?"
 sources:
   - "CDC, Preventing Opioid Overdose: https://www.cdc.gov/overdose-prevention/prevention/index.html"
   - "CDC, Lifesaving Naloxone: https://www.cdc.gov/stop-overdose/caring/naloxone.html"
@@ -278,7 +281,8 @@ plan:
       points: ["Naloxone saves lives"]
       footage_query: "naloxone nasal spray"
       narration: >-
-        Someone will not wake up, and their breathing is slow or stopped. It could be an opioid overdose.
+        If you find someone who won't wake up, this spray could save their life. Their breathing may be slow or
+        stopped from an opioid overdose.
     - layout: "bullets"
       heading: "What to Do"
       points: ["Call 911", "Spray naloxone in one nostril", "Support breathing, stay with them"]

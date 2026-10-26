@@ -357,7 +357,8 @@ def make_one_video(config: dict, history: list[dict], topic: str | None, dry_run
     short2_id = None
     if yt.get("second_short", True) and not shorts and uploads_today() < int(yt.get("max_uploads_per_day", 5)):
         try:
-            short2_id = upload_second_short(plan, video_id, video_cfg, config, channel_name, workdir, yt, footer)
+            short2_id = upload_second_short(plan, video_id, video_cfg, config, channel_name, workdir, yt, footer,
+                                            bank_data.get("short2_hook") or "", bank_data.get("short2_title") or "")
             if short2_id:
                 entry["short2_youtube_id"] = short2_id
                 save_history(history)
@@ -451,9 +452,12 @@ def uploads_today() -> int:
 
 
 def upload_second_short(plan, video_id: str, video_cfg: dict, config: dict, channel_name: str, workdir: Path,
-                        yt: dict, footer: str) -> str | None:
+                        yt: dict, footer: str, hook_line: str = "", hook_title: str = "") -> str | None:
     """A ~45 s vertical Short from one strong scene of the video (myth vs fact, warning signs, a key number),
-    with a hook first and the host's outro, scheduled a few hours after the first Short."""
+    with a hook first and the host's outro, scheduled a few hours after the first Short.
+    hook_line: the first spoken line written for this script (script bank "short2_hook"); without it the hook
+    is made from the scene's own words, so every Short opens differently (owner, Oct 26).
+    hook_title: its title (script bank "short2_title"), one plain question people ask (owner rule, Oct 21)."""
     from . import growth, uploader, visuals
     from .planner import Scene
 
@@ -498,21 +502,38 @@ def upload_second_short(plan, video_id: str, video_cfg: dict, config: dict, chan
     best = [s for s in picks if s.layout == picks[0].layout]
     scene = best[len(best) // 2]
     topic = plan.topic.split(":")[0].strip()
+
+    def lower_first(text: str) -> str:  # "Men in their 50s" -> "men in their 50s", but "US women" stays
+        return text[:1].lower() + text[1:] if text[1:2].islower() else text
+
+    def unclear(text: str) -> bool:  # "Myth 3", "Common Belief", "It Cannot Be Cured": says nothing on its own
+        return bool(re.match(r"(myth|common belief)\b", text, re.I) or re.search(r"\b(it|they)\b", text, re.I))
+
     if scene.layout == "myth_fact" and scene.points:
-        hook = "Myth or fact? Most people get this one wrong."
-        title = f"Myth or fact: {scene.points[0].rstrip('.?!')}?"
+        myth = scene.points[0] if unclear(scene.heading) else scene.heading
+        name = re.sub(r"\s*\(.*?\)", "", topic)  # "Migraine: Nothing Can Be Done?" says what it is about
+        if len(name.split()) <= 3 and not any(w[:5].lower() in myth.lower() for w in name.split() if len(w) > 3):
+            myth = f"{name}: {myth}"
+        hook = f"{myth.rstrip('.?!')}? Most people get this one wrong."
+        title = f"{myth.rstrip('.?!')}?"
     elif scene.layout == "warning":
-        hook = "Do you know these warning signs? Don't ignore them."
+        hook = (f"{scene.points[0].rstrip('.?!')}? Don't ignore it." if scene.points
+                else "Do you know these warning signs? Don't ignore them.")
         title = f"{scene.heading}: don't ignore these"
     elif scene.layout == "big_number":
-        hook = f"Here's one number about {topic.lower()} everyone should know."
+        number = [scene.heading] if re.search(r"\d", scene.heading) else []
+        words = " ".join(number + [lower_first(p).rstrip(".") for p in scene.points[:2]])
+        hook = (f"{words}." if len(scene.points) >= 2 and re.search(r"\d", words) and not re.search(r"[-/]", words)
+                else f"Here's one number about {topic.lower()} everyone should know.")
         title = f"{topic}: know this number"
     else:
         hook = f"{scene.heading}. Here's what you need to know."
         title = f"{scene.heading} in 40 seconds"
     if len(title) > 50:
         title = title[:47].rsplit(" ", 1)[0] + "..."
+    title = hook_title.strip().removesuffix("#Shorts").strip() or title
     title += " #Shorts"
+    hook = hook_line.strip() or hook
     hook_scene = Scene(layout="title", heading="Myth or Fact?" if scene.layout == "myth_fact" else scene.heading[:40],
                        points=[topic[:40]], footage_query=scene.footage_query, narration=hook)
     from . import growth

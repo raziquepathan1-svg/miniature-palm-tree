@@ -1,5 +1,8 @@
 queue_topic: "Blood clots (DVT and pulmonary embolism): warning signs and prevention"
 style: "Warning Signs"
+# First spoken line and title of the second Short (its myth_fact scene "Only Flying Causes Clots"), owner Oct 26
+short2_hook: "Think long flights cause most blood clots? Hospital stays and surgery are a far bigger risk."
+short2_title: "Do long flights cause most blood clots?"
 sources:
   - "CDC, Venous Thromboembolism (Blood Clots): https://www.cdc.gov/blood-clots/about/index.html"
   - "NIH NHLBI, Venous Thromboembolism: https://www.nhlbi.nih.gov/health/venous-thromboembolism"
@@ -268,7 +271,7 @@ plan:
       points: ["It could be a blood clot"]
       footage_query: "swollen leg close up"
       narration: >-
-        A swollen, sore calf after surgery or a long trip could be a blood clot.
+        One calf swollen, sore and warm? Don't wait on this one. After surgery or a long trip, it could be a blood clot.
     - layout: "warning"
       heading: "Know the Signs"
       points: ["Swelling, pain, warmth in one leg", "Sudden shortness of breath", "Chest pain: call 911"]

@@ -150,5 +150,19 @@
     "style": "Warning Signs",
     "image": "branding/health-support-studio/thumbs/U0Hu-5sg2sg.jpg",
     "done": true
+  },
+  {
+    "youtube_id": "ty-M5_xQGVA",
+    "text": "IT'S TREATABLE",
+    "highlight": "TREATABLE",
+    "style": "Top Questions",
+    "photo_query": "tired man sitting on bed at night"
+  },
+  {
+    "youtube_id": "spq8oOrKcWs",
+    "text": "AGE 40?",
+    "highlight": "40?",
+    "style": "Myth vs Fact",
+    "photo_query": "woman mammogram clinic"
   }
 ]
