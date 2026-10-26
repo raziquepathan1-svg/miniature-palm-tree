@@ -644,10 +644,10 @@ def main() -> None:
     config = load_config()
     history = load_history()
     # GitHub sometimes starts a scheduled run hours late, after the day's video was already made by hand
-    # (Oct 25: a duplicate upload). A scheduled run stops if a video was made in the last 14 hours.
+    # (Oct 25: a duplicate upload). A scheduled run stops if today's video was already made (dates are UTC).
     if os.environ.get("GITHUB_EVENT_NAME") == "schedule" and not args.topic:
-        recent = [h for h in history if h.get("youtube_id") and h.get("date")
-                  and dt.datetime.now() - dt.datetime.fromisoformat(h["date"]) < dt.timedelta(hours=14)]
+        today = dt.datetime.now(dt.timezone.utc).date().isoformat()
+        recent = [h for h in history if h.get("youtube_id") and str(h.get("date", "")).startswith(today)]
         if recent:
             print(f"A video was already made at {recent[-1]['date']} ({recent[-1]['youtube_id']}): skipping this "
                   "late scheduled run.")
