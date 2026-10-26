@@ -237,7 +237,7 @@
     "date": "2026-10-16T06:01:18",
     "topic": "Breast cancer screening: myths vs facts and the new advice",
     "requested_topic": "Breast cancer screening: myths vs facts and the new advice",
-    "title": "Breast Cancer Screening Myths (Mammograms Now Start at 40) (Part 4/5)",
+    "title": "The Mammogram Rule That Changed in 2024 (Part 4/5)",
     "style": "Myth vs Fact",
     "script_file": "048-breast-cancer-screening-myths.yaml",
     "series": "Doctor Visits Made Simple",
@@ -249,13 +249,45 @@
     "replaced_ids": [
       "bzpbKhWj_t4"
     ],
-    "publish_at": "2026-10-17T16:00:00Z"
+    "publish_at": "2026-10-17T16:00:00Z",
+    "packages": [
+      {
+        "title": "The Mammogram Rule That Changed in 2024",
+        "thumbnail_text": "AGE 40?",
+        "thumbnail_highlight": "40?"
+      },
+      {
+        "title": "9 Breast Cancer Screening Myths, Busted",
+        "thumbnail_text": "NOT 50 ANYMORE",
+        "thumbnail_highlight": "50"
+      },
+      {
+        "title": "No Lump Doesn't Mean No Breast Cancer",
+        "thumbnail_text": "FEEL FINE?",
+        "thumbnail_highlight": "FINE?"
+      },
+      {
+        "title": "Mammogram Callback? Most Aren't Cancer",
+        "thumbnail_text": "DON'T PANIC",
+        "thumbnail_highlight": "PANIC"
+      },
+      {
+        "title": "No Family History? You Still Need This Test",
+        "thumbnail_text": "1 IN 8",
+        "thumbnail_highlight": "8"
+      }
+    ],
+    "chosen": {
+      "title": "The Mammogram Rule That Changed in 2024",
+      "thumbnail_text": "AGE 40?",
+      "thumbnail_highlight": "40?"
+    }
   },
   {
     "date": "2026-10-17T06:20:46",
     "topic": "Prostate health: enlarged prostate, prostate cancer and the PSA test",
     "requested_topic": "Prostate health: enlarged prostate, prostate cancer and the PSA test",
-    "title": "Up at Night to Pee? Prostate Questions Every Man Should Ask (Part 5/5)",
+    "title": "Why Men Pee All Night, and What Helps (Part 5/5)",
     "style": "Top Questions",
     "script_file": "050-prostate-psa-questions.yaml",
     "series": "Doctor Visits Made Simple",
@@ -265,7 +297,39 @@
     "short_youtube_id": "3Eb5y9rqj7A",
     "short2_youtube_id": "A1JEnPLtHIo",
     "preview": "previews/ty-M5_xQGVA.mp4",
-    "publish_at": "2026-10-18T16:00:00Z"
+    "publish_at": "2026-10-18T16:00:00Z",
+    "packages": [
+      {
+        "title": "Why Men Pee All Night, and What Helps",
+        "thumbnail_text": "IT'S TREATABLE",
+        "thumbnail_highlight": "TREATABLE"
+      },
+      {
+        "title": "High PSA Doesn't Always Mean Cancer",
+        "thumbnail_text": "WHAT ELSE?",
+        "thumbnail_highlight": "ELSE?"
+      },
+      {
+        "title": "Prostate Cancer Often Has No Symptoms",
+        "thumbnail_text": "FEEL FINE?",
+        "thumbnail_highlight": "FINE?"
+      },
+      {
+        "title": "The PSA Test: What Every Man Should Know",
+        "thumbnail_text": "WORTH IT?",
+        "thumbnail_highlight": "WORTH"
+      },
+      {
+        "title": "Enlarged Prostate: The Signs Men Ignore",
+        "thumbnail_text": "NOT JUST AGING",
+        "thumbnail_highlight": "AGING"
+      }
+    ],
+    "chosen": {
+      "title": "Why Men Pee All Night, and What Helps",
+      "thumbnail_text": "IT'S TREATABLE",
+      "thumbnail_highlight": "TREATABLE"
+    }
   },
   {
     "date": "2026-10-18T07:03:51",
