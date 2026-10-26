@@ -1,0 +1,18 @@
+# Whiteboard drawings (made by youtube_agent/doodles.py, no words) and the words that bring them onto a page.
+# The page whose heading/points/narration match the most words gets the drawing (each once per video).
+ambulance.png: [ambulance, "911", emergency, emergency room, er, paramedics, hospital]
+phone_call.png: [call, phone, poison control, helpline, call your doctor, hotline]
+lungs.png: [lungs, breathing, breath, breathe, shortness of breath, asthma, pneumonia, oxygen, inhaler, cough]
+family.png: [family, children, kids, parents, grandparents, older adults, caregiver, caregivers, loved ones, household]
+heart_beat.png: [heart, heartbeat, pulse, chest pain, cardiac, blood pressure, heart attack, cpr]
+globe.png: [world, worldwide, travel, countries, global, outbreak, millions of people]
+pills.png: [medicine, medicines, medication, medications, pills, tablets, dose, prescription, pharmacist, overdose, naloxone]
+clock.png: [time, minutes, hours, every hour, timing, schedule, every minute counts]
+germ.png: [germs, virus, viruses, bacteria, infection, infections, contagious, flu, cold, spread]
+thermometer.png: [fever, temperature, hot, heat, heatstroke, chills, cold weather, frostbite, hypothermia]
+brain.png: [brain, stroke, memory, confusion, confused, dizzy, dizziness, headache, concussion, seizure]
+house.png: [home, house, at home, kitchen, bathroom, stairs, carbon monoxide, falls]
+water.png: [water, drink, drinking, fluids, hydration, dehydration, dehydrated, thirst]
+food.png: [food, foods, eat, eating, diet, fruit, vegetables, meal, meals, grapefruit, nutrition]
+sleep.png: [sleep, sleeping, rest, bed, bedtime, night, tired, fatigue]
+walking.png: [walk, walking, exercise, move, moving, legs, activity, active, steps]

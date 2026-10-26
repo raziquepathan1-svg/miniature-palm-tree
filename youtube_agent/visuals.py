@@ -548,8 +548,9 @@ DRAWINGS = Path(__file__).resolve().parent.parent / "branding/health-support-stu
 
 
 def drawing_for(text: str, used: set) -> Path | None:
-    """A Flow whiteboard drawing (hand drawing a picture, no words) whose keywords match the scene: the one with
-    the most matching words. drawings.yaml in the folder: {file.mp4: [keyword, ...]}; each used once per video."""
+    """A whiteboard drawing (no words) whose keywords match the scene: the one with the most matching words.
+    drawings.yaml in the folder: {file: [keyword, ...]}, where a file is a .png line drawing (drawn with the pen,
+    see doodles.py) or a .mp4 Flow drawing clip; each used once per video."""
     import re
 
     import yaml
@@ -579,18 +580,29 @@ def render_whiteboard_scene(scene, wav: Path, ass: Path | None, duration: float,
 
     W, H = size
     # With a drawing: the words on the left half, the hand-drawn picture on the right (presenter hidden)
-    items = whiteboard.scene_items(scene.heading, list(scene.points), duration, warning=scene.layout == "warning",
-                                   right_room=W // 2 if drawing else room)
+    still = drawing is not None and drawing.suffix == ".png"
+    lead = min(3.0, duration * 0.25) if still else 0.0  # the pen draws the picture first, then writes
+    items = whiteboard.scene_items(scene.heading, list(scene.points), duration - lead,
+                                   warning=scene.layout == "warning", right_room=W // 2 if drawing else room)
+    for it in items:
+        it["t"] += lead
+    if still:
+        from PIL import Image
+
+        x0, y0, x1, y1 = Image.open(drawing).convert("L").point(lambda v: 255 if v < 235 else 0).getbbox()
+        h = int(min(620, (W // 2 - 160) * (y1 - y0) / (x1 - x0)))  # fits the right half
+        items.insert(0, {"t": 0.2, "dur": lead, "kind": "image", "path": str(drawing), "x": W * 3 // 4 - 30,
+                         "y": (H - h) // 2 - 60, "h": h, "outline": 0.6})
     board = whiteboard.render(items, duration, out.with_name(out.stem + "_board.mp4"))
     fade_out = max(0.0, duration - 0.3)
     inputs = ["-i", str(board), "-i", str(wav)]
     pic = ""
-    if drawing:  # plays once, then its last frame stays (the finished drawing)
+    if drawing and not still:  # a Flow clip plays once, then its last frame stays (the finished drawing)
         dw = W // 2 - 60
         inputs += ["-i", str(drawing)]
         pic = (f"[2:v]scale={dw}:-2,fps={FPS},setsar=1,tpad=stop_mode=clone:stop_duration={duration:.2f}[pic];"
                f"[0:v][pic]overlay={W // 2 + 20}:(H-h)/2-50:shortest=0[b];")
-    vf = (f"{pic}[{'b' if drawing else '0:v'}]scale={W}:{H},fps={FPS},setsar=1,fade=t=in:st=0:d=0.3,"
+    vf = (f"{pic}[{'b' if pic else '0:v'}]scale={W}:{H},fps={FPS},setsar=1,fade=t=in:st=0:d=0.3,"
           f"fade=t=out:st={fade_out:.2f}:d=0.3")
     if ass:
         fonts = f":fontsdir='{_escape_filter_path(FONT_DIR)}'" if FONT_DIR.exists() else ""
