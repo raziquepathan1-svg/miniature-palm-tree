@@ -60,8 +60,10 @@ jobs:
           # Videos are scheduled a day ahead, so the newest run's video is usually not public yet.
           # Walk back through recent runs (newest first) and take the first one that is due.
           now=$(date -u +%s)
-          for RUN_ID in $(gh run list --repo "$GITHUB_REPOSITORY" --workflow daily-video.yml --status success \
-                          --limit 6 --json databaseId --jq '.[].databaseId'); do
+          # Any finished run counts (a run can upload fine and then fail at its last git step); a video that
+          # is not in history.json (a duplicate, a dry run) is skipped below.
+          for RUN_ID in $(gh run list --repo "$GITHUB_REPOSITORY" --workflow daily-video.yml --status completed \
+                          --limit 8 --json databaseId --jq '.[].databaseId'); do
             if [ "${{ inputs.instagram_only }}" != "true" ] && grep -qx "$RUN_ID$MARK" youtube_agent/social_posted.txt 2>/dev/null; then
               echo "Newest due Short (run $RUN_ID) was already posted."; break
             fi
@@ -84,10 +86,12 @@ jobs:
           if h.get("youtube_id") and h["youtube_id"] != meta.get("youtube_id"):
               meta["youtube_id"] = h["youtube_id"]
               json.dump(meta, open(sys.argv[1], "w"), indent=2)
-          print("waiting" if h.get("awaiting_approval") else (h.get("publish_at") or meta.get("publish_at") or ""))
+          print("unknown" if not h else "waiting" if h.get("awaiting_approval")
+                else (h.get("publish_at") or meta.get("publish_at") or ""))
           PY2
           )
             if [ "$at" = "waiting" ]; then echo "Run $RUN_ID: video still waiting for approval."; continue; fi
+            if [ "$at" = "unknown" ]; then echo "Run $RUN_ID: its video is not in history.json - skipped."; continue; fi
             if [ -z "$at" ] || [ "$(date -u -d "$at" +%s)" -le "$now" ]; then
               echo "Posting the Short from run $RUN_ID (YouTube video public since ${at:-upload})."
               echo "run_id=$RUN_ID" >> "$GITHUB_OUTPUT"
