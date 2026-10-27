@@ -324,8 +324,11 @@ def scene_items(heading: str, points: list[str], duration: float, warning: bool 
     def add(t, dur, kind, **kw):
         items.append({"t": t, "dur": dur, "kind": kind, **kw})
 
-    head_size, y = 116, 40
-    head_lines = _wrap(heading, head_size, width)
+    y = 40
+    for head_size in (116, 100, 88):  # a long heading gets smaller rather than taking 3 lines
+        head_lines = _wrap(heading, head_size, width)
+        if len(head_lines) <= 2:
+            break
     t = 0.3
     for line in head_lines:
         add(t, min(1.8, 0.25 + 0.045 * len(line)), "text", x=left + width // 2, y=y, text=line, size=head_size,
@@ -338,7 +341,7 @@ def scene_items(heading: str, points: list[str], duration: float, warning: bool 
     y += 60
     t += 0.8
     space = (H - bottom_room) - y
-    for size in (92, 84, 74, 64, 56):  # as big as fits
+    for size in (92, 84, 74, 64, 56, 50, 44):  # as big as fits (never under the captions)
         gap, sep = int(size * 1.22), int(size * 0.45)
         rows = [_wrap(pnt, size, width - 130) for pnt in points]
         total = sum(len(r) for r in rows) * gap + (len(rows) - 1) * sep
