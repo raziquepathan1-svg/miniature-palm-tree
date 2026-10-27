@@ -631,6 +631,23 @@
       "thumbnail_text": "BLUE LIPS?",
       "thumbnail_highlight": "LIPS?"
     },
-    "publish_at": "2026-10-27T10:37:06Z"
+    "publish_at": "2026-10-27T10:37:06Z",
+    "planned_publish_at": "2026-10-27T16:00:00Z"
+  },
+  {
+    "date": "2026-10-27T10:37:38",
+    "topic": "Blood clots (DVT and pulmonary embolism): warning signs and prevention",
+    "requested_topic": "Blood clots (DVT and pulmonary embolism): warning signs and prevention",
+    "title": "Blood Clot Warning Signs: Don't Ignore a Swollen Leg (Part 5/5)",
+    "style": "Warning Signs",
+    "script_file": "052-blood-clots-dvt-signs.yaml",
+    "series": "Emergency Basics",
+    "episode": 5,
+    "planned_publish_at": "2026-10-28T16:00:00Z",
+    "awaiting_approval": true,
+    "youtube_id": "TeXomVM-8do",
+    "short_youtube_id": "3lt8huc9PxY",
+    "short2_youtube_id": "OqoeKunjSIw",
+    "preview": "previews/TeXomVM-8do.mp4"
   }
 ]
