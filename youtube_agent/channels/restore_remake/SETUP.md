@@ -39,7 +39,8 @@ for the new channel.
 3. Click the ⚙️ gear (top right) → tick **Use your own OAuth credentials** → paste the **same** Client ID and
    Client secret you used for Health Support Studio → close.
 4. In "Input your own scopes" paste:
-   `https://www.googleapis.com/auth/youtube.upload https://www.googleapis.com/auth/youtube`
+   `https://www.googleapis.com/auth/youtube.upload https://www.googleapis.com/auth/youtube https://www.googleapis.com/auth/youtube.force-ssl`
+   (the last one lets the agent post the A-or-B vote comment under each Short)
    and click **Authorize APIs**.
 5. Sign in as **restoreremakestudio@gmail.com** and pick the **Restore Remake Studio** channel. On the
    "Google hasn't verified this app" screen click **Advanced → Go to …**, then allow.

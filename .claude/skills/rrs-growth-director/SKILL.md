@@ -123,3 +123,15 @@ and they never change the pipeline, config or a live video on their own.
   where viewers leave and suggest the fix; changes still go through the owner.
 - Ideas: `/yt-viral` (public listings only, never a login) can show which makeover videos beat their own
   channel, as ideas for the next makeover (then `rrs-clip-prompts` writes the prompts).
+
+## Follow-first fixes (owner OK, Oct 27, 2026)
+
+9 YouTube subscribers and no Instagram growth after 28 Shorts. Found and fixed:
+- The A-or-B vote comment was never posted on YouTube: the RRS login lacked the `youtube.force-ssl` permission
+  (log: "insufficient authentication scopes"). The owner makes a new RRS_YOUTUBE_REFRESH_TOKEN with it (SETUP.md).
+- Instagram/Facebook captions (social.makeover_captions): makeover line, the A-or-B vote for Day N+1, ONE follow
+  line ("Follow @... so you see Day N+1"), AI note, hashtags. No YouTube/Facebook links, no "subscribe".
+- Spoken ending (clips.CTAS): one "follow" ask that matches the on-screen "Follow so you don't miss it" card,
+  never "like, share, subscribe, comment". The loop line stays last. YouTube description keeps one
+  "Subscribe" line.
+

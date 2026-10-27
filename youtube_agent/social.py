@@ -308,6 +308,22 @@ def native_captions(text: str, tags: str, ig_user_id: str | None, token: str, da
     return "\n".join(fb), "\n".join(ig)
 
 
+def makeover_captions(meta: dict, ig_user_id: str | None, token: str) -> tuple[str, str]:
+    """Restore Remake Studio (owner, Oct 27): the makeover line, the A-or-B vote for the next day, ONE follow line,
+    the AI note, hashtags. No YouTube or Facebook links that send viewers away from the post."""
+    text, tags = _split_hashtags(meta["caption"])
+    ig_name = _graph_field(ig_user_id, "username", token) if ig_user_id else ""
+    day = meta.get("day")
+    next_one = f"so you see Day {day + 1}" if day else "for a new makeover every day"
+    ai_note = "🤖 AI-generated video, narrated with an AI voice."
+    fb = [text, "", meta.get("vote") or "", "", f"👉 Follow our page {next_one}.", ai_note]
+    ig = [text, "", meta.get("vote") or "", "", f"👉 Follow{f' @{ig_name}' if ig_name else ' us'} {next_one}.", ai_note]
+    if tags:
+        fb += ["", tags]
+        ig += ["", tags]
+    return "\n".join(fb).replace("\n\n\n\n", "\n\n"), "\n".join(ig).replace("\n\n\n\n", "\n\n")
+
+
 def post(social_dir: Path) -> None:
     meta = json.loads((social_dir / "social.json").read_text())
     video = social_dir / "short.mp4"
@@ -354,6 +370,8 @@ def post(social_dir: Path) -> None:
             text, tags = f"{r2['hook']} Educational only, not medical advice.", r2.get("tags") or tags
         day = int(time.time() // 86400) * 2 + (slot == "2")
         fb_caption, ig_caption = native_captions(text, tags, ig_user_id, token, day)
+    elif meta.get("style") == "makeover":
+        fb_caption, ig_caption = makeover_captions(meta, ig_user_id, token)
     else:
         fb_caption, ig_caption = captions(meta, page_id, ig_user_id, token)
     results = []

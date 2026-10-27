@@ -454,15 +454,11 @@ REVEALS = ["And now? Just look at it.", "The final result is unbelievable.", "Fr
            "And just like that, it's brand new.", "Honestly, this one turned out amazing.",
            "Now it looks like a five-star luxury {place}.", "From junk to pure luxury.",
            "Would you believe this is the same {place}? Pure luxury."]
-CTAS = ["If you loved this, share it with a friend and subscribe for more. And let me know in the comments if "
-        "you want more videos like this.",
-        "Share this with someone who loves a good makeover, and subscribe so you don't miss the next one. Tell me "
-        "in the comments if you want more like this.",
-        "Don't forget to like, share, and subscribe. And comment below if you want to see more makeovers like this.",
-        "Subscribe for a new makeover every day, share it with your friends, and let me know in the comments what "
-        "we should restore next.",
-        "Hit subscribe, share this with a friend, and drop a comment if you want more videos like this.",
-        "Want more makeovers like this? Subscribe, share this video, and tell me in the comments."]
+# One ask, the same as the on-screen "Follow so you don't miss it" card. The same Short is posted on Instagram and
+# Facebook, where "subscribe" means nothing (owner, Oct 27).
+CTAS = ["Follow so you don't miss tomorrow's makeover.", "Follow so you see what we restore next.",
+        "Follow for a new makeover every day.", "Want to see what we restore next? Follow.",
+        "A new makeover every day... follow along.", "Follow, there's a new makeover every day."]
 TITLE_MAX = 50
 LOOP_LINE = "And it all started... right here."
 # thumbnail text: max 3 words, never words from the title
@@ -482,7 +478,7 @@ NEXT_PLACES = ["castle", "mansion", "cabin", "barn", "boat", "school bus", "chur
 HOOKS = ["Wait for the luxury reveal", "From junk to luxury in 30 seconds", "Nobody wanted this {place}",
          "Watch this {place} turn into luxury", "Wait until you see the end", "Rate this makeover 1 to 10",
          "This {place} was a disaster", "Abandoned {place} to luxury"]
-CAPTION_CTA = "👉 Share with a friend, subscribe for a new makeover every day, and comment if you want more like this!"
+CAPTION_CTA = "👉 Subscribe for a new makeover every day!"  # YouTube description only; Instagram/Facebook say "Follow"
 
 
 def _recent_scripts(limit: int = 8) -> list[str]:
@@ -514,7 +510,7 @@ def write_script(place: str, rng: random.Random) -> str:
 
 
 def with_cta(text: str, rng: random.Random) -> str:
-    return text if "subscribe" in text.lower() else f"{text.rstrip()} {_pick(CTAS, ' '.join(_recent_scripts()), rng)}"
+    return text if "follow" in text.lower() else f"{text.rstrip()} {_pick(CTAS, ' '.join(_recent_scripts()), rng)}"
 
 
 def describe(before: Path, after: Path, names: list[str], cfg: dict, rng: random.Random) -> dict:
@@ -527,7 +523,7 @@ def describe(before: Path, after: Path, names: list[str], cfg: dict, rng: random
         try:
             data = _gemini_describe(before, after, hint, cfg)
             data["narration"] = with_cta(data.get("narration") or write_script(place, rng), rng)
-            data["caption"] = f"{data.get('caption', '').strip()} {CAPTION_CTA}".strip()
+            data["caption"] = data.get("caption", "").strip()
             return data
         except Exception as e:
             print(f"  (Gemini titles failed, using a fresh template script: {e})")
@@ -540,7 +536,7 @@ def describe(before: Path, after: Path, names: list[str], cfg: dict, rng: random
                           f"From forgotten to beautiful ✨ What would you add to this {place}?",
                           f"Rate this {place} makeover from 1 to 10 👇", f"Same {place}, completely new life 🔨"])
     return {"title": title, "short_title": title, "hook": hook,
-            "before": "ABANDONED", "after": "LUXURY " + place.upper(), "caption": f"{caption} {CAPTION_CTA}",
+            "before": "ABANDONED", "after": "LUXURY " + place.upper(), "caption": caption,
             "tags": [f"{place} makeover", f"{place} transformation", f"abandoned {place}"],
             "narration": write_script(place, rng)}
 
@@ -560,8 +556,8 @@ def _gemini_describe(before: Path, after: Path, hint: str, cfg: dict) -> dict:
         '"narration" (what the host says over the video: 4-5 short spoken sentences, 55-70 words in total, '
         'friendly storytelling about the place being cleaned, rebuilt and revealed; only mention things you can '
         'see in the two frames, never invent colors or materials; short punchy spoken sentences, use "..." '
-        'for dramatic pauses, never brackets or dashes; ending by asking viewers to '
-        'share the video, subscribe, and say in the comments if they want more videos like this; plain words, '
+        'for dramatic pauses, never brackets or dashes; ending with ONE short line asking viewers to follow so they '
+        'do not miss the next makeover (say "follow", never subscribe, like or share); plain words, '
         'no emoji, no numbers as digits). Do not claim it is a real project or real people. Every video needs '
         'a fresh script: do not reuse the wording of these earlier narrations: ' + " | ".join(_recent_scripts(5)))}]
     for p in (before, after):
@@ -731,7 +727,7 @@ def process_inbox(config: dict, history: list[dict], dry_run: bool) -> int:
         yt["publish_at"] = publish_at.strftime("%Y-%m-%dT%H:%M:%SZ")
         place = meta.get("place", "home")
         keywords = f"Abandoned {place} makeover | before and after luxury {place} transformation"
-        description = f"{keywords}\n{meta['caption']}\n\n{hashtags}\n\n{_footer(config)}"
+        description = f"{keywords}\n{meta['caption']} {CAPTION_CTA}\n\n{hashtags}\n\n{_footer(config)}"
         print(f"  Uploading the Short (goes public {yt['publish_at']} UTC)...")
         video_id = uploader.upload_video(made["short"], made["thumbnail"], meta["short_title"][:90] + " #Shorts",
                                          description, tags + ["shorts"], yt, lang)
@@ -745,6 +741,7 @@ def process_inbox(config: dict, history: list[dict], dry_run: bool) -> int:
             except Exception as e:
                 print(f"  (Could not add to playlist: {e})")
         a, b = rng.sample(NEXT_PLACES, 2)
+        vote = f"Which one is Day {day + 1}? Abandoned {a} 🅰️ or abandoned {b} 🅱️? Comment A or B 👇"
         comment = (f"YOU choose Day {day + 1} 👇 Abandoned {a} 🅰️ or abandoned {b} 🅱️? "
                    "Reply A or B, most votes wins! Follow so you see it 🔔\n\n"
                    + rng.choice([f"And be honest: what would YOU change in this {meta.get('place', 'room')}? 🤔",
@@ -753,7 +750,8 @@ def process_inbox(config: dict, history: list[dict], dry_run: bool) -> int:
                                  "Which detail did you notice first? 👀"]))
         (workdir / "social" / "social.json").write_text(json.dumps({
             "youtube_id": video_id, "title": meta["title"], "caption": caption,
-            "publish_at": yt["publish_at"], "comment": comment}, indent=2))
+            "publish_at": yt["publish_at"], "comment": comment,
+            "style": "makeover", "day": day, "vote": vote}, indent=2))
 
         # keep the clips for the weekly compilation; the inbox is left empty
         dest = DONE / slug
