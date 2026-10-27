@@ -635,18 +635,22 @@ def make_short(group: list[Path], workdir: Path, cfg: dict, rng: random.Random,
         p = series["part"]
         name = "The Outside" if room in OUTSIDE else room.title()
         spoken = "the outside" if room in OUTSIDE else f"the {room}"
+        bare = "Exterior" if room in OUTSIDE else room.title()
         meta["title"] = meta["short_title"] = f"Abandoned House Part {p}: {name} 😱"
         meta["alt_titles"] = [t for t in (f"Restoring an Abandoned House: Part {p} 🏚️",
                                           f"Abandoned House → Luxury Home (Part {p}) ✨",
-                                          f"Abandoned House Part {p}: Luxury {name} 🤩",
-                                          f"Part {p}: This {name} Was a Disaster 😳") if len(t) <= TITLE_MAX]
+                                          f"Abandoned House Part {p}: Luxury {bare} 🤩",
+                                          f"Part {p}: This {bare} Was a Disaster 😳") if len(t) <= TITLE_MAX]
         meta["hook"] = f"Abandoned house, part {p}: {spoken}"
         meta["after"] = f"LUXURY {place.upper()}"
         meta["caption"] = f"Part {p} of turning one abandoned house into a luxury home 🏚️➡️✨ {meta['caption']}"
         meta["tags"] = ["abandoned house", "house renovation", "house restoration", *meta.get("tags", [])]
         nxt = (f"In part {p + 1}, you choose the next room. Follow so you don't miss it." if series["left"]
                else "Next, the full house tour. Follow so you don't miss it.")
-        said = [x for x in re.split(r"(?<=[.!?])\s+", meta["narration"].strip()) if "follow" not in x.lower()]
+        text = meta["narration"]
+        for cta in CTAS:  # the daily-makeover call to action is replaced by the next-part line
+            text = text.replace(cta, "")
+        said = [x for x in re.split(r"(?<=[.!?])\s+", text.strip()) if "follow" not in x.lower()]
         meta["narration"] = " ".join([*said, nxt])
         meta["series"] = {"house": series["house"], "part": p, "room": room}
     elif day:  # one running series gives viewers a reason to follow
