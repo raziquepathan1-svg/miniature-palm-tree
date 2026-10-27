@@ -53,6 +53,22 @@ def save_history(history: list[dict]) -> None:
     HISTORY_FILE.write_text(json.dumps(history, indent=2, ensure_ascii=False) + "\n")
 
 
+def _uploaded_elsewhere(script_file: str) -> bool:
+    """Right before uploading: has another run already uploaded this script? Reads the newest history.json on
+    the branch (this run's copy can be hours old: a delayed scheduled run once uploaded a second copy)."""
+    branch = os.environ.get("GITHUB_REF_NAME")
+    if not branch:
+        return False
+    try:
+        subprocess.run(["git", "fetch", "-q", "origin", branch], check=True, timeout=120)
+        latest = json.loads(subprocess.run(["git", "show", f"origin/{branch}:youtube_agent/history.json"],
+                                           check=True, capture_output=True, text=True).stdout)
+    except Exception as e:  # can't tell: upload as before
+        print(f"  (Could not read the newest history.json: {e})")
+        return False
+    return any(h.get("script_file") == script_file and h.get("youtube_id") for h in latest)
+
+
 def slugify(text: str) -> str:
     return re.sub(r"[^a-z0-9]+", "-", text.lower()).strip("-")[:60] or "video"
 
@@ -291,6 +307,10 @@ def make_one_video(config: dict, history: list[dict], topic: str | None, dry_run
                                                      "bridge_id")})
     if dry_run:
         print(f"6/6 Dry run - not uploading. Files in {workdir}")
+        return
+
+    if bank_file and _uploaded_elsewhere(bank_file.name):
+        print(f"6/6 Not uploading: another run already uploaded {bank_file.name} (no duplicate copies).")
         return
 
     from . import uploader
