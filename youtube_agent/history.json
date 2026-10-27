@@ -643,8 +643,7 @@
     "script_file": "052-blood-clots-dvt-signs.yaml",
     "series": "Emergency Basics",
     "episode": 5,
-    "planned_publish_at": "2026-10-28T16:00:00Z",
-    "awaiting_approval": true,
+    "awaiting_approval": false,
     "youtube_id": "TeXomVM-8do",
     "short_youtube_id": "3lt8huc9PxY",
     "short2_youtube_id": "OqoeKunjSIw",
@@ -681,6 +680,7 @@
       "title": "Blood Clot Signs: Don't Ignore a Swollen Leg",
       "thumbnail_text": "JUST A CRAMP?",
       "thumbnail_highlight": "CRAMP?"
-    }
+    },
+    "publish_at": "2026-10-27T11:02:36Z"
   }
 ]
