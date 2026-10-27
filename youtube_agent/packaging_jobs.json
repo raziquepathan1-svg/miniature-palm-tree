@@ -129,5 +129,43 @@
     },
     "note": "Repackaged Oct 26 (owner OK): old thumbnail repeated the title, CTR 0.71% on 280 impressions",
     "done": true
+  },
+  {
+    "youtube_id": "rotoo0t2KJU",
+    "title": "Naloxone: The Nasal Spray That Stops an Overdose (Part 4/5)",
+    "description_top": "Opioid overdose signs and how to use naloxone (Narcan) nasal spray, step by step: what to do when someone will not wake up or is barely breathing.\nLearn when to call 911, how to give a second dose, the recovery position, fentanyl risks, and where to get free, private help.",
+    "pin_question": "Do you keep naloxone at home, in your bag or car? Where would you want it in an emergency?",
+    "packages": [
+      {
+        "title": "Naloxone: The Nasal Spray That Stops an Overdose",
+        "thumbnail_text": "BLUE LIPS?",
+        "thumbnail_highlight": "LIPS?"
+      },
+      {
+        "title": "Someone Won't Wake Up? Do This Now",
+        "thumbnail_text": "NALOXONE SAVES LIVES",
+        "thumbnail_highlight": "SAVES"
+      },
+      {
+        "title": "How to Reverse an Opioid Overdose",
+        "thumbnail_text": "BLUE LIPS?",
+        "thumbnail_highlight": "LIPS?"
+      },
+      {
+        "title": "Naloxone: 6 Steps That Stop an Overdose",
+        "thumbnail_text": "CARRY THIS",
+        "thumbnail_highlight": "CARRY"
+      },
+      {
+        "title": "Opioid Overdose Myths That Cost Lives",
+        "thumbnail_text": "ICE BATH?",
+        "thumbnail_highlight": "BATH?"
+      }
+    ],
+    "chosen": {
+      "title": "Naloxone: The Nasal Spray That Stops an Overdose",
+      "thumbnail_text": "BLUE LIPS?",
+      "thumbnail_highlight": "LIPS?"
+    }
   }
 ]
