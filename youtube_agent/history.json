@@ -638,7 +638,7 @@
     "date": "2026-10-27T10:37:38",
     "topic": "Blood clots (DVT and pulmonary embolism): warning signs and prevention",
     "requested_topic": "Blood clots (DVT and pulmonary embolism): warning signs and prevention",
-    "title": "Blood Clot Warning Signs: Don't Ignore a Swollen Leg (Part 5/5)",
+    "title": "Blood Clot Signs: Don't Ignore a Swollen Leg (Part 5/5)",
     "style": "Warning Signs",
     "script_file": "052-blood-clots-dvt-signs.yaml",
     "series": "Emergency Basics",
@@ -648,6 +648,39 @@
     "youtube_id": "TeXomVM-8do",
     "short_youtube_id": "3lt8huc9PxY",
     "short2_youtube_id": "OqoeKunjSIw",
-    "preview": "previews/TeXomVM-8do.mp4"
+    "preview": "previews/TeXomVM-8do.mp4",
+    "pin_question": "Have you or someone close to you ever had a blood clot? What was the first sign you noticed?",
+    "packages": [
+      {
+        "title": "Blood Clot Signs: Don't Ignore a Swollen Leg",
+        "thumbnail_text": "JUST A CRAMP?",
+        "thumbnail_highlight": "CRAMP?"
+      },
+      {
+        "title": "The Leg Pain That Could Be a Blood Clot",
+        "thumbnail_text": "SWOLLEN CALF?",
+        "thumbnail_highlight": "CALF?"
+      },
+      {
+        "title": "Is It a Cramp or a Blood Clot?",
+        "thumbnail_text": "DON'T WAIT",
+        "thumbnail_highlight": "WAIT"
+      },
+      {
+        "title": "Blood Clots After Surgery: How to Stay Safe",
+        "thumbnail_text": "MOVE YOUR LEGS",
+        "thumbnail_highlight": "MOVE"
+      },
+      {
+        "title": "Blood Clot Myths That Put You at Risk",
+        "thumbnail_text": "ONLY FLYING?",
+        "thumbnail_highlight": "FLYING?"
+      }
+    ],
+    "chosen": {
+      "title": "Blood Clot Signs: Don't Ignore a Swollen Leg",
+      "thumbnail_text": "JUST A CRAMP?",
+      "thumbnail_highlight": "CRAMP?"
+    }
   }
 ]
