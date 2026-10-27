@@ -168,5 +168,43 @@
       "thumbnail_highlight": "LIPS?"
     },
     "done": true
+  },
+  {
+    "youtube_id": "TeXomVM-8do",
+    "title": "Blood Clot Signs: Don't Ignore a Swollen Leg (Part 5/5)",
+    "description_top": "Blood clot warning signs explained simply: DVT symptoms in the leg (swelling, calf pain, warmth) and pulmonary embolism signs like sudden shortness of breath.\nLearn who is most at risk after surgery, hospital stays, pregnancy or long trips, when to call 911, and how to prevent clots.",
+    "pin_question": "Have you or someone close to you ever had a blood clot? What was the first sign you noticed?",
+    "packages": [
+      {
+        "title": "Blood Clot Signs: Don't Ignore a Swollen Leg",
+        "thumbnail_text": "JUST A CRAMP?",
+        "thumbnail_highlight": "CRAMP?"
+      },
+      {
+        "title": "The Leg Pain That Could Be a Blood Clot",
+        "thumbnail_text": "SWOLLEN CALF?",
+        "thumbnail_highlight": "CALF?"
+      },
+      {
+        "title": "Is It a Cramp or a Blood Clot?",
+        "thumbnail_text": "DON'T WAIT",
+        "thumbnail_highlight": "WAIT"
+      },
+      {
+        "title": "Blood Clots After Surgery: How to Stay Safe",
+        "thumbnail_text": "MOVE YOUR LEGS",
+        "thumbnail_highlight": "MOVE"
+      },
+      {
+        "title": "Blood Clot Myths That Put You at Risk",
+        "thumbnail_text": "ONLY FLYING?",
+        "thumbnail_highlight": "FLYING?"
+      }
+    ],
+    "chosen": {
+      "title": "Blood Clot Signs: Don't Ignore a Swollen Leg",
+      "thumbnail_text": "JUST A CRAMP?",
+      "thumbnail_highlight": "CRAMP?"
+    }
   }
 ]
