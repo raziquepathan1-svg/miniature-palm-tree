@@ -116,5 +116,16 @@ jobs:
           git config user.email "youtube-agent@users.noreply.github.com"
           git add youtube_agent/history.json 2>/dev/null || exit 0
           git diff --cached --quiet && exit 0
-          git commit -m "Record published video"
-          git pull --rebase && git push
+          # Merge our entries into the newest history.json (it may have changed while we ran) and push
+          cp youtube_agent/history.json "$RUNNER_TEMP/history_ours.json"
+          for i in 1 2 3 4 5; do
+            git fetch -q origin "$GITHUB_REF_NAME"
+            git reset -q --hard "origin/$GITHUB_REF_NAME"
+            python -m youtube_agent.merge_history "$RUNNER_TEMP/history_ours.json"
+            git add youtube_agent/history.json
+            git diff --cached --quiet && exit 0
+            git commit -q -m "Record published video"
+            git push && exit 0
+            sleep 5
+          done
+          exit 1

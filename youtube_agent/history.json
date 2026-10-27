@@ -582,5 +582,22 @@
       "thumbnail_highlight": "SMELL?"
     },
     "publish_at": "2026-10-26T09:40:20Z"
+  },
+  {
+    "date": "2026-10-26T10:51:39",
+    "topic": "Opioid overdose: signs and how to use naloxone",
+    "requested_topic": "Opioid overdose: signs and how to use naloxone",
+    "title": "How to Stop an Opioid Overdose: Naloxone Step by Step (Part 4/5)",
+    "style": "Explainer",
+    "script_file": "059-naloxone-opioid-overdose.yaml",
+    "series": "Emergency Basics",
+    "episode": 4,
+    "awaiting_approval": true,
+    "planned_publish_at": "2026-10-27T16:00:00Z",
+    "youtube_id": "rotoo0t2KJU",
+    "short_youtube_id": "-Rki5tT1PYE",
+    "short2_youtube_id": "1IFLshlyNz4",
+    "preview": "previews/rotoo0t2KJU.mp4",
+    "note": "entry rebuilt from the run log (the run's save step hit a git conflict)"
   }
 ]
