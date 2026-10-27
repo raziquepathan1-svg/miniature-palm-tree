@@ -134,7 +134,7 @@ video:
   # instead (heading, then each point with a check mark or red arrow, timed to the narration). Free.
   whiteboard:
     enabled: true
-    per_video: 3
+    per_video: 6                 # owner Oct 27: more sketch pages
   # The small presenter in the bottom-right corner (16:9 videos): your green-screen clips, lip-synced to the
   # narration on Kaggle (Wav2Lip), cut out; hidden while you are already full screen (desk clips, intro, outro).
   presenter:
