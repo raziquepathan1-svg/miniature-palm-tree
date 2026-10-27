@@ -57,7 +57,13 @@ Every prompt must work on the first try. Before sending prompts, check each one 
    9:16. Always remind the owner to set the aspect ratio to 9:16 / portrait in Flow's settings before generating.
    If landscape clips arrive anyway, don't waste credits: convert them (4:3 centre crop on a blurred 720x1280
    background) and use them.
-8. When the owner sends clips, review them frame by frame before they go to rrs_inbox; bad clips go to
+8. Big colour changes on big surfaces (painting a whole wall or a whole house) FAIL in Frames to Video: Flow keeps
+   the start image's texture (Day 23 wall stayed grey, Day 26 house stayed grey/peeling while the path, plants
+   and railings worked). For any clip whose job is a full repaint, use Frames to Video with BOTH a start frame
+   and an END frame (a still of the finished painted state, made in Flow Create Image from the start frame, or
+   by Claude with an image tool if the owner agrees). Small added objects (shelves, plants, paths) need no end frame.
+   4 clips of 8 s (one job each) are fine when Flow charges about 12 credits or less per 8 s clip.
+9. When the owner sends clips, review them frame by frame before they go to rrs_inbox; bad clips go to
    rrs_review (it never publishes).
 
 ## Answer format (every time)
