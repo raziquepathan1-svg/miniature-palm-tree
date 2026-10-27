@@ -21,6 +21,7 @@ The user runs the men's fashion Instagram page **@raziquepathan** featuring **th
    - **Outfit 1 (~1.5-3.5s): walking** toward camera with a pose.
    - **Outfits 2, 3, 4 (~3.5-8s, ~1.5s each): NO walking.** He stands still, full body visible head to toe, posing like a fashion ad/lookbook (slow quarter turn, hand in pocket, adjusting cuff/collar), camera slowly pushes in or circles; clean premium background/location per outfit. Smooth seamless change between outfits, no flash.
    - Model-like confident poses, premium fabrics only, no logos/labels.
+5. **Luxury props in the background are welcome** (user, Oct 27): unbranded luxury car, modern bungalow/villa, yacht, helicopter, private jet, etc. can sit behind him in the standing looks, combined with the beautiful locations (user likes the location variety). Always unbranded: no car badges, no names on boats or aircraft.
 
 ## Hard rules (apply to every prompt)
 
