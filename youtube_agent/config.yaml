@@ -255,6 +255,9 @@ youtube:
   # Upload private and NOT scheduled: you get a preview first, and the "Approve video" workflow schedules it
   # (for the planned time, or the next free slot if approved late). false = schedule automatically.
   hold_for_approval: true
+  # Owner, Oct 27: no video stays private or scheduled - "Approve video" makes the video and its Shorts
+  # public right away (false = schedule them for the planned time instead).
+  publish_on_approval: true
   privacy: "public"            # used only when both options above are off
   playlists: true              # add each video to its topic playlist (+ "Health Shorts" for Shorts)
   upload_short: true           # also upload the daily vertical Short to YouTube Shorts

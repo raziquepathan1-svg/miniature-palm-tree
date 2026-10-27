@@ -171,6 +171,24 @@ def synthesize(text: str, voice: str, speed: float, voice_cfg: dict | None = Non
     return _SPOKEN[key]
 
 
+def _buzz(audio: np.ndarray, sample_rate: int) -> float:
+    """How much harsh 5-8 kHz energy the voiced parts have, against the normal speech band. A clean take
+    scores about 0.02 or less; a broken clone take (a buzzing, hissing sentence) scored 0.11."""
+    n = 1024
+    if len(audio) < 2 * n:
+        return 0.0
+    frames = np.array([audio[i:i + n] * np.hanning(n) for i in range(0, len(audio) - n, n // 2)])
+    power = np.abs(np.fft.rfft(frames, axis=1)) ** 2
+    freqs = np.fft.rfftfreq(n, 1 / sample_rate)
+    energy = power.sum(1)
+    power = power[energy > np.percentile(energy, 40)]  # the voiced frames
+    low = power[:, (freqs > 80) & (freqs < 4000)].sum()
+    return float(power[:, (freqs > 5000) & (freqs < 8000)].sum() / low) if low else 0.0
+
+
+BUZZ_LIMIT = 0.05
+
+
 def _synthesize(text: str, voice: str, speed: float, voice_cfg: dict | None = None) -> tuple[np.ndarray, int]:
     voice_cfg = voice_cfg or {}
     if voice_cfg.get("engine") == "clone":
@@ -179,12 +197,20 @@ def _synthesize(text: str, voice: str, speed: float, voice_cfg: dict | None = No
             import torch
 
             try:
-                with torch.inference_mode():
-                    wav = model.generate(text, exaggeration=float(voice_cfg.get("exaggeration", 0.5)),
-                                         cfg_weight=max(0.05, float(voice_cfg.get("cfg_weight", 0.3))),  # 0 crashes
-                                         temperature=float(voice_cfg.get("temperature", 0.8)))
-                audio = _trim(wav.squeeze(0).cpu().numpy().astype(np.float32), model.sr)
-                return _tempo(audio, model.sr, speed), model.sr  # 24 kHz, same as Kokoro
+                best, best_score = None, None
+                for attempt in range(3):  # the clone sometimes buzzes on a sentence: speak it again
+                    with torch.inference_mode():
+                        wav = model.generate(text, exaggeration=float(voice_cfg.get("exaggeration", 0.5)),
+                                             cfg_weight=max(0.05, float(voice_cfg.get("cfg_weight", 0.3))),  # 0 crashes
+                                             temperature=float(voice_cfg.get("temperature", 0.8)))
+                    audio = _trim(wav.squeeze(0).cpu().numpy().astype(np.float32), model.sr)
+                    score = _buzz(audio, model.sr)
+                    if best_score is None or score < best_score:
+                        best, best_score = audio, score
+                    if score <= BUZZ_LIMIT:
+                        break
+                    print(f"  (Buzzing take ({score:.3f}) on \"{text[:50]}\" - speaking it again)")
+                return _tempo(best, model.sr, speed), model.sr  # 24 kHz, same as Kokoro
             except Exception as e:
                 global _clone_failed
                 print(f"  (Voice clone failed on a sentence, using the standard AI voice from here: {e})")

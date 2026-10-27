@@ -20,6 +20,15 @@ def _schedule(youtube, video_id: str, when: dt.datetime) -> None:
     youtube.videos().update(part="status", body={"id": video_id, "status": status}).execute()
 
 
+def _publish(youtube, video_id: str) -> None:
+    item = youtube.videos().list(part="status", id=video_id).execute()["items"][0]
+    status = dict(item["status"])  # keep every other setting (made-for-kids, AI label...)
+    status["privacyStatus"] = "public"
+    for key in ("publishAt", "uploadStatus", "failureReason", "rejectionReason"):
+        status.pop(key, None)
+    youtube.videos().update(part="status", body={"id": video_id, "status": status}).execute()
+
+
 def main() -> None:
     from googleapiclient.discovery import build
 
@@ -32,6 +41,17 @@ def main() -> None:
                   and (not wanted or h.get("youtube_id") == wanted)), None)
     if not entry:
         sys.exit("No video is waiting for approval.")
+    if yt.get("publish_on_approval"):  # owner, Oct 27: nothing stays private - public as soon as it is checked
+        youtube = build("youtube", "v3", credentials=_credentials(), cache_discovery=False)
+        for key in ("youtube_id", "short_youtube_id", "short2_youtube_id"):
+            if entry.get(key):
+                _publish(youtube, entry[key])
+                print(f"Public now: https://youtu.be/{entry[key]}")
+        entry["publish_at"] = dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+        entry["awaiting_approval"] = False
+        entry.pop("planned_publish_at", None)
+        save_history(history)
+        return
     when = dt.datetime.fromisoformat(entry["planned_publish_at"].replace("Z", "+00:00"))
     if when < dt.datetime.now(dt.timezone.utc) + dt.timedelta(hours=1):  # approved late: the next free slot
         others = [h for h in history if h is not entry]
