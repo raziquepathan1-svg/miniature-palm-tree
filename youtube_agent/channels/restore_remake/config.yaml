@@ -140,6 +140,7 @@ clips:
   music_volume: 0.18           # soft music under the clips' own work sounds
   compilation_min_makeovers: 6 # a long video (about 3-4 min) once this many new makeovers are ready
   min_short_seconds: 30        # shorter makeovers get a fast replay so each Short is at least this long
+  house_rooms: [outside, living room, kitchen, bedroom, bathroom, pool]  # house series (rrs_inbox/house1-part2-kitchen/)
   compilation_playlist: "Makeover Compilations"
   compilation_titles:          # under 50 characters
     - "{n} Abandoned Places → Pure Luxury 😱"

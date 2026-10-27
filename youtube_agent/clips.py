@@ -313,14 +313,14 @@ def ai_note(size: tuple[int, int], out: Path) -> Path:
     return out
 
 
-def day_badge(day: int, size: tuple[int, int], out: Path) -> Path:
-    """'DAY 12' pill at the top left for the whole Short: the channel is one running series."""
+def day_badge(day: int, size: tuple[int, int], out: Path, label: str | None = None) -> Path:
+    """'DAY 12' (or 'PART 2') pill at the top left for the whole Short: the channel is one running series."""
     from PIL import ImageDraw
     w, h = size
     img = Image.new("RGBA", size, (0, 0, 0, 0))
     d = ImageDraw.Draw(img)
     f = visuals.font(40, 800)
-    text = f"DAY {day}"
+    text = label or f"DAY {day}"
     tw = d.textlength(text, font=f)
     x, y = 40, 140
     d.rounded_rectangle((x, y, x + tw + 44, y + 64), 32, fill=(245, 158, 11, 240))
@@ -475,6 +475,23 @@ def _title_options(place: str, cfg: dict, rng: random.Random, n: int) -> list[st
 NEXT_PLACES = ["castle", "mansion", "cabin", "barn", "boat", "school bus", "church", "greenhouse", "treehouse",
                "lighthouse", "train car", "shed", "bathroom", "bedroom", "garden", "pool", "garage", "warehouse"]
 # On-screen hook over the before/after opening: short, and makes people wait for the reveal.
+SERIES_DIR = re.compile(r"^house(\d+)-part(\d+)-(.+)$")
+OUTSIDE = {"outside", "exterior", "front", "house"}
+HOUSE_ROOMS = ["outside", "living room", "kitchen", "bedroom", "bathroom", "pool"]
+
+
+def series_of(group: list[Path], history: list[dict], cfg: dict) -> dict | None:
+    """Clips in a folder named house1-part2-living-room are part 2 of one abandoned house restored room by
+    room: viewers follow to see the rest of the house and vote for the next room."""
+    m = SERIES_DIR.match(group[0].parent.name.lower()) if group[0].parent != INBOX else None
+    if not m:
+        return None
+    house, part, room = int(m.group(1)), int(m.group(2)), m.group(3).replace("-", " ").strip()
+    done = {h["series"]["room"] for h in history if (h.get("series") or {}).get("house") == house}
+    left = [r for r in (cfg.get("house_rooms") or HOUSE_ROOMS) if r not in done and r != room]
+    return {"house": house, "part": part, "room": room, "left": left}
+
+
 HOOKS = ["Wait for the luxury reveal", "From junk to luxury in 30 seconds", "Nobody wanted this {place}",
          "Watch this {place} turn into luxury", "Wait until you see the end", "Rate this makeover 1 to 10",
          "This {place} was a disaster", "Abandoned {place} to luxury"]
@@ -513,12 +530,15 @@ def with_cta(text: str, rng: random.Random) -> str:
     return text if "follow" in text.lower() else f"{text.rstrip()} {_pick(CTAS, ' '.join(_recent_scripts()), rng)}"
 
 
-def describe(before: Path, after: Path, names: list[str], cfg: dict, rng: random.Random) -> dict:
+def describe(before: Path, after: Path, names: list[str], cfg: dict, rng: random.Random,
+             place: str | None = None) -> dict:
     """Title, captions, tags and the narration script. Gemini (free key) looks at the first and last frame;
     without it, a fresh script is put together from many lines so no two Shorts sound the same."""
     hint = " / ".join(re.sub(r"[_-]+", " ", re.sub(r"[_-]?20\d{12}.*$", "", re.sub(r"^[0-9a-f]{8}-", "", n))).strip()
                       for n in names)
-    place = _place(hint)
+    if place:  # known from the series folder; the clip file names may say something else
+        hint = f"{place} / {hint}"
+    place = place or _place(hint)
     if os.environ.get("GEMINI_API_KEY", "").strip():
         try:
             data = _gemini_describe(before, after, hint, cfg)
@@ -599,15 +619,37 @@ def narrate(text: str, voice_cfg: dict, out: Path, max_seconds: float) -> Path |
 
 
 def make_short(group: list[Path], workdir: Path, cfg: dict, rng: random.Random,
-               voice_cfg: dict | None = None, day: int | None = None) -> dict:
+               voice_cfg: dict | None = None, day: int | None = None, series: dict | None = None) -> dict:
     work = workdir / "build"
     work.mkdir(parents=True, exist_ok=True)
     before = frame(group[0], work / "before.jpg", last=False)
     after = frame(group[-1], work / "after.jpg", last=True)
-    meta = describe(before, after, [p.name for p in group], cfg, rng)
-    place = _place(" ".join(p.name for p in group))
+    if series:
+        room = series["room"]
+        place = "house" if room in OUTSIDE else (_place(room) if _place(room) != "space" else room)
+    else:
+        place = _place(" ".join(p.name for p in group))
+    meta = describe(before, after, [p.name for p in group], cfg, rng, place=place if series else None)
     meta["place"] = place
-    if day:  # one running series gives viewers a reason to follow
+    if series:  # one house, room by room: the next part is the reason to follow
+        p = series["part"]
+        name = "The Outside" if room in OUTSIDE else room.title()
+        spoken = "the outside" if room in OUTSIDE else f"the {room}"
+        meta["title"] = meta["short_title"] = f"Abandoned House Part {p}: {name} 😱"
+        meta["alt_titles"] = [t for t in (f"Restoring an Abandoned House: Part {p} 🏚️",
+                                          f"Abandoned House → Luxury Home (Part {p}) ✨",
+                                          f"Abandoned House Part {p}: Luxury {name} 🤩",
+                                          f"Part {p}: This {name} Was a Disaster 😳") if len(t) <= TITLE_MAX]
+        meta["hook"] = f"Abandoned house, part {p}: {spoken}"
+        meta["after"] = f"LUXURY {place.upper()}"
+        meta["caption"] = f"Part {p} of turning one abandoned house into a luxury home 🏚️➡️✨ {meta['caption']}"
+        meta["tags"] = ["abandoned house", "house renovation", "house restoration", *meta.get("tags", [])]
+        nxt = (f"In part {p + 1}, you choose the next room. Follow so you don't miss it." if series["left"]
+               else "Next, the full house tour. Follow so you don't miss it.")
+        said = [x for x in re.split(r"(?<=[.!?])\s+", meta["narration"].strip()) if "follow" not in x.lower()]
+        meta["narration"] = " ".join([*said, nxt])
+        meta["series"] = {"house": series["house"], "part": p, "room": room}
+    elif day:  # one running series gives viewers a reason to follow
         meta["title"] = f"Day {day}: {meta['title']}"
         if len(meta["title"]) > TITLE_MAX:
             meta["title"] = f"Day {day}: Abandoned {place.title()} → Luxury 😍"
@@ -639,8 +681,13 @@ def make_short(group: list[Path], workdir: Path, cfg: dict, rng: random.Random,
         tag = makeover._label("ONE MORE TIME" if rate < 1.2 else f"REPLAY {rate:.1f}X", (SW, SH), (245, 158, 11),
                               work / "replay_label.png")
         parts.append(_with_overlay(replay, tag, work / "replay_tag_v.mp4"))
-    question = (f"DAY {day + 1} IS NEXT", "Follow so you don't miss it") if day else \
-        ("Which place should", "we restore next?")
+    if series:
+        question = ((f"PART {series['part'] + 1} IS NEXT", "Pick the room in the comments") if series["left"]
+                    else ("FULL HOUSE TOUR NEXT", "Follow so you don't miss it"))
+    elif day:
+        question = (f"DAY {day + 1} IS NEXT", "Follow so you don't miss it")
+    else:
+        question = ("Which place should", "we restore next?")
     parts.append(reveal(before, after, (SW, SH), work, question=question))
     full = join(parts, work / "full_v.mp4", fade=0.4)
     hook = title_overlay(hook_text, (SW, SH), work / "hook_v.png")
@@ -658,7 +705,9 @@ def make_short(group: list[Path], workdir: Path, cfg: dict, rng: random.Random,
     overlays = [(hook, (1.1, 3.9)), (note, None)]
     mid = probe(full)[0] * 0.4
     overlays.append((follow_banner((SW, SH), work / "follow_v.png"), (mid, mid + 3.0)))
-    if day:
+    if series:
+        overlays.append((day_badge(0, (SW, SH), work / "day_v.png", label=f"PART {series['part']}"), None))
+    elif day:
         overlays.append((day_badge(day, (SW, SH), work / "day_v.png"), None))
     short = finish(full, overlays, cfg.get("music_volume", 0.18), social / "short.mp4", rng,
                    narration=speech)
@@ -706,7 +755,8 @@ def process_inbox(config: dict, history: list[dict], dry_run: bool) -> int:
         stamp = (_made_at(group[0]) or dt.datetime.now()).strftime("%Y%m%d-%H%M")
         workdir = OUTPUT_DIR / f"{stamp}-clips"
         day = sum(1 for h in history if h.get("kind") == "clip_short") + 1
-        made = make_short(group, workdir, cfg, rng, config.get("voice"), day=day)
+        series = series_of(group, history, cfg)
+        made = make_short(group, workdir, cfg, rng, config.get("voice"), day=None if series else day, series=series)
         meta = made["meta"]
         slug = f"{stamp}-{slugify(meta['title'])[:40]}"
         tags = list(dict.fromkeys(meta.get("tags", []) + cfg.get("tags", [])))[:15]
@@ -714,6 +764,8 @@ def process_inbox(config: dict, history: list[dict], dry_run: bool) -> int:
         caption = f"{meta['caption']} {hashtags}".strip()
         entry = {"date": dt.datetime.now().isoformat(timespec="seconds"), "kind": "clip_short",
                  "title": meta["title"], "topic": meta["title"], "style": "AI Clip Makeover", "folder": slug}
+        if series:
+            entry["series"] = meta["series"]
         if dry_run:
             print(f"  Dry run - not uploading. Short: {made['short']}")
             summary.append(f"- (dry run) {meta['title']} - {meta['duration']} s")
@@ -727,6 +779,8 @@ def process_inbox(config: dict, history: list[dict], dry_run: bool) -> int:
         yt["publish_at"] = publish_at.strftime("%Y-%m-%dT%H:%M:%SZ")
         place = meta.get("place", "home")
         keywords = f"Abandoned {place} makeover | before and after luxury {place} transformation"
+        if series:
+            keywords = f"Abandoned house renovation part {series['part']} | before and after luxury {place} makeover"
         description = f"{keywords}\n{meta['caption']} {CAPTION_CTA}\n\n{hashtags}\n\n{_footer(config)}"
         print(f"  Uploading the Short (goes public {yt['publish_at']} UTC)...")
         video_id = uploader.upload_video(made["short"], made["thumbnail"], meta["short_title"][:90] + " #Shorts",
@@ -742,8 +796,22 @@ def process_inbox(config: dict, history: list[dict], dry_run: bool) -> int:
                 print(f"  (Could not add to playlist: {e})")
         a, b = rng.sample(NEXT_PLACES, 2)
         vote = f"Which one is Day {day + 1}? Abandoned {a} 🅰️ or abandoned {b} 🅱️? Comment A or B 👇"
-        comment = (f"YOU choose Day {day + 1} 👇 Abandoned {a} 🅰️ or abandoned {b} 🅱️? "
-                   "Reply A or B, most votes wins! Follow so you see it 🔔\n\n"
+        opener = (f"YOU choose Day {day + 1} 👇 Abandoned {a} 🅰️ or abandoned {b} 🅱️? "
+                  "Reply A or B, most votes wins! Follow so you see it 🔔")
+        if series:
+            p, left = series["part"], series["left"]
+            if len(left) >= 2:
+                a, b = left[0], left[1]
+                vote = f"Part {p + 1}: the {a} 🅰️ or the {b} 🅱️? Comment A or B 👇"
+                opener = (f"YOU choose Part {p + 1} of the abandoned house 👇 The {a} 🅰️ or the {b} 🅱️? "
+                          "Reply A or B, most votes wins! Follow so you see it 🔔")
+            elif left:
+                vote = f"Part {p + 1}: the {left[0]}"
+                opener = f"Part {p + 1} is the last room: the {left[0]}! Follow so you see it 🔔"
+            else:
+                vote = "Full house tour next"
+                opener = "That's every room! The full house tour is next 🔔 Which part was your favorite? 👇"
+        comment = (opener + "\n\n"
                    + rng.choice([f"And be honest: what would YOU change in this {meta.get('place', 'room')}? 🤔",
                                  "Would you actually live here, or is it too much? 👀",
                                  "What's the first thing you'd do in this room? 👇",
@@ -764,6 +832,7 @@ def process_inbox(config: dict, history: list[dict], dry_run: bool) -> int:
             if d.is_dir() and not any(d.iterdir()):
                 d.rmdir()
         summary += [f"### {meta['title']}", f"- Thumbnail text: {meta.get('thumb_text', '')}",
+                    *([f"- Next-room vote: {vote}"] if series else []),
                     *[f"- Other title option: {t}" for t in meta.get("alt_titles", [])],
                     f"- Short ({meta['duration']} s): https://studio.youtube.com/video/{video_id}/edit",
                     f"- Goes public {yt['publish_at']} (UTC). To stop it, set it to Private."]

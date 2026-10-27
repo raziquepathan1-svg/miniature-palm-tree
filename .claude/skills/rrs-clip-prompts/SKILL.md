@@ -79,6 +79,20 @@ look, ultra-wide-angle 14mm lens..." and ends "Smooth realistic motion, no text.
 logos or movie scenes, no magic: every change is done by workers. Every ending is luxury (marble, gold, velvet,
 warm oak, glowing lights), never ordinary.
 
+## House series (owner said "yes house series", Oct 27, 2026) - the main format now
+
+Problem: views but no follows; single makeovers give no reason to come back. Fix: ONE abandoned house restored
+room by room, one part per Short (outside -> living room -> kitchen -> bedroom -> bathroom -> pool, then a full
+house tour long video). Viewers vote the next room in the pinned comment (A/B); use the winner for the next part.
+- Pipeline: after checking the clips in rrs_review, move them to rrs_inbox/house<N>-part<P>-<room>/ (e.g.
+  house1-part2-living-room). clips.py then titles it "Abandoned House Part P: Room", shows a PART P badge, ends
+  with "PART P+1 IS NEXT / Pick the room in the comments" and posts the vote between the next two rooms.
+- House bible, keep it in EVERY prompt of house 1 so all parts feel like one house: an old two-storey white
+  farmhouse with a dark grey roof, a wide front porch and black-framed windows with grid panes. Inside: tall
+  black-framed grid windows, warm white walls, light oak floors, brass details, soft sage-green accents.
+  Each room still ends luxury, in that one palette (no style rotation inside a house).
+- Wall makeovers (odd days) pause while a house is running; they can come back between houses.
+
 ## Variant formats (owner, Oct 21, 2026)
 
 - **Feature wall makeover**: one plain empty wall becomes a built-in shelving / decor wall styled with books, a
