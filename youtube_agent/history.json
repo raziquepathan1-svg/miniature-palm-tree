@@ -592,8 +592,7 @@
     "script_file": "059-naloxone-opioid-overdose.yaml",
     "series": "Emergency Basics",
     "episode": 4,
-    "awaiting_approval": true,
-    "planned_publish_at": "2026-10-27T16:00:00Z",
+    "awaiting_approval": false,
     "youtube_id": "rotoo0t2KJU",
     "short_youtube_id": "-Rki5tT1PYE",
     "short2_youtube_id": "1IFLshlyNz4",
@@ -631,6 +630,7 @@
       "title": "Naloxone: The Nasal Spray That Stops an Overdose",
       "thumbnail_text": "BLUE LIPS?",
       "thumbnail_highlight": "LIPS?"
-    }
+    },
+    "publish_at": "2026-10-27T16:00:00Z"
   }
 ]
