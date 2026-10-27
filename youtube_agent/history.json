@@ -587,7 +587,7 @@
     "date": "2026-10-26T10:51:39",
     "topic": "Opioid overdose: signs and how to use naloxone",
     "requested_topic": "Opioid overdose: signs and how to use naloxone",
-    "title": "How to Stop an Opioid Overdose: Naloxone Step by Step (Part 4/5)",
+    "title": "Naloxone: The Nasal Spray That Stops an Overdose (Part 4/5)",
     "style": "Explainer",
     "script_file": "059-naloxone-opioid-overdose.yaml",
     "series": "Emergency Basics",
@@ -598,6 +598,39 @@
     "short_youtube_id": "-Rki5tT1PYE",
     "short2_youtube_id": "1IFLshlyNz4",
     "preview": "previews/rotoo0t2KJU.mp4",
-    "note": "entry rebuilt from the run log (the run's save step hit a git conflict)"
+    "note": "entry rebuilt from the run log (the run's save step hit a git conflict)",
+    "pin_question": "Do you keep naloxone at home, in your bag or car? Where would you want it in an emergency?",
+    "packages": [
+      {
+        "title": "Naloxone: The Nasal Spray That Stops an Overdose",
+        "thumbnail_text": "BLUE LIPS?",
+        "thumbnail_highlight": "LIPS?"
+      },
+      {
+        "title": "Someone Won't Wake Up? Do This Now",
+        "thumbnail_text": "NALOXONE SAVES LIVES",
+        "thumbnail_highlight": "SAVES"
+      },
+      {
+        "title": "How to Reverse an Opioid Overdose",
+        "thumbnail_text": "BLUE LIPS?",
+        "thumbnail_highlight": "LIPS?"
+      },
+      {
+        "title": "Naloxone: 6 Steps That Stop an Overdose",
+        "thumbnail_text": "CARRY THIS",
+        "thumbnail_highlight": "CARRY"
+      },
+      {
+        "title": "Opioid Overdose Myths That Cost Lives",
+        "thumbnail_text": "ICE BATH?",
+        "thumbnail_highlight": "BATH?"
+      }
+    ],
+    "chosen": {
+      "title": "Naloxone: The Nasal Spray That Stops an Overdose",
+      "thumbnail_text": "BLUE LIPS?",
+      "thumbnail_highlight": "LIPS?"
+    }
   }
 ]
