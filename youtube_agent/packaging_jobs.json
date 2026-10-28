@@ -207,5 +207,43 @@
       "thumbnail_highlight": "CRAMP?"
     },
     "done": true
+  },
+  {
+    "youtube_id": "Ww74ahobgq8",
+    "title": "UTI Symptoms: When to See a Doctor (Part 1/5)",
+    "description_top": "UTI symptoms explained simply: burning when you pee, needing to go often, cloudy urine, and the signs a bladder infection has reached the kidneys.\nLearn when a urinary tract infection needs a doctor or the ER, how UTIs are treated, cranberry juice myths, and how to prevent them.",
+    "pin_question": "Have you ever had a UTI? What was the first sign that told you something was wrong?",
+    "packages": [
+      {
+        "title": "UTI Symptoms: When to See a Doctor",
+        "thumbnail_text": "BURNING?",
+        "thumbnail_highlight": "BURNING?"
+      },
+      {
+        "title": "UTI or Kidney Infection? Know the Signs",
+        "thumbnail_text": "DON'T WAIT",
+        "thumbnail_highlight": "WAIT"
+      },
+      {
+        "title": "UTI Myths: Cranberry Juice and More",
+        "thumbnail_text": "CURES IT?",
+        "thumbnail_highlight": "CURES"
+      },
+      {
+        "title": "The UTI Sign Older Adults Show Instead",
+        "thumbnail_text": "SUDDEN CONFUSION?",
+        "thumbnail_highlight": "CONFUSION?"
+      },
+      {
+        "title": "Burning When You Pee? What It Means",
+        "thumbnail_text": "KNOW THE SIGNS",
+        "thumbnail_highlight": "SIGNS"
+      }
+    ],
+    "chosen": {
+      "title": "UTI Symptoms: When to See a Doctor",
+      "thumbnail_text": "BURNING?",
+      "thumbnail_highlight": "BURNING?"
+    }
   }
 ]
