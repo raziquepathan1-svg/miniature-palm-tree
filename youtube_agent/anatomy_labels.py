@@ -8,7 +8,7 @@ of the frame, times in seconds of the clip):
     16x9_lungs_breathing.mp4:
       title: "The Lungs"
       labels:
-        - {text: "Windpipe (trachea)", at: [0.06, 0.22], to: [0.495, 0.25], start: 0.6}
+        - {text: "Windpipe (trachea)", at: [0.06, 0.22], to: [0.495, 0.25], start: 0.6}   # optional end: 2.5
       note: {text: "Air in: oxygen goes into the blood", start: 3.6}
       until: 3.5            # the label lines fade here (the camera starts turning)
 
@@ -68,21 +68,22 @@ def frame(spec: dict, w: int, h: int, t: float) -> Image.Image:
         _text(d, (int(0.05 * w), int(0.06 * h)), spec["title"].upper(), int(46 * s), ACCENT, a)
     for lab in spec.get("labels", []):
         p = (t - float(lab["start"])) / 0.6
-        if p <= 0 or fade <= 0:
+        lfade = min(fade, 1 - _ease((t - float(lab.get("end", 99))) / 0.4))  # a label can leave early
+        if p <= 0 or lfade <= 0:
             continue
         ax, ay = lab["at"][0] * w, lab["at"][1] * h
         tx, ty = lab["to"][0] * w, lab["to"][1] * h
         right = ax > tx  # text on the right side of the organ
-        box = _text(d, (ax, ay), lab["text"], int(30 * s), WHITE, _ease(p * 2) * fade,
+        box = _text(d, (ax, ay), lab["text"], int(30 * s), WHITE, _ease(p * 2) * lfade,
                     anchor="rm" if not right else "lm")
         sx = box[2] + 10 * s if not right else box[0] - 10 * s
         k = _ease(p)  # the line grows from the text to the part
         ex, ey = sx + (tx - sx) * k, ay + (ty - ay) * k
-        col = WHITE[:3] + (int(230 * fade),)
+        col = WHITE[:3] + (int(230 * lfade),)
         d.line([(sx, ay), (ex, ey)], fill=col, width=max(2, int(3 * s)))
         if k >= 1:
             r = 6 * s
-            d.ellipse([tx - r, ty - r, tx + r, ty + r], fill=ACCENT[:3] + (int(255 * fade),))
+            d.ellipse([tx - r, ty - r, tx + r, ty + r], fill=ACCENT[:3] + (int(255 * lfade),))
     note = spec.get("note")
     if note and t >= float(note["start"]):
         a = _ease((t - float(note["start"])) / 0.5)
