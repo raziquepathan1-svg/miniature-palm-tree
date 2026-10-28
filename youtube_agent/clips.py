@@ -424,9 +424,8 @@ WORK = {  # what the crew does, in order (three are picked per Short)
                  "installed a new vanity", "fitted a modern shower", "added warm lighting"],
     "pool": ["drained the green water", "scooped out the mud and leaves", "repaired the cracked walls",
              "laid new stone around the edge", "filled it with crystal clear water", "set up loungers and lights"],
-    "house": ["hauled away the trash and junk", "pressure-washed years of grime off the walls",
-              "gave the walls a fresh new finish", "put in a brand new driveway", "rolled out fresh green grass",
-              "added warm outdoor lights"],
+    "house": ["cleared away the old mess", "gave the whole house a fresh new look", "fixed up the old porch",
+              "made the walls look brand new", "made the front yard beautiful again", "brought back its old charm"],
     "wall": ["cleared everything off the old wall", "patched the cracks and sanded it smooth",
              "painted it a rich new color", "built custom shelves by hand", "added warm hidden lighting",
              "styled it with books, plants and a lamp"],
@@ -636,7 +635,7 @@ def make_short(group: list[Path], workdir: Path, cfg: dict, rng: random.Random,
         p = series["part"]
         name = "The Outside" if room in OUTSIDE else room.title()
         spoken = "the outside" if room in OUTSIDE else f"the {room}"
-        bare = "Exterior" if room in OUTSIDE else room.title()
+        bare = "Exterior" if room in OUTSIDE or room.split()[0] in OUTSIDE else room.title()
         meta["title"] = meta["short_title"] = f"Abandoned House Part {p}: {name} 😱"
         meta["alt_titles"] = [t for t in (f"Restoring an Abandoned House: Part {p} 🏚️",
                                           f"Abandoned House → Luxury Home (Part {p}) ✨",
