@@ -631,7 +631,7 @@ def anatomy_for(text: str, used: set) -> Path | None:
     t = text.lower()
     best, hits = None, 0
     for name, spec in (yaml.safe_load(LABELS.read_text()) or {}).items():
-        if name in used or not (LABELS.parent / name).exists():
+        if name in used or not (LABELS.parent / name).exists() or spec.get("approved") is False:
             continue
         n = sum(1 for w in spec.get("words", []) if re.search(rf"\b{re.escape(w.lower())}\b", t))
         if n > hits:

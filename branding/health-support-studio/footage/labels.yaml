@@ -1,5 +1,5 @@
 # Textbook labels for our anatomy clips (youtube_agent/anatomy_labels.py). Positions are fractions of the
-# frame (x, y); "words" bring the clip onto a matching page of a video; "at" is where the text sits, "to" is the part the line points at; times in seconds.
+# frame (x, y); "approved: false" keeps a clip out of videos until the owner OKs it; "words" bring the clip onto a matching page of a video; "at" is where the text sits, "to" is the part the line points at; times in seconds.
 16x9_lungs_breathing.mp4:
   words: [lungs, lung, breathing, breathe, breath, asthma, copd, pneumonia, oxygen, inhaler, smoking, shortness of breath]
   title: "The Lungs"
@@ -28,6 +28,7 @@
   labels:
     - {text: "Nerve cell (neuron)", at: [0.30, 0.78], to: [0.48, 0.52], start: 6.4}
 16x9_uti_bacteria.mp4:
+  approved: false        # waiting for the owner's OK
   words: [uti, utis, urinary, bladder, kidney, kidneys, urine, peeing, cystitis, kidney infection]
   title: "The Urinary Tract"
   labels:
@@ -38,6 +39,7 @@
   until: 6.0
   note: {text: "Bacteria get in and inflame the bladder", start: 6.2}
 16x9_pneumonia_air_sacs.mp4:
+  approved: false        # waiting for the owner's OK
   words: [pneumonia, air sacs, alveoli, chest infection, lung infection]
   title: "Inside the Lungs"
   labels:
@@ -46,10 +48,12 @@
   until: 5.4
   note: {text: "Fluid stops oxygen getting into the blood", start: 5.7}
 16x9_handwashing_germs.mp4:
+  approved: false        # waiting for the owner's OK
   words: [handwashing, wash your hands, washing hands, hand washing, soap, germs]
   title: "Wash Away Germs"
   note: {text: "Scrub with soap for at least 20 seconds", start: 0.8}
 16x9_shingles_nerve.mp4:
+  approved: false        # waiting for the owner's OK
   words: [shingles, chickenpox, zoster, nerve pain, rash]
   title: "Shingles"
   labels:
