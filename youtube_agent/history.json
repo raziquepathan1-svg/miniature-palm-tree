@@ -687,7 +687,7 @@
     "date": "2026-10-28T09:58:52",
     "topic": "Urinary tract infections (UTIs): symptoms and when to see a doctor",
     "requested_topic": "Urinary tract infections (UTIs): symptoms and when to see a doctor",
-    "title": "UTI Symptoms: When to See a Doctor (and Myths to Skip) (Part 1/5)",
+    "title": "UTI Symptoms: When to See a Doctor (Part 1/5)",
     "style": "Top Questions",
     "script_file": "021-uti-questions.yaml",
     "series": "Infections Explained",
@@ -697,6 +697,39 @@
     "youtube_id": "Ww74ahobgq8",
     "short_youtube_id": "5Rs-OsLzFP8",
     "short2_youtube_id": "jKCQQJaeKlQ",
-    "preview": "previews/Ww74ahobgq8.mp4"
+    "preview": "previews/Ww74ahobgq8.mp4",
+    "pin_question": "Have you ever had a UTI? What was the first sign that told you something was wrong?",
+    "packages": [
+      {
+        "title": "UTI Symptoms: When to See a Doctor",
+        "thumbnail_text": "BURNING?",
+        "thumbnail_highlight": "BURNING?"
+      },
+      {
+        "title": "UTI or Kidney Infection? Know the Signs",
+        "thumbnail_text": "DON'T WAIT",
+        "thumbnail_highlight": "WAIT"
+      },
+      {
+        "title": "UTI Myths: Cranberry Juice and More",
+        "thumbnail_text": "CURES IT?",
+        "thumbnail_highlight": "CURES"
+      },
+      {
+        "title": "The UTI Sign Older Adults Show Instead",
+        "thumbnail_text": "SUDDEN CONFUSION?",
+        "thumbnail_highlight": "CONFUSION?"
+      },
+      {
+        "title": "Burning When You Pee? What It Means",
+        "thumbnail_text": "KNOW THE SIGNS",
+        "thumbnail_highlight": "SIGNS"
+      }
+    ],
+    "chosen": {
+      "title": "UTI Symptoms: When to See a Doctor",
+      "thumbnail_text": "BURNING?",
+      "thumbnail_highlight": "BURNING?"
+    }
   }
 ]
