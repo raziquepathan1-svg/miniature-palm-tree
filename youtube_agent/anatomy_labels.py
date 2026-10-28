@@ -23,6 +23,7 @@ from pathlib import Path
 import yaml
 from PIL import Image, ImageDraw
 
+from .editor import ffmpeg_bin
 from .visuals import ensure_fonts, font
 
 FOOTAGE = Path(__file__).resolve().parent.parent / "branding/health-support-studio/footage"
@@ -32,11 +33,13 @@ WHITE, ACCENT, SHADOW = (255, 255, 255, 255), (255, 214, 64, 255), (0, 0, 0, 150
 
 
 def _probe(src: Path) -> tuple[int, int, float]:
-    out = subprocess.run(["ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries",
-                          "stream=width,height:format=duration", "-of", "csv=p=0:s=,", str(src)],
-                         capture_output=True, text=True, check=True).stdout.split()
-    w, h = (int(v) for v in out[0].split(",")[:2])
-    return w, h, float(out[-1].split(",")[0])
+    """Width, height and length of a clip (from ffmpeg's own report: no ffprobe needed)."""
+    import re
+
+    err = subprocess.run([ffmpeg_bin(), "-hide_banner", "-i", str(src)], capture_output=True, text=True).stderr
+    w, h = (int(v) for v in re.search(r"Video:.*?(\d{2,5})x(\d{2,5})", err).groups())
+    hh, mm, ss = re.search(r"Duration: (\d+):(\d+):([\d.]+)", err).groups()
+    return w, h, int(hh) * 3600 + int(mm) * 60 + float(ss)
 
 
 def _ease(x: float) -> float:
@@ -96,7 +99,7 @@ def label_clip(src: Path, spec: dict, out: Path) -> Path:
     """Draws the labels onto a copy of the clip (no sound, like our other footage)."""
     ensure_fonts()
     w, h, dur = _probe(src)
-    cmd = ["ffmpeg", "-loglevel", "error", "-y", "-i", str(src), "-f", "rawvideo", "-pix_fmt", "rgba",
+    cmd = [ffmpeg_bin(), "-loglevel", "error", "-y", "-i", str(src), "-f", "rawvideo", "-pix_fmt", "rgba",
            "-s", f"{w}x{h}", "-r", str(FPS), "-i", "-",
            "-filter_complex", f"[0:v]fps={FPS}[b];[b][1:v]overlay=0:0:shortest=1,format=yuv420p[v]",
            "-map", "[v]", "-an", "-c:v", "libx264", "-crf", "17", "-preset", "slow", str(out)]

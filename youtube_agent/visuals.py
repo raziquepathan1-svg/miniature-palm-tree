@@ -618,6 +618,59 @@ def render_whiteboard_scene(scene, wav: Path, ass: Path | None, duration: float,
     return out
 
 
+def anatomy_for(text: str, used: set) -> Path | None:
+    """One of our labelled anatomy clips (footage/labels.yaml, owner approved Oct 28) whose words match the
+    scene: the one with the most matching words; each clip once per video."""
+    import re
+
+    import yaml
+
+    from .anatomy_labels import LABELS
+    if not LABELS.exists():
+        return None
+    t = text.lower()
+    best, hits = None, 0
+    for name, spec in (yaml.safe_load(LABELS.read_text()) or {}).items():
+        if name in used or not (LABELS.parent / name).exists():
+            continue
+        n = sum(1 for w in spec.get("words", []) if re.search(rf"\b{re.escape(w.lower())}\b", t))
+        if n > hits:
+            best, hits = name, n
+    if best:
+        used.add(best)
+    return LABELS.parent / best if best else None
+
+
+def render_anatomy_scene(clip: Path, wav: Path, ass: Path | None, duration: float, size: tuple[int, int],
+                         out: Path) -> Path:
+    """A full-screen anatomy page: our 3D clip with its textbook labels (anatomy_labels.py), the narration
+    and captions. The 8-second clip is slowed a little (up to 1.6x longer) and then repeats if needed."""
+    import yaml
+
+    from . import anatomy_labels
+
+    W, H = size
+    spec = (yaml.safe_load(anatomy_labels.LABELS.read_text()) or {})[clip.name]
+    labelled = anatomy_labels.label_clip(clip, spec, out.with_name(out.stem + "_labels.mp4"))
+    length = anatomy_labels._probe(labelled)[2]
+    slow = min(1.6, max(1.0, duration / max(length, 0.1)))
+    fade_out = max(0.0, duration - 0.3)
+    vf = (f"[0:v]setpts={slow:.3f}*PTS,scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},"
+          f"fps={FPS},setsar=1,fade=t=in:st=0:d=0.3,fade=t=out:st={fade_out:.2f}:d=0.3")
+    if ass:
+        fonts = f":fontsdir='{_escape_filter_path(FONT_DIR)}'" if FONT_DIR.exists() else ""
+        vf += f",subtitles='{_escape_filter_path(ass)}'{fonts}"
+    vf += ",format=yuv420p[v]"
+    _run([
+        "-y", "-stream_loop", "-1", "-i", str(labelled), "-i", str(wav), "-filter_complex", vf,
+        "-map", "[v]", "-map", "1:a", "-t", f"{duration:.3f}",
+        "-c:v", "libx264", "-preset", "veryfast", "-crf", "21", "-r", str(FPS),
+        "-c:a", "aac", "-b:a", "160k", "-ar", "48000", "-ac", "2",
+        str(out),
+    ])
+    return out
+
+
 def whiteboard_picks(scenes, skip: set, count: int, prefer: set = frozenset()) -> set:
     """Which scenes become whiteboard pages: bullet or warning slides with 2+ points, away from the start and
     end, spread evenly through the video (scenes where the host appears are left alone)."""
@@ -868,6 +921,20 @@ def build_video(plan, video_cfg: dict, voice_cfg: dict, channel_name: str, workd
         if boards:
             print(f"    Whiteboard pages for scenes {sorted(b + 1 for b in boards)}"
                   + (f", drawings: {[d.name for d in drawings.values()]}" if drawings else ""))
+    anatomy: dict = {}  # scene -> labelled anatomy clip (full-screen page, no slide)
+    an_cfg = video_cfg.get("anatomy") or {}
+    if an_cfg.get("enabled") and size[0] > size[1]:
+        used_anatomy: set = set()
+        n = len(plan.scenes)
+        for k, sc in enumerate(plan.scenes):
+            if len(anatomy) >= int(an_cfg.get("per_video", 2)):
+                break
+            if 1 <= k < n - 2 and k not in snips and k not in boards and k != subscribe_at:
+                a = anatomy_for(f"{sc.heading} {' '.join(sc.points)} {sc.narration}", used_anatomy)
+                if a:
+                    anatomy[k] = a
+        if anatomy:
+            print(f"    Anatomy pages: {[(k + 1, a.name) for k, a in sorted(anatomy.items())]}")
     for i, (scene, (wav, duration, captions)) in enumerate(zip(plan.scenes, narrated), 1):
         print(f"    Scene {i}/{len(plan.scenes)}: {scene.layout} - {scene.heading}")
         labels += [None] * (len(parts) - len(labels))
@@ -885,6 +952,14 @@ def build_video(plan, video_cfg: dict, voice_cfg: dict, channel_name: str, workd
                 continue
             except Exception as e:  # never lose the video over a drawing: the normal slide instead
                 print(f"    (Whiteboard page failed, normal slide instead: {e})")
+        if i - 1 in anatomy:
+            try:
+                part = render_anatomy_scene(anatomy[i - 1], wav, ass, duration, size, scenes_dir / f"{i:02d}.mp4")
+                kinds += ["scene"] * (len(parts) - len(kinds)) + ["clip"]  # full screen: no corner presenter
+                parts.append(part)
+                continue
+            except Exception as e:  # never lose the video over it: the normal slide instead
+                print(f"    (Anatomy page failed, normal slide instead: {e})")
         overlay = render_overlay(scene, size, channel_name, scenes_dir / f"{i:02d}_overlay.png",
                                  subscribe=(i - 1 == subscribe_at))
         if room:  # the slide moves left and gets a little smaller, so the corner presenter covers nothing
