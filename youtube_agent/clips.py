@@ -626,7 +626,8 @@ def make_short(group: list[Path], workdir: Path, cfg: dict, rng: random.Random,
     after = frame(group[-1], work / "after.jpg", last=True)
     if series:
         room = series["room"]
-        place = "house" if room in OUTSIDE else (_place(room) if _place(room) != "space" else room)
+        outside = room in OUTSIDE or room.split()[0] in OUTSIDE  # e.g. "exterior makeover"
+        place = "house" if outside else (_place(room) if _place(room) != "space" else room)
     else:
         place = _place(" ".join(p.name for p in group))
     meta = describe(before, after, [p.name for p in group], cfg, rng, place=place if series else None)
