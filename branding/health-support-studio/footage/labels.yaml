@@ -9,3 +9,18 @@
     - {text: "Left lung", at: [0.75, 0.66], to: [0.63, 0.61], start: 2.4}
   until: 3.6
   note: {text: "Air in: oxygen into the blood. Carbon dioxide out.", start: 3.8}
+16x9_heart_beating.mp4:
+  title: "The Heart"
+  labels:
+    - {text: "Aorta (main artery)", at: [0.68, 0.14], to: [0.53, 0.15], start: 0.6}
+    - {text: "Right atrium", at: [0.24, 0.40], to: [0.385, 0.41], start: 1.2}
+    - {text: "Coronary arteries", at: [0.72, 0.46], to: [0.53, 0.58], start: 1.8}
+    - {text: "Right ventricle", at: [0.27, 0.72], to: [0.44, 0.68], start: 2.4}
+    - {text: "Left ventricle", at: [0.73, 0.72], to: [0.60, 0.66], start: 3.0}
+  until: 4.6
+  note: {text: "It beats about 100,000 times a day", start: 4.9}
+16x9_brain_neurons.mp4:
+  title: "The Brain"
+  note: {text: "Billions of nerve cells send signals", start: 1.2}
+  labels:
+    - {text: "Nerve cell (neuron)", at: [0.30, 0.78], to: [0.48, 0.52], start: 6.4}
