@@ -34,6 +34,19 @@ How it fits our 3-clip pipeline (clashes decided with the owner's "go with your 
    Pick the space, the luxury style, palette and mood that will satisfy viewers most, and deliver the prompts.
 
 
+## OWNER'S RULE #1 (Oct 28, 2026): finish one thing completely before starting the next
+
+"First we need to complete one thing till it looks good, after that start another renovation. Don't leave rusty
+or dirty or incomplete things." So:
+- Every area must end fully finished and luxury: no peeling paint, rust, grey/weathered wood, stains, dirt, bare
+  soil, patchy grass, cracks or half-done work anywhere in the final frame.
+- Never move on to the next room/part while the current one has anything unfinished (Part 1 of house 1 went out
+  with peeling siding and a patchy lawn - that must not happen again; it was fixed with an extra exterior part).
+- When reviewing clips, check the LAST frame of the last clip for any leftover dirt, rust, peeling or patches.
+  If anything is incomplete, do NOT post it: give the owner a fix (an extra clip, usually with an end frame)
+  and only post when the whole thing looks perfect.
+- Plan prompts so each job can really finish (one job per clip; end frames for full repaints).
+
 ## FIRST-TIME-RIGHT RULES (owner, Oct 23, 2026: "I only get 50 credits a day, give me the correct prompt every time")
 
 The owner gets about 50 Flow credits a day and 3 clips cost about 45, so a failed clip cannot be re-made the same day.
