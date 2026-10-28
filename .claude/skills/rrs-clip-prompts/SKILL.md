@@ -75,6 +75,10 @@ Every prompt must work on the first try. Before sending prompts, check each one 
    and railings worked). For any clip whose job is a full repaint, use Frames to Video with BOTH a start frame
    and an END frame (a still of the finished painted state, made in Flow Create Image from the start frame, or
    by Claude with an image tool if the owner agrees). Small added objects (shelves, plants, paths) need no end frame.
+   Tricks that did NOT work without an end frame (Oct 28): stronger wording, and "cover the house with sheeting
+   and pull it down to reveal it painted" - the house came out peeling both times. Claude can make the end frame
+   for free from the owner's start frame (OpenCV: repaint the light siding with smooth white keeping board lines,
+   protect windows/trim) - offer that first.
    4 clips of 8 s (one job each) are fine when Flow charges about 12 credits or less per 8 s clip.
 9. When the owner sends clips, review them frame by frame before they go to rrs_inbox; bad clips go to
    rrs_review (it never publishes).
