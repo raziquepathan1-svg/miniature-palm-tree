@@ -692,8 +692,7 @@
     "script_file": "021-uti-questions.yaml",
     "series": "Infections Explained",
     "episode": 1,
-    "planned_publish_at": "2026-10-28T16:00:00Z",
-    "awaiting_approval": true,
+    "awaiting_approval": false,
     "youtube_id": "Ww74ahobgq8",
     "short_youtube_id": "5Rs-OsLzFP8",
     "short2_youtube_id": "jKCQQJaeKlQ",
@@ -730,6 +729,7 @@
       "title": "UTI Symptoms: When to See a Doctor",
       "thumbnail_text": "BURNING?",
       "thumbnail_highlight": "BURNING?"
-    }
+    },
+    "publish_at": "2026-10-28T10:55:18Z"
   }
 ]
