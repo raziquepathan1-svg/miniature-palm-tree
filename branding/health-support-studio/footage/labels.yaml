@@ -1,0 +1,11 @@
+# Textbook labels for our anatomy clips (youtube_agent/anatomy_labels.py). Positions are fractions of the
+# frame (x, y); "at" is where the text sits, "to" is the part the line points at; times in seconds.
+16x9_lungs_breathing.mp4:
+  title: "The Lungs"
+  labels:
+    - {text: "Windpipe (trachea)", at: [0.30, 0.22], to: [0.497, 0.245], start: 0.6}
+    - {text: "Bronchi (air tubes)", at: [0.70, 0.34], to: [0.565, 0.40], start: 1.2}
+    - {text: "Right lung", at: [0.25, 0.62], to: [0.37, 0.57], start: 1.8}
+    - {text: "Left lung", at: [0.75, 0.66], to: [0.63, 0.61], start: 2.4}
+  until: 3.6
+  note: {text: "Air in: oxygen into the blood. Carbon dioxide out.", start: 3.8}
