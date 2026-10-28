@@ -343,5 +343,20 @@
       "20261026-1349-day-25-abandoned-wall-turned-luxury",
       "20261027-1448-abandoned-house-part-1-the-outside"
     ]
+  },
+  {
+    "date": "2026-10-28T11:06:09",
+    "kind": "clip_short",
+    "title": "Abandoned House Part 2: Exterior Makeover 😱",
+    "topic": "Abandoned House Part 2: Exterior Makeover 😱",
+    "style": "AI Clip Makeover",
+    "folder": "20261028-1500-abandoned-house-part-2-exterior-makeover",
+    "series": {
+      "house": 1,
+      "part": 2,
+      "room": "exterior makeover"
+    },
+    "youtube_id": "K4UPFceXhmI",
+    "publish_at": "2026-10-28T17:00:00Z"
   }
 ]
