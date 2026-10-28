@@ -671,6 +671,23 @@ def render_anatomy_scene(clip: Path, wav: Path, ass: Path | None, duration: floa
     return out
 
 
+def vertical_page(wide: Path, ass: Path | None, duration: float, size: tuple[int, int], out: Path) -> Path:
+    """A 16:9 page (anatomy clip or sketch) inside a Short / Reel: full width across the middle, a blurred,
+    darker copy of itself filling the rest of the tall frame, the captions on top."""
+    W, H = size
+    vf = (f"[0:v]split[a][b];[a]scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},"
+          f"boxblur=24:2,eq=brightness=-0.18[bg];[b]scale={W}:-2[fg];[bg][fg]overlay=0:(H-h)/2-{H // 12},"
+          f"fps={FPS},setsar=1")
+    if ass:
+        fonts = f":fontsdir='{_escape_filter_path(FONT_DIR)}'" if FONT_DIR.exists() else ""
+        vf += f",subtitles='{_escape_filter_path(ass)}'{fonts}"
+    vf += ",format=yuv420p[v]"
+    _run(["-y", "-i", str(wide), "-filter_complex", vf, "-map", "[v]", "-map", "0:a", "-t", f"{duration:.3f}",
+          "-c:v", "libx264", "-preset", "veryfast", "-crf", "21", "-r", str(FPS),
+          "-c:a", "aac", "-b:a", "160k", "-ar", "48000", "-ac", "2", str(out)])
+    return out
+
+
 def whiteboard_picks(scenes, skip: set, count: int, prefer: set = frozenset()) -> set:
     """Which scenes become whiteboard pages: bullet or warning slides with 2+ points, away from the start and
     end, spread evenly through the video (scenes where the host appears are left alone)."""
@@ -923,18 +940,31 @@ def build_video(plan, video_cfg: dict, voice_cfg: dict, channel_name: str, workd
                   + (f", drawings: {[d.name for d in drawings.values()]}" if drawings else ""))
     anatomy: dict = {}  # scene -> labelled anatomy clip (full-screen page, no slide)
     an_cfg = video_cfg.get("anatomy") or {}
-    if an_cfg.get("enabled") and size[0] > size[1]:
+    tall = size[1] > size[0]
+    if an_cfg.get("enabled"):
         used_anatomy: set = set()
         n = len(plan.scenes)
+        most = int(an_cfg.get("per_short", 1) if tall else an_cfg.get("per_video", 2))
+        topic = f"{getattr(plan, 'topic', '')} " if tall else ""  # a Short is about one topic throughout
         for k, sc in enumerate(plan.scenes):
-            if len(anatomy) >= int(an_cfg.get("per_video", 2)):
+            if len(anatomy) >= most:
                 break
-            if 1 <= k < n - 2 and k not in snips and k not in boards and k != subscribe_at:
-                a = anatomy_for(f"{sc.heading} {' '.join(sc.points)} {sc.narration}", used_anatomy)
+            last = n - 1 if tall else n - 2  # Shorts: any page between the hook and the ending
+            if 1 <= k < last and k not in snips and k not in boards and k != subscribe_at:
+                a = anatomy_for(f"{topic}{sc.heading} {' '.join(sc.points)} {sc.narration}", used_anatomy)
                 if a:
                     anatomy[k] = a
         if anatomy:
             print(f"    Anatomy pages: {[(k + 1, a.name) for k, a in sorted(anatomy.items())]}")
+    sketch: dict = {}  # Shorts: one sketch page (a drawing + the handwritten points) when no anatomy clip fits
+    if tall and wb_cfg.get("enabled") and wb_cfg.get("in_shorts", True) and not anatomy:
+        for k, sc in enumerate(plan.scenes[1:-1], 1):
+            if sc.points and k not in snips:
+                d = drawing_for(f"{sc.heading} {' '.join(sc.points)} {sc.narration}", set())
+                if d:
+                    sketch[k] = d
+                    print(f"    Sketch page in the Short: scene {k + 1} ({d.name})")
+                    break
     for i, (scene, (wav, duration, captions)) in enumerate(zip(plan.scenes, narrated), 1):
         print(f"    Scene {i}/{len(plan.scenes)}: {scene.layout} - {scene.heading}")
         labels += [None] * (len(parts) - len(labels))
@@ -952,7 +982,25 @@ def build_video(plan, video_cfg: dict, voice_cfg: dict, channel_name: str, workd
                 continue
             except Exception as e:  # never lose the video over a drawing: the normal slide instead
                 print(f"    (Whiteboard page failed, normal slide instead: {e})")
-        if i - 1 in anatomy:
+        if i - 1 in sketch:
+            try:
+                wide = render_whiteboard_scene(scene, wav, None, duration, (1920, 1080),
+                                               scenes_dir / f"{i:02d}_wide.mp4", 0, sketch[i - 1])
+                parts.append(vertical_page(wide, ass, duration, size, scenes_dir / f"{i:02d}.mp4"))
+                kinds += ["scene"] * (len(parts) - 1 - len(kinds)) + ["clip"]
+                continue
+            except Exception as e:
+                print(f"    (Sketch page failed, normal slide instead: {e})")
+        if i - 1 in anatomy and tall:
+            try:
+                wide = render_anatomy_scene(anatomy[i - 1], wav, None, duration, (1920, 1080),
+                                            scenes_dir / f"{i:02d}_wide.mp4")
+                parts.append(vertical_page(wide, ass, duration, size, scenes_dir / f"{i:02d}.mp4"))
+                kinds += ["scene"] * (len(parts) - 1 - len(kinds)) + ["clip"]
+                continue
+            except Exception as e:
+                print(f"    (Anatomy page failed, normal slide instead: {e})")
+        elif i - 1 in anatomy:
             try:
                 part = render_anatomy_scene(anatomy[i - 1], wav, ass, duration, size, scenes_dir / f"{i:02d}.mp4")
                 kinds += ["scene"] * (len(parts) - len(kinds)) + ["clip"]  # full screen: no corner presenter
