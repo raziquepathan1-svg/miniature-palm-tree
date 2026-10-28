@@ -1,7 +1,7 @@
 queue_topic: 'Joint myths: cracking knuckles, popping knees and running'
 style: Myth vs Fact
 sources:
-- 'Harvard Health, Knuckle cracking: annoying and harmful, or just annoying?: https://www.health.harvard.edu/blog/knuckle-cracking-annoying-and-harmful-or-just-annoying-2018051113798'
+- 'Harvard Health, Does cracking knuckles cause arthritis?: https://www.health.harvard.edu/pain/does-cracking-knuckles-cause-arthritis'
 - 'CDC, Arthritis: https://www.cdc.gov/arthritis/index.html'
 - 'NIAMS (NIH), Osteoarthritis: https://www.niams.nih.gov/health-topics/osteoarthritis'
 - 'Mayo Clinic, Osteoarthritis: https://www.mayoclinic.org/diseases-conditions/osteoarthritis/symptoms-causes/syc-20351925'
@@ -73,7 +73,8 @@ plan:
     narration: 'Myth: cracking your knuckles gives you arthritis. Fact: studies that compared people who crack their
       knuckles with people who do not have not found more arthritis in the crackers. One doctor even cracked the
       knuckles of only one hand for about sixty years, and found no arthritis difference between his two hands.
-      It may annoy the people around you, but it is not known to damage your joints.'
+      One older study did find slightly weaker grip and more hand swelling in habitual crackers, so it is not completely
+      harmless, but arthritis is not the risk. Stop if it ever hurts.'
   - layout: bullets
     heading: So What Is That Pop?
     points:
