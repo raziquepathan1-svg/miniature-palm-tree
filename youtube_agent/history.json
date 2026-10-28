@@ -682,5 +682,21 @@
       "thumbnail_highlight": "CRAMP?"
     },
     "publish_at": "2026-10-27T11:02:36Z"
+  },
+  {
+    "date": "2026-10-28T09:58:52",
+    "topic": "Urinary tract infections (UTIs): symptoms and when to see a doctor",
+    "requested_topic": "Urinary tract infections (UTIs): symptoms and when to see a doctor",
+    "title": "UTI Symptoms: When to See a Doctor (and Myths to Skip) (Part 1/5)",
+    "style": "Top Questions",
+    "script_file": "021-uti-questions.yaml",
+    "series": "Infections Explained",
+    "episode": 1,
+    "planned_publish_at": "2026-10-28T16:00:00Z",
+    "awaiting_approval": true,
+    "youtube_id": "Ww74ahobgq8",
+    "short_youtube_id": "5Rs-OsLzFP8",
+    "short2_youtube_id": "jKCQQJaeKlQ",
+    "preview": "previews/Ww74ahobgq8.mp4"
   }
 ]
