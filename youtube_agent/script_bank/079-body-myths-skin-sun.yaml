@@ -1,0 +1,385 @@
+queue_topic: 'Skin and sun myths: cloudy days, base tans and acne'
+style: Myth vs Fact
+sources:
+- 'American Academy of Dermatology, Sunscreen FAQs: https://www.aad.org/public/everyday-care/sun-protection/shade-clothing-sunscreen/sunscreen-faqs'
+- 'CDC, Reducing Risk for Skin Cancer: https://www.cdc.gov/skin-cancer/prevention/index.html'
+- 'Mayo Clinic, Acne: https://www.mayoclinic.org/diseases-conditions/acne/symptoms-causes/syc-20368047'
+- 'Mayo Clinic, Melanoma: https://www.mayoclinic.org/diseases-conditions/melanoma/symptoms-causes/syc-20374884'
+- 'Mayo Clinic, Hair removal: Does shaving make hair grow back thicker?: https://www.mayoclinic.org/healthy-lifestyle/adult-health/expert-answers/hair-removal/faq-20058427'
+plan:
+  title: Do You Need Sunscreen on a Cloudy Day?
+  description: 'Cloudy days, darker skin, base tans, chocolate and shaving: here are the skin myths most people
+    believe, what dermatologists really say, and how to spot the skin changes that need a doctor.
+
+
+    In this video:
+
+    • Sunscreen myths
+
+    • Base tans and tanning beds
+
+    • Checking moles with ABCDE
+
+    • Acne and shaving myths
+
+
+    #SkinCare #SunSafety #HealthMyths #HealthTips #HealthEducation'
+  tags:
+  - sunscreen cloudy day
+  - skin myths
+  - base tan
+  - tanning beds
+  - skin cancer
+  - melanoma ABCDE
+  - sunscreen spf
+  - acne myths
+  - does shaving make hair thicker
+  - health myths
+  - health education
+  thumbnail_text: CLOUDY DAY?
+  thumbnail_highlight: CLOUDY
+  thumbnail_photo_query: cloudy sky beach
+  playlist: Body Myths
+  short_title: 'Do you need sunscreen on a cloudy day? #Shorts'
+  short_caption: 'Do you skip sunscreen when it is cloudy? Here is why you should not. Educational only, not medical
+    advice. #SunSafety #SkinCare #HealthMyths #HealthEducation'
+  scenes:
+  - layout: title
+    heading: Sunscreen on Cloudy Days?
+    points:
+    - Skin myths vs facts
+    footage_query: cloudy sky beach
+    narration: It is cloudy, so you skip the sunscreen. You have darker skin, so you think you do not need it. You
+      get a base tan before your holiday to protect yourself. These are some of the most common skin myths, and
+      some of them raise your risk of skin cancer. Let us go through them, along with a few everyday ones about
+      acne and shaving.
+  - layout: bullets
+    heading: Your Skin's Job
+    points:
+    - Your largest organ
+    - Keeps germs out
+    - Holds water in
+    - Controls temperature
+    footage_query: hands skin close up
+    narration: Your skin is your largest organ. It keeps germs out, holds water in, helps control your temperature
+      through sweat, and lets you feel touch, heat and pain. Taking care of it is not just about looks. It protects
+      your whole body every day.
+  - layout: bullets
+    heading: What UV Light Does
+    points:
+    - 'Two types: UVA and UVB'
+    - UVB causes sunburn
+    - UVA ages skin
+    - Both raise cancer risk
+    footage_query: sun rays sky
+    narration: Sunlight contains ultraviolet, or UV, rays that you cannot see or feel. UVB rays mainly cause sunburn.
+      UVA rays go deeper and cause wrinkles and age spots. Both damage the DNA in your skin cells, and over time
+      that damage raises the risk of skin cancer. That is why sunscreen should be labelled broad spectrum, which
+      means it blocks both.
+  - layout: big_number
+    heading: Skin Cancer Is Common
+    points:
+    - Most common cancer
+    - In the United States
+    footage_query: doctor checking mole
+    narration: Skin cancer is the most common cancer in the United States. The good news is that many cases can
+      be prevented by protecting your skin from UV rays, and most skin cancers can be treated successfully when
+      they are found early. That makes the myths worth clearing up.
+  - layout: myth_fact
+    heading: Cloudy Day Sunscreen
+    points:
+    - Clouds block the sun's UV rays
+    - Most UV gets through clouds
+    footage_query: overcast day park
+    narration: 'Myth: you do not need sunscreen on a cloudy day. Fact: clouds block some light and heat, but much
+      of the UV radiation passes straight through them. Many people get their worst sunburns on cool, cloudy days,
+      because they do not feel the sun and stay out longer. Check the UV index in your weather app instead of looking
+      at the sky.'
+  - layout: myth_fact
+    heading: Dark Skin Needs No Sunscreen
+    points:
+    - Darker skin cannot get skin cancer
+    - Anyone can get skin cancer
+    footage_query: diverse group friends outdoors
+    narration: 'Myth: people with darker skin do not need sunscreen and cannot get skin cancer. Fact: darker skin
+      has more natural protection, but it can still burn, and anyone can get skin cancer. In people with darker
+      skin, skin cancer is often found later, when it is harder to treat, and it can appear in places that get little
+      sun, like the palms, the soles of the feet and under the nails.'
+  - layout: myth_fact
+    heading: A Base Tan Protects You
+    points:
+    - A base tan prevents sunburn
+    - A tan is a sign of damage
+    footage_query: person sunbathing beach
+    narration: 'Myth: getting a base tan before a holiday protects your skin. Fact: a tan is your skin''s response
+      to injury from UV rays. It offers only very weak protection, much less than sunscreen, and getting it means
+      you have already damaged your skin. There is no such thing as a safe tan from the sun or from a tanning bed.'
+  - layout: myth_fact
+    heading: Tanning Beds Are Safer
+    points:
+    - Tanning beds are a safe tan
+    - They raise skin cancer risk
+    footage_query: tanning salon bed
+    narration: 'Myth: tanning beds are a safer way to tan than the sun. Fact: tanning beds give off strong UV rays,
+      and using them raises the risk of melanoma, the most dangerous skin cancer, especially when people start young.
+      Health experts advise not using them at all. Self tanning lotion is a safer way to get a tanned look.'
+  - layout: bullets
+    heading: Choosing a Sunscreen
+    points:
+    - Broad spectrum
+    - SPF 30 or higher
+    - Water resistant
+    - One you will actually use
+    footage_query: sunscreen bottles shelf
+    narration: Choosing a sunscreen does not have to be hard. The American Academy of Dermatology recommends broad
+      spectrum sunscreen with SPF thirty or higher that is water resistant. Lotion, cream, stick or spray, the best
+      sunscreen is the one you will actually use every day.
+  - layout: bullets
+    heading: Using It Right
+    points:
+    - Apply 15 minutes before
+    - About a shot glass for the body
+    - Reapply every 2 hours
+    - After swimming or sweating
+    footage_query: applying sunscreen arm
+    narration: Most people use too little. Apply sunscreen about fifteen minutes before going out, using about a
+      shot glass full for your whole body. Do not forget your ears, neck, the tops of your feet and your scalp if
+      your hair is thin. Reapply at least every two hours, and right after swimming or heavy sweating.
+  - layout: myth_fact
+    heading: High SPF Means All Day
+    points:
+    - SPF 50 lasts all day
+    - All sunscreen needs reapplying
+    footage_query: beach umbrella family
+    narration: 'Myth: if you use a very high SPF, you can put it on once in the morning and be protected all day.
+      Fact: every sunscreen wears off with time, sweat, water and towelling. A higher SPF gives a bit more protection,
+      but it still needs to be reapplied about every two hours outdoors.'
+  - layout: bullets
+    heading: More Than Sunscreen
+    points:
+    - Shade from 10 to 4
+    - Wide brim hat
+    - Long sleeves
+    - UV blocking sunglasses
+    footage_query: woman wide brim hat
+    narration: Sunscreen is only one part of sun protection. Seek shade, especially between ten in the morning and
+      four in the afternoon, when UV rays are strongest. Wear a wide brimmed hat, clothing that covers your arms
+      and legs, and sunglasses that block UV rays. Clothing is often the most reliable protection of all.
+  - layout: myth_fact
+    heading: Sunscreen Blocks Vitamin D
+    points:
+    - Sunscreen causes low vitamin D
+    - Food and supplements can cover it
+    footage_query: salmon dinner plate
+    narration: 'Myth: using sunscreen will give you a vitamin D deficiency. Fact: studies have not shown that everyday
+      sunscreen use causes low vitamin D in most people. You can get vitamin D safely from foods like fatty fish,
+      fortified milk and cereals, and from supplements if your doctor recommends them, without risking sunburn.'
+  - layout: bullets
+    heading: Babies and the Sun
+    points:
+    - 'Under 6 months: keep in shade'
+    - Hats and light clothing
+    - Sunscreen from 6 months
+    - Avoid midday sun
+    footage_query: baby stroller shade
+    narration: Babies need extra care. Keep infants under six months out of direct sun, in the shade, with a hat
+      and light clothing that covers their arms and legs. Ask your pediatrician about sunscreen for small areas.
+      From six months, use a broad spectrum sunscreen made for children, and avoid the midday sun.
+  - layout: warning
+    heading: 'Check Your Moles: ABCDE'
+    points:
+    - Asymmetry or uneven border
+    - Color varies
+    - Diameter over a pencil eraser
+    - 'Evolving: changing'
+    footage_query: dermatologist checking mole
+    narration: Check your skin once a month for the ABCDE signs of melanoma. A is asymmetry, one half unlike the
+      other. B is an uneven border. C is a mix of colors. D is a diameter bigger than a pencil eraser. E is evolving,
+      a spot that changes in size, shape or color. Show any of these to a doctor.
+  - layout: warning
+    heading: Other Skin Warning Signs
+    points:
+    - A sore that will not heal
+    - A new growing spot
+    - A spot that bleeds
+    - Itching or crusting spot
+    footage_query: skin close up arm
+    narration: Other signs to get checked include a sore that does not heal within a few weeks, a new spot that
+      keeps growing, a spot that bleeds, itches or crusts, and the ugly duckling, a mole that looks different from
+      all your others. Early checks make treatment much simpler.
+  - layout: myth_fact
+    heading: Chocolate Causes Acne
+    points:
+    - Chocolate gives you pimples
+    - Acne has many causes
+    footage_query: chocolate bar
+    narration: 'Myth: chocolate and greasy food cause acne. Fact: acne is mainly caused by oil, dead skin cells
+      and bacteria clogging the pores, along with hormones and genes. Research has not shown that chocolate alone
+      causes acne. Some studies suggest diets high in sugar and refined carbohydrates may make acne worse for some
+      people.'
+  - layout: myth_fact
+    heading: Dirty Skin Causes Acne
+    points:
+    - Acne means you do not wash
+    - Scrubbing hard makes it worse
+    footage_query: washing face sink
+    narration: 'Myth: acne happens because you do not wash your face enough. Fact: acne is not caused by dirt. Scrubbing
+      hard and washing too often can irritate the skin and make acne worse. Dermatologists suggest washing gently
+      twice a day and after sweating, with a mild cleanser and lukewarm water.'
+  - layout: myth_fact
+    heading: Popping Pimples
+    points:
+    - Popping pimples clears them faster
+    - It can cause scars and infection
+    footage_query: woman mirror skin
+    narration: 'Myth: popping a pimple helps it heal faster. Fact: squeezing pushes bacteria and oil deeper into
+      the skin, which can cause more swelling, infection and permanent scars. It is better to leave it alone or
+      use an acne treatment. For deep or painful acne, a dermatologist can help.'
+  - layout: myth_fact
+    heading: Shaving and Hair Growth
+    points:
+    - Shaving makes hair grow back thicker
+    - It does not change hair
+    footage_query: man shaving mirror
+    narration: 'Myth: shaving makes hair grow back thicker, darker and faster. Fact: it does not. Shaving cuts the
+      hair at the surface and leaves a blunt tip, which can feel coarse as it grows out, and new hair has not been
+      lightened by the sun yet. But shaving does not change the thickness, color or speed of hair growth.'
+  - layout: myth_fact
+    heading: Lots of Water Clears Skin
+    points:
+    - Drinking more water clears your skin
+    - It does not cure skin problems
+    footage_query: glass of water
+    narration: 'Myth: drinking lots of water will clear up your skin. Fact: staying hydrated is good for your whole
+      body, but drinking extra water has not been shown to cure acne or remove wrinkles. Dry skin usually improves
+      more with a good moisturizer and lukewarm, not hot, showers.'
+  - layout: bullets
+    heading: Everyday Skin Care
+    points:
+    - Gentle cleanser
+    - Moisturize after bathing
+    - Daily sunscreen
+    - Do not smoke
+    footage_query: moisturizer cream hands
+    narration: Everyday skin care can be simple. Use a gentle cleanser, moisturize right after bathing while your
+      skin is still damp, use sunscreen on exposed skin every day, and do not smoke, because smoking speeds up skin
+      aging and slows healing. More products are not always better.
+  - layout: warning
+    heading: See a Doctor for Skin
+    points:
+    - Rash with fever
+    - Spreading red, warm skin
+    - Blistering, peeling rash
+    - Severe sunburn with chills
+    footage_query: doctor examining rash
+    narration: See a doctor quickly for a rash with fever, red, warm, painful skin that is spreading, which can
+      be a skin infection, a widespread blistering or peeling rash, or a severe sunburn with blisters, fever, chills
+      or confusion. Get emergency help for a rash with trouble breathing or a swollen face.
+  - layout: bullets
+    heading: Sunburn Care
+    points:
+    - Cool shower or compress
+    - Moisturizer with aloe
+    - Drink extra water
+    - Do not pop blisters
+    footage_query: aloe vera plant
+    narration: If you do get sunburned, cool the skin with a cool shower or damp cloth, apply a gentle moisturizer
+      such as one with aloe vera, drink extra water, and leave any blisters alone so they can heal. A pain reliever
+      can help if it is safe for you. Then protect the skin from more sun while it heals.
+  - layout: myth_fact
+    heading: Car Windows Block UV
+    points:
+    - You are safe from UV in a car
+    - Side windows let UVA through
+    footage_query: driving car sunny
+    narration: 'Myth: you cannot get sun damage inside a car. Fact: windshields block most UV rays, but side and
+      rear windows often let UVA rays through. People who drive a lot often have more sun damage on the side of
+      the face and arm next to the window. Sunscreen and UV protective window film help.'
+  - layout: myth_fact
+    heading: Old Sunscreen Still Works
+    points:
+    - Last year's sunscreen is fine
+    - It can lose strength
+    footage_query: sunscreen bottle beach bag
+    narration: 'Myth: sunscreen lasts forever, so last year''s bottle is fine. Fact: sunscreen can lose strength
+      over time, especially if it has been left in a hot car or in the sun. Check the expiration date, and throw
+      it out if it has changed color or texture. If you use enough, a bottle should not last a whole year anyway.'
+  - layout: bullets
+    heading: Easy to Miss Spots
+    points:
+    - Ears and back of neck
+    - Lips, with SPF balm
+    - Tops of your feet
+    - The part in your hair
+    footage_query: applying sunscreen face
+    narration: 'Some spots get missed almost every time: the ears and the back of the neck, your lips, which need
+      a lip balm with SPF, the tops of your feet in sandals, and the part in your hair or a thinning scalp. Skin
+      cancers often appear in exactly these places, so give them extra attention.'
+  - layout: bullets
+    heading: Your Monthly Skin Check
+    points:
+    - Use a full length mirror
+    - Hand mirror for your back
+    - Scalp, palms, soles, nails
+    - Photos to track changes
+    footage_query: woman looking mirror arm
+    narration: Once a month, check your skin in a well lit room. Use a full length mirror and a hand mirror for
+      your back, or ask a partner to help. Look at your scalp, palms, the soles of your feet, between your toes
+      and under your nails. Taking photos of moles makes it easier to notice changes.
+  - layout: bullets
+    heading: Questions for Your Doctor
+    points:
+    - Should I have a skin check?
+    - Is this mole normal?
+    - What treats my acne?
+    - Which sunscreen suits my skin?
+    footage_query: patient dermatologist
+    narration: 'Good questions for your doctor or dermatologist: should I have a regular skin check given my skin
+      type and family history, is this mole normal, what treatment would work for my acne, and which sunscreen suits
+      my skin. Take photos of spots that worry you to track changes.'
+  - layout: bullets
+    heading: Quick Recap
+    points:
+    - UV gets through clouds
+    - Every skin tone needs care
+    - No safe tan
+    - 'Check moles: ABCDE'
+    footage_query: notebook writing
+    narration: Quick recap. UV rays pass through clouds, so wear sunscreen on cloudy days. Every skin tone can burn
+      and get skin cancer. There is no safe tan and no safe tanning bed. Reapply sunscreen every two hours, check
+      your moles with ABCDE, and remember that chocolate and shaving myths are just myths.
+  - layout: outro
+    heading: Remember
+    points:
+    - Sunscreen every day
+    - No safe tan
+    - 'Changing mole: get checked'
+    footage_query: friends beach umbrella
+    narration: 'Remember: sunscreen every day, even when it is cloudy, there is no safe tan, and get any changing
+      mole checked. Share this with a friend who is planning a beach holiday. This video is for education only,
+      not medical advice.'
+  short_scenes:
+  - layout: title
+    heading: Sunscreen on a Cloudy Day?
+    points:
+    - Myth or fact?
+    footage_query: cloudy sky beach
+    narration: Do you need sunscreen on a cloudy day?
+  - layout: bullets
+    heading: What Dermatologists Say
+    points:
+    - Most UV passes through clouds
+    - You feel cool and stay out
+    - Check the UV index
+    footage_query: overcast day park
+    narration: Yes. Clouds block some light and heat, but much of the sun's UV radiation passes straight through
+      them. Many people get their worst sunburns on cool, cloudy days, because they do not feel the sun and stay
+      out longer. Check the UV index, and use broad spectrum sunscreen, SPF thirty or higher.
+  - layout: outro
+    heading: Full Video
+    points:
+    - On YouTube
+    footage_query: friends beach umbrella
+    narration: Find out why a base tan does not protect you in our full video, on the Health Support Studio YouTube
+      channel.
+  topic: 'Skin and sun myths: cloudy days, base tans and acne'

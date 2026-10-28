@@ -1,0 +1,389 @@
+queue_topic: 'Water myths: 8 glasses a day, coffee and thirst'
+style: Myth vs Fact
+sources:
+- 'Mayo Clinic, Water: How much should you drink every day?: https://www.mayoclinic.org/healthy-lifestyle/nutrition-and-healthy-eating/in-depth/water/art-20044256'
+- 'Mayo Clinic, Dehydration: https://www.mayoclinic.org/diseases-conditions/dehydration/symptoms-causes/syc-20354086'
+- 'Mayo Clinic, Hyponatremia: https://www.mayoclinic.org/diseases-conditions/hyponatremia/symptoms-causes/syc-20373711'
+- 'CDC, About Water and Healthier Drinks: https://www.cdc.gov/healthy-weight-growth/water-healthy-drinks/index.html'
+plan:
+  title: Do You Really Need 8 Glasses of Water a Day?
+  description: 'Eight glasses a day, coffee dehydrates you, thirst means it is too late: here are the water myths
+    and what the experts really say about how much to drink, plus the signs of dehydration and when too much water
+    is dangerous.
+
+
+    In this video:
+
+    • How much you really need
+
+    • Coffee, tea and food
+
+    • Signs of dehydration
+
+    • When too much water is harmful
+
+
+    #Hydration #HealthMyths #HealthTips #HealthEducation #Wellness'
+  tags:
+  - how much water
+  - 8 glasses of water
+  - hydration
+  - dehydration signs
+  - does coffee dehydrate
+  - urine color
+  - hyponatremia
+  - water myths
+  - drinking water
+  - health myths
+  - health education
+  thumbnail_text: TOO MUCH?
+  thumbnail_highlight: MUCH?
+  thumbnail_photo_query: glass of water table
+  playlist: Body Myths
+  short_title: 'Do you really need 8 glasses of water? #Shorts'
+  short_caption: 'How much water do you drink a day? Here is what experts really say. Educational only, not medical
+    advice. #Hydration #HealthMyths #HealthTips #HealthEducation'
+  scenes:
+  - layout: title
+    heading: Do You Need 8 Glasses?
+    points:
+    - Water myths vs facts
+    footage_query: glass of water table
+    narration: Eight glasses of water a day. Coffee dehydrates you. If you feel thirsty, it is already too late.
+      You have probably heard all of these. Some are true, some are half true, and one of them can even be dangerous
+      if you take it too far. Let us go through the water myths one by one, and find out how much you really need.
+  - layout: bullets
+    heading: Why Water Matters
+    points:
+    - Keeps your temperature steady
+    - Cushions joints
+    - Carries nutrients
+    - Helps kidneys clear waste
+    footage_query: woman drinking water
+    narration: First, why water matters. Your body is more than half water. It keeps your temperature steady through
+      sweat, cushions your joints, carries nutrients to your cells, and helps your kidneys clear waste in your urine.
+      You lose water all day long, through breathing, sweating and going to the bathroom, so it needs to be replaced.
+  - layout: myth_fact
+    heading: Eight Glasses a Day
+    points:
+    - Everyone needs exactly 8 glasses
+    - Needs vary from person to person
+    footage_query: glasses of water row
+    narration: 'Myth: everyone needs exactly eight glasses of water a day. Fact: there is no single number that
+      fits everyone. How much you need depends on your body size, how active you are, the weather, and your health.
+      Eight glasses is an easy reminder, not a rule backed by research, and many people get enough water from other
+      drinks and food too.'
+  - layout: big_number
+    heading: A Useful Guide
+    points:
+    - About 15 cups
+    - Total fluids a day for men
+    footage_query: water bottle gym
+    narration: Here is a more useful guide. The US National Academies suggest that men need about fifteen and a
+      half cups of fluid a day, and women about eleven and a half cups. That sounds like a lot, but it is total
+      fluid, from all drinks and from food, not just plain water.
+  - layout: bullets
+    heading: Food Counts Too
+    points:
+    - About a fifth from food
+    - Fruits and vegetables
+    - Soups and yogurt
+    - Watermelon, cucumber, oranges
+    footage_query: fresh fruit vegetables
+    narration: Food counts too. On average, about a fifth of the water we take in comes from food. Fruits and vegetables
+      are mostly water, especially watermelon, cucumber, oranges, lettuce and tomatoes. Soups, yogurt and milk add
+      more. So if you eat plenty of fruit and vegetables, you are drinking more than you think.
+  - layout: myth_fact
+    heading: Coffee Dehydrates You
+    points:
+    - Coffee and tea dry you out
+    - They still count toward fluids
+    footage_query: coffee cup morning
+    narration: 'Myth: coffee and tea dehydrate you, so they do not count. Fact: caffeine can make you pee a little
+      more, but for people who drink them regularly, coffee and tea still add to your daily fluids overall. The
+      bigger concern is too much caffeine, which can cause jitters and poor sleep, or a lot of sugar and cream added
+      to the cup.'
+  - layout: myth_fact
+    heading: Thirst Means Too Late
+    points:
+    - Thirst means you are dehydrated
+    - Thirst is a useful early signal
+    footage_query: man drinking water bottle outdoors
+    narration: 'Myth: by the time you feel thirsty, you are already dehydrated. Fact: for most healthy adults, thirst
+      is a useful early signal, and drinking when you are thirsty and with meals is usually enough. The exceptions
+      matter, though: older adults, people exercising hard in the heat, and people who are sick may need to drink
+      before they feel thirsty.'
+  - layout: bullets
+    heading: Check Your Urine Color
+    points:
+    - 'Pale yellow: usually fine'
+    - 'Dark yellow: drink more'
+    - Few trips to the bathroom
+    - Some vitamins change color
+    footage_query: glass of lemonade light
+    narration: A simple check is the color of your urine. Pale yellow, like lemonade, usually means you are drinking
+      enough. Dark yellow, like apple juice, and going to the bathroom only a few times a day can mean you need
+      more fluid. Some vitamins and medicines can change the color, so it is a guide, not a test.
+  - layout: warning
+    heading: Signs of Dehydration
+    points:
+    - Very thirsty, dry mouth
+    - Dark urine, little of it
+    - Dizzy or tired
+    - Headache
+    footage_query: tired woman headache
+    narration: Signs of dehydration include feeling very thirsty, a dry mouth, dark urine or very little of it,
+      feeling tired, dizzy or light headed, and a headache. Mild dehydration usually gets better quickly by drinking
+      water or an oral rehydration drink and resting somewhere cool.
+  - layout: warning
+    heading: Get Help Now
+    points:
+    - Confusion
+    - Fainting
+    - No urine for 8 hours
+    - Rapid heartbeat
+    footage_query: ambulance street
+    narration: Severe dehydration is an emergency. Call 911 or get urgent care if someone is confused, faints, has
+      a very fast heartbeat, or has not peed in about eight hours, especially an older adult or a young child. Severe
+      vomiting or diarrhea that stops someone keeping fluids down also needs medical care.
+  - layout: bullets
+    heading: Who Needs Extra Care
+    points:
+    - Older adults
+    - Babies and young children
+    - People with diarrhea
+    - Outdoor workers in heat
+    footage_query: grandmother and child
+    narration: Some people need extra care. Older adults feel less thirsty and may drink too little. Babies and
+      young children lose fluid fast when they have fever, vomiting or diarrhea. People who work or exercise outdoors
+      in the heat sweat out a lot of water. For these groups, offer drinks often, without waiting for thirst.
+  - layout: myth_fact
+    heading: More Water Is Always Better
+    points:
+    - You can never drink too much
+    - Too much can be dangerous
+    footage_query: large water bottles
+    narration: 'Myth: the more water you drink, the healthier you are. Fact: drinking far more than your body needs,
+      in a short time, can dilute the salt in your blood. This is called hyponatremia. It is rare, but it can cause
+      headache, nausea, confusion and even seizures. It has happened in endurance races and in water drinking contests.'
+  - layout: bullets
+    heading: Balance During Long Exercise
+    points:
+    - Drink to thirst
+    - Do not force extra water
+    - Sports drinks for long events
+    - Weigh before and after
+    footage_query: marathon runners water station
+    narration: During long exercise, like a marathon, drink to thirst rather than forcing down extra water. For
+      events lasting more than about an hour, especially in the heat, a sports drink with salt can help replace
+      what you sweat out. Some athletes weigh themselves before and after training to learn how much fluid they
+      really lose.
+  - layout: myth_fact
+    heading: Water Flushes Toxins
+    points:
+    - Extra water detoxes your body
+    - Your kidneys and liver do that
+    footage_query: kidney model
+    narration: 'Myth: drinking lots of extra water flushes toxins out of your body. Fact: your kidneys and liver
+      do that job every day. They need enough water to work well, but extra water beyond your needs does not make
+      them clean better. It mostly means more trips to the bathroom.'
+  - layout: myth_fact
+    heading: Water and Weight Loss
+    points:
+    - Water melts fat
+    - It can help you eat less
+    footage_query: salad and water glass
+    narration: 'Myth: drinking water melts fat. Fact: water itself does not burn fat. But choosing water instead
+      of sugary drinks cuts a lot of calories, and some studies suggest drinking a glass before a meal can help
+      some people feel full sooner. So water can help with weight, mostly by replacing other drinks.'
+  - layout: big_number
+    heading: Sugary Drinks Add Up
+    points:
+    - About 240 calories
+    - In one 20 ounce soda
+    footage_query: soda bottles shelf
+    narration: Sugary drinks add up fast. A single twenty ounce bottle of regular soda has about two hundred and
+      forty calories, almost all from sugar. Swapping one soda a day for water saves a lot of sugar over a year,
+      and it is one of the easiest changes you can make.
+  - layout: bullets
+    heading: Easy Ways to Drink More
+    points:
+    - Keep a bottle with you
+    - Water with every meal
+    - Add lemon or cucumber
+    - Sparkling water counts
+    footage_query: reusable water bottle desk
+    narration: If you find it hard to drink enough, keep a refillable bottle with you, have a glass of water with
+      every meal, and add a slice of lemon, cucumber or a few berries for flavor. Plain sparkling water counts too.
+      Setting a gentle reminder on your phone can help on busy days.
+  - layout: myth_fact
+    heading: Water Prevents Headaches
+    points:
+    - Every headache is dehydration
+    - Many have other causes
+    footage_query: woman headache desk
+    narration: 'Myth: every headache means you are dehydrated. Fact: dehydration can cause headaches, and a glass
+      of water is a sensible first step. But many headaches have other causes, like tension, poor sleep, skipped
+      meals or migraine. A sudden, severe headache, the worst of your life, needs emergency care right away.'
+  - layout: bullets
+    heading: Water and Your Kidneys
+    points:
+    - Helps prevent kidney stones
+    - Helps prevent bladder infections
+    - Follow your doctor if limited
+    - Pale urine is the goal
+    footage_query: kidney stones illustration
+    narration: Enough fluid helps protect your kidneys and bladder. It lowers the risk of kidney stones, because
+      minerals are less likely to clump together in dilute urine, and it helps flush bacteria that cause bladder
+      infections. If you have had kidney stones, your doctor may give you a daily fluid target.
+  - layout: warning
+    heading: When to Limit Fluids
+    points:
+    - Heart failure
+    - Advanced kidney disease
+    - Some liver disease
+    - Follow your doctor's limit
+    footage_query: doctor talking older patient
+    narration: Not everyone should drink more. People with heart failure, advanced kidney disease or some liver
+      diseases may be told to limit how much fluid they drink, because extra fluid can build up in the body. If
+      your doctor has given you a fluid limit, follow it, and ask before changing it.
+  - layout: bullets
+    heading: Kids and Water
+    points:
+    - Water is the best drink
+    - Milk for young children
+    - Limit juice
+    - Skip sugary drinks
+    footage_query: child drinking water
+    narration: For children, water is the best everyday drink, along with milk for young children. Juice should
+      be limited, and sugary drinks and sports drinks are not needed for everyday play. Offer water often, especially
+      on hot days and during sports, because children often forget to drink when they are busy.
+  - layout: bullets
+    heading: Hot Weather Tips
+    points:
+    - Drink before you go out
+    - Carry water
+    - Rest in the shade
+    - Watch for heat illness
+    footage_query: sunny day park bench
+    narration: In hot weather, drink a glass of water before you go out, carry water with you, take breaks in the
+      shade, and wear light, loose clothing. Heavy sweating, cramps, dizziness or nausea can be signs of heat exhaustion.
+      Move somewhere cool and sip water. Confusion or a very high body temperature is an emergency.
+  - layout: myth_fact
+    heading: Bottled Is Healthier
+    points:
+    - Bottled water is always healthier
+    - Tap water is safe in most places
+    footage_query: kitchen tap water glass
+    narration: 'Myth: bottled water is always healthier than tap water. Fact: in most places in the US, tap water
+      is tested and safe to drink, and it costs far less. If you have a private well or a local water warning, follow
+      your local health department''s advice. A filter is fine if you prefer the taste.'
+  - layout: bullets
+    heading: Older Adults and Water
+    points:
+    - Feel less thirsty
+    - Some medicines remove water
+    - Drink at set times
+    - Watch for confusion
+    footage_query: older man drinking tea
+    narration: Older adults are at higher risk of dehydration. Thirst gets weaker with age, some medicines, like
+      water pills, make you lose more fluid, and some people drink less to avoid bathroom trips. Drinking at set
+      times, like with every meal and medicine, helps. New confusion can be a sign of dehydration.
+  - layout: myth_fact
+    heading: Clear Urine Is Best
+    points:
+    - Crystal clear urine is ideal
+    - Pale yellow is the goal
+    footage_query: glass of clear water light
+    narration: 'Myth: the clearer your urine, the healthier you are. Fact: pale yellow is the goal. Urine that is
+      completely clear all day can simply mean you are drinking more than you need. That is usually harmless for
+      healthy people, but there is no extra benefit, and it means more trips to the bathroom, including at night.'
+  - layout: myth_fact
+    heading: Sports Drinks for Everyone
+    points:
+    - Sports drinks beat water for exercise
+    - Water is enough for most workouts
+    footage_query: sports drink bottles
+    narration: 'Myth: you need a sports drink every time you exercise. Fact: for most workouts under about an hour,
+      water is all you need. Sports drinks add sugar and salt, which help during long, hard exercise in the heat,
+      but for a walk, a gym class or kids playing, they mostly add extra calories.'
+  - layout: bullets
+    heading: When You Are Sick
+    points:
+    - Small sips often
+    - Oral rehydration solution
+    - Avoid very sugary drinks
+    - Call if you cannot keep fluids down
+    footage_query: sick person bed tea
+    narration: When you are sick with fever, vomiting or diarrhea, you lose fluid faster. Take small sips often
+      rather than big gulps. An oral rehydration solution from the pharmacy replaces both water and salts. Very
+      sugary drinks can make diarrhea worse. Call a doctor if you cannot keep fluids down for a day, or sooner for
+      babies and older adults.
+  - layout: bullets
+    heading: Pregnancy and Breastfeeding
+    points:
+    - Fluid needs go up
+    - Drink with every meal
+    - A glass when you breastfeed
+    - Ask your provider
+    footage_query: pregnant woman water
+    narration: During pregnancy and breastfeeding, your fluid needs go up, because your body is supporting your
+      baby too. A simple habit is a drink with every meal and a glass of water each time you breastfeed. Dark urine,
+      constipation or feeling dizzy can be signs you need more. Ask your provider about the right amount for you.
+  - layout: bullets
+    heading: Questions for Your Doctor
+    points:
+    - How much should I drink?
+    - Do my medicines affect this?
+    - Is my urine color normal?
+    - Do I need a fluid limit?
+    footage_query: patient doctor appointment
+    narration: 'Good questions to ask your doctor are: how much should I drink each day with my health conditions,
+      do any of my medicines affect my fluid needs, is my urine color normal for me, and do I need a fluid limit.
+      Bring a list of everything you take, including supplements.'
+  - layout: bullets
+    heading: Quick Recap
+    points:
+    - No magic 8 glasses
+    - Coffee and food count
+    - Pale yellow urine is good
+    - Too much can be harmful
+    footage_query: notebook writing
+    narration: Quick recap. There is no magic eight glasses. Total fluid from drinks and food counts, including
+      coffee and tea. Thirst is a good guide for most healthy adults, and pale yellow urine is a good sign. Older
+      adults and children need reminders, and far too much water can be dangerous.
+  - layout: outro
+    heading: Remember
+    points:
+    - Drink to thirst
+    - More when it is hot
+    - 'Older adults: drink at set times'
+    footage_query: friends drinking water outdoors
+    narration: 'Remember: drink to thirst, drink more when it is hot or you are active, and help older adults drink
+      at set times. Share this with someone who carries a giant water bottle everywhere. This video is for education
+      only, not medical advice.'
+  short_scenes:
+  - layout: title
+    heading: Do You Need 8 Glasses?
+    points:
+    - Myth or fact?
+    footage_query: glass of water table
+    narration: Do you really need eight glasses of water a day?
+  - layout: bullets
+    heading: What Really Counts
+    points:
+    - No single number fits all
+    - Coffee, tea and food count
+    - Pale yellow urine is good
+    footage_query: fresh fruit vegetables
+    narration: No. Eight glasses is an easy reminder, not a rule from research. Your needs depend on your size,
+      activity and the weather. Coffee, tea, milk and water rich foods like fruit all count too. For most healthy
+      adults, drinking when thirsty and with meals is enough. Pale yellow urine is a good sign.
+  - layout: outro
+    heading: Full Video
+    points:
+    - On YouTube
+    footage_query: friends drinking water outdoors
+    narration: Find out when too much water is dangerous in our full video, on the Health Support Studio YouTube
+      channel.
+  topic: 'Water myths: 8 glasses a day, coffee and thirst'

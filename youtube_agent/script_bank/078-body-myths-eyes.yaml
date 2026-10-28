@@ -1,0 +1,396 @@
+queue_topic: 'Eye myths: reading in the dark, screens and carrots'
+style: Myth vs Fact
+sources:
+- 'American Academy of Ophthalmology, Computers, Digital Devices and Eye Strain: https://www.aao.org/eye-health/tips-prevention/computer-usage'
+- 'American Academy of Ophthalmology, Should You Be Worried About Blue Light?: https://www.aao.org/eye-health/tips-prevention/should-you-be-worried-about-blue-light'
+- 'National Eye Institute (NIH), Keep Your Eyes Healthy: https://www.nei.nih.gov/learn-about-eye-health/healthy-vision/keep-your-eyes-healthy'
+- 'Mayo Clinic, Eyestrain: https://www.mayoclinic.org/diseases-conditions/eyestrain/symptoms-causes/syc-20372397'
+- 'Mayo Clinic, Nearsightedness: https://www.mayoclinic.org/diseases-conditions/nearsightedness/symptoms-causes/syc-20375556'
+plan:
+  title: Does Reading in the Dark Ruin Your Eyes?
+  description: 'Reading in the dark, sitting close to the TV, carrots and screens: here is what eye doctors really
+    say about the eye myths we grew up with, and the eye symptoms that need help fast.
+
+
+    In this video:
+
+    • Dim light and screens
+
+    • Carrots and blue light glasses
+
+    • Who needs regular eye exams
+
+    • Eye emergencies
+
+
+    #EyeHealth #HealthMyths #HealthTips #HealthEducation #Vision'
+  tags:
+  - reading in the dark
+  - eye myths
+  - eye strain
+  - blue light glasses
+  - screen time eyes
+  - carrots eyesight
+  - 20 20 20 rule
+  - eye exam
+  - glaucoma
+  - health myths
+  - health education
+  thumbnail_text: RUINS EYES?
+  thumbnail_highlight: EYES?
+  thumbnail_photo_query: child reading flashlight bed
+  playlist: Body Myths
+  short_title: 'Does reading in the dark ruin your eyes? #Shorts'
+  short_caption: 'Did anyone tell you reading in the dark ruins your eyes? Here is the truth. Educational only,
+    not medical advice. #EyeHealth #HealthMyths #HealthTips #HealthEducation'
+  scenes:
+  - layout: title
+    heading: Reading in the Dark
+    points:
+    - Eye myths vs facts
+    footage_query: person reading book lamp
+    narration: Do not read in the dark, you will ruin your eyes. Do not sit so close to the TV. Eat your carrots,
+      they help you see in the dark. Most of us grew up hearing these warnings. Today we check them against what
+      eye doctors actually say, and we cover the eye symptoms that are a real emergency.
+  - layout: bullets
+    heading: How Your Eyes Work
+    points:
+    - Cornea and lens focus light
+    - Retina senses light
+    - Optic nerve carries signals
+    - Brain makes the picture
+    footage_query: eye close up
+    narration: First, a quick look at how you see. Light passes through the clear front of the eye, the cornea,
+      and the lens, which focus it onto the retina at the back. The retina turns light into signals, and the optic
+      nerve carries them to your brain, which builds the picture you see.
+  - layout: myth_fact
+    heading: Reading in Dim Light
+    points:
+    - Dim light damages your eyes
+    - It only causes tired eyes
+    footage_query: child reading flashlight bed
+    narration: 'Myth: reading in dim light ruins your eyesight. Fact: according to the American Academy of Ophthalmology,
+      reading in low light can make your eyes feel tired and strained, but it does not cause lasting damage. Good
+      lighting simply makes reading more comfortable, so turn on a lamp, but do not worry that a flashlight under
+      the covers hurt your child''s eyes.'
+  - layout: myth_fact
+    heading: Sitting Close to the TV
+    points:
+    - Sitting close to the TV harms eyes
+    - It does not damage eyes
+    footage_query: child watching tv close
+    narration: 'Myth: sitting too close to the TV damages your eyes. Fact: it does not. Children can focus up close
+      more easily than adults, so they often sit near the screen. If a child always sits very close or holds books
+      near their face, though, it can be a sign of nearsightedness, so it is worth an eye check.'
+  - layout: myth_fact
+    heading: Carrots and Night Vision
+    points:
+    - Carrots give you super eyesight
+    - Vitamin A helps, extra does not
+    footage_query: carrots on table
+    narration: 'Myth: eating lots of carrots will make your eyesight sharper. Fact: carrots contain beta carotene,
+      which the body turns into vitamin A, and vitamin A is needed for healthy eyes. Severe lack of it can cause
+      night blindness. But if you already get enough, eating more carrots will not improve your vision. The story
+      was partly wartime propaganda.'
+  - layout: bullets
+    heading: Foods for Healthy Eyes
+    points:
+    - Leafy greens
+    - Fish with omega 3
+    - Colorful fruits and vegetables
+    - Eggs and nuts
+    footage_query: leafy green salad
+    narration: A balanced diet does support eye health over a lifetime. Leafy greens like spinach and kale, fish
+      such as salmon, colorful fruits and vegetables, eggs and nuts all provide nutrients the eyes use. Keeping
+      diabetes and blood pressure under control matters even more, because both can damage the tiny blood vessels
+      in the eyes.
+  - layout: myth_fact
+    heading: Screens Damage Your Eyes
+    points:
+    - Screens permanently damage eyes
+    - They cause strain, not damage
+    footage_query: person laptop late night
+    narration: 'Myth: computer and phone screens permanently damage your eyes. Fact: long screen time can cause
+      digital eye strain, with tired, dry, irritated eyes, blurry vision and headaches. That is uncomfortable, but
+      eye doctors say it does not cause lasting damage. Part of the problem is that we blink much less when we stare
+      at a screen.'
+  - layout: bullets
+    heading: The 20-20-20 Rule
+    points:
+    - Every 20 minutes
+    - Look 20 feet away
+    - For 20 seconds
+    - Blink often
+    footage_query: person looking out window office
+    narration: Eye doctors suggest the twenty twenty twenty rule. Every twenty minutes, look at something about
+      twenty feet away for twenty seconds. It lets your focusing muscles relax. Remember to blink, keep the screen
+      about an arm's length away and a little below eye level, and use artificial tears if your eyes feel dry.
+  - layout: myth_fact
+    heading: Blue Light Glasses
+    points:
+    - Screen blue light harms the retina
+    - No proof screens cause damage
+    footage_query: blue light glasses laptop
+    narration: 'Myth: blue light from screens damages your retina, so you need blue light glasses. Fact: the American
+      Academy of Ophthalmology says there is no evidence that blue light from screens damages the eyes, and it does
+      not recommend blue light glasses for eye health. Screens at night can disturb sleep, so a night mode or a
+      screen break before bed can help with that.'
+  - layout: myth_fact
+    heading: Glasses Weaken Your Eyes
+    points:
+    - Wearing glasses makes eyes lazy
+    - Glasses do not weaken eyes
+    footage_query: woman putting on glasses
+    narration: 'Myth: wearing glasses will make your eyes weaker, so you become dependent on them. Fact: glasses
+      correct how light focuses, they do not change the eye itself. Many people need stronger glasses over time
+      because of age or natural changes, not because of the glasses. Not wearing glasses you need just makes you
+      strain and squint.'
+  - layout: big_number
+    heading: Nearsightedness Is Rising
+    points:
+    - Millions of children
+    - Need glasses for distance
+    footage_query: child getting eye exam
+    narration: Nearsightedness, where distant things look blurry, has been rising in children in many countries.
+      Experts think more time indoors and up close, and less time outdoors, may play a role, along with genes. Millions
+      of children now need glasses to see the board at school.
+  - layout: bullets
+    heading: Outdoor Time Helps Kids
+    points:
+    - Play outside every day
+    - Daylight helps eye growth
+    - Breaks from close work
+    - Yearly eye checks
+    footage_query: kids playing outside
+    narration: Research suggests that time outdoors in daylight may help protect children from becoming nearsighted.
+      Encourage outdoor play every day, breaks from close work like phones and tablets, and regular eye checks.
+      Signs a child may need glasses include squinting, sitting very close, rubbing the eyes and complaining of
+      headaches.
+  - layout: myth_fact
+    heading: Crossing Your Eyes
+    points:
+    - Crossed eyes will stay stuck
+    - They will not stay stuck
+    footage_query: child making funny face
+    narration: 'Myth: if you cross your eyes, they will stay that way. Fact: they will not. The eye muscles relax
+      as soon as you stop. But if a child''s eyes look crossed or turn in or out when they are not doing it on purpose,
+      see an eye doctor, because early treatment of a turned eye protects vision.'
+  - layout: myth_fact
+    heading: Eye Exams Only If Problems
+    points:
+    - You only need exams with symptoms
+    - Some diseases have no early signs
+    footage_query: eye exam machine
+    narration: 'Myth: you only need an eye exam if you notice a problem. Fact: some serious eye diseases, like glaucoma,
+      cause no symptoms at first, and vision lost to glaucoma cannot be restored. A full eye exam can find problems
+      early. Ask how often you need one based on your age, family history and health.'
+  - layout: bullets
+    heading: Who Needs Regular Checks
+    points:
+    - Adults over 40
+    - People with diabetes
+    - Family history of glaucoma
+    - High blood pressure
+    footage_query: older man eye doctor
+    narration: 'Some people need regular eye checks even without symptoms: adults over forty, people with diabetes,
+      who should have a dilated eye exam usually every year, people with a family history of glaucoma, and people
+      with high blood pressure. Your eye doctor will tell you the right schedule for you.'
+  - layout: warning
+    heading: Eye Emergencies
+    points:
+    - Sudden vision loss
+    - New flashes and floaters
+    - A curtain over vision
+    - Chemical in the eye
+    footage_query: emergency room entrance
+    narration: Some eye symptoms are an emergency. Get help right away for sudden loss of vision, a sudden shower
+      of new floaters or flashes of light, a shadow or curtain coming across your vision, severe eye pain, or a
+      chemical in the eye. A detached retina needs treatment fast to save sight.
+  - layout: bullets
+    heading: Chemical in the Eye
+    points:
+    - Rinse with water right away
+    - Keep rinsing 15 minutes
+    - Remove contact lenses
+    - Then get urgent care
+    footage_query: rinsing eye water
+    narration: If a chemical splashes in your eye, rinse it with clean water right away, holding the eye open, and
+      keep rinsing for at least fifteen minutes. Remove contact lenses if they come out easily. Then go to urgent
+      care or the emergency room. Do not rub the eye.
+  - layout: warning
+    heading: Sudden Vision Changes
+    points:
+    - Can be a sign of stroke
+    - Double vision
+    - Loss in one eye
+    - Call 911
+    footage_query: ambulance street
+    narration: Sudden blurred or double vision, or losing sight in one eye, can also be a sign of a stroke, especially
+      with face drooping, arm weakness or trouble speaking. Call 911 right away. Every minute counts with a stroke.
+  - layout: myth_fact
+    heading: Looking at the Sun
+    points:
+    - A quick glance at the sun is harmless
+    - It can burn the retina
+    footage_query: sunset sky
+    narration: 'Myth: a quick look at the sun, or at an eclipse, is harmless. Fact: staring at the sun, even briefly
+      during an eclipse, can burn the retina and cause permanent damage. Only use special eclipse glasses that meet
+      the safety standard. Regular sunglasses are not enough for looking at the sun.'
+  - layout: bullets
+    heading: Sunglasses Matter
+    points:
+    - Block 99 to 100 percent UV
+    - Wraparound styles help
+    - Wear them in winter too
+    - Hats add protection
+    footage_query: sunglasses beach
+    narration: Everyday sunglasses do matter. Too much ultraviolet light over many years raises the risk of cataracts
+      and other eye problems. Choose sunglasses that block ninety nine to one hundred percent of UV rays, wraparound
+      styles if you can, and wear them in winter too, especially near snow or water.
+  - layout: myth_fact
+    heading: Contacts Get Lost Behind Eye
+    points:
+    - A contact can get lost behind your eye
+    - It cannot go behind the eye
+    footage_query: contact lens finger
+    narration: 'Myth: a contact lens can slip behind your eye and get lost. Fact: it cannot. A thin membrane covers
+      the eye and lines the eyelids, so there is no path behind it. A lens can get stuck under the upper lid, and
+      rinsing and gently blinking usually brings it back.'
+  - layout: bullets
+    heading: Contact Lens Safety
+    points:
+    - Never sleep in them unless approved
+    - No tap water on lenses
+    - Replace the case often
+    - Remove if eyes hurt
+    footage_query: contact lens case
+    narration: Contact lenses are safe when used properly, but infections can be serious. Do not sleep in lenses
+      unless your eye doctor says they are made for it, never rinse them or the case with tap water, replace the
+      case regularly, and take the lenses out and call your eye doctor if your eye is red or painful.
+  - layout: myth_fact
+    heading: Dry Eyes Are Normal
+    points:
+    - Dry eyes are just aging
+    - They can be treated
+    footage_query: woman rubbing eyes
+    narration: 'Myth: dry, gritty eyes are just part of getting older and nothing can be done. Fact: dry eye is
+      common, especially with age and screen use, but it can be treated. Artificial tears, breaks from screens,
+      a humidifier and treating eyelid problems all help. Ask your eye doctor if it bothers you most days.'
+  - layout: bullets
+    heading: Protect Your Eyes at Home
+    points:
+    - Safety glasses for DIY
+    - Care with cleaning products
+    - Watch fireworks from far
+    - Keep sharp toys away
+    footage_query: safety glasses tools
+    narration: Many eye injuries happen at home. Wear safety glasses for yard work and do it yourself projects,
+      be careful with cleaning chemicals, watch fireworks from a distance, and keep pointed toys and objects away
+      from small children. Simple glasses can prevent a lifetime of vision loss.
+  - layout: myth_fact
+    heading: Rubbing Your Eyes
+    points:
+    - Rubbing tired eyes is harmless
+    - Hard rubbing can cause problems
+    footage_query: man rubbing eyes
+    narration: 'Myth: rubbing your eyes is a harmless way to relieve tiredness. Fact: a gentle rub is fine, but
+      hard, frequent rubbing can irritate the eye, spread germs from your hands, and over years has been linked
+      to thinning of the cornea in some people. If your eyes itch a lot, allergies may be the cause, and treating
+      them helps.'
+  - layout: bullets
+    heading: Pink Eye
+    points:
+    - Red, itchy or watery eyes
+    - Often caused by a virus
+    - Wash hands often
+    - See a doctor for pain
+    footage_query: red eye close up
+    narration: Pink eye, or conjunctivitis, makes the eye red, itchy or watery, sometimes with sticky discharge.
+      It is often caused by a virus and spreads easily, so wash hands often and do not share towels. See a doctor
+      if there is eye pain, sensitivity to light, blurred vision, or if a newborn has red eyes.
+  - layout: bullets
+    heading: Diabetes and Your Eyes
+    points:
+    - Can damage retina vessels
+    - Often no early symptoms
+    - Yearly dilated eye exam
+    - Control sugar and pressure
+    footage_query: blood sugar meter
+    narration: Diabetes is a leading cause of vision loss in working age adults. High blood sugar can damage the
+      tiny blood vessels in the retina, often with no early symptoms. A yearly dilated eye exam can find changes
+      early, when treatment works best. Keeping blood sugar and blood pressure in range protects your eyes.
+  - layout: myth_fact
+    heading: Cataracts Must Be Ripe
+    points:
+    - Wait until a cataract is ripe
+    - Surgery when it affects daily life
+    footage_query: older woman eye exam
+    narration: 'Myth: you have to wait until a cataract is ripe before it can be removed. Fact: that was true long
+      ago. Today, cataract surgery is usually offered when cloudy vision starts to affect your daily life, like
+      driving or reading. It is one of the most common and successful operations.'
+  - layout: myth_fact
+    heading: Kids Outgrow a Lazy Eye
+    points:
+    - A lazy eye fixes itself
+    - Early treatment works best
+    footage_query: child eye patch
+    narration: 'Myth: a child will grow out of a lazy eye. Fact: a lazy eye, called amblyopia, usually does not
+      fix itself. The brain starts to ignore the weaker eye, and treatment with glasses, patches or eye drops works
+      best when it starts early in childhood. That is why vision screening for young children matters.'
+  - layout: bullets
+    heading: Questions for Your Eye Doctor
+    points:
+    - How often should I have exams?
+    - Am I at risk for glaucoma?
+    - Is my screen use a problem?
+    - Which sunglasses should I use?
+    footage_query: patient eye doctor
+    narration: 'Good questions for your eye doctor: how often should I have an eye exam, am I at risk for glaucoma
+      or other eye diseases, is my screen use causing problems, and which sunglasses or safety glasses should I
+      use. If you have diabetes, ask about your yearly dilated exam.'
+  - layout: bullets
+    heading: Quick Recap
+    points:
+    - 'Dim light: strain, not damage'
+    - 'Screens: take breaks'
+    - Exams catch silent disease
+    - 'Sudden vision loss: emergency'
+    footage_query: notebook writing
+    narration: Quick recap. Reading in dim light and sitting close to the TV do not damage your eyes. Screens cause
+      strain, so use the twenty twenty twenty rule. Carrots help only if you lack vitamin A. Regular exams catch
+      silent diseases like glaucoma, and sudden vision changes are an emergency.
+  - layout: outro
+    heading: Remember
+    points:
+    - Rest your eyes
+    - Get regular eye exams
+    - 'Sudden changes: get help fast'
+    footage_query: family outdoors sunny
+    narration: 'Remember: rest your eyes from screens, get regular eye exams, and get help fast for sudden vision
+      changes. Share this with the person who still says reading in the dark ruins your eyes. This video is for
+      education only, not medical advice.'
+  short_scenes:
+  - layout: title
+    heading: Does Reading in the Dark Hurt?
+    points:
+    - Myth or fact?
+    footage_query: child reading flashlight bed
+    narration: Does reading in the dark ruin your eyes?
+  - layout: bullets
+    heading: What Eye Doctors Say
+    points:
+    - Dim light causes strain
+    - No lasting damage
+    - 'Sudden vision loss: get help'
+    footage_query: person reading book lamp
+    narration: No. Eye doctors say reading in dim light can make your eyes feel tired and strained, but it does
+      not cause lasting damage. The same goes for sitting close to the TV. Good light just makes reading more comfortable.
+      But sudden vision loss, or new flashes and floaters, need help right away.
+  - layout: outro
+    heading: Full Video
+    points:
+    - On YouTube
+    footage_query: family outdoors sunny
+    narration: Find out if screens and blue light hurt your eyes in our full video, on the Health Support Studio
+      YouTube channel.
+  topic: 'Eye myths: reading in the dark, screens and carrots'

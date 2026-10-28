@@ -1,0 +1,396 @@
+queue_topic: 'Cold myths: cold weather, wet hair, vitamin C and antibiotics'
+style: Myth vs Fact
+sources:
+- 'Mayo Clinic, Common cold: https://www.mayoclinic.org/diseases-conditions/common-cold/symptoms-causes/syc-20351605'
+- 'CDC, About Common Cold: https://www.cdc.gov/common-cold/about/index.html'
+- 'NIH Office of Dietary Supplements, Vitamin C: https://ods.od.nih.gov/factsheets/VitaminC-Consumer/'
+- 'CDC, Key Facts About Seasonal Flu Vaccine: https://www.cdc.gov/flu/vaccines/keyfacts.html'
+plan:
+  title: Does Cold Weather Give You a Cold?
+  description: 'Coats, wet hair, vitamin C, chicken soup and green mucus: here are the common cold myths, what really
+    causes colds, what actually helps, and the signs that mean you need a doctor.
+
+
+    In this video:
+
+    • What causes colds
+
+    • Antibiotics and green mucus
+
+    • Remedies that help
+
+    • Cold or flu, and when to get help
+
+
+    #CommonCold #HealthMyths #HealthTips #HealthEducation #ColdAndFlu'
+  tags:
+  - common cold
+  - cold weather cold
+  - wet hair cold
+  - cold myths
+  - vitamin c cold
+  - green mucus antibiotics
+  - cold or flu
+  - chicken soup cold
+  - cold remedies
+  - health myths
+  - health education
+  thumbnail_text: WET HAIR?
+  thumbnail_highlight: HAIR?
+  thumbnail_photo_query: person sneezing winter
+  playlist: Body Myths
+  short_title: 'Can cold weather give you a cold? #Shorts'
+  short_caption: 'Were you told to wear a coat or catch a cold? Here is what really causes colds. Educational only,
+    not medical advice. #CommonCold #HealthMyths #HealthTips #HealthEducation'
+  scenes:
+  - layout: title
+    heading: Does Cold Weather Cause Colds?
+    points:
+    - Cold myths vs facts
+    footage_query: person sneezing winter
+    narration: Put a coat on or you will catch a cold. Do not go out with wet hair. Feed a cold, starve a fever.
+      Green snot means you need antibiotics. We have all heard these. Today we look at what actually causes a cold,
+      which home remedies help, which myths waste your money, and when a cold needs a doctor.
+  - layout: bullets
+    heading: What Is a Cold?
+    points:
+    - A virus infection
+    - Nose and throat
+    - Over 200 viruses
+    - Usually gone in 7 to 10 days
+    footage_query: tissues box cold
+    narration: First, what is a cold? It is an infection of your nose and throat caused by a virus. More than two
+      hundred different viruses can cause it, most often rhinoviruses. Symptoms usually include a runny or stuffy
+      nose, sneezing, a sore throat and a cough, and most people feel better in about seven to ten days.
+  - layout: myth_fact
+    heading: Cold Weather Causes Colds
+    points:
+    - Being cold gives you a cold
+    - Viruses cause colds
+    footage_query: person shivering snow
+    narration: 'Myth: being out in the cold, without a coat, gives you a cold. Fact: colds are caused by viruses,
+      not by cold temperatures. You cannot catch a cold unless the virus gets into your body. Being cold is unpleasant,
+      but on its own, it does not infect you.'
+  - layout: bullets
+    heading: Why Colds Peak in Winter
+    points:
+    - More time indoors together
+    - Windows closed
+    - Some viruses like cold, dry air
+    - School is back
+    footage_query: family indoors winter
+    narration: So why do colds peak in winter? We spend more time indoors, close together, with the windows shut,
+      so viruses pass easily from person to person. Some cold viruses seem to survive and spread better in cold,
+      dry air. And children are back at school, sharing germs and bringing them home.
+  - layout: myth_fact
+    heading: Wet Hair in Winter
+    points:
+    - Wet hair outside makes you sick
+    - You need contact with a virus
+    footage_query: woman wet hair towel
+    narration: 'Myth: going out with wet hair will make you sick. Fact: wet hair may make you feel chilly, but it
+      does not cause a cold or the flu. To get sick, you need to be exposed to a virus. So dry your hair to be comfortable,
+      not to avoid a cold.'
+  - layout: bullets
+    heading: How Colds Really Spread
+    points:
+    - Droplets from coughs and sneezes
+    - Touching your eyes, nose, mouth
+    - Shared surfaces
+    - Close contact
+    footage_query: person coughing elbow
+    narration: Colds spread when an infected person coughs, sneezes or talks, sending droplets into the air, and
+      through hands. You touch a door handle or a phone with the virus on it, then touch your eyes, nose or mouth.
+      That is why handwashing and covering coughs make such a difference.
+  - layout: bullets
+    heading: How to Avoid Colds
+    points:
+    - Wash hands often
+    - Do not touch your face
+    - Stay away from sick people
+    - Clean shared surfaces
+    footage_query: washing hands soap
+    narration: To avoid colds, wash your hands often with soap and water for at least twenty seconds, or use hand
+      sanitizer, try not to touch your eyes, nose and mouth, keep your distance from people who are sick, and clean
+      things that many people touch, like phones, keyboards and door handles.
+  - layout: myth_fact
+    heading: Antibiotics for a Cold
+    points:
+    - Antibiotics cure a cold
+    - They do not work on viruses
+    footage_query: antibiotic pills packet
+    narration: 'Myth: antibiotics will help you get over a cold faster. Fact: antibiotics kill bacteria, not viruses,
+      so they do nothing for a cold. Taking them when they are not needed can cause side effects, like diarrhea
+      and allergic reactions, and helps create antibiotic resistant bacteria.'
+  - layout: myth_fact
+    heading: Green Snot Means Bacteria
+    points:
+    - Green mucus means you need antibiotics
+    - Color does not mean bacteria
+    footage_query: tissue nose blowing
+    narration: 'Myth: if your mucus is yellow or green, you have a bacterial infection and need antibiotics. Fact:
+      mucus often changes color during a normal cold, as your immune system fights the virus. The color alone does
+      not tell you whether you need antibiotics. How long you have been sick and how you feel matter more.'
+  - layout: myth_fact
+    heading: Vitamin C Prevents Colds
+    points:
+    - Vitamin C stops you catching colds
+    - It does not prevent most colds
+    footage_query: oranges vitamin c
+    narration: 'Myth: taking vitamin C will stop you catching colds. Fact: for most people, taking vitamin C does
+      not prevent colds. Regular use may shorten a cold slightly, and it may help people under heavy physical stress,
+      like marathon runners. Taking a big dose once you are already sick does not seem to help much.'
+  - layout: bullets
+    heading: Zinc and Echinacea
+    points:
+    - Results are mixed
+    - Zinc can upset the stomach
+    - Never use zinc nose sprays
+    - Ask a pharmacist
+    footage_query: supplements bottles
+    narration: What about zinc and echinacea? Research results are mixed. Zinc lozenges started early might shorten
+      a cold a little for some people, but they can cause nausea and a bad taste, and zinc nose sprays have been
+      linked to a lasting loss of smell, so avoid them. Ask a pharmacist before trying supplements.
+  - layout: myth_fact
+    heading: Feed a Cold, Starve a Fever
+    points:
+    - Starve a fever to beat it
+    - Your body needs food and fluids
+    footage_query: bowl of soup
+    narration: 'Myth: feed a cold, starve a fever. Fact: whether you have a cold or a fever, your body needs energy
+      and fluids to fight infection. A fever makes you lose more water, so drinking enough is important. Eat what
+      you can, even if your appetite is small. There is no need to force food, or to avoid it.'
+  - layout: myth_fact
+    heading: Chicken Soup Helps
+    points:
+    - Chicken soup is just an old tale
+    - Warm fluids can ease symptoms
+    footage_query: chicken soup bowl
+    narration: 'Myth: chicken soup is just a grandmother''s remedy with no real benefit. Fact: warm fluids like
+      soup and tea can soothe a sore throat and help loosen congestion, and they help you stay hydrated. Chicken
+      soup will not cure a cold, but it can genuinely make you feel better.'
+  - layout: bullets
+    heading: What Really Helps a Cold
+    points:
+    - Rest
+    - Plenty of fluids
+    - Salt water gargle
+    - Humidifier or steamy shower
+    footage_query: person resting couch blanket
+    narration: What really helps? Rest, plenty of fluids, a salt water gargle for a sore throat, saline nose drops
+      or spray for congestion, and moist air from a cool mist humidifier or a steamy shower. Honey can soothe a
+      cough in adults and children over one year old.
+  - layout: warning
+    heading: No Honey Under One
+    points:
+    - Never give honey to babies
+    - Risk of infant botulism
+    - Ask before cold medicines
+    - Not for under 4s
+    footage_query: baby bottle
+    narration: Two important safety notes for children. Never give honey to a baby under one year old, because of
+      the risk of infant botulism. And do not give over the counter cough and cold medicines to children under four,
+      and check with a doctor or pharmacist for older children.
+  - layout: bullets
+    heading: Cold Medicines for Adults
+    points:
+    - Treat symptoms, not the virus
+    - Check active ingredients
+    - Do not double up
+    - Ask about blood pressure
+    footage_query: pharmacy shelf cold medicine
+    narration: For adults, over the counter cold medicines can ease symptoms, but they do not cure the cold. Read
+      the active ingredients, because many contain the same pain reliever, and taking two products can mean an overdose.
+      Some decongestants raise blood pressure, so ask a pharmacist if you have heart problems.
+  - layout: myth_fact
+    heading: Sweat It Out
+    points:
+    - Exercise sweats out a cold
+    - Rest helps you recover
+    footage_query: person jogging cold weather
+    narration: 'Myth: you can sweat out a cold with hard exercise. Fact: light activity is fine if your symptoms
+      are only above the neck, like a runny nose. But with a fever, body aches, a chest cough or upset stomach,
+      rest instead. Hard exercise while sick can make you feel worse.'
+  - layout: bullets
+    heading: Cold or Flu?
+    points:
+    - 'Cold: starts slowly, milder'
+    - 'Flu: sudden fever and aches'
+    - 'Flu: very tired'
+    - Flu can be serious
+    footage_query: woman fever thermometer
+    narration: How do you tell a cold from the flu? A cold usually starts slowly with a stuffy nose and is milder.
+      The flu often hits suddenly, with fever, chills, body aches and extreme tiredness. The flu can lead to serious
+      problems like pneumonia, especially in older adults, young children and people with chronic conditions.
+  - layout: myth_fact
+    heading: You Cannot Prevent the Flu
+    points:
+    - Nothing prevents the flu
+    - A yearly vaccine lowers the risk
+    footage_query: flu shot arm
+    narration: 'Myth: there is nothing you can do to prevent the flu. Fact: there is no vaccine for the common cold,
+      but there is a yearly flu vaccine, and it lowers your risk of getting the flu and of serious illness. The
+      CDC recommends it for almost everyone six months and older.'
+  - layout: warning
+    heading: See a Doctor If
+    points:
+    - Symptoms over 10 days
+    - Fever over 3 days
+    - Better, then much worse
+    - Ear or sinus pain
+    footage_query: doctor listening chest
+    narration: See a doctor if your symptoms last more than about ten days, if a fever lasts more than three days,
+      if you start to get better and then suddenly get much worse, or if you have severe sinus pain or ear pain.
+      These can be signs of a bacterial infection that needs treatment.
+  - layout: warning
+    heading: Get Help Now
+    points:
+    - Trouble breathing
+    - Chest pain
+    - Confusion
+    - Bluish lips
+    footage_query: ambulance street
+    narration: Get emergency help or call 911 for trouble breathing, chest pain or pressure, new confusion, bluish
+      lips or face, or being unable to keep fluids down. These need care right away, especially in older adults
+      and people with heart or lung disease.
+  - layout: warning
+    heading: Babies and Young Children
+    points:
+    - Under 3 months with fever
+    - Fast or hard breathing
+    - Fewer wet diapers
+    - Very sleepy or fussy
+    footage_query: baby sleeping crib
+    narration: For babies and young children, call your doctor right away if a baby under three months has a fever,
+      if a child is breathing fast or working hard to breathe, has fewer wet diapers, will not drink, or is unusually
+      sleepy or hard to wake. Trust your instinct if something seems wrong.
+  - layout: bullets
+    heading: Protect Others
+    points:
+    - Stay home when sick
+    - Cover coughs and sneezes
+    - Wash hands often
+    - Wear a mask around vulnerable people
+    footage_query: person sneezing tissue
+    narration: When you have a cold, protect others. Stay home if you can, especially in the first few days, cover
+      coughs and sneezes with a tissue or your elbow, wash your hands often, and consider a mask around babies,
+      older adults and people with weak immune systems.
+  - layout: myth_fact
+    heading: Colds Mean a Weak Immune System
+    points:
+    - Frequent colds mean weak immunity
+    - Most adults get 2 or 3 a year
+    footage_query: family sneezing
+    narration: 'Myth: if you catch a lot of colds, your immune system must be weak. Fact: catching colds is normal.
+      Healthy adults get about two or three colds a year, and young children get even more, because they are meeting
+      many viruses for the first time.'
+  - layout: bullets
+    heading: Help Your Body Fight Back
+    points:
+    - Sleep 7 or more hours
+    - Eat fruits and vegetables
+    - Stay active
+    - Do not smoke
+    footage_query: person sleeping bed
+    narration: There is no magic pill to boost immunity, but healthy habits help your body fight infections. Sleep
+      seven hours or more, eat plenty of fruits and vegetables, stay active, manage stress, and do not smoke, because
+      smoking damages the lining of your airways. And keep up with recommended vaccines.
+  - layout: myth_fact
+    heading: Sanitizer Beats Washing
+    points:
+    - Sanitizer is always as good as washing
+    - Soap is best for dirty hands
+    footage_query: hand sanitizer bottle
+    narration: 'Myth: hand sanitizer works just as well as washing in every situation. Fact: sanitizer with at least
+      sixty percent alcohol is a good option when soap and water are not available. But it does not work as well
+      when hands are visibly dirty or greasy, and it does not remove every germ. Soap and water are best when you
+      can.'
+  - layout: myth_fact
+    heading: The Flu Shot Gives You Flu
+    points:
+    - The flu shot gives you the flu
+    - It cannot give you the flu
+    footage_query: pharmacy vaccine vial
+    narration: 'Myth: the flu shot can give you the flu. Fact: the flu shot cannot cause the flu, because it contains
+      inactivated virus or only a single protein from it. Some people get a sore arm, a mild fever or aches for
+      a day or two, which is the immune system responding, and is much milder than the flu itself.'
+  - layout: bullets
+    heading: A Bad Sore Throat
+    points:
+    - Most are caused by viruses
+    - Strep needs a test
+    - Fever without a cough
+    - Swollen glands, white spots
+    footage_query: doctor checking throat
+    narration: Most sore throats with a cold are caused by viruses and get better on their own. But strep throat,
+      caused by bacteria, needs a test and antibiotics. It is more likely with a fever, no cough, swollen glands
+      in the neck, and white patches on the tonsils, and it is common in children. See a doctor if you notice these.
+  - layout: bullets
+    heading: Colds and Asthma
+    points:
+    - Colds can trigger asthma
+    - Follow your action plan
+    - Keep your rescue inhaler near
+    - Get help if it gets worse
+    footage_query: inhaler hand
+    narration: For people with asthma or other lung diseases, a simple cold can trigger a flare. Follow your asthma
+      action plan, keep your rescue inhaler close, and call your doctor if you need it more often than usual. Get
+      emergency help if you are struggling to breathe or the inhaler is not helping.
+  - layout: bullets
+    heading: Questions for Your Doctor
+    points:
+    - Is this a cold or the flu?
+    - Do I need antibiotics?
+    - Which medicines are safe for me?
+    - When should I come back?
+    footage_query: patient talking to doctor
+    narration: 'If you see a doctor, good questions to ask are: is this a cold, the flu or something else, do I
+      need antibiotics or not, which cold medicines are safe with my other conditions, and which signs mean I should
+      come back or go to the emergency room.'
+  - layout: bullets
+    heading: Quick Recap
+    points:
+    - Viruses cause colds, not cold
+    - Antibiotics do not help
+    - Mucus color does not matter
+    - Rest and fluids help
+    footage_query: notebook writing
+    narration: Quick recap. Colds are caused by viruses, not by cold weather or wet hair. Antibiotics do not help
+      a cold, and green mucus does not mean you need them. Vitamin C does not prevent most colds. Rest, fluids,
+      honey for adults and children over one, and saline help, and regular handwashing protects everyone around
+      you, all year long.
+  - layout: outro
+    heading: Remember
+    points:
+    - Wash your hands
+    - Rest and drink fluids
+    - 'Breathing trouble: get help'
+    footage_query: family cozy winter
+    narration: 'Remember: wash your hands, rest and drink fluids when you are sick, and get help fast for trouble
+      breathing. Share this with the person who always tells you to put on a coat or you will catch a cold. This
+      video is for education only, not medical advice.'
+  short_scenes:
+  - layout: title
+    heading: Can Cold Weather Make You Sick?
+    points:
+    - Myth or fact?
+    footage_query: person shivering snow
+    narration: Can going out in the cold without a coat give you a cold?
+  - layout: bullets
+    heading: What Really Causes Colds
+    points:
+    - Viruses cause colds
+    - Winter means more time indoors
+    - Wash your hands often
+    footage_query: person coughing elbow
+    narration: No. Colds are caused by viruses, not by cold air or wet hair. Colds peak in winter because we spend
+      more time indoors, close together, passing viruses to each other. So the best protection is washing your hands
+      often and not touching your eyes, nose and mouth.
+  - layout: outro
+    heading: Full Video
+    points:
+    - On YouTube
+    footage_query: family cozy winter
+    narration: Find out if green mucus means you need antibiotics in our full video, on the Health Support Studio
+      YouTube channel.
+  topic: 'Cold myths: cold weather, wet hair, vitamin C and antibiotics'
