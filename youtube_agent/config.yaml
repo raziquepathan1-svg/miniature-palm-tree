@@ -254,21 +254,21 @@ youtube:
   # (the YouTube Studio phone app works). Set to false only if you want fully automatic publishing.
   # Each video is uploaded early and SCHEDULED: YouTube makes it public by itself at this time.
   # You can watch it any time before then (YouTube Studio app) and set it to Private if needed.
-  # 12:00 New York time = 7 PM Saudi time (8 PM Saudi in winter, when the US changes its clocks). Remove to publish manually instead.
-  auto_publish_time: "12:00"
-  auto_publish_timezone: "America/New_York"
+  # Owner, Oct 29: always 7 PM Saudi time (set in Saudi time, so it never moves when the US changes its clocks).
+  auto_publish_time: "19:00"
+  auto_publish_timezone: "Asia/Riyadh"
   # Used only if auto_publish_time is removed: true = upload as Private and publish yourself.
   review_before_publish: true
   # Upload private and NOT scheduled: you get a preview first, and the "Approve video" workflow schedules it
   # (for the planned time, or the next free slot if approved late). false = schedule automatically.
   hold_for_approval: true
-  # Owner, Oct 27: no video stays private or scheduled - "Approve video" makes the video and its Shorts
-  # public right away (false = schedule them for the planned time instead).
-  publish_on_approval: true
+  # Owner, Oct 29: after the check, "Approve video" SCHEDULES the video for 7 PM Saudi (shows "Scheduled"
+  # in Studio until then). true = make it public right away instead.
+  publish_on_approval: false
   privacy: "public"            # used only when both options above are off
   playlists: true              # add each video to its topic playlist (+ "Health Shorts" for Shorts)
   upload_short: true           # also upload the daily vertical Short to YouTube Shorts
-  short_delay_hours: 6         # the Short goes public 6 hours after the main video (6 PM New York)
+  short_delay_hours: 6         # the Short goes public 6 hours after the main video (1 AM Saudi)
   category_id: "27"            # 27 = Education
   made_for_kids: false
   # YouTube requires disclosure of realistic AI-generated people/voices. Leave this true.
