@@ -1,0 +1,113 @@
+name: Islamic channel - test my voice in Hindi/Urdu
+
+# Makes short MP3s in your cloned voice speaking Hindi/Urdu (and Arabic) so you can listen
+# before the Islamic story videos use it. Uses Chatterbox Multilingual (Hindi + Arabic; it has no
+# Urdu, but simple spoken Hindi is the same as spoken Urdu).
+# Needs the VOICE_KEY secret (it unlocks voice/voice_sample.wav.enc). The unlocked sample is deleted
+# at the end and never leaves this run.
+on:
+  workflow_dispatch:
+    inputs:
+      text:
+        description: "Hindi/Urdu text to speak, in Hindi letters (leave empty for the Bismillah story test)"
+        required: false
+        default: ""
+      speed:
+        description: "Speaking speed (1.0 = as generated, 1.1 = a bit faster)"
+        required: false
+        default: "1.1"
+
+permissions:
+  contents: read
+
+jobs:
+  test-voice:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Cache voice models
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/huggingface
+          key: voice-models-clone-multilingual-v1
+
+      - name: Install
+        run: |
+          sudo apt-get update -q && sudo apt-get install -y -q ffmpeg
+          pip install -q torch==2.6.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cpu
+          pip install -q chatterbox-tts
+
+      - name: Set up your cloned voice
+        env:
+          VOICE_KEY: ${{ secrets.VOICE_KEY }}
+        run: |
+          if [ -z "$VOICE_KEY" ]; then echo "::error::Add the VOICE_KEY secret first."; exit 1; fi
+          openssl enc -d -aes-256-cbc -pbkdf2 -iter 200000 -in voice/voice_sample.wav.enc \
+            -out "$RUNNER_TEMP/voice_sample.wav" -pass env:VOICE_KEY
+          echo "VOICE_SAMPLE=$RUNNER_TEMP/voice_sample.wav" >> "$GITHUB_ENV"
+
+      - name: Speak
+        env:
+          TEXT: ${{ inputs.text }}
+        run: |
+          python - <<'EOF'
+          import os, time
+          from pathlib import Path
+          import torch, torchaudio
+
+          if not torch.cuda.is_available():  # the checkpoint was saved on GPU
+              _load = torch.load
+              torch.load = lambda *a, **k: _load(*a, **{**k, "map_location": "cpu"})
+          torch.set_num_threads(os.cpu_count() or 4)
+          from chatterbox.mtl_tts import ChatterboxMultilingualTTS
+
+          model = ChatterboxMultilingualTTS.from_pretrained(device="cpu")
+          sample = os.environ["VOICE_SAMPLE"]
+          hindi = os.environ.get("TEXT") or (
+              "अस्सलामु अलैकुम दोस्तों। आज हम एक प्यारी सी कहानी सुनेंगे। "
+              "छोटा अली खाना खाने बैठा, लेकिन बिस्मिल्लाह कहना भूल गया। "
+              "दादू ने प्यार से कहा, बेटा, जब हम अल्लाह का नाम लेकर खाते हैं, तो खाने में बरकत आती है। "
+              "अली मुस्कुराया और बोला, बिस्मिल्लाह!")
+          tests = {
+              "A_hindi_urdu_story": (hindi, "hi"),
+              "B_arabic_bismillah": ("بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ", "ar"),
+          }
+          out = Path("voice_test"); out.mkdir(exist_ok=True)
+          lines = ["## Islamic channel voice test - listen to A (Hindi/Urdu) and B (Arabic)"]
+          for name, (text, lang) in tests.items():
+              t = time.time()
+              with torch.inference_mode():
+                  wav = model.generate(text, language_id=lang, audio_prompt_path=sample,
+                                       exaggeration=0.5, cfg_weight=0.3)
+              torchaudio.save(str(out / f"{name}.wav"), wav.cpu(), model.sr)
+              dur, took = wav.shape[-1] / model.sr, time.time() - t
+              print(f"{name}: {dur:.1f} s of speech in {took:.0f} s")
+              lines.append(f"- **{name}**: {dur:.1f} s of speech made in {took:.0f} s")
+          with open(os.environ["GITHUB_STEP_SUMMARY"], "a") as f:
+              f.write("\n".join(lines) + "\n")
+          EOF
+
+      - name: Make MP3s
+        env:
+          SPEED: ${{ inputs.speed }}
+        run: |
+          for f in voice_test/*.wav; do
+            ffmpeg -y -loglevel error -i "$f" -af "atempo=${SPEED:-1.1}" -b:a 160k "${f%.wav}.mp3" && rm "$f"
+          done
+
+      - name: Delete the unlocked voice sample
+        if: always()
+        run: rm -f "$RUNNER_TEMP/voice_sample.wav"
+
+      - name: Save the test for listening
+        uses: actions/upload-artifact@v4
+        with:
+          name: islamic-voice-test
+          path: voice_test/
+          retention-days: 3
