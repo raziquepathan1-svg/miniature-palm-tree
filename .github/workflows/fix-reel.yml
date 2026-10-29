@@ -1,0 +1,69 @@
+name: Fix reel audio
+
+# Replaces one bad stretch of a Reel's sound with the same sentence from another Reel (same voice, same words,
+# same length), keeps the picture, and puts the fixed full-quality file on the "previews" branch (fixed/).
+on:
+  workflow_dispatch:
+    inputs:
+      run_id:
+        description: "Video run whose Reel needs fixing"
+        required: true
+      file:
+        description: "reel.mp4 or reel2.mp4"
+        required: true
+      span:
+        description: "Bad stretch in seconds, start-end (e.g. 24.75-26.85)"
+        required: true
+      donor_run_id:
+        description: "Run with the clean take"
+        required: true
+      donor_file:
+        description: "reel.mp4 or reel2.mp4 of the donor run"
+        required: true
+      donor_start:
+        description: "Start of the clean take in seconds"
+        required: true
+      name:
+        description: "Output file name (e.g. U0Hu-5sg2sg_reel_fixed.mp4)"
+        required: true
+
+permissions:
+  contents: write
+  actions: read
+
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Get both Reels
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          sudo apt-get -qq update && sudo apt-get -qq install -y ffmpeg >/dev/null
+          gh run download "${{ inputs.run_id }}" --repo "$GITHUB_REPOSITORY" --name "social-${{ inputs.run_id }}" --dir src
+          gh run download "${{ inputs.donor_run_id }}" --repo "$GITHUB_REPOSITORY" --name "social-${{ inputs.donor_run_id }}" --dir don
+      - name: Swap the sentence
+        env:
+          SPAN: ${{ inputs.span }}
+          DSTART: ${{ inputs.donor_start }}
+        run: |
+          SRC=$(find src -name "${{ inputs.file }}" | head -1); DON=$(find don -name "${{ inputs.donor_file }}" | head -1)
+          S=${SPAN%-*}; E=${SPAN#*-}; L=$(python3 -c "print(round($E-$S,3))"); DE=$(python3 -c "print(round($DSTART+$L,3))")
+          echo "Replacing $S-$E of $SRC with $DSTART-$DE of $DON"
+          ffmpeg -y -loglevel error -i "$SRC" -i "$DON" -filter_complex \
+            "[0:a]atrim=0:$S,asetpts=PTS-STARTPTS,afade=t=out:st=$(python3 -c "print(max(0,$S-0.03))"):d=0.03[a1];\
+             [1:a]atrim=$DSTART:$DE,asetpts=PTS-STARTPTS,afade=t=in:d=0.03,afade=t=out:st=$(python3 -c "print(max(0,$L-0.03))"):d=0.03[a2];\
+             [0:a]atrim=start=$E,asetpts=PTS-STARTPTS,afade=t=in:d=0.03[a3];[a1][a2][a3]concat=n=3:v=0:a=1[a]" \
+            -map 0:v -map "[a]" -c:v copy -c:a aac -b:a 160k -ar 48000 -ac 2 -shortest fixed.mp4
+          ffprobe -v error -show_entries format=duration -of csv=p=0 "$SRC" fixed.mp4
+      - name: Save on the previews branch
+        run: |
+          git config user.name "youtube-agent"
+          git config user.email "youtube-agent@users.noreply.github.com"
+          git fetch -q origin previews
+          git checkout -q -B previews origin/previews
+          mkdir -p previews/fixed && cp fixed.mp4 "previews/fixed/${{ inputs.name }}"
+          git add previews/fixed
+          git commit -qm "Fixed reel: ${{ inputs.name }}"
+          for i in 1 2 3; do git push -q origin previews && exit 0; git pull -q --rebase origin previews; done; exit 1
