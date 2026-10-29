@@ -246,5 +246,43 @@
       "thumbnail_highlight": "BURNING?"
     },
     "done": true
+  },
+  {
+    "youtube_id": "8U3VR4SZVD0",
+    "title": "Shingles: 5 Myths That Could Leave You in Pain (Part 2/5)",
+    "description_top": "Shingles symptoms, the shingles rash and the Shingrix vaccine explained simply: who gets shingles after chickenpox, and why early antiviral treatment matters.\nLearn the myths about age, getting shingles twice and the vaccine, the long-lasting nerve pain it can cause, and who should get both doses.",
+    "pin_question": "Have you or someone in your family had shingles? What helped most with the pain?",
+    "packages": [
+      {
+        "title": "Shingles: 5 Myths That Could Leave You in Pain",
+        "thumbnail_text": "ONLY IF OLD?",
+        "thumbnail_highlight": "OLD?"
+      },
+      {
+        "title": "Had Chickenpox? Your Shingles Risk Explained",
+        "thumbnail_text": "1 IN 3",
+        "thumbnail_highlight": "3"
+      },
+      {
+        "title": "Shingles Vaccine: Who Needs Both Doses",
+        "thumbnail_text": "AGE 50?",
+        "thumbnail_highlight": "50?"
+      },
+      {
+        "title": "The Shingles Pain That Can Last for Years",
+        "thumbnail_text": "DON'T WAIT",
+        "thumbnail_highlight": "WAIT"
+      },
+      {
+        "title": "Can You Get Shingles Twice?",
+        "thumbnail_text": "IT COMES BACK",
+        "thumbnail_highlight": "BACK"
+      }
+    ],
+    "chosen": {
+      "title": "Shingles: 5 Myths That Could Leave You in Pain",
+      "thumbnail_text": "ONLY IF OLD?",
+      "thumbnail_highlight": "OLD?"
+    }
   }
 ]
