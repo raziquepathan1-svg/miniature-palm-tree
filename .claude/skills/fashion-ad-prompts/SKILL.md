@@ -23,6 +23,8 @@ The user runs the men's fashion Instagram page **@raziquepathan** featuring **th
    - Model-like confident poses, premium fabrics only, no logos/labels.
 5. **Luxury props in the background are welcome** (user, Oct 27): unbranded luxury car, modern bungalow/villa, yacht, helicopter, private jet, etc. can sit behind him in the standing looks, combined with the beautiful locations (user likes the location variety). Always unbranded: no car badges, no names on boats or aircraft.
 
+6. **Use EVERY clip the user sends in a Reel** (user, Oct 29). Never silently leave a clip out. If a clip has a problem (logo, wrong face, religious decor), fix it in editing (blur/cut) or tell the user clearly which clip and why. Update `reels/clip_log.md` after every edit. The user reviews each Reel, posts the ones they like and asks for corrections on the rest.
+
 ## Hard rules (apply to every prompt)
 
 1. **Men's fashion only.**
