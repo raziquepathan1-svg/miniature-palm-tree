@@ -741,8 +741,7 @@
     "script_file": "033-shingles-vaccine-long.yaml",
     "series": "Infections Explained",
     "episode": 2,
-    "planned_publish_at": "2026-10-29T16:00:00Z",
-    "awaiting_approval": true,
+    "awaiting_approval": false,
     "youtube_id": "8U3VR4SZVD0",
     "short_youtube_id": "l8cuy4LId5A",
     "short2_youtube_id": "MEm_YBy0gTc",
@@ -779,6 +778,7 @@
       "title": "Shingles: 5 Myths That Could Leave You in Pain",
       "thumbnail_text": "ONLY IF OLD?",
       "thumbnail_highlight": "OLD?"
-    }
+    },
+    "publish_at": "2026-10-29T10:55:17Z"
   }
 ]
