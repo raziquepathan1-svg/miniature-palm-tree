@@ -3,7 +3,7 @@ name: Islamic channel - test my voice in Hindi/Urdu
 # Makes short MP3s in your cloned voice speaking Hindi/Urdu (and Arabic) so you can listen
 # before the Islamic story videos use it. Uses Chatterbox Multilingual (Hindi + Arabic; it has no
 # Urdu, but simple spoken Hindi is the same as spoken Urdu).
-# Needs the VOICE_KEY secret (it unlocks voice/voice_sample.wav.enc). The unlocked sample is deleted
+# Needs the VOICE_KEY secret (it unlocks voice/voice_sample_hi.wav.enc, or voice/voice_sample.wav.enc). The unlocked sample is deleted
 # at the end and never leaves this run.
 on:
   workflow_dispatch:
@@ -48,7 +48,10 @@ jobs:
           VOICE_KEY: ${{ secrets.VOICE_KEY }}
         run: |
           if [ -z "$VOICE_KEY" ]; then echo "::error::Add the VOICE_KEY secret first."; exit 1; fi
-          openssl enc -d -aes-256-cbc -pbkdf2 -iter 200000 -in voice/voice_sample.wav.enc \
+          # The Hindi/Urdu recording (Islamic channel - save my Hindi/Urdu voice) if saved, else the English one.
+          SAMPLE=voice/voice_sample_hi.wav.enc; [ -f "$SAMPLE" ] || SAMPLE=voice/voice_sample.wav.enc
+          echo "Using $SAMPLE"
+          openssl enc -d -aes-256-cbc -pbkdf2 -iter 200000 -in "$SAMPLE" \
             -out "$RUNNER_TEMP/voice_sample.wav" -pass env:VOICE_KEY
           echo "VOICE_SAMPLE=$RUNNER_TEMP/voice_sample.wav" >> "$GITHUB_ENV"
 
