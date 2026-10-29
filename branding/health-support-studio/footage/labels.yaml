@@ -57,3 +57,46 @@
     - {text: "Nerve", at: [0.40, 0.76], to: [0.30, 0.56], start: 2.8, end: 5.8}
     - {text: "The virus travels along the nerve", at: [0.52, 0.26], to: [0.58, 0.45], start: 3.4, end: 5.6}
     - {text: "Skin: a painful rash", at: [0.50, 0.30], to: [0.80, 0.50], start: 6.0}
+16x9_knuckle_joint.mp4:
+  approved: false        # waiting for the owner's OK
+  words: [knuckles, knuckle, cracking, joint, joints, arthritis, cartilage, crepitus]
+  title: "Inside a Joint"
+  labels:
+    - {text: "Bone", at: [0.20, 0.82], to: [0.15, 0.55], start: 0.6, end: 5.8}
+    - {text: "Cartilage (cushion)", at: [0.28, 0.20], to: [0.31, 0.40], start: 1.2, end: 5.8}
+    - {text: "Capsule", at: [0.75, 0.18], to: [0.62, 0.30], start: 1.8, end: 5.8}
+    - {text: "Joint fluid", at: [0.75, 0.80], to: [0.58, 0.62], start: 2.4, end: 5.8}
+    - {text: "Gas bubble: the pop!", at: [0.70, 0.50], to: [0.53, 0.51], start: 4.2}
+  note: {text: "The pop is a gas bubble, not damage", start: 6.0}
+16x9_eye_focus.mp4:
+  approved: false        # waiting for the owner's OK
+  words: [eye, eyes, vision, eyesight, sight, retina, glaucoma, cataract, blurry]
+  title: "The Eye"
+  labels:
+    - {text: "Cornea", at: [0.16, 0.22], to: [0.20, 0.40], start: 0.8}
+    - {text: "Lens", at: [0.42, 0.82], to: [0.335, 0.62], start: 1.4}
+    - {text: "Retina", at: [0.75, 0.15], to: [0.66, 0.28], start: 2.2}
+    - {text: "Optic nerve", at: [0.80, 0.80], to: [0.79, 0.60], start: 3.0}
+  until: 5.0
+  note: {text: "Light focuses on the retina, the nerve carries it to the brain", start: 5.2}
+16x9_kidneys_filter.mp4:
+  approved: false        # waiting for the owner's OK
+  words: [kidney, kidneys, water, hydration, dehydration, fluids, drink, urine, kidney stones]
+  title: "The Kidneys"
+  labels:
+    - {text: "Kidneys (filters)", at: [0.215, 0.24], to: [0.28, 0.32], start: 0.6, end: 5.8}
+    - {text: "Blood vessels", at: [0.75, 0.12], to: [0.525, 0.12], start: 1.2, end: 5.8}
+    - {text: "Ureters (tubes)", at: [0.22, 0.62], to: [0.39, 0.62], start: 2.0, end: 5.8}
+    - {text: "Bladder", at: [0.75, 0.80], to: [0.55, 0.83], start: 3.0}
+  note: {text: "Your kidneys clean your blood and make urine", start: 6.0}
+16x9_skin_uv.mp4:
+  approved: false        # waiting for the owner's OK
+  words: [skin, sun, sunscreen, sunburn, uv, tan, tanning, skin cancer, melanoma]
+  title: "Sun and Your Skin"
+  labels:
+    - {text: "Top layer", at: [0.20, 0.32], to: [0.30, 0.41], start: 0.6, end: 6.3}
+    - {text: "Deeper layer", at: [0.20, 0.66], to: [0.30, 0.64], start: 1.2, end: 6.3}
+    - {text: "Fat", at: [0.20, 0.82], to: [0.30, 0.84], start: 1.8, end: 6.3}
+    - {text: "UV rays, even through clouds", at: [0.58, 0.20], to: [0.70, 0.22], start: 2.8, end: 6.3}
+    - {text: "Damaged cells", at: [0.20, 0.50], to: [0.25, 0.46], start: 5.0}
+  note: {text: "UV passes through clouds and damages skin cells", start: 6.5}
