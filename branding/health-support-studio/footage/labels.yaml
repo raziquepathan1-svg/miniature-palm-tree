@@ -22,7 +22,7 @@
   until: 4.6
   note: {text: "It beats about 100,000 times a day", start: 4.9}
 16x9_brain_neurons.mp4:
-  words: [brain, stroke, memory, dementia, alzheimer, nerve, nerves, migraine, concussion, seizure, neurons]
+  words: [brain, stroke, memory, dementia, alzheimer, migraine, concussion, seizure, neurons]
   title: "The Brain"
   note: {text: "Billions of nerve cells send signals", start: 1.2}
   labels:
