@@ -358,5 +358,20 @@
     },
     "youtube_id": "K4UPFceXhmI",
     "publish_at": "2026-10-28T17:00:00Z"
+  },
+  {
+    "date": "2026-10-29T09:21:26",
+    "kind": "clip_short",
+    "title": "Abandoned House Part 3: Living Room 😱",
+    "topic": "Abandoned House Part 3: Living Room 😱",
+    "style": "AI Clip Makeover",
+    "folder": "20261028-1100-abandoned-house-part-3-living-room",
+    "series": {
+      "house": 1,
+      "part": 3,
+      "room": "living room"
+    },
+    "youtube_id": "Ewl3rsdaxVE",
+    "publish_at": "2026-10-29T17:00:00Z"
   }
 ]
