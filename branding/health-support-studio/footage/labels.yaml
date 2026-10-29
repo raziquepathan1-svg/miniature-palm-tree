@@ -58,7 +58,6 @@
     - {text: "The virus travels along the nerve", at: [0.52, 0.26], to: [0.58, 0.45], start: 3.4, end: 5.6}
     - {text: "Skin: a painful rash", at: [0.50, 0.30], to: [0.80, 0.50], start: 6.0}
 16x9_knuckle_joint.mp4:
-  approved: false        # waiting for the owner's OK
   words: [knuckles, knuckle, cracking, joint, joints, arthritis, cartilage, crepitus]
   title: "Inside a Joint"
   labels:
@@ -69,7 +68,6 @@
     - {text: "Gas bubble: the pop!", at: [0.70, 0.50], to: [0.53, 0.51], start: 4.2}
   note: {text: "The pop is a gas bubble, not damage", start: 6.0}
 16x9_eye_focus.mp4:
-  approved: false        # waiting for the owner's OK
   words: [eye, eyes, vision, eyesight, sight, retina, glaucoma, cataract, blurry]
   title: "The Eye"
   labels:
@@ -80,7 +78,6 @@
   until: 5.0
   note: {text: "Light focuses on the retina, the nerve carries it to the brain", start: 5.2}
 16x9_kidneys_filter.mp4:
-  approved: false        # waiting for the owner's OK
   words: [kidney, kidneys, water, hydration, dehydration, fluids, drink, urine, kidney stones]
   title: "The Kidneys"
   labels:
@@ -90,7 +87,6 @@
     - {text: "Bladder", at: [0.75, 0.80], to: [0.55, 0.83], start: 3.0}
   note: {text: "Your kidneys clean your blood and make urine", start: 6.0}
 16x9_skin_uv.mp4:
-  approved: false        # waiting for the owner's OK
   words: [skin, sun, sunscreen, sunburn, uv, tan, tanning, skin cancer, melanoma]
   title: "Sun and Your Skin"
   labels:
