@@ -621,7 +621,9 @@ def make_short(group: list[Path], workdir: Path, cfg: dict, rng: random.Random,
                voice_cfg: dict | None = None, day: int | None = None, series: dict | None = None) -> dict:
     work = workdir / "build"
     work.mkdir(parents=True, exist_ok=True)
-    before = frame(group[0], work / "before.jpg", last=False)
+    # an "intro" clip (e.g. walking in from the finished outside) plays first but is not the BEFORE picture
+    first = next((p for p in group if "intro" not in p.name.lower()), group[0])
+    before = frame(first, work / "before.jpg", last=False)
     after = frame(group[-1], work / "after.jpg", last=True)
     if series:
         room = series["room"]
