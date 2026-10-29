@@ -1,13 +1,13 @@
 name: Islamic channel - save my Hindi/Urdu voice
 
-# Takes your Hindi/Urdu voice recording from a Google Drive link, locks it with the VOICE_KEY
+# Takes your Hindi/Urdu voice recording from a Google Drive or Dropbox share link, locks it with the VOICE_KEY
 # secret (same lock as voice/voice_sample.wav.enc) and saves it as voice/voice_sample_hi.wav.enc.
-# Only the locked file is saved. After this run, delete the recording from Google Drive.
+# Only the locked file is saved. After this run, delete the recording from Drive/Dropbox.
 on:
   workflow_dispatch:
     inputs:
       drive_link:
-        description: "Google Drive link to your recording (shared as 'Anyone with the link')"
+        description: "Google Drive or Dropbox link to your recording (shared as 'Anyone with the link')"
         required: true
 
 permissions:
@@ -28,7 +28,12 @@ jobs:
           if [ -z "$VOICE_KEY" ]; then echo "::error::Add the VOICE_KEY secret first."; exit 1; fi
           sudo apt-get update -q && sudo apt-get install -y -q ffmpeg
           pip install -q gdown
-          gdown --fuzzy "$LINK" -O "$RUNNER_TEMP/recording" || { echo "::error::Could not download. Is the link shared as 'Anyone with the link'?"; exit 1; }
+          if [[ "$LINK" == *drive.google.com* ]]; then
+            gdown --fuzzy "$LINK" -O "$RUNNER_TEMP/recording"
+          else  # Dropbox: dl=1 gives the file instead of the preview page
+            URL="${LINK/dl=0/dl=1}"; [[ "$URL" == *dropbox.com* && "$URL" != *dl=1* ]] && URL="$URL$([[ "$URL" == *\?* ]] && echo '&' || echo '?')dl=1"
+            curl -fsSL "$URL" -o "$RUNNER_TEMP/recording"
+          fi || { echo "::error::Could not download. Is the link shared as 'Anyone with the link'?"; exit 1; }
           # Mono 24 kHz WAV, silence trimmed from the start, at most 60 seconds.
           ffmpeg -y -loglevel error -i "$RUNNER_TEMP/recording" -t 60 -ac 1 -ar 24000 \
             -af "silenceremove=start_periods=1:start_threshold=-45dB" "$RUNNER_TEMP/voice_sample_hi.wav"
@@ -38,7 +43,7 @@ jobs:
           openssl enc -aes-256-cbc -pbkdf2 -iter 200000 -salt -in "$RUNNER_TEMP/voice_sample_hi.wav" \
             -out voice/voice_sample_hi.wav.enc -pass env:VOICE_KEY
           rm -f "$RUNNER_TEMP/recording" "$RUNNER_TEMP/voice_sample_hi.wav"
-          echo "## Hindi/Urdu voice saved (locked), ${DUR%.*} seconds. Now delete the recording from Google Drive." >> "$GITHUB_STEP_SUMMARY"
+          echo "## Hindi/Urdu voice saved (locked), ${DUR%.*} seconds. Now delete the recording from Drive/Dropbox." >> "$GITHUB_STEP_SUMMARY"
 
       - name: Save the locked file
         run: |
