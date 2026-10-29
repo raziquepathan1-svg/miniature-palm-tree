@@ -731,5 +731,21 @@
       "thumbnail_highlight": "BURNING?"
     },
     "publish_at": "2026-10-28T10:55:18Z"
+  },
+  {
+    "date": "2026-10-29T10:39:24",
+    "topic": "Shingles and the shingles vaccine",
+    "requested_topic": "Shingles and the shingles vaccine",
+    "title": "Shingles: 5 Myths That Could Leave You in Pain for Years (Part 2/5)",
+    "style": "Myth vs Fact",
+    "script_file": "033-shingles-vaccine-long.yaml",
+    "series": "Infections Explained",
+    "episode": 2,
+    "planned_publish_at": "2026-10-29T16:00:00Z",
+    "awaiting_approval": true,
+    "youtube_id": "8U3VR4SZVD0",
+    "short_youtube_id": "l8cuy4LId5A",
+    "short2_youtube_id": "MEm_YBy0gTc",
+    "preview": "previews/8U3VR4SZVD0.mp4"
   }
 ]
