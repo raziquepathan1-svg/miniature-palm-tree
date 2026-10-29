@@ -124,6 +124,15 @@ jobs:
           pip install -q requests google-api-python-client google-auth google-auth-oauthlib
           DIR=$(dirname "$(find social_dl -name social.json | head -1)")
           if [ "$DIR" = "." ] || [ -z "$DIR" ]; then echo "No social.json in the artifact - nothing to post."; exit 0; fi
+          # Owner, Oct 29: never post a Reel with a sound problem - check the whole file first
+          for f in "$DIR"/reel*.mp4; do
+            [ -f "$f" ] || continue
+            pip install -q numpy
+            if ! python -m youtube_agent.sound_check "$f"; then
+              echo "::error::Sound check failed for $f - NOT posting. Check the sound and fix the Reel first."
+              exit 1
+            fi
+          done
           python -m youtube_agent.social "$DIR"
 
       - name: Remember it was posted

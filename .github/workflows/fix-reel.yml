@@ -56,7 +56,7 @@ jobs:
              [1:a]atrim=$DSTART:$DE,asetpts=PTS-STARTPTS,afade=t=in:d=0.03,afade=t=out:st=$(python3 -c "print(max(0,$L-0.03))"):d=0.03[a2];\
              [0:a]atrim=start=$E,asetpts=PTS-STARTPTS,afade=t=in:d=0.03[a3];[a1][a2][a3]concat=n=3:v=0:a=1[a]" \
             -map 0:v -map "[a]" -c:v copy -c:a aac -b:a 160k -ar 48000 -ac 2 -shortest fixed.mp4
-          ffprobe -v error -show_entries format=duration -of csv=p=0 "$SRC" fixed.mp4
+          for f in "$SRC" fixed.mp4; do ffprobe -v error -show_entries format=duration -of csv=p=0 "$f"; done
       - name: Save on the previews branch
         run: |
           git config user.name "youtube-agent"
