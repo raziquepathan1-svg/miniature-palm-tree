@@ -618,9 +618,9 @@ def render_whiteboard_scene(scene, wav: Path, ass: Path | None, duration: float,
     return out
 
 
-def anatomy_for(text: str, used: set) -> Path | None:
+def anatomy_for(text: str, used: set, least: int = 1) -> Path | None:
     """One of our labelled anatomy clips (footage/labels.yaml, owner approved Oct 28) whose words match the
-    scene: the one with the most matching words; each clip once per video."""
+    scene: the one with the most matching words (at least `least` different ones); each clip once per video."""
     import re
 
     import yaml
@@ -629,7 +629,7 @@ def anatomy_for(text: str, used: set) -> Path | None:
     if not LABELS.exists():
         return None
     t = text.lower()
-    best, hits = None, 0
+    best, hits = None, least - 1
     for name, spec in (yaml.safe_load(LABELS.read_text()) or {}).items():
         if name in used or not (LABELS.parent / name).exists() or spec.get("approved") is False:
             continue
@@ -684,7 +684,8 @@ def split_for_shorts(scenes: list, topic: str = "") -> list:
         parts = re.split(r"(?<=[.!?])\s+", sc.narration.strip())
         n = 3 if words >= 70 else 2
         if (sc.layout == "outro" or words < 24 or len(parts) < 2
-                or not (anatomy_for(f"{topic} {text}", set()) or drawing_for(text, set()))):
+                or not (anatomy_for(topic, set()) or anatomy_for(f"{topic} {text}", set(), 2)
+                       or drawing_for(text, set()))):
             out.append(sc)
             continue
         n = min(n, len(parts))
@@ -981,7 +982,7 @@ def build_video(plan, video_cfg: dict, voice_cfg: dict, channel_name: str, workd
             last = n - 1 if tall else n - 2  # Shorts: any page between the hook and the ending
             if 1 <= k < last and k not in snips and k not in boards and k != subscribe_at:
                 a = (anatomy_for(topic, used_anatomy) if tall and topic.strip() else None) or \
-                    anatomy_for(f"{topic}{sc.heading} {' '.join(sc.points)} {sc.narration}", used_anatomy)
+                    anatomy_for(f"{topic}{sc.heading} {' '.join(sc.points)} {sc.narration}", used_anatomy, 2)
                 if a:
                     anatomy[k] = a
         if anatomy:

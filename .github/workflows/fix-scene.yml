@@ -1,0 +1,75 @@
+name: Fix one page of a video
+
+# A daily video still waiting for approval shows a wrong page (e.g. an anatomy clip that does not match what is
+# said): that page gets one of our approved anatomy clips instead (same sound and captions), the fixed video is
+# uploaded in its place (same title, description, tags, playlists, custom thumbnail; the Shorts link to it),
+# history.json follows it and a new preview is saved. The old video stays private: delete it in YouTube Studio.
+on:
+  workflow_dispatch:
+    inputs:
+      run_id:
+        description: "Daily video run ID"
+        required: true
+      video_id:
+        description: "YouTube video ID of the video to fix"
+        required: true
+      said:
+        description: "A few words said on the wrong page (from the captions)"
+        required: true
+      clip:
+        description: "Anatomy clip to show instead (file in branding/health-support-studio/footage)"
+        required: true
+
+permissions:
+  contents: write
+  actions: read
+
+concurrency:
+  group: fix-video
+  cancel-in-progress: false
+
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install dependencies
+        run: |
+          sudo apt-get update -q && sudo apt-get install -y -q ffmpeg fonts-dejavu-core
+          pip install -r requirements.txt
+      - name: Download the run's video files
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh run download "${{ inputs.run_id }}" --repo "$GITHUB_REPOSITORY" --name "video-${{ inputs.run_id }}" --dir dl
+      - name: Fix the page and swap the video on YouTube
+        env:
+          YOUTUBE_TOKEN_JSON: ${{ secrets.YOUTUBE_TOKEN_JSON }}
+          YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
+          YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+        run: python -m youtube_agent.fix_scene dl "${{ inputs.video_id }}" "${{ inputs.said }}" "${{ inputs.clip }}"
+      - name: Remember the new video ID
+        if: success()
+        run: |
+          git config user.name "youtube-agent"
+          git config user.email "youtube-agent@users.noreply.github.com"
+          git add youtube_agent/history.json
+          git diff --cached --quiet && exit 0
+          git commit -m "Video replaced (one page fixed)"
+          { for i in 1 2 3 4 5; do git pull --rebase && git push && exit 0; git rebase --abort 2>/dev/null || true; sleep $((i*4)); done; exit 1; }
+      - name: Save the new preview
+        if: success()
+        run: |
+          new=$(cat new_video_id.txt)
+          ffmpeg -y -loglevel error -i "$(cat final_fixed_path.txt)" -vf scale=-2:720 -c:v libx264 -preset veryfast \
+            -b:v 700k -c:a aac -b:a 64k preview.mp4
+          git fetch -q origin previews
+          git checkout -q -B previews origin/previews
+          mkdir -p previews && cp preview.mp4 "previews/$new.mp4"
+          git add "previews/$new.mp4"
+          git commit -qm "Add previews/$new.mp4"
+          git push -q origin previews
