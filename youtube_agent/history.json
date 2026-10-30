@@ -785,7 +785,7 @@
     "date": "2026-10-30T10:23:08",
     "topic": "Stopping germs at home: handwashing, cleaning and when to stay home",
     "requested_topic": "Stopping germs at home: handwashing, cleaning and when to stay home",
-    "title": "You're Probably Washing Your Hands Wrong (Stop Germs at Home)",
+    "title": "You're Probably Washing Your Hands Wrong (Part 3/5)",
     "style": "Explainer",
     "script_file": "034-stop-germs-at-home.yaml",
     "series": "Infections Explained",
@@ -795,6 +795,39 @@
     "youtube_id": "hPkAOHsuMfA",
     "short_youtube_id": "YxgSM0a7-c0",
     "short2_youtube_id": "KWbXKxmGx5o",
-    "preview": "previews/hPkAOHsuMfA.mp4"
+    "preview": "previews/hPkAOHsuMfA.mp4",
+    "pin_question": "How long do you usually wash your hands? Did the 20-second rule surprise you?",
+    "packages": [
+      {
+        "title": "You're Probably Washing Your Hands Wrong",
+        "thumbnail_text": "20 SECONDS?",
+        "thumbnail_highlight": "SECONDS?"
+      },
+      {
+        "title": "Hot Water and Antibacterial Soap: 2 Myths",
+        "thumbnail_text": "SKIP IT?",
+        "thumbnail_highlight": "SKIP"
+      },
+      {
+        "title": "When Hand Sanitizer Doesn't Work",
+        "thumbnail_text": "STOMACH BUG?",
+        "thumbnail_highlight": "BUG?"
+      },
+      {
+        "title": "How to Stop Germs Spreading at Home",
+        "thumbnail_text": "1 IN 3",
+        "thumbnail_highlight": "3"
+      },
+      {
+        "title": "The Handwashing Mistake Most People Make",
+        "thumbnail_text": "TOO FAST?",
+        "thumbnail_highlight": "FAST?"
+      }
+    ],
+    "chosen": {
+      "title": "You're Probably Washing Your Hands Wrong",
+      "thumbnail_text": "20 SECONDS?",
+      "thumbnail_highlight": "SECONDS?"
+    }
   }
 ]
