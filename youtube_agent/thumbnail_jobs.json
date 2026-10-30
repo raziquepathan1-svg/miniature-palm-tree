@@ -212,27 +212,31 @@
     "text": "7 HOURS?",
     "highlight": "HOURS?",
     "style": "Myth vs Fact",
-    "image": "branding/health-support-studio/thumbs/GbUiKFvmobc.jpg"
+    "image": "branding/health-support-studio/thumbs/GbUiKFvmobc.jpg",
+    "done": true
   },
   {
     "youtube_id": "yeRj5dGymRU",
     "text": "1 IN 4",
     "highlight": "4",
     "style": "Myth vs Fact",
-    "image": "branding/health-support-studio/thumbs/yeRj5dGymRU.jpg"
+    "image": "branding/health-support-studio/thumbs/yeRj5dGymRU.jpg",
+    "done": true
   },
   {
     "youtube_id": "spq8oOrKcWs",
     "text": "AGE 40?",
     "highlight": "40?",
     "style": "Myth vs Fact",
-    "image": "branding/health-support-studio/thumbs/spq8oOrKcWs.jpg"
+    "image": "branding/health-support-studio/thumbs/spq8oOrKcWs.jpg",
+    "done": true
   },
   {
     "youtube_id": "ty-M5_xQGVA",
     "text": "IT'S TREATABLE",
     "highlight": "TREATABLE",
     "style": "Top Questions",
-    "image": "branding/health-support-studio/thumbs/ty-M5_xQGVA.jpg"
+    "image": "branding/health-support-studio/thumbs/ty-M5_xQGVA.jpg",
+    "done": true
   }
 ]
