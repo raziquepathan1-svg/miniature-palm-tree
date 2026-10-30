@@ -676,7 +676,10 @@ def make_short(group: list[Path], workdir: Path, cfg: dict, rng: random.Random,
     norm = [normalize(p, work / f"n{i}_v.mp4", (SW, SH), speed) for i, p in enumerate(group)]
     body = join(norm, work / "body_v.mp4")
     hook_text = meta.get("hook") or meta["title"]
-    parts = [teaser(before, after, hook_text, work), body]
+    # Shorts are judged in the first second: the static before/after card is optional (views fell ~10x after it
+    # was added on Oct 14), so by default the Short opens straight on the moving mess with the hook on top
+    card = cfg.get("opening_card", False)
+    parts = [teaser(before, after, hook_text, work), body] if card else [body]
     min_len = cfg.get("min_short_seconds", 30)
     if probe(body)[0] + 6.5 < min_len:  # too short for a good Short: show the whole makeover once more, faster
         need = min_len - probe(body)[0] - 6.0
@@ -708,7 +711,7 @@ def make_short(group: list[Path], workdir: Path, cfg: dict, rng: random.Random,
     words = [w for w in THUMB_WORDS if not set(w.lower().split()) & set(meta["title"].lower().split())] or THUMB_WORDS
     meta["thumb_text"] = rng.choice(words)
     thumb = split_card(before, after, meta["thumb_text"], social / "thumbnail.jpg", labels=False)
-    overlays = [(hook, (1.1, 3.9)), (note, None)]
+    overlays = [(hook, (1.1, 3.9) if card else (0.0, 3.0)), (note, None)]
     mid = probe(full)[0] * 0.4
     overlays.append((follow_banner((SW, SH), work / "follow_v.png"), (mid, mid + 3.0)))
     if series:
