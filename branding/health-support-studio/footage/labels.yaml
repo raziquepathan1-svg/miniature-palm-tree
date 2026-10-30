@@ -97,7 +97,6 @@
     - {text: "Damaged cells", at: [0.20, 0.50], to: [0.25, 0.46], start: 5.0}
   note: {text: "UV passes through clouds and damages skin cells", start: 6.5}
 16x9_cold_virus_nose.mp4:
-  approved: false
   words: [common cold, colds, cold virus, runny nose, stuffy nose, blocked nose, sinus, sinuses, sneezing, sneeze]
   title: "A Cold in the Nose"
   labels:
@@ -108,7 +107,6 @@
     - {text: "Mucus (runny nose)", at: [0.66, 0.86], to: [0.72, 0.60], start: 6.8}
   note: {text: "Cold viruses make the nose swell and run", start: 5.9}
 16x9_white_blood_cells.mp4:
-  approved: false
   words: [immune system, immune, white blood cells, white blood cell, antibodies, fight infection, fights infection, fever]
   title: "Your Immune System"
   labels:
@@ -118,7 +116,6 @@
     - {text: "Germs swallowed", at: [0.70, 0.82], to: [0.42, 0.58], start: 6.8}
   note: {text: "White blood cells find and swallow germs", start: 5.0}
 16x9_stomach_intestines.mp4:
-  approved: false
   words: [stomach bug, stomach, norovirus, diarrhea, vomiting, digestion, digestive, intestines, intestine, gut, food poisoning, constipation, bowel]
   title: "The Digestive System"
   labels:
@@ -130,7 +127,6 @@
     - {text: "Large intestine", at: [0.18, 0.45], to: [0.36, 0.55], start: 7.4}
   note: {text: "A stomach bug inflames the stomach and intestines", start: 1.6}
 16x9_artery_plaque.mp4:
-  approved: false
   words: [artery, plaque, atherosclerosis, blood flow, circulation, clogged arteries, narrowed arteries]
   title: "Inside an Artery"
   labels:
