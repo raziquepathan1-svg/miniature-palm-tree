@@ -97,7 +97,7 @@
     - {text: "Damaged cells", at: [0.20, 0.50], to: [0.25, 0.46], start: 5.0}
   note: {text: "UV passes through clouds and damages skin cells", start: 6.5}
 16x9_cold_virus_nose.mp4:
-  words: [common cold, colds, cold virus, runny nose, stuffy nose, blocked nose, sinus, sinuses, sneezing, sneeze]
+  words: [common cold, colds, cold virus, cold myths, catch a cold, have a cold, getting a cold, runny nose, stuffy nose, blocked nose, sinus, sinuses, sneezing, sneeze]
   title: "A Cold in the Nose"
   labels:
     - {text: "Sinus", at: [0.20, 0.30], to: [0.44, 0.20], start: 0.2, end: 1.3}

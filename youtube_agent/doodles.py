@@ -390,8 +390,55 @@ def walking():
     p.save("walking.png")
 
 
+def soap():
+    p = Pad(900, 820)
+    p.rect(120, 90, 330, 70, fill=GRAY, r=30)  # the tap
+    p.rect(380, 150, 70, 90, fill=GRAY, r=12)
+    for y in (300, 390, 480):  # running water
+        p.blob(415, y, 22, 34, LBLUE)
+    p.rect(330, 560, 400, 190, fill=PINK, r=60)  # the soap bar
+    p.line([(400, 610), (560, 610)], 8)
+    for x, y, r in ((620, 470, 55), (720, 380, 38), (560, 380, 30), (790, 520, 28), (690, 260, 24)):
+        p.oval(x, y, r, fill="white")  # bubbles
+        p.arc(x, y, r * 0.55, 200, 250, 6)
+    p.save("soap.png")
+
+
+def bone():
+    p = Pad(1000, 700)
+    p.rect(250, 290, 500, 120, fill="white", r=20)
+    for x in (230, 770):
+        p.oval(x, 280, 95, fill="white")
+        p.oval(x, 420, 95, fill="white")
+    p.d.rectangle([230 * S, 300 * S, 770 * S, 400 * S], fill="white")  # one smooth shape
+    p.line([(250, 290), (750, 290)], 11)
+    p.line([(250, 410), (750, 410)], 11)
+    p.save("bone.png")
+
+
+def eye():
+    p = Pad(1000, 640)
+    top = [(100 + 8 * k, 320 - 230 * math.sin(math.pi * k / 100)) for k in range(101)]
+    bottom = [(900 - 8 * k, 320 + 200 * math.sin(math.pi * k / 100)) for k in range(101)]
+    p.poly(top + bottom, "white")
+    p.oval(500, 320, 170, fill=BLUE)
+    p.oval(500, 320, 75, fill=INK)
+    p.oval(450, 270, 28, fill="white")
+    p.save("eye.png")
+
+
+def sun():
+    p = Pad(900, 900)
+    for k in range(12):
+        a = math.radians(k * 30)
+        p.line([(450 + 250 * math.cos(a), 450 + 250 * math.sin(a)),
+                (450 + 380 * math.cos(a), 450 + 380 * math.sin(a))], 16)
+    p.oval(450, 450, 200, fill=YEL)
+    p.save("sun.png")
+
+
 ALL = [ambulance, phone, lungs, family, heart, globe, pills, clock, germ, thermometer, brain, house, water, food,
-       sleep, walking]
+       sleep, walking, soap, bone, eye, sun]
 
 if __name__ == "__main__":
     for f in ALL:

@@ -562,7 +562,8 @@ def upload_second_short(plan, video_id: str, video_cfg: dict, config: dict, chan
     body = scene.model_copy(update={"narration": narration + " Watch the full video on the Health Support "
                                     "Studio channel, and subscribe for a new health tip every day."})
     print(f"    Making a second Short: {title}")
-    raw = visuals.build_video(SimpleNamespace(scenes=[hook_scene, body], short_scenes=[]),
+    raw = visuals.build_video(SimpleNamespace(scenes=visuals.split_for_shorts([hook_scene, body], plan.topic),
+                                              short_scenes=[], topic=plan.topic),
                               {**video_cfg, "format": "shorts"}, config.get("voice", {}), channel_name,
                               workdir / "short2_build")
     short_yt = dict(yt)
@@ -581,7 +582,9 @@ def upload_second_short(plan, video_id: str, video_cfg: dict, config: dict, chan
         social_dir = workdir / "social"
         if social_dir.is_dir():
             reel_body = scene.model_copy(update={"narration": f"{narration} {growth.REEL_FOLLOW}"})
-            reel = visuals.build_video(SimpleNamespace(scenes=[hook_scene, reel_body], short_scenes=[]),
+            reel = visuals.build_video(SimpleNamespace(scenes=visuals.split_for_shorts([hook_scene, reel_body],
+                                                                                       plan.topic),
+                                                       short_scenes=[], topic=plan.topic),
                                        _reel_cfg({**video_cfg, "format": "shorts"}), config.get("voice", {}),
                                        channel_name, workdir / "reel2_build")
             shutil.copyfile(reel, social_dir / "reel2.mp4")
@@ -625,14 +628,16 @@ def make_social_short(plan, final: Path, video_cfg: dict, config: dict, channel_
 
     print("    Making the vertical Short for Instagram/Facebook...")
     short_cfg = {**video_cfg, "format": "shorts"}
-    raw = visuals.build_video(SimpleNamespace(scenes=plan.short_scenes), short_cfg, config.get("voice", {}),
+    raw = visuals.build_video(SimpleNamespace(scenes=visuals.split_for_shorts(plan.short_scenes, plan.topic),
+                                              topic=plan.topic), short_cfg, config.get("voice", {}),
                               channel_name, workdir / "short_build")
     shutil.copyfile(raw, social_dir / "short.mp4")
     try:  # the Instagram/Facebook version: same Short, but it ends with "follow us" instead of YouTube
         from . import growth
 
         print("    Making the Instagram/Facebook version (native ending)...")
-        reel = visuals.build_video(SimpleNamespace(scenes=growth.native_reel(plan.short_scenes)),
+        reel = visuals.build_video(SimpleNamespace(scenes=visuals.split_for_shorts(
+                                       growth.native_reel(plan.short_scenes), plan.topic), topic=plan.topic),
                                    _reel_cfg(short_cfg), config.get("voice", {}), channel_name, workdir / "reel_build")
         shutil.copyfile(reel, social_dir / "reel.mp4")
     except Exception as e:  # the YouTube version is posted instead

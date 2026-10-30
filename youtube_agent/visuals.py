@@ -671,6 +671,35 @@ def render_anatomy_scene(clip: Path, wav: Path, ass: Path | None, duration: floa
     return out
 
 
+def split_for_shorts(scenes: list, topic: str = "") -> list:
+    """Shorts and Reels (owner, Oct 30: "use the Flow clips and your pictures"): a long middle page is split
+    at sentence ends into 2 pages (3 when very long), so one part can be a labelled anatomy clip and another a
+    sketch page, and the slide keeps the rest. Split only when a clip or drawing matches, so no slide repeats."""
+    import re
+
+    out = list(scenes[:1])
+    for sc in scenes[1:]:
+        words = len(sc.narration.split())
+        text = f"{sc.heading} {' '.join(sc.points)} {sc.narration}"
+        parts = re.split(r"(?<=[.!?])\s+", sc.narration.strip())
+        n = 3 if words >= 70 else 2
+        if (sc.layout == "outro" or words < 24 or len(parts) < 2
+                or not (anatomy_for(f"{topic} {text}", set()) or drawing_for(text, set()))):
+            out.append(sc)
+            continue
+        n = min(n, len(parts))
+        chunks, cur, goal = [], [], words / n
+        for x in parts:  # sentences in order, about the same number of words in each part
+            cur.append(x)
+            if len(chunks) < n - 1 and len(" ".join(cur).split()) >= goal:
+                chunks.append(" ".join(cur))
+                cur = []
+        if cur:
+            chunks.append(" ".join(cur))
+        out += [sc.model_copy(update={"narration": c}) for c in chunks]
+    return out
+
+
 def vertical_page(wide: Path, ass: Path | None, duration: float, size: tuple[int, int], out: Path) -> Path:
     """A 16:9 page (anatomy clip or sketch) inside a Short / Reel: full width across the middle, a blurred,
     darker copy of itself filling the rest of the tall frame, the captions on top."""
@@ -951,15 +980,16 @@ def build_video(plan, video_cfg: dict, voice_cfg: dict, channel_name: str, workd
                 break
             last = n - 1 if tall else n - 2  # Shorts: any page between the hook and the ending
             if 1 <= k < last and k not in snips and k not in boards and k != subscribe_at:
-                a = anatomy_for(f"{topic}{sc.heading} {' '.join(sc.points)} {sc.narration}", used_anatomy)
+                a = (anatomy_for(topic, used_anatomy) if tall and topic.strip() else None) or \
+                    anatomy_for(f"{topic}{sc.heading} {' '.join(sc.points)} {sc.narration}", used_anatomy)
                 if a:
                     anatomy[k] = a
         if anatomy:
             print(f"    Anatomy pages: {[(k + 1, a.name) for k, a in sorted(anatomy.items())]}")
-    sketch: dict = {}  # Shorts: one sketch page (a drawing + the handwritten points) when no anatomy clip fits
-    if tall and wb_cfg.get("enabled") and wb_cfg.get("in_shorts", True) and not anatomy:
+    sketch: dict = {}  # Shorts: one sketch page (a drawing + the handwritten points), besides the anatomy clip
+    if tall and wb_cfg.get("enabled") and wb_cfg.get("in_shorts", True):
         for k, sc in enumerate(plan.scenes[1:-1], 1):
-            if sc.points and k not in snips:
+            if sc.points and k not in snips and k not in anatomy:
                 d = drawing_for(f"{sc.heading} {' '.join(sc.points)} {sc.narration}", set())
                 if d:
                     sketch[k] = d
