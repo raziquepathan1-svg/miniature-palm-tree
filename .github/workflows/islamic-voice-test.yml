@@ -13,9 +13,9 @@ on:
         required: false
         default: ""
       speed:
-        description: "Speaking speed (1.0 = as generated, 1.1 = a bit faster)"
+        description: "Speaking speed of A1 (1.0 = as generated, 0.9 = slower; A2 is always 0.9)"
         required: false
-        default: "1.1"
+        default: "1.0"
 
 permissions:
   contents: read
@@ -58,9 +58,10 @@ jobs:
       - name: Speak
         env:
           TEXT: ${{ inputs.text }}
+          SPEED: ${{ inputs.speed }}
         run: |
           python - <<'EOF'
-          import os, time
+          import os, re, subprocess, time
           from pathlib import Path
           import torch, torchaudio
 
@@ -70,6 +71,7 @@ jobs:
           torch.set_num_threads(os.cpu_count() or 4)
           from chatterbox.mtl_tts import ChatterboxMultilingualTTS
 
+          PAUSE = 0.7  # seconds of silence after every sentence
           model = ChatterboxMultilingualTTS.from_pretrained(device="cpu")
           sample = os.environ["VOICE_SAMPLE"]
           hindi = os.environ.get("TEXT") or (
@@ -77,32 +79,36 @@ jobs:
               "छोटा अली खाना खाने बैठा, लेकिन बिस्मिल्लाह कहना भूल गया। "
               "दादू ने प्यार से कहा, बेटा, जब हम अल्लाह का नाम लेकर खाते हैं, तो खाने में बरकत आती है। "
               "अली मुस्कुराया और बोला, बिस्मिल्लाह!")
+          speed = float(os.environ.get("SPEED") or 1.0)
+          # name: (text, language, speed, cfg_weight)
           tests = {
-              "A_hindi_urdu_story": (hindi, "hi"),
-              "B_arabic_bismillah": ("بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ", "ar"),
+              "A1_hindi_urdu_normal": (hindi, "hi", speed, 0.3),
+              "A2_hindi_urdu_slower_calmer": (hindi, "hi", 0.9, 0.5),
+              "B_arabic_bismillah": ("بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ", "ar", 1.0, 0.3),
           }
           out = Path("voice_test"); out.mkdir(exist_ok=True)
-          lines = ["## Islamic channel voice test - listen to A (Hindi/Urdu) and B (Arabic)"]
-          for name, (text, lang) in tests.items():
+          lines = ["## Islamic channel voice test - listen to A1, A2 (Hindi/Urdu) and B (Arabic)"]
+          for name, (text, lang, tempo, cfg) in tests.items():
               t = time.time()
-              with torch.inference_mode():
-                  wav = model.generate(text, language_id=lang, audio_prompt_path=sample,
-                                       exaggeration=0.5, cfg_weight=0.3)
-              torchaudio.save(str(out / f"{name}.wav"), wav.cpu(), model.sr)
-              dur, took = wav.shape[-1] / model.sr, time.time() - t
-              print(f"{name}: {dur:.1f} s of speech in {took:.0f} s")
-              lines.append(f"- **{name}**: {dur:.1f} s of speech made in {took:.0f} s")
+              # One sentence at a time with a pause after each, so it stops where a sentence ends.
+              sentences = [x.strip() for x in re.split(r"(?<=[।!?.])\s+", text) if x.strip()]
+              parts = []
+              for sentence in sentences:
+                  with torch.inference_mode():
+                      wav = model.generate(sentence, language_id=lang, audio_prompt_path=sample,
+                                           exaggeration=0.5, cfg_weight=cfg)
+                  parts += [wav.cpu(), torch.zeros(1, int(PAUSE * model.sr))]
+              wav = torch.cat(parts, dim=1)
+              torchaudio.save(str(out / f"{name}.wav"), wav, model.sr)
+              subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(out / f"{name}.wav"),
+                              "-af", f"atempo={tempo}", "-b:a", "160k", str(out / f"{name}.mp3")], check=True)
+              (out / f"{name}.wav").unlink()
+              dur, took = wav.shape[-1] / model.sr / tempo, time.time() - t
+              print(f"{name}: speed {tempo}, cfg_weight {cfg}: {dur:.1f} s in {took:.0f} s")
+              lines.append(f"- **{name}**: speed {tempo}, cfg_weight {cfg}, {dur:.1f} s")
           with open(os.environ["GITHUB_STEP_SUMMARY"], "a") as f:
               f.write("\n".join(lines) + "\n")
           EOF
-
-      - name: Make MP3s
-        env:
-          SPEED: ${{ inputs.speed }}
-        run: |
-          for f in voice_test/*.wav; do
-            ffmpeg -y -loglevel error -i "$f" -af "atempo=${SPEED:-1.1}" -b:a 160k "${f%.wav}.mp3" && rm "$f"
-          done
 
       - name: Delete the unlocked voice sample
         if: always()
