@@ -780,5 +780,21 @@
       "thumbnail_highlight": "OLD?"
     },
     "publish_at": "2026-10-29T10:55:17Z"
+  },
+  {
+    "date": "2026-10-30T10:23:08",
+    "topic": "Stopping germs at home: handwashing, cleaning and when to stay home",
+    "requested_topic": "Stopping germs at home: handwashing, cleaning and when to stay home",
+    "title": "You're Probably Washing Your Hands Wrong (Stop Germs at Home)",
+    "style": "Explainer",
+    "script_file": "034-stop-germs-at-home.yaml",
+    "series": "Infections Explained",
+    "episode": 3,
+    "planned_publish_at": "2026-10-30T16:00:00Z",
+    "awaiting_approval": true,
+    "youtube_id": "hPkAOHsuMfA",
+    "short_youtube_id": "YxgSM0a7-c0",
+    "short2_youtube_id": "KWbXKxmGx5o",
+    "preview": "previews/hPkAOHsuMfA.mp4"
   }
 ]
