@@ -373,5 +373,20 @@
     },
     "youtube_id": "Ewl3rsdaxVE",
     "publish_at": "2026-10-29T17:00:00Z"
+  },
+  {
+    "date": "2026-10-30T11:18:19",
+    "kind": "clip_short",
+    "title": "Abandoned House Part 4: Kitchen 😱",
+    "topic": "Abandoned House Part 4: Kitchen 😱",
+    "style": "AI Clip Makeover",
+    "folder": "20261030-0900-abandoned-house-part-4-kitchen",
+    "series": {
+      "house": 1,
+      "part": 4,
+      "room": "kitchen"
+    },
+    "youtube_id": "GJlNDRU5k90",
+    "publish_at": "2026-10-30T17:00:00Z"
   }
 ]
