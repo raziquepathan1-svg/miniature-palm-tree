@@ -790,8 +790,7 @@
     "script_file": "034-stop-germs-at-home.yaml",
     "series": "Infections Explained",
     "episode": 3,
-    "planned_publish_at": "2026-10-30T16:00:00Z",
-    "awaiting_approval": true,
+    "awaiting_approval": false,
     "youtube_id": "TmDZYGIkwtk",
     "short_youtube_id": "YxgSM0a7-c0",
     "short2_youtube_id": "KWbXKxmGx5o",
@@ -830,6 +829,7 @@
     },
     "replaced_ids": [
       "hPkAOHsuMfA"
-    ]
+    ],
+    "publish_at": "2026-10-30T16:00:00Z"
   }
 ]
