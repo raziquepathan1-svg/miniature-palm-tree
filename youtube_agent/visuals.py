@@ -547,7 +547,7 @@ def render_scene(bg: Path, is_video: bool, overlay: Path, wav: Path, ass: Path |
 DRAWINGS = Path(__file__).resolve().parent.parent / "branding/health-support-studio/whiteboard/drawings"
 
 
-def drawing_for(text: str, used: set) -> Path | None:
+def drawing_for(text: str, used: set, least: int = 1) -> Path | None:
     """A whiteboard drawing (no words) whose keywords match the scene: the one with the most matching words.
     drawings.yaml in the folder: {file: [keyword, ...]}, where a file is a .png line drawing (drawn with the pen,
     see doodles.py) or a .mp4 Flow drawing clip; each used once per video."""
@@ -559,7 +559,7 @@ def drawing_for(text: str, used: set) -> Path | None:
     if not index.exists():
         return None
     t = text.lower()
-    best, hits = None, 0
+    best, hits = None, least - 1
     for name, words in (yaml.safe_load(index.read_text()) or {}).items():
         clip = DRAWINGS / name
         if name in used or not clip.exists():
@@ -959,7 +959,9 @@ def build_video(plan, video_cfg: dict, voice_cfg: dict, channel_name: str, workd
         used_drawings: set = set()
         for k, sc in enumerate(plan.scenes):
             if sc.layout in ("bullets", "warning") and k not in snips:
-                d = drawing_for(f"{sc.heading} {' '.join(sc.points)} {sc.narration}", used_drawings)
+                # what the page shows (heading, points), or 2+ words of what is said (Oct 30: loose matches)
+                d = drawing_for(f"{sc.heading} {' '.join(sc.points)}", used_drawings) or \
+                    drawing_for(f"{sc.heading} {' '.join(sc.points)} {sc.narration}", used_drawings, 2)
                 if d:
                     drawings[k] = d
         boards = whiteboard_picks(plan.scenes, set(snips) | {subscribe_at}, int(wb_cfg.get("per_video", 3)),
@@ -991,7 +993,9 @@ def build_video(plan, video_cfg: dict, voice_cfg: dict, channel_name: str, workd
     if tall and wb_cfg.get("enabled") and wb_cfg.get("in_shorts", True):
         for k, sc in enumerate(plan.scenes[1:-1], 1):
             if sc.points and k not in snips and k not in anatomy:
-                d = drawing_for(f"{sc.heading} {' '.join(sc.points)} {sc.narration}", set())
+                # what the page shows (heading, points), or 2+ words of what is said (Oct 30: loose matches)
+                d = drawing_for(f"{sc.heading} {' '.join(sc.points)}", set()) or \
+                    drawing_for(f"{sc.heading} {' '.join(sc.points)} {sc.narration}", set(), 2)
                 if d:
                     sketch[k] = d
                     print(f"    Sketch page in the Short: scene {k + 1} ({d.name})")
