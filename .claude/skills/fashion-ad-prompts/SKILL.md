@@ -219,3 +219,4 @@ Deliver the `_hook` version from `reels/final/hooked/`.
 - Slow motion on every outfit (as before) + 3-second hook.
 - **Music must match the beat:** detect the song's beats and place every cut / outfit change / slow-mo start on a beat. Pick the track that fits the Reel's mood. Only songs the user provides can be used (currently reels/music/song1.mp3) — ask the user for more tracks (or they add trending audio in Instagram).
 - **Mix both clip styles in Reels** (user, Oct 30): old single-outfit clips have more expression, action and varied styles; newer clips have 3-4 outfits. Group both kinds by outfit type and combine them in the same Reel (e.g. multi-outfit clip for the outfit parade + single-outfit clips for action/expression moments), so every clip is used and each Reel has variety.
+- Oct 30: 2-3 of the re-sent clips show him with shorter hair; user says it's fine — use them (don't cut for hair length).
