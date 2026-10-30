@@ -98,6 +98,31 @@ def pick_style(config: dict, history: list[dict]) -> dict | None:
     return styles[published % len(styles)]
 
 
+SAFETY = re.compile(r"911|emergency|\ber\b|call your doctor|never ignore|get help|right away|poison control", re.I)
+LOW = re.compile(r"recap|questions for your doctor|cost and access", re.I)
+
+
+def shorten(plan, minutes: float, speed: float = 1.0) -> None:
+    """Owner, Oct 30: long videos about 5-6 minutes (the 10-minute ones get the fewest views). Keeps the hook, the
+    ending and every warning/emergency page, then the other pages in their order (the main answer comes first)
+    until the time is used; pages are never reordered or rewritten."""
+    budget = minutes * 150 * speed
+    words = [len(sc.narration.split()) for sc in plan.scenes]
+    if sum(words) <= budget * 1.1 or len(plan.scenes) < 6:
+        return
+    last = len(plan.scenes) - 1
+    keep = {0, last} | {i for i, sc in enumerate(plan.scenes)
+                        if sc.layout == "warning" or SAFETY.search(f"{sc.heading} {' '.join(sc.points)} {sc.narration}")}
+    used = sum(words[i] for i in keep)
+    for i in range(1, last):
+        if i not in keep and not LOW.search(plan.scenes[i].heading) and used + words[i] <= budget:
+            keep.add(i)
+            used += words[i]
+    before = len(plan.scenes)
+    plan.scenes = [sc for i, sc in enumerate(plan.scenes) if i in keep]
+    print(f"    Shortened to about {used / 150 / speed:.1f} minutes: {len(plan.scenes)} of {before} pages")
+
+
 def next_publish_time(time_str: str, tz_name: str, now: dt.datetime | None = None,
                       after: dt.datetime | None = None) -> dt.datetime:
     """Next occurrence of HH:MM in the given time zone (at least 1 hour from now, and later than any
@@ -162,6 +187,8 @@ def make_one_video(config: dict, history: list[dict], topic: str | None, dry_run
         print(f"1/6 Using pre-written script {bank_file.name} ({len(bank) - 1} left after this one)")
         plan = planner.VideoPlan.model_validate(bank_data["plan"])
         topic = bank_data.get("queue_topic") or plan.topic
+        if video_cfg.get("format") != "shorts" and config["video"].get("bank_minutes"):
+            shorten(plan, float(config["video"]["bank_minutes"]), float(config.get("voice", {}).get("speed", 1.0)))
     else:
         topic = topic or next_queued_topic(config, history)
         print("1/6 Choosing topic and writing script with Claude...")
@@ -227,6 +254,7 @@ def make_one_video(config: dict, history: list[dict], topic: str | None, dry_run
 
     if video_cfg.get("format") == "shorts":
         episode = None
+    growth.PART_IN_TITLE = bool(gcfg.get("part_in_title", False))
     growth.LAST_MID = growth.apply(plan, episode, len(history),
                                    bridge=(packaging.LAST or {}).get("bridge") or None,
                                    subscribe_after=int(gcfg.get("subscribe_after_words", 100)))

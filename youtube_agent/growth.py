@@ -9,17 +9,19 @@ from pathlib import Path
 
 import yaml
 
-MID_LINES = [
+MID_LINES = [  # owner Oct 30: give a reason to subscribe, not only the ask
     "Quick note: this is part {n} of our {total} part series, {series}. Every day I explain one health topic in "
-    "plain words, so if this is helping you, subscribe and you won't miss the next part.",
-    "By the way, this video is part {n} of {total} in our {series} series. If you're finding this useful, "
-    "subscribe so the next part finds you.",
-    "This is part {n} of our {total} part {series} series. If you want simple, trustworthy health information "
-    "every day, subscribe now, then let's keep going.",
+    "plain words, the kind of thing that can help you or someone you love. If that's useful, subscribe so you "
+    "don't miss the next one.",
+    "By the way, this is part {n} of {total} in our {series} series. A new, simple health tip comes out every "
+    "day, and one of them could help someone in your family. Subscribe so it finds you.",
+    "This is part {n} of our {total} part {series} series. If you want one clear health tip every day that you "
+    "can actually use, subscribe now, then let's keep going.",
 ]
-SHORT_LINE = "Subscribe for one simple health tip every day."
+SHORT_LINE = "Subscribe for one simple health tip every day, one could help someone you love."
 LAST_MID: str | None = None  # the line added mid-video (left out of the second Short)
 LAST_EP = None  # today's series episode (set by main)
+PART_IN_TITLE = False  # set from config growth.part_in_title
 SHORT1_HOOK: str | None = None  # the first new-style Short's hook, so the second one takes another angle
 
 
@@ -140,8 +142,8 @@ def apply(plan, ep: Episode | None, day: int, bridge: str | None = None, subscri
         sentences = re.split(r"(?<=[.!?])\s+", outro.narration.strip())
         outro.narration = " ".join([s for s in sentences if "subscribe" not in s.lower()] + [teaser])
         plan.description = f"{top}\n\n{plan.description}"
-        part = f" (Part {ep.n}/{ep.total})"
-        if len(plan.title) + len(part) <= 70:
+        part = f" (Part {ep.n}/{ep.total})"  # owner Oct 30: off by default (new viewers skip "Part 4" videos)
+        if PART_IN_TITLE and len(plan.title) + len(part) <= 70:
             plan.title += part
 
     if plan.short_scenes and "subscribe" not in plan.short_scenes[-1].narration.lower():

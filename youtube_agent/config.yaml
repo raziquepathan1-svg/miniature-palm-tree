@@ -73,10 +73,18 @@ growth:
   # Which series starts next (the first one with 5 scripts left). Urgent, common worries get the most views
   # (CPR, flu shot, Benadryl, sepsis); "Caring for Older Adults" first because Part 5 of the last series
   # already announced it.
-  order: ["Caring for Older Adults", "Emergency Basics", "Infections Explained", "Body Myths", "Healthy Habits",
-          "Know Your Numbers"]
-  first: ["051-choking-first-aid.yaml", "063-hypothermia-frostbite-signs.yaml", "056-carbon-monoxide-signs.yaml",
+  # Owner, Oct 30 (channel stats): everyday questions people search win ("Can the flu shot give you the flu?"
+  # 992 views, "Tylenol or Advil?" 72); niche topics get under 10. Body Myths (all questions) next, then
+  # Healthy Habits with the most-searched questions first.
+  order: ["Infections Explained", "Body Myths", "Healthy Habits", "Emergency Basics", "Know Your Numbers",
+          "Caring for Older Adults"]
+  first: ["053-hpv-vaccine-myths.yaml", "054-pneumonia-questions.yaml",
+          "027-iron-deficiency-anemia.yaml", "071-insomnia-explained.yaml", "042-back-pain-explained.yaml",
+          "041-acid-reflux-questions.yaml", "045-migraine-questions.yaml", "070-constipation-questions.yaml",
+          "046-anxiety-explained.yaml", "028-food-poisoning-myths.yaml",
+          "051-choking-first-aid.yaml", "063-hypothermia-frostbite-signs.yaml", "056-carbon-monoxide-signs.yaml",
           "059-naloxone-opioid-overdose.yaml", "052-blood-clots-dvt-signs.yaml"]
+  part_in_title: false         # owner Oct 30: no "(Part n/5)" in titles; the series stays in playlists and the description
   series:
     "Heart & Blood Pressure": "Know Your Numbers"
     "Diabetes & Metabolism": "Know Your Numbers"
@@ -105,6 +113,7 @@ video:
   stock_footage: true          # background video clips from Pexels (free; needs PEXELS_API_KEY)
   own_footage: "branding/health-support-studio/footage"   # our own Flow clips (no faces), used before stock
   target_minutes: 11           # spoken length of each video (10-15 min)
+  bank_minutes: 6              # owner Oct 30: script-bank videos are shortened to about 6 minutes
   format: "landscape"          # "landscape" (16:9 normal video) or "shorts" (9:16 vertical)
   videos_per_run: 1            # the GitHub schedule runs once a day -> 1 video/day
   captions: true               # burn subtitles into the video
