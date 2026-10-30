@@ -163,7 +163,7 @@ Fresh start Oct 30. Every Reel: 1.5s teaser, hook text 0–2.4s, slow motion on 
 - #48 Man_modeling_luxury_modest-wear_…_ec41030b.mp4
 - #63 Man_modeling_raincoat_in_monsoon_6d8e7449.mp4
 
-## Not used (religious clothing — thobe / bisht, user rule)
+## reel28_thobe — Classic thobe. Timeless class. (separate thobe Reel, user asked Oct 30)
 - #58 Man_modeling_modern_thobes_4984f92e.mp4
 - #74 Man_spraying_perfume_in_courtyard_4a5346d4.mp4
 - #91 Man_transforming_into_traditiona…_ead479e3.mp4
