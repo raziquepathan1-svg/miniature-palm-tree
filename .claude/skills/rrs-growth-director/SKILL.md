@@ -135,3 +135,12 @@ and they never change the pipeline, config or a live video on their own.
   never "like, share, subscribe, comment". The loop line stays last. YouTube description keeps one
   "Subscribe" line.
 
+
+
+## Data check, Oct 30, 2026 (restore-stats.yml, read-only)
+9 subscribers, 4,976 views, 32 videos. Shorts Oct 4-10: 100-1,160 views; after Oct 14: 2-90. Oct 14 = the static
+before/after opening card was added -> now off by default (opening_card: false), Shorts open on the moving mess.
+Titles: "Day N:" / "Abandoned House Part N:" prefixes dropped (owner said yes) - titles are stand-alone hooks in the
+style of the winners ("Nobody Wanted This X… Until Now", "Abandoned X → Dream Space", "This X Was a Disaster. Look
+Now!"); part/day numbers stay in the badge, caption and end card. Long compilations get 0-8 views: low priority.
+Judge changes after ~6 new Shorts, not 1. Ask the owner for "Viewed vs. swiped away" from YouTube Studio.

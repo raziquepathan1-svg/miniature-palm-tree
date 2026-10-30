@@ -635,15 +635,16 @@ def make_short(group: list[Path], workdir: Path, cfg: dict, rng: random.Random,
     meta["place"] = place
     if series:  # one house, room by room: the next part is the reason to follow
         p = series["part"]
-        name = "The Outside" if room in OUTSIDE else room.title()
-        spoken = "the outside" if room in OUTSIDE else f"the {room}"
         bare = "Exterior" if room in OUTSIDE or room.split()[0] in OUTSIDE else room.title()
-        meta["title"] = meta["short_title"] = f"Abandoned House Part {p}: {name} 😱"
-        meta["alt_titles"] = [t for t in (f"Restoring an Abandoned House: Part {p} 🏚️",
-                                          f"Abandoned House → Luxury Home (Part {p}) ✨",
-                                          f"Abandoned House Part {p}: Luxury {bare} 🤩",
-                                          f"Part {p}: This {bare} Was a Disaster 😳") if len(t) <= TITLE_MAX]
-        meta["hook"] = f"Abandoned house, part {p}: {spoken}"
+        # the title is a stand-alone hook (a "Part 4" title tells new viewers they missed parts 1-3);
+        # the part number lives in the PART badge, the caption and the end card
+        word = "House" if place == "house" else bare
+        recent = " ".join(json.loads(m.read_text()).get("title", "") for m in DONE.glob("*/meta.json")) \
+            if DONE.exists() else ""
+        opts = [t for t in _title_options(word.lower(), cfg, rng, 20) if len(t) <= TITLE_MAX]
+        meta["title"] = meta["short_title"] = _pick(opts, recent, rng) if opts else f"Abandoned {word} → Dream Space ✨"
+        meta["alt_titles"] = [t for t in opts if t != meta["title"]][:4]
+        meta["hook"] = rng.choice(HOOKS).format(place="house" if place == "house" else room)
         meta["after"] = f"LUXURY {place.upper()}"
         meta["caption"] = f"Part {p} of turning one abandoned house into a luxury home 🏚️➡️✨ {meta['caption']}"
         meta["tags"] = ["abandoned house", "house renovation", "house restoration", *meta.get("tags", [])]
@@ -655,13 +656,12 @@ def make_short(group: list[Path], workdir: Path, cfg: dict, rng: random.Random,
         said = [x for x in re.split(r"(?<=[.!?])\s+", text.strip()) if "follow" not in x.lower()]
         meta["narration"] = " ".join([*said, nxt])
         meta["series"] = {"house": series["house"], "part": p, "room": room}
-    elif day:  # one running series gives viewers a reason to follow
-        meta["title"] = f"Day {day}: {meta['title']}"
+    elif day:  # one running series gives viewers a reason to follow (DAY badge; titles stay stand-alone hooks)
         if len(meta["title"]) > TITLE_MAX:
-            meta["title"] = f"Day {day}: Abandoned {place.title()} → Luxury 😍"
+            meta["title"] = f"Abandoned {place.title()} → Dream Space ✨"
         meta["short_title"] = meta["title"]
-        meta["alt_titles"] = [f"Day {day}: {t}" for t in _title_options(place, cfg, rng, 5)
-                              if len(f"Day {day}: {t}") <= TITLE_MAX and f"Day {day}: {t}" != meta["title"]][:4]
+        meta["alt_titles"] = [t for t in _title_options(place, cfg, rng, 5)
+                              if len(t) <= TITLE_MAX and t != meta["title"]][:4]
         meta["caption"] = f"Day {day} of turning abandoned places into luxury 🏚️➡️✨ {meta['caption']}"
     # the last spoken words lead back into the first second, so the Short loops
     meta["narration"] = f"{meta['narration'].rstrip()} {LOOP_LINE}"

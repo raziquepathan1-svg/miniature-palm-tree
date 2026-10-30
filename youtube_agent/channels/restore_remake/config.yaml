@@ -147,15 +147,13 @@ clips:
     - "{n} Abandoned Places → Pure Luxury 😱"
     - "{n} Satisfying Junk to Luxury Makeovers ✨"
     - "Wait for #{n}: Abandoned to Luxury 🤩"
-  clip_titles:                 # short (with "Day N: " the whole title stays under 50 characters)
-    - "Abandoned {Place} → Luxury 😍"
-    - "Junk {Place} → Pure Luxury ✨"
-    - "This {Place} Is Unrecognizable 🔥"
-    - "Trash to Luxury {Place} 😳"
-    - "Wait for This {Place} Reveal 🤩"
-    - "Nobody Wanted This {Place} 😱"
-    - "Abandoned {Place} Turned Luxury ✨"
-    - "From Ruin to Luxury {Place} 😍"
+  clip_titles:                 # stand-alone hooks in the style of the best Shorts (900-1160 views), under 50 chars
+    - "Nobody Wanted This {Place}… Until Now 😳"
+    - "Abandoned {Place} → Dream Space ✨"
+    - "This {Place} Was a Disaster. Look Now! 😱"
+    - "Watch This {Place} Come Back to Life 😍"
+    - "Abandoned {Place} Rebuilt in Minutes ⏱️"
+    - "You Won't Believe This {Place} Makeover 🔥"
   tags: ["satisfying makeover", "abandoned transformation", "before and after", "restoration", "time lapse",
          "makeover", "transformation", "satisfying video"]
   hashtags: ["#makeover", "#beforeandafter", "#satisfying", "#transformation"]
