@@ -50,12 +50,17 @@ def main(run_dir: str, old: str, said: str, clip_name: str) -> None:
     new_page = visuals.render_anatomy_scene(clip, page, page.with_suffix(".ass"), dur, (w, h),
                                             workdir / "fixed_page.mp4")
     fixed = workdir / "final_fixed.mp4"
-    visuals._run([
-        "-y", "-i", str(final), "-i", str(new_page), "-filter_complex",
-        f"[0:v]trim=0:{start:.3f},setpts=PTS-STARTPTS[a];[1:v]trim=0:{dur:.3f},setpts=PTS-STARTPTS[b];"
-        f"[0:v]trim=start={start + dur:.3f},setpts=PTS-STARTPTS[c];[a][b][c]concat=n=3:v=1:a=0,format=yuv420p[v]",
-        "-map", "[v]", "-map", "0:a", "-c:v", "libx264", "-preset", "medium", "-crf", "18", "-r", "30",
-        "-c:a", "copy", "-movflags", "+faststart", str(fixed)])
+    enc = ["-an", "-c:v", "libx264", "-preset", "medium", "-crf", "18", "-r", "30", "-pix_fmt", "yuv420p"]
+    a, b, c = (workdir / f"fix_{k}.mp4" for k in "abc")  # before, the new page, after (one at a time: low memory)
+    visuals._run(["-y", "-i", str(final), "-t", f"{start:.3f}", *enc, str(a)])
+    visuals._run(["-y", "-i", str(new_page), "-t", f"{dur:.3f}", *enc, str(b)])
+    visuals._run(["-y", "-ss", f"{start + dur:.3f}", "-i", str(final), *enc, str(c)])
+    lst = workdir / "fix_list.txt"
+    lst.write_text("".join(f"file '{p.resolve()}'\n" for p in (a, b, c)))
+    video = workdir / "fix_video.mp4"
+    visuals._run(["-y", "-f", "concat", "-safe", "0", "-i", str(lst), "-c", "copy", str(video)])
+    visuals._run(["-y", "-i", str(video), "-i", str(final), "-map", "0:v", "-map", "1:a", "-c", "copy",
+                  "-shortest", "-movflags", "+faststart", str(fixed)])
     print(f"  Fixed video: {_duration(fixed):.2f}s (was {_duration(final):.2f}s)")
     jobs = json.loads((HERE / "thumbnail_jobs.json").read_text())
     job = next((j for j in jobs if j["youtube_id"] == old), None)
