@@ -792,10 +792,9 @@
     "episode": 3,
     "planned_publish_at": "2026-10-30T16:00:00Z",
     "awaiting_approval": true,
-    "youtube_id": "hPkAOHsuMfA",
+    "youtube_id": "TmDZYGIkwtk",
     "short_youtube_id": "YxgSM0a7-c0",
     "short2_youtube_id": "KWbXKxmGx5o",
-    "preview": "previews/hPkAOHsuMfA.mp4",
     "pin_question": "How long do you usually wash your hands? Did the 20-second rule surprise you?",
     "packages": [
       {
@@ -828,6 +827,9 @@
       "title": "You're Probably Washing Your Hands Wrong",
       "thumbnail_text": "20 SECONDS?",
       "thumbnail_highlight": "SECONDS?"
-    }
+    },
+    "replaced_ids": [
+      "hPkAOHsuMfA"
+    ]
   }
 ]
