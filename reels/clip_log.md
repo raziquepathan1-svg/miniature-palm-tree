@@ -169,3 +169,23 @@ Fresh start Oct 30. Every Reel: 1.5s teaser, hook text 0–2.4s, slow motion on 
 - #91 Man_transforming_into_traditiona…_ead479e3.mp4
 - #48: last outfit (brown bisht-style robe, 6–8s) cut; rest used in reel27
 - #94: chest logo blurred
+
+## New clips (raw4, Oct 31)
+
+## reel29_festive_jackets — POV: festive season but make it royal
+- #110 ../raw4/Man_modeling_bandhgala_jackets_23264ca1.mp4
+- #114 ../raw4/Man_modeling_jamawar_long_jackets_c2adfceb.mp4
+- #115 ../raw4/Man_modeling_silk_achkan_coats_836ce940.mp4
+
+## reel30_shawl_kurtas — POV: winter weddings need a shawl like this
+- #116 ../raw4/Man_modeling_winter_festive_mens…_6e7efde7.mp4
+- #112 ../raw4/Man_modeling_embroidered_kurta_sets_0bfe7f25.mp4
+
+## reel31_indo_western — POV: festive but make it minimal
+- #113 ../raw4/Man_modeling_fashion_co-ord_sets_fbb5ee71.mp4
+- #117 ../raw4/Man_wearing_various_kurtas_2fc8bc6c.mp4
+
+## reel32_statement_blazers — POV: red is your power colour
+- #111 ../raw4/Man_modeling_double-breasted_bla…_0cec1d40.mp4
+- #9 Man_changing_clothes_in_commercial_c1513ab6.mp4  (reused old clip)
+- #38 Man_modeling_fashion_attire_779f965d.mp4  (reused old clip)
