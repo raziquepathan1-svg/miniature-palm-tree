@@ -19,3 +19,4 @@ no default smile, the host never holds an object, face must match the avatar.
 - 2026-10-30 handwashing: shocked/worried
 - 2026-10-31 HPV: skeptical raised eyebrow
 - 2026-11-01 pneumonia (prompt given): #3 coughing into elbow
+- 2026-11-02 knuckle cracking (prompt given): #7 both palms up, confused shrug
