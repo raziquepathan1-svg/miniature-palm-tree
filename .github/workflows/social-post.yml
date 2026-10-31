@@ -127,7 +127,7 @@ jobs:
           # Owner, Oct 29: never post a Reel with a sound problem - check the whole file first
           for f in "$DIR"/reel*.mp4; do
             [ -f "$f" ] || continue
-            pip install -q numpy
+            pip install -q numpy imageio-ffmpeg
             if ! python -m youtube_agent.sound_check "$f"; then
               echo "::error::Sound check failed for $f - NOT posting. Check the sound and fix the Reel first."
               exit 1

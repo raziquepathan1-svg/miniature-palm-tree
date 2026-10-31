@@ -12,10 +12,21 @@ import numpy as np
 LIMIT = 0.11
 
 
-def scan(path: str, sr: int = 24000) -> tuple[float, float]:
-    from .editor import ffmpeg_bin
+def _ffmpeg() -> str:
+    """ffmpeg without the editor's picture libraries (the Instagram/Facebook job installs only numpy)."""
+    import os
+    import shutil
 
-    raw = subprocess.run([ffmpeg_bin(), "-loglevel", "error", "-i", path, "-ac", "1", "-ar", str(sr), "-f", "s16le",
+    exe = os.environ.get("FFMPEG") or shutil.which("ffmpeg")
+    if exe:
+        return exe
+    import imageio_ffmpeg
+
+    return imageio_ffmpeg.get_ffmpeg_exe()
+
+
+def scan(path: str, sr: int = 24000) -> tuple[float, float]:
+    raw = subprocess.run([_ffmpeg(), "-loglevel", "error", "-i", path, "-ac", "1", "-ar", str(sr), "-f", "s16le",
                           "-"], capture_output=True, check=True).stdout
     a = np.frombuffer(raw, np.int16).astype(np.float32) / 32768
     win, hop, n = int(2.0 * sr), int(0.25 * sr), 1024
