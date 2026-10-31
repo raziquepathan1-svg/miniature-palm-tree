@@ -841,8 +841,7 @@
     "script_file": "053-hpv-vaccine-myths.yaml",
     "series": "Infections Explained",
     "episode": 4,
-    "planned_publish_at": "2026-10-31T16:00:00Z",
-    "awaiting_approval": true,
+    "awaiting_approval": false,
     "youtube_id": "7zoyfg3xtkA",
     "short_youtube_id": "H3iWGakCA8U",
     "short2_youtube_id": "L-LpJLgUQII",
@@ -879,6 +878,7 @@
       "title": "HPV Vaccine: 7 Myths Parents Get Wrong",
       "thumbnail_text": "PREVENTS CANCER?",
       "thumbnail_highlight": "CANCER?"
-    }
+    },
+    "publish_at": "2026-10-31T16:00:00Z"
   }
 ]
