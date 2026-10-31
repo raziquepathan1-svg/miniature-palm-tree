@@ -388,5 +388,20 @@
     },
     "youtube_id": "GJlNDRU5k90",
     "publish_at": "2026-10-30T17:00:00Z"
+  },
+  {
+    "date": "2026-10-31T10:18:41",
+    "kind": "clip_short",
+    "title": "You Won't Believe This Bedroom Makeover 🔥",
+    "topic": "You Won't Believe This Bedroom Makeover 🔥",
+    "style": "AI Clip Makeover",
+    "folder": "20261031-0900-you-won-t-believe-this-bedroom-makeover",
+    "series": {
+      "house": 1,
+      "part": 5,
+      "room": "bedroom"
+    },
+    "youtube_id": "Fjq70b6O6Fo",
+    "publish_at": "2026-10-31T17:00:00Z"
   }
 ]
