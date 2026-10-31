@@ -836,7 +836,7 @@
     "date": "2026-10-31T09:09:28",
     "topic": "HPV vaccine: myths vs facts about cancer prevention",
     "requested_topic": "HPV vaccine: myths vs facts about cancer prevention",
-    "title": "HPV Vaccine Myths: The Shot That Prevents Cancer",
+    "title": "HPV Vaccine: 7 Myths Parents Get Wrong",
     "style": "Myth vs Fact",
     "script_file": "053-hpv-vaccine-myths.yaml",
     "series": "Infections Explained",
@@ -846,6 +846,39 @@
     "youtube_id": "7zoyfg3xtkA",
     "short_youtube_id": "H3iWGakCA8U",
     "short2_youtube_id": "L-LpJLgUQII",
-    "preview": "previews/7zoyfg3xtkA.mp4"
+    "preview": "previews/7zoyfg3xtkA.mp4",
+    "pin_question": "Did you know the HPV vaccine is recommended for boys too? What question do you still have about it?",
+    "packages": [
+      {
+        "title": "HPV Vaccine: 7 Myths Parents Get Wrong",
+        "thumbnail_text": "PREVENTS CANCER?",
+        "thumbnail_highlight": "CANCER?"
+      },
+      {
+        "title": "Is the HPV Vaccine Safe for Kids?",
+        "thumbnail_text": "START AT 11",
+        "thumbnail_highlight": "11"
+      },
+      {
+        "title": "Do Boys Need the HPV Vaccine?",
+        "thumbnail_text": "NOT JUST GIRLS",
+        "thumbnail_highlight": "GIRLS"
+      },
+      {
+        "title": "HPV Causes 37,000 US Cancers a Year",
+        "thumbnail_text": "WHY SO YOUNG?",
+        "thumbnail_highlight": "YOUNG?"
+      },
+      {
+        "title": "HPV Vaccine Myths Parents Still Believe",
+        "thumbnail_text": "TOO YOUNG?",
+        "thumbnail_highlight": "YOUNG?"
+      }
+    ],
+    "chosen": {
+      "title": "HPV Vaccine: 7 Myths Parents Get Wrong",
+      "thumbnail_text": "PREVENTS CANCER?",
+      "thumbnail_highlight": "CANCER?"
+    }
   }
 ]
