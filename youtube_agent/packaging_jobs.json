@@ -453,5 +453,43 @@
     "youtube_id": "TmDZYGIkwtk",
     "title": "You're Probably Washing Your Hands Wrong",
     "done": true
+  },
+  {
+    "youtube_id": "7zoyfg3xtkA",
+    "title": "HPV Vaccine: 7 Myths Parents Get Wrong",
+    "description_top": "HPV vaccine myths and facts: who should get the HPV vaccine, the best age (11 or 12), how many doses, and whether it is safe.\nLearn why boys need it too, the real side effects, and how the HPV shot helps prevent cervical, throat and other cancers.",
+    "pin_question": "Did you know the HPV vaccine is recommended for boys too? What question do you still have about it?",
+    "packages": [
+      {
+        "title": "HPV Vaccine: 7 Myths Parents Get Wrong",
+        "thumbnail_text": "PREVENTS CANCER?",
+        "thumbnail_highlight": "CANCER?"
+      },
+      {
+        "title": "Is the HPV Vaccine Safe for Kids?",
+        "thumbnail_text": "START AT 11",
+        "thumbnail_highlight": "11"
+      },
+      {
+        "title": "Do Boys Need the HPV Vaccine?",
+        "thumbnail_text": "NOT JUST GIRLS",
+        "thumbnail_highlight": "GIRLS"
+      },
+      {
+        "title": "HPV Causes 37,000 US Cancers a Year",
+        "thumbnail_text": "WHY SO YOUNG?",
+        "thumbnail_highlight": "YOUNG?"
+      },
+      {
+        "title": "HPV Vaccine Myths Parents Still Believe",
+        "thumbnail_text": "TOO YOUNG?",
+        "thumbnail_highlight": "YOUNG?"
+      }
+    ],
+    "chosen": {
+      "title": "HPV Vaccine: 7 Myths Parents Get Wrong",
+      "thumbnail_text": "PREVENTS CANCER?",
+      "thumbnail_highlight": "CANCER?"
+    }
   }
 ]
