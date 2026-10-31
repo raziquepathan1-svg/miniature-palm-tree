@@ -134,3 +134,43 @@
     - {text: "Red blood cells", at: [0.30, 0.42], to: [0.36, 0.63], start: 0.8, end: 2.5}
     - {text: "Fatty plaque", at: [0.20, 0.52], to: [0.28, 0.77], start: 5.6, end: 7.0}
   note: {text: "Plaque narrows the artery and slows blood flow", start: 3.6}
+16x9_spine_discs.mp4:
+  approved: false
+  words: [back pain, lower back, spine, spinal, disc, discs, herniated disc, slipped disc, sciatica, vertebrae, backache]
+  title: "Your Spine"
+  labels:
+    - {text: "Vertebra (bone)", at: [0.75, 0.30], to: [0.55, 0.24], start: 0.5}
+    - {text: "Disc (cushion)", at: [0.75, 0.52], to: [0.56, 0.50], start: 1.1}
+    - {text: "Nerve", at: [0.75, 0.74], to: [0.46, 0.62], start: 1.7}
+  note: {text: "Discs cushion the bones every time you bend", start: 3.0}
+16x9_acid_reflux.mp4:
+  approved: false
+  words: [acid reflux, heartburn, reflux, gerd, esophagus, stomach acid, indigestion, antacid, antacids]
+  title: "Acid Reflux"
+  labels:
+    - {text: "Esophagus (food pipe)", at: [0.36, 0.30], to: [0.48, 0.30], start: 0.3, end: 2.0}
+    - {text: "Stomach", at: [0.80, 0.60], to: [0.62, 0.65], start: 0.6, end: 2.0}
+    - {text: "Valve opens", at: [0.25, 0.44], to: [0.45, 0.44], start: 2.3, end: 3.6}
+    - {text: "Acid rises", at: [0.24, 0.40], to: [0.46, 0.40], start: 4.0, end: 5.4}
+    - {text: "Burned lining (heartburn)", at: [0.36, 0.34], to: [0.42, 0.30], start: 5.8}
+    - {text: "Stomach acid", at: [0.36, 0.82], to: [0.52, 0.80], start: 6.0}
+  note: {text: "Stomach acid flows back up and burns the food pipe", start: 5.0}
+16x9_thyroid_gland.mp4:
+  approved: false
+  words: [thyroid, thyroid gland, hypothyroidism, hyperthyroidism, underactive thyroid, overactive thyroid, metabolism, goiter, tsh, thyroid hormone]
+  title: "The Thyroid"
+  labels:
+    - {text: "Thyroid gland", at: [0.75, 0.40], to: [0.57, 0.52], start: 0.2, end: 2.4}
+    - {text: "Windpipe", at: [0.75, 0.80], to: [0.51, 0.80], start: 0.6, end: 2.4}
+    - {text: "Blood vessels", at: [0.22, 0.45], to: [0.33, 0.62], start: 1.0, end: 2.4}
+    - {text: "Thyroid gland", at: [0.75, 0.40], to: [0.56, 0.55], start: 6.8}
+  note: {text: "Its hormones set your body's speed (metabolism)", start: 2.6}
+16x9_red_cells_iron.mp4:
+  approved: false
+  words: [iron, low iron, anemia, iron deficiency, red blood cells, hemoglobin, always tired, fatigue, pale skin, oxygen in the blood]
+  title: "Iron and Your Blood"
+  labels:
+    - {text: "Red blood cells", at: [0.78, 0.22], to: [0.69, 0.42], start: 0.3, end: 3.0}
+    - {text: "Oxygen", at: [0.30, 0.20], to: [0.27, 0.30], start: 0.8, end: 3.0}
+    - {text: "Fewer, paler cells", at: [0.40, 0.85], to: [0.30, 0.66], start: 4.0}
+  note: {text: "Low iron: fewer red cells carry less oxygen, so you feel tired", start: 4.2}
