@@ -831,5 +831,21 @@
       "hPkAOHsuMfA"
     ],
     "publish_at": "2026-10-30T16:00:00Z"
+  },
+  {
+    "date": "2026-10-31T09:09:28",
+    "topic": "HPV vaccine: myths vs facts about cancer prevention",
+    "requested_topic": "HPV vaccine: myths vs facts about cancer prevention",
+    "title": "HPV Vaccine Myths: The Shot That Prevents Cancer",
+    "style": "Myth vs Fact",
+    "script_file": "053-hpv-vaccine-myths.yaml",
+    "series": "Infections Explained",
+    "episode": 4,
+    "planned_publish_at": "2026-10-31T16:00:00Z",
+    "awaiting_approval": true,
+    "youtube_id": "7zoyfg3xtkA",
+    "short_youtube_id": "H3iWGakCA8U",
+    "short2_youtube_id": "L-LpJLgUQII",
+    "preview": "previews/7zoyfg3xtkA.mp4"
   }
 ]
