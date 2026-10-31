@@ -5,10 +5,9 @@ on:
   push:
     branches: [claude/kind-albattani-59hcns]
     paths: ["rrs_inbox/**", "!rrs_inbox/*.md"]
-  schedule:
-    # Every 6 hours: picks up makeovers still waiting (one per run) and makes the long compilation once
-    # enough makeovers are ready.
-    - cron: "7 */6 * * *"
+  # Paused Oct 31, 2026: the owner is stopping makeover videos (channel becomes anatomy/disease explainers).
+  # schedule:
+  #   - cron: "7 */6 * * *"
   workflow_dispatch:
     inputs:
       mode:
