@@ -111,8 +111,10 @@ def shorten(plan, minutes: float, speed: float = 1.0) -> None:
     if sum(words) <= budget * 1.1 or len(plan.scenes) < 6:
         return
     last = len(plan.scenes) - 1
+    # every myth page stays too: the hook and title count them ("we bust seven myths"), Oct 31
     keep = {0, last} | {i for i, sc in enumerate(plan.scenes)
-                        if sc.layout == "warning" or SAFETY.search(f"{sc.heading} {' '.join(sc.points)} {sc.narration}")}
+                        if sc.layout in ("warning", "myth_fact")
+                        or SAFETY.search(f"{sc.heading} {' '.join(sc.points)} {sc.narration}")}
     used = sum(words[i] for i in keep)
     for i in range(1, last):
         if i not in keep and not LOW.search(plan.scenes[i].heading) and used + words[i] <= budget:
