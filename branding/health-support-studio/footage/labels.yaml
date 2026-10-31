@@ -135,7 +135,6 @@
     - {text: "Fatty plaque", at: [0.20, 0.52], to: [0.28, 0.77], start: 5.6, end: 7.0}
   note: {text: "Plaque narrows the artery and slows blood flow", start: 3.6}
 16x9_spine_discs.mp4:
-  approved: false
   words: [back pain, lower back, spine, spinal, disc, discs, herniated disc, slipped disc, sciatica, vertebrae, backache]
   title: "Your Spine"
   labels:
@@ -144,7 +143,6 @@
     - {text: "Nerve", at: [0.75, 0.74], to: [0.46, 0.62], start: 1.7}
   note: {text: "Discs cushion the bones every time you bend", start: 3.0}
 16x9_acid_reflux.mp4:
-  approved: false
   words: [acid reflux, heartburn, reflux, gerd, esophagus, stomach acid, indigestion, antacid, antacids]
   title: "Acid Reflux"
   labels:
@@ -156,7 +154,6 @@
     - {text: "Stomach acid", at: [0.36, 0.82], to: [0.52, 0.80], start: 6.0}
   note: {text: "Stomach acid flows back up and burns the food pipe", start: 5.0}
 16x9_thyroid_gland.mp4:
-  approved: false
   words: [thyroid, thyroid gland, hypothyroidism, hyperthyroidism, underactive thyroid, overactive thyroid, metabolism, goiter, tsh, thyroid hormone]
   title: "The Thyroid"
   labels:
@@ -166,7 +163,6 @@
     - {text: "Thyroid gland", at: [0.75, 0.40], to: [0.56, 0.55], start: 6.8}
   note: {text: "Its hormones set your body's speed (metabolism)", start: 2.6}
 16x9_red_cells_iron.mp4:
-  approved: false
   words: [iron, low iron, anemia, iron deficiency, red blood cells, hemoglobin, always tired, fatigue, pale skin, oxygen in the blood]
   title: "Iron and Your Blood"
   labels:
