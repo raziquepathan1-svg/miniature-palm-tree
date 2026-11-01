@@ -144,7 +144,7 @@ RPV = [[(676, 375), (518, 375)], [(676, 413), (522, 413)]]
 LPV = [[(1060, 470), (1176, 440)], [(1070, 545), (1180, 548)]]
 
 
-def draw(bg=(255, 255, 255)):
+def draw(bg=(255, 255, 255), arrows=True):
     img = Image.new("RGB", (W * SS, H * SS), bg)
     # back vessels: right pulmonary artery + right pulmonary veins pass behind the SVC
     img = paint(img, [tube_poly(RPA, 44)], BLUE)
@@ -175,7 +175,8 @@ def draw(bg=(255, 255, 255)):
                  ((1160, 444), (1095, 461)), ((1165, 547), (1102, 546)), ((1018, 495), (1018, 590)),
                  ((990, 880), (918, 705)), ((945, 192), (1020, 192)), ((914, 150), (906, 90)),
                  ((990, 140), (991, 82)), ((1050, 150), (1062, 98))):
-        arrow(d, a, b)
+        if arrows:
+            arrow(d, a, b)
     return img, d
 
 
