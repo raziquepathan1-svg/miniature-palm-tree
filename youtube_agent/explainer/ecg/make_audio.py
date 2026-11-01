@@ -2,7 +2,7 @@ import json, sys, wave
 from pathlib import Path
 import numpy as np
 HERE = Path(__file__).resolve().parent
-sys.path.insert(0, str(HERE.parent / "main"))
+sys.path.insert(0, str(HERE.parents[2]))  # repo root
 from youtube_agent import voice
 for s in json.load(open(HERE / "script.json")):
     out = HERE / "audio" / f"{s['id']}.wav"
