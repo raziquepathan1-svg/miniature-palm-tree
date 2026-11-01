@@ -43,7 +43,7 @@ def main() -> None:
         sys.exit("No video is waiting for approval.")
     if yt.get("publish_on_approval"):  # owner, Oct 27: nothing stays private - public as soon as it is checked
         youtube = build("youtube", "v3", credentials=_credentials(), cache_discovery=False)
-        for key in ("youtube_id", "short_youtube_id", "short2_youtube_id"):
+        for key in ("youtube_id", "short_youtube_id", "short2_youtube_id", "short3_youtube_id"):
             if entry.get(key):
                 _publish(youtube, entry[key])
                 print(f"Public now: https://youtu.be/{entry[key]}")
@@ -61,7 +61,8 @@ def main() -> None:
     _schedule(youtube, entry["youtube_id"], when)
     print(f"Scheduled {entry.get('title', entry['youtube_id'])}: {when:%Y-%m-%d %H:%M} UTC")
     for key, hours in (("short_youtube_id", yt.get("short_delay_hours", 6)),
-                       ("short2_youtube_id", yt.get("second_short_delay_hours", 3))):
+                       ("short2_youtube_id", yt.get("second_short_delay_hours", 3)),
+                       ("short3_youtube_id", yt.get("third_short_delay_hours", 9))):
         if entry.get(key):
             t = when + dt.timedelta(hours=float(hours))
             _schedule(youtube, entry[key], t)

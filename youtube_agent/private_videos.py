@@ -12,7 +12,7 @@ from .main import load_history
 def _known() -> set:
     ids = set()
     for h in load_history():
-        for k in ("youtube_id", "short_youtube_id", "short2_youtube_id"):
+        for k in ("youtube_id", "short_youtube_id", "short2_youtube_id", "short3_youtube_id"):
             if h.get(k):
                 ids.add(h[k])
         ids.update(h.get("replaced_ids", []))

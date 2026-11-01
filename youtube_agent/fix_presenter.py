@@ -62,7 +62,7 @@ def _swap_on_youtube(old: str, final: Path, thumb: Path | None, entry: dict, con
         req = yt_api.playlists().list_next(req, resp)
 
     # the Shorts link to the full video
-    for key in ("short_youtube_id", "short2_youtube_id"):
+    for key in ("short_youtube_id", "short2_youtube_id", "short3_youtube_id"):
         sid = entry.get(key)
         if not sid:
             continue

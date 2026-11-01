@@ -278,6 +278,8 @@ youtube:
   playlists: true              # add each video to its topic playlist (+ "Health Shorts" for Shorts)
   upload_short: true           # also upload the daily vertical Short to YouTube Shorts
   short_delay_hours: 6         # the Short goes public 6 hours after the main video (1 AM Saudi)
+  third_short: true            # owner Nov 1: 3 Shorts a day (Short 3 at +9 h = 4 AM Saudi / US evening)
+  third_short_delay_hours: 9
   category_id: "27"            # 27 = Education
   made_for_kids: false
   # YouTube requires disclosure of realistic AI-generated people/voices. Leave this true.

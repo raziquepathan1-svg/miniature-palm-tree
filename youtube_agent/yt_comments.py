@@ -73,7 +73,7 @@ def texts(history: list[dict], sub: str, playlists: dict[str, str]) -> dict[str,
         lines += [f"🔔 Subscribe for a new health video every day: {sub}",
                   "Educational only, not medical advice."]
         out[vid] = "\n".join(lines)
-        for key in ("short_youtube_id", "short2_youtube_id"):
+        for key in ("short_youtube_id", "short2_youtube_id", "short3_youtube_id"):
             if e.get(key):
                 out[e[key]] = (f"▶ Watch the full video here: https://youtu.be/{vid}\n\n{_question(e)}\n\n"
                                f"🔔 Subscribe for one simple health tip every day: {sub}")

@@ -98,6 +98,7 @@ def pick_style(config: dict, history: list[dict]) -> dict | None:
     return styles[published % len(styles)]
 
 
+USED_SHORT_PAGES: set = set()  # pages already turned into Shorts today
 SAFETY = re.compile(r"911|emergency|\ber\b|call your doctor|never ignore|get help|right away|poison control", re.I)
 LOW = re.compile(r"recap|questions for your doctor|cost and access", re.I)
 
@@ -414,6 +415,18 @@ def make_one_video(config: dict, history: list[dict], topic: str | None, dry_run
                 save_history(history)
         except Exception as e:  # the main video and first Short are already up
             print(f"  (Could not make the second Short: {e})")
+    # Owner, Nov 1: a third Short from yet another page (YouTube only; quota allows about 5 uploads a day)
+    short3_id = None
+    if (yt.get("third_short") and not shorts and short2_id
+            and uploads_today() < int(yt.get("max_uploads_per_day", 5))):
+        try:
+            short3_id = upload_second_short(plan, video_id, video_cfg, config, channel_name, workdir, yt, footer,
+                                            slot=3, skip=set(USED_SHORT_PAGES))
+            if short3_id:
+                entry["short3_youtube_id"] = short3_id
+                save_history(history)
+        except Exception as e:
+            print(f"  (Could not make the third Short: {e})")
     if social_dir:
         topic = plan.topic.split(":")[0].strip()
         comment = (f"What's your biggest question about {topic.lower()}? Ask below 👇 I read every comment and "
@@ -437,6 +450,8 @@ def make_one_video(config: dict, history: list[dict], topic: str | None, dry_run
         summary.append(f"- YouTube Short: https://studio.youtube.com/video/{short_id}/edit")
     if short2_id:
         summary.append(f"- Second YouTube Short: https://studio.youtube.com/video/{short2_id}/edit")
+    if short3_id:
+        summary.append(f"- Third YouTube Short: https://studio.youtube.com/video/{short3_id}/edit")
     if fact_issues:
         summary.append("- Fact-check corrections: " + "; ".join(fact_issues))
     left = len(unused_bank_scripts(history))
@@ -495,14 +510,16 @@ def uploads_today() -> int:
         try:
             for h in json.loads(f.read_text()):
                 if dt.datetime.fromisoformat(h.get("date", "1970-01-01")) >= start:
-                    count += sum(1 for k in ("youtube_id", "short_youtube_id", "short2_youtube_id") if h.get(k))
+                    count += sum(1 for k in ("youtube_id", "short_youtube_id", "short2_youtube_id",
+                                             "short3_youtube_id") if h.get(k))
         except Exception:
             pass
     return count
 
 
 def upload_second_short(plan, video_id: str, video_cfg: dict, config: dict, channel_name: str, workdir: Path,
-                        yt: dict, footer: str, hook_line: str = "", hook_title: str = "") -> str | None:
+                        yt: dict, footer: str, hook_line: str = "", hook_title: str = "", slot: int = 2,
+                        skip: set | None = None) -> str | None:
     """A ~45 s vertical Short from one strong scene of the video (myth vs fact, warning signs, a key number),
     with a hook first and the host's outro, scheduled a few hours after the first Short.
     hook_line: the first spoken line written for this script (script bank "short2_hook"); without it the hook
@@ -511,7 +528,7 @@ def upload_second_short(plan, video_id: str, video_cfg: dict, config: dict, chan
     from . import growth, uploader, visuals
     from .planner import Scene
 
-    if config.get("social", {}).get("shorts_style") == "v2":
+    if slot == 2 and config.get("social", {}).get("shorts_style") == "v2":
         try:  # new style, a different angle from the first Short
             from . import shorts2
 
@@ -543,7 +560,7 @@ def upload_second_short(plan, video_id: str, video_cfg: dict, config: dict, chan
         except Exception as e:
             print(f"  (New-style second Short failed, using the old style: {e})")
 
-    used = {s.heading for s in plan.short_scenes}
+    used = {s.heading for s in plan.short_scenes} | (skip or set())  # Short 3 takes yet another page (Nov 1)
     middle = [s for s in plan.scenes[1:-1] if s.heading not in used]
     order = {"myth_fact": 0, "warning": 1, "big_number": 2, "bullets": 3}
     picks = sorted((s for s in middle if s.layout in order), key=lambda s: order[s.layout])
@@ -551,6 +568,7 @@ def upload_second_short(plan, video_id: str, video_cfg: dict, config: dict, chan
         return None
     best = [s for s in picks if s.layout == picks[0].layout]
     scene = best[len(best) // 2]
+    USED_SHORT_PAGES.add(scene.heading)
     topic = plan.topic.split(":")[0].strip()
 
     def lower_first(text: str) -> str:  # "Men in their 50s" -> "men in their 50s", but "US women" stays
@@ -591,26 +609,31 @@ def upload_second_short(plan, video_id: str, video_cfg: dict, config: dict, chan
     narration = scene.narration.replace(growth.LAST_MID or "\0", "").strip()
     body = scene.model_copy(update={"narration": narration + " Watch the full video on the Health Support "
                                     "Studio channel, and subscribe for a new health tip every day."})
-    print(f"    Making a second Short: {title}")
+    print(f"    Making Short {slot}: {title}")
     raw = visuals.build_video(SimpleNamespace(scenes=visuals.split_for_shorts([hook_scene, body], plan.topic),
                                               short_scenes=[], topic=plan.topic),
                               {**video_cfg, "format": "shorts"}, config.get("voice", {}), channel_name,
-                              workdir / "short2_build")
+                              workdir / f"short{slot}_build")
+    try:  # kept with the run's files, so the daily check can look at every Short before approving
+        (workdir / "social").mkdir(exist_ok=True)
+        shutil.copyfile(raw, workdir / "social" / f"short{slot}.mp4")
+    except OSError:
+        pass
     short_yt = dict(yt)
+    delay = yt.get("second_short_delay_hours", 3) if slot == 2 else yt.get("third_short_delay_hours", 9)
     if yt.get("publish_at"):
-        t = dt.datetime.fromisoformat(yt["publish_at"].replace("Z", "+00:00")) + dt.timedelta(
-            hours=float(yt.get("second_short_delay_hours", 3)))
+        t = dt.datetime.fromisoformat(yt["publish_at"].replace("Z", "+00:00")) + dt.timedelta(hours=float(delay))
         short_yt["publish_at"] = t.strftime("%Y-%m-%dT%H:%M:%SZ")
     tags = " ".join(w for w in plan.short_caption.split() if w.startswith("#"))
     desc = f"{hook}\n\n▶️ Watch the full video: https://youtu.be/{video_id}\n\n{tags}\n\n{footer}".strip()
-    print("    Uploading the second Short...")
+    print(f"    Uploading Short {slot}...")
     short_id = uploader.upload_video(raw, None, title, desc, plan.tags + ["shorts"], short_yt,
                                      config["channel"].get("language_code", "en-US"))
     if yt.get("playlists", True):
         uploader.add_to_playlists(short_id, [yt.get("shorts_playlist", "Health Shorts")], yt.get("playlist_description"))
-    try:  # its Instagram/Facebook version, posted at a second time of day
+    try:  # its Instagram/Facebook version, posted at a second time of day (Short 3 is YouTube only)
         social_dir = workdir / "social"
-        if social_dir.is_dir():
+        if slot == 2 and social_dir.is_dir():
             reel_body = scene.model_copy(update={"narration": f"{narration} {growth.REEL_FOLLOW}"})
             reel = visuals.build_video(SimpleNamespace(scenes=visuals.split_for_shorts([hook_scene, reel_body],
                                                                                        plan.topic),

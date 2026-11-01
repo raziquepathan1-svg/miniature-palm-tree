@@ -52,7 +52,7 @@ jobs:
           git checkout -q -B previews origin/previews
           mkdir -p previews && cp preview.mp4 "previews/${{ inputs.video_id }}.mp4"
           if [ -d soc ]; then
-            for n in short reel reel2; do
+            for n in short short2 short3 reel reel2; do
               f=$(find soc -name "$n.mp4" | head -1)
               if [ -n "$f" ]; then ffmpeg -y -loglevel error -i "$f" -vf scale=-2:640 -c:v libx264 -preset veryfast -b:v 600k -c:a aac -b:a 64k "previews/${{ inputs.video_id }}_$n.mp4"; fi
             done
