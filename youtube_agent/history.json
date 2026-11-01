@@ -890,11 +890,10 @@
     "script_file": "054-pneumonia-questions.yaml",
     "series": "Infections Explained",
     "episode": 5,
-    "awaiting_approval": true,
-    "youtube_id": "3d0eEWWITg4",
+    "awaiting_approval": false,
+    "youtube_id": "I9ZAW7lmnXA",
     "short_youtube_id": "DBJyrfIpzFo",
     "short2_youtube_id": "R1zoxWxOCNk",
-    "preview": "previews/3d0eEWWITg4.mp4",
     "pin_question": "Has anyone in your family had pneumonia? What was the first sign you noticed?",
     "packages": [
       {
@@ -928,6 +927,10 @@
       "thumbnail_text": "JUST A COUGH?",
       "thumbnail_highlight": "COUGH?"
     },
-    "planned_publish_at": "2026-11-01T16:00:00Z"
+    "replaced_ids": [
+      "3d0eEWWITg4"
+    ],
+    "publish_at": "2026-11-01T19:20:30Z",
+    "published_by_hand": true
   }
 ]
