@@ -30,6 +30,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # Nov 1: a scheduled run queued behind the day's run started from an older commit and did not see
+      # today's video in history.json, so it made tomorrow's video. Always read the newest history first.
+      - name: Get the newest history
+        run: |
+          git fetch -q --depth=1 origin "${{ github.ref_name }}" && git checkout FETCH_HEAD -- youtube_agent/history.json || true
+
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
@@ -46,7 +52,7 @@ jobs:
         run: |
           sudo apt-get update -q && sudo apt-get install -y -q ffmpeg fonts-dejavu-core
           pip install -r requirements.txt
-          pip install -q kaggle   # the talking host is made on Kaggle's free GPU
+          pip install -q kaggle six   # the talking host is made on Kaggle's free GPU
 
       - name: Cache your cloned-voice model
         uses: actions/cache@v4
