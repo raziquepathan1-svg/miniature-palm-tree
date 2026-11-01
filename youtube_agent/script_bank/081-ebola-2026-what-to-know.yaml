@@ -1,0 +1,236 @@
+queue_topic: 'Ebola outbreak 2026: how it spreads, symptoms and real risk'
+style: Top Questions
+sources:
+- 'CDC, Ebola Outbreak: Current Situation: https://www.cdc.gov/ebola/situation-summary/index.html'
+- 'CDC, About Ebola: https://www.cdc.gov/ebola/about/index.html'
+- 'WHO, Ebola disease caused by Bundibugyo virus, DRC, Kenya and Nigeria: https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON622'
+- 'ECDC, Ebola disease multi-country outbreak 2026: https://www.ecdc.europa.eu/en/ebola-disease-multi-country-outbreak-2026'
+- 'WHO, Ebola disease fact sheet: https://www.who.int/news-room/fact-sheets/detail/ebola-disease'
+plan:
+  title: 'Ebola in 2026: How It Spreads and Who Is at Risk'
+  description: 'Ebola is in the news again. Here is how Ebola really spreads, the early symptoms, who is at risk,
+    what travelers should do, and why the risk for most people is very low, based on the CDC and WHO.
+
+
+    In this video:
+
+    • The 2026 outbreak in brief
+
+    • How Ebola spreads (and how it does not)
+
+    • Symptoms and warning signs
+
+    • Travel advice
+
+
+    #Ebola #Outbreak #PublicHealth #HealthNews #HealthEducation'
+  tags:
+  - ebola
+  - ebola 2026
+  - ebola outbreak
+  - how does ebola spread
+  - ebola symptoms
+  - bundibugyo virus
+  - ebola congo
+  - ebola kenya
+  - ebola nigeria
+  - is ebola airborne
+  - health news
+  - health education
+  thumbnail_text: IN THE AIR?
+  thumbnail_highlight: AIR?
+  thumbnail_photo_query: doctor protective gear
+  playlist: Infections & Vaccines
+  short_title: 'Can Ebola spread through the air? #Shorts'
+  short_caption: 'Ebola is in the news. Can it spread through the air? Here is what is true. Educational only, not
+    medical advice. #Ebola #HealthNews #PublicHealth #HealthEducation'
+  scenes:
+  - layout: title
+    heading: 'Ebola in 2026: Should You Worry?'
+    points:
+    - What is true, what is not
+    footage_query: news world map
+    narration: 'Ebola is back in the news. A large outbreak in Central Africa has now reached more countries, and
+      many people are asking: could it spread to me, how does it actually pass between people, and what should I
+      do? In the next few minutes you will get calm, clear answers based on the CDC and the World Health Organization.'
+  - layout: big_number
+    heading: A Large Outbreak
+    points:
+    - 10,000+
+    - Confirmed cases by late October
+    footage_query: doctor reading lab results
+    narration: Here is the situation. Since May 2026, the Democratic Republic of the Congo has had one of the largest
+      Ebola outbreaks ever recorded, with more than ten thousand confirmed cases and around five thousand deaths
+      by late October, according to European health officials. Kenya and Nigeria have also reported cases linked
+      to travel.
+  - layout: bullets
+    heading: What Is Ebola?
+    points:
+    - A serious virus infection
+    - 'This outbreak: Bundibugyo virus'
+    - Often fatal without care
+    - No approved vaccine for this type
+    footage_query: virus microscope illustration
+    narration: Ebola disease is a serious and often deadly illness caused by a group of viruses. This outbreak is
+      caused by the Bundibugyo virus. The CDC says there is no approved vaccine or medicine yet for this particular
+      type, so early care in a hospital, with fluids and support, matters most.
+  - layout: bullets
+    heading: How Ebola Spreads
+    points:
+    - Blood and body fluids
+    - Of someone who is sick
+    - Or who died of Ebola
+    - Through broken skin, eyes, nose, mouth
+    footage_query: hospital hand hygiene gloves
+    narration: How does Ebola spread? Through direct contact with the blood or body fluids of a person who is sick
+      with Ebola, or who has died from it. That includes vomit, diarrhea, urine, saliva, sweat and blood, getting
+      into broken skin or the eyes, nose or mouth. It can also spread through needles or bedding soiled with these
+      fluids.
+  - layout: myth_fact
+    heading: Ebola Spreads Through the Air
+    points:
+    - You can catch it like a cold
+    - It is not airborne
+    footage_query: people walking city street
+    narration: 'Myth: you can catch Ebola from the air, like a cold or the flu. Fact: Ebola does not spread through
+      the air, and not through casual contact, like passing someone in the street. It spreads through close contact
+      with the body fluids of someone who is already sick. That is why health workers and family caregivers are
+      most at risk.'
+  - layout: myth_fact
+    heading: People Spread It Before Symptoms
+    points:
+    - Anyone could be spreading it
+    - Not before symptoms start
+    footage_query: family at home
+    narration: 'Myth: people can spread Ebola before they feel sick. Fact: a person with Ebola cannot spread it
+      to others until symptoms start. The sicker they become, the more virus is in their body fluids, which is why
+      caring for a very sick person, or touching the body of someone who died, carries the highest risk.'
+  - layout: bullets
+    heading: Early Symptoms
+    points:
+    - Fever
+    - Aches and weakness
+    - Headache
+    - Sore throat
+    footage_query: person sick in bed fever
+    narration: 'Symptoms usually appear between two and twenty one days after contact with the virus. The first
+      signs are like many other illnesses: fever, muscle aches, severe tiredness or weakness, headache and a sore
+      throat. That is why recent travel to an affected area is such an important clue for doctors.'
+  - layout: warning
+    heading: Later Warning Signs
+    points:
+    - Vomiting and diarrhea
+    - Stomach pain
+    - Unexplained bleeding
+    - Call ahead before going in
+    footage_query: ambulance emergency night
+    narration: As the illness gets worse, there can be vomiting, diarrhea, stomach pain and unexplained bleeding
+      or bruising. If you have been in an affected area in the last twenty one days and you get a fever, call a
+      doctor or emergency number first and tell them about your travel, before you go in, so they can protect you
+      and others.
+  - layout: myth_fact
+    heading: Ebola Is Always Fatal
+    points:
+    - Nobody survives Ebola
+    - Early care saves lives
+    footage_query: hospital doctor patient care
+    narration: 'Myth: everyone who gets Ebola dies. Fact: Ebola is very dangerous, but many people survive, especially
+      when they get early care in a hospital. Replacing fluids, treating other infections and supporting the body
+      give patients a much better chance. Getting to care quickly makes a real difference.'
+  - layout: big_number
+    heading: Risk in the United States
+    points:
+    - Very low
+    - No US cases from this outbreak
+    footage_query: airport travelers terminal
+    narration: What about the United States? The CDC says no Ebola cases have been confirmed in the United States
+      from this outbreak, and the risk to the general public is very low. Health officials have added extra checks
+      for travelers who were recently in the outbreak area, and US hospitals have plans to safely care for any patient.
+  - layout: bullets
+    heading: Who Is Most at Risk?
+    points:
+    - Health workers in the outbreak area
+    - Family caregivers
+    - People at funerals there
+    - Close contacts of patients
+    footage_query: health worker protective gear
+    narration: Who is most at risk? Health workers caring for patients in the outbreak area, family members looking
+      after a sick relative at home, people who touch the body at traditional funerals, and close contacts of patients.
+      For most people in the world, the risk of catching Ebola is extremely low.
+  - layout: bullets
+    heading: If You Travel to the Area
+    points:
+    - Check official travel advice
+    - Avoid sick people
+    - Do not touch blood or body fluids
+    - Wash hands often
+    footage_query: passport travel planning
+    narration: If you must travel to an affected area, check official travel advice first. While you are there,
+      avoid contact with sick people, with blood and body fluids, and with bodies of people who have died. Wash
+      your hands often. Avoid wild animals and bushmeat, which can also carry the virus.
+  - layout: bullets
+    heading: After You Come Back
+    points:
+    - Watch your health 21 days
+    - Check your temperature
+    - Fever? Call first
+    - Tell them where you traveled
+    footage_query: thermometer reading
+    narration: After you come back, watch your health for twenty one days and check your temperature. If you get
+      a fever or any other symptom, call a doctor or your local health department first, and tell them exactly where
+      you traveled. Most fevers will turn out to be something else, but they need to know.
+  - layout: myth_fact
+    heading: Masks Protect You From Ebola
+    points:
+    - A mask is enough
+    - Contact is the danger
+    footage_query: hand sanitizer bottle
+    narration: 'Myth: wearing a mask in public protects you from Ebola. Fact: because Ebola is not airborne, a mask
+      in public is not what keeps you safe. Avoiding contact with body fluids and washing your hands is what matters.
+      Health workers wear full protective gear because they touch patients directly.'
+  - layout: bullets
+    heading: Stop the Rumors
+    points:
+    - Use official sources
+    - CDC and WHO updates
+    - Do not share scary rumors
+    - Facts protect people
+    footage_query: person reading phone news
+    narration: In every outbreak, rumors spread faster than the virus. False stories can make people afraid of hospitals,
+      or of whole communities. Get your updates from official sources, like the CDC, the World Health Organization
+      and your local health department, and think twice before sharing a scary post.
+  - layout: outro
+    heading: Remember
+    points:
+    - Not airborne
+    - No spread before symptoms
+    - 'Travel + fever: call first'
+    footage_query: family together home
+    narration: 'Remember: Ebola is not airborne, people do not spread it before symptoms, and the risk for most
+      people is very low. If you traveled to an affected area and get a fever, call ahead first. Share this with
+      someone who is worried. This video is for education only, not medical advice.'
+  short_scenes:
+  - layout: title
+    heading: Can Ebola Spread Through the Air?
+    points:
+    - Myth or fact?
+    footage_query: people walking city street
+    narration: Can you catch Ebola just by being near someone?
+  - layout: bullets
+    heading: How Ebola Really Spreads
+    points:
+    - Not through the air
+    - Blood and body fluids
+    - Not before symptoms
+    footage_query: hospital hand hygiene gloves
+    narration: No. Ebola does not spread through the air. It spreads through direct contact with the blood or body
+      fluids of someone who is already sick, or who died from it. And people cannot spread it before their symptoms
+      start. For most people, the risk is very low.
+  - layout: outro
+    heading: Full Video
+    points:
+    - On YouTube
+    footage_query: family together home
+    narration: Find out the warning signs and what travelers should do in our full video, on the Health Support
+      Studio YouTube channel.
+  topic: 'Ebola outbreak 2026: how it spreads, symptoms and real risk'

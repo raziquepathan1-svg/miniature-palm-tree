@@ -182,6 +182,10 @@ def make_one_video(config: dict, history: list[dict], topic: str | None, dry_run
     bank = [] if topic else unused_bank_scripts(history)
     episode = growth.next_episode(history, bank, config.get("growth") or {}) if bank else None
     bank_file = episode.bank_file if episode else (bank[0] if bank else None)
+    now = (config.get("growth") or {}).get("now") or []  # owner Nov 1: today's health problems go first
+    urgent = sorted((f for f in bank if f.name in now), key=lambda f: now.index(f.name)) if bank else []
+    if urgent:  # a stand-alone video, outside the 5-part series (the series carries on the day after)
+        episode, bank_file = None, urgent[0]
     bank_data = yaml.safe_load(bank_file.read_text()) if bank_file else {}
     styles = {s["name"]: s for s in config["video"].get("styles") or []}
     style = styles.get(bank_data.get("style")) or pick_style(config, history)

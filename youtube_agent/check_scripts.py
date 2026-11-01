@@ -58,7 +58,7 @@ def check(path, config) -> list[str]:
         if plan.short_scenes:
             errs.append("short_scenes must be empty for a Quick Short")
     else:
-        lo, hi = (1650, 2500) if data.get("long", True) and n > 700 else (420, 680)  # 10-15 min, or older 3-min scripts
+        lo, hi = (780, 2500) if data.get("long", True) and n > 700 else (420, 680)  # 6-min (owner Oct 30) to 15-min, or 3-min scripts
         if not lo <= n <= hi:
             errs.append(f"video is {n} words (want {lo}-{hi})")
         m = words(plan.short_scenes)

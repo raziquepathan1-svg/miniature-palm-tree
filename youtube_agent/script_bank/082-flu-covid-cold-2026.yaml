@@ -1,0 +1,240 @@
+queue_topic: 'Flu, COVID or a cold: how to tell this season (2026)'
+style: Top Questions
+sources:
+- 'CDC, 2026-2027 Respiratory Disease Season Outlook: https://www.cdc.gov/cfa-qualitative-assessments/php/data-research/season-outlook26-27.html'
+- 'CDC, Signs and Symptoms of Flu: https://www.cdc.gov/flu/signs-symptoms/index.html'
+- 'CDC, Similarities and Differences between Flu and COVID-19: https://www.cdc.gov/flu/symptoms/flu-vs-covid19.html'
+- 'CDC, Key Facts About Seasonal Flu Vaccine: https://www.cdc.gov/flu/vaccines/keyfacts.html'
+- 'CDC, Flu Treatment: https://www.cdc.gov/flu/treatment/index.html'
+- 'CDC, Preventing Spread of Respiratory Viruses When You''re Sick: https://www.cdc.gov/respiratory-viruses/prevention/precautions-when-sick.html'
+plan:
+  title: Flu, COVID or a Cold? How to Tell This Season
+  description: 'Flu season started early this year, and flu, COVID and colds are all going around. Here is how to
+    tell them apart, when to test, who should call a doctor early, the warning signs that need help right away,
+    and why it is not too late for a flu shot.
+
+
+    In this video:
+
+    • Cold vs flu vs COVID
+
+    • Testing and early treatment
+
+    • Flu shot myths
+
+    • Emergency warning signs
+
+
+    #FluSeason #COVID #ColdAndFlu #HealthTips #HealthEducation'
+  tags:
+  - flu or covid
+  - flu vs covid vs cold
+  - flu season 2026
+  - flu symptoms
+  - covid symptoms
+  - cold vs flu
+  - is it too late for a flu shot
+  - flu shot
+  - rsv vaccine
+  - when to see a doctor flu
+  - health education
+  thumbnail_text: WHICH ONE?
+  thumbnail_highlight: ONE?
+  thumbnail_photo_query: sick person tissues bed
+  playlist: Infections & Vaccines
+  short_title: 'Is it too late for a flu shot? #Shorts'
+  short_caption: 'Flu season started early this year. Is it too late for a flu shot? Educational only, not medical
+    advice. #FluSeason #FluShot #HealthTips #HealthEducation'
+  scenes:
+  - layout: title
+    heading: Flu, COVID or a Cold?
+    points:
+    - How to tell this season
+    footage_query: person sick in bed fever
+    narration: Flu season has started early this year, and right now flu, COVID and colds are all going around at
+      the same time. They can look almost the same. So how do you tell them apart, when do you need a test or a
+      doctor, and is it too late for a flu shot? Here is a simple guide for this season.
+  - layout: bullets
+    heading: This Season So Far
+    points:
+    - Flu started early
+    - Highest in the western US
+    - CDC expects a moderate season
+    - RSV may peak late
+    footage_query: news world map
+    narration: Here is what health officials are seeing. In the United States, flu activity started early this fall,
+      highest at first in the western states. The CDC expects a moderate flu season overall, and says RSV may peak
+      late again, as it did last winter. So the coming weeks are the time to get ready.
+  - layout: bullets
+    heading: 'A Cold: Slow and Mild'
+    points:
+    - Starts slowly
+    - Runny or stuffy nose
+    - Sneezing, sore throat
+    - Fever is rare in adults
+    footage_query: tissues box cold
+    narration: A cold usually starts slowly, over a day or two, with a runny or stuffy nose, sneezing and a sore
+      throat. Most adults do not get a fever, and you can usually still go about your day. Most colds get better
+      on their own in about a week to ten days.
+  - layout: bullets
+    heading: 'The Flu: Fast and Hard'
+    points:
+    - Comes on suddenly
+    - Fever or chills
+    - Body aches
+    - Very tired, weak
+    footage_query: person shivering blanket
+    narration: The flu usually hits suddenly. You may feel fine in the morning and terrible by the afternoon, with
+      fever or chills, body aches, headache, a dry cough and deep tiredness. Some people, especially children, also
+      have vomiting or diarrhea. Not everyone with flu has a fever.
+  - layout: bullets
+    heading: 'COVID: It Can Look Like Both'
+    points:
+    - Mild or severe
+    - Fever, cough, tiredness
+    - Sometimes loss of taste or smell
+    - Can start slowly or fast
+    footage_query: home covid test kit
+    narration: COVID can look like a cold or like the flu. It can cause fever, cough, sore throat, tiredness, aches
+      and a runny nose, and sometimes a new loss of taste or smell. It may start slowly or quickly. Because the
+      signs overlap so much, you cannot tell COVID from flu just by how you feel.
+  - layout: myth_fact
+    heading: I Can Tell by My Symptoms
+    points:
+    - I know which one I have
+    - Only a test can tell
+    footage_query: doctor reading lab results
+    narration: 'Myth: you can tell which virus you have from your symptoms. Fact: flu, COVID and other viruses share
+      so many symptoms that only a test can tell for sure. Home tests for COVID, and combined home tests for flu
+      and COVID, are available, and your doctor or pharmacist can test you too.'
+  - layout: bullets
+    heading: Why Testing Early Matters
+    points:
+    - Flu medicine works best early
+    - Within 2 days of symptoms
+    - COVID medicine also early
+    - Ask if you are high risk
+    footage_query: pharmacist talking customer
+    narration: Why test early? Because there are prescription medicines for both flu and COVID, and they work best
+      when started soon after symptoms begin, ideally within two days for flu. They matter most for people at higher
+      risk. If you are in a high risk group and you get sick, call your doctor right away.
+  - layout: bullets
+    heading: Who Is at Higher Risk?
+    points:
+    - Age 65 and older
+    - Young children
+    - Pregnant women
+    - Long-term health problems
+    footage_query: grandparents with grandchildren
+    narration: Who is at higher risk of serious illness? Adults aged sixty five and older, young children, pregnant
+      women, and people with long term conditions like asthma, heart disease, diabetes, kidney disease or a weak
+      immune system. For them, a quick call to the doctor at the first symptoms is worth it.
+  - layout: myth_fact
+    heading: Too Late for a Flu Shot
+    points:
+    - The season already started
+    - Getting it now still helps
+    footage_query: flu vaccine injection arm
+    narration: 'Myth: once flu season has started, it is too late to get a flu shot. Fact: getting vaccinated later
+      is better than not getting vaccinated at all. Flu often keeps spreading for months, into the spring. The CDC
+      recommends a yearly flu vaccine for everyone six months and older.'
+  - layout: myth_fact
+    heading: The Flu Shot Gives You Flu
+    points:
+    - The shot can give you flu
+    - It cannot cause flu
+    footage_query: vaccine syringe close up
+    narration: 'Myth: the flu shot can give you the flu. Fact: flu shots cannot cause the flu. Some people get a
+      sore arm, a mild fever or aches for a day or two, which is the body building protection. Your body needs about
+      two weeks after the shot to be fully protected.'
+  - layout: bullets
+    heading: Other Vaccines This Season
+    points:
+    - Updated COVID vaccine
+    - RSV vaccine for 75 and older
+    - RSV for 50 to 74 at risk
+    - Ask what fits you
+    footage_query: doctor patient talking
+    narration: 'Other vaccines to ask about this season: the updated COVID vaccine, and the RSV vaccine, which is
+      recommended for everyone seventy five and older, and for adults fifty to seventy four with a higher risk of
+      severe illness. Ask your doctor or pharmacist which ones fit you.'
+  - layout: bullets
+    heading: Care at Home
+    points:
+    - Rest
+    - Plenty of fluids
+    - Fever medicine if needed
+    - Read the label
+    footage_query: person resting couch blanket
+    narration: 'For most people, care at home is enough: rest, drink plenty of fluids, and use fever and pain medicine
+      if you need it, following the label. Do not give aspirin to children or teenagers. And remember, antibiotics
+      do not work against flu, COVID or cold viruses.'
+  - layout: bullets
+    heading: Protect Your Family
+    points:
+    - Stay home when sick
+    - Cover coughs and sneezes
+    - Wash hands often
+    - Clean shared surfaces
+    footage_query: washing hands soap
+    narration: To protect your family, stay home when you are sick until your fever has been gone for at least a
+      day without fever medicine and you feel better, cover coughs and sneezes, wash your hands often, and clean
+      things that everyone touches, like phones and door handles.
+  - layout: warning
+    heading: Get Help Right Away
+    points:
+    - Trouble breathing
+    - Chest pain or pressure
+    - Confusion
+    - Bluish lips or face
+    footage_query: ambulance emergency night
+    narration: Get emergency help right away for trouble breathing, pain or pressure in the chest, new confusion,
+      bluish lips or face, a seizure, not urinating, or severe weakness. Also get help if a fever or cough gets
+      better and then comes back worse. Call 911 or your local emergency number.
+  - layout: warning
+    heading: Warning Signs in Children
+    points:
+    - Fast or hard breathing
+    - Ribs pulling in
+    - Not drinking, no wet diapers
+    - Hard to wake
+    footage_query: baby sleeping crib
+    narration: In children, get help right away for fast or hard breathing, ribs pulling in with each breath, bluish
+      lips, not drinking enough or no wet diapers, a child who is very hard to wake, or a fever with a rash. Trust
+      your instinct as a parent and call for help.
+  - layout: outro
+    heading: Remember
+    points:
+    - A test tells you which one
+    - High risk? Call early
+    - Not too late for a flu shot
+    footage_query: family cozy winter
+    narration: 'Remember: only a test can tell flu from COVID, people at high risk should call their doctor early,
+      and it is not too late for a flu shot. Share this with your family before the winter rush. This video is for
+      education only, not medical advice.'
+  short_scenes:
+  - layout: title
+    heading: Too Late for a Flu Shot?
+    points:
+    - Flu season started early
+    footage_query: flu vaccine injection arm
+    narration: Flu season started early this year. Is it too late to get a flu shot?
+  - layout: bullets
+    heading: Why It Still Helps
+    points:
+    - Not too late
+    - Flu spreads for months
+    - Everyone 6 months and up
+    - Protection in about 2 weeks
+    footage_query: vaccine syringe close up
+    narration: No. Getting a flu shot later is better than not getting one at all, because flu keeps spreading for
+      months, often into spring. The CDC recommends a yearly flu vaccine for everyone six months and older, and
+      it takes about two weeks to protect you. And the flu shot cannot give you the flu.
+  - layout: outro
+    heading: Full Video
+    points:
+    - On YouTube
+    footage_query: family cozy winter
+    narration: Find out how to tell flu, COVID and a cold apart in our full video, on the Health Support Studio
+      YouTube channel.
+  topic: 'Flu, COVID or a cold: how to tell this season (2026)'

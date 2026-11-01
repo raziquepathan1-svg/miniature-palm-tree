@@ -84,6 +84,8 @@ growth:
           "046-anxiety-explained.yaml", "028-food-poisoning-myths.yaml",
           "051-choking-first-aid.yaml", "063-hypothermia-frostbite-signs.yaml", "056-carbon-monoxide-signs.yaml",
           "059-naloxone-opioid-overdose.yaml", "052-blood-clots-dvt-signs.yaml"]
+  # Owner, Nov 1: current health problems first (stand-alone videos, before the next series video)
+  now: ["081-ebola-2026-what-to-know.yaml", "082-flu-covid-cold-2026.yaml"]
   part_in_title: false         # owner Oct 30: no "(Part n/5)" in titles; the series stays in playlists and the description
   series:
     "Heart & Blood Pressure": "Know Your Numbers"
