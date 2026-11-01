@@ -885,7 +885,7 @@
     "date": "2026-11-01T10:42:46",
     "topic": "Pneumonia: symptoms, treatment and vaccines that prevent it",
     "requested_topic": "Pneumonia: symptoms, treatment and vaccines that prevent it",
-    "title": "Cold or Pneumonia? Signs Your Cough Is Serious",
+    "title": "Pneumonia Signs Most People Miss",
     "style": "Top Questions",
     "script_file": "054-pneumonia-questions.yaml",
     "series": "Infections Explained",
@@ -895,7 +895,40 @@
     "youtube_id": "3d0eEWWITg4",
     "short_youtube_id": "DBJyrfIpzFo",
     "short2_youtube_id": "R1zoxWxOCNk",
-    "preview": "previews/3d0eEWWITg4.mp4"
+    "preview": "previews/3d0eEWWITg4.mp4",
+    "pin_question": "Has anyone in your family had pneumonia? What was the first sign you noticed?",
+    "packages": [
+      {
+        "title": "Pneumonia Signs Most People Miss",
+        "thumbnail_text": "JUST A COUGH?",
+        "thumbnail_highlight": "COUGH?"
+      },
+      {
+        "title": "Is Pneumonia Contagious?",
+        "thumbnail_text": "IT CAN SPREAD",
+        "thumbnail_highlight": "SPREAD"
+      },
+      {
+        "title": "Does Pneumonia Always Need Antibiotics?",
+        "thumbnail_text": "ONLY BACTERIA",
+        "thumbnail_highlight": "BACTERIA"
+      },
+      {
+        "title": "Pneumonia in Older Adults: Hidden Signs",
+        "thumbnail_text": "NO FEVER?",
+        "thumbnail_highlight": "FEVER?"
+      },
+      {
+        "title": "When a Cold Turns Into Pneumonia",
+        "thumbnail_text": "GET CHECKED",
+        "thumbnail_highlight": "CHECKED"
+      }
+    ],
+    "chosen": {
+      "title": "Pneumonia Signs Most People Miss",
+      "thumbnail_text": "JUST A COUGH?",
+      "thumbnail_highlight": "COUGH?"
+    }
   },
   {
     "date": "2026-11-01T14:16:49",
