@@ -492,5 +492,51 @@
       "thumbnail_highlight": "CANCER?"
     },
     "done": true
+  },
+  {
+    "youtube_id": "3d0eEWWITg4",
+    "title": "Pneumonia Signs Most People Miss",
+    "description_top": "Pneumonia symptoms in adults, older adults and children: when a cough is more than a cold, when to go to the ER, how pneumonia is treated, and the vaccines that help prevent it.\nIs pneumonia contagious? Do you always need antibiotics? Clear answers based on CDC and NIH guidance.",
+    "pin_question": "Has anyone in your family had pneumonia? What was the first sign you noticed?",
+    "packages": [
+      {
+        "title": "Pneumonia Signs Most People Miss",
+        "thumbnail_text": "JUST A COUGH?",
+        "thumbnail_highlight": "COUGH?"
+      },
+      {
+        "title": "Is Pneumonia Contagious?",
+        "thumbnail_text": "IT CAN SPREAD",
+        "thumbnail_highlight": "SPREAD"
+      },
+      {
+        "title": "Does Pneumonia Always Need Antibiotics?",
+        "thumbnail_text": "ONLY BACTERIA",
+        "thumbnail_highlight": "BACTERIA"
+      },
+      {
+        "title": "Pneumonia in Older Adults: Hidden Signs",
+        "thumbnail_text": "NO FEVER?",
+        "thumbnail_highlight": "FEVER?"
+      },
+      {
+        "title": "When a Cold Turns Into Pneumonia",
+        "thumbnail_text": "GET CHECKED",
+        "thumbnail_highlight": "CHECKED"
+      }
+    ],
+    "chosen": {
+      "title": "Pneumonia Signs Most People Miss",
+      "thumbnail_text": "JUST A COUGH?",
+      "thumbnail_highlight": "COUGH?"
+    }
+  },
+  {
+    "youtube_id": "DBJyrfIpzFo",
+    "title": "Cold or pneumonia? 4 signs to watch for #Shorts"
+  },
+  {
+    "youtube_id": "R1zoxWxOCNk",
+    "title": "Does pneumonia always need antibiotics? #Shorts"
   }
 ]
