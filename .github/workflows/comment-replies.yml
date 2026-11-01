@@ -37,7 +37,7 @@ jobs:
         run: |
           git config user.name "youtube-agent"
           git config user.email "youtube-agent@users.noreply.github.com"
-          git add youtube_agent/comment_inbox.json youtube_agent/reply_jobs.json youtube_agent/comments_replied.json 2>/dev/null || true
+          for f in comment_inbox reply_jobs comments_replied; do [ -f "youtube_agent/$f.json" ] && git add "youtube_agent/$f.json"; done
           git diff --cached --quiet && exit 0
           git commit -m "Comment replies (${{ inputs.mode }})"
           { for i in 1 2 3 4 5; do git pull --rebase && git push && exit 0; git rebase --abort 2>/dev/null || true; sleep $((i*4)); done; exit 1; }
