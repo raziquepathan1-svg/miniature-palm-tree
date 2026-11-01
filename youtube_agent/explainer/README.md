@@ -13,3 +13,7 @@ gold glow + label tags timed to the narration, moving blood dots, text panel on 
 
 Rules: labels and text are always drawn in code (never AI-generated text); scripts are fact-checked
 (`youtube_agent/fact_check.py`) and approved by the owner before rendering.
+
+## UPDATE 1 Nov 2026: Osmosis style is the approved style
+The flat line-art version above was replaced. The approved recipe is in `.claude/skills/anatomy-unfolded-style/SKILL.md`
+and the reference implementation is `ecg/osm_full.py` (engine `ecg/board.py`).
