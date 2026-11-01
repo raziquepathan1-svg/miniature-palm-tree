@@ -1,0 +1,68 @@
+name: The Anatomy Unfolded - narration in my voice
+
+# Speaks an explainer script (youtube_agent/explainer/<episode>/script.json) in the owner's cloned voice and
+# commits the scene WAVs to youtube_agent/explainer/<episode>/voice_clone/. Needs the VOICE_KEY secret.
+on:
+  push:
+    branches: [claude/kind-albattani-59hcns]
+    paths: ["youtube_agent/explainer/voice_request.txt"]
+  workflow_dispatch:
+    inputs:
+      episodes:
+        description: "Episode folders, space separated (e.g. hanat hphys)"
+        required: true
+        default: "hanat"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: anatomy-voice
+  cancel-in-progress: false
+
+jobs:
+  speak:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+      - name: Use the newest files
+        run: git fetch -q origin "${{ github.ref_name }}" && git reset -q --hard FETCH_HEAD
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Cache voice models
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cache/kokoro
+            ~/.cache/huggingface
+          key: voice-models-clone-v1
+      - name: Install
+        run: |
+          sudo apt-get update -q && sudo apt-get install -y -q ffmpeg
+          pip install -r requirements.txt
+          pip install torch==2.6.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cpu
+          pip install chatterbox-tts
+      - name: Unlock the voice sample
+        env:
+          VOICE_KEY: ${{ secrets.VOICE_KEY }}
+        run: |
+          if [ -z "$VOICE_KEY" ]; then echo "::error::Add the VOICE_KEY secret first."; exit 1; fi
+          openssl enc -d -aes-256-cbc -pbkdf2 -iter 200000 -in voice/voice_sample.wav.enc \
+            -out "$RUNNER_TEMP/voice_sample.wav" -pass env:VOICE_KEY
+          echo "VOICE_SAMPLE=$RUNNER_TEMP/voice_sample.wav" >> "$GITHUB_ENV"
+      - name: Speak the scripts
+        env:
+          EPISODES: ${{ inputs.episodes }}
+        run: |
+          EPS="${EPISODES:-$(cat youtube_agent/explainer/voice_request.txt)}"
+          for EP in $EPS; do python -m youtube_agent.explainer.speak "$EP"; done
+      - name: Save the narration
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
+          git add youtube_agent/explainer/*/voice_clone
+          git diff --cached --quiet && exit 0
+          git commit -q -m "Explainer narration in the owner's cloned voice [skip ci]"
+          for i in 1 2 3 4; do git push -q && break || { sleep $((2**i)); git pull -q --rebase; }; done

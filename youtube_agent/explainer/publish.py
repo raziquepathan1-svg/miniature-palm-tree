@@ -1,0 +1,66 @@
+"""Schedule The Anatomy Unfolded explainer videos and Shorts from explainer_queue/queue.json.
+
+Each run uploads the next items that are not on YouTube yet (earliest publish time first), as PRIVATE with a
+scheduled publish time (6 PM India time), so the owner can still check them in YouTube Studio before they go
+public. At most MAX_PER_RUN uploads per run (YouTube API quota, shared with Health Support Studio).
+
+    python -m youtube_agent.explainer.publish [--dry-run]
+"""
+import datetime as dt
+import json
+import sys
+from pathlib import Path
+
+from googleapiclient.errors import HttpError
+
+from ..uploader import add_to_playlists, upload_video
+
+ROOT = Path(__file__).resolve().parents[2]
+QDIR = ROOT / "explainer_queue"
+QUEUE = QDIR / "queue.json"
+CHANNEL_ID = "UChgwZ4Ch-53T4cMyQwKa2OA"   # The Anatomy Unfolded (formerly Restore Remake Studio)
+MAX_PER_RUN = 4
+ABOUT = ("The Anatomy Unfolded: {title}. Anatomy, physiology and diseases explained with clear diagrams. "
+         "Educational only, not medical advice.")
+
+
+def main() -> None:
+    dry = "--dry-run" in sys.argv
+    queue = json.loads(QUEUE.read_text())
+    now = dt.datetime.now(dt.timezone.utc)
+    todo = [q for q in queue if not q.get("youtube_id")]
+    todo.sort(key=lambda q: q["publish_at"])
+    done = 0
+    for q in todo:
+        if done >= MAX_PER_RUN:
+            break
+        when = dt.datetime.fromisoformat(q["publish_at"].replace("Z", "+00:00"))
+        if when < now + dt.timedelta(minutes=20):
+            # too late to schedule: move it to the same time on the next free day
+            when = when + dt.timedelta(days=((now - when).days + 1))
+            q["publish_at"] = when.strftime("%Y-%m-%dT%H:%M:%SZ")
+        yt = {"channel_id": CHANNEL_ID, "category_id": "27", "made_for_kids": False,
+              "contains_synthetic_media": True, "publish_at": q["publish_at"]}
+        print(f"{q['id']}: {q['title']} -> {q['publish_at']}")
+        if dry:
+            done += 1
+            continue
+        try:
+            vid = upload_video(QDIR / q["file"], QDIR / q["thumbnail"] if q.get("thumbnail") else None,
+                               q["title"], q["description"], q["tags"], yt)
+        except HttpError as e:
+            if "quota" in str(e).lower():
+                print("YouTube upload quota used up for today; the rest will go in the next run.")
+                break
+            raise
+        q["youtube_id"] = vid
+        done += 1
+        QUEUE.write_text(json.dumps(queue, indent=1, ensure_ascii=False))
+        if q.get("playlist"):
+            add_to_playlists(vid, [q["playlist"]], about=ABOUT)
+    left = sum(1 for q in queue if not q.get("youtube_id"))
+    print(f"Scheduled {done} item(s); {left} still waiting.")
+
+
+if __name__ == "__main__":
+    main()

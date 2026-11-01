@@ -1,0 +1,55 @@
+name: The Anatomy Unfolded - schedule videos
+
+# Uploads the next explainer videos + Shorts from explainer_queue/ as private, scheduled for 6 PM India time.
+on:
+  push:
+    branches: [claude/kind-albattani-59hcns]
+    paths: ["explainer_queue/queue.json"]
+  schedule:
+    - cron: "17 3 * * *"   # daily 08:47 IST: keeps the next days scheduled
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Only list what would be uploaded"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: anatomy-publish
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - name: Use the newest files
+        run: git fetch -q origin "${{ github.ref_name }}" && git reset -q --hard FETCH_HEAD
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install dependencies
+        run: pip install -q google-api-python-client google-auth google-auth-oauthlib
+      - name: Schedule videos
+        env:
+          YOUTUBE_CLIENT_ID: ${{ secrets.RRS_YOUTUBE_CLIENT_ID || secrets.YOUTUBE_CLIENT_ID }}
+          YOUTUBE_CLIENT_SECRET: ${{ secrets.RRS_YOUTUBE_CLIENT_SECRET || secrets.YOUTUBE_CLIENT_SECRET }}
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.RRS_YOUTUBE_REFRESH_TOKEN }}
+        run: |
+          if [ -z "$YOUTUBE_REFRESH_TOKEN" ]; then echo "RRS_YOUTUBE_REFRESH_TOKEN is not set - nothing uploaded."; exit 1; fi
+          ARGS=()
+          if [ "${{ inputs.dry_run }}" = "true" ]; then ARGS+=(--dry-run); fi
+          python -m youtube_agent.explainer.publish "${ARGS[@]}" | tee -a "$GITHUB_STEP_SUMMARY"
+      - name: Save the YouTube IDs
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
+          git add explainer_queue/queue.json
+          git diff --cached --quiet && exit 0
+          git commit -q -m "Record scheduled Anatomy Unfolded uploads [skip ci]"
+          for i in 1 2 3 4; do git push -q && break || { sleep $((2**i)); git pull -q --rebase; }; done
