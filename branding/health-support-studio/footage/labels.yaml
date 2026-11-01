@@ -170,3 +170,46 @@
     - {text: "Oxygen", at: [0.30, 0.20], to: [0.27, 0.30], start: 0.8, end: 3.0}
     - {text: "Fewer, paler cells", at: [0.40, 0.85], to: [0.30, 0.66], start: 4.0}
   note: {text: "Low iron: fewer red cells carry less oxygen, so you feel tired", start: 4.2}
+16x9_asthma_airway.mp4:
+  approved: false
+  words: [asthma, asthma attack, wheezing, inhaler, airway, airways, bronchitis, copd, tight chest, shortness of breath]
+  title: "Asthma: Inside an Airway"
+  labels:
+    - {text: "Open airway", at: [0.25, 0.36], to: [0.47, 0.36], start: 0.3, end: 2.6}
+    - {text: "Air", at: [0.88, 0.70], to: [0.79, 0.80], start: 0.8, end: 2.6}
+    - {text: "Swollen lining", at: [0.24, 0.75], to: [0.40, 0.70], start: 5.2}
+    - {text: "Mucus", at: [0.84, 0.45], to: [0.66, 0.36], start: 5.4}
+  note: {text: "In an attack the airway tightens, swells and fills with mucus", start: 3.4}
+16x9_liver.mp4:
+  approved: false
+  words: [liver, hepatitis, hepatitis c, fatty liver, cirrhosis, gallbladder, jaundice, liver damage, liver disease]
+  title: "The Liver"
+  labels:
+    - {text: "Liver", at: [0.72, 0.40], to: [0.50, 0.46], start: 0.2, end: 2.2}
+    - {text: "Gallbladder", at: [0.27, 0.62], to: [0.44, 0.58], start: 0.6, end: 2.2}
+    - {text: "Liver", at: [0.72, 0.40], to: [0.55, 0.45], start: 6.8}
+    - {text: "Gallbladder", at: [0.75, 0.66], to: [0.55, 0.59], start: 7.0}
+  note: {text: "Your liver filters your blood and breaks down alcohol and medicines", start: 2.4}
+16x9_insulin_sugar.mp4:
+  approved: false
+  words: [insulin, blood sugar, glucose, diabetes, type 2 diabetes, prediabetes, a1c, low blood sugar, high blood sugar, hypoglycemia]
+  title: "Insulin and Blood Sugar"
+  labels:
+    - {text: "Sugar in the blood", at: [0.20, 0.62], to: [0.17, 0.38], start: 0.3, end: 2.4}
+    - {text: "Insulin (the key)", at: [0.70, 0.22], to: [0.56, 0.35], start: 0.8, end: 2.4}
+    - {text: "Body cell", at: [0.80, 0.85], to: [0.84, 0.62], start: 1.2, end: 2.4}
+    - {text: "The door opens", at: [0.27, 0.75], to: [0.48, 0.50], start: 3.0, end: 4.6}
+    - {text: "Sugar goes in", at: [0.27, 0.80], to: [0.42, 0.55], start: 4.8, end: 6.2}
+    - {text: "Energy", at: [0.85, 0.22], to: [0.70, 0.38], start: 6.6}
+  note: {text: "Insulin unlocks your cells so sugar can become energy", start: 6.4}
+16x9_sleep_apnea.mp4:
+  approved: false
+  words: [sleep apnea, snoring, loud snoring, stop breathing, stops breathing, cpap, obstructive sleep apnea, gasping, daytime sleepiness]
+  title: "Sleep Apnea"
+  labels:
+    - {text: "Air flows in", at: [0.82, 0.12], to: [0.70, 0.22], start: 0.3, end: 2.4}
+    - {text: "Tongue", at: [0.85, 0.35], to: [0.55, 0.47], start: 0.8, end: 2.4}
+    - {text: "Tongue falls back", at: [0.70, 0.32], to: [0.55, 0.42], start: 3.4, end: 5.4}
+    - {text: "Airway blocked", at: [0.25, 0.30], to: [0.35, 0.45], start: 3.8, end: 5.4}
+    - {text: "Breathing starts again", at: [0.66, 0.40], to: [0.44, 0.70], start: 6.0}
+  note: {text: "Snoring and pauses: the throat closes during sleep", start: 2.6}
