@@ -890,8 +890,7 @@
     "script_file": "054-pneumonia-questions.yaml",
     "series": "Infections Explained",
     "episode": 5,
-    "planned_publish_at": "2026-11-01T16:00:00Z",
-    "awaiting_approval": true,
+    "awaiting_approval": false,
     "youtube_id": "3d0eEWWITg4",
     "short_youtube_id": "DBJyrfIpzFo",
     "short2_youtube_id": "R1zoxWxOCNk",
@@ -928,7 +927,9 @@
       "title": "Pneumonia Signs Most People Miss",
       "thumbnail_text": "JUST A COUGH?",
       "thumbnail_highlight": "COUGH?"
-    }
+    },
+    "publish_at": "2026-11-01T17:41:42Z",
+    "published_by_hand": true
   },
   {
     "date": "2026-11-01T14:16:49",
