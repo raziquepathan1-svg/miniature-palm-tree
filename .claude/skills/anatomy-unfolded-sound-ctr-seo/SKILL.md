@@ -33,6 +33,12 @@ At the end of every video plan, automatically generate:
 2. SEO Description: A 150-word description featuring key anatomical search terms in the first 2 lines, complete with timestamps and video chapters.
 3. Tag Matrix: 15 relevant long-tail and broad SEO keywords separated by commas ready to paste into YouTube Studio.
 
+# OWNER DECISION 1 Nov 2026 (overrides the Sound Design section above)
+The owner listened to the sample with synthesized SFX + music and said "the sound is not good, remove sound".
+=> Videos are NARRATION ONLY: no pops, scratches, whooshes, heartbeat/flow/hum effects or background music.
+Keep the logo intro sting. Still write [SOUND DESIGN] as "Narration only" in plans unless the owner asks again.
+Loudness: normalize the final mix (ffmpeg loudnorm I=-16, TP=-1.5).
+
 # Implementation notes (keep consistent with the other anatomy-unfolded skills)
 - SFX and music are synthesized in code (no copyrighted audio): pops on labels/pictures, soft marker scratch
   while text writes, whoosh on camera moves, muffled heartbeat during cardiac zooms, blood-flow swoosh when
