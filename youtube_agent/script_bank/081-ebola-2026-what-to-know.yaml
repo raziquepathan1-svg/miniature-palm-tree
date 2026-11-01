@@ -89,10 +89,10 @@ plan:
   - layout: myth_fact
     heading: Ebola Spreads Through the Air
     points:
-    - You can catch it like a cold
+    - You catch it from the air
     - It is not airborne
     footage_query: people walking city street
-    narration: 'Myth: you can catch Ebola from the air, like a cold or the flu. Fact: Ebola does not spread through
+    narration: 'Myth: you can catch Ebola from the air, just by breathing near someone. Fact: Ebola does not spread through
       the air, and not through casual contact, like passing someone in the street. It spreads through close contact
       with the body fluids of someone who is already sick. That is why health workers and family caregivers are
       most at risk.'
