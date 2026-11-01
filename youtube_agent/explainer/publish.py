@@ -19,13 +19,16 @@ ROOT = Path(__file__).resolve().parents[2]
 QDIR = ROOT / "explainer_queue"
 QUEUE = QDIR / "queue.json"
 CHANNEL_ID = "UChgwZ4Ch-53T4cMyQwKa2OA"   # The Anatomy Unfolded (formerly Restore Remake Studio)
-MAX_PER_RUN = 4
+MAX_PER_RUN = 3
 ABOUT = ("The Anatomy Unfolded: {title}. Anatomy, physiology and diseases explained with clear diagrams. "
          "Educational only, not medical advice.")
 
 
 def main() -> None:
     dry = "--dry-run" in sys.argv
+    if not QUEUE.exists():
+        print("Nothing in the queue yet.")
+        return
     queue = json.loads(QUEUE.read_text())
     now = dt.datetime.now(dt.timezone.utc)
     todo = [q for q in queue if not q.get("youtube_id")]
