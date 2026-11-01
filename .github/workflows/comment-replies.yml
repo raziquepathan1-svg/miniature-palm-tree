@@ -1,0 +1,43 @@
+name: Reply to comments
+
+# inbox: collect new viewer comments into youtube_agent/comment_inbox.json (the daily check writes the replies)
+# reply: post youtube_agent/reply_jobs.json as the channel (max 20 a day)
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "inbox = collect new comments, reply = post the written replies"
+        type: choice
+        options: ["inbox", "reply"]
+        default: "inbox"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: yt-comments
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -q google-api-python-client google-auth google-auth-oauthlib pyyaml
+      - name: ${{ inputs.mode }}
+        env:
+          YOUTUBE_TOKEN_JSON: ${{ secrets.YOUTUBE_TOKEN_JSON }}
+          YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
+          YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+        run: python -m youtube_agent.comment_replies "${{ inputs.mode }}"
+      - name: Save
+        run: |
+          git config user.name "youtube-agent"
+          git config user.email "youtube-agent@users.noreply.github.com"
+          git add youtube_agent/comment_inbox.json youtube_agent/reply_jobs.json youtube_agent/comments_replied.json 2>/dev/null || true
+          git diff --cached --quiet && exit 0
+          git commit -m "Comment replies (${{ inputs.mode }})"
+          { for i in 1 2 3 4 5; do git pull --rebase && git push && exit 0; git rebase --abort 2>/dev/null || true; sleep $((i*4)); done; exit 1; }
