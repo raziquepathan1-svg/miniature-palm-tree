@@ -189,3 +189,22 @@ Fresh start Oct 30. Every Reel: 1.5s teaser, hook text 0–2.4s, slow motion on 
 - #111 ../raw4/Man_modeling_double-breasted_bla…_0cec1d40.mp4
 - #9 Man_changing_clothes_in_commercial_c1513ab6.mp4  (reused old clip)
 - #38 Man_modeling_fashion_attire_779f965d.mp4  (reused old clip)
+
+## New clips (raw4, Nov 1)
+
+## reel33_winter_tailoring — POV: winter tailoring hits different
+- #118 ../raw4/Man_modeling_tweed_suits_4e0706ad.mp4
+- #123 ../raw4/Man_wearing_winter_fashion_outfits_34609f06.mp4
+
+## reel34_winter_ethnic — Desi soul. Winter style.
+- #120 ../raw4/Man_modeling_winter_coat_outfits_d884c3f7.mp4
+- #121 ../raw4/Man_modeling_Pathani_suit_sets_d8e8cb4f.mp4
+
+## reel35_winter_casual — POV: cozy but make it classy
+- #122 ../raw4/Man_modeling_winter_jacket_outfits_fee7847d.mp4
+- #124 ../raw4/Man_modeling_cardigans_in_ad_5e1cba93.mp4
+
+## reel36_quiet_luxury — POV: quiet luxury in every look
+- #119 ../raw4/Man_modeling_monochromatic_outfits_c721eaf0.mp4
+- #125 ../raw4/Man_showcasing_travel_outfits_0a7376ab.mp4
+- #125: opening close-up (hoodie text label) not used
