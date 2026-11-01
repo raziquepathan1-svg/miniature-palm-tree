@@ -880,5 +880,21 @@
       "thumbnail_highlight": "CANCER?"
     },
     "publish_at": "2026-10-31T16:00:00Z"
+  },
+  {
+    "date": "2026-11-01T10:42:46",
+    "topic": "Pneumonia: symptoms, treatment and vaccines that prevent it",
+    "requested_topic": "Pneumonia: symptoms, treatment and vaccines that prevent it",
+    "title": "Cold or Pneumonia? Signs Your Cough Is Serious",
+    "style": "Top Questions",
+    "script_file": "054-pneumonia-questions.yaml",
+    "series": "Infections Explained",
+    "episode": 5,
+    "planned_publish_at": "2026-11-01T16:00:00Z",
+    "awaiting_approval": true,
+    "youtube_id": "3d0eEWWITg4",
+    "short_youtube_id": "DBJyrfIpzFo",
+    "short2_youtube_id": "R1zoxWxOCNk",
+    "preview": "previews/3d0eEWWITg4.mp4"
   }
 ]
