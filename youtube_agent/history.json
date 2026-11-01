@@ -890,7 +890,7 @@
     "script_file": "054-pneumonia-questions.yaml",
     "series": "Infections Explained",
     "episode": 5,
-    "awaiting_approval": false,
+    "awaiting_approval": true,
     "youtube_id": "3d0eEWWITg4",
     "short_youtube_id": "DBJyrfIpzFo",
     "short2_youtube_id": "R1zoxWxOCNk",
@@ -928,8 +928,7 @@
       "thumbnail_text": "JUST A COUGH?",
       "thumbnail_highlight": "COUGH?"
     },
-    "publish_at": "2026-11-01T17:41:42Z",
-    "published_by_hand": true
+    "planned_publish_at": "2026-11-01T16:00:00Z"
   },
   {
     "date": "2026-11-01T14:16:49",
