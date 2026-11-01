@@ -19,6 +19,6 @@ no default smile, the host never holds an object, face must match the avatar.
 - 2026-10-30 handwashing: shocked/worried
 - 2026-10-31 HPV: skeptical raised eyebrow
 - 2026-11-01 pneumonia (prompt given): #3 coughing into elbow
-- Ebola 2026 (prompt given Nov 1): #5 "Wait!" raised index finger
-- Flu/COVID/cold (prompt given Nov 1): #4 hand on forehead, eyes closed
+- Ebola 2026 (picture saved Nov 1): #5 "Wait!" raised index finger
+- Flu/COVID/cold (picture saved Nov 1): #4 hand on forehead, eyes closed
 - knuckle cracking (picture saved): #7 both palms up, confused shrug
