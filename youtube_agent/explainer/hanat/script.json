@@ -1,0 +1,11 @@
+[
+ {"id": "hook", "text": "Your heart is a muscle about the size of your fist, and it never takes a break. Before we see how it works, let's take it apart, and look at its structure."},
+ {"id": "location", "text": "It sits in the middle of your chest, between your two lungs, tilted slightly to the left. It's made of a special muscle, called cardiac muscle, that keeps working your whole life without tiring out."},
+ {"id": "wall", "text": "The heart sits inside a protective sac, called the pericardium. Its wall has three layers: the thin outer layer, the epicardium; the thick muscle layer, the myocardium, which does the pumping; and the smooth inner lining, the endocardium, which covers the chambers and valves."},
+ {"id": "chambers", "text": "Inside, the heart has four chambers. Two upper chambers, the right and left atria, receive blood. Two lower chambers, the right and left ventricles, pump blood out. A wall called the septum separates the right side from the left side."},
+ {"id": "thickness", "text": "The left ventricle has the thickest wall, because it pumps blood to the entire body. The right ventricle's wall is thinner, because it only pumps blood to the nearby lungs."},
+ {"id": "valves", "text": "Four valves keep blood moving one way. Between the atria and ventricles are the atrioventricular valves: the tricuspid valve on the right, with three flaps, and the mitral valve on the left, with two. At the exits are the semilunar valves: the pulmonary valve and the aortic valve. Thin cords, called chordae tendineae, attached to papillary muscles, stop the tricuspid and mitral flaps from flipping backward."},
+ {"id": "vessels", "text": "The superior and inferior vena cava bring blood into the right atrium. The pulmonary trunk carries blood from the right ventricle toward the lungs. The pulmonary veins bring blood from the lungs into the left atrium. And the aorta carries blood from the left ventricle to the body."},
+ {"id": "coronary", "text": "The heart muscle gets its own blood supply from the coronary arteries, which branch off the aorta, right at its base."},
+ {"id": "summary", "text": "So, to sum up. Three wall layers, four chambers, four valves, and the great vessels. In the next video, we'll see how all these parts work together: the physiology of the heart."}
+]

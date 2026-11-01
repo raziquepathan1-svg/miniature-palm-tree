@@ -265,8 +265,8 @@ def build():
     tf = s.t("fast")
     sm += [panel(X + 360, 780, X + 1560, 900, PINK, tf - 0.3), text("act fast: time is muscle", X + 960, 860, 56, RED_T, tf, "c")]
     tn = s.t("next")
-    sm += [text("next video: the lungs & breathing", X + 960, 1000, 44, PURPLE, tn + 0.4, "c"),
-           pop(sv("poumons_01"), X + 1700, 960, h=170, t=tn + 0.2)]
+    sm += [text("next video: blood vessels", X + 960, 1000, 44, PURPLE, tn + 0.4, "c"),
+           pop(sv("Artere_coupe_sang"), X + 1700, 960, h=170, t=tn + 0.2)]
 
     bd.fx.append(lambda crop, ctx, t: OP.fx(crop, ctx, t, rings, pulses, glows))
     bd.total = t0

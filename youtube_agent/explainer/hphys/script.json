@@ -1,0 +1,12 @@
+[
+ {"id": "hook", "text": "In the last video, we looked at the parts of the heart. Now let's see how they work together, beat after beat."},
+ {"id": "circuits", "text": "The heart pumps blood through two circuits. The right side sends blood to the lungs: this is the pulmonary circulation. The left side sends blood to the rest of the body: this is the systemic circulation."},
+ {"id": "right", "text": "Oxygen poor blood returns through the vena cava into the right atrium, passes the tricuspid valve into the right ventricle, then the pulmonary valve into the pulmonary artery, and on to the lungs."},
+ {"id": "lungs", "text": "In the lungs, the blood drops off carbon dioxide and picks up oxygen, then returns through the pulmonary veins into the left atrium."},
+ {"id": "left", "text": "From the left atrium, blood passes the mitral valve into the left ventricle, then the aortic valve into the aorta, and out to every organ."},
+ {"id": "cycle", "text": "Each heartbeat has two phases. In systole, the ventricles contract and push blood out. In diastole, the ventricles relax and fill with blood. Both atria contract together, then both ventricles contract together."},
+ {"id": "pressure", "text": "Valves open and close because of pressure. When pressure behind a valve is higher, it opens. When pressure in front is higher, it snaps shut, so blood only flows one way."},
+ {"id": "lubdub", "text": "That's where the heartbeat sound comes from. Lub is the tricuspid and mitral valves closing, as the ventricles start to squeeze. Dub is the pulmonary and aortic valves closing, as the ventricles relax."},
+ {"id": "output", "text": "The amount of blood the heart pumps each minute is called cardiac output. It equals heart rate, times stroke volume, the blood pumped with each beat. At rest, that's about five liters a minute, and it can rise several times higher during exercise."},
+ {"id": "summary", "text": "So, to sum up. Two circuits, two phases, and valves driven by pressure. In the next video, we'll look at the heart's electrical system, and how it keeps this rhythm going."}
+]

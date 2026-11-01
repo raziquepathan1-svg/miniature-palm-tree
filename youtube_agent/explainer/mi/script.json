@@ -1,12 +1,42 @@
 [
- {"id": "hook", "text": "In the last video, we saw how electricity makes your heart beat. But the heart muscle itself also needs a constant supply of blood. So what happens when that supply is suddenly cut off? That's a heart attack. Let's unfold what happens inside."},
- {"id": "coronary", "text": "Your heart pumps blood to the whole body, but its own muscle gets blood from small vessels on its surface, called the coronary arteries. They wrap around the heart like a crown, and carry the oxygen the heart muscle needs to keep working."},
- {"id": "plaque", "text": "Over many years, fatty deposits called plaque can build up inside the walls of these arteries. This is called coronary artery disease. Plaque narrows the artery, so less blood can get through."},
- {"id": "clot", "text": "Most heart attacks happen when a plaque suddenly breaks open. The body treats it like an injury, and a blood clot forms on top of it. The clot can block the artery completely."},
- {"id": "damage", "text": "Now, the part of the heart muscle supplied by that artery gets no oxygen. Within minutes, the muscle starts to get damaged, and if blood flow isn't restored quickly, that part of the muscle begins to die. Doctors say: time is muscle."},
- {"id": "symptoms", "text": "The most common warning sign is chest pain or pressure, often in the center or left side of the chest. The discomfort can spread to the arm, back, neck, or jaw. Other signs include shortness of breath, a cold sweat, nausea, and feeling lightheaded. Women, older adults, and people with diabetes may have little or no chest pain."},
- {"id": "act", "text": "If you think someone is having a heart attack, call your local emergency number right away. Don't wait to see if it goes away, and don't drive yourself to the hospital."},
- {"id": "treatment", "text": "In the hospital, doctors work to open the blocked artery as fast as possible. They may use medicines that dissolve the clot, or a procedure called angioplasty, where a tiny balloon opens the artery, and a small mesh tube, called a stent, keeps it open."},
- {"id": "arrest", "text": "And a heart attack is not the same as cardiac arrest. A heart attack is a circulation problem: blood can't reach part of the heart, but the heart usually keeps beating. Cardiac arrest is an electrical problem: the heart suddenly stops pumping. A heart attack can sometimes lead to cardiac arrest."},
- {"id": "summary", "text": "The main risk factors are high blood pressure, high cholesterol, smoking, diabetes, being overweight, and not being active. So, to sum up. Plaque builds up, a clot blocks a coronary artery, and heart muscle starts to die. Act fast, because time is muscle. In the next video, we'll look at the lungs, and how breathing works."}
+ {
+  "id": "hook",
+  "text": "In the last video, we saw how electricity makes your heart beat. But the heart muscle itself also needs a constant supply of blood. So what happens when that supply is suddenly cut off? That's a heart attack. Let's unfold what happens inside."
+ },
+ {
+  "id": "coronary",
+  "text": "Your heart pumps blood to the whole body, but its own muscle gets blood from small vessels on its surface, called the coronary arteries. They wrap around the heart like a crown, and carry the oxygen the heart muscle needs to keep working."
+ },
+ {
+  "id": "plaque",
+  "text": "Over many years, fatty deposits called plaque can build up inside the walls of these arteries. This is called coronary artery disease. Plaque narrows the artery, so less blood can get through."
+ },
+ {
+  "id": "clot",
+  "text": "Most heart attacks happen when a plaque suddenly breaks open. The body treats it like an injury, and a blood clot forms on top of it. The clot can block the artery completely."
+ },
+ {
+  "id": "damage",
+  "text": "Now, the part of the heart muscle supplied by that artery gets no oxygen. Within minutes, the muscle starts to get damaged, and if blood flow isn't restored quickly, that part of the muscle begins to die. Doctors say: time is muscle."
+ },
+ {
+  "id": "symptoms",
+  "text": "The most common warning sign is chest pain or pressure, often in the center or left side of the chest. The discomfort can spread to the arm, back, neck, or jaw. Other signs include shortness of breath, a cold sweat, nausea, and feeling lightheaded. Women, older adults, and people with diabetes may have little or no chest pain."
+ },
+ {
+  "id": "act",
+  "text": "If you think someone is having a heart attack, call your local emergency number right away. Don't wait to see if it goes away, and don't drive yourself to the hospital."
+ },
+ {
+  "id": "treatment",
+  "text": "In the hospital, doctors work to open the blocked artery as fast as possible. They may use medicines that dissolve the clot, or a procedure called angioplasty, where a tiny balloon opens the artery, and a small mesh tube, called a stent, keeps it open."
+ },
+ {
+  "id": "arrest",
+  "text": "And a heart attack is not the same as cardiac arrest. A heart attack is a circulation problem: blood can't reach part of the heart, but the heart usually keeps beating. Cardiac arrest is an electrical problem: the heart suddenly stops pumping. A heart attack can sometimes lead to cardiac arrest."
+ },
+ {
+  "id": "summary",
+  "text": "The main risk factors are high blood pressure, high cholesterol, smoking, diabetes, being overweight, and not being active. So, to sum up. Plaque builds up, a clot blocks a coronary artery, and heart muscle starts to die. Act fast, because time is muscle. In the next video, we'll look at the blood vessels: arteries, veins, and capillaries."
+ }
 ]
