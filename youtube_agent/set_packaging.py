@@ -1,6 +1,6 @@
 """Free mode: the title, top description lines and pinned question written in the daily check (no paid API).
 
-Reads youtube_agent/packaging_jobs.json (youtube_id, title, description_top, pin_question, optional packages),
+Reads youtube_agent/packaging_jobs.json (youtube_id, title, description_top, pin_question, optional packages, optional tags),
 changes the video's title and puts the keyword lines at the top of its description, and stores the question
 in history.json, where yt_comments picks it up for the pinned comment. Finished jobs are marked "done".
 
@@ -37,6 +37,15 @@ def main() -> None:
             top = (job.get("description_top") or "").strip()
             if top and not body.get("description", "").startswith(top):
                 body["description"] = f"{top}\n\n{body.get('description', '')}"[:5000]
+            if job.get("tags"):  # owner, Nov 2: a 15-tag matrix (broad + long-tail search terms) on every video
+                tags, total = [], 0
+                for t in job["tags"]:
+                    t = " ".join(str(t).replace("<", "").replace(">", "").split())
+                    cost = len(t) + (2 if " " in t else 0) + 1  # YouTube counts quotes around multi-word tags
+                    if t and t.lower() not in {x.lower() for x in tags} and total + cost <= 480:
+                        tags.append(t)
+                        total += cost
+                body["tags"] = tags
             youtube.videos().update(part="snippet", body={"id": vid, "snippet": body}).execute()
         except Exception as e:
             print(f"FAILED for {vid}: {e}")
