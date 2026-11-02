@@ -43,6 +43,9 @@ EP = {
      "left sided heart failure", "right sided heart failure", "pitting edema", "bnp test", "echocardiogram",
      "cardiomyopathy", "heart failure treatment"],
     ["#heartfailure", "#cardiology", "#heart"]),
+ "arrhythmia": (["Arrhythmia", "Heart skipping beats", "Atrial fibrillation"],
+    ["arrhythmia", "heart skipping beats", "atrial fibrillation", "afib", "tachycardia", "bradycardia", "ventricular fibrillation", "palpitations", "premature beats", "irregular heartbeat", "normal heart rate", "cardiac arrest"],
+    ["#arrhythmia", "#afib", "#heart"]),
 }
 
 

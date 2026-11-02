@@ -1,0 +1,12 @@
+[
+ {"id": "hook", "text": "Ever felt your heart skip a beat, or suddenly race for no reason? That's a change in your heart's rhythm, called an arrhythmia. Most are harmless. But a few can be deadly. So how do you tell the difference?"},
+ {"id": "normal", "text": "A normal heartbeat starts in the S A node, the heart's natural pacemaker. The signal spreads in a set order, so the heart beats in a steady rhythm. At rest, a normal adult heart beats about sixty to one hundred times a minute."},
+ {"id": "what", "text": "An arrhythmia means the beat is too fast, too slow, or irregular. Faster than one hundred at rest is called tachycardia. Slower than sixty is called bradycardia, though fit athletes can be normal at that rate."},
+ {"id": "skipped", "text": "That skipped beat feeling is usually an extra early beat. The heart fires a little too soon, then pauses, and the next beat feels stronger. These are very common, and usually harmless."},
+ {"id": "afib", "text": "The most common lasting arrhythmia is atrial fibrillation. The top chambers quiver instead of squeezing, so the pulse becomes fast and irregular. Blood can pool and form clots, which can travel to the brain and cause a stroke."},
+ {"id": "vfib", "text": "The most dangerous one is ventricular fibrillation. The main pumping chambers just quiver, so no blood is pumped at all. The person collapses within seconds. This is cardiac arrest, and it needs C P R and a defibrillator right away."},
+ {"id": "causes", "text": "What causes arrhythmias? Scars from a heart attack, high blood pressure, heart failure, thyroid problems, low potassium, some medicines, and too much caffeine, alcohol, or stimulant drugs."},
+ {"id": "signs", "text": "Signs include a fluttering or pounding heartbeat, dizziness, breathlessness, and tiredness. If someone faints, has chest pain, or collapses and isn't breathing normally, call your local emergency number and start C P R."},
+ {"id": "treat", "text": "To find it, doctors use an E C G, or a portable monitor worn for a day or more. Treatment depends on the type: treating the cause, medicines, blood thinners for atrial fibrillation, a pacemaker for slow rhythms, or procedures that fix the faulty wiring."},
+ {"id": "summary", "text": "So remember three things. A normal resting heart beats sixty to one hundred times a minute. An odd skipped beat is usually harmless. But fainting, chest pain, or collapse is an emergency. Next, we'll look at the heart's valves, and what happens when they fail."}
+]
