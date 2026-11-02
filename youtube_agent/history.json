@@ -937,7 +937,7 @@
     "date": "2026-11-02T07:03:04",
     "topic": "Ebola outbreak 2026: how it spreads, symptoms and real risk",
     "requested_topic": "Ebola outbreak 2026: how it spreads, symptoms and real risk",
-    "title": "Ebola in 2026: How It Spreads and Who Is at Risk",
+    "title": "Ebola 2026: How It Really Spreads",
     "style": "Top Questions",
     "script_file": "081-ebola-2026-what-to-know.yaml",
     "planned_publish_at": "2026-11-02T16:00:00Z",
@@ -946,6 +946,39 @@
     "short_youtube_id": "OkkgwuZC8RA",
     "short2_youtube_id": "A9wz6sWn17M",
     "short3_youtube_id": "ogwFVlUCZe8",
-    "preview": "previews/3y85NO90t2k.mp4"
+    "preview": "previews/3y85NO90t2k.mp4",
+    "pin_question": "Had you heard that Ebola spreads through the air before watching this? What worried you most about the news?",
+    "packages": [
+      {
+        "title": "Ebola 2026: How It Really Spreads",
+        "thumbnail_text": "IN THE AIR?",
+        "thumbnail_highlight": "AIR?"
+      },
+      {
+        "title": "Can Ebola Spread Through the Air?",
+        "thumbnail_text": "MYTH OR FACT",
+        "thumbnail_highlight": "FACT"
+      },
+      {
+        "title": "Ebola Outbreak 2026: Should You Worry?",
+        "thumbnail_text": "VERY LOW RISK",
+        "thumbnail_highlight": "LOW"
+      },
+      {
+        "title": "Ebola Risk Explained for Travelers",
+        "thumbnail_text": "FEVER AFTER TRIP?",
+        "thumbnail_highlight": "TRIP?"
+      },
+      {
+        "title": "Ebola Symptoms: The First Signs to Know",
+        "thumbnail_text": "NOT AIRBORNE",
+        "thumbnail_highlight": "AIRBORNE"
+      }
+    ],
+    "chosen": {
+      "title": "Ebola 2026: How It Really Spreads",
+      "thumbnail_text": "IN THE AIR?",
+      "thumbnail_highlight": "AIR?"
+    }
   }
 ]
