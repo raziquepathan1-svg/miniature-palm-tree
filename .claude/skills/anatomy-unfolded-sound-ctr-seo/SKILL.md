@@ -36,7 +36,7 @@ At the end of every video plan, automatically generate:
 # OWNER DECISION 1 Nov 2026 (overrides the Sound Design section above)
 The owner listened to the sample with synthesized SFX + music and said "the sound is not good, remove sound".
 => Videos are NARRATION ONLY: no pops, scratches, whooshes, heartbeat/flow/hum effects or background music.
-Keep the logo intro sting. Still write [SOUND DESIGN] as "Narration only" in plans unless the owner asks again.
+No logo intro sting either (owner, 2 Nov 2026: "zero intro filler", see anatomy-unfolded-recommendation). Still write [SOUND DESIGN] as "Narration only" in plans unless the owner asks again.
 Loudness: normalize the final mix (ffmpeg loudnorm I=-16, TP=-1.5).
 
 # Implementation notes (keep consistent with the other anatomy-unfolded skills)
