@@ -940,8 +940,7 @@
     "title": "Ebola 2026: How It Really Spreads",
     "style": "Top Questions",
     "script_file": "081-ebola-2026-what-to-know.yaml",
-    "planned_publish_at": "2026-11-02T16:00:00Z",
-    "awaiting_approval": true,
+    "awaiting_approval": false,
     "youtube_id": "3y85NO90t2k",
     "short_youtube_id": "OkkgwuZC8RA",
     "short2_youtube_id": "A9wz6sWn17M",
@@ -979,6 +978,7 @@
       "title": "Ebola 2026: How It Really Spreads",
       "thumbnail_text": "IN THE AIR?",
       "thumbnail_highlight": "AIR?"
-    }
+    },
+    "publish_at": "2026-11-02T16:00:00Z"
   }
 ]
