@@ -209,3 +209,45 @@
     - {text: "Airway blocked", at: [0.25, 0.30], to: [0.35, 0.45], start: 3.8, end: 5.4}
     - {text: "Breathing starts again", at: [0.66, 0.40], to: [0.44, 0.70], start: 6.0}
   note: {text: "Snoring and pauses: the throat closes during sleep", start: 2.6}
+16x9_flu_virus_airway.mp4:
+  approved: false
+  words: [flu, influenza, flu virus, flu season, flu symptoms, flu shot, covid, rsv, respiratory virus, respiratory viruses, airway, airways]
+  title: "Flu in the Airway"
+  labels:
+    - {text: "Airway lining (tiny hairs)", at: [0.36, 0.34], to: [0.24, 0.66], start: 0.2, end: 1.7}
+    - {text: "Flu viruses", at: [0.44, 0.44], to: [0.24, 0.71], start: 2.0, end: 3.5}
+    - {text: "Infected cells", at: [0.74, 0.3], to: [0.66, 0.63], start: 4.0, end: 5.8}
+    - {text: "White blood cells", at: [0.6, 0.34], to: [0.37, 0.6], start: 6.2, end: 7.3}
+  note: {text: "Flu viruses infect the airway; white blood cells fight back", start: 6.0}
+16x9_migraine_brain.mp4:
+  approved: false
+  words: [migraine, migraines, headache, headaches, aura, throbbing, head pain, one side of the head, cluster headache, light sensitivity]
+  title: "A Migraine in the Head"
+  labels:
+    - {text: "Brain", at: [0.74, 0.25], to: [0.62, 0.3], start: 0.3, end: 2.0}
+    - {text: "Blood vessels", at: [0.74, 0.45], to: [0.5, 0.45], start: 2.2, end: 4.0}
+    - {text: "Pain signals", at: [0.74, 0.14], to: [0.57, 0.12], start: 4.2, end: 5.8}
+    - {text: "Pain behind the eye", at: [0.32, 0.32], to: [0.42, 0.54], start: 6.2}
+  note: {text: "In a migraine, nerves and blood vessels in the head become irritated", start: 6.0}
+16x9_anxiety_fight_flight.mp4:
+  approved: false
+  words: [anxiety, anxious, panic attack, panic attacks, panic, fight or flight, stress response, worry, racing heart, adrenaline, nervous system]
+  title: "Anxiety: The Body's Alarm"
+  labels:
+    - {text: "Amygdala (alarm center)", at: [0.68, 0.3], to: [0.53, 0.41], start: 0.3, end: 2.0}
+    - {text: "Signal down the spine", at: [0.7, 0.55], to: [0.5, 0.62], start: 2.2, end: 3.6}
+    - {text: "Adrenal glands", at: [0.74, 0.42], to: [0.6, 0.6], start: 4.0, end: 4.9}
+    - {text: "Adrenaline", at: [0.3, 0.42], to: [0.37, 0.6], start: 4.2, end: 4.9}
+    - {text: "Heart beats faster", at: [0.72, 0.45], to: [0.53, 0.55], start: 6.0}
+    - {text: "Faster breathing", at: [0.3, 0.42], to: [0.4, 0.5], start: 6.4}
+  note: {text: "Fight-or-flight: the body's alarm system switching on", start: 6.0}
+16x9_constipation_colon.mp4:
+  approved: false
+  words: [constipation, constipated, bowel movement, bowel movements, stool, stools, colon, large intestine, fiber, bloating, laxative, laxatives, hard stool]
+  title: "Constipation in the Colon"
+  labels:
+    - {text: "Large intestine (colon)", at: [0.33, 0.25], to: [0.27, 0.4], start: 2.0, end: 3.6}
+    - {text: "Small intestine", at: [0.72, 0.2], to: [0.5, 0.35], start: 2.2, end: 3.6}
+    - {text: "Hard stool stuck", at: [0.74, 0.3], to: [0.65, 0.55], start: 4.2}
+    - {text: "Rectum", at: [0.16, 0.82], to: [0.45, 0.84], start: 4.6}
+  note: {text: "Slow movement lets stool dry out and get stuck", start: 5.8}
