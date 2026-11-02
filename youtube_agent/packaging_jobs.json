@@ -541,5 +541,51 @@
     "youtube_id": "R1zoxWxOCNk",
     "title": "Does pneumonia always need antibiotics? #Shorts",
     "done": true
+  },
+  {
+    "youtube_id": "3y85NO90t2k",
+    "title": "Ebola 2026: How It Really Spreads",
+    "description_top": "Ebola 2026, how Ebola spreads, is Ebola airborne: the facts on the Ebola outbreak in Congo, Kenya and Nigeria, early Ebola symptoms and who is really at risk.\nWhat travelers should do, why people do not spread Ebola before symptoms, and why the risk for most people is very low, based on CDC and WHO.",
+    "pin_question": "Had you heard that Ebola spreads through the air before watching this? What worried you most about the news?",
+    "packages": [
+      {
+        "title": "Ebola 2026: How It Really Spreads",
+        "thumbnail_text": "IN THE AIR?",
+        "thumbnail_highlight": "AIR?"
+      },
+      {
+        "title": "Can Ebola Spread Through the Air?",
+        "thumbnail_text": "MYTH OR FACT",
+        "thumbnail_highlight": "FACT"
+      },
+      {
+        "title": "Ebola Outbreak 2026: Should You Worry?",
+        "thumbnail_text": "VERY LOW RISK",
+        "thumbnail_highlight": "LOW"
+      },
+      {
+        "title": "Ebola Risk Explained for Travelers",
+        "thumbnail_text": "FEVER AFTER TRIP?",
+        "thumbnail_highlight": "TRIP?"
+      },
+      {
+        "title": "Ebola Symptoms: The First Signs to Know",
+        "thumbnail_text": "NOT AIRBORNE",
+        "thumbnail_highlight": "AIRBORNE"
+      }
+    ],
+    "chosen": {
+      "title": "Ebola 2026: How It Really Spreads",
+      "thumbnail_text": "IN THE AIR?",
+      "thumbnail_highlight": "AIR?"
+    }
+  },
+  {
+    "youtube_id": "A9wz6sWn17M",
+    "title": "Can you survive Ebola? #Shorts"
+  },
+  {
+    "youtube_id": "ogwFVlUCZe8",
+    "title": "Can Ebola spread before symptoms? #Shorts"
   }
 ]
