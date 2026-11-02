@@ -31,15 +31,15 @@ def card(q, path):
     for ln in lines:
         P.btext(d, (540, y), ln, 96, (98, 25, 49), "mm"); y += 120
     d.rounded_rectangle((140, 1180, 940, 1300), radius=60, fill=(255, 30, 39))
-    d.text((540, 1240), "FULL ANSWER IN THE VIDEO", font=P.f(48), fill=(255, 255, 255), anchor="mm", stroke_width=2, stroke_fill=(255, 255, 255))
-    d.text((540, 1380), "LINK ON SCREEN", font=P.f(44), fill=(98, 25, 49), anchor="mm")
+    d.text((540, 1240), "FULL VIDEO ON OUR CHANNEL", font=P.f(46), fill=(255, 255, 255), anchor="mm", stroke_width=2, stroke_fill=(255, 255, 255))
+    d.text((540, 1380), "THE ANATOMY UNFOLDED", font=P.f(44), fill=(98, 25, 49), anchor="mm")
     im.save(path)
 
 
 def add_bridge(short_path, eid, k):
     from youtube_agent import voice
     q = QUESTIONS[eid][k]
-    audio, sr = voice.synthesize(q + " Watch the full video, link on screen.", "am_michael", 1.1)
+    audio, sr = voice.synthesize(q + " Watch the full video on our channel, The Anatomy Unfolded.", "am_michael", 1.1)
     audio = np.concatenate([np.zeros(int(0.15 * sr)), audio, np.zeros(int(0.4 * sr))])
     wav = HERE / "_bridge.wav"
     with wave.open(str(wav), "wb") as w:
