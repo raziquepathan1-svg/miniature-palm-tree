@@ -32,7 +32,8 @@
   ],
   "playlist": "Cardiovascular System",
   "publish_at": "2026-11-02T12:30:00Z",
-  "youtube_id": "EbQY-FnNWUY"
+  "youtube_id": "EbQY-FnNWUY",
+  "update": true
  },
  {
   "id": "heart_anatomy_v2_short1",
@@ -141,7 +142,8 @@
   ],
   "playlist": "Cardiovascular System",
   "publish_at": "2026-11-03T12:30:00Z",
-  "youtube_id": "MX2DBaaDE7A"
+  "youtube_id": "MX2DBaaDE7A",
+  "update": true
  },
  {
   "id": "heart_physiology_short1",
@@ -246,7 +248,8 @@
   ],
   "playlist": "Cardiovascular System",
   "publish_at": "2026-11-04T12:30:00Z",
-  "youtube_id": "sF9jsLZy0xQ"
+  "youtube_id": "sF9jsLZy0xQ",
+  "update": true
  },
  {
   "id": "heart_electrical_short1",
@@ -351,7 +354,8 @@
   ],
   "playlist": "Cardiovascular System",
   "publish_at": "2026-11-05T12:30:00Z",
-  "youtube_id": "5C6Z4_b98TA"
+  "youtube_id": "5C6Z4_b98TA",
+  "update": true
  },
  {
   "id": "heart_attack_short1",
@@ -455,7 +459,8 @@
   ],
   "playlist": "Cardiovascular System",
   "publish_at": "2026-11-06T12:30:00Z",
-  "youtube_id": "-CKv7H0pVUE"
+  "youtube_id": "-CKv7H0pVUE",
+  "update": true
  },
  {
   "id": "blood_vessels_short1",
@@ -558,7 +563,8 @@
   ],
   "playlist": "Cardiovascular System",
   "publish_at": "2026-11-07T12:30:00Z",
-  "youtube_id": "tG23SallhPs"
+  "youtube_id": "tG23SallhPs",
+  "update": true
  },
  {
   "id": "blood_pressure_short1",
@@ -663,7 +669,8 @@
   ],
   "playlist": "Cardiovascular System",
   "publish_at": "2026-11-08T12:30:00Z",
-  "youtube_id": "9YSyVaJXCvg"
+  "youtube_id": "9YSyVaJXCvg",
+  "update": true
  },
  {
   "id": "high_blood_pressure_short1",
