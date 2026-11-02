@@ -616,7 +616,7 @@ def upload_second_short(plan, video_id: str, video_cfg: dict, config: dict, chan
     print(f"    Making Short {slot}: {title}")
     raw = visuals.build_video(SimpleNamespace(scenes=visuals.split_for_shorts([hook_scene, body], plan.topic),
                                               short_scenes=[], topic=plan.topic),
-                              {**video_cfg, "format": "shorts"}, config.get("voice", {}), channel_name,
+                              _shorts_cfg(video_cfg), config.get("voice", {}), channel_name,
                               workdir / f"short{slot}_build")
     try:  # kept with the run's files, so the daily check can look at every Short before approving
         (workdir / "social").mkdir(exist_ok=True)
@@ -642,7 +642,7 @@ def upload_second_short(plan, video_id: str, video_cfg: dict, config: dict, chan
             reel = visuals.build_video(SimpleNamespace(scenes=visuals.split_for_shorts([hook_scene, reel_body],
                                                                                        plan.topic),
                                                        short_scenes=[], topic=plan.topic),
-                                       _reel_cfg({**video_cfg, "format": "shorts"}), config.get("voice", {}),
+                                       _reel_cfg(_shorts_cfg(video_cfg)), config.get("voice", {}),
                                        channel_name, workdir / "reel2_build")
             shutil.copyfile(reel, social_dir / "reel2.mp4")
             (social_dir / "reel2.json").write_text(json.dumps({"hook": hook, "tags": tags}))
@@ -684,7 +684,7 @@ def make_social_short(plan, final: Path, video_cfg: dict, config: dict, channel_
             print(f"  (New-style Short failed, using the old style: {e})")
 
     print("    Making the vertical Short for Instagram/Facebook...")
-    short_cfg = {**video_cfg, "format": "shorts"}
+    short_cfg = _shorts_cfg(video_cfg)
     raw = visuals.build_video(SimpleNamespace(scenes=visuals.split_for_shorts(plan.short_scenes, plan.topic),
                                               topic=plan.topic), short_cfg, config.get("voice", {}),
                               channel_name, workdir / "short_build")
@@ -700,6 +700,16 @@ def make_social_short(plan, final: Path, video_cfg: dict, config: dict, channel_
     except Exception as e:  # the YouTube version is posted instead
         print(f"  (Could not make the Instagram/Facebook version: {e})")
     return social_dir
+
+
+def _shorts_cfg(video_cfg: dict) -> dict:
+    """Shorts and Reels (9:16). Owner, Nov 2: no avatar in Shorts/Reels unless video.shorts_host is true - no host
+    clips, no talking host, no closing host clip; long videos keep the presenter, intro and outro."""
+    cfg = {**video_cfg, "format": "shorts"}
+    if not video_cfg.get("shorts_host", False):
+        cfg.pop("host", None)
+        cfg["host_clips"] = {}
+    return cfg
 
 
 def _reel_cfg(short_cfg: dict) -> dict:

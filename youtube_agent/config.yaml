@@ -106,6 +106,7 @@ social:
   shorts_style: "v1"     # v2 = a hook made for the topic over the host's face, quick beats, big word captions,
                          # a preview of the full video (youtube_agent/shorts2.py); "v1" = the old slide Shorts
   short1_loop: true      # Short 1 is an infinite loop (no ending card); Short 2 keeps the full-video ending
+  shorts_host: false     # owner, Nov 2: no avatar in Shorts and Reels (long videos keep the presenter, intro and outro)
 
 # ---- Video ----
 video:
