@@ -17,7 +17,7 @@
   ],
   "playlist": "Cardiovascular System",
   "publish_at": "2026-11-02T12:30:00Z",
-  "youtube_id": "pP702iYJz7Q"
+  "youtube_id": null
  },
  {
   "id": "heart_anatomy_v2_short1",
@@ -57,7 +57,7 @@
   ],
   "playlist": null,
   "publish_at": "2026-11-02T15:30:00Z",
-  "youtube_id": "lU5EfkfiK-I"
+  "youtube_id": null
  },
  {
   "id": "heart_physiology",
@@ -77,7 +77,7 @@
   ],
   "playlist": "Cardiovascular System",
   "publish_at": "2026-11-03T12:30:00Z",
-  "youtube_id": "4gzCZ-xJYLg"
+  "youtube_id": null
  },
  {
   "id": "heart_physiology_short1",
@@ -97,7 +97,7 @@
   ],
   "playlist": null,
   "publish_at": "2026-11-03T06:30:00Z",
-  "youtube_id": "dRV2AHG0tEE"
+  "youtube_id": null
  },
  {
   "id": "heart_physiology_short2",
@@ -117,7 +117,7 @@
   ],
   "playlist": null,
   "publish_at": "2026-11-03T15:30:00Z",
-  "youtube_id": "CytwCQBuMgk"
+  "youtube_id": null
  },
  {
   "id": "heart_electrical",
@@ -125,7 +125,7 @@
   "file": "heart_electrical.mp4",
   "thumbnail": "heart_electrical_thumb.jpg",
   "title": "What Makes Your Heart Beat? The Heart's Electrical System Explained (SA Node to ECG)",
-  "description": "Heart electrical system • Cardiac conduction system • SA node\n\nHow every heartbeat starts: the SA node, AV node, bundle of His, bundle branches and Purkinje fibers, backup pacemakers, what the P wave, QRS complex and T wave on an ECG mean, and how nerves change the heart rate.\n\nCHAPTERS\n0:00 What makes your heart beat?\n0:37 SA node: the natural pacemaker\n1:06 AV node, bundle of His & Purkinje fibers\n1:47 Backup pacemakers & the ECG\n2:26 Heart rate control & summary\n\nPart of the Cardiovascular System series on The Anatomy Unfolded.\n\n⚠️ Educational content only, not medical advice. Always talk to a qualified doctor about your health.\nSome illustrations: Servier Medical Art (smart.servier.com), licensed under CC BY 4.0.\n\n#anatomy #physiology #medicalstudent #nursing #cardiology",
+  "description": "Heart electrical system • Cardiac conduction system • SA node\n\nHow every heartbeat starts: the SA node, AV node, bundle of His, bundle branches and Purkinje fibers, backup pacemakers, what the P wave, QRS complex and T wave on an ECG mean, and how nerves change the heart rate.\n\nCHAPTERS\n0:00 What makes your heart beat?\n0:40 SA node: the natural pacemaker\n1:10 AV node, bundle of His & Purkinje fibers\n1:50 Backup pacemakers & the ECG\n2:29 Heart rate control & summary\n\nPart of the Cardiovascular System series on The Anatomy Unfolded.\n\n⚠️ Educational content only, not medical advice. Always talk to a qualified doctor about your health.\nSome illustrations: Servier Medical Art (smart.servier.com), licensed under CC BY 4.0.\n\n#anatomy #physiology #medicalstudent #nursing #cardiology",
   "tags": [
    "heart electrical system",
    "cardiac conduction system",
@@ -137,7 +137,7 @@
   ],
   "playlist": "Cardiovascular System",
   "publish_at": "2026-11-04T12:30:00Z",
-  "youtube_id": "phMlL3n2fzs"
+  "youtube_id": null
  },
  {
   "id": "heart_electrical_short1",
@@ -157,7 +157,7 @@
   ],
   "playlist": null,
   "publish_at": "2026-11-04T06:30:00Z",
-  "youtube_id": "7KpH7IxDXUc"
+  "youtube_id": null
  },
  {
   "id": "heart_electrical_short2",
@@ -177,7 +177,7 @@
   ],
   "playlist": null,
   "publish_at": "2026-11-04T15:30:00Z",
-  "youtube_id": "S9LAr5dD2_U"
+  "youtube_id": null
  },
  {
   "id": "heart_attack",
@@ -185,7 +185,7 @@
   "file": "heart_attack.mp4",
   "thumbnail": "heart_attack_thumb.jpg",
   "title": "What Happens During a Heart Attack? Inside Your Heart, Step by Step",
-  "description": "Heart attack • Heart attack symptoms • What happens during a heart attack\n\nWhat happens during a heart attack (myocardial infarction): coronary artery disease, plaque rupture and a blood clot, why time is muscle, the warning signs, what to do, how doctors open the artery, and how a heart attack differs from cardiac arrest.\n\nCHAPTERS\n0:00 Intro & the coronary arteries\n0:33 Plaque, clot & why time is muscle\n1:16 Heart attack warning signs\n1:39 What to do & treatment\n2:08 Heart attack vs cardiac arrest & risk factors\n\nPart of the Cardiovascular System series on The Anatomy Unfolded.\n\n⚠️ Educational content only, not medical advice. Always talk to a qualified doctor about your health.\nSome illustrations: Servier Medical Art (smart.servier.com), licensed under CC BY 4.0.\n\n#anatomy #physiology #medicalstudent #nursing #cardiology",
+  "description": "Heart attack • Heart attack symptoms • What happens during a heart attack\n\nWhat happens during a heart attack (myocardial infarction): coronary artery disease, plaque rupture and a blood clot, why time is muscle, the warning signs, what to do, how doctors open the artery, and how a heart attack differs from cardiac arrest.\n\nCHAPTERS\n0:00 Intro & the coronary arteries\n0:36 Plaque, clot & why time is muscle\n1:19 Heart attack warning signs\n1:42 What to do & treatment\n2:12 Heart attack vs cardiac arrest & risk factors\n\nPart of the Cardiovascular System series on The Anatomy Unfolded.\n\n⚠️ Educational content only, not medical advice. Always talk to a qualified doctor about your health.\nSome illustrations: Servier Medical Art (smart.servier.com), licensed under CC BY 4.0.\n\n#anatomy #physiology #medicalstudent #nursing #cardiology",
   "tags": [
    "heart attack",
    "myocardial infarction",
@@ -245,7 +245,7 @@
   "file": "blood_vessels.mp4",
   "thumbnail": "blood_vessels_thumb.jpg",
   "title": "Arteries vs Veins: Why Are They Built So Differently? (Blood Vessels Explained)",
-  "description": "Blood vessels • Arteries vs veins • Capillaries\n\nThe three types of blood vessels: arteries, capillaries and veins. The 3 layers of the vessel wall, why arteries have thick walls, arterioles and blood pressure, capillary exchange, vein valves and the skeletal muscle pump, and why pulmonary arteries carry oxygen-poor blood.\n\nCHAPTERS\n0:00 Arteries, capillaries & veins\n0:27 Vessel wall layers & arteries\n1:22 Capillary exchange\n1:42 Veins & vein valves\n2:13 The pulmonary exception & summary\n\nPart of the Cardiovascular System series on The Anatomy Unfolded.\n\n⚠️ Educational content only, not medical advice. Always talk to a qualified doctor about your health.\nSome illustrations: Servier Medical Art (smart.servier.com), licensed under CC BY 4.0.\n\n#anatomy #physiology #medicalstudent #nursing #cardiology",
+  "description": "Blood vessels • Arteries vs veins • Capillaries\n\nThe three types of blood vessels: arteries, capillaries and veins. The 3 layers of the vessel wall, why arteries have thick walls, arterioles and blood pressure, capillary exchange, vein valves and the skeletal muscle pump, and why pulmonary arteries carry oxygen-poor blood.\n\nCHAPTERS\n0:00 Arteries, capillaries & veins\n0:30 Vessel wall layers & arteries\n1:25 Capillary exchange\n1:46 Veins & vein valves\n2:17 The pulmonary exception & summary\n\nPart of the Cardiovascular System series on The Anatomy Unfolded.\n\n⚠️ Educational content only, not medical advice. Always talk to a qualified doctor about your health.\nSome illustrations: Servier Medical Art (smart.servier.com), licensed under CC BY 4.0.\n\n#anatomy #physiology #medicalstudent #nursing #cardiology",
   "tags": [
    "blood vessels",
    "arteries veins capillaries",
@@ -305,7 +305,7 @@
   "file": "blood_pressure.mp4",
   "thumbnail": "blood_pressure_thumb.jpg",
   "title": "What Does 120/80 Mean? Blood Pressure Explained (Systolic vs Diastolic)",
-  "description": "Blood pressure • Systolic and diastolic • What does 120/80 mean\n\nBlood pressure explained simply: what systolic and diastolic pressure mean, what 120/80 mmHg tells you, and how your body controls blood pressure every second. We follow the blood from the left ventricle into the aorta to see where the top and bottom numbers come from, learn how a blood pressure cuff works, and break down the normal, elevated and high blood pressure ranges for adults. You'll learn the key formula, blood pressure = cardiac output x resistance, and how baroreceptors in the carotid arteries and aortic arch, plus the kidneys and the renin-angiotensin-aldosterone system (RAAS), keep your pressure in balance. Perfect for MBBS, nursing, pharmacy and biology students.\n\nCHAPTERS\n0:00 What does 120/80 mean?\n0:22 Systolic vs diastolic\n0:44 How it's measured & normal ranges\n1:16 How your body controls blood pressure\n2:05 Summary\n\nPart of the Cardiovascular System series on The Anatomy Unfolded.\n\n⚠️ Educational content only, not medical advice. Always talk to a qualified doctor about your health.\nSome illustrations: Servier Medical Art (smart.servier.com), licensed under CC BY 4.0.\n\n#anatomy #physiology #medicalstudent #nursing #cardiology",
+  "description": "Blood pressure • Systolic and diastolic • What does 120/80 mean\n\nBlood pressure explained simply: what systolic and diastolic pressure mean, what 120/80 mmHg tells you, and how your body controls blood pressure every second. We follow the blood from the left ventricle into the aorta to see where the top and bottom numbers come from, learn how a blood pressure cuff works, and break down the normal, elevated and high blood pressure ranges for adults. You'll learn the key formula, blood pressure = cardiac output x resistance, and how baroreceptors in the carotid arteries and aortic arch, plus the kidneys and the renin-angiotensin-aldosterone system (RAAS), keep your pressure in balance. Perfect for MBBS, nursing, pharmacy and biology students.\n\nCHAPTERS\n0:00 What does 120/80 mean?\n0:25 Systolic vs diastolic\n0:48 How it's measured & normal ranges\n1:20 How your body controls blood pressure\n2:09 Summary\n\nPart of the Cardiovascular System series on The Anatomy Unfolded.\n\n⚠️ Educational content only, not medical advice. Always talk to a qualified doctor about your health.\nSome illustrations: Servier Medical Art (smart.servier.com), licensed under CC BY 4.0.\n\n#anatomy #physiology #medicalstudent #nursing #cardiology",
   "tags": [
    "blood pressure explained",
    "systolic and diastolic",

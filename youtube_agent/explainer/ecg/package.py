@@ -142,30 +142,30 @@ def short(ep, path, k):
     t0 = sc[ids[0]][0]
     t1 = sc[ids[-1]][0] + sc[ids[-1]][1]
     length = min(t1 - t0, 58.0)
-    focus = ep.get("focus", [0.42, 0.42])[k]          # where the picture is, as a share of the frame width
-    cx = int(min(max(focus * 1458 - 540, 0), 1458 - 1080))
+    # Owner (2 Nov): nothing may be cut - show the WHOLE 16:9 board (1080x608), title above, link pill below.
     top = Image.new("RGBA", (1080, 1920), (255, 255, 255, 0))
     d = ImageDraw.Draw(top)
     words = title.upper().split()
     lines, cur = [], ""
     for w in words:
-        if len(cur + " " + w) > 16:
+        if len(cur + " " + w) > 14:
             lines.append(cur.strip())
             cur = w
         else:
             cur += " " + w
     lines.append(cur.strip())
-    y = 300 - 45 * len(lines)
+    size = 96 if len(lines) <= 3 else 80
+    y = 600 - (size + 18) * len(lines) + (size + 18) // 2 - 20
     for ln in lines:
-        btext(d, (540, y), ln, 84, MAROON, "mm")
-        y += 100
-    d.rounded_rectangle((190, 1530, 890, 1630), radius=50, fill=MAROON)
-    d.text((540, 1580), "FULL VIDEO ON THE CHANNEL", font=f(40), fill=(255, 255, 255), anchor="mm", stroke_width=1, stroke_fill=(255, 255, 255))
-    d.text((540, 1730), "THE ANATOMY UNFOLDED", font=f(40), fill=(150, 120, 130), anchor="mm")
+        btext(d, (540, y), ln, size, MAROON, "mm")
+        y += size + 18
+    d.rounded_rectangle((170, 1380, 910, 1490), radius=55, fill=MAROON)
+    d.text((540, 1435), "FULL VIDEO ON THE CHANNEL", font=f(44), fill=(255, 255, 255), anchor="mm", stroke_width=1, stroke_fill=(255, 255, 255))
+    d.text((540, 1600), "THE ANATOMY UNFOLDED", font=f(46), fill=(150, 120, 130), anchor="mm")
     ov = OUT / f"{ep['id']}_short{k}_overlay.png"
     top.save(ov)
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", f"{t0:.2f}", "-t", f"{length:.2f}", "-i", str(ep["video"]), "-i", str(ov),
-                    "-filter_complex", f"color=white:s=1080x1920:r=30[bg];[0:v]scale=-2:820,crop=1080:820:{cx}:0[v];[bg][v]overlay=0:560:shortest=1[b];[b][1:v]overlay=0:0",
+                    "-filter_complex", f"color=white:s=1080x1920:r=30[bg];[0:v]scale=1080:608[v];[bg][v]overlay=0:656:shortest=1[b];[b][1:v]overlay=0:0",
                     "-c:v", "libx264", "-preset", "medium", "-crf", "21", "-c:a", "aac", "-b:a", "160k", "-movflags", "+faststart",
                     str(path)], check=True)
     ov.unlink()
