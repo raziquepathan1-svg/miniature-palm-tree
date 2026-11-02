@@ -38,6 +38,11 @@ EP = {
      "causes of high blood pressure", "primary and secondary hypertension", "left ventricular hypertrophy",
      "hypertensive crisis", "how to lower blood pressure", "blood pressure 130/80"],
     ["#hypertension", "#bloodpressure", "#health"]),
+ "heart_failure": (["Heart failure", "Congestive heart failure", "Heart failure symptoms"],
+    ["heart failure", "congestive heart failure", "heart failure symptoms", "what is heart failure", "ejection fraction",
+     "left sided heart failure", "right sided heart failure", "pitting edema", "bnp test", "echocardiogram",
+     "cardiomyopathy", "heart failure treatment"],
+    ["#heartfailure", "#cardiology", "#heart"]),
 }
 
 
