@@ -79,11 +79,12 @@ def build():
         return add(B.Text(s.upper(), x, y, size, color, t=t, dur=dur, anchor=anchor))
 
     def sub(s_, x, y, size, color, t):
-        a = add(B.Stroke([(x - 2, y - 40), (x - 2, y - 10), (x + 18, y - 10)], color, 3, t=t, dur=0.25))
+        a = add(B.Stroke([(x - 2, y - 40), (x - 2, y - 10), (x + 18, y - 10)], tuple(int(c * 0.8) for c in color), 5, t=t, dur=0.25))
         return [a, text(s_, x + 26, y, size, color, t + 0.2)]
 
-    def lead(pts, t, color=MAROON, width=3, dur=0.45, arrow=False):
-        return add(B.Stroke(B.smooth(pts, 10), color, width, t=t, dur=dur, arrow=arrow))
+    def lead(pts, t, color=MAROON, width=6, dur=0.45, arrow=False):
+        dark = tuple(int(c * 0.8) for c in color)
+        return add(B.Stroke(B.smooth(pts, 10), dark, max(width, 5), t=t, dur=dur, arrow=arrow))
 
     def pop(img, x, y, h=None, w=None, t=0.0, dur=0.6):
         return add(B.Pop(img, x, y, h=h, w=w, t=t, dur=dur))
@@ -95,7 +96,7 @@ def build():
 
     # ======================= HOOK: outside of the heart, 100,000 beats, one spark
     s = sc["hook"]
-    hook = [text("The heart's", 960, 70, 40, MAROON, 0.2, "c"), text("Electrical System", 960, 128, 64, MAROON, 0.9, "c"),
+    hook = [text("The heart's", 960, 55, 40, MAROON, 0.2, "c"), text("Electrical System", 960, 140, 64, MAROON, 0.9, "c"),
             add(B.Stroke([(700, 165), (1220, 162)], MAROON, 4, t=2.0, dur=0.5))]
     hook.append(pop(sv("coeur_09"), 640, 610, h=760, t=0.4, dur=0.8))
     th = s.t("hundred")
@@ -162,10 +163,10 @@ def build():
     sa1 += [lead([(SA[0] + 10, SA[1] - 10), (900, 260), (1290, 380)], tcl + 0.4, MAROON, 3, 0.5), inset,
             text("pacemaker cells", 1500, 690, 46, MAROON, tcl + 1.0, "c")]
     tr = s.t("right")
-    sa1 += [text("right atrium", 160, 440, 46, BLUE_T, tr), lead([(330, 430), (430, 440), M("RA")], tr + 0.6, BLUE_T)]
+    sa1 += [text("right atrium", 160, 600, 46, BLUE_T, tr), lead([(470, 590), (560, 560), M("RA")], tr + 0.6, BLUE_T)]
     tsv = s.t("superior")
     svc = M("SVC")
-    sa1 += [text("superior", 160, 160, 42, BLUE_T, tsv), text("vena cava", 160, 210, 42, BLUE_T, tsv + 0.5),
+    sa1 += [text("superior", 160, 140, 42, BLUE_T, tsv), text("vena cava", 160, 215, 42, BLUE_T, tsv + 0.5),
             lead([(370, 190), (svc[0] - 25, svc[1])], tsv + 1.0, BLUE_T)]
     tpm = s.t("pacemaker")
     bd.erase(tpm - 0.2, [inset] + sa1[3:])

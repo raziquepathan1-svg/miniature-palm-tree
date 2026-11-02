@@ -47,6 +47,25 @@ def main() -> None:
                     print(f"Could not delete {vid}: {e}")
                     left_ids.append(vid)
         dele.write_text(json.dumps(left_ids))
+    if not dry:   # metadata refresh for items already on YouTube (title / description / tags / thumbnail)
+        from googleapiclient.discovery import build
+        from googleapiclient.http import MediaFileUpload
+        from ..uploader import _credentials
+        api = build("youtube", "v3", credentials=_credentials(), cache_discovery=False)
+        for q in queue:
+            if q.get("youtube_id") and q.get("update"):
+                body = {"id": q["youtube_id"], "snippet": {"title": q["title"][:100], "description": q["description"][:5000],
+                                                         "tags": q["tags"], "categoryId": "27", "defaultLanguage": "en-US",
+                                                         "defaultAudioLanguage": "en-US"}}
+                api.videos().update(part="snippet", body=body).execute()
+                if q.get("thumbnail"):
+                    try:
+                        api.thumbnails().set(videoId=q["youtube_id"], media_body=MediaFileUpload(str(QDIR / q["thumbnail"]))).execute()
+                    except HttpError as e:
+                        print(f"  thumbnail not set for {q['id']}: {e}")
+                q.pop("update", None)
+                QUEUE.write_text(json.dumps(queue, indent=1, ensure_ascii=False))
+                print(f"Updated title/description/thumbnail: {q['id']} -> {q['title']}")
     now = dt.datetime.now(dt.timezone.utc)
     todo = [q for q in queue if not q.get("youtube_id")]
     todo.sort(key=lambda q: q["publish_at"])
