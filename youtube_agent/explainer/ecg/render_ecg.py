@@ -505,17 +505,16 @@ LOGO = Image.open(HERE.parent / "brand" / "logo_final.png").convert("RGBA")
 
 
 def intro_audio(path):
-    """Owner (2 Nov): one soft starting sound - a warm bell chime when the logo appears. Nothing else."""
+    """Owner (2 Nov): one SMOOTH starting sound - a soft warm swell that fades in with the logo and fades out. No click, no ping."""
     sr = 24000
     n = int(INTRO_DUR * sr)
+    t = np.arange(n) / sr
     a = np.zeros(n)
-    t0 = 1.9
-    for k, f in enumerate((440.0, 554.4, 659.3, 880.0)):
-        st = int((t0 + 0.09 * k) * sr)
-        tt = np.arange(n - st) / sr
-        tone = np.sin(2 * np.pi * f * tt) + 0.35 * np.sin(2 * np.pi * 2 * f * tt) + 0.12 * np.sin(2 * np.pi * 3.01 * f * tt)
-        a[st:] += 0.11 * tone * np.exp(-tt * 1.6) * np.minimum(1, tt / 0.01)
-    a *= np.clip((INTRO_DUR - np.arange(n) / sr) / 0.3, 0, 1)
+    for f, g in ((130.8, 0.5), (196.0, 0.4), (261.6, 0.35), (329.6, 0.22), (392.0, 0.15)):   # soft C major pad, pure sines
+        a += g * np.sin(2 * np.pi * f * t + 0.3 * np.sin(2 * np.pi * 0.7 * t))
+    env = np.clip((t - 0.6) / 1.4, 0, 1) ** 2 * (3 - 2 * np.clip((t - 0.6) / 1.4, 0, 1))   # slow, smooth rise from 0.6 s to 2.0 s
+    env *= np.clip((INTRO_DUR - t) / 1.4, 0, 1) ** 1.5                                       # long gentle fade-out
+    a = 0.09 * a * env
     with wave.open(str(path), "wb") as w:
         w.setnchannels(1); w.setsampwidth(2); w.setframerate(sr)
         w.writeframes((np.clip(a, -1, 1) * 32767).astype("<i2").tobytes())

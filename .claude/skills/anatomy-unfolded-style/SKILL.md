@@ -18,7 +18,7 @@ code in `youtube_agent/explainer/ecg/osm_full.py` (engine: `board.py`).
 - Finish one thing completely before starting the next (Rule #1). Prompts must work first time.
 
 ## Look
-- Pure white background. Intro: `render_ecg.intro_frame` (navy, ECG line, logo, "THE ANATOMY UNFOLDED") - 3.6 s with ONE soft bell chime (owner override, 2 Nov 2026); the hook starts right after it.
+- Pure white background. Intro: `render_ecg.intro_frame` (navy, ECG line, logo, "THE ANATOMY UNFOLDED") - 3.6 s with ONE smooth soft swell (no bell) (owner override, 2 Nov 2026); the hook starts right after it.
 - Pictures: soft painted/pastel medical illustrations, coloured outlines. Sources in order:
   1. Servier Medical Art (smart.servier.com, CC BY 4.0) -> on-screen credit line + description credit (see servier/CREDITS.md).
   2. Text-free AI illustrations (gpt-image, prompt: "modern hand-drawn anatomy explainer style, soft pastel,

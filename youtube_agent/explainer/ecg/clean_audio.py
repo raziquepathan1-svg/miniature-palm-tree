@@ -9,7 +9,8 @@ JOBS = [("heart_anatomy_v2.mp4", SP / "hanat2", "final_heart_anatomy.mp4"),
         ("heart_electrical_osmosis.mp4", SP / "ecg", "final_heart_electrical.mp4"),
         ("heart_attack.mp4", SP / "mi", "final_heart_attack.mp4"),
         ("blood_vessels.mp4", SP / "vessels", "final_blood_vessels.mp4"),
-        ("blood_pressure.mp4", SP / "bp", "final_blood_pressure.mp4")]
+        ("blood_pressure.mp4", SP / "bp", "final_blood_pressure.mp4"),
+        ("htn_video_only.mp4", SP / "htn", "final_high_blood_pressure.mp4")]
 RE.intro_audio(HERE / "chime_intro.wav")
 for src, ep, out in JOBS:
     lst = HERE / f"{out}.txt"
