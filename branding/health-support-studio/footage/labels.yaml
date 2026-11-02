@@ -210,7 +210,6 @@
     - {text: "Breathing starts again", at: [0.66, 0.40], to: [0.44, 0.70], start: 6.0}
   note: {text: "Snoring and pauses: the throat closes during sleep", start: 2.6}
 16x9_flu_virus_airway.mp4:
-  approved: false
   words: [flu, influenza, flu virus, flu season, flu symptoms, flu shot, covid, rsv, respiratory virus, respiratory viruses, airway, airways]
   title: "Flu in the Airway"
   labels:
@@ -220,7 +219,6 @@
     - {text: "White blood cells", at: [0.6, 0.34], to: [0.37, 0.6], start: 6.2, end: 7.3}
   note: {text: "Flu viruses infect the airway; white blood cells fight back", start: 6.0}
 16x9_migraine_brain.mp4:
-  approved: false
   words: [migraine, migraines, headache, headaches, aura, throbbing, head pain, one side of the head, cluster headache, light sensitivity]
   title: "A Migraine in the Head"
   labels:
@@ -230,7 +228,6 @@
     - {text: "Pain behind the eye", at: [0.32, 0.32], to: [0.42, 0.54], start: 6.2}
   note: {text: "In a migraine, nerves and blood vessels in the head become irritated", start: 6.0}
 16x9_anxiety_fight_flight.mp4:
-  approved: false
   words: [anxiety, anxious, panic attack, panic attacks, panic, fight or flight, stress response, worry, racing heart, adrenaline, nervous system]
   title: "Anxiety: The Body's Alarm"
   labels:
@@ -242,7 +239,6 @@
     - {text: "Faster breathing", at: [0.3, 0.42], to: [0.4, 0.5], start: 6.4}
   note: {text: "Fight-or-flight: the body's alarm system switching on", start: 6.0}
 16x9_constipation_colon.mp4:
-  approved: false
   words: [constipation, constipated, bowel movement, bowel movements, stool, stools, colon, large intestine, fiber, bloating, laxative, laxatives, hard stool]
   title: "Constipation in the Colon"
   labels:
