@@ -153,3 +153,5 @@ For any script, Short, title or thumbnail about a disease, condition, symptom or
 `.claude/skills/hss-disease-content/SKILL.md` (this skill wins on clashes).
 Comments, pinned comments, viewer-question topics and Community Tab polls (owner, Nov 2 2026): also follow
 `.claude/skills/hss-community-growth/SKILL.md`.
+Shorts funnel, Related Video IDs, searched titles, 4-6 chapters and description keywords (owner, Nov 2 2026):
+also follow `.claude/skills/hss-funnel-search/SKILL.md`.

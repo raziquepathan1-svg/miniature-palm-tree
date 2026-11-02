@@ -1138,6 +1138,9 @@ def write_chapters(parts: list[Path], labels: list[str | None], out: Path) -> Pa
         t += _duration(part)
     if chapters:
         chapters[0] = (0.0, chapters[0][1])
+    if len(chapters) > 6:  # owner, Nov 2: 4 to 6 logical chapters (search shows them better)
+        n = len(chapters)
+        chapters = [chapters[round(i * n / 6)] for i in range(6)]
     lines = [f"{int(c // 60)}:{int(c % 60):02d} {label}" for c, label in chapters]
     out.write_text("\n".join(lines) + "\n" if len(lines) >= 3 else "")
     return out
