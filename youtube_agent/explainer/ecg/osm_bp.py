@@ -128,7 +128,7 @@ def build():
                        tp + 0.2 + k * 0.15, RED_T, 6, 0.3, arrow=True))
     tg = s.t("garden")
     hose = pop(hose_pic(), 1400, 600, w=760, t=tg - 0.2)
-    wt += [hose, text("heart = tap", 1080, 870, 46, BLUE_T, s.t("tap", 2)), text("arteries = hose", 1080, 940, 46, RED_T, s.t("hose", 3))]
+    wt += [hose, text("heart = tap", 1080, 870, 46, BLUE_T, s.t("tap", 2)), text("arteries = hose", 1080, 940, 46, RED_T, s.t("arteries", 2) - 0.4)]
 
     # ---------------- SYSTOLIC (heart page)
     s = sc["systolic"]
@@ -142,7 +142,7 @@ def build():
     flows.append((lp, s.t("pushes"), s.end + 0.5, (255, 30, 39)))
     gx0, gx1, gy0, gy1 = PW + 1080, PW + 1840, 260, 760
     sy = [add(B.Stroke([(gx0, gy0 - 30), (gx0, gy1), (gx1, gy1)], (90, 90, 100), 5, t=s.start + 0.5, dur=0.6, arrow=False)),
-          text("pressure", gx0 - 10, gy0 - 50, 34, MAROON, s.start + 0.8)]
+          text("pressure", gx0 - 10, gy0 - 110, 34, MAROON, s.start + 0.8)]
     pts = [(gx0 + 20 + x * 700, gy1 - 80 - wave(x) * 340) for x in [i / 80 for i in range(81)]]
     rise = [p for p, x in zip(pts, [i / 80 for i in range(81)]) if x <= 0.16]
     fall = [p for p, x in zip(pts, [i / 80 for i in range(81)]) if x >= 0.15]
@@ -153,13 +153,13 @@ def build():
     s = sc["diastolic"]
     aorta = hs.map((250, 110))
     sy += [add(B.Stroke(fall, (0, 85, 255), 7, t=s.t("relaxes"), dur=3.0)),
-           text("doesn't fall to zero", gx0 + 380, gy1 - 30, 32, PURPLE, s.t("zero"))]
+           text("doesn't fall to zero", gx0 + 20, gy1 + 115, 32, PURPLE, s.t("zero"))]
     for k in range(4):
         glows.append((s.t("springs") + k * 0.6, aorta, 0.5, 90))
     sy += [text("aorta springs back", PW + 200, 140, 42, RED_T, s.t("springs")),
            lead([(PW + 480, 150), (aorta[0] - 30, aorta[1] - 20)], s.t("springs") + 0.4, RED_T)]
-    sy += [text("diastolic", pts[-1][0] - 40, pts[-1][1] + 60, 54, BLUE_T, s.t("diastolic"), "c"),
-           text("= bottom number", pts[-1][0] - 300, pts[-1][1] + 60, 34, MAROON, s.t("bottom"))]
+    sy += [text("diastolic", gx1 - 150, gy1 - 270, 54, BLUE_T, s.t("diastolic"), "c"),
+           text("= bottom number", gx1 - 150, gy1 + 55, 34, MAROON, s.t("bottom"), "c")]
 
     # ---------------- MEASURE (cuff page, zoom into artery under the cuff)
     s = sc["measure"]
@@ -179,7 +179,7 @@ def build():
             text("artery squeezed shut", X + 750, ay - 90, 34, PURPLE, tsq + 0.6)]
     ts1, ts2 = s.t("systolic"), s.t("diastolic")
     tube += [panel(X + 1350, 600, X + 1880, 720, PINK, ts1 - 0.4), text("first spurt = systolic", X + 1380, 670, 38, RED_T, ts1 - 0.2),
-             panel(X + 1350, 760, X + 1880, 880, SKY, ts2 - 0.4), text("smooth flow = diastolic", X + 1380, 830, 38, BLUE_T, ts2 - 0.2)]
+             panel(X + 1350, 760, X + 1880, 880, SKY, ts2 - 1.2), text("smooth flow = diastolic", X + 1380, 830, 38, BLUE_T, ts2 - 1.0)]
     flows.append(([(X + 210, ay), (X + 640, ay)], s.t("lets") - 0.2, ts1, (255, 30, 39)))
     flows.append(([(X + 210, ay), (X + 1290, ay)], ts1, s.end, (255, 30, 39)))
     ms += tube
@@ -231,7 +231,7 @@ def build():
     flows.append(([car, (car[0] - 20, car[1] - 120), brain], tbrn - 0.4, tbrn + 2.0, (255, 215, 0)))
     br += [panel(X + 1120, PH + 560, X + 1860, PH + 900, CREAM, s.t("drops") - 0.3), text("pressure drops", X + 1160, PH + 630, 44, PURPLE, s.t("drops")),
            text("(standing up fast)", X + 1160, PH + 690, 32, MAROON, s.t("stand")),
-           text("-> heart speeds up", X + 1160, PH + 770, 40, RED_T, s.t("speeds")), text("-> vessels tighten", X + 1160, PH + 840, 40, RED_T, s.t("tighten"))]
+           text("-> heart speeds up", X + 1160, PH + 770, 40, RED_T, s.t("speeds")), text("-> vessels tighten", X + 1160, PH + 840, 40, RED_T, s.t("tighten") - 0.8)]
 
     # ---------------- KIDNEYS (back to page E region: reuse page D? use E)
     s = sc["kidneys"]
@@ -248,7 +248,7 @@ def build():
         ki += [panel(X + 700, y, X + 1500, y + 170, col, tt - 0.3), text(nm, X + 740, y + 75, 54, tc, tt), text(desc, X + 740, y + 140, 36, MAROON, tt + 0.6)]
         if i:
             ki.append(lead([(X + 1100, y - 55), (X + 1100, y - 5)], tt - 0.4, MAROON, 6, 0.3, arrow=True))
-    ki += [text("more fluid", X + 1560, PH + 830, 44, BLUE_T, s.t("fluid")), text("= more pressure", X + 1560, PH + 890, 44, RED_T, s.t("pressure", 2))]
+    ki += [text("more fluid", X + 1530, PH + 830, 40, BLUE_T, s.t("fluid") - 1.0), text("= more pressure", X + 1530, PH + 890, 40, RED_T, s.t("fluid") - 0.3)]
     ki.append(lead([(X + 500, PH + 500), (X + 690, PH + 320)], s.t("renin", 1), GOLD_T, 6, 0.4, arrow=True))
 
     # ---------------- SUMMARY (page D)

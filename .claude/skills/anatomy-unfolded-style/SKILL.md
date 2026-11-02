@@ -40,3 +40,7 @@ code in `youtube_agent/explainer/ecg/osm_full.py` (engine: `board.py`).
 
 ## Upload
 - Category Education, not made for kids, disclaimer "Educational content only, not medical advice", Servier credit.
+
+## Label overlap rule (owner, 2 Nov 2026: "word over writing another word")
+Before rendering any video run `python3 overlap_check.py <module>` (youtube_agent/explainer/ecg/overlap_check.py).
+It must report `overlaps: 0`. Also check end-of-scene frames so no label is still half-written when it is erased.

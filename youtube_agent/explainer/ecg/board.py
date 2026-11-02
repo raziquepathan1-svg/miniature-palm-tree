@@ -132,13 +132,24 @@ class Picture:
         return (self.x_u + p_src[0] * self.w_u / self.src.width, self.y_u + p_src[1] * self.h_u / self.src.height)
 
 
+TEXT_SCALE = [1.15]     # bigger handwriting for readability (owner: words were too thin/small)
+TEXT_BOLD = [0.032]      # stroke width as a share of the font size
+TEXT_DARK = [0.8]      # colour multiplier (<1 = darker)
+
+
 class Text:
     def __init__(self, text, x, y, size, color=INK, t=0.0, dur=None, anchor="l"):
+        size = size * TEXT_SCALE[0]
+        color = tuple(int(c * TEXT_DARK[0]) for c in color[:3])
+        while 0.299 * color[0] + 0.587 * color[1] + 0.114 * color[2] > 115:   # keep labels readable on white
+            color = tuple(int(c * 0.88) for c in color)
         f = hfont(size * BS)
-        box = f.getbbox(text)
-        lay = Image.new("RGBA", (box[2] + 16, int(size * BS * 1.45) + 10), (0, 0, 0, 0))
-        ImageDraw.Draw(lay).text((8, 4), text, font=f, fill=color)
+        sw = int(round(size * BS * TEXT_BOLD[0]))
+        box = f.getbbox(text, stroke_width=sw)
+        lay = Image.new("RGBA", (box[2] + 16 + 2 * sw, int(size * BS * 1.45) + 10 + 2 * sw), (0, 0, 0, 0))
+        ImageDraw.Draw(lay).text((8 + sw, 4 + sw), text, font=f, fill=color, stroke_width=sw, stroke_fill=color)
         self.img = lay
+        self.label = text
         self.cols = np.where(np.array(lay)[..., 3].max(0) > 0)[0]
         w_u = lay.width / BS
         x0 = x - w_u if anchor == "r" else (x - w_u / 2 if anchor == "c" else x)
