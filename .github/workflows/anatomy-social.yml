@@ -1,0 +1,54 @@
+name: The Anatomy Unfolded - post Reels to Instagram and Facebook
+
+# 2 Reels a day (12 PM + 9 PM India time), started a few minutes after each YouTube Short goes public.
+# This branch is not the default branch, so GitHub's own schedule does not fire here: a scheduled task dispatches it.
+on:
+  workflow_dispatch:
+    inputs:
+      check_only:
+        description: "Only test the Facebook/Instagram connection (posts nothing)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: anatomy-social
+  cancel-in-progress: false
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - name: Use the newest files
+        run: git fetch -q origin "${{ github.ref_name }}" && git reset -q --hard FETCH_HEAD
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Post the due Short as a Reel
+        env:
+          META_PAGE_ID: ${{ secrets.RRS_META_PAGE_ID }}
+          META_PAGE_TOKEN: ${{ secrets.RRS_META_PAGE_TOKEN }}
+          IG_USER_ID: ${{ secrets.RRS_IG_USER_ID }}
+          YOUTUBE_CLIENT_ID: ${{ secrets.RRS_YOUTUBE_CLIENT_ID || secrets.YOUTUBE_CLIENT_ID }}
+          YOUTUBE_CLIENT_SECRET: ${{ secrets.RRS_YOUTUBE_CLIENT_SECRET || secrets.YOUTUBE_CLIENT_SECRET }}
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.RRS_YOUTUBE_REFRESH_TOKEN }}
+        run: |
+          set -o pipefail
+          command -v ffmpeg >/dev/null || { sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg; }
+          pip install -q requests google-api-python-client google-auth google-auth-oauthlib
+          if [ "${{ inputs.check_only }}" = "true" ]; then python -m youtube_agent.explainer.social_post --check | tee -a "$GITHUB_STEP_SUMMARY"; exit 0; fi
+          python -m youtube_agent.explainer.social_post | tee -a "$GITHUB_STEP_SUMMARY"
+      - name: Remember what was posted
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
+          [ -f explainer_queue/social_posted.json ] || exit 0
+          git add explainer_queue/social_posted.json
+          git diff --cached --quiet && exit 0
+          git commit -q -m "Record Anatomy Unfolded Reels posted [skip ci]"
+          for i in 1 2 3 4; do git push -q && break || { sleep $((2**i)); git pull -q --rebase; }; done
