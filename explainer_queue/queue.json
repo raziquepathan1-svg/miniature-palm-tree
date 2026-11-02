@@ -32,8 +32,7 @@
   ],
   "playlist": "Cardiovascular System",
   "publish_at": "2026-11-02T12:30:00Z",
-  "youtube_id": "EbQY-FnNWUY",
-  "update": true
+  "youtube_id": "EbQY-FnNWUY"
  },
  {
   "id": "heart_anatomy_v2_short1",
@@ -70,8 +69,7 @@
   ],
   "playlist": null,
   "publish_at": "2026-11-02T06:30:00Z",
-  "youtube_id": "p26mrPLPwTU",
-  "update": true
+  "youtube_id": "p26mrPLPwTU"
  },
  {
   "id": "heart_anatomy_v2_short2",
@@ -108,8 +106,7 @@
   ],
   "playlist": null,
   "publish_at": "2026-11-02T15:30:00Z",
-  "youtube_id": "V5EsbKnoXFg",
-  "update": true
+  "youtube_id": "V5EsbKnoXFg"
  },
  {
   "id": "heart_physiology",
@@ -142,8 +139,7 @@
   ],
   "playlist": "Cardiovascular System",
   "publish_at": "2026-11-03T12:30:00Z",
-  "youtube_id": "MX2DBaaDE7A",
-  "update": true
+  "youtube_id": "MX2DBaaDE7A"
  },
  {
   "id": "heart_physiology_short1",
@@ -178,8 +174,7 @@
   ],
   "playlist": null,
   "publish_at": "2026-11-03T06:30:00Z",
-  "youtube_id": "QZYjBEWzuEQ",
-  "update": true
+  "youtube_id": "QZYjBEWzuEQ"
  },
  {
   "id": "heart_physiology_short2",
@@ -214,8 +209,7 @@
   ],
   "playlist": null,
   "publish_at": "2026-11-03T15:30:00Z",
-  "youtube_id": "9RvGwu2EaPc",
-  "update": true
+  "youtube_id": "9RvGwu2EaPc"
  },
  {
   "id": "heart_electrical",
@@ -248,8 +242,7 @@
   ],
   "playlist": "Cardiovascular System",
   "publish_at": "2026-11-04T12:30:00Z",
-  "youtube_id": "sF9jsLZy0xQ",
-  "update": true
+  "youtube_id": "sF9jsLZy0xQ"
  },
  {
   "id": "heart_electrical_short1",
@@ -284,8 +277,7 @@
   ],
   "playlist": null,
   "publish_at": "2026-11-04T06:30:00Z",
-  "youtube_id": "wxE-aoWCcDM",
-  "update": true
+  "youtube_id": "wxE-aoWCcDM"
  },
  {
   "id": "heart_electrical_short2",
@@ -320,8 +312,7 @@
   ],
   "playlist": null,
   "publish_at": "2026-11-04T15:30:00Z",
-  "youtube_id": "Ptv9rDN6a7g",
-  "update": true
+  "youtube_id": "Ptv9rDN6a7g"
  },
  {
   "id": "heart_attack",
@@ -354,8 +345,7 @@
   ],
   "playlist": "Cardiovascular System",
   "publish_at": "2026-11-05T12:30:00Z",
-  "youtube_id": "5C6Z4_b98TA",
-  "update": true
+  "youtube_id": "5C6Z4_b98TA"
  },
  {
   "id": "heart_attack_short1",
@@ -390,8 +380,7 @@
   ],
   "playlist": null,
   "publish_at": "2026-11-05T06:30:00Z",
-  "youtube_id": "k-166Mbzi18",
-  "update": true
+  "youtube_id": "k-166Mbzi18"
  },
  {
   "id": "heart_attack_short2",
@@ -426,7 +415,7 @@
   ],
   "playlist": null,
   "publish_at": "2026-11-05T15:30:00Z",
-  "youtube_id": null
+  "youtube_id": "k6KEsv9YvyM"
  },
  {
   "id": "blood_vessels",
@@ -458,7 +447,7 @@
   ],
   "playlist": "Cardiovascular System",
   "publish_at": "2026-11-06T12:30:00Z",
-  "youtube_id": null
+  "youtube_id": "-CKv7H0pVUE"
  },
  {
   "id": "blood_vessels_short1",
@@ -492,7 +481,7 @@
   ],
   "playlist": null,
   "publish_at": "2026-11-06T06:30:00Z",
-  "youtube_id": null
+  "youtube_id": "YnnArQHQ0vk"
  },
  {
   "id": "blood_vessels_short2",
