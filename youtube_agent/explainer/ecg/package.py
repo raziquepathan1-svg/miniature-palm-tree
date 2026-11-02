@@ -21,7 +21,7 @@ SKIP = set(sys.argv[2:])
 
 
 def sv(name):
-    for sub in ("bv", "ha", "mi", ""):
+    for sub in ("bpx", "bv", "ha", "mi", ""):
         p = SV / sub / f"{name}.png"
         if p.exists():
             return Image.open(p).convert("RGBA")

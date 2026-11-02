@@ -1,0 +1,12 @@
+[
+ {"id": "hook", "text": "Quick question. When a doctor says your blood pressure is one twenty over eighty, what do those two numbers actually mean? Let's find out."},
+ {"id": "what", "text": "Blood pressure is the push of blood against the walls of your arteries. Think of a garden hose. Turn on the tap, and the water pushes on the hose. Your heart is the tap. Your arteries are the hose."},
+ {"id": "systolic", "text": "Every heartbeat, the left ventricle squeezes, and pushes blood into the aorta. Pressure goes up. That peak is the top number: systolic pressure."},
+ {"id": "diastolic", "text": "Then the heart relaxes to refill. But the pressure doesn't fall to zero. The stretchy aorta springs back, and keeps blood moving. That lowest pressure is the bottom number: diastolic pressure."},
+ {"id": "measure", "text": "We measure it in millimeters of mercury. A cuff on your upper arm squeezes the artery, then slowly lets go. The pressure when blood starts to flow again is systolic. When the flow becomes smooth, that's diastolic."},
+ {"id": "numbers", "text": "For adults, normal is below one twenty over eighty. One twenty to one twenty nine, with the bottom number below eighty, is called elevated. One thirty over eighty or higher is high blood pressure. Exam tip: you need the top OR the bottom number to be high."},
+ {"id": "formula", "text": "So what sets the pressure? Here's the key formula. Blood pressure equals cardiac output, times resistance. More blood pumped, or narrower vessels, means higher pressure. Wider vessels mean lower pressure."},
+ {"id": "baroreceptors", "text": "Your body checks it all the time. Pressure sensors, called baroreceptors, sit in the carotid arteries in your neck, and in the arch of the aorta. If pressure drops, like when you stand up fast, they tell the brain, and within seconds the heart speeds up, and vessels tighten."},
+ {"id": "kidneys", "text": "For long term control, the kidneys step in. When pressure stays low, they release renin. This starts a chain called renin, angiotensin, aldosterone. Angiotensin two tightens vessels, and aldosterone makes the kidneys keep salt and water. More fluid, more pressure."},
+ {"id": "summary", "text": "So remember three things. Top number: the heart squeezing. Bottom number: the heart relaxing. And blood pressure equals cardiac output times resistance. Next time: what happens when blood pressure stays too high."}
+]
