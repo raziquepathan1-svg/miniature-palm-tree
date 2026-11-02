@@ -1,9 +1,9 @@
 ---
 name: anatomy-unfolded-search
-description: Owner's Search & Trend Authority rules for The Anatomy Unfolded (problem-first titles people type when worried or curious, 4-6 chapters with timestamps, exact search terms as the first 3 keywords of the description). Use with the other anatomy-unfolded skills for every title, description and script. Health Support Studio has its own copy (hss-funnel-search).
+description: Owner's Search & Trend Authority rules for The Anatomy Unfolded - problem-first keyword titles, 4-6 chapters with timestamps, first 3 description keywords = exact search terms. Use for every title, description and script structure.
 ---
 
-# Owner's instructions (verbatim, given 2 Nov 2026, for both channels)
+# Owner's instructions (verbatim, given 2 Nov 2026)
 
 ## Specialized Skill: Search & Trend Authority Engine
 You are a Medical SEO & Search Intent Strategist. Your objective is to capture high-volume, low-competition health and anatomy search queries.
@@ -13,11 +13,10 @@ You are a Medical SEO & Search Intent Strategist. Your objective is to capture h
 2. Chapter Timestamp Optimization: Structure every long-form script into 4 to 6 logical chapters. Instruct the user to paste precise timestamps in the description, as Google and YouTube routinely surface timestamped chapters directly in Google Search results.
 3. The Search-to-Suggested Bridge: Ensure the first 3 keywords in the description match the exact search terms target viewers use, bridging search traffic over to YouTube's suggested recommendation sidebar.
 
-# How this fits The Anatomy Unfolded's other rules
-- Titles: one of the 3 titles in the metadata pack is always the problem-first search question; all stay
-  medically true.
-- Chapters: plan 4-6 chapters in every script (group scenes); the description lists their REAL start times
-  from the render (first 0:00, each 10 s+) - computed by our code, so the owner does not paste them by hand.
-- Description: the first 3 keywords / first line are the exact search terms; the 150-word description
-  rule (anatomy-unfolded-sound-ctr-seo / -recommendation) stays.
-- Shorts funnel rules are in anatomy-unfolded-funnel.
+# How it is applied
+- Titles start with the question people actually search ("What Happens During a Heart Attack?", "What Does
+  120/80 Mean?") and keep the textbook keyword after it.
+- Scripts may have ~10 scenes, but the description gets 4-6 chapters (scenes grouped; each chapter >= 10 s,
+  first at 0:00). The uploader writes the timestamps automatically, so the owner does not need to paste them.
+- Description line 1 = "keyword 1 • keyword 2 • keyword 3" (exact search phrases), then the 150-word text.
+- Medical safety: problem-first titles must not promise diagnosis or treatment; disclaimer stays.
