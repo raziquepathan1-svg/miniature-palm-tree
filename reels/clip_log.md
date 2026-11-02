@@ -208,3 +208,22 @@ Fresh start Oct 30. Every Reel: 1.5s teaser, hook text 0–2.4s, slow motion on 
 - #119 ../raw4/Man_modeling_monochromatic_outfits_c721eaf0.mp4
 - #125 ../raw4/Man_showcasing_travel_outfits_0a7376ab.mp4
 - #125: opening close-up (hoodie text label) not used
+
+## New clips (raw4, Nov 2)
+
+## reel37_preppy_tie_vest — POV: the tie is back and so is the vest
+- #127 ../raw4/Man_modeling_menswear_outfits_79022d82.mp4
+- #132 ../raw4/Man_modeling_sweater_vests_fashion_f7b85f12.mp4
+
+## reel38_easy_casual — Simple fits hit the hardest
+- #129 ../raw4/Man_modeling_relaxed-fit_jeans_0081edaf.mp4
+- #133 ../raw4/Menswear_fashion_advertisement_v…_b5054bc3.mp4
+
+## reel39_summer_fusion — POV: summer called and you answered
+- #130 ../raw4/Man_modeling_short_kurta_outfits_0591486e.mp4
+- #126 ../raw4/Man_modeling_linen_shirt_outfits_55b33566.mp4
+
+## reel40_shirt_game — POV: you're the reason the party started
+- #131 ../raw4/Man_modeling_silk_party_shirts_ab2acb2d.mp4
+- #128 ../raw4/Man_modeling_oversized_fashion_l…_818f35f1.mp4
+- #132 (sweater vests): opening not used — he is shirtless while changing (modesty rule)
