@@ -1,11 +1,11 @@
 [
  {
-  "id": "heart_anatomy",
+  "id": "heart_anatomy_v2",
   "kind": "video",
-  "file": "heart_anatomy.mp4",
-  "thumbnail": "heart_anatomy_thumb.jpg",
+  "file": "heart_anatomy_v2.mp4",
+  "thumbnail": "heart_anatomy_v2_thumb.jpg",
   "title": "Anatomy of the Heart: Chambers, Valves & Layers Explained",
-  "description": "Learn the structure of the heart: where it sits, the pericardium, the 3 layers of the heart wall (epicardium, myocardium, endocardium), the 4 chambers, the 4 valves, the great vessels and the coronary arteries.\n\nCHAPTERS\n0:00 Intro\n0:13 Where the heart is\n0:26 Pericardium & 3 wall layers\n0:45 4 chambers & septum\n1:01 Wall thickness\n1:13 4 valves & chordae tendineae\n1:40 Great vessels\n1:59 Coronary arteries\n2:08 Summary\n\nPart of the Cardiovascular System series on The Anatomy Unfolded.\n\n⚠️ Educational content only, not medical advice. Always talk to a qualified doctor about your health.\nSome illustrations: Servier Medical Art (smart.servier.com), licensed under CC BY 4.0.\n\n#anatomy #physiology #medicalstudent #nursing #cardiology",
+  "description": "Learn the structure of the heart: where it sits, the 3 layers of the heart wall and the pericardium, the two pumps and the septum, the 4 chambers, why the left ventricle is thickest, the 4 valves (Try Pulling My Aorta), the chordae tendineae and the great vessels.\n\nCHAPTERS\n0:00 Intro\n0:14 Where the heart is\n0:23 3 layers of the wall & pericardium\n0:41 Two pumps & the septum\n0:56 4 chambers\n1:06 Why the left ventricle is thickest\n1:19 4 valves: Try Pulling My Aorta\n1:32 Chordae tendineae & papillary muscles\n1:45 Great vessels\n1:59 Remember 3 things\n\nPart of the Cardiovascular System series on The Anatomy Unfolded.\n\n⚠️ Educational content only, not medical advice. Always talk to a qualified doctor about your health.\nSome illustrations: Servier Medical Art (smart.servier.com), licensed under CC BY 4.0.\n\n#anatomy #physiology #medicalstudent #nursing #cardiology",
   "tags": [
    "heart anatomy",
    "anatomy of the heart",
@@ -17,15 +17,15 @@
   ],
   "playlist": "Cardiovascular System",
   "publish_at": "2026-11-02T12:30:00Z",
-  "youtube_id": "F5jbnP0Gb5A"
+  "youtube_id": null
  },
  {
-  "id": "heart_anatomy_short1",
+  "id": "heart_anatomy_v2_short1",
   "kind": "short",
-  "file": "heart_anatomy_short1.mp4",
+  "file": "heart_anatomy_v2_short1.mp4",
   "thumbnail": null,
-  "title": "4 Chambers of the Heart in 30 Seconds #Shorts",
-  "description": "Learn the structure of the heart: where it sits, the pericardium, the 3 layers of the heart wall (epicardium, myocardium, endocardium), the 4 chambers, the 4 valves, the great vessels and the coronary arteries.\n\nFull video: \"Anatomy of the Heart: Chambers, Valves & Layers Explained\" on The Anatomy Unfolded.\n\nPart of the Cardiovascular System series on The Anatomy Unfolded.\n\n⚠️ Educational content only, not medical advice. Always talk to a qualified doctor about your health.\nSome illustrations: Servier Medical Art (smart.servier.com), licensed under CC BY 4.0.\n\n#anatomy #physiology #medicalstudent #nursing #cardiology #shorts",
+  "title": "Your Heart Is Actually Two Pumps #Shorts",
+  "description": "Learn the structure of the heart: where it sits, the 3 layers of the heart wall and the pericardium, the two pumps and the septum, the 4 chambers, why the left ventricle is thickest, the 4 valves (Try Pulling My Aorta), the chordae tendineae and the great vessels.\n\nFull video: \"Anatomy of the Heart: Chambers, Valves & Layers Explained\" on The Anatomy Unfolded.\n\nPart of the Cardiovascular System series on The Anatomy Unfolded.\n\n⚠️ Educational content only, not medical advice. Always talk to a qualified doctor about your health.\nSome illustrations: Servier Medical Art (smart.servier.com), licensed under CC BY 4.0.\n\n#anatomy #physiology #medicalstudent #nursing #cardiology #shorts",
   "tags": [
    "heart anatomy",
    "anatomy of the heart",
@@ -37,15 +37,15 @@
   ],
   "playlist": null,
   "publish_at": "2026-11-02T06:30:00Z",
-  "youtube_id": "HehtQvcv6pI"
+  "youtube_id": null
  },
  {
-  "id": "heart_anatomy_short2",
+  "id": "heart_anatomy_v2_short2",
   "kind": "short",
-  "file": "heart_anatomy_short2.mp4",
+  "file": "heart_anatomy_v2_short2.mp4",
   "thumbnail": null,
-  "title": "The 3 Layers of the Heart Wall #Shorts",
-  "description": "Learn the structure of the heart: where it sits, the pericardium, the 3 layers of the heart wall (epicardium, myocardium, endocardium), the 4 chambers, the 4 valves, the great vessels and the coronary arteries.\n\nFull video: \"Anatomy of the Heart: Chambers, Valves & Layers Explained\" on The Anatomy Unfolded.\n\nPart of the Cardiovascular System series on The Anatomy Unfolded.\n\n⚠️ Educational content only, not medical advice. Always talk to a qualified doctor about your health.\nSome illustrations: Servier Medical Art (smart.servier.com), licensed under CC BY 4.0.\n\n#anatomy #physiology #medicalstudent #nursing #cardiology #shorts",
+  "title": "Remember the 4 Heart Valves #Shorts",
+  "description": "Learn the structure of the heart: where it sits, the 3 layers of the heart wall and the pericardium, the two pumps and the septum, the 4 chambers, why the left ventricle is thickest, the 4 valves (Try Pulling My Aorta), the chordae tendineae and the great vessels.\n\nFull video: \"Anatomy of the Heart: Chambers, Valves & Layers Explained\" on The Anatomy Unfolded.\n\nPart of the Cardiovascular System series on The Anatomy Unfolded.\n\n⚠️ Educational content only, not medical advice. Always talk to a qualified doctor about your health.\nSome illustrations: Servier Medical Art (smart.servier.com), licensed under CC BY 4.0.\n\n#anatomy #physiology #medicalstudent #nursing #cardiology #shorts",
   "tags": [
    "heart anatomy",
    "anatomy of the heart",
@@ -57,7 +57,7 @@
   ],
   "playlist": null,
   "publish_at": "2026-11-02T15:30:00Z",
-  "youtube_id": "WsVVYfHxkhs"
+  "youtube_id": null
  },
  {
   "id": "heart_physiology",
@@ -177,6 +177,126 @@
   ],
   "playlist": null,
   "publish_at": "2026-11-04T15:30:00Z",
+  "youtube_id": null
+ },
+ {
+  "id": "heart_attack",
+  "kind": "video",
+  "file": "heart_attack.mp4",
+  "thumbnail": "heart_attack_thumb.jpg",
+  "title": "Heart Attack Explained: What Happens Inside Your Heart",
+  "description": "What happens during a heart attack (myocardial infarction): coronary artery disease, plaque rupture and a blood clot, why time is muscle, the warning signs, what to do, how doctors open the artery, and how a heart attack differs from cardiac arrest.\n\nCHAPTERS\n0:00 Intro\n0:20 Coronary arteries\n0:36 Plaque & coronary artery disease\n0:50 The clot\n1:03 Time is muscle\n1:19 Warning signs\n1:42 What to do\n1:54 Treatment: angioplasty & stent\n2:12 Heart attack vs cardiac arrest\n2:32 Risk factors & summary\n\nPart of the Cardiovascular System series on The Anatomy Unfolded.\n\n⚠️ Educational content only, not medical advice. Always talk to a qualified doctor about your health.\nSome illustrations: Servier Medical Art (smart.servier.com), licensed under CC BY 4.0.\n\n#anatomy #physiology #medicalstudent #nursing #cardiology",
+  "tags": [
+   "heart attack",
+   "myocardial infarction",
+   "heart attack symptoms",
+   "coronary artery disease",
+   "cardiac arrest vs heart attack",
+   "angioplasty stent",
+   "the anatomy unfolded"
+  ],
+  "playlist": "Cardiovascular System",
+  "publish_at": "2026-11-05T12:30:00Z",
+  "youtube_id": null
+ },
+ {
+  "id": "heart_attack_short1",
+  "kind": "short",
+  "file": "heart_attack_short1.mp4",
+  "thumbnail": null,
+  "title": "Heart Attack Warning Signs You Should Know #Shorts",
+  "description": "What happens during a heart attack (myocardial infarction): coronary artery disease, plaque rupture and a blood clot, why time is muscle, the warning signs, what to do, how doctors open the artery, and how a heart attack differs from cardiac arrest.\n\nFull video: \"Heart Attack Explained: What Happens Inside Your Heart\" on The Anatomy Unfolded.\n\nPart of the Cardiovascular System series on The Anatomy Unfolded.\n\n⚠️ Educational content only, not medical advice. Always talk to a qualified doctor about your health.\nSome illustrations: Servier Medical Art (smart.servier.com), licensed under CC BY 4.0.\n\n#anatomy #physiology #medicalstudent #nursing #cardiology #shorts",
+  "tags": [
+   "heart attack",
+   "myocardial infarction",
+   "heart attack symptoms",
+   "coronary artery disease",
+   "cardiac arrest vs heart attack",
+   "angioplasty stent",
+   "shorts"
+  ],
+  "playlist": null,
+  "publish_at": "2026-11-05T06:30:00Z",
+  "youtube_id": null
+ },
+ {
+  "id": "heart_attack_short2",
+  "kind": "short",
+  "file": "heart_attack_short2.mp4",
+  "thumbnail": null,
+  "title": "Heart Attack vs Cardiac Arrest #Shorts",
+  "description": "What happens during a heart attack (myocardial infarction): coronary artery disease, plaque rupture and a blood clot, why time is muscle, the warning signs, what to do, how doctors open the artery, and how a heart attack differs from cardiac arrest.\n\nFull video: \"Heart Attack Explained: What Happens Inside Your Heart\" on The Anatomy Unfolded.\n\nPart of the Cardiovascular System series on The Anatomy Unfolded.\n\n⚠️ Educational content only, not medical advice. Always talk to a qualified doctor about your health.\nSome illustrations: Servier Medical Art (smart.servier.com), licensed under CC BY 4.0.\n\n#anatomy #physiology #medicalstudent #nursing #cardiology #shorts",
+  "tags": [
+   "heart attack",
+   "myocardial infarction",
+   "heart attack symptoms",
+   "coronary artery disease",
+   "cardiac arrest vs heart attack",
+   "angioplasty stent",
+   "shorts"
+  ],
+  "playlist": null,
+  "publish_at": "2026-11-05T15:30:00Z",
+  "youtube_id": null
+ },
+ {
+  "id": "blood_vessels",
+  "kind": "video",
+  "file": "blood_vessels.mp4",
+  "thumbnail": "blood_vessels_thumb.jpg",
+  "title": "Blood Vessels Explained: Arteries, Veins & Capillaries",
+  "description": "The three types of blood vessels: arteries, capillaries and veins. The 3 layers of the vessel wall, why arteries have thick walls, arterioles and blood pressure, capillary exchange, vein valves and the skeletal muscle pump, and why pulmonary arteries carry oxygen-poor blood.\n\nCHAPTERS\n0:00 Intro\n0:16 Arteries, capillaries & veins\n0:30 3 layers of the vessel wall\n0:51 Arteries & the pulse\n1:09 Arterioles: vasoconstriction & vasodilation\n1:25 Capillaries: where exchange happens\n1:46 Veins\n2:02 Vein valves & the muscle pump\n2:17 The pulmonary exception\n2:40 Summary\n\nPart of the Cardiovascular System series on The Anatomy Unfolded.\n\n⚠️ Educational content only, not medical advice. Always talk to a qualified doctor about your health.\nSome illustrations: Servier Medical Art (smart.servier.com), licensed under CC BY 4.0.\n\n#anatomy #physiology #medicalstudent #nursing #cardiology",
+  "tags": [
+   "blood vessels",
+   "arteries veins capillaries",
+   "artery vs vein",
+   "tunica intima media externa",
+   "capillary exchange",
+   "anatomy and physiology",
+   "the anatomy unfolded"
+  ],
+  "playlist": "Cardiovascular System",
+  "publish_at": "2026-11-06T12:30:00Z",
+  "youtube_id": null
+ },
+ {
+  "id": "blood_vessels_short1",
+  "kind": "short",
+  "file": "blood_vessels_short1.mp4",
+  "thumbnail": null,
+  "title": "Arteries Don't Always Carry Oxygen-Rich Blood! #Shorts",
+  "description": "The three types of blood vessels: arteries, capillaries and veins. The 3 layers of the vessel wall, why arteries have thick walls, arterioles and blood pressure, capillary exchange, vein valves and the skeletal muscle pump, and why pulmonary arteries carry oxygen-poor blood.\n\nFull video: \"Blood Vessels Explained: Arteries, Veins & Capillaries\" on The Anatomy Unfolded.\n\nPart of the Cardiovascular System series on The Anatomy Unfolded.\n\n⚠️ Educational content only, not medical advice. Always talk to a qualified doctor about your health.\nSome illustrations: Servier Medical Art (smart.servier.com), licensed under CC BY 4.0.\n\n#anatomy #physiology #medicalstudent #nursing #cardiology #shorts",
+  "tags": [
+   "blood vessels",
+   "arteries veins capillaries",
+   "artery vs vein",
+   "tunica intima media externa",
+   "capillary exchange",
+   "anatomy and physiology",
+   "shorts"
+  ],
+  "playlist": null,
+  "publish_at": "2026-11-06T06:30:00Z",
+  "youtube_id": null
+ },
+ {
+  "id": "blood_vessels_short2",
+  "kind": "short",
+  "file": "blood_vessels_short2.mp4",
+  "thumbnail": null,
+  "title": "Capillaries: Where the Real Work Happens #Shorts",
+  "description": "The three types of blood vessels: arteries, capillaries and veins. The 3 layers of the vessel wall, why arteries have thick walls, arterioles and blood pressure, capillary exchange, vein valves and the skeletal muscle pump, and why pulmonary arteries carry oxygen-poor blood.\n\nFull video: \"Blood Vessels Explained: Arteries, Veins & Capillaries\" on The Anatomy Unfolded.\n\nPart of the Cardiovascular System series on The Anatomy Unfolded.\n\n⚠️ Educational content only, not medical advice. Always talk to a qualified doctor about your health.\nSome illustrations: Servier Medical Art (smart.servier.com), licensed under CC BY 4.0.\n\n#anatomy #physiology #medicalstudent #nursing #cardiology #shorts",
+  "tags": [
+   "blood vessels",
+   "arteries veins capillaries",
+   "artery vs vein",
+   "tunica intima media externa",
+   "capillary exchange",
+   "anatomy and physiology",
+   "shorts"
+  ],
+  "playlist": null,
+  "publish_at": "2026-11-06T15:30:00Z",
   "youtube_id": null
  }
 ]

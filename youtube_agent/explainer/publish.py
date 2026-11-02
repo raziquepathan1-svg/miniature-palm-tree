@@ -30,6 +30,23 @@ def main() -> None:
         print("Nothing in the queue yet.")
         return
     queue = json.loads(QUEUE.read_text())
+    dele = QDIR / "delete.json"
+    if dele.exists() and not dry:   # replaced uploads: remove them from YouTube first
+        from googleapiclient.discovery import build
+        from ..uploader import _credentials
+        yt_api = build("youtube", "v3", credentials=_credentials(), cache_discovery=False)
+        left_ids = []
+        for vid in json.loads(dele.read_text()):
+            try:
+                yt_api.videos().delete(id=vid).execute()
+                print(f"Deleted old upload {vid}")
+            except HttpError as e:
+                if e.resp.status == 404:
+                    print(f"Already gone: {vid}")
+                else:
+                    print(f"Could not delete {vid}: {e}")
+                    left_ids.append(vid)
+        dele.write_text(json.dumps(left_ids))
     now = dt.datetime.now(dt.timezone.utc)
     todo = [q for q in queue if not q.get("youtube_id")]
     todo.sort(key=lambda q: q["publish_at"])
