@@ -46,6 +46,9 @@ EP = {
  "arrhythmia": (["Arrhythmia", "Heart skipping beats", "Atrial fibrillation"],
     ["arrhythmia", "heart skipping beats", "atrial fibrillation", "afib", "tachycardia", "bradycardia", "ventricular fibrillation", "palpitations", "premature beats", "irregular heartbeat", "normal heart rate", "cardiac arrest"],
     ["#arrhythmia", "#afib", "#heart"]),
+ "heart_valves": (["Heart valve disease", "Valve stenosis and regurgitation", "Heart murmur"],
+    ["heart valve disease", "heart valves", "aortic stenosis", "mitral regurgitation", "valve stenosis", "valve regurgitation", "heart murmur", "rheumatic heart disease", "valve replacement", "echocardiogram", "tricuspid pulmonary mitral aortic"],
+    ["#heartvalves", "#cardiology", "#heart"]),
 }
 
 
