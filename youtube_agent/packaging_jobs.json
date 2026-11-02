@@ -610,7 +610,8 @@
       "ebola news",
       "virus outbreak",
       "health education"
-    ]
+    ],
+    "done": true
   },
   {
     "youtube_id": "I9ZAW7lmnXA",
@@ -631,6 +632,7 @@
       "lung infection",
       "chest infection",
       "health education"
-    ]
+    ],
+    "done": true
   }
 ]
