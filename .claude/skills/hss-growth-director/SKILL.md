@@ -147,3 +147,7 @@ and they never change the pipeline, config or a live video on their own.
   myth, so let's clear it up") lost about a third of viewers in 5 seconds; the "4 more myths in our full video"
   ending held far better than other Shorts. So: the question, then straight into the answer. No "Here is
   why / Here is the truth / let's clear it up" lines after the hook. Keep the full-video ending.
+
+## Disease / symptom topics (owner, Nov 2 2026)
+For any script, Short, title or thumbnail about a disease, condition, symptom or warning sign, also follow
+`.claude/skills/hss-disease-content/SKILL.md` (this skill wins on clashes).
