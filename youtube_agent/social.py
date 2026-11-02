@@ -245,6 +245,15 @@ def _graph_field(obj_id: str, field: str, token: str) -> str:
         return ""
 
 
+def _history_entry(youtube_id: str) -> dict:
+    """The video's history.json entry (also when the video was replaced later), or {}."""
+    try:
+        hist = json.loads((Path(__file__).parent / "history.json").read_text())
+    except Exception:
+        return {}
+    return next((h for h in hist if h.get("youtube_id") == youtube_id or youtube_id in h.get("replaced_ids", [])), {})
+
+
 def _split_hashtags(text: str) -> tuple[str, str]:
     """('caption text', '#tags at the end') so the hashtags can go last, after the calls to action."""
     words = text.split()
@@ -368,6 +377,12 @@ def post(social_dir: Path) -> None:
         if slot == "2":
             r2 = json.loads((social_dir / "reel2.json").read_text())
             text, tags = f"{r2['hook']} Educational only, not medical advice.", r2.get("tags") or tags
+        # Owner, Nov 2: keywords and topic hashtags on Instagram/Facebook too (written in the daily packaging)
+        entry = _history_entry(meta["youtube_id"])
+        if entry.get("social_keywords"):
+            text = f"{text}\n\n🔎 {entry['social_keywords']}"
+        if entry.get("social_hashtags"):
+            tags = " ".join("#" + str(t).lstrip("#").replace(" ", "") for t in entry["social_hashtags"])
         day = int(time.time() // 86400) * 2 + (slot == "2")
         fb_caption, ig_caption = native_captions(text, tags, ig_user_id, token, day)
     elif meta.get("style") == "makeover":

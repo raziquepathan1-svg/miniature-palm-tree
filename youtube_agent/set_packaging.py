@@ -53,7 +53,7 @@ def main() -> None:
         entry = next((h for h in history if h.get("youtube_id") == vid), None)
         if entry is not None:
             entry["title"] = job["title"]
-            for key in ("pin_question", "packages", "chosen"):
+            for key in ("pin_question", "packages", "chosen", "social_keywords", "social_hashtags"):
                 if job.get(key):
                     entry[key] = job[key]
         job["done"] = True
