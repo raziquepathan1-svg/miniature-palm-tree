@@ -564,8 +564,11 @@ def upload_second_short(plan, video_id: str, video_cfg: dict, config: dict, chan
         except Exception as e:
             print(f"  (New-style second Short failed, using the old style: {e})")
 
-    used = {s.heading for s in plan.short_scenes} | (skip or set())  # Short 3 takes yet another page (Nov 1)
-    middle = [s for s in plan.scenes[1:-1] if s.heading not in used]
+    def norm(h: str) -> str:  # Nov 3: "Too Late for a Flu Shot?" (Short 1) is the same page as "Too Late for a Flu Shot"
+        return " ".join(re.sub(r"[^a-z0-9 ]", " ", str(h).lower()).split())
+
+    used = {norm(s.heading) for s in plan.short_scenes} | {norm(h) for h in (skip or set())}  # Short 3: yet another page
+    middle = [s for s in plan.scenes[1:-1] if norm(s.heading) not in used]
     order = {"myth_fact": 0, "warning": 1, "big_number": 2, "bullets": 3}
     picks = sorted((s for s in middle if s.layout in order), key=lambda s: order[s.layout])
     if not picks:
