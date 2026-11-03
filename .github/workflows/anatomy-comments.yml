@@ -1,0 +1,54 @@
+name: The Anatomy Unfolded - comments
+
+# Channel comment on every public video/Short, the viewer-comment inbox, and posting the written replies.
+# This branch is not the default branch, so a scheduled task dispatches it.
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "comment | inbox | reply"
+        default: comment
+
+permissions:
+  contents: write
+
+concurrency:
+  group: anatomy-comments
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            youtube_agent
+            explainer_queue/queue.json
+            explainer_queue/comments_posted.json
+            explainer_queue/comment_inbox.json
+            explainer_queue/reply_jobs.json
+            explainer_queue/comments_replied.json
+          sparse-checkout-cone-mode: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -q google-api-python-client google-auth google-auth-oauthlib pyyaml
+      - name: Run
+        env:
+          YOUTUBE_CLIENT_ID: ${{ secrets.RRS_YOUTUBE_CLIENT_ID || secrets.YOUTUBE_CLIENT_ID }}
+          YOUTUBE_CLIENT_SECRET: ${{ secrets.RRS_YOUTUBE_CLIENT_SECRET || secrets.YOUTUBE_CLIENT_SECRET }}
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.RRS_YOUTUBE_REFRESH_TOKEN }}
+        run: |
+          set -o pipefail
+          python -m youtube_agent.explainer.comments "${{ inputs.mode }}" | tee -a "$GITHUB_STEP_SUMMARY"
+      - name: Save
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
+          git add -f explainer_queue/comments_posted.json explainer_queue/comment_inbox.json explainer_queue/reply_jobs.json explainer_queue/comments_replied.json 2>/dev/null || true
+          git diff --cached --quiet && exit 0
+          git commit -q -m "Record Anatomy Unfolded comments [skip ci]"
+          for i in 1 2 3 4; do git push -q && break || { sleep $((2**i)); git pull -q --rebase; }; done
