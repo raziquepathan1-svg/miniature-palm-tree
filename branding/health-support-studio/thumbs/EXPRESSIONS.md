@@ -22,4 +22,4 @@ no default smile, the host never holds an object, face must match the avatar.
 - Ebola 2026 (picture saved Nov 1): #5 "Wait!" raised index finger
 - Flu/COVID/cold (picture saved Nov 1): #4 hand on forehead, eyes closed
 - knuckle cracking (picture saved): #7 both palms up, confused shrug
-- water myths 077 (prompt given Nov 3): #1 pointing at the text side (left), eyebrows up
+- water myths 077 (picture saved Nov 3): #1 pointing at the text side (left), eyebrows up
