@@ -634,5 +634,79 @@
       "health education"
     ],
     "done": true
+  },
+  {
+    "youtube_id": "i3Vnq2Ie-XE",
+    "title": "How to Tell Flu, COVID and a Cold Apart",
+    "description_top": "Flu vs COVID vs cold: how to tell them apart this flu season, flu symptoms, COVID symptoms and cold symptoms, when to test, and who should call a doctor early.\nIs it too late for a flu shot? Can the flu shot give you the flu? Emergency warning signs in adults and children, based on CDC guidance.",
+    "pin_question": "Have you or someone at home been sick this season? Was it more like a cold, the flu or COVID?",
+    "packages": [
+      {
+        "title": "How to Tell Flu, COVID and a Cold Apart",
+        "thumbnail_text": "WHICH ONE?",
+        "thumbnail_highlight": "ONE?"
+      },
+      {
+        "title": "Flu, COVID or Cold? How to Tell",
+        "thumbnail_text": "TEST TO KNOW",
+        "thumbnail_highlight": "TEST"
+      },
+      {
+        "title": "Is It Too Late for a Flu Shot?",
+        "thumbnail_text": "STILL WORTH IT",
+        "thumbnail_highlight": "WORTH"
+      },
+      {
+        "title": "Flu vs COVID vs Cold: The Key Differences",
+        "thumbnail_text": "FEVER OR CHILLS?",
+        "thumbnail_highlight": "CHILLS?"
+      },
+      {
+        "title": "Flu Season 2026: What to Know Now",
+        "thumbnail_text": "CALL EARLY?",
+        "thumbnail_highlight": "EARLY?"
+      }
+    ],
+    "chosen": {
+      "title": "How to Tell Flu, COVID and a Cold Apart",
+      "thumbnail_text": "WHICH ONE?",
+      "thumbnail_highlight": "ONE?"
+    },
+    "tags": [
+      "flu vs covid",
+      "flu vs cold",
+      "flu vs covid vs cold",
+      "flu symptoms",
+      "covid symptoms",
+      "cold symptoms",
+      "flu season 2026",
+      "is it too late for a flu shot",
+      "can the flu shot give you the flu",
+      "when to test for covid",
+      "flu warning signs in children",
+      "rsv vaccine",
+      "flu shot",
+      "respiratory virus",
+      "health education"
+    ],
+    "social_keywords": "flu vs COVID vs cold · flu symptoms · flu season 2026 · is it too late for a flu shot",
+    "social_hashtags": [
+      "FluSeason",
+      "FluVsCovid",
+      "FluShot",
+      "HealthTips",
+      "HealthEducation"
+    ],
+    "done": true
+  },
+  {
+    "youtube_id": "tIYp_7Nboy4",
+    "title": "Is it too late for a flu shot? #Shorts",
+    "done": true
+  },
+  {
+    "youtube_id": "DNTPkA_ARoU",
+    "title": "Can the flu shot give you the flu? #Shorts",
+    "done": true
   }
 ]
