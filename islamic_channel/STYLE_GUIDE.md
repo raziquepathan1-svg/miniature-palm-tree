@@ -54,3 +54,7 @@ Action: [what they do in these 8 seconds].
 - Every hadith or ayah in the description has its reference (sahih sources only).
 - No music. Subtitles are added in editing, never asked from Flow.
 - A new story each time, never the same video with small changes.
+
+## Uploading
+Finished videos go in `upload_queue/<date>-<name>/` (video.mp4, meta.json, optional thumbnail.jpg) and are
+uploaded scheduled by the "Islamic channel - upload videos" workflow. One-time login: `SETUP.md`.
