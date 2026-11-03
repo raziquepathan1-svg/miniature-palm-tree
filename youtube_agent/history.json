@@ -988,5 +988,20 @@
       "PublicHealth",
       "HealthTips"
     ]
+  },
+  {
+    "date": "2026-11-03T08:55:07",
+    "topic": "Flu, COVID or a cold: how to tell this season (2026)",
+    "requested_topic": "Flu, COVID or a cold: how to tell this season (2026)",
+    "title": "Flu, COVID or a Cold? How to Tell This Season",
+    "style": "Top Questions",
+    "script_file": "082-flu-covid-cold-2026.yaml",
+    "planned_publish_at": "2026-11-03T16:00:00Z",
+    "awaiting_approval": true,
+    "youtube_id": "i3Vnq2Ie-XE",
+    "short_youtube_id": "90_4YWiia8Q",
+    "short2_youtube_id": "tIYp_7Nboy4",
+    "short3_youtube_id": "DNTPkA_ARoU",
+    "preview": "previews/i3Vnq2Ie-XE.mp4"
   }
 ]
