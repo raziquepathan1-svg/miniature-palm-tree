@@ -49,6 +49,9 @@ EP = {
  "heart_valves": (["Heart valve disease", "Valve stenosis and regurgitation", "Heart murmur"],
     ["heart valve disease", "heart valves", "aortic stenosis", "mitral regurgitation", "valve stenosis", "valve regurgitation", "heart murmur", "rheumatic heart disease", "valve replacement", "echocardiogram", "tricuspid pulmonary mitral aortic"],
     ["#heartvalves", "#cardiology", "#heart"]),
+ "lung_anatomy": (["Lung anatomy", "Respiratory system", "Alveoli"],
+    ["lung anatomy", "respiratory system", "alveoli", "trachea", "bronchi", "bronchioles", "lobes of the lung", "cardiac notch", "pleura", "diaphragm", "right lung vs left lung", "gas exchange"],
+    ["#lunganatomy", "#lungs", "#respiratorysystem"]),
 }
 
 
