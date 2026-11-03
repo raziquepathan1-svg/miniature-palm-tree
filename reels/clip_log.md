@@ -227,3 +227,22 @@ Fresh start Oct 30. Every Reel: 1.5s teaser, hook text 0–2.4s, slow motion on 
 - #131 ../raw4/Man_modeling_silk_party_shirts_ab2acb2d.mp4
 - #128 ../raw4/Man_modeling_oversized_fashion_l…_818f35f1.mp4
 - #132 (sweater vests): opening not used — he is shirtless while changing (modesty rule)
+
+## Country series (reels/countries, Nov 3) — 2 countries per Reel
+
+## reel41_countries_pakistan_india — PAKISTAN / INDIA
+- #138 ../countries/Man_modeling_traditional_outfits_38918443.mp4
+- #139 ../countries/Man_showcasing_Indian_menswear_l…_20d3cd69.mp4
+
+## reel42_countries_japan_korea — JAPAN / KOREA
+- #140 ../countries/Man_wearing_Japanese-inspired_me…_babe5ef2.mp4
+- #134 ../countries/Korean_menswear_fashion_ad_film_28fbc591.mp4
+
+## reel43_countries_italy_uk — ITALY / UNITED KINGDOM
+- #136 ../countries/Man_modeling_Italian_fashion_looks_2a055163.mp4
+- #135 ../countries/Man_modeling_British_menswear_ou…_74f5f31b.mp4
+
+## reel44_countries_morocco_turkey — MOROCCO / TURKEY
+- #141 ../countries/Morocco-inspired_menswear_fashio…_5437fe0c.mp4
+- #137 ../countries/Man_modeling_Turkish_menswear_ou…_e70c5c6d.mp4
+- #137 Turkey: AI-made captions at top of frame ("Aegean summer", "evening") blurred

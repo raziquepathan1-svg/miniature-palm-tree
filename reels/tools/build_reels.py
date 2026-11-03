@@ -99,6 +99,14 @@ CLIP.update({
  131: M((1.5,3.5),(3.5,5.0),(5.0,5.5),(6.5,8.0)),
  132: M((1.5,3.5),(3.5,5.0),(5.0,6.5),(6.5,8.0)),
  133: M((1.5,3.5),(4.4,5.0),(5.0,6.5),(6.5,8.0)),
+ 134: M((1.5,3.5),(3.5,5.0),(5.0,6.5),(6.5,8.0)),
+ 135: M((1.5,3.5),(3.5,5.0),(5.0,6.5),(6.5,8.0)),
+ 136: M((1.5,3.5),(3.5,5.0),(5.0,5.5),(6.5,8.0)),
+ 137: M((1.5,3.5),(3.5,5.0),(5.0,6.0),(6.5,8.0)),
+ 138: M((1.5,3.5),(3.5,5.0),(5.0,6.5),(6.5,8.0)),
+ 139: M((1.5,3.5),(3.5,5.0),(5.0,6.5),(6.5,8.0)),
+ 140: M((1.5,3.5),(3.5,5.0),(5.0,6.5),(6.5,8.0)),
+ 141: M((1.5,3.5),(3.5,5.0),(5.0,5.5),(6.5,8.0)),
  101: [(0.5,1,0),(3.5,2,1),(7.0,1,0)],
  102: [(0.3,1,0),(1.3,2,1),(3.6,1,0),(6.5,1,0)],
  103: [(1.0,1,0),(1.8,2,1),(2.6,1,0),(6.8,1,0)],
@@ -109,7 +117,7 @@ CLIP.update({
  108: [(0.3,1,0),(1.3,2,1),(3.6,1,0),(6.5,1,0)],
  109: [(0.3,1,0),(1.2,2,1),(5.0,1,0),(7.0,1,0)],
 })
-MULTI_OPEN = {126,127,128,129,130,131,133,118,119,120,121,122,123,124,110,111,112,113,114,115,116,117,25,26,27,28,29,30,31,32,33,34,35,40,41,42,43,44,45,46,47,48,49,50,52,53,55,56,59,60,61,63,64,65,66,67,68,69,70,71,73}
+MULTI_OPEN = {136,138,140,141,126,127,128,129,130,131,133,118,119,120,121,122,123,124,110,111,112,113,114,115,116,117,25,26,27,28,29,30,31,32,33,34,35,40,41,42,43,44,45,46,47,48,49,50,52,53,55,56,59,60,61,63,64,65,66,67,68,69,70,71,73}
 def opening(i):
     if i in MULTI_OPEN:
         return [(0.0, 2, 0)]
@@ -157,17 +165,25 @@ REELS = {
  38: ("easy_casual", (133, 6.5), [129, 133], "Simple fits", "hit the hardest"),
  39: ("summer_fusion", (126, 6.5), [130, 126], "POV: summer called", "and you answered"),
  40: ("shirt_game", (131, 6.5), [131, 128], "POV: you're the reason", "the party started"),
+ 41: ("countries_pakistan_india", (139, 6.5), [138, 139], "", "", {"hook": ['NEW SERIES:', 'Which country has', 'the best outfit?'], "labels": {0: "PAKISTAN", 1: "INDIA"}, "end": ["Which country's outfit", 'do you want next?', 'Comment below']}),
+ 42: ("countries_japan_korea", (134, 6.5), [140, 134], "", "", {"hook": ['NEW SERIES:', 'Which country has', 'the best outfit?'], "labels": {0: "JAPAN", 1: "KOREA"}, "end": ["Which country's outfit", 'do you want next?', 'Comment below']}),
+ 43: ("countries_italy_uk", (135, 6.5), [136, 135], "", "", {"hook": ['NEW SERIES:', 'Which country has', 'the best outfit?'], "labels": {0: "ITALY", 1: "UNITED KINGDOM"}, "end": ["Which country's outfit", 'do you want next?', 'Comment below']}),
+ 44: ("countries_morocco_turkey", (141, 6.5), [141, 137], "", "", {"hook": ['NEW SERIES:', 'Which country has', 'the best outfit?'], "labels": {0: "MOROCCO", 1: "TURKEY"}, "end": ["Which country's outfit", 'do you want next?', 'Comment below']}),
  27: ("ethnic_heritage", (26, 4.2), [26, 48, 63], "Heritage in", "every thread"),
 }
-BLUR = {94: [(570, 580, 140, 140, 0, 6.5), (700, 965, 140, 140, 6.5, 8)]}   # chest logo boxes (x,y,w,h,t0,t1) on 1080x1920 (clip 94)
+BLUR = {137: [(0, 0, 1080, 320, 3.4, 8.1)],   # Turkey clip: AI-burned captions at top
+        94: [(570, 580, 140, 140, 0, 6.5), (700, 965, 140, 140, 6.5, 8)]}   # chest logo boxes (x,y,w,h,t0,t1) on 1080x1920 (clip 94)
 
 def run(c): subprocess.run(c, check=True)
 
 def build(n):
-    title, (tc, ts), clips, h1, h2 = REELS[n]
-    segs = [(tc, ts, 2, 0)]
+    title, (tc, ts), clips, h1, h2, *rest = REELS[n]
+    extra = rest[0] if rest else {}   # optional: hook (lines), labels {clip pos: text}, end (lines)
+    segs, starts, beats = [(tc, ts, 2, 0)], [], 2
     for k, c in enumerate(clips):
         parts = (opening(c) if k == 0 else []) + CLIP[c]
+        starts.append(beats * B)
+        beats += sum(b for _, b, _ in parts)
         segs += [(c, st, b, sl) for st, b, sl in parts]
     args, total = [], 0.0
     W = tempfile.mkdtemp()
@@ -189,10 +205,23 @@ def build(n):
         total += b * B
     base = f"{W}/base.mp4"
     run(["bash", R + "/tools/make_reel.sh", base] + args)
-    for k, t in enumerate((h1, h2)):
-        open(f"{W}/t{k}.txt", "w").write(t)
-    st = "fontsize=60:fontcolor=white:shadowcolor=black@0.7:shadowx=3:shadowy=3:x=(w-tw)/2:enable='between(t,0.15,2.4)':alpha='if(lt(t,0.35),(t-0.15)/0.2,if(gt(t,2.2),(2.4-t)/0.2,1))'"
-    vf = f"drawtext=fontfile={FONT}:textfile={W}/t0.txt:y=45:{st},drawtext=fontfile={FONT}:textfile={W}/t1.txt:y=115:{st}"
+    texts = []   # (lines, t0, t1, fontsize)
+    hook = extra.get("hook", [h1, h2])
+    texts.append((hook, 0.15, 2.4, 60 if len(hook) < 3 else 50))
+    for k, lab in extra.get("labels", {}).items():
+        t0 = max(starts[k], 2.45)
+        texts.append(([lab], t0, t0 + 1.6, 80))
+    if "end" in extra:
+        texts.append((extra["end"], total - 2.4, total, 50))
+    vf, i = [], 0
+    for lines, t0, t1, fs in texts:
+        a = f"alpha='if(lt(t,{t0+0.2:.2f}),(t-{t0:.2f})/0.2,if(gt(t,{t1-0.2:.2f}),({t1:.2f}-t)/0.2,1))'"
+        for j, line in enumerate(lines):
+            open(f"{W}/t{i}.txt", "w").write(line)
+            vf.append(f"drawtext=fontfile={FONT}:textfile={W}/t{i}.txt:y={35 + j * int(fs * 1.2)}:fontsize={fs}:fontcolor=white:"
+                      f"shadowcolor=black@0.7:shadowx=3:shadowy=3:x=(w-tw)/2:enable='between(t,{t0:.2f},{t1:.2f})':{a}")
+            i += 1
+    vf = ",".join(vf)
     out = f"{R}/final/reel{n:02d}_{title}.mp4"
     run(["ffmpeg","-nostdin","-v","error","-y","-t",f"{total:.3f}","-i",base,"-stream_loop","-1","-i",R+"/music/song1.mp3",
          "-map","0:v","-map","1:a","-vf",vf,"-af",f"afade=t=in:d=0.05,afade=t=out:st={total-0.35:.3f}:d=0.35","-t",f"{total:.3f}",

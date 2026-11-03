@@ -132,3 +132,11 @@ Man_walking_toward_car_670089fd.mp4
 ../raw4/Man_modeling_silk_party_shirts_ab2acb2d.mp4
 ../raw4/Man_modeling_sweater_vests_fashion_f7b85f12.mp4
 ../raw4/Menswear_fashion_advertisement_v…_b5054bc3.mp4
+../countries/Korean_menswear_fashion_ad_film_28fbc591.mp4
+../countries/Man_modeling_British_menswear_ou…_74f5f31b.mp4
+../countries/Man_modeling_Italian_fashion_looks_2a055163.mp4
+../countries/Man_modeling_Turkish_menswear_ou…_e70c5c6d.mp4
+../countries/Man_modeling_traditional_outfits_38918443.mp4
+../countries/Man_showcasing_Indian_menswear_l…_20d3cd69.mp4
+../countries/Man_wearing_Japanese-inspired_me…_babe5ef2.mp4
+../countries/Morocco-inspired_menswear_fashio…_5437fe0c.mp4
