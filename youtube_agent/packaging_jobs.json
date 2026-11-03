@@ -696,14 +696,17 @@
       "FluShot",
       "HealthTips",
       "HealthEducation"
-    ]
+    ],
+    "done": true
   },
   {
     "youtube_id": "tIYp_7Nboy4",
-    "title": "Is it too late for a flu shot? #Shorts"
+    "title": "Is it too late for a flu shot? #Shorts",
+    "done": true
   },
   {
     "youtube_id": "DNTPkA_ARoU",
-    "title": "Can the flu shot give you the flu? #Shorts"
+    "title": "Can the flu shot give you the flu? #Shorts",
+    "done": true
   }
 ]
