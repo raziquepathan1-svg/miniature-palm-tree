@@ -52,6 +52,23 @@ Action: [what they do in these 8 seconds].
 ## Always
 - Never show Prophets, Sahaba, angels or Allah. Ali and Dadu only *tell* about them.
 - Every hadith or ayah in the description has its reference (sahih sources only).
+
+## Hadith and Quran references (owner's rule, 3 Nov 2026)
+Every set of clip prompts starts with a **Source** box, and the same goes in the video description:
+- **Book and number**, numbered as on sunnah.com (for example *Sahih Muslim 54*), plus the other main book
+  if it has it too (for example *Sahih Bukhari 5376, Sahih Muslim 2022*)
+- **Narrator** (for example *Abu Hurairah (RA)*)
+- **Grade**: sahih (or hasan, said plainly); no weak or fabricated hadith
+- **The words**: short Arabic if well known, the Hindi-Urdu meaning, and an English line
+- For the Quran: *Surah name, surah:ayah* (for example *Surah An-Nisa 4:86*)
+- What Dadu says in a clip must match the source's meaning; a paraphrase is called "is ka matlab hai",
+  never quoted as the exact words
+
+Sources used so far:
+| Video | Source |
+|---|---|
+| Ali Bismillah bhool gaya | Umar ibn Abi Salamah (RA): "Ya ghulam, sammi Allah, wa kul bi yaminik, wa kul mimma yalik" - Sahih Bukhari 5376, Sahih Muslim 2022 (sahih). Forgetting Bismillah: "Bismillahi awwalahu wa akhirahu" - Aisha (RA), Sunan Abu Dawud 3767, Jami at-Tirmidhi 1858 (sahih) |
+| Ali aur Salam | Abu Hurairah (RA): "...Shall I not tell you something that, if you do it, you will love one another? Spread salam among yourselves" - Sahih Muslim 54 (sahih). Answering a greeting: Surah An-Nisa 4:86 |
 - No music. Subtitles are added in editing, never asked from Flow.
 - A new story each time, never the same video with small changes.
 
