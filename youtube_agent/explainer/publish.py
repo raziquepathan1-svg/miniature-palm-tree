@@ -36,7 +36,13 @@ def main() -> None:
         from ..uploader import _credentials
         yt_api = build("youtube", "v3", credentials=_credentials(), cache_discovery=False)
         left_ids = []
+        ids_now = {q["id"]: q.get("youtube_id") for q in queue}
         for vid in json.loads(dele.read_text()):
+            if isinstance(vid, dict):   # {"id": old, "after": item}: delete only once the replacement is on YouTube
+                if not ids_now.get(vid["after"]):
+                    left_ids.append(vid)
+                    continue
+                vid = vid["id"]
             try:
                 yt_api.videos().delete(id=vid).execute()
                 print(f"Deleted old upload {vid}")
@@ -53,6 +59,13 @@ def main() -> None:
         from ..uploader import _credentials
         api = build("youtube", "v3", credentials=_credentials(), cache_discovery=False)
         for q in queue:
+            if q.get("youtube_id") and q.get("update_status"):   # owner (3 Nov): new publish time (long video 3:30 PM)
+                api.videos().update(part="status", body={"id": q["youtube_id"], "status": {
+                    "privacyStatus": "private", "publishAt": q["publish_at"], "selfDeclaredMadeForKids": False,
+                    "containsSyntheticMedia": True}}).execute()
+                q.pop("update_status", None)
+                QUEUE.write_text(json.dumps(queue, indent=1, ensure_ascii=False))
+                print(f"New publish time: {q['id']} -> {q['publish_at']}")
             if q.get("youtube_id") and q.get("update"):
                 body = {"id": q["youtube_id"], "snippet": {"title": q["title"][:100], "description": q["description"][:5000],
                                                          "tags": q["tags"], "categoryId": "27", "defaultLanguage": "en-US",
@@ -97,6 +110,20 @@ def main() -> None:
         QUEUE.write_text(json.dumps(queue, indent=1, ensure_ascii=False))
         if q.get("playlist"):
             add_to_playlists(vid, [q["playlist"]], about=ABOUT)
+    if dele.exists() and not dry:   # replacements uploaded in this run: remove the old uploads now
+        ids_now = {q["id"]: q.get("youtube_id") for q in queue}
+        keep = []
+        for vid in json.loads(dele.read_text()):
+            if isinstance(vid, dict) and ids_now.get(vid["after"]):
+                try:
+                    yt_api.videos().delete(id=vid["id"]).execute()
+                    print(f"Deleted old upload {vid['id']} (replaced by {vid['after']})")
+                except HttpError as e:
+                    print(f"Could not delete {vid['id']}: {e}")
+                    keep.append(vid)
+            else:
+                keep.append(vid)
+        dele.write_text(json.dumps(keep))
     left = sum(1 for q in queue if not q.get("youtube_id"))
     print(f"Scheduled {done} item(s); {left} still waiting.")
 

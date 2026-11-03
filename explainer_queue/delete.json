@@ -1,1 +1,34 @@
-[]
+[
+ {
+  "id": "wxE-aoWCcDM",
+  "after": "heart_electrical_short1"
+ },
+ {
+  "id": "k-166Mbzi18",
+  "after": "heart_attack_short1"
+ },
+ {
+  "id": "YnnArQHQ0vk",
+  "after": "blood_vessels_short1"
+ },
+ {
+  "id": "QAnU_QcKyXQ",
+  "after": "blood_pressure_short1"
+ },
+ {
+  "id": "tn2H2NiDSww",
+  "after": "high_blood_pressure_short1"
+ },
+ {
+  "id": "VI0WYoYPrVs",
+  "after": "heart_failure_short1"
+ },
+ {
+  "id": "rxMsvcRHq38",
+  "after": "arrhythmia_short1"
+ },
+ {
+  "id": "2qXVAtdwb5M",
+  "after": "heart_valves_short1"
+ }
+]

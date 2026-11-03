@@ -40,11 +40,11 @@ def build_captions(item, queue, ig_name):
     if long_ and long_.get("youtube_id") and long_["publish_at"] <= item["publish_at"]:
         fb_body = fb_body.replace(CHANNEL, f"https://youtu.be/{long_['youtube_id']}")
     ig_body = body
-    if long_ and long_["publish_at"] > item["publish_at"]:   # owner: full video isn't out yet at 12 PM - say when it comes
+    if long_ and long_["publish_at"] > item["publish_at"]:   # owner: the full video comes at 3:30 PM - say so on the 12 PM Reel
         fb_body = fb_body.replace(f"▶️ Full video on YouTube: {CHANNEL}",
-                                  f"▶️ Full video today at 6 PM (India time) on YouTube: {CHANNEL}")
+                                  f"▶️ Full video today at 3:30 PM (India time) on YouTube: {CHANNEL}")
         ig_body = ig_body.replace("Full video on YouTube: The Anatomy Unfolded (link in bio) 👆",
-                                  "Full video today at 6 PM (India time) on YouTube: The Anatomy Unfolded (link in bio) 👆") + (f"\n👉 Follow @{ig_name} for a new body explainer every day." if ig_name and "Follow" not in body else "")
+                                  "Full video today at 3:30 PM (India time) on YouTube: The Anatomy Unfolded (link in bio) 👆") + (f"\n👉 Follow @{ig_name} for a new body explainer every day." if ig_name and "Follow" not in body else "")
     fb = f"{fb_body}\n{AI_NOTE}\n\n{tag_line or tags}".strip()
     ig = f"{ig_body}\n{AI_NOTE}\n\n{tag_line or tags}".strip()
     return fb, ig

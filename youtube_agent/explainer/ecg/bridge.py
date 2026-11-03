@@ -17,7 +17,7 @@ QUESTIONS = {
 }
 
 
-def card(q, path):
+def card(q, path, k=1):
     im = Image.new("RGB", (1080, 1920), (255, 255, 255))
     d = ImageDraw.Draw(im)
     words, lines, cur = q.upper().split(), [], ""
@@ -31,22 +31,28 @@ def card(q, path):
     for ln in lines:
         P.btext(d, (540, y), ln, 96, (98, 25, 49), "mm"); y += 120
     d.rounded_rectangle((140, 1180, 940, 1300), radius=60, fill=(255, 30, 39))
-    d.text((540, 1240), "FULL VIDEO ON OUR CHANNEL", font=P.f(46), fill=(255, 255, 255), anchor="mm", stroke_width=2, stroke_fill=(255, 255, 255))
-    d.text((540, 1380), "THE ANATOMY UNFOLDED", font=P.f(44), fill=(98, 25, 49), anchor="mm")
+    if k == 0:   # owner (3 Nov): 12 PM Short -> full video at 3:30 PM, subscribe + notifications
+        d.text((540, 1240), "FULL VIDEO TODAY 3:30 PM", font=P.f(46), fill=(255, 255, 255), anchor="mm", stroke_width=2, stroke_fill=(255, 255, 255))
+        d.text((540, 1380), "SUBSCRIBE + TURN ON NOTIFICATIONS", font=P.f(40), fill=(98, 25, 49), anchor="mm")
+    else:        # 9 PM Short -> the full video is already out
+        d.text((540, 1240), "WATCH THE FULL VIDEO NOW", font=P.f(46), fill=(255, 255, 255), anchor="mm", stroke_width=2, stroke_fill=(255, 255, 255))
+        d.text((540, 1380), "ON THE ANATOMY UNFOLDED", font=P.f(44), fill=(98, 25, 49), anchor="mm")
     im.save(path)
 
 
 def add_bridge(short_path, eid, k):
     from youtube_agent import voice
     q = QUESTIONS[eid][k]
-    audio, sr = voice.synthesize(q + " Watch the full video on our channel, The Anatomy Unfolded.", "am_michael", 1.1)
+    tail = (" The full video comes out today at 3:30 PM. Subscribe and turn on notifications, so you don't miss it." if k == 0
+            else " Watch the full video now, on our channel, The Anatomy Unfolded.")
+    audio, sr = voice.synthesize(q + tail, "am_michael", 1.1)
     audio = np.concatenate([np.zeros(int(0.15 * sr)), audio, np.zeros(int(0.4 * sr))])
     wav = HERE / "_bridge.wav"
     with wave.open(str(wav), "wb") as w:
         w.setnchannels(1); w.setsampwidth(2); w.setframerate(sr)
         w.writeframes((np.clip(audio, -1, 1) * 32767).astype("<i2").tobytes())
     png = HERE / "_bridge.png"
-    card(q, png)
+    card(q, png, k)
     tail = HERE / "_bridge.mp4"
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-loop", "1", "-framerate", "30", "-i", str(png), "-i", str(wav), "-shortest",
                     "-c:v", "libx264", "-pix_fmt", "yuv420p", "-c:a", "aac", "-ar", "48000", "-ac", "1", str(tail)], check=True)
