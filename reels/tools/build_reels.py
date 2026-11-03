@@ -208,9 +208,10 @@ def build(n):
     texts = []   # (lines, t0, t1, fontsize)
     hook = extra.get("hook", [h1, h2])
     texts.append((hook, 0.15, 2.4, 60 if len(hook) < 3 else 50))
-    for k, lab in extra.get("labels", {}).items():
+    for k, lab in extra.get("labels", {}).items():   # country name stays on screen for that whole part
         t0 = max(starts[k], 2.45)
-        texts.append(([lab], t0, t0 + 1.6, 80))
+        t1 = starts[k + 1] if k + 1 < len(starts) else (total - 2.45 if "end" in extra else total)
+        texts.append(([lab], t0, t1, 72))
     if "end" in extra:
         texts.append((extra["end"], total - 2.4, total, 50))
     vf, i = [], 0
