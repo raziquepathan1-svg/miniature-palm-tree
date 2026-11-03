@@ -1,0 +1,50 @@
+name: Islamic channel - upload videos
+
+# Uploads every finished video in islamic_channel/upload_queue/ (see islamic_channel/upload.py) to the
+# Islamic YouTube channel, scheduled, and records the link in uploaded.json.
+# Needs the ISL_YOUTUBE_REFRESH_TOKEN secret (islamic_channel/SETUP.md).
+on:
+  push:
+    paths:
+      - "islamic_channel/upload_queue/**"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: islamic-upload
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Upload
+        env:
+          YOUTUBE_CLIENT_ID: ${{ secrets.ISL_YOUTUBE_CLIENT_ID || secrets.YOUTUBE_CLIENT_ID }}
+          YOUTUBE_CLIENT_SECRET: ${{ secrets.ISL_YOUTUBE_CLIENT_SECRET || secrets.YOUTUBE_CLIENT_SECRET }}
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.ISL_YOUTUBE_REFRESH_TOKEN }}
+        run: |
+          if [ -z "$YOUTUBE_REFRESH_TOKEN" ]; then
+            echo "Add the ISL_YOUTUBE_REFRESH_TOKEN secret (see islamic_channel/SETUP.md). Nothing was uploaded." >> "$GITHUB_STEP_SUMMARY"
+            exit 1
+          fi
+          pip install -q google-api-python-client google-auth-oauthlib
+          python -m islamic_channel.upload
+
+      - name: Record what was uploaded
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898333+github-actions[bot]@users.noreply.github.com"
+          git add islamic_channel/upload_queue/*/uploaded.json 2>/dev/null || true
+          git diff --cached --quiet && exit 0
+          git commit -m "Islamic channel: record uploaded videos"
+          git pull --rebase -q origin "$GITHUB_REF_NAME" && git push origin HEAD:"$GITHUB_REF_NAME"
