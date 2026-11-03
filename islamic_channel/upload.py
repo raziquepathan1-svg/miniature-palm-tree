@@ -49,6 +49,9 @@ def main() -> int:
     if not pending:
         print("Nothing to upload.")
         return 0
+    if not CONFIG.get("channel_id"):  # never upload to the wrong channel (the first login was Health Support Studio)
+        print("Put Hidaya's channel ID (starts with UC) in islamic_channel/config.json first. Nothing was uploaded.")
+        return 1
     failed = 0
     for folder in pending:
         meta = json.loads((folder / "meta.json").read_text())
