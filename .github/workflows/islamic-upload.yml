@@ -8,6 +8,11 @@ on:
     paths:
       - "islamic_channel/upload_queue/**"
   workflow_dispatch:
+    inputs:
+      check_login:
+        description: "Only show which channel the login uploads to (uploads nothing)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -37,6 +42,7 @@ jobs:
             exit 1
           fi
           pip install -q google-api-python-client google-auth-oauthlib
+          if [ "${{ inputs.check_login }}" = "true" ]; then python -m islamic_channel.upload --check; exit; fi
           python -m islamic_channel.upload
 
       - name: Record what was uploaded
