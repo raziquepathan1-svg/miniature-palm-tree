@@ -1,4 +1,4 @@
-# Islamic channel: Ali aur Dadu (style guide)
+# Hidaya (Islamic channel, since 2014): Ali aur Dadu style guide
 
 Fixed rules for every Ali aur Dadu cartoon Short. The look of Ali and Dadu comes from clip 3 of the
 first Short ("Ali Bismillah bhool gaya", owner approved, 2 Nov 2026).

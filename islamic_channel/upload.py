@@ -1,4 +1,4 @@
-"""Uploads the finished Ali aur Dadu videos in islamic_channel/upload_queue/ to the Islamic YouTube channel.
+"""Uploads the finished Ali aur Dadu videos in islamic_channel/upload_queue/ to the Hidaya YouTube channel (the Islamic channel).
 
 Each video is a folder: video.mp4, meta.json ({"title", "description", "tags"}, optional "publish_at"
 as an ISO UTC time) and optionally thumbnail.jpg. A folder that has uploaded.json is done.

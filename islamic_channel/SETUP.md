@@ -1,4 +1,4 @@
-# Islamic channel: connect YouTube (one time, about 10 minutes, browser only)
+# Hidaya (Islamic channel): connect YouTube (one time, about 10 minutes, browser only)
 
 This is the same as Restore Remake Studio's Step 1: reuse the Google Cloud app you made for Health Support
 Studio and only make a **new login** for the Islamic channel.
@@ -12,7 +12,7 @@ Studio and only make a **new login** for the Islamic channel.
 4. In "Input your own scopes" paste:
    `https://www.googleapis.com/auth/youtube.upload https://www.googleapis.com/auth/youtube https://www.googleapis.com/auth/youtube.force-ssl`
    and click **Authorize APIs**.
-5. Sign in with the Google account of the Islamic channel and **pick the Islamic channel** (not Health
+5. Sign in with the Google account that owns **Hidaya** and **pick the Hidaya channel** (not Health
    Support Studio or The Anatomy Unfolded). On "Google hasn't verified this app" click
    **Advanced → Go to …**, then allow.
 6. Click **Exchange authorization code for tokens** and copy the **Refresh token**.
