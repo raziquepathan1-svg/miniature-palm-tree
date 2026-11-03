@@ -996,8 +996,7 @@
     "title": "How to Tell Flu, COVID and a Cold Apart",
     "style": "Top Questions",
     "script_file": "082-flu-covid-cold-2026.yaml",
-    "planned_publish_at": "2026-11-03T16:00:00Z",
-    "awaiting_approval": true,
+    "awaiting_approval": false,
     "youtube_id": "i3Vnq2Ie-XE",
     "short_youtube_id": "90_4YWiia8Q",
     "short2_youtube_id": "tIYp_7Nboy4",
@@ -1043,6 +1042,7 @@
       "FluShot",
       "HealthTips",
       "HealthEducation"
-    ]
+    ],
+    "publish_at": "2026-11-03T16:00:00Z"
   }
 ]
