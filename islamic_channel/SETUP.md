@@ -19,7 +19,7 @@ Studio and only make a **new login** for the Islamic channel.
 7. In GitHub: **Settings → Secrets and variables → Actions → New repository secret**:
    - Name: `ISL_YOUTUBE_REFRESH_TOKEN`, Value: the refresh token.
 8. Verify the channel's phone number at **youtube.com/verify** (needed for custom thumbnails).
-9. Recommended: copy the channel ID (YouTube Studio → **Settings → Channel → Advanced settings**, starts
+9. **Required:** copy the channel ID (YouTube Studio → **Settings → Channel → Advanced settings**, starts
    with `UC`) into `islamic_channel/config.json` as `channel_id`. Then nothing is ever uploaded to the
    wrong channel.
 

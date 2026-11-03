@@ -7,11 +7,14 @@ so the owner can check it in YouTube Studio first (set it to Private to stop it)
 """
 
 import json
+import os
 import sys
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
-from youtube_agent.uploader import add_to_playlists, upload_video
+from googleapiclient.discovery import build
+
+from youtube_agent.uploader import _credentials, add_to_playlists, upload_video
 
 HERE = Path(__file__).parent
 QUEUE = HERE / "upload_queue"
@@ -26,12 +29,29 @@ def next_slot(now: datetime) -> str:
     return slot.strftime("%Y-%m-%dT%H:%M:%SZ")
 
 
+def check_login() -> int:
+    """Shows which channel the saved login uploads to, without uploading anything."""
+    youtube = build("youtube", "v3", credentials=_credentials(), cache_discovery=False)
+    items = youtube.channels().list(part="id,snippet,statistics", mine=True).execute().get("items", [])
+    lines = [f"- **{c['snippet']['title']}** ({c['id']}), {c['statistics'].get('subscriberCount', '?')} subscribers"
+             for c in items] or ["- no channel"]
+    print("\n".join(lines))
+    summary = os.environ.get("GITHUB_STEP_SUMMARY")
+    if summary:
+        with open(summary, "a") as f:
+            f.write("## The login uploads to\n" + "\n".join(lines) + "\n")
+    return 0 if items else 1
+
+
 def main() -> int:
     pending = sorted(d for d in QUEUE.iterdir() if d.is_dir() and not (d / "uploaded.json").exists()) \
         if QUEUE.exists() else []
     if not pending:
         print("Nothing to upload.")
         return 0
+    if not CONFIG.get("channel_id"):  # never upload to the wrong channel (the first login was Health Support Studio)
+        print("Put Hidaya's channel ID (starts with UC) in islamic_channel/config.json first. Nothing was uploaded.")
+        return 1
     failed = 0
     for folder in pending:
         meta = json.loads((folder / "meta.json").read_text())
@@ -59,4 +79,4 @@ def main() -> int:
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    sys.exit(check_login() if "--check" in sys.argv else main())
