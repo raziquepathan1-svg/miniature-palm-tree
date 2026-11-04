@@ -55,6 +55,9 @@ EP = {
  "how_breathing_works": (["How breathing works", "Diaphragm breathing", "Inhalation and exhalation"],
     ["how breathing works", "mechanism of breathing", "diaphragm", "inhalation and exhalation", "respiratory physiology", "intercostal muscles", "boyles law", "control of breathing", "respiratory rate", "tidal volume", "hemoglobin oxygen", "carbon dioxide breathing"],
     ["#breathing", "#respiratorysystem", "#lungs"]),
+ "asthma": (["Asthma", "Asthma attack", "Asthma symptoms"],
+    ["asthma", "asthma attack", "asthma symptoms", "asthma triggers", "what is asthma", "asthma inhaler", "reliever vs preventer inhaler", "wheezing", "spirometry", "bronchospasm", "peak flow", "asthma treatment"],
+    ["#asthma", "#respiratorysystem", "#lungs"]),
 }
 
 
