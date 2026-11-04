@@ -17,7 +17,7 @@ on:
         description: "A few words said on the wrong page (from the captions)"
         required: true
       clip:
-        description: "Anatomy clip to show instead (file in branding/health-support-studio/footage)"
+        description: "Anatomy clip to show instead (file in branding/health-support-studio/footage), or a whiteboard drawing like bone.png"
         required: true
 
 permissions:

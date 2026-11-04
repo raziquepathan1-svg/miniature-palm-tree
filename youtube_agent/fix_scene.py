@@ -1,4 +1,4 @@
-"""Swaps ONE wrong page of a daily video that is still waiting for approval (e.g. an anatomy clip that does not
+"""Swaps ONE wrong page (or a stock clip that breaks the owner's rules, Nov 4: then a whiteboard drawing .png) of a daily video that is still waiting for approval (e.g. an anatomy clip that does not
 match what is said) for one of our approved anatomy clips, keeping the sound and captions, and swaps the video in
 on YouTube like fix_presenter does (same title, description, tags, playlists, our custom thumbnail; the Shorts
 link to it; history.json follows it). The old video stays private (delete it in YouTube Studio).
@@ -42,13 +42,25 @@ def main(run_dir: str, old: str, said: str, clip_name: str) -> None:
     if abs(_duration(final) - total) > 0.3:  # the final video must line up with the pages
         sys.exit(f"final.mp4 ({_duration(final):.2f}s) does not line up with the pages ({total:.2f}s).")
     print(f"  Page {page.name}: {start:.2f}s to {start + dur:.2f}s")
-    clip = HERE.parent / "branding/health-support-studio/footage" / clip_name
     visuals.ensure_fonts()
     from .anatomy_labels import _probe
 
     w, h, _ = _probe(final)
-    new_page = visuals.render_anatomy_scene(clip, page, page.with_suffix(".ass"), dur, (w, h),
-                                            workdir / "fixed_page.mp4")
+    if clip_name.endswith(".png"):  # Nov 4: a whiteboard sketch page (a drawing + the page's words) instead
+        from types import SimpleNamespace
+
+        plan = json.loads((workdir / "plan.json").read_text())
+        sc = plan["scenes"][int(page.stem.split("_")[0]) - 1]
+        points, heading, layout = list(sc.get("points") or []), sc["heading"], "bullets"
+        if sc.get("layout") == "myth_fact" and len(points) >= 2:  # arrows, never a check mark next to the myth
+            points, heading, layout = [f"Myth: {points[0]}", f"Fact: {points[1]}"], "Myth vs Fact", "warning"
+        scene = SimpleNamespace(heading=heading, points=points, layout=layout)
+        new_page = visuals.render_whiteboard_scene(scene, page, page.with_suffix(".ass") if page.with_suffix(
+            ".ass").exists() else None, dur, (w, h), workdir / "fixed_page.mp4", drawing=visuals.DRAWINGS / clip_name)
+    else:
+        clip = HERE.parent / "branding/health-support-studio/footage" / clip_name
+        new_page = visuals.render_anatomy_scene(clip, page, page.with_suffix(".ass"), dur, (w, h),
+                                                workdir / "fixed_page.mp4")
     fixed = workdir / "final_fixed.mp4"
     enc = ["-an", "-c:v", "libx264", "-preset", "medium", "-crf", "18", "-r", "30", "-pix_fmt", "yuv420p"]
     a, b, c = (workdir / f"fix_{k}.mp4" for k in "abc")  # before, the new page, after (one at a time: low memory)
