@@ -58,6 +58,9 @@ EP = {
  "asthma": (["Asthma", "Asthma attack", "Asthma symptoms"],
     ["asthma", "asthma attack", "asthma symptoms", "asthma triggers", "what is asthma", "asthma inhaler", "reliever vs preventer inhaler", "wheezing", "spirometry", "bronchospasm", "peak flow", "asthma treatment"],
     ["#asthma", "#respiratorysystem", "#lungs"]),
+ "pneumonia": (["Pneumonia", "Pneumonia symptoms", "Lung infection"],
+    ["pneumonia", "pneumonia symptoms", "what is pneumonia", "lung infection", "bacterial pneumonia", "viral pneumonia", "alveoli", "chest x-ray", "pneumonia treatment", "pneumococcal vaccine", "streptococcus pneumoniae", "respiratory infection"],
+    ["#pneumonia", "#lunginfection", "#lungs"]),
 }
 
 
