@@ -1062,6 +1062,47 @@
     "replaced_ids": [
       "yHkqJV5_Di0"
     ],
-    "held_short3_youtube_id": "qno-WZb3OlE"
+    "held_short3_youtube_id": "qno-WZb3OlE",
+    "pin_question": "Are you a knuckle cracker, or does someone in your family do it all day? What joint myth did you grow up hearing?",
+    "packages": [
+      {
+        "title": "Does Cracking Your Knuckles Cause Arthritis?",
+        "thumbnail_text": "IT'S JUST GAS",
+        "thumbnail_highlight": "GAS"
+      },
+      {
+        "title": "Knuckle Cracking: What That Pop Really Is",
+        "thumbnail_text": "ARTHRITIS?",
+        "thumbnail_highlight": "ARTHRITIS?"
+      },
+      {
+        "title": "Why Do My Knees Pop on the Stairs?",
+        "thumbnail_text": "USUALLY NORMAL",
+        "thumbnail_highlight": "NORMAL"
+      },
+      {
+        "title": "10 Joint Myths You Probably Still Believe",
+        "thumbnail_text": "TRUE OR FALSE?",
+        "thumbnail_highlight": "FALSE?"
+      },
+      {
+        "title": "Is Running Bad for Your Knees?",
+        "thumbnail_text": "THE TRUTH",
+        "thumbnail_highlight": "TRUTH"
+      }
+    ],
+    "chosen": {
+      "title": "Does Cracking Your Knuckles Cause Arthritis?",
+      "thumbnail_text": "IT'S JUST GAS",
+      "thumbnail_highlight": "GAS"
+    },
+    "social_keywords": "cracking knuckles · does knuckle cracking cause arthritis · knee popping · joint pain myths",
+    "social_hashtags": [
+      "KnuckleCracking",
+      "JointHealth",
+      "Arthritis",
+      "HealthMyths",
+      "HealthTips"
+    ]
   }
 ]

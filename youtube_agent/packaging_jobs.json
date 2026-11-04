@@ -775,10 +775,12 @@
       "Arthritis",
       "HealthMyths",
       "HealthTips"
-    ]
+    ],
+    "done": true
   },
   {
     "youtube_id": "mROzGgCfsrA",
-    "title": "Can the weather really make your joints hurt? #Shorts"
+    "title": "Can the weather really make your joints hurt? #Shorts",
+    "done": true
   }
 ]
