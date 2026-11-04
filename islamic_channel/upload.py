@@ -25,9 +25,11 @@ SOURCE = re.compile(r"\b(Sahih|Sunan|Jami|Muwatta|Musnad|Riyad)\b[^\n]*\d|\bSura
 
 
 def next_slot(now: datetime) -> str:
+    """Next daily 7:30 PM India time at least 2 hours away that no other video already has."""
+    taken = {json.loads(p.read_text()).get("publish_at") for p in QUEUE.glob("*/uploaded.json")}
     hour, minute = CONFIG["publish_utc"]
     slot = now.replace(hour=hour, minute=minute, second=0, microsecond=0)
-    while slot < now + timedelta(hours=2):
+    while slot < now + timedelta(hours=2) or slot.strftime("%Y-%m-%dT%H:%M:%SZ") in taken:
         slot += timedelta(days=1)
     return slot.strftime("%Y-%m-%dT%H:%M:%SZ")
 
