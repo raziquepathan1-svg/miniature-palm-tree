@@ -3,6 +3,9 @@ name: The Anatomy Unfolded - comments
 # Channel comment on every public video/Short, the viewer-comment inbox, and posting the written replies.
 # This branch is not the default branch, so a scheduled task dispatches it.
 on:
+  push:   # backup trigger: change this file (first line = mode) to run without the GitHub connector
+    branches: [claude/kind-albattani-59hcns]
+    paths: ["explainer_queue/comments_run.txt"]
   workflow_dispatch:
     inputs:
       mode:
@@ -30,6 +33,7 @@ jobs:
             explainer_queue/comment_inbox.json
             explainer_queue/reply_jobs.json
             explainer_queue/comments_replied.json
+            explainer_queue/comments_run.txt
           sparse-checkout-cone-mode: false
       - uses: actions/setup-python@v5
         with:
@@ -42,7 +46,7 @@ jobs:
           YOUTUBE_REFRESH_TOKEN: ${{ secrets.RRS_YOUTUBE_REFRESH_TOKEN }}
         run: |
           set -o pipefail
-          python -m youtube_agent.explainer.comments "${{ inputs.mode }}" | tee -a "$GITHUB_STEP_SUMMARY"
+          MODE="${{ inputs.mode }}"; [ -z "$MODE" ] && MODE=$(head -1 explainer_queue/comments_run.txt 2>/dev/null || echo comment); python -m youtube_agent.explainer.comments "$MODE" | tee -a "$GITHUB_STEP_SUMMARY"
       - name: Save
         if: always()
         run: |
