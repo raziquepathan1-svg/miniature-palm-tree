@@ -1054,8 +1054,7 @@
     "script_file": "076-body-myths-joints.yaml",
     "series": "Body Myths",
     "episode": 1,
-    "planned_publish_at": "2026-11-04T16:00:00Z",
-    "awaiting_approval": true,
+    "awaiting_approval": false,
     "youtube_id": "qEEprwCcx8M",
     "short_youtube_id": "jXEwXiZXy7k",
     "short2_youtube_id": "mROzGgCfsrA",
@@ -1103,6 +1102,7 @@
       "Arthritis",
       "HealthMyths",
       "HealthTips"
-    ]
+    ],
+    "publish_at": "2026-11-04T16:00:00Z"
   }
 ]
