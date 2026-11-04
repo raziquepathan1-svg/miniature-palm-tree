@@ -52,6 +52,9 @@ EP = {
  "lung_anatomy": (["Lung anatomy", "Respiratory system", "Alveoli"],
     ["lung anatomy", "respiratory system", "alveoli", "trachea", "bronchi", "bronchioles", "lobes of the lung", "cardiac notch", "pleura", "diaphragm", "right lung vs left lung", "gas exchange"],
     ["#lunganatomy", "#lungs", "#respiratorysystem"]),
+ "how_breathing_works": (["How breathing works", "Diaphragm breathing", "Inhalation and exhalation"],
+    ["how breathing works", "mechanism of breathing", "diaphragm", "inhalation and exhalation", "respiratory physiology", "intercostal muscles", "boyles law", "control of breathing", "respiratory rate", "tidal volume", "hemoglobin oxygen", "carbon dioxide breathing"],
+    ["#breathing", "#respiratorysystem", "#lungs"]),
 }
 
 

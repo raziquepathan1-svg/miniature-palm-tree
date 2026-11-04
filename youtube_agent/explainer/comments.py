@@ -34,10 +34,11 @@ QUESTIONS = {
     "arrhythmia": "Have you ever felt your heart skip a beat? Tell us below.",
     "heart_valves": "Have you ever been told you have a heart murmur? Ask us anything about heart valves.",
     "lung_anatomy": "Did you know your right lung has 3 lobes but your left has only 2? What surprised you most?",
+    "how_breathing_works": "Put a hand on your belly and breathe in slowly. Feel it move out? That's your diaphragm moving down. What else should we explain?",
 }
 SERIES = {"Cardiovascular System": ["heart_anatomy_v2", "heart_physiology", "heart_electrical", "heart_attack", "blood_vessels",
                                     "blood_pressure", "high_blood_pressure", "heart_failure", "arrhythmia", "heart_valves"],
-          "Respiratory System": ["lung_anatomy"]}
+          "Respiratory System": ["lung_anatomy", "how_breathing_works"]}
 
 
 def _q(eid):

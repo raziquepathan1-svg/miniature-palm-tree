@@ -1,0 +1,12 @@
+[
+ {"id": "hook", "text": "Your lungs have no muscles of their own. They cannot pull air in by themselves. So how do you breathe about twenty thousand times a day, without even thinking? The secret is a muscle under your lungs, and a simple rule about pressure."},
+ {"id": "diaphragm", "text": "Meet the diaphragm. It is a dome shaped sheet of muscle that sits under the lungs, between the chest and the belly. It is the main muscle of breathing."},
+ {"id": "inhale", "text": "When you breathe in, the diaphragm contracts and flattens, moving down. At the same time, the muscles between the ribs, the external intercostals, lift the ribs up and out. The chest gets bigger."},
+ {"id": "pressure", "text": "Here is the rule. When a space gets bigger, the pressure inside it drops. So the pressure in the lungs falls below the air pressure outside, and air rushes in, all the way down to the alveoli."},
+ {"id": "exhale", "text": "Breathing out at rest is passive. The diaphragm relaxes and domes back up, the ribs fall, and the stretchy lungs spring back. The chest gets smaller, pressure inside rises, and air flows out."},
+ {"id": "forced", "text": "When you exercise, cough, or blow out candles, you breathe out with force. Then the internal intercostals and the belly muscles squeeze, pushing air out faster."},
+ {"id": "numbers", "text": "At rest, an adult takes about twelve to twenty breaths a minute. Each quiet breath moves about half a liter of air."},
+ {"id": "control", "text": "Who decides when you breathe? A control center in the brainstem. Its main signal is carbon dioxide. When carbon dioxide builds up in the blood, sensors tell the brain, and you breathe faster and deeper."},
+ {"id": "oxygen", "text": "In the alveoli, oxygen moves into the blood, and most of it rides on hemoglobin, inside red blood cells, to every part of the body. Carbon dioxide travels back to be breathed out."},
+ {"id": "summary", "text": "So remember. Breathing in is active: the diaphragm moves down and the ribs move up and out. Breathing out at rest is passive. Bigger chest, lower pressure, air flows in. And carbon dioxide is the main trigger. Next, we'll see what goes wrong in asthma."}
+]
