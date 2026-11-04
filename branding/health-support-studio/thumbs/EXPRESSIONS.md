@@ -23,4 +23,4 @@ no default smile, the host never holds an object, face must match the avatar.
 - Flu/COVID/cold (picture saved Nov 1): #4 hand on forehead, eyes closed
 - knuckle cracking (picture saved): #7 both palms up, confused shrug
 - water myths 077 (picture saved Nov 3): #1 pointing at the text side (left), eyebrows up
-- eyes myths 078 (prompt given Nov 4): #8 leaning close to the camera, wide eyes
+- eyes myths 078 (picture saved Nov 4): #8 leaning close to the camera, wide eyes
