@@ -992,7 +992,8 @@ def build_video(plan, video_cfg: dict, voice_cfg: dict, channel_name: str, workd
     sketch: dict = {}  # Shorts: one sketch page (a drawing + the handwritten points), besides the anatomy clip
     if tall and wb_cfg.get("enabled") and wb_cfg.get("in_shorts", True):
         for k, sc in enumerate(plan.scenes[1:-1], 1):
-            if sc.points and k not in snips and k not in anatomy:
+            # Nov 4: never a myth page (its points would get check marks next to the myth)
+            if sc.points and sc.layout in ("bullets", "warning") and k not in snips and k not in anatomy:
                 # what the page shows (heading, points), or 2+ words of what is said (Oct 30: loose matches)
                 d = drawing_for(f"{sc.heading} {' '.join(sc.points)}", set()) or \
                     drawing_for(f"{sc.heading} {' '.join(sc.points)} {sc.narration}", set(), 2)
