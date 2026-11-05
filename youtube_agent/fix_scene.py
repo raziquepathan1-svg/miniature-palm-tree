@@ -17,14 +17,8 @@ from .fix_presenter import _parts, _swap_on_youtube
 from .main import HERE, load_config, load_history, save_history
 
 
-def main(run_dir: str, old: str, said: str, clip_name: str) -> None:
-    config, history = load_config(), load_history()
-    entry = next(h for h in history if h.get("youtube_id") == old)
-    if not entry.get("awaiting_approval"):
-        sys.exit("This video is already approved or public; not replacing it.")
-    workdir = next(p.parent for p in Path(run_dir).rglob("narrated.txt"))
-    final = workdir / "final.mp4"
-    parts = _parts(workdir)
+def _replace(workdir: Path, final: Path, parts: list, said: str, clip_name: str, n: int) -> Path:
+    """One page (found by its caption words) re-made from an anatomy clip or a whiteboard drawing (.png)."""
     start, idx = 0.0, None
     for i, p in enumerate(parts):  # the page whose captions say these words
         ass = p.with_suffix(".ass")
@@ -38,11 +32,7 @@ def main(run_dir: str, old: str, said: str, clip_name: str) -> None:
         sys.exit(f"No page says {said!r}; nothing was changed.")
     page = parts[idx]
     dur = _duration(page)
-    total = sum(_duration(p) for p in parts)
-    if abs(_duration(final) - total) > 0.3:  # the final video must line up with the pages
-        sys.exit(f"final.mp4 ({_duration(final):.2f}s) does not line up with the pages ({total:.2f}s).")
-    print(f"  Page {page.name}: {start:.2f}s to {start + dur:.2f}s")
-    visuals.ensure_fonts()
+    print(f"  Page {page.name}: {start:.2f}s to {start + dur:.2f}s -> {clip_name}")
     from .anatomy_labels import _probe
 
     w, h, _ = _probe(final)
@@ -56,23 +46,46 @@ def main(run_dir: str, old: str, said: str, clip_name: str) -> None:
             points, heading, layout = [f"Myth: {points[0]}", f"Fact: {points[1]}"], "Myth vs Fact", "warning"
         scene = SimpleNamespace(heading=heading, points=points, layout=layout)
         new_page = visuals.render_whiteboard_scene(scene, page, page.with_suffix(".ass") if page.with_suffix(
-            ".ass").exists() else None, dur, (w, h), workdir / "fixed_page.mp4", drawing=visuals.DRAWINGS / clip_name)
+            ".ass").exists() else None, dur, (w, h), workdir / f"fixed_page{n}.mp4",
+            drawing=visuals.DRAWINGS / clip_name)
     else:
         clip = HERE.parent / "branding/health-support-studio/footage" / clip_name
         new_page = visuals.render_anatomy_scene(clip, page, page.with_suffix(".ass"), dur, (w, h),
-                                                workdir / "fixed_page.mp4")
-    fixed = workdir / "final_fixed.mp4"
+                                                workdir / f"fixed_page{n}.mp4")
+    fixed = workdir / f"final_fixed{n}.mp4"
     enc = ["-an", "-c:v", "libx264", "-preset", "medium", "-crf", "18", "-r", "30", "-pix_fmt", "yuv420p"]
-    a, b, c = (workdir / f"fix_{k}.mp4" for k in "abc")  # before, the new page, after (one at a time: low memory)
+    a, b, c = (workdir / f"fix{n}_{k}.mp4" for k in "abc")  # before, the new page, after (one at a time: low memory)
     visuals._run(["-y", "-i", str(final), "-t", f"{start:.3f}", *enc, str(a)])
     visuals._run(["-y", "-i", str(new_page), "-t", f"{dur:.3f}", *enc, str(b)])
     visuals._run(["-y", "-ss", f"{start + dur:.3f}", "-i", str(final), *enc, str(c)])
-    lst = workdir / "fix_list.txt"
+    lst = workdir / f"fix{n}_list.txt"
     lst.write_text("".join(f"file '{p.resolve()}'\n" for p in (a, b, c)))
-    video = workdir / "fix_video.mp4"
+    video = workdir / f"fix{n}_video.mp4"
     visuals._run(["-y", "-f", "concat", "-safe", "0", "-i", str(lst), "-c", "copy", str(video)])
     visuals._run(["-y", "-i", str(video), "-i", str(final), "-map", "0:v", "-map", "1:a", "-c", "copy",
                   "-shortest", "-movflags", "+faststart", str(fixed)])
+    return fixed
+
+
+def main(run_dir: str, old: str, said: str, clip_name: str) -> None:
+    """said / clip_name may list several pages, separated by || (Nov 5: two wrong pages in one video)."""
+    config, history = load_config(), load_history()
+    entry = next(h for h in history if h.get("youtube_id") == old)
+    if not entry.get("awaiting_approval"):
+        sys.exit("This video is already approved or public; not replacing it.")
+    workdir = next(p.parent for p in Path(run_dir).rglob("narrated.txt"))
+    final = workdir / "final.mp4"
+    parts = _parts(workdir)
+    total = sum(_duration(p) for p in parts)
+    if abs(_duration(final) - total) > 0.3:  # the final video must line up with the pages
+        sys.exit(f"final.mp4 ({_duration(final):.2f}s) does not line up with the pages ({total:.2f}s).")
+    saids, clips = [x.strip() for x in said.split("||")], [x.strip() for x in clip_name.split("||")]
+    if len(saids) != len(clips):
+        sys.exit("said and clip must list the same number of pages (separated by ||).")
+    visuals.ensure_fonts()
+    fixed = final
+    for n, (sd, cl) in enumerate(zip(saids, clips)):
+        fixed = _replace(workdir, fixed, parts, sd, cl, n)
     print(f"  Fixed video: {_duration(fixed):.2f}s (was {_duration(final):.2f}s)")
     jobs = json.loads((HERE / "thumbnail_jobs.json").read_text())
     job = next((j for j in jobs if j["youtube_id"] == old), None)

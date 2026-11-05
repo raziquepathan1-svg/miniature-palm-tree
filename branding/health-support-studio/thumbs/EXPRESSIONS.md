@@ -24,3 +24,4 @@ no default smile, the host never holds an object, face must match the avatar.
 - knuckle cracking (picture saved): #7 both palms up, confused shrug
 - water myths 077 (picture saved Nov 3): #1 pointing at the text side (left), eyebrows up
 - eyes myths 078 (picture saved Nov 4): #8 leaning close to the camera, wide eyes
+- skin/sun myths 079 (prompt given Nov 5): #10 looking sideways at the glowing object, worried
