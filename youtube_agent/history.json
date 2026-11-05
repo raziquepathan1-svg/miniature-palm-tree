@@ -1114,8 +1114,7 @@
     "script_file": "077-body-myths-water.yaml",
     "series": "Body Myths",
     "episode": 2,
-    "planned_publish_at": "2026-11-05T16:00:00Z",
-    "awaiting_approval": true,
+    "awaiting_approval": false,
     "youtube_id": "Hm_iZPr6trE",
     "short_youtube_id": "q6ljGMaeVhc",
     "short2_youtube_id": "BTZ0aboXuy4",
@@ -1164,6 +1163,7 @@
       "DrinkWater",
       "HealthMyths",
       "HealthTips"
-    ]
+    ],
+    "publish_at": "2026-11-05T16:00:00Z"
   }
 ]
