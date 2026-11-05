@@ -61,6 +61,9 @@ EP = {
  "pneumonia": (["Pneumonia", "Pneumonia symptoms", "Lung infection"],
     ["pneumonia", "pneumonia symptoms", "what is pneumonia", "lung infection", "bacterial pneumonia", "viral pneumonia", "alveoli", "chest x-ray", "pneumonia treatment", "pneumococcal vaccine", "streptococcus pneumoniae", "respiratory infection"],
     ["#pneumonia", "#lunginfection", "#lungs"]),
+ "copd": (["COPD", "Emphysema", "Chronic bronchitis"],
+    ["copd", "what is copd", "emphysema", "chronic bronchitis", "copd symptoms", "smoking and lungs", "chronic obstructive pulmonary disease", "spirometry", "copd treatment", "indoor air pollution", "quit smoking", "lung disease"],
+    ["#copd", "#lungs", "#quitsmoking"]),
 }
 
 

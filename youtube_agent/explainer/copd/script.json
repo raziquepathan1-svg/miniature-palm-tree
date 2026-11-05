@@ -1,0 +1,12 @@
+[
+ {"id": "hook", "text": "Every year, COPD kills more than three million people around the world. Yet many people have never heard its name. It slowly steals the ability to breathe out. So what is it, and what damages the lungs this way?"},
+ {"id": "what", "text": "COPD stands for chronic obstructive pulmonary disease. It is a long term lung disease that blocks airflow, so it becomes hard to breathe out. It mostly includes two problems: emphysema and chronic bronchitis."},
+ {"id": "emphysema", "text": "In emphysema, the walls of the tiny air sacs are damaged. Many small sacs merge into fewer big ones, so there is less surface for oxygen. The lungs also lose their stretch, so old air gets trapped inside."},
+ {"id": "bronchitis", "text": "In chronic bronchitis, the airways stay inflamed and swollen, and make too much mucus. The tiny hairs that clean the airways are damaged, so the mucus builds up, causing a long term cough."},
+ {"id": "causes", "text": "The main cause is smoking. But in many countries, smoke from cooking fires indoors is also a big cause. Air pollution, dust and chemicals at work, and rarely a genetic condition, can also lead to COPD."},
+ {"id": "symptoms", "text": "The main signs are shortness of breath, especially when active, a cough that won't go away, lots of mucus, wheezing, tiredness, and frequent chest infections. It usually gets worse slowly, over years."},
+ {"id": "diagnose", "text": "Doctors diagnose COPD with spirometry, the breathing test that measures how much air you can blow out in one second. In COPD, air comes out too slowly, even after medicine to open the airways."},
+ {"id": "treat", "text": "The damage can't be undone, but COPD can be slowed down. Quitting smoking is the single most important step. Inhalers open the airways, breathing exercise programs build strength, vaccines prevent infections, and some people need oxygen."},
+ {"id": "emergency", "text": "Get urgent help if breathlessness suddenly gets much worse, if lips or fingertips turn blue, if there is chest pain, or if the person becomes confused or very sleepy. Call your local emergency number."},
+ {"id": "summary", "text": "So remember. COPD makes it hard to breathe out, through damaged air sacs and inflamed airways. Smoking and indoor smoke are the main causes. It can't be cured, but quitting smoking slows it down. Next, we will start a new system, the brain and nerves."}
+]
