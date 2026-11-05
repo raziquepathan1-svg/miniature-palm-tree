@@ -28,7 +28,7 @@
   labels:
     - {text: "Nerve cell (neuron)", at: [0.30, 0.78], to: [0.48, 0.52], start: 6.4}
 16x9_uti_bacteria.mp4:
-  words: [uti, utis, urinary, bladder, kidney, kidneys, urine, peeing, cystitis, kidney infection]
+  words: [uti, utis, urinary tract, urinary tract infection, bladder infection, bladder, cystitis, kidney infection, burning when peeing]
   title: "The Urinary Tract"
   labels:
     - {text: "Kidneys", at: [0.30, 0.20], to: [0.39, 0.19], start: 0.6}
