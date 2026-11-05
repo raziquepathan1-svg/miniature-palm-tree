@@ -21,7 +21,8 @@ CHANNEL = "https://www.youtube.com/@theanatomyunfolded"
 
 
 def due_short(queue, posted, now):
-    shorts = [q for q in queue if q["kind"] == "short" and q.get("youtube_id") and q["id"] not in posted
+    shorts = [q for q in queue if q["kind"] == "short" and q.get("youtube_id")
+              and (q["id"] not in posted or not posted[q["id"]].get("instagram"))   # retry Instagram-only failures
               and dt.datetime.fromisoformat(q["publish_at"].replace("Z", "+00:00")) <= now
               and now - dt.datetime.fromisoformat(q["publish_at"].replace("Z", "+00:00")) < dt.timedelta(hours=8)]
     return max(shorts, key=lambda q: q["publish_at"]) if shorts else None
@@ -69,13 +70,17 @@ def main():
     ig_name = S._graph_field(ig_user_id, "username", token) if ig_user_id else ""
     fb_cap, ig_cap = build_captions(item, queue, ig_name)
     video = QDIR / item["file"]
-    rec, fb_id = {"youtube_id": item["youtube_id"]}, None
-    try:
-        fb_id = S.post_facebook_reel(video, fb_cap, page_id, token)
-        rec["facebook"] = fb_id
-        print(f"Facebook Reel posted: {fb_id}")
-    except Exception as e:
-        print(f"Facebook FAILED: {e}")
+    rec = dict(posted.get(item["id"], {"youtube_id": item["youtube_id"]}))
+    fb_id = rec.get("facebook")
+    if fb_id:
+        print(f"Facebook Reel already posted ({fb_id}) - retrying Instagram only")
+    else:
+        try:
+            fb_id = S.post_facebook_reel(video, fb_cap, page_id, token)
+            rec["facebook"] = fb_id
+            print(f"Facebook Reel posted: {fb_id}")
+        except Exception as e:
+            print(f"Facebook FAILED: {e}")
     if ig_user_id:
         try:
             rec["instagram"] = S.post_instagram_reel(video, ig_cap, ig_user_id, token)
