@@ -782,5 +782,80 @@
     "youtube_id": "mROzGgCfsrA",
     "title": "Can the weather really make your joints hurt? #Shorts",
     "done": true
+  },
+  {
+    "youtube_id": "Hm_iZPr6trE",
+    "title": "Do You Really Need 8 Glasses of Water a Day?",
+    "description_top": "How much water should you drink a day? Do you really need 8 glasses of water, does coffee dehydrate you, and is thirst a sign you are already dehydrated?\nSigns of dehydration, when to get help, can you drink too much water, and other water myths, based on trusted health sources.",
+    "pin_question": "How much water do you usually drink in a day, and do you count your tea or coffee?",
+    "packages": [
+      {
+        "title": "Do You Really Need 8 Glasses of Water a Day?",
+        "thumbnail_text": "IT DEPENDS",
+        "thumbnail_highlight": "DEPENDS"
+      },
+      {
+        "title": "Water Myths: Coffee, Thirst and 8 Glasses",
+        "thumbnail_text": "TOO MUCH?",
+        "thumbnail_highlight": "MUCH?"
+      },
+      {
+        "title": "Does Coffee Dehydrate You?",
+        "thumbnail_text": "STILL COUNTS",
+        "thumbnail_highlight": "COUNTS"
+      },
+      {
+        "title": "Can You Drink Too Much Water?",
+        "thumbnail_text": "IT HAPPENS",
+        "thumbnail_highlight": "HAPPENS"
+      },
+      {
+        "title": "10 Water Myths Most People Believe",
+        "thumbnail_text": "TRUE OR FALSE?",
+        "thumbnail_highlight": "FALSE?"
+      }
+    ],
+    "chosen": {
+      "title": "Do You Really Need 8 Glasses of Water a Day?",
+      "thumbnail_text": "IT DEPENDS",
+      "thumbnail_highlight": "DEPENDS"
+    },
+    "tags": [
+      "how much water should i drink a day",
+      "8 glasses of water a day",
+      "do you need 8 glasses of water",
+      "does coffee dehydrate you",
+      "signs of dehydration",
+      "dehydration symptoms",
+      "can you drink too much water",
+      "water myths",
+      "drinking water benefits",
+      "water and weight loss",
+      "does water flush toxins",
+      "clear urine",
+      "hydration",
+      "body myths",
+      "health education"
+    ],
+    "social_keywords": "how much water to drink a day · 8 glasses of water · does coffee dehydrate you · signs of dehydration",
+    "social_hashtags": [
+      "Hydration",
+      "WaterMyths",
+      "DrinkWater",
+      "HealthMyths",
+      "HealthTips"
+    ]
+  },
+  {
+    "youtube_id": "q6ljGMaeVhc",
+    "title": "Do you really need 8 glasses of water a day? #Shorts"
+  },
+  {
+    "youtube_id": "BTZ0aboXuy4",
+    "title": "Does drinking water help you lose weight? #Shorts"
+  },
+  {
+    "youtube_id": "CzRTNHkXHHk",
+    "title": "Does drinking more water flush out toxins? #Shorts"
   }
 ]
