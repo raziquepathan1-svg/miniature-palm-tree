@@ -75,3 +75,16 @@ Sources used so far:
 ## Uploading
 Finished videos go in `upload_queue/<date>-<name>/` (video.mp4, meta.json, optional thumbnail.jpg) and are
 uploaded scheduled by the "Islamic channel - upload videos" workflow. One-time login: `SETUP.md`.
+
+## Family characters (added 5 Nov 2026; make a reference picture of each before using them)
+Copy unchanged into prompts, like Ali and Dadu:
+```
+AMMI: kind young mother, 3D Pixar style, warm brown eyes, gentle smile, soft light-blue hijab fully covering her hair, long modest cream kameez with light-blue dupatta.
+ABBU: friendly father in his thirties, 3D Pixar style, short neat black beard, short black hair, plain light-grey kurta, white prayer cap only when going to the masjid.
+ZARA: Ali's little sister, cute 4-year-old girl, 3D Pixar style, big round brown eyes, chubby rosy cheeks, small pink scarf loosely over her black hair, pink frock with white shalwar.
+```
+
+## Long videos (CoComelon style)
+- Every week: the week's reels joined into one wide 16:9 video (intro card, "Kahani 1/2/3" cards, outro),
+  vertical reels placed on a soft blurred background; the description lists every story's source.
+- Every month: a 30+ minute compilation of all the month's stories.
