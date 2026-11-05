@@ -124,9 +124,25 @@ def _setup_replies():
     CR._titles = lambda: {q["youtube_id"]: q["title"] for q in queue if q.get("youtube_id")}
 
 
+def scopes():
+    """Show which permissions the saved YouTube login (RRS_YOUTUBE_REFRESH_TOKEN) has - no secret is printed."""
+    import urllib.request
+    creds = _credentials()
+    with urllib.request.urlopen(f"https://oauth2.googleapis.com/tokeninfo?access_token={creds.token}") as r:
+        info = json.loads(r.read())
+    have = info.get("scope", "").split()
+    print("Permissions on the saved YouTube login:")
+    for sc_ in have:
+        print("  -", sc_)
+    ok = "https://www.googleapis.com/auth/youtube.force-ssl" in have
+    print("COMMENTS ALLOWED" if ok else "COMMENTS NOT ALLOWED: the token lacks youtube.force-ssl (make a new one with all 3 scopes)")
+
+
 if __name__ == "__main__":
     mode = sys.argv[1]
-    if mode == "comment":
+    if mode == "scopes":
+        scopes()
+    elif mode == "comment":
         comment()
     else:
         _setup_replies()
