@@ -844,18 +844,22 @@
       "DrinkWater",
       "HealthMyths",
       "HealthTips"
-    ]
+    ],
+    "done": true
   },
   {
     "youtube_id": "q6ljGMaeVhc",
-    "title": "Do you really need 8 glasses of water a day? #Shorts"
+    "title": "Do you really need 8 glasses of water a day? #Shorts",
+    "done": true
   },
   {
     "youtube_id": "BTZ0aboXuy4",
-    "title": "Does drinking water help you lose weight? #Shorts"
+    "title": "Does drinking water help you lose weight? #Shorts",
+    "done": true
   },
   {
     "youtube_id": "CzRTNHkXHHk",
-    "title": "Does drinking more water flush out toxins? #Shorts"
+    "title": "Does drinking more water flush out toxins? #Shorts",
+    "done": true
   }
 ]
