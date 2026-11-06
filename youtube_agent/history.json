@@ -1165,5 +1165,22 @@
       "HealthTips"
     ],
     "publish_at": "2026-11-05T16:00:00Z"
+  },
+  {
+    "date": "2026-11-06T12:32:56",
+    "topic": "Eye myths: reading in the dark, screens and carrots",
+    "requested_topic": "Eye myths: reading in the dark, screens and carrots",
+    "title": "Does Reading in the Dark Ruin Your Eyes?",
+    "style": "Myth vs Fact",
+    "script_file": "078-body-myths-eyes.yaml",
+    "series": "Body Myths",
+    "episode": 3,
+    "planned_publish_at": "2026-11-06T16:00:00Z",
+    "awaiting_approval": true,
+    "youtube_id": "41PSa3dadbw",
+    "short_youtube_id": "8NaLPu_qwIc",
+    "short2_youtube_id": "esFVdhVYaJ8",
+    "short3_youtube_id": "z9n2OP6WgA4",
+    "preview": "previews/41PSa3dadbw.mp4"
   }
 ]
