@@ -768,6 +768,13 @@ def main() -> None:
             print(f"A video was already made at {recent[-1]['date']} ({recent[-1]['youtube_id']}): skipping this "
                   "late scheduled run.")
             return
+        # Nov 8: the daily check was down for two days and videos piled up unapproved. A scheduled run does
+        # not make another video while one is still waiting for approval (a dispatched run still can).
+        waiting = [h for h in history if h.get("awaiting_approval") and h.get("youtube_id")]
+        if waiting:
+            print(f"{len(waiting)} video(s) still waiting for approval ({', '.join(h['youtube_id'] for h in waiting)}):"
+                  " skipping this scheduled run.")
+            return
     count = args.count or config["video"].get("videos_per_run", 1)
     for i in range(count):
         print(f"\n=== Video {i + 1} of {count} ===")
