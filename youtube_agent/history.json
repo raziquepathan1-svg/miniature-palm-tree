@@ -1234,12 +1234,12 @@
     "script_file": "079-body-myths-skin-sun.yaml",
     "series": "Body Myths",
     "episode": 4,
-    "awaiting_approval": true,
+    "awaiting_approval": false,
     "youtube_id": "guJ9H1hBSJQ",
     "short_youtube_id": "PCS5wvDhFno",
     "short2_youtube_id": "upFyPC0H14c",
     "short3_youtube_id": "AsszlZVDAVM",
-    "publish_at": "2026-11-07T16:00:00Z",
+    "publish_at": "2026-11-08T08:20:00Z",
     "went_public_unchecked": true,
     "replaced_ids": [
       "i4CveA90e7g"
