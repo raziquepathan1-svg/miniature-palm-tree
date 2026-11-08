@@ -994,5 +994,58 @@
       "HealthTips"
     ],
     "done": true
+  },
+  {
+    "youtube_id": "szIou_GtYnc",
+    "title": "Does Cold Weather Give You a Cold?",
+    "description_top": "Does cold weather give you a cold? Can wet hair make you sick, does vitamin C prevent colds, and do you need antibiotics for green mucus?\nCommon cold myths and facts: what really causes colds, remedies that help, cold or flu, the flu shot, and when to see a doctor, based on trusted health sources.",
+    "pin_question": "Who told you to put on a coat or you would catch a cold? Which cold myth did you grow up with?",
+    "packages": [
+      {
+        "title": "Does Cold Weather Give You a Cold?",
+        "thumbnail_text": "IT'S A VIRUS",
+        "thumbnail_highlight": "VIRUS"
+      },
+      {
+        "title": "Do Antibiotics Help a Cold?",
+        "thumbnail_text": "WASTED PILLS",
+        "thumbnail_highlight": "WASTED"
+      },
+      {
+        "title": "Cold Myths Your Family Still Believes",
+        "thumbnail_text": "WET HAIR?",
+        "thumbnail_highlight": "HAIR?"
+      }
+    ],
+    "chosen": {
+      "title": "Does Cold Weather Give You a Cold?",
+      "thumbnail_text": "IT'S A VIRUS",
+      "thumbnail_highlight": "VIRUS"
+    },
+    "tags": [
+      "does cold weather give you a cold",
+      "can wet hair make you sick",
+      "common cold myths",
+      "does vitamin c prevent colds",
+      "antibiotics for a cold",
+      "green mucus antibiotics",
+      "cold or flu",
+      "does the flu shot give you the flu",
+      "chicken soup for a cold",
+      "feed a cold starve a fever",
+      "cold remedies",
+      "when to see a doctor for a cold",
+      "common cold",
+      "body myths",
+      "health education"
+    ],
+    "social_keywords": "does cold weather cause colds · wet hair myth · vitamin C for colds · antibiotics for a cold · cold or flu",
+    "social_hashtags": [
+      "CommonCold",
+      "ColdAndFlu",
+      "HealthMyths",
+      "HealthTips",
+      "HealthEducation"
+    ]
   }
 ]
