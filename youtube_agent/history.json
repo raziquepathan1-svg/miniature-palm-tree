@@ -1311,6 +1311,37 @@
     "short3_youtube_id": "o4bK2Q6Wnc8",
     "replaced_ids": [
       "iLljy8EU-pM"
+    ],
+    "pin_question": "Who told you to put on a coat or you would catch a cold? Which cold myth did you grow up with?",
+    "packages": [
+      {
+        "title": "Does Cold Weather Give You a Cold?",
+        "thumbnail_text": "IT'S A VIRUS",
+        "thumbnail_highlight": "VIRUS"
+      },
+      {
+        "title": "Do Antibiotics Help a Cold?",
+        "thumbnail_text": "WASTED PILLS",
+        "thumbnail_highlight": "WASTED"
+      },
+      {
+        "title": "Cold Myths Your Family Still Believes",
+        "thumbnail_text": "WET HAIR?",
+        "thumbnail_highlight": "HAIR?"
+      }
+    ],
+    "chosen": {
+      "title": "Does Cold Weather Give You a Cold?",
+      "thumbnail_text": "IT'S A VIRUS",
+      "thumbnail_highlight": "VIRUS"
+    },
+    "social_keywords": "does cold weather cause colds · wet hair myth · vitamin C for colds · antibiotics for a cold · cold or flu",
+    "social_hashtags": [
+      "CommonCold",
+      "ColdAndFlu",
+      "HealthMyths",
+      "HealthTips",
+      "HealthEducation"
     ]
   }
 ]
