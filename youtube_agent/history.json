@@ -1243,6 +1243,37 @@
     "went_public_unchecked": true,
     "replaced_ids": [
       "i4CveA90e7g"
+    ],
+    "pin_question": "Which sun myth did you believe? Cloudy days are safe, a base tan protects you, or last year's sunscreen is fine?",
+    "packages": [
+      {
+        "title": "Do You Need Sunscreen on a Cloudy Day?",
+        "thumbnail_text": "UV GETS THROUGH",
+        "thumbnail_highlight": "UV"
+      },
+      {
+        "title": "Does a Base Tan Protect Your Skin?",
+        "thumbnail_text": "STILL DAMAGE",
+        "thumbnail_highlight": "DAMAGE"
+      },
+      {
+        "title": "Skin and Sun Myths Dermatologists Hear",
+        "thumbnail_text": "TRUE OR FALSE?",
+        "thumbnail_highlight": "FALSE?"
+      }
+    ],
+    "chosen": {
+      "title": "Do You Need Sunscreen on a Cloudy Day?",
+      "thumbnail_text": "UV GETS THROUGH",
+      "thumbnail_highlight": "UV"
+    },
+    "social_keywords": "sunscreen on cloudy days · base tan myth · tanning beds · does sunscreen expire · skin cancer signs",
+    "social_hashtags": [
+      "Sunscreen",
+      "SkinCare",
+      "SkinHealth",
+      "HealthMyths",
+      "HealthTips"
     ]
   }
 ]
