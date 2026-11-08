@@ -8,11 +8,13 @@ from pydantic import BaseModel, Field
 
 # Sonnet 5 keeps quality high at a fraction of Opus's cost (budget choice).
 MODEL = os.environ.get("AGENT_MODEL", "claude-sonnet-5")
+# Packaging and Shorts are short structured rewrites, so they use a cheaper model.
+PACKAGING_MODEL = os.environ.get("PACKAGING_MODEL", "claude-haiku-5-5")
 
 
-def _fallback_kwargs() -> dict:
+def _fallback_kwargs(model: str = MODEL) -> dict:
     """Server-side refusal fallbacks are documented for the Opus/Fable tiers only."""
-    if MODEL.startswith(("claude-opus", "claude-fable")):
+    if model.startswith(("claude-opus", "claude-fable")):
         return {"betas": ["server-side-fallback-2026-07-01"], "fallbacks": "default"}
     return {}
 WORDS_PER_MINUTE = 150

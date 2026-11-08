@@ -56,7 +56,7 @@ def write_script(plan, series: str | None = None, part: str | None = None, avoid
     """Claude writes the Short from the (already fact-checked) full script, using only facts in it."""
     import anthropic
 
-    from .planner import MODEL, _fallback_kwargs
+    from .planner import PACKAGING_MODEL, _fallback_kwargs
 
     source = "\n".join(f"- {s.heading}: {s.narration}" for s in plan.scenes)
     second = (f"\n- This is the second Short about this video: use a DIFFERENT angle, hook and takeaway than this "
@@ -88,7 +88,7 @@ Rules:
 - The title is a plain question a normal person would ask (see the title field), and the Short answers it.
 - Do not mention YouTube, subscribing or the channel; that is added automatically.{second}{loop_rule}"""
     client = anthropic.Anthropic()
-    response = client.beta.messages.parse(model=MODEL, max_tokens=4000, **_fallback_kwargs(),
+    response = client.beta.messages.parse(model=PACKAGING_MODEL, max_tokens=4000, **_fallback_kwargs(PACKAGING_MODEL),
                                           messages=[{"role": "user", "content": prompt}], output_format=ShortScript)
     return response.parsed_output
 
