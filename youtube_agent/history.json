@@ -1175,8 +1175,7 @@
     "script_file": "078-body-myths-eyes.yaml",
     "series": "Body Myths",
     "episode": 3,
-    "planned_publish_at": "2026-11-06T16:00:00Z",
-    "awaiting_approval": true,
+    "awaiting_approval": false,
     "youtube_id": "41PSa3dadbw",
     "short_youtube_id": "8NaLPu_qwIc",
     "short2_youtube_id": "esFVdhVYaJ8",
@@ -1222,7 +1221,9 @@
       "BlueLight",
       "HealthMyths",
       "HealthTips"
-    ]
+    ],
+    "publish_at": "2026-11-06T16:00:00Z",
+    "went_public_unchecked": true
   },
   {
     "date": "2026-11-07T12:23:20",
@@ -1233,12 +1234,13 @@
     "script_file": "079-body-myths-skin-sun.yaml",
     "series": "Body Myths",
     "episode": 4,
-    "planned_publish_at": "2026-11-07T16:00:00Z",
-    "awaiting_approval": true,
+    "awaiting_approval": false,
     "youtube_id": "i4CveA90e7g",
     "short_youtube_id": "PCS5wvDhFno",
     "short2_youtube_id": "upFyPC0H14c",
     "short3_youtube_id": "AsszlZVDAVM",
-    "preview": "previews/i4CveA90e7g.mp4"
+    "preview": "previews/i4CveA90e7g.mp4",
+    "publish_at": "2026-11-07T16:00:00Z",
+    "went_public_unchecked": true
   }
 ]
