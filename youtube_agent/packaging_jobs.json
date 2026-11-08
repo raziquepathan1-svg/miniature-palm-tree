@@ -861,5 +861,80 @@
     "youtube_id": "CzRTNHkXHHk",
     "title": "Does drinking more water flush out toxins? #Shorts",
     "done": true
+  },
+  {
+    "youtube_id": "41PSa3dadbw",
+    "title": "Does Reading in the Dark Ruin Your Eyes?",
+    "description_top": "Does reading in the dark ruin your eyes? Do screens and blue light damage your eyes, do carrots improve eyesight, and do glasses make your eyes weaker?\nEye myths and facts, eye emergencies, sudden vision changes and when to see an eye doctor, based on trusted health sources.",
+    "pin_question": "Which eye myth did you grow up hearing the most? Reading in the dark, sitting close to the TV, or carrots?",
+    "packages": [
+      {
+        "title": "Does Reading in the Dark Ruin Your Eyes?",
+        "thumbnail_text": "JUST STRAIN",
+        "thumbnail_highlight": "STRAIN"
+      },
+      {
+        "title": "Eye Myths You Probably Still Believe",
+        "thumbnail_text": "TRUE OR FALSE?",
+        "thumbnail_highlight": "FALSE?"
+      },
+      {
+        "title": "Do Screens Damage Your Eyes?",
+        "thumbnail_text": "BLUE LIGHT",
+        "thumbnail_highlight": "LIGHT"
+      },
+      {
+        "title": "Do Carrots Really Improve Your Eyesight?",
+        "thumbnail_text": "VITAMIN A",
+        "thumbnail_highlight": "VITAMIN"
+      },
+      {
+        "title": "Does Sitting Close to the TV Hurt Your Eyes?",
+        "thumbnail_text": "NO DAMAGE",
+        "thumbnail_highlight": "DAMAGE"
+      }
+    ],
+    "chosen": {
+      "title": "Does Reading in the Dark Ruin Your Eyes?",
+      "thumbnail_text": "JUST STRAIN",
+      "thumbnail_highlight": "STRAIN"
+    },
+    "tags": [
+      "does reading in the dark ruin your eyes",
+      "reading in dim light",
+      "do screens damage your eyes",
+      "blue light glasses",
+      "do carrots improve eyesight",
+      "does sitting close to the tv hurt your eyes",
+      "do glasses weaken your eyes",
+      "eye myths",
+      "eye health",
+      "crossing your eyes",
+      "eye exam",
+      "sudden vision changes",
+      "eye strain",
+      "body myths",
+      "health education"
+    ],
+    "social_keywords": "reading in the dark · do screens damage your eyes · blue light glasses · carrots and eyesight · eye myths",
+    "social_hashtags": [
+      "EyeHealth",
+      "EyeMyths",
+      "BlueLight",
+      "HealthMyths",
+      "HealthTips"
+    ]
+  },
+  {
+    "youtube_id": "8NaLPu_qwIc",
+    "title": "Does reading in the dark ruin your eyes? #Shorts"
+  },
+  {
+    "youtube_id": "esFVdhVYaJ8",
+    "title": "Do you need an eye exam if you see fine? #Shorts"
+  },
+  {
+    "youtube_id": "z9n2OP6WgA4",
+    "title": "Can your eyes get stuck if you cross them? #Shorts"
   }
 ]
