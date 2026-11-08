@@ -1181,7 +1181,48 @@
     "short_youtube_id": "8NaLPu_qwIc",
     "short2_youtube_id": "esFVdhVYaJ8",
     "short3_youtube_id": "z9n2OP6WgA4",
-    "preview": "previews/41PSa3dadbw.mp4"
+    "preview": "previews/41PSa3dadbw.mp4",
+    "pin_question": "Which eye myth did you grow up hearing the most? Reading in the dark, sitting close to the TV, or carrots?",
+    "packages": [
+      {
+        "title": "Does Reading in the Dark Ruin Your Eyes?",
+        "thumbnail_text": "JUST STRAIN",
+        "thumbnail_highlight": "STRAIN"
+      },
+      {
+        "title": "Eye Myths You Probably Still Believe",
+        "thumbnail_text": "TRUE OR FALSE?",
+        "thumbnail_highlight": "FALSE?"
+      },
+      {
+        "title": "Do Screens Damage Your Eyes?",
+        "thumbnail_text": "BLUE LIGHT",
+        "thumbnail_highlight": "LIGHT"
+      },
+      {
+        "title": "Do Carrots Really Improve Your Eyesight?",
+        "thumbnail_text": "VITAMIN A",
+        "thumbnail_highlight": "VITAMIN"
+      },
+      {
+        "title": "Does Sitting Close to the TV Hurt Your Eyes?",
+        "thumbnail_text": "NO DAMAGE",
+        "thumbnail_highlight": "DAMAGE"
+      }
+    ],
+    "chosen": {
+      "title": "Does Reading in the Dark Ruin Your Eyes?",
+      "thumbnail_text": "JUST STRAIN",
+      "thumbnail_highlight": "STRAIN"
+    },
+    "social_keywords": "reading in the dark · do screens damage your eyes · blue light glasses · carrots and eyesight · eye myths",
+    "social_hashtags": [
+      "EyeHealth",
+      "EyeMyths",
+      "BlueLight",
+      "HealthMyths",
+      "HealthTips"
+    ]
   },
   {
     "date": "2026-11-07T12:23:20",
