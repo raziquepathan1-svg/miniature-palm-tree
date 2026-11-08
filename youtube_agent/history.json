@@ -1275,5 +1275,40 @@
       "HealthMyths",
       "HealthTips"
     ]
+  },
+  {
+    "date": "2026-11-07T12:23:20",
+    "topic": "Skin and sun myths: cloudy days, base tans and acne",
+    "requested_topic": "Skin and sun myths: cloudy days, base tans and acne",
+    "title": "Do You Need Sunscreen on a Cloudy Day?",
+    "style": "Myth vs Fact",
+    "script_file": "079-body-myths-skin-sun.yaml",
+    "series": "Body Myths",
+    "episode": 4,
+    "awaiting_approval": false,
+    "youtube_id": "i4CveA90e7g",
+    "short_youtube_id": "PCS5wvDhFno",
+    "short2_youtube_id": "upFyPC0H14c",
+    "short3_youtube_id": "AsszlZVDAVM",
+    "preview": "previews/i4CveA90e7g.mp4",
+    "publish_at": "2026-11-07T16:00:00Z",
+    "went_public_unchecked": true
+  },
+  {
+    "date": "2026-11-08T09:34:22",
+    "topic": "Cold myths: cold weather, wet hair, vitamin C and antibiotics",
+    "requested_topic": "Cold myths: cold weather, wet hair, vitamin C and antibiotics",
+    "title": "Does Cold Weather Give You a Cold?",
+    "style": "Myth vs Fact",
+    "script_file": "080-body-myths-colds.yaml",
+    "series": "Body Myths",
+    "episode": 5,
+    "planned_publish_at": "2026-11-08T16:00:00Z",
+    "awaiting_approval": true,
+    "youtube_id": "iLljy8EU-pM",
+    "short_youtube_id": "67QKd9nADVw",
+    "short2_youtube_id": "cu4iKU4UEQg",
+    "short3_youtube_id": "o4bK2Q6Wnc8",
+    "preview": "previews/iLljy8EU-pM.mp4"
   }
 ]
