@@ -1,98 +1,117 @@
-CHANNEL Healthsupport Studio: subscribers=56 views=3578 videos=92
+CHANNEL Healthsupport Studio: subscribers=57 views=4691 videos=114
 date       priv dur        views likes comm id          title
-2026-11-02 priv PT4M48S        0     0    0 3y85NO90t2k Ebola 2026: How It Really Spreads
-2026-11-02 priv PT34S          0     0    0 ogwFVlUCZe8 Can Ebola spread before symptoms? #Shorts
-2026-11-02 priv PT33S          0     0    0 OkkgwuZC8RA Can Ebola spread through the air? #Shorts
-2026-11-02 priv PT31S          0     0    0 A9wz6sWn17M Can you survive Ebola? #Shorts
-2026-11-01 publ PT6M6S        10     4    2 I9ZAW7lmnXA Pneumonia Signs Most People Miss
-2026-11-01 publ PT35S         39     1    1 DBJyrfIpzFo Cold or pneumonia? 4 signs to watch for #Shorts
-2026-11-01 publ PT35S         23     1    1 R1zoxWxOCNk Does pneumonia always need antibiotics? #Shorts
-2026-10-31 publ PT5M50S        4     3    2 7zoyfg3xtkA HPV Vaccine: 7 Myths Parents Get Wrong
-2026-10-31 publ PT38S          8     0    1 H3iWGakCA8U The vaccine that prevents cancer #Shorts
-2026-10-31 publ PT34S          4     1    1 L-LpJLgUQII The vaccine harms fertility? #Shorts
-2026-10-30 publ PT9M58S       12     2    4 TmDZYGIkwtk You're Probably Washing Your Hands Wrong
-2026-10-30 publ PT35S         16     0    1 KWbXKxmGx5o Antibacterial Soap Is Better? #Shorts
-2026-10-30 publ PT32S         66     0    1 YxgSM0a7-c0 You're probably washing your hands wrong #Shorts
-2026-10-29 publ PT9M36S        5     1    1 8U3VR4SZVD0 Shingles: 5 Myths That Could Leave You in Pain
-2026-10-29 publ PT34S         43     1    1 l8cuy4LId5A Had chickenpox? Shingles could be next #Shorts
-2026-10-29 publ PT33S         25     1    1 MEm_YBy0gTc Once Means Never Again? #Shorts
-2026-10-28 publ PT9M33S       15     0    2 Ww74ahobgq8 UTI Symptoms: When to See a Doctor
-2026-10-28 publ PT35S          9     0    1 jKCQQJaeKlQ Urinary tract infections: Cranberry juice... #Shorts
-2026-10-28 publ PT31S         44     0    1 5Rs-OsLzFP8 Does cranberry juice cure a UTI? #Shorts
-2026-10-27 publ PT9M54S       15     2    1 rotoo0t2KJU Naloxone: The Nasal Spray That Stops an Overdose
-2026-10-27 publ PT9M39S       16     2    2 TeXomVM-8do Blood Clot Signs: Don't Ignore a Swollen Leg
-2026-10-27 publ PT37S          4     1    1 OqoeKunjSIw Do long flights cause most blood clots? #Shorts
-2026-10-27 publ PT35S         13     1    1 3lt8huc9PxY Swollen leg? It could be a blood clot #Shorts
-2026-10-27 publ PT33S         13     0    1 1IFLshlyNz4 Myth or fact: Carrying it promotes drug use? #Shorts
-2026-10-27 publ PT32S         17     1    1 -Rki5tT1PYE Could you stop an overdose? #Shorts
-2026-10-26 publ PT34S          5     1    1 _l9Eo-dkeNg The invisible killer in your home #Shorts
-2026-10-26 publ PT32S          3     1    1 XvQ9bttgwJc Myth or fact: A cracked window is enough? #Shorts
-2026-10-26 publ PT10M11S       7     1    2 U0Hu-5sg2sg Carbon Monoxide: The Silent Killer in Your Home
-2026-10-25 publ PT35S         22     2    1 ZGCixh_X4x0 Signs of hypothermia most people miss #Shorts
-2026-10-25 publ PT10M3S        7     2    1 PcF6ztyMfjU Cold Can Kill: Hypothermia Signs Most People Miss
-2026-10-24 publ PT9M49S       10     2    1 O1dW60-m5a0 Someone Is Choking: What to Do in the First Minute
-2026-10-24 publ PT38S         69     1    1 mn9M4Io2KxA Someone is choking? Do this now #Shorts
-2026-10-24 publ PT31S         34     2    1 K8W5uRDf95Y Myth or fact: Give water to someone choking? #Shorts
-2026-10-23 publ PT57S          6     2    1 nEIE1-1fo60 Can you prevent a second stroke? #Shorts
-2026-10-23 publ PT56S         16     3    1 rOOetBpgvZk Does stroke recovery stop after six months? #Shorts
-2026-10-23 publ PT10M13S      15     1    1 QxaO4KhkHII Life After a Stroke: How Recovery Really Works
-2026-10-22 publ PT9M59S       11     3    1 qayGBD_Q5aI Hearing Loss Warning Signs You Shouldn't Ignore
-2026-10-22 publ PT53S         26     2    1 3xs7hr0r3F0 What Are the Warning Signs of Hearing Loss? #Shorts
-2026-10-21 publ PT56S         13     2    1 uyloSwMnTMU Forgetting Keys vs Getting Lost: Alzheimer's Signs #Shorts
-2026-10-21 publ PT1M18S       35     4    1 xKJxq9yrURM The Alzheimer's Sign That Isn't Memory Loss #Shorts
-2026-10-21 publ PT10M23S      21     6    1 2WpLrMDRE4c The Early Alzheimer's Sign Families Miss
-2026-10-20 publ PT1M           5     1    1 Gh7ky0OLwdU Osteoporosis Myths: What You Got Wrong About Bones #Shorts
+2026-11-07 publ PT5M57S        3     0    1 i4CveA90e7g Do You Need Sunscreen on a Cloudy Day?
+2026-11-07 publ PT33S          0     0    1 upFyPC0H14c Chocolate Causes Acne? #Shorts
+2026-11-07 publ PT32S          1     0    1 PCS5wvDhFno Do you need sunscreen on a cloudy day? #Shorts
+2026-11-07 publ PT31S         14     0    1 8NaLPu_qwIc Does reading in the dark ruin your eyes? #Shorts
+2026-11-07 publ PT29S         32     0    1 esFVdhVYaJ8 Do you need an eye exam if you see fine? #Shorts
+2026-11-07 publ PT28S          3     0    1 z9n2OP6WgA4 Can your eyes get stuck if you cross them? #Shorts
+2026-11-07 priv PT28S          0     0    0 AsszlZVDAVM Dirty Skin Causes Acne? #Shorts
+2026-11-06 publ PT6M22S        6     1    1 41PSa3dadbw Does Reading in the Dark Ruin Your Eyes?
+2026-11-06 publ PT25S        103     2    1 CzRTNHkXHHk Does drinking more water flush out toxins? #Shorts
+2026-11-05 publ PT5M44S        7     0    2 Hm_iZPr6trE Do You Really Need 8 Glasses of Water a Day?
+2026-11-05 publ PT33S         11     0    1 q6ljGMaeVhc Do you really need 8 glasses of water a day? #Shorts
+2026-11-05 publ PT26S         12     0    1 BTZ0aboXuy4 Does drinking water help you lose weight? #Shorts
+2026-11-04 publ PT5M39S        8     2    2 qEEprwCcx8M Does Cracking Your Knuckles Cause Arthritis?
+2026-11-04 publ PT31S        281     1    1 jXEwXiZXy7k Does cracking your knuckles cause arthritis? #Shorts
+2026-11-04 publ PT28S          0     1    1 mROzGgCfsrA Can the weather really make your joints hurt? #Shorts
+2026-11-04 publ PT24S         15     0    1 DNTPkA_ARoU Can the flu shot give you the flu? #Shorts
+2026-11-03 publ PT4M27S       90     1    2 i3Vnq2Ie-XE How to Tell Flu, COVID and a Cold Apart
+2026-11-03 publ PT34S         16     0    1 ogwFVlUCZe8 Can Ebola spread before symptoms? #Shorts
+2026-11-03 publ PT33S          8     0    1 90_4YWiia8Q Is it too late for a flu shot? #Shorts
+2026-11-03 publ PT26S          7     0    1 tIYp_7Nboy4 Flu season started. Is a flu shot still worth it? #Shorts
+2026-11-02 publ PT4M48S      126     5    4 3y85NO90t2k Ebola 2026: How It Really Spreads
+2026-11-02 publ PT33S         46     0    1 OkkgwuZC8RA Can Ebola spread through the air? #Shorts
+2026-11-02 publ PT31S         28     2    1 A9wz6sWn17M Can you survive Ebola? #Shorts
+2026-11-01 publ PT6M6S        27     4    2 I9ZAW7lmnXA Pneumonia Signs Most People Miss
+2026-11-01 publ PT35S         43     2    1 DBJyrfIpzFo Cold or pneumonia? 4 signs to watch for #Shorts
+2026-11-01 publ PT35S         34     2    1 R1zoxWxOCNk Does pneumonia always need antibiotics? #Shorts
+2026-10-31 publ PT5M50S        6     3    2 7zoyfg3xtkA HPV Vaccine: 7 Myths Parents Get Wrong
+2026-10-31 publ PT38S          9     0    1 H3iWGakCA8U The vaccine that prevents cancer #Shorts
+2026-10-31 publ PT34S          6     1    1 L-LpJLgUQII The vaccine harms fertility? #Shorts
+2026-10-30 publ PT9M58S       17     3    4 TmDZYGIkwtk You're Probably Washing Your Hands Wrong
+2026-10-30 publ PT35S         21     0    1 KWbXKxmGx5o Antibacterial Soap Is Better? #Shorts
+2026-10-30 publ PT32S         72     0    1 YxgSM0a7-c0 You're probably washing your hands wrong #Shorts
+2026-10-29 publ PT9M36S        9     1    1 8U3VR4SZVD0 Shingles: 5 Myths That Could Leave You in Pain
+2026-10-29 publ PT34S         50     1    1 l8cuy4LId5A Had chickenpox? Shingles could be next #Shorts
+2026-10-29 publ PT33S         26     1    1 MEm_YBy0gTc Once Means Never Again? #Shorts
+2026-10-28 publ PT9M33S       26     0    2 Ww74ahobgq8 UTI Symptoms: When to See a Doctor
+2026-10-28 publ PT35S         13     0    1 jKCQQJaeKlQ Urinary tract infections: Cranberry juice... #Shorts
+2026-10-28 publ PT31S         53     0    1 5Rs-OsLzFP8 Does cranberry juice cure a UTI? #Shorts
+2026-10-27 publ PT9M54S       24     2    1 rotoo0t2KJU Naloxone: The Nasal Spray That Stops an Overdose
+2026-10-27 publ PT9M39S       24     2    2 TeXomVM-8do Blood Clot Signs: Don't Ignore a Swollen Leg
+2026-10-27 publ PT37S          6     1    1 OqoeKunjSIw Do long flights cause most blood clots? #Shorts
+2026-10-27 publ PT35S         15     1    1 3lt8huc9PxY Swollen leg? It could be a blood clot #Shorts
+2026-10-27 publ PT33S         14     0    1 1IFLshlyNz4 Myth or fact: Carrying it promotes drug use? #Shorts
+2026-10-27 publ PT32S         19     1    1 -Rki5tT1PYE Could you stop an overdose? #Shorts
+2026-10-26 publ PT34S          6     1    1 _l9Eo-dkeNg The invisible killer in your home #Shorts
+2026-10-26 publ PT32S          5     1    1 XvQ9bttgwJc Myth or fact: A cracked window is enough? #Shorts
+2026-10-26 publ PT10M11S       8     1    2 U0Hu-5sg2sg Carbon Monoxide: The Silent Killer in Your Home
+2026-10-25 publ PT35S         24     2    1 ZGCixh_X4x0 Signs of hypothermia most people miss #Shorts
+2026-10-25 publ PT10M3S        9     2    1 PcF6ztyMfjU Cold Can Kill: Hypothermia Signs Most People Miss
+2026-10-24 publ PT9M49S       18     2    1 O1dW60-m5a0 Someone Is Choking: What to Do in the First Minute
+2026-10-24 publ PT38S         71     1    1 mn9M4Io2KxA Someone is choking? Do this now #Shorts
+2026-10-24 publ PT38S         71     1    1 mn9M4Io2KxA Someone is choking? Do this now #Shorts
+2026-10-23 publ PT57S          8     2    1 nEIE1-1fo60 Can you prevent a second stroke? #Shorts
+2026-10-23 publ PT56S         17     3    3 rOOetBpgvZk Does stroke recovery stop after six months? #Shorts
+2026-10-23 publ PT10M13S      16     1    1 QxaO4KhkHII Life After a Stroke: How Recovery Really Works
+2026-10-22 publ PT9M59S       16     3    1 qayGBD_Q5aI Hearing Loss Warning Signs You Shouldn't Ignore
+2026-10-22 publ PT53S         28     2    1 3xs7hr0r3F0 What Are the Warning Signs of Hearing Loss? #Shorts
+2026-10-21 publ PT56S         16     2    1 uyloSwMnTMU Forgetting Keys vs Getting Lost: Alzheimer's Signs #Shorts
+2026-10-21 publ PT1M18S       40     4    1 xKJxq9yrURM The Alzheimer's Sign That Isn't Memory Loss #Shorts
+2026-10-21 publ PT10M23S      24     6    1 2WpLrMDRE4c The Early Alzheimer's Sign Families Miss
+2026-10-20 publ PT1M           7     1    1 Gh7ky0OLwdU Osteoporosis Myths: What You Got Wrong About Bones #Shorts
 2026-10-20 publ PT10M27S      36     3    3 lIE-FuDwYEY Osteoporosis: 5 Myths That Could Break You
-2026-10-19 publ PT9M28S       34     7    4 ynXYX0XwDlU Bringing a Loved One Home From the Hospital? Watch This
-2026-10-19 publ PT1M19S        8     1    1 vVIkLP_7nUE The #1 Medicine Mistake After Hospital Discharge #Shorts
-2026-10-19 publ PT1M18S        5     1    1 0Zg0rxdo5J8 Why 1 in 5 Patients Return to the Hospital #Shorts
-2026-10-18 publ PT1M4S        34     3    1 A1JEnPLtHIo Why Do Men Pee All Night? Enlarged Prostate Explained #Shorts
-2026-10-18 publ PT1M18S       14     1    1 3Eb5y9rqj7A Should You Get the PSA Test? #Shorts
+2026-10-19 publ PT9M28S       35     7    4 ynXYX0XwDlU Bringing a Loved One Home From the Hospital? Watch This
+2026-10-19 publ PT1M19S       10     1    1 vVIkLP_7nUE The #1 Medicine Mistake After Hospital Discharge #Shorts
+2026-10-19 publ PT1M18S        6     1    1 0Zg0rxdo5J8 Why 1 in 5 Patients Return to the Hospital #Shorts
+2026-10-18 publ PT1M4S        35     3    1 A1JEnPLtHIo Why Do Men Pee All Night? Enlarged Prostate Explained #Shorts
+2026-10-18 publ PT1M18S       15     1    1 3Eb5y9rqj7A Should You Get the PSA Test? #Shorts
 2026-10-18 publ PT10M25S      50     3    2 ty-M5_xQGVA Why Men Pee All Night, and What Helps
-2026-10-17 publ PT1M33S       11     3    1 VZmJ9OGvN3c Breast Cancer Myths Almost Everyone Believes #Shorts
-2026-10-17 publ PT1M31S       23     1    1 65mR7AfwPUc Breast Cancer Screening Myths vs New 2024 Guidelines #Shorts
-2026-10-17 publ PT1M31S       23     1    1 65mR7AfwPUc Breast Cancer Screening Myths vs New 2024 Guidelines #Shorts
+2026-10-17 publ PT1M33S       14     3    1 VZmJ9OGvN3c Breast Cancer Myths Almost Everyone Believes #Shorts
+2026-10-17 publ PT1M31S       24     1    1 65mR7AfwPUc Breast Cancer Screening Myths vs New 2024 Guidelines #Shorts
+2026-10-17 publ PT10M9S       10     4    1 spq8oOrKcWs The Mammogram Rule That Changed in 2024
 2026-10-16 publ PT9M10S       18     4    1 rHtvGk7TqzM Short Doctor Visit? Do This to Get Real Answers
-2026-10-16 publ PT34S         16     3    1 vPsYwn7zyYc Myth or fact: The doctor knows my whole history? #Shorts
-2026-10-16 publ PT29S         11     4    1 ykCzkZ_NlwU 3 tricks for a short doctor visit #Shorts
-2026-10-15 publ PT9M24S        8     2    1 42CvOXqrJDw Colon Cancer Screening Starts at 45: 5 Myths Busted
-2026-10-15 publ PT35S         11     2    1 L2K-BAK3bHI Myth or fact: The test is very painful? #Shorts
-2026-10-15 publ PT34S         10     2    1 VBtUeVik9xM Colon cancer screening starts at 45 now #Shorts
-2026-10-14 publ PT9M35S       20     3    1 jNmAsvC6-1A Going to the Hospital? 6 Questions to Ask First
-2026-10-14 publ PT34S         14     2    1 RPJEJeWA7n0 Report Changes Fast: don't ignore these #Shorts
-2026-10-14 publ PT31S         26     3    1 8jJXfm-VugY Staying overnight? Ask this at the hospital #Shorts
-2026-10-13 publ PT9M31S       46     5    1 B8kEqFsTjXQ Anaphylaxis: Signs of a Severe Allergic Reaction
-2026-10-13 publ PT34S        144     5    1 d7qx1WS4aH8 Why Benadryl isn't enough for anaphylaxis #Shorts
-2026-10-13 publ PT31S         12     2    1 YSHK64Iz-Xw Myth or fact: My last reaction was mild? #Shorts
-2026-10-12 publ PT9M11S       18     4    1 yeRj5dGymRU Falls Aren't Just Part of Aging: 5 Myths Busted
-2026-10-12 publ PT31S         12     3    1 740GYrC3lmk 1 in 4 older adults fall each year #Shorts
-2026-10-12 publ PT28S         14     4    1 Qj7qKKSuFsQ Myth or fact: It won't happen to me? #Shorts
+2026-10-16 publ PT34S         17     3    1 vPsYwn7zyYc Myth or fact: The doctor knows my whole history? #Shorts
+2026-10-16 publ PT29S         12     4    1 ykCzkZ_NlwU 3 tricks for a short doctor visit #Shorts
+2026-10-15 publ PT9M24S        9     2    1 42CvOXqrJDw Colon Cancer Screening Starts at 45: 5 Myths Busted
+2026-10-15 publ PT35S         12     2    1 L2K-BAK3bHI Myth or fact: The test is very painful? #Shorts
+2026-10-15 publ PT34S         12     2    1 VBtUeVik9xM Colon cancer screening starts at 45 now #Shorts
+2026-10-14 publ PT9M35S       22     3    1 jNmAsvC6-1A Going to the Hospital? 6 Questions to Ask First
+2026-10-14 publ PT34S         18     2    1 RPJEJeWA7n0 Report Changes Fast: don't ignore these #Shorts
+2026-10-14 publ PT31S         29     3    1 8jJXfm-VugY Staying overnight? Ask this at the hospital #Shorts
+2026-10-13 publ PT9M31S       48     5    1 B8kEqFsTjXQ Anaphylaxis: Signs of a Severe Allergic Reaction
+2026-10-13 publ PT34S        147     5    1 d7qx1WS4aH8 Why Benadryl isn't enough for anaphylaxis #Shorts
+2026-10-13 publ PT31S         16     2    1 YSHK64Iz-Xw Myth or fact: My last reaction was mild? #Shorts
+2026-10-12 publ PT9M11S       19     4    1 yeRj5dGymRU Falls Aren't Just Part of Aging: 5 Myths Busted
+2026-10-12 publ PT31S         14     3    1 740GYrC3lmk 1 in 4 older adults fall each year #Shorts
+2026-10-12 publ PT28S         15     4    1 Qj7qKKSuFsQ Myth or fact: It won't happen to me? #Shorts
 2026-10-11 publ PT9M24S       53     5    1 Y6y9rJEg5AU Cholesterol Explained: LDL, HDL and Triglycerides
-2026-10-11 publ PT35S         15     2    1 hQt_jZVjJKQ Good vs bad cholesterol in 30 seconds #Shorts
-2026-10-11 publ PT34S         17     2    1 VmkIxKZ2j2E Myth or fact: Eggs are banned with high... #Shorts
-2026-10-10 publ PT9M23S       72     7    3 hHIxJVUTm1k Tylenol or Advil? What to Know Before You Take Them
-2026-10-10 publ PT38S         14     3    1 G6hVt-eIk8k Myth or fact: Alternating is always best? #Shorts
-2026-10-10 publ PT36S         35     3    1 bkk_1-y10hA The hidden Tylenol in your cold medicine #Shorts
-2026-10-09 publ PT9M12S       97    13    3 rmcgEZjyhQ8 Sepsis: The Deadly Emergency Most People Don't Know
-2026-10-09 publ PT36S         20     2    1 DdnTKyU33fc Sepsis: the words that could save a life #Shorts
-2026-10-09 publ PT35S         12     4    1 Hn8YAbR6SqI Myth or fact: Sepsis is a blood infection? #Shorts
-2026-10-08 publ PT8M57S       34    11    1 GbUiKFvmobc 10 Sleep Myths That Are Wrecking Your Rest
-2026-10-08 publ PT31S         21     5    1 7W6jSyuA2C4 Does a nightcap help you sleep? #Shorts
-2026-10-07 publ PT2M30S       31     6    1 ap47sf9a5Qk Urgent Care or ER? How to Choose in 30 Seconds
-2026-10-07 publ PT25S         27     7    1 Oissyg_rRNc Urgent care or ER? The 3-second rule #Shorts
-2026-10-06 publ PT2M25S       23     5    1 bayuaduGQqc Child Has a Fever? When to Worry and When to Call
+2026-10-11 publ PT35S         16     2    1 hQt_jZVjJKQ Good vs bad cholesterol in 30 seconds #Shorts
+2026-10-11 publ PT34S         18     2    1 VmkIxKZ2j2E Myth or fact: Eggs are banned with high... #Shorts
+2026-10-10 publ PT9M23S       74     7    3 hHIxJVUTm1k Tylenol or Advil? What to Know Before You Take Them
+2026-10-10 publ PT38S         15     3    1 G6hVt-eIk8k Myth or fact: Alternating is always best? #Shorts
+2026-10-10 publ PT36S         36     3    1 bkk_1-y10hA The hidden Tylenol in your cold medicine #Shorts
+2026-10-09 publ PT9M12S      104    13    3 rmcgEZjyhQ8 Sepsis: The Deadly Emergency Most People Don't Know
+2026-10-09 publ PT36S         22     2    1 DdnTKyU33fc Sepsis: the words that could save a life #Shorts
+2026-10-09 publ PT35S         13     4    1 Hn8YAbR6SqI Myth or fact: Sepsis is a blood infection? #Shorts
+2026-10-08 publ PT8M57S       35    11    1 GbUiKFvmobc 10 Sleep Myths That Are Wrecking Your Rest
+2026-10-08 publ PT31S         22     5    1 7W6jSyuA2C4 Does a nightcap help you sleep? #Shorts
+2026-10-07 publ PT2M30S       32     6    1 ap47sf9a5Qk Urgent Care or ER? How to Choose in 30 Seconds
+2026-10-07 publ PT25S         28     7    1 Oissyg_rRNc Urgent care or ER? The 3-second rule #Shorts
+2026-10-06 publ PT2M25S       24     5    1 bayuaduGQqc Child Has a Fever? When to Worry and When to Call
 2026-10-06 publ PT25S         28     5    1 EH_41v8y_bk Baby has a fever? Know this number #Shorts
 2026-10-05 publ PT30S         92     4    1 15HONB9EDTY 3 dehydration signs parents miss #Shorts
-2026-10-05 publ PT2M51S      129     6    1 selS9_QfgJE Dehydration Warning Signs in Kids and Older Adults
-2026-10-04 publ PT42S        369     5    1 xx7SmrWj7Jg Hands-Only CPR in 2 Steps: This Could Save a Life
+2026-10-05 publ PT2M51S      140     6    1 selS9_QfgJE Dehydration Warning Signs in Kids and Older Adults
+2026-10-04 publ PT42S        373     5    1 xx7SmrWj7Jg Hands-Only CPR in 2 Steps: This Could Save a Life
 2026-10-03 publ PT3M          22     4    1 qtgvwLYchD8 5 Flu Shot Myths You Probably Still Believe
-2026-10-03 publ PT30S        992    13    1 zqbaxNdWzv0 Can the flu shot give you the flu? #Shorts
-2026-10-02 publ PT3M12S       22     3    3 SBCDPO_wfwc Why Antibiotics Won't Fix Your Cold or Flu
+2026-10-03 publ PT30S        993    13    1 zqbaxNdWzv0 Can the flu shot give you the flu? #Shorts
+2026-10-02 publ PT3M12S       23     3    3 SBCDPO_wfwc Why Antibiotics Won't Fix Your Cold or Flu
 2026-10-02 publ PT35S         24     4    3 sd59JuYdHBQ Why antibiotics won't cure your cold #Shorts
-2026-10-01 publ PT3M5S        50     2    1 MSMDnPoLhsk Your Blood Test Results Explained: CBC and Metabolic Panel
+2026-10-01 publ PT3M5S        52     2    1 MSMDnPoLhsk Your Blood Test Results Explained: CBC and Metabolic Panel
 2026-10-01 publ PT32S         14     4    1 LY6LBNrAEyA That HIGH on your blood test? Read this first #Shorts
 2026-09-30 publ PT48S         32     4    1 KbjQSSUJI8M What Your A1C Number Really Means #Shorts
 2026-09-30 publ PT3M5S         6     2    1 SY8X5CDRW_U Type 2 Diabetes vs Prediabetes: What Your A1C Really Means
-2026-09-29 publ PT52S         24     4    1 _0rvT4bACUQ BE FAST: The Stroke Warning Signs You Can't Miss
+2026-09-29 publ PT52S         25     4    1 _0rvT4bACUQ BE FAST: The Stroke Warning Signs You Can't Miss
 2026-09-28 publ PT4M          21     8    3 Jhis4mR0Rsg Heart Attack Signs in Women: 5 Myths That Cost Time
-2026-09-27 publ PT5M5S        55    22    1 eBLOQcBeKy8 Blood Pressure Numbers Explained (And How to Lower Yours)
+2026-09-27 publ PT5M5S        56    22    1 eBLOQcBeKy8 Blood Pressure Numbers Explained (And How to Lower Yours)
