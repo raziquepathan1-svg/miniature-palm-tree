@@ -92,10 +92,10 @@ class Rewrite(BaseModel):
 def _ask(prompt: str, schema, max_tokens: int):
     import anthropic
 
-    from .planner import MODEL, _fallback_kwargs
+    from .planner import PACKAGING_MODEL, _fallback_kwargs
 
     response = anthropic.Anthropic().beta.messages.parse(
-        model=MODEL, max_tokens=max_tokens, **_fallback_kwargs(),
+        model=PACKAGING_MODEL, max_tokens=max_tokens, **_fallback_kwargs(PACKAGING_MODEL),
         messages=[{"role": "user", "content": prompt}], output_format=schema)
     print(f"    {schema.__name__} tokens: in {response.usage.input_tokens}, out {response.usage.output_tokens} "
           f"({response.stop_reason})")

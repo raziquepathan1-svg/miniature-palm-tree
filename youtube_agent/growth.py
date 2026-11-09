@@ -18,7 +18,8 @@ MID_LINES = [  # owner Oct 30: give a reason to subscribe, not only the ask
     "This is part {n} of our {total} part {series} series. If you want one clear health tip every day that you "
     "can actually use, subscribe now, then let's keep going.",
 ]
-SHORT_LINE = "Subscribe for one simple health tip every day, one could help someone you love."
+SHORT_LINE = ("Tap the link above the title for the full answer. And subscribe for one quick health fact a day "
+              "that could protect someone you love.")
 LAST_MID: str | None = None  # the line added mid-video (left out of the second Short)
 LAST_EP = None  # today's series episode (set by main)
 PART_IN_TITLE = False  # set from config growth.part_in_title
@@ -160,7 +161,9 @@ def native_reel(scenes: list, follow: str = REEL_FOLLOW) -> list:
     sending them to YouTube (Instagram and Facebook show posts that send people away to fewer people)."""
     *body, last = scenes
     kept = [x for x in re.split(r"(?<=[.!?])\s+", last.narration.strip()) if x and not _OFF_PLATFORM.search(x)]
-    update = {"narration": " ".join(kept + [follow])}
+    from . import suspense  # owner Nov 9: the Reel keeps the cliffhanger and then reveals it (no YouTube link there)
+    answer = [suspense.REEL_ANSWER] if suspense.REEL_ANSWER else []
+    update = {"narration": " ".join(kept + answer + [follow])}
     if last.layout == "outro":
         update.update(heading="Follow for more", points=["One simple health tip every day"])
     return body + [last.model_copy(update=update)]

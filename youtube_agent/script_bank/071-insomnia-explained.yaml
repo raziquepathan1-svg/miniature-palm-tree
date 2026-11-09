@@ -296,3 +296,19 @@ plan:
       footage_query: "woman sleeping peacefully"
       narration: >-
         Learn more about insomnia in our full video, on the Health Support Studio YouTube channel.
+story:  # owner Nov 9: movie-style suspense (a clearly hypothetical case, resolved only with facts from this video)
+  open: >-
+    Imagine Sara. Every night she is in bed by ten, and every night she is still staring at the ceiling at two. She has
+    tried a glass of wine, sleeping in on weekends, and scrolling until she feels tired. By the end of this video, you
+    will know why those made it worse, and what finally helped her sleep.
+  twist: >-
+    Remember Sara? Here is the twist. All those hours lying awake in bed were teaching her brain that bed is a place to
+    worry, not a place to sleep.
+  end: >-
+    So what changed for Sara? She picked one wake-up time, even on weekends. When she could not sleep, she got up after
+    about twenty minutes and read in dim light. And she asked her doctor about CBT-I. It took a few weeks, but bed
+    started to mean sleep again.
+  short_cliff: >-
+    But there is one thing many people with insomnia do every night that keeps it going. Do you know what it is?
+  reel_answer: >-
+    Here is the answer: lying in bed awake for hours. If you cannot sleep after about twenty minutes, get up and do something calm until you feel sleepy.

@@ -41,7 +41,7 @@ def build_captions(item, queue, ig_name):
     if long_ and long_.get("youtube_id") and long_["publish_at"] <= item["publish_at"]:
         fb_body = fb_body.replace(CHANNEL, f"https://youtu.be/{long_['youtube_id']}")
     ig_body = body
-    if long_ and long_["publish_at"] > item["publish_at"]:   # owner: the full video comes at 3:30 PM - say so on the 12 PM Reel
+    if long_ and long_["publish_at"] > item["publish_at"] and long_["publish_at"] > dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"):   # owner: the full video comes at 3:30 PM - say so on the 12 PM Reel
         fb_body = fb_body.replace(f"▶️ Full video on YouTube: {CHANNEL}",
                                   f"▶️ Full video today at 3:30 PM (India time) on YouTube: {CHANNEL}")
         ig_body = ig_body.replace("Full video on YouTube: The Anatomy Unfolded (link in bio) 👆",
@@ -59,15 +59,36 @@ def main():
         sys.exit("Facebook/Instagram secrets are missing - nothing posted.")
     queue = json.loads(QUEUE.read_text())
     posted = json.loads(POSTED.read_text()) if POSTED.exists() else {}
-    item = due_short(queue, posted, dt.datetime.now(dt.timezone.utc))
-    if not item:
+    run_file = QDIR / "social_run.txt"
+    backfill = []
+    if run_file.exists():   # a line "backfill: id1,id2" posts those (already public) Shorts that were missed
+        for ln in run_file.read_text().splitlines():
+            if ln.lower().startswith("backfill:"):
+                backfill = [x.strip() for x in ln.split(":", 1)[1].split(",") if x.strip()]
+    items = [q for q in queue if q["id"] in backfill and q.get("youtube_id")
+             and not (posted.get(q["id"], {}).get("facebook") and posted.get(q["id"], {}).get("instagram"))]
+    items.sort(key=lambda q: q["publish_at"])
+    one = due_short(queue, posted, dt.datetime.now(dt.timezone.utc))
+    if one and one["id"] not in [q["id"] for q in items]:
+        items.append(one)
+    if not items:
         print("No Short is due right now (or it was already posted).")
-        return
-    if not S.youtube_is_public(item["youtube_id"]):
-        print(f"{item['id']}: YouTube Short {item['youtube_id']} is not public yet - not posting.")
         return
     token, _ = S.page_token(page_id, token)
     ig_name = S._graph_field(ig_user_id, "username", token) if ig_user_id else ""
+    failed = False
+    for item in items:
+        if not S.youtube_is_public(item["youtube_id"]):
+            print(f"{item['id']}: YouTube Short {item['youtube_id']} is not public yet - not posting.")
+            continue
+        if not post_one(item, queue, posted, token, page_id, ig_user_id, ig_name):
+            failed = True
+    if failed:
+        sys.exit(1)
+
+
+def post_one(item, queue, posted, token, page_id, ig_user_id, ig_name):
+    print(f"== {item['id']}")
     fb_cap, ig_cap = build_captions(item, queue, ig_name)
     video = QDIR / item["file"]
     rec = dict(posted.get(item["id"], {"youtube_id": item["youtube_id"]}))
@@ -97,8 +118,7 @@ def main():
     if rec.get("facebook") or rec.get("instagram"):
         posted[item["id"]] = rec
         POSTED.write_text(json.dumps(posted, indent=1))
-    if not (rec.get("facebook") and (rec.get("instagram") or not ig_user_id)):
-        sys.exit(1)
+    return bool(rec.get("facebook") and (rec.get("instagram") or not ig_user_id))
 
 
 if __name__ == "__main__":

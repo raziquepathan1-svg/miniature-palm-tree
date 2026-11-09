@@ -1165,5 +1165,183 @@
       "HealthTips"
     ],
     "publish_at": "2026-11-05T16:00:00Z"
+  },
+  {
+    "date": "2026-11-06T12:32:56",
+    "topic": "Eye myths: reading in the dark, screens and carrots",
+    "requested_topic": "Eye myths: reading in the dark, screens and carrots",
+    "title": "Does Reading in the Dark Ruin Your Eyes?",
+    "style": "Myth vs Fact",
+    "script_file": "078-body-myths-eyes.yaml",
+    "series": "Body Myths",
+    "episode": 3,
+    "awaiting_approval": false,
+    "youtube_id": "41PSa3dadbw",
+    "short_youtube_id": "8NaLPu_qwIc",
+    "short2_youtube_id": "esFVdhVYaJ8",
+    "short3_youtube_id": "z9n2OP6WgA4",
+    "preview": "previews/41PSa3dadbw.mp4",
+    "pin_question": "Which eye myth did you grow up hearing the most? Reading in the dark, sitting close to the TV, or carrots?",
+    "packages": [
+      {
+        "title": "Does Reading in the Dark Ruin Your Eyes?",
+        "thumbnail_text": "JUST STRAIN",
+        "thumbnail_highlight": "STRAIN"
+      },
+      {
+        "title": "Eye Myths You Probably Still Believe",
+        "thumbnail_text": "TRUE OR FALSE?",
+        "thumbnail_highlight": "FALSE?"
+      },
+      {
+        "title": "Do Screens Damage Your Eyes?",
+        "thumbnail_text": "BLUE LIGHT",
+        "thumbnail_highlight": "LIGHT"
+      },
+      {
+        "title": "Do Carrots Really Improve Your Eyesight?",
+        "thumbnail_text": "VITAMIN A",
+        "thumbnail_highlight": "VITAMIN"
+      },
+      {
+        "title": "Does Sitting Close to the TV Hurt Your Eyes?",
+        "thumbnail_text": "NO DAMAGE",
+        "thumbnail_highlight": "DAMAGE"
+      }
+    ],
+    "chosen": {
+      "title": "Does Reading in the Dark Ruin Your Eyes?",
+      "thumbnail_text": "JUST STRAIN",
+      "thumbnail_highlight": "STRAIN"
+    },
+    "social_keywords": "reading in the dark · do screens damage your eyes · blue light glasses · carrots and eyesight · eye myths",
+    "social_hashtags": [
+      "EyeHealth",
+      "EyeMyths",
+      "BlueLight",
+      "HealthMyths",
+      "HealthTips"
+    ],
+    "publish_at": "2026-11-06T16:00:00Z",
+    "went_public_unchecked": true
+  },
+  {
+    "date": "2026-11-07T12:23:20",
+    "topic": "Skin and sun myths: cloudy days, base tans and acne",
+    "requested_topic": "Skin and sun myths: cloudy days, base tans and acne",
+    "title": "Do You Need Sunscreen on a Cloudy Day?",
+    "style": "Myth vs Fact",
+    "script_file": "079-body-myths-skin-sun.yaml",
+    "series": "Body Myths",
+    "episode": 4,
+    "awaiting_approval": false,
+    "youtube_id": "guJ9H1hBSJQ",
+    "short_youtube_id": "PCS5wvDhFno",
+    "short2_youtube_id": "upFyPC0H14c",
+    "short3_youtube_id": "AsszlZVDAVM",
+    "publish_at": "2026-11-08T08:20:00Z",
+    "went_public_unchecked": true,
+    "replaced_ids": [
+      "i4CveA90e7g"
+    ],
+    "pin_question": "Which sun myth did you believe? Cloudy days are safe, a base tan protects you, or last year's sunscreen is fine?",
+    "packages": [
+      {
+        "title": "Do You Need Sunscreen on a Cloudy Day?",
+        "thumbnail_text": "UV GETS THROUGH",
+        "thumbnail_highlight": "UV"
+      },
+      {
+        "title": "Does a Base Tan Protect Your Skin?",
+        "thumbnail_text": "STILL DAMAGE",
+        "thumbnail_highlight": "DAMAGE"
+      },
+      {
+        "title": "Skin and Sun Myths Dermatologists Hear",
+        "thumbnail_text": "TRUE OR FALSE?",
+        "thumbnail_highlight": "FALSE?"
+      }
+    ],
+    "chosen": {
+      "title": "Do You Need Sunscreen on a Cloudy Day?",
+      "thumbnail_text": "UV GETS THROUGH",
+      "thumbnail_highlight": "UV"
+    },
+    "social_keywords": "sunscreen on cloudy days · base tan myth · tanning beds · does sunscreen expire · skin cancer signs",
+    "social_hashtags": [
+      "Sunscreen",
+      "SkinCare",
+      "SkinHealth",
+      "HealthMyths",
+      "HealthTips"
+    ]
+  },
+  {
+    "date": "2026-11-07T12:23:20",
+    "topic": "Skin and sun myths: cloudy days, base tans and acne",
+    "requested_topic": "Skin and sun myths: cloudy days, base tans and acne",
+    "title": "Do You Need Sunscreen on a Cloudy Day?",
+    "style": "Myth vs Fact",
+    "script_file": "079-body-myths-skin-sun.yaml",
+    "series": "Body Myths",
+    "episode": 4,
+    "awaiting_approval": false,
+    "youtube_id": "i4CveA90e7g",
+    "short_youtube_id": "PCS5wvDhFno",
+    "short2_youtube_id": "upFyPC0H14c",
+    "short3_youtube_id": "AsszlZVDAVM",
+    "preview": "previews/i4CveA90e7g.mp4",
+    "publish_at": "2026-11-07T16:00:00Z",
+    "went_public_unchecked": true
+  },
+  {
+    "date": "2026-11-08T09:34:22",
+    "topic": "Cold myths: cold weather, wet hair, vitamin C and antibiotics",
+    "requested_topic": "Cold myths: cold weather, wet hair, vitamin C and antibiotics",
+    "title": "Does Cold Weather Give You a Cold?",
+    "style": "Myth vs Fact",
+    "script_file": "080-body-myths-colds.yaml",
+    "series": "Body Myths",
+    "episode": 5,
+    "awaiting_approval": false,
+    "youtube_id": "szIou_GtYnc",
+    "short_youtube_id": "67QKd9nADVw",
+    "short2_youtube_id": "cu4iKU4UEQg",
+    "short3_youtube_id": "o4bK2Q6Wnc8",
+    "replaced_ids": [
+      "iLljy8EU-pM"
+    ],
+    "pin_question": "Who told you to put on a coat or you would catch a cold? Which cold myth did you grow up with?",
+    "packages": [
+      {
+        "title": "Does Cold Weather Give You a Cold?",
+        "thumbnail_text": "IT'S A VIRUS",
+        "thumbnail_highlight": "VIRUS"
+      },
+      {
+        "title": "Do Antibiotics Help a Cold?",
+        "thumbnail_text": "WASTED PILLS",
+        "thumbnail_highlight": "WASTED"
+      },
+      {
+        "title": "Cold Myths Your Family Still Believes",
+        "thumbnail_text": "WET HAIR?",
+        "thumbnail_highlight": "HAIR?"
+      }
+    ],
+    "chosen": {
+      "title": "Does Cold Weather Give You a Cold?",
+      "thumbnail_text": "IT'S A VIRUS",
+      "thumbnail_highlight": "VIRUS"
+    },
+    "social_keywords": "does cold weather cause colds · wet hair myth · vitamin C for colds · antibiotics for a cold · cold or flu",
+    "social_hashtags": [
+      "CommonCold",
+      "ColdAndFlu",
+      "HealthMyths",
+      "HealthTips",
+      "HealthEducation"
+    ],
+    "publish_at": "2026-11-08T16:00:00Z"
   }
 ]
