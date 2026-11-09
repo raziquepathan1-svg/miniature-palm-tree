@@ -26,3 +26,4 @@ no default smile, the host never holds an object, face must match the avatar.
 - eyes myths 078 (picture saved Nov 4): #8 leaning close to the camera, wide eyes
 - skin/sun myths 079 (prompt given Nov 5): #10 looking sideways at the glowing object, worried
 - cold myths 080 (prompt given Nov 8): #9 finger on lips ("shh")
+- skin/sun myths 079 redo (prompt given Nov 9): #6 arms crossed, one eyebrow up
