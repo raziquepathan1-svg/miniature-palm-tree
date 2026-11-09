@@ -1,0 +1,46 @@
+[
+ {
+  "id": "story",
+  "text": "You touch a hot pan. Before you even feel pain, your hand has already jumped away. How did your body decide so fast? Let's follow the message."
+ },
+ {
+  "id": "overview",
+  "text": "Your brain has about 86 billion nerve cells, called neurons. Each one sends tiny electrical signals. Let's see how one neuron is built."
+ },
+ {
+  "id": "structure",
+  "text": "A neuron has three main parts. The dendrites receive messages. The cell body processes them. And the long axon carries the message away."
+ },
+ {
+  "id": "myelin",
+  "text": "Many axons are wrapped in a fatty layer called myelin. It works like insulation on a wire, and makes signals travel much faster, up to about 120 meters per second."
+ },
+ {
+  "id": "resting",
+  "text": "At rest, a neuron is like a charged battery. There is more sodium outside the cell, and more potassium inside. The inside is slightly negative."
+ },
+ {
+  "id": "spike",
+  "text": "When enough input arrives, sodium channels open. Sodium rushes in, and the inside turns positive. That spike is the action potential. Then potassium flows out, and the cell resets."
+ },
+ {
+  "id": "travel",
+  "text": "The spike moves down the axon like a wave of falling dominoes. It is all or nothing. It either fires fully, or not at all."
+ },
+ {
+  "id": "synapse",
+  "text": "At the end of the axon, the signal meets a tiny gap, called the synapse. The signal cannot jump across. Instead, the neuron releases chemical messengers, called neurotransmitters."
+ },
+ {
+  "id": "receptor",
+  "text": "Neurotransmitters cross the gap and fit into receptors on the next cell, like a key in a lock. That passes the message on. Examples are dopamine, serotonin, and acetylcholine."
+ },
+ {
+  "id": "payoff",
+  "text": "Now back to the hot pan. Pain nerves send the signal to your spinal cord. A reflex circuit there tells the muscle to pull back, before the message even reaches your brain. You move first, and feel it a moment later."
+ },
+ {
+  "id": "recap",
+  "text": "Remember three things: neurons use electrical spikes, synapses use chemicals, and myelin makes it fast. Next time, how does the spinal cord carry messages to your body?"
+ }
+]
