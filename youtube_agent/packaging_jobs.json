@@ -1102,5 +1102,68 @@
       "HealthTips"
     ],
     "done": true
+  },
+  {
+    "youtube_id": "Y76Da40x2so",
+    "title": "Always Tired? Signs of Low Iron You Shouldn't Ignore",
+    "description_top": "Always tired? Low iron symptoms like fatigue, pale skin, shortness of breath and craving ice can be signs of iron deficiency anemia.\nWhat causes low iron (heavy periods, hidden blood loss, diet), why you should get tested before taking iron pills, and iron-rich foods, based on NIH sources.",
+    "pin_question": "Have you ever been told your iron was low? What was the first sign you noticed?",
+    "packages": [
+      {
+        "title": "Always Tired? Signs of Low Iron You Shouldn't Ignore",
+        "thumbnail_text": "CRAVING ICE?",
+        "thumbnail_highlight": "ICE?"
+      },
+      {
+        "title": "Low Iron Symptoms Most People Miss",
+        "thumbnail_text": "ALWAYS TIRED?",
+        "thumbnail_highlight": "TIRED?"
+      },
+      {
+        "title": "Why Do I Crave Ice? It Could Be Low Iron",
+        "thumbnail_text": "NOT NORMAL",
+        "thumbnail_highlight": "NORMAL"
+      },
+      {
+        "title": "Iron Deficiency Anemia: Signs and Causes",
+        "thumbnail_text": "PALE AND TIRED?",
+        "thumbnail_highlight": "PALE"
+      },
+      {
+        "title": "Should You Take Iron Pills Without a Test?",
+        "thumbnail_text": "TEST FIRST",
+        "thumbnail_highlight": "TEST"
+      }
+    ],
+    "chosen": {
+      "title": "Always Tired? Signs of Low Iron You Shouldn't Ignore",
+      "thumbnail_text": "CRAVING ICE?",
+      "thumbnail_highlight": "ICE?"
+    },
+    "tags": [
+      "iron deficiency anemia",
+      "low iron symptoms",
+      "always tired",
+      "why am i always tired",
+      "craving ice",
+      "anemia symptoms",
+      "signs of low iron",
+      "iron pills",
+      "should i take iron supplements",
+      "heavy periods and anemia",
+      "iron rich foods",
+      "ferritin",
+      "hemoglobin",
+      "anemia in women",
+      "health education"
+    ],
+    "social_keywords": "low iron symptoms · always tired · craving ice · iron deficiency anemia · iron pills",
+    "social_hashtags": [
+      "Anemia",
+      "IronDeficiency",
+      "AlwaysTired",
+      "WomensHealth",
+      "HealthTips"
+    ]
   }
 ]
