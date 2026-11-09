@@ -4,6 +4,7 @@ sources:
   - "CDC, About Measles: https://www.cdc.gov/measles/about/index.html"
   - "CDC, Measles Vaccination: https://www.cdc.gov/measles/vaccines/index.html"
   - "MedlinePlus, Measles: https://medlineplus.gov/measles.html"
+  - "CDC, Measles Cases and Outbreaks: https://www.cdc.gov/measles/data-research/index.html"
 plan:
   topic: "Measles: myths vs facts and the MMR vaccine"
   title: "Measles Is Back: 5 Myths That Put Kids at Risk"
@@ -29,8 +30,8 @@ plan:
       points: ["Why it is back"]
       footage_query: "child rash fever"
       narration: >-
-        Measles was declared eliminated from the United States in the year 2000. But it is back, with large outbreaks in
-        recent years and even deaths of children. Measles is one of the most contagious diseases on Earth, and it can be
+        Measles was declared eliminated from the United States in the year 2000. But in 2026 it is back, with more than
+        five thousand confirmed cases, the most since 1991, and even deaths of children. Measles is one of the most contagious diseases on Earth, and it can be
         serious. Here are the myths, and how the vaccine protects your family.
     - layout: "big_number"
       heading: "Extremely Contagious"
@@ -153,8 +154,8 @@ plan:
       footage_query: "airport travelers"
       narration: >-
         Myth five: measles does not happen in the United States anymore. Fact: measles is brought in by travelers, and spreads
-        quickly in communities with low vaccination rates. In recent years, the US has had large outbreaks, with hundreds of
-        cases, many hospitalizations, and deaths of children. Keeping vaccination rates high protects everyone.
+        quickly in communities with low vaccination rates. In 2026, the US has had more than five thousand confirmed cases in
+        dozens of states, the most since 1991, with many hospitalizations and deaths of children. Keeping vaccination rates high protects everyone.
     - layout: "bullets"
       heading: "Mumps and Rubella Too"
       points: ["Mumps: swollen glands", "Can cause deafness", "Rubella: harms unborn babies", "MMR prevents all three"]
@@ -295,3 +296,15 @@ plan:
       footage_query: "family smiling outdoors"
       narration: >-
         Learn the measles myths in our full video, on the Health Support Studio YouTube channel.
+story:  # owner Nov 9: movie-style suspense (a clearly hypothetical case, resolved only with facts from this video)
+  open: >-
+    Imagine a family coming home from a trip. A few days later, their son has a fever, a cough and red eyes. They think
+    it is just a cold. By the end of this video, you will know the one sign that would have told them it was measles,
+    and what they should have done before going to any doctor's office.
+  twist: >-
+    Remember that family? Here is what made it so dangerous. Measles spreads before the rash appears, so by the time
+    they knew, the virus had already been in the air around everyone he met.
+  end: >-
+    So what should that family have done? Watched for the rash that starts on the face and spreads down the body, and
+    called the doctor's office before going in, so others in the waiting room are protected. And the best protection of
+    all is two doses of the MMR vaccine.
