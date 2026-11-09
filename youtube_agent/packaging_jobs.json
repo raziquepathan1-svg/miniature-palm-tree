@@ -1048,5 +1048,58 @@
       "HealthEducation"
     ],
     "done": true
+  },
+  {
+    "youtube_id": "oCFMl4v8z8w",
+    "title": "Do You Need Sunscreen on a Cloudy Day?",
+    "description_top": "Do you need sunscreen on a cloudy day? Does a base tan protect you, does darker skin need sunscreen, and are tanning beds safer?\nSkin and sun myths and facts: UV rays, SPF, skin cancer warning signs, moles (ABCDE), acne myths and when to see a doctor, based on trusted health sources.",
+    "pin_question": "Which sun myth did you believe? Cloudy days are safe, a base tan protects you, or last year's sunscreen is fine?",
+    "packages": [
+      {
+        "title": "Do You Need Sunscreen on a Cloudy Day?",
+        "thumbnail_text": "UV GETS THROUGH",
+        "thumbnail_highlight": "UV"
+      },
+      {
+        "title": "Does a Base Tan Protect Your Skin?",
+        "thumbnail_text": "STILL DAMAGE",
+        "thumbnail_highlight": "DAMAGE"
+      },
+      {
+        "title": "Skin and Sun Myths Dermatologists Hear",
+        "thumbnail_text": "TRUE OR FALSE?",
+        "thumbnail_highlight": "FALSE?"
+      }
+    ],
+    "chosen": {
+      "title": "Do You Need Sunscreen on a Cloudy Day?",
+      "thumbnail_text": "UV GETS THROUGH",
+      "thumbnail_highlight": "UV"
+    },
+    "tags": [
+      "do you need sunscreen on a cloudy day",
+      "sunscreen on cloudy days",
+      "does a base tan protect you",
+      "does dark skin need sunscreen",
+      "are tanning beds safe",
+      "uv rays",
+      "spf explained",
+      "skin cancer signs",
+      "abcde moles",
+      "does sunscreen expire",
+      "sunscreen and vitamin d",
+      "acne myths",
+      "skin care myths",
+      "body myths",
+      "health education"
+    ],
+    "social_keywords": "sunscreen on cloudy days · base tan myth · tanning beds · does sunscreen expire · skin cancer signs",
+    "social_hashtags": [
+      "Sunscreen",
+      "SkinCare",
+      "SkinHealth",
+      "HealthMyths",
+      "HealthTips"
+    ]
   }
 ]
