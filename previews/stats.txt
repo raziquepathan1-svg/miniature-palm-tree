@@ -1,18 +1,24 @@
-CHANNEL Healthsupport Studio: subscribers=57 views=4691 videos=114
+CHANNEL Healthsupport Studio: subscribers=57 views=4820 videos=118
 date       priv dur        views likes comm id          title
-2026-11-07 publ PT5M57S        3     0    1 i4CveA90e7g Do You Need Sunscreen on a Cloudy Day?
-2026-11-07 publ PT33S          0     0    1 upFyPC0H14c Chocolate Causes Acne? #Shorts
-2026-11-07 publ PT32S          1     0    1 PCS5wvDhFno Do you need sunscreen on a cloudy day? #Shorts
-2026-11-07 publ PT31S         14     0    1 8NaLPu_qwIc Does reading in the dark ruin your eyes? #Shorts
-2026-11-07 publ PT29S         32     0    1 esFVdhVYaJ8 Do you need an eye exam if you see fine? #Shorts
-2026-11-07 publ PT28S          3     0    1 z9n2OP6WgA4 Can your eyes get stuck if you cross them? #Shorts
+2026-11-09 publ PT29S          3     0    1 o4bK2Q6Wnc8 Feed a Cold, Starve a Fever? #Shorts
+2026-11-08 publ PT5M52S        2     0    2 szIou_GtYnc Does Cold Weather Give You a Cold?
+2026-11-08 publ PT32S         44     0    1 67QKd9nADVw Can cold weather give you a cold? #Shorts
+2026-11-08 publ PT26S          9     0    1 cu4iKU4UEQg Cold myths: Chicken Soup Helps? #Shorts
+2026-11-08 priv PT5M57S        0     0    0 guJ9H1hBSJQ Do You Need Sunscreen on a Cloudy Day?
+2026-11-08 priv PT5M52S        0     0    0 iLljy8EU-pM Does Cold Weather Give You a Cold?
+2026-11-07 publ PT5M57S        4     0    1 i4CveA90e7g Do You Need Sunscreen on a Cloudy Day?
+2026-11-07 publ PT33S          6     0    1 upFyPC0H14c Chocolate Causes Acne? #Shorts
+2026-11-07 publ PT32S         28     0    1 PCS5wvDhFno Do you need sunscreen on a cloudy day? #Shorts
+2026-11-07 publ PT31S         16     0    1 8NaLPu_qwIc Does reading in the dark ruin your eyes? #Shorts
+2026-11-07 publ PT29S         72     0    1 esFVdhVYaJ8 Do you need an eye exam if you see fine? #Shorts
+2026-11-07 publ PT28S          4     0    1 z9n2OP6WgA4 Can your eyes get stuck if you cross them? #Shorts
 2026-11-07 priv PT28S          0     0    0 AsszlZVDAVM Dirty Skin Causes Acne? #Shorts
 2026-11-06 publ PT6M22S        6     1    1 41PSa3dadbw Does Reading in the Dark Ruin Your Eyes?
-2026-11-06 publ PT25S        103     2    1 CzRTNHkXHHk Does drinking more water flush out toxins? #Shorts
-2026-11-05 publ PT5M44S        7     0    2 Hm_iZPr6trE Do You Really Need 8 Glasses of Water a Day?
+2026-11-06 publ PT25S        106     2    1 CzRTNHkXHHk Does drinking more water flush out toxins? #Shorts
+2026-11-05 publ PT5M44S        8     0    2 Hm_iZPr6trE Do You Really Need 8 Glasses of Water a Day?
 2026-11-05 publ PT33S         11     0    1 q6ljGMaeVhc Do you really need 8 glasses of water a day? #Shorts
 2026-11-05 publ PT26S         12     0    1 BTZ0aboXuy4 Does drinking water help you lose weight? #Shorts
-2026-11-04 publ PT5M39S        8     2    2 qEEprwCcx8M Does Cracking Your Knuckles Cause Arthritis?
+2026-11-04 publ PT5M39S        9     2    2 qEEprwCcx8M Does Cracking Your Knuckles Cause Arthritis?
 2026-11-04 publ PT31S        281     1    1 jXEwXiZXy7k Does cracking your knuckles cause arthritis? #Shorts
 2026-11-04 publ PT28S          0     1    1 mROzGgCfsrA Can the weather really make your joints hurt? #Shorts
 2026-11-04 publ PT24S         15     0    1 DNTPkA_ARoU Can the flu shot give you the flu? #Shorts
@@ -20,22 +26,22 @@ date       priv dur        views likes comm id          title
 2026-11-03 publ PT34S         16     0    1 ogwFVlUCZe8 Can Ebola spread before symptoms? #Shorts
 2026-11-03 publ PT33S          8     0    1 90_4YWiia8Q Is it too late for a flu shot? #Shorts
 2026-11-03 publ PT26S          7     0    1 tIYp_7Nboy4 Flu season started. Is a flu shot still worth it? #Shorts
-2026-11-02 publ PT4M48S      126     5    4 3y85NO90t2k Ebola 2026: How It Really Spreads
+2026-11-02 publ PT4M48S      153     5    5 3y85NO90t2k Ebola 2026: How It Really Spreads
 2026-11-02 publ PT33S         46     0    1 OkkgwuZC8RA Can Ebola spread through the air? #Shorts
 2026-11-02 publ PT31S         28     2    1 A9wz6sWn17M Can you survive Ebola? #Shorts
-2026-11-01 publ PT6M6S        27     4    2 I9ZAW7lmnXA Pneumonia Signs Most People Miss
+2026-11-01 publ PT6M6S        28     4    2 I9ZAW7lmnXA Pneumonia Signs Most People Miss
 2026-11-01 publ PT35S         43     2    1 DBJyrfIpzFo Cold or pneumonia? 4 signs to watch for #Shorts
 2026-11-01 publ PT35S         34     2    1 R1zoxWxOCNk Does pneumonia always need antibiotics? #Shorts
-2026-10-31 publ PT5M50S        6     3    2 7zoyfg3xtkA HPV Vaccine: 7 Myths Parents Get Wrong
+2026-10-31 publ PT5M50S        7     3    2 7zoyfg3xtkA HPV Vaccine: 7 Myths Parents Get Wrong
 2026-10-31 publ PT38S          9     0    1 H3iWGakCA8U The vaccine that prevents cancer #Shorts
 2026-10-31 publ PT34S          6     1    1 L-LpJLgUQII The vaccine harms fertility? #Shorts
-2026-10-30 publ PT9M58S       17     3    4 TmDZYGIkwtk You're Probably Washing Your Hands Wrong
+2026-10-30 publ PT9M58S       19     3    4 TmDZYGIkwtk You're Probably Washing Your Hands Wrong
 2026-10-30 publ PT35S         21     0    1 KWbXKxmGx5o Antibacterial Soap Is Better? #Shorts
 2026-10-30 publ PT32S         72     0    1 YxgSM0a7-c0 You're probably washing your hands wrong #Shorts
 2026-10-29 publ PT9M36S        9     1    1 8U3VR4SZVD0 Shingles: 5 Myths That Could Leave You in Pain
 2026-10-29 publ PT34S         50     1    1 l8cuy4LId5A Had chickenpox? Shingles could be next #Shorts
 2026-10-29 publ PT33S         26     1    1 MEm_YBy0gTc Once Means Never Again? #Shorts
-2026-10-28 publ PT9M33S       26     0    2 Ww74ahobgq8 UTI Symptoms: When to See a Doctor
+2026-10-28 publ PT9M33S       27     0    2 Ww74ahobgq8 UTI Symptoms: When to See a Doctor
 2026-10-28 publ PT35S         13     0    1 jKCQQJaeKlQ Urinary tract infections: Cranberry juice... #Shorts
 2026-10-28 publ PT31S         53     0    1 5Rs-OsLzFP8 Does cranberry juice cure a UTI? #Shorts
 2026-10-27 publ PT9M54S       24     2    1 rotoo0t2KJU Naloxone: The Nasal Spray That Stops an Overdose
@@ -51,7 +57,7 @@ date       priv dur        views likes comm id          title
 2026-10-25 publ PT10M3S        9     2    1 PcF6ztyMfjU Cold Can Kill: Hypothermia Signs Most People Miss
 2026-10-24 publ PT9M49S       18     2    1 O1dW60-m5a0 Someone Is Choking: What to Do in the First Minute
 2026-10-24 publ PT38S         71     1    1 mn9M4Io2KxA Someone is choking? Do this now #Shorts
-2026-10-24 publ PT38S         71     1    1 mn9M4Io2KxA Someone is choking? Do this now #Shorts
+2026-10-24 publ PT31S         36     2    1 K8W5uRDf95Y Myth or fact: Give water to someone choking? #Shorts
 2026-10-23 publ PT57S          8     2    1 nEIE1-1fo60 Can you prevent a second stroke? #Shorts
 2026-10-23 publ PT56S         17     3    3 rOOetBpgvZk Does stroke recovery stop after six months? #Shorts
 2026-10-23 publ PT10M13S      16     1    1 QxaO4KhkHII Life After a Stroke: How Recovery Really Works
@@ -77,7 +83,7 @@ date       priv dur        views likes comm id          title
 2026-10-15 publ PT9M24S        9     2    1 42CvOXqrJDw Colon Cancer Screening Starts at 45: 5 Myths Busted
 2026-10-15 publ PT35S         12     2    1 L2K-BAK3bHI Myth or fact: The test is very painful? #Shorts
 2026-10-15 publ PT34S         12     2    1 VBtUeVik9xM Colon cancer screening starts at 45 now #Shorts
-2026-10-14 publ PT9M35S       22     3    1 jNmAsvC6-1A Going to the Hospital? 6 Questions to Ask First
+2026-10-14 publ PT9M35S       23     3    1 jNmAsvC6-1A Going to the Hospital? 6 Questions to Ask First
 2026-10-14 publ PT34S         18     2    1 RPJEJeWA7n0 Report Changes Fast: don't ignore these #Shorts
 2026-10-14 publ PT31S         29     3    1 8jJXfm-VugY Staying overnight? Ask this at the hospital #Shorts
 2026-10-13 publ PT9M31S       48     5    1 B8kEqFsTjXQ Anaphylaxis: Signs of a Severe Allergic Reaction
@@ -105,7 +111,7 @@ date       priv dur        views likes comm id          title
 2026-10-05 publ PT2M51S      140     6    1 selS9_QfgJE Dehydration Warning Signs in Kids and Older Adults
 2026-10-04 publ PT42S        373     5    1 xx7SmrWj7Jg Hands-Only CPR in 2 Steps: This Could Save a Life
 2026-10-03 publ PT3M          22     4    1 qtgvwLYchD8 5 Flu Shot Myths You Probably Still Believe
-2026-10-03 publ PT30S        993    13    1 zqbaxNdWzv0 Can the flu shot give you the flu? #Shorts
+2026-10-03 publ PT30S        994    13    1 zqbaxNdWzv0 Can the flu shot give you the flu? #Shorts
 2026-10-02 publ PT3M12S       23     3    3 SBCDPO_wfwc Why Antibiotics Won't Fix Your Cold or Flu
 2026-10-02 publ PT35S         24     4    3 sd59JuYdHBQ Why antibiotics won't cure your cold #Shorts
 2026-10-01 publ PT3M5S        52     2    1 MSMDnPoLhsk Your Blood Test Results Explained: CBC and Metabolic Panel
@@ -114,4 +120,4 @@ date       priv dur        views likes comm id          title
 2026-09-30 publ PT3M5S         6     2    1 SY8X5CDRW_U Type 2 Diabetes vs Prediabetes: What Your A1C Really Means
 2026-09-29 publ PT52S         25     4    1 _0rvT4bACUQ BE FAST: The Stroke Warning Signs You Can't Miss
 2026-09-28 publ PT4M          21     8    3 Jhis4mR0Rsg Heart Attack Signs in Women: 5 Myths That Cost Time
-2026-09-27 publ PT5M5S        56    22    1 eBLOQcBeKy8 Blood Pressure Numbers Explained (And How to Lower Yours)
+2026-09-27 publ PT5M5S        55    22    1 eBLOQcBeKy8 Blood Pressure Numbers Explained (And How to Lower Yours)
