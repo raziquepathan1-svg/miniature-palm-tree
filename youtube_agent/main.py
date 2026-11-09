@@ -614,10 +614,32 @@ def upload_second_short(plan, video_id: str, video_cfg: dict, config: dict, chan
     from . import growth
 
     narration = scene.narration.replace(growth.LAST_MID or "\0", "").strip()
-    body = scene.model_copy(update={"narration": narration + " Watch the full video on the Health Support "
-                                    "Studio channel, and subscribe for a new health tip every day."})
+    body = scene.model_copy(update={"narration": narration})
+    # Owner, Nov 9: viewers watch Shorts but do not click or subscribe -> end on an open question that only the
+    # full video answers (another myth/warning page KEPT in it), plus a concrete reason to subscribe.
+    others = [s for s in middle if s is not scene and s.heading not in USED_SHORT_PAGES]
+    nxt = (next((s for s in others if s.layout == "myth_fact" and s.points), None)
+           or next((s for s in others if s.layout == "warning"), None))
+    why_sub = "And subscribe for one quick health fact a day that could protect someone you love."
+    if nxt is not None and nxt.layout == "myth_fact":
+        teaser_myth = nxt.points[0].rstrip(".?!")
+        teaser = (f"Now, one more: {lower_first(teaser_myth)}. True or false? The answer is in the full video. "
+                  f"Tap the link above the title. {why_sub}")
+        end_head, end_point = "True or False?", "Answer in the full video"
+        link_line = f'▶️ True or false: "{teaser_myth}"? The answer is in the full video'
+    elif nxt is not None:
+        teaser = (f"The full video also shows the warning signs that mean you need help fast. "
+                  f"Tap the link above the title. {why_sub}")
+        end_head, end_point = "Full Video", "Warning signs inside"
+        link_line = "▶️ The warning signs that mean you need help fast are in the full video"
+    else:
+        teaser = f"There's more in the full video. Tap the link above the title. {why_sub}"
+        end_head, end_point, link_line = "Full Video", "Link above the title", "▶️ Watch the full video"
+    end_scene = Scene(layout="title", heading=end_head, points=[end_point], footage_query=scene.footage_query,
+                      narration=teaser)
     print(f"    Making Short {slot}: {title}")
-    raw = visuals.build_video(SimpleNamespace(scenes=visuals.split_for_shorts([hook_scene, body], plan.topic),
+    raw = visuals.build_video(SimpleNamespace(scenes=visuals.split_for_shorts([hook_scene, body, end_scene],
+                                                                              plan.topic),
                                               short_scenes=[], topic=plan.topic),
                               _shorts_cfg(video_cfg), config.get("voice", {}), channel_name,
                               workdir / f"short{slot}_build")
@@ -632,7 +654,7 @@ def upload_second_short(plan, video_id: str, video_cfg: dict, config: dict, chan
         t = dt.datetime.fromisoformat(yt["publish_at"].replace("Z", "+00:00")) + dt.timedelta(hours=float(delay))
         short_yt["publish_at"] = t.strftime("%Y-%m-%dT%H:%M:%SZ")
     tags = " ".join(w for w in plan.short_caption.split() if w.startswith("#"))
-    desc = f"{hook}\n\n▶️ Watch the full video: https://youtu.be/{video_id}\n\n{tags}\n\n{footer}".strip()
+    desc = f"{hook}\n\n{link_line}: https://youtu.be/{video_id}\n\n{tags}\n\n{footer}".strip()
     print(f"    Uploading Short {slot}...")
     short_id = uploader.upload_video(raw, None, title, desc, plan.tags + ["shorts"], short_yt,
                                      config["channel"].get("language_code", "en-US"))

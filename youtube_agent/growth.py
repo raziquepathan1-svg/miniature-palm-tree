@@ -18,7 +18,8 @@ MID_LINES = [  # owner Oct 30: give a reason to subscribe, not only the ask
     "This is part {n} of our {total} part {series} series. If you want one clear health tip every day that you "
     "can actually use, subscribe now, then let's keep going.",
 ]
-SHORT_LINE = "Subscribe for one simple health tip every day, one could help someone you love."
+SHORT_LINE = ("Tap the link above the title for the full answer. And subscribe for one quick health fact a day "
+              "that could protect someone you love.")
 LAST_MID: str | None = None  # the line added mid-video (left out of the second Short)
 LAST_EP = None  # today's series episode (set by main)
 PART_IN_TITLE = False  # set from config growth.part_in_title
