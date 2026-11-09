@@ -22,7 +22,7 @@ date       priv dur        views likes comm id          title
 2026-11-04 publ PT31S        281     1    1 jXEwXiZXy7k Does cracking your knuckles cause arthritis? #Shorts
 2026-11-04 publ PT28S          0     1    1 mROzGgCfsrA Can the weather really make your joints hurt? #Shorts
 2026-11-04 publ PT24S         15     0    1 DNTPkA_ARoU Can the flu shot give you the flu? #Shorts
-2026-11-03 publ PT4M27S       90     1    2 i3Vnq2Ie-XE How to Tell Flu, COVID and a Cold Apart
+2026-11-03 publ PT4M27S       91     1    2 i3Vnq2Ie-XE How to Tell Flu, COVID and a Cold Apart
 2026-11-03 publ PT34S         16     0    1 ogwFVlUCZe8 Can Ebola spread before symptoms? #Shorts
 2026-11-03 publ PT33S          8     0    1 90_4YWiia8Q Is it too late for a flu shot? #Shorts
 2026-11-03 publ PT26S          7     0    1 tIYp_7Nboy4 Flu season started. Is a flu shot still worth it? #Shorts
