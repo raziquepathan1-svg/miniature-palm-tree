@@ -1343,5 +1343,22 @@
       "HealthEducation"
     ],
     "publish_at": "2026-11-08T16:00:00Z"
+  },
+  {
+    "date": "2026-11-09T09:43:22",
+    "topic": "Iron deficiency anemia: signs, causes and what helps",
+    "requested_topic": "Iron deficiency anemia: signs, causes and what helps",
+    "title": "Always Tired? Signs of Low Iron You Shouldn't Ignore",
+    "style": "Explainer",
+    "script_file": "027-iron-deficiency-anemia.yaml",
+    "series": "Healthy Habits",
+    "episode": 1,
+    "planned_publish_at": "2026-11-09T16:00:00Z",
+    "awaiting_approval": true,
+    "youtube_id": "rZVxKypwS-Y",
+    "short_youtube_id": "BvRV8dI9XR0",
+    "short2_youtube_id": "7IuLzeEE1OQ",
+    "short3_youtube_id": "9smVdZiPNgw",
+    "preview": "previews/rZVxKypwS-Y.mp4"
   }
 ]
