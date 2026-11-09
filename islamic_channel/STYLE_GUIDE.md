@@ -77,9 +77,10 @@ Finished videos go in `upload_queue/<date>-<name>/` (video.mp4, meta.json, optio
 uploaded scheduled by the "Islamic channel - upload videos" workflow. One-time login: `SETUP.md`.
 
 ## Family characters (added 5 Nov 2026; make a reference picture of each before using them)
+Owner's rule (9 Nov 2026): Ammi always in full, loose Islamic dress (khimar over chest + loose abaya); nothing fitted, chest never shown or shaped. Never change her clothes between clips.
 Copy unchanged into prompts, like Ali and Dadu:
 ```
-AMMI: kind young mother, 3D Pixar style, warm brown eyes, gentle smile, soft light-blue hijab fully covering her hair, long modest cream kameez with light-blue dupatta.
+AMMI: kind young mother, 3D Pixar style, warm brown eyes, gentle smile, wearing a long light-blue khimar (Islamic head covering) that covers all her hair, neck and chest and falls loosely down to her waist, over a loose, plain, long navy-blue abaya with long sleeves down to her wrists and length down to her ankles; the dress is wide and loose, not fitted, no body shape visible, only her face and hands are visible.
 ABBU: friendly father in his thirties, 3D Pixar style, short neat black beard, short black hair, plain light-grey kurta, white prayer cap only when going to the masjid.
 ZARA: Ali's little sister, cute 4-year-old girl, 3D Pixar style, big round brown eyes, chubby rosy cheeks, small pink scarf loosely over her black hair, pink frock with white shalwar.
 ```
