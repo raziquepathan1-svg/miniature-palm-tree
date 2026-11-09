@@ -1,0 +1,12 @@
+[
+ {"id":"hook","text":"Your brain weighs only about three pounds. Yet it uses roughly one fifth of all the energy your body makes. What is inside this soft organ, and how is it built?"},
+ {"id":"overview","text":"The brain has three main parts: the cerebrum, the cerebellum, and the brainstem. Think of them as the boss, the coordinator, and the power cable. All three sit safely inside your skull."},
+ {"id":"cerebrum","text":"The cerebrum is the biggest part. Its wrinkled outer layer is called the cortex. The folds pack a huge surface into a small skull. Gray matter holds the nerve cell bodies. White matter holds the cables between them."},
+ {"id":"lobes1","text":"Each side of the cerebrum has four lobes. The frontal lobe sits at the front. It plans, decides, and controls movement. Just behind it, the parietal lobe handles touch and your sense of where your body is in space."},
+ {"id":"lobes2","text":"The temporal lobe sits by your temples. It handles hearing, language, and memory. The occipital lobe sits at the back, and it processes vision. Exam tip: temporal means temple, and occipital means back."},
+ {"id":"hemispheres","text":"The cerebrum has a left half and a right half. A thick bridge of nerve fibers, the corpus callosum, connects them. Each half mostly controls the opposite side of the body. So the left brain moves your right hand."},
+ {"id":"cerebellum","text":"Under the back of the cerebrum sits the cerebellum, the little brain. It does not start movements. It fine tunes them, keeping your balance and making your actions smooth. It holds more than half of all your nerve cells."},
+ {"id":"brainstem","text":"The brainstem links the brain to the spinal cord. It has three parts: the midbrain, the pons, and the medulla. It runs the jobs you never think about, like breathing, heart rate, and swallowing."},
+ {"id":"deep","text":"Deep inside are small but powerful structures. The thalamus relays incoming senses. The hypothalamus controls temperature, hunger, and thirst. The hippocampus helps form new memories. And the amygdala handles fear and strong emotions."},
+ {"id":"protect","text":"Your brain is soft, so it has layers of protection. First the skull. Then three membranes called meninges. And finally cerebrospinal fluid, a clear liquid that cushions the brain like a water bag. Remember three things: three parts, four lobes, and layers of protection. Next time, how do brain cells talk to each other?"}
+]
