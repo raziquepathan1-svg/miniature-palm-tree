@@ -288,3 +288,18 @@ plan:
       footage_query: "man walking outdoors"
       narration: >-
         Learn more about back pain in our full video, on the Health Support Studio YouTube channel.
+story:  # owner Nov 9: movie-style suspense (a clearly hypothetical case, resolved only with facts from this video)
+  open: >-
+    Picture Omar. He lifts a heavy box, feels a sharp pull in his lower back, and does what he was always told: lie in
+    bed until it heals. Three days later, it feels worse. Stay with me, because by the end you will know what he should
+    have done, and the three warning signs that would have meant going to the ER instead.
+  twist: >-
+    Remember Omar and his three days in bed? That rest was part of the problem. Bed rest for more than a day or two can
+    make the muscles stiff and weak.
+  end: >-
+    So what should Omar have done? Kept moving gently, with short walks, a heating pad, and a pain reliever if it is safe
+    for him, while watching for the red flags. Most back pain like his gets better within a few weeks.
+  short_cliff: >-
+    And there is one test many people ask for that usually does not help at all. Which one?
+  reel_answer: >-
+    Here is the answer: an x ray or MRI. For most new back pain without red flags, a scan is not needed in the first six weeks.

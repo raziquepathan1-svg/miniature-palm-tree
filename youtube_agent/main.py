@@ -265,6 +265,9 @@ def make_one_video(config: dict, history: list[dict], topic: str | None, dry_run
     growth.LAST_MID = growth.apply(plan, episode, len(history),
                                    bridge=(packaging.LAST or {}).get("bridge") or None,
                                    subscribe_after=int(gcfg.get("subscribe_after_words", 100)))
+    if gcfg.get("suspense", True) and video_cfg.get("format") != "shorts":  # owner, Nov 9: movie-style suspense
+        from . import suspense
+        suspense.apply(plan, bank_data.get("story"))
     packaging.finish_description(plan)
     growth.LAST_EP = episode
     if episode:
@@ -613,7 +616,9 @@ def upload_second_short(plan, video_id: str, video_cfg: dict, config: dict, chan
                        points=[topic[:40]], footage_query=scene.footage_query, narration=hook)
     from . import growth
 
-    narration = scene.narration.replace(growth.LAST_MID or "\0", "").strip()
+    from . import suspense
+
+    narration = suspense.strip(scene.narration.replace(growth.LAST_MID or "\0", ""))
     body = scene.model_copy(update={"narration": narration})
     # Owner, Nov 9: viewers watch Shorts but do not click or subscribe -> end on an open question that only the
     # full video answers (another myth/warning page KEPT in it), plus a concrete reason to subscribe.

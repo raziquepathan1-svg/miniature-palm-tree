@@ -161,7 +161,9 @@ def native_reel(scenes: list, follow: str = REEL_FOLLOW) -> list:
     sending them to YouTube (Instagram and Facebook show posts that send people away to fewer people)."""
     *body, last = scenes
     kept = [x for x in re.split(r"(?<=[.!?])\s+", last.narration.strip()) if x and not _OFF_PLATFORM.search(x)]
-    update = {"narration": " ".join(kept + [follow])}
+    from . import suspense  # owner Nov 9: the Reel keeps the cliffhanger and then reveals it (no YouTube link there)
+    answer = [suspense.REEL_ANSWER] if suspense.REEL_ANSWER else []
+    update = {"narration": " ".join(kept + answer + [follow])}
     if last.layout == "outro":
         update.update(heading="Follow for more", points=["One simple health tip every day"])
     return body + [last.model_copy(update=update)]
