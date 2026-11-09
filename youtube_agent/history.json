@@ -1356,10 +1356,12 @@
     "episode": 1,
     "planned_publish_at": "2026-11-09T16:00:00Z",
     "awaiting_approval": true,
-    "youtube_id": "rZVxKypwS-Y",
+    "youtube_id": "Y76Da40x2so",
     "short_youtube_id": "BvRV8dI9XR0",
     "short2_youtube_id": "7IuLzeEE1OQ",
     "short3_youtube_id": "9smVdZiPNgw",
-    "preview": "previews/rZVxKypwS-Y.mp4"
+    "replaced_ids": [
+      "rZVxKypwS-Y"
+    ]
   }
 ]
