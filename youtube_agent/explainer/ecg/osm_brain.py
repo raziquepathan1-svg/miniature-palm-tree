@@ -200,8 +200,14 @@ def build():
         return [panel(p[0] - w / 2, p[1] - 33, p[0] + w / 2, p[1] + 33, col, t), text(name, p[0], p[1] + 12, 36, tcol, t + 0.1, "c")]
 
     # ---------------- HOOK (A)
-    s = sc["hook"]
+    s = sc["story"]
     br = pop(brain, 520, 560, h=800, t=0.3)
+    rod = lead([br.map((560, 400)), br.map((470, 150)), br.map((420, -70))], s.t("iron"), (120, 80, 50), 26, 0.7)
+    st = [rod, text("1848", 1400, 215, 180, GOLD_T, s.t("1848"), "c"), text("iron rod through his skull", 1400, 380, 66, RED_T, s.t("iron"), "c"),
+          text("HE SURVIVED", 1400, 530, 100, GREEN_T, s.t("survived"), "c"), text("but was never the same", 1400, 650, 70, MAROON, s.t("never"), "c"),
+          text("why? let's look inside the brain", 1400, 830, 62, BLUE_T, s.t("understand"), "c")]
+    s = sc["hook"]
+    bd.erase(s.start + 0.8, st)
     tt, tf = s.t("three"), s.t("fifth")
     hk = [br, panel(1000, 140, 1800, 400, PINK, tt - 0.3), text("about 3 pounds", 1400, 262, 72, RED_T, tt, "c"),
           text("(about 1.4 kg)", 1400, 345, 40, MAROON, tt + 0.6, "c"),
@@ -254,10 +260,10 @@ def build():
     lb = [bl, text("4 lobes on each side", 520, Y + 100, 56, MAROON, s.t("four") - 0.3, "c")]
     tf_, tp_ = s.t("frontal"), s.t("parietal")
     lb += [pop(OV["frontal"], 520, Y + 560, h=800, t=tf_ - 0.2)] + chip("frontal", bl.map((440, 160)), PINK, RED_T, tf_)
-    lb += [panel(1000, Y + 150, 1840, Y + 340, PINK, tf_ - 0.2), text("frontal lobe", 1030, Y + 225, 58, RED_T, tf_),
-           text("plans, decides, moves", 1030, Y + 295, 42, MAROON, s.t("plans"))]
+    lb += [panel(1000, Y + 150, 1840, Y + 355, PINK, tf_ - 0.2), text("frontal lobe", 1030, Y + 206, 58, RED_T, tf_),
+           text("plans, decides, moves", 1030, Y + 277, 42, MAROON, s.t("plans")), text("the part Phineas Gage damaged", 1030, Y + 332, 34, PURPLE, s.t("phineas"))]
     lb += [pop(OV["parietal"], 520, Y + 560, h=800, t=tp_ - 0.2)] + chip("parietal", bl.map((225, 110)), CREAM, GOLD_T, tp_)
-    lb += [panel(1000, Y + 370, 1840, Y + 560, CREAM, tp_ - 0.2), text("parietal lobe", 1030, Y + 445, 58, GOLD_T, tp_),
+    lb += [panel(1000, Y + 375, 1840, Y + 565, CREAM, tp_ - 0.2), text("parietal lobe", 1030, Y + 445, 58, GOLD_T, tp_),
            text("touch + where your body is", 1030, Y + 515, 42, MAROON, s.t("touch"))]
     s2 = sc["lobes2"]
     tt_, to_ = s2.t("temporal"), s2.t("occipital")
@@ -342,8 +348,10 @@ def build():
              ("hippocampus", "forms new memories", (223, 404), LILAC, PURPLE, 610), ("amygdala", "fear + strong emotions", (361, 416), MINT, GREEN_T, 800)]
     for nm, fn, pt, col, tcol, yy in items:
         tn_ = s.t(nm)
-        de += [panel(X + 1030, yy - 60, X + 1860, yy + 95, col, tn_ - 0.3), text(nm, X + 1060, yy + 5, 56, tcol, tn_), text(fn, X + 1060, yy + 68, 40, MAROON, tn_ + 0.6),
+        de += [panel(X + 1030, yy - 60, X + 1860, yy + (125 if nm == "hippocampus" else 95), col, tn_ - 0.3), text(nm, X + 1060, yy + (-5 if nm == "hippocampus" else 5), 56, tcol, tn_), text(fn, X + 1060, yy + (55 if nm == "hippocampus" else 68), 40, MAROON, tn_ + 0.6),
                L((X + 1025, yy + 20), dp.map(pt), tn_ + 0.2, tcol)]
+        if nm == "hippocampus":
+            de.append(text("lose it = no new memories", X + 1060, yy + 118, 28, PURPLE, s.t("lose"), "l"))
     # ---------------- PROTECTION + SUMMARY (C, then F)
     s = sc["protect"]
     cam(s.start, *C, 1.0, 1.0)
