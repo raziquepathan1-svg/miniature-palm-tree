@@ -1,18 +1,18 @@
-CHANNEL Healthsupport Studio: subscribers=57 views=4820 videos=118
+CHANNEL Healthsupport Studio: subscribers=57 views=4820 videos=119
 date       priv dur        views likes comm id          title
 2026-11-09 publ PT29S          3     0    1 o4bK2Q6Wnc8 Feed a Cold, Starve a Fever? #Shorts
+2026-11-09 publ PT28S          1     0    0 AsszlZVDAVM Dirty Skin Causes Acne? #Shorts
+2026-11-09 priv PT5M45S        0     0    0 rZVxKypwS-Y Always Tired? Signs of Low Iron You Shouldn't Ignore
+2026-11-09 priv PT29S          0     0    0 BvRV8dI9XR0 Craving ice? It could be low iron #Shorts
 2026-11-08 publ PT5M52S        2     0    2 szIou_GtYnc Does Cold Weather Give You a Cold?
 2026-11-08 publ PT32S         44     0    1 67QKd9nADVw Can cold weather give you a cold? #Shorts
 2026-11-08 publ PT26S          9     0    1 cu4iKU4UEQg Cold myths: Chicken Soup Helps? #Shorts
-2026-11-08 priv PT5M57S        0     0    0 guJ9H1hBSJQ Do You Need Sunscreen on a Cloudy Day?
-2026-11-08 priv PT5M52S        0     0    0 iLljy8EU-pM Does Cold Weather Give You a Cold?
 2026-11-07 publ PT5M57S        4     0    1 i4CveA90e7g Do You Need Sunscreen on a Cloudy Day?
 2026-11-07 publ PT33S          6     0    1 upFyPC0H14c Chocolate Causes Acne? #Shorts
 2026-11-07 publ PT32S         28     0    1 PCS5wvDhFno Do you need sunscreen on a cloudy day? #Shorts
 2026-11-07 publ PT31S         16     0    1 8NaLPu_qwIc Does reading in the dark ruin your eyes? #Shorts
 2026-11-07 publ PT29S         72     0    1 esFVdhVYaJ8 Do you need an eye exam if you see fine? #Shorts
 2026-11-07 publ PT28S          4     0    1 z9n2OP6WgA4 Can your eyes get stuck if you cross them? #Shorts
-2026-11-07 priv PT28S          0     0    0 AsszlZVDAVM Dirty Skin Causes Acne? #Shorts
 2026-11-06 publ PT6M22S        6     1    1 41PSa3dadbw Does Reading in the Dark Ruin Your Eyes?
 2026-11-06 publ PT25S        106     2    1 CzRTNHkXHHk Does drinking more water flush out toxins? #Shorts
 2026-11-05 publ PT5M44S        8     0    2 Hm_iZPr6trE Do You Really Need 8 Glasses of Water a Day?
@@ -29,7 +29,7 @@ date       priv dur        views likes comm id          title
 2026-11-02 publ PT4M48S      153     5    5 3y85NO90t2k Ebola 2026: How It Really Spreads
 2026-11-02 publ PT33S         46     0    1 OkkgwuZC8RA Can Ebola spread through the air? #Shorts
 2026-11-02 publ PT31S         28     2    1 A9wz6sWn17M Can you survive Ebola? #Shorts
-2026-11-01 publ PT6M6S        28     4    2 I9ZAW7lmnXA Pneumonia Signs Most People Miss
+2026-11-01 publ PT6M6S        29     4    2 I9ZAW7lmnXA Pneumonia Signs Most People Miss
 2026-11-01 publ PT35S         43     2    1 DBJyrfIpzFo Cold or pneumonia? 4 signs to watch for #Shorts
 2026-11-01 publ PT35S         34     2    1 R1zoxWxOCNk Does pneumonia always need antibiotics? #Shorts
 2026-10-31 publ PT5M50S        7     3    2 7zoyfg3xtkA HPV Vaccine: 7 Myths Parents Get Wrong
@@ -54,7 +54,7 @@ date       priv dur        views likes comm id          title
 2026-10-26 publ PT32S          5     1    1 XvQ9bttgwJc Myth or fact: A cracked window is enough? #Shorts
 2026-10-26 publ PT10M11S       8     1    2 U0Hu-5sg2sg Carbon Monoxide: The Silent Killer in Your Home
 2026-10-25 publ PT35S         24     2    1 ZGCixh_X4x0 Signs of hypothermia most people miss #Shorts
-2026-10-25 publ PT10M3S        9     2    1 PcF6ztyMfjU Cold Can Kill: Hypothermia Signs Most People Miss
+2026-10-25 publ PT10M3S       10     2    1 PcF6ztyMfjU Cold Can Kill: Hypothermia Signs Most People Miss
 2026-10-24 publ PT9M49S       18     2    1 O1dW60-m5a0 Someone Is Choking: What to Do in the First Minute
 2026-10-24 publ PT38S         71     1    1 mn9M4Io2KxA Someone is choking? Do this now #Shorts
 2026-10-24 publ PT31S         36     2    1 K8W5uRDf95Y Myth or fact: Give water to someone choking? #Shorts
