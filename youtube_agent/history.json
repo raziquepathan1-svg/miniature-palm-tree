@@ -1417,8 +1417,6 @@
     "short_youtube_id": "29-46pnLEH8",
     "short2_youtube_id": "5tTOj1g2-No",
     "preview": "previews/QXcgG4JNqU0.mp4",
-    "held_short3_youtube_id": "VaU00YoHJA4",
-    "held_reason": "CBD/hemp bottles at the end - owner to delete",
     "pin_question": "Do you know if you've had both doses of the MMR vaccine? Where would you even find your vaccine records?",
     "packages": [
       {
@@ -1460,6 +1458,7 @@
       "HealthNews",
       "HealthTips"
     ],
-    "publish_at": "2026-11-10T16:00:00Z"
+    "publish_at": "2026-11-10T16:00:00Z",
+    "deleted_short3_youtube_id": "VaU00YoHJA4"
   }
 ]
