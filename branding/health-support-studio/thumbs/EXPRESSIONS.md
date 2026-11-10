@@ -41,3 +41,4 @@ no default smile, the host never holds an object, face must match the avatar.
   - AFib 037: #5 "Wait!" raised finger
   - low blood sugar 049: #10 looking sideways, worried
   - anxiety 046 (added Nov 10): #3-style worried eyes to camera, hand at the back of his neck (no cough)
+  - diabetes 083 (added Nov 10): #8 leaning close, wide eyes
