@@ -92,3 +92,7 @@ ZARA: Ali's little sister, cute 4-year-old girl, 3D Pixar style, big round brown
 - Every week: the week's reels joined into one wide 16:9 video (intro card, "Kahani 1/2/3" cards, outro),
   vertical reels placed on a soft blurred background; the description lists every story's source.
 - Every month: a 30+ minute compilation of all the month's stories.
+
+## Owner's rule (10 Nov 2026): no approval step
+When the owner's clips arrive, make the reel and upload it straight away (next free 5 PM India slot);
+send the owner the finished video and the link, don't ask "upload?" first.
