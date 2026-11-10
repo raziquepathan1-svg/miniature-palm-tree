@@ -40,3 +40,4 @@ no default smile, the host never holds an object, face must match the avatar.
   - heart failure 036: #2 hand on chest
   - AFib 037: #5 "Wait!" raised finger
   - low blood sugar 049: #10 looking sideways, worried
+  - anxiety 046 (added Nov 10): #3-style worried eyes to camera, hand at the back of his neck (no cough)

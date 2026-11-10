@@ -85,7 +85,7 @@ growth:
           "051-choking-first-aid.yaml", "063-hypothermia-frostbite-signs.yaml", "056-carbon-monoxide-signs.yaml",
           "059-naloxone-opioid-overdose.yaml", "052-blood-clots-dvt-signs.yaml"]
   # Owner, Nov 1: current health problems first (stand-alone videos, before the next series video)
-  now: ["065-measles-myths.yaml", "067-rsv-questions.yaml"]  # Nov 9: measles 5,000+ US cases (most since 1991), RSV season
+  now: ["065-measles-myths.yaml", "067-rsv-questions.yaml", "046-anxiety-explained.yaml", "041-acid-reflux-questions.yaml", "026-thyroid-questions.yaml", "049-low-blood-sugar-signs.yaml"]  # Nov 10: news first, then the most-searched questions (anxiety, stomach pain/heartburn, "why am I so tired", diabetes/blood sugar)
   part_in_title: false         # owner Oct 30: no "(Part n/5)" in titles; the series stays in playlists and the description
   series:
     "Heart & Blood Pressure": "Know Your Numbers"
