@@ -1275,7 +1275,8 @@
       "SkinHealth",
       "HealthMyths",
       "HealthTips"
-    ]
+    ],
+    "owner_kept_short2": "Nov 10: owner chose to keep it public; do not flag again"
   },
   {
     "date": "2026-11-07T12:23:20",
@@ -1293,7 +1294,8 @@
     "short3_youtube_id": "AsszlZVDAVM",
     "preview": "previews/i4CveA90e7g.mp4",
     "publish_at": "2026-11-07T16:00:00Z",
-    "went_public_unchecked": true
+    "went_public_unchecked": true,
+    "owner_kept_short2": "Nov 10: owner chose to keep it public; do not flag again"
   },
   {
     "date": "2026-11-08T09:34:22",
