@@ -1409,7 +1409,7 @@
     "date": "2026-11-10T09:20:44",
     "topic": "Measles: myths vs facts and the MMR vaccine",
     "requested_topic": "Measles: myths vs facts and the MMR vaccine",
-    "title": "Measles Is Back: 5 Myths That Put Kids at Risk",
+    "title": "Measles 2026: Why It's Back and What to Know",
     "style": "Myth vs Fact",
     "script_file": "065-measles-myths.yaml",
     "planned_publish_at": "2026-11-10T16:00:00Z",
@@ -1419,6 +1419,47 @@
     "short2_youtube_id": "5tTOj1g2-No",
     "preview": "previews/QXcgG4JNqU0.mp4",
     "held_short3_youtube_id": "VaU00YoHJA4",
-    "held_reason": "CBD/hemp bottles at the end - owner to delete"
+    "held_reason": "CBD/hemp bottles at the end - owner to delete",
+    "pin_question": "Do you know if you've had both doses of the MMR vaccine? Where would you even find your vaccine records?",
+    "packages": [
+      {
+        "title": "Measles 2026: Why It's Back and What to Know",
+        "thumbnail_text": "5,000+ CASES",
+        "thumbnail_highlight": "5,000+"
+      },
+      {
+        "title": "Measles Is Back: 5 Myths That Put Kids at Risk",
+        "thumbnail_text": "ARE YOU SAFE?",
+        "thumbnail_highlight": "SAFE?"
+      },
+      {
+        "title": "Measles Symptoms: The Rash and Warning Signs",
+        "thumbnail_text": "CALL FIRST",
+        "thumbnail_highlight": "FIRST"
+      },
+      {
+        "title": "Is Measles Dangerous for Adults Too?",
+        "thumbnail_text": "NOT JUST KIDS",
+        "thumbnail_highlight": "KIDS"
+      },
+      {
+        "title": "Does the MMR Vaccine Cause Autism?",
+        "thumbnail_text": "NO LINK",
+        "thumbnail_highlight": "LINK"
+      }
+    ],
+    "chosen": {
+      "title": "Measles 2026: Why It's Back and What to Know",
+      "thumbnail_text": "5,000+ CASES",
+      "thumbnail_highlight": "5,000+"
+    },
+    "social_keywords": "measles 2026 · measles symptoms · measles rash · MMR vaccine facts · measles outbreak",
+    "social_hashtags": [
+      "Measles",
+      "MeaslesOutbreak",
+      "MMR",
+      "HealthNews",
+      "HealthTips"
+    ]
   }
 ]
