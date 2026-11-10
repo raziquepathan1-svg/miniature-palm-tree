@@ -32,6 +32,16 @@ def main() -> None:
     youtube = build("youtube", "v3", credentials=_credentials(), cache_discovery=False)
     for job in pending:
         vid = job["youtube_id"]
+        if job.get("vertical") and job.get("image"):  # owner, Nov 10: Shorts get our own thumbnail too
+            thumb = visuals.make_short_thumbnail(job["text"], OUT / f"{vid}.jpg", HERE.parent / job["image"],
+                                                 highlight=job.get("highlight"))
+            try:
+                youtube.thumbnails().set(videoId=vid, media_body=MediaFileUpload(str(thumb))).execute()
+                job["done"] = True
+                print(f"Short thumbnail set: https://youtu.be/{vid}")
+            except Exception as e:
+                print(f"FAILED for {vid}: {e}")
+            continue
         if job.get("image"):  # a picture made for this video (Flow/Gemini): it already shows the host
             photo, host = HERE.parent / job["image"], None
         else:
