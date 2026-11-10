@@ -359,7 +359,10 @@ def _download(url: str, dest: Path) -> Path:
 UNSUITABLE = re.compile(
     r"kiss|romanc|romantic|intimate|intimacy|sensual|sexy|seduc|lingerie|bikini|swimsuit|swimwear|underwear|"
     r"naked|nude|topless|shirtless|lovers|making[- ]out|cuddl|flirt|date[- ]night|honeymoon|passion|erotic|"
-    r"bathtub|shower|in[- ]bed[- ]together|couple[- ]in[- ]bed|striptease|stripper|pole[- ]danc|nightclub|twerk|bra\b", re.I)
+    r"bathtub|shower|in[- ]bed[- ]together|couple[- ]in[- ]bed|striptease|stripper|pole[- ]danc|nightclub|twerk|bra\b|"
+    # owner: nothing suggesting alcohol or drugs (Nov 7: a bar/cocktail Short; Nov 10: CBD/hemp bottles in a Short)
+    r"\bcbd\b|hemp|cannabis|marijuana|\bweed\b|\bthc\b|vape|vaping|beer|wine|cocktail|alcohol|liquor|whisk|vodka|"
+    r"champagne|\bbar\b|\bpub\b|drunk|hangover", re.I)
 
 
 def _suitable(*texts) -> bool:
@@ -1182,6 +1185,48 @@ def _cover(img: Image.Image, W: int, H: int) -> Image.Image:
     img = img.resize((int(img.width * scale) + 1, int(img.height * scale) + 1), Image.LANCZOS)
     left, top = (img.width - W) // 2, (img.height - H) // 2
     return img.crop((left, top, left + W, top + H))
+
+
+def make_short_thumbnail(text: str, out: Path, picture: Path, highlight: str | None = None) -> Path:
+    """Owner, Nov 10 ("use thumbnail for shorts also"): a 1080x1920 Shorts thumbnail from the video's own picture -
+    the host side of the picture filling the frame, and 2-3 big words at the top (one highlighted)."""
+    W, H = 1080, 1920
+    band = 620  # the words sit in a navy band above the picture, so they never cover his face
+    src = Image.open(picture).convert("RGB")
+    ph = H - band
+    cw = min(src.width, int(src.height * W / ph))
+    cx = int(src.width * 0.72)  # our pictures put the host on the right half
+    x0 = max(0, min(src.width - cw, cx - cw // 2))
+    pic = src.crop((x0, 0, x0 + cw, src.height)).resize((W, ph), Image.LANCZOS)
+    img = Image.new("RGBA", (W, H), (*DARK, 255))
+    img.paste(pic, (0, band))
+    shade = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    sd = ImageDraw.Draw(shade)
+    for y in range(160):  # soft edge between the band and the picture
+        sd.line([(0, band + y), (W, band + y)], fill=(*DARK, int(255 * (1 - y / 160) ** 1.5)))
+    img = Image.alpha_composite(img, shade)
+    d = ImageDraw.Draw(img)
+    hl = (highlight or "").upper().strip(" ?!.,")
+    words = text.upper().split()
+    size, max_w = 190, W - 120
+    while size > 90:
+        f = font(size, 800)
+        lines = _wrap(d, " ".join(words), f, max_w)
+        if len(lines) <= 3 and all(d.textlength(l, font=f) <= max_w for l in lines):
+            break
+        size -= 8
+    y = max(60, (band + 60 - len(lines[:3]) * int(size * 1.08)) // 2)
+    for line in lines[:3]:
+        x = (W - d.textlength(line, font=f)) / 2
+        for word in line.split():
+            fill = YELLOW if hl and word.strip(" ?!.,") == hl else WHITE
+            d.text((x, y), word, font=f, fill=fill, stroke_width=max(7, size // 15), stroke_fill=(0, 0, 0))
+            x += d.textlength(word + " ", font=f)
+        y += int(size * 1.08)
+    d.rounded_rectangle(((W - 240) // 2, y + 20, (W + 240) // 2, y + 36), 8, fill=YELLOW)
+    out.parent.mkdir(parents=True, exist_ok=True)
+    img.convert("RGB").save(out, quality=90)
+    return out
 
 
 def make_thumbnail(text: str, channel_name: str, out: Path, background: Path | None = None,

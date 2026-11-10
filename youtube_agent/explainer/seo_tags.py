@@ -64,13 +64,20 @@ EP = {
  "copd": (["COPD", "Emphysema", "Chronic bronchitis"],
     ["copd", "what is copd", "emphysema", "chronic bronchitis", "copd symptoms", "smoking and lungs", "chronic obstructive pulmonary disease", "spirometry", "copd treatment", "indoor air pollution", "quit smoking", "lung disease"],
     ["#copd", "#lungs", "#quitsmoking"]),
+ "brain": (["Brain anatomy", "Parts of the brain", "Brain lobes explained"],
+    ["brain anatomy", "parts of the brain", "brain lobes", "frontal lobe", "parietal lobe", "temporal lobe", "occipital lobe", "cerebellum", "brainstem", "hippocampus", "thalamus", "amygdala", "meninges", "cerebrospinal fluid", "nervous system", "phineas gage"],
+    ["#brain", "#neuroscience", "#nervoussystem"]),
+ "neuron": (["How neurons work", "Action potential explained", "Synapse and neurotransmitters"],
+    ["how neurons work", "how brain cells talk", "neuron structure", "action potential", "synapse", "neurotransmitters", "dopamine", "serotonin", "acetylcholine", "myelin sheath", "dendrites and axon", "nerve signal", "reflex arc", "nervous system"],
+    ["#neurons", "#neuroscience", "#nervoussystem"]),
 }
 
 
 def tags_for(eid, short=False):
     kw, tags, _ = EP[eid]
     out, seen = [], set()
-    for t in tags + (["shorts", "anatomy shorts"] if short else []) + BASE:
+    base = [b for b in BASE if not (eid in ("brain", "neuron") and b == "cardiovascular system")]
+    for t in tags + (["shorts", "anatomy shorts"] if short else []) + base:
         if t.lower() not in seen and sum(len(x) + 3 for x in out) + len(t) + 3 <= 480:
             out.append(t); seen.add(t.lower())
     return out

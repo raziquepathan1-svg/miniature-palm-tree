@@ -27,3 +27,18 @@ no default smile, the host never holds an object, face must match the avatar.
 - skin/sun myths 079 (prompt given Nov 5): #10 looking sideways at the glowing object, worried
 - cold myths 080 (prompt given Nov 8): #9 finger on lips ("shh")
 - skin/sun myths 079 redo (prompt given Nov 9): #6 arms crossed, one eyebrow up
+- Nov 10 batch (prompts given; owner uploads as uploads/<number>.jpg -> thumbs/pending-<script>.jpg):
+  - iron 027 (Y76Da40x2so): #4 hand on forehead, eyes closed
+  - measles 065: #5 "Wait!" raised finger
+  - RSV 067: #10 looking sideways, worried
+  - insomnia 071: #1 pointing at the text side
+  - back pain 042: #6 arms crossed, one eyebrow up
+  - acid reflux 041: #2 hand on chest, pained
+  - migraine 045: #4 hand on forehead
+  - kidney 022: #8 leaning close, wide eyes
+  - thyroid 026: #7 palms up, confused shrug
+  - heart failure 036: #2 hand on chest
+  - AFib 037: #5 "Wait!" raised finger
+  - low blood sugar 049: #10 looking sideways, worried
+  - anxiety 046 (added Nov 10): #3-style worried eyes to camera, hand at the back of his neck (no cough)
+  - diabetes 083 (added Nov 10): #8 leaning close, wide eyes

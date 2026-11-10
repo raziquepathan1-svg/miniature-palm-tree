@@ -1,0 +1,224 @@
+queue_topic: "Diabetes symptoms: early warning signs, tests and what to do"
+style: "Warning Signs"
+short2_hook: "Think you would know if you had diabetes? About 1 in 5 people with it don't."
+short2_title: "Would you know if you had diabetes?"
+sources:
+  - "CDC, Symptoms of Diabetes: https://www.cdc.gov/diabetes/signs-symptoms/index.html"
+  - "CDC, Diabetic Ketoacidosis: https://www.cdc.gov/diabetes/about/diabetic-ketoacidosis.html"
+  - "CDC, Prediabetes: Could It Be You?: https://www.cdc.gov/diabetes/communication-resources/prediabetes-statistics.html"
+  - "NIDDK, Diabetes Tests and Diagnosis: https://www.niddk.nih.gov/health-information/diabetes/overview/tests-diagnosis"
+  - "CDC, Diabetes and Nerve Damage: https://www.cdc.gov/diabetes/diabetes-complications/diabetes-and-nerve-damage.html"
+  - "NIDDK, Preventing Type 2 Diabetes: https://www.niddk.nih.gov/health-information/diabetes/overview/preventing-type-2-diabetes"
+  - "USPSTF, Screening for Prediabetes and Type 2 Diabetes: https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/screening-for-prediabetes-and-type-2-diabetes"
+plan:
+  topic: "Diabetes symptoms: early warning signs, tests and what to do"
+  title: "Diabetes Symptoms: Early Signs Most People Miss"
+  description: |-
+    Diabetes symptoms often start quietly. Learn the early warning signs of high blood sugar, the signs that mean go to the ER, who should get tested, what A1C numbers mean, and how prediabetes can often be turned around.
+
+    In this video:
+    • Early signs of diabetes most people miss
+    • Type 1 vs type 2: how symptoms start
+    • Emergency signs (diabetic ketoacidosis)
+    • A1C and blood sugar test numbers
+    • Prediabetes: why it matters and what helps
+
+    #Diabetes #DiabetesSymptoms #Prediabetes #BloodSugar #HealthEducation
+  tags: ["diabetes symptoms", "early signs of diabetes", "type 2 diabetes symptoms", "high blood sugar symptoms", "prediabetes", "a1c", "diabetes test", "type 1 diabetes symptoms", "diabetic ketoacidosis", "frequent urination", "always thirsty", "blood sugar", "diabetes warning signs", "insulin resistance", "health education"]
+  thumbnail_text: "NO SYMPTOMS?"
+  thumbnail_highlight: "SYMPTOMS?"
+  thumbnail_photo_query: "woman drinking water thirsty"
+  playlist: "Diabetes & Metabolism"
+  scenes:
+    - layout: "title"
+      heading: "Diabetes Symptoms"
+      points: ["Early signs most people miss"]
+      footage_query: "woman drinking water thirsty"
+      narration: >-
+        Thirsty all the time, getting up at night to pee, and tired no matter how much you sleep? These can be early signs
+        of diabetes. And about one in five people who have diabetes do not know it. Here are the signs most people miss,
+        and the ones that mean you need help today.
+    - layout: "big_number"
+      heading: "38 Million"
+      points: ["Americans have diabetes", "About 1 in 5 don't know it"]
+      footage_query: "people walking city street"
+      narration: >-
+        More than thirty eight million Americans have diabetes, and about one in five of them do not know it. More than
+        one in three adults have prediabetes, and more than eight in ten of them have no idea. The earlier it is found,
+        the more you can do about it.
+    - layout: "bullets"
+      heading: "What Is Diabetes?"
+      points: ["Blood sugar stays too high", "Insulin moves sugar into cells", "Too little insulin, or it stops working", "Sugar builds up in the blood"]
+      footage_query: "blood glucose meter finger"
+      narration: >-
+        When you eat, your body turns food into sugar, called glucose, which goes into your blood. Insulin, a hormone made
+        by the pancreas, works like a key that lets blood sugar into your cells for energy. In diabetes, the body makes
+        too little insulin, or cannot use it well, so sugar builds up in the blood instead.
+    - layout: "bullets"
+      heading: "Type 1 and Type 2"
+      points: ["Type 1: body stops making insulin", "Can start fast, often in young people", "Type 2: insulin does not work well", "Starts slowly, often for years"]
+      footage_query: "doctor talking patient office"
+      narration: >-
+        In type one diabetes, the body stops making insulin. Symptoms can appear suddenly, over a few weeks or months, and
+        can be severe. It often starts in children and young adults, but can happen at any age. Type two is far more
+        common. The body does not use insulin well, and symptoms usually develop slowly, often over several years, so
+        many people do not notice them at all.
+    - layout: "warning"
+      heading: "Early Warning Signs"
+      points: ["Peeing a lot, often at night", "Very thirsty", "Very hungry", "Losing weight without trying"]
+      footage_query: "woman drinking water kitchen"
+      narration: >-
+        Here are the early warning signs. Peeing a lot, often at night, because your kidneys are working to flush out the
+        extra sugar. Being very thirsty, because you are losing so much fluid. Feeling very hungry, even after eating. And
+        losing weight without trying, because your cells are not getting the fuel they need.
+    - layout: "warning"
+      heading: "Signs People Miss"
+      points: ["Blurry vision", "Very tired", "Sores that heal slowly", "More infections than usual"]
+      footage_query: "man rubbing eyes tired"
+      narration: >-
+        Other signs are easy to blame on something else. Blurry vision. Feeling very tired. Very dry skin. Cuts or sores
+        that heal slowly. And getting more infections than usual. Any one of these alone may not mean much, but together,
+        they are a good reason to ask for a simple blood sugar test.
+    - layout: "warning"
+      heading: "Numb or Tingling Feet"
+      points: ["Numbness or tingling", "Often starts in the feet", "High sugar can harm nerves", "Tell your doctor"]
+      footage_query: "feet walking floor"
+      narration: >-
+        Numbness or tingling in the hands or feet is a sign that is more common in type two diabetes. Over time, high blood
+        sugar can damage nerves, and it usually starts in the feet. If your feet tingle, burn, or feel numb, tell your
+        doctor, and check your feet every day for cuts or sores you may not feel.
+    - layout: "myth_fact"
+      heading: "You Would Feel Sick"
+      points: ["You would feel sick if you had it", "Many people have no symptoms"]
+      footage_query: "woman working laptop office"
+      narration: >-
+        Myth: if you had diabetes, you would feel sick. Fact: type two diabetes often causes no clear symptoms for years.
+        That is why about one in five people with diabetes, and most people with prediabetes, do not know they have it.
+        A blood test is the only way to be sure.
+    - layout: "myth_fact"
+      heading: "Eating Sugar Causes Diabetes"
+      points: ["Sugar alone causes diabetes", "Genes, weight and activity matter"]
+      footage_query: "sugar cubes spoon"
+      narration: >-
+        Myth: eating sugar is what causes diabetes. Fact: type one diabetes is not caused by sugar or anything a person did.
+        Type two is linked to many things, including family history, age, extra weight, and not being active. Sugary
+        drinks can add to the risk, but sugar alone is not the whole story.
+    - layout: "warning"
+      heading: "Emergency: Go to the ER"
+      points: ["Fruity-smelling breath", "Vomiting, can't keep fluids down", "Fast, deep breathing", "Confused or very sleepy"]
+      footage_query: "hospital emergency entrance"
+      narration: >-
+        Now the emergency signs. When the body cannot use sugar, it can burn fat so fast that acids called ketones build
+        up. This is diabetic ketoacidosis, and it can be life threatening. Go to the emergency room or call 911 for breath
+        that smells fruity, vomiting so you cannot keep food or fluids down, fast deep breathing or trouble breathing, or
+        a person who is confused or very hard to wake.
+    - layout: "warning"
+      heading: "Early Signs of DKA"
+      points: ["Very thirsty", "Peeing much more", "Nausea, stomach pain", "Headache, very tired"]
+      footage_query: "man stomach pain couch"
+      narration: >-
+        Ketoacidosis often builds over hours or days. Early signs include being very thirsty, peeing much more than usual,
+        nausea, stomach pain, headache, and feeling very tired. If you have diabetes and feel this way, check your blood
+        sugar and your ketones, and call your doctor. In a child with these signs and no diabetes diagnosis, get help the
+        same day, because this can be how type one diabetes first shows up.
+    - layout: "bullets"
+      heading: "Who Should Get Tested?"
+      points: ["Adults 35 to 70 with extra weight", "Family history of diabetes", "Diabetes during pregnancy", "Any warning signs"]
+      footage_query: "blood test arm lab"
+      narration: >-
+        Who should get tested? Experts recommend screening adults aged thirty five to seventy who are overweight, even with
+        no symptoms. You may need testing earlier if you have a parent or sibling with diabetes, had diabetes during
+        pregnancy, or belong to a group with higher rates. And anyone with warning signs should be tested now. The usual
+        test is the A1C blood test, which shows your average blood sugar over about three months. Five point seven to six
+        point four percent means prediabetes, and six point five percent or higher means diabetes.
+    - layout: "big_number"
+      heading: "A1C Test Numbers"
+      points: ["Normal: below 5.7%", "Prediabetes: 5.7 to 6.4%", "Diabetes: 6.5% or higher"]
+      footage_query: "lab blood sample tube"
+      narration: >-
+        The A1C blood test shows your average blood sugar over about three months. Below five point seven percent is
+        normal. Five point seven to six point four percent means prediabetes. Six point five percent or higher means
+        diabetes. A fasting blood sugar of one hundred twenty six or higher also points to diabetes. Your doctor will
+        usually confirm with a second test.
+    - layout: "myth_fact"
+      heading: "Prediabetes Is No Big Deal"
+      points: ["Prediabetes is harmless", "It is a warning you can act on"]
+      footage_query: "man walking outdoors morning"
+      narration: >-
+        Myth: prediabetes is no big deal. Fact: prediabetes means your blood sugar is already higher than normal, and it
+        raises your risk of type two diabetes, heart disease, and stroke. The good news: losing five to seven percent of
+        your weight, if you have extra weight, and about thirty minutes of activity five days a week can prevent or delay
+        type two diabetes.
+    - layout: "bullets"
+      heading: "What Helps"
+      points: ["Lose a little weight, if needed", "Move about 30 minutes a day", "Fewer sugary drinks", "Follow up on your tests"]
+      footage_query: "family cooking vegetables"
+      narration: >-
+        What helps? If you have extra weight, losing even a small amount, about five to seven percent of your body weight,
+        can lower your risk a lot. Aim for about thirty minutes of activity, like brisk walking, five days a week. Swap
+        sugary drinks for water. And keep your follow up tests, so changes are caught early.
+    - layout: "bullets"
+      heading: "Living Well With Diabetes"
+      points: ["Take medicines as prescribed", "Check your blood sugar", "Eye, foot and kidney checks", "Ask about education programs"]
+      footage_query: "woman checking glucose meter"
+      narration: >-
+        If you do have diabetes, it can be managed. Take your medicines as prescribed, check your blood sugar as your care
+        team advises, and get regular eye, foot, and kidney checks. Diabetes education programs can teach you how food,
+        activity, and medicines work together.
+    - layout: "bullets"
+      heading: "Quick Recap"
+      points: ["Thirst, peeing, tiredness: get tested", "Many people have no symptoms", "Fruity breath, vomiting: ER", "Prediabetes can often be turned around"]
+      footage_query: "blood glucose meter finger"
+      narration: >-
+        Quick recap. Thirst, peeing a lot, tiredness, and blurry vision are reasons to get tested. Many people have no
+        symptoms at all. Fruity breath, vomiting, or fast breathing mean go to the emergency room. And prediabetes can
+        often be turned around.
+    - layout: "outro"
+      heading: "Remember"
+      points: ["Know the signs", "Get tested", "Emergency signs: ER"]
+      footage_query: "family walking park"
+      narration: >-
+        Remember: know the signs, get a simple blood test if you are at risk, and go to the emergency room for the danger
+        signs. Share this with someone who is always thirsty and tired. This video is for education only, not medical
+        advice. Subscribe to Health Support Studio for a new health video every day.
+  short_title: "Diabetes symptoms most people miss #Shorts"
+  short_caption: >-
+    Always thirsty and peeing at night? These can be early signs of diabetes. Educational only, not medical advice.
+    #Diabetes #DiabetesSymptoms #BloodSugar #HealthEducation
+  short_scenes:
+    - layout: "title"
+      heading: "Always Thirsty?"
+      points: ["Early signs of diabetes"]
+      footage_query: "woman drinking water thirsty"
+      narration: >-
+        Always thirsty and getting up at night to pee? It could be an early sign of diabetes.
+    - layout: "warning"
+      heading: "Early Signs"
+      points: ["Peeing a lot, often at night", "Very thirsty or hungry", "Blurry vision, very tired"]
+      footage_query: "man rubbing eyes tired"
+      narration: >-
+        Peeing a lot, being very thirsty or hungry, blurry vision, feeling very tired, and sores that heal slowly can all be
+        signs of high blood sugar. Many people have no symptoms at all, so ask your doctor about a simple A1C blood test.
+    - layout: "outro"
+      heading: "Full Video"
+      points: ["On YouTube"]
+      footage_query: "family walking park"
+      narration: >-
+        Learn the emergency signs too, in our full video, on the Health Support Studio YouTube channel.
+story:  # owner Nov 9: movie-style suspense (a clearly hypothetical case, resolved only with facts from this video)
+  open: >-
+    Picture Maria, forty five. For months she has been thirsty all day, up twice a night to pee, and tired no matter
+    how much she sleeps. She blames stress and the heat. By the end of this video, you will know what those three
+    signs were telling her, and the one simple test that would have given her the answer.
+  twist: >-
+    Remember Maria? Here is why she never suspected it. Type two diabetes often grows slowly for years, so the signs
+    creep in so gradually that people get used to them.
+  end: >-
+    So what should Maria do? Ask her doctor for an A1C blood test. If it shows prediabetes, small changes like losing a
+    little weight, walking about thirty minutes a day, and swapping sugary drinks for water can bring her blood sugar
+    back toward normal. And if it shows diabetes, the sooner it is treated, the better.
+  short_cliff: >-
+    But there is one diabetes sign that means go to the emergency room, not wait for an appointment. Do you know it?
+  reel_answer: >-
+    Here is the answer: breath that smells fruity, especially with vomiting or fast, deep breathing. It can mean
+    diabetic ketoacidosis. Go to the ER or call 911.

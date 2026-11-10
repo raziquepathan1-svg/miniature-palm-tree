@@ -292,3 +292,20 @@ plan:
       footage_query: "family smiling outdoors"
       narration: >-
         Get all the answers in our full video, on the Health Support Studio YouTube channel.
+story:  # owner Nov 9: movie-style suspense (a clearly hypothetical case, resolved only with facts from this video)
+  open: >-
+    Picture Daniel, a new dad. His two-month-old daughter has a runny nose, and the next day she is fussy and barely
+    feeding. There is no fever, so he thinks it is just a cold. Stay with me, because by the end you will know the signs
+    that mean a baby is working too hard to breathe, and when to call 911.
+  twist: >-
+    Remember Daniel's baby? Here is why a cold-like start can fool parents. In very young babies, there may be no fever
+    at all, and the airways are so tiny that RSV can quickly make breathing hard.
+  end: >-
+    So what should Daniel watch for? Fast breathing, the skin pulling in under the ribs, flaring nostrils or grunting
+    mean call the doctor right away. Bluish lips, long pauses in breathing, or a baby who is very hard to wake mean call
+    911. And ask the doctor about the RSV antibody shot for babies, which lowers the risk of an RSV hospital stay by
+    about eighty percent.
+  short_cliff: >-
+    And there is one sign that means call 911 right away, not wait and see. Do you know what it is?
+  reel_answer: >-
+    Here is the answer: bluish or gray lips, face, or fingernails. That means call 911 or go to the emergency room now.

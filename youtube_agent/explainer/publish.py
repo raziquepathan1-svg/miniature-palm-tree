@@ -101,8 +101,8 @@ def main() -> None:
             vid = upload_video(QDIR / q["file"], QDIR / q["thumbnail"] if q.get("thumbnail") else None,
                                q["title"], q["description"], q["tags"], yt)
         except HttpError as e:
-            if "quota" in str(e).lower():
-                print("YouTube upload quota used up for today; the rest will go in the next run.")
+            if "quota" in str(e).lower() or "exceeded the number of videos" in str(e).lower() or "uploadlimitexceeded" in str(e).lower():
+                print("YouTube upload limit reached for today; the rest will go in the next run.")
                 break
             raise
         q["youtube_id"] = vid

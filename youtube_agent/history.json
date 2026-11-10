@@ -1235,13 +1235,14 @@
     "series": "Body Myths",
     "episode": 4,
     "awaiting_approval": false,
-    "youtube_id": "guJ9H1hBSJQ",
+    "youtube_id": "oCFMl4v8z8w",
     "short_youtube_id": "PCS5wvDhFno",
     "short2_youtube_id": "upFyPC0H14c",
     "short3_youtube_id": "AsszlZVDAVM",
     "publish_at": "2026-11-08T08:20:00Z",
     "went_public_unchecked": true,
     "replaced_ids": [
+      "guJ9H1hBSJQ (deleted by owner)",
       "i4CveA90e7g"
     ],
     "pin_question": "Which sun myth did you believe? Cloudy days are safe, a base tan protects you, or last year's sunscreen is fine?",
@@ -1274,7 +1275,8 @@
       "SkinHealth",
       "HealthMyths",
       "HealthTips"
-    ]
+    ],
+    "owner_kept_short2": "Nov 10: owner chose to keep it public; do not flag again"
   },
   {
     "date": "2026-11-07T12:23:20",
@@ -1292,7 +1294,8 @@
     "short3_youtube_id": "AsszlZVDAVM",
     "preview": "previews/i4CveA90e7g.mp4",
     "publish_at": "2026-11-07T16:00:00Z",
-    "went_public_unchecked": true
+    "went_public_unchecked": true,
+    "owner_kept_short2": "Nov 10: owner chose to keep it public; do not flag again"
   },
   {
     "date": "2026-11-08T09:34:22",
@@ -1343,5 +1346,121 @@
       "HealthEducation"
     ],
     "publish_at": "2026-11-08T16:00:00Z"
+  },
+  {
+    "date": "2026-11-09T09:43:22",
+    "topic": "Iron deficiency anemia: signs, causes and what helps",
+    "requested_topic": "Iron deficiency anemia: signs, causes and what helps",
+    "title": "Always Tired? Signs of Low Iron You Shouldn't Ignore",
+    "style": "Explainer",
+    "script_file": "027-iron-deficiency-anemia.yaml",
+    "series": "Healthy Habits",
+    "episode": 1,
+    "awaiting_approval": false,
+    "youtube_id": "Y76Da40x2so",
+    "short_youtube_id": "BvRV8dI9XR0",
+    "short2_youtube_id": "7IuLzeEE1OQ",
+    "short3_youtube_id": "9smVdZiPNgw",
+    "replaced_ids": [
+      "rZVxKypwS-Y"
+    ],
+    "pin_question": "Have you ever been told your iron was low? What was the first sign you noticed?",
+    "packages": [
+      {
+        "title": "Always Tired? Signs of Low Iron You Shouldn't Ignore",
+        "thumbnail_text": "CRAVING ICE?",
+        "thumbnail_highlight": "ICE?"
+      },
+      {
+        "title": "Low Iron Symptoms Most People Miss",
+        "thumbnail_text": "ALWAYS TIRED?",
+        "thumbnail_highlight": "TIRED?"
+      },
+      {
+        "title": "Why Do I Crave Ice? It Could Be Low Iron",
+        "thumbnail_text": "NOT NORMAL",
+        "thumbnail_highlight": "NORMAL"
+      },
+      {
+        "title": "Iron Deficiency Anemia: Signs and Causes",
+        "thumbnail_text": "PALE AND TIRED?",
+        "thumbnail_highlight": "PALE"
+      },
+      {
+        "title": "Should You Take Iron Pills Without a Test?",
+        "thumbnail_text": "TEST FIRST",
+        "thumbnail_highlight": "TEST"
+      }
+    ],
+    "chosen": {
+      "title": "Always Tired? Signs of Low Iron You Shouldn't Ignore",
+      "thumbnail_text": "CRAVING ICE?",
+      "thumbnail_highlight": "ICE?"
+    },
+    "social_keywords": "low iron symptoms · always tired · craving ice · iron deficiency anemia · iron pills",
+    "social_hashtags": [
+      "Anemia",
+      "IronDeficiency",
+      "AlwaysTired",
+      "WomensHealth",
+      "HealthTips"
+    ],
+    "publish_at": "2026-11-09T16:00:00Z"
+  },
+  {
+    "date": "2026-11-10T09:20:44",
+    "topic": "Measles: myths vs facts and the MMR vaccine",
+    "requested_topic": "Measles: myths vs facts and the MMR vaccine",
+    "title": "Measles 2026: Why It's Back and What to Know",
+    "style": "Myth vs Fact",
+    "script_file": "065-measles-myths.yaml",
+    "awaiting_approval": false,
+    "youtube_id": "QXcgG4JNqU0",
+    "short_youtube_id": "29-46pnLEH8",
+    "short2_youtube_id": "5tTOj1g2-No",
+    "preview": "previews/QXcgG4JNqU0.mp4",
+    "pin_question": "Do you know if you've had both doses of the MMR vaccine? Where would you even find your vaccine records?",
+    "packages": [
+      {
+        "title": "Measles 2026: Why It's Back and What to Know",
+        "thumbnail_text": "5,000+ CASES",
+        "thumbnail_highlight": "5,000+"
+      },
+      {
+        "title": "Measles Is Back: 5 Myths That Put Kids at Risk",
+        "thumbnail_text": "ARE YOU SAFE?",
+        "thumbnail_highlight": "SAFE?"
+      },
+      {
+        "title": "Measles Symptoms: The Rash and Warning Signs",
+        "thumbnail_text": "CALL FIRST",
+        "thumbnail_highlight": "FIRST"
+      },
+      {
+        "title": "Is Measles Dangerous for Adults Too?",
+        "thumbnail_text": "NOT JUST KIDS",
+        "thumbnail_highlight": "KIDS"
+      },
+      {
+        "title": "Does the MMR Vaccine Cause Autism?",
+        "thumbnail_text": "NO LINK",
+        "thumbnail_highlight": "LINK"
+      }
+    ],
+    "chosen": {
+      "title": "Measles 2026: Why It's Back and What to Know",
+      "thumbnail_text": "5,000+ CASES",
+      "thumbnail_highlight": "5,000+"
+    },
+    "social_keywords": "measles 2026 · measles symptoms · measles rash · MMR vaccine facts · measles outbreak",
+    "social_hashtags": [
+      "Measles",
+      "MeaslesOutbreak",
+      "MMR",
+      "HealthNews",
+      "HealthTips"
+    ],
+    "publish_at": "2026-11-10T16:00:00Z",
+    "deleted_short3_youtube_id": "VaU00YoHJA4"
   }
 ]

@@ -318,5 +318,61 @@
     "style": "Myth vs Fact",
     "photo_query": "person sneezing winter",
     "done": true
+  },
+  {
+    "youtube_id": "oCFMl4v8z8w",
+    "text": "UV GETS THROUGH",
+    "highlight": "UV",
+    "style": "Myth vs Fact",
+    "photo_query": "sun behind clouds sky",
+    "done": true
+  },
+  {
+    "youtube_id": "Y76Da40x2so",
+    "text": "CRAVING ICE?",
+    "highlight": "ICE?",
+    "style": "Explainer",
+    "photo_query": "tired woman desk exhausted",
+    "done": true
+  },
+  {
+    "youtube_id": "szIou_GtYnc",
+    "text": "IT'S A VIRUS",
+    "highlight": "VIRUS",
+    "style": "Myth vs Fact",
+    "image": "branding/health-support-studio/thumbs/szIou_GtYnc.jpg",
+    "done": true
+  },
+  {
+    "youtube_id": "oCFMl4v8z8w",
+    "text": "UV GETS THROUGH",
+    "highlight": "UV",
+    "style": "Myth vs Fact",
+    "image": "branding/health-support-studio/thumbs/oCFMl4v8z8w.jpg",
+    "done": true
+  },
+  {
+    "youtube_id": "QXcgG4JNqU0",
+    "text": "5,000+ CASES",
+    "highlight": "5,000+",
+    "style": "Myth vs Fact",
+    "photo_query": "child doctor checkup",
+    "done": true
+  },
+  {
+    "youtube_id": "Y76Da40x2so",
+    "text": "CRAVING ICE?",
+    "highlight": "ICE?",
+    "style": "Explainer",
+    "image": "branding/health-support-studio/thumbs/Y76Da40x2so.jpg",
+    "done": true
+  },
+  {
+    "youtube_id": "QXcgG4JNqU0",
+    "text": "5,000+ CASES",
+    "highlight": "5,000+",
+    "style": "Myth vs Fact",
+    "image": "branding/health-support-studio/thumbs/QXcgG4JNqU0.jpg",
+    "done": true
   }
 ]
