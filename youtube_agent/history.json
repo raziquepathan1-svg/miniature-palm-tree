@@ -1412,8 +1412,7 @@
     "title": "Measles 2026: Why It's Back and What to Know",
     "style": "Myth vs Fact",
     "script_file": "065-measles-myths.yaml",
-    "planned_publish_at": "2026-11-10T16:00:00Z",
-    "awaiting_approval": true,
+    "awaiting_approval": false,
     "youtube_id": "QXcgG4JNqU0",
     "short_youtube_id": "29-46pnLEH8",
     "short2_youtube_id": "5tTOj1g2-No",
@@ -1460,6 +1459,7 @@
       "MMR",
       "HealthNews",
       "HealthTips"
-    ]
+    ],
+    "publish_at": "2026-11-10T16:00:00Z"
   }
 ]
