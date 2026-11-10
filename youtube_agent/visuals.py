@@ -359,7 +359,10 @@ def _download(url: str, dest: Path) -> Path:
 UNSUITABLE = re.compile(
     r"kiss|romanc|romantic|intimate|intimacy|sensual|sexy|seduc|lingerie|bikini|swimsuit|swimwear|underwear|"
     r"naked|nude|topless|shirtless|lovers|making[- ]out|cuddl|flirt|date[- ]night|honeymoon|passion|erotic|"
-    r"bathtub|shower|in[- ]bed[- ]together|couple[- ]in[- ]bed|striptease|stripper|pole[- ]danc|nightclub|twerk|bra\b", re.I)
+    r"bathtub|shower|in[- ]bed[- ]together|couple[- ]in[- ]bed|striptease|stripper|pole[- ]danc|nightclub|twerk|bra\b|"
+    # owner: nothing suggesting alcohol or drugs (Nov 7: a bar/cocktail Short; Nov 10: CBD/hemp bottles in a Short)
+    r"\bcbd\b|hemp|cannabis|marijuana|\bweed\b|\bthc\b|vape|vaping|beer|wine|cocktail|alcohol|liquor|whisk|vodka|"
+    r"champagne|\bbar\b|\bpub\b|drunk|hangover", re.I)
 
 
 def _suitable(*texts) -> bool:

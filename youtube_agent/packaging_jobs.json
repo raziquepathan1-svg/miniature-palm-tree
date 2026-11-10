@@ -1166,5 +1166,68 @@
       "HealthTips"
     ],
     "done": true
+  },
+  {
+    "youtube_id": "QXcgG4JNqU0",
+    "title": "Measles 2026: Why It's Back and What to Know",
+    "description_top": "Measles 2026: the US has more than 5,000 confirmed measles cases this year, the most since 1991. Measles symptoms, the measles rash, how it spreads, and the MMR vaccine facts.\nMeasles myths vs facts: is measles dangerous, does the MMR vaccine cause autism, does vitamin A prevent measles, and what to do if you were exposed, based on CDC guidance.",
+    "pin_question": "Do you know if you've had both doses of the MMR vaccine? Where would you even find your vaccine records?",
+    "packages": [
+      {
+        "title": "Measles 2026: Why It's Back and What to Know",
+        "thumbnail_text": "5,000+ CASES",
+        "thumbnail_highlight": "5,000+"
+      },
+      {
+        "title": "Measles Is Back: 5 Myths That Put Kids at Risk",
+        "thumbnail_text": "ARE YOU SAFE?",
+        "thumbnail_highlight": "SAFE?"
+      },
+      {
+        "title": "Measles Symptoms: The Rash and Warning Signs",
+        "thumbnail_text": "CALL FIRST",
+        "thumbnail_highlight": "FIRST"
+      },
+      {
+        "title": "Is Measles Dangerous for Adults Too?",
+        "thumbnail_text": "NOT JUST KIDS",
+        "thumbnail_highlight": "KIDS"
+      },
+      {
+        "title": "Does the MMR Vaccine Cause Autism?",
+        "thumbnail_text": "NO LINK",
+        "thumbnail_highlight": "LINK"
+      }
+    ],
+    "chosen": {
+      "title": "Measles 2026: Why It's Back and What to Know",
+      "thumbnail_text": "5,000+ CASES",
+      "thumbnail_highlight": "5,000+"
+    },
+    "tags": [
+      "measles 2026",
+      "measles outbreak",
+      "measles symptoms",
+      "measles rash",
+      "is measles dangerous",
+      "mmr vaccine",
+      "does the mmr vaccine cause autism",
+      "measles in adults",
+      "measles exposure what to do",
+      "vitamin a measles",
+      "measles cases us",
+      "how does measles spread",
+      "measles vaccine",
+      "vaccine myths",
+      "health education"
+    ],
+    "social_keywords": "measles 2026 · measles symptoms · measles rash · MMR vaccine facts · measles outbreak",
+    "social_hashtags": [
+      "Measles",
+      "MeaslesOutbreak",
+      "MMR",
+      "HealthNews",
+      "HealthTips"
+    ]
   }
 ]
