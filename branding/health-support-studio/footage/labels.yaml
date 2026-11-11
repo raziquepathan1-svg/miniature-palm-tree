@@ -211,13 +211,13 @@
   note: {text: "Snoring and pauses: the throat closes during sleep", start: 2.6}
 16x9_flu_virus_airway.mp4:
   words: [flu, influenza, flu virus, flu season, flu symptoms, flu shot, covid, rsv, respiratory virus, respiratory viruses, airway, airways]
-  title: "Flu in the Airway"
+  title: "Virus in the Airway"  # Nov 11: generic - this clip also matches RSV/COVID pages
   labels:
     - {text: "Airway lining (tiny hairs)", at: [0.36, 0.34], to: [0.24, 0.66], start: 0.2, end: 1.7}
-    - {text: "Flu viruses", at: [0.44, 0.44], to: [0.24, 0.71], start: 2.0, end: 3.5}
+    - {text: "Viruses", at: [0.44, 0.44], to: [0.24, 0.71], start: 2.0, end: 3.5}
     - {text: "Infected cells", at: [0.74, 0.3], to: [0.66, 0.63], start: 4.0, end: 5.8}
     - {text: "White blood cells", at: [0.6, 0.34], to: [0.37, 0.6], start: 6.2, end: 7.3}
-  note: {text: "Flu viruses infect the airway; white blood cells fight back", start: 6.0}
+  note: {text: "Viruses infect the airway; white blood cells fight back", start: 6.0}
 16x9_migraine_brain.mp4:
   words: [migraine, migraines, headache, headaches, aura, throbbing, head pain, one side of the head, cluster headache, light sensitivity]
   title: "A Migraine in the Head"
