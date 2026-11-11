@@ -87,6 +87,22 @@ def main():
         sys.exit(1)
 
 
+def ig_copy(video):
+    """Instagram rejects some of our very low-bitrate whiteboard videos (error 2207076); a constant-bitrate copy
+    (3.5 Mbps, stereo 44.1 kHz) is accepted (tested 11 Nov 2026)."""
+    import subprocess, tempfile
+    out = Path(tempfile.gettempdir()) / f"ig_{video.name}"
+    try:
+        subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(video), "-c:v", "libx264", "-profile:v", "main", "-level", "4.0",
+                        "-pix_fmt", "yuv420p", "-r", "30", "-g", "60", "-bf", "0", "-b:v", "3500k", "-minrate", "3500k",
+                        "-maxrate", "3500k", "-bufsize", "7000k", "-x264-params", "nal-hrd=cbr", "-c:a", "aac", "-b:a", "128k",
+                        "-ar", "44100", "-ac", "2", "-movflags", "+faststart", str(out)], check=True)
+        return out
+    except Exception as e:
+        print(f"  (could not make the Instagram copy, using the original: {e})")
+        return video
+
+
 def post_one(item, queue, posted, token, page_id, ig_user_id, ig_name):
     print(f"== {item['id']}")
     fb_cap, ig_cap = build_captions(item, queue, ig_name)
@@ -104,7 +120,7 @@ def post_one(item, queue, posted, token, page_id, ig_user_id, ig_name):
             print(f"Facebook FAILED: {e}")
     if ig_user_id:
         try:
-            rec["instagram"] = S.post_instagram_reel(video, ig_cap, ig_user_id, token)
+            rec["instagram"] = S.post_instagram_reel(ig_copy(video), ig_cap, ig_user_id, token)
         except Exception as e:
             print(f"  (Instagram direct upload failed: {e}; trying the Facebook Reel's video)")
             try:

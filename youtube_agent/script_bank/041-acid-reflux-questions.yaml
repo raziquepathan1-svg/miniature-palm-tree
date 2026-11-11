@@ -286,3 +286,20 @@ plan:
       footage_query: "family dinner table"
       narration: >-
         Learn more about acid reflux in our full video, on the Health Support Studio YouTube channel.
+story:  # owner Nov 9: movie-style suspense (a clearly hypothetical case, resolved only with facts from this video)
+  open: >-
+    Imagine Linda, fifty five. Every night after dinner, a burning rises in her chest, so she keeps a glass of milk by
+    the bed. Then one night the feeling is different: tighter, with sweating. By the end of this video, you will know
+    why the milk was not helping, and why that night she needed to call 911.
+  twist: >-
+    Remember Linda's glass of milk? Here is the twist. Milk may soothe the burn for a few minutes, but its fat and
+    protein can make the stomach produce more acid afterwards.
+  end: >-
+    So what should Linda do? That night, with chest pressure and sweating, call 911, because heartburn and a heart
+    attack can feel alike. And for her nightly heartburn: smaller meals, no eating late, raising the head of the bed,
+    and a doctor's visit, because heartburn twice a week or more may be GERD.
+  short_cliff: >-
+    And one popular home remedy can actually make heartburn come back. Do you know which one?
+  reel_answer: >-
+    Here is the answer: a glass of milk. It may soothe the burn for a few minutes, but its fat and protein can make
+    your stomach produce more acid afterwards.

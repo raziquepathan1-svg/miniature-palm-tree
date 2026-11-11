@@ -291,3 +291,20 @@ plan:
       footage_query: "family hugging"
       narration: >-
         Learn more about anxiety in our full video, on the Health Support Studio YouTube channel.
+story:  # owner Nov 9: movie-style suspense (a clearly hypothetical case, resolved only with facts from this video)
+  open: >-
+    Picture James, thirty two, driving home on the highway. Out of nowhere his heart pounds, his chest feels tight,
+    and he is shaking and short of breath. He is sure it is a heart attack. Stay with me, because by the end you will
+    know what was really happening in his body, and why the thing he did next made it worse.
+  twist: >-
+    Remember James? After that night, he stopped driving on the highway. It felt safer. But avoiding a fear teaches the
+    brain that the danger is real, so the fear grows, and his world got smaller.
+  end: >-
+    So what should James have done? That first night, calling 911 was the right call, because chest pain should always
+    be checked. Once his heart was ruled out, the next step was not avoiding the highway, but facing it gradually, with
+    support and treatment. Anxiety is real, and it is treatable.
+  short_cliff: >-
+    But there is one thing many people do to feel safer that actually makes anxiety grow. Do you know what it is?
+  reel_answer: >-
+    Here is the answer: avoiding whatever makes you anxious. It brings quick relief, but over time it teaches your
+    brain the danger is real, so the fear grows. Facing it gradually works better.

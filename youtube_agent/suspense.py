@@ -62,6 +62,8 @@ def apply(plan, story: dict | None = None) -> None:
 
         # 1a. open loop: the last myth (or the last warning page) is promised now and paid off later
         saved = myths[-1] if len(myths) >= 3 else (warns[-1] if warns else None)
+        if saved is not None and scenes[saved].layout != "myth_fact" and story.get("open"):
+            saved = None  # the story already promises what comes later; a second "stay with me" sounds repeated
         if saved is not None and saved > 3:
             if scenes[saved].layout == "myth_fact":
                 loop = (f"And later in this video: {_lower_first(_q(scenes[saved].points[0]))}. "
