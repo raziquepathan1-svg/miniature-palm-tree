@@ -1,34 +1,54 @@
-name: Islamic channel - fetch clips from Google Drive
+name: Islamic channel - fetch clips
 
-# Copies the owner's new Flow clips from the shared Google Drive folder (islamic_channel/config.json
-# "clips_folder", shared as "Anyone with the link") into islamic_channel/inbox/, so the owner never has to
-# use GitHub's upload page. Clips already in the inbox are skipped.
+# Saves the clips the owner attached to comments on issue #12 "Hidayah clips" into
+# islamic_channel/inbox/issue-<comment id>/NN.mp4 (in the order attached). Comments already saved are skipped.
 on:
+  issue_comment:
+    types: [created]
   workflow_dispatch:
 
 permissions:
   contents: write
+  issues: read
+
+concurrency:
+  group: islamic-fetch-clips
 
 jobs:
   fetch:
+    if: github.event_name == 'workflow_dispatch' || github.event.issue.number == 12
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
 
-      - name: Download the folder
+      - name: Download attachments
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
-          FOLDER=$(python3 -c "import json;print(json.load(open('islamic_channel/config.json')).get('clips_folder',''))")
-          if [ -z "$FOLDER" ]; then echo "::error::Put the Drive folder link in islamic_channel/config.json (clips_folder)."; exit 1; fi
-          pip install -q gdown
-          gdown --folder "$FOLDER" -O "$RUNNER_TEMP/drive" --remaining-ok
-          mkdir -p islamic_channel/inbox
-          new=0
-          while IFS= read -r -d '' f; do
-            name=$(basename "$f")
-            if [ ! -e "islamic_channel/inbox/$name" ]; then cp "$f" islamic_channel/inbox/; new=$((new+1)); echo "new: $name"; fi
-          done < <(find "$RUNNER_TEMP/drive" -type f -iname '*.mp4' -print0)
-          echo "## $new new clip(s) copied to the inbox" >> "$GITHUB_STEP_SUMMARY"
+          gh api "repos/${{ github.repository }}/issues/12/comments" --paginate --jq '.[] | [.id, .body] | @json' > comments.jsonl
+          python3 - <<'PY'
+          import json, os, re, subprocess
+          new = 0
+          for line in open("comments.jsonl"):
+              cid, body = json.loads(json.loads(line)) if line.startswith('"') else json.loads(line)
+              urls = re.findall(r"https://github\.com/user-attachments/assets/[0-9a-f-]+", body or "")
+              folder = f"islamic_channel/inbox/issue-{cid}"
+              if not urls or os.path.isdir(folder):
+                  continue
+              os.makedirs(folder)
+              note = (body or "").split("https://")[0].strip()
+              if note:
+                  open(f"{folder}/note.txt", "w").write(note + "\n")
+              for i, u in enumerate(urls, 1):
+                  subprocess.run(["curl", "-sfL", "--retry", "3", "-H", f"Authorization: token {os.environ['GH_TOKEN']}",
+                                  "-o", f"{folder}/{i:02d}.mp4", u], check=True)
+              new += 1
+              print(f"comment {cid}: {len(urls)} clips")
+          with open(os.environ["GITHUB_STEP_SUMMARY"], "a") as f:
+              f.write(f"## {new} new comment(s) saved\n")
+          PY
+          rm comments.jsonl
 
       - name: Save
         run: |
@@ -36,5 +56,5 @@ jobs:
           git config user.email "41898333+github-actions[bot]@users.noreply.github.com"
           git add islamic_channel/inbox
           git diff --cached --quiet && exit 0
-          git commit -m "Islamic channel: clips from the Drive folder"
+          git commit -m "Islamic channel: clips from issue #12"
           git pull --rebase -q origin "$GITHUB_REF_NAME" && git push origin HEAD:"$GITHUB_REF_NAME"
