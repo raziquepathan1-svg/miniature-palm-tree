@@ -1462,5 +1462,20 @@
     ],
     "publish_at": "2026-11-10T16:00:00Z",
     "deleted_short3_youtube_id": "VaU00YoHJA4"
+  },
+  {
+    "date": "2026-11-11T09:22:59",
+    "topic": "RSV: symptoms, risks and new ways to protect babies and older adults",
+    "requested_topic": "RSV: symptoms, risks and new ways to protect babies and older adults",
+    "title": "RSV: Not Just a Cold for Babies and Older Adults",
+    "style": "Top Questions",
+    "script_file": "067-rsv-questions.yaml",
+    "planned_publish_at": "2026-11-11T16:00:00Z",
+    "awaiting_approval": true,
+    "youtube_id": "s6YbiShgJFY",
+    "short_youtube_id": "dpqXzsVnBBk",
+    "short2_youtube_id": "QoVS056OTwY",
+    "short3_youtube_id": "w-lTRPdQ-CY",
+    "preview": "previews/s6YbiShgJFY.mp4"
   }
 ]
