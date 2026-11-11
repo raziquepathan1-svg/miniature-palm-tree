@@ -96,3 +96,8 @@ ZARA: Ali's little sister, cute 4-year-old girl, 3D Pixar style, big round brown
 ## Owner's rule (10 Nov 2026): no approval step
 When the owner's clips arrive, make the reel and upload it straight away (next free 5 PM India slot);
 send the owner the finished video and the link, don't ask "upload?" first.
+
+## How the owner sends clips (11 Nov 2026)
+As comments with attached clips on GitHub issue #12 "Hidayah clips" (the comment button waits for uploads,
+so nothing is lost). The upload page islamic_channel/inbox saved several empty commits from the phone; don't
+send the owner there. A Drive folder is not possible (no Drive space).
