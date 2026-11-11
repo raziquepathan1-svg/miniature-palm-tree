@@ -1,7 +1,11 @@
 {
   "channel_id": "UC4pkQfB7HXY4tAkU-cyWyUQ",
   "made_for_kids": true,
-  "publish_utc": [11, 30],
+  "publish_utc": [
+    11,
+    30
+  ],
   "playlist": "Ali aur Dadu",
-  "playlist_about": "Hidaya: Ali aur Dadu ki chhoti Islamic kahaniyan bachchon ke liye."
+  "playlist_about": "Hidaya: Ali aur Dadu ki chhoti Islamic kahaniyan bachchon ke liye.",
+  "clips_folder": ""
 }

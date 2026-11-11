@@ -1,0 +1,40 @@
+name: Islamic channel - fetch clips from Google Drive
+
+# Copies the owner's new Flow clips from the shared Google Drive folder (islamic_channel/config.json
+# "clips_folder", shared as "Anyone with the link") into islamic_channel/inbox/, so the owner never has to
+# use GitHub's upload page. Clips already in the inbox are skipped.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download the folder
+        run: |
+          FOLDER=$(python3 -c "import json;print(json.load(open('islamic_channel/config.json')).get('clips_folder',''))")
+          if [ -z "$FOLDER" ]; then echo "::error::Put the Drive folder link in islamic_channel/config.json (clips_folder)."; exit 1; fi
+          pip install -q gdown
+          gdown --folder "$FOLDER" -O "$RUNNER_TEMP/drive" --remaining-ok
+          mkdir -p islamic_channel/inbox
+          new=0
+          while IFS= read -r -d '' f; do
+            name=$(basename "$f")
+            if [ ! -e "islamic_channel/inbox/$name" ]; then cp "$f" islamic_channel/inbox/; new=$((new+1)); echo "new: $name"; fi
+          done < <(find "$RUNNER_TEMP/drive" -type f -iname '*.mp4' -print0)
+          echo "## $new new clip(s) copied to the inbox" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Save
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898333+github-actions[bot]@users.noreply.github.com"
+          git add islamic_channel/inbox
+          git diff --cached --quiet && exit 0
+          git commit -m "Islamic channel: clips from the Drive folder"
+          git pull --rebase -q origin "$GITHUB_REF_NAME" && git push origin HEAD:"$GITHUB_REF_NAME"
