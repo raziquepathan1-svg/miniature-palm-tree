@@ -1467,7 +1467,7 @@
     "date": "2026-11-11T09:22:59",
     "topic": "RSV: symptoms, risks and new ways to protect babies and older adults",
     "requested_topic": "RSV: symptoms, risks and new ways to protect babies and older adults",
-    "title": "RSV: Not Just a Cold for Babies and Older Adults",
+    "title": "RSV Symptoms in Babies: When to Worry",
     "style": "Top Questions",
     "script_file": "067-rsv-questions.yaml",
     "planned_publish_at": "2026-11-11T16:00:00Z",
@@ -1477,6 +1477,47 @@
     "held_short_youtube_id": "dpqXzsVnBBk",
     "held_short2_youtube_id": "QoVS056OTwY",
     "held_short3_youtube_id": "w-lTRPdQ-CY",
-    "held_reason": "Shorts/Reels show a clip labelled \"Flu in the Airway / Flu viruses\" on RSV - owner decides"
+    "held_reason": "Shorts/Reels show a clip labelled \"Flu in the Airway / Flu viruses\" on RSV - owner decides",
+    "pin_question": "Parents and grandparents: has RSV ever hit your family? What was the first sign you noticed?",
+    "packages": [
+      {
+        "title": "RSV Symptoms in Babies: When to Worry",
+        "thumbnail_text": "BLUE LIPS?",
+        "thumbnail_highlight": "BLUE"
+      },
+      {
+        "title": "What Is RSV? Warning Signs in Babies and Adults",
+        "thumbnail_text": "BABIES AT RISK",
+        "thumbnail_highlight": "BABIES"
+      },
+      {
+        "title": "RSV: Not Just a Cold for Babies and Older Adults",
+        "thumbnail_text": "WATCH THE RIBS",
+        "thumbnail_highlight": "RIBS"
+      },
+      {
+        "title": "RSV Season 2026: How to Protect Your Baby",
+        "thumbnail_text": "NEW SHOT?",
+        "thumbnail_highlight": "SHOT?"
+      },
+      {
+        "title": "Is RSV Dangerous for Older Adults?",
+        "thumbnail_text": "OVER 75",
+        "thumbnail_highlight": "75"
+      }
+    ],
+    "chosen": {
+      "title": "RSV Symptoms in Babies: When to Worry",
+      "thumbnail_text": "BLUE LIPS?",
+      "thumbnail_highlight": "BLUE"
+    },
+    "social_keywords": "RSV symptoms in babies · what is RSV · RSV vaccine · baby breathing problems · RSV season",
+    "social_hashtags": [
+      "RSV",
+      "BabyHealth",
+      "Parenting",
+      "HealthNews",
+      "HealthTips"
+    ]
   }
 ]
