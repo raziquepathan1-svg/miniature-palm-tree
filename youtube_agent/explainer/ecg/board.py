@@ -297,7 +297,7 @@ class Board:
                 self.done.add(i)
         fading = []
         for (te, de, ids) in self.erases:
-            if t >= te and not ids[0] in self.gone:
+            if t >= te and any(i not in self.gone for i in ids):
                 self.gone.update(ids)
                 self._rebuild()
             if te <= t < te + de:

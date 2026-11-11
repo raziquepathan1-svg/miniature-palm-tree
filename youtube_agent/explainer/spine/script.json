@@ -1,0 +1,46 @@
+[
+ {
+  "id": "story",
+  "text": "A doctor taps your knee with a small hammer. Your leg kicks out. You did not decide to move it. So who gave the order? Let's follow the signal."
+ },
+ {
+  "id": "overview",
+  "text": "Your spinal cord is a soft cable about 45 centimeters long, as thick as your finger. It connects your brain to almost your whole body."
+ },
+ {
+  "id": "protect",
+  "text": "It runs inside a bony tunnel, the vertebral column. It is also wrapped in three membranes, the meninges, and cushioned by cerebrospinal fluid."
+ },
+ {
+  "id": "regions",
+  "text": "The cord has regions: cervical in the neck, thoracic in the chest, lumbar in the lower back, and sacral at the bottom. Thirty-one pairs of spinal nerves branch out from it."
+ },
+ {
+  "id": "horsetail",
+  "text": "Here is a surprise. The spinal cord ends around the first or second lumbar vertebra, much higher than the spine itself. Below that, loose nerves hang down like a horse's tail. It is called the cauda equina."
+ },
+ {
+  "id": "cross",
+  "text": "Cut the cord across, and you see a butterfly shape. The gray matter inside holds nerve cell bodies. The white matter outside holds the cables that run up and down."
+ },
+ {
+  "id": "roots",
+  "text": "At each level, a spinal nerve has two roots. The dorsal root carries sensory signals in. The ventral root carries motor commands out. Dorsal means back, and ventral means front."
+ },
+ {
+  "id": "tracts",
+  "text": "White matter forms highways. Ascending tracts carry sensations up to the brain. Descending tracts carry commands down from the brain to the muscles."
+ },
+ {
+  "id": "payoff",
+  "text": "Now back to the knee. The hammer stretches a muscle. A sensory nerve sends a signal into the spinal cord. There it connects straight to a motor neuron, which tells the muscle to contract. The brain is not needed, so it is very fast."
+ },
+ {
+  "id": "injury",
+  "text": "Because the cord carries every message, an injury cuts the connection below that level. The higher the injury, the more of the body is affected. That is why protecting your spine matters."
+ },
+ {
+  "id": "recap",
+  "text": "Remember three things: the cord is a cable from brain to body, gray matter processes while white matter carries, and reflexes skip the brain. Next time, the autonomic nervous system: who runs your heart without asking?"
+ }
+]

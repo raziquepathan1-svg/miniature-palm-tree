@@ -70,13 +70,16 @@ EP = {
  "neuron": (["How neurons work", "Action potential explained", "Synapse and neurotransmitters"],
     ["how neurons work", "how brain cells talk", "neuron structure", "action potential", "synapse", "neurotransmitters", "dopamine", "serotonin", "acetylcholine", "myelin sheath", "dendrites and axon", "nerve signal", "reflex arc", "nervous system"],
     ["#neurons", "#neuroscience", "#nervoussystem"]),
+ "spine": (["Spinal cord anatomy", "Spinal reflex explained", "Cauda equina"],
+    ["spinal cord anatomy", "what does the spinal cord do", "spinal cord function", "spinal reflex", "knee jerk reflex", "reflex arc", "cauda equina", "gray matter and white matter", "dorsal and ventral roots", "meninges", "cerebrospinal fluid", "spinal cord injury", "spinal nerves", "nervous system"],
+    ["#spinalcord", "#nervoussystem", "#reflex"]),
 }
 
 
 def tags_for(eid, short=False):
     kw, tags, _ = EP[eid]
     out, seen = [], set()
-    base = [b for b in BASE if not (eid in ("brain", "neuron") and b == "cardiovascular system")]
+    base = [b for b in BASE if not (eid in ("brain", "neuron", "spine") and b == "cardiovascular system")]
     for t in tags + (["shorts", "anatomy shorts"] if short else []) + base:
         if t.lower() not in seen and sum(len(x) + 3 for x in out) + len(t) + 3 <= 480:
             out.append(t); seen.add(t.lower())
