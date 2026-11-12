@@ -12,6 +12,7 @@ no default smile, the host never holds an object, face must match the avatar.
 7. Both palms up, confused shrug - "Does X really cause Y?"
 8. Leaning close to the camera, wide eyes, face fills the right half - shocking facts, numbers
 9. Finger on lips ("shh") - little-known facts
+11. One hand flat on his stomach, pained face - stomach, gut, food poisoning (added Nov 12)
 10. Looking sideways at the glowing object behind him, worried - anatomy / disease topics
 
 ## Used (newest last)
@@ -42,3 +43,15 @@ no default smile, the host never holds an object, face must match the avatar.
   - low blood sugar 049: #10 looking sideways, worried
   - anxiety 046 (added Nov 10): #3-style worried eyes to camera, hand at the back of his neck (no cough)
   - diabetes 083 (added Nov 10): #8 leaning close, wide eyes
+- Nov 12 batch (prompts given; owner uploads WITHOUT renaming; identify by object + expression):
+  - constipation 070: #7 palms up shrug
+  - medication list 031: #9 finger on lips
+  - medicine label 072: #8 leaning close
+  - grapefruit 073: #10 looking sideways, worried
+  - alcohol and medicines 074: #5 "Wait!" finger (NO alcohol imagery: liver + capsules only)
+  - medicine storage 075: #1 pointing at the text side
+  - food poisoning 028: #11 hand on stomach
+  - vitamin D 018: #6 arms crossed
+  - sunscreen myths 035: #7 shrug, outdoors (different from the Nov 9 arms-crossed one)
+  - COPD 038: #3 coughing into elbow
+  - gout 039: #10 looking sideways at a red glowing foot
