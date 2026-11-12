@@ -1526,7 +1526,7 @@
     "date": "2026-11-12T09:39:20",
     "topic": "Anxiety disorders: signs, types and treatments that work",
     "requested_topic": "Anxiety disorders: signs, types and treatments that work",
-    "title": "Anxiety: When Worry Takes Over (and What Helps)",
+    "title": "Anxiety Symptoms: Signs You Shouldn't Ignore",
     "style": "Explainer",
     "script_file": "046-anxiety-explained.yaml",
     "planned_publish_at": "2026-11-12T16:00:00Z",
@@ -1536,6 +1536,47 @@
     "short3_youtube_id": "NYqAqpKJylE",
     "preview": "previews/iiWlBArTW3k.mp4",
     "held_short_youtube_id": "FYvc8CKMAuY",
-    "held_reason": "Short 1 and Reel 1 end on a man and woman hugging; remake Short 1 on Nov 14"
+    "held_reason": "Short 1 and Reel 1 end on a man and woman hugging; remake Short 1 on Nov 14",
+    "pin_question": "Have you ever had a racing heart or a wave of worry come out of nowhere? What helped you calm down?",
+    "packages": [
+      {
+        "title": "Anxiety Symptoms: Signs You Shouldn't Ignore",
+        "thumbnail_text": "NOT WEAKNESS",
+        "thumbnail_highlight": "WEAKNESS"
+      },
+      {
+        "title": "Panic Attack or Heart Attack? How to Tell",
+        "thumbnail_text": "CALL 911?",
+        "thumbnail_highlight": "911?"
+      },
+      {
+        "title": "Why Avoiding Your Fears Makes Anxiety Worse",
+        "thumbnail_text": "THE TRAP",
+        "thumbnail_highlight": "TRAP"
+      },
+      {
+        "title": "Is It Anxiety or Something More?",
+        "thumbnail_text": "NORMAL WORRY?",
+        "thumbnail_highlight": "NORMAL"
+      },
+      {
+        "title": "Anxiety: When Worry Takes Over (and What Helps)",
+        "thumbnail_text": "FACE IT",
+        "thumbnail_highlight": "FACE"
+      }
+    ],
+    "chosen": {
+      "title": "Anxiety Symptoms: Signs You Shouldn't Ignore",
+      "thumbnail_text": "NOT WEAKNESS",
+      "thumbnail_highlight": "WEAKNESS"
+    },
+    "social_keywords": "anxiety symptoms · panic attack vs heart attack · signs of anxiety · anxiety help · 988",
+    "social_hashtags": [
+      "Anxiety",
+      "MentalHealth",
+      "PanicAttack",
+      "AnxietyRelief",
+      "HealthTips"
+    ]
   }
 ]
