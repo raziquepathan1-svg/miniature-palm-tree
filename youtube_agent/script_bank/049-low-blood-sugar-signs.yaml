@@ -296,3 +296,20 @@ plan:
       footage_query: "family walking outdoors"
       narration: >-
         Learn all the warning signs in our full video, on the Health Support Studio YouTube channel.
+story:  # owner Nov 9: movie-style suspense (a clearly hypothetical case, resolved only with facts from this video)
+  open: >-
+    Picture Robert, sixty eight, who has type two diabetes. One evening he turns shaky, sweaty, and confused, and his
+    family thinks he is just tired and grumpy. Stay with me, because by the end you will know what was really happening,
+    and the simple rule that could have fixed it in fifteen minutes.
+  twist: >-
+    Remember Robert? He thought low blood sugar only happens to people on insulin. But some diabetes pills, like
+    glipizide, can cause lows too, sometimes serious ones in older adults.
+  end: >-
+    So what should Robert's family have done? Checked his blood sugar and used the rule of fifteen: fifteen grams of
+    fast sugar, like four glucose tablets or half a cup of juice, then check again in fifteen minutes. And if he could
+    not swallow or passed out, use glucagon and call 911.
+  short_cliff: >-
+    And lows can happen while you sleep. Do you know the signs to look for in the morning?
+  reel_answer: >-
+    Here is the answer: nightmares, sweaty pajamas or sheets, and waking up with a headache or feeling tired. Check your
+    blood sugar before bed.

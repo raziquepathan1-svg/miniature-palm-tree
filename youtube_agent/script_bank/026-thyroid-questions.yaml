@@ -285,3 +285,20 @@ plan:
       footage_query: "patient talking doctor office"
       narration: >-
         Learn the signs of thyroid problems in our full video, on the Health Support Studio YouTube channel.
+story:  # owner Nov 9: movie-style suspense (a clearly hypothetical case, resolved only with facts from this video)
+  open: >-
+    Picture Nadia, forty eight. For months she has been tired, cold when everyone else is warm, and gaining weight
+    without eating more. She blames getting older. She even takes a hair and nail supplement to help her thinning hair.
+    By the end of this video, you will know what her body was telling her, and why that supplement could hide the answer.
+  twist: >-
+    Remember Nadia's hair and nail supplement? Here is the twist. Biotin, found in many of these pills, can make thyroid
+    test results look falsely high or low, so a problem could be missed.
+  end: >-
+    So what should Nadia do? Ask her doctor about a thyroid test, tell them about the biotin and ask when to stop it
+    before the test, and if she is diagnosed, take her thyroid medicine the right way. Tired and cold for weeks is worth
+    checking.
+  short_cliff: >-
+    And there is one popular pill people take to boost their thyroid that can actually harm it. Do you know which one?
+  reel_answer: >-
+    Here is the answer: iodine or kelp pills. Most Americans already get enough iodine from food, and taking extra can
+    actually cause thyroid problems.
