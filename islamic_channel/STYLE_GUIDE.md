@@ -103,7 +103,6 @@ As comments with attached clips on GitHub issue #12 "Hidayah clips" (the comment
 so nothing is lost). The upload page islamic_channel/inbox saved several empty commits from the phone; don't
 send the owner there. A Drive folder is not possible (no Drive space).
 
-## Owner's rule (12 Nov 2026): fast pace, dua at normal speed
-Reels felt slow. In editing: cut the quiet start/end of every clip (keep ~0.4 s around speech), play normal
-talk at about 1.2x (pitch kept), but every dua / Arabic line and its source caption stays at 1.0x so children
-can repeat it. A 4-clip reel ends up about 18-22 s instead of 32 s.
+## Owner's rule (12 Nov 2026): normal speed
+The owner compared 1.0x, 1.1x and 1.2x versions and chose the normal speed. Don't speed up or trim reels;
+edit them as before.
