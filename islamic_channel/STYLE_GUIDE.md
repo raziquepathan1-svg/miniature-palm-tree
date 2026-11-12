@@ -70,6 +70,7 @@ Sources used so far:
 | Ali Bismillah bhool gaya | Umar ibn Abi Salamah (RA): "Ya ghulam, sammi Allah, wa kul bi yaminik, wa kul mimma yalik" - Sahih Bukhari 5376, Sahih Muslim 2022 (sahih). Forgetting Bismillah: "Bismillahi awwalahu wa akhirahu" - Aisha (RA), Sunan Abu Dawud 3767, Jami at-Tirmidhi 1858 (sahih) |
 | Ali aur Salam | Abu Hurairah (RA): "...Shall I not tell you something that, if you do it, you will love one another? Spread salam among yourselves" - Sahih Muslim 54 (sahih). Answering a greeting: Surah An-Nisa 4:86 |
 - No music. Subtitles are added in editing, never asked from Flow.
+- Masjid scenes: shoes come off at the door (shoe rack); nobody walks inside the masjid with shoes or slippers.
 - A new story each time, never the same video with small changes.
 
 ## Uploading
