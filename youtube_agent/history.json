@@ -1534,8 +1534,6 @@
     "short2_youtube_id": "SzCTpGI0cYc",
     "short3_youtube_id": "NYqAqpKJylE",
     "preview": "previews/iiWlBArTW3k.mp4",
-    "held_short_youtube_id": "FYvc8CKMAuY",
-    "held_reason": "Short 1 and Reel 1 end on a man and woman hugging; remake Short 1 on Nov 14",
     "pin_question": "Have you ever had a racing heart or a wave of worry come out of nowhere? What helped you calm down?",
     "packages": [
       {
@@ -1577,6 +1575,7 @@
       "AnxietyRelief",
       "HealthTips"
     ],
-    "publish_at": "2026-11-12T16:00:00Z"
+    "publish_at": "2026-11-12T16:00:00Z",
+    "deleted_short_youtube_id": "FYvc8CKMAuY"
   }
 ]
