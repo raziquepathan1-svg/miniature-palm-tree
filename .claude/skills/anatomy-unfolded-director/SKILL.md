@@ -27,3 +27,14 @@ wrong or what is better BEFORE I have to ask. That is your benefit to me."
 - Layout stays fixed: organ on the left, pill label + white line + big coloured line + footer on the right.
 - Prompts to the owner's image tool must name the palette (e.g. "violet and magenta glow, gold spark, pure black background").
 - If a picture arrives in the wrong colour, recolour it (hue shift of the blue range, keep the gold) instead of waiting.
+
+# Owner rule (12 Nov 2026): fact-check first, no approval round
+- Do NOT ask the owner to approve a script before rendering. Instead: write the script, fact-check EVERY claim
+  against reliable sources (NIDDK/NIH, Mayo Clinic, Cleveland Clinic, OpenStax, MedlinePlus, Britannica), fix or
+  soften anything not clearly supported, then build the video and Shorts straight away.
+- "I do not want any error and wrong information": numbers get a source or a safe wording ("about", "usually",
+  "when stretched out"); avoid unverified claims (counts like "millions", durations like "for years").
+- Mechanism claims must match the exact condition (e.g. long standing / emotion -> vasovagal faint; standing up fast
+  -> orthostatic hypotension, a different mechanism).
+- After rendering, report the corrections made and the sources used. The owner still gets the thumbnail prompt and
+  the final summary.
