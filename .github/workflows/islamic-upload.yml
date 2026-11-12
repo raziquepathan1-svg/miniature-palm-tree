@@ -13,6 +13,10 @@ on:
         description: "Only show which channel the login uploads to (uploads nothing)"
         type: boolean
         default: false
+      reschedule:
+        description: "Move every still-scheduled video to the publish time in islamic_channel/config.json"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -43,6 +47,7 @@ jobs:
           fi
           pip install -q google-api-python-client google-auth-oauthlib
           if [ "${{ inputs.check_login }}" = "true" ]; then python -m islamic_channel.upload --check; exit; fi
+          if [ "${{ inputs.reschedule }}" = "true" ]; then python -m islamic_channel.upload --reschedule; exit; fi
           python -m islamic_channel.upload
 
       - name: Record what was uploaded

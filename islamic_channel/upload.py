@@ -2,7 +2,7 @@
 
 Each video is a folder: video.mp4, meta.json ({"title", "description", "tags"}, optional "publish_at"
 as an ISO UTC time) and optionally thumbnail.jpg. A folder that has uploaded.json is done.
-Without publish_at the video is scheduled for the next 7:30 PM India time that is at least 2 hours away,
+Without publish_at the video is scheduled for the next 5 PM India time that is at least 2 hours away,
 so the owner can check it in YouTube Studio first (set it to Private to stop it).
 """
 
@@ -25,13 +25,44 @@ SOURCE = re.compile(r"\b(Sahih|Sunan|Jami|Muwatta|Musnad|Riyad)\b[^\n]*\d|\bSura
 
 
 def next_slot(now: datetime) -> str:
-    """Next daily 7:30 PM India time at least 2 hours away that no other video already has."""
+    """Next daily publish time (5 PM India) at least 2 hours away that no other video already has."""
     taken = {json.loads(p.read_text()).get("publish_at") for p in QUEUE.glob("*/uploaded.json")}
     hour, minute = CONFIG["publish_utc"]
     slot = now.replace(hour=hour, minute=minute, second=0, microsecond=0)
     while slot < now + timedelta(hours=2) or slot.strftime("%Y-%m-%dT%H:%M:%SZ") in taken:
         slot += timedelta(days=1)
     return slot.strftime("%Y-%m-%dT%H:%M:%SZ")
+
+
+def reschedule() -> int:
+    """Moves every still-scheduled video to the publish time in config.json (same day if still possible)."""
+    youtube = build("youtube", "v3", credentials=_credentials(), cache_discovery=False)
+    now = datetime.now(timezone.utc)
+    hour, minute = CONFIG["publish_utc"]
+    taken, moved = set(), 0
+    for rec_path in sorted(QUEUE.glob("*/uploaded.json")):
+        rec = json.loads(rec_path.read_text())
+        old = datetime.strptime(rec["publish_at"], "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=timezone.utc)
+        if old <= now:  # already public
+            continue
+        slot = old.replace(hour=hour, minute=minute)
+        while slot < now + timedelta(minutes=15) or slot in taken:
+            slot += timedelta(days=1)
+        taken.add(slot)
+        new = slot.strftime("%Y-%m-%dT%H:%M:%SZ")
+        if new == rec["publish_at"]:
+            continue
+        status = youtube.videos().list(part="status", id=rec["video_id"]).execute()["items"][0]["status"]
+        keep = {k: status[k] for k in ("license", "embeddable", "publicStatsViewable", "selfDeclaredMadeForKids",
+                                       "containsSyntheticMedia") if k in status}
+        youtube.videos().update(part="status", body={"id": rec["video_id"], "status": {
+            **keep, "privacyStatus": "private", "publishAt": new}}).execute()
+        print(f"{rec_path.parent.name}: {rec['publish_at']} -> {new}")
+        rec["publish_at"] = new
+        rec_path.write_text(json.dumps(rec, indent=2) + "\n")
+        moved += 1
+    print(f"Moved {moved} video(s).")
+    return 0
 
 
 def check_login() -> int:
@@ -88,4 +119,4 @@ def main() -> int:
 
 
 if __name__ == "__main__":
-    sys.exit(check_login() if "--check" in sys.argv else main())
+    sys.exit(check_login() if "--check" in sys.argv else reschedule() if "--reschedule" in sys.argv else main())

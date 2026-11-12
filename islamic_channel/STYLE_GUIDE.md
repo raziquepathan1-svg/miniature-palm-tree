@@ -75,3 +75,29 @@ Sources used so far:
 ## Uploading
 Finished videos go in `upload_queue/<date>-<name>/` (video.mp4, meta.json, optional thumbnail.jpg) and are
 uploaded scheduled by the "Islamic channel - upload videos" workflow. One-time login: `SETUP.md`.
+
+## Family characters (added 5 Nov 2026)
+Reference pictures: `characters/family.jpg` (all five together, owner approved 9 Nov 2026; the ONE picture to add in
+Google Flow for every family reel), plus `characters/ammi.jpg`, `abbu.jpg`, `zara.jpg` for single-character close-ups.
+Ali + Dadu only reels keep using `characters/ali_and_dadu.jpg`.
+Owner's rule (9 Nov 2026): Ammi always in full, loose Islamic dress (khimar over chest + loose abaya); nothing fitted, chest never shown or shaped. Never change her clothes between clips.
+Copy unchanged into prompts, like Ali and Dadu:
+```
+AMMI: kind young mother, 3D Pixar style, warm brown eyes, gentle smile, wearing a long light-blue khimar (Islamic head covering) that covers all her hair, neck and chest and falls loosely down to her waist, over a loose, plain, long navy-blue abaya with long sleeves down to her wrists and length down to her ankles; the dress is wide and loose, not fitted, no body shape visible, only her face and hands are visible.
+ABBU: friendly father in his thirties, 3D Pixar style, short neat black beard, short black hair combed back, plain light-grey kurta and shalwar, white prayer cap only when going to the masjid.
+ZARA: Ali's little sister, cute 4-year-old girl, 3D Pixar style, big round brown eyes, chubby rosy cheeks, black hair with a soft pink embroidered dupatta over her head, pink kameez with white shalwar, often holding a small brown teddy bear.
+```
+
+## Long videos (CoComelon style)
+- Every week: the week's reels joined into one wide 16:9 video (intro card, "Kahani 1/2/3" cards, outro),
+  vertical reels placed on a soft blurred background; the description lists every story's source.
+- Every month: a 30+ minute compilation of all the month's stories.
+
+## Owner's rule (10 Nov 2026): no approval step
+When the owner's clips arrive, make the reel and upload it straight away (next free 5 PM India slot);
+send the owner the finished video and the link, don't ask "upload?" first.
+
+## How the owner sends clips (11 Nov 2026)
+As comments with attached clips on GitHub issue #12 "Hidayah clips" (the comment button waits for uploads,
+so nothing is lost). The upload page islamic_channel/inbox saved several empty commits from the phone; don't
+send the owner there. A Drive folder is not possible (no Drive space).

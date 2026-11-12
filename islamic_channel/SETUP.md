@@ -28,7 +28,7 @@ Studio and only make a **new login** for the Islamic channel.
 ## How uploads work
 - Claude edits your clips into a finished video and puts it in `islamic_channel/upload_queue/<name>/`.
 - The **Islamic channel - upload videos** workflow uploads it automatically, **scheduled** for the next
-  7:30 PM India time that is at least 2 hours away, in the playlist "Ali aur Dadu".
+  5 PM India time that is at least 2 hours away, in the playlist "Ali aur Dadu".
 - Check it in the **YouTube Studio app** before then. If something is wrong, set it to **Private**.
 - Videos are marked **Made for kids** (cartoons for children must be, by YouTube's rules) and
   **Altered or synthetic content** (AI-made).
