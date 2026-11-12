@@ -362,7 +362,9 @@ UNSUITABLE = re.compile(
     r"bathtub|shower|in[- ]bed[- ]together|couple[- ]in[- ]bed|striptease|stripper|pole[- ]danc|nightclub|twerk|bra\b|"
     # owner: nothing suggesting alcohol or drugs (Nov 7: a bar/cocktail Short; Nov 10: CBD/hemp bottles in a Short)
     r"\bcbd\b|hemp|cannabis|marijuana|\bweed\b|\bthc\b|vape|vaping|beer|wine|cocktail|alcohol|liquor|whisk|vodka|"
-    r"champagne|\bbar\b|\bpub\b|drunk|hangover", re.I)
+    r"champagne|\bbar\b|\bpub\b|drunk|hangover|"
+    # owner, Nov 12: no adult couples embracing (an anxiety Short ended on a man and woman hugging)
+    r"\bhug|embrac|snuggl|\bcouple[- ](?:hugging|embracing|laughing|smiling)", re.I)
 
 
 def _suitable(*texts) -> bool:

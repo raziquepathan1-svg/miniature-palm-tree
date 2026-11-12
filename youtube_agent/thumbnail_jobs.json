@@ -436,5 +436,28 @@
     "image": "branding/health-support-studio/thumbs/Y76Da40x2so.jpg",
     "vertical": true,
     "done": true
+  },
+  {
+    "youtube_id": "iiWlBArTW3k",
+    "text": "NOT WEAKNESS",
+    "highlight": "WEAKNESS",
+    "style": "Explainer",
+    "image": "branding/health-support-studio/thumbs/iiWlBArTW3k.jpg"
+  },
+  {
+    "youtube_id": "SzCTpGI0cYc",
+    "text": "FEAR GROWS",
+    "highlight": "GROWS",
+    "style": "Explainer",
+    "image": "branding/health-support-studio/thumbs/iiWlBArTW3k.jpg",
+    "vertical": true
+  },
+  {
+    "youtube_id": "NYqAqpKJylE",
+    "text": "JUST RELAX?",
+    "highlight": "RELAX?",
+    "style": "Explainer",
+    "image": "branding/health-support-studio/thumbs/iiWlBArTW3k.jpg",
+    "vertical": true
   }
 ]

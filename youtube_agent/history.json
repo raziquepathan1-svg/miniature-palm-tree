@@ -1532,9 +1532,10 @@
     "planned_publish_at": "2026-11-12T16:00:00Z",
     "awaiting_approval": true,
     "youtube_id": "iiWlBArTW3k",
-    "short_youtube_id": "FYvc8CKMAuY",
     "short2_youtube_id": "SzCTpGI0cYc",
     "short3_youtube_id": "NYqAqpKJylE",
-    "preview": "previews/iiWlBArTW3k.mp4"
+    "preview": "previews/iiWlBArTW3k.mp4",
+    "held_short_youtube_id": "FYvc8CKMAuY",
+    "held_reason": "Short 1 and Reel 1 end on a man and woman hugging; remake Short 1 on Nov 14"
   }
 ]
