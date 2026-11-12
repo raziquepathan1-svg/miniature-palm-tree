@@ -391,5 +391,45 @@
     "image": "branding/health-support-studio/thumbs/s6YbiShgJFY.jpg",
     "vertical": true,
     "done": true
+  },
+  {
+    "youtube_id": "29-46pnLEH8",
+    "text": "HOW CONTAGIOUS?",
+    "highlight": "CONTAGIOUS?",
+    "style": "Explainer",
+    "image": "branding/health-support-studio/thumbs/QXcgG4JNqU0.jpg",
+    "vertical": true
+  },
+  {
+    "youtube_id": "5tTOj1g2-No",
+    "text": "SAFER TO CATCH IT?",
+    "highlight": "SAFER",
+    "style": "Explainer",
+    "image": "branding/health-support-studio/thumbs/QXcgG4JNqU0.jpg",
+    "vertical": true
+  },
+  {
+    "youtube_id": "BvRV8dI9XR0",
+    "text": "ALWAYS CHEWING ICE?",
+    "highlight": "ICE?",
+    "style": "Explainer",
+    "image": "branding/health-support-studio/thumbs/Y76Da40x2so.jpg",
+    "vertical": true
+  },
+  {
+    "youtube_id": "7IuLzeEE1OQ",
+    "text": "TEST FIRST?",
+    "highlight": "TEST",
+    "style": "Explainer",
+    "image": "branding/health-support-studio/thumbs/Y76Da40x2so.jpg",
+    "vertical": true
+  },
+  {
+    "youtube_id": "9smVdZiPNgw",
+    "text": "ALWAYS EXHAUSTED?",
+    "highlight": "EXHAUSTED?",
+    "style": "Explainer",
+    "image": "branding/health-support-studio/thumbs/Y76Da40x2so.jpg",
+    "vertical": true
   }
 ]
