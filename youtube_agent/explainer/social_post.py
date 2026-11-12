@@ -87,15 +87,22 @@ def main():
         sys.exit(1)
 
 
-def ig_copy(video):
+IG_VARIANTS = [   # Instagram sometimes refuses a whiteboard video (error 2207076); each variant is a different safe re-encode
+    ["-b:v", "3500k", "-minrate", "3500k", "-maxrate", "3500k", "-bufsize", "7000k", "-g", "60", "-profile:v", "main", "-level", "4.0"],
+    ["-b:v", "6000k", "-minrate", "6000k", "-maxrate", "6000k", "-bufsize", "12000k", "-g", "30", "-profile:v", "high", "-level", "4.1",
+     "-vf", "scale=1080:1920,setsar=1,format=yuv420p", "-colorspace", "bt709", "-color_primaries", "bt709", "-color_trc", "bt709"],
+    ["-crf", "20", "-maxrate", "8000k", "-bufsize", "16000k", "-g", "48", "-profile:v", "high", "-level", "4.1", "-vf", "fps=30,scale=1080:1920,setsar=1"],
+]
+
+
+def ig_copy(video, variant=0):
     """Instagram rejects some of our very low-bitrate whiteboard videos (error 2207076); a constant-bitrate copy
-    (3.5 Mbps, stereo 44.1 kHz) is accepted (tested 11 Nov 2026)."""
+    (3.5 Mbps, stereo 44.1 kHz) is usually accepted (tested 11 Nov 2026). variant 1/2 are fallbacks tried when it is not."""
     import subprocess, tempfile
-    out = Path(tempfile.gettempdir()) / f"ig_{video.name}"
+    out = Path(tempfile.gettempdir()) / f"ig{variant}_{video.name}"
     try:
-        subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(video), "-c:v", "libx264", "-profile:v", "main", "-level", "4.0",
-                        "-pix_fmt", "yuv420p", "-r", "30", "-g", "60", "-bf", "0", "-b:v", "3500k", "-minrate", "3500k",
-                        "-maxrate", "3500k", "-bufsize", "7000k", "-x264-params", "nal-hrd=cbr", "-c:a", "aac", "-b:a", "128k",
+        subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(video), "-c:v", "libx264", "-pix_fmt", "yuv420p", "-r", "30", "-bf", "0",
+                        *IG_VARIANTS[variant], "-x264-params", "nal-hrd=cbr" if variant < 2 else "nal-hrd=none", "-c:a", "aac", "-b:a", "128k",
                         "-ar", "44100", "-ac", "2", "-movflags", "+faststart", str(out)], check=True)
         return out
     except Exception as e:
@@ -119,10 +126,17 @@ def post_one(item, queue, posted, token, page_id, ig_user_id, ig_name):
         except Exception as e:
             print(f"Facebook FAILED: {e}")
     if ig_user_id:
-        try:
-            rec["instagram"] = S.post_instagram_reel(ig_copy(video), ig_cap, ig_user_id, token)
-        except Exception as e:
-            print(f"  (Instagram direct upload failed: {e}; trying the Facebook Reel's video)")
+        err = None
+        for variant in range(len(IG_VARIANTS)):
+            try:
+                rec["instagram"] = S.post_instagram_reel(ig_copy(video, variant), ig_cap, ig_user_id, token)
+                err = None
+                break
+            except Exception as e:
+                err = e
+                print(f"  (Instagram upload variant {variant} failed: {e})")
+        if err is not None:
+            print("  (trying the Facebook Reel's video)")
             try:
                 if not fb_id:
                     raise RuntimeError("no Facebook Reel to take the video from")
