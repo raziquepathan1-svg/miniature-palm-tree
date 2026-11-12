@@ -9,14 +9,16 @@ from pathlib import Path
 
 import yaml
 
-MID_LINES = [  # owner Oct 30: give a reason to subscribe, not only the ask
-    "Quick note: this is part {n} of our {total} part series, {series}. Every day I explain one health topic in "
-    "plain words, the kind of thing that can help you or someone you love. If that's useful, subscribe so you "
-    "don't miss the next one.",
-    "By the way, this is part {n} of {total} in our {series} series. A new, simple health tip comes out every "
-    "day, and one of them could help someone in your family. Subscribe so it finds you.",
-    "This is part {n} of our {total} part {series} series. If you want one clear health tip every day that you "
-    "can actually use, subscribe now, then let's keep going.",
+MID_LINES = [  # owner Oct 30: a reason to subscribe, not only the ask. Nov 12: framed around future value for a
+    # search viewer who just got an answer (not "part n of 5"), asked only after the first payoff (about 2 minutes in)
+    "If this is helping, here is what you get when you subscribe: every day we break down one common health "
+    "question in plain words, so you know what is normal and when to see a doctor. Subscribe to keep these "
+    "guides handy, and let's keep going.",
+    "Quick note: we explain common symptoms and health myths in simple words every day, so you can tell what "
+    "is normal and when it is time to call your doctor. If that is useful to you or your family, subscribe, "
+    "then stay with me.",
+    "If you want clear, fact checked answers like this one for the next health question you or your family "
+    "have, subscribe now. Every video ends with what to do and when to get help. Now, back to it.",
 ]
 SHORT_LINE = ("Tap the link above the title for the full answer. And subscribe for one quick health fact a day "
               "that could protect someone you love.")

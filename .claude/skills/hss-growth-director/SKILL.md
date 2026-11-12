@@ -155,3 +155,20 @@ Comments, pinned comments, viewer-question topics and Community Tab polls (owner
 `.claude/skills/hss-community-growth/SKILL.md`.
 Shorts funnel, Related Video IDs, searched titles, 4-6 chapters and description keywords (owner, Nov 2 2026):
 also follow `.claude/skills/hss-funnel-search/SKILL.md`.
+
+## Packaging and subscribe rules (owner, Nov 12 2026, from a Studio CTR review: CTR 1.91%, search 1.92%, suggested 1.33%)
+- Titles name the viewer's exact dilemma or the specific stake, true to the video AS SHORTENED: "Normal Worry or
+  Anxiety Disorder? How to Tell", "Panic Attack or Heart Attack?", "RSV in Babies: Breathing Signs and When to Call
+  911" beat label titles like "Anxiety Symptoms: Signs You Shouldn't Ignore". At least 2 of the 5 packages use an
+  "A or B?" dilemma or a stakes form. The searched phrase sits in the FIRST 40 characters (mobile cuts near 45-50).
+- Never invent a number or a claim for clicks ("4 overlooked signs" only if the script has exactly 4; no
+  "misdiagnosed?", no promise the video does not keep). Medical accuracy beats CTR.
+- Thumbnail text: 2-3 words, an emotional or curiosity hook, never repeating title words; the owner's picture
+  carries one bold focal point (already the rule).
+- Subscribe ask: only after the first payoff (growth.subscribe_after_words 300, about 2 minutes) and framed as
+  future value for the viewer (growth.MID_LINES), never "please support the channel".
+- Binge bridge: every video ends by naming a real adjacent video; the pinned comment links it. End screens cannot
+  be set by the API: remind the owner when a "Best for viewer" end-screen element is worth adding by hand.
+- Judge a thumbnail/title change only after 7-14 days with the Studio Reach numbers (the owner sends screenshots);
+  impressions are small (about 17,000 in 28 days), so one video's CTR is noisy.
+
