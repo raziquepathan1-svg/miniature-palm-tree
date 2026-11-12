@@ -32,6 +32,7 @@ def run(video_id: str, slots: set[int]) -> None:
     growth.PART_IN_TITLE = False
     growth.LAST_MID = growth.apply(plan, None, len(history))
     suspense.apply(plan, data.get("story"))
+    main.USED_SHORT_PAGES.update(entry.get("remade_short_pages") or [])  # Shorts made on other days
 
     workdir = HERE / "output" / "remake"
     shutil.rmtree(workdir, ignore_errors=True)
@@ -68,6 +69,7 @@ def run(video_id: str, slots: set[int]) -> None:
             entry["short3_youtube_id"] = sid
             main.save_history(history)
             print(f"Short 3 (private): https://youtu.be/{sid}")
+    entry["remade_short_pages"] = sorted(main.USED_SHORT_PAGES)
     entry["shorts_remade"] = dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     main.save_history(history)
 
