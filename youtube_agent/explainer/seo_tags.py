@@ -79,13 +79,16 @@ EP = {
  "endocrine": (["Endocrine system explained", "Hormones and glands", "Pituitary, thyroid, adrenal, pancreas"],
     ["endocrine system", "what does the endocrine system do", "hormones explained", "endocrine glands", "pituitary gland", "thyroid gland", "adrenal gland", "cortisol and adrenaline", "insulin and glucagon", "hypothalamus", "feedback loop", "master gland", "metabolism", "anatomy and physiology"],
     ["#endocrinesystem", "#hormones", "#physiology"]),
+ "digestive": (["Digestive system explained", "How digestion works", "Stomach and small intestine"],
+    ["digestive system", "how does digestion work", "digestive system explained", "stomach acid", "why stomach doesn't digest itself", "small intestine", "villi", "bile and pancreatic enzymes", "peristalsis", "large intestine", "gut bacteria", "how long does digestion take", "anatomy and physiology"],
+    ["#digestivesystem", "#digestion", "#stomach"]),
 }
 
 
 def tags_for(eid, short=False):
     kw, tags, _ = EP[eid]
     out, seen = [], set()
-    base = [b for b in BASE if not (eid in ("brain", "neuron", "spine", "autonomic", "endocrine") and b == "cardiovascular system")]
+    base = [b for b in BASE if not (eid in ("brain", "neuron", "spine", "autonomic", "endocrine", "digestive") and b == "cardiovascular system")]
     for t in tags + (["shorts", "anatomy shorts"] if short else []) + base:
         if t.lower() not in seen and sum(len(x) + 3 for x in out) + len(t) + 3 <= 480:
             out.append(t); seen.add(t.lower())

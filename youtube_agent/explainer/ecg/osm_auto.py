@@ -235,7 +235,7 @@ def build():
     cam(s.start, *D, 1.0, 1.0)
     bd.erase(s.start + 0.8, pf)
     Y = PH
-    fa = [pop(sv("Male-silhouette"), 460, Y + 540, h=900, t=s.start + 0.3), text("standing up too fast", 1330, Y + 160, 62, MAROON, s.t("standing") - 0.2, "c"),
+    fa = [pop(sv("Male-silhouette"), 460, Y + 540, h=900, t=s.start + 0.3), text("standing a long time", 1330, Y + 160, 62, MAROON, s.t("standing") - 0.2, "c"),
           text("brake pulls TOO hard", 1330, Y + 300, 70, RED_T, s.t("brake") - 0.2, "c"), text("heart slows", 1330, Y + 440, 62, GOLD_T, s.t("slows") - 0.2, "c"),
           text("blood pressure drops", 1330, Y + 570, 62, BLUE_T, s.t("drops") - 0.6, "c"), text("brain gets less blood", 1330, Y + 700, 60, PURPLE, s.t("less") - 0.6, "c"),
           panel(980, Y + 800, 1700, Y + 960, MINT, s.t("doctor") - 1.0), text("often? see a doctor", 1340, Y + 900, 60, GREEN_T, s.t("doctor") - 0.7, "c")]

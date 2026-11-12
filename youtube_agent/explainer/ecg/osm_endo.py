@@ -226,7 +226,7 @@ def build():
     hp = pop(dot_pic(GL["hypo"], 24), hx, hy - 50, h=56, t=s.t("hypothalamus") - 0.4)
     pf = [pb2, py2, hp, lead([(hx, hy - 20), (hx, hy + 40)], s.t("orders") - 0.2, PURPLE, 8, 0.4, arrow=True),
           text("HYPOTHALAMUS = the real boss", 1360, Y + 170, 64, PURPLE, s.t("hypothalamus") - 0.3, "c"), text("links NERVES to HORMONES", 1360, Y + 300, 58, BLUE_T, s.t("links") - 0.5, "c"),
-          text("hands shaking after a scare?", 1360, Y + 560, 62, MAROON, s.t("shake") - 0.6, "c"), text("ADRENALINE stays in the blood", 1360, Y + 680, 62, RED_T, s.t("adrenaline") - 0.9, "c")]
+          text("hands shaking after a scare?", 1360, Y + 560, 62, MAROON, s.t("shake") - 0.6, "c"), text("adrenaline's effects LINGER", 1360, Y + 680, 62, RED_T, s.t("adrenaline") - 0.9, "c")]
 
     # ---------------- RECAP (E)
     s = sc["recap"]
@@ -283,7 +283,7 @@ def build_short(n):
         cam(s.start, *C, 1.0, 1.0)
         bd.erase(s.start + 0.8, b)
         X = 2 * PW
-        c = [pop(blood_pic(), X + 960, 400, w=1300, t=s.t("blood") - 1.0), text("a chemical in the BLOOD", X + 960, 700, 76, RED_T, s.t("chemical") - 0.3, "c"), text("?", X + 960, 900, 200, GOLD_T, s.t("shaking") - 0.3, "c")]
+        c = [pop(blood_pic(), X + 960, 400, w=1300, t=s.start + 0.3), text("a stress HORMONE", X + 960, 700, 90, RED_T, s.t("hormone") - 0.3, "c"), text("?", X + 960, 900, 200, GOLD_T, s.t("shaking") - 0.3, "c")]
 
     def fx(crop, ctx, t):
         OP.fx(crop, ctx, t, [], [], glows)
