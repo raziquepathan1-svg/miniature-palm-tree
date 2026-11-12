@@ -1,0 +1,46 @@
+[
+ {
+  "id": "story",
+  "text": "Under your brain sits a gland about the size of a pea. It sends orders to almost every other gland in your body. It helps decide how tall you grow, how you handle stress, and how your body uses energy. So who gives orders to the pea? Let's find out."
+ },
+ {
+  "id": "overview",
+  "text": "This is the endocrine system. Its glands make chemical messengers called hormones. They release them into your blood, and the blood carries them all over your body."
+ },
+ {
+  "id": "speed",
+  "text": "Nerves are fast. They send a signal in a flash. Hormones are slower, but their effects last longer, from minutes to days or even years."
+ },
+ {
+  "id": "map",
+  "text": "The main glands are the hypothalamus and pituitary in the head, the thyroid in the neck, the adrenal glands on top of the kidneys, and the pancreas behind the stomach. The ovaries and testes are endocrine glands too."
+ },
+ {
+  "id": "pituitary",
+  "text": "The pituitary is often called the master gland. It makes hormones that tell other glands what to do. For example, it tells the thyroid to work, and it controls growth."
+ },
+ {
+  "id": "thyroid",
+  "text": "The thyroid is a butterfly-shaped gland in the neck. Its hormones set your metabolism, the speed at which your cells use energy."
+ },
+ {
+  "id": "adrenal",
+  "text": "Each adrenal gland sits on top of a kidney. It makes cortisol, which helps you handle stress, and adrenaline, which gives you a burst of energy."
+ },
+ {
+  "id": "pancreas",
+  "text": "The pancreas controls blood sugar. After a meal, it releases insulin, which helps cells take in sugar from the blood. Another hormone, glucagon, raises blood sugar when it drops too low."
+ },
+ {
+  "id": "feedback",
+  "text": "Hormones are controlled like a thermostat. When a hormone level is high enough, the body turns the gland down. When it is low, the gland turns up. This is called a feedback loop."
+ },
+ {
+  "id": "payoff",
+  "text": "Now back to the pea. The pituitary is not really the boss. A small area of the brain above it, the hypothalamus, gives it orders. It links the nervous system to the endocrine system. And it also explains why your hands may still shake after a scare is over. Adrenaline stays in your blood for a while."
+ },
+ {
+  "id": "recap",
+  "text": "Remember three things. Glands release hormones into the blood. Hormones are slower than nerves, but they last longer. And feedback loops keep them in balance. Next time, the digestive system: the journey of a single bite."
+ }
+]
