@@ -477,7 +477,8 @@
     "text": "TWICE A WEEK?",
     "highlight": "TWICE",
     "style": "Explainer",
-    "image": "branding/health-support-studio/thumbs/WcDj4m69ctI.jpg"
+    "image": "branding/health-support-studio/thumbs/WcDj4m69ctI.jpg",
+    "done": true
   },
   {
     "youtube_id": "Kw89cuMK6nA",
@@ -485,7 +486,8 @@
     "highlight": "BURN?",
     "style": "Explainer",
     "image": "branding/health-support-studio/thumbs/WcDj4m69ctI.jpg",
-    "vertical": true
+    "vertical": true,
+    "done": true
   },
   {
     "youtube_id": "s6NOjj8RoDA",
@@ -493,7 +495,8 @@
     "highlight": "SAFE",
     "style": "Explainer",
     "image": "branding/health-support-studio/thumbs/WcDj4m69ctI.jpg",
-    "vertical": true
+    "vertical": true,
+    "done": true
   },
   {
     "youtube_id": "L0ezFB-4X_M",
@@ -501,6 +504,7 @@
     "highlight": "BRIEF",
     "style": "Explainer",
     "image": "branding/health-support-studio/thumbs/WcDj4m69ctI.jpg",
-    "vertical": true
+    "vertical": true,
+    "done": true
   }
 ]
