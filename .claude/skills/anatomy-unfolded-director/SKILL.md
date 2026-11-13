@@ -44,3 +44,13 @@ wrong or what is better BEFORE I have to ask. That is your benefit to me."
   The owner generates the picture and sends it every time; then compose with make_thumb.py (pill + 2 text lines),
   attach to the queue item (thumbnail + update=True if already uploaded) and push.
 - Never leave a long video without a thumbnail: if none has arrived by upload time, make a stand-in and say so.
+
+# Owner rule (13 Nov 2026): duplicates - standing permission to clean up
+- Pushing explainer_queue/queue.json uploads new items at once (workflow trigger). Push an episode ONCE, only after
+  the fact-check, render and thumbnail are final. Rebuilding an already-uploaded episode creates DUPLICATE uploads.
+- If duplicate videos/Shorts (YouTube) or Reels (Facebook/Instagram) of the same episode ever appear, the owner has
+  authorised me to check everything and delete the extra ones myself (no need to ask): find them from queue.json
+  git history (old youtube_id vs current), delete only superseded copies via explainer_queue/delete.json (publish run
+  carries it out) and the Reel ids in social_posted.json history; NEVER delete the current queue.json copy; then
+  report exactly which ids were deleted and which were kept.
+- This permission covers exact duplicates/superseded versions only, not other deletions.
