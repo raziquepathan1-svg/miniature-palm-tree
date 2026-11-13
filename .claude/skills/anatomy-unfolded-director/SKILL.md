@@ -38,3 +38,9 @@ wrong or what is better BEFORE I have to ask. That is your benefit to me."
   -> orthostatic hypotension, a different mechanism).
 - After rendering, report the corrections made and the sources used. The owner still gets the thumbnail prompt and
   the final summary.
+
+# Owner rule (13 Nov 2026): thumbnails
+- For every new episode, give the owner 2 image prompts (dark cinematic 3D, topic colours, organ left, right 45% empty).
+  The owner generates the picture and sends it every time; then compose with make_thumb.py (pill + 2 text lines),
+  attach to the queue item (thumbnail + update=True if already uploaded) and push.
+- Never leave a long video without a thumbnail: if none has arrived by upload time, make a stand-in and say so.
