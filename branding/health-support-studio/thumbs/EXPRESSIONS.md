@@ -12,6 +12,7 @@ no default smile, the host never holds an object, face must match the avatar.
 7. Both palms up, confused shrug - "Does X really cause Y?"
 8. Leaning close to the camera, wide eyes, face fills the right half - shocking facts, numbers
 9. Finger on lips ("shh") - little-known facts
+12. One hand on his throat, alarmed wide eyes - allergy, throat, choking (added Nov 13)
 11. One hand flat on his stomach, pained face - stomach, gut, food poisoning (added Nov 12)
 10. Looking sideways at the glowing object behind him, worried - anatomy / disease topics
 
@@ -55,3 +56,12 @@ no default smile, the host never holds an object, face must match the avatar.
   - sunscreen myths 035: #7 shrug, outdoors (different from the Nov 9 arms-crossed one)
   - COPD 038: #3 coughing into elbow
   - gout 039: #10 looking sideways at a red glowing foot
+- Nov 13 batch for OLDER videos (re-thumbnail; prompts given; pictures saved as thumbs/<video_id>.jpg, owner uploads without renaming):
+  - dehydration selS9_QfgJE: #8 leaning close
+  - sepsis rmcgEZjyhQ8: #5 "Wait!" finger
+  - Tylenol or Advil hHIxJVUTm1k: #7 shrug
+  - blood pressure eBLOQcBeKy8: #2 hand on chest
+  - cholesterol Y6y9rJEg5AU: #6 arms crossed
+  - blood test results MSMDnPoLhsk: #1 pointing left
+  - men pee all night ty-M5_xQGVA: #10 looking sideways
+  - anaphylaxis B8kEqFsTjXQ: #12 hand on throat
