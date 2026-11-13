@@ -2056,7 +2056,7 @@
   "id": "endocrine",
   "kind": "video",
   "file": "endocrine.mp4",
-  "thumbnail": null,
+  "thumbnail": "endocrine_thumb.jpg",
   "title": "What Does the Endocrine System Do? Hormones & Glands Explained (Pituitary, Thyroid, Adrenal, Pancreas)",
   "description": "Endocrine system explained • Hormones and glands • Pituitary, thyroid, adrenal, pancreas\n\nWhat does the endocrine system do? Start with a gland the size of a pea under your brain that sends orders to other glands. Learn what hormones are, why nerves are fast but hormones last longer, the main glands (hypothalamus, pituitary, thyroid, adrenal glands, pancreas, ovaries and testes), cortisol and adrenaline, insulin and glucagon, feedback loops like a thermostat, and why the hypothalamus is the real boss that links the nervous system to the endocrine system. Educational only, not medical advice. Perfect for MBBS, nursing, pharmacy and biology students.\n\nCHAPTERS\n0:00 The pea-sized gland mystery\n0:20 Glands & hormones\n0:31 Nerves vs hormones\n0:39 The main glands\n0:53 The pituitary\n1:04 The thyroid\n1:13 Adrenal glands: cortisol & adrenaline\n1:22 Pancreas: insulin & glucagon\n1:35 Feedback loops\n1:46 The real boss: hypothalamus\n2:07 Recap\n\nPart of the Nervous System series on The Anatomy Unfolded.\n\n⚠️ Educational content only, not medical advice. Always talk to a qualified doctor about your health.\nSome illustrations: Servier Medical Art (smart.servier.com), licensed under CC BY 4.0.\n\n#endocrinesystem #hormones #physiology #anatomy #medicalstudent #nursing",
   "tags": [
@@ -2084,7 +2084,8 @@
   ],
   "playlist": "Nervous System",
   "publish_at": "2026-11-21T10:00:00Z",
-  "youtube_id": "QehG9VBvBWY"
+  "youtube_id": "QehG9VBvBWY",
+  "update": true
  },
  {
   "id": "endocrine_short1",
