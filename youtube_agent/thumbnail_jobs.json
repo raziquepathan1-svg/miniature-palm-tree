@@ -506,5 +506,61 @@
     "image": "branding/health-support-studio/thumbs/WcDj4m69ctI.jpg",
     "vertical": true,
     "done": true
+  },
+  {
+    "youtube_id": "rmcgEZjyhQ8",
+    "text": "HOURS MATTER",
+    "highlight": "HOURS",
+    "style": "Warning Signs",
+    "image": "branding/health-support-studio/thumbs/rmcgEZjyhQ8.jpg"
+  },
+  {
+    "youtube_id": "B8kEqFsTjXQ",
+    "text": "CALL 911 NOW",
+    "highlight": "911",
+    "style": "Warning Signs",
+    "image": "branding/health-support-studio/thumbs/B8kEqFsTjXQ.jpg"
+  },
+  {
+    "youtube_id": "ty-M5_xQGVA",
+    "text": "WHEN TO WORRY",
+    "highlight": "WORRY",
+    "style": "Explainer",
+    "image": "branding/health-support-studio/thumbs/ty-M5_xQGVA.jpg"
+  },
+  {
+    "youtube_id": "MSMDnPoLhsk",
+    "text": "WHAT'S HIGH?",
+    "highlight": "HIGH?",
+    "style": "Explainer",
+    "image": "branding/health-support-studio/thumbs/MSMDnPoLhsk.jpg"
+  },
+  {
+    "youtube_id": "Y6y9rJEg5AU",
+    "text": "SILENT BUILDUP",
+    "highlight": "SILENT",
+    "style": "Explainer",
+    "image": "branding/health-support-studio/thumbs/Y6y9rJEg5AU.jpg"
+  },
+  {
+    "youtube_id": "hHIxJVUTm1k",
+    "text": "LIVER VS STOMACH",
+    "highlight": "LIVER",
+    "style": "Explainer",
+    "image": "branding/health-support-studio/thumbs/hHIxJVUTm1k.jpg"
+  },
+  {
+    "youtube_id": "selS9_QfgJE",
+    "text": "SPOT IT EARLY",
+    "highlight": "EARLY",
+    "style": "Warning Signs",
+    "image": "branding/health-support-studio/thumbs/selS9_QfgJE.jpg"
+  },
+  {
+    "youtube_id": "eBLOQcBeKy8",
+    "text": "KNOW YOURS",
+    "highlight": "KNOW",
+    "style": "Explainer",
+    "image": "branding/health-support-studio/thumbs/eBLOQcBeKy8.jpg"
   }
 ]
