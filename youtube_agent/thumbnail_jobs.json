@@ -512,55 +512,63 @@
     "text": "HOURS MATTER",
     "highlight": "HOURS",
     "style": "Warning Signs",
-    "image": "branding/health-support-studio/thumbs/rmcgEZjyhQ8.jpg"
+    "image": "branding/health-support-studio/thumbs/rmcgEZjyhQ8.jpg",
+    "done": true
   },
   {
     "youtube_id": "B8kEqFsTjXQ",
     "text": "CALL 911 NOW",
     "highlight": "911",
     "style": "Warning Signs",
-    "image": "branding/health-support-studio/thumbs/B8kEqFsTjXQ.jpg"
+    "image": "branding/health-support-studio/thumbs/B8kEqFsTjXQ.jpg",
+    "done": true
   },
   {
     "youtube_id": "ty-M5_xQGVA",
     "text": "WHEN TO WORRY",
     "highlight": "WORRY",
     "style": "Explainer",
-    "image": "branding/health-support-studio/thumbs/ty-M5_xQGVA.jpg"
+    "image": "branding/health-support-studio/thumbs/ty-M5_xQGVA.jpg",
+    "done": true
   },
   {
     "youtube_id": "MSMDnPoLhsk",
     "text": "WHAT'S HIGH?",
     "highlight": "HIGH?",
     "style": "Explainer",
-    "image": "branding/health-support-studio/thumbs/MSMDnPoLhsk.jpg"
+    "image": "branding/health-support-studio/thumbs/MSMDnPoLhsk.jpg",
+    "done": true
   },
   {
     "youtube_id": "Y6y9rJEg5AU",
     "text": "SILENT BUILDUP",
     "highlight": "SILENT",
     "style": "Explainer",
-    "image": "branding/health-support-studio/thumbs/Y6y9rJEg5AU.jpg"
+    "image": "branding/health-support-studio/thumbs/Y6y9rJEg5AU.jpg",
+    "done": true
   },
   {
     "youtube_id": "hHIxJVUTm1k",
     "text": "LIVER VS STOMACH",
     "highlight": "LIVER",
     "style": "Explainer",
-    "image": "branding/health-support-studio/thumbs/hHIxJVUTm1k.jpg"
+    "image": "branding/health-support-studio/thumbs/hHIxJVUTm1k.jpg",
+    "done": true
   },
   {
     "youtube_id": "selS9_QfgJE",
     "text": "SPOT IT EARLY",
     "highlight": "EARLY",
     "style": "Warning Signs",
-    "image": "branding/health-support-studio/thumbs/selS9_QfgJE.jpg"
+    "image": "branding/health-support-studio/thumbs/selS9_QfgJE.jpg",
+    "done": true
   },
   {
     "youtube_id": "eBLOQcBeKy8",
     "text": "KNOW YOURS",
     "highlight": "KNOW",
     "style": "Explainer",
-    "image": "branding/health-support-studio/thumbs/eBLOQcBeKy8.jpg"
+    "image": "branding/health-support-studio/thumbs/eBLOQcBeKy8.jpg",
+    "done": true
   }
 ]
