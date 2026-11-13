@@ -1,0 +1,42 @@
+[
+ {
+  "id": "story",
+  "text": "You cut your finger. Germs can slip into the wound. Within hours, the area turns red, warm and swollen. That is not the germs doing it. So who is? Let's meet your immune system."
+ },
+ {
+  "id": "overview",
+  "text": "Your immune system is a network of organs, white blood cells, proteins and chemicals that defends you against germs and helps you heal. It has two lines of defense: innate immunity, which is fast, and adaptive immunity, which is slower but more precise."
+ },
+ {
+  "id": "barrier",
+  "text": "The first defense is a barrier. Your skin is a big barrier against germs. The linings of your airways and gut, which make mucus, help block them too."
+ },
+ {
+  "id": "innate",
+  "text": "If germs get through, innate cells respond. Neutrophils are often the first cellular responders. They arrive in large numbers and swallow bacteria, a process called phagocytosis. Macrophages do this too, and they call for more help. Natural killer cells attack some infected cells."
+ },
+ {
+  "id": "inflammation",
+  "text": "These cells release chemical signals. Blood vessels widen, and fluid and immune cells enter the tissue. This is inflammation. Its classic signs are redness, heat, swelling and pain. So the red, warm, swollen finger is your immune system at work."
+ },
+ {
+  "id": "adaptive",
+  "text": "If the infection continues, the adaptive immune system joins in. Dendritic cells carry pieces of the germ to the lymph nodes, where they alert T cells. This takes days to build, but it is very specific."
+ },
+ {
+  "id": "tcells",
+  "text": "Helper T cells use chemical messengers to activate other immune cells. Cytotoxic T cells find and destroy cells that viruses have infected."
+ },
+ {
+  "id": "bcells",
+  "text": "B cells make antibodies. Antibodies are proteins that attach to a specific germ and help your body remove it."
+ },
+ {
+  "id": "memory",
+  "text": "After the infection, some B cells and T cells become memory cells. If the same germ returns, they help your body respond faster. Vaccines work by showing your body substances from a germ, such as small pieces of it. Protection may last months, years or even a lifetime."
+ },
+ {
+  "id": "recap",
+  "text": "Remember three things. Barriers and innate cells respond first, and they cause inflammation. T cells and B cells are slower, but very specific. And memory cells help you respond faster next time. If you are worried about an infection, talk to a doctor. Next time, the skin: your largest organ and your first defense."
+ }
+]
