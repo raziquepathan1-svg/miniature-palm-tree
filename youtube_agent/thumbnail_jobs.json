@@ -471,5 +471,36 @@
     "image": "branding/health-support-studio/thumbs/s6YbiShgJFY.jpg",
     "vertical": true,
     "done": true
+  },
+  {
+    "youtube_id": "WcDj4m69ctI",
+    "text": "TWICE A WEEK?",
+    "highlight": "TWICE",
+    "style": "Explainer",
+    "image": "branding/health-support-studio/thumbs/WcDj4m69ctI.jpg"
+  },
+  {
+    "youtube_id": "Kw89cuMK6nA",
+    "text": "NIGHTLY BURN?",
+    "highlight": "BURN?",
+    "style": "Explainer",
+    "image": "branding/health-support-studio/thumbs/WcDj4m69ctI.jpg",
+    "vertical": true
+  },
+  {
+    "youtube_id": "s6NOjj8RoDA",
+    "text": "SAFE LONG-TERM?",
+    "highlight": "SAFE",
+    "style": "Explainer",
+    "image": "branding/health-support-studio/thumbs/WcDj4m69ctI.jpg",
+    "vertical": true
+  },
+  {
+    "youtube_id": "L0ezFB-4X_M",
+    "text": "BRIEF RELIEF",
+    "highlight": "BRIEF",
+    "style": "Explainer",
+    "image": "branding/health-support-studio/thumbs/WcDj4m69ctI.jpg",
+    "vertical": true
   }
 ]

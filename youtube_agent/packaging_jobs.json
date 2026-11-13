@@ -1383,5 +1383,76 @@
     "youtube_id": "PBewMujNZbo",
     "title": "Is the RSV baby shot a vaccine? #Shorts",
     "done": true
+  },
+  {
+    "youtube_id": "WcDj4m69ctI",
+    "title": "Heartburn or Heart Attack? When to Call 911",
+    "description_top": "Heartburn or heart attack? When to call 911, plus acid reflux symptoms, GERD (heartburn twice a week or more), and why a glass of milk will not fix heartburn.\nWhat causes acid reflux, food triggers, lifestyle changes that work, reflux medicines and PPIs, and the red flags that need a doctor, based on NIDDK and Mayo Clinic guidance.",
+    "pin_question": "How often do you get heartburn, and what is the first thing you reach for? Antacids, milk, or something else?",
+    "packages": [
+      {
+        "title": "Heartburn or Heart Attack? When to Call 911",
+        "thumbnail_text": "TWICE A WEEK?",
+        "thumbnail_highlight": "TWICE"
+      },
+      {
+        "title": "Heartburn Every Week? It May Be GERD",
+        "thumbnail_text": "NOT NORMAL",
+        "thumbnail_highlight": "NORMAL"
+      },
+      {
+        "title": "Why a Glass of Milk Won't Fix Heartburn",
+        "thumbnail_text": "BRIEF RELIEF",
+        "thumbnail_highlight": "BRIEF"
+      },
+      {
+        "title": "Acid Reflux Symptoms: When to See a Doctor",
+        "thumbnail_text": "RED FLAGS",
+        "thumbnail_highlight": "FLAGS"
+      },
+      {
+        "title": "Acid Reflux or GERD? What You Need to Know",
+        "thumbnail_text": "NIGHTLY BURN?",
+        "thumbnail_highlight": "BURN?"
+      }
+    ],
+    "chosen": {
+      "title": "Heartburn or Heart Attack? When to Call 911",
+      "thumbnail_text": "TWICE A WEEK?",
+      "thumbnail_highlight": "TWICE"
+    },
+    "tags": [
+      "heartburn or heart attack",
+      "acid reflux symptoms",
+      "heartburn",
+      "gerd",
+      "gerd symptoms",
+      "how to stop heartburn",
+      "does milk help heartburn",
+      "heartburn at night",
+      "acid reflux foods to avoid",
+      "are ppis safe",
+      "reflux medicine",
+      "when to see a doctor for heartburn",
+      "heartburn twice a week",
+      "chest pain 911",
+      "health education"
+    ],
+    "social_keywords": "heartburn or heart attack · acid reflux symptoms · GERD · does milk help heartburn · are PPIs safe",
+    "social_hashtags": [
+      "Heartburn",
+      "AcidReflux",
+      "GERD",
+      "DigestiveHealth",
+      "HealthTips"
+    ]
+  },
+  {
+    "youtube_id": "s6NOjj8RoDA",
+    "title": "Are acid reflux pills (PPIs) dangerous? #Shorts"
+  },
+  {
+    "youtube_id": "L0ezFB-4X_M",
+    "title": "Does milk help heartburn? #Shorts"
   }
 ]
