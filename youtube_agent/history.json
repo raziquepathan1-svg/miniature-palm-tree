@@ -1581,5 +1581,20 @@
     ],
     "publish_at": "2026-11-12T16:00:00Z",
     "deleted_short_youtube_id": "FYvc8CKMAuY"
+  },
+  {
+    "date": "2026-11-13T09:49:40",
+    "topic": "Acid reflux and GERD: causes, warning signs and treatment",
+    "requested_topic": "Acid reflux and GERD: causes, warning signs and treatment",
+    "title": "Heartburn Every Week? What You Need to Know About Acid Reflux",
+    "style": "Top Questions",
+    "script_file": "041-acid-reflux-questions.yaml",
+    "planned_publish_at": "2026-11-13T16:00:00Z",
+    "awaiting_approval": true,
+    "youtube_id": "WcDj4m69ctI",
+    "short_youtube_id": "Kw89cuMK6nA",
+    "short2_youtube_id": "s6NOjj8RoDA",
+    "short3_youtube_id": "L0ezFB-4X_M",
+    "preview": "previews/WcDj4m69ctI.mp4"
   }
 ]
