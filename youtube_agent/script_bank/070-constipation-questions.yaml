@@ -295,3 +295,20 @@ plan:
       footage_query: "family walking outdoors"
       narration: >-
         Get all the answers in our full video, on the Health Support Studio YouTube channel.
+story:  # owner Nov 9: movie-style suspense (a clearly hypothetical case, resolved only with facts from this video)
+  open: >-
+    Imagine Daniel, fifty. He has felt blocked up for weeks, so he bought a detox tea that promises to flush out toxins.
+    It left him cramped and dehydrated, and he is still not going. By the end of this video, you will know what a
+    detox tea really does, and the simple steps that work better.
+  twist: >-
+    And that is exactly what happened to Daniel. The tea did not flush out any toxins. It only left him cramped and
+    dehydrated.
+  end: >-
+    So what should Daniel do? Add fiber slowly, drink water and keep moving. If his stool has blood, or his bowel
+    habits have changed for more than a few weeks, he should see a doctor.
+  short_cliff: >-
+    And there is one popular fix for constipation that can leave you cramped and dehydrated instead. Do you know what it
+    is?
+  reel_answer: >-
+    Here is the answer: colon cleanses and detox teas. Your colon and liver already remove waste on their own, and
+    these products can cause cramping and dehydration.

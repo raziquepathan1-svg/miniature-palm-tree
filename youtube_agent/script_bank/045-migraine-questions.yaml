@@ -295,3 +295,21 @@ plan:
       footage_query: "woman smiling outdoors"
       narration: >-
         Learn more about migraine in our full video, on the Health Support Studio YouTube channel.
+story:  # owner Nov 9: movie-style suspense (a clearly hypothetical case, resolved only with facts from this video)
+  open: >-
+    Picture Priya, thirty four. Migraines hit her three or four days a week, so every time one starts she takes a
+    pain pill right away, just to get through the day. Stay with me, because by the end you will know why those
+    pills may be making her headaches worse, and what actually helps.
+  twist: >-
+    Remember Priya and her daily pain pills? Here is the twist. Taking pain relievers or migraine medicines more than
+    two or three days a week can cause medication overuse headache, also called rebound headache.
+  end: >-
+    So what should Priya do? Treat attacks early but keep pain relievers to two or three days a week, keep a diary to
+    find her triggers, and ask her doctor about preventive treatment, because migraine is a real condition with more
+    treatment options than ever.
+  short_cliff: >-
+    And there is one thing many people do to treat their headaches that can actually make them come more often. Do you
+    know what it is?
+  reel_answer: >-
+    Here is the answer: taking pain relievers too often, more than two or three days a week. It can cause rebound
+    headaches that come more often and are harder to treat.
