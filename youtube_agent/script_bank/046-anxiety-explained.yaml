@@ -261,7 +261,7 @@ plan:
     - layout: "outro"
       heading: "Remember"
       points: ["Anxiety is treatable", "Do not avoid, face gradually", "988 is always there"]
-      footage_query: "family hugging"
+      footage_query: "family walking park"
       narration: >-
         Remember: anxiety is real and treatable, facing fears gradually helps more than avoiding them, and nine eight eight is
         always there if you need it. Share this with someone who worries all the time. This video is for education only, not
@@ -288,7 +288,7 @@ plan:
     - layout: "outro"
       heading: "Full Video"
       points: ["On YouTube"]
-      footage_query: "family hugging"
+      footage_query: "family walking park"
       narration: >-
         Learn more about anxiety in our full video, on the Health Support Studio YouTube channel.
 story:  # owner Nov 9: movie-style suspense (a clearly hypothetical case, resolved only with facts from this video)
