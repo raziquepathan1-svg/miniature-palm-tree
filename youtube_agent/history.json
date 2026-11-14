@@ -1640,5 +1640,20 @@
       "HealthTips"
     ],
     "publish_at": "2026-11-13T16:00:00Z"
+  },
+  {
+    "date": "2026-11-14T11:03:57",
+    "topic": "Thyroid problems: underactive vs overactive thyroid",
+    "requested_topic": "Thyroid problems: underactive vs overactive thyroid",
+    "title": "Tired, Cold, Gaining Weight? Could It Be Your Thyroid?",
+    "style": "Top Questions",
+    "script_file": "026-thyroid-questions.yaml",
+    "planned_publish_at": "2026-11-14T16:00:00Z",
+    "awaiting_approval": true,
+    "youtube_id": "rBzWcYi6Quw",
+    "short_youtube_id": "lrtYLhglAC4",
+    "short2_youtube_id": "C8IyOaBWi6Y",
+    "short3_youtube_id": "0yLpsqNW0ms",
+    "preview": "previews/rBzWcYi6Quw.mp4"
   }
 ]
