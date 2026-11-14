@@ -91,13 +91,16 @@ EP = {
  "skin": (["Skin anatomy explained", "Layers of the skin", "Melanin and keratin"],
     ["what does skin do", "skin anatomy", "layers of the skin", "epidermis dermis hypodermis", "keratin", "melanin", "melanocytes", "sweat glands", "sebaceous glands", "collagen", "vitamin D from sunlight", "why skin cells are dead", "anatomy and physiology"],
     ["#skin", "#skinanatomy", "#melanin"]),
+ "musc": (["Musculoskeletal system explained", "Bones and muscles", "How muscles contract"],
+    ["musculoskeletal system", "how do bones and muscles work", "how many bones do babies have", "206 bones", "bone remodeling", "tendons and ligaments", "joints", "types of muscle", "how muscles contract", "biceps and triceps", "actin and myosin", "skeletal muscle", "anatomy and physiology"],
+    ["#musculoskeletal", "#bones", "#muscles"]),
 }
 
 
 def tags_for(eid, short=False):
     kw, tags, _ = EP[eid]
     out, seen = [], set()
-    base = [b for b in BASE if not (eid in ("brain", "neuron", "spine", "autonomic", "endocrine", "digestive", "kidney", "immune", "skin") and b == "cardiovascular system")]
+    base = [b for b in BASE if not (eid in ("brain", "neuron", "spine", "autonomic", "endocrine", "digestive", "kidney", "immune", "skin", "musc") and b == "cardiovascular system")]
     for t in tags + (["shorts", "anatomy shorts"] if short else []) + base:
         if t.lower() not in seen and sum(len(x) + 3 for x in out) + len(t) + 3 <= 480:
             out.append(t); seen.add(t.lower())
