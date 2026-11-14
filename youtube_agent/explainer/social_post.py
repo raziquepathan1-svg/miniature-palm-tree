@@ -127,14 +127,21 @@ def post_one(item, queue, posted, token, page_id, ig_user_id, ig_name):
             print(f"Facebook FAILED: {e}")
     if ig_user_id:
         err = None
-        for variant in range(len(IG_VARIANTS)):
-            try:
-                rec["instagram"] = S.post_instagram_reel(ig_copy(video, variant), ig_cap, ig_user_id, token)
-                err = None
+        import time
+        for rnd in range(2):   # Meta often refuses the first try right after the Facebook post and accepts a retry a few minutes later
+            if rnd:
+                print("  (waiting 4 minutes, then trying Instagram again)")
+                time.sleep(240)
+            for variant in range(len(IG_VARIANTS)):
+                try:
+                    rec["instagram"] = S.post_instagram_reel(ig_copy(video, variant), ig_cap, ig_user_id, token)
+                    err = None
+                    break
+                except Exception as e:
+                    err = e
+                    print(f"  (Instagram upload round {rnd} variant {variant} failed: {e})")
+            if err is None:
                 break
-            except Exception as e:
-                err = e
-                print(f"  (Instagram upload variant {variant} failed: {e})")
         if err is not None:
             print("  (trying the Facebook Reel's video)")
             try:
