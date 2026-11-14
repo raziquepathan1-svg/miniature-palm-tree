@@ -97,13 +97,16 @@ EP = {
  "lymph": (["Lymphatic system explained", "Lymph nodes", "How lymph drains"],
     ["lymphatic system", "what does the lymphatic system do", "lymph nodes", "what is lymph", "lymphatic drainage", "lymphedema", "spleen thymus tonsils", "lacteals", "subclavian vein", "swollen lymph nodes", "interstitial fluid", "immune system", "anatomy and physiology"],
     ["#lymphaticsystem", "#lymphnodes", "#lymph"]),
+ "eye": (["How the eye works", "Retina, rods and cones", "The blind spot"],
+    ["how does the eye see", "eye anatomy", "how the eye works", "retina rods and cones", "why image is upside down on the retina", "blind spot", "optic nerve", "cornea pupil iris lens", "fovea", "color vision cones", "vision explained", "senses", "anatomy and physiology"],
+    ["#eyeanatomy", "#vision", "#retina"]),
 }
 
 
 def tags_for(eid, short=False):
     kw, tags, _ = EP[eid]
     out, seen = [], set()
-    base = [b for b in BASE if not (eid in ("brain", "neuron", "spine", "autonomic", "endocrine", "digestive", "kidney", "immune", "skin", "musc", "lymph") and b == "cardiovascular system")]
+    base = [b for b in BASE if not (eid in ("brain", "neuron", "spine", "autonomic", "endocrine", "digestive", "kidney", "immune", "skin", "musc", "lymph", "eye") and b == "cardiovascular system")]
     for t in tags + (["shorts", "anatomy shorts"] if short else []) + base:
         if t.lower() not in seen and sum(len(x) + 3 for x in out) + len(t) + 3 <= 480:
             out.append(t); seen.add(t.lower())
