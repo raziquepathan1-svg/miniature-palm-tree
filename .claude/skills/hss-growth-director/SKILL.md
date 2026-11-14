@@ -172,3 +172,9 @@ also follow `.claude/skills/hss-funnel-search/SKILL.md`.
 - Judge a thumbnail/title change only after 7-14 days with the Studio Reach numbers (the owner sends screenshots);
   impressions are small (about 17,000 in 28 days), so one video's CTR is noisy.
 
+## Hugging clips (owner, Nov 14 2026)
+- A family hugging (parents with a child, a mother and child) is FINE: "no problem about the family hug".
+- Still NOT allowed: adult man-and-woman couples embracing, cuddling, kissing or romantic scenes. The word filter
+  (visuals.UNSUITABLE) blocks "hug/embrace" tags, so look at the clips themselves and judge: a family group hug passes,
+  a romantic embrace does not.
+
