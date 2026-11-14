@@ -1,0 +1,38 @@
+[
+ {
+  "id": "story",
+  "text": "The image that lands on the back of your eye is upside down. Yet you see the world the right way up. How is that possible? Let's follow the light."
+ },
+ {
+  "id": "overview",
+  "text": "Your eye works a bit like a camera. Light enters through the cornea, passes through the pupil, and the lens helps focus it onto the retina at the back of the eye."
+ },
+ {
+  "id": "iris",
+  "text": "The colored part of your eye is the iris. Its muscles change the size of the pupil, which controls how much light gets in."
+ },
+ {
+  "id": "lens",
+  "text": "The cornea and the lens together bend the light, like a convex lens. This forms an image on the retina, and that image is upside down."
+ },
+ {
+  "id": "retina",
+  "text": "The retina holds photoreceptor cells. Rods work in dim light. Cones detect color. The center of the retina, the fovea, gives sharp central vision. There are three types of cones, sensitive to red, green and blue light."
+ },
+ {
+  "id": "nerve",
+  "text": "Photoreceptors turn light into electrical signals. The optic nerve carries those signals to the brain, which processes them into what you see."
+ },
+ {
+  "id": "mystery",
+  "text": "Now the mystery. Your brain does not simply show you the upside-down picture. Its visual processing makes the world look upright, and scientists still do not fully understand how."
+ },
+ {
+  "id": "blindspot",
+  "text": "Here is another surprise. Where the optic nerve leaves each eye, there are no rods or cones. This is your blind spot. You do not notice it, because your brain fills in the missing information."
+ },
+ {
+  "id": "recap",
+  "text": "Remember three things. Light passes through the cornea, pupil and lens to the retina. Rods and cones turn it into signals for the brain. And your brain handles both the upside-down image and the blind spot. If you notice a change in your vision, see an eye doctor. Next time, hearing: how your ear turns sound into signals."
+ }
+]
