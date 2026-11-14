@@ -66,3 +66,4 @@ wrong or what is better BEFORE I have to ask. That is your benefit to me."
 - Musculoskeletal = ivory bone + deep blue (kept; neighbours Skin = coral, next = non-blue).
 - Blue already used by lungs (ice blue). Do NOT use blue/indigo for the next 3 episodes.
 - Lymphatic = lime green + amber (changed from lime + indigo). Then: eyes/senses = amber + violet; reproductive = rose + plum.
+- Hearing/ear = ROSE-PINK + silver-white on burgundy-black (no blue, no amber/violet since Eye just used it). Reproductive = plum + gold.

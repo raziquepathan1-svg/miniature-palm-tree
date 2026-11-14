@@ -1,0 +1,38 @@
+[
+ {
+  "id": "story",
+  "text": "A sound is just moving air. Yet your ear turns it into signals your brain understands, using the smallest bone in your body. How is that possible? Let's follow the sound."
+ },
+ {
+  "id": "overview",
+  "text": "Your ear has three parts: the outer ear, the middle ear and the inner ear."
+ },
+ {
+  "id": "outer",
+  "text": "The outer ear, called the pinna, collects sound and sends it down the ear canal to the eardrum. When sound reaches the eardrum, it vibrates."
+ },
+ {
+  "id": "middle",
+  "text": "In the middle ear, three tiny bones pass the vibrations along: the malleus, the incus and the stapes. The stapes is the smallest bone in the human body. A tube called the Eustachian tube helps equalize the pressure in the middle ear."
+ },
+ {
+  "id": "inner",
+  "text": "The inner ear holds the cochlea, a fluid-filled structure shaped like a snail. The stapes pushes on the fluid of the cochlea, which sets up waves inside it."
+ },
+ {
+  "id": "hair",
+  "text": "Tiny hair cells in the cochlea turn those vibrations into electrical signals. The auditory nerve carries the signals to the brain, which makes sense of them as sound. That is the answer to the mystery."
+ },
+ {
+  "id": "balance",
+  "text": "The inner ear has another job. Fluid-filled semicircular canals help with balance. After you spin around, the fluid keeps moving for a moment, and that is why you feel dizzy."
+ },
+ {
+  "id": "care",
+  "text": "In mammals, hair cells do not regenerate, so hearing loss from damaged hair cells is permanent. That is why protecting your ears from very loud noise matters. If you notice a change in your hearing, see a doctor."
+ },
+ {
+  "id": "recap",
+  "text": "Remember three things. Sound travels from the pinna to the eardrum, through three tiny bones, to the cochlea. Hair cells turn vibrations into electrical signals for the brain. And the inner ear also helps you balance. Next time, smell and taste: the chemical senses."
+ }
+]
