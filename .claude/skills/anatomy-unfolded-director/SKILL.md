@@ -61,3 +61,8 @@ wrong or what is better BEFORE I have to ask. That is your benefit to me."
   kidney = crimson+gold (recoloured from teal); immune = MAGENTA + LIME (prompts below).
 - Upcoming plan: skin = warm coral/sand + cream-white; musculoskeletal = bone ivory + deep blue; senses/eye = electric blue +
   amber; reproductive = soft rose + deep plum; lymphatic = lime + indigo. Check this list before writing any prompt.
+
+# Colour decision (14 Nov): blue
+- Musculoskeletal = ivory bone + deep blue (kept; neighbours Skin = coral, next = non-blue).
+- Blue already used by lungs (ice blue). Do NOT use blue/indigo for the next 3 episodes.
+- Lymphatic = lime green + amber (changed from lime + indigo). Then: eyes/senses = amber + violet; reproductive = rose + plum.
