@@ -1,0 +1,11 @@
+[
+ {"id":"story","text":"One smell can throw you back twenty years in one second. Not a photo. Not a song. A smell. Why is smell so tied to memory and emotion? Let's follow a smell into your head."},
+ {"id":"nose","text":"Smells are tiny molecules floating in the air. When you breathe in, they travel up your nose to a small patch of tissue at the top of the nasal cavity. It is called the olfactory epithelium. There, the molecules dissolve in a thin layer of mucus."},
+ {"id":"receptors","text":"Inside that patch sit olfactory sensory neurons, and each one carries receptors. You have hundreds of different kinds. When a molecule fits a receptor, the neuron fires an electrical signal. But here is the strange part. That signal is about to take a route unlike most of your other senses."},
+ {"id":"bulb","text":"The signals travel along nerve fibers, through tiny holes in the skull, to the olfactory bulb, just above your nose. The bulb sorts the signals, then sends them on to the olfactory cortex."},
+ {"id":"brain","text":"Here is the shortcut. From there, smell connects with the amygdala and the hippocampus, areas involved in emotion and memory. Most other senses are relayed through the thalamus first. Smell's main route skips that step. That is why a scent can bring a memory back so fast."},
+ {"id":"renew","text":"Your smell cells are unusual too. Stem cells in the nose replace them over weeks to a few months. Not many nerve cells in the body do that."},
+ {"id":"taste","text":"Smell also builds flavor. When you chew, aroma rises from your mouth to that same patch of tissue. That is why food tastes bland when your nose is blocked. Your taste buds still work. The aroma is missing."},
+ {"id":"care","text":"If you suddenly lose your sense of smell, or it does not come back a week or two after a cold, see a doctor."},
+ {"id":"recap","text":"Remember it like this. Molecules dissolve in mucus. Receptors fire. The bulb sends the signal on toward emotion and memory. Next time, taste: what your tongue really does."}
+]

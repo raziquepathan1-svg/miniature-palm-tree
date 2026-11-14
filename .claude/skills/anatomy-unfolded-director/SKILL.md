@@ -67,3 +67,19 @@ wrong or what is better BEFORE I have to ask. That is your benefit to me."
 - Blue already used by lungs (ice blue). Do NOT use blue/indigo for the next 3 episodes.
 - Lymphatic = lime green + amber (changed from lime + indigo). Then: eyes/senses = amber + violet; reproductive = rose + plum.
 - Hearing/ear = ROSE-PINK + silver-white on burgundy-black (no blue, no amber/violet since Eye just used it). Reproductive = plum + gold.
+
+## Scene images from the owner + camera work (owner, 14 Nov 2026)
+- The owner wants students to learn the easy way: pictures must be related to the narration, never boring, and
+  look REAL but on a whiteboard (realistic see-through human, organs in colour) - not simple cartoon shapes
+  (owner: the first cartoon person "looks like a joker").
+- "Journey into the body": every episode opens on the whole human, then the camera zooms through the body into
+  the organ, then into each part of it, describing each part as the camera arrives.
+- Workflow: I write the image prompts (a shot list per episode); the owner generates them in Gemini or Flow and
+  sends them (chat or branding/the-anatomy-unfolded/thumbnails/incoming); I use them in the clips and do all the
+  camera work as director of photography (zoom, pan, different angles, reveals). No need to ask - just give prompts.
+- Prompt rules: 16:9, highest resolution offered, NO text or labels in the image (I add sharp labels myself),
+  plain white whiteboard background, the same style sentence in every prompt so all shots match, one subject per
+  image with empty space on one side for labels.
+- Never copy Osmosis (or any channel's) artwork or branding, and never use Shutterstock/Getty/Google-Images
+  pictures. Free sources: Servier Medical Art (CC BY, credited), Wikimedia Commons (PD/CC0/CC BY), Bioicons,
+  OpenStax, and the owner's own AI images.
