@@ -1654,13 +1654,13 @@
     "awaiting_approval": true,
     "youtube_id": "kozoU8yA-M8",
     "short_youtube_id": "lrtYLhglAC4",
-    "short2_youtube_id": "C8IyOaBWi6Y",
     "short3_youtube_id": "0yLpsqNW0ms",
     "replaced_ids": [
       "rBzWcYi6Quw",
       "IXr54EcC-cg",
       "Tt9G82jphHM",
       "LVJZN58m328"
-    ]
+    ],
+    "held_short2_youtube_id": "C8IyOaBWi6Y"
   }
 ]

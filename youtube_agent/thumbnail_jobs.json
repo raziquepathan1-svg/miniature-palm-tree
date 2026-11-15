@@ -588,5 +588,28 @@
     "image": "branding/health-support-studio/thumbs/s6YbiShgJFY.jpg",
     "vertical": true,
     "done": true
+  },
+  {
+    "youtube_id": "kozoU8yA-M8",
+    "text": "MISSED SIGNS?",
+    "highlight": "MISSED",
+    "style": "Explainer",
+    "image": "branding/health-support-studio/thumbs/kozoU8yA-M8.jpg"
+  },
+  {
+    "youtube_id": "lrtYLhglAC4",
+    "text": "BIOTIN WARNING",
+    "highlight": "BIOTIN",
+    "style": "Explainer",
+    "image": "branding/health-support-studio/thumbs/kozoU8yA-M8.jpg",
+    "vertical": true
+  },
+  {
+    "youtube_id": "0yLpsqNW0ms",
+    "text": "MORE ISN'T BETTER",
+    "highlight": "BETTER",
+    "style": "Explainer",
+    "image": "branding/health-support-studio/thumbs/kozoU8yA-M8.jpg",
+    "vertical": true
   }
 ]
