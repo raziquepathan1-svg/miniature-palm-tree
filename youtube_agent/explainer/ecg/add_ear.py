@@ -12,8 +12,8 @@ for s in SCR:
     with wave.open(str(HERE.parent / "ear" / "audio" / f"{s['id']}.wav")) as w:
         t += w.getnframes() / w.getframerate()
 stamp = lambda x: f"{int(x) // 60}:{int(x) % 60:02d}"
-CH = [("story", "How does sound become signals?"), ("overview", "Outer, middle & inner ear"), ("outer", "Pinna, ear canal & eardrum"), ("middle", "The three tiny bones"), ("inner", "The cochlea"),
-      ("hair", "Hair cells: mystery solved"), ("balance", "Balance & dizziness"), ("care", "Protecting your hearing"), ("recap", "Recap")]
+CH = [("story", "How does sound become signals?"), ("overview", "Outer ear & eardrum"), ("middle", "The three tiny bones"), ("inner", "Cochlea & hair cells"),
+      ("balance", "Balance & dizziness"), ("care", "Protecting your hearing + recap")]
 chap = "\n".join(f"{stamp(0 if n == 0 else start[i])} {name}" for n, (i, name) in enumerate(CH))
 TITLE = "How Do We Hear? Ear Anatomy, Cochlea, Hair Cells & Balance Explained"
 ABOUT = ("How do we hear? Start with a mystery: sound is just moving air, so how does your ear turn it into signals your brain understands, using the smallest bone in your body? "

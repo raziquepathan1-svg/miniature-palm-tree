@@ -192,6 +192,13 @@ def build():
     D, E, Fp = (960, PH + 540), (PW + 960, PH + 540), (2 * PW + 960, PH + 540)
     cam(0, *A, 1.0, 0.1)
     Y = PH
+    movers = []                                                  # (pts, t0, t1, period, colour, radius, count)
+
+    def flow(pts, t0, t1, period=2.4, col=(150, 205, 90), r=13, n=3):
+        movers.append((B.smooth(pts, 10), t0, t1, period, col, r, n))
+
+    def push(s_, P, lead_in=1.2, tail=0.4):
+        cam(s_.start + lead_in, P[0], P[1], 1.04, max(1.0, s_.dur - lead_in - tail))   # slow push-in: nothing sits still
 
     s = sc["story"]                                              # HOOK (A): the whole human first (owner's whiteboard picture)
     st = [pop(man_pic(), 960, 540, w=1920, t=0.0, dur=0.3), text("ONE SMELL", 532, 150, 80, GOLD_T, 0.5, "c"), text("20 years back", 1478, 208, 56, PURPLE, s.t("twenty") - 0.4, "c"),
@@ -207,6 +214,9 @@ def build():
     no = [pop(section_pic(), X + 500, 540, w=900, t=s.start + 0.3), text("MOLECULES in the air", X + 1500, 200, 60, GREEN_T, s.t("molecules") - 0.3, "c"),
           text("breathe in", X + 1500, 340, 66, BLUE_T, s.t("breathe") - 0.3, "c"), text("OLFACTORY EPITHELIUM", X + 1500, 500, 52, GOLD_T, s.t("olfactory") - 0.6, "c"),
           text("dissolve in MUCUS", X + 1500, 680, 60, PURPLE, s.t("dissolve") - 1.2, "c")]
+    k_ = 900 / 876
+    flow([(X + 50 + x * k_, 204.5 + y * k_) for x, y in ((-60, 200), (30, 150), (90, 110), (160, 70), (235, 32))], s.start + 1.0, s.start + s.dur, 2.6, n=4)
+    push(s, Bc, 1.4, 1.8)
     cam(s.start + s.dur - 1.6, X + 296, 222, 4.0, 1.5)           # DIVE into the olfactory patch
 
     s = sc["receptors"]                                          # RECEPTORS (C) -- zoom in
@@ -217,12 +227,20 @@ def build():
     re = [pop(epi_pic(), X + 520, 540, w=900, t=s.start + 0.3), text("SENSORY NEURONS", X + 1500, 200, 60, PURPLE, s.t("neurons") - 0.5, "c"),
           text("hundreds of receptor kinds", X + 1500, 350, 52, GOLD_T, s.t("hundreds") - 0.4, "c"), text("molecule fits = SIGNAL", X + 1500, 520, 58, RED_T, s.t("fits") - 0.5, "c"),
           text("a different route?", X + 1500, 760, 76, PURPLE, s.t("strange") - 0.6, "c")]
+    for i_, x_ in enumerate(range(80, 860, 120)):
+        flow([(X + 70 + x_, 610), (X + 70 + x_, 700), (X + 70 + x_, 775)], s.t("fires") - 0.3 + 0.12 * i_, s.start + s.dur, 1.3, (255, 215, 70), 10, 1)
+    push(s, C, 1.4)
 
     s = sc["bulb"]                                               # BULB (D)
     cam(s.start, *D, 1.0, 1.0)
     bd.erase(s.start + 0.8, re)
     bu = [pop(bulb_art(), 520, Y + 540, w=940, t=s.start + 0.3), text("holes in the skull", 1450, Y + 220, 58, MAROON, s.t("holes") - 0.4, "c"),
           text("OLFACTORY BULB", 1450, Y + 400, 66, RED_T, s.t("bulb") - 0.1, "c"), text("then CORTEX", 1450, Y + 600, 60, GREEN_T, s.t("cortex") - 1.4, "c")]
+    kb = 940 / 1119
+    for i_, x_ in enumerate((265, 415, 600, 790)):
+        flow([(50 + x_ * kb, Y + 192 + 660 * kb), (50 + x_ * kb, Y + 192 + 440 * kb), (50 + (x_ + 10) * kb, Y + 192 + 290 * kb)], s.start + 1.2 + 0.25 * i_, s.start + s.dur, 1.6, (255, 215, 70), 11, 1)
+    flow([(50 + 420 * kb, Y + 192 + 110 * kb), (50 + 800 * kb, Y + 192 + 95 * kb), (50 + 1110 * kb, Y + 192 + 150 * kb)], s.t("sorts"), s.start + s.dur, 1.8, (255, 215, 70), 11, 2)
+    push(s, D)
 
     s = sc["brain"]                                              # BRAIN (E) -- the payoff
     cam(s.start, *E, 1.0, 1.0)
@@ -231,6 +249,12 @@ def build():
     br = [pop(limbic_pic(), X + 520, Y + 480, w=1000, t=s.start + 0.3), text("AMYGDALA = emotion", X + 1500, Y + 160, 50, RED_T, s.t("amygdala") - 0.4, "c"),
           text("HIPPOCAMPUS = memory", X + 1500, Y + 700, 50, PURPLE, s.t("hippocampus") - 0.4, "c"), text("THALAMUS: skipped", X + 560, Y + 820, 52, MAROON, s.t("skips") - 0.9, "c"),
           text("memory back FAST", X + 1500, Y + 400, 70, GOLD_T, s.t("fast") - 0.8, "c")]
+    lx, ly = X + 20, Y + 200
+    flow([(lx + 90, ly + 270), (lx + 290, ly + 270), (lx + 500, ly + 270), (lx + 680, ly + 160), (lx + 830, ly + 120)], s.start + 1.0, s.start + s.dur, 2.0, (255, 215, 70), 12, 2)
+    flow([(lx + 90, ly + 270), (lx + 290, ly + 270), (lx + 500, ly + 270), (lx + 680, ly + 390), (lx + 860, ly + 415)], s.start + 1.0, s.start + s.dur, 2.0, (255, 215, 70), 12, 2)
+    glows.append((s.t("amygdala") - 0.3, (lx + 830, ly + 120), 2.5, 90))
+    glows.append((s.t("hippocampus") - 0.3, (lx + 860, ly + 415), 2.5, 100))
+    push(s, E)
 
     s = sc["renew"]                                              # RENEW (F)
     cam(s.start, *Fp, 1.0, 1.0)
@@ -238,12 +262,16 @@ def build():
     X = 2 * PW
     rn = [pop(renew_pic(), X + 520, Y + 480, w=900, t=s.start + 0.3), text("STEM CELLS replace them", X + 1450, Y + 260, 56, GREEN_T, s.t("stem") - 0.4, "c"),
           text("weeks to months", X + 1450, Y + 440, 70, GOLD_T, s.t("weeks") - 0.4, "c"), text("unusual for nerve cells", X + 1450, Y + 620, 52, MAROON, s.t("unusual") - 1.2, "c")]
+    push(s, Fp)
 
     s = sc["taste"]                                              # TASTE (A)
     cam(s.start, *A, 1.0, 1.0)
     bd.erase(s.start + 0.8, rn)
     ta = [pop(section_pic(True), 500, 540, w=900, t=s.start + 0.3), text("chewing -> AROMA rises", 1450, 220, 56, GREEN_T, s.t("aroma") - 0.5, "c"),
           text("nose blocked = BLAND", 1450, 420, 62, RED_T, s.t("bland") - 0.4, "c"), text("taste buds still work", 1450, 600, 54, MAROON, s.t("buds") - 0.4, "c")]
+    k_ = 900 / 876
+    flow([(50 + x * k_, 204.5 + y * k_) for x, y in ((300, 330), (420, 280), (430, 170), (380, 90), (290, 45))], s.t("chew") - 0.2, s.start + s.dur, 2.4, n=4)
+    push(s, A)
 
     s = sc["care"]                                               # CARE (B)
     cam(s.start, *Bc, 1.0, 1.0)
@@ -265,6 +293,18 @@ def build():
 
     def fx(crop, ctx, t):
         OP.fx(crop, ctx, t, [], [], glows)
+        d = ImageDraw.Draw(crop)
+        for pts, t0, t1, per, col, r, n in movers:
+            if not (t0 <= t <= t1):
+                continue
+            for k in range(n):
+                ph = ((t - t0) / per + k / n) % 1.0
+                if (t - t0) / per + k / n < k / n + 0.0 or (t - t0) < k * per / n:
+                    continue
+                cx, cy = ctx.px(B.partial_pts(pts, max(ph, 0.02))[-1])
+                a = min(1.0, ph / 0.12, (1 - ph) / 0.12)
+                rr = r * B.BS * (0.6 + 0.4 * a)
+                d.ellipse((cx - rr, cy - rr, cx + rr, cy + rr), fill=col, outline=(70, 60, 60), width=max(1, int(2 * B.BS)))
     bd.fx.append(fx)
     bd.total = t0
     bd.pops = pops
