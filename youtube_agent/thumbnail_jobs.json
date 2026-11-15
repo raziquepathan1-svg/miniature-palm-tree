@@ -594,7 +594,8 @@
     "text": "MISSED SIGNS?",
     "highlight": "MISSED",
     "style": "Explainer",
-    "image": "branding/health-support-studio/thumbs/kozoU8yA-M8.jpg"
+    "image": "branding/health-support-studio/thumbs/kozoU8yA-M8.jpg",
+    "done": true
   },
   {
     "youtube_id": "lrtYLhglAC4",
@@ -602,7 +603,8 @@
     "highlight": "BIOTIN",
     "style": "Explainer",
     "image": "branding/health-support-studio/thumbs/kozoU8yA-M8.jpg",
-    "vertical": true
+    "vertical": true,
+    "done": true
   },
   {
     "youtube_id": "0yLpsqNW0ms",
@@ -610,6 +612,7 @@
     "highlight": "BETTER",
     "style": "Explainer",
     "image": "branding/health-support-studio/thumbs/kozoU8yA-M8.jpg",
-    "vertical": true
+    "vertical": true,
+    "done": true
   }
 ]
