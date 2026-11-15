@@ -178,3 +178,9 @@ also follow `.claude/skills/hss-funnel-search/SKILL.md`.
   (visuals.UNSUITABLE) blocks "hug/embrace" tags, so look at the clips themselves and judge: a family group hug passes,
   a romantic embrace does not.
 
+
+## Director playbook (owner liked the 2-minute sample, Nov 15 2026)
+- Script beats: cold open with stakes + a made-up "imagine <name>" case in the first 10 s -> set-up -> escalation (night/day signs, why it matters) -> twist ("why <name> never noticed") -> payoff (test + treatment, <name> resolved) -> doctor-vs-ER line -> bridge to the next video.
+- An unanswered question every 15-20 s; every fact sourced (CDC/NIH/Mayo); the host is never a doctor.
+- Visuals: anatomy clip with labels at each "what happens inside" beat, whiteboard drawings for everyday scenes, a new visual every 10-15 s, corner presenter in long videos only, narration only.
+- Stock-clip searches can pick wrong clips (a 3D printer for "cpap machine", a walking couple for "snoring"): LOOK at every page and fix with fix-scene.yml before approving.
