@@ -689,7 +689,7 @@
       "respiratory virus",
       "health education"
     ],
-    "social_keywords": "flu vs COVID vs cold \u00b7 flu symptoms \u00b7 flu season 2026 \u00b7 is it too late for a flu shot",
+    "social_keywords": "flu vs COVID vs cold · flu symptoms · flu season 2026 · is it too late for a flu shot",
     "social_hashtags": [
       "FluSeason",
       "FluVsCovid",
@@ -768,7 +768,7 @@
       "body myths",
       "health education"
     ],
-    "social_keywords": "cracking knuckles \u00b7 does knuckle cracking cause arthritis \u00b7 knee popping \u00b7 joint pain myths",
+    "social_keywords": "cracking knuckles · does knuckle cracking cause arthritis · knee popping · joint pain myths",
     "social_hashtags": [
       "KnuckleCracking",
       "JointHealth",
@@ -837,7 +837,7 @@
       "body myths",
       "health education"
     ],
-    "social_keywords": "how much water to drink a day \u00b7 8 glasses of water \u00b7 does coffee dehydrate you \u00b7 signs of dehydration",
+    "social_keywords": "how much water to drink a day · 8 glasses of water · does coffee dehydrate you · signs of dehydration",
     "social_hashtags": [
       "Hydration",
       "WaterMyths",
@@ -916,7 +916,7 @@
       "body myths",
       "health education"
     ],
-    "social_keywords": "reading in the dark \u00b7 do screens damage your eyes \u00b7 blue light glasses \u00b7 carrots and eyesight \u00b7 eye myths",
+    "social_keywords": "reading in the dark · do screens damage your eyes · blue light glasses · carrots and eyesight · eye myths",
     "social_hashtags": [
       "EyeHealth",
       "EyeMyths",
@@ -985,7 +985,7 @@
       "body myths",
       "health education"
     ],
-    "social_keywords": "sunscreen on cloudy days \u00b7 base tan myth \u00b7 tanning beds \u00b7 does sunscreen expire \u00b7 skin cancer signs",
+    "social_keywords": "sunscreen on cloudy days · base tan myth · tanning beds · does sunscreen expire · skin cancer signs",
     "social_hashtags": [
       "Sunscreen",
       "SkinCare",
@@ -1039,7 +1039,7 @@
       "body myths",
       "health education"
     ],
-    "social_keywords": "does cold weather cause colds \u00b7 wet hair myth \u00b7 vitamin C for colds \u00b7 antibiotics for a cold \u00b7 cold or flu",
+    "social_keywords": "does cold weather cause colds · wet hair myth · vitamin C for colds · antibiotics for a cold · cold or flu",
     "social_hashtags": [
       "CommonCold",
       "ColdAndFlu",
@@ -1093,7 +1093,7 @@
       "body myths",
       "health education"
     ],
-    "social_keywords": "sunscreen on cloudy days \u00b7 base tan myth \u00b7 tanning beds \u00b7 does sunscreen expire \u00b7 skin cancer signs",
+    "social_keywords": "sunscreen on cloudy days · base tan myth · tanning beds · does sunscreen expire · skin cancer signs",
     "social_hashtags": [
       "Sunscreen",
       "SkinCare",
@@ -1157,7 +1157,7 @@
       "anemia in women",
       "health education"
     ],
-    "social_keywords": "low iron symptoms \u00b7 always tired \u00b7 craving ice \u00b7 iron deficiency anemia \u00b7 iron pills",
+    "social_keywords": "low iron symptoms · always tired · craving ice · iron deficiency anemia · iron pills",
     "social_hashtags": [
       "Anemia",
       "IronDeficiency",
@@ -1221,7 +1221,7 @@
       "vaccine myths",
       "health education"
     ],
-    "social_keywords": "measles 2026 \u00b7 measles symptoms \u00b7 measles rash \u00b7 MMR vaccine facts \u00b7 measles outbreak",
+    "social_keywords": "measles 2026 · measles symptoms · measles rash · MMR vaccine facts · measles outbreak",
     "social_hashtags": [
       "Measles",
       "MeaslesOutbreak",
@@ -1285,7 +1285,7 @@
       "respiratory syncytial virus",
       "health education"
     ],
-    "social_keywords": "RSV symptoms in babies \u00b7 what is RSV \u00b7 RSV vaccine \u00b7 baby breathing problems \u00b7 RSV season",
+    "social_keywords": "RSV symptoms in babies · what is RSV · RSV vaccine · baby breathing problems · RSV season",
     "social_hashtags": [
       "RSV",
       "BabyHealth",
@@ -1349,7 +1349,7 @@
       "anxiety myths",
       "health education"
     ],
-    "social_keywords": "anxiety symptoms \u00b7 panic attack vs heart attack \u00b7 signs of anxiety \u00b7 anxiety help \u00b7 988",
+    "social_keywords": "anxiety symptoms · panic attack vs heart attack · signs of anxiety · anxiety help · 988",
     "social_hashtags": [
       "Anxiety",
       "MentalHealth",
@@ -1438,7 +1438,7 @@
       "chest pain 911",
       "health education"
     ],
-    "social_keywords": "heartburn or heart attack \u00b7 acid reflux symptoms \u00b7 GERD \u00b7 does milk help heartburn \u00b7 are PPIs safe",
+    "social_keywords": "heartburn or heart attack · acid reflux symptoms · GERD · does milk help heartburn · are PPIs safe",
     "social_hashtags": [
       "Heartburn",
       "AcidReflux",
@@ -1460,6 +1460,7 @@
   },
   {
     "youtube_id": "0QZTAly7ufU",
-    "title": "Is the RSV Vaccine Yearly Like Flu? #Shorts"
+    "title": "Is the RSV Vaccine Yearly Like Flu? #Shorts",
+    "done": true
   }
 ]
