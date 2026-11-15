@@ -65,3 +65,4 @@ no default smile, the host never holds an object, face must match the avatar.
   - blood test results MSMDnPoLhsk: #1 pointing left
   - men pee all night ty-M5_xQGVA: #10 looking sideways
   - anaphylaxis B8kEqFsTjXQ: #12 hand on throat
+- sleep apnea 084 "Sleeping 8 Hours But Still Tired?" (prompt given Nov 15): #4 variant - hand on forehead, heavy tired eyes to camera; glowing airway + moon behind him
