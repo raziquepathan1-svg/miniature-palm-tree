@@ -1650,8 +1650,7 @@
     "title": "Tired, Cold, Gaining Weight? Could It Be Your Thyroid?",
     "style": "Top Questions",
     "script_file": "026-thyroid-questions.yaml",
-    "planned_publish_at": "2026-11-14T16:00:00Z",
-    "awaiting_approval": true,
+    "awaiting_approval": false,
     "youtube_id": "kozoU8yA-M8",
     "short_youtube_id": "lrtYLhglAC4",
     "short3_youtube_id": "0yLpsqNW0ms",
@@ -1661,6 +1660,7 @@
       "Tt9G82jphHM",
       "LVJZN58m328"
     ],
-    "held_short2_youtube_id": "C8IyOaBWi6Y"
+    "held_short2_youtube_id": "C8IyOaBWi6Y",
+    "publish_at": "2026-11-15T16:00:00Z"
   }
 ]
