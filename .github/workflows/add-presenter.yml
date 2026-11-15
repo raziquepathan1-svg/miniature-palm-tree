@@ -12,6 +12,14 @@ on:
       video_id:
         description: "YouTube video ID of the video without the presenter"
         required: true
+      said:
+        description: "Optional: words said on a wrong page to fix first (a||b for two pages)"
+        required: false
+        default: ""
+      clip:
+        description: "Optional: the drawing/clip for each page above (x.png||y.png)"
+        required: false
+        default: ""
 
 permissions:
   contents: write
@@ -49,6 +57,8 @@ jobs:
           KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
           KAGGLE_API_TOKEN: ${{ secrets.KAGGLE_API_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          FIX_SAID: ${{ inputs.said }}
+          FIX_CLIP: ${{ inputs.clip }}
         run: |
           [ -z "$KAGGLE_KEY" ] && unset KAGGLE_KEY
           [ -z "$KAGGLE_API_TOKEN" ] && unset KAGGLE_API_TOKEN

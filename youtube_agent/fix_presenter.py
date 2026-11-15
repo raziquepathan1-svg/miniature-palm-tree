@@ -84,6 +84,15 @@ def main(run_dir: str, old: str) -> None:
     workdir = next(p.parent for p in Path(run_dir).rglob("narrated.txt"))
     narrated = workdir / "narrated.mp4"
     parts = _parts(workdir)
+    import os
+    if os.environ.get("FIX_SAID"):  # Nov 15: wrong pages fixed first (fix_scene), then the presenter goes on top
+        from . import fix_scene, visuals
+
+        visuals.ensure_fonts()
+        saids = [x.strip() for x in os.environ["FIX_SAID"].split("||")]
+        clips = [x.strip() for x in os.environ["FIX_CLIP"].split("||")]
+        for n, (sd, cl) in enumerate(zip(saids, clips)):
+            narrated = fix_scene._replace(workdir, narrated, parts, sd, cl, n)
     shows = _shows(parts)
     print(f"  {len(parts)} parts, presenter shows in {len(shows)} stretches")
     video_cfg = config["video"]
