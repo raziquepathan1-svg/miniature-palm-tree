@@ -1,0 +1,13 @@
+[
+ {"id":"story","text":"Pinch your nose and eat a strawberry. It still tastes sweet, but the strawberry flavor almost disappears. Why? Because flavor is teamwork between two senses. Let's follow a bite."},
+ {"id":"nose","text":"First, smell. Smells are tiny molecules floating in the air. They travel up your nose to a small patch of tissue at the top of the nasal cavity, called the olfactory epithelium. There, they dissolve in a thin layer of mucus."},
+ {"id":"receptors","text":"Inside that patch sit olfactory sensory neurons, each carrying receptors. You have hundreds of different kinds. When a molecule fits a receptor, the neuron fires an electrical signal. But here is the strange part. That signal takes a route unlike most of your other senses."},
+ {"id":"brain","text":"It passes through tiny holes in the skull to the olfactory bulb. From there, smell connects with the amygdala and the hippocampus, areas involved in emotion and memory. Most other senses are relayed through the thalamus first. Smell's main route skips that step. That is why a scent can bring a memory back so fast."},
+ {"id":"tongue","text":"Now, taste. Your tongue is covered in small bumps called papillae. Many of them hold taste buds, and you have thousands of them. Each taste bud holds about fifty to one hundred and fifty taste receptor cells."},
+ {"id":"five","text":"These cells detect five basic tastes: sweet, salty, sour, bitter and umami, the savory taste. And here is a myth. There is no tongue map. Taste cells for every basic taste are spread all over the tongue."},
+ {"id":"nerves","text":"Taste signals travel along three cranial nerves: the facial, the glossopharyngeal and the vagus nerve. Unlike smell, taste does pass through the thalamus on its way to the taste area of the brain."},
+ {"id":"renew","text":"Here is something rare. Taste and smell cells are the only sensory cells in your body that are regularly replaced throughout life. Taste cells are replaced about every ten days."},
+ {"id":"flavor","text":"So what is flavor? When you chew, aroma rises from the back of your mouth to the smell patch in your nose. Your brain blends it with taste. That is why food tastes bland when your nose is blocked. Your taste buds still work. The aroma is missing."},
+ {"id":"care","text":"If you suddenly lose your sense of smell or taste, or it does not come back a week or two after a cold, see a doctor."},
+ {"id":"recap","text":"Remember three things. Smell molecules fire receptors that reach emotion and memory areas. Taste buds sense five basic tastes, all over the tongue. And flavor is taste plus smell. Next time, the reproductive system."}
+]
