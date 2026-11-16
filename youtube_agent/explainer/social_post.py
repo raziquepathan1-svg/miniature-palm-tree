@@ -114,6 +114,9 @@ def post_one(item, queue, posted, token, page_id, ig_user_id, ig_name):
     print(f"== {item['id']}")
     fb_cap, ig_cap = build_captions(item, queue, ig_name)
     video = QDIR / item["file"]
+    fbv = QDIR / (Path(item["file"]).stem + "_fb.mp4")   # owner 16 Nov: FB/IG cut (captions, no YouTube-only ending) when it exists
+    if fbv.exists():
+        video = fbv
     rec = dict(posted.get(item["id"], {"youtube_id": item["youtube_id"]}))
     fb_id = rec.get("facebook")
     if fb_id:
