@@ -1588,14 +1588,17 @@
       "SleepHealth",
       "HealthTips",
       "HealthEducation"
-    ]
+    ],
+    "done": true
   },
   {
     "youtube_id": "JKh2snHOwt0",
-    "title": "Always tired in the day? Sleep apnea signs #Shorts"
+    "title": "Always tired in the day? Sleep apnea signs #Shorts",
+    "done": true
   },
   {
     "youtube_id": "tFcfuXFqcxI",
-    "title": "Can sleep apnea make you fall asleep driving? #Shorts"
+    "title": "Can sleep apnea make you fall asleep driving? #Shorts",
+    "done": true
   }
 ]

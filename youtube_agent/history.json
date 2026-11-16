@@ -1676,6 +1676,47 @@
     "short_youtube_id": "Vu2UABz5UiQ",
     "short2_youtube_id": "JKh2snHOwt0",
     "short3_youtube_id": "tFcfuXFqcxI",
-    "preview": "previews/uMsAGx54hOs.mp4"
+    "preview": "previews/uMsAGx54hOs.mp4",
+    "pin_question": "Do you wake up tired even after a full night of sleep? What do you think is behind it: stress, snoring, or something else? Tell us below.",
+    "packages": [
+      {
+        "title": "Sleeping 8 Hours But Still Tired? Sleep Apnea Signs",
+        "thumbnail_text": "BREATHING STOPS?",
+        "thumbnail_highlight": "STOPS?"
+      },
+      {
+        "title": "Why Am I Always Tired? Sleep Apnea May Be Why",
+        "thumbnail_text": "NIGHT CLUE",
+        "thumbnail_highlight": "CLUE"
+      },
+      {
+        "title": "Loud Snoring? What It May Mean for Your Heart",
+        "thumbnail_text": "NOT HARMLESS",
+        "thumbnail_highlight": "HARMLESS"
+      },
+      {
+        "title": "Sleep Apnea Symptoms in Men and Women",
+        "thumbnail_text": "OFTEN MISSED",
+        "thumbnail_highlight": "MISSED"
+      },
+      {
+        "title": "Can Sleep Apnea Make You Fall Asleep Driving?",
+        "thumbnail_text": "PULL OVER",
+        "thumbnail_highlight": "OVER"
+      }
+    ],
+    "chosen": {
+      "title": "Sleeping 8 Hours But Still Tired? Sleep Apnea Signs",
+      "thumbnail_text": "BREATHING STOPS?",
+      "thumbnail_highlight": "STOPS?"
+    },
+    "social_keywords": "sleep apnea symptoms · tired after 8 hours of sleep · loud snoring · home sleep test · CPAP",
+    "social_hashtags": [
+      "SleepApnea",
+      "Snoring",
+      "SleepHealth",
+      "HealthTips",
+      "HealthEducation"
+    ]
   }
 ]
