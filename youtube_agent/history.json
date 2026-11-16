@@ -1670,8 +1670,7 @@
     "title": "Sleeping 8 Hours But Still Tired? Sleep Apnea Signs",
     "style": "Explainer",
     "script_file": "084-tired-after-8-hours-sleep-apnea.yaml",
-    "planned_publish_at": "2026-11-16T16:00:00Z",
-    "awaiting_approval": true,
+    "awaiting_approval": false,
     "youtube_id": "uMsAGx54hOs",
     "short_youtube_id": "Vu2UABz5UiQ",
     "short2_youtube_id": "JKh2snHOwt0",
@@ -1717,6 +1716,7 @@
       "SleepHealth",
       "HealthTips",
       "HealthEducation"
-    ]
+    ],
+    "publish_at": "2026-11-16T16:00:00Z"
   }
 ]
