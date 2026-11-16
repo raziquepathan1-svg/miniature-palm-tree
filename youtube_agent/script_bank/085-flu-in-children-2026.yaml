@@ -1,0 +1,166 @@
+queue_topic: "Flu in children 2026: emergency signs, treatment and the flu shot"
+style: "Top Questions"
+sources:
+  - "CDC, FluView weekly surveillance report, week 42 (ending October 24, 2026): https://www.cdc.gov/fluview/surveillance/2026-week-42.html"
+  - "CDC, Flu symptoms and complications: https://www.cdc.gov/flu/signs-symptoms/index.html"
+  - "CDC, Flu in children: https://www.cdc.gov/flu/highrisk/children.html"
+  - "CDC, Flu treatment: https://www.cdc.gov/flu/treatment/index.html"
+  - "CDC, Key facts about seasonal flu vaccine: https://www.cdc.gov/flu/vaccines/keyfacts.html"
+plan:
+  topic: "Flu in children 2026: emergency signs, treatment and the flu shot"
+  title: "Flu in Children 2026: Signs That Mean Go to the ER"
+  description: |-
+    Flu season started early this year, and the CDC has already reported the first flu death in a child this season. Learn the flu symptoms in children, the emergency warning signs that mean go to the ER, why aspirin is not safe, how antiviral medicine works, and why it is not too late for a flu shot.
+
+    In this video:
+    • Why children are at higher risk
+    • Flu symptoms in kids
+    • Emergency signs: go to the ER now
+    • Why a baby with a fever needs a doctor
+    • Treatment, home care and the flu shot
+
+    #Flu #ChildrensHealth #FluSeason #ParentingTips #HealthEducation
+  tags: ["flu in children", "flu symptoms in kids", "flu season 2026", "when to go to the er for flu", "child flu emergency signs", "flu antiviral for kids", "flu shot for kids", "fever in children", "can kids take aspirin", "flu vs cold in kids", "baby fever", "flu complications children", "health education"]
+  thumbnail_text: "NOT A COLD"
+  thumbnail_highlight: "COLD"
+  thumbnail_photo_query: "mother checking child temperature"
+  playlist: "Infections & Vaccines"
+  scenes:
+    - layout: "title"
+      heading: "Flu in Children 2026"
+      points: ["Early season, early warning signs"]
+      footage_query: "mother checking child temperature"
+      narration: >-
+        Your child has a fever and a cough. Is it a cold, or is it the flu? This flu season started early, and the CDC has
+        already reported the first flu death in a child this season. Most children get better at home, but some need help
+        fast. Here are the signs that tell the difference, and when to go to the ER.
+    - layout: "big_number"
+      heading: "An Early, Heavy Start"
+      points: ["Highest", "flu hospital rate since 2010-11"]
+      footage_query: "hospital hallway"
+      narration: >-
+        The CDC's weekly flu report for late October showed the highest flu hospitalization rate for that point in the
+        season since two thousand ten to two thousand eleven. Flu season runs for months, so there is still time to protect
+        your family.
+    - layout: "bullets"
+      heading: "Why Kids Are at Risk"
+      points: ["Under 5, especially under 2", "Asthma or other long-term conditions", "Flu can spread fast at school"]
+      footage_query: "children classroom"
+      narration: >-
+        Flu can make any child sick, but children under five, and especially babies under two, are more likely to get
+        serious complications. So are children with asthma, diabetes, or other long term health conditions. And flu
+        spreads quickly in schools and daycare.
+    - layout: "bullets"
+      heading: "Flu Symptoms in Kids"
+      points: ["Fever, cough, sore throat", "Body aches and headache", "Tired, chills", "Vomiting or diarrhea in some"]
+      footage_query: "sick child in bed"
+      narration: >-
+        Flu often starts suddenly with a fever, cough, sore throat, runny nose, body aches, headache and chills.
+        Children are more likely than adults to also have vomiting or diarrhea. A cold is usually milder, and it comes on
+        more slowly.
+    - layout: "warning"
+      heading: "Go to the ER Now"
+      points: ["Fast or hard breathing", "Bluish lips or face", "Ribs pulling in with each breath", "Not alert, seizure, or dehydrated"]
+      footage_query: "ambulance emergency"
+      narration: >-
+        Now the most important part. Go to the emergency room or call nine one one if your child has fast breathing or
+        trouble breathing, bluish lips or face, or ribs pulling in with each breath. Also go for chest pain, severe muscle
+        pain, a seizure, or a child who is not alert or not interacting. And watch for dehydration, like no urine for eight
+        hours, a dry mouth, or no tears when crying.
+    - layout: "warning"
+      heading: "Fever in a Baby"
+      points: ["Any fever in a baby under 12 weeks", "Fever above 104 F", "Better, then suddenly worse"]
+      footage_query: "doctor examining baby"
+      narration: >-
+        Any fever in a baby younger than twelve weeks needs a doctor right away. So does a fever above one hundred four
+        degrees, and a fever or cough that gets better and then comes back worse.
+    - layout: "warning"
+      heading: "Never Give Aspirin"
+      points: ["No aspirin for kids with flu", "It can cause a rare, serious illness", "Ask a pharmacist for safe options"]
+      footage_query: "pharmacist talking to parent"
+      narration: >-
+        Never give aspirin to a child with the flu, because it can cause a rare but serious illness. Ask your doctor or
+        pharmacist which fever medicine and dose are right for your child's age and weight.
+    - layout: "myth_fact"
+      heading: "Just a Bad Cold?"
+      points: ["Flu is just a bad cold in kids", "Flu can make even healthy children very sick"]
+      footage_query: "child sneezing"
+      narration: >-
+        Myth: flu is just a bad cold in kids. Fact: flu can make even healthy children very sick, and the warning signs
+        we just covered can appear quickly. If your child seems much sicker than with a cold, trust your instincts.
+    - layout: "bullets"
+      heading: "Treatment: Act in 48 Hours"
+      points: ["Call your doctor early", "Antiviral medicine works best in 48 hours", "Doctor decides who needs it"]
+      footage_query: "doctor talking to mother and child"
+      narration: >-
+        Call your child's doctor early. Flu antiviral medicine works best when it is started within the first forty eight
+        hours of symptoms, and your doctor decides whether your child needs it. It is especially important for young
+        children, and for children with a higher risk of serious illness.
+    - layout: "bullets"
+      heading: "Home Care"
+      points: ["Plenty of fluids and rest", "Stay home until fever-free for 24 hours", "Wash hands, cover coughs"]
+      footage_query: "child drinking water"
+      narration: >-
+        At home, give plenty of fluids and rest. Keep your child home until they have been fever free for at least
+        twenty four hours without fever reducing medicine. Wash hands often and cover coughs, to protect the rest of the
+        family.
+    - layout: "myth_fact"
+      heading: "Does the Flu Shot Cause Flu?"
+      points: ["The flu shot gives kids the flu", "It cannot; it is the best protection"]
+      footage_query: "child vaccination"
+      narration: >-
+        Myth: the flu shot gives kids the flu. Fact: it cannot. A flu shot can cause mild side effects, like a sore arm,
+        but it does not cause the flu. It is the best protection we have.
+    - layout: "bullets"
+      heading: "It Is Not Too Late"
+      points: ["Everyone 6 months and older", "Two doses for some young children", "Protection takes about 2 weeks"]
+      footage_query: "child getting flu shot"
+      narration: >-
+        The CDC recommends a flu shot every year for everyone six months and older. Some children, aged six months
+        through eight years, need two doses in their first season. Protection takes about two weeks, so do not wait.
+    - layout: "outro"
+      heading: "Doctor or ER?"
+      points: ["Doctor: fever, cough, aches", "ER: trouble breathing, blue lips, seizure"]
+      footage_query: "mother hugging child"
+      narration: >-
+        So remember. Call your doctor for fever, cough, and aches, and early for treatment. Go to the ER for trouble
+        breathing, bluish lips, ribs pulling in, a seizure, or a child who is hard to wake. Subscribe for one clear health
+        answer every day.
+  short_title: "Flu in kids: when to go to the ER #Shorts"
+  short_caption: "Flu in children: the emergency signs that mean go to the ER. Educational only, not medical advice."
+  short_scenes:
+    - layout: "title"
+      heading: "Child Has the Flu?"
+      points: ["Know the ER signs"]
+      footage_query: "mother checking child temperature"
+      narration: >-
+        Your child has a fever and a cough. Is it a cold, or the flu? Most children get better at home, but some need help
+        fast.
+    - layout: "warning"
+      heading: "Go to the ER Now"
+      points: ["Fast or hard breathing", "Bluish lips or face", "Ribs pulling in", "Seizure or not alert"]
+      footage_query: "ambulance emergency"
+      narration: >-
+        Go to the emergency room or call nine one one for fast breathing or trouble breathing, bluish lips or face, ribs
+        pulling in with each breath, a seizure, or a child who is not alert. Any fever in a baby younger than twelve weeks
+        also needs a doctor right away. And never give aspirin to a child with the flu.
+    - layout: "outro"
+      heading: "Full Video"
+      points: ["On YouTube"]
+      footage_query: "mother hugging child"
+      narration: >-
+        Learn more in our full video on the Health Support Studio channel.
+story:
+  open: >-
+    Picture Priya. Her four year old, Mia, has a fever and a cough, and Priya wonders if it is just a cold. By the end
+    of this video, you will know exactly which signs would tell Priya to get help right now.
+  twist: >-
+    Remember Priya? Here is what would worry a doctor: not the fever by itself, but fast breathing, ribs pulling in, or
+    bluish lips.
+  end: >-
+    So what should Priya do? Call Mia's doctor early, because antiviral medicine works best in the first forty eight
+    hours, give plenty of fluids, skip the aspirin, and go to the ER right away if any warning sign appears.
+  short_cliff: >-
+    Priya's daughter has a fever and a cough. When is it more than a cold?
+  reel_answer: >-
+    The answer: fast or hard breathing, ribs pulling in, or bluish lips mean go to the ER right now.
