@@ -614,5 +614,36 @@
     "image": "branding/health-support-studio/thumbs/kozoU8yA-M8.jpg",
     "vertical": true,
     "done": true
+  },
+  {
+    "youtube_id": "uMsAGx54hOs",
+    "text": "BREATHING STOPS?",
+    "highlight": "STOPS?",
+    "style": "Explainer",
+    "image": "branding/health-support-studio/thumbs/uMsAGx54hOs.jpg"
+  },
+  {
+    "youtube_id": "Vu2UABz5UiQ",
+    "text": "YOUR AIRWAY",
+    "highlight": "AIRWAY",
+    "style": "Explainer",
+    "image": "branding/health-support-studio/thumbs/uMsAGx54hOs.jpg",
+    "vertical": true
+  },
+  {
+    "youtube_id": "JKh2snHOwt0",
+    "text": "DAYTIME CLUES",
+    "highlight": "CLUES",
+    "style": "Explainer",
+    "image": "branding/health-support-studio/thumbs/uMsAGx54hOs.jpg",
+    "vertical": true
+  },
+  {
+    "youtube_id": "tFcfuXFqcxI",
+    "text": "PULL OVER",
+    "highlight": "OVER",
+    "style": "Explainer",
+    "image": "branding/health-support-studio/thumbs/uMsAGx54hOs.jpg",
+    "vertical": true
   }
 ]
