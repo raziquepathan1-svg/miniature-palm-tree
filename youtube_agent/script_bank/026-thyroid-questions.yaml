@@ -204,7 +204,7 @@ plan:
     - layout: "myth_fact"
       heading: "Thyroid Explains All Weight Gain"
       points: ["My thyroid is why I gained", "The effect is usually modest"]
-      footage_query: "bathroom scale feet"
+      footage_query: "healthy food salad bowl"
       narration: >-
         Myth: thyroid problems explain most weight gain. Fact: an underactive thyroid can add some weight, often from fluid,
         but usually not a large amount. Treatment may bring a few pounds off, but it does not replace healthy eating and

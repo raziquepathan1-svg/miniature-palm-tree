@@ -134,7 +134,7 @@ plan:
     - layout: "bullets"
       heading: "Heart Failure at Home"
       points: ["Weigh every morning", "Same scale, same time", "Watch for swelling", "Call about sudden gain"]
-      footage_query: "bathroom scale feet"
+      footage_query: "digital bathroom scale close up"
       narration: >-
         If your loved one has heart failure, a daily weight is one of the best early warnings. Weigh them every morning after
         using the bathroom, before breakfast, on the same scale. Write it down. A gain of two to three pounds in a day, or

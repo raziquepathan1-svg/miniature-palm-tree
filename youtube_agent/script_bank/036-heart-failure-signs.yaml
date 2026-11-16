@@ -93,7 +93,7 @@ plan:
     - layout: "warning"
       heading: "Sign 3: Sudden Weight Gain"
       points: ["2 to 3 pounds in a day", "5 pounds in a week", "Usually fluid, not fat", "Call your doctor"]
-      footage_query: "bathroom scale feet"
+      footage_query: "digital bathroom scale close up"
       narration: >-
         The third sign is sudden weight gain. Gaining two to three pounds in a day, or about five pounds in a week, usually
         means fluid is building up, not fat. This often shows up before breathing gets worse, which makes the bathroom scale
@@ -167,7 +167,7 @@ plan:
     - layout: "bullets"
       heading: "Weigh Yourself Every Day"
       points: ["Every morning", "After using the bathroom", "Before breakfast", "Write it down"]
-      footage_query: "bathroom scale feet"
+      footage_query: "digital bathroom scale close up"
       narration: >-
         The most important daily habit is weighing yourself. Weigh every morning, after using the bathroom and before eating,
         wearing similar clothing, on the same scale. Write it down or use an app. Bring your log to every visit. Call your
@@ -271,7 +271,7 @@ plan:
     - layout: "title"
       heading: "Heart Failure Clue"
       points: ["Watch your scale"]
-      footage_query: "bathroom scale feet"
+      footage_query: "digital bathroom scale close up"
       narration: >-
         One of the earliest warning signs of heart failure getting worse is on your bathroom scale.
     - layout: "warning"
