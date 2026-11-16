@@ -620,7 +620,8 @@
     "text": "BREATHING STOPS?",
     "highlight": "STOPS?",
     "style": "Explainer",
-    "image": "branding/health-support-studio/thumbs/uMsAGx54hOs.jpg"
+    "image": "branding/health-support-studio/thumbs/uMsAGx54hOs.jpg",
+    "done": true
   },
   {
     "youtube_id": "Vu2UABz5UiQ",
@@ -628,7 +629,8 @@
     "highlight": "AIRWAY",
     "style": "Explainer",
     "image": "branding/health-support-studio/thumbs/uMsAGx54hOs.jpg",
-    "vertical": true
+    "vertical": true,
+    "done": true
   },
   {
     "youtube_id": "JKh2snHOwt0",
@@ -636,7 +638,8 @@
     "highlight": "CLUES",
     "style": "Explainer",
     "image": "branding/health-support-studio/thumbs/uMsAGx54hOs.jpg",
-    "vertical": true
+    "vertical": true,
+    "done": true
   },
   {
     "youtube_id": "tFcfuXFqcxI",
@@ -644,6 +647,7 @@
     "highlight": "OVER",
     "style": "Explainer",
     "image": "branding/health-support-studio/thumbs/uMsAGx54hOs.jpg",
-    "vertical": true
+    "vertical": true,
+    "done": true
   }
 ]
