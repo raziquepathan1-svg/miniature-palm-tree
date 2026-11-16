@@ -55,3 +55,9 @@ Each prompt: one subject, empty white space on one side (for my labels), no text
 Unchanged rule: 2 prompts per episode (dark cinematic 3D, the episode's palette, subject on the LEFT,
 right 45% empty dark for text), owner generates, I compose with make_thumb.py. Colours never repeat on
 neighbouring episodes (see anatomy-unfolded-director palette list).
+
+## Facebook / Instagram cut (owner, 16 Nov 2026: "no followers, no views on FB")
+After the Shorts are built, ALWAYS run `python3 youtube_agent/explainer/ecg/fb_cut.py <ep>_short1 <ep>_short2`
+(needs the short's script.json + audio). It writes explainer_queue/<file>_fb.mp4: big burned-in captions
+(Reels are watched muted), no YouTube-only "subscribe / 3:30 PM" ending, a FB/IG-native "FOLLOW" end card.
+social_post.py posts the _fb file to Facebook + Instagram when it exists (YouTube keeps the normal Short).
