@@ -1723,5 +1723,20 @@
       "HealthEducation"
     ],
     "publish_at": "2026-11-16T16:00:00Z"
+  },
+  {
+    "date": "2026-11-17T08:47:17",
+    "topic": "Flu in children 2026: emergency signs, treatment and the flu shot",
+    "requested_topic": "Flu in children 2026: emergency signs, treatment and the flu shot",
+    "title": "Flu in Children 2026: Signs That Mean Go to the ER",
+    "style": "Top Questions",
+    "script_file": "085-flu-in-children-2026.yaml",
+    "planned_publish_at": "2026-11-17T16:00:00Z",
+    "awaiting_approval": true,
+    "youtube_id": "Mo9H_OF0pug",
+    "short_youtube_id": "si2Ryr0S2ac",
+    "short2_youtube_id": "0-8QgqDjWcA",
+    "short3_youtube_id": "f4phdkD8F6o",
+    "preview": "previews/Mo9H_OF0pug.mp4"
   }
 ]
