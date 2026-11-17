@@ -649,5 +649,36 @@
     "image": "branding/health-support-studio/thumbs/uMsAGx54hOs.jpg",
     "vertical": true,
     "done": true
+  },
+  {
+    "youtube_id": "Mo9H_OF0pug",
+    "text": "NOT A COLD",
+    "highlight": "COLD",
+    "style": "Explainer",
+    "image": "branding/health-support-studio/thumbs/Mo9H_OF0pug.jpg"
+  },
+  {
+    "youtube_id": "si2Ryr0S2ac",
+    "text": "BREATHING FAST?",
+    "highlight": "FAST?",
+    "style": "Explainer",
+    "image": "branding/health-support-studio/thumbs/Mo9H_OF0pug.jpg",
+    "vertical": true
+  },
+  {
+    "youtube_id": "0-8QgqDjWcA",
+    "text": "THE TRUTH",
+    "highlight": "TRUTH",
+    "style": "Explainer",
+    "image": "branding/health-support-studio/thumbs/Mo9H_OF0pug.jpg",
+    "vertical": true
+  },
+  {
+    "youtube_id": "f4phdkD8F6o",
+    "text": "TRUST INSTINCTS",
+    "highlight": "TRUST",
+    "style": "Explainer",
+    "image": "branding/health-support-studio/thumbs/Mo9H_OF0pug.jpg",
+    "vertical": true
   }
 ]
