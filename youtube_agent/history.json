@@ -1737,6 +1737,47 @@
     "short_youtube_id": "si2Ryr0S2ac",
     "short2_youtube_id": "0-8QgqDjWcA",
     "short3_youtube_id": "f4phdkD8F6o",
-    "preview": "previews/Mo9H_OF0pug.mp4"
+    "preview": "previews/Mo9H_OF0pug.mp4",
+    "pin_question": "Has your child had the flu this season? What was the first sign you noticed? Share below so other parents can see.",
+    "packages": [
+      {
+        "title": "Flu in Children 2026: Signs That Mean Go to the ER",
+        "thumbnail_text": "NOT A COLD",
+        "thumbnail_highlight": "COLD"
+      },
+      {
+        "title": "Child Has the Flu? When to Go to the ER",
+        "thumbnail_text": "BLUE LIPS?",
+        "thumbnail_highlight": "LIPS?"
+      },
+      {
+        "title": "Is Flu Just a Bad Cold in Kids? What Parents Need to Know",
+        "thumbnail_text": "VERY SICK",
+        "thumbnail_highlight": "SICK"
+      },
+      {
+        "title": "Flu Warning Signs in Kids Every Parent Should Know",
+        "thumbnail_text": "ACT FAST",
+        "thumbnail_highlight": "FAST"
+      },
+      {
+        "title": "Is It Too Late for a Child's Flu Shot?",
+        "thumbnail_text": "TWO WEEKS",
+        "thumbnail_highlight": "WEEKS"
+      }
+    ],
+    "chosen": {
+      "title": "Flu in Children 2026: Signs That Mean Go to the ER",
+      "thumbnail_text": "NOT A COLD",
+      "thumbnail_highlight": "COLD"
+    },
+    "social_keywords": "flu in children · flu symptoms in kids · when to go to the ER for flu · flu shot for kids · baby fever",
+    "social_hashtags": [
+      "Flu",
+      "ChildrensHealth",
+      "FluSeason",
+      "ParentingTips",
+      "HealthEducation"
+    ]
   }
 ]
