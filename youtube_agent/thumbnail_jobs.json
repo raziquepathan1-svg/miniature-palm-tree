@@ -655,7 +655,8 @@
     "text": "NOT A COLD",
     "highlight": "COLD",
     "style": "Explainer",
-    "image": "branding/health-support-studio/thumbs/Mo9H_OF0pug.jpg"
+    "image": "branding/health-support-studio/thumbs/Mo9H_OF0pug.jpg",
+    "done": true
   },
   {
     "youtube_id": "si2Ryr0S2ac",
@@ -663,7 +664,8 @@
     "highlight": "FAST?",
     "style": "Explainer",
     "image": "branding/health-support-studio/thumbs/Mo9H_OF0pug.jpg",
-    "vertical": true
+    "vertical": true,
+    "done": true
   },
   {
     "youtube_id": "0-8QgqDjWcA",
@@ -671,7 +673,8 @@
     "highlight": "TRUTH",
     "style": "Explainer",
     "image": "branding/health-support-studio/thumbs/Mo9H_OF0pug.jpg",
-    "vertical": true
+    "vertical": true,
+    "done": true
   },
   {
     "youtube_id": "f4phdkD8F6o",
@@ -679,6 +682,7 @@
     "highlight": "TRUST",
     "style": "Explainer",
     "image": "branding/health-support-studio/thumbs/Mo9H_OF0pug.jpg",
-    "vertical": true
+    "vertical": true,
+    "done": true
   }
 ]
