@@ -1731,8 +1731,7 @@
     "title": "Flu in Children 2026: Signs That Mean Go to the ER",
     "style": "Top Questions",
     "script_file": "085-flu-in-children-2026.yaml",
-    "planned_publish_at": "2026-11-17T16:00:00Z",
-    "awaiting_approval": true,
+    "awaiting_approval": false,
     "youtube_id": "Mo9H_OF0pug",
     "short_youtube_id": "si2Ryr0S2ac",
     "short2_youtube_id": "0-8QgqDjWcA",
@@ -1778,6 +1777,7 @@
       "FluSeason",
       "ParentingTips",
       "HealthEducation"
-    ]
+    ],
+    "publish_at": "2026-11-17T16:00:00Z"
   }
 ]
