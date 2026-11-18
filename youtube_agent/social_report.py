@@ -27,10 +27,15 @@ def _get(path: str, token: str, **params):
     return data, ""
 
 
+ERRORS: dict[str, str] = {}
+
+
 def _metric(obj_id: str, token: str, metrics: list[str], edge: str = "insights") -> dict:
     out = {}
     for m in metrics:  # one at a time: a retired metric must not hide the others
         data, err = _get(f"{obj_id}/{edge}", token, metric=m)
+        if err:
+            ERRORS.setdefault(m, err)
         value = None
         if data and data.get("data"):
             vals = data["data"][0].get("values") or []
@@ -96,6 +101,10 @@ def main() -> None:
     token, _ = social.page_token(page_id, token)
     facebook(page_id, token)
     instagram(social._env("IG_USER_ID"), token)
+    if ERRORS:
+        print("NOT AVAILABLE FROM META (first error per metric)")
+        for m, e in ERRORS.items():
+            print(f"  {m}: {e}")
 
 
 if __name__ == "__main__":
