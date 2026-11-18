@@ -699,7 +699,8 @@
     "text": "SHAKY? SWEATY?",
     "highlight": "SHAKY?",
     "style": "Explainer",
-    "image": "branding/health-support-studio/thumbs/avF8QGKJL1o.jpg"
+    "image": "branding/health-support-studio/thumbs/avF8QGKJL1o.jpg",
+    "done": true
   },
   {
     "youtube_id": "K31ccIULUKU",
@@ -707,7 +708,8 @@
     "highlight": "GLUCOSE",
     "style": "Explainer",
     "image": "branding/health-support-studio/thumbs/avF8QGKJL1o.jpg",
-    "vertical": true
+    "vertical": true,
+    "done": true
   },
   {
     "youtube_id": "pn4GMQSBKac",
@@ -715,7 +717,8 @@
     "highlight": "PILLS",
     "style": "Explainer",
     "image": "branding/health-support-studio/thumbs/avF8QGKJL1o.jpg",
-    "vertical": true
+    "vertical": true,
+    "done": true
   },
   {
     "youtube_id": "KOA8z9fM2Ks",
@@ -723,6 +726,7 @@
     "highlight": "SLOWS",
     "style": "Explainer",
     "image": "branding/health-support-studio/thumbs/avF8QGKJL1o.jpg",
-    "vertical": true
+    "vertical": true,
+    "done": true
   }
 ]
