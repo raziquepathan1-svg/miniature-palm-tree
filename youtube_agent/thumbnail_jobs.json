@@ -693,5 +693,36 @@
     "image": "branding/health-support-studio/thumbs/kozoU8yA-M8.jpg",
     "vertical": true,
     "done": true
+  },
+  {
+    "youtube_id": "avF8QGKJL1o",
+    "text": "SHAKY? SWEATY?",
+    "highlight": "SHAKY?",
+    "style": "Explainer",
+    "image": "branding/health-support-studio/thumbs/avF8QGKJL1o.jpg"
+  },
+  {
+    "youtube_id": "K31ccIULUKU",
+    "text": "GLUCOSE TABS",
+    "highlight": "GLUCOSE",
+    "style": "Explainer",
+    "image": "branding/health-support-studio/thumbs/avF8QGKJL1o.jpg",
+    "vertical": true
+  },
+  {
+    "youtube_id": "pn4GMQSBKac",
+    "text": "PILLS TOO?",
+    "highlight": "PILLS",
+    "style": "Explainer",
+    "image": "branding/health-support-studio/thumbs/avF8QGKJL1o.jpg",
+    "vertical": true
+  },
+  {
+    "youtube_id": "KOA8z9fM2Ks",
+    "text": "FAT SLOWS IT",
+    "highlight": "SLOWS",
+    "style": "Explainer",
+    "image": "branding/health-support-studio/thumbs/avF8QGKJL1o.jpg",
+    "vertical": true
   }
 ]
