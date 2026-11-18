@@ -1,0 +1,33 @@
+name: Weekly Facebook and Instagram report
+
+on:
+  schedule:
+    - cron: "50 8 * * 1"   # Mondays, with the weekly channel check
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -q requests
+      - name: Read the Page and Reel numbers (read-only, posts nothing)
+        env:
+          META_PAGE_ID: ${{ secrets.META_PAGE_ID }}
+          META_PAGE_TOKEN: ${{ secrets.META_PAGE_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+        run: python -m youtube_agent.social_report | tee youtube_agent/social_report.txt
+      - name: Save the report
+        run: |
+          git config user.name "youtube-agent"
+          git config user.email "youtube-agent@users.noreply.github.com"
+          git add youtube_agent/social_report.txt
+          git diff --cached --quiet && exit 0
+          git commit -m "Weekly Facebook/Instagram report"
+          { for i in 1 2 3 4 5; do git pull --rebase && git push && exit 0; git rebase --abort 2>/dev/null || true; sleep $((i*4)); done; exit 1; }
