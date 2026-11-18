@@ -28,3 +28,11 @@ INSTAGRAM
   2026-11-07     n/a     n/a      1         0     n/a  'How much water do you drink a day? Here '
   2026-11-06     n/a     n/a      1         0     n/a  'Water and Weight Loss? Most people get t'
   2026-11-05     n/a     n/a      0         0     n/a  'Do you crack your knuckles? Here is what'
+NOT AVAILABLE FROM META (first error per metric)
+  blue_reels_play_count: (#200) read_insights permission missing (https://developers.facebook.com/docs/permissions/reference/read_insights)
+  post_impressions_unique: (#100) The value must be a valid insights metric
+  post_video_likes_by_reaction_type: (#200) read_insights permission missing (https://developers.facebook.com/docs/permissions/reference/read_insights)
+  post_video_social_actions: (#200) read_insights permission missing (https://developers.facebook.com/docs/permissions/reference/read_insights)
+  views: (#10) Application does not have permission for this action
+  reach: (#10) Application does not have permission for this action
+  shares: (#10) Application does not have permission for this action
