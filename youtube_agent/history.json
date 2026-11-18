@@ -1788,8 +1788,7 @@
     "title": "Low Blood Sugar Warning Signs (and the Rule of 15)",
     "style": "Warning Signs",
     "script_file": "049-low-blood-sugar-signs.yaml",
-    "planned_publish_at": "2026-11-18T16:00:00Z",
-    "awaiting_approval": true,
+    "awaiting_approval": false,
     "youtube_id": "avF8QGKJL1o",
     "short_youtube_id": "K31ccIULUKU",
     "short2_youtube_id": "pn4GMQSBKac",
@@ -1835,6 +1834,7 @@
       "Diabetes",
       "HealthTips",
       "HealthEducation"
-    ]
+    ],
+    "publish_at": "2026-11-18T16:00:00Z"
   }
 ]
