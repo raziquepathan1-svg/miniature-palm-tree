@@ -1731,14 +1731,17 @@
       "Diabetes",
       "HealthTips",
       "HealthEducation"
-    ]
+    ],
+    "done": true
   },
   {
     "youtube_id": "pn4GMQSBKac",
-    "title": "Only insulin users get low blood sugar? #Shorts"
+    "title": "Only insulin users get low blood sugar? #Shorts",
+    "done": true
   },
   {
     "youtube_id": "KOA8z9fM2Ks",
-    "title": "Does chocolate fix low blood sugar? #Shorts"
+    "title": "Does chocolate fix low blood sugar? #Shorts",
+    "done": true
   }
 ]

@@ -1794,6 +1794,47 @@
     "short_youtube_id": "K31ccIULUKU",
     "short2_youtube_id": "pn4GMQSBKac",
     "short3_youtube_id": "KOA8z9fM2Ks",
-    "preview": "previews/avF8QGKJL1o.mp4"
+    "preview": "previews/avF8QGKJL1o.mp4",
+    "pin_question": "Have you or someone you love ever had a low blood sugar scare? What did it feel like first? Share below.",
+    "packages": [
+      {
+        "title": "Low Blood Sugar Warning Signs (and the Rule of 15)",
+        "thumbnail_text": "SHAKY? SWEATY?",
+        "thumbnail_highlight": "SHAKY?"
+      },
+      {
+        "title": "Why Do I Feel Shaky and Sweaty? Low Blood Sugar",
+        "thumbnail_text": "QUICK FIX",
+        "thumbnail_highlight": "QUICK"
+      },
+      {
+        "title": "Only Insulin Users Get Lows? What Most People Miss",
+        "thumbnail_text": "THINK AGAIN",
+        "thumbnail_highlight": "AGAIN"
+      },
+      {
+        "title": "Hypoglycemia Symptoms: When to Call 911",
+        "thumbnail_text": "SEIZURE?",
+        "thumbnail_highlight": "SEIZURE?"
+      },
+      {
+        "title": "What to Do for Low Blood Sugar in 15 Minutes",
+        "thumbnail_text": "EAT FAST",
+        "thumbnail_highlight": "FAST"
+      }
+    ],
+    "chosen": {
+      "title": "Low Blood Sugar Warning Signs (and the Rule of 15)",
+      "thumbnail_text": "SHAKY? SWEATY?",
+      "thumbnail_highlight": "SHAKY?"
+    },
+    "social_keywords": "low blood sugar symptoms · rule of 15 · hypoglycemia · glucagon · low blood sugar at night",
+    "social_hashtags": [
+      "LowBloodSugar",
+      "Hypoglycemia",
+      "Diabetes",
+      "HealthTips",
+      "HealthEducation"
+    ]
   }
 ]
