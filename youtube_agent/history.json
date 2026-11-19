@@ -1836,5 +1836,20 @@
       "HealthEducation"
     ],
     "publish_at": "2026-11-18T16:00:00Z"
+  },
+  {
+    "date": "2026-11-19T12:06:12",
+    "topic": "Diabetes symptoms: early warning signs, tests and what to do",
+    "requested_topic": "Diabetes symptoms: early warning signs, tests and what to do",
+    "title": "Diabetes Symptoms: Early Signs Most People Miss",
+    "style": "Warning Signs",
+    "script_file": "083-diabetes-symptoms.yaml",
+    "planned_publish_at": "2026-11-19T16:00:00Z",
+    "awaiting_approval": true,
+    "youtube_id": "n_s3uyypu2g",
+    "short_youtube_id": "pCPKUfokmoo",
+    "short2_youtube_id": "lYcQiAWimk0",
+    "short3_youtube_id": "h48AYF0_GFY",
+    "preview": "previews/n_s3uyypu2g.mp4"
   }
 ]
