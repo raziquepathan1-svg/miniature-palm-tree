@@ -97,8 +97,18 @@ def upload_video(video_path: Path, thumbnail_path: Path | None, title: str, desc
     request = youtube.videos().insert(part="snippet,status", body=body, media_body=media)
 
     response = None
+    tries = 0
     while response is None:
-        status, response = request.next_chunk()
+        try:
+            status, response = request.next_chunk()
+            tries = 0
+        except OSError as e:  # Nov 19: a socket read timed out after 2.5 h of work; resume the same chunk
+            tries += 1
+            if tries > 6:
+                raise
+            print(f"  Upload hiccup ({type(e).__name__}: {e}); retry {tries}/6 in {5 * tries}s")
+            time.sleep(5 * tries)
+            continue
         if status:
             print(f"  Uploading... {int(status.progress() * 100)}%")
     video_id = response["id"]
