@@ -27,13 +27,13 @@ plan:
   tags: ["diabetes symptoms", "early signs of diabetes", "type 2 diabetes symptoms", "high blood sugar symptoms", "prediabetes", "a1c", "diabetes test", "type 1 diabetes symptoms", "diabetic ketoacidosis", "frequent urination", "always thirsty", "blood sugar", "diabetes warning signs", "insulin resistance", "health education"]
   thumbnail_text: "NO SYMPTOMS?"
   thumbnail_highlight: "SYMPTOMS?"
-  thumbnail_photo_query: "woman drinking water thirsty"
+  thumbnail_photo_query: "person drinking glass of water kitchen"
   playlist: "Diabetes & Metabolism"
   scenes:
     - layout: "title"
       heading: "Diabetes Symptoms"
       points: ["Early signs most people miss"]
-      footage_query: "woman drinking water thirsty"
+      footage_query: "person drinking glass of water kitchen"
       narration: >-
         Thirsty all the time, getting up at night to pee, and tired no matter how much you sleep? These can be early signs
         of diabetes. And about one in five people who have diabetes do not know it. Here are the signs most people miss,
@@ -189,7 +189,7 @@ plan:
     - layout: "title"
       heading: "Always Thirsty?"
       points: ["Early signs of diabetes"]
-      footage_query: "woman drinking water thirsty"
+      footage_query: "person drinking glass of water kitchen"
       narration: >-
         Always thirsty and getting up at night to pee? It could be an early sign of diabetes.
     - layout: "warning"

@@ -184,7 +184,7 @@ plan:
     - layout: "bullets"
       heading: "Prevention 1: Drink More Water"
       points: ["Aim for pale yellow urine", "About 8 to 12 cups a day", "More in hot weather", "Spread through the day"]
-      footage_query: "woman drinking water bottle"
+      footage_query: "person drinking glass of water kitchen"
       narration: >-
         The most important step is drinking enough fluids, mostly water. Many people with stones are advised to drink enough
         to make about two liters of urine a day, which often means eight to twelve cups of fluid. Your urine should be pale
@@ -251,7 +251,7 @@ plan:
     - layout: "outro"
       heading: "Remember"
       points: ["Fever plus pain: ER", "Drink more water", "Find your stone type"]
-      footage_query: "woman drinking water bottle"
+      footage_query: "person drinking glass of water kitchen"
       narration: >-
         Remember: fever with kidney stone pain means go to the ER, drink more water every day, and find out your stone type to
         prevent the next one. Share this with someone who has had a kidney stone. This video is for education only, not
@@ -277,6 +277,6 @@ plan:
     - layout: "outro"
       heading: "Full Video"
       points: ["On YouTube"]
-      footage_query: "woman drinking water bottle"
+      footage_query: "person drinking glass of water kitchen"
       narration: >-
         Learn how to prevent stones in our full video, on the Health Support Studio YouTube channel.

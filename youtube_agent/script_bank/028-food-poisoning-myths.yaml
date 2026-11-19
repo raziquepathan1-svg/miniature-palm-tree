@@ -219,7 +219,7 @@ plan:
     - layout: "bullets"
       heading: "Caring for Yourself at Home"
       points: ["Small sips of fluids", "Oral rehydration drinks", "Rest", "Bland foods as you feel better"]
-      footage_query: "woman drinking water bottle"
+      footage_query: "person drinking glass of water kitchen"
       narration: >-
         Most food poisoning gets better on its own. The key is to prevent dehydration. Take small, frequent sips of water or
         an oral rehydration drink. For children, oral rehydration solutions are best. As you feel better, slowly add bland

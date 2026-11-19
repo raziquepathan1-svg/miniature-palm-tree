@@ -188,7 +188,7 @@ plan:
     - layout: "bullets"
       heading: "Preventing UTIs"
       points: ["Drink enough water", "Do not hold urine long", "Pee after sex", "Wipe front to back"]
-      footage_query: "woman drinking water bottle"
+      footage_query: "person drinking glass of water kitchen"
       narration: >-
         How can you prevent UTIs? Drink enough water so you pee regularly, which flushes bacteria out. Do not hold urine for
         long periods. Pee soon after sex. Women should wipe from front to back after using the toilet. Wear cotton underwear

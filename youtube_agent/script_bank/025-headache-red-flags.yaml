@@ -219,7 +219,7 @@ plan:
     - layout: "bullets"
       heading: "Prevent Common Headaches"
       points: ["Regular sleep", "Do not skip meals", "Drink water", "Manage stress"]
-      footage_query: "woman drinking water bottle"
+      footage_query: "person drinking glass of water kitchen"
       narration: >-
         You can prevent many common headaches with simple habits. Keep a regular sleep schedule, even on weekends. Eat regular
         meals and drink enough water. Keep caffeine steady, without big ups and downs. Move your body every day. Take breaks

@@ -205,7 +205,7 @@ plan:
     - layout: "bullets"
       heading: "Drink Smart"
       points: ["Drink before you feel thirsty", "Water is best", "Sports drinks for long sweating", "Limit alcohol and sugary drinks"]
-      footage_query: "woman drinking water bottle"
+      footage_query: "person drinking glass of water kitchen"
       narration: >-
         Staying hydrated is key. Drink water before you feel thirsty, and keep drinking throughout the day. For long, sweaty
         activity, a sports drink can help replace salt. Limit alcohol and very sugary drinks, which can make dehydration

@@ -728,5 +728,28 @@
     "image": "branding/health-support-studio/thumbs/avF8QGKJL1o.jpg",
     "vertical": true,
     "done": true
+  },
+  {
+    "youtube_id": "n_s3uyypu2g",
+    "text": "1 IN 5",
+    "highlight": "5",
+    "style": "Explainer",
+    "image": "branding/health-support-studio/thumbs/n_s3uyypu2g.jpg"
+  },
+  {
+    "youtube_id": "lYcQiAWimk0",
+    "text": "SILENT SIGNS",
+    "highlight": "SILENT",
+    "style": "Explainer",
+    "image": "branding/health-support-studio/thumbs/n_s3uyypu2g.jpg",
+    "vertical": true
+  },
+  {
+    "youtube_id": "h48AYF0_GFY",
+    "text": "TURN IT AROUND",
+    "highlight": "TURN",
+    "style": "Explainer",
+    "image": "branding/health-support-studio/thumbs/n_s3uyypu2g.jpg",
+    "vertical": true
   }
 ]

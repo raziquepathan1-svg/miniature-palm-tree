@@ -1743,5 +1743,68 @@
     "youtube_id": "KOA8z9fM2Ks",
     "title": "Does chocolate fix low blood sugar? #Shorts",
     "done": true
+  },
+  {
+    "youtube_id": "n_s3uyypu2g",
+    "title": "Diabetes Symptoms: Early Signs Most People Miss",
+    "description_top": "Diabetes symptoms: the early signs most people miss, like being very thirsty, peeing a lot, blurry vision and tiredness, and when to see a doctor.\nType 1 vs type 2 diabetes, prediabetes, numb or tingling feet, the emergency signs of DKA that mean go to the ER, who should get tested, and what helps, based on CDC and NIDDK guidance.",
+    "pin_question": "Did you or someone you know find out about diabetes by surprise? What was the first sign you noticed? Share below.",
+    "packages": [
+      {
+        "title": "Diabetes Symptoms: Early Signs Most People Miss",
+        "thumbnail_text": "1 IN 5",
+        "thumbnail_highlight": "5"
+      },
+      {
+        "title": "Do You Have Diabetes? Signs You Shouldn't Ignore",
+        "thumbnail_text": "THIRSTY?",
+        "thumbnail_highlight": "THIRSTY?"
+      },
+      {
+        "title": "Peeing a Lot and Always Tired? Diabetes Signs",
+        "thumbnail_text": "CHECK A1C",
+        "thumbnail_highlight": "A1C"
+      },
+      {
+        "title": "Can Prediabetes Be Reversed? What to Know",
+        "thumbnail_text": "NOT LOCKED IN",
+        "thumbnail_highlight": "LOCKED"
+      },
+      {
+        "title": "Who Should Get Tested for Diabetes?",
+        "thumbnail_text": "35 TO 70",
+        "thumbnail_highlight": "70"
+      }
+    ],
+    "chosen": {
+      "title": "Diabetes Symptoms: Early Signs Most People Miss",
+      "thumbnail_text": "1 IN 5",
+      "thumbnail_highlight": "5"
+    },
+    "tags": [
+      "diabetes symptoms",
+      "early signs of diabetes",
+      "type 2 diabetes symptoms",
+      "diabetes warning signs",
+      "signs of diabetes",
+      "prediabetes",
+      "a1c test",
+      "frequent urination and thirst",
+      "blurry vision diabetes",
+      "numb tingling feet diabetes",
+      "diabetic ketoacidosis dka",
+      "who should get tested for diabetes",
+      "type 1 vs type 2 diabetes",
+      "high blood sugar symptoms",
+      "health education"
+    ],
+    "social_keywords": "diabetes symptoms · early signs of diabetes · prediabetes · A1C test · DKA warning signs",
+    "social_hashtags": [
+      "Diabetes",
+      "DiabetesSymptoms",
+      "Prediabetes",
+      "HealthTips",
+      "HealthEducation"
+    ]
   }
 ]

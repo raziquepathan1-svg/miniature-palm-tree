@@ -131,7 +131,7 @@ plan:
     - layout: "bullets"
       heading: "Question 2: How Much Water?"
       points: ["Fluids help soften stool", "Water is best", "More with fiber", "More in hot weather"]
-      footage_query: "woman drinking water bottle"
+      footage_query: "person drinking glass of water kitchen"
       narration: >-
         How much water should you drink? There is no single number for everyone, but drinking enough fluids helps keep stool
         soft, especially when eating more fiber. Water is the best choice. Drink more in hot weather or when exercising. If
