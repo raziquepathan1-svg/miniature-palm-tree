@@ -1850,6 +1850,47 @@
     "short2_youtube_id": "lYcQiAWimk0",
     "short3_youtube_id": "h48AYF0_GFY",
     "preview": "previews/n_s3uyypu2g.mp4",
-    "held_short1_youtube_id": "pCPKUfokmoo"
+    "held_short1_youtube_id": "pCPKUfokmoo",
+    "pin_question": "Did you or someone you know find out about diabetes by surprise? What was the first sign you noticed? Share below.",
+    "packages": [
+      {
+        "title": "Diabetes Symptoms: Early Signs Most People Miss",
+        "thumbnail_text": "1 IN 5",
+        "thumbnail_highlight": "5"
+      },
+      {
+        "title": "Do You Have Diabetes? Signs You Shouldn't Ignore",
+        "thumbnail_text": "THIRSTY?",
+        "thumbnail_highlight": "THIRSTY?"
+      },
+      {
+        "title": "Peeing a Lot and Always Tired? Diabetes Signs",
+        "thumbnail_text": "CHECK A1C",
+        "thumbnail_highlight": "A1C"
+      },
+      {
+        "title": "Can Prediabetes Be Reversed? What to Know",
+        "thumbnail_text": "NOT LOCKED IN",
+        "thumbnail_highlight": "LOCKED"
+      },
+      {
+        "title": "Who Should Get Tested for Diabetes?",
+        "thumbnail_text": "35 TO 70",
+        "thumbnail_highlight": "70"
+      }
+    ],
+    "chosen": {
+      "title": "Diabetes Symptoms: Early Signs Most People Miss",
+      "thumbnail_text": "1 IN 5",
+      "thumbnail_highlight": "5"
+    },
+    "social_keywords": "diabetes symptoms · early signs of diabetes · prediabetes · A1C test · DKA warning signs",
+    "social_hashtags": [
+      "Diabetes",
+      "DiabetesSymptoms",
+      "Prediabetes",
+      "HealthTips",
+      "HealthEducation"
+    ]
   }
 ]
