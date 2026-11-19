@@ -734,7 +734,8 @@
     "text": "1 IN 5",
     "highlight": "5",
     "style": "Explainer",
-    "image": "branding/health-support-studio/thumbs/n_s3uyypu2g.jpg"
+    "image": "branding/health-support-studio/thumbs/n_s3uyypu2g.jpg",
+    "done": true
   },
   {
     "youtube_id": "lYcQiAWimk0",
@@ -742,7 +743,8 @@
     "highlight": "SILENT",
     "style": "Explainer",
     "image": "branding/health-support-studio/thumbs/n_s3uyypu2g.jpg",
-    "vertical": true
+    "vertical": true,
+    "done": true
   },
   {
     "youtube_id": "h48AYF0_GFY",
@@ -750,6 +752,7 @@
     "highlight": "TURN",
     "style": "Explainer",
     "image": "branding/health-support-studio/thumbs/n_s3uyypu2g.jpg",
-    "vertical": true
+    "vertical": true,
+    "done": true
   }
 ]
