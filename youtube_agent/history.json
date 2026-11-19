@@ -1844,8 +1844,7 @@
     "title": "Diabetes Symptoms: Early Signs Most People Miss",
     "style": "Warning Signs",
     "script_file": "083-diabetes-symptoms.yaml",
-    "planned_publish_at": "2026-11-19T16:00:00Z",
-    "awaiting_approval": true,
+    "awaiting_approval": false,
     "youtube_id": "n_s3uyypu2g",
     "short2_youtube_id": "lYcQiAWimk0",
     "short3_youtube_id": "h48AYF0_GFY",
@@ -1891,6 +1890,7 @@
       "Prediabetes",
       "HealthTips",
       "HealthEducation"
-    ]
+    ],
+    "publish_at": "2026-11-19T16:00:00Z"
   }
 ]
