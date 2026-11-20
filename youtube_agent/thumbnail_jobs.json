@@ -769,7 +769,8 @@
     "text": "RED FLAGS",
     "highlight": "FLAGS",
     "style": "Explainer",
-    "image": "branding/health-support-studio/thumbs/Robmj0e-vjg.jpg"
+    "image": "branding/health-support-studio/thumbs/Robmj0e-vjg.jpg",
+    "done": true
   },
   {
     "youtube_id": "ujxj_eHWnvY",
@@ -777,7 +778,8 @@
     "highlight": "SCAN?",
     "style": "Explainer",
     "image": "branding/health-support-studio/thumbs/Robmj0e-vjg.jpg",
-    "vertical": true
+    "vertical": true,
+    "done": true
   },
   {
     "youtube_id": "FRXkiW0BGYI",
@@ -785,6 +787,7 @@
     "highlight": "HARM?",
     "style": "Explainer",
     "image": "branding/health-support-studio/thumbs/Robmj0e-vjg.jpg",
-    "vertical": true
+    "vertical": true,
+    "done": true
   }
 ]
