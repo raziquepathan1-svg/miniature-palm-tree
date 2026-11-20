@@ -1912,6 +1912,47 @@
     "replaced_ids": [
       "1bbn9rm-j8A"
     ],
-    "publish_at": "2026-11-20T18:39:36Z"
+    "publish_at": "2026-11-20T18:39:36Z",
+    "pin_question": "Has back pain ever stopped you from doing something you love? What helped you most: moving, heat, or something else? Share below.",
+    "packages": [
+      {
+        "title": "Back Pain: What Actually Helps (and When It's Serious)",
+        "thumbnail_text": "RED FLAGS",
+        "thumbnail_highlight": "FLAGS"
+      },
+      {
+        "title": "Lower Back Pain: Should You Rest or Stay Active?",
+        "thumbnail_text": "BED REST?",
+        "thumbnail_highlight": "BED"
+      },
+      {
+        "title": "Do You Need an X-Ray or MRI for Back Pain?",
+        "thumbnail_text": "NOT ALWAYS",
+        "thumbnail_highlight": "NOT"
+      },
+      {
+        "title": "Sciatica or Back Pain? Signs You Shouldn't Ignore",
+        "thumbnail_text": "LEG SIGNS",
+        "thumbnail_highlight": "LEG"
+      },
+      {
+        "title": "How to Lift Without Hurting Your Back",
+        "thumbnail_text": "BEND KNEES",
+        "thumbnail_highlight": "BEND"
+      }
+    ],
+    "chosen": {
+      "title": "Back Pain: What Actually Helps (and When It's Serious)",
+      "thumbnail_text": "RED FLAGS",
+      "thumbnail_highlight": "FLAGS"
+    },
+    "social_keywords": "back pain relief · lower back pain · sciatica · MRI for back pain · back pain red flags",
+    "social_hashtags": [
+      "BackPain",
+      "LowerBackPain",
+      "Sciatica",
+      "HealthTips",
+      "HealthEducation"
+    ]
   }
 ]
