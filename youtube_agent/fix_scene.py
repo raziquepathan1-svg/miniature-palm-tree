@@ -55,11 +55,18 @@ def _replace(workdir: Path, final: Path, parts: list, said: str, clip_name: str,
     fixed = workdir / f"final_fixed{n}.mp4"
     enc = ["-an", "-c:v", "libx264", "-preset", "medium", "-crf", "18", "-r", "30", "-pix_fmt", "yuv420p"]
     a, b, c = (workdir / f"fix{n}_{k}.mp4" for k in "abc")  # before, the new page, after (one at a time: low memory)
-    visuals._run(["-y", "-i", str(final), "-t", f"{start:.3f}", *enc, str(a)])
+    total_len = _duration(final)
+    segs = []
+    if start > 0.05:  # Nov 20: a page at the very start has no "before" part (an empty file broke the concat)
+        visuals._run(["-y", "-i", str(final), "-t", f"{start:.3f}", *enc, str(a)])
+        segs.append(a)
     visuals._run(["-y", "-i", str(new_page), "-t", f"{dur:.3f}", *enc, str(b)])
-    visuals._run(["-y", "-ss", f"{start + dur:.3f}", "-i", str(final), *enc, str(c)])
+    segs.append(b)
+    if total_len - (start + dur) > 0.05:
+        visuals._run(["-y", "-ss", f"{start + dur:.3f}", "-i", str(final), *enc, str(c)])
+        segs.append(c)
     lst = workdir / f"fix{n}_list.txt"
-    lst.write_text("".join(f"file '{p.resolve()}'\n" for p in (a, b, c)))
+    lst.write_text("".join(f"file '{p.resolve()}'\n" for p in segs))
     video = workdir / f"fix{n}_video.mp4"
     visuals._run(["-y", "-f", "concat", "-safe", "0", "-i", str(lst), "-c", "copy", str(video)])
     visuals._run(["-y", "-i", str(video), "-i", str(final), "-map", "0:v", "-map", "1:a", "-c", "copy",
