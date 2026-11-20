@@ -92,7 +92,7 @@ plan:
     - layout: "bullets"
       heading: "What Is Prostatitis?"
       points: ["Inflammation of the prostate", "Can be an infection", "Pain in pelvis or lower back", "Painful urination"]
-      footage_query: "man holding lower back"
+      footage_query: "office worker rubbing back desk"
       narration: >-
         What is prostatitis? It is inflammation of the prostate, and it can affect men of any age. Sometimes it is caused by a
         bacterial infection, which can come on suddenly with fever, chills and painful urination, and needs antibiotics. Other

@@ -27,7 +27,7 @@ plan:
     - layout: "title"
       heading: "Kidney Stone Warning Signs"
       points: ["When to go to the ER"]
-      footage_query: "man back pain holding side"
+      footage_query: "office worker rubbing back desk"
       narration: >-
         People who have had a kidney stone often say it was the worst pain of their life, worse than a broken bone or even
         childbirth. Kidney stones are common, and most pass on their own, but some cause dangerous infections or block the
@@ -68,7 +68,7 @@ plan:
     - layout: "warning"
       heading: "The Classic Pain"
       points: ["Severe side or back pain", "Below the ribs", "Spreads to belly or groin", "Comes in waves"]
-      footage_query: "man back pain holding side"
+      footage_query: "office worker rubbing back desk"
       narration: >-
         The classic sign is sudden, severe pain in your side or back, below the ribs. The pain often spreads to the lower
         belly and groin. It usually comes in waves, getting stronger and then easing, as the stone moves and the ureter
@@ -101,7 +101,7 @@ plan:
     - layout: "myth_fact"
       heading: "It Must Be My Back"
       points: ["Side pain is just a pulled muscle", "Stone pain does not change with movement"]
-      footage_query: "man holding back"
+      footage_query: "office worker rubbing back desk"
       narration: >-
         Myth: pain in the back or side is always a pulled muscle. Fact: muscle pain usually gets worse with certain movements
         and better with rest. Kidney stone pain is often deeper, comes in waves, and does not ease no matter how you move or
@@ -264,7 +264,7 @@ plan:
     - layout: "title"
       heading: "Kidney Stone Pain?"
       points: ["One sign means ER"]
-      footage_query: "man back pain holding side"
+      footage_query: "office worker rubbing back desk"
       narration: >-
         Kidney stone pain is severe, but one sign means you need the emergency room right away.
     - layout: "warning"

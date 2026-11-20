@@ -51,7 +51,7 @@ plan:
     - layout: "bullets"
       heading: "Signs of Low Vitamin D"
       points: ["Often no symptoms", "Bone pain or aches", "Muscle weakness", "Soft bones in children"]
-      footage_query: "man tired holding back"
+      footage_query: "office worker rubbing back desk"
       narration: >-
         Most people with low vitamin D have no symptoms at all. When levels are very low for a long time, adults may notice
         bone pain, aching muscles, weakness, or more falls. Children may have delayed growth, bowed legs, or soft bones. These

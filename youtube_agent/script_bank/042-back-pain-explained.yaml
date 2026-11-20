@@ -27,7 +27,7 @@ plan:
     - layout: "title"
       heading: "Back Pain Explained"
       points: ["What helps and what to watch"]
-      footage_query: "man holding lower back"
+      footage_query: "office worker rubbing back desk"
       narration: >-
         You bend down to pick something up, and your lower back suddenly seizes. Or it just aches after a long day at your
         desk. Back pain is one of the most common reasons people see a doctor or miss work. Here is what actually helps, and the warning signs that need urgent care.
@@ -99,7 +99,7 @@ plan:
     - layout: "warning"
       heading: "When It Is Not the Back"
       points: ["Kidney stones or infection", "Aortic aneurysm", "Pancreas or gallbladder", "Heart problems"]
-      footage_query: "man back pain holding side"
+      footage_query: "office worker rubbing back desk"
       narration: >-
         Sometimes pain in the back comes from something else. Kidney stones and kidney infections can cause pain in the side
         or back. In older adults, especially smokers, sudden severe pain in the back or belly can be a tear in the aorta, the
@@ -141,7 +141,7 @@ plan:
     - layout: "bullets"
       heading: "Gentle Movement"
       points: ["Short, frequent walks", "Gentle stretches", "Avoid heavy lifting at first", "Slowly return to activity"]
-      footage_query: "woman walking park"
+      footage_query: "people walking park"
       narration: >-
         Gentle movement helps your back heal. Take short walks several times a day, and slowly increase the distance. Gentle
         stretches, like pulling one knee toward your chest while lying on your back, may help. Avoid heavy lifting and
@@ -271,13 +271,13 @@ plan:
     - layout: "title"
       heading: "Back Pain?"
       points: ["Do not stay in bed"]
-      footage_query: "man holding lower back"
+      footage_query: "office worker rubbing back desk"
       narration: >-
         Hurt your back? The old advice to rest in bed is wrong.
     - layout: "bullets"
       heading: "What Helps"
       points: ["Keep moving gently", "Use heat", "Most get better in weeks"]
-      footage_query: "woman walking park"
+      footage_query: "people walking park"
       narration: >-
         People who stay active recover faster. Take short walks, use a heating pad, and take a pain reliever if it is safe for
         you. But go to the ER if back pain comes with trouble controlling your bladder or bowels, numbness in the groin, or

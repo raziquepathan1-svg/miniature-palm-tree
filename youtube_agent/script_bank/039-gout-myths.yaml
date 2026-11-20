@@ -233,7 +233,7 @@ plan:
     - layout: "bullets"
       heading: "Kidney Stones and Gout"
       points: ["Uric acid can form stones", "Severe side or back pain", "Drink more water", "Medicine helps prevent them"]
-      footage_query: "man back pain holding side"
+      footage_query: "office worker rubbing back desk"
       narration: >-
         People with gout are more likely to get kidney stones, some made of uric acid. A kidney stone can cause severe pain in
         the side or back, nausea, and blood in the urine. Drinking plenty of water helps prevent stones. Uric acid lowering

@@ -75,7 +75,7 @@ plan:
     - layout: "warning"
       heading: "Signs of a Kidney Infection"
       points: ["Fever and chills", "Pain in the back or side", "Nausea or vomiting", "Feeling very sick"]
-      footage_query: "man back pain holding side"
+      footage_query: "office worker rubbing back desk"
       narration: >-
         How do you know if the infection reached the kidneys? Watch for fever and shaking chills, pain in the back or side
         just below the ribs, nausea and vomiting, and feeling very sick. A kidney infection is more serious than a bladder
