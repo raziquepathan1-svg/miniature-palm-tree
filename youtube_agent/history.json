@@ -1895,5 +1895,20 @@
     "short_youtube_id": "1GwB-Chf5UU",
     "remade_short_pages": [],
     "shorts_remade": "2026-11-20T07:38:07Z"
+  },
+  {
+    "date": "2026-11-20T09:33:04",
+    "topic": "Low back pain: causes, what helps, and red flags",
+    "requested_topic": "Low back pain: causes, what helps, and red flags",
+    "title": "Back Pain: What Actually Helps (and When It's Serious)",
+    "style": "Explainer",
+    "script_file": "042-back-pain-explained.yaml",
+    "planned_publish_at": "2026-11-20T16:00:00Z",
+    "awaiting_approval": true,
+    "youtube_id": "1bbn9rm-j8A",
+    "short_youtube_id": "14ckUq3N0Y0",
+    "short2_youtube_id": "ujxj_eHWnvY",
+    "short3_youtube_id": "FRXkiW0BGYI",
+    "preview": "previews/1bbn9rm-j8A.mp4"
   }
 ]
