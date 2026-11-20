@@ -1905,10 +1905,12 @@
     "script_file": "042-back-pain-explained.yaml",
     "planned_publish_at": "2026-11-20T16:00:00Z",
     "awaiting_approval": true,
-    "youtube_id": "1bbn9rm-j8A",
+    "youtube_id": "Robmj0e-vjg",
     "short2_youtube_id": "ujxj_eHWnvY",
     "short3_youtube_id": "FRXkiW0BGYI",
-    "preview": "previews/1bbn9rm-j8A.mp4",
-    "held_short1_youtube_id": "14ckUq3N0Y0"
+    "held_short1_youtube_id": "14ckUq3N0Y0",
+    "replaced_ids": [
+      "1bbn9rm-j8A"
+    ]
   }
 ]
