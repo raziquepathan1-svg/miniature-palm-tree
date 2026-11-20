@@ -763,5 +763,28 @@
     "image": "branding/health-support-studio/thumbs/n_s3uyypu2g.jpg",
     "vertical": true,
     "done": true
+  },
+  {
+    "youtube_id": "Robmj0e-vjg",
+    "text": "RED FLAGS",
+    "highlight": "FLAGS",
+    "style": "Explainer",
+    "image": "branding/health-support-studio/thumbs/Robmj0e-vjg.jpg"
+  },
+  {
+    "youtube_id": "ujxj_eHWnvY",
+    "text": "SKIP THE SCAN?",
+    "highlight": "SCAN?",
+    "style": "Explainer",
+    "image": "branding/health-support-studio/thumbs/Robmj0e-vjg.jpg",
+    "vertical": true
+  },
+  {
+    "youtube_id": "FRXkiW0BGYI",
+    "text": "HURT OR HARM?",
+    "highlight": "HARM?",
+    "style": "Explainer",
+    "image": "branding/health-support-studio/thumbs/Robmj0e-vjg.jpg",
+    "vertical": true
   }
 ]
