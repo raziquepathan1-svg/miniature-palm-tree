@@ -184,3 +184,15 @@ also follow `.claude/skills/hss-funnel-search/SKILL.md`.
 - An unanswered question every 15-20 s; every fact sourced (CDC/NIH/Mayo); the host is never a doctor.
 - Visuals: anatomy clip with labels at each "what happens inside" beat, whiteboard drawings for everyday scenes, a new visual every 10-15 s, corner presenter in long videos only, narration only.
 - Stock-clip searches can pick wrong clips (a 3D printer for "cpap machine", a walking couple for "snoring"): LOOK at every page and fix with fix-scene.yml before approving.
+
+## Owner away (from Nov 20 2026, about 5-6 days, no internet): standing rules
+- THE MAIN VIDEO MUST GO OUT EVERY DAY AT 7 PM SAUDI (16:00 UTC). Never skip it. Shorts and Reels may be skipped/held (1 or 2 is fine).
+- Order of preference when a long video has a problem: (1) fix the page with fix-scene or add-presenter.yml with said/clip (page fix + presenter); (2) if the presenter cannot be added in time, publish WITHOUT the presenter rather than skip the day; (3) never publish a shirtless/immodest/false page: replace it with a drawing (.png).
+- Start fixes EARLY (the daily run ends about 09:50 UTC; a combined fix takes about 80 min + a re-upload), so the new video is ready before 16:00 UTC.
+- YouTube quota is 10,000 units/day, resets 08:00 UTC: a video upload = 1,600, the daily run uses 4 uploads (6,400), a swap/fix = 1,600. So on a day with a fix: no Short remakes. Shorts remakes only on days with room.
+- Held/unfixable Short or Reel: hold only that one (rename its history key to held_shortN_youtube_id; block Reel 1 by adding the run id to social_posted.txt), tell the owner the TITLE when he is back.
+- Sound flags: accept an isolated 2 s sibilant spike only if the spectrogram shows normal syllable bursts; hold a broken voice take.
+- Comments: general safe facts only, never personal medical advice; skip spam/arguments.
+- Old private copies: never touch; keep one running list for the owner (strays: ZU8IpMlvJ-M, pCPKUfokmoo, YcRELQKETQg, C8IyOaBWi6Y, plus later ones).
+- Use scripts that have a saved picture (pending-<script>.jpg) first; put them first in growth.now; check that unused scripts stay above 10.
+- Stock clip searches that returned bare skin: "man holding lower back", "woman drinking water thirsty/bottle", "bathroom scale feet" are replaced; look at EVERY opening frame of every long video and every Short.
