@@ -1966,6 +1966,47 @@
     "youtube_id": "6F_vs-w5vJk",
     "preview": "previews/6F_vs-w5vJk.mp4",
     "held_short1_youtube_id": "I_iePdxhPb0",
-    "publish_at": "2026-11-21T16:00:00Z"
+    "publish_at": "2026-11-21T16:00:00Z",
+    "pin_question": "What is the migraine trigger you have noticed most: stress, sleep, food, or something else? Share below.",
+    "packages": [
+      {
+        "title": "Migraine: Why It's More Than a Headache (and What Helps)",
+        "thumbnail_text": "SEEING ZIGZAGS?",
+        "thumbnail_highlight": "ZIGZAGS?"
+      },
+      {
+        "title": "Migraine Symptoms: Is It More Than a Headache?",
+        "thumbnail_text": "NOT NORMAL",
+        "thumbnail_highlight": "NOT"
+      },
+      {
+        "title": "Taking Pain Pills Too Often? Rebound Headache Explained",
+        "thumbnail_text": "PILL TRAP",
+        "thumbnail_highlight": "PILL"
+      },
+      {
+        "title": "Migraine Triggers: Foods and Habits to Track",
+        "thumbnail_text": "KEEP A DIARY",
+        "thumbnail_highlight": "DIARY"
+      },
+      {
+        "title": "Migraine Aura: Signs, Birth Control and Stroke Risk",
+        "thumbnail_text": "KNOW THE RISK",
+        "thumbnail_highlight": "RISK"
+      }
+    ],
+    "chosen": {
+      "title": "Migraine: Why It's More Than a Headache (and What Helps)",
+      "thumbnail_text": "SEEING ZIGZAGS?",
+      "thumbnail_highlight": "ZIGZAGS?"
+    },
+    "social_keywords": "migraine symptoms · migraine aura · migraine triggers · rebound headache · migraine vs headache",
+    "social_hashtags": [
+      "Migraine",
+      "Headache",
+      "MigraineRelief",
+      "HealthTips",
+      "HealthEducation"
+    ]
   }
 ]
