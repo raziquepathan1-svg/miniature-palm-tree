@@ -1886,5 +1886,68 @@
     "youtube_id": "FRXkiW0BGYI",
     "title": "Does more back pain mean more damage? #Shorts",
     "done": true
+  },
+  {
+    "youtube_id": "6F_vs-w5vJk",
+    "title": "Migraine: Why It's More Than a Headache (and What Helps)",
+    "description_top": "Migraine is more than a bad headache: symptoms, the aura (flashing lights or zigzags), common triggers, and the emergency signs that mean go to the ER.\nHow common migraine is, the four phases, food triggers, medication overuse (rebound) headache, migraine aura and birth control, and what helps, based on NIH and Mayo Clinic guidance.",
+    "pin_question": "What is the migraine trigger you have noticed most: stress, sleep, food, or something else? Share below.",
+    "packages": [
+      {
+        "title": "Migraine: Why It's More Than a Headache (and What Helps)",
+        "thumbnail_text": "SEEING ZIGZAGS?",
+        "thumbnail_highlight": "ZIGZAGS?"
+      },
+      {
+        "title": "Migraine Symptoms: Is It More Than a Headache?",
+        "thumbnail_text": "NOT NORMAL",
+        "thumbnail_highlight": "NOT"
+      },
+      {
+        "title": "Taking Pain Pills Too Often? Rebound Headache Explained",
+        "thumbnail_text": "PILL TRAP",
+        "thumbnail_highlight": "PILL"
+      },
+      {
+        "title": "Migraine Triggers: Foods and Habits to Track",
+        "thumbnail_text": "KEEP A DIARY",
+        "thumbnail_highlight": "DIARY"
+      },
+      {
+        "title": "Migraine Aura: Signs, Birth Control and Stroke Risk",
+        "thumbnail_text": "KNOW THE RISK",
+        "thumbnail_highlight": "RISK"
+      }
+    ],
+    "chosen": {
+      "title": "Migraine: Why It's More Than a Headache (and What Helps)",
+      "thumbnail_text": "SEEING ZIGZAGS?",
+      "thumbnail_highlight": "ZIGZAGS?"
+    },
+    "tags": [
+      "migraine",
+      "migraine symptoms",
+      "migraine aura",
+      "migraine triggers",
+      "migraine vs headache",
+      "what helps a migraine",
+      "migraine treatment",
+      "rebound headache",
+      "medication overuse headache",
+      "migraine and birth control",
+      "migraine emergency signs",
+      "how common is migraine",
+      "food triggers for migraine",
+      "headache warning signs",
+      "health education"
+    ],
+    "social_keywords": "migraine symptoms · migraine aura · migraine triggers · rebound headache · migraine vs headache",
+    "social_hashtags": [
+      "Migraine",
+      "Headache",
+      "MigraineRelief",
+      "HealthTips",
+      "HealthEducation"
+    ]
   }
 ]
