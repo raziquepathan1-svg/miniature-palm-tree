@@ -1954,5 +1954,18 @@
       "HealthTips",
       "HealthEducation"
     ]
+  },
+  {
+    "date": "2026-11-21T05:37:57",
+    "topic": "Migraine: symptoms, triggers and treatment",
+    "requested_topic": "Migraine: symptoms, triggers and treatment",
+    "title": "Migraine: Why It's More Than a Headache (and What Helps)",
+    "style": "Top Questions",
+    "script_file": "045-migraine-questions.yaml",
+    "planned_publish_at": "2026-11-21T16:00:00Z",
+    "awaiting_approval": true,
+    "youtube_id": "6F_vs-w5vJk",
+    "short_youtube_id": "I_iePdxhPb0",
+    "preview": "previews/6F_vs-w5vJk.mp4"
   }
 ]
