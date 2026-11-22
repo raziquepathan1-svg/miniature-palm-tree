@@ -806,5 +806,28 @@
     "image": "branding/health-support-studio/thumbs/6F_vs-w5vJk.jpg",
     "vertical": true,
     "done": true
+  },
+  {
+    "youtube_id": "ryzO95V92rI",
+    "text": "TWO KIWIS?",
+    "highlight": "KIWIS?",
+    "style": "Explainer",
+    "image": "branding/health-support-studio/thumbs/ryzO95V92rI.jpg"
+  },
+  {
+    "youtube_id": "PEMSfgzab4A",
+    "text": "SAFE OR NOT?",
+    "highlight": "SAFE",
+    "style": "Explainer",
+    "image": "branding/health-support-studio/thumbs/ryzO95V92rI.jpg",
+    "vertical": true
+  },
+  {
+    "youtube_id": "EfeovUnX_7E",
+    "text": "CLEANSE MYTH",
+    "highlight": "CLEANSE",
+    "style": "Explainer",
+    "image": "branding/health-support-studio/thumbs/ryzO95V92rI.jpg",
+    "vertical": true
   }
 ]
