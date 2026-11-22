@@ -2031,6 +2031,47 @@
       "qmDI97ZdHi0"
     ],
     "held_short1_youtube_id": "D5YLkEwaek0",
-    "publish_at": "2026-11-22T16:00:00Z"
+    "publish_at": "2026-11-22T16:00:00Z",
+    "pin_question": "What has helped your constipation the most: more fiber, water, walking, or something else? Share below.",
+    "packages": [
+      {
+        "title": "Constipated? What Actually Works (and When to Worry)",
+        "thumbnail_text": "TWO KIWIS?",
+        "thumbnail_highlight": "KIWIS?"
+      },
+      {
+        "title": "Constipation: Are Laxatives Addictive or Safe?",
+        "thumbnail_text": "THE TRUTH",
+        "thumbnail_highlight": "TRUTH"
+      },
+      {
+        "title": "How Much Fiber Do You Need for Constipation?",
+        "thumbnail_text": "25 TO 34",
+        "thumbnail_highlight": "34"
+      },
+      {
+        "title": "Constipation Red Flags: When to See a Doctor",
+        "thumbnail_text": "NOT NORMAL",
+        "thumbnail_highlight": "NOT"
+      },
+      {
+        "title": "Do Colon Cleanses Really Work?",
+        "thumbnail_text": "DETOX MYTH",
+        "thumbnail_highlight": "DETOX"
+      }
+    ],
+    "chosen": {
+      "title": "Constipated? What Actually Works (and When to Worry)",
+      "thumbnail_text": "TWO KIWIS?",
+      "thumbnail_highlight": "KIWIS?"
+    },
+    "social_keywords": "constipation relief · are laxatives addictive · colon cleanse myth · how much fiber · prunes and kiwi",
+    "social_hashtags": [
+      "Constipation",
+      "DigestiveHealth",
+      "Fiber",
+      "HealthTips",
+      "HealthEducation"
+    ]
   }
 ]
