@@ -812,7 +812,8 @@
     "text": "TWO KIWIS?",
     "highlight": "KIWIS?",
     "style": "Explainer",
-    "image": "branding/health-support-studio/thumbs/ryzO95V92rI.jpg"
+    "image": "branding/health-support-studio/thumbs/ryzO95V92rI.jpg",
+    "done": true
   },
   {
     "youtube_id": "PEMSfgzab4A",
@@ -820,7 +821,8 @@
     "highlight": "SAFE",
     "style": "Explainer",
     "image": "branding/health-support-studio/thumbs/ryzO95V92rI.jpg",
-    "vertical": true
+    "vertical": true,
+    "done": true
   },
   {
     "youtube_id": "EfeovUnX_7E",
@@ -828,6 +830,7 @@
     "highlight": "CLEANSE",
     "style": "Explainer",
     "image": "branding/health-support-studio/thumbs/ryzO95V92rI.jpg",
-    "vertical": true
+    "vertical": true,
+    "done": true
   }
 ]
