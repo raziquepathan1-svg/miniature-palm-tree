@@ -1,33 +1,33 @@
 FACEBOOK PAGE
   Health Support Studio: followers=0 likes=0
   date        plays   reach   reactions  comments  shares  caption
+  2026-11-22     n/a     n/a        n/a       n/a     n/a  'Constipation: Laxatives Are Always Addic'
+  2026-11-20     n/a     n/a        n/a       n/a     n/a  'Low back pain: You Need an X-Ray or MRI?'
+  2026-11-19     n/a     n/a        n/a       n/a     n/a  'Think you would know if you had diabetes'
+  2026-11-19     n/a     n/a        n/a       n/a     n/a  'Shaky and sweaty with diabetes? Here is '
+  2026-11-18     n/a     n/a        n/a       n/a     n/a  'Low blood sugar: Only Insulin Users Get '
+  2026-11-18     n/a     n/a        n/a       n/a     n/a  'Flu in children: the emergency signs tha'
   2026-11-17     n/a     n/a        n/a       n/a     n/a  'Does the Flu Shot Cause Flu? Most people'
   2026-11-17     n/a     n/a        n/a       n/a     n/a  'Waking up exhausted? It may be sleep apn'
   2026-11-17     n/a     n/a        n/a       n/a     n/a  "Tired all day? Don't ignore it. Educatio"
   2026-11-16     n/a     n/a        n/a       n/a     n/a  'Taking a hair, skin and nail supplement?'
   2026-11-15     n/a     n/a        n/a       n/a     n/a  'Thyroid Explains All Weight Gain? Most p'
   2026-11-14     n/a     n/a        n/a       n/a     n/a  'Frequent heartburn may be GERD. Here is '
-  2026-11-13     n/a     n/a        n/a       n/a     n/a  'PPIs Are Dangerous? Most people get this'
-  2026-11-12     n/a     n/a        n/a       n/a     n/a  'Anxiety disorders: Avoiding Fears Helps?'
-  2026-11-11     n/a     n/a        n/a       n/a     n/a  'Measles is one of the most contagious di'
-  2026-11-10     n/a     n/a        n/a       n/a     n/a  'Measles: Natural Immunity Is Better? Mos'
-  2026-11-10     n/a     n/a        n/a       n/a     n/a  'Craving ice and always tired? It could b'
-  2026-11-10     n/a     n/a        n/a       n/a     n/a  'Iron Pills Are Always Safe? Most people '
 INSTAGRAM
-  @healthsupportstudio1: followers=11 posts=47
+  @healthsupportstudio1: followers=12 posts=52
   date        views   reach   likes  comments  shares  caption
-  2026-11-17     n/a     n/a      0         0     n/a  'Does the Flu Shot Cause Flu? Most people'
-  2026-11-17     n/a     n/a      0         0     n/a  'Waking up exhausted? It may be sleep apn'
-  2026-11-17     n/a     n/a      0         0     n/a  "Tired all day? Don't ignore it. Educatio"
-  2026-11-12     n/a     n/a      0         0     n/a  'Anxiety disorders: Avoiding Fears Helps?'
-  2026-11-11     n/a     n/a      0         0     n/a  'Measles is one of the most contagious di'
-  2026-11-10     n/a     n/a      1         0     n/a  'Measles: Natural Immunity Is Better? Mos'
-  2026-11-10     n/a     n/a      0         0     n/a  'Iron Pills Are Always Safe? Most people '
-  2026-11-09     n/a     n/a      0         0     n/a  'Were you told to wear a coat or catch a '
-  2026-11-08     n/a     n/a      0         0     n/a  'Cold myths: Chicken Soup Helps? Most peo'
-  2026-11-07     n/a     n/a      1         0     n/a  'How much water do you drink a day? Here '
-  2026-11-06     n/a     n/a      1         0     n/a  'Water and Weight Loss? Most people get t'
-  2026-11-05     n/a     n/a      0         0     n/a  'Do you crack your knuckles? Here is what'
+  2026-11-22     n/a     n/a      0         0     n/a  'Constipation: Laxatives Are Always Addic'
+  2026-11-20     n/a     n/a      1         0     n/a  'Low back pain: You Need an X-Ray or MRI?'
+  2026-11-19     n/a     n/a      2         0     n/a  'Think you would know if you had diabetes'
+  2026-11-19     n/a     n/a      0         0     n/a  'Shaky and sweaty with diabetes? Here is '
+  2026-11-18     n/a     n/a      1         0     n/a  'Low blood sugar: Only Insulin Users Get '
+  2026-11-17     n/a     n/a      2         1     n/a  'Does the Flu Shot Cause Flu? Most people'
+  2026-11-17     n/a     n/a      1         1     n/a  'Waking up exhausted? It may be sleep apn'
+  2026-11-17     n/a     n/a      1         1     n/a  "Tired all day? Don't ignore it. Educatio"
+  2026-11-12     n/a     n/a      1         1     n/a  'Anxiety disorders: Avoiding Fears Helps?'
+  2026-11-11     n/a     n/a      1         1     n/a  'Measles is one of the most contagious di'
+  2026-11-10     n/a     n/a      2         1     n/a  'Measles: Natural Immunity Is Better? Mos'
+  2026-11-10     n/a     n/a      1         1     n/a  'Iron Pills Are Always Safe? Most people '
 NOT AVAILABLE FROM META (first error per metric)
   blue_reels_play_count: (#200) read_insights permission missing (https://developers.facebook.com/docs/permissions/reference/read_insights)
   post_impressions_unique: (#100) The value must be a valid insights metric
