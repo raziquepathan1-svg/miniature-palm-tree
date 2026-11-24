@@ -2145,6 +2145,47 @@
     "short_youtube_id": "NhFdgl3sRro",
     "short2_youtube_id": "cDRoDt7ONO4",
     "short3_youtube_id": "7E-aF2QzLN8",
-    "preview": "previews/-Y7QV8hOaWo.mp4"
+    "preview": "previews/-Y7QV8hOaWo.mp4",
+    "pin_question": "Do you or someone you love weigh in every morning? What helps you remember your daily habits? Share below.",
+    "packages": [
+      {
+        "title": "Heart Failure Warning Signs Most People Miss",
+        "thumbnail_text": "WATCH YOUR SCALE",
+        "thumbnail_highlight": "SCALE"
+      },
+      {
+        "title": "Heart Failure Symptoms: What to Watch For",
+        "thumbnail_text": "5 POUNDS?",
+        "thumbnail_highlight": "5"
+      },
+      {
+        "title": "Swollen Ankles and Breathless? Heart Failure Signs",
+        "thumbnail_text": "NOT AGING",
+        "thumbnail_highlight": "AGING"
+      },
+      {
+        "title": "Does Heart Failure Mean the End?",
+        "thumbnail_text": "LIVE WELL",
+        "thumbnail_highlight": "LIVE"
+      },
+      {
+        "title": "When to Call 911 for Heart Failure Symptoms",
+        "thumbnail_text": "DON'T WAIT",
+        "thumbnail_highlight": "WAIT"
+      }
+    ],
+    "chosen": {
+      "title": "Heart Failure Warning Signs Most People Miss",
+      "thumbnail_text": "WATCH YOUR SCALE",
+      "thumbnail_highlight": "SCALE"
+    },
+    "social_keywords": "heart failure symptoms · swollen ankles · sudden weight gain · ejection fraction · when to call 911",
+    "social_hashtags": [
+      "HeartFailure",
+      "HeartHealth",
+      "WarningSigns",
+      "HealthTips",
+      "HealthEducation"
+    ]
   }
 ]
