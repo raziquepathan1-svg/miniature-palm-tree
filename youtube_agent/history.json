@@ -2089,6 +2089,47 @@
     "replaced_ids": [
       "mAixE8y0X1c"
     ],
-    "held_short1_youtube_id": "e3Vm_7IfxEg"
+    "held_short1_youtube_id": "e3Vm_7IfxEg",
+    "pin_question": "What is the hardest part of your night: falling asleep, waking at 3 AM, or racing thoughts? Share below.",
+    "packages": [
+      {
+        "title": "Can't Sleep? How to Fix Insomnia Without Pills",
+        "thumbnail_text": "20 MINUTES",
+        "thumbnail_highlight": "20"
+      },
+      {
+        "title": "Does Melatonin Really Work for Insomnia?",
+        "thumbnail_text": "NOT A PILL",
+        "thumbnail_highlight": "PILL"
+      },
+      {
+        "title": "Can't Sleep at Night? Do This Instead of Lying in Bed",
+        "thumbnail_text": "GET UP",
+        "thumbnail_highlight": "UP"
+      },
+      {
+        "title": "Does Sleeping In Make Insomnia Worse?",
+        "thumbnail_text": "WEEKEND TRAP",
+        "thumbnail_highlight": "TRAP"
+      },
+      {
+        "title": "CBT-I: The First Treatment for Insomnia",
+        "thumbnail_text": "NO PILLS?",
+        "thumbnail_highlight": "PILLS?"
+      }
+    ],
+    "chosen": {
+      "title": "Can't Sleep? How to Fix Insomnia Without Pills",
+      "thumbnail_text": "20 MINUTES",
+      "thumbnail_highlight": "20"
+    },
+    "social_keywords": "insomnia · can't sleep · CBT-I · melatonin myth · sleeping in on weekends",
+    "social_hashtags": [
+      "Insomnia",
+      "Sleep",
+      "SleepTips",
+      "HealthTips",
+      "HealthEducation"
+    ]
   }
 ]
