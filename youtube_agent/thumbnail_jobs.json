@@ -864,7 +864,8 @@
     "text": "WATCH YOUR SCALE",
     "highlight": "SCALE",
     "style": "Explainer",
-    "image": "branding/health-support-studio/thumbs/-Y7QV8hOaWo.jpg"
+    "image": "branding/health-support-studio/thumbs/-Y7QV8hOaWo.jpg",
+    "done": true
   },
   {
     "youtube_id": "NhFdgl3sRro",
@@ -872,7 +873,8 @@
     "highlight": "MORNING",
     "style": "Explainer",
     "image": "branding/health-support-studio/thumbs/-Y7QV8hOaWo.jpg",
-    "vertical": true
+    "vertical": true,
+    "done": true
   },
   {
     "youtube_id": "cDRoDt7ONO4",
@@ -880,7 +882,8 @@
     "highlight": "ACTIVE",
     "style": "Explainer",
     "image": "branding/health-support-studio/thumbs/-Y7QV8hOaWo.jpg",
-    "vertical": true
+    "vertical": true,
+    "done": true
   },
   {
     "youtube_id": "7E-aF2QzLN8",
@@ -888,6 +891,7 @@
     "highlight": "SLOWLY",
     "style": "Explainer",
     "image": "branding/health-support-studio/thumbs/-Y7QV8hOaWo.jpg",
-    "vertical": true
+    "vertical": true,
+    "done": true
   }
 ]
