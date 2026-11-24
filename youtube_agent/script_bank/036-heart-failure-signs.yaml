@@ -288,3 +288,18 @@ plan:
       footage_query: "family walking outdoors"
       narration: >-
         Learn all the warning signs in our full video, on the Health Support Studio YouTube channel.
+story:  # owner Nov 9: movie-style suspense (a clearly hypothetical case, resolved only with facts from this video)
+  open: >-
+    Imagine Ray. His ankles are puffy, his shoes feel tight, and he needs extra pillows to sleep. He thinks he is just
+    getting older. By the end of this video, you will know the clue on the bathroom scale that could warn Ray before his
+    breathing gets worse.
+  twist: >-
+    Remember Ray? Here is the twist. Fluid building up in the body often shows up on the scale before breathing gets
+    worse, and that is why the scale is one of the best early warning tools.
+  end: >-
+    So what should Ray do? Weigh himself every morning, watch for swelling and breathlessness, and call his doctor early,
+    not late. And if he ever has chest pain, severe trouble breathing, or pink, foamy mucus, he should call nine one one.
+  short_cliff: >-
+    But when does heart failure turn into an emergency? Do you know the signs that mean call nine one one?
+  reel_answer: >-
+    The answer: chest pain, severe shortness of breath, fainting, or pink, foamy mucus mean call nine one one right away.
