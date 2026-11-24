@@ -832,5 +832,28 @@
     "image": "branding/health-support-studio/thumbs/ryzO95V92rI.jpg",
     "vertical": true,
     "done": true
+  },
+  {
+    "youtube_id": "PLA05S0l8R0",
+    "text": "20 MINUTES",
+    "highlight": "20",
+    "style": "Explainer",
+    "image": "branding/health-support-studio/thumbs/PLA05S0l8R0.jpg"
+  },
+  {
+    "youtube_id": "ko7NnOdFXlw",
+    "text": "SLEEP IN?",
+    "highlight": "SLEEP",
+    "style": "Explainer",
+    "image": "branding/health-support-studio/thumbs/PLA05S0l8R0.jpg",
+    "vertical": true
+  },
+  {
+    "youtube_id": "jIt8WjleHv4",
+    "text": "TIMING TRICK",
+    "highlight": "TIMING",
+    "style": "Explainer",
+    "image": "branding/health-support-studio/thumbs/PLA05S0l8R0.jpg",
+    "vertical": true
   }
 ]
