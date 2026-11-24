@@ -2083,10 +2083,12 @@
     "script_file": "071-insomnia-explained.yaml",
     "planned_publish_at": "2026-11-23T16:00:00Z",
     "awaiting_approval": true,
-    "youtube_id": "mAixE8y0X1c",
+    "youtube_id": "PLA05S0l8R0",
     "short_youtube_id": "e3Vm_7IfxEg",
     "short2_youtube_id": "ko7NnOdFXlw",
     "short3_youtube_id": "jIt8WjleHv4",
-    "preview": "previews/mAixE8y0X1c.mp4"
+    "replaced_ids": [
+      "mAixE8y0X1c"
+    ]
   }
 ]
