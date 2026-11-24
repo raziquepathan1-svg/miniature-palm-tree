@@ -858,5 +858,36 @@
     "image": "branding/health-support-studio/thumbs/PLA05S0l8R0.jpg",
     "vertical": true,
     "done": true
+  },
+  {
+    "youtube_id": "-Y7QV8hOaWo",
+    "text": "WATCH YOUR SCALE",
+    "highlight": "SCALE",
+    "style": "Explainer",
+    "image": "branding/health-support-studio/thumbs/-Y7QV8hOaWo.jpg"
+  },
+  {
+    "youtube_id": "NhFdgl3sRro",
+    "text": "MORNING CHECK",
+    "highlight": "MORNING",
+    "style": "Explainer",
+    "image": "branding/health-support-studio/thumbs/-Y7QV8hOaWo.jpg",
+    "vertical": true
+  },
+  {
+    "youtube_id": "cDRoDt7ONO4",
+    "text": "STILL ACTIVE",
+    "highlight": "ACTIVE",
+    "style": "Explainer",
+    "image": "branding/health-support-studio/thumbs/-Y7QV8hOaWo.jpg",
+    "vertical": true
+  },
+  {
+    "youtube_id": "7E-aF2QzLN8",
+    "text": "COMES SLOWLY",
+    "highlight": "SLOWLY",
+    "style": "Explainer",
+    "image": "branding/health-support-studio/thumbs/-Y7QV8hOaWo.jpg",
+    "vertical": true
   }
 ]
