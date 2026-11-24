@@ -838,7 +838,8 @@
     "text": "20 MINUTES",
     "highlight": "20",
     "style": "Explainer",
-    "image": "branding/health-support-studio/thumbs/PLA05S0l8R0.jpg"
+    "image": "branding/health-support-studio/thumbs/PLA05S0l8R0.jpg",
+    "done": true
   },
   {
     "youtube_id": "ko7NnOdFXlw",
@@ -846,7 +847,8 @@
     "highlight": "SLEEP",
     "style": "Explainer",
     "image": "branding/health-support-studio/thumbs/PLA05S0l8R0.jpg",
-    "vertical": true
+    "vertical": true,
+    "done": true
   },
   {
     "youtube_id": "jIt8WjleHv4",
@@ -854,6 +856,7 @@
     "highlight": "TIMING",
     "style": "Explainer",
     "image": "branding/health-support-studio/thumbs/PLA05S0l8R0.jpg",
-    "vertical": true
+    "vertical": true,
+    "done": true
   }
 ]
