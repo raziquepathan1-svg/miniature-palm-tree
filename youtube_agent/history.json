@@ -2131,5 +2131,20 @@
       "HealthEducation"
     ],
     "publish_at": "2026-11-24T16:00:00Z"
+  },
+  {
+    "date": "2026-11-24T10:21:52",
+    "topic": "Heart failure: warning signs and daily care",
+    "requested_topic": "Heart failure: warning signs and daily care",
+    "title": "Heart Failure Warning Signs Most People Miss",
+    "style": "Warning Signs",
+    "script_file": "036-heart-failure-signs.yaml",
+    "planned_publish_at": "2026-11-25T16:00:00Z",
+    "awaiting_approval": true,
+    "youtube_id": "-Y7QV8hOaWo",
+    "short_youtube_id": "NhFdgl3sRro",
+    "short2_youtube_id": "cDRoDt7ONO4",
+    "short3_youtube_id": "7E-aF2QzLN8",
+    "preview": "previews/-Y7QV8hOaWo.mp4"
   }
 ]
