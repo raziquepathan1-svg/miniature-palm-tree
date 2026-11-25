@@ -2195,8 +2195,7 @@
     "title": "Heart Fluttering? What You Need to Know About AFib",
     "style": "Top Questions",
     "script_file": "037-afib-questions.yaml",
-    "planned_publish_at": "2026-11-26T16:00:00Z",
-    "awaiting_approval": true,
+    "awaiting_approval": false,
     "youtube_id": "WfJCaMWMpMQ",
     "short2_youtube_id": "2Ly23cElwbQ",
     "short3_youtube_id": "RB6DV_MII4k",
@@ -2244,6 +2243,7 @@
       "IrregularHeartbeat",
       "StrokePrevention",
       "HealthEducation"
-    ]
+    ],
+    "publish_at": "2026-11-26T16:00:00Z"
   }
 ]
