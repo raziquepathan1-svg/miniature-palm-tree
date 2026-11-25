@@ -91,7 +91,7 @@ plan:
     - layout: "bullets"
       heading: "Common Triggers"
       points: ["Alcohol, especially binges", "Lack of sleep", "Stress and illness", "Stimulants"]
-      footage_query: "wine glasses table"
+      footage_query: "healthy dinner table"
       narration: >-
         What can trigger an episode? Alcohol is a big one. Episodes after a night of heavy drinking are sometimes called
         holiday heart. Lack of sleep, untreated sleep apnea, stress, infections, dehydration, and stimulants, like some cold
@@ -268,7 +268,7 @@ plan:
     - layout: "outro"
       heading: "Remember"
       points: ["Fluttering heart? Get checked", "Take blood thinners daily", "Know BE FAST"]
-      footage_query: "older couple walking park"
+      footage_query: "family walking outdoors"
       narration: >-
         Remember: if your heart flutters or races, get checked, take your blood thinner every day if prescribed, and know the
         BE FAST signs of stroke. Share this with someone who has AFib. This video is for education only, not medical advice.
@@ -295,7 +295,7 @@ plan:
     - layout: "outro"
       heading: "Full Video"
       points: ["On YouTube"]
-      footage_query: "older couple walking park"
+      footage_query: "family walking outdoors"
       narration: >-
         Learn more about AFib in our full video, on the Health Support Studio YouTube channel.
 story:  # owner Nov 9: movie-style suspense (a clearly hypothetical case, resolved only with facts from this video)
