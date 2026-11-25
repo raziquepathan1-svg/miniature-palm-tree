@@ -899,7 +899,8 @@
     "text": "5X STROKE",
     "highlight": "5X",
     "style": "Explainer",
-    "image": "branding/health-support-studio/thumbs/WfJCaMWMpMQ.jpg"
+    "image": "branding/health-support-studio/thumbs/WfJCaMWMpMQ.jpg",
+    "done": true
   },
   {
     "youtube_id": "2Ly23cElwbQ",
@@ -907,7 +908,8 @@
     "highlight": "SILENT",
     "style": "Explainer",
     "image": "branding/health-support-studio/thumbs/WfJCaMWMpMQ.jpg",
-    "vertical": true
+    "vertical": true,
+    "done": true
   },
   {
     "youtube_id": "RB6DV_MII4k",
@@ -915,6 +917,7 @@
     "highlight": "ASK",
     "style": "Explainer",
     "image": "branding/health-support-studio/thumbs/WfJCaMWMpMQ.jpg",
-    "vertical": true
+    "vertical": true,
+    "done": true
   }
 ]
