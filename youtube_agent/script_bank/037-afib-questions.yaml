@@ -298,3 +298,17 @@ plan:
       footage_query: "older couple walking park"
       narration: >-
         Learn more about AFib in our full video, on the Health Support Studio YouTube channel.
+story:  # owner Nov 9: movie-style suspense (a clearly hypothetical case, resolved only with facts from this video)
+  open: >-
+    Imagine Maria. Now and then her heart flutters in her chest, and then it passes, so she brushes it off. By the end of
+    this video, you will know why that flutter is worth getting checked, and the stroke signs her family should know.
+  twist: >-
+    Remember Maria? Here is the twist. Many people with AFib feel nothing at all, so a flutter that comes and goes is
+    never something to brush off.
+  end: >-
+    So what should Maria do? Get her flutter checked by her doctor, take a blood thinner every day if one is prescribed,
+    and make sure her family knows the BE FAST signs of stroke.
+  short_cliff: >-
+    But which signs mean call nine one one right now? Do you know the letters BE FAST?
+  reel_answer: >-
+    The answer: BE FAST. Balance, Eyes, Face, Arm, Speech, and Time. Call nine one one right away.
