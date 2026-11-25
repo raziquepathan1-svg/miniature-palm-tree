@@ -2152,5 +2152,68 @@
     "youtube_id": "7E-aF2QzLN8",
     "title": "Tired and Weak? Heart Failure Signs to Know #Shorts",
     "done": true
+  },
+  {
+    "youtube_id": "WfJCaMWMpMQ",
+    "title": "Heart Fluttering? What You Need to Know About AFib",
+    "description_top": "Heart fluttering? What you need to know about AFib (atrial fibrillation). How AFib feels, why many people feel nothing at all, and why it raises the risk of stroke about five times.\nTriggers like alcohol and lack of sleep, coffee facts, how to check your pulse, blood thinners, why aspirin is not enough, and the BE FAST stroke signs, based on CDC, NIH NHLBI and MedlinePlus guidance.",
+    "pin_question": "Has a flutter or a racing heartbeat ever made you check your pulse? What did you do next? Share below.",
+    "packages": [
+      {
+        "title": "Heart Fluttering? What You Need to Know About AFib",
+        "thumbnail_text": "5X STROKE",
+        "thumbnail_highlight": "5X"
+      },
+      {
+        "title": "AFib Symptoms: Do You Feel Anything?",
+        "thumbnail_text": "ZERO SIGNS?",
+        "thumbnail_highlight": "SIGNS?"
+      },
+      {
+        "title": "Is Coffee Bad for AFib? What Studies Show",
+        "thumbnail_text": "MYTH?",
+        "thumbnail_highlight": "MYTH?"
+      },
+      {
+        "title": "Do You Need Blood Thinners for AFib?",
+        "thumbnail_text": "NOT ASPIRIN",
+        "thumbnail_highlight": "ASPIRIN"
+      },
+      {
+        "title": "AFib Stroke Signs: What BE FAST Means",
+        "thumbnail_text": "CALL 911",
+        "thumbnail_highlight": "911"
+      }
+    ],
+    "chosen": {
+      "title": "Heart Fluttering? What You Need to Know About AFib",
+      "thumbnail_text": "5X STROKE",
+      "thumbnail_highlight": "5X"
+    },
+    "tags": [
+      "afib",
+      "atrial fibrillation",
+      "irregular heartbeat",
+      "heart palpitations",
+      "heart fluttering",
+      "afib symptoms",
+      "afib stroke risk",
+      "BE FAST stroke signs",
+      "blood thinners for afib",
+      "is aspirin enough for afib",
+      "coffee and afib",
+      "how to check your pulse",
+      "afib triggers",
+      "heart health",
+      "health education"
+    ],
+    "social_keywords": "afib · irregular heartbeat · heart fluttering · stroke signs BE FAST · blood thinners",
+    "social_hashtags": [
+      "AFib",
+      "HeartHealth",
+      "IrregularHeartbeat",
+      "StrokePrevention",
+      "HealthEducation"
+    ]
   }
 ]

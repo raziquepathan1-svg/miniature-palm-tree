@@ -893,5 +893,28 @@
     "image": "branding/health-support-studio/thumbs/-Y7QV8hOaWo.jpg",
     "vertical": true,
     "done": true
+  },
+  {
+    "youtube_id": "WfJCaMWMpMQ",
+    "text": "5X STROKE",
+    "highlight": "5X",
+    "style": "Explainer",
+    "image": "branding/health-support-studio/thumbs/WfJCaMWMpMQ.jpg"
+  },
+  {
+    "youtube_id": "2Ly23cElwbQ",
+    "text": "SILENT RISK",
+    "highlight": "SILENT",
+    "style": "Explainer",
+    "image": "branding/health-support-studio/thumbs/WfJCaMWMpMQ.jpg",
+    "vertical": true
+  },
+  {
+    "youtube_id": "RB6DV_MII4k",
+    "text": "ASK FIRST",
+    "highlight": "ASK",
+    "style": "Explainer",
+    "image": "branding/health-support-studio/thumbs/WfJCaMWMpMQ.jpg",
+    "vertical": true
   }
 ]
