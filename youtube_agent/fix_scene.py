@@ -21,6 +21,12 @@ def _replace(workdir: Path, final: Path, parts: list, said: str, clip_name: str,
     """One page (found by its caption words) re-made from an anatomy clip or a whiteboard drawing (.png)."""
     start, idx = 0.0, None
     for i, p in enumerate(parts):  # the page whose captions say these words
+        if said.startswith("t:"):  # Nov 26: "t:110" = the page playing at 110 s (pages without caption files)
+            if start <= float(said[2:]) < start + _duration(p):
+                idx = i
+                break
+            start += _duration(p)
+            continue
         ass = p.with_suffix(".ass")
         words = " ".join(line.split(",", 9)[-1] for line in ass.read_text().splitlines()
                          if line.startswith("Dialogue:")) if ass.exists() else ""
@@ -29,6 +35,10 @@ def _replace(workdir: Path, final: Path, parts: list, said: str, clip_name: str,
             break
         start += _duration(p)
     if idx is None:
+        t = 0.0
+        for p in parts:  # Nov 26: list the pages so the right words (or t:<seconds>) can be chosen
+            print(f"  {p.name} {t:.1f}s ass={'yes' if p.with_suffix('.ass').exists() else 'NO'}")
+            t += _duration(p)
         sys.exit(f"No page says {said!r}; nothing was changed.")
     page = parts[idx]
     dur = _duration(page)
