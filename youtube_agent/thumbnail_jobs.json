@@ -925,7 +925,8 @@
     "text": "STOP RINSING",
     "highlight": "RINSING",
     "style": "Explainer",
-    "image": "branding/health-support-studio/thumbs/6HIp_C-EGsI.jpg"
+    "image": "branding/health-support-studio/thumbs/6HIp_C-EGsI.jpg",
+    "done": true
   },
   {
     "youtube_id": "GqZWTsnv_YQ",
@@ -933,7 +934,8 @@
     "highlight": "SPLASH",
     "style": "Explainer",
     "image": "branding/health-support-studio/thumbs/6HIp_C-EGsI.jpg",
-    "vertical": true
+    "vertical": true,
+    "done": true
   },
   {
     "youtube_id": "0bXYIiVvJuM",
@@ -941,6 +943,7 @@
     "highlight": "2",
     "style": "Explainer",
     "image": "branding/health-support-studio/thumbs/6HIp_C-EGsI.jpg",
-    "vertical": true
+    "vertical": true,
+    "done": true
   }
 ]
