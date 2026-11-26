@@ -2253,8 +2253,7 @@
     "title": "5 Food Poisoning Myths That Could Make You Sick",
     "style": "Myth vs Fact",
     "script_file": "028-food-poisoning-myths.yaml",
-    "planned_publish_at": "2026-11-27T16:00:00Z",
-    "awaiting_approval": true,
+    "awaiting_approval": false,
     "youtube_id": "6HIp_C-EGsI",
     "short_youtube_id": "GqZWTsnv_YQ",
     "short3_youtube_id": "0bXYIiVvJuM",
@@ -2302,6 +2301,7 @@
       "KitchenTips",
       "HealthTips",
       "HealthEducation"
-    ]
+    ],
+    "publish_at": "2026-11-27T16:00:00Z"
   }
 ]
