@@ -2261,6 +2261,47 @@
     "replaced_ids": [
       "tnJRnctKLgk"
     ],
-    "held_short2_youtube_id": "Qmuiu-to410"
+    "held_short2_youtube_id": "Qmuiu-to410",
+    "pin_question": "Which kitchen habit surprised you most today: rinsing chicken, the sniff test, or leaving food out? Share below.",
+    "packages": [
+      {
+        "title": "5 Food Poisoning Myths That Could Make You Sick",
+        "thumbnail_text": "STOP RINSING",
+        "thumbnail_highlight": "RINSING"
+      },
+      {
+        "title": "Can You Wash Raw Chicken? Food Safety Facts",
+        "thumbnail_text": "DON'T DO IT",
+        "thumbnail_highlight": "DON'T"
+      },
+      {
+        "title": "Is It Safe to Eat Leftovers? 2-Hour Rule",
+        "thumbnail_text": "SNIFF TEST?",
+        "thumbnail_highlight": "SNIFF"
+      },
+      {
+        "title": "Does the 5-Second Rule Work? What Science Says",
+        "thumbnail_text": "WET FOODS",
+        "thumbnail_highlight": "WET"
+      },
+      {
+        "title": "Food Poisoning: When to See a Doctor or ER",
+        "thumbnail_text": "DEHYDRATION",
+        "thumbnail_highlight": "DEHYDRATION"
+      }
+    ],
+    "chosen": {
+      "title": "5 Food Poisoning Myths That Could Make You Sick",
+      "thumbnail_text": "STOP RINSING",
+      "thumbnail_highlight": "RINSING"
+    },
+    "social_keywords": "food poisoning · wash raw chicken · leftovers safety · 5 second rule · food safety tips",
+    "social_hashtags": [
+      "FoodSafety",
+      "FoodPoisoning",
+      "KitchenTips",
+      "HealthTips",
+      "HealthEducation"
+    ]
   }
 ]
