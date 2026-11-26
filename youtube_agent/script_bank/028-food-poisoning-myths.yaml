@@ -290,3 +290,17 @@ plan:
       footage_query: "family dinner table"
       narration: >-
         We bust four more food poisoning myths in our full video, on the Health Support Studio YouTube channel.
+story:  # owner Nov 9: movie-style suspense (a clearly hypothetical case, resolved only with facts from this video)
+  open: >-
+    Imagine Dan. He always rinses the raw chicken, he sniffs the leftovers to see if they are fine, and he leaves dinner
+    on the counter to cool. By the end of this video, you will know which of those habits could make his family sick.
+  twist: >-
+    Remember Dan? Here is the twist. Salmonella, E. coli and Listeria do not change the smell, taste or look of food, so
+    sniffing the leftovers tells him nothing.
+  end: >-
+    So what should Dan do? Skip the rinsing, put leftovers in the fridge within two hours, use a food thermometer, and
+    when in doubt, throw it out.
+  short_cliff: >-
+    Dan sniffs his leftovers and says they smell fine. Is that enough to know they are safe?
+  reel_answer: >-
+    The answer: no. Germs like Salmonella, E. coli and Listeria do not change the smell, taste or look of food. When in doubt, throw it out.
