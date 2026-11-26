@@ -2216,5 +2216,68 @@
       "HealthEducation"
     ],
     "done": true
+  },
+  {
+    "youtube_id": "6HIp_C-EGsI",
+    "title": "5 Food Poisoning Myths That Could Make You Sick",
+    "description_top": "5 food poisoning myths that could make you sick. Should you wash raw chicken, does the smell test work, can leftovers sit out, does the 5-second rule work, and is a little taste of raw dough safe?\nSafe cooking temperatures, the four steps (clean, separate, cook, chill), who is at higher risk, and when to see a doctor or go to the ER, based on CDC and USDA guidance.",
+    "pin_question": "Which kitchen habit surprised you most today: rinsing chicken, the sniff test, or leaving food out? Share below.",
+    "packages": [
+      {
+        "title": "5 Food Poisoning Myths That Could Make You Sick",
+        "thumbnail_text": "STOP RINSING",
+        "thumbnail_highlight": "RINSING"
+      },
+      {
+        "title": "Can You Wash Raw Chicken? Food Safety Facts",
+        "thumbnail_text": "DON'T DO IT",
+        "thumbnail_highlight": "DON'T"
+      },
+      {
+        "title": "Is It Safe to Eat Leftovers? 2-Hour Rule",
+        "thumbnail_text": "SNIFF TEST?",
+        "thumbnail_highlight": "SNIFF"
+      },
+      {
+        "title": "Does the 5-Second Rule Work? What Science Says",
+        "thumbnail_text": "WET FOODS",
+        "thumbnail_highlight": "WET"
+      },
+      {
+        "title": "Food Poisoning: When to See a Doctor or ER",
+        "thumbnail_text": "DEHYDRATION",
+        "thumbnail_highlight": "DEHYDRATION"
+      }
+    ],
+    "chosen": {
+      "title": "5 Food Poisoning Myths That Could Make You Sick",
+      "thumbnail_text": "STOP RINSING",
+      "thumbnail_highlight": "RINSING"
+    },
+    "tags": [
+      "food poisoning",
+      "food poisoning myths",
+      "food safety",
+      "should you wash raw chicken",
+      "5 second rule",
+      "leftovers safety",
+      "how long can food sit out",
+      "smell test food",
+      "salmonella",
+      "listeria",
+      "safe cooking temperatures",
+      "raw cookie dough",
+      "thanksgiving food safety",
+      "when to see a doctor food poisoning",
+      "health education"
+    ],
+    "social_keywords": "food poisoning · wash raw chicken · leftovers safety · 5 second rule · food safety tips",
+    "social_hashtags": [
+      "FoodSafety",
+      "FoodPoisoning",
+      "KitchenTips",
+      "HealthTips",
+      "HealthEducation"
+    ]
   }
 ]

@@ -919,5 +919,28 @@
     "image": "branding/health-support-studio/thumbs/WfJCaMWMpMQ.jpg",
     "vertical": true,
     "done": true
+  },
+  {
+    "youtube_id": "6HIp_C-EGsI",
+    "text": "STOP RINSING",
+    "highlight": "RINSING",
+    "style": "Explainer",
+    "image": "branding/health-support-studio/thumbs/6HIp_C-EGsI.jpg"
+  },
+  {
+    "youtube_id": "GqZWTsnv_YQ",
+    "text": "GERMS SPLASH",
+    "highlight": "SPLASH",
+    "style": "Explainer",
+    "image": "branding/health-support-studio/thumbs/6HIp_C-EGsI.jpg",
+    "vertical": true
+  },
+  {
+    "youtube_id": "0bXYIiVvJuM",
+    "text": "2 HOURS",
+    "highlight": "2",
+    "style": "Explainer",
+    "image": "branding/health-support-studio/thumbs/6HIp_C-EGsI.jpg",
+    "vertical": true
   }
 ]

@@ -2257,10 +2257,10 @@
     "awaiting_approval": true,
     "youtube_id": "6HIp_C-EGsI",
     "short_youtube_id": "GqZWTsnv_YQ",
-    "short2_youtube_id": "Qmuiu-to410",
     "short3_youtube_id": "0bXYIiVvJuM",
     "replaced_ids": [
       "tnJRnctKLgk"
-    ]
+    ],
+    "held_short2_youtube_id": "Qmuiu-to410"
   }
 ]
