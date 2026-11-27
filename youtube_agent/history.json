@@ -2313,10 +2313,12 @@
     "script_file": "018-vitamin-d-myths.yaml",
     "planned_publish_at": "2026-11-28T16:00:00Z",
     "awaiting_approval": true,
-    "youtube_id": "I-et7W7YEIs",
+    "youtube_id": "nJmrtauHxiA",
     "short_youtube_id": "-KmZYkowLF4",
     "short2_youtube_id": "Yq5UvDcII1g",
     "short3_youtube_id": "0txASoqsoNk",
-    "preview": "previews/I-et7W7YEIs.mp4"
+    "replaced_ids": [
+      "I-et7W7YEIs"
+    ]
   }
 ]
