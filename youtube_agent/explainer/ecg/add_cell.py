@@ -21,7 +21,7 @@ ABOUT = ("What is a cell, and what is inside it? Your body is built from about 3
          "the nucleus with its DNA, pores and nucleolus, the mitochondria that make ATP energy, the ribosomes and rough endoplasmic reticulum that build proteins, "
          "the Golgi apparatus that packs and ships them, and the lysosomes that clean up. Every part is named and pointed out on the diagram. "
          "Foundation course, video 1: cells, tissues, organs, systems. Perfect for MBBS, nursing, pharmacy and biology students.")
-FOOT = """Foundation course (F1) on The Anatomy Unfolded: cell -> tissue -> organ -> system.
+FOOT = """Foundation course (F1) on The Anatomy Unfolded: cell → tissue → organ → system.
 Next: inside the nucleus - how DNA makes proteins.
 
 ⚠️ Educational content only, not medical advice.
