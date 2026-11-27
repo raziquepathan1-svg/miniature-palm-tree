@@ -99,7 +99,7 @@ plan:
     - layout: "myth_fact"
       heading: "Does It Mean Deafness?"
       points: ["Tinnitus means you are going deaf", "Many people with tinnitus do not go deaf"]
-      footage_query: "older couple talking home"
+      footage_query: "older adults talking home"
       narration: >-
         Myth three: tinnitus means you are going deaf. Fact: tinnitus often comes with hearing loss, but it does not mean you
         will lose all your hearing. Many people with tinnitus have normal or mildly reduced hearing. Still, a hearing test is a

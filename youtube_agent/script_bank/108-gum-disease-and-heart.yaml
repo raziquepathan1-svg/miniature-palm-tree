@@ -115,7 +115,7 @@ plan:
     - layout: "warning"
       heading: "Smoking and Gums"
       points: ["Smoking raises gum disease risk", "It hides signs like bleeding", "Quitting helps healing", "Ask your doctor for help quitting"]
-      footage_query: "doctor talking to patient quit smoking"
+      footage_query: "doctor talking to patient"
       narration: >-
         Smoking is one of the biggest risk factors for gum disease. It also hides the warning signs, because it reduces bleeding,
         so the disease can progress unnoticed. Quitting helps your gums heal, and it helps your heart too. Ask your doctor about

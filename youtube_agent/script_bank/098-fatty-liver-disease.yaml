@@ -100,7 +100,7 @@ plan:
     - layout: "bullets"
       heading: "Move and Manage"
       points: ["About 150 minutes of activity weekly", "Control blood sugar", "Control cholesterol and blood pressure", "Take medicines as prescribed"]
-      footage_query: "older couple walking park exercise"
+      footage_query: "older adults walking park exercise"
       narration: >-
         Regular exercise helps lower liver fat, even if you do not lose much weight. Aim for about one hundred fifty minutes a
         week of moderate activity. Keeping blood sugar, cholesterol, and blood pressure under control matters too. If you

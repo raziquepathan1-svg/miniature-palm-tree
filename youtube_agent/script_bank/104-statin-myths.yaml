@@ -76,7 +76,7 @@ plan:
     - layout: "myth_fact"
       heading: "Do Statins Cause Memory Loss?"
       points: ["Statins cause dementia", "Large studies show no clear link"]
-      footage_query: "older couple talking kitchen"
+      footage_query: "older adults talking kitchen"
       narration: >-
         Myth three: statins cause memory loss and dementia. Fact: some people have reported feeling foggy, and the FDA
         includes this in the warning label, but large studies have not shown that statins cause dementia. In fact, some
