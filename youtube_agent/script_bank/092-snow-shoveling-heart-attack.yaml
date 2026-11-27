@@ -1,0 +1,167 @@
+queue_topic: "Shoveling snow and heart attacks: who is at risk and how to stay safe"
+style: "Warning Signs"
+sources:
+  - "American Heart Association, Shoveling Snow and Your Heart: https://www.heart.org/en/health-topics/heart-attack/warning-signs-of-a-heart-attack"
+  - "CDC, Heart Attack Signs and Symptoms: https://www.cdc.gov/heart-disease/about/heart-attack.html"
+  - "NHLBI, Heart Attack: https://www.nhlbi.nih.gov/health/heart-attack"
+plan:
+  topic: "Shoveling snow and heart attacks: who is at risk and how to stay safe"
+  title: "Shoveling Snow and Your Heart: Who Is at Risk?"
+  description: |-
+    Every winter, heavy snow shoveling sends people to the emergency room with chest pain. Cold air and sudden hard work can strain the heart, especially in people who are not active or who already have heart disease. Learn who is at risk, the heart attack warning signs, why you should call 911 and not drive yourself, and how to shovel more safely.
+
+    In this video:
+    • Why shoveling strains the heart
+    • Who is at higher risk
+    • Heart attack warning signs, including in women
+    • What to do: call 911
+    • How to shovel more safely
+
+    #HeartAttack #SnowShoveling #HeartHealth #WinterSafety #HealthEducation
+  tags: ["snow shoveling heart attack", "shoveling snow and heart", "heart attack warning signs", "heart attack symptoms in women", "winter heart health", "cold weather and heart attack", "how to shovel snow safely", "chest pain when shoveling", "call 911 for chest pain", "heart disease risk", "winter safety tips", "health education"]
+  thumbnail_text: "BEFORE YOU SHOVEL"
+  thumbnail_highlight: "SHOVEL"
+  thumbnail_photo_query: "man shoveling snow driveway"
+  playlist: "Heart & Blood Pressure"
+  scenes:
+    - layout: "title"
+      heading: "Shoveling Snow and Your Heart"
+      points: ["Know the risks before you start"]
+      footage_query: "man shoveling snow driveway"
+      narration: >-
+        After a big snowfall, it feels like a simple chore. But every winter, shoveling snow sends people to the emergency
+        room with chest pain, and some do not make it home. Cold air and sudden heavy work can put real stress on the
+        heart. Here is who is at risk, the warning signs, and how to shovel more safely.
+    - layout: "bullets"
+      heading: "Why It Strains the Heart"
+      points: ["Cold air narrows blood vessels", "Blood pressure and heart rate rise", "Heavy lifting adds strain", "Sudden effort without warm up"]
+      footage_query: "snowy street winter morning"
+      narration: >-
+        Why is shoveling hard on the heart? Cold air can make blood vessels narrow and blood pressure go up. Then you add
+        heavy lifting, which raises your heart rate and blood pressure even more. Pushing hard all at once, without a warm up,
+        can ask more of the heart than it can give, especially in someone who is not used to exercise.
+    - layout: "bullets"
+      heading: "Who Is at Higher Risk?"
+      points: ["People with heart disease", "Past heart attack or bypass", "Older adults, and a family history", "Smokers, and people who are inactive"]
+      footage_query: "older man looking at snow outside"
+      narration: >-
+        The risk is higher for people who already have heart disease, who have had a heart attack, or who have high blood
+        pressure, high cholesterol, or diabetes. Older adults, smokers, and people who are not active are also at higher
+        risk. But a person can have heart disease and not know it, so everyone should take shoveling seriously.
+    - layout: "myth_fact"
+      heading: "Only for Older Adults?"
+      points: ["Only older people are at risk", "Anyone not used to hard exercise can be"]
+      footage_query: "young man shoveling snow"
+      narration: >-
+        Myth one: only older adults have to worry. Fact: heart problems can happen at any age, especially in people who
+        smoke, have high blood pressure, or have a family history of heart disease. Being fit helps, but a person who sits
+        all day and then suddenly shovels for an hour is putting a lot of strain on the heart.
+    - layout: "warning"
+      heading: "Heart Attack Warning Signs"
+      points: ["Chest pain, pressure, or tightness", "Pain in the arm, back, neck, or jaw", "Shortness of breath", "Cold sweat, nausea, lightheaded"]
+      footage_query: "man holding chest pain"
+      narration: >-
+        Know the warning signs of a heart attack. The most common is chest pain, pressure, or tightness, which may come and
+        go. Pain or discomfort can spread to one or both arms, the back, the neck, or the jaw. Other signs include shortness
+        of breath, a cold sweat, nausea, and feeling lightheaded. Do not ignore them, and do not wait to see if they pass.
+    - layout: "warning"
+      heading: "Signs in Women"
+      points: ["Chest pain may be mild or absent", "Nausea or vomiting", "Back or jaw pain", "Unusual tiredness"]
+      footage_query: "woman tired holding chest"
+      narration: >-
+        Women can have the same chest pain, but they are also more likely to have other signs, like nausea or vomiting, back
+        or jaw pain, shortness of breath, and unusual tiredness. Sometimes there is no chest pain at all. Women often put
+        these signs down to stress or the flu, and that can delay care. If something feels wrong, get help.
+    - layout: "warning"
+      heading: "Call 911 Right Away"
+      points: ["Stop shoveling and sit down", "Call 911, do not drive yourself", "Ask the operator about aspirin", "Stay on the line"]
+      footage_query: "person calling phone emergency"
+      narration: >-
+        If you have the signs of a heart attack, stop what you are doing and call nine one one right away. Do not drive
+        yourself, and do not ask someone to drive you, because paramedics can start treatment on the way, and they can
+        help if your heart stops. The operator may tell you whether to chew an aspirin. Try to stay calm and sit down.
+    - layout: "myth_fact"
+      heading: "It Is Just Muscle Strain?"
+      points: ["Chest pain after shoveling is muscle strain", "Do not guess, call 911"]
+      footage_query: "man rubbing chest outdoors"
+      narration: >-
+        Myth two: chest pain after shoveling is probably just a sore muscle. Fact: you cannot tell the difference at home.
+        Pain from a heart attack can feel like pressure, heaviness, or squeezing, and it may not get worse when you press on
+        it. If there is any doubt, call nine one one. It is much better to be checked and told it was nothing.
+    - layout: "bullets"
+      heading: "Before You Shovel"
+      points: ["Ask your doctor if you have heart disease", "Do not shovel after a big meal", "Warm up for a few minutes", "Dress in layers"]
+      footage_query: "man putting on winter coat gloves"
+      narration: >-
+        Before you start, talk to your doctor if you have heart disease or other risk factors, because shoveling may not be
+        safe for you. Do not shovel right after a big meal, and avoid smoking or heavy caffeine before you start. Warm up with
+        a few minutes of gentle movement, and dress in light layers that you can take off, with a hat and gloves.
+    - layout: "bullets"
+      heading: "Shovel Smarter"
+      points: ["Push snow, do not lift it", "Use a small shovel and light loads", "Take breaks, drink water", "Stop if you feel unwell"]
+      footage_query: "woman shoveling snow sidewalk"
+      narration: >-
+        When you shovel, push the snow instead of lifting it, and use a smaller shovel with lighter loads. If you must lift,
+        bend your knees and keep your back straight. Take breaks often, drink water, and stop right away if you feel chest
+        discomfort, dizziness, or shortness of breath. Clear snow in several short sessions if you can, not all at once.
+    - layout: "bullets"
+      heading: "Safer Options"
+      points: ["Hire a neighbor or service", "Use a snow blower, with care", "Clear snow early, when it is light", "Ask for help"]
+      footage_query: "neighbor helping neighbor snow"
+      narration: >-
+        There are safer options. Ask a family member or neighbor to help, or hire someone to clear your driveway if you have
+        a heart condition. Clearing snow while it is still light and fluffy is easier than waiting until it is wet and
+        packed. A snow blower can also strain the body, so use it carefully, and take breaks.
+    - layout: "warning"
+      heading: "Do Not Wait"
+      points: ["Do not tough it out", "Minutes matter in a heart attack", "Early treatment saves heart muscle", "Call 911"]
+      footage_query: "ambulance emergency"
+      narration: >-
+        In a heart attack, every minute counts. The sooner treatment starts, the more heart muscle can be saved. Many people
+        wait too long because they hope it will go away, or they do not want to bother anyone. Please do not tough it out.
+        If you think it might be a heart attack, call nine one one right away.
+    - layout: "outro"
+      heading: "Remember"
+      points: ["Know the warning signs", "Call 911 for chest pain", "Push snow, take breaks, or get help"]
+      footage_query: "family winter snow home"
+      narration: >-
+        Remember: know the warning signs, call nine one one for chest pain, and push the snow instead of lifting it, take
+        breaks, or ask for help. Share this with someone who shovels every winter. This video is for education only, not
+        medical advice. Like and subscribe to Health Support Studio for a new health video every day.
+  short_title: "Shoveling snow and your heart #Shorts"
+  short_caption: "Heavy shoveling can strain the heart. Know the warning signs and call 911. Educational only, not medical advice."
+  short_scenes:
+    - layout: "title"
+      heading: "Shoveling Snow?"
+      points: ["Protect your heart"]
+      footage_query: "man shoveling snow driveway"
+      narration: >-
+        Shoveling snow is harder on your heart than you think. Cold air and heavy lifting raise your blood pressure fast.
+    - layout: "warning"
+      heading: "Call 911 If"
+      points: ["Chest pain or pressure", "Pain in arm, neck, or jaw", "Shortness of breath, cold sweat"]
+      footage_query: "person calling phone emergency"
+      narration: >-
+        Push the snow instead of lifting it, take breaks, and ask for help if you have heart disease. But if you feel chest
+        pain or pressure, pain in your arm, neck, or jaw, shortness of breath, or a cold sweat, stop and call nine one one.
+        Do not drive yourself.
+    - layout: "outro"
+      heading: "Full Video"
+      points: ["On YouTube"]
+      footage_query: "family winter snow home"
+      narration: >-
+        Learn more in our full video on the Health Support Studio channel.
+story:
+  open: >-
+    Imagine Frank. After a big storm he shovels his whole driveway at once, and halfway through he feels pressure in his
+    chest. By the end of this video, you will know what Frank should do, and how he could have shoveled more safely.
+  twist: >-
+    Remember Frank? Here is the twist. Chest pressure after shoveling is not something to guess about, and the right move
+    is to stop and call nine one one right away.
+  end: >-
+    So what should Frank do next time? Talk to his doctor, warm up, push the snow instead of lifting it, take breaks, ask
+    for help, and call nine one one for chest pain.
+  short_cliff: >-
+    Frank feels chest pressure while shoveling and thinks it is just a sore muscle. What should he do?
+  reel_answer: >-
+    The answer: stop and call nine one one right away. You cannot tell a heart attack from a sore muscle at home, and do not drive yourself.

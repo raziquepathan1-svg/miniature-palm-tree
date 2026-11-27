@@ -1,0 +1,170 @@
+queue_topic: "Seasonal depression: winter blues or seasonal affective disorder?"
+style: "Top Questions"
+sources:
+  - "NIMH, Seasonal Affective Disorder: https://www.nimh.nih.gov/health/publications/seasonal-affective-disorder"
+  - "CDC, About Depression: https://www.cdc.gov/depression/about/index.html"
+  - "988 Suicide and Crisis Lifeline: https://988lifeline.org/"
+plan:
+  topic: "Seasonal depression: winter blues or seasonal affective disorder?"
+  title: "Winter Blues or Seasonal Depression? Signs and What Helps"
+  description: |-
+    Do you feel low, tired, and unmotivated every fall and winter? It could be the winter blues, or it could be seasonal affective disorder, a real form of depression. Learn the signs, who is most at risk, what treatments work, including light therapy, and when to get help right away. If you are thinking about hurting yourself, call or text 988 in the US.
+
+    In this video:
+    • Winter blues vs seasonal affective disorder
+    • Common signs
+    • Who is at higher risk
+    • Treatments that work
+    • When to get help right away
+
+    #SeasonalDepression #SAD #MentalHealth #WinterBlues #HealthEducation
+  tags: ["seasonal depression", "seasonal affective disorder", "winter blues", "sad symptoms", "winter depression", "light therapy for sad", "how to beat the winter blues", "why am i sad in winter", "do i have seasonal depression", "988 lifeline", "winter mental health", "when to see a doctor for depression", "health education"]
+  thumbnail_text: "EVERY WINTER?"
+  thumbnail_highlight: "WINTER?"
+  thumbnail_photo_query: "woman looking out rainy window"
+  playlist: "Healthy Habits & Prevention"
+  scenes:
+    - layout: "title"
+      heading: "Winter Blues or Depression?"
+      points: ["Signs, treatment, and when to get help"]
+      footage_query: "woman looking out rainy window"
+      narration: >-
+        Every fall, the days get shorter, and something shifts. You feel tired, low, and less interested in everything. Is
+        it just the winter blues, or is it seasonal depression? The difference matters, because seasonal depression is
+        real, it is common, and it is treatable. Here are the signs and what helps.
+    - layout: "bullets"
+      heading: "What Is It?"
+      points: ["Seasonal affective disorder, or SAD", "A type of depression", "Returns at the same time each year", "Usually starts in fall or winter"]
+      footage_query: "person walking winter street"
+      narration: >-
+        Seasonal affective disorder, often called SAD, is a type of depression that comes and goes with the seasons. For
+        most people, symptoms start in the fall, get worse in the winter, and lift in the spring. A less common form can
+        start in the spring or summer. The National Institute of Mental Health says it is not just a bad mood, and it is not
+        a weakness. It affects millions of people each year, and it is more common than most people think.
+    - layout: "bullets"
+      heading: "Winter Blues or SAD?"
+      points: ["Blues: mild and short", "SAD: low mood most of the day", "SAD: nearly every day for weeks", "SAD affects daily life"]
+      footage_query: "man sitting on couch tired"
+      narration: >-
+        Many people feel a little down in the winter. That is often called the winter blues. It is milder, and you can still
+        function. Seasonal depression is stronger. The low mood lasts most of the day, nearly every day, for at least two
+        weeks, and it gets in the way of work, school, relationships, or caring for yourself.
+    - layout: "warning"
+      heading: "Common Signs"
+      points: ["Low mood most of the day", "Loss of interest in things", "Low energy, sleeping more", "Craving carbs, gaining weight"]
+      footage_query: "woman tired at desk"
+      narration: >-
+        Common signs include feeling sad, hopeless, or empty, losing interest in things you usually enjoy, low energy, and
+        trouble concentrating. In winter pattern SAD, people often sleep much more, crave starchy foods or sweets, gain
+        weight, and pull away from other people. If you notice that this happens every year, it may be seasonal.
+    - layout: "bullets"
+      heading: "Who Is at Higher Risk?"
+      points: ["Women and younger adults", "People far from the equator", "Family history of depression", "Bipolar disorder or depression"]
+      footage_query: "friends talking coffee shop"
+      narration: >-
+        Anyone can have seasonal depression, but it is more common in women and in younger adults. It is more common in
+        places with shorter winter days, farther from the equator. People with a family history of depression or SAD, and
+        people who already have depression or bipolar disorder, are also at higher risk.
+    - layout: "myth_fact"
+      heading: "Just Being Lazy?"
+      points: ["SAD is laziness or a weak mind", "SAD is a real, treatable condition"]
+      footage_query: "doctor talking to patient"
+      narration: >-
+        Myth one: seasonal depression is just laziness, or something you should be able to push through. Fact: it is a real
+        medical condition, linked to changes in daylight that affect body rhythms and brain chemicals. You cannot just
+        wish it away, and getting help is a sign of strength. Treatment works for most people.
+    - layout: "bullets"
+      heading: "Light Therapy"
+      points: ["A bright light box", "Often used in the morning", "Usually 20 to 30 minutes", "Ask your doctor first"]
+      footage_query: "woman sitting by bright lamp"
+      narration: >-
+        One common treatment is light therapy. You sit near a special light box that is much brighter than ordinary lamps,
+        usually for twenty to thirty minutes, often first thing in the morning. The light should be made for treating SAD,
+        and tanning beds are not a safe substitute. Talk to your doctor first if you have bipolar disorder, eye problems, or
+        take medicines that make you sensitive to light.
+    - layout: "bullets"
+      heading: "Other Treatments"
+      points: ["Talk therapy, such as CBT", "Antidepressant medicine", "Daylight, exercise, routine", "Ask about vitamin D"]
+      footage_query: "woman talking to counselor"
+      narration: >-
+        Other treatments work too. Talk therapy, especially a type of cognitive behavioral therapy made for SAD, can help.
+        Antidepressant medicine can help some people, and your doctor can talk to you about starting it before the winter
+        starts. Getting outside in daylight, exercising, keeping a regular sleep routine, and staying in touch with
+        people also help. Ask your doctor about vitamin D, because the evidence for it is not clear.
+    - layout: "myth_fact"
+      heading: "Does It Only Happen in Winter?"
+      points: ["SAD only happens in winter", "A rarer form starts in spring or summer"]
+      footage_query: "person walking sunny park"
+      narration: >-
+        Myth two: seasonal depression only happens in the dark winter months. Fact: most cases are winter pattern, but a
+        less common summer pattern exists. It can bring trouble sleeping, poor appetite, weight loss, and feeling anxious or
+        agitated. The same idea applies: if you notice a pattern that repeats each year, talk to your doctor.
+    - layout: "bullets"
+      heading: "Helping Yourself"
+      points: ["Get outside in daylight", "Move your body", "Keep a sleep schedule", "Stay connected to others"]
+      footage_query: "people walking park winter"
+      narration: >-
+        You can help yourself too. Try to get outside in the daylight, even for a short walk on a cloudy day. Exercise most
+        days, keep regular times for sleeping and waking, and eat regular meals. Plan something to look forward to, and
+        reach out to friends or family, even when you feel like staying in. These steps work best together with treatment.
+    - layout: "warning"
+      heading: "When to Get Help"
+      points: ["Low mood for 2 weeks or more", "Cannot work or care for yourself", "Using substances to cope", "Talk to your doctor"]
+      footage_query: "doctor talking patient office"
+      narration: >-
+        See your doctor if low mood lasts two weeks or longer, if you cannot do your usual activities, if you are sleeping or
+        eating in ways that worry you, or if you are using substances to cope. A doctor can check for other causes, like
+        thyroid problems or low vitamin levels, and talk about treatment. You do not have to wait for spring.
+    - layout: "warning"
+      heading: "Thoughts of Suicide"
+      points: ["Call or text 988 in the US", "Call 911 for immediate danger", "You are not alone", "Help works"]
+      footage_query: "person holding phone calling"
+      narration: >-
+        If you or someone you know is thinking about suicide or self harm, get help right now. In the United States, call or
+        text nine eight eight, the Suicide and Crisis Lifeline, any time of day or night. If there is immediate danger,
+        call nine one one. Stay with the person until help arrives. You are not alone, and treatment works.
+    - layout: "outro"
+      heading: "Remember"
+      points: ["SAD is real and treatable", "Light, therapy, and routine help", "Call or text 988 in a crisis"]
+      footage_query: "friends walking winter park"
+      narration: >-
+        Remember: seasonal depression is real and treatable, light, therapy, and daily routines can help, and you can call or
+        text nine eight eight in a crisis. Share this with someone who feels low every winter. This video is for education
+        only, not medical advice. Like and subscribe to Health Support Studio for a new health video every day.
+  short_title: "Sad every winter? It could be SAD #Shorts"
+  short_caption: "Seasonal depression is real and treatable. If you are in crisis in the US, call or text 988. Educational only, not medical advice."
+  short_scenes:
+    - layout: "title"
+      heading: "Low Every Winter?"
+      points: ["It may be seasonal depression"]
+      footage_query: "woman looking out rainy window"
+      narration: >-
+        Tired, low, and unmotivated every fall and winter? It may be more than the winter blues.
+    - layout: "warning"
+      heading: "Get Help"
+      points: ["Low mood most days for 2 weeks", "Light therapy and talk therapy help", "Crisis: call or text 988"]
+      footage_query: "woman sitting by bright lamp"
+      narration: >-
+        Seasonal depression is a real condition, and it is treatable. Light therapy, talk therapy, and medicine can help.
+        Talk to your doctor if low mood lasts two weeks or more, or gets in the way of daily life. If you are thinking of
+        hurting yourself, call or text nine eight eight in the United States, or call nine one one.
+    - layout: "outro"
+      heading: "Full Video"
+      points: ["On YouTube"]
+      footage_query: "friends walking winter park"
+      narration: >-
+        Learn more in our full video on the Health Support Studio channel.
+story:
+  open: >-
+    Imagine Ben. Every November he feels tired and flat, he sleeps ten hours, and he tells himself to stop being lazy. By
+    the end of this video, you will know whether that is true, and what could help Ben.
+  twist: >-
+    Remember Ben? Here is the twist. Seasonal depression is a real medical condition and not laziness, and it is
+    treatable with light therapy, talk therapy, or medicine.
+  end: >-
+    So what should Ben do? See his doctor, ask about light therapy, get outside in daylight, keep a regular routine, and
+    call or text nine eight eight if he ever thinks about hurting himself.
+  short_cliff: >-
+    Ben feels low and tired every winter and thinks he is just lazy. Is that true?
+  reel_answer: >-
+    The answer: no. Seasonal depression is a real medical condition, and it is treatable. Talk to your doctor, and call or text nine eight eight in a crisis.

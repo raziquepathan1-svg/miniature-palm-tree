@@ -1,0 +1,171 @@
+queue_topic: "A cough that will not go away: common causes and when to worry"
+style: "Top Questions"
+sources:
+  - "MedlinePlus, Cough: https://medlineplus.gov/cough.html"
+  - "American Lung Association, Chronic Cough: https://www.lung.org/lung-health-diseases/symptoms/cough"
+  - "Mayo Clinic, Chronic Cough: https://www.mayoclinic.org/diseases-conditions/chronic-cough/symptoms-causes/syc-20351575"
+plan:
+  topic: "A cough that will not go away: common causes and when to worry"
+  title: "A Cough That Will Not Go Away? Causes and Red Flags"
+  description: |-
+    Weeks of coughing is exhausting, and it is easy to worry. Most long lasting coughs come from a few common causes, like postnasal drip, asthma, and acid reflux, and many are treatable. Learn the common causes, the medicine that can cause a cough, the red flags that need a doctor soon, and when to get emergency help.
+
+    In this video:
+    • How long is too long for a cough?
+    • The common causes
+    • A blood pressure medicine that can cause cough
+    • Myths about cough medicine and green mucus
+    • Red flags, and when to go to the ER
+
+    #Cough #ChronicCough #LungHealth #HealthTips #HealthEducation
+  tags: ["chronic cough", "cough that will not go away", "persistent cough", "cough for weeks", "cough causes", "postnasal drip cough", "acid reflux cough", "asthma cough", "ace inhibitor cough", "when to worry about a cough", "coughing up blood", "green mucus antibiotics", "health education"]
+  thumbnail_text: "WEEKS OF COUGHING?"
+  thumbnail_highlight: "WEEKS"
+  thumbnail_photo_query: "man coughing into fist"
+  playlist: "Healthy Habits & Prevention"
+  scenes:
+    - layout: "title"
+      heading: "Cough That Will Not Go Away"
+      points: ["Causes and red flags"]
+      footage_query: "man coughing into fist"
+      narration: >-
+        The cold is gone, but the cough is still here. Weeks later, you are still coughing, losing sleep, and wondering what
+        is wrong. A long lasting cough is one of the most common reasons people see a doctor. Most causes are treatable, but a
+        few are serious. Here are the common causes, and the red flags.
+    - layout: "bullets"
+      heading: "How Long Is Too Long?"
+      points: ["Acute: under 3 weeks", "Subacute: 3 to 8 weeks", "Chronic: over 8 weeks in adults", "In children, over 4 weeks"]
+      footage_query: "doctor listening to lungs"
+      narration: >-
+        Doctors group coughs by how long they last. An acute cough lasts less than three weeks, and is usually from a cold.
+        A cough that lasts three to eight weeks is called subacute, and often follows an infection. A chronic cough lasts
+        more than eight weeks in adults, and more than four weeks in children. A chronic cough needs a doctor visit.
+    - layout: "bullets"
+      heading: "A Cough After a Cold"
+      points: ["Can last 3 to 8 weeks", "Airways stay irritated", "Often slowly improves", "Check in if it is getting worse"]
+      footage_query: "woman coughing sofa blanket"
+      narration: >-
+        After a cold or flu, it is common for a dry cough to hang around for a few weeks. Your airways stay irritated and
+        sensitive even after the infection is gone. If the cough is slowly getting better, that is usually fine. But if it is
+        getting worse, or if you also have a fever or trouble breathing, get checked.
+    - layout: "warning"
+      heading: "The Most Common Causes"
+      points: ["Postnasal drip", "Asthma", "Acid reflux", "Smoking and lung disease"]
+      footage_query: "doctor talking to patient chest"
+      narration: >-
+        Three causes account for most chronic coughs in people who do not smoke. The first is postnasal drip, when mucus
+        from the nose drips down the back of the throat. The second is asthma, which can cause cough without any wheezing.
+        The third is acid reflux, when stomach acid irritates the throat. Smoking and lung diseases like COPD are other
+        important causes.
+    - layout: "bullets"
+      heading: "Postnasal Drip"
+      points: ["Feeling of mucus in the throat", "Frequent throat clearing", "Worse when lying down", "Allergies, colds, or sinus problems"]
+      footage_query: "woman clearing throat"
+      narration: >-
+        Postnasal drip often feels like mucus dripping down the back of the throat, with frequent throat clearing and a
+        tickle that sets off coughing. It is often worse at night. It can be caused by allergies, colds, or sinus problems,
+        and treating the cause, with things like saline rinses or a nasal spray, often helps.
+    - layout: "bullets"
+      heading: "Asthma and Reflux"
+      points: ["Asthma: cough at night or with exercise", "Reflux: cough with heartburn", "Reflux may cause cough without heartburn", "A doctor can test and treat"]
+      footage_query: "woman exercising outdoors cough"
+      narration: >-
+        Cough from asthma is often worse at night, or with exercise, cold air, or allergens. Cough from acid reflux may come
+        with heartburn, a sour taste, or hoarseness, but it can also happen without any heartburn at all. Your doctor can
+        decide if a breathing test or a trial of treatment for these makes sense.
+    - layout: "warning"
+      heading: "A Medicine That Causes Cough"
+      points: ["ACE inhibitors for blood pressure", "Dry, tickling cough", "Can start weeks or months in", "Never stop it on your own"]
+      footage_query: "pharmacist handing medicine"
+      narration: >-
+        Some blood pressure medicines, called ACE inhibitors, can cause a dry, tickling cough in some people. It can start
+        weeks or even months after you begin taking it. If you take one and you have a long lasting cough, tell your doctor.
+        There are other medicines that may work. Do not stop a blood pressure medicine on your own.
+    - layout: "myth_fact"
+      heading: "Green Mucus Means Antibiotics?"
+      points: ["Green mucus needs antibiotics", "Color alone does not mean bacteria"]
+      footage_query: "doctor talking to patient"
+      narration: >-
+        Myth one: if mucus turns yellow or green, you need an antibiotic. Fact: the color changes as your body fights any
+        infection, including viruses, and does not by itself show that bacteria are the cause. Most coughs with colored
+        mucus still get better without antibiotics. Your doctor can tell whether you really need one.
+    - layout: "myth_fact"
+      heading: "Cough Syrup Fixes It?"
+      points: ["Cough medicine cures a long cough", "Treat the cause, not just the cough"]
+      footage_query: "person measuring cough syrup"
+      narration: >-
+        Myth two: the right cough syrup will fix a long lasting cough. Fact: over the counter cough medicines do not treat
+        the cause, and they often do not work well for a chronic cough. Treating the cause, like asthma or reflux, is what
+        helps. Honey in warm water can soothe a cough for adults and children over one year old. Ask a doctor before giving
+        any cough medicine to a young child.
+    - layout: "bullets"
+      heading: "What Your Doctor Might Do"
+      points: ["Ask about when it started", "Listen to your lungs", "Chest X-ray or breathing test", "Try treating the likely cause"]
+      footage_query: "chest xray doctor reviewing"
+      narration: >-
+        At the visit, your doctor will ask when the cough started, what makes it better or worse, what medicines you take,
+        and whether you smoke. They will listen to your lungs, and may order a chest X ray or a breathing test. Often the
+        next step is to treat the most likely cause and see if the cough improves.
+    - layout: "warning"
+      heading: "Red Flags: See a Doctor"
+      points: ["Coughing up blood", "Unplanned weight loss or night sweats", "Fever that lasts", "Hoarseness for weeks, or trouble swallowing"]
+      footage_query: "doctor talking patient office"
+      narration: >-
+        See a doctor soon if you cough up blood, if you are losing weight without trying, if you have night sweats or a
+        fever that will not go away, if you have a hoarse voice for several weeks, or if swallowing is hard. A smoker, or
+        former smoker, with a new cough that changes should also be checked, because these can be signs of a more serious
+        illness.
+    - layout: "warning"
+      heading: "Go to the ER"
+      points: ["Severe trouble breathing", "Coughing up a lot of blood", "Blue lips or face", "Chest pain or fainting"]
+      footage_query: "ambulance emergency"
+      narration: >-
+        Call nine one one or go to the emergency room for severe trouble breathing, coughing up a large amount of blood,
+        blue or gray lips or face, chest pain, or fainting. Also seek urgent care if a child is struggling to breathe, is
+        making a high pitched sound with each breath, or has a cough with ribs pulling in with each breath.
+    - layout: "outro"
+      heading: "Remember"
+      points: ["Over 8 weeks: see a doctor", "Treat the cause", "Blood, weight loss, trouble breathing: urgent"]
+      footage_query: "family at home together"
+      narration: >-
+        Remember: a cough that lasts more than eight weeks needs a doctor, treating the cause works better than cough
+        syrup, and coughing up blood, weight loss, or trouble breathing needs care right away. Share this with someone who
+        has been coughing for weeks. This video is for education only, not medical advice. Like and subscribe to Health
+        Support Studio for a new health video every day.
+  short_title: "Cough for weeks? Do not ignore it #Shorts"
+  short_caption: "A cough over eight weeks needs a doctor. Here are the red flags. Educational only, not medical advice."
+  short_scenes:
+    - layout: "title"
+      heading: "Cough for Weeks?"
+      points: ["When to worry"]
+      footage_query: "man coughing into fist"
+      narration: >-
+        Still coughing weeks after the cold is gone? Here is when to see a doctor.
+    - layout: "warning"
+      heading: "See a Doctor If"
+      points: ["Cough over 8 weeks", "Coughing up blood", "Weight loss, night sweats", "Trouble breathing: ER"]
+      footage_query: "doctor listening to lungs"
+      narration: >-
+        Common causes are postnasal drip, asthma, acid reflux, smoking, and some blood pressure medicines. See a doctor if a
+        cough lasts more than eight weeks, if you cough up blood, or if you lose weight or have night sweats. Go to the
+        emergency room for severe trouble breathing, and do not take cough syrup as a cure.
+    - layout: "outro"
+      heading: "Full Video"
+      points: ["On YouTube"]
+      footage_query: "family at home together"
+      narration: >-
+        Learn more in our full video on the Health Support Studio channel.
+story:
+  open: >-
+    Imagine Tasha. She has coughed every day for three months, and she keeps buying a different cough syrup. By the end of
+    this video, you will know why that is not working, and what Tasha should do.
+  twist: >-
+    Remember Tasha? Here is the twist. Cough syrup does not treat the cause, and a cough that lasts more than eight weeks
+    needs a doctor, with red flags like coughing up blood needing care soon.
+  end: >-
+    So what should Tasha do? See her doctor about the cause, such as postnasal drip, asthma, reflux, or a medicine
+    she takes, and go to the ER for severe trouble breathing or coughing up a lot of blood.
+  short_cliff: >-
+    Tasha has coughed for three months and keeps trying new cough syrups. Will one of them fix it?
+  reel_answer: >-
+    The answer: no. Cough syrup does not treat the cause, and a cough that lasts more than eight weeks needs a doctor.

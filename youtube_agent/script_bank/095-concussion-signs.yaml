@@ -1,0 +1,187 @@
+queue_topic: "Concussion: signs, what to do, and when to go to the ER"
+style: "Warning Signs"
+sources:
+  - "CDC, Concussion Signs and Symptoms: https://www.cdc.gov/heads-up/signs-and-symptoms/index.html"
+  - "CDC, HEADS UP: Concussion Recovery: https://www.cdc.gov/heads-up/recovery/index.html"
+  - "NINDS, Concussion: https://www.ninds.nih.gov/health-information/disorders/concussion"
+plan:
+  topic: "Concussion: signs, what to do, and when to go to the ER"
+  title: "Concussion Signs: What to Do After a Hit to the Head"
+  description: |-
+    A bump on the head can be more than a bump. A concussion is a brain injury, and you do not have to pass out to have one. Learn the signs in adults and children, what to do right away, the danger signs that mean go to the ER, the myths about waking someone up, and how to return to school and sports safely.
+
+    In this video:
+    • What a concussion is
+    • Common signs in adults and kids
+    • What to do right after the injury
+    • Danger signs: go to the ER
+    • Safe recovery, school and sports
+
+    #Concussion #HeadInjury #SportsSafety #KidsHealth #HealthEducation
+  tags: ["concussion", "concussion symptoms", "concussion signs", "what to do after a concussion", "head injury", "concussion in kids", "concussion in athletes", "concussion recovery", "when to go to the er for a head injury", "do you have to pass out to have a concussion", "return to play after concussion", "second impact", "health education"]
+  thumbnail_text: "NO BLACKOUT?"
+  thumbnail_highlight: "BLACKOUT?"
+  thumbnail_photo_query: "man holding head dizzy"
+  playlist: "Emergencies & First Aid"
+  scenes:
+    - layout: "title"
+      heading: "Concussion: Know the Signs"
+      points: ["After a hit to the head"]
+      footage_query: "man holding head dizzy"
+      narration: >-
+        A fall, a football tackle, a car crash. Someone hits their head and says they are fine. But are they? A concussion
+        is a brain injury, and you do not have to pass out to have one. Here are the signs, what to do right away, and the
+        danger signs that mean go to the emergency room.
+    - layout: "bullets"
+      heading: "What Is a Concussion?"
+      points: ["A mild traumatic brain injury", "From a bump, blow, or jolt", "The brain moves inside the skull", "Usually not seen on a scan"]
+      footage_query: "doctor explaining brain model"
+      narration: >-
+        A concussion is a type of mild traumatic brain injury caused by a bump, blow, or jolt to the head, or by a hit to the
+        body that makes the head and brain move quickly back and forth. This sudden movement can change how brain cells work.
+        Concussions can happen in sports, falls, car crashes, and many everyday accidents. A scan is usually normal.
+    - layout: "myth_fact"
+      heading: "Must You Pass Out?"
+      points: ["You must lose consciousness", "Most people with concussions do not pass out"]
+      footage_query: "teen athlete sitting field"
+      narration: >-
+        Myth one: you have to be knocked out to have a concussion. Fact: most people with a concussion never lose
+        consciousness. They may just seem dazed, confused, or off. If someone hits their head and does not seem right, treat
+        it as a possible concussion, even if there was no blackout, and even if there was no visible mark.
+    - layout: "warning"
+      heading: "Common Signs"
+      points: ["Headache or pressure in the head", "Dizziness, balance problems", "Nausea or vomiting", "Confusion, feeling foggy"]
+      footage_query: "woman rubbing temples headache"
+      narration: >-
+        Common signs of a concussion include a headache or pressure in the head, dizziness or balance problems, nausea or
+        vomiting, blurry or double vision, and being bothered by light or noise. People may feel foggy or slowed down, have
+        trouble concentrating or remembering, or just not feel right. Signs can show up right away, or hours or days later.
+    - layout: "warning"
+      heading: "Signs in Young Children"
+      points: ["Cries a lot, cannot be consoled", "Changes in sleep or eating", "Loses interest in toys", "Loses balance, acts different"]
+      footage_query: "toddler fell crying parent"
+      narration: >-
+        Young children cannot always say what hurts. Look for crying that does not stop, being unusually fussy or sleepy,
+        changes in eating or sleeping, losing interest in favorite toys, and new balance problems or clumsiness. If a young
+        child bumps their head and acts different in any way, call a doctor.
+    - layout: "bullets"
+      heading: "Right After the Injury"
+      points: ["Stop the activity", "Do not return to play that day", "Get checked by a doctor", "Rest, but do not be alone"]
+      footage_query: "coach checking injured player"
+      narration: >-
+        If you suspect a concussion, stop the activity right away. A player should not return to the game, practice, or any
+        risky activity that day. Get checked by a doctor or other health care professional, especially for children and
+        teens. It also helps to have someone stay with the person at first, and watch for any danger signs.
+    - layout: "warning"
+      heading: "Danger Signs: Go to the ER"
+      points: ["Headache that gets worse", "Repeated vomiting", "One pupil larger than the other", "Seizure, slurred speech, weakness"]
+      footage_query: "ambulance emergency"
+      narration: >-
+        Go to the emergency room or call nine one one if there is a headache that gets worse, repeated vomiting, drowsiness
+        or trouble waking up, one pupil larger than the other, slurred speech, weakness or numbness, a seizure, or
+        increasing confusion or restlessness. Also go if a person loses consciousness, even briefly, or cannot recognize
+        people or places.
+    - layout: "warning"
+      heading: "ER Signs in Children"
+      points: ["Will not stop crying", "Cannot be woken up", "Refuses to feed", "Any danger sign above"]
+      footage_query: "mother holding injured child"
+      narration: >-
+        In babies and young children, also go to the emergency room if they will not stop crying and cannot be calmed, if
+        they refuse to feed, if they cannot be woken up, or if they have any of the other danger signs. A baby with a
+        bump that grows into a soft swelling also needs to be checked.
+    - layout: "myth_fact"
+      heading: "Keep Them Awake?"
+      points: ["Wake them every hour all night", "Sleep is fine, unless told otherwise"]
+      footage_query: "teenager sleeping in bed"
+      narration: >-
+        Myth two: you must keep someone awake after a concussion, or wake them up every hour. Fact: sleep is not harmful.
+        In the first hours after the injury, someone should stay nearby and watch for danger signs, and a doctor can tell
+        you if you need to check on them overnight. If the person is very hard to wake, that is an emergency.
+    - layout: "bullets"
+      heading: "Safe Recovery"
+      points: ["Rest for a day or two", "Then slowly return to activity", "Limit screens if they worsen symptoms", "Follow your doctor's plan"]
+      footage_query: "teen resting at home"
+      narration: >-
+        Recovery is different for everyone. Most people feel better within a couple of weeks, but some take longer. Rest
+        for the first day or two, then slowly return to normal activities as symptoms allow. Complete bed rest for long
+        periods is not recommended. Screens, bright light, and noise may make symptoms worse for a while, so take breaks
+        and follow your doctor's plan.
+    - layout: "myth_fact"
+      heading: "Does a Helmet Prevent It?"
+      points: ["A helmet prevents all concussions", "Helmets protect, but do not prevent concussions"]
+      footage_query: "child bicycle helmet"
+      narration: >-
+        Myth three: if you wear a helmet, you cannot get a concussion. Fact: helmets are very important, and they greatly
+        lower the risk of serious head and skull injuries, but they cannot prevent all concussions. Wear one for biking,
+        skating, skiing, and contact sports anyway, along with proper technique, and rules that keep players safe.
+    - layout: "bullets"
+      heading: "Returning to School and Sports"
+      points: ["Back to school gradually", "No sports until a doctor clears you", "Return to play in steps", "Another hit too soon can be serious"]
+      footage_query: "teen student walking school"
+      narration: >-
+        Children and teens should go back to school gradually, with changes if needed, like extra time and breaks. They should
+        not return to sports until a health care professional says it is safe. Returning to play happens in steps. Getting
+        another hit to the head before the brain has healed can cause worse injury and longer recovery.
+    - layout: "bullets"
+      heading: "Prevention"
+      points: ["Wear helmets and seat belts", "Make the home safe from falls", "Use handrails and non slip mats", "Follow safe sports rules"]
+      footage_query: "family bicycles helmets park"
+      narration: >-
+        You cannot prevent every accident, but you can lower the risk. Wear a seat belt, and use helmets when biking, skating,
+        or riding. Make your home safer from falls with handrails, good lighting, and non slip mats, and use gates for young
+        children. Teach athletes to report any head injury, and to never play through symptoms.
+    - layout: "warning"
+      heading: "Call Your Doctor"
+      points: ["Symptoms last more than 2 weeks", "New symptoms appear", "Trouble sleeping or mood changes", "Ask before returning to sports"]
+      footage_query: "doctor talking patient office"
+      narration: >-
+        Call your doctor if symptoms last more than a couple of weeks, if new symptoms show up, if there are sleep problems
+        or mood changes like anxiety, irritability, or sadness, or if schoolwork or daily life is getting harder. Always check
+        with a health care professional before returning to sports after a head injury.
+    - layout: "outro"
+      heading: "Remember"
+      points: ["No blackout needed", "Stop, get checked, rest", "Danger signs: go to the ER"]
+      footage_query: "family at home together"
+      narration: >-
+        Remember: you do not have to pass out to have a concussion, stop the activity and get checked, and go to the
+        emergency room for danger signs like worsening headache, repeated vomiting, or confusion. Share this with a parent
+        or a coach. This video is for education only, not medical advice. Like and subscribe to Health Support Studio for a
+        new health video every day.
+  short_title: "Hit your head? Do not ignore these signs #Shorts"
+  short_caption: "You do not have to pass out to have a concussion. Know the danger signs. Educational only, not medical advice."
+  short_scenes:
+    - layout: "title"
+      heading: "Hit Your Head?"
+      points: ["Concussion signs"]
+      footage_query: "man holding head dizzy"
+      narration: >-
+        A hit to the head, and they say they are fine. But do not ignore it. You do not have to pass out to have a
+        concussion.
+    - layout: "warning"
+      heading: "Go to the ER If"
+      points: ["Headache that gets worse", "Repeated vomiting", "Very drowsy or confused", "Seizure or slurred speech"]
+      footage_query: "ambulance emergency"
+      narration: >-
+        Signs of a concussion include headache, dizziness, nausea, confusion, and feeling foggy. Stop the activity and get
+        checked. Go to the emergency room if the headache gets worse, if there is repeated vomiting, drowsiness, a seizure,
+        or slurred speech. And no return to sports until a doctor says it is safe.
+    - layout: "outro"
+      heading: "Full Video"
+      points: ["On YouTube"]
+      footage_query: "family at home together"
+      narration: >-
+        Learn more in our full video on the Health Support Studio channel.
+story:
+  open: >-
+    Imagine Aisha. Her teenage son took a hard fall during soccer, and he says he is fine because he never blacked out. By
+    the end of this video, you will know if that is enough, and what Aisha should do.
+  twist: >-
+    Remember Aisha? Here is the twist. Most people with a concussion never pass out, so no blackout does not mean no
+    concussion, and danger signs mean go to the ER.
+  end: >-
+    So what should Aisha do? Take him off the field, get him checked, let him rest, return him to school and sports slowly
+    only when a doctor says so, and go to the ER for a worsening headache or repeated vomiting.
+  short_cliff: >-
+    Aisha's son hit his head and says he is fine because he did not black out. Is he right?
+  reel_answer: >-
+    The answer: not necessarily. Most people with a concussion never pass out. Get checked, and go to the ER for worsening headache, repeated vomiting, or confusion.

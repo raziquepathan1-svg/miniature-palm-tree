@@ -1,0 +1,183 @@
+queue_topic: "Whooping cough (pertussis): symptoms, risks to babies and who needs the vaccine"
+style: "Warning Signs"
+sources:
+  - "CDC, About Whooping Cough (Pertussis): https://www.cdc.gov/pertussis/about/index.html"
+  - "CDC, Whooping Cough Vaccination: https://www.cdc.gov/pertussis/vaccines/index.html"
+  - "MedlinePlus, Whooping Cough: https://medlineplus.gov/whoopingcough.html"
+plan:
+  topic: "Whooping cough (pertussis): symptoms, risks to babies and who needs the vaccine"
+  title: "Whooping Cough: Early Signs, Baby Risks and Who Needs the Shot"
+  description: |-
+    Whooping cough starts like a cold, but it can turn into weeks of severe coughing, and it can be dangerous for babies. Learn the stages and early signs, why babies may not cough but stop breathing, who needs the vaccine, why protection fades, and when to call your doctor or go to the ER.
+
+    In this video:
+    • What whooping cough is, and how it spreads
+    • The stages and signs
+    • Why babies are most at risk
+    • Who should get the vaccine, including during pregnancy
+    • Treatment, and when to get urgent help
+
+    #WhoopingCough #Pertussis #Vaccines #BabyHealth #HealthEducation
+  tags: ["whooping cough", "pertussis", "whooping cough symptoms", "whooping cough in babies", "whooping cough vaccine", "tdap vaccine", "tdap during pregnancy", "dtap vaccine", "100 day cough", "is whooping cough contagious", "whooping cough in adults", "whooping cough treatment", "health education"]
+  thumbnail_text: "NOT JUST A COLD"
+  thumbnail_highlight: "COLD"
+  thumbnail_photo_query: "mother holding baby worried"
+  playlist: "Infections & Vaccines"
+  scenes:
+    - layout: "title"
+      heading: "Whooping Cough"
+      points: ["Early signs, and who needs the shot"]
+      footage_query: "mother holding baby worried"
+      narration: >-
+        It starts like a cold, with a runny nose and a mild cough. Then, after a week or two, the coughing gets worse, in
+        long fits that leave you gasping for air. That is whooping cough, also called pertussis. For adults it can mean weeks
+        of misery, but for babies it can be dangerous. Here is what to know, and who needs the vaccine.
+    - layout: "bullets"
+      heading: "What Is Whooping Cough?"
+      points: ["A bacterial infection of the airways", "Caused by Bordetella pertussis", "Spreads by coughs and sneezes", "Very contagious"]
+      footage_query: "doctor explaining lungs model"
+      narration: >-
+        Whooping cough is a bacterial infection of the airways. It spreads easily through the air when someone coughs or
+        sneezes, and through close contact. Many people catch it from someone who does not know they have it, because early
+        symptoms look like a cold. It is called the hundred day cough in some places, because it can last for weeks.
+    - layout: "warning"
+      heading: "Early Signs"
+      points: ["Runny nose", "Mild fever", "Mild cough", "Lasts 1 to 2 weeks"]
+      footage_query: "woman blowing nose tissue"
+      narration: >-
+        The first stage, lasting one to two weeks, looks like a common cold. There may be a runny nose, a low fever, and a
+        mild cough. This is when the illness is most contagious, and it is hard to tell from a cold. If a baby is sick, or
+        if there are cases of whooping cough in your area, tell your doctor early.
+    - layout: "warning"
+      heading: "Later Signs"
+      points: ["Fits of rapid coughing", "A high pitched whoop sound", "Vomiting after coughing", "Tired and worn out"]
+      footage_query: "child coughing at home"
+      narration: >-
+        Then the cough changes. There are fits of many rapid coughs in a row, followed by a high pitched whoop as the person
+        gasps for air. Some people vomit after a coughing fit, and are exhausted afterward. But not everyone makes the whoop
+        sound, especially babies, older children, and adults. A cough that gets worse and lasts for weeks should be checked.
+    - layout: "big_number"
+      heading: "Babies at Risk"
+      points: ["About half", "of babies under 1 need the hospital"]
+      footage_query: "newborn baby hospital"
+      narration: >-
+        Babies are at the highest risk. The CDC says that about half of babies younger than one year who get whooping cough
+        need care in the hospital, and the youngest babies are most at risk of serious problems, like pneumonia and trouble
+        breathing. A baby may not cough at all. Instead, they may stop breathing for a few seconds, or turn blue.
+    - layout: "warning"
+      heading: "Signs in Babies"
+      points: ["Pauses in breathing", "Blue or gray color", "Gagging or gasping", "Poor feeding, very tired"]
+      footage_query: "mother checking sleeping baby"
+      narration: >-
+        In babies, watch for pauses in breathing, a blue or gray color around the lips or face, gagging or gasping, poor
+        feeding, and being very tired. Call a doctor right away if you see these, and call nine one one if a baby stops
+        breathing or turns blue. Do not wait for a cough to appear.
+    - layout: "myth_fact"
+      heading: "Only a Childhood Disease?"
+      points: ["Only young children get it", "Teens and adults get it, and spread it"]
+      footage_query: "adult coughing at work"
+      narration: >-
+        Myth one: whooping cough is only a childhood disease. Fact: teens and adults get it too, and they may have a long
+        cough with no whoop. Often they are the ones who spread it to babies, without knowing what they have. That is why
+        vaccination and being careful around newborns matter for the whole family.
+    - layout: "bullets"
+      heading: "The Vaccines"
+      points: ["DTaP for babies and young children", "Tdap for preteens", "Tdap for adults who have not had it", "Tdap each pregnancy"]
+      footage_query: "doctor giving vaccine child"
+      narration: >-
+        There are two vaccines. DTaP is given to babies and young children, in a series of five doses. Tdap is a booster for
+        preteens at age eleven or twelve. Adults who have never had Tdap should get one dose, and then a tetanus booster every
+        ten years. Pregnant women should get Tdap during every pregnancy, to protect the baby.
+    - layout: "bullets"
+      heading: "Pregnancy and Newborns"
+      points: ["Tdap in every pregnancy", "Best from week 27 to 36", "Passes protection to the baby", "Family members should be up to date"]
+      footage_query: "pregnant woman doctor visit"
+      narration: >-
+        Getting Tdap while pregnant, ideally between about twenty seven and thirty six weeks, passes protection to the baby
+        before the baby can have its own shots. A baby cannot get its first dose until about two months old. So everyone who
+        spends time with a newborn should be up to date, including parents, grandparents, and caregivers.
+    - layout: "myth_fact"
+      heading: "Does Protection Last Forever?"
+      points: ["One round of shots protects for life", "Protection fades, so boosters matter"]
+      footage_query: "doctor talking to patient vaccine"
+      narration: >-
+        Myth two: if you had the shots as a child, you are protected for life. Fact: protection from the vaccine wears off
+        over several years, which is why preteens, and adults, need boosters. Also, having had whooping cough does not protect
+        you for life. The vaccine is not perfect, but it greatly lowers the chance of serious illness, especially in babies.
+    - layout: "bullets"
+      heading: "Treatment"
+      points: ["Antibiotics, started early", "Help lower spread to others", "Rest, fluids, small meals", "Close contacts may get antibiotics"]
+      footage_query: "doctor talking to mother and baby"
+      narration: >-
+        Whooping cough is treated with antibiotics, and they work best if started early. They can make you less contagious,
+        but they may not shorten the cough once the coughing fits start. Rest, plenty of fluids, and small meals can help.
+        Close contacts, especially people who live with babies or pregnant women, may be given antibiotics to prevent it.
+    - layout: "bullets"
+      heading: "Preventing the Spread"
+      points: ["Stay home when sick", "Cover coughs", "Wash hands often", "Keep babies away from anyone coughing"]
+      footage_query: "washing hands with soap"
+      narration: >-
+        To stop the spread, stay home when you are sick, cover your coughs with a tissue or your elbow, and wash your hands
+        often. Keep babies away from anyone who is coughing, and ask your doctor about testing if you have a long cough and
+        spend time with a baby. People with whooping cough are contagious until they have finished about five days of
+        antibiotics.
+    - layout: "warning"
+      heading: "Call Your Doctor"
+      points: ["Cough fits for more than a week", "Vomiting after coughing", "Cough in a young baby", "Close contact with a case"]
+      footage_query: "doctor talking patient office"
+      narration: >-
+        Call your doctor if a cough has lasted more than a week and gets worse, if there are coughing fits with vomiting, if
+        a young baby has any cough, or if you have been around someone with whooping cough. Calling ahead helps the office
+        protect other patients, especially babies and pregnant women.
+    - layout: "warning"
+      heading: "Go to the ER"
+      points: ["Baby stops breathing or turns blue", "Struggling to breathe", "Cannot stop coughing", "Seizure"]
+      footage_query: "ambulance emergency"
+      narration: >-
+        Call nine one one or go to the emergency room if a baby stops breathing or turns blue, if anyone is struggling to
+        breathe, if they cannot stop coughing, or if there is a seizure. These are emergencies, and they need care right away.
+    - layout: "outro"
+      heading: "Remember"
+      points: ["Get Tdap, especially in pregnancy", "Babies need extra protection", "Blue lips or pauses in breathing: 911"]
+      footage_query: "family at home together"
+      narration: >-
+        Remember: get your Tdap, especially during pregnancy, protect babies by keeping everyone up to date, and call nine
+        one one if a baby turns blue or stops breathing. Share this with a new parent. This video is for education only, not
+        medical advice. Like and subscribe to Health Support Studio for a new health video every day.
+  short_title: "Whooping cough: why babies are at risk #Shorts"
+  short_caption: "Whooping cough can be dangerous for babies. Know the signs and who needs the vaccine. Educational only, not medical advice."
+  short_scenes:
+    - layout: "title"
+      heading: "Whooping Cough"
+      points: ["It starts like a cold"]
+      footage_query: "mother holding baby worried"
+      narration: >-
+        It starts like a cold. Then the coughing gets worse. Whooping cough can be dangerous for babies.
+    - layout: "warning"
+      heading: "Protect Babies"
+      points: ["Tdap in every pregnancy", "Boosters for teens and adults", "Baby turns blue: call 911"]
+      footage_query: "pregnant woman doctor visit"
+      narration: >-
+        Whooping cough can cause long coughing fits, and babies may stop breathing instead of coughing. The best protection
+        is the vaccine. Pregnant women should get Tdap during every pregnancy, and everyone around a new baby should be up to
+        date. If a baby stops breathing or turns blue, call nine one one.
+    - layout: "outro"
+      heading: "Full Video"
+      points: ["On YouTube"]
+      footage_query: "family at home together"
+      narration: >-
+        Learn more in our full video on the Health Support Studio channel.
+story:
+  open: >-
+    Imagine Mark. He has had a bad cough for two weeks, he feels fine otherwise, and his daughter just had a new baby. By
+    the end of this video, you will know why that cough matters, and what Mark should do before he holds the baby.
+  twist: >-
+    Remember Mark? Here is the twist. Teens and adults can have whooping cough with no whoop, and they often spread it to
+    babies without knowing, so boosters and a doctor visit matter.
+  end: >-
+    So what should Mark do? Call his doctor and ask about testing, stay away from the baby until he is checked, and make
+    sure he and the family are up to date on Tdap.
+  short_cliff: >-
+    Mark has had a cough for two weeks, and his new grandbaby is visiting. Why does that matter?
+  reel_answer: >-
+    The answer: adults can have whooping cough without the whoop, and they can pass it to babies, who are at the highest risk. Get checked, and keep Tdap up to date.
