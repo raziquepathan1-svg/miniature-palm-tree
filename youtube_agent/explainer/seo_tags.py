@@ -100,6 +100,9 @@ EP = {
  "eye": (["How the eye works", "Retina, rods and cones", "The blind spot"],
     ["how does the eye see", "eye anatomy", "how the eye works", "retina rods and cones", "why image is upside down on the retina", "blind spot", "optic nerve", "cornea pupil iris lens", "fovea", "color vision cones", "vision explained", "senses", "anatomy and physiology"],
     ["#eyeanatomy", "#vision", "#retina"]),
+ "smelltaste": (["How smell and taste work", "Taste buds and the 5 basic tastes", "Why food tastes bland"],
+    ["how do smell and taste work", "taste buds", "sense of smell", "sense of taste", "olfactory system", "five basic tastes", "umami", "tongue map myth", "why food tastes bland when sick", "loss of smell and taste", "flavor taste and smell", "olfactory bulb", "anatomy and physiology"],
+    ["#smellandtaste", "#tastebuds", "#senses"]),
  "ear": (["How hearing works", "Ear anatomy", "Cochlea and hair cells"],
     ["how do we hear", "ear anatomy", "how hearing works", "parts of the ear", "smallest bone in the body", "malleus incus stapes", "cochlea", "hair cells", "eardrum", "semicircular canals", "why do you get dizzy after spinning", "noise induced hearing loss", "anatomy and physiology"],
     ["#earanatomy", "#hearing", "#cochlea"]),
@@ -109,7 +112,7 @@ EP = {
 def tags_for(eid, short=False):
     kw, tags, _ = EP[eid]
     out, seen = [], set()
-    base = [b for b in BASE if not (eid in ("brain", "neuron", "spine", "autonomic", "endocrine", "digestive", "kidney", "immune", "skin", "musc", "lymph", "eye", "ear") and b == "cardiovascular system")]
+    base = [b for b in BASE if not (eid in ("brain", "neuron", "spine", "autonomic", "endocrine", "digestive", "kidney", "immune", "skin", "musc", "lymph", "eye", "ear", "smelltaste") and b == "cardiovascular system")]
     for t in tags + (["shorts", "anatomy shorts"] if short else []) + base:
         if t.lower() not in seen and sum(len(x) + 3 for x in out) + len(t) + 3 <= 480:
             out.append(t); seen.add(t.lower())
