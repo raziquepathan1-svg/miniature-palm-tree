@@ -2319,6 +2319,47 @@
     "short3_youtube_id": "0txASoqsoNk",
     "replaced_ids": [
       "I-et7W7YEIs"
+    ],
+    "pin_question": "Do you take a vitamin D supplement, and what made you start? Share below.",
+    "packages": [
+      {
+        "title": "Vitamin D Myths: Are You Taking It for Nothing?",
+        "thumbnail_text": "TOO MUCH?",
+        "thumbnail_highlight": "TOO"
+      },
+      {
+        "title": "Does Sun Through a Window Give You Vitamin D?",
+        "thumbnail_text": "GLASS BLOCKS",
+        "thumbnail_highlight": "GLASS"
+      },
+      {
+        "title": "Do You Need a Vitamin D Supplement?",
+        "thumbnail_text": "ASK FIRST",
+        "thumbnail_highlight": "ASK"
+      },
+      {
+        "title": "Vitamin D and Falls: What Studies Show",
+        "thumbnail_text": "TRY EXERCISE",
+        "thumbnail_highlight": "EXERCISE"
+      },
+      {
+        "title": "Can Too Much Vitamin D Hurt You?",
+        "thumbnail_text": "4,000 UNITS",
+        "thumbnail_highlight": "4,000"
+      }
+    ],
+    "chosen": {
+      "title": "Vitamin D Myths: Are You Taking It for Nothing?",
+      "thumbnail_text": "TOO MUCH?",
+      "thumbnail_highlight": "TOO"
+    },
+    "social_keywords": "vitamin d · vitamin d myths · too much vitamin d · vitamin d supplement · vitamin d deficiency",
+    "social_hashtags": [
+      "VitaminD",
+      "Supplements",
+      "HealthMyths",
+      "HealthTips",
+      "HealthEducation"
     ]
   }
 ]
