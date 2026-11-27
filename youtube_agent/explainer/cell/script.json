@@ -1,0 +1,11 @@
+[
+ {"id":"story","text":"Your body is built from about thirty trillion cells. Most are too small to see without a microscope, yet each one is alive and busy. So what is inside a single cell? Let's open one up."},
+ {"id":"tissue","text":"Zoom into the lining of your cheek, and you see cells lying side by side like paving stones. Each has a thin border, and a dark spot in the middle. Cells like these join together to form tissues."},
+ {"id":"overview","text":"Now let's cut one cell open. Inside, you find tiny parts called organelles, each with its own job. They float in a jelly-like fluid called the cytoplasm. Let's meet them one by one, from the outside in."},
+ {"id":"membrane","text":"First, the cell membrane, the gatekeeper. It is made of two layers of fat-like molecules called phospholipids. Protein channels pass through it. They let the right things in, like nutrients and water, and keep the wrong things out."},
+ {"id":"nucleus","text":"Next, the nucleus, the control center. It holds your DNA, the instructions for building and running the cell. Its envelope has tiny pores that let messages in and out. Inside sits the nucleolus, which helps make ribosomes. Almost every cell has a nucleus. Mature red blood cells are an exception."},
+ {"id":"mito","text":"Now the mitochondria, the power plants. They use oxygen and the sugar from your food to make ATP, the energy that powers the cell. Their inner membrane is folded many times, which gives more space to make energy. Fun fact, mitochondria even carry a little DNA of their own."},
+ {"id":"factory","text":"Then the protein factory. Ribosomes read the instructions and build proteins. Many sit on the rough endoplasmic reticulum, which folds the new proteins. Small bubbles carry them to the Golgi apparatus, which sorts, packs and ships them to where they are needed."},
+ {"id":"cleaners","text":"And the lysosomes, the clean-up crew. They hold strong enzymes that break down waste and worn-out parts, so the cell stays healthy."},
+ {"id":"recap","text":"Remember it like this. The membrane guards, the nucleus controls, mitochondria make energy, and ribosomes with the Golgi build and ship proteins. Next time, we go inside the nucleus, to see how DNA makes proteins."}
+]
