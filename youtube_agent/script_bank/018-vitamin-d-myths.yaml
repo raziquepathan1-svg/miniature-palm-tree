@@ -68,7 +68,7 @@ plan:
     - layout: "myth_fact"
       heading: "More Is Better"
       points: ["Higher doses mean more benefit", "Too much can harm you"]
-      footage_query: "pile of pills table"
+      footage_query: "vitamin bottle close up"
       narration: >-
         Myth one: if some vitamin D is good, more must be better. Fact: once you have enough, extra vitamin D does not give
         more benefit. And too much can be harmful. For most adults, the safe upper limit from supplements is four thousand
@@ -101,7 +101,7 @@ plan:
     - layout: "myth_fact"
       heading: "Skip the Sunscreen"
       points: ["You need sunburn for vitamin D", "Protect your skin from damage"]
-      footage_query: "applying sunscreen beach"
+      footage_query: "sunscreen bottle close up"
       narration: >-
         Myth three: you should skip sunscreen to get enough vitamin D. Fact: sun damage raises the risk of skin cancer, and
         experts do not recommend getting extra sun to make vitamin D. In real life, people who use sunscreen still make some
@@ -280,3 +280,17 @@ plan:
       footage_query: "family outdoor walk"
       narration: >-
         We bust four more myths in our full video, on the Health Support Studio YouTube channel.
+story:  # owner Nov 9: movie-style suspense (a clearly hypothetical case, resolved only with facts from this video)
+  open: >-
+    Imagine Sam. Every morning he takes a handful of supplements, because he thinks more vitamin D is always better. By
+    the end of this video, you will know whether that is true, and what Sam should do instead.
+  twist: >-
+    Remember Sam? Here is the twist. Too much vitamin D raises the calcium in your blood, and it usually comes from very
+    high dose supplements taken for a long time.
+  end: >-
+    So what should Sam do? Get vitamin D from food first, take a supplement only if he needs one, and stay under the safe
+    upper limit.
+  short_cliff: >-
+    Sam takes a big dose of vitamin D every day, thinking more is better. Is that safe?
+  reel_answer: >-
+    The answer: no. Too much vitamin D raises the calcium in your blood, and can cause nausea, weakness and kidney stones. It usually comes from very high dose supplements.
