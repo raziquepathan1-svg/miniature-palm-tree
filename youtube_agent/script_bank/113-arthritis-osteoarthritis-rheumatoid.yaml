@@ -1,0 +1,176 @@
+queue_topic: "Arthritis: osteoarthritis or rheumatoid arthritis? Signs, treatment, and myths"
+style: "Myth vs Fact"
+sources:
+  - "CDC, Arthritis Types: https://www.cdc.gov/arthritis/types/index.html"
+  - "NIAMS, Osteoarthritis: https://www.niams.nih.gov/health-topics/osteoarthritis"
+  - "NIAMS, Rheumatoid Arthritis: https://www.niams.nih.gov/health-topics/rheumatoid-arthritis"
+plan:
+  topic: "Arthritis: osteoarthritis or rheumatoid arthritis? Signs, treatment, and myths"
+  title: "Arthritis: Osteoarthritis vs Rheumatoid, Signs and Myths"
+  description: |-
+    Sore, stiff joints are not always just wear and tear. Osteoarthritis and rheumatoid arthritis are very different conditions with different treatments, and early care for rheumatoid arthritis can protect your joints. Learn how to tell them apart, the myths about cracking knuckles and exercise, what helps, when to see a doctor, and the signs of a joint emergency.
+
+    In this video:
+    • Osteoarthritis: wear and tear
+    • Rheumatoid arthritis: an autoimmune disease
+    • Clues to tell them apart
+    • Myths and what really helps
+    • When to see a doctor, and when to go to the ER
+
+    #Arthritis #Osteoarthritis #RheumatoidArthritis #JointPain #HealthEducation
+  tags: ["arthritis", "osteoarthritis", "rheumatoid arthritis", "osteoarthritis vs rheumatoid arthritis", "arthritis symptoms", "joint pain and stiffness", "morning stiffness", "does cracking knuckles cause arthritis", "arthritis exercise", "arthritis treatment", "autoimmune arthritis", "when to see a rheumatologist", "health education"]
+  thumbnail_text: "WEAR OR AUTOIMMUNE?"
+  thumbnail_highlight: "AUTOIMMUNE"
+  thumbnail_photo_query: "older woman rubbing painful hands"
+  playlist: "Older Adults & Caregiving"
+  scenes:
+    - layout: "title"
+      heading: "Arthritis: Two Different Types"
+      points: ["Osteoarthritis and rheumatoid arthritis"]
+      footage_query: "older woman rubbing painful hands"
+      narration: >-
+        Stiff, achy joints. Many people shrug it off as getting older. But arthritis is not one disease. There are over one
+        hundred types, and the two most common, osteoarthritis and rheumatoid arthritis, are very different. One is mainly wear
+        and tear. The other is an autoimmune disease that needs early treatment. Here is how to tell them apart.
+    - layout: "big_number"
+      heading: "Very Common"
+      points: ["Millions", "of US adults have arthritis"]
+      footage_query: "group of older adults walking"
+      narration: >-
+        Arthritis is very common. The CDC estimates that about one in five American adults has been told they have arthritis, which
+        is tens of millions of people. It is a leading cause of disability. And it is not only in older adults. Arthritis can affect
+        young adults, and even children.
+    - layout: "bullets"
+      heading: "Osteoarthritis"
+      points: ["The most common type", "Cartilage in the joint wears down", "Knees, hips, hands, spine", "Pain worse with activity"]
+      footage_query: "older man holding sore knee"
+      narration: >-
+        Osteoarthritis is the most common type. Over time, the smooth cartilage that cushions the ends of the bones in a joint
+        wears down, and the bone beneath is affected. It often affects the knees, hips, hands, and spine. Pain usually gets worse
+        with activity and eases with rest, and the stiffness in the morning usually lasts less than thirty minutes.
+    - layout: "bullets"
+      heading: "Risk Factors for Osteoarthritis"
+      points: ["Older age", "Past joint injury", "Extra body weight", "Family history, repeated joint stress"]
+      footage_query: "doctor talking patient knee"
+      narration: >-
+        Osteoarthritis becomes more common with age, but age is not the only cause. A past joint injury, extra body weight, which
+        puts more load on the knees and hips, repeated stress on a joint from work or sport, and family history all raise the
+        risk. Many of these can be changed, and that is why staying active and maintaining a healthy weight help.
+    - layout: "bullets"
+      heading: "Rheumatoid Arthritis"
+      points: ["An autoimmune disease", "Immune system attacks the joint lining", "Often both hands, wrists, or feet", "Morning stiffness over an hour"]
+      footage_query: "woman stretching stiff hands morning"
+      narration: >-
+        Rheumatoid arthritis, or RA, is an autoimmune disease. The immune system mistakenly attacks the lining of the joints,
+        causing pain, swelling, warmth, and stiffness. It often affects the small joints of the hands, wrists, and feet on both sides
+        of the body, and morning stiffness often lasts an hour or longer. It can also cause tiredness and a low fever.
+    - layout: "warning"
+      heading: "Why Early Treatment Matters"
+      points: ["RA can damage joints permanently", "Can affect eyes, lungs, and heart", "Treatment works best early", "See a doctor within weeks"]
+      footage_query: "doctor looking at hand xray"
+      narration: >-
+        Rheumatoid arthritis is not just a joint problem. If it is not treated, it can permanently damage the joints, and it can affect
+        other parts of the body, like the eyes, lungs, and heart. Starting treatment early, ideally within the first months of
+        symptoms, gives the best chance of protecting your joints. If you have swollen joints with long morning stiffness, see a doctor.
+    - layout: "myth_fact"
+      heading: "Does Cracking Knuckles Cause It?"
+      points: ["Cracking knuckles causes arthritis", "Studies show no link to arthritis"]
+      footage_query: "person cracking knuckles"
+      narration: >-
+        Myth one: cracking your knuckles gives you arthritis. Fact: studies have not found that knuckle cracking causes arthritis. The
+        popping sound is gas bubbles in the joint fluid. If cracking is painful or comes with swelling, though, get it checked.
+        Not every noisy joint is a problem, but pain and swelling deserve attention.
+    - layout: "myth_fact"
+      heading: "Should You Avoid Exercise?"
+      points: ["Exercise damages arthritic joints", "Movement protects joints and eases pain"]
+      footage_query: "older adults gentle exercise class"
+      narration: >-
+        Myth two: if you have arthritis, you should rest and avoid exercise. Fact: moving is one of the best treatments. Low impact
+        activity like walking, swimming, and cycling, along with strength and stretching exercises, strengthens the muscles that
+        support your joints, eases pain, and improves function. A physical therapist can help you start safely.
+    - layout: "myth_fact"
+      heading: "Does Weather Cause It?"
+      points: ["Cold weather causes arthritis", "Weather may change symptoms, but not cause it"]
+      footage_query: "older woman looking out window rain"
+      narration: >-
+        Myth three: cold or damp weather causes arthritis, and moving to a warmer place will cure it. Fact: many people notice more
+        aching when the weather changes, but weather does not cause arthritis, and moving does not cure it. What helps is staying
+        active, managing weight, and following your treatment plan, whatever the climate.
+    - layout: "bullets"
+      heading: "Treating Osteoarthritis"
+      points: ["Exercise and weight loss", "Physical therapy", "Pain relievers, creams, or injections", "Joint replacement for severe cases"]
+      footage_query: "physical therapist helping patient knee"
+      narration: >-
+        There is no cure for osteoarthritis, but many treatments help. Exercise, physical therapy, and losing extra weight are the
+        foundation. Pain relievers like acetaminophen, topical anti inflammatory creams, and, if safe for you, anti inflammatory pills
+        can ease pain. Injections may help for some. For severe cases that do not respond, joint replacement can be life changing.
+    - layout: "bullets"
+      heading: "Treating Rheumatoid Arthritis"
+      points: ["Disease modifying medicines", "Biologic and targeted medicines", "Short term steroids for flares", "Regular checkups, blood tests"]
+      footage_query: "rheumatologist talking patient"
+      narration: >-
+        Rheumatoid arthritis is treated by a specialist called a rheumatologist, usually with medicines that slow the disease, like
+        methotrexate, and newer biologic or targeted medicines for those who need them. Steroids may be used for short periods to calm
+        flares. These medicines affect the immune system, so regular checkups and blood tests are important, and your doctor will
+        talk to you about vaccines and infections.
+    - layout: "warning"
+      heading: "See a Doctor If"
+      points: ["Swollen, warm joints", "Morning stiffness over an hour", "Joint pain lasting several weeks", "Fatigue or fever with joint pain"]
+      footage_query: "doctor talking patient office"
+      narration: >-
+        See a doctor if you have swollen, warm, or tender joints, if morning stiffness lasts more than an hour, if joint pain
+        lasts several weeks, or if you have joint pain with fatigue, a fever, or unexplained weight loss. Early diagnosis makes a
+        difference, especially for inflammatory types like rheumatoid arthritis.
+    - layout: "warning"
+      heading: "Go to the ER"
+      points: ["One joint hot, red, very painful, with fever", "Cannot move or bear weight", "Joint pain after an injury", "Chest pain or trouble breathing"]
+      footage_query: "ambulance emergency"
+      narration: >-
+        Go to the emergency room right away if one joint is suddenly hot, red, swollen, and very painful, especially with a fever,
+        because it may be an infected joint, which needs urgent treatment. Go too if you cannot move or bear weight on a joint after an
+        injury. Call nine one one for chest pain or trouble breathing.
+    - layout: "outro"
+      heading: "Remember"
+      points: ["Not all arthritis is the same", "Stay active, protect your joints", "Swollen joints and long stiffness: see a doctor"]
+      footage_query: "family at home together"
+      narration: >-
+        Remember: not all arthritis is the same, stay active and protect your joints, and see a doctor for swollen joints and long
+        morning stiffness. Share this with someone who thinks joint pain is just aging. This video is for education only, not medical
+        advice. Like and subscribe to Health Support Studio for a new health video every day.
+  short_title: "Joint pain: wear and tear or autoimmune? #Shorts"
+  short_caption: "Swollen joints and long morning stiffness need a doctor, because rheumatoid arthritis needs early treatment. Educational only, not medical advice."
+  short_scenes:
+    - layout: "title"
+      heading: "Joint Pain Is Not Just Aging"
+      points: ["Two types of arthritis"]
+      footage_query: "older woman rubbing painful hands"
+      narration: >-
+        Stiff, achy joints. Is it just aging? Not always.
+    - layout: "warning"
+      heading: "See a Doctor If"
+      points: ["Swollen, warm joints", "Morning stiffness over an hour", "One hot, red joint with fever: ER"]
+      footage_query: "rheumatologist talking patient"
+      narration: >-
+        Osteoarthritis is wear and tear, and exercise helps. Rheumatoid arthritis is an autoimmune disease, and starting treatment
+        early protects your joints. See a doctor for swollen, warm joints or morning stiffness that lasts more than an hour. Go to the
+        emergency room for a hot, red, very painful joint with a fever.
+    - layout: "outro"
+      heading: "Full Video"
+      points: ["On YouTube"]
+      footage_query: "family at home together"
+      narration: >-
+        Learn more in our full video on the Health Support Studio channel.
+story:
+  open: >-
+    Imagine Gloria. Her hands are swollen and stiff every morning for over an hour, and she thinks it is just getting older, so she
+    avoids the doctor. By the end of this video, you will know why that could be a mistake.
+  twist: >-
+    Remember Gloria? Here is the twist. Swollen joints with long morning stiffness can be rheumatoid arthritis, an autoimmune
+    disease, and starting treatment early protects the joints.
+  end: >-
+    So what should Gloria do? See her doctor soon, ask about a rheumatologist, stay active with gentle exercise, and go to the ER
+    for a hot, red, very painful joint with a fever.
+  short_cliff: >-
+    Gloria's hands are stiff and swollen for over an hour every morning. Is it just aging?
+  reel_answer: >-
+    The answer: not always. Swollen joints with morning stiffness over an hour can be rheumatoid arthritis, and early treatment protects your joints.

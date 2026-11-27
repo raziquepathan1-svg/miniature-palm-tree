@@ -1,0 +1,175 @@
+queue_topic: "Restless legs syndrome and night leg cramps: causes, what helps, and when to see a doctor"
+style: "Top Questions"
+sources:
+  - "NINDS, Restless Legs Syndrome: https://www.ninds.nih.gov/health-information/disorders/restless-legs-syndrome"
+  - "MedlinePlus, Leg Cramps: https://medlineplus.gov/ency/article/003194.htm"
+  - "NHLBI, Restless Legs Syndrome: https://www.nhlbi.nih.gov/health/restless-legs-syndrome"
+plan:
+  topic: "Restless legs syndrome and night leg cramps: causes, what helps, and when to see a doctor"
+  title: "Restless Legs or Night Leg Cramps? Causes and What Helps"
+  description: |-
+    An urge to move your legs that will not let you sleep, or a sudden painful cramp that wakes you at night. Restless legs syndrome and night leg cramps are different problems with different treatments. Learn how to tell them apart, the common causes, including low iron and some medicines, what helps, and the signs that mean see a doctor or go to the ER.
+
+    In this video:
+    • Restless legs vs leg cramps
+    • Signs and common causes
+    • What helps at home
+    • Myths about cramps and pickle juice
+    • When to see a doctor, and when to go to the ER
+
+    #RestlessLegs #LegCramps #Sleep #HealthTips #HealthEducation
+  tags: ["restless legs syndrome", "restless legs", "leg cramps at night", "night leg cramps", "how to stop leg cramps", "restless legs and iron", "restless legs treatment", "leg cramps causes", "cant sleep legs moving", "calf cramps", "dvt vs leg cramp", "when to see a doctor for leg cramps", "health education"]
+  thumbnail_text: "LEGS WON'T REST?"
+  thumbnail_highlight: "LEGS"
+  thumbnail_photo_query: "woman rubbing leg bed night"
+  playlist: "Healthy Habits & Prevention"
+  scenes:
+    - layout: "title"
+      heading: "Restless Legs or Cramps?"
+      points: ["Causes and what helps"]
+      footage_query: "woman rubbing leg bed night"
+      narration: >-
+        It is midnight, and your legs will not settle. Maybe you feel a creepy, crawly urge to move them. Or maybe a sudden,
+        painful cramp jolts you awake. These are two different problems, with different causes and different fixes. Here is how
+        to tell them apart, what helps, and when to see a doctor.
+    - layout: "bullets"
+      heading: "Restless Legs Syndrome"
+      points: ["Strong urge to move the legs", "Uncomfortable crawling or tingling feeling", "Worse at rest, in the evening", "Relief by moving"]
+      footage_query: "woman sitting bed legs moving"
+      narration: >-
+        Restless legs syndrome, or RLS, is a condition that causes a strong urge to move your legs, often with an uncomfortable
+        creeping, crawling, tingling, or pulling feeling. It starts or gets worse when you rest, especially in the evening or at
+        night, and it gets better when you move. It can make it hard to fall asleep, and leave you tired the next day.
+    - layout: "bullets"
+      heading: "Night Leg Cramps"
+      points: ["A sudden, tight, painful muscle spasm", "Often in the calf or foot", "Lasts seconds to minutes", "Leaves soreness afterward"]
+      footage_query: "man holding calf muscle pain"
+      narration: >-
+        A night leg cramp is different. It is a sudden, painful tightening of a muscle, most often in the calf, but sometimes in
+        the foot or thigh. It can last from a few seconds to several minutes, and it can leave the muscle sore for hours. Cramps are
+        very common, especially as we get older, and in pregnancy.
+    - layout: "myth_fact"
+      heading: "Are They the Same?"
+      points: ["Restless legs and leg cramps are the same", "RLS is an urge; cramps are spasms"]
+      footage_query: "doctor talking to patient"
+      narration: >-
+        Myth one: restless legs and leg cramps are the same thing. Fact: they feel different and have different causes. In
+        restless legs, you feel an uncomfortable urge to move, and moving helps. In a cramp, the muscle locks into a painful
+        knot, and you have to stretch it. Some people can have both, so be clear when you describe it to your doctor.
+    - layout: "bullets"
+      heading: "Causes of Restless Legs"
+      points: ["Low iron, even with normal blood count", "Pregnancy, kidney disease", "Some medicines", "Runs in families"]
+      footage_query: "doctor looking at blood test results"
+      narration: >-
+        Restless legs often runs in families. Low iron in the body is a common cause, even when the blood count looks normal, and
+        it is more common in pregnancy and in people with kidney disease. Some medicines can make it worse, including certain
+        antihistamines, anti nausea drugs, and antidepressants. Poor sleep, and too much caffeine, can also make it worse.
+    - layout: "bullets"
+      heading: "Causes of Leg Cramps"
+      points: ["Overusing or tired muscles", "Dehydration", "Sitting or standing too long", "Some medicines, pregnancy, older age"]
+      footage_query: "older woman stretching legs"
+      narration: >-
+        Night cramps are often linked to tired or overused muscles, dehydration, and sitting or standing in one position for a long
+        time. Some medicines, like water pills and statins, can cause them. They are also common in pregnancy and with age.
+        Sometimes cramps come from a nerve or circulation problem, or low levels of minerals in the blood, so your doctor may check.
+    - layout: "myth_fact"
+      heading: "Does Pickle Juice Work?"
+      points: ["Pickle juice or tonic water cures cramps", "Evidence is weak; stretching helps"]
+      footage_query: "woman stretching calf wall"
+      narration: >-
+        Myth two: pickle juice, quinine, or tonic water will stop leg cramps. Fact: the evidence is weak, and quinine, which was
+        once used, is not recommended for leg cramps because it can cause serious side effects. Stretching and walking are the
+        simple things that actually help. Ask your doctor before trying supplements.
+    - layout: "bullets"
+      heading: "Easing a Cramp Now"
+      points: ["Stretch the muscle gently", "Walk it off", "Massage the area", "Use warmth afterward"]
+      footage_query: "man stretching calf at home"
+      narration: >-
+        To ease a cramp, stretch the muscle gently. For a calf cramp, straighten your leg and pull your toes up toward your
+        shin, or stand and press your foot flat on the floor. Walk around, and massage the muscle. A warm cloth can help it relax
+        afterward. Drink water through the day, and wear shoes with good support.
+    - layout: "bullets"
+      heading: "Easing Restless Legs"
+      points: ["Walk, stretch, or take a warm bath", "Regular exercise earlier in the day", "Regular sleep schedule", "Cut back on caffeine"]
+      footage_query: "woman stretching evening living room"
+      narration: >-
+        For restless legs, try walking or stretching when the urge hits, a warm bath, and a massage. Regular exercise earlier in the
+        day helps, but very intense exercise right before bed may make it worse. Keep a regular sleep schedule, and cut back on
+        caffeine and nicotine. Do not take iron supplements on your own, because too much iron is harmful.
+    - layout: "myth_fact"
+      heading: "Is It Just Nerves?"
+      points: ["Restless legs are anxiety or in your head", "RLS is a real medical condition"]
+      footage_query: "woman talking to doctor"
+      narration: >-
+        Myth three: restless legs is just anxiety, or something you are imagining. Fact: restless legs syndrome is a real,
+        recognized medical condition, linked to how the brain uses dopamine and iron. It can seriously affect sleep, mood, and
+        daily life. If you are told it is nothing, ask for a proper evaluation, and mention your medicines and sleep.
+    - layout: "bullets"
+      heading: "Treatments From a Doctor"
+      points: ["Check iron levels", "Review your medicines", "Medicines for restless legs", "Treat related conditions"]
+      footage_query: "doctor prescribing treatment"
+      narration: >-
+        A doctor can check your iron level, review the medicines you take, and look for conditions like kidney disease,
+        diabetes, and nerve problems. If you need treatment, there are medicines for restless legs, and your doctor will choose
+        carefully, because some can cause side effects, or make symptoms worse over time if used for years.
+    - layout: "warning"
+      heading: "Not a Cramp: Blood Clot"
+      points: ["One leg swollen, red, warm, painful", "Pain that does not ease when you stretch", "Often after surgery or long travel", "Call 911 for chest pain or breathlessness"]
+      footage_query: "doctor examining patient leg"
+      narration: >-
+        Do not assume every leg pain is a cramp. A blood clot in a deep leg vein can cause pain, swelling, warmth, and redness in
+        one leg, and the pain does not ease when you stretch. It is more likely after surgery, long travel, or being in bed. See a
+        doctor right away. If you have sudden chest pain or trouble breathing, call nine one one.
+    - layout: "warning"
+      heading: "See a Doctor If"
+      points: ["Symptoms keep you from sleeping", "Cramps happen very often", "Weakness, numbness, or muscle wasting", "Swelling or skin changes"]
+      footage_query: "doctor talking patient office"
+      narration: >-
+        See a doctor if symptoms are keeping you awake most nights, if cramps are frequent or severe, or if you have leg weakness,
+        numbness, swelling, or skin changes. Also tell your doctor if symptoms started after a new medicine. Many causes are
+        treatable once found.
+    - layout: "outro"
+      heading: "Remember"
+      points: ["Restless legs: urge to move", "Cramps: stretch and drink water", "One swollen, painful leg: see a doctor"]
+      footage_query: "family at home together"
+      narration: >-
+        Remember: restless legs cause an urge to move, cramps are sudden spasms you can stretch out, and one swollen, painful
+        leg needs a doctor right away. Share this with someone who cannot sleep because of their legs. This video is for
+        education only, not medical advice. Like and subscribe to Health Support Studio for a new health video every day.
+  short_title: "Leg pain at night: cramp or blood clot? #Shorts"
+  short_caption: "Most night cramps are harmless, but one swollen, painful leg needs a doctor. Educational only, not medical advice."
+  short_scenes:
+    - layout: "title"
+      heading: "Leg Pain at Night?"
+      points: ["Cramp or something more?"]
+      footage_query: "man holding calf muscle pain"
+      narration: >-
+        A sudden leg cramp at night. Most are harmless, but not all leg pain is a cramp.
+    - layout: "warning"
+      heading: "See a Doctor If"
+      points: ["One leg swollen, red, warm", "Pain does not ease with stretching", "Chest pain: call 911"]
+      footage_query: "doctor examining patient leg"
+      narration: >-
+        For a cramp, stretch the muscle, walk around, and drink water. But one leg that is swollen, red, warm, and painful, or
+        pain that does not ease with stretching, can be a blood clot, and needs a doctor right away. Call nine one one for chest
+        pain or trouble breathing. Restless legs is real, and low iron is a common cause.
+    - layout: "outro"
+      heading: "Full Video"
+      points: ["On YouTube"]
+      footage_query: "family at home together"
+      narration: >-
+        Learn more in our full video on the Health Support Studio channel.
+story:
+  open: >-
+    Imagine Hugo. Every night his calf cramps up and wakes him, and last night his left leg was also swollen and sore, but
+    he thinks it is just another cramp. By the end of this video, you will know why that could be a mistake.
+  twist: >-
+    Remember Hugo? Here is the twist. One swollen, red, painful leg that does not ease with stretching can be a blood clot,
+    and that needs a doctor right away.
+  end: >-
+    So what should Hugo do? Get his swollen leg checked right away, call nine one one for chest pain or trouble breathing,
+    and for ordinary cramps, stretch, walk, and drink water.
+  short_cliff: >-
+    Hugo's calf cramps every night, and now his leg is swollen too. Is it still just a cramp?
+  reel_answer: >-
+    The answer: not necessarily. One swollen, red, painful leg can be a blood clot, and needs a doctor right away.

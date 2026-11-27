@@ -1,0 +1,176 @@
+queue_topic: "Food allergies in children: signs, anaphylaxis, early peanut introduction, and what to do"
+style: "Warning Signs"
+sources:
+  - "NIAID, Food Allergy: https://www.niaid.nih.gov/diseases-conditions/food-allergy"
+  - "CDC, Food Allergies in Schools and Children: https://www.cdc.gov/food-allergies/about/index.html"
+  - "NIAID, Addendum Guidelines for the Prevention of Peanut Allergy: https://www.niaid.nih.gov/diseases-conditions/guidelines-clinicians-and-patients-food-allergy"
+plan:
+  topic: "Food allergies in children: signs, anaphylaxis, early peanut introduction, and what to do"
+  title: "Food Allergy in Kids: Signs, Anaphylaxis and Early Peanut Facts"
+  description: |-
+    A rash after a meal, vomiting after a snack, or a swollen lip. Food allergies affect millions of children, and some reactions can be life threatening. Learn the common signs, how to recognize anaphylaxis, why epinephrine is the first treatment, what current guidelines say about introducing peanut early, the myths to skip, and when to call 911.
+
+    In this video:
+    • Common food allergies and signs
+    • Anaphylaxis: what to do first
+    • Early peanut introduction guidance
+    • Myths about outgrowing and mild reactions
+    • When to see an allergist, and when to call 911
+
+    #FoodAllergy #Anaphylaxis #PeanutAllergy #KidsHealth #HealthEducation
+  tags: ["food allergy in kids", "food allergy symptoms", "anaphylaxis signs", "epinephrine auto injector", "peanut allergy", "early peanut introduction", "common food allergens", "child food allergy hives", "milk allergy in babies", "do kids outgrow food allergies", "food allergy vs intolerance", "when to call 911 for allergic reaction", "health education"]
+  thumbnail_text: "NEVER WAIT AND SEE"
+  thumbnail_highlight: "WAIT"
+  thumbnail_photo_query: "child allergic reaction parent worried"
+  playlist: "Kids & Family Health"
+  scenes:
+    - layout: "title"
+      heading: "Food Allergy in Kids"
+      points: ["Signs, anaphylaxis, and what to do"]
+      footage_query: "child allergic reaction parent worried"
+      narration: >-
+        Your child eats a new food, and soon there are hives on the face, or a swollen lip, or repeated vomiting. Is it an allergy?
+        Food allergies affect millions of children, and while most reactions are mild, some can be life threatening. Here are the
+        signs, the first thing to do in a severe reaction, and the current advice on peanut.
+    - layout: "bullets"
+      heading: "What Is a Food Allergy?"
+      points: ["The immune system overreacts to a food protein", "Reaction can start within minutes", "Even a tiny amount can trigger it", "Different from food intolerance"]
+      footage_query: "doctor talking to mother and child"
+      narration: >-
+        A food allergy happens when the immune system mistakes a harmless food protein for a threat and reacts. The reaction can
+        start within minutes, and even a tiny amount of the food may cause it. This is different from a food intolerance, like
+        lactose intolerance, which is a digestion problem and not dangerous.
+    - layout: "bullets"
+      heading: "Common Food Allergens"
+      points: ["Milk and egg", "Peanut and tree nuts", "Soy and wheat", "Fish, shellfish, and sesame"]
+      footage_query: "mother reading food label"
+      narration: >-
+        Nine foods cause most allergic reactions in the United States: milk, egg, peanut, tree nuts, soy, wheat, fish, shellfish,
+        and sesame. Milk and egg allergies are most common in young children, while peanut, tree nut, and shellfish allergies tend
+        to last longer. Any food can cause a reaction, so tell the doctor about anything that worries you.
+    - layout: "warning"
+      heading: "Signs of a Reaction"
+      points: ["Hives, itching, swelling of lips or face", "Vomiting, belly pain, diarrhea", "Coughing, wheezing, hoarse voice", "Pale, floppy, or very sleepy"]
+      footage_query: "child sitting table scratching"
+      narration: >-
+        Signs of a food allergy reaction include hives or an itchy rash, swelling of the lips, face, or tongue, vomiting, belly pain,
+        or diarrhea, a runny nose and sneezing, and coughing or wheezing. A hoarse voice, trouble swallowing, a pale or bluish color, or
+        a child who becomes floppy or very sleepy are more serious. Babies may just vomit, or become very fussy.
+    - layout: "warning"
+      heading: "Anaphylaxis"
+      points: ["A severe, rapid reaction", "Two or more body areas involved", "Can block breathing or lower blood pressure", "An emergency"]
+      footage_query: "ambulance emergency"
+      narration: >-
+        Anaphylaxis is a severe allergic reaction that can come on within minutes. It usually involves two or more parts of the body,
+        such as hives with vomiting, or swelling with trouble breathing. It can block the airway and drop blood pressure, and it can be
+        fatal if not treated quickly. Any sign of trouble breathing, swelling of the throat, or fainting after a food is an emergency.
+    - layout: "warning"
+      heading: "Epinephrine First"
+      points: ["Give epinephrine right away", "Then call 911", "Lay the child flat, legs raised", "A second dose may be needed"]
+      footage_query: "person calling phone emergency"
+      narration: >-
+        If you suspect anaphylaxis, give epinephrine right away, using an auto injector in the outer thigh, and then call nine one one.
+        Lay the child flat with legs raised, or let them sit up if they are struggling to breathe. If there is no improvement in
+        five to fifteen minutes, a second dose may be given. Go to the emergency room even if the child looks better.
+    - layout: "myth_fact"
+      heading: "Wait and See?"
+      points: ["Wait to see if a reaction gets worse", "Never wait: give epinephrine early"]
+      footage_query: "mother holding child worried"
+      narration: >-
+        Myth one: if a reaction seems mild, wait and see. Fact: reactions can get worse very quickly, and delaying epinephrine is
+        linked to worse outcomes. Antihistamines may ease itching or hives, but they do not treat anaphylaxis, and they should not
+        replace epinephrine. If in doubt, give it. Epinephrine is safe when used for a suspected reaction.
+    - layout: "bullets"
+      heading: "Early Peanut Introduction"
+      points: ["Ask your child's doctor first", "Severe eczema or egg allergy: ask first", "Others can start around 6 months", "Use a safe form, never whole nuts"]
+      footage_query: "baby eating puree highchair"
+      narration: >-
+        Current guidelines from the National Institutes of Health recommend introducing peanut foods early, to lower the chance of
+        peanut allergy. Babies with severe eczema or an egg allergy should be checked by their doctor first, and may need testing. For
+        other babies, peanut foods can be introduced at home, around six months, once solid foods have started. Use thinned peanut butter
+        or peanut powder, never whole peanuts or spoonfuls of thick peanut butter, which can cause choking.
+    - layout: "myth_fact"
+      heading: "Avoid Foods in Pregnancy?"
+      points: ["Avoiding allergy foods prevents allergies", "Delaying foods can raise the risk"]
+      footage_query: "pregnant woman healthy meal"
+      narration: >-
+        Myth two: to prevent allergies, avoid allergy causing foods during pregnancy, breastfeeding, and infancy. Fact: research
+        has shown that avoiding foods does not prevent allergies, and delaying peanut in babies may actually raise the risk. Follow
+        your doctor's advice about when to introduce foods, and offer a variety of foods.
+    - layout: "myth_fact"
+      heading: "Will They Outgrow It?"
+      points: ["Children always outgrow food allergies", "Milk, egg often fade; peanut often stays"]
+      footage_query: "child eating healthy snack"
+      narration: >-
+        Myth three: children always outgrow food allergies. Fact: many children outgrow milk and egg allergies, but many peanut, tree nut,
+        fish, and shellfish allergies last for life. Do not try to test this at home. An allergist can do tests, and sometimes a
+        supervised food challenge, to find out if it is safe to eat the food again.
+    - layout: "bullets"
+      heading: "Living With Food Allergy"
+      points: ["Read every food label", "Carry epinephrine, two doses", "Make an action plan", "Tell school, relatives, and caregivers"]
+      footage_query: "mother packing lunch box"
+      narration: >-
+        If your child has a food allergy, read every food label, every time, because ingredients change. Carry epinephrine auto
+        injectors, two at all times, and check the expiration date. Make a written emergency action plan with the doctor, and share it
+        with school, relatives, babysitters, and coaches. Teach your child, in age appropriate ways, to ask about food and never share it.
+    - layout: "warning"
+      heading: "See an Allergist"
+      points: ["Hives or swelling after a food", "Repeated vomiting after the same food", "Before you try that food again", "Testing alone does not diagnose"]
+      footage_query: "allergist talking to family"
+      narration: >-
+        See your child's doctor, or an allergist, if your child has hives, swelling, or vomiting after eating, and before giving that
+        food again. A skin or blood test alone does not diagnose a food allergy, because a positive test can be present in people
+        who eat the food with no problem. An allergist will use your child's history, and tests, to decide.
+    - layout: "warning"
+      heading: "Call 911"
+      points: ["Trouble breathing or wheezing", "Swelling of tongue or throat", "Fainting, pale, floppy", "Repeated vomiting with hives"]
+      footage_query: "ambulance emergency"
+      narration: >-
+        Call nine one one if your child has trouble breathing, wheezing, a swollen tongue or throat, a weak or hoarse voice, fainting,
+        a pale or bluish color, or repeated vomiting with hives, after eating or touching a food. Use epinephrine first if it is
+        available, and stay with the child until help arrives.
+    - layout: "outro"
+      heading: "Remember"
+      points: ["Epinephrine first, then 911", "Never wait and see", "Talk to your doctor about early peanut"]
+      footage_query: "family at home together"
+      narration: >-
+        Remember: give epinephrine first and then call nine one one, never wait and see, and talk to your doctor about introducing
+        peanut early. Share this with a parent or a teacher. This video is for education only, not medical advice. Like and subscribe to
+        Health Support Studio for a new health video every day.
+  short_title: "Food allergy reaction? Epinephrine first #Shorts"
+  short_caption: "In a severe food allergy reaction, give epinephrine first and call 911. Educational only, not medical advice."
+  short_scenes:
+    - layout: "title"
+      heading: "Food Allergy Reaction?"
+      points: ["What to do first"]
+      footage_query: "child allergic reaction parent worried"
+      narration: >-
+        Your child ate something, and now there are hives, swelling, and trouble breathing. What do you do first?
+    - layout: "warning"
+      heading: "Epinephrine First"
+      points: ["Give epinephrine right away", "Then call 911", "Go to the ER even if better"]
+      footage_query: "person calling phone emergency"
+      narration: >-
+        In a severe reaction, give epinephrine right away, in the outer thigh, and then call nine one one. Lay the child flat. Do not
+        wait to see if it gets worse, and do not rely on antihistamines. Go to the emergency room, even if your child looks better.
+        Ask your doctor about introducing peanut early to lower the risk.
+    - layout: "outro"
+      heading: "Full Video"
+      points: ["On YouTube"]
+      footage_query: "family at home together"
+      narration: >-
+        Learn more in our full video on the Health Support Studio channel.
+story:
+  open: >-
+    Imagine Carmen. Her toddler ate a cookie with nuts, and now has hives and a hoarse voice, and Carmen wonders if she should wait
+    and see. By the end of this video, you will know the first thing to do, and why waiting is a mistake.
+  twist: >-
+    Remember Carmen? Here is the twist. Antihistamines do not treat anaphylaxis, and delaying epinephrine is linked to worse
+    outcomes, so the first move is epinephrine and then nine one one.
+  end: >-
+    So what should Carmen do? Give epinephrine right away, call nine one one, lay her child flat, and go to the ER even if
+    the child looks better. Later, she should see an allergist and make an action plan.
+  short_cliff: >-
+    Carmen's toddler has hives and a hoarse voice after a cookie. Should she wait and see?
+  reel_answer: >-
+    The answer: no. Give epinephrine right away, then call nine one one. Do not wait, and do not rely on antihistamines.

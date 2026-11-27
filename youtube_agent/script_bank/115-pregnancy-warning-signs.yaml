@@ -1,0 +1,177 @@
+queue_topic: "Pregnancy warning signs: urgent symptoms during pregnancy and after birth"
+style: "Warning Signs"
+sources:
+  - "CDC, Urgent Maternal Warning Signs (Hear Her): https://www.cdc.gov/hearher/maternal-warning-signs/index.html"
+  - "ACOG, Preeclampsia and High Blood Pressure During Pregnancy: https://www.acog.org/womens-health/faqs/preeclampsia-and-high-blood-pressure-during-pregnancy"
+  - "MedlinePlus, Pregnancy: https://medlineplus.gov/pregnancy.html"
+plan:
+  topic: "Pregnancy warning signs: urgent symptoms during pregnancy and after birth"
+  title: "Pregnancy Warning Signs: When to Call Your Doctor or 911"
+  description: |-
+    Most pregnancies go well, but some symptoms should never be ignored, during pregnancy and for up to a year after birth. Learn the urgent warning signs, including severe headache, vision changes, bleeding, and reduced baby movement, why preeclampsia matters, what is normal, the myths to skip, and when to call your doctor or 911. Trust your instincts, and speak up.
+
+    In this video:
+    • Normal changes and what is not normal
+    • Urgent warning signs
+    • Preeclampsia
+    • Baby movement and bleeding
+    • After birth: warning signs and mental health
+
+    #Pregnancy #PregnancyWarningSigns #Preeclampsia #WomensHealth #HealthEducation
+  tags: ["pregnancy warning signs", "pregnancy symptoms not to ignore", "preeclampsia signs", "when to go to the er when pregnant", "reduced baby movement", "bleeding during pregnancy", "postpartum warning signs", "urgent maternal warning signs", "headache in pregnancy", "swelling in pregnancy", "postpartum depression signs", "when to call your doctor pregnant", "health education"]
+  thumbnail_text: "DO NOT WAIT"
+  thumbnail_highlight: "WAIT"
+  thumbnail_photo_query: "pregnant woman holding belly worried"
+  playlist: "Emergencies & First Aid"
+  scenes:
+    - layout: "title"
+      heading: "Pregnancy Warning Signs"
+      points: ["When to call your doctor or 911"]
+      footage_query: "pregnant woman holding belly worried"
+      narration: >-
+        Most pregnancies go well. But sometimes something feels wrong, and it is hard to know whether to wait or call. Some symptoms
+        should never be ignored, during pregnancy and for up to a year after birth. Here are the urgent warning signs, what is
+        normal, and why you should trust your instincts and speak up.
+    - layout: "bullets"
+      heading: "What Is Usually Normal"
+      points: ["Nausea and tiredness early on", "Mild swelling in feet and ankles", "Backache and mild cramps", "Frequent urination"]
+      footage_query: "pregnant woman resting couch"
+      narration: >-
+        Many changes in pregnancy are normal. Nausea, tiredness, frequent urination, a backache, mild swelling of the feet and ankles
+        late in the day, and some mild cramping can all be part of a healthy pregnancy. Still, never feel embarrassed to call with a
+        question. Your care team would rather hear from you early.
+    - layout: "myth_fact"
+      heading: "Is Swelling Always Normal?"
+      points: ["All swelling in pregnancy is normal", "Sudden swelling of face or hands is not"]
+      footage_query: "pregnant woman checking swollen hands"
+      narration: >-
+        Myth one: swelling is always normal in pregnancy. Fact: mild swelling of the feet and ankles is common, but sudden or severe
+        swelling of the face or hands, or swelling in only one leg, is not normal. It can be a sign of preeclampsia or a blood
+        clot, and you should call your doctor right away.
+    - layout: "warning"
+      heading: "Urgent Warning Signs"
+      points: ["Severe headache that will not go away", "Changes in vision", "Fever of 100.4 or higher", "Severe belly pain or severe vomiting"]
+      footage_query: "pregnant woman headache"
+      narration: >-
+        The CDC lists urgent warning signs. They include a headache that does not go away or gets worse, dizziness or fainting,
+        changes in vision, a fever of one hundred point four degrees or higher, trouble breathing, chest pain or a fast heartbeat, severe
+        belly pain that does not go away, severe nausea and vomiting, and extreme swelling of the hands or face. Call your doctor
+        right away, or go to the emergency room.
+    - layout: "bullets"
+      heading: "What Is Preeclampsia?"
+      points: ["High blood pressure after 20 weeks", "Can harm mother and baby", "May cause headache, vision changes", "Needs close care"]
+      footage_query: "doctor checking blood pressure pregnant"
+      narration: >-
+        Preeclampsia is a serious condition that causes high blood pressure, usually after about twenty weeks of pregnancy, and
+        sometimes up to several weeks after delivery. It can harm the mother and the baby. Signs can include a severe headache,
+        vision changes, pain in the upper right belly, and sudden swelling. Some women have no symptoms, which is why blood pressure
+        checks at every visit matter.
+    - layout: "warning"
+      heading: "Baby Moving Less"
+      points: ["Know your baby's usual pattern", "Fewer or weaker movements: call", "Do not wait until tomorrow", "Your doctor can check right away"]
+      footage_query: "pregnant woman resting hands on belly"
+      narration: >-
+        Pay attention to your baby's movement. Later in pregnancy, you will learn your baby's usual pattern. If your baby moves less
+        than usual, or you notice a big change, or you cannot feel any movement, call your doctor or go to the hospital right away.
+        Do not wait until the next day, and do not worry about bothering anyone.
+    - layout: "myth_fact"
+      heading: "Do Babies Slow Down?"
+      points: ["Babies slow down, so ignore it", "A change in movement always needs a call"]
+      footage_query: "pregnant woman talking to doctor"
+      narration: >-
+        Myth two: it is normal for babies to slow down near the end of pregnancy, so I do not need to call. Fact: babies do not move
+        less as the due date gets closer. The type of movement may change, from big kicks to rolls, but a drop in the number or strength
+        of movements needs to be checked. Eating or drinking something cold is not a test.
+    - layout: "warning"
+      heading: "Bleeding or Fluid"
+      points: ["Any vaginal bleeding", "Fluid leaking from the vagina", "Regular contractions before 37 weeks", "Call your doctor right away"]
+      footage_query: "pregnant woman calling phone doctor"
+      narration: >-
+        Call your doctor right away for any vaginal bleeding during pregnancy, for fluid leaking from the vagina, which could mean
+        your water broke, or for regular, painful contractions before thirty seven weeks. Heavy bleeding, soaking a pad in an hour, is
+        an emergency, so go to the hospital or call nine one one.
+    - layout: "warning"
+      heading: "Chest Pain and Breathing"
+      points: ["Sudden shortness of breath", "Chest pain or a racing heart", "One swollen, painful, red leg", "Call 911"]
+      footage_query: "ambulance emergency"
+      narration: >-
+        Call nine one one for sudden trouble breathing, chest pain, a very fast heartbeat, coughing up blood, or fainting. Pregnancy
+        raises the risk of blood clots, so a leg that is swollen, red, painful, or warm, especially on one side, also needs urgent
+        care. These can be signs of a clot in the leg or lung, or a heart problem.
+    - layout: "bullets"
+      heading: "Daily Healthy Habits"
+      points: ["Go to every prenatal visit", "Take a prenatal vitamin with folic acid", "Avoid smoking, drugs, and alcohol", "Ask which medicines are safe"]
+      footage_query: "pregnant woman healthy breakfast"
+      narration: >-
+        Go to every prenatal visit, and take a prenatal vitamin with folic acid as your doctor advises. Do not smoke, use drugs, or
+        drink alcohol, because there is no known safe amount in pregnancy. Eat a balanced diet, avoid raw or undercooked meat and
+        unpasteurized foods, and ask your doctor before taking any medicine or supplement. Ask about the flu, Tdap, and other vaccines.
+    - layout: "myth_fact"
+      heading: "Eating for Two?"
+      points: ["You need to eat double", "Extra calories are modest, and only later"]
+      footage_query: "pregnant woman cooking vegetables"
+      narration: >-
+        Myth three: you are eating for two, so you need to eat double. Fact: you need only a few hundred extra calories a day, and only
+        in the second and third trimesters. Quality matters more than quantity. Gaining too much or too little weight can affect your health
+        and your baby's, so ask your doctor what is right for you.
+    - layout: "warning"
+      heading: "After the Baby Arrives"
+      points: ["Heavy bleeding or large clots", "Fever, severe headache, vision changes", "Chest pain, trouble breathing", "Swollen, painful, red leg"]
+      footage_query: "new mother holding baby home"
+      narration: >-
+        Warning signs do not stop after birth. For up to a year after delivery, call your doctor or seek care for heavy bleeding or large
+        clots, a fever, a severe headache or vision changes, chest pain, trouble breathing, a painful swollen leg, or overwhelming
+        tiredness. Preeclampsia can even begin after delivery, so do not ignore a bad headache.
+    - layout: "warning"
+      heading: "Mental Health Matters"
+      points: ["Sadness or anxiety that does not lift", "Thoughts of harming yourself or the baby", "Call or text 988", "Call 911 for immediate danger"]
+      footage_query: "mother sitting alone window"
+      narration: >-
+        Mood changes are common, but depression and anxiety during pregnancy and after birth are real medical conditions, and they are
+        treatable. Tell your doctor if you feel sad, hopeless, panicky, or cannot bond or sleep. If you have thoughts of hurting yourself
+        or your baby, call or text nine eight eight, or call nine one one right away.
+    - layout: "outro"
+      heading: "Remember"
+      points: ["Trust your instincts", "Call early, do not wait", "Severe headache, bleeding, or trouble breathing: urgent"]
+      footage_query: "family at home together"
+      narration: >-
+        Remember: trust your instincts, call early and do not wait, and treat a severe headache, bleeding, reduced baby movement, or
+        trouble breathing as urgent. Share this with someone who is pregnant or has just had a baby. This video is for education only,
+        not medical advice. Like and subscribe to Health Support Studio for a new health video every day.
+  short_title: "Pregnant? Warning signs you should never ignore #Shorts"
+  short_caption: "A severe headache, vision changes, bleeding, or less baby movement need a call right away. Educational only, not medical advice."
+  short_scenes:
+    - layout: "title"
+      heading: "Pregnant? Know the Signs"
+      points: ["Do not ignore these"]
+      footage_query: "pregnant woman holding belly worried"
+      narration: >-
+        Most pregnancies go well. But some symptoms should never be ignored.
+    - layout: "warning"
+      heading: "Call Right Away"
+      points: ["Severe headache, vision changes", "Bleeding or fluid leaking", "Baby moving less", "Trouble breathing or chest pain: 911"]
+      footage_query: "pregnant woman calling phone doctor"
+      narration: >-
+        Call your doctor right away for a headache that will not go away, vision changes, sudden swelling of the face or hands, any
+        vaginal bleeding, fluid leaking, a fever, severe belly pain, or if your baby moves less than usual. Call nine one one for chest
+        pain or trouble breathing. These signs matter during pregnancy and for a year after birth.
+    - layout: "outro"
+      heading: "Full Video"
+      points: ["On YouTube"]
+      footage_query: "family at home together"
+      narration: >-
+        Learn more in our full video on the Health Support Studio channel.
+story:
+  open: >-
+    Imagine Tanya. She is thirty four weeks pregnant, and she has a headache that will not go away, her vision looks blurry, and
+    her hands are swollen, but she does not want to bother her doctor. By the end of this video, you will know what she should do.
+  twist: >-
+    Remember Tanya? Here is the twist. A headache that will not go away, vision changes, and sudden swelling can be signs of
+    preeclampsia, so the answer is to call right away and never wait.
+  end: >-
+    So what should Tanya do? Call her doctor or go to the hospital right away, tell them about her headache, vision changes, and
+    swelling, and call nine one one for chest pain, trouble breathing, or heavy bleeding.
+  short_cliff: >-
+    Tanya has a headache that will not go away, blurry vision, and swollen hands near the end of her pregnancy. Can she wait?
+  reel_answer: >-
+    The answer: no. These can be signs of preeclampsia. Call your doctor or go to the hospital right away.

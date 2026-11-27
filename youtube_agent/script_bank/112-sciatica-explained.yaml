@@ -1,0 +1,175 @@
+queue_topic: "Sciatica: causes, what helps, and red flags that need urgent care"
+style: "Top Questions"
+sources:
+  - "NINDS, Sciatica: https://www.ninds.nih.gov/health-information/disorders/sciatica"
+  - "MedlinePlus, Sciatica: https://medlineplus.gov/sciatica.html"
+  - "NIAMS, Back Pain: https://www.niams.nih.gov/health-topics/back-pain"
+plan:
+  topic: "Sciatica: causes, what helps, and red flags that need urgent care"
+  title: "Sciatica Explained: Causes, What Helps and Red Flags to Know"
+  description: |-
+    Pain that shoots from your lower back down one leg. Sciatica is common, and most cases get better on their own with the right care. Learn what causes it, what the symptoms feel like, which self care steps help and which do not, why bed rest is not the answer, when physical therapy and medicine come in, and the red flags that need an emergency room right away.
+
+    In this video:
+    • What sciatica is and what causes it
+    • Symptoms
+    • What helps, and what to avoid
+    • When to see a doctor
+    • Red flags: go to the ER
+
+    #Sciatica #BackPain #NervePain #PhysicalTherapy #HealthEducation
+  tags: ["sciatica", "sciatica symptoms", "sciatica causes", "sciatica treatment", "sciatica pain relief", "back pain down the leg", "herniated disc", "sciatica exercises", "should you rest with sciatica", "cauda equina syndrome", "sciatica red flags", "when to see a doctor for sciatica", "health education"]
+  thumbnail_text: "PAIN DOWN THE LEG"
+  thumbnail_highlight: "LEG"
+  thumbnail_photo_query: "man holding lower back leg pain"
+  playlist: "Healthy Habits & Prevention"
+  scenes:
+    - layout: "title"
+      heading: "Sciatica Explained"
+      points: ["Causes, what helps, and red flags"]
+      footage_query: "man holding lower back pain"
+      narration: >-
+        A sharp, shooting pain that starts in your lower back or buttock and travels down one leg. It can make sitting, standing,
+        and sleeping miserable. That is sciatica, and it is very common. The good news is that most cases improve in weeks. Here
+        is what causes it, what helps, and the red flags that mean get help fast.
+    - layout: "bullets"
+      heading: "What Is Sciatica?"
+      points: ["Pain along the sciatic nerve", "Nerve runs from lower back to the legs", "Usually affects one side", "A symptom, not a diagnosis"]
+      footage_query: "doctor explaining spine model"
+      narration: >-
+        The sciatic nerve is the longest nerve in the body. It starts in the lower back, runs through the buttock, and goes down the
+        back of each leg. Sciatica is pain along this nerve, usually on one side. It is a symptom that something is pressing on or
+        irritating the nerve, not a disease by itself.
+    - layout: "bullets"
+      heading: "Common Causes"
+      points: ["Herniated or bulging disc", "Narrowing of the spinal canal", "Bone spurs from arthritis", "Tight muscle pressing the nerve"]
+      footage_query: "physical therapist explaining spine"
+      narration: >-
+        The most common cause is a herniated or slipped disc, where the soft cushion between the bones of the spine pushes out and
+        presses on a nerve. Spinal stenosis, a narrowing of the space around the nerves, bone spurs, and a tight muscle in the
+        buttock can also cause it. Pregnancy, and a back injury, can too.
+    - layout: "warning"
+      heading: "Common Symptoms"
+      points: ["Pain from back or buttock down the leg", "Burning, shooting, or electric feeling", "Tingling or numbness", "Worse with sitting, coughing, or sneezing"]
+      footage_query: "woman sitting discomfort lower back"
+      narration: >-
+        Sciatica often feels like a sharp, burning, or electric pain that runs from the lower back or buttock down the leg, and
+        sometimes into the foot. You may feel tingling, numbness, or weakness in the leg. The pain is often worse with sitting,
+        coughing, sneezing, or bending forward, and it may ease when you walk or change position.
+    - layout: "myth_fact"
+      heading: "Should You Rest in Bed?"
+      points: ["Stay in bed until the pain is gone", "Staying gently active speeds recovery"]
+      footage_query: "older woman walking gently home"
+      narration: >-
+        Myth one: with sciatica, you should rest in bed until the pain is gone. Fact: bed rest for more than a day or two can make
+        back and nerve pain last longer. Staying gently active, with short walks and light movement, usually speeds recovery.
+        Avoid heavy lifting and activities that make the pain much worse, but do not stop moving.
+    - layout: "bullets"
+      heading: "Self Care at Home"
+      points: ["Short walks, gentle movement", "Heat or cold packs", "Change position often", "Over the counter pain relief if safe"]
+      footage_query: "woman applying heat pack back"
+      narration: >-
+        At home, try short walks and gentle movement, and change your position often. Cold packs in the first days, and then
+        heat, may ease the pain. Over the counter medicines, like acetaminophen or ibuprofen, can help if they are safe for you. Ask a
+        doctor or pharmacist if you have kidney, stomach, or heart problems, or take blood thinners.
+    - layout: "myth_fact"
+      heading: "Does Surgery Come First?"
+      points: ["Everyone with sciatica needs surgery", "Most improve in weeks without surgery"]
+      footage_query: "doctor talking to patient"
+      narration: >-
+        Myth two: sciatica usually needs surgery. Fact: most people get better within a few weeks to a few months without it. Surgery
+        is considered only if the pain is severe and does not improve after several weeks of treatment, or if there is serious
+        weakness or the red flags we will cover shortly. Most people never need it.
+    - layout: "bullets"
+      heading: "Physical Therapy and Exercise"
+      points: ["A therapist can teach safe exercises", "Stretching and core strengthening", "Good posture and lifting habits", "Move a little each day"]
+      footage_query: "physical therapist guiding patient exercise"
+      narration: >-
+        A physical therapist can teach exercises to ease pressure on the nerve and strengthen the muscles that support your back,
+        and show you safe ways to sit, stand, and lift. Gentle stretching and core strengthening can help prevent flare ups. Start
+        slowly, and stop any exercise that sends sharp pain down the leg.
+    - layout: "bullets"
+      heading: "Other Treatments"
+      points: ["Prescription medicines if needed", "Steroid injections for some", "Not strong opioid pain medicine first", "Talk to your doctor"]
+      footage_query: "doctor prescribing treatment"
+      narration: >-
+        If self care is not enough, your doctor may suggest prescription medicines for nerve pain, or a steroid injection near the
+        nerve for some people. Strong opioid pain medicines are generally not recommended for sciatica, because they carry risks
+        and do not work well for nerve pain. Always ask your doctor about the risks and benefits.
+    - layout: "myth_fact"
+      heading: "Is Every Leg Pain Sciatica?"
+      points: ["All back and leg pain is sciatica", "Other conditions can look like it"]
+      footage_query: "doctor examining patient leg"
+      narration: >-
+        Myth three: any pain in the back and leg is sciatica. Fact: other problems can look similar, like hip arthritis, a blood
+        clot, or a muscle strain. That is one reason to see a doctor if pain is severe or does not improve. A good exam can
+        find the cause, and decide whether you need tests like an MRI.
+    - layout: "warning"
+      heading: "See a Doctor If"
+      points: ["Pain lasts more than 4 to 6 weeks", "Severe pain after an injury", "Leg weakness getting worse", "Fever, unexplained weight loss"]
+      footage_query: "doctor talking patient office"
+      narration: >-
+        See a doctor if the pain is severe or not improving after four to six weeks, if it started after a fall or accident, if
+        your leg is getting weaker, or if you have a fever, unexplained weight loss, or a history of cancer. Those can point to
+        causes other than a disc problem.
+    - layout: "warning"
+      heading: "Red Flags: Go to the ER"
+      points: ["Numbness in the groin or inner thighs", "Trouble urinating or loss of bladder control", "Loss of bowel control", "Sudden severe leg weakness"]
+      footage_query: "ambulance emergency"
+      narration: >-
+        Go to the emergency room right away if you have numbness in the groin or inner thighs, new trouble passing urine or
+        loss of bladder or bowel control, or sudden severe weakness in both legs. These can be signs of cauda equina syndrome, where
+        nerves at the base of the spine are being squeezed, and surgery may be needed urgently to prevent permanent damage.
+    - layout: "warning"
+      heading: "Also Urgent"
+      points: ["Pain after a major fall or accident", "Fever with severe back pain", "Chest pain or trouble breathing", "Call 911"]
+      footage_query: "person calling phone emergency"
+      narration: >-
+        Also seek urgent care if back and leg pain begin after a major fall or accident, or come with a fever. Call nine one one for
+        chest pain or trouble breathing, or if a leg is suddenly swollen, red, and painful, which can be a blood clot. Do not wait
+        and see with these.
+    - layout: "outro"
+      heading: "Remember"
+      points: ["Stay gently active", "Most sciatica improves in weeks", "Numbness in the groin or bladder trouble: ER"]
+      footage_query: "family at home together"
+      narration: >-
+        Remember: stay gently active, most sciatica improves in weeks, and numbness in the groin or loss of bladder or bowel
+        control means go to the emergency room. Share this with someone who is stuck in bed with back pain. This video is for
+        education only, not medical advice. Like and subscribe to Health Support Studio for a new health video every day.
+  short_title: "Sciatica: red flags you should never ignore #Shorts"
+  short_caption: "Most sciatica gets better, but numbness in the groin or bladder trouble needs the ER. Educational only, not medical advice."
+  short_scenes:
+    - layout: "title"
+      heading: "Sciatica Pain?"
+      points: ["Know the red flags"]
+      footage_query: "man holding lower back pain"
+      narration: >-
+        Pain shooting from your back down your leg? It is probably sciatica, and it usually gets better.
+    - layout: "warning"
+      heading: "Go to the ER If"
+      points: ["Numbness in groin or inner thighs", "Trouble urinating or bowel control", "Sudden severe leg weakness"]
+      footage_query: "ambulance emergency"
+      narration: >-
+        Stay gently active, and avoid long bed rest. But go to the emergency room right away for numbness in the groin or inner
+        thighs, trouble urinating, loss of bladder or bowel control, or sudden severe weakness in both legs. These can be signs of a
+        serious nerve problem. See a doctor if pain lasts more than a few weeks.
+    - layout: "outro"
+      heading: "Full Video"
+      points: ["On YouTube"]
+      footage_query: "family at home together"
+      narration: >-
+        Learn more in our full video on the Health Support Studio channel.
+story:
+  open: >-
+    Imagine Nora. For a week she has had pain shooting down her right leg, and she has stayed in bed hoping it will go away.
+    By the end of this video, you will know what actually helps, and which signs mean she must not wait.
+  twist: >-
+    Remember Nora? Here is the twist. Bed rest can slow recovery, but numbness in the groin or loss of bladder or bowel control
+    is an emergency that needs the ER right away.
+  end: >-
+    So what should Nora do? Stay gently active, try heat or cold, ask a physical therapist about safe exercises, see a doctor
+    if pain lasts, and go to the ER for numbness in the groin or bladder trouble.
+  short_cliff: >-
+    Nora has pain down her leg and has stayed in bed all week. Which signs would mean she must not wait?
+  reel_answer: >-
+    The answer: numbness in the groin or inner thighs, trouble urinating, loss of bowel control, or sudden severe leg weakness. Go to the ER right away.
