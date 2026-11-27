@@ -2,8 +2,8 @@ queue_topic: "Vitamin B12 deficiency: signs, who is at risk, and what to do"
 style: "Warning Signs"
 sources:
   - "NIH Office of Dietary Supplements, Vitamin B12 Fact Sheet for Consumers: https://ods.od.nih.gov/factsheets/VitaminB12-Consumer/"
-  - "MedlinePlus, Vitamin B12 Level: https://medlineplus.gov/lab-tests/vitamin-b12-level/"
-  - "NIDDK, Pernicious Anemia and Vitamin B12 Deficiency Anemia: https://www.niddk.nih.gov/health-information/blood-diseases/anemia"
+  - "MedlinePlus Medical Encyclopedia, Vitamin B12: https://medlineplus.gov/ency/article/002403.htm"
+  - "NHLBI, Anemia: https://www.nhlbi.nih.gov/health/anemia"
 plan:
   topic: "Vitamin B12 deficiency: signs, who is at risk, and what to do"
   title: "Low Vitamin B12? Signs, Who Is at Risk and How to Fix It"
