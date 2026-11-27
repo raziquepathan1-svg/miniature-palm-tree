@@ -61,3 +61,11 @@ After the Shorts are built, ALWAYS run `python3 youtube_agent/explainer/ecg/fb_c
 (needs the short's script.json + audio). It writes explainer_queue/<file>_fb.mp4: big burned-in captions
 (Reels are watched muted), no YouTube-only "subscribe / 3:30 PM" ending, a FB/IG-native "FOLLOW" end card.
 social_post.py posts the _fb file to Facebook + Instagram when it exists (YouTube keeps the normal Short).
+
+## Smooth transitions + labels (owner, 27 Nov 2026: "I want smooth transition from picture to next picture")
+- ONE page, no page slides or hard cuts: each new picture CROSS-FADES over the old one (~1.1 s) while the camera glides back to the
+  full view; the old picture is removed only after the new one fully covers it. Labels fade out just before the dissolve.
+- Before a dissolve the camera slowly pushes in (zoom ~1.35-1.5, up to ~2.6 for body -> cells) on the part we go into next.
+- Organelle / organ close-ups: first show it glowing in its place on the bigger picture (location first), push in, dissolve to the close-up.
+- Every named part: NAME on the right third + pointer line with arrow to the exact spot + a soft glow (Stage.label in ecg/osm_cell.py).
+- Template: youtube_agent/explainer/ecg/osm_cell.py (Stage class: picture / label / say / clear / focus / drift).

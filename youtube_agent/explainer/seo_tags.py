@@ -100,6 +100,9 @@ EP = {
  "eye": (["How the eye works", "Retina, rods and cones", "The blind spot"],
     ["how does the eye see", "eye anatomy", "how the eye works", "retina rods and cones", "why image is upside down on the retina", "blind spot", "optic nerve", "cornea pupil iris lens", "fovea", "color vision cones", "vision explained", "senses", "anatomy and physiology"],
     ["#eyeanatomy", "#vision", "#retina"]),
+ "cell": (["What is a cell", "Parts of a cell and their functions", "Cell organelles explained"],
+    ["what is a cell", "parts of a cell", "cell organelles", "cell structure and function", "nucleus", "mitochondria", "cell membrane", "ribosomes", "golgi apparatus", "lysosomes", "endoplasmic reticulum", "animal cell", "cell biology"],
+    ["#cellbiology", "#partsofacell", "#organelles"]),
  "repro": (["How reproduction works", "Ovulation and fertilization", "Reproductive system anatomy"],
     ["how does reproduction work", "reproductive system", "female reproductive system", "male reproductive system", "ovulation", "fertilization", "implantation", "how many eggs is a woman born with", "how does sperm fertilize an egg", "menstrual cycle", "blastocyst", "anatomy and physiology"],
     ["#reproductivesystem", "#ovulation", "#fertilization"]),
@@ -115,7 +118,7 @@ EP = {
 def tags_for(eid, short=False):
     kw, tags, _ = EP[eid]
     out, seen = [], set()
-    base = [b for b in BASE if not (eid in ("brain", "neuron", "spine", "autonomic", "endocrine", "digestive", "kidney", "immune", "skin", "musc", "lymph", "eye", "ear", "smelltaste", "repro") and b == "cardiovascular system")]
+    base = [b for b in BASE if not (eid in ("brain", "neuron", "spine", "autonomic", "endocrine", "digestive", "kidney", "immune", "skin", "musc", "lymph", "eye", "ear", "smelltaste", "repro", "cell") and b == "cardiovascular system")]
     for t in tags + (["shorts", "anatomy shorts"] if short else []) + base:
         if t.lower() not in seen and sum(len(x) + 3 for x in out) + len(t) + 3 <= 480:
             out.append(t); seen.add(t.lower())
