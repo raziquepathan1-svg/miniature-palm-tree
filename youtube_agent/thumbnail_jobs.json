@@ -945,5 +945,36 @@
     "image": "branding/health-support-studio/thumbs/6HIp_C-EGsI.jpg",
     "vertical": true,
     "done": true
+  },
+  {
+    "youtube_id": "nJmrtauHxiA",
+    "text": "TOO MUCH?",
+    "highlight": "TOO",
+    "style": "Explainer",
+    "image": "branding/health-support-studio/thumbs/nJmrtauHxiA.jpg"
+  },
+  {
+    "youtube_id": "-KmZYkowLF4",
+    "text": "UVB RAYS",
+    "highlight": "UVB",
+    "style": "Explainer",
+    "image": "branding/health-support-studio/thumbs/nJmrtauHxiA.jpg",
+    "vertical": true
+  },
+  {
+    "youtube_id": "Yq5UvDcII1g",
+    "text": "TEST WHO?",
+    "highlight": "WHO?",
+    "style": "Explainer",
+    "image": "branding/health-support-studio/thumbs/nJmrtauHxiA.jpg",
+    "vertical": true
+  },
+  {
+    "youtube_id": "0txASoqsoNk",
+    "text": "TRY EXERCISE",
+    "highlight": "EXERCISE",
+    "style": "Explainer",
+    "image": "branding/health-support-studio/thumbs/nJmrtauHxiA.jpg",
+    "vertical": true
   }
 ]

@@ -2280,5 +2280,68 @@
       "HealthEducation"
     ],
     "done": true
+  },
+  {
+    "youtube_id": "nJmrtauHxiA",
+    "title": "Vitamin D Myths: Are You Taking It for Nothing?",
+    "description_top": "Vitamin D myths: are you taking it for nothing? Is more better, does sun through a window count, do you need a pill, and do you need a blood test?\nSigns of low and too much vitamin D, who may need more, breastfed babies, falls, cancer and colds, D2 vs D3, and the safe upper limit, based on NIH Office of Dietary Supplements, CDC and AAP guidance.",
+    "pin_question": "Do you take a vitamin D supplement, and what made you start? Share below.",
+    "packages": [
+      {
+        "title": "Vitamin D Myths: Are You Taking It for Nothing?",
+        "thumbnail_text": "TOO MUCH?",
+        "thumbnail_highlight": "TOO"
+      },
+      {
+        "title": "Does Sun Through a Window Give You Vitamin D?",
+        "thumbnail_text": "GLASS BLOCKS",
+        "thumbnail_highlight": "GLASS"
+      },
+      {
+        "title": "Do You Need a Vitamin D Supplement?",
+        "thumbnail_text": "ASK FIRST",
+        "thumbnail_highlight": "ASK"
+      },
+      {
+        "title": "Vitamin D and Falls: What Studies Show",
+        "thumbnail_text": "TRY EXERCISE",
+        "thumbnail_highlight": "EXERCISE"
+      },
+      {
+        "title": "Can Too Much Vitamin D Hurt You?",
+        "thumbnail_text": "4,000 UNITS",
+        "thumbnail_highlight": "4,000"
+      }
+    ],
+    "chosen": {
+      "title": "Vitamin D Myths: Are You Taking It for Nothing?",
+      "thumbnail_text": "TOO MUCH?",
+      "thumbnail_highlight": "TOO"
+    },
+    "tags": [
+      "vitamin d",
+      "vitamin d myths",
+      "vitamin d supplement",
+      "do i need vitamin d",
+      "too much vitamin d",
+      "vitamin d deficiency",
+      "vitamin d through window",
+      "vitamin d test",
+      "vitamin d and falls",
+      "vitamin d d2 vs d3",
+      "vitamin d for babies",
+      "vitamin d and colds",
+      "vitamin d upper limit",
+      "supplement safety",
+      "health education"
+    ],
+    "social_keywords": "vitamin d · vitamin d myths · too much vitamin d · vitamin d supplement · vitamin d deficiency",
+    "social_hashtags": [
+      "VitaminD",
+      "Supplements",
+      "HealthMyths",
+      "HealthTips",
+      "HealthEducation"
+    ]
   }
 ]
