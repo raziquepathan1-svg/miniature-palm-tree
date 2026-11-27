@@ -2311,8 +2311,7 @@
     "title": "Vitamin D Myths: Are You Taking It for Nothing?",
     "style": "Myth vs Fact",
     "script_file": "018-vitamin-d-myths.yaml",
-    "planned_publish_at": "2026-11-28T16:00:00Z",
-    "awaiting_approval": true,
+    "awaiting_approval": false,
     "youtube_id": "nJmrtauHxiA",
     "short_youtube_id": "-KmZYkowLF4",
     "short2_youtube_id": "Yq5UvDcII1g",
@@ -2360,6 +2359,7 @@
       "HealthMyths",
       "HealthTips",
       "HealthEducation"
-    ]
+    ],
+    "publish_at": "2026-11-28T16:00:00Z"
   }
 ]
