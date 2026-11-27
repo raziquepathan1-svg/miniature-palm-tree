@@ -1,0 +1,177 @@
+queue_topic: "Irritable bowel syndrome (IBS): symptoms, triggers, and red flags that are not IBS"
+style: "Top Questions"
+sources:
+  - "NIDDK, Symptoms and Causes of Irritable Bowel Syndrome: https://www.niddk.nih.gov/health-information/digestive-diseases/irritable-bowel-syndrome/symptoms-causes"
+  - "NIDDK, Eating, Diet, and Nutrition for IBS: https://www.niddk.nih.gov/health-information/digestive-diseases/irritable-bowel-syndrome/eating-diet-nutrition"
+  - "MedlinePlus, Irritable Bowel Syndrome: https://medlineplus.gov/irritablebowelsyndrome.html"
+plan:
+  topic: "Irritable bowel syndrome (IBS): symptoms, triggers, and red flags that are not IBS"
+  title: "IBS Explained: Symptoms, Triggers and Red Flags to Never Ignore"
+  description: |-
+    Belly pain, bloating, and bathroom trouble that comes and goes. Irritable bowel syndrome, or IBS, is common, uncomfortable, and often misunderstood. Learn the symptoms, the common triggers, what helps, how IBS differs from inflammatory bowel disease, and the red flag signs that should never be blamed on IBS.
+
+    In this video:
+    • What IBS is, and what it is not
+    • Symptoms and the three types
+    • Common triggers
+    • What helps: food, stress, and treatment
+    • Red flags that need a doctor soon
+
+    #IBS #IrritableBowelSyndrome #DigestiveHealth #GutHealth #HealthEducation
+  tags: ["ibs", "irritable bowel syndrome", "ibs symptoms", "ibs triggers", "ibs diet", "low fodmap diet", "ibs vs ibd", "ibs and stress", "ibs with diarrhea", "ibs with constipation", "bloating and gas", "red flags not ibs", "health education"]
+  thumbnail_text: "NOT IN YOUR HEAD"
+  thumbnail_highlight: "HEAD"
+  thumbnail_photo_query: "woman holding stomach bloating"
+  playlist: "Healthy Habits & Prevention"
+  scenes:
+    - layout: "title"
+      heading: "IBS Explained"
+      points: ["Symptoms, triggers, and red flags"]
+      footage_query: "woman holding stomach bloating"
+      narration: >-
+        Belly pain that comes and goes. Bloating. Diarrhea one week, constipation the next. If this sounds familiar, you may
+        have irritable bowel syndrome, or IBS. It is very common, and it is real. Here is what IBS is, what triggers it, what
+        helps, and the red flags that are never just IBS.
+    - layout: "bullets"
+      heading: "What Is IBS?"
+      points: ["A common gut disorder", "Gut and brain signals out of sync", "Pain linked to bowel movements", "Does not damage the intestines"]
+      footage_query: "doctor explaining digestive system model"
+      narration: >-
+        IBS is a common disorder of the gut and brain working together. The intestines are healthy and are not damaged, but
+        they are more sensitive and may squeeze too fast or too slow. People with IBS have belly pain along with changes in
+        their bowel movements. It affects millions of people, and it is a long term condition that can be managed.
+    - layout: "warning"
+      heading: "Common Symptoms"
+      points: ["Belly pain or cramping", "Bloating and gas", "Diarrhea, constipation, or both", "Mucus in the stool"]
+      footage_query: "man sitting on couch stomach pain"
+      narration: >-
+        The main symptom is belly pain or cramping that often gets better after a bowel movement. Other symptoms include
+        bloating, gas, a feeling that you have not fully emptied, diarrhea, constipation, or swings between the two. Some people
+        notice white mucus in the stool. Symptoms come and go, and often flare up during stress or after certain foods.
+    - layout: "bullets"
+      heading: "Three Main Types"
+      points: ["IBS with diarrhea", "IBS with constipation", "Mixed, both at different times", "Your type can change"]
+      footage_query: "doctor talking to woman"
+      narration: >-
+        Doctors describe IBS by how it affects your bowel movements. Some people have mostly diarrhea, some have mostly
+        constipation, and some have a mix of both. Knowing your type helps guide treatment. And the type can change over time, so
+        what works for you now may need to change later.
+    - layout: "myth_fact"
+      heading: "All in Your Head?"
+      points: ["IBS is just stress or in your head", "IBS is real; stress can make it worse"]
+      footage_query: "woman talking to doctor"
+      narration: >-
+        Myth one: IBS is all in your head. Fact: IBS is a real condition with real pain. Stress and emotions can make
+        symptoms worse, because the gut and the brain are closely connected, but stress does not cause IBS by itself. If you
+        have been told it is nothing, it is fair to ask for a proper check and a plan.
+    - layout: "bullets"
+      heading: "Common Triggers"
+      points: ["Certain foods", "Large or fatty meals", "Stress and poor sleep", "Hormone changes"]
+      footage_query: "woman eating meal at table"
+      narration: >-
+        Triggers differ from person to person. Common ones are large meals, fatty or fried foods, caffeine, and certain
+        carbohydrates that gut bacteria ferment. Stress, poor sleep, and hormone changes around a period can also bring on
+        symptoms. A simple food and symptom diary for a few weeks can help you spot your own triggers.
+    - layout: "bullets"
+      heading: "Food That May Help"
+      points: ["Regular meals, smaller portions", "Add fiber slowly", "Try a low FODMAP plan with a dietitian", "Limit trigger foods"]
+      footage_query: "dietitian talking to patient"
+      narration: >-
+        Eat regular meals, and avoid very large ones. If you have constipation, adding fiber slowly can help, but some types of
+        fiber can cause gas, so go slowly. A low FODMAP diet cuts out certain fermentable carbohydrates for a short time, then
+        brings foods back one by one. It works for many people, but it is best done with a registered dietitian, not forever.
+    - layout: "myth_fact"
+      heading: "Is Gluten the Cause?"
+      points: ["Everyone with IBS must avoid gluten", "Only some people need to cut it out"]
+      footage_query: "bread loaf kitchen"
+      narration: >-
+        Myth two: everyone with IBS should go gluten free. Fact: some people with IBS feel better after cutting back on
+        wheat, but that may be because of other carbohydrates in wheat, not gluten. Celiac disease is different, and it needs
+        a test before you stop eating gluten. Ask your doctor before cutting out a food group.
+    - layout: "bullets"
+      heading: "Other Treatments"
+      points: ["Stress tools, like therapy", "Exercise and good sleep", "Medicines for pain, diarrhea, constipation", "Ask about gut directed hypnotherapy"]
+      footage_query: "woman walking outdoors"
+      narration: >-
+        Treatment goes beyond food. Regular exercise, good sleep, and stress management, such as cognitive behavioral
+        therapy or gut directed hypnotherapy, can help. Your doctor may suggest medicines for pain, diarrhea, or
+        constipation, and some are made for IBS. Probiotics may help some people, but the research is mixed, so ask first.
+    - layout: "myth_fact"
+      heading: "Does IBS Lead to Cancer?"
+      points: ["IBS raises colon cancer risk", "IBS does not cause cancer"]
+      footage_query: "doctor reassuring patient"
+      narration: >-
+        Myth three: IBS can turn into colon cancer. Fact: IBS does not cause cancer, and it does not damage the bowel. But
+        some other conditions, including colon cancer and inflammatory bowel disease, can cause similar symptoms. That is why
+        a first diagnosis should come from a doctor, and why certain red flags always need a closer look.
+    - layout: "bullets"
+      heading: "IBS or IBD?"
+      points: ["IBD: Crohn disease, ulcerative colitis", "IBD causes inflammation and damage", "IBD can cause blood, weight loss", "Different treatment"]
+      footage_query: "doctor looking at colon model"
+      narration: >-
+        IBS is not the same as inflammatory bowel disease, or IBD, which includes Crohn disease and ulcerative colitis. IBD
+        causes inflammation and damage in the intestines, and may cause bloody stools, fever, weight loss, or anemia. The two
+        can be confused, so tell your doctor about any of these signs. The treatments are very different.
+    - layout: "warning"
+      heading: "Red Flags: See a Doctor"
+      points: ["Blood in the stool, or black stools", "Unplanned weight loss", "Symptoms that wake you from sleep", "New symptoms after age 50"]
+      footage_query: "doctor talking patient office"
+      narration: >-
+        These signs are not normal for IBS, and they need a doctor soon. Blood in the stool or black, tarry stools, weight
+        loss you cannot explain, belly pain or diarrhea that wakes you from sleep, a fever, anemia, persistent vomiting, or
+        new symptoms after age fifty. A family history of colon cancer, celiac disease, or inflammatory bowel disease is also
+        a reason to be checked.
+    - layout: "warning"
+      heading: "Go to the ER"
+      points: ["Severe belly pain that does not ease", "Vomiting with a swollen belly", "Large amount of blood", "Fainting or very fast heartbeat"]
+      footage_query: "ambulance emergency"
+      narration: >-
+        Go to the emergency room or call nine one one for severe belly pain that does not ease, a swollen belly with
+        repeated vomiting, a large amount of blood in the stool, fainting, or a very fast heartbeat. These are not signs of
+        IBS, and they need urgent care.
+    - layout: "outro"
+      heading: "Remember"
+      points: ["IBS is real and manageable", "Track triggers, work with a dietitian", "Blood or weight loss: see a doctor"]
+      footage_query: "family at home together"
+      narration: >-
+        Remember: IBS is real and manageable, track your triggers and get help with diet and stress, and see a doctor for
+        blood in the stool, weight loss, or symptoms that wake you at night. Share this with someone who is told it is just
+        stress. This video is for education only, not medical advice. Like and subscribe to Health Support Studio for a new
+        health video every day.
+  short_title: "IBS: when it is not just IBS #Shorts"
+  short_caption: "IBS is real, but some signs are never just IBS. Educational only, not medical advice."
+  short_scenes:
+    - layout: "title"
+      heading: "Blamed on IBS?"
+      points: ["Know the red flags"]
+      footage_query: "woman holding stomach bloating"
+      narration: >-
+        Belly pain, bloating, and bathroom trouble. IBS is common. But some signs are never just IBS.
+    - layout: "warning"
+      heading: "See a Doctor If"
+      points: ["Blood in the stool", "Weight loss you cannot explain", "Pain that wakes you from sleep"]
+      footage_query: "doctor talking patient office"
+      narration: >-
+        IBS does not cause blood in the stool, weight loss, fever, or pain that wakes you at night. Those need a doctor soon.
+        IBS itself is real and manageable with food changes, stress tools, and sometimes medicine. Go to the emergency room
+        for severe belly pain or a large amount of blood.
+    - layout: "outro"
+      heading: "Full Video"
+      points: ["On YouTube"]
+      footage_query: "family at home together"
+      narration: >-
+        Learn more in our full video on the Health Support Studio channel.
+story:
+  open: >-
+    Imagine Dana. For two years she has had belly pain and bloating, and she is told it is just stress. By the end of this
+    video, you will know whether that is true, and which signs would worry a doctor.
+  twist: >-
+    Remember Dana? Here is the twist. IBS is real, not in your head, and it does not cause blood in the stool or weight
+    loss, so those signs always need a doctor.
+  end: >-
+    So what should Dana do? Keep a food diary, eat regular meals, ask about a low FODMAP plan with a dietitian, manage
+    stress, and see her doctor soon for blood in the stool or weight loss.
+  short_cliff: >-
+    Dana has belly pain and bloating, and she is told it is just stress. Is that always true?
+  reel_answer: >-
+    The answer: no. IBS is real, but it does not cause blood in the stool, weight loss, or pain that wakes you at night. Those signs need a doctor.

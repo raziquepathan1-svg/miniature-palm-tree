@@ -1,0 +1,184 @@
+queue_topic: "Fatty liver disease: silent signs, risks and how to protect your liver"
+style: "Top Questions"
+sources:
+  - "NIDDK, Definition and Facts of MASLD (Fatty Liver Disease): https://www.niddk.nih.gov/health-information/liver-disease/nafld-nash/definition-facts"
+  - "MedlinePlus, Fatty Liver Disease: https://medlineplus.gov/fattyliverdisease.html"
+  - "CDC, Liver Disease: https://www.cdc.gov/nchs/fastats/liver-disease.htm"
+plan:
+  topic: "Fatty liver disease: silent signs, risks and how to protect your liver"
+  title: "Fatty Liver Disease: Silent Signs and How to Protect Your Liver"
+  description: |-
+    Fatty liver disease is one of the most common liver problems in the US, and most people feel nothing at first. Learn what it is, who is at risk, why it often goes unnoticed, how it is found, the lifestyle changes that can reverse early damage, and the warning signs that need medical care right away.
+
+    In this video:
+    • What fatty liver disease is, and the new name MASLD
+    • Why it is often silent
+    • Who is at risk, including people who are not overweight
+    • How doctors check it
+    • What helps: weight, food, movement, and the myths to skip
+
+    #FattyLiver #LiverHealth #MASLD #HealthTips #HealthEducation
+  tags: ["fatty liver", "fatty liver disease", "fatty liver symptoms", "masld", "nafld", "how to reverse fatty liver", "fatty liver diet", "liver health", "signs of liver problems", "liver detox myth", "mash liver disease", "fatty liver and diabetes", "health education"]
+  thumbnail_text: "SILENT LIVER?"
+  thumbnail_highlight: "SILENT"
+  thumbnail_photo_query: "man holding side abdomen"
+  playlist: "Healthy Habits & Prevention"
+  scenes:
+    - layout: "title"
+      heading: "Fatty Liver Disease"
+      points: ["Silent signs, and how to protect your liver"]
+      footage_query: "doctor explaining liver model"
+      narration: >-
+        About one in three adults in the United States has extra fat in their liver, and most of them feel completely fine.
+        Fatty liver disease is one of the most common liver problems, and it is often found by accident. But it can turn
+        serious over time. Here is what it is, who is at risk, and what you can do.
+    - layout: "bullets"
+      heading: "What Is It?"
+      points: ["Too much fat in the liver", "New name: MASLD", "Linked to metabolic health", "Early stage is often reversible"]
+      footage_query: "doctor talking to patient liver"
+      narration: >-
+        Fatty liver disease means extra fat has built up in the liver cells. It has a newer medical name, metabolic
+        dysfunction associated steatotic liver disease, or MASLD, which used to be called NAFLD. It is closely linked to how
+        your body handles sugar and fat. In the early stage, the changes can often be reversed.
+    - layout: "bullets"
+      heading: "Why It Matters"
+      points: ["Fat can cause inflammation", "Inflammation can scar the liver", "Scarring can lead to cirrhosis", "Raises liver cancer risk over time"]
+      footage_query: "doctor looking at scan"
+      narration: >-
+        Most people with a fatty liver never develop serious liver damage. But in some, the fat causes inflammation, called
+        MASH, which can slowly scar the liver. Over many years, scarring can lead to cirrhosis, liver failure, or liver
+        cancer. Fatty liver is also linked to a higher risk of heart disease, so it is a sign to take your health seriously.
+    - layout: "warning"
+      heading: "Why It Is Silent"
+      points: ["Usually no symptoms early on", "Maybe tiredness, or a dull belly ache", "Often found on a blood test or scan", "Symptoms usually appear late"]
+      footage_query: "man tired at desk"
+      narration: >-
+        Fatty liver is often silent. Many people have no symptoms for years. Some feel tired, or have a vague ache in the upper
+        right side of the belly. Often the problem is found when a blood test shows high liver enzymes, or when an ultrasound
+        done for another reason shows a fatty liver. Symptoms like yellow skin usually appear only when the liver is badly damaged.
+    - layout: "bullets"
+      heading: "Who Is at Risk?"
+      points: ["Overweight or obesity", "Type 2 diabetes or prediabetes", "High cholesterol or triglycerides", "High blood pressure"]
+      footage_query: "doctor checking blood pressure"
+      narration: >-
+        The biggest risks are being overweight, especially with extra weight around the waist, type 2 diabetes or
+        prediabetes, high cholesterol or triglycerides, and high blood pressure. Together, these are called metabolic
+        syndrome. But some people with a healthy weight also get fatty liver, because of genes and how fat is stored in the
+        body.
+    - layout: "myth_fact"
+      heading: "Only for People Who Drink?"
+      points: ["Fatty liver only happens if you drink", "Most cases have nothing to do with drinking"]
+      footage_query: "woman talking to doctor"
+      narration: >-
+        Myth one: fatty liver only happens to people who drink a lot. Fact: the most common kind has nothing to do with heavy
+        drinking. It is linked to weight, blood sugar, and other metabolic problems. Heavy drinking can cause its own liver
+        disease, and drinking can make any liver problem worse, so ask your doctor what is safe for you.
+    - layout: "bullets"
+      heading: "How It Is Checked"
+      points: ["Blood tests for liver enzymes", "Ultrasound of the belly", "Scoring tools for scarring", "Special scan or biopsy if needed"]
+      footage_query: "ultrasound doctor patient"
+      narration: >-
+        Doctors check for fatty liver with blood tests, and with an ultrasound or other imaging. They can also use blood tests
+        and a special scan to estimate how much scarring there is, called fibrosis. Sometimes a small sample of liver is taken,
+        called a biopsy, but that is not needed for most people. Ask your doctor if you should be checked.
+    - layout: "bullets"
+      heading: "Lose a Little Weight"
+      points: ["Losing 7 to 10 percent helps", "Reduces liver fat and inflammation", "Go slowly, not crash diets", "Even smaller loss helps"]
+      footage_query: "woman stepping on scale"
+      narration: >-
+        The best treatment is lifestyle change. Losing about seven to ten percent of your body weight can reduce fat in the
+        liver, and may calm the inflammation and even reverse scarring. Gradual loss is best. Very fast weight loss, or crash
+        diets, can actually make liver inflammation worse. Even a smaller loss helps, so do not give up.
+    - layout: "bullets"
+      heading: "Eat for Your Liver"
+      points: ["Vegetables, fruit, whole grains", "Fish, beans, nuts, olive oil", "Less sugary drinks and sweets", "Less processed and fried food"]
+      footage_query: "healthy meal vegetables fish"
+      narration: >-
+        A Mediterranean style way of eating is often recommended. Eat plenty of vegetables, fruit, and whole grains, with fish,
+        beans, nuts, and olive oil. Cut back on sugary drinks, sweets, and refined carbohydrates, and limit fried and
+        processed foods. Sugary drinks, especially, add a lot of calories and make fat in the liver more likely.
+    - layout: "bullets"
+      heading: "Move and Manage"
+      points: ["About 150 minutes of activity weekly", "Control blood sugar", "Control cholesterol and blood pressure", "Take medicines as prescribed"]
+      footage_query: "older couple walking park exercise"
+      narration: >-
+        Regular exercise helps lower liver fat, even if you do not lose much weight. Aim for about one hundred fifty minutes a
+        week of moderate activity. Keeping blood sugar, cholesterol, and blood pressure under control matters too. If you
+        have advanced disease, some medicines for it now exist, so ask your doctor whether a liver specialist could help you.
+    - layout: "myth_fact"
+      heading: "Do Liver Detoxes Work?"
+      points: ["Detox teas and cleanses fix a fatty liver", "No detox product treats fatty liver"]
+      footage_query: "herbal tea cup table"
+      narration: >-
+        Myth two: a liver detox tea or cleanse can fix a fatty liver. Fact: there is no proof that detox products work, and
+        some supplements have been linked to liver damage. Your liver already cleans your blood on its own. The things that
+        really help are weight loss, healthy eating, movement, and treating diabetes, cholesterol, and blood pressure.
+    - layout: "warning"
+      heading: "Be Careful With Medicines"
+      points: ["Ask before taking supplements", "Take acetaminophen only as directed", "Tell every doctor about your liver", "Avoid herbal products without advice"]
+      footage_query: "pharmacist handing medicine"
+      narration: >-
+        If you have a liver condition, ask your doctor or pharmacist before taking any new medicine, vitamin, or herbal
+        supplement. Take acetaminophen only as directed, and do not exceed the daily limit on the label. Tell every doctor you
+        see that you have fatty liver, so they can choose medicines carefully.
+    - layout: "warning"
+      heading: "Call Your Doctor"
+      points: ["Yellow skin or eyes", "Swelling in the belly or legs", "Dark urine, pale stools", "Easy bruising, itching, tiredness"]
+      footage_query: "doctor talking patient office"
+      narration: >-
+        Call your doctor if you notice yellowing of the skin or eyes, swelling in the belly or legs, dark urine, pale stools,
+        easy bruising, or ongoing itching and tiredness. These can be signs that the liver is not working well, and they need
+        to be checked soon.
+    - layout: "warning"
+      heading: "Go to the ER"
+      points: ["Vomiting blood or black stools", "Confusion or hard to wake", "Severe belly pain", "High fever with belly swelling"]
+      footage_query: "ambulance emergency"
+      narration: >-
+        Go to the emergency room or call nine one one if someone with liver disease vomits blood, has black or bloody stools,
+        becomes confused or very sleepy, or has severe belly pain, or a fever with a swollen belly. These can be signs of life
+        threatening complications.
+    - layout: "outro"
+      heading: "Remember"
+      points: ["Fatty liver is often silent", "Weight, food, and movement can reverse early damage", "Yellow skin or vomiting blood: urgent"]
+      footage_query: "family cooking healthy kitchen"
+      narration: >-
+        Remember: fatty liver is often silent, weight loss, healthy eating, and movement can reverse early damage, and yellow
+        skin or vomiting blood needs urgent care. Share this with someone with diabetes or high cholesterol. This video is for
+        education only, not medical advice. Like and subscribe to Health Support Studio for a new health video every day.
+  short_title: "Fatty liver: often no symptoms #Shorts"
+  short_caption: "One in three US adults has fatty liver, and most feel fine. Educational only, not medical advice."
+  short_scenes:
+    - layout: "title"
+      heading: "Fatty Liver?"
+      points: ["Often no symptoms"]
+      footage_query: "doctor explaining liver model"
+      narration: >-
+        About one in three adults has fatty liver, and most feel completely fine. It is a silent problem.
+    - layout: "warning"
+      heading: "Protect Your Liver"
+      points: ["Linked to weight and diabetes", "Lose 7 to 10 percent of weight", "Yellow skin: call a doctor"]
+      footage_query: "healthy meal vegetables fish"
+      narration: >-
+        Fatty liver is linked to extra weight, diabetes, and high cholesterol, and you can have it even if you do not drink.
+        Losing seven to ten percent of your weight, eating well, and moving more can reverse early damage. Detox teas do not
+        work. Call your doctor for yellow skin or eyes, and go to the emergency room if you vomit blood.
+    - layout: "outro"
+      heading: "Full Video"
+      points: ["On YouTube"]
+      footage_query: "family cooking healthy kitchen"
+      narration: >-
+        Learn more in our full video on the Health Support Studio channel.
+story:
+  open: >-
+    Imagine Karim. A routine blood test showed high liver enzymes, but he feels fine, and he does not drink. By the end of
+    this video, you will know what that could mean, and what Karim can do about it.
+  twist: >-
+    Remember Karim? Here is the twist. Fatty liver is often silent, most cases have nothing to do with drinking, and early
+    damage can be reversed with weight loss, healthy eating, and movement.
+  end: >-
+    So what should Karim do? Talk to his doctor, lose a little weight slowly, eat more vegetables and fish, move most
+    days, skip detox teas, and call his doctor for yellow skin or swelling.
+  short_cliff: >-
+    Karim feels fine and does not drink, but his liver tests are high. Could he still have a liver problem?
+  reel_answer: >-
+    The answer: yes. Fatty liver is often silent, and most cases are linked to weight, blood sugar, and cholesterol, not drinking. Early damage can often be reversed.

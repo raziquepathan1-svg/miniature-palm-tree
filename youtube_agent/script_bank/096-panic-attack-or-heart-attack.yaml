@@ -1,0 +1,179 @@
+queue_topic: "Panic attack or heart attack? Signs, clues and what to do"
+style: "Top Questions"
+sources:
+  - "NIMH, Panic Disorder: When Fear Overwhelms: https://www.nimh.nih.gov/health/publications/panic-disorder-when-fear-overwhelms"
+  - "CDC, Heart Attack Signs and Symptoms: https://www.cdc.gov/heart-disease/about/heart-attack.html"
+  - "MedlinePlus, Panic Disorder: https://medlineplus.gov/panicdisorder.html"
+plan:
+  topic: "Panic attack or heart attack? Signs, clues and what to do"
+  title: "Panic Attack or Heart Attack? How to Tell and What to Do"
+  description: |-
+    Your heart is pounding, your chest feels tight, and you cannot catch your breath. Is it a panic attack, or a heart attack? The signs can overlap, and you cannot always tell at home. Learn the clues for each, why you should call 911 when in doubt, how panic attacks are treated, and what can help in the moment. If you are in crisis, call or text 988 in the US.
+
+    In this video:
+    • What a panic attack feels like
+    • Heart attack warning signs
+    • Clues that may help tell them apart
+    • Why you should call 911 when unsure
+    • What helps, and treatment for panic disorder
+
+    #PanicAttack #HeartAttack #Anxiety #MentalHealth #HealthEducation
+  tags: ["panic attack", "panic attack or heart attack", "panic attack symptoms", "heart attack symptoms", "chest pain anxiety", "how to stop a panic attack", "panic disorder", "can a panic attack cause a heart attack", "anxiety chest pain", "when to call 911 for chest pain", "grounding techniques for panic", "cbt for panic attacks", "health education"]
+  thumbnail_text: "SAME SYMPTOMS?"
+  thumbnail_highlight: "SAME"
+  thumbnail_photo_query: "woman holding chest worried"
+  playlist: "Heart & Blood Pressure"
+  scenes:
+    - layout: "title"
+      heading: "Panic Attack or Heart Attack?"
+      points: ["The signs can look alike"]
+      footage_query: "woman holding chest worried"
+      narration: >-
+        Your heart is pounding. Your chest feels tight, and you cannot catch your breath. Is it a panic attack, or a heart
+        attack? The signs can overlap so much that even doctors need tests to tell. Here are the clues, why you should
+        never guess, and what to do.
+    - layout: "bullets"
+      heading: "What Is a Panic Attack?"
+      points: ["Sudden wave of intense fear", "Strong body symptoms", "Peaks within minutes", "Not dangerous to a healthy heart"]
+      footage_query: "woman breathing deeply outdoors"
+      narration: >-
+        A panic attack is a sudden surge of intense fear or discomfort that reaches its peak within minutes. It brings strong
+        physical symptoms, and it can feel terrifying, as if something terrible is happening. A panic attack by itself does
+        not damage a healthy heart, but it can feel exactly like an emergency.
+    - layout: "warning"
+      heading: "Panic Attack Signs"
+      points: ["Racing, pounding heart", "Shortness of breath, choking feeling", "Sweating, trembling, chills", "Tingling, dizziness, feeling unreal"]
+      footage_query: "man anxious sitting alone"
+      narration: >-
+        During a panic attack, you may have a racing or pounding heart, chest pain, shortness of breath, a choking feeling,
+        sweating, shaking, chills or hot flashes, nausea, dizziness, and tingling or numbness in your hands or face. You may
+        feel detached from reality, or afraid that you are losing control, or dying. Most attacks peak in about ten minutes.
+    - layout: "warning"
+      heading: "Heart Attack Signs"
+      points: ["Chest pressure or squeezing", "Pain in arm, jaw, neck, or back", "Shortness of breath", "Cold sweat, nausea, lightheaded"]
+      footage_query: "older man holding chest pain"
+      narration: >-
+        Heart attack signs include chest pressure, squeezing, or fullness, pain that spreads to the arm, jaw, neck, or back,
+        shortness of breath, a cold sweat, nausea, and feeling lightheaded. In women, signs may be less obvious, like
+        unusual tiredness, nausea, or back or jaw pain. Pain from a heart attack may build up, and may come and go.
+    - layout: "bullets"
+      heading: "Clues That May Help"
+      points: ["Panic: tingling hands, fear of dying", "Panic: often peaks and fades", "Heart: pain with exertion", "Heart: pressure that persists"]
+      footage_query: "doctor talking to patient chest"
+      narration: >-
+        There are some clues. Panic attacks often come with tingling in the hands or around the mouth, a strong feeling of
+        dread, and symptoms that rise to a peak and then fade. Heart attack pain is more likely to start with exertion or
+        stress on the heart, to feel like heavy pressure, and to last or keep returning. But these are only clues, and they
+        are not reliable.
+    - layout: "myth_fact"
+      heading: "Can You Tell at Home?"
+      points: ["You can tell the two apart yourself", "Even doctors need tests to be sure"]
+      footage_query: "doctor reading ecg"
+      narration: >-
+        Myth one: you can always tell the difference yourself. Fact: the two can feel nearly identical, and doctors use an
+        electrocardiogram, blood tests, and sometimes more tests to tell. Many people with chest pain in the emergency room
+        turn out not to have a heart problem, and that is good news. But it is not something to work out alone.
+    - layout: "warning"
+      heading: "When to Call 911"
+      points: ["Chest pain or pressure that is new", "Pain spreading to arm, jaw, or back", "Over 40 or with heart risk factors", "Not sure: call"]
+      footage_query: "person calling phone emergency"
+      narration: >-
+        Call nine one one if you have new chest pain or pressure, especially if it spreads to the arm, jaw, or back, if you
+        have risk factors like high blood pressure, diabetes, smoking, or family history of heart disease, if you are over
+        forty, or if you are simply not sure. It is always better to be checked. Do not drive yourself.
+    - layout: "myth_fact"
+      heading: "Can Panic Cause a Heart Attack?"
+      points: ["Panic attacks cause heart attacks", "Panic does not harm a healthy heart"]
+      footage_query: "woman calming down breathing"
+      narration: >-
+        Myth two: a panic attack can cause a heart attack. Fact: in a person with a healthy heart, a panic attack does not
+        cause a heart attack. But if you have heart disease, strong stress can also trigger heart problems, which is another
+        reason to get chest pain checked at least once. Once you know your heart is healthy, panic attacks are easier to
+        manage.
+    - layout: "bullets"
+      heading: "What Helps in the Moment"
+      points: ["Slow, steady breathing", "Name 5 things you can see", "Remind yourself it will pass", "Do not fight it"]
+      footage_query: "woman sitting calm park bench"
+      narration: >-
+        If you already know your attacks are panic, a few skills may help. Breathe in slowly through your nose, and out slowly
+        through your mouth. Name five things you can see, four you can touch, and three you can hear, to ground yourself.
+        Remind yourself that the wave will pass, usually within minutes. Fighting it often makes it stronger. Do not breathe
+        into a paper bag.
+    - layout: "bullets"
+      heading: "Panic Disorder"
+      points: ["Repeated, unexpected attacks", "Fear of the next attack", "Avoiding places or activities", "Treatable"]
+      footage_query: "woman talking to counselor"
+      narration: >-
+        If attacks keep happening out of the blue, and you worry for a month or more about having another one, or change your
+        life to avoid them, that may be panic disorder. It is common, and it is treatable. Many people feel much better with
+        the right care, and they get back to the activities they gave up.
+    - layout: "bullets"
+      heading: "Treatment That Works"
+      points: ["Cognitive behavioral therapy", "Antidepressant medicines", "Less caffeine, good sleep", "Regular exercise"]
+      footage_query: "therapy session conversation"
+      narration: >-
+        The main treatments are cognitive behavioral therapy, which teaches you to change the thoughts and habits that feed
+        panic, and certain medicines, like antidepressants, prescribed by a doctor. Cutting back on caffeine, getting enough
+        sleep, and exercising regularly also help. A doctor can also check for other problems, like thyroid disease, that can
+        cause similar symptoms.
+    - layout: "warning"
+      heading: "If You Feel Unsafe"
+      points: ["Thoughts of self harm", "Call or text 988 in the US", "Call 911 for immediate danger", "Tell someone you trust"]
+      footage_query: "person holding phone calling"
+      narration: >-
+        If you have thoughts of hurting yourself, get help right now. In the United States, call or text nine eight eight,
+        the Suicide and Crisis Lifeline, any time. If there is immediate danger, call nine one one. Tell someone you trust how
+        you feel. Panic and anxiety are treatable, and help is available.
+    - layout: "warning"
+      heading: "Call Your Doctor"
+      points: ["Repeated panic attacks", "Attacks keep you from daily life", "Chest pain never checked", "Ask about therapy"]
+      footage_query: "doctor talking patient office"
+      narration: >-
+        Call your doctor if you have repeated panic attacks, if they are limiting your life, or if you have had chest pain
+        that has never been checked. A doctor can check your heart, look for other causes, and connect you with treatment.
+        Telling a doctor about it is the first step toward feeling better.
+    - layout: "outro"
+      heading: "Remember"
+      points: ["Do not guess with chest pain", "When unsure, call 911", "Panic is treatable"]
+      footage_query: "family at home together"
+      narration: >-
+        Remember: you cannot always tell a panic attack from a heart attack, when you are unsure, call nine one one, and know
+        that panic attacks are treatable. Share this with someone who has had a scary episode. This video is for education
+        only, not medical advice. Like and subscribe to Health Support Studio for a new health video every day.
+  short_title: "Panic attack or heart attack? #Shorts"
+  short_caption: "Panic and heart attacks can feel the same. When unsure, call 911. Educational only, not medical advice."
+  short_scenes:
+    - layout: "title"
+      heading: "Panic or Heart Attack?"
+      points: ["They can feel the same"]
+      footage_query: "woman holding chest worried"
+      narration: >-
+        Racing heart. Tight chest. Hard to breathe. Panic attack, or heart attack?
+    - layout: "warning"
+      heading: "When Unsure, Call 911"
+      points: ["Even doctors need tests", "New chest pain: get checked", "Panic is treatable"]
+      footage_query: "person calling phone emergency"
+      narration: >-
+        The signs can look almost the same, and even doctors need tests to tell. If you have new chest pain or pressure,
+        pain that spreads to your arm or jaw, or you are simply not sure, call nine one one. If your heart is checked and
+        healthy, panic attacks are treatable with therapy and sometimes medicine.
+    - layout: "outro"
+      heading: "Full Video"
+      points: ["On YouTube"]
+      footage_query: "family at home together"
+      narration: >-
+        Learn more in our full video on the Health Support Studio channel.
+story:
+  open: >-
+    Imagine Leo. At two in the morning his heart is racing and his chest feels tight, and he tells himself it is just a
+    panic attack. By the end of this video, you will know if he can be sure, and what Leo should do.
+  twist: >-
+    Remember Leo? Here is the twist. Panic and heart attacks can feel almost the same, even doctors need tests to tell,
+    and when in doubt the answer is to call nine one one.
+  end: >-
+    So what should Leo do? Call nine one one for new chest pain, get his heart checked, and if it is panic, ask about
+    therapy, and call or text nine eight eight if he ever thinks about hurting himself.
+  short_cliff: >-
+    Leo's heart is racing and his chest hurts at night. Can he tell if it is panic or a heart attack?
+  reel_answer: >-
+    The answer: not for sure. The signs can feel the same, and even doctors need tests. When unsure, call nine one one.

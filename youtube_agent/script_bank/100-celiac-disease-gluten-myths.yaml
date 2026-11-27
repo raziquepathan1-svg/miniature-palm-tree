@@ -1,0 +1,184 @@
+queue_topic: "Celiac disease and gluten myths: signs, testing and who should go gluten free"
+style: "Myth vs Fact"
+sources:
+  - "NIDDK, Celiac Disease: https://www.niddk.nih.gov/health-information/digestive-diseases/celiac-disease"
+  - "MedlinePlus, Celiac Disease: https://medlineplus.gov/celiacdisease.html"
+  - "NIDDK, Symptoms and Causes of Celiac Disease: https://www.niddk.nih.gov/health-information/digestive-diseases/celiac-disease/symptoms-causes"
+plan:
+  topic: "Celiac disease and gluten myths: signs, testing and who should go gluten free"
+  title: "Celiac Disease vs Gluten Myths: Who Really Needs Gluten Free?"
+  description: |-
+    Is gluten bad for everyone? Not really, but for people with celiac disease it is a real problem. Learn what celiac disease is, the many signs it can cause beyond stomach trouble, why you should be tested before you stop eating gluten, who really needs a gluten free diet, and the myths about gluten you can safely skip.
+
+    In this video:
+    • What celiac disease is, and what it is not
+    • Signs in adults and children
+    • How celiac disease is diagnosed
+    • Gluten free diet: who needs it
+    • Myths about gluten
+
+    #CeliacDisease #Gluten #GlutenFree #DigestiveHealth #HealthEducation
+  tags: ["celiac disease", "celiac disease symptoms", "gluten", "gluten free diet", "gluten myths", "gluten intolerance", "gluten sensitivity vs celiac", "celiac disease test", "celiac in children", "is gluten free healthier", "wheat allergy vs celiac", "celiac disease diagnosis", "health education"]
+  thumbnail_text: "GLUTEN: THE TRUTH"
+  thumbnail_highlight: "TRUTH"
+  thumbnail_photo_query: "bread and wheat table"
+  playlist: "Body Myths"
+  scenes:
+    - layout: "title"
+      heading: "Celiac Disease and Gluten"
+      points: ["Who really needs gluten free?"]
+      footage_query: "bread and wheat table"
+      narration: >-
+        Is gluten bad for everyone? You will hear it all the time. The truth is more interesting. For people with celiac
+        disease, gluten is a real problem that can damage the gut. For most other people, it is not. Here is what celiac
+        disease is, the signs, how it is tested, and the gluten myths you can skip.
+    - layout: "bullets"
+      heading: "What Is Gluten?"
+      points: ["A protein in wheat", "Also in barley and rye", "In bread, pasta, many foods", "Oats can be contaminated"]
+      footage_query: "baker making bread"
+      narration: >-
+        Gluten is a protein found in wheat, barley, and rye. It gives bread and pasta their chewy texture, and it is hidden
+        in many packaged foods, sauces, and even some medicines. Oats do not contain gluten themselves, but they are often
+        contaminated with it during growing and processing, so look for oats labeled gluten free.
+    - layout: "bullets"
+      heading: "What Is Celiac Disease?"
+      points: ["An autoimmune disease", "Gluten triggers immune attack on the gut", "Damages the small intestine lining", "About 1 in 100 people"]
+      footage_query: "doctor explaining intestine model"
+      narration: >-
+        Celiac disease is an autoimmune disease. When a person with celiac disease eats gluten, the immune system attacks the
+        lining of the small intestine, damaging the tiny fingers that absorb nutrients. About one in one hundred people has
+        it, and many do not know. It runs in families, and it is different from a food allergy.
+    - layout: "warning"
+      heading: "Signs in Adults"
+      points: ["Diarrhea, bloating, gas", "Weight loss, anemia, tiredness", "Bone loss, mouth sores", "Itchy blistering rash, tingling feet"]
+      footage_query: "woman tired holding stomach"
+      narration: >-
+        Signs in adults can include diarrhea, bloating, gas, weight loss, and tiredness, but many people have other signs
+        instead. These include iron deficiency anemia, weak or thin bones, mouth sores, tingling in the feet, headaches,
+        missed periods, and an itchy blistering rash called dermatitis herpetiformis. Some people have no stomach symptoms
+        at all.
+    - layout: "warning"
+      heading: "Signs in Children"
+      points: ["Slow growth or weight gain", "Belly swelling, diarrhea", "Vomiting, irritability", "Delayed puberty"]
+      footage_query: "child holding stomach"
+      narration: >-
+        In children, signs can include diarrhea, a swollen belly, vomiting, poor growth or weight gain, irritability, and
+        delayed puberty. Some children are very tired or have trouble in school. If a child is not growing as expected, or has
+        digestive problems that will not go away, ask the pediatrician about celiac disease.
+    - layout: "myth_fact"
+      heading: "Is Gluten Free Healthier?"
+      points: ["Gluten free is healthier for everyone", "No proof it helps without celiac"]
+      footage_query: "grocery store aisle food"
+      narration: >-
+        Myth one: a gluten free diet is healthier for everyone. Fact: there is no good evidence that it is healthier for
+        people without celiac disease or gluten sensitivity. Many gluten free products have less fiber and fewer vitamins,
+        and they are more expensive. Eating whole grains that contain gluten is a healthy choice for most people.
+    - layout: "warning"
+      heading: "Test Before You Stop"
+      points: ["Keep eating gluten until tested", "Blood test first", "Biopsy may confirm", "Stopping early can hide it"]
+      footage_query: "doctor drawing blood sample"
+      narration: >-
+        If you think you may have celiac disease, do not stop eating gluten yet. The tests only work when you are eating it.
+        Doctors start with a blood test, and then may confirm with a small sample of the small intestine, taken during a
+        procedure called an endoscopy. If you stop gluten first, the results can look normal, and the diagnosis can be missed.
+    - layout: "bullets"
+      heading: "Who Should Be Tested?"
+      points: ["Symptoms that fit", "Parent, sibling, or child with celiac", "Type 1 diabetes or thyroid disease", "Unexplained anemia or bone loss"]
+      footage_query: "family at doctor office"
+      narration: >-
+        You may need testing if you have symptoms that fit, or if you have a close relative with celiac disease, who has about
+        a one in ten chance of having it too. Testing is also advised for people with type 1 diabetes, autoimmune thyroid
+        disease, Down syndrome, or unexplained anemia or bone loss. Ask your doctor.
+    - layout: "myth_fact"
+      heading: "A Little Gluten Is Okay?"
+      points: ["A little gluten is harmless", "Even small amounts harm celiac patients"]
+      footage_query: "woman reading food label"
+      narration: >-
+        Myth two: with celiac disease, a little gluten does no harm if you feel fine. Fact: even small amounts can cause
+        damage to the gut, even when there are no symptoms. The only treatment is a strict, lifelong gluten free diet. That
+        means reading labels, avoiding cross contact in kitchens, and asking questions when eating out.
+    - layout: "bullets"
+      heading: "Living Gluten Free"
+      points: ["Safe: rice, corn, potatoes, meat, fish, fruit", "Read every label", "Avoid cross contact", "Work with a dietitian"]
+      footage_query: "family cooking gluten free kitchen"
+      narration: >-
+        Many foods are naturally gluten free, like fruits, vegetables, meat, fish, eggs, rice, corn, and potatoes. Read
+        labels on everything packaged, and look out for cross contact from shared toasters and cutting boards. A registered
+        dietitian who knows celiac disease can help you eat well, with enough fiber, iron, calcium, and vitamins.
+    - layout: "myth_fact"
+      heading: "Is It the Same as Sensitivity?"
+      points: ["Gluten sensitivity is the same as celiac", "Sensitivity gives symptoms without gut damage"]
+      footage_query: "woman bloated stomach kitchen"
+      narration: >-
+        Myth three: if gluten makes me feel bad, I have celiac disease. Fact: some people feel unwell after eating gluten
+        without having celiac disease or a wheat allergy. It is called non celiac gluten sensitivity. There is no test for it,
+        and it does not damage the gut. That is why you should be tested for celiac disease first, before you cut gluten out.
+    - layout: "bullets"
+      heading: "Why Treatment Matters"
+      points: ["Prevents gut damage", "Helps anemia and bone loss", "Supports growth in children", "Lowers long term risks"]
+      footage_query: "happy family eating together"
+      narration: >-
+        Untreated celiac disease can cause poor nutrition, anemia, weak bones, and fertility problems, and rarely, some
+        cancers of the intestine. A strict gluten free diet allows the gut to heal and lowers these risks. Most people begin
+        to feel better within weeks, but healing can take months or longer, especially in adults.
+    - layout: "warning"
+      heading: "Call Your Doctor"
+      points: ["Ongoing diarrhea or weight loss", "Anemia or bone fractures", "Symptoms despite a gluten free diet", "Child not growing well"]
+      footage_query: "doctor talking patient office"
+      narration: >-
+        Call your doctor if you have ongoing diarrhea, bloating, or weight loss, if you have anemia or bone fractures with no
+        clear cause, if you still have symptoms on a gluten free diet, or if a child is not growing well. Ask about celiac
+        testing before you change your diet.
+    - layout: "warning"
+      heading: "Go to the ER"
+      points: ["Severe belly pain", "Vomiting you cannot stop", "Signs of dehydration", "Confusion or fainting"]
+      footage_query: "ambulance emergency"
+      narration: >-
+        Go to the emergency room or call nine one one for severe belly pain, vomiting you cannot stop, signs of severe
+        dehydration like very little urine and dizziness, confusion, or fainting. These are not typical of celiac disease, and
+        they need urgent care.
+    - layout: "outro"
+      heading: "Remember"
+      points: ["Test before you cut gluten", "Celiac needs a strict gluten free diet", "Gluten free is not healthier for everyone"]
+      footage_query: "family at home together"
+      narration: >-
+        Remember: get tested before you cut gluten, celiac disease needs a strict lifelong gluten free diet, and gluten free
+        is not healthier for everyone. Share this with someone who thinks gluten is bad for all. This video is for education
+        only, not medical advice. Like and subscribe to Health Support Studio for a new health video every day.
+  short_title: "Is gluten bad for everyone? #Shorts"
+  short_caption: "Gluten harms people with celiac disease, but a gluten free diet is not healthier for everyone. Educational only, not medical advice."
+  short_scenes:
+    - layout: "title"
+      heading: "Is Gluten Bad?"
+      points: ["Celiac vs everyone else"]
+      footage_query: "bread and wheat table"
+      narration: >-
+        Is gluten bad for everyone? Not really. But for people with celiac disease, it is a real problem.
+    - layout: "warning"
+      heading: "Test First"
+      points: ["Do not stop gluten before testing", "Celiac: strict lifelong diet", "Gluten free is not healthier for all"]
+      footage_query: "doctor drawing blood sample"
+      narration: >-
+        Celiac disease is an autoimmune disease that damages the small intestine when you eat gluten. If you suspect it, do
+        not stop eating gluten until you are tested, because the tests only work if you are eating it. A gluten free diet is
+        essential for celiac disease, but it is not healthier for everyone else.
+    - layout: "outro"
+      heading: "Full Video"
+      points: ["On YouTube"]
+      footage_query: "family at home together"
+      narration: >-
+        Learn more in our full video on the Health Support Studio channel.
+story:
+  open: >-
+    Imagine Jon. He feels bloated after bread, so he stopped eating gluten last month on his own, and now he wants to be
+    tested for celiac disease. By the end of this video, you will know what is wrong with that plan.
+  twist: >-
+    Remember Jon? Here is the twist. Celiac tests only work while you are eating gluten, so stopping first can hide the
+    diagnosis, and a gluten free diet is not healthier for everyone.
+  end: >-
+    So what should Jon do? Talk to his doctor, ask for celiac testing before changing his diet, and if the test is positive,
+    follow a strict gluten free diet with a dietitian.
+  short_cliff: >-
+    Jon stopped eating gluten last month and now wants to be tested for celiac disease. What is the problem?
+  reel_answer: >-
+    The answer: celiac tests only work while you are eating gluten. Do not stop gluten until you are tested.

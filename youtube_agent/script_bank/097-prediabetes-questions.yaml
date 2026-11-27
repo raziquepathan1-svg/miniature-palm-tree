@@ -1,0 +1,192 @@
+queue_topic: "Prediabetes: signs, tests and how to turn it around"
+style: "Top Questions"
+sources:
+  - "CDC, About Prediabetes and Type 2 Diabetes: https://www.cdc.gov/diabetes/prevention-type-2/index.html"
+  - "NIDDK, Prediabetes and Insulin Resistance: https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/prediabetes-insulin-resistance"
+  - "MedlinePlus, Prediabetes: https://medlineplus.gov/prediabetes.html"
+plan:
+  topic: "Prediabetes: signs, tests and how to turn it around"
+  title: "Prediabetes: Do You Have It? Signs, Tests and How to Reverse It"
+  description: |-
+    Millions of Americans have prediabetes and do not know it. It usually causes no symptoms, but it can be a warning that type 2 diabetes is on the way. The good news is that it can often be slowed or reversed. Learn who should be tested, what the numbers mean, how lifestyle changes can lower your risk, and when to call your doctor.
+
+    In this video:
+    • What prediabetes is
+    • Who is at risk, and who should be tested
+    • What the blood test numbers mean
+    • How to lower your risk
+    • Myths about prediabetes and sugar
+
+    #Prediabetes #Diabetes #BloodSugar #HealthTips #HealthEducation
+  tags: ["prediabetes", "prediabetes symptoms", "prediabetes diet", "how to reverse prediabetes", "prediabetes a1c", "prediabetes blood sugar levels", "do i have prediabetes", "prediabetes test", "type 2 diabetes prevention", "diabetes prevention program", "prediabetes risk factors", "high blood sugar signs", "health education"]
+  thumbnail_text: "1 IN 3 ADULTS"
+  thumbnail_highlight: "1"
+  thumbnail_photo_query: "man checking blood sugar finger"
+  playlist: "Diabetes & Metabolism"
+  scenes:
+    - layout: "title"
+      heading: "Prediabetes: Do You Have It?"
+      points: ["Signs, tests, and how to turn it around"]
+      footage_query: "man checking blood sugar finger"
+      narration: >-
+        You feel fine. No thirst, no weight loss, nothing unusual. But your blood sugar may already be higher than it should
+        be. That is prediabetes, and most people who have it do not know. The good news is that it can often be slowed or
+        even reversed. Here is who should be tested, what the numbers mean, and what really helps.
+    - layout: "big_number"
+      heading: "How Common?"
+      points: ["1 in 3", "US adults have prediabetes"]
+      footage_query: "group of adults walking"
+      narration: >-
+        How common is it? The CDC says about one in three adults in the United States has prediabetes, and most of them do
+        not know they have it. Without changes, many people with prediabetes go on to develop type 2 diabetes within a few
+        years. That is why finding it early gives you a real chance to change the path.
+    - layout: "bullets"
+      heading: "What Is Prediabetes?"
+      points: ["Blood sugar higher than normal", "Not yet high enough for diabetes", "Cells respond poorly to insulin", "A warning sign"]
+      footage_query: "doctor explaining blood sugar chart"
+      narration: >-
+        Prediabetes means your blood sugar is higher than normal, but not yet high enough to be called type 2 diabetes. It
+        often starts with insulin resistance, when your body's cells do not respond well to insulin, the hormone that moves
+        sugar from your blood into your cells. Think of it as a warning light, not a final result.
+    - layout: "warning"
+      heading: "Signs to Notice"
+      points: ["Usually no symptoms", "Dark, velvety patches on neck or armpits", "Tired, hungrier than usual", "Get tested, do not guess"]
+      footage_query: "tired woman sitting couch"
+      narration: >-
+        Most people with prediabetes have no symptoms at all. Some notice dark, velvety patches of skin on the neck, armpits,
+        or groin, which can be a sign of insulin resistance. Feeling tired or hungrier than usual can happen, but those are
+        common and not specific. The only way to know is to get a blood test.
+    - layout: "bullets"
+      heading: "Who Is at Higher Risk?"
+      points: ["Overweight, especially around the waist", "Age 35 or older", "Parent or sibling with diabetes", "Inactive, or past gestational diabetes"]
+      footage_query: "family at kitchen table"
+      narration: >-
+        You are at higher risk if you are overweight, especially around the middle, if you are thirty five or older, if a
+        parent or sibling has type 2 diabetes, or if you are not very active. Having had diabetes during pregnancy, or
+        polycystic ovary syndrome, also raises the risk. Some racial and ethnic groups have higher risk too.
+    - layout: "bullets"
+      heading: "How It Is Tested"
+      points: ["A1C blood test", "Fasting blood sugar", "Oral glucose tolerance test", "Ask when to retest"]
+      footage_query: "lab technician drawing blood"
+      narration: >-
+        Doctors diagnose prediabetes with a blood test. The A1C test shows your average blood sugar over about three months.
+        A result between five point seven and six point four percent means prediabetes. A fasting blood sugar between one
+        hundred and one hundred twenty five milligrams per deciliter also means prediabetes. Your doctor will explain your
+        results.
+    - layout: "myth_fact"
+      heading: "Does Sugar Cause It?"
+      points: ["Eating sugar directly causes prediabetes", "Weight, genes, and inactivity all play a part"]
+      footage_query: "woman reading food label"
+      narration: >-
+        Myth one: eating too much sugar is the only cause of prediabetes. Fact: it is not that simple. Extra weight, family
+        history, age, and being inactive all play a part. Sugary drinks and snacks can add calories and weight gain, so
+        cutting back helps, but sugar alone does not cause prediabetes, and thin people can get it too.
+    - layout: "warning"
+      heading: "Why It Matters"
+      points: ["Can become type 2 diabetes", "Raises heart disease risk", "Can damage nerves and kidneys", "Often reversible"]
+      footage_query: "doctor talking to patient"
+      narration: >-
+        Why should you care? Prediabetes can turn into type 2 diabetes, which can damage the heart, kidneys, eyes, and nerves
+        over time. Even before diabetes starts, higher blood sugar raises the risk of heart disease. But prediabetes is also a
+        chance to act early, and many people can bring their blood sugar back toward normal.
+    - layout: "bullets"
+      heading: "Move More"
+      points: ["About 150 minutes a week", "Brisk walking counts", "Add muscle work twice a week", "Sit less during the day"]
+      footage_query: "group of adults walking exercise"
+      narration: >-
+        Physical activity helps your muscles use sugar from the blood. A good goal for most adults is about one hundred fifty
+        minutes of moderate activity a week, like brisk walking, which is about thirty minutes on five days. Adding
+        strength exercises twice a week helps too. Even short walks after meals help, and sitting less matters.
+    - layout: "bullets"
+      heading: "Eat Smarter"
+      points: ["Fill half your plate with vegetables", "Choose whole grains", "Cut sugary drinks", "Watch portion sizes"]
+      footage_query: "healthy plate vegetables salad"
+      narration: >-
+        You do not need a perfect diet. Fill half your plate with non starchy vegetables, choose whole grains over refined
+        ones, cut back on sugary drinks and sweets, and watch portion sizes. Choose lean proteins, beans, nuts, and healthy oils.
+        A registered dietitian can help you build a plan that fits your culture, budget, and tastes.
+    - layout: "big_number"
+      heading: "Small Weight Loss, Big Change"
+      points: ["5 to 7", "percent weight loss can lower risk"]
+      footage_query: "woman stepping on scale"
+      narration: >-
+        Here is encouraging news. Research from the Diabetes Prevention Program found that losing five to seven percent of
+        your body weight, along with regular activity, cut the chance of developing type 2 diabetes by more than half. For a
+        person who weighs two hundred pounds, that is only ten to fourteen pounds.
+    - layout: "myth_fact"
+      heading: "Is Prediabetes Not Serious?"
+      points: ["It is not serious until diabetes", "Early changes can lower your risk a lot"]
+      footage_query: "doctor and patient talking"
+      narration: >-
+        Myth two: prediabetes is not serious, and you do not have to do anything until it turns into diabetes. Fact: this is
+        the best time to act. Lifestyle changes work well at this stage, and your risk for heart disease is already higher.
+        Many people can slow or stop the path to diabetes, and some return to normal blood sugar.
+    - layout: "bullets"
+      heading: "Help Is Available"
+      points: ["CDC National Diabetes Prevention Program", "Group coaching, online or in person", "Ask your doctor about medicine", "Recheck blood sugar yearly"]
+      footage_query: "group meeting health class"
+      narration: >-
+        The CDC supports a National Diabetes Prevention Program, with year long lifestyle coaching in groups, in person or
+        online. Ask your doctor or insurance about programs near you. For some people, a doctor may also suggest medicine, such
+        as metformin. Have your blood sugar checked at least once a year, or as often as your doctor advises.
+    - layout: "warning"
+      heading: "Call Your Doctor"
+      points: ["Very thirsty, urinating often", "Blurry vision, slow healing sores", "Weight loss you cannot explain", "Tingling in hands or feet"]
+      footage_query: "doctor talking patient office"
+      narration: >-
+        Call your doctor if you have signs that your blood sugar may be much higher, like being very thirsty, urinating often,
+        blurry vision, cuts that heal slowly, unexplained weight loss, or tingling in your hands or feet. These can be signs of
+        diabetes, and a blood test can find out quickly.
+    - layout: "warning"
+      heading: "Go to the ER"
+      points: ["Vomiting and belly pain with thirst", "Fruity breath, fast breathing", "Confusion or very sleepy", "Fainting"]
+      footage_query: "ambulance emergency"
+      narration: >-
+        Go to the emergency room or call nine one one for vomiting and belly pain with extreme thirst, fast breathing, breath
+        that smells fruity, confusion, being very sleepy, or fainting. These can be signs of dangerously high blood sugar, and
+        they need care right away.
+    - layout: "outro"
+      heading: "Remember"
+      points: ["Get tested if you are at risk", "Move more, eat smarter", "Small changes can turn it around"]
+      footage_query: "family walking park"
+      narration: >-
+        Remember: if you are at risk, get your blood sugar tested, move more and eat smarter, and know that small changes can
+        turn prediabetes around. Share this with someone who has never been tested. This video is for education only, not
+        medical advice. Like and subscribe to Health Support Studio for a new health video every day.
+  short_title: "Prediabetes: 1 in 3 adults have it #Shorts"
+  short_caption: "Most people with prediabetes do not know it. A blood test can tell. Educational only, not medical advice."
+  short_scenes:
+    - layout: "title"
+      heading: "Prediabetes?"
+      points: ["1 in 3 adults"]
+      footage_query: "man checking blood sugar finger"
+      narration: >-
+        About one in three adults has prediabetes, and most do not know. You can feel perfectly fine.
+    - layout: "warning"
+      heading: "Get Tested"
+      points: ["Often no symptoms", "A1C or fasting blood sugar", "Small weight loss helps a lot"]
+      footage_query: "lab technician drawing blood"
+      narration: >-
+        Prediabetes usually has no symptoms, so only a blood test can tell. If you are overweight, over thirty five, or have
+        a parent with diabetes, ask your doctor. The good news is that losing five to seven percent of your weight and moving
+        more can cut your risk of type 2 diabetes by more than half.
+    - layout: "outro"
+      heading: "Full Video"
+      points: ["On YouTube"]
+      footage_query: "family walking park"
+      narration: >-
+        Learn more in our full video on the Health Support Studio channel.
+story:
+  open: >-
+    Imagine Rosa. She feels fine, but her father has diabetes and her doctor said her blood sugar is a little high. By
+    the end of this video, you will know what that means, and whether Rosa can do anything about it.
+  twist: >-
+    Remember Rosa? Here is the twist. Prediabetes often has no symptoms, and it is not too late, because losing five to
+    seven percent of her weight and moving more can cut her risk by more than half.
+  end: >-
+    So what should Rosa do? Get her blood sugar rechecked, walk about thirty minutes most days, eat more vegetables and
+    whole grains, join a diabetes prevention program, and call her doctor if she gets very thirsty or her vision blurs.
+  short_cliff: >-
+    Rosa feels fine, but her blood sugar is a little high. Is it too late to do anything?
+  reel_answer: >-
+    The answer: no. Losing five to seven percent of your weight and moving more can cut the risk of type 2 diabetes by more than half.
