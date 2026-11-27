@@ -1,0 +1,195 @@
+queue_topic: "Norovirus (the stomach flu): symptoms, spread and when to get help"
+style: "Top Questions"
+sources:
+  - "CDC, Norovirus: https://www.cdc.gov/norovirus/index.html"
+  - "MedlinePlus, Norovirus Infections: https://medlineplus.gov/norovirusinfections.html"
+  - "NIDDK, Symptoms and Causes of Gastroenteritis: https://www.niddk.nih.gov/health-information/digestive-diseases/viral-gastroenteritis/symptoms-causes"
+plan:
+  topic: "Norovirus (the stomach flu): symptoms, spread and when to get help"
+  title: "Stomach Flu (Norovirus): How Long It Lasts and When to Worry"
+  description: |-
+    Sudden vomiting and watery diarrhea, and half the house gets it. Norovirus is the most common cause of stomach illness in the US, and it spreads fast in the winter months. Learn the symptoms, how long you stay contagious, why hand sanitizer is not enough, how to prevent dehydration, and when to call your doctor or go to the ER.
+
+    In this video:
+    • What norovirus is, and why it is not the flu
+    • Symptoms and how long they last
+    • How it spreads, and how to clean up
+    • Dehydration warning signs
+    • When to call your doctor or go to the ER
+
+    #Norovirus #StomachFlu #HealthTips #FoodSafety #HealthEducation
+  tags: ["norovirus", "stomach flu", "stomach bug", "norovirus symptoms", "how long does norovirus last", "how long is norovirus contagious", "vomiting and diarrhea", "dehydration signs", "norovirus vs food poisoning", "how to clean up after norovirus", "does hand sanitizer kill norovirus", "when to see a doctor for stomach flu", "health education"]
+  thumbnail_text: "NOT THE FLU"
+  thumbnail_highlight: "FLU"
+  thumbnail_photo_query: "man holding stomach couch"
+  playlist: "Infections & Vaccines"
+  scenes:
+    - layout: "title"
+      heading: "Stomach Flu: Norovirus"
+      points: ["What to do, and when to worry"]
+      footage_query: "man holding stomach couch"
+      narration: >-
+        It starts suddenly. Nausea, then vomiting, then watery diarrhea, and soon it seems like the whole house is sick.
+        That is usually norovirus, often called the stomach flu. Most people get better at home in a few days, but some
+        need help. Here is how it spreads, how to stay hydrated, and the signs that mean call your doctor.
+    - layout: "bullets"
+      heading: "What Is Norovirus?"
+      points: ["A very contagious virus", "Causes stomach and gut illness", "Not the same as the flu", "Many types, so you can get it again"]
+      footage_query: "person resting on couch blanket"
+      narration: >-
+        Norovirus is a very contagious virus that inflames the stomach and intestines. People call it the stomach flu, but
+        it is not related to influenza, the virus that causes the flu. There are many types of norovirus, so having it once
+        does not protect you from getting it again. It can strike any time of year, but it is most common in the winter
+        months.
+    - layout: "big_number"
+      heading: "Millions of Cases"
+      points: ["Millions", "of Americans get it every year"]
+      footage_query: "family at home kitchen"
+      narration: >-
+        How common is it? Very. Norovirus makes millions of Americans sick every year, according to the CDC, and it is the
+        leading cause of vomiting and diarrhea from food or a stomach bug. It spreads easily in homes, schools, daycare
+        centers, nursing homes, cruise ships, and restaurants.
+    - layout: "warning"
+      heading: "Common Symptoms"
+      points: ["Vomiting", "Watery diarrhea", "Nausea and stomach cramps", "Sometimes fever, headache, body aches"]
+      footage_query: "woman holding stomach pain"
+      narration: >-
+        The main symptoms are vomiting, watery diarrhea, nausea, and stomach cramps. Some people also have a low fever,
+        headache, and body aches. Symptoms usually begin twelve to forty eight hours after you are exposed. Most people feel
+        better in one to three days, but the biggest danger during that time is losing too much fluid.
+    - layout: "bullets"
+      heading: "How It Spreads"
+      points: ["Touching contaminated surfaces", "Close contact with a sick person", "Contaminated food or water", "Tiny amounts can cause illness"]
+      footage_query: "person washing hands sink"
+      narration: >-
+        Norovirus spreads in a few ways. You can touch a surface that has the virus and then touch your mouth, you can care
+        for a sick person, or you can eat food or drink water that is contaminated. It takes only a tiny amount of virus to
+        make someone sick, which is why it moves through a household so fast.
+    - layout: "myth_fact"
+      heading: "Is It the Flu?"
+      points: ["The flu shot prevents the stomach flu", "Different virus, so the flu shot fails"]
+      footage_query: "doctor talking to patient"
+      narration: >-
+        Myth one: the flu shot protects you from the stomach flu. Fact: they are different illnesses caused by different
+        viruses. Influenza mainly affects your breathing, while norovirus affects your stomach and gut. The flu shot does
+        not prevent norovirus, and there is no approved norovirus vaccine in the United States right now.
+    - layout: "bullets"
+      heading: "How Long Are You Contagious?"
+      points: ["From the first symptoms", "At least 3 days after you feel better", "Sometimes up to 2 weeks", "Stay home until 2 days after symptoms stop"]
+      footage_query: "sick man in bed at home"
+      narration: >-
+        You are most contagious when you are sick and during the first few days after you recover. The virus can stay in
+        your stool for two weeks or more, so careful handwashing matters long after you feel better. The CDC advises staying
+        home while you are sick and for at least two days after your symptoms stop, especially if you work with food or care
+        for others.
+    - layout: "myth_fact"
+      heading: "Hand Sanitizer Is Enough"
+      points: ["Hand sanitizer kills norovirus", "Soap and water works much better"]
+      footage_query: "washing hands with soap"
+      narration: >-
+        Myth two: hand sanitizer kills norovirus. Fact: most hand sanitizers do not work well against it. Wash your hands
+        with soap and running water for at least twenty seconds, after using the bathroom, after changing diapers, and
+        before you eat or prepare food. Sanitizer can be used in addition to handwashing, but it should not replace it.
+    - layout: "warning"
+      heading: "Signs of Dehydration"
+      points: ["Dry mouth and throat", "Little or no urine", "Dizziness when standing", "No tears, in a baby or child"]
+      footage_query: "person drinking glass of water kitchen"
+      narration: >-
+        Dehydration is the main risk. Watch for a dry mouth and throat, passing little or no urine, feeling dizzy when you
+        stand up, and being very tired. In babies and young children, also watch for no tears when crying, a sunken soft
+        spot on the head, and no wet diapers for several hours. Call a doctor if you see these signs.
+    - layout: "bullets"
+      heading: "Caring for Yourself at Home"
+      points: ["Sip fluids often", "Try oral rehydration drinks", "Eat bland foods when ready", "Rest"]
+      footage_query: "woman resting tea sofa"
+      narration: >-
+        At home, the goal is to replace the fluid you lose. Take small sips of water or an oral rehydration drink often,
+        even if you only keep a little down at a time. When you feel ready, start with bland foods like toast, rice, or
+        bananas. Rest as much as you can. Ask a pharmacist or your doctor before using medicine for diarrhea or nausea,
+        especially for children.
+    - layout: "myth_fact"
+      heading: "Do Antibiotics Help?"
+      points: ["Antibiotics cure the stomach flu", "A virus, so antibiotics do not work"]
+      footage_query: "pharmacist handing medicine"
+      narration: >-
+        Myth three: antibiotics cure the stomach flu. Fact: norovirus is a virus, and antibiotics only work against
+        bacteria. Taking them will not help you get better faster, and they can cause side effects. Rest, fluids, and time
+        are the treatment for most people.
+    - layout: "bullets"
+      heading: "Cleaning Up the Right Way"
+      points: ["Wear gloves", "Wipe up, then disinfect", "Use a bleach based cleaner", "Wash soiled laundry on hot"]
+      footage_query: "cleaning kitchen counter gloves"
+      narration: >-
+        Cleaning up matters, because the virus can live on surfaces for days. Wear disposable gloves, wipe up any mess with
+        paper towels, then disinfect the area with a bleach based household cleaner, following the label. Wash soiled
+        clothes and bedding right away in the hottest water that is safe for the fabric, then wash your hands well.
+    - layout: "bullets"
+      heading: "Preventing the Spread"
+      points: ["Wash hands with soap and water", "Rinse fruits and vegetables", "Cook shellfish well", "Do not prepare food while sick"]
+      footage_query: "washing vegetables sink"
+      narration: >-
+        To lower your chance of getting or spreading norovirus, wash your hands often with soap and water, rinse fruits and
+        vegetables, and cook shellfish thoroughly. If you are sick, do not prepare food for other people. If someone at
+        home is sick, try to keep them in one bathroom and give them their own towel.
+    - layout: "warning"
+      heading: "When to See a Doctor"
+      points: ["Cannot keep liquids down", "Signs of dehydration", "Bloody diarrhea or high fever", "Symptoms last more than a few days"]
+      footage_query: "doctor talking patient office"
+      narration: >-
+        Call your doctor if you cannot keep liquids down for a day, if you have signs of dehydration, if there is blood in
+        your vomit or stool, if you have a high fever, or if symptoms last more than a few days. Babies, older adults, and
+        people with weak immune systems should be checked sooner. Always call your doctor if you are not sure.
+    - layout: "warning"
+      heading: "Go to the ER"
+      points: ["Confusion or hard to wake", "Fainting", "Severe belly pain", "Very little urine for 8 hours"]
+      footage_query: "hospital emergency entrance"
+      narration: >-
+        Go to the emergency room or call nine one one for confusion, trouble waking up, fainting, severe belly pain, or
+        signs of severe dehydration, like no urine for eight hours and a very dry mouth. These need medical care right
+        away, and fluids given through a vein may be needed.
+    - layout: "outro"
+      heading: "Remember"
+      points: ["Wash hands with soap and water", "Sip fluids often", "Call early for dehydration"]
+      footage_query: "family at home together"
+      narration: >-
+        Remember: wash your hands with soap and water, sip fluids often, and call your doctor early if you cannot keep
+        liquids down or see signs of dehydration. Share this with someone who is caring for a sick family. This video is
+        for education only, not medical advice. Like and subscribe to Health Support Studio for a new health video every
+        day.
+  short_title: "Stomach flu: hand sanitizer is not enough #Shorts"
+  short_caption: "Norovirus spreads fast, and most hand sanitizers do not kill it. Wash with soap and water. Educational only, not medical advice."
+  short_scenes:
+    - layout: "title"
+      heading: "Stomach Bug in the House?"
+      points: ["Norovirus facts"]
+      footage_query: "person washing hands sink"
+      narration: >-
+        Someone in your house has the stomach flu. Before it spreads, here is the one habit that matters most.
+    - layout: "warning"
+      heading: "Soap and Water"
+      points: ["Hand sanitizer is not enough", "Wash for 20 seconds", "Stay home 2 days after symptoms stop"]
+      footage_query: "washing hands with soap"
+      narration: >-
+        Most hand sanitizers do not work well against norovirus. Wash your hands with soap and running water for at least
+        twenty seconds, after the bathroom and before you eat. Stay home until two days after your symptoms stop. And call
+        your doctor if you cannot keep liquids down or see signs of dehydration.
+    - layout: "outro"
+      heading: "Full Video"
+      points: ["On YouTube"]
+      footage_query: "family at home together"
+      narration: >-
+        Learn more in our full video on the Health Support Studio channel.
+story:
+  open: >-
+    Imagine Lena. Her whole family has been throwing up since last night, and she keeps cleaning the kitchen with her
+    hand sanitizer and wipes. By the end of this video, you will know why that is not enough, and what Lena should do.
+  twist: >-
+    Remember Lena? Here is the twist. Most hand sanitizers do not work well against norovirus, so soap and running water
+    is what protects her family.
+  end: >-
+    So what should Lena do? Wash her hands with soap and water, give small sips of fluid often, and call the doctor if
+    anyone cannot keep liquids down or shows signs of dehydration.
+  short_cliff: >-
+    Lena keeps using hand sanitizer to stop the stomach bug. Is that enough to keep her family safe?
+  reel_answer: >-
+    The answer: no. Most hand sanitizers do not work well against norovirus. Wash your hands with soap and running water for at least twenty seconds.

@@ -1,0 +1,185 @@
+queue_topic: "Allergies or a cold? How to tell, what helps, and when to see a doctor"
+style: "Top Questions"
+sources:
+  - "NIAID, Allergic Rhinitis (Hay Fever): https://www.niaid.nih.gov/diseases-conditions/allergic-rhinitis-hay-fever"
+  - "CDC, Common Colds: Protect Yourself and Others: https://www.cdc.gov/common-cold/about/index.html"
+  - "MedlinePlus, Allergic Rhinitis: https://medlineplus.gov/allergicrhinitis.html"
+plan:
+  topic: "Allergies or a cold? How to tell, what helps, and when to see a doctor"
+  title: "Allergies or a Cold? 5 Clues and What Actually Helps"
+  description: |-
+    A runny nose, sneezing, and a stuffy head. Is it allergies or a cold? The clues are different, and so is the treatment. Learn the five clues that tell them apart, which medicines help, why nasal decongestant sprays should only be used for a few days, and the warning signs of a sinus infection, asthma, or a serious allergic reaction.
+
+    In this video:
+    • Allergies vs a cold: the clues
+    • Common triggers, year round
+    • What helps: sprays, antihistamines, rinses
+    • Myths about allergies
+    • Warning signs and when to call 911
+
+    #Allergies #HayFever #Cold #HealthTips #HealthEducation
+  tags: ["allergies or cold", "allergies vs cold", "seasonal allergies", "hay fever", "allergy symptoms", "how to tell allergies from a cold", "allergy medicine", "antihistamine", "nasal spray for allergies", "nasal saline rinse", "is local honey good for allergies", "sinus infection vs allergies", "health education"]
+  thumbnail_text: "ONE BIG CLUE"
+  thumbnail_highlight: "CLUE"
+  thumbnail_photo_query: "woman sneezing tissue"
+  playlist: "Healthy Habits & Prevention"
+  scenes:
+    - layout: "title"
+      heading: "Allergies or a Cold?"
+      points: ["Five clues to tell the difference"]
+      footage_query: "woman sneezing tissue"
+      narration: >-
+        Sneezing, a runny nose, and a stuffy head. Is it allergies, or is it a cold? They can feel almost the same, but the
+        clues are different, and so is the treatment. Here is how to tell them apart, what actually helps, and the signs that
+        mean it is more than allergies.
+    - layout: "bullets"
+      heading: "What Are Allergies?"
+      points: ["The immune system overreacts", "To harmless things like pollen", "Causes sneezing and itching", "Called allergic rhinitis"]
+      footage_query: "flowers blooming spring park"
+      narration: >-
+        Allergies happen when your immune system overreacts to something harmless, like pollen, dust mites, mold, or pet
+        dander. Your body releases chemicals that cause sneezing, an itchy runny nose, and watery eyes. This is called
+        allergic rhinitis, or hay fever, though it has nothing to do with hay, and it does not cause a fever.
+    - layout: "bullets"
+      heading: "What Is a Cold?"
+      points: ["A viral infection", "Spread by droplets and touch", "Lasts about 7 to 10 days", "Antibiotics do not help"]
+      footage_query: "man with cold tissue blanket"
+      narration: >-
+        A cold is a viral infection of the nose and throat. It spreads through droplets when someone coughs or sneezes, and
+        by touching things and then your face. Colds usually last seven to ten days. Antibiotics do not help, because
+        colds are caused by viruses.
+    - layout: "warning"
+      heading: "Clues It Is Allergies"
+      points: ["Itchy eyes, nose, and throat", "Clear, thin runny nose", "Sneezing in bursts", "No fever or body aches"]
+      footage_query: "woman rubbing itchy eyes"
+      narration: >-
+        Here are the clues that point to allergies. Itchy eyes, nose, and throat are the biggest one. The runny nose is clear
+        and watery, and sneezing comes in bursts. There is no fever and no body aches. And the symptoms last as long as you
+        are around the trigger, which can be weeks, and they often return at the same time each year.
+    - layout: "warning"
+      heading: "Clues It Is a Cold"
+      points: ["Sore throat and body aches", "Mild fever, mostly in children", "Thicker mucus", "Gets better in about a week"]
+      footage_query: "sick woman with tea"
+      narration: >-
+        Clues that point to a cold are a sore throat, body aches, and feeling tired. Children may have a mild fever. The
+        mucus may turn thicker or yellow or green as the cold goes on, which does not by itself mean you need an
+        antibiotic. A cold usually gets better in about a week, and itching is not a main feature.
+    - layout: "bullets"
+      heading: "Common Triggers"
+      points: ["Tree pollen in spring", "Grass pollen in summer", "Ragweed in fall", "Dust mites, mold, pets all year"]
+      footage_query: "person mowing grass lawn"
+      narration: >-
+        Triggers depend on the season. Tree pollen is common in spring, grass pollen in late spring and summer, and ragweed
+        in the fall. Dust mites, mold, and pet dander can bother you all year, and often get worse in winter when the windows
+        are closed and the heating is on. Noticing when your symptoms start can help you find the cause.
+    - layout: "myth_fact"
+      heading: "Local Honey Cures Allergies?"
+      points: ["Local honey cures allergies", "Studies show no clear benefit"]
+      footage_query: "honey jar spoon"
+      narration: >-
+        Myth one: eating local honey cures pollen allergies. Fact: studies have not shown a clear benefit. The pollen in
+        honey is not the kind that usually causes hay fever, and it is in very small amounts. Honey is a fine food for
+        adults and children over one year old, but it is not a treatment for allergies.
+    - layout: "bullets"
+      heading: "What Helps"
+      points: ["Avoid your triggers", "Steroid nasal spray", "Antihistamine tablets or drops", "Saline rinse"]
+      footage_query: "woman using nasal spray"
+      narration: >-
+        What helps? First, avoid your triggers when you can. For many people, a steroid nasal spray is the most effective
+        medicine, and it works best when used regularly. Antihistamine tablets or eye drops can help with itching and
+        sneezing, and newer ones cause less drowsiness. A saline nasal rinse can clear mucus. Ask a pharmacist which options
+        suit you.
+    - layout: "warning"
+      heading: "Safe Nasal Rinsing"
+      points: ["Use distilled, sterile, or boiled water", "Boil, then cool it", "Never use water straight from the tap", "Clean the device after each use"]
+      footage_query: "bathroom sink running water"
+      narration: >-
+        If you use a nasal rinse, use only distilled or sterile water, or tap water that has been boiled for at least one
+        minute and then cooled. Never use water straight from the tap, because it can carry germs that are harmful in the
+        nose. Rinse and dry the bottle or neti pot after each use.
+    - layout: "myth_fact"
+      heading: "Decongestant Sprays Daily?"
+      points: ["Decongestant sprays are fine for weeks", "Limit to about 3 days"]
+      footage_query: "pharmacist handing medicine"
+      narration: >-
+        Myth two: nasal decongestant sprays are fine to use for as long as you are stuffy. Fact: if you use them for more
+        than about three days, the congestion can come back worse when you stop, called rebound congestion. Use them only for
+        a few days, as the label says. Ask a pharmacist before using any decongestant if you have high blood pressure.
+    - layout: "bullets"
+      heading: "Easier at Home"
+      points: ["Shower after being outdoors", "Wash bedding in hot water", "Keep windows closed on high pollen days", "Check pollen forecasts"]
+      footage_query: "woman changing bed sheets"
+      narration: >-
+        A few habits can make a big difference. Shower and change your clothes after being outdoors, wash bedding in hot
+        water every week, and keep windows closed on high pollen days. Check the local pollen forecast, use an air
+        conditioner with a clean filter, and wash pet bedding often. These steps reduce how much of the trigger you breathe in.
+    - layout: "myth_fact"
+      heading: "Can Adults Get Allergies?"
+      points: ["You cannot develop allergies as an adult", "Allergies can start at any age"]
+      footage_query: "older woman sneezing"
+      narration: >-
+        Myth three: if you did not have allergies as a child, you will never get them. Fact: allergies can start at any
+        age, even if you never had them before. They may also change over time. If your symptoms keep coming back or hurt
+        your sleep, work, or school, an allergist can test for triggers and talk about long term treatment.
+    - layout: "warning"
+      heading: "When It Is More"
+      points: ["Wheezing or trouble breathing", "Fever with thick discharge and facial pain", "Symptoms over 10 days without relief", "Ask your doctor"]
+      footage_query: "doctor talking patient office"
+      narration: >-
+        See a doctor if you wheeze or have trouble breathing, because allergies can trigger asthma. Also see one if you have
+        a fever, facial pain, and thick discharge that lasts more than ten days, which may be a sinus infection, or if
+        symptoms are not improving with medicine. Ask your doctor before giving allergy medicine to young children.
+    - layout: "warning"
+      heading: "Call 911"
+      points: ["Swelling of lips, tongue, or throat", "Trouble breathing", "Hives with dizziness", "Use an epinephrine pen if prescribed"]
+      footage_query: "ambulance emergency"
+      narration: >-
+        Call nine one one if someone has swelling of the lips, tongue, or throat, trouble breathing, hives with dizziness or
+        fainting, or vomiting after contact with something they are allergic to. These can be signs of anaphylaxis, a
+        severe allergic reaction. If a person has an epinephrine pen, use it as directed and still call nine one one.
+    - layout: "outro"
+      heading: "Remember"
+      points: ["Itchy and clear: think allergies", "Aches and fever: think cold", "Trouble breathing: call 911"]
+      footage_query: "family at home together"
+      narration: >-
+        Remember: itchy eyes and a clear runny nose point to allergies, aches and a fever point to a cold, and trouble
+        breathing or swelling means call nine one one. Share this with someone who always says it is just allergies. This
+        video is for education only, not medical advice. Like and subscribe to Health Support Studio for a new health video
+        every day.
+  short_title: "Allergies or a cold? One big clue #Shorts"
+  short_caption: "Itchy eyes point to allergies. Aches and fever point to a cold. Educational only, not medical advice."
+  short_scenes:
+    - layout: "title"
+      heading: "Allergies or a Cold?"
+      points: ["The big clue"]
+      footage_query: "woman sneezing tissue"
+      narration: >-
+        Sneezing and a runny nose. Allergies, or a cold? Here is the clue that tells them apart.
+    - layout: "warning"
+      heading: "Look for Itching"
+      points: ["Itchy eyes and nose: allergies", "Aches and fever: cold", "Trouble breathing: call 911"]
+      footage_query: "woman rubbing itchy eyes"
+      narration: >-
+        Itchy eyes, nose, and throat, with a clear runny nose and no fever, point to allergies. A sore throat, body aches,
+        and a mild fever point to a cold. Do not use decongestant nasal sprays for more than about three days. And call nine
+        one one for swelling of the face or throat, or trouble breathing.
+    - layout: "outro"
+      heading: "Full Video"
+      points: ["On YouTube"]
+      footage_query: "family at home together"
+      narration: >-
+        Learn more in our full video on the Health Support Studio channel.
+story:
+  open: >-
+    Imagine Nina. Every spring she gets a runny nose and sneezing, and every year she says it is just a cold. By the end
+    of this video, you will know the clue she has been missing, and what really helps.
+  twist: >-
+    Remember Nina? Here is the twist. Itchy eyes, nose, and throat with no fever point to allergies, and a decongestant
+    spray should only be used for about three days.
+  end: >-
+    So what should Nina do? Avoid her triggers, ask a pharmacist about a steroid nasal spray or an antihistamine, shower
+    after being outdoors, and call nine one one for swelling of the throat or trouble breathing.
+  short_cliff: >-
+    Nina sneezes every spring and calls it a cold. What is the one clue she is missing?
+  reel_answer: >-
+    The answer: itching. Itchy eyes, nose, and throat, with a clear runny nose and no fever, point to allergies and not a cold.

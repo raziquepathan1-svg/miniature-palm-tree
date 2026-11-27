@@ -1,0 +1,179 @@
+queue_topic: "Strep throat: how to tell it from a regular sore throat, and why treatment matters"
+style: "Top Questions"
+sources:
+  - "CDC, Group A Strep Infection (Strep Throat): https://www.cdc.gov/group-a-strep/about/strep-throat.html"
+  - "MedlinePlus, Strep Throat: https://medlineplus.gov/streptococcalinfections.html"
+  - "NIAID, Strep Throat: https://www.niaid.nih.gov/diseases-conditions/strep-throat"
+plan:
+  topic: "Strep throat: how to tell it from a regular sore throat, and why treatment matters"
+  title: "Sore Throat or Strep? Signs You Need a Test"
+  description: |-
+    Most sore throats are caused by viruses and get better on their own, but strep throat is different. It is caused by bacteria, it needs a test, and it needs antibiotics. Learn the symptoms that point to strep, the signs that point to a virus, why finishing the antibiotic matters, how long to stay home, and when to get urgent help.
+
+    In this video:
+    • Strep throat vs a viral sore throat
+    • Symptoms and the rapid strep test
+    • Why antibiotics matter, and how long to take them
+    • How long to stay home
+    • Warning signs that need urgent care
+
+    #StrepThroat #SoreThroat #KidsHealth #HealthTips #HealthEducation
+  tags: ["strep throat", "sore throat", "strep throat symptoms", "strep or virus", "rapid strep test", "strep throat in kids", "strep throat antibiotics", "how long to stay home with strep", "is strep contagious", "scarlet fever", "rheumatic fever", "when to see a doctor for sore throat", "health education"]
+  thumbnail_text: "STREP OR NOT?"
+  thumbnail_highlight: "STREP"
+  thumbnail_photo_query: "child sore throat doctor"
+  playlist: "Infections & Vaccines"
+  scenes:
+    - layout: "title"
+      heading: "Sore Throat or Strep?"
+      points: ["Know when to get tested"]
+      footage_query: "child sore throat doctor"
+      narration: >-
+        Your throat hurts every time you swallow. Is it just a cold, or is it strep? Most sore throats are caused by viruses
+        and clear up on their own. But strep throat is caused by bacteria, and it needs a test and antibiotics. Here is how to
+        tell the difference, and the warning signs that mean get help.
+    - layout: "bullets"
+      heading: "What Is Strep Throat?"
+      points: ["Infection caused by group A strep bacteria", "Spreads through coughs and sneezes", "Most common in school age children", "Treated with antibiotics"]
+      footage_query: "doctor looking at throat"
+      narration: >-
+        Strep throat is an infection of the throat and tonsils caused by bacteria called group A streptococcus. It spreads
+        through droplets when someone coughs or sneezes, and by touching surfaces and then your mouth or nose. It is most
+        common in children from about five to fifteen years old, but adults get it too, especially if they live with
+        children.
+    - layout: "warning"
+      heading: "Signs That Point to Strep"
+      points: ["Sudden, painful sore throat", "Fever", "Red, swollen tonsils, maybe white patches", "Swollen glands in the neck"]
+      footage_query: "mother checking child temperature"
+      narration: >-
+        Signs that point to strep include a sore throat that comes on fast and hurts when you swallow, a fever, red and
+        swollen tonsils that may have white patches, and tender swollen glands in the neck. Children may also have a
+        headache, stomach pain, nausea, or vomiting. Some get tiny red spots on the roof of the mouth.
+    - layout: "bullets"
+      heading: "Signs That Point to a Virus"
+      points: ["Cough", "Runny nose", "Hoarse voice", "Red, watery eyes"]
+      footage_query: "woman blowing nose tissue"
+      narration: >-
+        Now the other side. A cough, a runny nose, a hoarse voice, and red watery eyes usually mean a virus, not strep. Most
+        sore throats come from the same viruses that cause colds, and antibiotics do not help against viruses. That is why
+        you cannot tell for sure just by looking. A test is the only way to know.
+    - layout: "myth_fact"
+      heading: "Antibiotics for Every Sore Throat?"
+      points: ["Every sore throat needs an antibiotic", "Only strep, confirmed by a test"]
+      footage_query: "pharmacist talking to patient"
+      narration: >-
+        Myth one: every sore throat needs an antibiotic. Fact: antibiotics help only when the cause is bacteria, like
+        strep. For a virus, they will not make you better faster, and they can cause side effects like diarrhea or an
+        allergic reaction. Using them when you do not need them also helps bacteria become resistant.
+    - layout: "bullets"
+      heading: "How Strep Is Tested"
+      points: ["Quick swab of the throat", "Rapid test in minutes", "Sometimes a lab culture", "Ask your doctor about results"]
+      footage_query: "doctor swab child throat"
+      narration: >-
+        A doctor or clinic tests for strep with a quick swab of the back of the throat. The rapid test gives a result in
+        minutes. In children, if the rapid test is negative, the doctor may send the swab to a lab for a culture to be sure.
+        The swab can be uncomfortable for a moment, but it is quick and it tells you what you are really treating.
+    - layout: "bullets"
+      heading: "Why Treatment Matters"
+      points: ["Shortens how long you are sick", "Lowers the spread to others", "Helps prevent rare, serious problems", "Take every dose"]
+      footage_query: "doctor talking to mother and child"
+      narration: >-
+        If the test is positive, antibiotics are the treatment, often penicillin or amoxicillin. They help you feel better
+        sooner and make you less contagious. Most importantly, they help prevent rare but serious complications, like
+        rheumatic fever, which can damage the heart, and kidney inflammation. Your doctor decides which antibiotic is right
+        for you.
+    - layout: "myth_fact"
+      heading: "Stop When You Feel Better"
+      points: ["Stop the antibiotic when you feel better", "Finish every dose as prescribed"]
+      footage_query: "person taking medicine with water"
+      narration: >-
+        Myth two: you can stop the antibiotic once you feel better. Fact: take it exactly as prescribed until it is
+        finished. You can feel better in a day or two, but the bacteria may still be there. Stopping early can let the
+        infection come back or cause complications. If you have side effects, call your doctor instead of stopping on your
+        own.
+    - layout: "bullets"
+      heading: "How Long to Stay Home"
+      points: ["Until the fever is gone for 24 hours", "And 12 hours on antibiotics", "Cover coughs and sneezes", "Do not share cups or forks"]
+      footage_query: "sick child resting at home"
+      narration: >-
+        When can you go back to school or work? The CDC says to stay home until you have had no fever for at least twenty
+        four hours, and have been taking antibiotics for at least twelve hours. In the meantime, cover coughs and sneezes,
+        wash your hands often, and do not share cups, forks, or towels.
+    - layout: "bullets"
+      heading: "Comfort at Home"
+      points: ["Warm drinks and soft foods", "Plenty of fluids", "Rest", "Ask about pain medicine"]
+      footage_query: "child drinking warm tea"
+      narration: >-
+        At home, warm drinks and soft foods can ease the pain, and plenty of fluids keep you from getting dehydrated.
+        Rest helps. Ask your doctor or pharmacist which pain and fever medicine is right for your age and weight. Never give
+        aspirin to a child. Lozenges and hard candy are choking hazards for young children, so ask before using them.
+    - layout: "warning"
+      heading: "Signs of a Rash"
+      points: ["Fine red rash, rough like sandpaper", "Often with strep throat", "Called scarlet fever", "Needs a doctor visit"]
+      footage_query: "mother holding sick child"
+      narration: >-
+        Sometimes strep throat comes with a fine red rash that feels rough, like sandpaper, mostly on the neck, chest, and
+        skin folds. This is called scarlet fever. It is treated with the same antibiotics, and it is not as scary as it
+        sounds when treated. But it is a reason to see a doctor, so do not wait.
+    - layout: "warning"
+      heading: "Call Your Doctor Soon"
+      points: ["Sore throat longer than a week", "Fever that lasts", "Pus or swelling in one side", "Joint pain or swelling weeks later"]
+      footage_query: "doctor talking patient office"
+      narration: >-
+        Call your doctor if a sore throat lasts more than a week, if a fever does not go away, if one side of the throat is
+        very swollen, or if you get painful swollen joints, a new rash, or unusual movements in the weeks after strep. These
+        can be signs of complications, and they need to be checked.
+    - layout: "warning"
+      heading: "Go to the ER Now"
+      points: ["Trouble breathing", "Drooling or cannot swallow", "Cannot open the mouth", "Stiff neck or very sick"]
+      footage_query: "ambulance emergency"
+      narration: >-
+        Go to the emergency room or call nine one one if there is trouble breathing, if a person is drooling or cannot
+        swallow their own saliva, if they cannot open their mouth fully, or if they have a stiff neck, a muffled voice, or
+        look very sick. These can be signs of a throat abscess or a swelling that blocks the airway.
+    - layout: "outro"
+      heading: "Remember"
+      points: ["Get tested to know", "Finish every dose", "Doctor: sore throat; ER: trouble breathing"]
+      footage_query: "family at home together"
+      narration: >-
+        Remember: a test is the only way to know if it is strep, finish every dose if you are given antibiotics, and go to
+        the ER for trouble breathing or drooling. Share this with a parent who is worried about a sore throat. This video is
+        for education only, not medical advice. Like and subscribe to Health Support Studio for a new health video every
+        day.
+  short_title: "Sore throat: cold or strep? #Shorts"
+  short_caption: "Most sore throats are viruses, but strep needs a test and antibiotics. Educational only, not medical advice."
+  short_scenes:
+    - layout: "title"
+      heading: "Strep or Just a Cold?"
+      points: ["One clue"]
+      footage_query: "child sore throat doctor"
+      narration: >-
+        Your child has a sore throat. Is it strep? One clue is a cough and a runny nose. Those point to a virus, not strep.
+    - layout: "warning"
+      heading: "Get Tested"
+      points: ["No cough, with fever", "Swollen tonsils and neck glands", "A quick swab gives the answer"]
+      footage_query: "doctor swab child throat"
+      narration: >-
+        Strep often comes with a sudden sore throat, a fever, and swollen glands, but usually without a cough. You cannot
+        tell for sure by looking, so ask for a quick swab test. If it is strep, finish every dose of the antibiotic. And go
+        to the emergency room for trouble breathing or drooling.
+    - layout: "outro"
+      heading: "Full Video"
+      points: ["On YouTube"]
+      footage_query: "family at home together"
+      narration: >-
+        Learn more in our full video on the Health Support Studio channel.
+story:
+  open: >-
+    Imagine Omar. His eight year old has a bad sore throat, and Omar has an old antibiotic left from last winter. By the
+    end of this video, you will know whether giving it is a good idea, and what Omar should do instead.
+  twist: >-
+    Remember Omar? Here is the twist. Most sore throats are caused by viruses, and only a test can tell if it is strep,
+    so an old antibiotic is not the answer.
+  end: >-
+    So what should Omar do? Get his child tested, give the antibiotic exactly as prescribed if it is strep, keep the child
+    home until the fever is gone for a day, and go to the ER for trouble breathing or drooling.
+  short_cliff: >-
+    Omar's child has a sore throat and a runny nose. Is it strep?
+  reel_answer: >-
+    The answer: a cough and a runny nose usually point to a virus, not strep. Only a quick swab test can tell for sure.

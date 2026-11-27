@@ -1,0 +1,176 @@
+queue_topic: "Pink eye (conjunctivitis): types, treatment and when to see a doctor"
+style: "Top Questions"
+sources:
+  - "CDC, About Conjunctivitis (Pink Eye): https://www.cdc.gov/conjunctivitis/about/index.html"
+  - "National Eye Institute, Pink Eye: https://www.nei.nih.gov/learn-about-eye-health/eye-conditions-and-diseases/pink-eye"
+  - "MedlinePlus, Conjunctivitis: https://medlineplus.gov/pinkeye.html"
+plan:
+  topic: "Pink eye (conjunctivitis): types, treatment and when to see a doctor"
+  title: "Pink Eye: Viral, Bacterial or Allergy? What Actually Helps"
+  description: |-
+    A red, itchy, watery eye can be pink eye, but not all pink eye is the same. It can be caused by a virus, bacteria, or allergies, and the treatment is different for each. Learn how to tell the types apart, why antibiotic drops are not always needed, how to stop it spreading, when kids can go back to school, and the warning signs that need an eye doctor right away.
+
+    In this video:
+    • What pink eye is
+    • Viral, bacterial and allergic pink eye
+    • Do you need antibiotic drops?
+    • How to stop it spreading
+    • Warning signs that need urgent care
+
+    #PinkEye #Conjunctivitis #EyeHealth #HealthTips #HealthEducation
+  tags: ["pink eye", "conjunctivitis", "pink eye symptoms", "viral pink eye", "bacterial pink eye", "allergic pink eye", "is pink eye contagious", "pink eye treatment", "do i need antibiotic drops for pink eye", "pink eye in kids", "pink eye and school", "when to see a doctor for pink eye", "health education"]
+  thumbnail_text: "RED EYE? WAIT"
+  thumbnail_highlight: "WAIT"
+  thumbnail_photo_query: "man rubbing red eye"
+  playlist: "Infections & Vaccines"
+  scenes:
+    - layout: "title"
+      heading: "Pink Eye: What to Know"
+      points: ["Types, treatment, and warning signs"]
+      footage_query: "man rubbing eye"
+      narration: >-
+        You wake up with a red, itchy, watery eye, and maybe it is crusted shut. Pink eye is one of the most common eye
+        problems. But it is not always the same, and not every case needs antibiotic drops. Here is how to tell the types
+        apart, what actually helps, and the warning signs that mean see an eye doctor right away.
+    - layout: "bullets"
+      heading: "What Is Pink Eye?"
+      points: ["Inflammation of the clear covering of the eye", "Called conjunctivitis", "Makes the white of the eye look pink", "Common in children and adults"]
+      footage_query: "eye doctor examining eye"
+      narration: >-
+        Pink eye, or conjunctivitis, is inflammation of the conjunctiva, the thin clear layer that covers the white of the
+        eye and the inside of the eyelid. When it is irritated, the tiny blood vessels swell, and the eye looks pink or red.
+        It can affect one eye or both, and it can happen to children and adults.
+    - layout: "bullets"
+      heading: "Three Main Causes"
+      points: ["Viruses, the most common", "Bacteria", "Allergies", "Irritants like smoke or chlorine"]
+      footage_query: "doctor talking to patient eye"
+      narration: >-
+        There are three main causes. A virus, often the same kind that causes a cold, is the most common. Bacteria can also
+        cause it. And allergies, like pollen or pet dander, can cause an allergic type that is not contagious. Smoke,
+        chlorine, and other irritants can also redden the eye, and those clear when the irritant is gone.
+    - layout: "warning"
+      heading: "Viral Pink Eye Signs"
+      points: ["Watery discharge", "Red, gritty feeling", "Often starts with a cold", "Can spread to the other eye"]
+      footage_query: "woman blowing nose tissue"
+      narration: >-
+        Viral pink eye usually brings a watery discharge, redness, and a gritty feeling, often along with cold symptoms like
+        a sore throat or runny nose. It often starts in one eye and then moves to the other. It is very contagious. It
+        usually clears on its own in one to two weeks, though it can take longer, and antibiotics do not treat a virus.
+    - layout: "warning"
+      heading: "Bacterial Pink Eye Signs"
+      points: ["Thick yellow or green discharge", "Eyelids stuck shut in the morning", "Red eye", "May need a doctor visit"]
+      footage_query: "child waking up rubbing eyes"
+      narration: >-
+        Bacterial pink eye often brings a thicker yellow or green discharge that keeps coming back, and eyelids that are
+        stuck together after sleep. It is also contagious. Many mild cases clear on their own, but a doctor may prescribe
+        antibiotic drops for some people, especially if the infection is more severe or if someone has a weak immune system.
+    - layout: "myth_fact"
+      heading: "Antibiotic Drops Every Time?"
+      points: ["All pink eye needs antibiotic drops", "Most is viral, so drops will not help"]
+      footage_query: "pharmacist talking to patient"
+      narration: >-
+        Myth one: all pink eye needs antibiotic drops. Fact: most pink eye is viral or allergic, and antibiotics do nothing
+        for those. Using them when they are not needed can cause side effects and helps bacteria become resistant. Your
+        doctor can decide if drops are right for you. Cool compresses and artificial tears can ease symptoms in the meantime.
+    - layout: "bullets"
+      heading: "Allergic Pink Eye"
+      points: ["Itchy, watery, red eyes", "Usually both eyes", "Sneezing or a stuffy nose", "Not contagious"]
+      footage_query: "woman sneezing outdoors"
+      narration: >-
+        Allergic pink eye makes both eyes itchy, red, and watery, and the itching is often the main clue. It often comes with
+        sneezing or a stuffy nose. It is not contagious. Avoiding the trigger, cool compresses, and allergy eye drops
+        recommended by a pharmacist or doctor can help. Try not to rub your eyes, because rubbing makes the itching worse.
+    - layout: "myth_fact"
+      heading: "Can You Catch It by Looking?"
+      points: ["You catch it by looking at an eye", "It spreads by touch and contact"]
+      footage_query: "two people talking at desk"
+      narration: >-
+        Myth two: you can catch pink eye just by looking at someone's eye. Fact: it spreads through contact, like touching
+        your eye after touching a contaminated surface, sharing towels or makeup, or through droplets from a cold. Looking
+        at someone does not pass it on, but washing your hands often really does help.
+    - layout: "bullets"
+      heading: "Stopping the Spread"
+      points: ["Wash hands often", "Do not touch or rub your eyes", "Do not share towels or pillowcases", "Throw out eye makeup"]
+      footage_query: "washing hands with soap"
+      narration: >-
+        To keep pink eye from spreading, wash your hands often and do not touch or rub your eyes. Use a clean towel and
+        washcloth every time, and change your pillowcase each day. Do not share towels, makeup, or eye drops. Throw out
+        any eye makeup you used while your eyes were infected, and clean glasses to help prevent re-infection.
+    - layout: "bullets"
+      heading: "School and Work"
+      points: ["CDC: most kids need not stay home", "Follow the school's rules", "Stay home with fever or feeling sick", "Wash hands well"]
+      footage_query: "children walking to school"
+      narration: >-
+        When can children go back to school? The CDC says that children do not usually need to stay home just because of
+        pink eye, unless they have a fever or feel too sick, or the doctor says so. Schools and daycares may have their own
+        rules, so check with yours. Either way, good handwashing is what stops the spread.
+    - layout: "warning"
+      heading: "Contact Lens Wearers"
+      points: ["Take lenses out right away", "Do not wear them until cleared", "See an eye doctor", "Do not sleep in lenses"]
+      footage_query: "woman putting in contact lens"
+      narration: >-
+        If you wear contact lenses and your eye turns red and painful, take them out and do not put them back in until an
+        eye doctor says it is safe. Contact lens wearers can get serious infections of the cornea, the clear front of the
+        eye, that look like pink eye at first. Never sleep in lenses, and do not use tap water to rinse them.
+    - layout: "warning"
+      heading: "See a Doctor Soon"
+      points: ["Eye pain", "Sensitivity to light", "Blurry vision that does not clear", "No better after a week"]
+      footage_query: "eye doctor visit"
+      narration: >-
+        See a doctor right away if you have eye pain, sensitivity to bright light, blurry vision that does not clear when
+        you blink, a feeling that something is stuck in the eye, or redness after an injury or chemical splash. Also see a
+        doctor if the problem is not better after about a week, or if you have a weak immune system.
+    - layout: "warning"
+      heading: "Newborns and Emergencies"
+      points: ["Pink eye in a newborn is urgent", "Chemical in the eye: rinse for 15 minutes", "Eye injury or sudden vision loss", "Go to the ER"]
+      footage_query: "ambulance emergency"
+      narration: >-
+        Pink eye in a newborn, which is a baby under four weeks old, is an emergency. Call a doctor right away. If a
+        chemical splashes into your eye, rinse it with clean water for fifteen minutes and then go to the emergency room.
+        Go to the emergency room, too, for an eye injury, sudden vision loss, or severe pain.
+    - layout: "outro"
+      heading: "Remember"
+      points: ["Most pink eye is viral or allergic", "Wash hands, do not rub", "Eye pain or vision change: see a doctor"]
+      footage_query: "family at home together"
+      narration: >-
+        Remember: most pink eye is viral or allergic and does not need antibiotic drops, wash your hands and do not rub your
+        eyes, and see a doctor for eye pain or a change in your vision. Share this with a parent whose child comes home with
+        a red eye. This video is for education only, not medical advice. Like and subscribe to Health Support Studio for a new
+        health video every day.
+  short_title: "Pink eye: do you need antibiotic drops? #Shorts"
+  short_caption: "Most pink eye is viral or allergic, and antibiotic drops do not help those. Educational only, not medical advice."
+  short_scenes:
+    - layout: "title"
+      heading: "Red, Itchy Eye?"
+      points: ["Pink eye facts"]
+      footage_query: "man rubbing eye"
+      narration: >-
+        You wake up with a red, watery eye. Pink eye! Do you need antibiotic drops? Usually not.
+    - layout: "warning"
+      heading: "See a Doctor If"
+      points: ["Eye pain", "Light hurts", "Blurry vision", "Contact lenses: take them out"]
+      footage_query: "eye doctor visit"
+      narration: >-
+        Most pink eye is caused by a virus or allergies, and antibiotic drops do not help those. Wash your hands, do not
+        rub your eyes, and do not share towels. But see a doctor right away for eye pain, sensitivity to light, blurry
+        vision, or a red eye in a newborn. If you wear contacts, take them out.
+    - layout: "outro"
+      heading: "Full Video"
+      points: ["On YouTube"]
+      footage_query: "family at home together"
+      narration: >-
+        Learn more in our full video on the Health Support Studio channel.
+story:
+  open: >-
+    Imagine Carlos. His son came home from school with a red, watery eye, and Carlos wants antibiotic drops right now. By
+    the end of this video, you will know if the drops will help, and what Carlos should watch for.
+  twist: >-
+    Remember Carlos? Here is the twist. Most pink eye is caused by a virus or allergies, so antibiotic drops usually do
+    nothing, and eye pain or blurry vision means see a doctor right away.
+  end: >-
+    So what should Carlos do? Wash hands often, keep his son from rubbing his eyes, use his own towel, and call the doctor
+    for eye pain, sensitivity to light, or blurry vision.
+  short_cliff: >-
+    Carlos's son has a red, watery eye. Will antibiotic drops fix it?
+  reel_answer: >-
+    The answer: usually not. Most pink eye is viral or allergic, and antibiotics do not help those. See a doctor for eye pain or blurry vision.

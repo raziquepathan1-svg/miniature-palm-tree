@@ -1,0 +1,170 @@
+queue_topic: "Ear infections in children: signs, treatment and when to see a doctor"
+style: "Top Questions"
+sources:
+  - "NIDCD, Ear Infections in Children: https://www.nidcd.nih.gov/health/ear-infections-children"
+  - "CDC, Ear Infection Basics: https://www.cdc.gov/ear-infection/about/index.html"
+  - "HealthyChildren.org (American Academy of Pediatrics), Ear Infections: https://www.healthychildren.org/English/health-issues/conditions/ear-nose-throat/Pages/default.aspx"
+plan:
+  topic: "Ear infections in children: signs, treatment and when to see a doctor"
+  title: "Ear Infection in Your Child? Signs, Pain Relief and When to Call"
+  description: |-
+    A crying toddler pulling at an ear in the middle of the night. Ear infections are one of the most common reasons parents call the doctor. Learn the signs, why many mild infections get better without antibiotics, how to ease the pain safely, how to lower the chance of the next one, and the warning signs that need urgent care.
+
+    In this video:
+    • What an ear infection is, and why kids get them
+    • Signs in babies and toddlers
+    • Do all ear infections need antibiotics?
+    • Safe pain relief at home, and what to avoid
+    • Warning signs and when to call
+
+    #EarInfection #KidsHealth #ParentingTips #Pediatrics #HealthEducation
+  tags: ["ear infection", "ear infection in children", "ear infection in toddlers", "ear infection symptoms", "ear infection in babies", "do ear infections need antibiotics", "child pulling ear", "ear pain relief for kids", "middle ear infection", "ear tubes", "swimmer's ear vs ear infection", "when to see a doctor for ear infection", "health education"]
+  thumbnail_text: "PULLING HIS EAR?"
+  thumbnail_highlight: "EAR?"
+  thumbnail_photo_query: "toddler touching ear crying"
+  playlist: "Kids & Family Health"
+  scenes:
+    - layout: "title"
+      heading: "Ear Infection in Kids"
+      points: ["Signs, relief, and when to call"]
+      footage_query: "toddler touching ear crying"
+      narration: >-
+        It is the middle of the night, and your toddler is crying and tugging at one ear. Ear infections are one of the most
+        common reasons parents call the doctor. Most are not dangerous, and many get better on their own, but a few need
+        care right away. Here is how to tell, how to ease the pain, and when to call.
+    - layout: "big_number"
+      heading: "Very Common"
+      points: ["5 in 6", "children have one by age 3"]
+      footage_query: "pediatrician examining toddler"
+      narration: >-
+        How common are ear infections? According to the National Institutes of Health, about five out of six children will
+        have at least one by their third birthday. They are most common between six months and two years of age. So if your
+        child gets one, you are far from alone.
+    - layout: "bullets"
+      heading: "Why Kids Get Them"
+      points: ["Small, flat ear tubes drain poorly", "Colds cause swelling and fluid", "Bacteria or viruses grow in the fluid", "Daycare raises the chance"]
+      footage_query: "doctor explaining ear model"
+      narration: >-
+        A middle ear infection happens behind the eardrum. In young children, the small tube that drains the middle ear is
+        short and flat, so it clogs easily, often after a cold. Fluid builds up, germs grow in it, and the eardrum becomes
+        red and painful. Being around other children, like in daycare, means more colds, and more ear infections.
+    - layout: "warning"
+      heading: "Signs in Babies and Toddlers"
+      points: ["Tugging or rubbing the ear", "Crying, fussy, poor sleep", "Fever", "Trouble hearing, or fluid draining"]
+      footage_query: "mother comforting baby"
+      narration: >-
+        Babies cannot say what hurts, so look for clues. Pulling or rubbing an ear, crying more than usual, being fussy
+        and not sleeping well, a fever, and not eating or drinking well. Some children seem not to hear as well, or lose
+        their balance. Drainage of fluid from the ear can mean the eardrum has a small tear, and it needs a doctor visit.
+    - layout: "myth_fact"
+      heading: "Antibiotics Every Time?"
+      points: ["Every ear infection needs antibiotics", "Many mild ones get better on their own"]
+      footage_query: "pediatrician talking to mother"
+      narration: >-
+        Myth one: every ear infection needs an antibiotic. Fact: many mild infections get better on their own within two to
+        three days. For some children, doctors recommend watchful waiting with pain relief, and antibiotics if the child is
+        not better or gets worse. Younger babies and children with high fever or severe pain are treated more quickly. Your
+        doctor will decide.
+    - layout: "bullets"
+      heading: "Safe Pain Relief"
+      points: ["Acetaminophen for pain and fever", "Ibuprofen only if over 6 months", "Warm cloth against the ear", "Never aspirin"]
+      footage_query: "parent giving child medicine"
+      narration: >-
+        Ear pain can be the worst part. Ask your child's doctor or pharmacist about the right dose of acetaminophen, and
+        ibuprofen for babies older than six months. A warm cloth held against the ear may also soothe it. Never give aspirin
+        to a child, because it can cause a rare but serious illness. Always follow the dose for your child's weight.
+    - layout: "myth_fact"
+      heading: "Does Water Cause It?"
+      points: ["Swimming and baths cause ear infections", "Colds cause most ear infections"]
+      footage_query: "child bath time"
+      narration: >-
+        Myth two: swimming or bath water causes middle ear infections. Fact: most start after a cold, when the drainage tube
+        gets blocked. Water in the ear canal can cause a different problem, called swimmer's ear, which is an infection of
+        the outer ear canal. Pain when you touch or pull the outer ear is a clue that it may be swimmer's ear.
+    - layout: "warning"
+      heading: "Never Put Things in the Ear"
+      points: ["No cotton swabs", "No oils or drops, unless prescribed", "Do not push into drainage", "See a doctor first"]
+      footage_query: "mother checking child ear"
+      narration: >-
+        Do not put cotton swabs, oils, or home remedies in the ear. If the eardrum has a tear, they can cause harm, and they
+        can hide what the doctor needs to see. Ear drops should only be used if a doctor prescribes them and says it is
+        safe. If you see fluid, pus, or blood coming from the ear, call your child's doctor.
+    - layout: "bullets"
+      heading: "Lowering the Chance"
+      points: ["Keep vaccines up to date", "Breastfeed if you can", "Avoid smoke exposure", "Hold baby upright for bottles"]
+      footage_query: "mother feeding baby"
+      narration: >-
+        Some steps lower the chance of ear infections. Keep your child's vaccines on schedule, including the flu shot and
+        the pneumococcal vaccine. Breastfeeding in the first six months helps. Keep your child away from tobacco smoke, wash
+        hands often, and hold a baby more upright for bottles, rather than lying flat. Limiting pacifier use after six
+        months may also help.
+    - layout: "bullets"
+      heading: "Frequent Infections"
+      points: ["Many infections in a year", "Fluid that lasts for months", "Hearing or speech delay", "Ask about ear tubes"]
+      footage_query: "child hearing test"
+      narration: >-
+        If your child keeps getting ear infections, or fluid stays behind the eardrum for months, tell your doctor. Fluid
+        can make it harder to hear, and in young children that may affect speech. A specialist may suggest tiny ear tubes
+        that help the ear drain. It is a short procedure that is very common in children.
+    - layout: "warning"
+      heading: "Call the Doctor"
+      points: ["Baby under 6 months with ear pain", "Fever over 102 for a child", "Pain that is severe", "Not better in 2 to 3 days"]
+      footage_query: "doctor talking to mother and child"
+      narration: >-
+        Call your child's doctor if a baby under six months seems to have ear pain, if a fever is over one hundred two
+        degrees, if pain is severe, if there is drainage from the ear, or if your child is not better after two or three
+        days. Any fever of one hundred point four degrees or more in a baby younger than three months needs medical care
+        right away.
+    - layout: "warning"
+      heading: "Go to the ER"
+      points: ["Swelling or redness behind the ear", "Ear pushed forward", "Stiff neck or very sleepy", "Seizure"]
+      footage_query: "ambulance emergency"
+      narration: >-
+        Go to the emergency room or call nine one one if there is swelling or redness behind the ear, if the ear sticks out
+        more than usual, if your child has a stiff neck, is very sleepy or hard to wake, or has a seizure. These can be signs
+        that the infection has spread, which is rare but serious.
+    - layout: "outro"
+      heading: "Remember"
+      points: ["Ease pain safely", "Never put things in the ear", "Call early for babies and high fever"]
+      footage_query: "mother hugging child"
+      narration: >-
+        Remember: ease the pain safely, never put anything in the ear unless a doctor says so, and call early for babies,
+        high fever, or drainage. Share this with a parent who is up at night with a sick child. This video is for education
+        only, not medical advice. Like and subscribe to Health Support Studio for a new health video every day.
+  short_title: "Child pulling their ear? What to do #Shorts"
+  short_caption: "Ear infections are common in kids. Here are the signs, and when to call the doctor. Educational only, not medical advice."
+  short_scenes:
+    - layout: "title"
+      heading: "Child Pulling an Ear?"
+      points: ["Ear infection signs"]
+      footage_query: "toddler touching ear crying"
+      narration: >-
+        Your toddler is crying and tugging at an ear. Could it be an ear infection?
+    - layout: "warning"
+      heading: "When to Call"
+      points: ["Fever and ear pain", "Fluid draining", "Baby under 6 months"]
+      footage_query: "pediatrician examining toddler"
+      narration: >-
+        Ear pain, fussiness, and a fever are common signs. Many mild infections get better on their own, but call your
+        child's doctor for a baby under six months, a high fever, drainage from the ear, or pain that is not better in two or
+        three days. Go to the emergency room for swelling behind the ear or a stiff neck. And never put anything in the ear.
+    - layout: "outro"
+      heading: "Full Video"
+      points: ["On YouTube"]
+      footage_query: "mother hugging child"
+      narration: >-
+        Learn more in our full video on the Health Support Studio channel.
+story:
+  open: >-
+    Imagine Jess. Her two year old woke up crying and pulling at her ear, and Jess wants to rush for an antibiotic. By the
+    end of this video, you will know whether every ear infection needs one, and when Jess must not wait.
+  twist: >-
+    Remember Jess? Here is the twist. Many mild ear infections get better on their own in two or three days, but a baby
+    under six months, a high fever, or swelling behind the ear means call right away.
+  end: >-
+    So what should Jess do? Ease the pain safely, never put anything in the ear, call her child's doctor, and go to the ER
+    for swelling behind the ear, a stiff neck, or a child who is very sleepy.
+  short_cliff: >-
+    Jess's toddler is crying and pulling her ear in the middle of the night. When is it an emergency?
+  reel_answer: >-
+    The answer: swelling or redness behind the ear, a stiff neck, or a child who is very sleepy means go to the ER right away.
