@@ -1,0 +1,176 @@
+queue_topic: "Dizziness and vertigo: common causes, what helps, and stroke warning signs"
+style: "Warning Signs"
+sources:
+  - "NIDCD, Balance Disorders: https://www.nidcd.nih.gov/health/balance-disorders"
+  - "MedlinePlus, Dizziness and Vertigo: https://medlineplus.gov/dizzinessandvertigo.html"
+  - "CDC, Stroke Signs and Symptoms: https://www.cdc.gov/stroke/signs-symptoms/index.html"
+plan:
+  topic: "Dizziness and vertigo: common causes, what helps, and stroke warning signs"
+  title: "Dizzy or Spinning? Causes of Vertigo and When It Is an Emergency"
+  description: |-
+    The room is spinning, or you feel lightheaded and unsteady. Dizziness is one of the most common reasons people see a doctor, and most causes are not dangerous. But a few are. Learn the difference between vertigo and lightheadedness, the common causes like inner ear crystals and low blood pressure, what helps, and the stroke warning signs you should never ignore.
+
+    In this video:
+    • Vertigo vs lightheadedness
+    • Common causes
+    • What helps at home and from a doctor
+    • Myths about dizziness
+    • Red flags, and when to call 911
+
+    #Vertigo #Dizziness #BPPV #StrokeSigns #HealthEducation
+  tags: ["dizziness", "vertigo", "vertigo causes", "bppv", "room spinning", "dizzy when standing up", "lightheaded", "vertigo treatment", "epley maneuver", "dizziness and stroke signs", "inner ear dizziness", "when to see a doctor for dizziness", "health education"]
+  thumbnail_text: "ROOM SPINNING?"
+  thumbnail_highlight: "SPINNING"
+  thumbnail_photo_query: "woman dizzy holding head"
+  playlist: "Emergencies & First Aid"
+  scenes:
+    - layout: "title"
+      heading: "Dizzy or Spinning?"
+      points: ["Causes, help, and red flags"]
+      footage_query: "woman dizzy holding head"
+      narration: >-
+        You stand up, and the room spins. Or you feel lightheaded, unsteady, and sick. Dizziness is one of the most common reasons
+        people see a doctor, and most causes are harmless. But a few are serious, including stroke. Here is how to tell the
+        difference, what helps, and when to call nine one one.
+    - layout: "bullets"
+      heading: "Vertigo or Lightheaded?"
+      points: ["Vertigo: a spinning feeling", "Lightheaded: about to faint", "Unsteady: trouble with balance", "Tell your doctor which one"]
+      footage_query: "doctor talking to patient"
+      narration: >-
+        Dizziness can mean different things. Vertigo is the feeling that you or the room is spinning or moving, and it
+        usually points to a problem in the inner ear or brain. Lightheadedness is a feeling that you might faint, and it often
+        comes from blood pressure or blood flow. Unsteadiness is trouble keeping your balance. Telling your doctor which one you feel helps.
+    - layout: "bullets"
+      heading: "Common Cause: BPPV"
+      points: ["Tiny crystals in the inner ear move", "Brief spinning with head movement", "Rolling over in bed, looking up", "Not dangerous, and treatable"]
+      footage_query: "woman rolling over in bed"
+      narration: >-
+        The most common cause of vertigo is benign paroxysmal positional vertigo, or BPPV. Tiny crystals in the inner ear
+        move out of place, and send the wrong signals to the brain. It causes short spells of spinning, usually less than a minute,
+        when you roll over in bed, tip your head back, or bend over. It is not dangerous, and it can be treated.
+    - layout: "bullets"
+      heading: "Other Inner Ear Causes"
+      points: ["Vestibular neuritis, after a virus", "Meniere disease", "Vestibular migraine", "Hearing loss or ringing can be clues"]
+      footage_query: "doctor examining ear"
+      narration: >-
+        Other inner ear causes include vestibular neuritis, an inflammation of the balance nerve, often after a virus, which can
+        cause days of spinning. Meniere disease causes spells of vertigo with ringing, a feeling of fullness in the ear, and hearing
+        loss. Vestibular migraine can cause dizziness, with or without a headache.
+    - layout: "bullets"
+      heading: "Lightheadedness Causes"
+      points: ["Standing up too fast", "Dehydration or not eating", "Medicines for blood pressure", "Low blood sugar or anemia"]
+      footage_query: "older man standing up from chair"
+      narration: >-
+        Lightheadedness has other common causes. A drop in blood pressure when you stand up quickly is common, especially in
+        older adults. Dehydration, not eating, blood pressure and other medicines, low blood sugar, and anemia can also cause it.
+        Anxiety and panic attacks can bring on dizziness, too. A heart rhythm problem is a less common but important cause.
+    - layout: "myth_fact"
+      heading: "Is Dizziness Always Serious?"
+      points: ["Dizziness always means a stroke", "Most dizziness is not dangerous"]
+      footage_query: "woman resting couch calm"
+      narration: >-
+        Myth one: dizziness means a stroke or a brain tumor. Fact: most dizziness comes from the inner ear, blood pressure, or
+        other common causes, and is not dangerous. But dizziness with certain other signs, which we will cover next, can be a
+        stroke, and needs a call to nine one one. It helps to know the difference.
+    - layout: "warning"
+      heading: "Stroke Warning Signs"
+      points: ["Sudden severe dizziness or loss of balance", "Double vision or vision loss", "Face drooping, arm weakness", "Slurred speech, severe headache"]
+      footage_query: "person calling phone emergency"
+      narration: >-
+        Call nine one one right away if dizziness comes with signs of a stroke, such as sudden loss of balance, double vision
+        or loss of vision, a drooping face, weakness or numbness in an arm or leg, slurred or confused speech, a sudden severe
+        headache, or trouble walking. Remember BE FAST: balance, eyes, face, arm, speech, and time.
+    - layout: "warning"
+      heading: "Heart and Other Red Flags"
+      points: ["Chest pain or pounding heartbeat", "Fainting", "Dizziness after a head injury", "Stiff neck with fever"]
+      footage_query: "ambulance emergency"
+      narration: >-
+        Also get emergency care for dizziness with chest pain, a racing or irregular heartbeat, fainting, trouble breathing,
+        a head injury, a stiff neck with fever, or sudden hearing loss. These can point to a heart, brain, or other serious
+        problem, and need quick care. When in doubt, call nine one one.
+    - layout: "bullets"
+      heading: "What to Do During a Spell"
+      points: ["Sit or lie down right away", "Hold still until it passes", "Do not drive", "Drink water if you may be dehydrated"]
+      footage_query: "woman sitting on couch resting"
+      narration: >-
+        If you get dizzy, sit or lie down right away, so you do not fall. Hold still until the spell passes. Do not drive or use
+        stairs during a spell. If you may be dehydrated, drink water. Rise slowly from bed or a chair, and hold on to something
+        steady. Falls are the biggest danger from dizziness, especially in older adults.
+    - layout: "myth_fact"
+      heading: "Should You Stay in Bed?"
+      points: ["Lie still in bed for days", "Gentle movement and exercises help recovery"]
+      footage_query: "older woman gentle walking home"
+      narration: >-
+        Myth two: if you are dizzy, you should lie still in bed for days. Fact: rest during a severe spell is fine, but lying in
+        bed for too long can slow recovery. Gentle movement, and exercises taught by a vestibular therapist, help the brain adapt.
+        Ask your doctor about balance therapy if dizziness keeps coming back.
+    - layout: "bullets"
+      heading: "How Doctors Help"
+      points: ["Ask about your spells", "Check eyes, balance, and blood pressure", "Hearing and other tests", "Epley maneuver for BPPV"]
+      footage_query: "doctor examining patient eyes"
+      narration: >-
+        Doctors start by asking about how long your spells last, what triggers them, and what other symptoms you have. They may
+        check your eye movements, balance, blood pressure, and hearing. For BPPV, a trained clinician can do a series of head
+        movements, called the Epley maneuver, that move the crystals back. Do not try it on your own unless you are shown how.
+    - layout: "myth_fact"
+      heading: "Only Older People?"
+      points: ["Only older adults get vertigo", "Dizziness happens at any age"]
+      footage_query: "young woman dizzy outdoors"
+      narration: >-
+        Myth three: dizziness and vertigo only happen to older people. Fact: they can happen at any age. BPPV and migraine related
+        dizziness are common in younger and middle aged adults. Older adults do have more risk, because of medicines, blood
+        pressure changes, and balance problems, and falls are more dangerous for them.
+    - layout: "warning"
+      heading: "Call Your Doctor"
+      points: ["Repeated dizzy spells", "New medicine, then dizziness", "Falls or near falls", "Spinning with hearing loss or ringing"]
+      footage_query: "doctor talking patient office"
+      narration: >-
+        Call your doctor if you have repeated dizzy spells, if dizziness began after you started a new medicine, if you have
+        fallen or nearly fallen, or if spinning comes with hearing loss or ringing in the ears. Do not stop a prescribed
+        medicine on your own, but tell your doctor. Dizziness can often be treated once the cause is known.
+    - layout: "outro"
+      heading: "Remember"
+      points: ["Most dizziness is not dangerous", "Sit down, avoid falls", "Stroke signs: call 911"]
+      footage_query: "family at home together"
+      narration: >-
+        Remember: most dizziness is not dangerous, sit down during a spell to avoid falls, and call nine one one for stroke
+        signs like face drooping, weakness, slurred speech, or sudden loss of balance. Share this with someone who feels dizzy
+        often. This video is for education only, not medical advice. Like and subscribe to Health Support Studio for a new health
+        video every day.
+  short_title: "Dizzy? When it could be a stroke #Shorts"
+  short_caption: "Most dizziness is not dangerous, but stroke signs need 911. Educational only, not medical advice."
+  short_scenes:
+    - layout: "title"
+      heading: "Suddenly Dizzy?"
+      points: ["Know the red flags"]
+      footage_query: "woman dizzy holding head"
+      narration: >-
+        Suddenly dizzy? Most of the time it is not dangerous, but sometimes it is a stroke.
+    - layout: "warning"
+      heading: "Call 911 If"
+      points: ["Sudden loss of balance", "Double vision, slurred speech", "Face drooping or arm weakness"]
+      footage_query: "person calling phone emergency"
+      narration: >-
+        Dizziness is usually from the inner ear or blood pressure. Sit down, drink water, and see your doctor if it keeps
+        happening. But call nine one one if dizziness comes with sudden loss of balance, double vision, slurred speech, face
+        drooping, weakness, a severe headache, or chest pain. Remember BE FAST.
+    - layout: "outro"
+      heading: "Full Video"
+      points: ["On YouTube"]
+      footage_query: "family at home together"
+      narration: >-
+        Learn more in our full video on the Health Support Studio channel.
+story:
+  open: >-
+    Imagine Beth. Every time she rolls over in bed, the room spins for a few seconds, and she is afraid it means something
+    terrible. By the end of this video, you will know what it usually is, and which signs would worry a doctor.
+  twist: >-
+    Remember Beth? Here is the twist. Short spells of spinning when you roll over are usually BPPV, which is treatable, but
+    dizziness with double vision, slurred speech, or face drooping means call nine one one.
+  end: >-
+    So what should Beth do? See her doctor about her spells, ask about the Epley maneuver and balance therapy, rise slowly
+    to avoid falls, and call nine one one for stroke warning signs.
+  short_cliff: >-
+    Beth feels the room spin when she rolls over in bed. When should she call nine one one?
+  reel_answer: >-
+    The answer: if dizziness comes with double vision, slurred speech, face drooping, weakness, or a sudden severe headache. Remember BE FAST.

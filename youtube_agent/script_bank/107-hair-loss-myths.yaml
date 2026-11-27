@@ -1,0 +1,183 @@
+queue_topic: "Hair loss: causes, myths, treatments and when to see a doctor"
+style: "Myth vs Fact"
+sources:
+  - "American Academy of Dermatology, Hair Loss: https://www.aad.org/public/diseases/hair-loss"
+  - "NIAMS, Hair Loss (Alopecia): https://www.niams.nih.gov/health-topics/alopecia-areata"
+  - "FDA, Biotin Interference with Lab Tests (Safety Communication): https://www.fda.gov/medical-devices/safety-communications/update-fda-warns-biotin-may-interfere-lab-tests-fda-safety-communication"
+plan:
+  topic: "Hair loss: causes, myths, treatments and when to see a doctor"
+  title: "Hair Loss: Causes, Myths and Treatments That Actually Work"
+  description: |-
+    Finding hair in the brush or the shower drain can be scary. Hair loss has many causes, from genes to stress to health conditions, and most types can be managed. Learn how much shedding is normal, the main types of hair loss, the myths about hats and biotin, treatments with real evidence, and the signs that mean see a doctor.
+
+    In this video:
+    • How much hair loss is normal
+    • Main types and causes
+    • Myths about hats, shampoo, and biotin
+    • Treatments that work
+    • When to see a doctor
+
+    #HairLoss #Alopecia #HairCare #Dermatology #HealthEducation
+  tags: ["hair loss", "hair loss causes", "hair loss myths", "how much hair loss is normal", "female pattern hair loss", "male pattern baldness", "telogen effluvium", "alopecia areata", "does biotin help hair loss", "minoxidil", "hair loss after stress", "when to see a doctor for hair loss", "health education"]
+  thumbnail_text: "HAIR LOSS TRUTH"
+  thumbnail_highlight: "TRUTH"
+  thumbnail_photo_query: "woman looking hair brush mirror"
+  playlist: "Body Myths"
+  scenes:
+    - layout: "title"
+      heading: "Hair Loss: Myths and Facts"
+      points: ["Causes and what works"]
+      footage_query: "woman looking hair brush mirror"
+      narration: >-
+        Hair in the brush. Hair in the drain. A thinner ponytail. Hair loss can be scary, and the internet is full of myths and
+        miracle cures. The truth is that hair loss has many causes, most can be managed, and a few need a doctor. Here is what
+        is normal, what is not, and what actually works.
+    - layout: "big_number"
+      heading: "What Is Normal?"
+      points: ["50 to 100", "hairs shed every day"]
+      footage_query: "person brushing hair morning"
+      narration: >-
+        It is normal to lose fifty to one hundred hairs a day, as old hairs fall out and new ones grow in. You may see more in
+        the shower or on the brush, especially if you have long hair. Hair loss becomes a concern when you notice a widening part,
+        a thinning ponytail, bald patches, or a lot more shedding than usual.
+    - layout: "bullets"
+      heading: "Pattern Hair Loss"
+      points: ["The most common type", "Runs in families", "Men: receding hairline, crown", "Women: wider part, thinner top"]
+      footage_query: "older man looking mirror hair"
+      narration: >-
+        The most common type is called androgenetic alopecia, or pattern hair loss. It runs in families, and it is caused by
+        a mix of genes and hormones. In men, it usually shows up as a receding hairline and thinning at the crown. In women,
+        the part gets wider and the hair gets thinner on top, but the hairline usually stays.
+    - layout: "bullets"
+      heading: "Shedding After Stress"
+      points: ["Called telogen effluvium", "Triggered by illness, surgery, childbirth", "Shedding starts 2 to 3 months later", "Usually grows back"]
+      footage_query: "new mother holding baby"
+      narration: >-
+        Another common type is called telogen effluvium. A big stress on the body, like a high fever, major surgery, childbirth,
+        crash dieting, or serious illness, pushes many hairs into the resting stage at once. About two to three months later,
+        they shed, which can be dramatic. The good news is that it is usually temporary, and the hair grows back.
+    - layout: "bullets"
+      heading: "Other Causes"
+      points: ["Alopecia areata: round bald patches", "Tight hairstyles: traction alopecia", "Thyroid disease, low iron", "Some medicines and treatments"]
+      footage_query: "woman tying hair ponytail"
+      narration: >-
+        Other causes include alopecia areata, an autoimmune condition that causes round bald patches, and traction alopecia,
+        from tight ponytails, braids, or extensions that pull on the hair. Thyroid problems, low iron, hormone changes like
+        polycystic ovary syndrome, and some medicines can also cause hair loss. Chemotherapy often causes it too.
+    - layout: "myth_fact"
+      heading: "Do Hats Cause Baldness?"
+      points: ["Hats and helmets cause baldness", "Hats do not cause hair loss"]
+      footage_query: "man wearing baseball cap outdoors"
+      narration: >-
+        Myth one: wearing hats causes baldness. Fact: hats do not cause hair loss. Pattern baldness comes from genes and hormones
+        in the hair follicles. Very tight hats or headbands worn constantly could pull on the hair, but normal hats are fine.
+        Wearing a hat outdoors also protects your scalp from sunburn.
+    - layout: "myth_fact"
+      heading: "Does Washing Cause It?"
+      points: ["Shampooing and brushing cause hair loss", "These only remove hairs already shed"]
+      footage_query: "woman washing hair shower"
+      narration: >-
+        Myth two: washing and brushing your hair too often makes it fall out. Fact: you are only removing hairs that were
+        already ready to fall. Be gentle, use a soft brush, and avoid constant tight styles, harsh chemicals, and very hot
+        tools. But skipping shampoo will not save your hair, and a clean scalp is healthy.
+    - layout: "myth_fact"
+      heading: "Does Biotin Help?"
+      points: ["Biotin pills regrow hair", "Helps only if deficient; can skew tests"]
+      footage_query: "supplement bottle hand"
+      narration: >-
+        Myth three: biotin supplements regrow hair. Fact: biotin helps only if you are truly deficient, which is rare. There
+        is no good proof it helps otherwise. High dose biotin can also interfere with some lab tests, including those for
+        thyroid problems and heart attacks, and give wrong results. Tell your doctor if you take it.
+    - layout: "bullets"
+      heading: "Treatments With Evidence"
+      points: ["Minoxidil, over the counter", "Finasteride, prescription for men", "Treat the cause, like iron or thyroid", "Injections or medicines for alopecia areata"]
+      footage_query: "dermatologist talking to patient"
+      narration: >-
+        Treatments depend on the cause. For pattern hair loss, minoxidil is available over the counter, and it can slow loss and
+        help regrowth, but it needs to be used for months, and it only works while you use it. Finasteride is a prescription
+        medicine for men. Treating a cause, like low iron or thyroid disease, can help. Alopecia areata has several treatments.
+    - layout: "bullets"
+      heading: "Be Careful With Claims"
+      points: ["Many products promise a cure", "Check evidence and ask a doctor", "Hair transplants for some", "Beware of high costs"]
+      footage_query: "woman reading product label"
+      narration: >-
+        Be careful with products that promise a miracle cure. Many supplements, shampoos, and gadgets have little proof. Some
+        procedures, like hair transplants, can work well for certain people, but they are costly, and need a skilled
+        specialist. Ask a dermatologist what has good evidence for your type of hair loss before you spend money.
+    - layout: "bullets"
+      heading: "Care for Your Hair"
+      points: ["Avoid tight hairstyles", "Go easy on heat and dyes", "Eat a balanced diet with protein and iron", "Manage stress and sleep"]
+      footage_query: "woman cooking healthy meal"
+      narration: >-
+        A few habits protect your hair. Avoid tight ponytails and braids, go easy on heat tools and harsh chemicals, and be gentle
+        when brushing wet hair. Eat a balanced diet with enough protein, iron, and other nutrients, and manage stress and
+        sleep. Crash diets and rapid weight loss are a common cause of shedding.
+    - layout: "warning"
+      heading: "See a Doctor If"
+      points: ["Sudden or patchy hair loss", "Itchy, painful, or scaly scalp", "Hair loss in a child", "Fatigue, weight changes, irregular periods"]
+      footage_query: "doctor talking patient office"
+      narration: >-
+        See a doctor or dermatologist if hair loss is sudden or in patches, if your scalp is itchy, red, scaly, or painful, if a
+        child is losing hair, or if you have other symptoms like tiredness, weight changes, or irregular periods. Early treatment
+        works best for some types, especially those that scar the hair follicle.
+    - layout: "warning"
+      heading: "Medicines and Pregnancy"
+      points: ["Finasteride is unsafe if pregnant", "Tell your doctor about all medicines", "New hair loss after a new medicine", "Never stop medicines on your own"]
+      footage_query: "pharmacist handing medicine"
+      narration: >-
+        Some hair loss treatments are not safe in pregnancy. Finasteride can harm a developing baby, so it is not for women who
+        are or may become pregnant. If hair loss began after you started a new medicine, tell your doctor, but do not stop
+        any prescribed medicine on your own.
+    - layout: "warning"
+      heading: "Hair Loss and Mood"
+      points: ["Hair loss can hurt confidence", "Sadness, anxiety, or isolation", "Talk to someone you trust", "Crisis: call or text 988"]
+      footage_query: "woman talking to friend"
+      narration: >-
+        Hair loss can be painful emotionally, and many people feel sad, anxious, or alone. You are not vain for being upset. Talk
+        to your doctor or a counselor, or to someone you trust. If you have thoughts of hurting yourself, call or text nine
+        eight eight in the United States, or call nine one one if you are in danger.
+    - layout: "outro"
+      heading: "Remember"
+      points: ["Some shedding is normal", "Find the cause first", "Skip miracle cures, see a doctor"]
+      footage_query: "family at home together"
+      narration: >-
+        Remember: some shedding is normal, finding the cause comes first, and miracle cures are best skipped, so see a
+        dermatologist if you are worried. Share this with someone who is worried about their hair. This video is for education
+        only, not medical advice. Like and subscribe to Health Support Studio for a new health video every day.
+  short_title: "Hair loss: do hats cause baldness? #Shorts"
+  short_caption: "Hats do not cause hair loss, and biotin only helps if you are deficient. Educational only, not medical advice."
+  short_scenes:
+    - layout: "title"
+      heading: "Losing Hair?"
+      points: ["Myths and facts"]
+      footage_query: "woman looking hair brush mirror"
+      narration: >-
+        Losing hair? Do hats cause baldness? Does biotin help? Here is what is true.
+    - layout: "warning"
+      heading: "What Is True"
+      points: ["Hats do not cause hair loss", "Biotin helps only if deficient", "Sudden or patchy loss: see a doctor"]
+      footage_query: "dermatologist talking to patient"
+      narration: >-
+        It is normal to lose fifty to one hundred hairs a day. Hats and shampooing do not cause baldness, and biotin only helps
+        if you are truly deficient, and it can affect lab tests. See a doctor for sudden or patchy hair loss, a painful or
+        scaly scalp, or other symptoms. If you feel hopeless, call or text nine eight eight.
+    - layout: "outro"
+      heading: "Full Video"
+      points: ["On YouTube"]
+      footage_query: "family at home together"
+      narration: >-
+        Learn more in our full video on the Health Support Studio channel.
+story:
+  open: >-
+    Imagine Hector. His hairline is receding, and he has started buying a new biotin supplement and wearing a cap all day to
+    hide it. By the end of this video, you will know what helps, and what does not.
+  twist: >-
+    Remember Hector? Here is the twist. Hats do not cause baldness, biotin only helps if you are truly deficient, and
+    treatments with real evidence exist, so a doctor visit is the smart next step.
+  end: >-
+    So what should Hector do? See a dermatologist, ask about minoxidil or other treatments for his type of hair loss, tell
+    the doctor about any biotin he takes, and be careful with products that promise a cure.
+  short_cliff: >-
+    Hector wears a cap all day to hide his thinning hair. Is the cap making it worse?
+  reel_answer: >-
+    The answer: no. Hats do not cause hair loss. Pattern baldness comes from genes and hormones, and a dermatologist can suggest treatments that really work.

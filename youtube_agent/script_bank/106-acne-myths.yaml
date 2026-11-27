@@ -1,0 +1,183 @@
+queue_topic: "Acne myths: what really causes breakouts, what helps, and when to see a dermatologist"
+style: "Myth vs Fact"
+sources:
+  - "American Academy of Dermatology, Acne: https://www.aad.org/public/diseases/acne"
+  - "NIAMS, Acne: https://www.niams.nih.gov/health-topics/acne"
+  - "MedlinePlus, Acne: https://medlineplus.gov/acne.html"
+plan:
+  topic: "Acne myths: what really causes breakouts, what helps, and when to see a dermatologist"
+  title: "Acne Myths: What Really Causes Breakouts and What Helps"
+  description: |-
+    Dirty skin? Chocolate? Popping pimples? Acne is surrounded by myths, and some of them make breakouts worse. Learn what really causes acne, which myths to skip, the simple skin care routine that works, which treatments to try first, how long they take, when to see a dermatologist, and what to know about acne medicines and pregnancy.
+
+    In this video:
+    • What causes acne
+    • Common myths
+    • A simple routine and first treatments
+    • When to see a dermatologist
+    • Safety points about acne medicines
+
+    #Acne #SkinCare #Dermatology #TeenHealth #HealthEducation
+  tags: ["acne", "acne myths", "what causes acne", "how to get rid of acne", "acne treatment", "adult acne", "does chocolate cause acne", "benzoyl peroxide", "retinoid for acne", "should i pop pimples", "when to see a dermatologist for acne", "acne scars prevention", "health education"]
+  thumbnail_text: "STOP DOING THIS"
+  thumbnail_highlight: "STOP"
+  thumbnail_photo_query: "woman washing face sink"
+  playlist: "Body Myths"
+  scenes:
+    - layout: "title"
+      heading: "Acne Myths and Facts"
+      points: ["What really helps"]
+      footage_query: "woman washing face sink"
+      narration: >-
+        Wash your face more. Cut out chocolate. Pop that pimple. If you have acne, you have heard all the advice, and some of
+        it can actually make things worse. Acne is common, it is not your fault, and it is treatable. Here are the myths to
+        skip, and what really works.
+    - layout: "bullets"
+      heading: "What Causes Acne?"
+      points: ["Extra oil from the skin", "Clogged pores", "Bacteria on the skin", "Hormone changes"]
+      footage_query: "teenager looking in mirror"
+      narration: >-
+        Acne happens when pores get clogged with oil and dead skin cells, and bacteria that live on the skin multiply, causing
+        redness and swelling. Hormone changes, in puberty, around periods, or in pregnancy, make skin oilier. Genes also play
+        a big part, so if your parents had acne, you are more likely to have it.
+    - layout: "big_number"
+      heading: "Very Common"
+      points: ["Up to 50 million", "Americans get acne each year"]
+      footage_query: "group of teenagers walking school"
+      narration: >-
+        Acne is the most common skin condition in the United States. The American Academy of Dermatology says up to fifty
+        million Americans have it each year. It is most common in teenagers, but many adults, especially women, have it into their
+        thirties, forties, and beyond. If you have acne, you are far from alone.
+    - layout: "myth_fact"
+      heading: "Dirty Skin Causes It?"
+      points: ["Acne comes from dirty skin", "Scrubbing and over washing make it worse"]
+      footage_query: "teen washing face gentle"
+      narration: >-
+        Myth one: acne is caused by dirty skin. Fact: acne is not caused by poor hygiene. Scrubbing hard or washing too often
+        can irritate the skin and make acne worse. Wash your face gently twice a day, and after sweating, with a mild cleanser
+        and lukewarm water. Pat dry. Do not use harsh scrubs.
+    - layout: "myth_fact"
+      heading: "Is It the Chocolate?"
+      points: ["Chocolate and greasy food cause acne", "Diet may affect some people, evidence is mixed"]
+      footage_query: "teen eating healthy lunch"
+      narration: >-
+        Myth two: pizza, chocolate, and greasy food cause acne. Fact: the link between food and acne is not clear. Some
+        studies suggest that diets high in sugary foods and refined carbohydrates, and possibly milk, may worsen acne in
+        some people. Greasy food on your skin is different, so keep oily products and hair products off your face.
+    - layout: "myth_fact"
+      heading: "Should You Pop Pimples?"
+      points: ["Popping clears pimples faster", "Picking causes scars and infection"]
+      footage_query: "woman looking mirror face"
+      narration: >-
+        Myth three: popping pimples helps them heal faster. Fact: picking or squeezing can push bacteria deeper, cause
+        infection, and leave dark spots or scars that last much longer than the pimple. Keep your hands off your face. If a
+        large painful bump bothers you, a dermatologist can treat it safely.
+    - layout: "myth_fact"
+      heading: "Does Sun Clear Acne?"
+      points: ["Sunbathing clears acne", "Tanning does not treat acne and harms skin"]
+      footage_query: "sunscreen bottle close up"
+      narration: >-
+        Myth four: a tan, or time in the sun, clears acne. Fact: sun may seem to hide acne for a while, but it can make
+        breakouts and dark marks worse, and it raises the risk of skin cancer. Tanning beds are not a treatment either. Use a
+        sunscreen labeled oil free and non comedogenic, which means it does not clog pores.
+    - layout: "bullets"
+      heading: "A Simple Routine"
+      points: ["Gentle cleanser, twice a day", "Oil free moisturizer", "Daily sunscreen", "Do not skip treatment"]
+      footage_query: "skincare products bathroom shelf"
+      narration: >-
+        A simple routine works best. Use a gentle cleanser twice a day, an oil free moisturizer, which helps because many
+        acne treatments are drying, and a daily sunscreen. Choose products labeled non comedogenic. Add your treatment, and give
+        it time. Using too many products at once can irritate the skin.
+    - layout: "bullets"
+      heading: "First Treatments to Try"
+      points: ["Benzoyl peroxide", "Adapalene, a retinoid", "Salicylic acid", "Start slowly, one at a time"]
+      footage_query: "pharmacist talking customer skin products"
+      narration: >-
+        For mild acne, over the counter options include benzoyl peroxide, which kills acne bacteria, adapalene, a retinoid that
+        keeps pores clear, and salicylic acid, which unclogs pores. Start with a small amount every other day, and add more as
+        your skin tolerates it. They can cause dryness and peeling at first. Ask a pharmacist if you are unsure.
+    - layout: "bullets"
+      heading: "Give It Time"
+      points: ["Takes 6 to 8 weeks to judge", "It may look worse before it improves", "Keep using it, even when clear", "Ask when to switch"]
+      footage_query: "teen smiling mirror"
+      narration: >-
+        Be patient. Most acne treatments take six to eight weeks to show real results, and some people see a few more
+        breakouts at first, as clogged pores come to the surface. Keep using your treatment even after your skin clears, because
+        acne can return when you stop. If nothing improves after about two months, it is time to ask a doctor.
+    - layout: "warning"
+      heading: "See a Dermatologist"
+      points: ["Deep, painful lumps or cysts", "Acne leaving scars or dark marks", "No improvement after 6 to 8 weeks", "Acne affecting your mood"]
+      footage_query: "dermatologist talking patient"
+      narration: >-
+        See a doctor or dermatologist for deep, painful lumps, called nodules or cysts, for acne that is leaving scars or dark
+        marks, or if over the counter treatment has not helped in six to eight weeks. Prescription options include stronger
+        retinoids, antibiotics used with other treatments, and, for some women, hormone based treatment.
+    - layout: "warning"
+      heading: "Pregnancy and Safety"
+      points: ["Some acne medicines harm a pregnancy", "Isotretinoin needs strict monitoring", "Tell your doctor if you may be pregnant", "Ask about birth control rules"]
+      footage_query: "doctor talking to young woman"
+      narration: >-
+        Some acne medicines are not safe in pregnancy. Isotretinoin, a strong medicine for severe acne, can cause serious birth
+        defects, so it is only prescribed with strict monitoring and pregnancy prevention rules. Other medicines, like some
+        antibiotics and oral treatments, may also not be safe. Always tell your doctor if you are or could be pregnant.
+    - layout: "warning"
+      heading: "Acne and Mood"
+      points: ["Acne can affect confidence", "Sadness, anxiety, or hopelessness", "Talk to a doctor or counselor", "Crisis: call or text 988"]
+      footage_query: "teenager talking to parent"
+      narration: >-
+        Acne can affect how you feel about yourself, and it can bring sadness or anxiety. If you feel down, hopeless, or
+        withdrawn, talk to a doctor, a counselor, or someone you trust. If you ever have thoughts of hurting yourself, call or
+        text nine eight eight in the United States, or call nine one one if you are in danger.
+    - layout: "warning"
+      heading: "Go to the ER"
+      points: ["Swelling of lips, face, or tongue", "Trouble breathing", "Fever with spreading, painful skin", "Severe reaction to a new medicine"]
+      footage_query: "ambulance emergency"
+      narration: >-
+        Call nine one one or go to the emergency room if you have swelling of the lips, face, or tongue, trouble breathing, or
+        a widespread rash after starting a new medicine, or if you have a fever with painful, fast spreading red skin. These are
+        signs of a severe reaction or a serious infection.
+    - layout: "outro"
+      heading: "Remember"
+      points: ["Wash gently, do not scrub", "Do not pick, give treatment time", "Scarring or low mood: see a doctor"]
+      footage_query: "family at home together"
+      narration: >-
+        Remember: wash gently and do not scrub, do not pick, and give treatment six to eight weeks, and see a doctor for
+        scarring, deep lumps, or low mood. Share this with a teen or an adult who has been told to just wash more. This video is
+        for education only, not medical advice. Like and subscribe to Health Support Studio for a new health video every day.
+  short_title: "Acne myths: stop popping and scrubbing #Shorts"
+  short_caption: "Scrubbing and picking make acne worse. Be gentle and give treatment 6 to 8 weeks. Educational only, not medical advice."
+  short_scenes:
+    - layout: "title"
+      heading: "Acne Myths"
+      points: ["Stop doing this"]
+      footage_query: "woman washing face sink"
+      narration: >-
+        Scrubbing your face harder will not clear acne. Neither will popping pimples.
+    - layout: "warning"
+      heading: "What Helps"
+      points: ["Gentle wash, twice a day", "Benzoyl peroxide or adapalene", "6 to 8 weeks to work"]
+      footage_query: "skincare products bathroom shelf"
+      narration: >-
+        Acne is not caused by dirty skin. Wash gently twice a day, do not pick, and use a treatment like benzoyl peroxide or
+        adapalene for six to eight weeks. See a dermatologist for deep lumps, scars, or if it is affecting your mood. If you
+        are thinking of hurting yourself, call or text nine eight eight.
+    - layout: "outro"
+      heading: "Full Video"
+      points: ["On YouTube"]
+      footage_query: "family at home together"
+      narration: >-
+        Learn more in our full video on the Health Support Studio channel.
+story:
+  open: >-
+    Imagine Zoe. She is sixteen, she scrubs her face three times a day, and she pops every pimple, but her acne keeps
+    getting worse. By the end of this video, you will know why, and what Zoe should do instead.
+  twist: >-
+    Remember Zoe? Here is the twist. Acne is not caused by dirty skin, and scrubbing and picking can make it worse and cause
+    scars, while a gentle routine and patience can help.
+  end: >-
+    So what should Zoe do? Wash gently twice a day, stop picking, use a treatment like benzoyl peroxide or adapalene for
+    six to eight weeks, and see a dermatologist if she has deep lumps or scars.
+  short_cliff: >-
+    Zoe scrubs her face three times a day, but her acne keeps getting worse. What is she doing wrong?
+  reel_answer: >-
+    The answer: scrubbing and popping irritate the skin and can cause scars. Wash gently, do not pick, and give treatment six to eight weeks.

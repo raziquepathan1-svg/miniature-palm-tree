@@ -1,0 +1,175 @@
+queue_topic: "Gum disease: warning signs, the link to heart health and diabetes, and prevention"
+style: "Warning Signs"
+sources:
+  - "CDC, Gum Disease: https://www.cdc.gov/oral-health/about/gum-periodontal-disease.html"
+  - "NIDCR, Periodontal (Gum) Disease: https://www.nidcr.nih.gov/health-info/gum-disease"
+  - "American Heart Association, Periodontal Disease and Atherosclerotic Vascular Disease: https://www.heart.org/en/news/2018/05/04/gum-disease-and-heart-health"
+plan:
+  topic: "Gum disease: warning signs, the link to heart health and diabetes, and prevention"
+  title: "Bleeding Gums? Gum Disease, Your Heart and What to Do"
+  description: |-
+    Bleeding when you brush is not normal, and it may be an early sign of gum disease. Nearly half of US adults over thirty have some form of it. Learn the warning signs, how gum disease is linked to heart disease and diabetes, what really protects your teeth and gums, the myths to skip, and when to see a dentist or go to the ER.
+
+    In this video:
+    • Gingivitis and periodontitis
+    • Warning signs
+    • The link to heart disease and diabetes
+    • How to prevent it
+    • When to see a dentist, and when to go to the ER
+
+    #GumDisease #OralHealth #HeartHealth #Dentist #HealthEducation
+  tags: ["gum disease", "bleeding gums", "gingivitis", "periodontitis", "gum disease and heart disease", "gum disease and diabetes", "signs of gum disease", "how to prevent gum disease", "how to floss", "bad breath causes", "loose teeth", "when to see a dentist", "health education"]
+  thumbnail_text: "BLEEDING GUMS?"
+  thumbnail_highlight: "BLEEDING"
+  thumbnail_photo_query: "man brushing teeth mirror"
+  playlist: "Healthy Habits & Prevention"
+  scenes:
+    - layout: "title"
+      heading: "Gum Disease and Your Heart"
+      points: ["Why bleeding gums matter"]
+      footage_query: "man brushing teeth mirror"
+      narration: >-
+        You spit in the sink after brushing, and there is a little pink. Most people shrug it off. But bleeding gums are not
+        normal, and they can be an early sign of gum disease. Gum disease can lead to tooth loss, and it is linked to heart
+        disease and diabetes. Here is what to watch for, and how to protect yourself.
+    - layout: "big_number"
+      heading: "Very Common"
+      points: ["Nearly half", "of US adults over 30 have it"]
+      footage_query: "dentist examining patient"
+      narration: >-
+        Gum disease is very common. The CDC estimates that nearly half of American adults over thirty have some form of it,
+        and the rate rises with age. It often causes no pain, which is why it is easy to miss. Dentists can spot it during a
+        checkup, long before you feel anything.
+    - layout: "bullets"
+      heading: "Gingivitis First"
+      points: ["Early stage of gum disease", "Red, swollen gums that bleed", "Caused by plaque on teeth", "Reversible with good care"]
+      footage_query: "dentist talking patient mouth model"
+      narration: >-
+        The first stage is gingivitis. Plaque, a sticky film of bacteria, builds up along the gumline, and the gums become red,
+        puffy, and may bleed when you brush or floss. At this stage, the damage can be reversed with good brushing, flossing, and
+        a professional cleaning.
+    - layout: "bullets"
+      heading: "Periodontitis Next"
+      points: ["Gums pull away from teeth", "Pockets form and trap bacteria", "Bone around teeth is lost", "Teeth can loosen or fall out"]
+      footage_query: "dentist explaining teeth model"
+      narration: >-
+        If gingivitis is not treated, it can progress to periodontitis. The gums pull away from the teeth, forming pockets that
+        trap more bacteria. The infection can destroy the bone and tissue that hold teeth in place, and teeth may loosen or
+        fall out. Treatment can stop the damage, but lost bone does not grow back easily.
+    - layout: "warning"
+      heading: "Warning Signs"
+      points: ["Gums that bleed, red, swollen", "Constant bad breath", "Receding gums, longer looking teeth", "Loose teeth, pus, or pain when chewing"]
+      footage_query: "woman looking mouth mirror"
+      narration: >-
+        Warning signs include gums that bleed when you brush or floss, or that are red, swollen, or tender, bad breath that
+        does not go away, gums that pull away from the teeth, loose teeth, pus between the teeth and gums, and pain when
+        chewing. Do not wait for pain. Tell your dentist about any of these. Early gum disease can be silent, so regular checkups matter even when your mouth feels fine.
+    - layout: "myth_fact"
+      heading: "Should You Stop Brushing?"
+      points: ["If gums bleed, stop brushing there", "Keep brushing gently, see a dentist"]
+      footage_query: "woman brushing teeth gently"
+      narration: >-
+        Myth one: if your gums bleed, you should avoid brushing and flossing that area. Fact: bleeding is a sign of
+        inflammation from plaque, and cleaning the area gently is what helps. Keep brushing and flossing, and the bleeding
+        often stops within a week or two. If it does not, see a dentist.
+    - layout: "bullets"
+      heading: "The Heart Connection"
+      points: ["Gum disease is linked to heart disease", "Shared risks: smoking, diabetes, age", "Inflammation may play a part", "Cause and effect is not proven"]
+      footage_query: "doctor explaining heart model"
+      narration: >-
+        Researchers have found that people with gum disease are more likely to have heart disease. The two share risk factors,
+        like smoking, diabetes, and age, and inflammation may play a part. The American Heart Association says that gum disease has
+        not been proven to cause heart disease, but taking care of your gums is a smart step for your overall health.
+    - layout: "bullets"
+      heading: "The Diabetes Connection"
+      points: ["Diabetes raises gum disease risk", "Gum infection can raise blood sugar", "Control both together", "Tell your dentist and doctor"]
+      footage_query: "man checking blood sugar finger"
+      narration: >-
+        Diabetes and gum disease affect each other. High blood sugar makes it harder to fight infection, so people with
+        diabetes get gum disease more often. And gum infections can make blood sugar harder to control. If you have diabetes, keep
+        your blood sugar in range, see your dentist regularly, and tell them about your diabetes.
+    - layout: "myth_fact"
+      heading: "Is Mouthwash Enough?"
+      points: ["Mouthwash can replace brushing", "Brushing and flossing remove plaque"]
+      footage_query: "bathroom sink toothbrush toothpaste"
+      narration: >-
+        Myth two: using mouthwash is as good as brushing and flossing. Fact: mouthwash can freshen your breath, and some kinds
+        help reduce plaque, but it does not remove plaque from your teeth. Brushing and cleaning between your teeth do the main
+        job. Ask your dentist whether a mouthwash is right for you.
+    - layout: "bullets"
+      heading: "Daily Protection"
+      points: ["Brush 2 minutes, twice a day", "Use fluoride toothpaste", "Clean between teeth once a day", "Replace your brush every 3 months"]
+      footage_query: "woman flossing teeth"
+      narration: >-
+        Brush for two minutes, twice a day, with fluoride toothpaste, and gently along the gumline. Clean between your teeth
+        every day with floss or small brushes. Replace your toothbrush every three months, or sooner if the bristles are worn.
+        Limit sugary snacks and drinks, and drink water through the day.
+    - layout: "bullets"
+      heading: "Visit the Dentist"
+      points: ["Checkups and cleanings regularly", "Dentists can check gums and pockets", "Deep cleaning if needed", "Tell them your health conditions"]
+      footage_query: "dentist cleaning patient teeth"
+      narration: >-
+        See your dentist regularly, usually every six months, or as often as they advise. They can check for gum pockets, remove
+        hardened plaque you cannot remove at home, and treat early disease before it spreads. Tell your dentist about your
+        health conditions and medicines, including heart conditions, diabetes, and blood thinners.
+    - layout: "warning"
+      heading: "Smoking and Gums"
+      points: ["Smoking raises gum disease risk", "It hides signs like bleeding", "Quitting helps healing", "Ask your doctor for help quitting"]
+      footage_query: "doctor talking to patient quit smoking"
+      narration: >-
+        Smoking is one of the biggest risk factors for gum disease. It also hides the warning signs, because it reduces bleeding,
+        so the disease can progress unnoticed. Quitting helps your gums heal, and it helps your heart too. Ask your doctor about
+        quitting programs and medicines, or call one eight hundred, quit now.
+    - layout: "warning"
+      heading: "Go to the ER"
+      points: ["Swelling spreading to face or neck", "Trouble swallowing or breathing", "Fever with severe tooth or gum pain", "Chest pain: call 911"]
+      footage_query: "ambulance emergency"
+      narration: >-
+        Go to the emergency room or call nine one one if a tooth or gum infection causes swelling that spreads to the face or
+        neck, trouble swallowing or breathing, or fever with severe pain. A dental abscess can become dangerous. And if you have
+        chest pain, pressure, or shortness of breath, call nine one one, even if you think it is a toothache.
+    - layout: "outro"
+      heading: "Remember"
+      points: ["Bleeding gums are not normal", "Brush, floss, and see a dentist", "Swelling or trouble breathing: ER"]
+      footage_query: "family at home together"
+      narration: >-
+        Remember: bleeding gums are not normal, brush and floss every day and see your dentist regularly, and go to the
+        emergency room for swelling that spreads or trouble breathing. Share this with someone who skips the dentist. This video
+        is for education only, not medical advice. Like and subscribe to Health Support Studio for a new health video every day.
+  short_title: "Bleeding gums when you brush? #Shorts"
+  short_caption: "Bleeding gums are not normal and may be early gum disease. Educational only, not medical advice."
+  short_scenes:
+    - layout: "title"
+      heading: "Bleeding Gums?"
+      points: ["Do not ignore it"]
+      footage_query: "man brushing teeth mirror"
+      narration: >-
+        A little blood when you brush? It is not normal, and it can be an early sign of gum disease.
+    - layout: "warning"
+      heading: "Protect Your Gums"
+      points: ["Brush twice, floss daily", "See a dentist", "Linked to heart disease and diabetes"]
+      footage_query: "woman flossing teeth"
+      narration: >-
+        Nearly half of US adults over thirty have some gum disease, and it is linked to heart disease and diabetes. Keep brushing
+        gently, floss every day, and see your dentist. Go to the emergency room if a tooth or gum infection causes swelling in the
+        face or neck, or trouble breathing.
+    - layout: "outro"
+      heading: "Full Video"
+      points: ["On YouTube"]
+      footage_query: "family at home together"
+      narration: >-
+        Learn more in our full video on the Health Support Studio channel.
+story:
+  open: >-
+    Imagine Samir. His gums bleed every time he brushes, so he has started brushing less around those spots, and he has not
+    seen a dentist in years. By the end of this video, you will know why that is the wrong move.
+  twist: >-
+    Remember Samir? Here is the twist. Bleeding gums are a sign of inflammation, brushing and flossing gently is what helps,
+    and gum disease is linked to heart disease and diabetes.
+  end: >-
+    So what should Samir do? Keep brushing gently twice a day, floss, see a dentist, and go to the ER for swelling that
+    spreads to the face or neck, or trouble breathing.
+  short_cliff: >-
+    Samir's gums bleed when he brushes, so he brushes less. Is that smart?
+  reel_answer: >-
+    The answer: no. Bleeding is a sign of inflammation. Keep brushing and flossing gently, and see a dentist.

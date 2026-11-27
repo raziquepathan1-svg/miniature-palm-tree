@@ -1,0 +1,175 @@
+queue_topic: "Tinnitus (ringing in the ears): causes, what helps, and red flags"
+style: "Top Questions"
+sources:
+  - "NIDCD, Tinnitus: https://www.nidcd.nih.gov/health/tinnitus"
+  - "MedlinePlus, Tinnitus: https://medlineplus.gov/tinnitus.html"
+  - "CDC, Noise-Induced Hearing Loss: https://www.cdc.gov/hearing-loss/about/noise-induced-hearing-loss.html"
+plan:
+  topic: "Tinnitus (ringing in the ears): causes, what helps, and red flags"
+  title: "Ringing in Your Ears? Tinnitus Causes, What Helps and Red Flags"
+  description: |-
+    A ringing, buzzing, or hissing that no one else can hear. Tinnitus is very common, and it can be frustrating, but there are ways to make it easier to live with. Learn the common causes, which medicines can trigger it, the myths about cures, what helps, and the red flags, including sudden hearing loss, that need a doctor right away.
+
+    In this video:
+    • What tinnitus is
+    • Common causes, including loud noise and some medicines
+    • Myths about cures
+    • What helps
+    • Red flags and when to get urgent care
+
+    #Tinnitus #RingingInEars #HearingHealth #HealthTips #HealthEducation
+  tags: ["tinnitus", "ringing in ears", "tinnitus causes", "tinnitus treatment", "how to stop ringing in ears", "tinnitus and hearing loss", "pulsatile tinnitus", "sudden hearing loss", "tinnitus cure myth", "noise and tinnitus", "tinnitus and medicines", "when to see a doctor for tinnitus", "health education"]
+  thumbnail_text: "EAR RINGING?"
+  thumbnail_highlight: "RINGING"
+  thumbnail_photo_query: "man covering ear annoyed"
+  playlist: "Healthy Habits & Prevention"
+  scenes:
+    - layout: "title"
+      heading: "Ringing in the Ears"
+      points: ["Causes, help, and red flags"]
+      footage_query: "man covering ear annoyed"
+      narration: >-
+        A ringing, buzzing, hissing, or humming sound, but there is no source. You are not imagining it. This is tinnitus, and
+        millions of people live with it. For most, it is annoying but not dangerous. For some, it is a sign of something that
+        needs care. Here are the causes, what helps, and the red flags.
+    - layout: "bullets"
+      heading: "What Is Tinnitus?"
+      points: ["Sound with no outside source", "Ringing, buzzing, hissing, clicking", "One ear or both", "A symptom, not a disease"]
+      footage_query: "doctor examining ear"
+      narration: >-
+        Tinnitus is hearing a sound that is not coming from the outside world. It can sound like ringing, buzzing, hissing,
+        roaring, or clicking. It can be soft or loud, steady or coming and going, in one ear or both. Tinnitus is a symptom
+        of something else, not a disease on its own.
+    - layout: "big_number"
+      heading: "How Common?"
+      points: ["About 1 in 10", "adults have had tinnitus"]
+      footage_query: "group of adults talking"
+      narration: >-
+        Tinnitus is common. The National Institutes of Health reports that about one in ten adults in the United States has had
+        tinnitus lasting at least five minutes in the past year. It is more common as people get older, and in people who have been
+        exposed to loud noise, including many who served in the military or work in loud jobs.
+    - layout: "bullets"
+      heading: "Common Causes"
+      points: ["Loud noise exposure", "Age related hearing loss", "Earwax blockage", "Ear infections"]
+      footage_query: "concert crowd loud noise"
+      narration: >-
+        The most common cause is damage to the tiny hair cells in the inner ear, from loud noise or from aging. That often goes
+        along with hearing loss. Earwax buildup, ear infections, and fluid behind the eardrum can also cause tinnitus, and these
+        can be treated. Sometimes no cause is found.
+    - layout: "bullets"
+      heading: "More Causes"
+      points: ["Some medicines", "Jaw problems, neck injury", "High blood pressure", "Stress and poor sleep can worsen it"]
+      footage_query: "pharmacist talking to patient"
+      narration: >-
+        Some medicines can trigger tinnitus, including high doses of aspirin, certain antibiotics, water pills, and some cancer
+        drugs. Do not stop them yourself, but tell your doctor. Jaw joint problems, head and neck injuries, and high blood
+        pressure can also play a part. Stress and tiredness do not cause tinnitus, but they can make it seem louder.
+    - layout: "myth_fact"
+      heading: "Is There a Cure Pill?"
+      points: ["A supplement or pill cures tinnitus", "No proven cure pill; many things help"]
+      footage_query: "supplement bottles shelf"
+      narration: >-
+        Myth one: there is a supplement or a pill that cures tinnitus. Fact: there is no proven cure for most tinnitus. Products
+        such as ginkgo, zinc, and other supplements have not been shown to work in good studies, and some claims are scams. The good
+        news is that there are real ways to make tinnitus less bothersome.
+    - layout: "myth_fact"
+      heading: "Does Silence Help?"
+      points: ["Quiet rooms help tinnitus", "Silence often makes it seem louder"]
+      footage_query: "person sleeping bedroom quiet"
+      narration: >-
+        Myth two: you should stay in quiet places to rest your ears. Fact: silence usually makes tinnitus seem louder, because
+        there is nothing else to listen to. Soft background sounds, like a fan, soft music, or a sound machine, can help, especially
+        at night. The goal is to cover the sound a little, not to drown it out.
+    - layout: "bullets"
+      heading: "What Helps"
+      points: ["Treat the cause, like wax", "Hearing aids if hearing is low", "Sound therapy at night", "Tinnitus counseling, CBT"]
+      footage_query: "audiologist fitting hearing aid"
+      narration: >-
+        What helps? Treat any cause that can be treated, like earwax. If you have hearing loss, hearing aids can reduce tinnitus,
+        by making outside sounds louder. Sound therapy, like a sound machine or tinnitus masker, can help. Cognitive behavioral
+        therapy and tinnitus counseling teach your brain to pay less attention, and many people find this helps a lot.
+    - layout: "bullets"
+      heading: "Protect Your Ears"
+      points: ["Wear ear protection around loud noise", "Turn down headphones", "Take listening breaks", "Do not use cotton swabs"]
+      footage_query: "person wearing earplugs"
+      narration: >-
+        Protecting your ears is important, because noise damage is permanent. Wear earplugs or earmuffs around loud noise, keep
+        headphone volume at a safe level, and take listening breaks. A good rule is that if you cannot talk to someone an arm's
+        length away, it is too loud. Do not use cotton swabs in your ears.
+    - layout: "myth_fact"
+      heading: "Does It Mean Deafness?"
+      points: ["Tinnitus means you are going deaf", "Many people with tinnitus do not go deaf"]
+      footage_query: "older couple talking home"
+      narration: >-
+        Myth three: tinnitus means you are going deaf. Fact: tinnitus often comes with hearing loss, but it does not mean you
+        will lose all your hearing. Many people with tinnitus have normal or mildly reduced hearing. Still, a hearing test is a
+        smart step, because it can find hearing loss you did not know about.
+    - layout: "warning"
+      heading: "Red Flags: See a Doctor"
+      points: ["Ringing in only one ear", "A sound that beats with your pulse", "Hearing loss or ear pain", "Dizziness or face weakness"]
+      footage_query: "doctor talking patient office"
+      narration: >-
+        See a doctor soon if tinnitus is in only one ear, if you hear a whooshing sound that matches your heartbeat, which can
+        point to a blood vessel problem, if you have hearing loss, ear pain, or drainage, or if it comes with dizziness or
+        weakness in the face. Also see a doctor if it began after a head injury or a new medicine.
+    - layout: "warning"
+      heading: "Sudden Hearing Loss"
+      points: ["Hearing drops over hours or days", "Often in one ear, with ringing", "A medical emergency", "Seek care within a day or two"]
+      footage_query: "doctor examining ear patient"
+      narration: >-
+        Sudden hearing loss, where your hearing drops quickly in one or both ears, over hours or a few days, sometimes with
+        tinnitus, is a medical emergency. Treatment works best if started quickly, ideally within a day or two. Do not wait to
+        see if it passes. See a doctor or go to an urgent care or emergency room right away.
+    - layout: "warning"
+      heading: "If It Feels Too Much"
+      points: ["Tinnitus can cause stress and low mood", "Poor sleep and anxiety", "Talk to your doctor", "Crisis: call or text 988"]
+      footage_query: "woman talking to counselor"
+      narration: >-
+        Tinnitus can wear you down. It can cause trouble sleeping, anxiety, and low mood. Please talk to your doctor if it is
+        affecting your life, because help is available. If you ever have thoughts of hurting yourself, call or text nine eight
+        eight in the United States, or call nine one one if you are in danger.
+    - layout: "outro"
+      heading: "Remember"
+      points: ["No cure pill, but relief exists", "Protect your ears", "One ear or sudden loss: get checked"]
+      footage_query: "family at home together"
+      narration: >-
+        Remember: no pill cures tinnitus, but you can ease it, protect your ears from loud noise, and get checked right away
+        for ringing in one ear or sudden hearing loss. Share this with someone who has ringing in their ears. This video is
+        for education only, not medical advice. Like and subscribe to Health Support Studio for a new health video every day.
+  short_title: "Ringing in one ear? See a doctor #Shorts"
+  short_caption: "Sudden hearing loss or ringing in one ear needs a doctor. Educational only, not medical advice."
+  short_scenes:
+    - layout: "title"
+      heading: "Ringing in Your Ears?"
+      points: ["Know the red flags"]
+      footage_query: "man covering ear annoyed"
+      narration: >-
+        Ringing in your ears is common, but some signs need a doctor right away.
+    - layout: "warning"
+      heading: "See a Doctor If"
+      points: ["Ringing in only one ear", "Beats with your pulse", "Sudden hearing loss: urgent"]
+      footage_query: "doctor examining ear patient"
+      narration: >-
+        Most tinnitus is not dangerous, but see a doctor for ringing in only one ear, a sound that beats with your heartbeat, or
+        dizziness. Sudden hearing loss is an emergency, so get care within a day or two. No pill cures tinnitus, but hearing aids,
+        sound therapy, and counseling help. Protect your ears from loud noise.
+    - layout: "outro"
+      heading: "Full Video"
+      points: ["On YouTube"]
+      footage_query: "family at home together"
+      narration: >-
+        Learn more in our full video on the Health Support Studio channel.
+story:
+  open: >-
+    Imagine Yusuf. He woke up this morning with ringing in his left ear and his hearing seems muffled, and he thinks it will
+    pass. By the end of this video, you will know why he should not wait.
+  twist: >-
+    Remember Yusuf? Here is the twist. Ringing in one ear along with sudden hearing loss is a medical emergency, and
+    treatment works best when started within a day or two.
+  end: >-
+    So what should Yusuf do? See a doctor or go to urgent care or the ER right away, protect his ears from loud noise, and
+    later ask about hearing aids, sound therapy, or counseling if the ringing stays.
+  short_cliff: >-
+    Yusuf woke up with ringing in one ear and muffled hearing. Can he wait to see if it passes?
+  reel_answer: >-
+    The answer: no. Sudden hearing loss with ringing in one ear is a medical emergency, and treatment works best within a day or two.
