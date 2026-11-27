@@ -951,7 +951,8 @@
     "text": "TOO MUCH?",
     "highlight": "TOO",
     "style": "Explainer",
-    "image": "branding/health-support-studio/thumbs/nJmrtauHxiA.jpg"
+    "image": "branding/health-support-studio/thumbs/nJmrtauHxiA.jpg",
+    "done": true
   },
   {
     "youtube_id": "-KmZYkowLF4",
@@ -959,7 +960,8 @@
     "highlight": "UVB",
     "style": "Explainer",
     "image": "branding/health-support-studio/thumbs/nJmrtauHxiA.jpg",
-    "vertical": true
+    "vertical": true,
+    "done": true
   },
   {
     "youtube_id": "Yq5UvDcII1g",
@@ -967,7 +969,8 @@
     "highlight": "WHO?",
     "style": "Explainer",
     "image": "branding/health-support-studio/thumbs/nJmrtauHxiA.jpg",
-    "vertical": true
+    "vertical": true,
+    "done": true
   },
   {
     "youtube_id": "0txASoqsoNk",
@@ -975,6 +978,7 @@
     "highlight": "EXERCISE",
     "style": "Explainer",
     "image": "branding/health-support-studio/thumbs/nJmrtauHxiA.jpg",
-    "vertical": true
+    "vertical": true,
+    "done": true
   }
 ]
