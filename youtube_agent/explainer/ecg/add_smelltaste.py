@@ -24,7 +24,6 @@ ABOUT = ("How do smell and taste work? Pinch your nose and eat a strawberry: it 
 FOOT = """Part of the Nervous System series on The Anatomy Unfolded.
 
 ⚠️ Educational content only, not medical advice. Always talk to a qualified doctor about your health.
-Some illustrations: Servier Medical Art (smart.servier.com), licensed under CC BY 4.0.
 Sources: NIDCD (NIH), Cleveland Clinic, OpenStax Anatomy & Physiology, Britannica, StatPearls.
 
 #smellandtaste #tastebuds #anatomy #physiology #medicalstudent #nursing"""
