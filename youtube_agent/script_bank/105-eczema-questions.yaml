@@ -1,0 +1,175 @@
+queue_topic: "Eczema (atopic dermatitis): triggers, daily care, and when to see a doctor"
+style: "Top Questions"
+sources:
+  - "NIAMS, Atopic Dermatitis: https://www.niams.nih.gov/health-topics/atopic-dermatitis"
+  - "MedlinePlus, Eczema: https://medlineplus.gov/eczema.html"
+  - "American Academy of Dermatology, Eczema: https://www.aad.org/public/diseases/eczema"
+plan:
+  topic: "Eczema (atopic dermatitis): triggers, daily care, and when to see a doctor"
+  title: "Eczema: Triggers, Daily Skin Care and When to See a Doctor"
+  description: |-
+    Dry, red, itchy skin that never seems to settle. Eczema is very common in children and adults, and it can be managed. Learn what causes flare ups, the daily skin care routine that makes the biggest difference, how steroid creams are used safely, why scratching makes it worse, the signs of infection, and when to see a doctor.
+
+    In this video:
+    • What eczema is, and what it is not
+    • Common triggers
+    • A daily routine that works
+    • Steroid creams and other treatments
+    • Signs of infection and when to get help
+
+    #Eczema #AtopicDermatitis #SkinCare #KidsHealth #HealthEducation
+  tags: ["eczema", "atopic dermatitis", "eczema symptoms", "eczema triggers", "eczema treatment", "eczema in babies", "eczema in children", "how to moisturize eczema", "steroid cream for eczema", "is eczema contagious", "eczema flare up", "eczema vs dry skin", "health education"]
+  thumbnail_text: "ITCH-SCRATCH CYCLE"
+  thumbnail_highlight: "ITCH"
+  thumbnail_photo_query: "woman applying moisturizer hand"
+  playlist: "Healthy Habits & Prevention"
+  scenes:
+    - layout: "title"
+      heading: "Eczema: What to Know"
+      points: ["Triggers, daily care, and when to get help"]
+      footage_query: "woman applying moisturizer hand"
+      narration: >-
+        Dry, red, itchy skin that comes back again and again. Eczema is one of the most common skin conditions, especially in
+        children, and it can be frustrating. The good news is that a few daily habits make a big difference. Here are the
+        triggers, the care that works, and when to get help.
+    - layout: "bullets"
+      heading: "What Is Eczema?"
+      points: ["A common skin condition", "Also called atopic dermatitis", "Skin barrier is weaker", "Not contagious"]
+      footage_query: "dermatologist talking patient"
+      narration: >-
+        Eczema, also called atopic dermatitis, is a long term skin condition that causes dry, itchy, inflamed patches. The
+        skin barrier does not hold in moisture well, so skin dries out and irritants get in. It tends to run in families, and
+        often goes along with asthma and hay fever. Eczema is not contagious, and it is not caused by poor hygiene.
+    - layout: "warning"
+      heading: "Common Signs"
+      points: ["Very itchy skin, often worse at night", "Dry, scaly, red or darker patches", "Thickened skin from scratching", "Oozing or crusting when flaring"]
+      footage_query: "child scratching arm"
+      narration: >-
+        The main sign is itching, which is often worse at night. The skin may look dry, rough, and red, or darker on brown and
+        Black skin, and may crack, ooze, or crust during a flare. In babies it often appears on the cheeks and scalp. In
+        older children and adults, it is common in the creases of the elbows and knees, and on the hands, neck, and eyelids.
+    - layout: "bullets"
+      heading: "The Itch Scratch Cycle"
+      points: ["Itching leads to scratching", "Scratching damages the skin", "Damaged skin itches more", "Breaking the cycle is key"]
+      footage_query: "mother soothing toddler"
+      narration: >-
+        Eczema often follows a cycle. The skin itches, you scratch, the scratching damages the skin barrier and causes more
+        inflammation, and then it itches even more. Breaking that cycle is the heart of treatment. Keep nails short, use
+        cool compresses, and use treatments as directed to calm the inflammation.
+    - layout: "bullets"
+      heading: "Common Triggers"
+      points: ["Dry air, hot water", "Soaps, detergents, fragrances", "Rough fabrics like wool", "Sweat, stress, and allergens"]
+      footage_query: "laundry basket clean clothes"
+      narration: >-
+        Triggers vary. Common ones include dry air, very hot baths, harsh soaps, detergents, and fragrances, rough fabrics like
+        wool, sweat, and stress. Colds and allergens like dust mites, pollen, and pet dander can set off flares too. Keeping a
+        simple diary can help you find your own triggers.
+    - layout: "myth_fact"
+      heading: "Is Eczema Contagious?"
+      points: ["Eczema spreads from person to person", "It is not contagious"]
+      footage_query: "family sitting on couch"
+      narration: >-
+        Myth one: eczema is contagious, so children should be kept away from others. Fact: you cannot catch eczema from
+        someone else. It comes from a mix of genes and the immune system, along with triggers in the environment. Children
+        with eczema can play, swim, and go to school like anyone else.
+    - layout: "bullets"
+      heading: "Moisturize Every Day"
+      points: ["Use a thick cream or ointment", "Apply within 3 minutes of bathing", "Moisturize at least twice a day", "Choose fragrance free products"]
+      footage_query: "moisturizer jar bathroom"
+      narration: >-
+        Moisturizing is the foundation of eczema care. Use a thick cream or ointment, not a thin lotion, and apply it within a
+        few minutes of bathing, while the skin is still damp. Do it at least twice a day, even when the skin looks clear.
+        Choose fragrance free products, and ask your doctor or pharmacist for suggestions.
+    - layout: "bullets"
+      heading: "Bathing Tips"
+      points: ["Short, lukewarm baths or showers", "Gentle, fragrance free cleanser", "Pat dry, do not rub", "Moisturize right away"]
+      footage_query: "bathroom sink warm water"
+      narration: >-
+        Short baths or showers of five to ten minutes in lukewarm water are best, because hot water dries the skin. Use a
+        gentle, fragrance free cleanser only where needed. Pat the skin dry with a soft towel, do not rub, and moisturize right
+        away. Wash new clothes before wearing, and choose soft, breathable fabrics like cotton.
+    - layout: "myth_fact"
+      heading: "Are Steroid Creams Dangerous?"
+      points: ["Steroid creams are always dangerous", "Used as directed, they are safe and effective"]
+      footage_query: "doctor prescribing cream"
+      narration: >-
+        Myth two: steroid creams are dangerous and should be avoided. Fact: topical steroids are one of the most important
+        treatments for eczema flares, and they are safe when used as your doctor directs. Problems like thinning skin happen
+        mainly with strong creams used for a long time, or in the wrong places. Follow the plan, and ask questions.
+    - layout: "bullets"
+      heading: "Other Treatments"
+      points: ["Non steroid creams", "Wet wrap therapy", "Light therapy for some", "Newer medicines for severe eczema"]
+      footage_query: "dermatologist examining arm"
+      narration: >-
+        There are other treatments too. Non steroid creams can help sensitive areas like the face. Wet wraps, light therapy, and
+        newer prescription medicines are available for moderate to severe eczema that does not respond to creams. If your
+        eczema is affecting your sleep or daily life, a doctor or dermatologist can help build a plan.
+    - layout: "myth_fact"
+      heading: "Do Foods Cause Eczema?"
+      points: ["Food allergies cause most eczema", "Only some children have food triggers"]
+      footage_query: "child eating breakfast"
+      narration: >-
+        Myth three: food allergies cause all eczema, so I should cut out foods. Fact: food allergies can play a role in some
+        babies and young children, but most eczema is not caused by food. Cutting out foods without advice can lead to poor
+        nutrition. If you think a food is a trigger, talk to your doctor before changing the diet.
+    - layout: "warning"
+      heading: "Signs of Infection"
+      points: ["Honey colored crusts or pus", "Painful, swollen, warm skin", "Fever or feeling unwell", "Skin not improving with treatment"]
+      footage_query: "doctor talking patient office"
+      narration: >-
+        Broken skin can get infected. Call your doctor if you see honey colored crusts, pus, painful or swollen skin, red
+        streaks, or a fever, or if the eczema suddenly gets worse and is not improving with treatment. Infected eczema needs
+        medicine, and early treatment prevents it from spreading.
+    - layout: "warning"
+      heading: "Go to the ER"
+      points: ["Painful clusters of blisters with fever", "Sores spreading fast", "Eye pain or vision changes", "Very ill, hard to wake"]
+      footage_query: "ambulance emergency"
+      narration: >-
+        Go to the emergency room or call nine one one if someone with eczema develops painful clusters of small blisters or
+        sores that spread quickly, especially with a fever, if they have eye pain or vision changes, or if they seem very ill
+        or hard to wake. This can be a serious viral infection of the skin called eczema herpeticum, and it needs urgent care.
+    - layout: "outro"
+      heading: "Remember"
+      points: ["Moisturize every day", "Avoid triggers, break the itch cycle", "Infection signs: call your doctor"]
+      footage_query: "family at home together"
+      narration: >-
+        Remember: moisturize every day, avoid your triggers and break the itch cycle, and call your doctor for signs of
+        infection. Share this with a parent who is up at night with an itchy child. This video is for education only, not
+        medical advice. Like and subscribe to Health Support Studio for a new health video every day.
+  short_title: "Eczema: the daily habit that helps most #Shorts"
+  short_caption: "Moisturize within minutes of bathing. Eczema is not contagious. Educational only, not medical advice."
+  short_scenes:
+    - layout: "title"
+      heading: "Itchy, Dry Skin?"
+      points: ["Eczema basics"]
+      footage_query: "woman applying moisturizer hand"
+      narration: >-
+        Dry, itchy skin that keeps coming back? It might be eczema. One habit makes the biggest difference.
+    - layout: "warning"
+      heading: "Moisturize Daily"
+      points: ["Thick cream within minutes of bathing", "Not contagious", "Crusts, pus, fever: see a doctor"]
+      footage_query: "moisturizer jar bathroom"
+      narration: >-
+        Use a thick, fragrance free cream or ointment at least twice a day, and apply it within a few minutes of a short,
+        lukewarm bath. Eczema is not contagious, and steroid creams are safe when used as directed. See a doctor for honey
+        colored crusts, pus, or fever, and go to the emergency room for painful clusters of blisters with a fever.
+    - layout: "outro"
+      heading: "Full Video"
+      points: ["On YouTube"]
+      footage_query: "family at home together"
+      narration: >-
+        Learn more in our full video on the Health Support Studio channel.
+story:
+  open: >-
+    Imagine Raj. His six year old has itchy, dry patches behind her knees and in her elbows, and Raj is afraid of using a
+    steroid cream. By the end of this video, you will know what actually helps, and what Raj should watch for.
+  twist: >-
+    Remember Raj? Here is the twist. Steroid creams are safe when used as directed, and the biggest daily habit is a thick
+    moisturizer applied within minutes of a short, lukewarm bath.
+  end: >-
+    So what should Raj do? Moisturize twice a day, keep baths short, avoid triggers, follow the doctor's plan for creams,
+    call the doctor for crusts or pus, and go to the ER for painful clusters of blisters with a fever.
+  short_cliff: >-
+    Raj is afraid to use a steroid cream on his daughter's eczema. Is it dangerous?
+  reel_answer: >-
+    The answer: not when used as directed. Steroid creams are one of the most important eczema treatments. Moisturize every day, and call the doctor for crusts, pus, or fever.

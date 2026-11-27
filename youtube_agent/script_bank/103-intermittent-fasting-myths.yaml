@@ -1,0 +1,175 @@
+queue_topic: "Intermittent fasting: what the evidence says, who should avoid it, and common myths"
+style: "Myth vs Fact"
+sources:
+  - "NIH, Intermittent Fasting: What Is It, and How Does It Work? (Johns Hopkins Medicine): https://www.hopkinsmedicine.org/health/wellness-and-prevention/intermittent-fasting-what-is-it-and-how-does-it-work"
+  - "NIDDK, Healthy Eating and Physical Activity for Life: https://www.niddk.nih.gov/health-information/weight-management/adult-overweight-obesity"
+  - "MedlinePlus, Fasting: https://medlineplus.gov/ency/article/002446.htm"
+plan:
+  topic: "Intermittent fasting: what the evidence says, who should avoid it, and common myths"
+  title: "Intermittent Fasting: What Works, What Is Hype, Who Should Skip It"
+  description: |-
+    Eat only during a window, or skip meals on some days. Intermittent fasting is everywhere, but what does the science really say? Learn the common types, how it compares with regular dieting, what the side effects are, who should avoid it, including people with diabetes who take certain medicines, and the myths to skip.
+
+    In this video:
+    • What intermittent fasting is
+    • What the research shows
+    • Common side effects
+    • Who should not do it
+    • Myths about fasting
+
+    #IntermittentFasting #WeightLoss #Nutrition #HealthTips #HealthEducation
+  tags: ["intermittent fasting", "intermittent fasting myths", "does intermittent fasting work", "16 8 fasting", "time restricted eating", "intermittent fasting for weight loss", "who should not do intermittent fasting", "intermittent fasting and diabetes", "fasting side effects", "5 2 diet", "is skipping breakfast bad", "fasting and medication", "health education"]
+  thumbnail_text: "FASTING: THE FACTS"
+  thumbnail_highlight: "FACTS"
+  thumbnail_photo_query: "empty plate clock table"
+  playlist: "Body Myths"
+  scenes:
+    - layout: "title"
+      heading: "Intermittent Fasting"
+      points: ["What works, what is hype"]
+      footage_query: "empty plate clock table"
+      narration: >-
+        Skip breakfast, eat in an eight hour window, or fast two days a week. Intermittent fasting is everywhere, and so are
+        the big promises. So what does the science say? Does it work better than regular dieting? And who should not do it at
+        all? Here are the facts and the myths.
+    - layout: "bullets"
+      heading: "What Is It?"
+      points: ["Eating pattern with set fasting times", "Not a list of foods", "Water, tea, and black coffee allowed", "Several types"]
+      footage_query: "woman checking watch kitchen"
+      narration: >-
+        Intermittent fasting is an eating pattern that switches between times of eating and times of fasting. It does not
+        say what to eat, only when. During fasting, you can usually have water, plain tea, and black coffee. There are
+        several types, and what works for one person may not suit another.
+    - layout: "bullets"
+      heading: "Common Types"
+      points: ["Time restricted: eat in 8 to 10 hours", "5 and 2: two low calorie days", "Alternate day fasting", "Pick what you can keep up"]
+      footage_query: "family eating lunch together"
+      narration: >-
+        The most common type is time restricted eating, where you eat only during a window of about eight to ten hours a day,
+        and fast for the rest. In the five and two pattern, you eat normally five days a week and eat very little on two days.
+        Alternate day fasting swaps normal days with fasting days. Any plan only works if you can stick with it.
+    - layout: "myth_fact"
+      heading: "Does It Burn More Fat?"
+      points: ["Fasting melts fat faster than dieting", "Results are similar to regular dieting"]
+      footage_query: "woman stepping on scale"
+      narration: >-
+        Myth one: intermittent fasting melts fat faster than any other diet. Fact: studies comparing fasting with regular
+        calorie cutting have found similar weight loss. It seems to work mainly because people eat fewer calories overall. For
+        some people, fasting is simply an easier way to eat less. For others, it is harder.
+    - layout: "bullets"
+      heading: "Possible Benefits"
+      points: ["Weight loss, if calories drop", "Possible better blood sugar", "Simple rules for some people", "Long term proof is limited"]
+      footage_query: "doctor talking to patient"
+      narration: >-
+        Some studies suggest intermittent fasting can help with weight loss, blood sugar, and blood pressure in some people,
+        but most studies are short, and long term results are not clear. It may not be better than other healthy eating plans.
+        The best plan is one you can follow safely for a long time.
+    - layout: "myth_fact"
+      heading: "Can You Eat Anything?"
+      points: ["Eat anything you want in your window", "Food quality still matters"]
+      footage_query: "healthy meal plate"
+      narration: >-
+        Myth two: as long as you fast, you can eat whatever you want in your eating window. Fact: what you eat still matters.
+        If you fill your window with sweets, fried food, and sugary drinks, you may not lose weight, and you may not feel well.
+        Aim for vegetables, fruit, whole grains, lean protein, and healthy fats, and drink plenty of water.
+    - layout: "warning"
+      heading: "Possible Side Effects"
+      points: ["Hunger and irritability", "Headache, dizziness", "Tiredness, trouble sleeping", "Overeating after fasting"]
+      footage_query: "man holding head tired"
+      narration: >-
+        Intermittent fasting can cause side effects, especially at first. These include hunger, irritability, headache,
+        dizziness, tiredness, constipation, and trouble sleeping. Some people overeat when the fast ends. If you feel faint,
+        shaky, or unwell, stop fasting, and eat something. It is not worth pushing through.
+    - layout: "warning"
+      heading: "Who Should Not Fast"
+      points: ["Pregnant or breastfeeding women", "Children and teens", "A history of an eating disorder", "Underweight or frail older adults"]
+      footage_query: "doctor talking to patient office"
+      narration: >-
+        Intermittent fasting is not safe for everyone. Do not do it if you are pregnant or breastfeeding, if you are a child
+        or teen who is still growing, if you have or had an eating disorder, if you are underweight, or if you are a frail
+        older adult. Talk to your doctor first if you have any health condition.
+    - layout: "warning"
+      heading: "Diabetes and Medicines"
+      points: ["Insulin or pills may cause low sugar", "Never fast without a plan from your doctor", "Check blood sugar often", "Some medicines need food"]
+      footage_query: "person checking blood sugar"
+      narration: >-
+        This one is important. If you have diabetes and take insulin or certain pills, fasting can cause dangerously low blood
+        sugar. Never start fasting without a plan from your doctor, who may need to change your doses. Some other medicines
+        must be taken with food, too. Ask your doctor or pharmacist before you change when you eat.
+    - layout: "myth_fact"
+      heading: "Is Breakfast Required?"
+      points: ["Skipping breakfast is always harmful", "It depends on the person"]
+      footage_query: "breakfast table family"
+      narration: >-
+        Myth three: skipping breakfast is always bad for you, or is always the secret to weight loss. Fact: breakfast is
+        neither magic nor harmful for everyone. What matters most is your overall eating pattern, the quality of the food, and
+        whether the routine fits your health, your work, and your medicines. Listen to your body, and your doctor.
+    - layout: "bullets"
+      heading: "If You Want to Try"
+      points: ["Talk to your doctor first", "Start gently, such as 12 hours overnight", "Drink water, eat balanced meals", "Stop if you feel unwell"]
+      footage_query: "woman drinking water kitchen"
+      narration: >-
+        If you want to try it, talk to your doctor first, especially if you have a health condition or take medicine. Start
+        gently, for example by finishing dinner early and having a twelve hour break overnight. Drink plenty of water, eat
+        balanced meals in your eating window, and stop if you feel unwell. Do not use fasting to make up for overeating.
+    - layout: "warning"
+      heading: "Watch for Eating Disorders"
+      points: ["Obsessing over food or rules", "Guilt after eating", "Skipping meals to control weight", "Ask for help early"]
+      footage_query: "woman talking to counselor"
+      narration: >-
+        Fasting can be risky for people who are prone to eating disorders. Warning signs include thinking about food all the
+        time, feeling guilty after eating, skipping meals to control weight, or losing control when eating. If this sounds
+        like you, stop and talk to your doctor or a mental health professional. Help works, and it is never too early to ask.
+    - layout: "warning"
+      heading: "Call Your Doctor or ER"
+      points: ["Fainting or chest pain: go to the ER", "Confusion, shaking, sweating: check blood sugar", "Ongoing dizziness: call your doctor", "Rapid weight loss"]
+      footage_query: "ambulance emergency"
+      narration: >-
+        Go to the emergency room or call nine one one for fainting, chest pain, a very fast heartbeat, or confusion. If you
+        have diabetes and feel shaky, sweaty, or confused, check your blood sugar and treat it as your doctor has taught you.
+        Call your doctor for ongoing dizziness, weakness, or rapid weight loss.
+    - layout: "outro"
+      heading: "Remember"
+      points: ["Fasting is not magic", "It is not safe for everyone", "Check with your doctor first"]
+      footage_query: "family at home together"
+      narration: >-
+        Remember: fasting is not magic, it is not safe for everyone, and you should check with your doctor first, especially
+        if you take medicine for diabetes. Share this with someone who wants to try it. This video is for education only, not
+        medical advice. Like and subscribe to Health Support Studio for a new health video every day.
+  short_title: "Intermittent fasting: who should skip it #Shorts"
+  short_caption: "Fasting is not safe for everyone, especially people on diabetes medicines. Educational only, not medical advice."
+  short_scenes:
+    - layout: "title"
+      heading: "Intermittent Fasting?"
+      points: ["Who should skip it"]
+      footage_query: "empty plate clock table"
+      narration: >-
+        Thinking about intermittent fasting? It is not for everyone.
+    - layout: "warning"
+      heading: "Talk to Your Doctor"
+      points: ["Pregnant or breastfeeding", "Children, eating disorders", "Diabetes medicine: ask first"]
+      footage_query: "doctor talking to patient office"
+      narration: >-
+        Studies show that intermittent fasting works about as well as regular dieting, not better. It is not safe for people
+        who are pregnant or breastfeeding, for children and teens, for people with a history of eating disorders, or for people
+        who take insulin or certain diabetes medicines without a plan from their doctor. Stop if you feel faint.
+    - layout: "outro"
+      heading: "Full Video"
+      points: ["On YouTube"]
+      footage_query: "family at home together"
+      narration: >-
+        Learn more in our full video on the Health Support Studio channel.
+story:
+  open: >-
+    Imagine Greg. He takes insulin for diabetes, and he wants to try a sixteen hour fast he saw online. By the end of this
+    video, you will know why that could be dangerous, and what Greg should do first.
+  twist: >-
+    Remember Greg? Here is the twist. Fasting can cause dangerously low blood sugar in people who take insulin or certain
+    diabetes pills, so it should never be started without a plan from the doctor.
+  end: >-
+    So what should Greg do? Talk to his doctor before changing when he eats, ask how to adjust his medicine, check his blood
+    sugar often, and go to the ER for fainting or confusion.
+  short_cliff: >-
+    Greg takes insulin and wants to try a long fast. Is that safe?
+  reel_answer: >-
+    The answer: not without a plan from his doctor. Fasting can cause dangerously low blood sugar in people who take insulin or certain diabetes medicines.

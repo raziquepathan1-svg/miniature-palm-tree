@@ -1,0 +1,176 @@
+queue_topic: "Vitamin B12 deficiency: signs, who is at risk, and what to do"
+style: "Warning Signs"
+sources:
+  - "NIH Office of Dietary Supplements, Vitamin B12 Fact Sheet for Consumers: https://ods.od.nih.gov/factsheets/VitaminB12-Consumer/"
+  - "MedlinePlus, Vitamin B12 Level: https://medlineplus.gov/lab-tests/vitamin-b12-level/"
+  - "NIDDK, Pernicious Anemia and Vitamin B12 Deficiency Anemia: https://www.niddk.nih.gov/health-information/blood-diseases/anemia"
+plan:
+  topic: "Vitamin B12 deficiency: signs, who is at risk, and what to do"
+  title: "Low Vitamin B12? Signs, Who Is at Risk and How to Fix It"
+  description: |-
+    Tired, tingling hands and feet, and trouble with memory. Low vitamin B12 can cause all of these, and it is easy to miss, especially in older adults and people who take certain medicines. Learn the signs, who is at risk, how it is tested, why catching it early matters for your nerves, and the myths about B12 shots.
+
+    In this video:
+    • What vitamin B12 does
+    • Signs of low B12
+    • Who is at higher risk
+    • Testing and treatment
+    • Myths about B12 shots and energy
+
+    #VitaminB12 #B12Deficiency #Nutrition #HealthTips #HealthEducation
+  tags: ["vitamin b12", "b12 deficiency", "low vitamin b12 symptoms", "signs of b12 deficiency", "b12 deficiency in vegans", "pernicious anemia", "metformin and b12", "tingling hands and feet", "b12 shots", "vitamin b12 foods", "b12 and memory", "b12 blood test", "health education"]
+  thumbnail_text: "TINGLING FEET?"
+  thumbnail_highlight: "TINGLING"
+  thumbnail_photo_query: "man rubbing tired feet"
+  playlist: "Healthy Habits & Prevention"
+  scenes:
+    - layout: "title"
+      heading: "Low Vitamin B12"
+      points: ["Signs, risks, and what to do"]
+      footage_query: "man rubbing tired feet"
+      narration: >-
+        Tired all the time. Tingling in your hands and feet. A fuzzy memory. These can have many causes, and one that is easy
+        to miss is low vitamin B12. Left untreated, it can harm your nerves, but it is simple to test for and usually easy to
+        treat. Here are the signs, who is at risk, and the myths about B12.
+    - layout: "bullets"
+      heading: "What Does B12 Do?"
+      points: ["Makes healthy red blood cells", "Keeps nerves working", "Helps make DNA", "Found in animal foods"]
+      footage_query: "doctor explaining nervous system model"
+      narration: >-
+        Vitamin B12 helps your body make red blood cells and DNA, and it keeps your nerves healthy. Your body cannot make it,
+        so it has to come from food or supplements. It is found naturally in meat, fish, poultry, eggs, and dairy, and it is
+        added to some cereals and plant milks. Adults need a small but steady amount each day.
+    - layout: "warning"
+      heading: "Signs of Low B12"
+      points: ["Tiredness and weakness", "Tingling or numbness in hands and feet", "Trouble with balance and walking", "Memory or mood changes"]
+      footage_query: "tired woman holding head"
+      narration: >-
+        Signs of low B12 can include feeling very tired and weak, pale or slightly yellow skin, a sore red tongue, and
+        tingling or numbness in the hands and feet. It can also affect balance and walking, memory, concentration, and mood,
+        including depression. Symptoms often come on slowly over months or years, so they are easy to put down to aging.
+    - layout: "bullets"
+      heading: "Who Is at Higher Risk?"
+      points: ["Adults over 50", "Vegans and some vegetarians", "People who take metformin or acid reducers", "Gut or weight loss surgery, celiac, Crohn disease"]
+      footage_query: "older adults talking doctor"
+      narration: >-
+        Some people are more likely to run low. Older adults often make less stomach acid, which the body needs to absorb B12
+        from food. Vegans and some vegetarians may not get enough from their diet. People who take metformin, or medicines that
+        lower stomach acid, for a long time, and people who have had stomach or weight loss surgery, or who have celiac or
+        Crohn disease, are also at risk.
+    - layout: "bullets"
+      heading: "Pernicious Anemia"
+      points: ["An autoimmune condition", "Body cannot absorb B12", "Runs in families", "Often needs shots or high doses"]
+      footage_query: "doctor looking at blood test results"
+      narration: >-
+        One important cause is pernicious anemia. In this autoimmune condition, the body attacks the cells in the stomach that
+        help absorb B12. It can run in families, and it can lead to a type of anemia and nerve damage. People with pernicious
+        anemia usually need B12 shots, or very high dose supplements, for life.
+    - layout: "myth_fact"
+      heading: "Only Vegans Run Low?"
+      points: ["Only vegans have low B12", "Anyone with poor absorption can"]
+      footage_query: "family eating dinner"
+      narration: >-
+        Myth one: only vegans and vegetarians get low B12. Fact: many people who eat meat also run low, because the problem is
+        often absorbing it, not eating it. Aging, medicines, and gut conditions can all reduce absorption. On the other hand,
+        vegans do need a reliable source, such as fortified foods or a supplement.
+    - layout: "bullets"
+      heading: "How It Is Tested"
+      points: ["Blood test for B12 level", "Blood count to check for anemia", "Other tests if the result is borderline", "Do not self diagnose"]
+      footage_query: "lab technician drawing blood"
+      narration: >-
+        A simple blood test shows your B12 level. Your doctor may also check a complete blood count for anemia, and may order
+        other tests, like methylmalonic acid, if the result is borderline. They will also look for the cause, such as a
+        medicine or a gut problem. Do not start high dose supplements before testing, because it can make results unclear.
+    - layout: "bullets"
+      heading: "Treatment"
+      points: ["B12 tablets, taken daily", "Shots if absorption is poor", "Eat B12 rich or fortified foods", "Recheck levels as advised"]
+      footage_query: "pharmacist handing supplement bottle"
+      narration: >-
+        Treatment depends on the cause. Mild deficiency can often be treated with daily B12 tablets. If your body cannot absorb
+        B12 well, your doctor may recommend very high dose tablets, or injections. Eating B12 rich foods like fish, eggs,
+        dairy, and fortified cereal helps, too. Your doctor will recheck your level to make sure it is improving.
+    - layout: "myth_fact"
+      heading: "Do B12 Shots Boost Energy?"
+      points: ["B12 shots give everyone more energy", "They only help if you are low"]
+      footage_query: "woman feeling energetic outdoors"
+      narration: >-
+        Myth two: B12 shots give you more energy, even if you are not low. Fact: if your B12 level is normal, extra B12 will
+        not make you more energetic, and there is little evidence that it helps. Tiredness has many causes, like poor sleep,
+        anemia, thyroid problems, and depression, so it is worth finding the real cause.
+    - layout: "warning"
+      heading: "Folic Acid Can Mask It"
+      points: ["High dose folic acid can hide anemia", "Nerve damage can still progress", "Tell your doctor what you take", "Get B12 checked first"]
+      footage_query: "pill bottles table"
+      narration: >-
+        Here is a safety point. Folic acid, a B vitamin often found in supplements and fortified foods, can fix the anemia of
+        B12 deficiency, but it will not stop nerve damage. That can hide the problem while it keeps getting worse. If you take
+        folic acid supplements and have symptoms like tingling or memory trouble, ask your doctor to check your B12.
+    - layout: "warning"
+      heading: "Why Early Treatment Matters"
+      points: ["Nerve damage can become permanent", "Memory and balance problems", "Severe anemia", "Early treatment works best"]
+      footage_query: "doctor talking to older patient"
+      narration: >-
+        Catching low B12 early matters. If it goes on for too long, nerve damage can become permanent, and problems with
+        balance, memory, and thinking can be hard to reverse. Severe anemia can strain the heart. The sooner you start
+        treatment, the more likely your symptoms are to improve.
+    - layout: "warning"
+      heading: "Call Your Doctor"
+      points: ["Tingling or numbness", "Trouble with balance or memory", "Ongoing fatigue or pale skin", "You take metformin or acid reducers"]
+      footage_query: "doctor talking patient office"
+      narration: >-
+        Call your doctor if you have tingling or numbness, balance problems, memory changes, ongoing tiredness, or a sore red
+        tongue, especially if you are over fifty, vegan, or take metformin or acid reducers. Ask whether a B12 blood test makes
+        sense for you.
+    - layout: "warning"
+      heading: "Go to the ER"
+      points: ["Sudden weakness or numbness on one side", "Trouble speaking or confusion", "Chest pain or fainting", "Severe shortness of breath"]
+      footage_query: "ambulance emergency"
+      narration: >-
+        Go to the emergency room or call nine one one for sudden weakness or numbness on one side of the body, trouble
+        speaking, sudden confusion, chest pain, fainting, or severe shortness of breath. These can be signs of a stroke, a heart
+        problem, or very severe anemia, and they need urgent care.
+    - layout: "outro"
+      heading: "Remember"
+      points: ["Tingling and fatigue need a check", "Test B12 before supplements", "Shots help only if you are low"]
+      footage_query: "family at home together"
+      narration: >-
+        Remember: tingling and fatigue deserve a check, get a B12 test before you start high doses, and shots only help if you
+        are low. Share this with someone over fifty who always feels tired. This video is for education only, not medical
+        advice. Like and subscribe to Health Support Studio for a new health video every day.
+  short_title: "Tingling feet and tired? Check B12 #Shorts"
+  short_caption: "Low vitamin B12 can cause tingling, tiredness, and memory trouble. A blood test can tell. Educational only, not medical advice."
+  short_scenes:
+    - layout: "title"
+      heading: "Tingling and Tired?"
+      points: ["Could it be low B12?"]
+      footage_query: "man rubbing tired feet"
+      narration: >-
+        Tired, tingling hands and feet, and a foggy memory. It could be low vitamin B12.
+    - layout: "warning"
+      heading: "Who Is at Risk"
+      points: ["Over 50, vegans", "Metformin or acid reducers", "A blood test can tell"]
+      footage_query: "lab technician drawing blood"
+      narration: >-
+        Adults over fifty, vegans, and people who take metformin or acid reducers are more likely to run low. Low B12 can
+        damage nerves if it goes untreated, so ask your doctor for a blood test. B12 shots only help if you are actually low.
+        Go to the emergency room for sudden weakness on one side or trouble speaking.
+    - layout: "outro"
+      heading: "Full Video"
+      points: ["On YouTube"]
+      footage_query: "family at home together"
+      narration: >-
+        Learn more in our full video on the Health Support Studio channel.
+story:
+  open: >-
+    Imagine Walter. He is sixty eight, he takes metformin for diabetes, and his feet tingle and he feels tired all the time.
+    By the end of this video, you will know what might be going on, and what Walter should ask his doctor.
+  twist: >-
+    Remember Walter? Here is the twist. Metformin and age can both lower B12 absorption, and nerve damage from low B12 can
+    become permanent if it is not treated.
+  end: >-
+    So what should Walter do? Ask his doctor for a B12 blood test, tell the doctor about his medicines, follow the treatment
+    plan, and go to the ER for sudden weakness on one side or trouble speaking.
+  short_cliff: >-
+    Walter takes metformin, and his feet tingle. Why does that matter?
+  reel_answer: >-
+    The answer: metformin and aging can lower B12 absorption, and low B12 can cause tingling and nerve damage. Ask your doctor for a simple blood test.

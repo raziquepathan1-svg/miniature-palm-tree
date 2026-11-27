@@ -1,0 +1,169 @@
+queue_topic: "Statins: who needs them, side effects, and common myths"
+style: "Myth vs Fact"
+sources:
+  - "NHLBI, Blood Cholesterol: Treatment: https://www.nhlbi.nih.gov/health/blood-cholesterol/treatment"
+  - "American Heart Association, Cholesterol Medications: https://www.heart.org/en/health-topics/cholesterol/prevention-and-treatment-of-high-cholesterol-hyperlipidemia/cholesterol-medications"
+  - "FDA, Statins for High Cholesterol: https://www.fda.gov/consumers/consumer-updates/statins-high-cholesterol"
+plan:
+  topic: "Statins: who needs them, side effects, and common myths"
+  title: "Statin Myths: Muscle Pain, Memory, Liver and the Real Facts"
+  description: |-
+    Millions of Americans take statins, but many more worry about them. Do they cause muscle pain, memory loss, or liver damage? Who really needs one? Learn what statins do, who they help most, which side effects are common and which are rare, the myths about natural alternatives, and why you should never stop a statin on your own.
+
+    In this video:
+    • What statins do
+    • Who benefits most
+    • Side effects: common and rare
+    • Myths about memory, liver and natural options
+    • When to call your doctor, and when to call 911
+
+    #Statins #Cholesterol #HeartHealth #HealthMyths #HealthEducation
+  tags: ["statins", "statin side effects", "statin myths", "do statins cause muscle pain", "statins and memory loss", "statins and liver", "who needs a statin", "cholesterol medicine", "red yeast rice", "should i take a statin", "statin muscle pain", "ldl cholesterol", "health education"]
+  thumbnail_text: "STATIN: TRUE?"
+  thumbnail_highlight: "TRUE?"
+  thumbnail_photo_query: "pill bottle doctor prescription"
+  playlist: "Heart & Blood Pressure"
+  scenes:
+    - layout: "title"
+      heading: "Statin Myths and Facts"
+      points: ["Side effects, benefits, and worries"]
+      footage_query: "pill bottle doctor prescription"
+      narration: >-
+        Your doctor says you should take a statin, and your first thought is, what about the side effects? Muscle pain,
+        memory loss, liver damage. You have heard it all. Statins are among the most studied medicines in the world. Here is
+        what they do, who they help, and which worries are true and which are not.
+    - layout: "bullets"
+      heading: "What Do Statins Do?"
+      points: ["Lower LDL, the bad cholesterol", "Block an enzyme the liver uses", "Reduce plaque buildup", "Lower heart attack and stroke risk"]
+      footage_query: "doctor explaining cholesterol artery model"
+      narration: >-
+        Statins lower LDL cholesterol, often called bad cholesterol, by slowing down an enzyme your liver uses to make it.
+        Less LDL in the blood means less buildup of fatty plaque in the arteries. In large studies, statins have been shown to
+        lower the risk of heart attack and stroke, in people who have heart disease and in many who are at higher risk.
+    - layout: "bullets"
+      heading: "Who Benefits Most?"
+      points: ["Past heart attack or stroke", "Very high LDL cholesterol", "Diabetes, ages 40 to 75", "Higher risk over the next 10 years"]
+      footage_query: "doctor talking to patient chart"
+      narration: >-
+        Guidelines recommend statins for people who have had a heart attack or stroke, people with very high LDL cholesterol,
+        many adults with diabetes between forty and seventy five, and others whose risk of heart disease over the next ten
+        years is higher. Your doctor looks at the whole picture, not just one number. Diet, exercise, and quitting smoking
+        matter too. If you are not sure whether you need one, ask your doctor to explain your risk in plain terms.
+    - layout: "myth_fact"
+      heading: "Do Statins Cause Muscle Pain?"
+      points: ["Statins always cause muscle pain", "Aches are common, often not statin related"]
+      footage_query: "older man rubbing leg muscle"
+      narration: >-
+        Myth one: statins always cause muscle pain. Fact: muscle aches are the most common complaint, but in studies where
+        people did not know whether they were taking a statin or a dummy pill, many had aches either way. For some people, a
+        statin really does cause aches, and your doctor can lower the dose or try a different one.
+    - layout: "warning"
+      heading: "Serious Muscle Problems"
+      points: ["Very rare", "Severe pain and weakness", "Dark, cola colored urine", "Call your doctor right away"]
+      footage_query: "doctor talking patient office"
+      narration: >-
+        A very rare but serious problem is muscle breakdown. Call your doctor right away if you have severe muscle pain or
+        weakness, especially with dark, cola colored urine, or with fever and unusual tiredness. This is not common, but it
+        needs quick care. Taking statins with certain other medicines can raise the risk, so tell your doctor what you take.
+    - layout: "myth_fact"
+      heading: "Do Statins Damage the Liver?"
+      points: ["Statins commonly damage the liver", "Mild enzyme rises common; serious harm rare"]
+      footage_query: "doctor looking at blood test results"
+      narration: >-
+        Myth two: statins damage your liver. Fact: statins can cause a small rise in liver enzymes in some people, which
+        usually is mild and does not cause harm. Serious liver injury is rare. Your doctor may check liver tests before you
+        start, and later if you have symptoms, but routine repeat testing is not usually needed.
+    - layout: "myth_fact"
+      heading: "Do Statins Cause Memory Loss?"
+      points: ["Statins cause dementia", "Large studies show no clear link"]
+      footage_query: "older couple talking kitchen"
+      narration: >-
+        Myth three: statins cause memory loss and dementia. Fact: some people have reported feeling foggy, and the FDA
+        includes this in the warning label, but large studies have not shown that statins cause dementia. In fact, some
+        studies suggest they may lower the risk. If you notice memory problems, tell your doctor, and do not stop the
+        medicine on your own.
+    - layout: "bullets"
+      heading: "Other Possible Effects"
+      points: ["Small rise in blood sugar", "Digestive upset, headache", "Benefit usually outweighs risk", "Tell your doctor about side effects"]
+      footage_query: "pharmacist talking to patient"
+      narration: >-
+        Statins can slightly raise blood sugar, and a few people develop type 2 diabetes sooner, but for most people the heart
+        benefit is greater than this risk. Other possible effects include headache and an upset stomach. If you have
+        side effects, tell your doctor. Often a lower dose, a different statin, or a different schedule helps.
+    - layout: "myth_fact"
+      heading: "Natural Is Safer?"
+      points: ["Red yeast rice is a safe natural statin", "Supplements vary and are not checked like drugs"]
+      footage_query: "supplement bottles shelf"
+      narration: >-
+        Myth four: natural products like red yeast rice are safer than a statin. Fact: red yeast rice can contain the same
+        active ingredient as a prescription statin, in unknown amounts, and some products contain a harmful contaminant.
+        Supplements are not tested the way medicines are. Talk to your doctor before using one.
+    - layout: "bullets"
+      heading: "Diet Alone Enough?"
+      points: ["Healthy eating helps a lot", "Liver makes most of your cholesterol", "Genes matter too", "Medicine may still be needed"]
+      footage_query: "healthy food vegetables kitchen"
+      narration: >-
+        A heart healthy diet, exercise, and not smoking can lower cholesterol, and they are always part of the plan. But your
+        liver makes most of the cholesterol in your body, and genes play a big role, so some people cannot reach a safe level
+        with lifestyle alone. That is not a failure. It just means you may need a medicine, too.
+    - layout: "warning"
+      heading: "Never Stop on Your Own"
+      points: ["Cholesterol returns when you stop", "Stopping raises heart risk", "Talk to your doctor first", "Pregnancy: tell your doctor"]
+      footage_query: "woman taking pill with water"
+      narration: >-
+        Do not stop your statin on your own, because your cholesterol will go back up, and your risk with it. If you are
+        worried about a side effect, call your doctor first. They can adjust the plan. Tell your doctor if you are pregnant, or
+        planning to be, or breastfeeding. Ask your pharmacist about grapefruit juice, because it can interact with some statins. If you miss a dose, ask your pharmacist what to do instead of doubling up.
+    - layout: "warning"
+      heading: "When to Call 911"
+      points: ["Chest pain or pressure", "Weakness or numbness on one side", "Face drooping, slurred speech", "Trouble breathing"]
+      footage_query: "ambulance emergency"
+      narration: >-
+        Statins lower risk, but they do not remove it. Call nine one one for the signs of a heart attack, like chest pain or
+        pressure, or for the signs of a stroke, like face drooping, weakness in one arm, or slurred speech. Fast treatment
+        saves lives, so do not wait to see if it passes.
+    - layout: "outro"
+      heading: "Remember"
+      points: ["Statins lower heart attack risk", "Most side effects are mild or manageable", "Never stop without your doctor"]
+      footage_query: "family at home together"
+      narration: >-
+        Remember: statins lower the risk of heart attack and stroke, most side effects are mild or manageable, and you should
+        never stop without talking to your doctor. Share this with someone who is afraid of statins. This video is for
+        education only, not medical advice. Like and subscribe to Health Support Studio for a new health video every day.
+  short_title: "Do statins cause muscle pain? #Shorts"
+  short_caption: "Muscle aches are common, but not always from the statin. Never stop without your doctor. Educational only, not medical advice."
+  short_scenes:
+    - layout: "title"
+      heading: "Afraid of Statins?"
+      points: ["The facts"]
+      footage_query: "pill bottle doctor prescription"
+      narration: >-
+        Afraid of statin side effects? Here is what the research says.
+    - layout: "warning"
+      heading: "Do Not Stop Alone"
+      points: ["Muscle aches: not always the statin", "Serious problems are rare", "Call your doctor about side effects"]
+      footage_query: "doctor talking to patient chart"
+      narration: >-
+        Statins lower the risk of heart attack and stroke. Muscle aches are common, but in studies many people had them even
+        on a dummy pill. Serious muscle or liver problems are rare, and large studies do not show that statins cause dementia.
+        Never stop a statin on your own. Call your doctor, and call nine one one for chest pain or stroke signs.
+    - layout: "outro"
+      heading: "Full Video"
+      points: ["On YouTube"]
+      footage_query: "family at home together"
+      narration: >-
+        Learn more in our full video on the Health Support Studio channel.
+story:
+  open: >-
+    Imagine Linda. Her doctor wants her to take a statin, but she has heard it causes muscle pain and memory loss, so she
+    wants to skip it. By the end of this video, you will know what is true, and what Linda should do.
+  twist: >-
+    Remember Linda? Here is the twist. Muscle aches are common, but often they are not from the statin, serious problems
+    are rare, and large studies do not show that statins cause dementia.
+  end: >-
+    So what should Linda do? Talk to her doctor about her worries, ask about a lower dose or another statin if she has
+    aches, never stop on her own, and call nine one one for chest pain or stroke signs.
+  short_cliff: >-
+    Linda is afraid a statin will cause muscle pain. Is that what the research shows?
+  reel_answer: >-
+    The answer: not always. In studies where people did not know what they took, many had aches on a dummy pill too. Talk to your doctor before you stop.

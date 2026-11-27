@@ -1,0 +1,177 @@
+queue_topic: "Lactose intolerance: symptoms, how it differs from a milk allergy, and what to eat"
+style: "Top Questions"
+sources:
+  - "NIDDK, Definition and Facts for Lactose Intolerance: https://www.niddk.nih.gov/health-information/digestive-diseases/lactose-intolerance/definition-facts"
+  - "MedlinePlus, Lactose Intolerance: https://medlineplus.gov/lactoseintolerance.html"
+  - "NIAID, Food Allergy: https://www.niaid.nih.gov/diseases-conditions/food-allergy"
+plan:
+  topic: "Lactose intolerance: symptoms, how it differs from a milk allergy, and what to eat"
+  title: "Lactose Intolerance vs Milk Allergy: Signs and What to Eat"
+  description: |-
+    Gas, bloating, and a rumbling stomach after ice cream or a latte. Lactose intolerance is very common, but it is often mixed up with a milk allergy, which can be dangerous. Learn the signs, why it happens, how it is checked, how much dairy many people can still enjoy, how to get enough calcium, and the warning signs of a real allergic reaction.
+
+    In this video:
+    • What lactose intolerance is
+    • Symptoms and timing
+    • Milk allergy: not the same thing
+    • What you can eat and drink
+    • Warning signs that need urgent care
+
+    #LactoseIntolerance #DairyFree #DigestiveHealth #FoodAllergy #HealthEducation
+  tags: ["lactose intolerance", "lactose intolerance symptoms", "milk allergy vs lactose intolerance", "lactose free", "dairy and bloating", "lactase enzyme", "how to test for lactose intolerance", "calcium without dairy", "lactose intolerance in adults", "hidden lactose", "can lactose intolerance develop later", "dairy gas and diarrhea", "health education"]
+  thumbnail_text: "MILK PROBLEM?"
+  thumbnail_highlight: "MILK"
+  thumbnail_photo_query: "woman holding stomach glass milk"
+  playlist: "Body Myths"
+  scenes:
+    - layout: "title"
+      heading: "Lactose Intolerance"
+      points: ["Signs, myths, and what to eat"]
+      footage_query: "woman holding stomach glass milk"
+      narration: >-
+        You have a latte or a bowl of ice cream, and an hour later your stomach is bloated, crampy, and loud. Is it lactose
+        intolerance, or is it a milk allergy? They are very different, and one of them can be dangerous. Here is how to tell,
+        and what you can still eat and drink.
+    - layout: "bullets"
+      heading: "What Is It?"
+      points: ["Body makes too little lactase", "Lactase breaks down lactose, milk sugar", "Undigested lactose reaches the colon", "Gut bacteria make gas"]
+      footage_query: "doctor explaining digestive system model"
+      narration: >-
+        Lactose is the natural sugar in milk. To digest it, your small intestine makes an enzyme called lactase. If you do not
+        make enough, lactose passes into the colon, where gut bacteria ferment it, causing gas, bloating, and loose stools.
+        Lactose intolerance is a digestion problem. It is uncomfortable, but it is not dangerous.
+    - layout: "big_number"
+      heading: "Very Common"
+      points: ["Millions", "of Americans have it"]
+      footage_query: "group of adults at cafe"
+      narration: >-
+        Lactose intolerance is very common. Millions of Americans have it, and it is more common in people of Black, Asian,
+        Hispanic, and American Indian backgrounds. Many people make less lactase as they get older, so it can show up in
+        adulthood, even if you enjoyed milk as a child.
+    - layout: "warning"
+      heading: "Common Symptoms"
+      points: ["Bloating and gas", "Belly cramps", "Loose stools or diarrhea", "Nausea, rumbling stomach"]
+      footage_query: "man holding stomach discomfort"
+      narration: >-
+        Symptoms usually start thirty minutes to two hours after eating or drinking dairy. They include bloating, gas, belly
+        cramps, loose stools or diarrhea, nausea, and a rumbling stomach. How much dairy it takes varies a lot from person to
+        person, and some people never notice a problem with small amounts.
+    - layout: "myth_fact"
+      heading: "Is It a Milk Allergy?"
+      points: ["Lactose intolerance is a milk allergy", "Intolerance is digestion; allergy is immune"]
+      footage_query: "child drinking milk glass"
+      narration: >-
+        Myth one: lactose intolerance and milk allergy are the same. Fact: they are different. Lactose intolerance is a
+        digestive problem caused by missing lactase. A milk allergy is an immune reaction to the proteins in milk, and it
+        can cause hives, swelling, vomiting, wheezing, and a life threatening reaction called anaphylaxis. It is more
+        common in young children.
+    - layout: "bullets"
+      heading: "How It Is Checked"
+      points: ["Cut out dairy for a short time", "Then add it back and watch", "Hydrogen breath test", "Ask your doctor first"]
+      footage_query: "doctor talking to patient"
+      narration: >-
+        Your doctor may ask you to avoid dairy for a couple of weeks, and then see whether symptoms return when you add it
+        back. A hydrogen breath test can also measure how well you digest lactose. Do not assume it is lactose intolerance
+        if you have other warning signs, because other conditions can cause the same symptoms.
+    - layout: "myth_fact"
+      heading: "Must You Avoid All Dairy?"
+      points: ["You must avoid all dairy", "Many people handle small amounts"]
+      footage_query: "yogurt bowl breakfast table"
+      narration: >-
+        Myth two: if you are lactose intolerant, you must give up all dairy. Fact: many people can handle small amounts, such
+        as up to about a cup of milk at a time, especially with a meal. Hard cheeses, like cheddar, are naturally low in
+        lactose, and yogurt with live cultures is often easier to digest. Find out what works for you.
+    - layout: "bullets"
+      heading: "Easier Choices"
+      points: ["Lactose free milk", "Lactase enzyme tablets", "Small portions with meals", "Plant milks, fortified"]
+      footage_query: "grocery store dairy aisle"
+      narration: >-
+        There are many easy options. Lactose free milk has the same nutrients, and it tastes close to regular milk. Lactase
+        enzyme tablets or drops, taken with dairy, can help break down lactose. Eat dairy in smaller portions, with other
+        food. Plant milks like soy and almond can work, but check that they are fortified with calcium and vitamin D.
+    - layout: "bullets"
+      heading: "Do Not Miss Calcium"
+      points: ["Needed for bones and teeth", "Fortified soy milk and juice", "Canned fish with soft bones", "Leafy greens, tofu with calcium"]
+      footage_query: "leafy greens salad kitchen"
+      narration: >-
+        If you cut back on dairy, make sure you still get enough calcium and vitamin D, which your bones need. Good sources
+        include fortified soy milk or juice, canned salmon or sardines with the soft bones, tofu made with calcium, and leafy
+        greens like kale and bok choy. Ask your doctor whether a supplement is right for you.
+    - layout: "bullets"
+      heading: "Hidden Lactose"
+      points: ["Bread, cereal, and baked goods", "Salad dressings, sauces", "Some medicines", "Look for whey, curds, milk solids"]
+      footage_query: "woman reading food label"
+      narration: >-
+        Lactose hides in more foods than you might think, including bread, breakfast cereals, baked goods, salad dressings,
+        instant soups, and even some medicines. Read the ingredient list, and look for milk, whey, curds, milk solids, and
+        dry milk powder. Most people with lactose intolerance only need to be careful with larger amounts.
+    - layout: "myth_fact"
+      heading: "Is Lactose Free Dairy Free?"
+      points: ["Lactose free means dairy free", "Lactose free milk is still dairy"]
+      footage_query: "milk carton lactose free label"
+      narration: >-
+        Myth three: lactose free milk is safe for a milk allergy. Fact: lactose free milk is still real dairy, with milk
+        proteins in it, and it is not safe for someone with a milk allergy. If a person has a milk allergy, they need to avoid
+        all milk proteins, and a doctor or allergist should guide the diet.
+    - layout: "warning"
+      heading: "Call Your Doctor"
+      points: ["Blood in the stool", "Weight loss", "Ongoing diarrhea or severe pain", "Symptoms with no clear food link"]
+      footage_query: "doctor talking patient office"
+      narration: >-
+        See a doctor if you have blood in your stool, weight loss you cannot explain, severe belly pain, ongoing diarrhea, or
+        symptoms that do not seem tied to dairy. Conditions like celiac disease, inflammatory bowel disease, and irritable
+        bowel syndrome can look like lactose intolerance, and they need different treatment.
+    - layout: "warning"
+      heading: "Allergy: Call 911"
+      points: ["Hives or swelling of lips or face", "Trouble breathing or wheezing", "Repeated vomiting", "Dizziness or fainting"]
+      footage_query: "ambulance emergency"
+      narration: >-
+        Call nine one one if a person has hives or swelling of the lips, tongue, or face, trouble breathing or wheezing,
+        repeated vomiting, dizziness, or fainting after having dairy. These are signs of a severe allergic reaction, not lactose
+        intolerance. If a person has an epinephrine pen, use it as directed and still call nine one one.
+    - layout: "outro"
+      heading: "Remember"
+      points: ["Intolerance is digestion, allergy is immune", "Many can still enjoy some dairy", "Hives or trouble breathing: 911"]
+      footage_query: "family at home together"
+      narration: >-
+        Remember: lactose intolerance is a digestion problem and a milk allergy is an immune reaction, many people can still
+        enjoy some dairy, and hives or trouble breathing means call nine one one. Share this with someone who avoids milk.
+        This video is for education only, not medical advice. Like and subscribe to Health Support Studio for a new health
+        video every day.
+  short_title: "Lactose intolerance is not a milk allergy #Shorts"
+  short_caption: "Lactose intolerance is a digestion problem. A milk allergy can be dangerous. Educational only, not medical advice."
+  short_scenes:
+    - layout: "title"
+      heading: "Milk Upsets Your Stomach?"
+      points: ["Intolerance or allergy?"]
+      footage_query: "woman holding stomach glass milk"
+      narration: >-
+        Milk upsets your stomach. Is it lactose intolerance, or a milk allergy? They are not the same.
+    - layout: "warning"
+      heading: "Know the Difference"
+      points: ["Intolerance: gas, bloating, cramps", "Allergy: hives, swelling, wheezing", "Allergy signs: call 911"]
+      footage_query: "doctor talking to patient"
+      narration: >-
+        Lactose intolerance is a digestion problem. It causes gas, bloating, and loose stools, and many people can still have
+        small amounts of dairy. A milk allergy is an immune reaction that can cause hives, swelling, and trouble breathing.
+        If that happens, call nine one one. Lactose free milk is not safe for a milk allergy.
+    - layout: "outro"
+      heading: "Full Video"
+      points: ["On YouTube"]
+      footage_query: "family at home together"
+      narration: >-
+        Learn more in our full video on the Health Support Studio channel.
+story:
+  open: >-
+    Imagine Ella. Every time she has a latte, her stomach gets loud and bloated, and she thinks she should give up dairy for
+    good. By the end of this video, you will know if she has to, and what Ella can still enjoy.
+  twist: >-
+    Remember Ella? Here is the twist. Lactose intolerance is not a milk allergy, and many people can still handle small
+    amounts of dairy, lactose free milk, or yogurt.
+  end: >-
+    So what should Ella do? Try smaller portions with meals, choose lactose free milk, get calcium from other foods, and
+    call nine one one if she ever has hives, swelling, or trouble breathing after dairy.
+  short_cliff: >-
+    Ella gets bloated after every latte. Does she have to give up all dairy?
+  reel_answer: >-
+    The answer: no. Many people with lactose intolerance can handle small amounts of dairy, lactose free milk, or yogurt. Hives or trouble breathing is an emergency.
