@@ -69,3 +69,4 @@ social_post.py posts the _fb file to Facebook + Instagram when it exists (YouTub
 - Organelle / organ close-ups: first show it glowing in its place on the bigger picture (location first), push in, dissolve to the close-up.
 - Every named part: NAME on the right third + pointer line with arrow to the exact spot + a soft glow (Stage.label in ecg/osm_cell.py).
 - Template: youtube_agent/explainer/ecg/osm_cell.py (Stage class: picture / label / say / clear / focus / drift).
+- Never put "<" or ">" (e.g. "->") in a YouTube title/description: the upload fails with invalidDescription. Use "→".
