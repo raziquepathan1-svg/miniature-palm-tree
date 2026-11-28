@@ -2361,5 +2361,20 @@
       "HealthEducation"
     ],
     "publish_at": "2026-11-28T16:00:00Z"
+  },
+  {
+    "date": "2026-11-28T09:57:08",
+    "topic": "Chronic kidney disease: the silent condition and the tests that find it",
+    "requested_topic": "Chronic kidney disease: the silent condition and the tests that find it",
+    "title": "9 in 10 People With Kidney Disease Don't Know It",
+    "style": "Explainer",
+    "script_file": "022-kidney-health.yaml",
+    "planned_publish_at": "2026-11-29T16:00:00Z",
+    "awaiting_approval": true,
+    "youtube_id": "NmW6xPcSNH8",
+    "short_youtube_id": "vSJx2JZ45NE",
+    "short2_youtube_id": "HbaT76PXKso",
+    "short3_youtube_id": "zy_xFjvaGWQ",
+    "preview": "previews/NmW6xPcSNH8.mp4"
   }
 ]
