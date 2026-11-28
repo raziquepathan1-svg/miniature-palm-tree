@@ -1,0 +1,10 @@
+[
+ {"id":"story","text":"If you stretched out the DNA from just one of your cells, it would be about two meters long. Yet it fits inside a tiny nucleus. So how does it fit, and how does it actually build you? Let's go inside the nucleus."},
+ {"id":"pack","text":"Your DNA is split into forty-six chromosomes. Each one is DNA packed tighter and tighter. First, the DNA wraps around tiny protein spools called histones, like thread on beads. Then those coils fold again and again."},
+ {"id":"helix","text":"Zoom in, and DNA is a twisted ladder called a double helix. Each rung is a pair of chemical letters called bases. A always pairs with T, and G always pairs with C. The order of these letters is the code. A gene is one stretch of this code, a recipe for one protein. You have about twenty thousand of them."},
+ {"id":"transcribe","text":"To use a recipe, the cell first makes a copy. An enzyme called RNA polymerase opens the DNA and builds a matching strand of messenger RNA, or mRNA. In RNA, the letter U takes the place of T. This copying step is called transcription."},
+ {"id":"export","text":"The DNA stays safe inside the nucleus. The mRNA copy leaves through a nuclear pore, out into the cytoplasm, where ribosomes are waiting."},
+ {"id":"translate","text":"Now the ribosome reads the message, three letters at a time. Each three-letter word, called a codon, stands for one amino acid. Transfer RNA molecules bring the matching amino acids, and the ribosome links them into a chain. This step is called translation."},
+ {"id":"fold","text":"There are twenty kinds of amino acids. The chain twists into spirals and sheets, then folds into its final shape. That shape decides the protein's job, like carrying oxygen, fighting germs, or making your muscles move."},
+ {"id":"recap","text":"Remember the flow. DNA makes RNA, and RNA makes protein. Transcription happens in the nucleus, translation at the ribosome. Next time, how your cells make energy."}
+]
