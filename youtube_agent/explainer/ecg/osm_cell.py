@@ -52,14 +52,33 @@ def P(x, y, n=2):
     return P0(0, 0, (x - CR) * 1376 / (1376 - 2 * CR), (y - CR) * 768 / (768 - 2 * CR))
 
 
+def feather(im, edge=0.16):
+    """soft edges so a growing inner picture melts into the one around it."""
+    import numpy as np
+    a = np.array(im.convert("RGBA"), dtype=np.float32)
+    h, w = a.shape[:2]
+    ex, ey = max(1, int(w * edge)), max(1, int(h * edge))
+    rx = np.clip(np.minimum(np.arange(w), np.arange(w)[::-1]) / ex, 0, 1)
+    ry = np.clip(np.minimum(np.arange(h), np.arange(h)[::-1]) / ey, 0, 1)
+    a[..., 3] *= np.outer(ry, rx)
+    return Image.fromarray(a.astype(np.uint8), "RGBA")
+
+
 class Stage:
     """one page; pictures cross-fade into each other; labels with pointer lines."""
     def __init__(self, bd, kit, cv):
         self.bd, self.cv = bd, cv
         self.text, self.sub, self.lead, self.pop, self.panel, self.title = kit
         self.img, self.labels = None, []
+        self.pending = None                                           # a focus() waiting to become a zoom-through
 
     def picture(self, im, t, dur=XF):
+        if self.pending is not None:
+            ts, pt, cam_entry = self.pending
+            self.pending = None
+            if cam_entry in self.bd.cam and t + 0.6 - ts >= 1.0:
+                self.bd.cam.remove(cam_entry)
+                return self.zoom_through(im, pt, ts, t + 0.6)
         new = self.pop(im, 960, 540, w=1920, t=t, dur=dur)
         if self.img is not None:
             self.bd.erase(t + dur + 0.15, [self.img], 0.05)          # old picture removed only once the new one covers it
@@ -86,7 +105,27 @@ class Stage:
         return tx
 
     def focus(self, t_end, pt, z=1.35, d=1.6):
+        """push in on a point; if a new picture follows, it becomes an INFINITE-ZOOM move into that point."""
         self.bd.camera(t_end - d, pt[0], pt[1], z, d)
+        self.pending = (t_end - d, pt, (t_end - d, pt[0], pt[1], z, d))
+
+    def zoom_through(self, im, pt, ts, te, Z=2.4):
+        """owner's reference (27/28 Nov): keep diving into one point; the next, deeper picture grows out of it
+        (feathered, centred on the point), then takes over the full frame seamlessly."""
+        K = 1.12                                                      # inner picture a bit bigger than the view: its soft edges stay outside
+        vw, vh = 1920 / Z, 1080 / Z
+        cx = min(max(pt[0], vw * K / 2), 1920 - vw * K / 2)
+        cy = min(max(pt[1], vh * K / 2), 1080 - vh * K / 2)
+        dur = te - ts
+        self.bd.camera(ts, cx, cy, Z, dur)
+        small = self.pop(feather(im, 0.05), cx, cy, w=vw * K, t=ts + 0.2 * dur, dur=0.5 * dur)
+        full = self.pop(im, 960, 540, w=1920, t=te, dur=0.02)
+        self.bd.camera(te, 960, 540, K, 0)                            # identical view, now the full-resolution picture
+        self.bd.camera(te + 0.02, 960, 540, 1.0, 1.3)                  # ...and settle back out to the whole picture
+        gone = [small] + ([self.img] if self.img is not None else [])
+        self.bd.erase(te + 0.06, gone, 0.02)
+        self.img = full
+        return full
 
     def drift(self, s, lead=1.4, tail=1.8):
         self.bd.camera(s.start + lead, 960, 540, 1.03, max(1.0, s.dur - lead - tail))

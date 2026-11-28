@@ -70,3 +70,11 @@ social_post.py posts the _fb file to Facebook + Instagram when it exists (YouTub
 - Every named part: NAME on the right third + pointer line with arrow to the exact spot + a soft glow (Stage.label in ecg/osm_cell.py).
 - Template: youtube_agent/explainer/ecg/osm_cell.py (Stage class: picture / label / say / clear / focus / drift).
 - Never put "<" or ">" (e.g. "->") in a YouTube title/description: the upload fails with invalidDescription. Use "→".
+
+## INFINITE ZOOM between levels (owner, 28 Nov 2026, with reference videos "zooming into my hand" / "zooming into a flower")
+- Going deeper (body → organ → tissue → cell → organelle → molecule) is ONE continuous dive into the exact point we talk about:
+  the camera pushes into that point (zoom ~2.4) while the next, deeper picture GROWS OUT of it (soft-edged, centred on the
+  point), then takes over the full frame seamlessly. No cut, no slide.
+- Then STOP: hold on the new level while we explain it with labels + pointers, then ZOOM AGAIN into the next point.
+- Implemented in Stage.focus() + Stage.picture() (ecg/osm_cell.py: zoom_through). Any focus() followed by a new picture
+  becomes a zoom-through automatically; a picture without a focus before it is a cross-fade (use for side-steps, not depth).
