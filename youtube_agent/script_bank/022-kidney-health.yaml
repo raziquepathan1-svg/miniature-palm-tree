@@ -280,3 +280,17 @@ plan:
       footage_query: "patient talking doctor office"
       narration: >-
         Learn how to protect your kidneys in our full video, on the Health Support Studio YouTube channel.
+story:
+  open: >-
+    Imagine Denise. She has diabetes and high blood pressure, she feels completely fine, and she has never had her kidneys
+    tested. By the end of this video, you will know why feeling fine is not enough, and which two tests she needs.
+  twist: >-
+    Remember Denise? Here is the twist. Kidney disease is silent, so you can lose a lot of kidney function and still feel
+    fine, and the urine test often catches problems earliest.
+  end: >-
+    So what should Denise do? Ask her doctor for both kidney tests, the blood test and the urine test, keep her blood sugar
+    and blood pressure in range, and be careful with everyday painkillers.
+  short_cliff: >-
+    Denise has diabetes and high blood pressure, and she feels fine. Are her kidneys fine too?
+  reel_answer: >-
+    The answer: not necessarily. Kidney disease is silent, so ask your doctor for both the blood test and the urine test.
